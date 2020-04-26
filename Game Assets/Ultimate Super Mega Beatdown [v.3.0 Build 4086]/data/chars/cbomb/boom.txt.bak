@@ -1,0 +1,54 @@
+name	boom
+health	0
+type	none
+lifespan	2
+candamage enemy
+
+anim	idle
+	loop	0
+	delay	7
+	sound	data/SOUNDS/Maxboom.wav
+	offset	31 68
+		bbox  0
+		blast  4  9  46  56  30 0 0 50
+	frame	data/chars/cbomb/flash00.gif
+		offset  61  114
+		blast  3  9  101  96  30 0 0 50
+	frame	data/chars/cbomb/flash01.gif
+		offset  86  162
+		blast  18  24  120  133  30 0 0 50
+	frame	data/chars/cbomb/flash02.gif
+		offset  69  161
+	frame	data/chars/cbomb/flash03.gif
+		offset  78  168
+	frame	data/chars/cbomb/flash04.gif
+	frame	data/chars/cbomb/flash05.gif
+		offset  74  167
+	frame	data/chars/cbomb/flash06.gif
+	frame	data/chars/cbomb/flash07.gif
+	frame	data/chars/cbomb/flash08.gif
+	frame	data/chars/cbomb/flash09.gif
+		offset  65  156
+		blast  10  11  104  127  30 0 0 50
+	frame	data/chars/cbomb/flash10.gif
+	frame	data/chars/cbomb/flash11.gif
+	frame	data/chars/cbomb/flash12.gif
+		offset  59  157
+	frame	data/chars/cbomb/flash13.gif
+	frame	data/chars/cbomb/flash14.gif
+		attack  0
+	frame	data/chars/cbomb/ibv.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+name	    Fist
+type	     none
+shadow	     0
+candamage    enemy obstacle
+remove	0
+animationscript data/scripts2/item.c
+antigravity	100
+
+
+anim	follow
+	loop	1
+	delay	24
+	offset	11 119
+	frame	data/chars/Stuff/J30000002.gif
+	@cmd	suicide()
+	frame	data/chars/Stuff/J30000002.gif
+		
+anim	idle
+	blast	1 4 350 135 25
+	dropv	2 10 0
+	damageonlanding	35 1
+	loop	1
+	delay	3
+	offset	11 119
+	move	35
+	followanim	1
+	followcond	1
+	frame	data/chars/Stuff/J30000002.gif
+	frame	data/chars/Stuff/J30000002.gif
+	frame	data/chars/Stuff/J30000002.gif
+		
+#|edited by openBor Stats v 0.49
+		

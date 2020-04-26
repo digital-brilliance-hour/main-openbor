@@ -1,0 +1,46 @@
+name	     Redbomb
+type	     none
+shadow	     0
+candamage   player enemy
+animationscript data/scripts2/script.c
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	offset	31 85
+	frame	data/chars/Redbomb/bomb1.gif
+	frame	data/chars/Redbomb/bomb2.gif
+	offset	31 81
+	frame	data/chars/Redbomb/bomb3.gif
+	offset	31 77
+	frame	data/chars/Redbomb/bomb4.gif
+	offset	31 85
+	frame	data/chars/Redbomb/bomb1.gif
+	frame	data/chars/Redbomb/bomb2.gif
+	offset	31 81
+	frame	data/chars/Redbomb/bomb3.gif
+	offset	31 77
+	frame	data/chars/Redbomb/bomb4.gif
+	offset	31 85
+	frame	data/chars/Redbomb/bomb1.gif
+	frame	data/chars/Redbomb/bomb2.gif
+	offset	31 81
+	frame	data/chars/Redbomb/bomb3.gif
+	offset	31 77
+	frame	data/chars/Redbomb/bomb4.gif
+	offset	31 85
+	frame	data/chars/Redbomb/bomb1.gif
+	frame	data/chars/Redbomb/bomb2.gif
+	@cmd	spawn01 "sgblast" 0 0 0
+	offset	31 81
+	frame	data/chars/Redbomb/bomb3.gif
+	@cmd	suicide
+	delay	2
+	offset	31 77
+	frame	data/chars/Redbomb/bomb4.gif
+	frame	data/chars/Redbomb/bomb4.gif
+		
+#|edited by openBor Stats v 0.50
+		

@@ -1,0 +1,581 @@
+name	       Cyclops
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+com d f a freespecial
+com d f s freespecial2
+com d u a freespecial3
+com d d a freespecial4
+com a2 freespecial22
+com a3 freespecial23
+
+palette	      data/Chars/Cyclops/idle1.gif
+alternatepal  data/Chars/Cyclops/alter1.gif
+alternatepal  data/Chars/Cyclops/alter2.gif
+alternatepal  data/Chars/Cyclops/alter3.gif
+alternatepal  data/Chars/Cyclops/alter4.gif
+
+anim	attack1
+	cancel	0 5 0 d f a freespecial
+	cancel	0 5 0 d f s freespecial2
+	cancel	0 5 0 d u a freespecial3
+	cancel	0 5 0 d d a freespecial4
+	cancel	0 5 0 a2 freespecial22
+	cancel	0 5 0 a3 freespecial23
+	bbox	35 5 44 101
+	loop	0
+	delay	6
+	offset	50 102
+	frame	data/Chars/Cyclops/attack1.gif
+	attack	57 9 80 31 7 0 0 0 4 15
+	offset	50 99
+	frame	data/Chars/Cyclops/attack2.gif
+	offset	50 102
+	frame	data/Chars/Cyclops/attack3.gif
+	offset	50 104
+	frame	data/Chars/Cyclops/attack4.gif
+	bbox	14 1 59 108
+	offset	50 109
+	frame	data/Chars/Cyclops/attack5.gif
+	bbox	21 4 47 108
+	attack	0
+	frame	data/Chars/Cyclops/attack6.gif
+		
+anim	attack2
+	cancel	0 4 0 d f a freespecial
+	cancel	0 4 0 d f s freespecial2
+	cancel	0 4 0 d u a freespecial3
+	cancel	0 4 0 d d a freespecial4
+	cancel	0 4 0 a2 freespecial22
+	cancel	0 4 0 a3 freespecial23
+	bbox	23 3 54 98
+	loop	0
+	delay	6
+	offset	50 100
+	frame	data/Chars/Cyclops/bttack1.gif
+	frame	data/Chars/Cyclops/bttack2.gif
+	attack	42 8 88 27 7 0 0 0 4 15
+	offset	50 102
+	frame	data/Chars/Cyclops/bttack3.gif
+	frame	data/Chars/Cyclops/bttack4.gif
+	frame	data/Chars/Cyclops/bttack5.gif
+		
+anim	attack3
+	cancel	0 8 0 d f a freespecial
+	cancel	0 8 0 d f s freespecial2
+	cancel	0 8 0 d u a freespecial3
+	cancel	0 8 0 d d a freespecial4
+	cancel	0 8 0 a2 freespecial22
+	cancel	0 8 0 a3 freespecial23
+	bbox	18 2 58 107
+	loop	0
+	delay	6
+	offset	41 109
+	frame	data/Chars/Cyclops/cttack1.gif
+	bbox	28 8 68 92
+	offset	59 99
+	frame	data/Chars/Cyclops/cttack2.gif
+	offset	59 88
+	frame	data/Chars/Cyclops/cttack3.gif
+	attack	64 13 71 54 7 0 0 0 4 15
+	frame	data/Chars/Cyclops/cttack4.gif
+	offset	59 89
+	frame	data/Chars/Cyclops/cttack5.gif
+	offset	59 114
+	frame	data/Chars/Cyclops/cttack6.gif
+	offset	59 113
+	frame	data/Chars/Cyclops/cttack7.gif
+	frame	data/Chars/Cyclops/cttack8.gif
+	frame	data/Chars/Cyclops/cttack9.gif
+		
+anim	attack4
+	cancel	0 8 0 d f a freespecial
+	cancel	0 8 0 d f s freespecial2
+	cancel	0 8 0 d u a freespecial3
+	cancel	0 8 0 d d a freespecial4
+	cancel	0 8 0 a2 freespecial22
+	cancel	0 8 0 a3 freespecial23
+	bbox	24 5 36 104
+	loop	0
+	delay	6
+	offset	43 112
+	frame	data/Chars/Cyclops/dttack1.gif
+	offset	43 104
+	frame	data/Chars/Cyclops/dttack2.gif
+	offset	43 101
+	frame	data/Chars/Cyclops/dttack3.gif
+	bbox	7 5 62 81
+	offset	43 91
+	frame	data/Chars/Cyclops/dttack4.gif
+	attack	42 7 128 35 12 1 0 0 4 15
+	dropv	1.5 5 0
+	offset	43 94
+	frame	data/Chars/Cyclops/dttack5.gif
+	offset	43 92
+	frame	data/Chars/Cyclops/dttack6.gif
+	offset	43 89
+	frame	data/Chars/Cyclops/dttack7.gif
+	offset	43 100
+	frame	data/Chars/Cyclops/dttack8.gif
+	bbox	20 5 50 99
+	offset	43 101
+	frame	data/Chars/Cyclops/dttack9.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	47 66
+	frame	data/Chars/Cyclops/fall1.gif
+	frame	data/Chars/Cyclops/fall2.gif
+	offset	66 18
+	frame	data/Chars/Cyclops/fall3.gif
+		
+anim	freespecial
+	bbox	38 5 39 90
+	loop	0
+	delay	6
+	offset	52 96
+	@cmd	spawn01 "cyclopsa" 22 87 0
+	frame	data/Chars/Cyclops/anew1.gif
+	offset	52 94
+	frame	data/Chars/Cyclops/anew2.gif
+	offset	52 98
+	frame	data/Chars/Cyclops/anew3.gif
+	offset	52 97
+	frame	data/Chars/Cyclops/anew4.gif
+	offset	52 103
+	frame	data/Chars/Cyclops/anew5.gif
+	offset	52 102
+	frame	data/Chars/Cyclops/anew6.gif
+		
+anim	freespecial15
+	bbox	0 0 0 0
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 100);
+    }
+	@end_script	
+	loop	0
+	delay	7
+	offset	50 93
+	@cmd	spawn01 "cyclopsc" 4 86 0
+	frame	data/Chars/Cyclops/aair1.gif
+	frame	data/Chars/Cyclops/aair1.gif
+		
+anim	freespecial2
+	bbox	31 9 50 113
+	loop	0
+	delay	6
+	offset	45 119
+	@cmd	spawn01 "super" -6 82 0
+	frame	data/Chars/Cyclops/bnew1.gif
+	offset	48 102
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/Chars/Cyclops/bnew2.gif
+	offset	48 100
+	frame	data/Chars/Cyclops/bnew3.gif
+	offset	48 105
+	frame	data/Chars/Cyclops/bnew4.gif
+	frame	data/Chars/Cyclops/bnew5.gif
+	bbox	26 6 81 89
+	offset	48 98
+	delay	7
+	@cmd	spawn01 "cyclopsc" 28 88 0
+	frame	data/Chars/Cyclops/bnew6.gif
+	bbox	0 0 0 0
+	frame	data/Chars/Cyclops/bnew7.gif
+		
+anim	freespecial22
+	loop	0
+	delay	6
+	offset	58 102
+	frame	data/Chars/Cyclops/cx1.gif
+	offset	59 94
+	frame	data/Chars/Cyclops/cx2.gif
+	offset	73 79
+	frame	data/Chars/Cyclops/cx3.gif
+	delay	15
+	@cmd	leaper 6 0 0
+	attack	13 39 138 40 12 1 0 0 24 15
+	dropv	4 -3 0
+	offset	52 71
+	frame	data/Chars/Cyclops/cx4.gif
+	frame	data/Chars/Cyclops/cx5.gif
+		
+anim	freespecial23
+	loop	0
+	delay	6
+	offset	48 110
+	frame	data/Chars/Cyclops/dx1.gif
+	offset	25 108
+	frame	data/Chars/Cyclops/dx2.gif
+	attack	38 30 118 39 8 0 0 0 24 15
+	offset	42 109
+	frame	data/Chars/Cyclops/dx3.gif
+	attack	0
+	offset	40 110
+	frame	data/Chars/Cyclops/dx4.gif
+	offset	41 109
+	frame	data/Chars/Cyclops/dx5.gif
+	offset	41 106
+	frame	data/Chars/Cyclops/dx6.gif
+	offset	41 109
+	frame	data/Chars/Cyclops/dx7.gif
+	offset	41 117
+	frame	data/Chars/Cyclops/dx8.gif
+	offset	47 118
+	frame	data/Chars/Cyclops/dx9.gif
+	attack	48 22 121 48 12 1 0 0 24 15
+	dropv	1.5 8 0
+	offset	47 116
+	frame	data/Chars/Cyclops/dx10.gif
+	attack	0
+	offset	47 115
+	frame	data/Chars/Cyclops/dx11.gif
+		
+anim	freespecial3
+	bbox	16 11 69 73
+	loop	0
+	delay	6
+	offset	40 87
+	frame	data/Chars/Cyclops/fnew1.gif
+	offset	40 85
+	frame	data/Chars/Cyclops/fnew2.gif
+	offset	40 102
+	frame	data/Chars/Cyclops/fnew3.gif
+	@cmd	leaper 0 6 0
+	delay	8
+	attack	26 0 37 133 12 1 0 0 24 15
+	dropv	5 0.7 0
+	bbox	14 30 37 103
+	offset	40 150
+	frame	data/Chars/Cyclops/fnew4.gif
+		
+anim	freespecial4
+	bbox	35 3 33 100
+	loop	0
+	delay	6
+	offset	45 103
+	frame	data/Chars/Cyclops/enew1.gif
+	bbox	6 8 75 51
+	offset	45 99
+	@cmd	leaper 0 3.5 0
+	frame	data/Chars/Cyclops/enew2.gif
+	attack	28 5 145 129 12 1 0 0 24 15
+	dropv	3 2 0
+	bbox	2 33 104 55
+	offset	45 128
+	frame	data/Chars/Cyclops/enew3.gif
+	offset	55 115
+	frame	data/Chars/Cyclops/enew4.gif
+	bbox	18 15 80 36
+	offset	61 99
+	frame	data/Chars/Cyclops/enew5.gif
+	frame	data/Chars/Cyclops/enew6.gif
+	frame	data/Chars/Cyclops/enew7.gif
+	offset	35 110
+	frame	data/Chars/Cyclops/enew8.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	47 72
+	frame	data/Chars/Cyclops/get.gif
+		
+anim	grab
+	bbox	35 8 63 80
+	loop	0
+	offset	57 91
+	delay	6
+	frame	data/Chars/Cyclops/grab.gif
+		
+anim	grabattack
+	@cmd	slamstart2
+	@cmd	position 1 53 40 0 1
+	loop	0
+	delay	6
+	offset	36 116
+	frame	data/Chars/Cyclops/gb1.gif
+	@cmd	position 1 43 40 0 1
+	offset	36 107
+	frame	data/Chars/Cyclops/gb2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 -7 1 0 1
+	@cmd	clearL
+	offset	79 79
+	frame	data/Chars/Cyclops/gb3.gif
+	offset	51 58
+	frame	data/Chars/Cyclops/gb4.gif
+		
+anim	grabbackward
+	@cmd	slamstart2
+	@cmd	position 1 53 40 0 1
+	loop	0
+	delay	6
+	offset	36 116
+	frame	data/Chars/Cyclops/gb1.gif
+	@cmd	position 1 43 40 0 1
+	offset	36 107
+	frame	data/Chars/Cyclops/gb2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 -7 1 0 1
+	@cmd	clearL
+	offset	79 79
+	frame	data/Chars/Cyclops/gb3.gif
+	offset	51 58
+	frame	data/Chars/Cyclops/gb4.gif
+		
+anim	grabdown
+	@cmd	slamstart2
+	@cmd	position 1 -9 69 0 1
+	loop	0
+	delay	6
+	offset	56 114
+	frame	data/Chars/Cyclops/gd1.gif
+	@cmd	position 1 11 35 0 1
+	offset	56 109
+	frame	data/Chars/Cyclops/gd2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 5 -1 0 1
+	@cmd	clearL
+	offset	56 77
+	frame	data/Chars/Cyclops/gd3.gif
+	offset	56 78
+	frame	data/Chars/Cyclops/gd3.gif
+		
+anim	grabup
+	@cmd	slamstart2
+	@cmd	position 1 -9 69 0 1
+	loop	0
+	delay	6
+	offset	56 114
+	frame	data/Chars/Cyclops/gd1.gif
+	offset	52 83
+	@cmd	position 1 -9 0 0 1
+	frame	data/Chars/Cyclops/gu1.gif
+	@cmd	position 1 -9 84 0 1
+	offset	38 130
+	frame	data/Chars/Cyclops/gu2.gif
+	@cmd	depost 0
+	@cmd	throw 10 1 0 7 0 1
+	@cmd	clearL
+	offset	34 136
+	frame	data/Chars/Cyclops/gu3.gif
+	bbox	0 0 0 0
+	delay	11
+	offset	60 105
+	@cmd	spawn01 "cyclopse" 0 99 0
+	frame	data/Chars/Cyclops/gu4.gif
+	offset	60 99
+	frame	data/Chars/Cyclops/gu5.gif
+		
+anim	idle
+	bbox	14 7 64 102
+	loop	1
+	delay	6
+	offset	42 109
+	frame	data/Chars/Cyclops/idle1.gif
+	offset	41 109
+	frame	data/Chars/Cyclops/idle2.gif
+	frame	data/Chars/Cyclops/idle3.gif
+	frame	data/Chars/Cyclops/idle4.gif
+	offset	41 110
+	frame	data/Chars/Cyclops/idle6.gif
+	frame	data/Chars/Cyclops/idle7.gif
+	frame	data/Chars/Cyclops/idle8.gif
+	offset	43 112
+	frame	data/Chars/Cyclops/idle9.gif
+	offset	45 111
+	frame	data/Chars/Cyclops/idle10.gif
+	offset	46 111
+	frame	data/Chars/Cyclops/idle11.gif
+	offset	48 109
+	frame	data/Chars/Cyclops/idle12.gif
+		
+anim	jump
+	cancl	0 6 0 u freespecial15
+	bbox	6 8 47 124
+	loop	0
+	delay	6
+	offset	32 134
+	frame	data/Chars/Cyclops/jump1.gif
+	bbox	10 6 54 88
+	offset	41 94
+	frame	data/Chars/Cyclops/jump2.gif
+	offset	41 85
+	frame	data/Chars/Cyclops/jump3.gif
+	bbox	4 4 72 64
+	offset	41 73
+	frame	data/Chars/Cyclops/jump4.gif
+	offset	41 68
+	frame	data/Chars/Cyclops/jump5.gif
+	offset	41 74
+	frame	data/Chars/Cyclops/jump6.gif
+	offset	41 93
+	frame	data/Chars/Cyclops/jump7.gif
+		
+anim	jumpattack
+	bbox	5 3 54 42
+	loop	0
+	delay	6
+	offset	50 60
+	frame	data/Chars/Cyclops/ja1.gif
+	attack	29 32 125 70 12 1 0 0 24 15
+	frame	data/Chars/Cyclops/ja2.gif
+	frame	data/Chars/Cyclops/ja3.gif
+	frame	data/Chars/Cyclops/ja4.gif
+		
+anim	jumpattack2
+	bbox	22 10 42 78
+	loop	0
+	delay	6
+	offset	50 96
+	frame	data/Chars/Cyclops/bja1.gif
+	frame	data/Chars/Cyclops/bja2.gif
+	attack	46 2 87 83 12 1 0 0 24 15
+	bbox	25 6 47 50
+	offset	50 87
+	frame	data/Chars/Cyclops/bja3.gif
+	offset	46 87
+	frame	data/Chars/Cyclops/bja4.gif
+	frame	data/Chars/Cyclops/bja5.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	47 72
+	frame	data/Chars/Cyclops/get.gif
+		
+anim	pain
+	bbox	5 4 70 104
+	loop	0
+	delay	6
+	offset	47 108
+	frame	data/Chars/Cyclops/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	47 72
+	frame	data/Chars/Cyclops/get.gif
+		
+anim	run
+	bbox	2 4 85 69
+	loop	1
+	delay	6
+	offset	50 76
+	frame	data/Chars/Cyclops/run1.gif
+	bbox	39 2 98 82
+	offset	50 86
+	frame	data/Chars/Cyclops/run2.gif
+	offset	50 88
+	frame	data/Chars/Cyclops/run3.gif
+	bbox	27 5 74 76
+	frame	data/Chars/Cyclops/run4.gif
+	offset	43 85
+	frame	data/Chars/Cyclops/run5.gif
+	bbox	6 2 77 71
+	offset	41 82
+	frame	data/Chars/Cyclops/run6.gif
+	offset	41 88
+	frame	data/Chars/Cyclops/run7.gif
+	offset	41 97
+	frame	data/Chars/Cyclops/run8.gif
+	offset	41 98
+	frame	data/Chars/Cyclops/run9.gif
+		
+anim	runattack
+	bbox	38 5 39 90
+	loop	0
+	delay	6
+	offset	52 96
+	@cmd	spawn01 "cyclopsa" 22 87 0
+	frame	data/Chars/Cyclops/anew1.gif
+	offset	52 94
+	frame	data/Chars/Cyclops/anew2.gif
+	offset	52 98
+	frame	data/Chars/Cyclops/anew3.gif
+	offset	52 97
+	frame	data/Chars/Cyclops/anew4.gif
+	offset	52 103
+	frame	data/Chars/Cyclops/anew5.gif
+	offset	52 102
+	frame	data/Chars/Cyclops/anew6.gif
+		
+anim	runjumpattack
+	bbox	10 11 61 80
+	loop	0
+	delay	6
+	offset	48 87
+	frame	data/Chars/Cyclops/rja1.gif
+	attack	48 37 96 71 12 1 0 0 24 15
+	offset	57 78
+	frame	data/Chars/Cyclops/rja2.gif
+	frame	data/Chars/Cyclops/rja3.gif
+		
+anim	walk
+	bbox	21 10 61 90
+	loop	1
+	delay	6
+	offset	55 100
+	frame	data/Chars/Cyclops/walk1.gif
+	offset	58 100
+	frame	data/Chars/Cyclops/walk2.gif
+	offset	56 101
+	frame	data/Chars/Cyclops/walk3.gif
+	offset	55 109
+	frame	data/Chars/Cyclops/walk4.gif
+	offset	45 111
+	frame	data/Chars/Cyclops/walk5.gif
+	offset	39 114
+	frame	data/Chars/Cyclops/walk6.gif
+	offset	34 116
+	frame	data/Chars/Cyclops/walk7.gif
+	offset	33 112
+	frame	data/Chars/Cyclops/walk8.gif
+	offset	28 113
+	frame	data/Chars/Cyclops/walk9.gif
+	offset	34 114
+	frame	data/Chars/Cyclops/walk10.gif
+	offset	55 110
+	frame	data/Chars/Cyclops/walk11.gif
+	offset	56 108
+	frame	data/Chars/Cyclops/walk12.gif
+	offset	55 102
+	frame	data/Chars/Cyclops/walk13.gif
+	offset	46 107
+	frame	data/Chars/Cyclops/walk14.gif
+	offset	46 107
+	frame	data/Chars/Cyclops/walk15.gif
+	offset	42 110
+	frame	data/Chars/Cyclops/walk16.gif
+	offset	36 108
+	frame	data/Chars/Cyclops/walk17.gif
+	offset	24 109
+	frame	data/Chars/Cyclops/walk18.gif
+	bbox	5 7 49 103
+	offset	25 110
+	frame	data/Chars/Cyclops/walk19.gif
+		
+#|edited by openBor Stats v 0.51
+		

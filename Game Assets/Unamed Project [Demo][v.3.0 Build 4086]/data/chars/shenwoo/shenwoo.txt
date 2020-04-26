@@ -1,0 +1,141 @@
+name	Shenwoo
+health	100
+speed	9
+type	enemy
+shadow	4
+icon	data/chars/shenwoo/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter1.gif
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter2.gif
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter3.gif
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter4.gif
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter5.gif
+remap	data/chars/shenwoo/idle1.gif	data/chars/shenwoo/alter6.gif
+
+anim idle
+	loop	1
+	offset	39 125
+	bbox	11 24 57 93
+	delay	11
+	frame	data/chars/shenwoo/idle1.gif
+	frame	data/chars/shenwoo/idle2.gif
+	frame	data/chars/shenwoo/idle3.gif
+	frame	data/chars/shenwoo/idle4.gif
+	frame	data/chars/shenwoo/idle5.gif
+	frame	data/chars/shenwoo/idle6.gif
+	frame	data/chars/shenwoo/idle7.gif
+	frame	data/chars/shenwoo/idle8.gif
+	frame	data/chars/shenwoo/idle9.gif
+
+anim walk
+	loop	1
+	offset	30 113
+	bbox	8 7 47 105
+	delay	9
+	frame	data/chars/shenwoo/walk1.gif
+	frame	data/chars/shenwoo/walk2.gif
+	frame	data/chars/shenwoo/walk3.gif
+	frame	data/chars/shenwoo/walk4.gif
+	frame	data/chars/shenwoo/walk5.gif
+	frame	data/chars/shenwoo/walk6.gif
+	frame	data/chars/shenwoo/walk7.gif
+	frame	data/chars/shenwoo/walk8.gif
+
+anim pain
+	loop	0
+	delay	8
+	bbox	15 8 74 95
+	offset	42 106
+	frame	data/chars/shenwoo/pain1.gif
+	delay   40
+	frame	data/chars/shenwoo/pain2.gif
+	delay   11
+	frame	data/chars/shenwoo/pain1.gif
+
+	
+
+anim fall
+	loop	0
+	delay	60
+	offset	48 85
+        attack  14 44 42 41 5 1
+	frame	data/chars/shenwoo/fall1.gif
+	offset	51 100
+        attack  0 0 0 0 0 0
+        delay   20
+	frame	data/chars/shenwoo/fall2.gif
+        delay   10
+	frame	data/chars/shenwoo/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	51 100
+	delay	10
+	frame	data/chars/shenwoo/rise1.gif
+	offset	51 109
+	frame	data/chars/shenwoo/rise2.gif
+	frame	data/chars/shenwoo/rise3.gif
+	frame	data/chars/shenwoo/rise4.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	9
+	offset	33 112
+	bbox	7 9 54 98
+	frame	data/chars/shenwoo/attk101.gif
+	attack	58 22 46 14 5
+	frame	data/chars/shenwoo/attk102.gif
+	attack	0 0 0 0 0
+	frame	data/chars/shenwoo/attk103.gif
+	frame	data/chars/shenwoo/attk104.gif
+	frame	data/chars/shenwoo/attk101.gif
+	attack	58 22 46 14 5
+	frame	data/chars/shenwoo/attk102.gif
+	attack	0 0 0 0 0
+	frame	data/chars/shenwoo/attk103.gif
+	frame	data/chars/shenwoo/attk104.gif
+	frame	data/chars/shenwoo/attk105.gif
+	frame	data/chars/shenwoo/attk106.gif
+	delay	15
+	bbox	39 33 37 78
+	attack	78 33 41 20 20 1
+	frame	data/chars/shenwoo/attk107.gif
+	attack	0 0 0 0 0
+	bbox	20 21 44 90
+	frame	data/chars/shenwoo/attk108.gif
+	bbox	7 9 54 98
+	frame	data/chars/shenwoo/attk109.gif
+
+
+anim attack2
+	range	0 70
+	loop	0
+	delay	7
+	offset	32 117
+	bbox	7 15 54 92
+	frame	data/chars/shenwoo/attk201.gif
+	bbox	33 14 32 96
+	frame	data/chars/shenwoo/attk202.gif
+	bbox	30 17 46 93
+	frame	data/chars/shenwoo/attk203.gif
+	bbox	22 17 71 90
+	frame	data/chars/shenwoo/attk204.gif
+	frame	data/chars/shenwoo/attk205.gif
+	delay	13
+	bbox	24 23 49 84
+	attack	75 38 64 23 25 1
+	frame	data/chars/shenwoo/attk206.gif
+	delay	9
+	bbox	21 19 91 88
+	attack	0 0 0 0 0
+	frame	data/chars/shenwoo/attk207.gif
+	bbox	30 17 46 93
+	frame	data/chars/shenwoo/attk208.gif
+	bbox	37 14 32 96
+	frame	data/chars/shenwoo/attk209.gif
+

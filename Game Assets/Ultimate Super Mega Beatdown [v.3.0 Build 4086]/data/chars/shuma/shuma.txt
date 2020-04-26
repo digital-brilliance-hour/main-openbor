@@ -1,0 +1,553 @@
+name	       Shuma
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+jumpheight 5
+running        35  5.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+icon	data/Chars/Shuma/icon.gif
+
+com     A3 freespecial20
+com     a4 freespecial21
+com     d f s freespecial
+com     d d a freespecial4
+com     d f a freespecial6
+
+
+anim	attack1
+	cancel	0 3 1 A2 freespecial3
+	cancel	0 3 0 A3 freespecial20
+	cancel	0 3 0 a4 freespecial21
+	cancel	0 3 0 d f s freespecial
+	cancel	0 3 0 d d a freespecial4
+	cancel	0 3 0 d f a freespecial6
+	bbox	25 14 47 95
+	loop	0
+	delay	6
+	offset	43 111
+	frame	data/Chars/Shuma/attack1.gif
+	offset	44 109
+	frame	data/Chars/Shuma/attack2.gif
+	attack	90 12 100 90 7 0 0 0 4 15
+	offset	45 109
+	frame	data/Chars/Shuma/attack3.gif
+	offset	44 109
+	frame	data/Chars/Shuma/attack4.gif
+		
+anim	attack2
+	cancel	0 5 1 A2 freespecial3
+	cancel	0 5 0 A3 freespecial20
+	cancel	0 5 0 a4 freespecial21
+	cancel	0 5 0 d f s freespecial
+	cancel	0 5 0 d d a freespecial4
+	cancel	0 5 0 d f a freespecial6
+	bbox	20 13 74 100
+	loop	0
+	delay	6
+	offset	43 114
+	frame	data/Chars/Shuma/bttack1.gif
+	offset	43 134
+	frame	data/Chars/Shuma/bttack2.gif
+	attack	71 9 130 60 7 0 0 0 24 15
+	offset	49 99
+	frame	data/Chars/Shuma/bttack3.gif
+	offset	48 100
+	frame	data/Chars/Shuma/bttack4.gif
+	offset	48 105
+	frame	data/Chars/Shuma/bttack5.gif
+	frame	data/Chars/Shuma/bttack6.gif
+		
+anim	attack3
+	cancel	0 3 1 A2 freespecial3
+	cancel	0 3 0 A3 freespecial20
+	cancel	0 3 0 a4 freespecial21
+	cancel	0 3 0 d f s freespecial
+	cancel	0 3 0 d d a freespecial4
+	cancel	0 3 0 d f a freespecial6
+	bbox	8 9 81 103
+	loop	0
+	delay	6
+	offset	51 110
+	frame	data/Chars/Shuma/cttack1.gif
+	offset	55 119
+	frame	data/Chars/Shuma/cttack2.gif
+	attack	57 46 100 78 7 0 0 0 0 15
+	offset	59 119
+	frame	data/Chars/Shuma/cttack3.gif
+	offset	50 111
+	frame	data/Chars/Shuma/cttack4.gif
+		
+anim	attack4
+	cancel	0 9 1 A2 freespecial3
+	cancel	0 9 0 A3 freespecial20
+	cancel	0 9 0 a4 freespecial21
+	cancel	0 9 0 d f s freespecial
+	cancel	0 9 0 d d a freespecial4
+	cancel	0 9 0 d f a freespecial6
+	hitflash	shumab
+	bbox	21 2 73 104
+	loop	0
+	delay	6
+	offset	52 104
+	frame	data/Chars/Shuma/dttack1.gif
+	offset	58 106
+	frame	data/Chars/Shuma/dttack2.gif
+	frame	data/Chars/Shuma/dttack3.gif
+	bbox	47 16 87 106
+	offset	70 127
+	frame	data/Chars/Shuma/dttack4.gif
+	bbox	53 15 77 113
+	frame	data/Chars/Shuma/dttack5.gif
+	attack	108 23 166 74 13 1 0 0 24 15
+	bbox	44 19 75 101
+	offset	70 123
+	frame	data/Chars/Shuma/dttack6.gif
+	attack	0
+	offset	70 127
+	frame	data/Chars/Shuma/dttack7.gif
+	attack	107 23 164 70 13 1 0 0 24 15
+	offset	70 123
+	frame	data/Chars/Shuma/dttack8.gif
+	attack	0
+	offset	70 127
+	frame	data/Chars/Shuma/dttack9.gif
+	offset	70 123
+	frame	data/Chars/Shuma/dttack10.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	63 68
+	frame	data/Chars/Shuma/fall1.gif
+	offset	64 48
+	frame	data/Chars/Shuma/fall2.gif
+		
+anim	freespecial
+	hitflash	Shumab
+	@cmd	spawn01 "super" 7 26 0
+	loop	0
+	delay	6
+	offset	72 77
+	frame	data/Chars/Shuma/anew1.gif
+	steal	-200 2 664 91 35 1 0 0 35 15
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/Chars/Shuma/anew2.gif
+	frame	data/Chars/Shuma/anew3.gif
+	frame	data/Chars/Shuma/anew4.gif
+		
+anim	freespecial15
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 120);
+    }
+	@end_script	
+	loop	0
+	delay	6
+	offset	18 97
+	frame	data/Chars/Shuma/aair1.gif
+	offset	19 94
+	move	-200
+	@cmd	flip
+	frame	data/Chars/Shuma/aair2.gif
+	offset	18 94
+	frame	data/Chars/Shuma/aair3.gif
+	offset	24 96
+	frame	data/Chars/Shuma/aair4.gif
+	offset	29 92
+	frame	data/Chars/Shuma/aair6.gif
+	offset	25 93
+	frame	data/Chars/Shuma/aair7.gif
+		
+anim	freespecial16
+	bbox	8 6 71 59
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 100);
+    }
+	@end_script	
+	hitflash	shumab
+	loop	0
+	delay	6
+	offset	13 67
+	frame	data/Chars/Shuma/bair1.gif
+	bbox	10 14 89 65
+	offset	36 89
+	frame	data/Chars/Shuma/bair2.gif
+	offset	33 88
+	frame	data/Chars/Shuma/bair3.gif
+	attack	72 44 116 101 12 1 1 0 24 15
+	offset	37 89
+	frame	data/Chars/Shuma/bair4.gif
+	offset	37 89
+	frame	data/Chars/Shuma/bair5.gif
+	offset	33 88
+	frame	data/Chars/Shuma/bair6.gif
+	offset	33 88
+	attack	61 48 131 99 13 1 0 0 24 15
+	frame	data/Chars/Shuma/bair7.gif
+	frame	data/Chars/Shuma/bair8.gif
+	offset	33 88
+	frame	data/Chars/Shuma/bair9.gif
+	offset	33 88
+	frame	data/Chars/Shuma/bair10.gif
+		
+anim	freespecial2
+	attack	1 2 66 51 12 1 0 0 24 15
+	dropv	4 -0.4 0
+	loop	0
+	delay	6
+	offset	30 53
+	frame	data/Chars/Shuma/bnew1.gif
+	offset	37 53
+	frame	data/Chars/Shuma/bnew2.gif
+	frame	data/Chars/Shuma/bnew3.gif
+	frame	data/Chars/Shuma/bnew4.gif
+		
+anim	freespecial20
+	cancel	0 2 0 d f s freespecial
+	bbox	27 25 75 57
+	loop	0
+	delay	6
+	offset	50 84
+	frame	data/Chars/Shuma/ax1.gif
+	attack	52 6 148 44 12 1 0 0 24 15
+	dropv	1 7 0
+	bbox	8 5 68 62
+	offset	42 64
+	frame	data/Chars/Shuma/ax2.gif
+	offset	42 60
+	frame	data/Chars/Shuma/ax3.gif
+		
+anim	freespecial21
+	cancel	0 8 0 d f s freespecial
+	fastattack	1
+	hitflash	shumab
+	bbox	11 3 78 72
+	loop	0
+	delay	6
+	offset	50 77
+	frame	data/Chars/Shuma/bx1.gif
+	frame	data/Chars/Shuma/bx2.gif
+	bbox	41 31 73 73
+	offset	59 97
+	frame	data/Chars/Shuma/bx3.gif
+	frame	data/Chars/Shuma/bx4.gif
+	attack	121 22 143 58 12 1 0 0 24 15
+	offset	59 93
+	frame	data/Chars/Shuma/bx5.gif
+	attack	0
+	offset	59 98
+	frame	data/Chars/Shuma/bx6.gif
+	attack	108 23 163 60 12 1 0 0 23 15
+	offset	59 93
+	frame	data/Chars/Shuma/bx7.gif
+	attack	0
+	offset	59 98
+	frame	data/Chars/Shuma/bx8.gif
+	offset	59 93
+	frame	data/Chars/Shuma/bx9.gif
+		
+anim	freespecial3
+	jumpframe	0 5 0 0
+	landframe	4
+	position	1 0 23 -1 1
+	loop	0
+	delay	6
+	offset	105 165
+	frame	data/Chars/Shuma/cnew1.gif
+	position	1 0 23 -1 1
+	offset	91 198
+	frame	data/Chars/Shuma/cnew2.gif
+	position	1 0 50 -1 1
+	offset	96 220
+	frame	data/Chars/Shuma/cnew3.gif
+	position	1 0 59 -1 1
+	offset	86 227
+	frame	data/Chars/Shuma/cnew4.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 0 -5 0 1
+	@cmd	clearL
+	offset	90 232
+	frame	data/Chars/Shuma/cnew5.gif
+		
+anim	freespecial4
+	cancel	0 9 0 d f s freespecial
+	hitflash	Shumab
+	bbox	1 5 79 62
+	loop	0
+	delay	6
+	offset	14 52
+	frame	data/Chars/Shuma/dnew1.gif
+	offset	36 49
+	frame	data/Chars/Shuma/dnew2.gif
+	offset	33 54
+	frame	data/Chars/Shuma/dnew3.gif
+	bbox	8 57 93 83
+	attack	59 2 138 92 12 1 0 0 24 15
+	offset	37 102
+	frame	data/Chars/Shuma/dnew4.gif
+	bbox	7 3 103 82
+	offset	37 49
+	frame	data/Chars/Shuma/dnew5.gif
+	bbox	12 31 81 94
+	offset	33 87
+	frame	data/Chars/Shuma/dnew6.gif
+	bbox	4 53 90 87
+	attack	64 1 133 106 14 1 0 0 24 15
+	offset	33 103
+	frame	data/Chars/Shuma/dnew7.gif
+	bbox	4 18 94 83
+	offset	33 69
+	frame	data/Chars/Shuma/dnew8.gif
+	offset	37 70
+	frame	data/Chars/Shuma/dnew9.gif
+	offset	33 54
+	frame	data/Chars/Shuma/dnew10.gif
+		
+anim	freespecial6
+	cancel	0 2 0 d f s freespecial
+	bbox	5 9 97 62
+	loop	0
+	delay	5
+	offset	38 59
+	frame	data/Chars/Shuma/fnew1.gif
+	@cmd	spawn01 "shumaa" 29 0 0
+	bbox	4 90 80 56
+	offset	21 149
+	frame	data/Chars/Shuma/fnew2.gif
+	frame	data/Chars/Shuma/fnew2.gif
+	@cmd	spawn01 "shumaa" 29 0 0
+	bbox	4 90 80 56
+	offset	21 149
+	frame	data/Chars/Shuma/fnew2.gif
+	@cmd	spawn01 "shumaa" 29 0 0
+	bbox	4 90 80 56
+	offset	21 149
+	frame	data/Chars/Shuma/fnew2.gif
+	@cmd	spawn01 "shumaa" 29 0 0
+	bbox	4 90 80 56
+	offset	21 149
+	frame	data/Chars/Shuma/fnew2.gif
+	@cmd	spawn01 "shumaa" 29 0 0
+	bbox	4 90 80 56
+	offset	21 149
+	frame	data/Chars/Shuma/fnew2.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	56 66
+	frame	data/Chars/Shuma/get.gif
+		
+anim	idle
+	bbox	7 5 114 112
+	loop	1
+	delay	6
+	offset	56 118
+	frame	data/Chars/Shuma/idle1.gif
+	offset	66 118
+	frame	data/Chars/Shuma/idle2.gif
+	offset	76 122
+	frame	data/Chars/Shuma/idle3.gif
+	offset	74 118
+	frame	data/Chars/Shuma/idle4.gif
+	offset	72 116
+	frame	data/Chars/Shuma/idle5.gif
+	offset	83 113
+	frame	data/Chars/Shuma/idle6.gif
+	offset	83 112
+	frame	data/Chars/Shuma/idle7.gif
+	offset	83 113
+	frame	data/Chars/Shuma/idle8.gif
+	bbox	17 6 123 104
+	offset	83 116
+	frame	data/Chars/Shuma/idle9.gif
+	offset	83 113
+	frame	data/Chars/Shuma/idle10.gif
+	offset	83 117
+	frame	data/Chars/Shuma/idle11.gif
+	bbox	7 8 90 110
+	offset	44 119
+	frame	data/Chars/Shuma/idle12.gif
+	offset	50 122
+	frame	data/Chars/Shuma/idle13.gif
+	frame	data/Chars/Shuma/idle14.gif
+	offset	50 121
+	frame	data/Chars/Shuma/idle15.gif
+		
+anim	jump
+	cancel	0 6 0 U freespecial15
+	cancel	0 6 0 D freespecial16
+	bbox	4 3 97 124
+	loop	0
+	delay	6
+	offset	53 129
+	frame	data/Chars/Shuma/jump1.gif
+	bbox	1 2 67 150
+	offset	33 152
+	frame	data/Chars/Shuma/jump2.gif
+	offset	37 152
+	frame	data/Chars/Shuma/jump3.gif
+	offset	34 152
+	frame	data/Chars/Shuma/jump4.gif
+	frame	data/Chars/Shuma/jump5.gif
+	offset	37 152
+	frame	data/Chars/Shuma/jump6.gif
+	offset	33 152
+	frame	data/Chars/Shuma/jump7.gif
+		
+anim	jumpattack
+	bbox	18 15 97 77
+	loop	0
+	delay	6
+	offset	73 95
+	frame	data/Chars/Shuma/ja1.gif
+	attack	40 32 154 70 12 1 0 0 24 15
+	frame	data/Chars/Shuma/ja2.gif
+		
+anim	jumpattack2
+	attack	0 87 74 67 12 1 0 0 24 15
+	dropv	-5 0 0
+	bbox	22 23 33 111
+	loop	0
+	delay	6
+	offset	41 146
+	@cmd	leaper 0 -6 0
+	frame	data/Chars/Shuma/bja1.gif
+	offset	35 147
+	frame	data/Chars/Shuma/bja2.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	51 63
+	frame	data/Chars/Shuma/get.gif
+		
+anim	pain
+	bbox	11 13 128 116
+	loop	0
+	delay	6
+	offset	101 124
+	frame	data/Chars/Shuma/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	56 66
+	frame	data/Chars/Shuma/get.gif
+		
+anim	run
+	bbox	2 7 140 57
+	loop	1
+	delay	6
+	offset	76 71
+	frame	data/Chars/Shuma/run1.gif
+	offset	76 79
+	frame	data/Chars/Shuma/run2.gif
+	bbox	5 4 116 65
+	offset	61 78
+	frame	data/Chars/Shuma/run3.gif
+	offset	61 72
+	frame	data/Chars/Shuma/run4.gif
+	offset	65 79
+	frame	data/Chars/Shuma/run5.gif
+	offset	76 79
+	frame	data/Chars/Shuma/run6.gif
+		
+anim	runattack
+	cancel	0 9 1 A2 freespecial3
+	cancel	0 9 0 A3 freespecial20
+	cancel	0 9 0 a4 freespecial21
+	cancel	0 9 0 d f s freespecial
+	cancel	0 9 0 d d a freespecial4
+	cancel	0 9 0 d f a freespecial6
+	hitflash	shumab
+	bbox	21 2 73 104
+	loop	0
+	delay	6
+	offset	52 104
+	frame	data/Chars/Shuma/dttack1.gif
+	offset	58 106
+	frame	data/Chars/Shuma/dttack2.gif
+	frame	data/Chars/Shuma/dttack3.gif
+	bbox	47 16 87 106
+	offset	70 127
+	frame	data/Chars/Shuma/dttack4.gif
+	bbox	53 15 77 113
+	frame	data/Chars/Shuma/dttack5.gif
+	attack	108 23 166 74 13 1 0 0 24 15
+	bbox	44 19 75 101
+	offset	70 123
+	frame	data/Chars/Shuma/dttack6.gif
+	attack	0
+	offset	70 127
+	frame	data/Chars/Shuma/dttack7.gif
+	attack	107 23 164 70 13 1 0 0 24 15
+	offset	70 123
+	frame	data/Chars/Shuma/dttack8.gif
+	attack	0
+	offset	70 127
+	frame	data/Chars/Shuma/dttack9.gif
+	offset	70 123
+	frame	data/Chars/Shuma/dttack10.gif
+		
+anim	runjumpattack
+	bbox	34 49 75 56
+	loop	0
+	delay	6
+	offset	62 128
+	frame	data/Chars/Shuma/rja1.gif
+	bbox	3 11 56 58
+	attack	21 20 98 82 12 1 0 0 24 15
+	offset	23 96
+	frame	data/Chars/Shuma/rja2.gif
+		
+anim	walk
+	bbox	4 2 99 115
+	loop	1
+	delay	6
+	offset	51 122
+	frame	data/Chars/Shuma/walk1.gif
+	offset	58 123
+	frame	data/Chars/Shuma/walk2.gif
+	offset	58 109
+	frame	data/Chars/Shuma/walk3.gif
+	bbox	3 2 122 91
+	offset	58 95
+	frame	data/Chars/Shuma/walk4.gif
+	bbox	1 2 101 86
+	offset	58 88
+	frame	data/Chars/Shuma/walk5.gif
+	bbox	2 3 87 96
+	offset	45 101
+	frame	data/Chars/Shuma/walk6.gif
+	offset	61 106
+	frame	data/Chars/Shuma/walk7.gif
+	offset	56 114
+	frame	data/Chars/Shuma/walk8.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,165 @@
+name	Arremer
+health	150
+speed	10
+gfxshadow 1
+aimove chase
+aimove wander
+aimove normal
+type	enemy
+shadow	4
+dust dust
+icon	data/chars/arremer/icon.gif
+diesound data/sounds/die2.wav
+
+palette data/chars/arremer/arremer.gif
+
+remap	data/chars/arremer/idle1.gif data/chars/arremer/alt1.gif
+remap	data/chars/arremer/idle1.gif data/chars/arremer/alt2.gif
+remap	data/chars/arremer/idle1.gif data/chars/arremer/alt3.gif
+remap	data/chars/arremer/idle1.gif data/chars/arremer/alt4.gif
+remap	data/chars/arremer/idle1.gif data/chars/arremer/alt5.gif
+
+load  fire
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/chars/arremer/beat2.wav
+	range	0 75
+	loop	0
+	delay	8
+	offset	83 126
+	bbox	66 28 38 106
+	frame	data/chars/arremer/at1.gif
+	offset	89 102
+	delay	7
+	attack	125 55 29 29 9 0 0 1 0 0
+	bbox	71 13 45 99
+	frame	data/chars/arremer/at2.gif
+	offset	89 102
+	delay	7
+	attack	121 54 32 34 0 0 1 0 0 0
+	frame	data/chars/arremer/at2.gif
+		
+anim	attack2
+	sound	data/chars/arremer/shaah.wav
+	range	180 300
+	custknife	fire
+	bbox	114 87 71 98
+	throwframe	5
+	loop	0
+	delay	7
+	offset	151 189
+	frame	data/chars/arremer/a.gif
+	frame	data/chars/arremer/b.gif
+	frame	data/chars/arremer/c.gif
+	frame	data/chars/arremer/d.gif
+	frame	data/chars/arremer/e.gif
+	frame	data/chars/arremer/f.gif
+	frame	data/chars/arremer/g.gif
+	frame	data/chars/arremer/h.gif
+	frame	data/chars/arremer/i.gif
+	frame	data/chars/arremer/j.gif
+	frame	data/chars/arremer/l.gif
+	frame	data/chars/arremer/m.gif
+		
+anim	fall
+	loop	0
+	delay	10
+	offset	76 114
+	frame	data/chars/arremer/fall1.gif
+	offset	74 109
+	frame	data/chars/arremer/fall3.gif
+	offset	74 137
+	frame	data/chars/arremer/fall5.gif
+	offset	74 137
+	attack	25 100 110 20 15 1 0 0 0 0
+	frame	data/chars/arremer/fall4.gif
+		
+anim	idle
+	loop	1
+	offset	81 128
+	bbox	66 28 36 100
+	delay	12
+	frame	data/chars/arremer/idle1.gif
+	frame	data/chars/arremer/idle2.gif
+	frame	data/chars/arremer/idle3.gif
+	frame	data/chars/arremer/idle4.gif
+	frame	data/chars/arremer/idle5.gif
+	frame	data/chars/arremer/idle6.gif
+		
+anim	pain
+	loop	0
+	offset	81 124
+	bbox	50 23 49 110
+	delay	8
+	frame	data/chars/arremer/pain0.gif
+	offset	81 123
+	bbox	48 43 63 81
+	delay	8
+	frame	data/chars/arremer/pain1.gif
+	offset	81 124
+	delay	8
+	bbox	50 23 49 110
+	frame	data/chars/arremer/pain0.gif
+		
+anim	rise
+	loop	0
+	offset	82 113
+	delay	20
+	frame	data/chars/arremer/rise1.gif
+	frame	data/chars/arremer/rise2.gif
+	frame	data/chars/arremer/rise3.gif
+	frame	data/chars/arremer/rise4.gif
+		
+anim	upper
+	sound	data/chars/arremer/beat2.wav
+	range	0 75
+	bbox	112 81 81 104
+	loop	0
+	delay	9
+	offset	151 184
+	frame	data/chars/arremer/upper1.gif
+	frame	data/chars/arremer/upper2.gif
+	frame	data/chars/arremer/upper3.gif
+	attack	160 71 61 66 10 0 1 0 0 0
+	frame	data/chars/arremer/upper4.gif
+	attack	0
+	frame	data/chars/arremer/upper5.gif
+	attack	160 71 61 66 13 1 1 0 0 0
+	frame	data/chars/arremer/upper6.gif
+	delay	30
+	frame	data/chars/arremer/upper7.gif
+	delay	10
+	frame	data/chars/arremer/upper8.gif
+	frame	data/chars/arremer/upper9.gif
+		
+anim	walk
+	loop	1
+	offset	83 128
+	bbox	65 14 42 114
+	delay	10
+	frame	data/chars/arremer/walk1.gif
+	offset	83 128
+	frame	data/chars/arremer/walk2.gif
+	offset	83 128
+	frame	data/chars/arremer/walk3.gif
+	offset	83 128
+	frame	data/chars/arremer/walk4.gif
+	offset	82 128
+	frame	data/chars/arremer/walk5.gif
+	offset	82 128
+	frame	data/chars/arremer/walk6.gif
+		
+#|edited by openBor Stats v 0.67
+		

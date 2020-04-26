@@ -1,0 +1,50 @@
+name    sblade
+type	    pshot
+speed       0
+nolife      1
+gfxshadow   1
+remove	0
+alpha   1
+candamage player
+
+
+	animationscript	data/scripts/aniScp.c
+
+
+
+anim	idle
+	movez	0
+	movea	0
+	move	10
+	attack	18 25 54 11 25 5 1 1 10 157
+	delay	6
+	offset	19 33
+	frame	data/chars/sonia/0180.gif
+	attack	11 27 80 16 25 5 1 1 5 157
+	offset	11 38
+	frame	data/chars/sonia/0181.gif
+	attack	7 14 98 22 25 5 1 1 5 157
+	offset	7 33
+	frame	data/chars/sonia/0182.gif
+	attack	16 18 99 26 25 5 1 1 5 157
+	offset	16 40
+	frame	data/chars/sonia/0183.gif
+	attack	7 11 99 26 25 5 1 1 5 157
+	offset	7 33
+	frame	data/chars/sonia/0184.gif
+	attack	9 12 99 26 25 5 1 1 5 157
+	offset	8 35
+	frame	data/chars/sonia/0185.gif
+	attack	12 12 75 27 25 5 1 1 5 157
+	offset	-10 36
+	frame	data/chars/sonia/0186.gif
+	attack	10 21 75 27 25 5 1 1 5 157
+	offset	-15 45
+	frame	data/chars/sonia/0187.gif
+	attack	10 13 75 27 25 5 1 1 5 157
+	offset	-15 43
+	@cmd	freeself 1
+	frame	data/chars/sonia/0188.gif
+		
+#|edited by openBor Stats v 0.41
+		

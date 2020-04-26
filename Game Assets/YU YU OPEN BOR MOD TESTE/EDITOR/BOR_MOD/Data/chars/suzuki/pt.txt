@@ -1,0 +1,25 @@
+name pt
+health	0
+type	none
+alpha 6
+gfxshadow     	1
+speed 12
+candamage player obstacle
+knockdowncount 1
+
+
+
+anim	idle
+	loop	1
+	hitflash	flash4
+	remove	1
+	delay	2
+	offset	0 16
+	attack	3 4 30 25 20 1 0 0 0 0
+	frame	data/chars/suzuki/proj1.gif
+	attack	7 4 30 25 20 1 0 0 0 0
+	offset	2 17
+	frame	data/chars/suzuki/proj2.gif
+		
+#|edited by openBor Stats v 0.67
+		

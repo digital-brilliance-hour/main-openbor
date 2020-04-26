@@ -1,0 +1,44 @@
+# Street
+music		data/music/niparis.ogg
+bossmusic	data/music/menu.bor
+settime 0
+notime 1
+cameratype 1
+
+# Load images
+background	data/bgs/DNight/sky.png
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/DNight/12.png
+
+direction both
+
+
+order a
+
+#--group1-----
+
+spawn DNight
+health	1200
+flip    1
+coords 0 276
+at 0
+
+spawn  yankee
+health    1500
+coords    490 230
+at          1
+
+load	yankee
+health    1500
+coords    490 230
+at          1
+
+load	yankee
+health    1500
+coords    490 230
+at          1
+
+

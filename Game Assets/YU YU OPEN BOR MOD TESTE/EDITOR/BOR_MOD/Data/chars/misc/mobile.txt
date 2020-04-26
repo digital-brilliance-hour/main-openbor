@@ -1,0 +1,26 @@
+name	mobile
+type    obstacle
+health  20
+diesound  data/sounds/beat4.wav
+nolife  1
+flash   block
+noatflash 1
+
+
+
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	166 150
+	bbox    137 55 63 95
+	frame	data/chars/misc/mobile.gif
+	
+anim fall
+	loop	0
+	delay	3 
+	offset	166 150
+	frame	data/chars/misc/mobile2.gif
+
+

@@ -1,0 +1,57 @@
+name	fbomb
+health	1
+type	none
+lifespan	1
+subject_to_gravity 0
+
+anim	idle
+	loop	0
+	delay	7
+	sound	data/sounds/xplosion.wav
+	#quakeframe	1 3 -4
+	offset	29 63
+	frame	data/chars/misc/fbomb/flash00.gif
+
+	offset	53 80
+	frame	data/chars/misc/fbomb/flash01.gif
+
+	offset	76 126
+	frame	data/chars/misc/fbomb/flash02.gif
+
+	offset	66 124
+	frame	data/chars/misc/fbomb/flash03.gif
+
+	offset	70 134
+	frame	data/chars/misc/fbomb/flash04.gif
+
+	offset	69 130
+	frame	data/chars/misc/fbomb/flash05.gif
+
+	offset	65 128
+	frame	data/chars/misc/fbomb/flash06.gif
+
+	offset	66 127
+	frame	data/chars/misc/fbomb/flash07.gif
+
+	offset	72 127
+	frame	data/chars/misc/fbomb/flash08.gif
+	
+	
+	offset	67 127
+	frame	data/chars/misc/fbomb/flash09.gif
+	drawmethod 256 256 0 0 0 5 
+	
+	frame	data/chars/misc/fbomb/flash09.gif
+
+	frame	data/chars/misc/empty.gif
+
+
+
+
+
+
+
+
+
+
+

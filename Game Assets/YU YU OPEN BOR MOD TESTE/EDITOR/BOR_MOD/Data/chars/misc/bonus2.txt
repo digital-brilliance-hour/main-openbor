@@ -1,0 +1,97 @@
+name	BONUS2
+health	200
+speed	0
+type	enemy
+
+cantgrab     1
+jumpheight 1
+nolife       1
+#flash   dust
+noatflash 1
+noquake  1
+nodrop	 1
+nomove	 1      1
+
+setlayer     1
+
+palette data/chars/misc/tree.gif
+
+
+
+
+anim	fall
+	loop	0
+	offset	80 99
+	delay	4
+	sound	data/chars/sounds/fall2.wav
+	frame	data/chars/misc/tree3.gif
+	offset	80 99
+	delay	10
+	frame	data/chars/misc/tree3.gif
+		
+anim	idle
+	loop	1
+	offset	102 274
+	delay	10
+	bbox	71 54 64 225
+	frame	data/chars/misc/tree.gif
+		
+anim	pain
+	bbox	71 54 64 225
+	loop	0
+	delay	4
+	offset	102 274
+	sound	data/chars/robo/fall.wav
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	delay	40
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+	offset	102 274
+	frame	data/chars/misc/tree.gif
+		
+anim	rise
+	loop	0
+	delay	2
+	offset	102 274
+	bbox	71 54 64 225
+	frame	data/chars/misc/tree.gif
+		
+anim	spain
+	loop	0
+	delay	4
+	offset	102 274
+	bbox	71 54 64 225
+	sound	data/chars/robo/fall.wav
+	frame	data/chars/misc/tree.gif
+	offset	108 99
+	frame	data/chars/misc/tree.gif
+	offset	108 99
+	delay	40
+	frame	data/chars/misc/tree.gif
+		
+anim	spawn
+	loop	0
+	offset	102 274
+	delay	7
+	bbox	71 54 64 225
+	frame	data/chars/misc/tree.gif
+		
+anim	walk
+	loop	1
+	offset	102 274
+	bbox	71 54 64 225
+	delay	11
+	frame	data/chars/misc/tree.gif
+		
+#|edited by openBor Stats v 0.67
+		

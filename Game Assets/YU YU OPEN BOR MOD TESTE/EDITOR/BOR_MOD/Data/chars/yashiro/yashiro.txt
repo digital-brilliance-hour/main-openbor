@@ -1,0 +1,145 @@
+name	Yashiro
+health	50
+speed	8
+type	enemy
+shadow	4
+gfxshadow 1
+icon	data/chars/yashiro/icone.gif
+diesound data/sounds/die1.wav
+dust dust
+
+
+
+remap data/chars/yashiro/parado1.gif data/chars/yashiro/idle1.gif
+
+remap data/chars/yashiro/parado1.gif data/chars/yashiro/idle2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/chars/yashiro/maxuh.wav
+	range	0 55
+	loop	0
+	delay	9
+	offset	47 114
+	bbox	25 9 38 103
+	attack	54 21 33 49 10 0 0 0 0 0
+	frame	data/chars/yashiro/ataque1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	52 114
+	bbox	31 13 38 103
+	delay	15
+	frame	data/chars/yashiro/ataque2.gif
+	attack	29 0 61 76 0 0 1 0 0 0
+	offset	52 114
+	delay	7
+	bbox	34 9 38 103
+	frame	data/chars/yashiro/ataque3.gif
+	offset	52 114
+	bbox	25 4 38 108
+	frame	data/chars/yashiro/ataque4.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	70 170
+	frame	data/chars/yashiro/der1.gif
+	frame	data/chars/yashiro/der2.gif
+	frame	data/chars/yashiro/der3.gif
+		
+anim	idle
+	loop	1
+	offset	53 175
+	bbox	28 76 51 101
+	delay	12
+	frame	data/chars/yashiro/parado1.gif
+	offset	53 175
+	bbox	28 76 51 101
+	frame	data/chars/yashiro/parado2.gif
+	offset	53 175
+	bbox	28 76 51 101
+	frame	data/chars/yashiro/parado3.gif
+	offset	53 175
+	bbox	28 76 51 101
+	frame	data/chars/yashiro/parado4.gif
+		
+anim	pain
+	loop	0
+	offset	45 176
+	bbox	29 76 54 102
+	delay	12
+	frame	data/chars/yashiro/apanhar1.gif
+	offset	45 176
+	bbox	0 0 0 0 0
+	delay	12
+	frame	data/chars/yashiro/apanhar2.gif
+	offset	45 176
+	bbox	29 76 54 102
+	delay	12
+	frame	data/chars/yashiro/apanhar1.gif
+		
+anim	rise
+	loop	0
+	offset	50 109
+	delay	11
+	frame	data/chars/yashiro/lev1.gif
+	frame	data/chars/yashiro/lev2.gif
+	frame	data/chars/yashiro/lev3.gif
+	frame	data/chars/yashiro/lev4.gif
+		
+anim	walk
+	loop	1
+	offset	52 176
+	bbox	30 77 51 101
+	delay	12
+	frame	data/chars/yashiro/andar1.gif
+	offset	52 176
+	bbox	0 0 0 0 0
+	frame	data/chars/yashiro/andar2.gif
+	offset	52 176
+	bbox	30 77 51 101
+	frame	data/chars/yashiro/andar3.gif
+	offset	52 176
+	bbox	0 0 0 0 0
+	frame	data/chars/yashiro/andar4.gif
+	bbox	30 77 51 101
+	offset	52 176
+	frame	data/chars/yashiro/andar5.gif
+	bbox	0 0 0 0 0
+	offset	52 176
+	frame	data/chars/yashiro/andar6.gif
+	bbox	30 77 51 101
+	offset	52 176
+	frame	data/chars/yashiro/andar7.gif
+	bbox	0 0 0 0 0
+	offset	52 176
+	frame	data/chars/yashiro/andar8.gif
+		
+#|edited by openBor Stats v 0.67
+		

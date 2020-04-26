@@ -1,0 +1,1127 @@
+name	       Strider2
+health         1000
+mp	       500
+speed	       13
+type	       none
+shadow	       3
+makeinv        2
+running        45  6.1  2  1
+jumpheight      5
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash	qflash2
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script          data/scripts2/toad.c
+jugglecost	15
+alpha	1
+stealth	2 1
+
+knockdowncount 1
+
+Offense all     1
+Offense burn    1
+Offense shock   1
+Offense steal   1
+Offense freeze  1
+
+Defense all     1  0  1  2  2
+Defense normal  1  0  1  2  2
+Defense blast   1  0  1  2  2
+Defense burn    1  0  1  2  2
+Defense shock   1  0  1  2  2
+Defense steal   2  0  1  2  2
+Defense freeze  1  0  1  2  2
+
+palette data/Chars/Strider/idle1.gif
+alternatepal data/Chars/Strider/alter1.gif
+alternatepal data/Chars/Strider/alter2.gif
+alternatepal data/Chars/Strider/alter3.gif
+alternatepal data/Chars/Strider/alter4.gif
+alternatepal data/Chars/Strider/alter5.gif
+
+com	A2 freespecial
+com	A3 freespecial2
+com	A4 freespecial4
+com	D U J freespecial12
+
+icon           data/chars/Strider/icon.gif
+
+
+
+
+
+anim	attack1
+	bbox	37 0 56 83
+	loop	0
+	delay	4
+	offset	58 81
+	cancel	0 3 1 A2 freespecial
+	cancel	0 3 1 A3 freespecial2
+	cancel	0 3 1 A4 freespecial3
+	cancel	0 3 1 D U A freespecial4
+	cancel	0 3 1 D F A freespecial6
+	cancel	0 3 1 D U J freespecial12
+	cancel	0 3 1 D D A freespecial11
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/attack1.gif
+	offset	58 82
+	frame	data/Chars/Strider/attack2.gif
+	attack	43 2 137 45 7
+	dropv	2 -1 0
+	offset	46 84
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/attack3.gif
+	offset	46 81
+	attack	55 44 125 -43 7
+	frame	data/Chars/Strider/attack4.gif
+		
+anim	attack2
+	cancel	0 6 1 A2 freespecial
+	cancel	0 6 1 A3 freespecial2
+	cancel	0 6 1 A4 freespecial3
+	cancel	0 6 1 D U A freespecial4
+	cancel	0 6 1 D F A freespecial6
+	cancel	0 6 1 D U J freespecial12
+	cancel	0 6 1 D D A freespecial11
+	bbox	34 7 66 80
+	loop	0
+	delay	3
+	offset	73 92
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/bttack1.gif
+	offset	86 94
+	frame	data/Chars/Strider/bttack2.gif
+	attack	3 34 142 33 7
+	dropv	2 -1 0
+	offset	88 92
+	frame	data/Chars/Strider/bttack3.gif
+	attack	1 89 203 -89 7
+	dropv	2 -1 0
+	offset	81 115
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/bttack4.gif
+	attack	1 84 167 -81 7
+	dropv	2 -1 0
+	bbox	77 100 -63 -86
+	offset	43 116
+	frame	data/Chars/Strider/bttack5.gif
+	attack	150 7 -144 21 7
+	dropv	2 -1 0
+	bbox	15 24 59 86
+	offset	42 116
+	frame	data/Chars/Strider/bttack6.gif
+	bbox	8 24 67 78
+	offset	42 116
+	frame	data/Chars/Strider/bttack7.gif
+		
+anim	attack3
+	cancel	0 5 1 A2 freespecial
+	cancel	0 5 1 A3 freespecial2
+	cancel	0 5 1 A4 freespecial3
+	cancel	0 5 1 D U A freespecial4
+	cancel	0 5 1 D F A freespecial6
+	cancel	0 5 1 D U J freespecial12
+	cancel	0 5 1 D D A freespecial11
+	bbox	24 3 59 81
+	loop	0
+	delay	4
+	offset	51 84
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/cttack1.gif
+	frame	data/Chars/Strider/cttack2.gif
+	@cmd	anti2
+	attack	5 2 188 94 7
+	dropv	2 -1 0
+	bbox	66 13 49 84
+	offset	79 100
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/cttack3.gif
+	attack	2 2 197 98 7
+	dropv	2 -1 0
+	offset	83 101
+	frame	data/Chars/Strider/cttack4.gif
+	offset	88 102
+	frame	data/Chars/Strider/cttack5.gif
+	offset	76 100
+	frame	data/Chars/Strider/cttack7.gif
+		
+anim	attack4
+	fastattack	1
+	loop	0
+	delay	3
+	offset	58 81
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/attack1.gif
+	offset	58 82
+	frame	data/Chars/Strider/attack2.gif
+	blast	43 2 137 45 7
+	dropv	2 2 0
+	offset	46 84
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/attack3.gif
+	offset	46 81
+	blastk	55 44 125 -43 7
+	dropv	1 2 0
+	frame	data/Chars/Strider/attack4.gif
+	attack	0
+	loop	0
+	offset	73 92
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/bttack1.gif
+	offset	86 94
+	frame	data/Chars/Strider/bttack2.gif
+	blast	3 34 142 33 7
+	dropv	1 2 0
+	offset	88 92
+	frame	data/Chars/Strider/bttack3.gif
+	blast	1 89 203 -89 7
+	dropv	1 2 0
+	offset	81 115
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/bttack4.gif
+	blast	1 84 167 -81 7
+	dropv	1 2 0
+	offset	43 116
+	frame	data/Chars/Strider/bttack5.gif
+	blast	150 7 -144 21 7
+	dropv	1 2 0
+	offset	42 116
+	frame	data/Chars/Strider/bttack6.gif
+	attack	0
+	offset	42 116
+	frame	data/Chars/Strider/bttack7.gif
+	loop	0
+	offset	51 84
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/cttack1.gif
+	frame	data/Chars/Strider/cttack2.gif
+	@cmd	anti2
+	blast	5 2 188 94 7
+	dropv	1 2 0
+	offset	79 100
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/cttack3.gif
+	blast	2 2 197 98 7
+	dropv	1 2 0
+	offset	83 101
+	frame	data/Chars/Strider/cttack4.gif
+	attack	0
+	offset	88 102
+	frame	data/Chars/Strider/cttack5.gif
+	offset	76 100
+	frame	data/Chars/Strider/cttack7.gif
+	loop	0
+	offset	61 98
+	hitfx	data/sounds/bukk.wav
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/dttack1.gif
+	offset	43 101
+	frame	data/Chars/Strider/dttack3.gif
+	offset	62 109
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/dttack4.gif
+	offset	62 100
+	blast	9 5 190 101 15 0 0 45
+	dropv	1 2 0
+	frame	data/Chars/Strider/dttack5.gif
+	blast	5 4 204 97 15 0 0 45
+	dropv	2 2 0
+	offset	74 96
+	frame	data/Chars/Strider/dttack6.gif
+	attack	0
+	offset	76 75
+	frame	data/Chars/Strider/dttack7.gif
+	offset	74 72
+	frame	data/Chars/Strider/dttack8.gif
+	offset	68 80
+	frame	data/Chars/Strider/dttack9.gif
+		
+anim	attack5
+	followanim	1
+	followcond	1
+	attack	15 5 77 99 1
+	bbox	7 9 53 94
+	loop	0
+	offset	21 106
+	delay	15
+	@cmd	leaper 1.5 5 0
+	frame	data/Chars/Strider/jump1.gif
+	frame	data/Chars/Strider/jump1.gif
+		
+anim	fall
+	offset	73 76
+	loop	0
+	delay	25
+	frame	data/Chars/Strider/fall1.gif
+	offset	66 52
+	frame	data/Chars/Strider/fall2.gif
+	offset	72 25
+	frame	data/Chars/Strider/fall3.gif
+		
+anim	fall2
+	loop	0
+	offset	65 110
+	delay	25
+	frame	data/Chars/Strider/bfall1.gif
+	frame	data/Chars/Strider/bfall2.gif
+	offset	33 103
+	frame	data/Chars/Strider/bfall3.gif
+	offset	71 23
+	frame	data/Chars/Strider/bfall4.gif
+		
+anim	follow1
+	cancel	4 5 1 A freespecial22
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	bbox	30 5 54 72
+	loop	0
+	offset	42 91
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/ja1.gif
+	blast	3 29 113 50 15 0 0 45
+	dropv	1 0 0
+	frame	data/Chars/Strider/ja2.gif
+	blast	2 1 191 104 15 0 0 45
+	dropv	1 0 0
+	offset	71 115
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/ja3.gif
+	blast	3 1 195 107 15 0 0 45
+	dropv	1 0 0
+	bbox	64 19 46 91
+	offset	75 115
+	frame	data/Chars/Strider/ja4.gif
+	offset	80 116
+	frame	data/Chars/Strider/ja5.gif
+	offset	68 114
+	frame	data/Chars/Strider/ja6.gif
+		
+anim	freespecial
+	loop	0
+	offset	43 98
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	cancel	0 3 0 D freespecial20
+	frame	data/Chars/Strider/anew1.gif
+	offset	45 89
+	@cmd	spawn01 "Metaldog" 0 0 0
+	frame	data/Chars/Strider/anew2.gif
+	offset	43 92
+	frame	data/Chars/Strider/anew3.gif
+	frame	data/Chars/Strider/anew3.gif
+		
+anim	freespecial11
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	blast	97 1 102 54 16 0 0 45
+	bbox	0 0 0 0
+	loop	0
+	delay	1
+	offset	110 49
+	@cmd	leaper 10 0 0
+	hitfx	data/sounds/bukk.wav
+	dropv	1 5 0
+	cancel	0 7 0 A freespecial15
+	frame	data/Chars/Strider/fly3.gif
+	blast	88 1 112 51 16 0 0 45
+	offset	102 48
+	dropv	1 5 0
+	frame	data/Chars/Strider/fly4.gif
+	blast	90 1 119 53 16 0 0 45
+	offset	110 49
+	dropv	1 5 0
+	frame	data/Chars/Strider/fly3.gif
+	blast	81 2 108 52 16 0 0 45
+	offset	102 48
+	frame	data/Chars/Strider/fly4.gif
+	blast	68 3 132 50 16 0 0 45
+	offset	110 49
+	dropv	1 5 0
+	frame	data/Chars/Strider/fly3.gif
+	blast	75 2 108 49 16 0 0 45
+	offset	102 48
+	frame	data/Chars/Strider/fly4.gif
+	blast	77 4 125 47 16 0 0 45
+	offset	110 49
+	dropv	1 5 0
+	frame	data/Chars/Strider/fly3.gif
+	blast	76 3 117 50 16 0 0 45
+	offset	102 48
+	dropv	1 5 0
+	frame	data/Chars/Strider/fly4.gif
+		
+anim	freespecial12
+	bbox	7 9 53 94
+	loop	0
+	offset	21 106
+	delay	1
+	@cmd	spawn01 "dust" 0 0 0
+	cancel	0 4 0 D freespecial13
+	cancel	0 4 0 A freespecial15
+	frame	data/Chars/Strider/jump1.gif
+	@cmd	leaper 0 7 0
+	frame	data/Chars/Strider/jump1.gif
+	delay	6
+	bbox	6 9 58 74
+	offset	24 88
+	frame	data/Chars/Strider/jump2.gif
+	bbox	8 13 64 66
+	offset	31 80
+	frame	data/Chars/Strider/jump3.gif
+	bbox	9 16 63 61
+	offset	33 84
+	frame	data/Chars/Strider/jump4.gif
+		
+anim	freespecial13
+	blast	71 49 93 66 15 0 0 45
+	bbox	44 40 76 41
+	loop	0
+	offset	112 92
+	delay	4
+	@cmd	leaper 9 -9 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/bja1.gif
+	blast	72 50 76 46 15 0 0 45
+	offset	104 88
+	frame	data/Chars/Strider/bja2.gif
+	frame	data/Chars/Strider/bja2.gif
+		
+anim	freespecial14
+	loop	0
+	offset	40 104
+	delay	4
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/s1.gif
+	offset	40 109
+	frame	data/Chars/Strider/s2.gif
+	offset	40 113
+	frame	data/Chars/Strider/s3.gif
+	offset	39 119
+	frame	data/Chars/Strider/s4.gif
+	offset	39 147
+	frame	data/Chars/Strider/s5.gif
+	move	250
+	offset	39 147
+	frame	data/Chars/misc/empty.gif
+		
+anim	freespecial15
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	loop	0
+	offset	51 56
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Strider/sa1.gif
+	offset	51 56
+	frame	data/Chars/Strider/sa2.gif
+	offset	54 57
+	frame	data/Chars/Strider/sa3.gif
+	offset	56 57
+	frame	data/Chars/Strider/sa4.gif
+	offset	58 61
+	frame	data/Chars/Strider/sa5.gif
+	move	250
+	offset	39 147
+	frame	data/Chars/misc/empty.gif
+		
+anim	freespecial17
+	bbox	7 5 61 63
+	loop	0
+	offset	51 72
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Strider/enew1.gif
+	frame	data/Chars/Strider/enew2.gif
+	blast	1 1 203 81 15 0 0 45
+	bbox	62 14 42 69
+	offset	68 84
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/enew3.gif
+	blast	4 2 211 84 15 0 0 45
+	offset	74 85
+	frame	data/Chars/Strider/enew4.gif
+	offset	76 86
+	frame	data/Chars/Strider/enew5.gif
+	offset	63 82
+	frame	data/Chars/Strider/enew6.gif
+		
+anim	freespecial19
+	loop	0
+	offset	40 104
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	flipframe	5
+	frame	data/Chars/Strider/s1.gif
+	offset	40 109
+	frame	data/Chars/Strider/s2.gif
+	offset	40 113
+	frame	data/Chars/Strider/s3.gif
+	offset	39 119
+	frame	data/Chars/Strider/s4.gif
+	offset	39 147
+	frame	data/Chars/Strider/s5.gif
+	move	175
+	offset	39 147
+	frame	data/Chars/misc/empty.gif
+		
+anim	freespecial2
+	fastattack	1
+	bbox	63 10 32 65
+	loop	0
+	offset	82 75
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/n1.gif
+	frame	data/Chars/Strider/n2.gif
+	frame	data/Chars/Strider/n3.gif
+	blast	5 14 202 55 8 0 0 45
+	dropv	3 1 0
+	offset	77 72
+	frame	data/Chars/Strider/n4.gif
+	blast	3 17 214 50 8 0 0 45
+	dropv	3 1 0
+	offset	92 69
+	frame	data/Chars/Strider/n5.gif
+	blast	2 15 114 38 8 0 0 45
+	dropv	3 1 0
+	offset	99 71
+	frame	data/Chars/Strider/n6.gif
+	offset	82 69
+	frame	data/Chars/Strider/n7.gif
+	offset	81 72
+	frame	data/Chars/Strider/n8.gif
+		
+anim	freespecial20
+	loop	0
+	delay	1
+	hitfx	data/sounds/bukk.wav
+	offset	55 84
+	frame	data/Chars/Strider/idle1.gif
+	@cmd	anichange "ANI_ATTACK2"
+	frame	data/Chars/Strider/anew2.gif
+		
+anim	freespecial21
+	cancel	0 3 0 D freespecial20
+	blast	3 9 216 77 15 0 0 45
+	bbox	50 52 136 31
+	loop	0
+	offset	127 122
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	qflash2
+	@cmd	leaper 7 0 0
+	cancel	0 3 0 S Freespecial14
+	frame	data/Chars/Strider/bnew1.gif
+	frame	data/Chars/Strider/bnew2.gif
+	frame	data/Chars/Strider/bnew3.gif
+	blast	18 16 208 71 15 0 0 45
+	frame	data/Chars/Strider/bnew4.gif
+		
+anim	freespecial22
+	cancel	2 3 1 A freespecial23
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	blast	12 34 113 69 15 0 0 45
+	loop	0
+	offset	58 73
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/cja1.gif
+	blast	9 38 103 54 15 0 0 45
+	dropv	1 0 0
+	offset	56 73
+	frame	data/Chars/Strider/cja2.gif
+	blast	10 40 104 50 15 0 0 45
+	dropv	1 0 0
+	offset	58 73
+	frame	data/Chars/Strider/cja3.gif
+	blast	6 34 108 56 15 0 0 45
+	dropv	1 0 0
+	bbox	30 13 27 48
+	offset	56 73
+	frame	data/Chars/Strider/cja4.gif
+		
+anim	freespecial23
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	blast	71 49 93 66 15 0 0 45
+	bbox	44 40 76 41
+	loop	0
+	offset	112 92
+	delay	8
+	@cmd	leaper 9 -9 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/bja1.gif
+	blast	72 50 76 46 15 0 0 45
+	offset	104 88
+	frame	data/Chars/Strider/bja2.gif
+		
+anim	freespecial3
+	@cmd	spawn01	"super" 10 55 0
+	cancel	0 17 0 D freespecial20
+	loop	0
+	offset	43 98
+	delay	6
+	cancel	1 19 0 S Freespecial14
+	hitfx	data/sounds/bukk.wav
+	@cmd	spawn01	"flash3" 0 0 -1
+	frame	data/Chars/Strider/anew1.gif
+	offset	43 90
+	@cmd	spawn01 "Metaldog" -150 0 75
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -150 0 65
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -150 0 0
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -150 0 15
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -150 0 25
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -140 0 35
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -140 0 45
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -140 0 55
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -140 0 65
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -140 0 75
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -130 0 85
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -130 0 15
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -130 0 0
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -130 5 23
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -130 0 25
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -120 0 45
+	frame	data/Chars/Strider/anew2.gif
+	@cmd	spawn01 "Metaldog" -120 0 55
+	frame	data/Chars/Strider/anew2.gif
+	frame	data/Chars/Strider/anew3.gif
+		
+anim	freespecial4
+	loop	0
+	offset	43 98
+	delay	6
+	cancel	1 3 0 S Freespecial14
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/anew1.gif
+	offset	43 90
+	@cmd	spawn01 "Bombbird" 0 100 0
+	frame	data/Chars/Strider/anew2.gif
+	frame	data/Chars/Strider/anew3.gif
+		
+anim	freespecial6
+	loop	0
+	offset	43 98
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/anew1.gif
+	offset	45 89
+	@cmd	spawn01 "bombblaster" 87 53 0
+	frame	data/Chars/Strider/anew2.gif
+	offset	43 92
+	frame	data/Chars/Strider/anew3.gif
+		
+anim	get
+	bbox	29 3 36 54
+	loop	0
+	delay	6
+	offset	34 57
+	frame	data/Chars/Strider/get.gif
+		
+anim	grab
+	loop	0
+	offset	54 81
+	delay	6
+	frame	data/Chars/Strider/grab.gif
+		
+anim	grabattack
+	loop	0
+	offset	20 108
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	@cmd	slamstart
+	@cmd	position 1 49 49 -1 -1
+	landframe	5
+	@cmd	leaper 0 10 0
+	frame	data/Chars/Strider/ga1.gif
+	@cmd	position 1 49 49 -1 -1
+	frame	data/Chars/Strider/ga2.gif
+	offset	75 55
+	@cmd	position 1 -68 16 -1 -1
+	frame	data/Chars/Strider/ga3.gif
+	offset	49 64
+	@cmd	position 1 -39 0 -1 -1
+	frame	data/Chars/Strider/ga4.gif
+	@cmd	leaper 0 -13 0
+	offset	26 119
+	delay	100
+	@cmd	position 1 0 0 -1 -1
+	frame	data/Chars/Strider/ga5.gif
+	delay	6
+	sound	data/sounds/bukk.wav
+	@cmd	depost 1
+	@cmd	throw 35 1 0 -2 0 -1
+	@cmd	clearL
+	frame	data/Chars/Strider/ga5.gif
+		
+anim	grabbackward
+	loop	0
+	offset	33 83
+	delay	6
+	41	51
+	@cmd	slamstart
+	@cmd	position 1 8 32 -1 -1
+	frame	data/Chars/Strider/gb1.gif
+	@cmd	position 1 8 32 -1 -1
+	frame	data/Chars/Strider/gb2.gif
+	@cmd	position 1 8 32 -1 -1
+	frame	data/Chars/Strider/gb2.gif
+	@cmd	depost 0
+	@cmd	throw 35 1 4 4 0 -1
+	@cmd	clearL
+	frame	data/Chars/Strider/gb2.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	55 84
+	frame	data/Chars/Strider/idle1.gif
+	offset	58 84
+	frame	data/Chars/Strider/idle2.gif
+	offset	59 84
+	frame	data/Chars/Strider/idle3.gif
+	frame	data/Chars/Strider/idle4.gif
+	offset	57 84
+	frame	data/Chars/Strider/idle5.gif
+	offset	52 84
+	frame	data/Chars/Strider/idle6.gif
+	offset	56 84
+	frame	data/Chars/Strider/idle7.gif
+	offset	54 84
+	frame	data/Chars/Strider/idle8.gif
+	frame	data/Chars/Strider/idle9.gif
+	frame	data/Chars/Strider/idle10.gif
+	offset	55 84
+	frame	data/Chars/Strider/idle11.gif
+	offset	58 84
+	frame	data/Chars/Strider/idle12.gif
+	offset	59 84
+	frame	data/Chars/Strider/idle13.gif
+	frame	data/Chars/Strider/idle14.gif
+	offset	58 84
+	frame	data/Chars/Strider/idle15.gif
+	offset	53 84
+	frame	data/Chars/Strider/idle16.gif
+	offset	57 84
+	frame	data/Chars/Strider/idle17.gif
+	offset	55 84
+	frame	data/Chars/Strider/idle18.gif
+	frame	data/Chars/Strider/idle19.gif
+		
+anim	jump
+	bbox	7 9 53 94
+	loop	0
+	offset	21 106
+	delay	6
+	@cmd	spawn01 "dust" 0 0 0
+	cancel	0 3 0 D freespecial15
+	cancel	0 3 0 U freespecial17
+	frame	data/Chars/Strider/jump1.gif
+	bbox	6 9 58 74
+	offset	24 88
+	frame	data/Chars/Strider/jump2.gif
+	bbox	8 13 64 66
+	offset	31 80
+	frame	data/Chars/Strider/jump3.gif
+	bbox	9 16 63 61
+	offset	33 84
+	frame	data/Chars/Strider/jump4.gif
+		
+anim	jumpattack
+	bbox	30 5 54 72
+	loop	0
+	offset	42 91
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	cancel	0 5 0 D freespecial15
+	frame	data/Chars/Strider/ja1.gif
+	blast	3 29 113 50 15 0 0 45
+	frame	data/Chars/Strider/ja2.gif
+	blast	2 1 191 104 15 0 0 45
+	offset	71 115
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/ja3.gif
+	blast	3 1 195 107 15 0 0 45
+	bbox	64 19 46 91
+	offset	75 115
+	frame	data/Chars/Strider/ja4.gif
+	offset	80 116
+	frame	data/Chars/Strider/ja5.gif
+	offset	68 114
+	frame	data/Chars/Strider/ja6.gif
+		
+anim	jumpattack2
+	blast	71 49 93 66 15 0 0 45
+	bbox	44 40 76 41
+	loop	0
+	offset	112 92
+	delay	8
+	@cmd	leaper 9 -9 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/bja1.gif
+	blast	72 50 76 46 15 0 0 45
+	offset	104 88
+	frame	data/Chars/Strider/bja2.gif
+		
+anim	jumpattack3
+	blast	12 34 113 69 15 0 0 45
+	loop	0
+	offset	58 73
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Strider/cja1.gif
+	blast	9 38 103 54 15 0 0 45
+	offset	56 73
+	frame	data/Chars/Strider/cja2.gif
+	blast	10 40 104 50 15 0 0 45
+	offset	58 73
+	frame	data/Chars/Strider/cja3.gif
+	blast	6 34 108 56 15 0 0 45
+	bbox	30 13 27 48
+	offset	56 73
+	frame	data/Chars/Strider/cja4.gif
+		
+anim	land
+	bbox	29 3 36 54
+	loop	0
+	delay	6
+	offset	34 57
+	frame	data/Chars/Strider/get.gif
+		
+anim	pain
+	bbox	5 6 78 73
+	loop	0
+	offset	55 79
+	delay	6
+	frame	data/chars/Strider/pain.gif
+		
+anim	pain2
+	loop	0
+	delay	3
+	offset	34 57
+	frame	data/Chars/Strider/get.gif
+	@cmd	spawn01 "Redbomb" 0 0 0
+	frame	data/Chars/Strider/get.gif
+		
+anim	rise
+	loop	0
+	offset	51 60
+	delay	6
+	frame	data/chars/Strider/rise1.gif
+	offset	59 62
+	frame	data/chars/Strider/rise2.gif
+	offset	49 74
+	frame	data/chars/Strider/rise3.gif
+		
+anim	run
+	cancel	0 5 0 A2 freespecial3
+	cancel	0 5 0 A3 freespecial21
+	cancel	0 5 0 A4 freespecial6
+	bbox	27 1 57 71
+	loop	1
+	delay	6
+	offset	41 75
+	frame	data/Chars/Strider/run1.gif
+	offset	43 76
+	frame	data/Chars/Strider/run2.gif
+	offset	39 68
+	frame	data/Chars/Strider/run3.gif
+	offset	27 74
+	frame	data/Chars/Strider/run4.gif
+	frame	data/Chars/Strider/run5.gif
+	offset	27 67
+	frame	data/Chars/Strider/run6.gif
+		
+anim	runattack
+	fastattack	1
+	move	5
+	loop	0
+	delay	3
+	offset	58 81
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/attack1.gif
+	offset	58 82
+	frame	data/Chars/Strider/attack2.gif
+	blast	43 2 137 45 7
+	dropv	2 2 0
+	offset	46 84
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/attack3.gif
+	offset	46 81
+	blastk	55 44 125 -43 7
+	dropv	1 2 0
+	frame	data/Chars/Strider/attack4.gif
+	attack	0
+	loop	0
+	offset	73 92
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/bttack1.gif
+	offset	86 94
+	frame	data/Chars/Strider/bttack2.gif
+	blast	3 34 142 33 7
+	dropv	1 2 0
+	offset	88 92
+	frame	data/Chars/Strider/bttack3.gif
+	blast	1 89 203 -89 7
+	dropv	1 2 0
+	offset	81 115
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/bttack4.gif
+	blast	1 84 167 -81 7
+	dropv	1 2 0
+	offset	43 116
+	frame	data/Chars/Strider/bttack5.gif
+	blast	150 7 -144 21 7
+	dropv	1 2 0
+	offset	42 116
+	frame	data/Chars/Strider/bttack6.gif
+	attack	0
+	offset	42 116
+	frame	data/Chars/Strider/bttack7.gif
+	loop	0
+	offset	51 84
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/cttack1.gif
+	frame	data/Chars/Strider/cttack2.gif
+	@cmd	anti2
+	blast	5 2 188 94 7
+	dropv	1 2 0
+	offset	79 100
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/cttack3.gif
+	blast	2 2 197 98 7
+	dropv	1 2 0
+	offset	83 101
+	frame	data/Chars/Strider/cttack4.gif
+	attack	0
+	offset	88 102
+	frame	data/Chars/Strider/cttack5.gif
+	offset	76 100
+	frame	data/Chars/Strider/cttack7.gif
+	loop	0
+	offset	61 98
+	hitfx	data/sounds/bukk.wav
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Strider/dttack1.gif
+	offset	43 101
+	frame	data/Chars/Strider/dttack3.gif
+	offset	62 109
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/dttack4.gif
+	offset	62 100
+	blast	9 5 190 101 15 0 0 45
+	dropv	1 2 0
+	frame	data/Chars/Strider/dttack5.gif
+	blast	5 4 204 97 15 0 0 45
+	dropv	2 2 0
+	offset	74 96
+	frame	data/Chars/Strider/dttack6.gif
+	attack	0
+	offset	76 75
+	frame	data/Chars/Strider/dttack7.gif
+	offset	74 72
+	frame	data/Chars/Strider/dttack8.gif
+	offset	68 80
+	frame	data/Chars/Strider/dttack9.gif
+		
+anim	runjumpattack
+	bbox	17 32 39 66
+	loop	0
+	offset	29 101
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	pow
+	frame	data/Chars/Strider/rja1.gif
+	bbox	19 29 46 63
+	offset	33 94
+	frame	data/Chars/Strider/rja2.gif
+	blast	20 3 168 120 15 0 0 45
+	dropv	2 8 0
+	bbox	80 37 31 41
+	offset	35 94
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/rja3.gif
+	blast	12 3 177 127 15 0 0 45
+	dropv	2 8 0
+	offset	35 99
+	frame	data/Chars/Strider/rja4.gif
+	offset	35 100
+	frame	data/Chars/Strider/rja5.gif
+	offset	35 99
+	frame	data/Chars/Strider/rja6.gif
+		
+anim	select
+	loop	0
+	offset	51 97
+	delay	6
+	frame	data/Chars/Strider/sel1.gif
+	offset	51 120
+	frame	data/Chars/Strider/sel2.gif
+	offset	54 123
+	frame	data/Chars/Strider/sel3.gif
+	offset	55 124
+	frame	data/Chars/Strider/sel4.gif
+	frame	data/Chars/Strider/sel5.gif
+	offset	52 100
+	sound	data/chars/Strider/sword.wav
+	frame	data/Chars/Strider/sel6.gif
+	offset	47 100
+	frame	data/Chars/Strider/sel7.gif
+	offset	51 99
+	frame	data/Chars/Strider/sel8.gif
+	offset	49 99
+	frame	data/Chars/Strider/sel9.gif
+	frame	data/Chars/Strider/sel10.gif
+		
+anim	special
+	loop	0
+	offset	40 104
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Strider/s1.gif
+	offset	40 109
+	frame	data/Chars/Strider/s2.gif
+	offset	40 113
+	frame	data/Chars/Strider/s3.gif
+	offset	39 119
+	frame	data/Chars/Strider/s4.gif
+	offset	39 147
+	frame	data/Chars/Strider/s5.gif
+	move	-250
+	offset	39 147
+	@cmd	flip
+	frame	data/Chars/misc/empty.gif
+		
+anim	special2
+	loop	0
+	offset	40 104
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Strider/s1.gif
+	offset	40 109
+	frame	data/Chars/Strider/s2.gif
+	offset	40 113
+	frame	data/Chars/Strider/s3.gif
+	offset	39 119
+	frame	data/Chars/Strider/s4.gif
+	offset	39 147
+	frame	data/Chars/Strider/s5.gif
+	move	-350
+	offset	39 147
+	@cmd	flip
+	frame	data/Chars/misc/empty.gif
+		
+anim	waiting
+	loop	0
+	offset	54 100
+	delay	6
+	frame	data/Chars/Strider/w1.gif
+	offset	57 100
+	frame	data/Chars/Strider/w2.gif
+	offset	56 100
+	frame	data/Chars/Strider/w3.gif
+	frame	data/Chars/Strider/w4.gif
+	offset	54 100
+	frame	data/Chars/Strider/w5.gif
+	offset	49 100
+	frame	data/Chars/Strider/w6.gif
+	offset	53 100
+	frame	data/Chars/Strider/w7.gif
+	offset	51 100
+	frame	data/Chars/Strider/w8.gif
+	frame	data/Chars/Strider/w9.gif
+	frame	data/Chars/Strider/w10.gif
+		
+anim	walk
+	bbox	28 4 52 86
+	loop	1
+	delay	6
+	offset	52 88
+	frame	data/Chars/Strider/walk1.gif
+	offset	52 87
+	frame	data/Chars/Strider/walk2.gif
+	offset	52 89
+	frame	data/Chars/Strider/walk3.gif
+	offset	52 89
+	frame	data/Chars/Strider/walk4.gif
+	offset	57 89
+	frame	data/Chars/Strider/walk5.gif
+	offset	57 88
+	frame	data/Chars/Strider/walk6.gif
+	offset	46 88
+	frame	data/Chars/Strider/walk7.gif
+	offset	53 89
+	frame	data/Chars/Strider/walk8.gif
+	frame	data/Chars/Strider/walk9.gif
+	frame	data/Chars/Strider/walk10.gif
+		
+#|edited by openBor Stats v 0.50
+		

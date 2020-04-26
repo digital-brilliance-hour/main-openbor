@@ -1,0 +1,43 @@
+name	     Juggerstone2
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+
+palette	data/chars/Juggernaut/c1.gif
+
+
+anim	idle
+	@cmd	flip
+	blast	3 1 113 69 16 0 0 45
+	dropv	3 1 0
+	loop	1
+	delay	3
+	offset	1 73
+	frame	data/chars/Juggernaut/c1.gif
+	blast	5 2 110 103 16 0 0 45
+	dropv	3 1 0
+	offset	1 105
+	frame	data/chars/Juggernaut/c2.gif
+	blast	6 6 83 113 16 0 0 45
+	dropv	3 1 0
+	offset	7 124
+	frame	data/chars/Juggernaut/c3.gif
+	offset	32 136
+	frame	data/chars/Juggernaut/c4.gif
+	offset	33 142
+	frame	data/chars/Juggernaut/c5.gif
+	frame	data/chars/Juggernaut/c6.gif
+	offset	35 145
+	frame	data/chars/Juggernaut/c7.gif
+	frame	data/chars/Juggernaut/c8.gif
+	offset	35 141
+	frame	data/chars/Juggernaut/c9.gif
+	frame	data/chars/Juggernaut/c10.gif
+	offset	35 133
+	frame	data/chars/Juggernaut/c11.gif
+	@cmd	suicide()
+	frame	data/chars/Juggernaut/c12.gif
+		
+#|edited by openBor Stats v 0.50
+		

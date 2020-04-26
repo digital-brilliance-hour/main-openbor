@@ -1,0 +1,822 @@
+name	Kurama
+health 85
+mp 100
+gfxshadow 1
+running 20 2 4 2 10
+speed   9
+fmap 3
+type	player
+shadow	5
+icon	data/chars/kurama/icone3.gif
+diesound data/chars/kurama/die.wav
+dust dust
+load  rose
+
+palette  data/chars/kurama/kurama.gif  # cor 1 #
+alternatepal data/chars/kurama/alter2.gif
+
+remap	data/chars/kurama/andar1.gif data/chars/kurama/alter2.gif
+remap	data/chars/kurama/andar1.gif data/chars/kurama/alt3.gif
+
+com 		D U A     freespecial
+com 		D F A     freespecial2
+com 		D F K     freespecial3
+com 		D F D F K freespecial4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	bbox	48 31 47 92
+	offset	72 120
+	loop	0
+	delay	5
+	frame	data/chars/kurama/stand1.gif
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	offset	72 120
+	attack	71 48 64 42 10 0 0 0 0 0
+	frame	data/chars/kurama/soco1.gif
+	offset	72 120
+	delay	9
+	frame	data/chars/kurama/soco2.gif
+	offset	72 120
+	delay	7
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/kurama/stand1.gif
+		
+anim	attack2
+	loop	0
+	delay	5
+	offset	61 120
+	bbox	33 3 45 114
+	frame	data/chars/kurama/chute1.gif
+	attack	71 63 52 31 10 0 1 0 0 0
+	move	0
+	offset	61 120
+	frame	data/chars/kurama/chute3.gif
+	attack	71 63 52 31 10 0 1 0 0 0
+	offset	61 120
+	frame	data/chars/kurama/chute2.gif
+	offset	61 120
+	frame	data/chars/kurama/chute3.gif
+	offset	61 120
+	frame	data/chars/kurama/chute1.gif
+		
+anim	attack3
+	bbox	88 37 -31 90
+	loop	0
+	delay	5
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	offset	75 118
+	frame	data/chars/kurama/abaixar1.gif
+	offset	63 121
+	frame	data/chars/kurama/chutesa1.gif
+	offset	63 122
+	attack	72 46 52 47 10 1 1 0 0 0
+	delay	15
+	frame	data/chars/kurama/chutesa2.gif
+	offset	63 121
+	frame	data/chars/kurama/chutesa1.gif
+	offset	75 118
+	frame	data/chars/kurama/abaixar1.gif
+		
+anim	bpain
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/kurama/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 128
+	bbox	43 31 54 102
+	delay	6
+	frame	data/chars/kurama/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kurama/fire2.gif
+		
+anim	fall
+	attack	114 85 -97 38 0 0 1 0 0 0
+	loop	0
+	sound	data/chars/yusuke/lose2.wav
+	offset	63 120
+	delay	20
+	frame	data/chars/kurama/cainl1.gif
+	attack	42 107 43 15 0 0 1 0 0 0
+	offset	63 120
+	frame	data/chars/kurama/cainl2.gif
+		
+anim	freespecial
+	bbox	61 35 -39 92
+	sound	data/chars/kurama/rosewip.wav
+	energycost	20
+	loop	0
+	delay	3
+	offset	41 119
+	frame	data/chars/kurama/r6.gif
+	offset	41 119
+	frame	data/chars/kurama/rwnew1.gif
+	attack	77 39 111 90 10 1 0 0 0 20
+	offset	48 119
+	move	0
+	delay	16
+	frame	data/chars/kurama/rwnew2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	48 119
+	delay	16
+	frame	data/chars/kurama/rwnew3.gif
+	attack	64 1 115 76 10 1 0 0 0 20
+	offset	48 119
+	move	0
+	delay	16
+	frame	data/chars/kurama/rwnew4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	16
+	move	0
+	offset	48 119
+	frame	data/chars/kurama/rwnew5.gif
+	delay	12
+	move	0
+	offset	48 119
+	frame	data/chars/kurama/rwnew7.gif
+	move	0
+	offset	48 119
+	frame	data/chars/kurama/rwnew8.gif
+	bbox	28 45 41 81
+	move	0
+	offset	48 119
+	frame	data/chars/kurama/r8.gif
+	bbox	55 34 40 91
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+		
+anim	freespecial2
+	bbox	57 37 37 89
+	sound	data/chars/kurama/ros.wav
+	custknife	rose
+	energycost	20
+	throwframe	5
+	loop	0
+	delay	7
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	offset	65 120
+	frame	data/chars/kurama/magia1.gif
+	offset	65 120
+	frame	data/chars/kurama/magia1.gif
+	offset	65 120
+	frame	data/chars/kurama/magia1.gif
+	offset	65 120
+	delay	10
+	frame	data/chars/kurama/defesa2.gif
+	offset	65 120
+	frame	data/chars/kurama/defesa2.gif
+	offset	65 120
+	frame	data/chars/kurama/defesa2.gif
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+		
+anim	freespecial3
+	sound	data/chars/kurama/slide.wav
+	bbox	50 37 41 87
+	delay	10
+	offset	72 120
+	energycost	20
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	offset	75 118
+	frame	data/chars/kurama/abaixar1.gif
+	offset	69 120
+	frame	data/chars/kurama/slide1.gif
+	delay	7
+	move	25
+	attack	62 73 66 57 3 0 1 0 0 0
+	offset	69 120
+	frame	data/chars/kurama/slide3.gif
+	offset	69 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/kurama/slide2.gif
+	offset	69 120
+	attack	72 67 56 63 3 0 1 0 0 0
+	frame	data/chars/kurama/slide2.gif
+	offset	69 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/kurama/slide2.gif
+	offset	69 120
+	attack	71 50 59 79 3 1 1 0 0 0
+	frame	data/chars/kurama/slide2.gif
+	offset	69 120
+	attack	0 0 0 0 0 1 0 0 0 0
+	frame	data/chars/kurama/slide2.gif
+	offset	69 120
+	attack	71 50 59 79 15 1 1 0 0 0
+	frame	data/chars/kurama/slide2.gif
+		
+anim	freespecial4
+	attack	26 97 85 147 0 0 1 0 0 0
+	delay	7
+	offset	66 241
+	sound	data/chars/yusuke/energia.wav
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar1.gif
+	attack	26 97 85 147 0 0 1 0 0 0
+	offset	66 241
+	frame	data/chars/kurama/ar2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	61 35 -39 92
+	sound	data/chars/kurama/youko.wav
+	loop	0
+	energycost	40
+	offset	24 89
+	frame	data/chars/kurama/super1.gif
+	attack	62 16 49 87 10 1 1 0 0 100
+	offset	24 89
+	delay	20
+	frame	data/chars/kurama/super2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	24 89
+	move	0
+	delay	20
+	frame	data/chars/kurama/super3.gif
+	attack	159 5 53 100 10 1 1 0 0 100
+	move	0
+	offset	24 89
+	delay	20
+	frame	data/chars/kurama/super4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	24 89
+	move	0
+	delay	20
+	frame	data/chars/kurama/super5.gif
+	attack	257 37 41 64 10 1 0 0 0 100
+	delay	20
+	move	0
+	offset	24 89
+	frame	data/chars/kurama/super6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	20
+	move	0
+	offset	24 89
+	frame	data/chars/kurama/super7.gif
+	attack	349 80 23 22 10 1 1 0 0 100
+	move	0
+	offset	24 89
+	frame	data/chars/kurama/super8.gif
+	move	0
+	offset	24 89
+	frame	data/chars/kurama/super9.gif
+	offset	24 89
+	delay	20
+	frame	data/chars/kurama/super1.gif
+		
+anim	get
+	loop	0
+	delay	5
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	offset	72 120
+	frame	data/chars/kurama/abaixar1.gif
+	offset	72 120
+	delay	8
+	frame	data/chars/kurama/abaixar1.gif
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+		
+anim	grab
+	loop	0
+	delay	100
+	offset	76 120
+	bbox	71 10 35 108
+	frame	data/chars/kurama/agarrao1.gif
+		
+anim	grabattack
+	loop	0
+	offset	78 120
+	bbox	67 43 35 86
+	delay	25
+	frame	data/chars/kurama/soco5.gif
+	attack	81 80 57 23 6 0 1 0 0 0
+	offset	77 121
+	frame	data/chars/kurama/soco6.gif
+		
+anim	grabbed
+	bbox	13 15 38 90
+	loop	0
+	offset	11 141
+	delay	45
+	frame	data/chars/kurama/cainl0.gif
+	bbox	30 45 54 84
+	offset	42 166
+	frame	data/chars/kurama/cainl4.gif
+	bbox	13 15 38 90
+	offset	11 141
+	frame	data/chars/kurama/cainl0.gif
+		
+anim	idle
+	bbox	56 34 33 82
+	loop	1
+	delay	20
+	offset	72 120
+	frame	data/chars/kurama/stand3.gif
+	bbox	56 34 33 82
+	frame	data/chars/kurama/stand1.gif
+	bbox	56 34 33 82
+	frame	data/chars/kurama/stand2.gif
+	bbox	56 34 33 82
+	frame	data/chars/kurama/stand1.gif
+		
+anim	jump
+	bbox	54 27 31 78
+	loop	0
+	delay	10
+	offset	63 120
+	frame	data/chars/kurama/pulo1.gif
+	bbox	20 0 58 105
+	frame	data/chars/kurama/pulo2.gif
+	bbox	24 2 54 91
+	frame	data/chars/kurama/pulo3.gif
+	bbox	18 5 67 74
+	frame	data/chars/kurama/pulo4.gif
+	bbox	24 2 54 91
+	frame	data/chars/kurama/pulo5.gif
+	bbox	20 0 58 105
+	frame	data/chars/kurama/pulo6.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	63 120
+	bbox	40 6 43 92
+	frame	data/chars/kurama/chute7.gif
+	frame	data/chars/kurama/chute6.gif
+	attack	70 70 72 34 7 1 0 0 0 0
+	bbox	40 6 53 81
+	delay	15
+	frame	data/chars/kurama/chute5.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	7
+	offset	63 120
+	bbox	40 6 40 87
+	frame	data/chars/kurama/soco3.gif
+	offset	61 120
+	attack	70 38 72 29 7 1 0 0 0 0
+	bbox	71 10 35 108
+	delay	15
+	frame	data/chars/kurama/soco4.gif
+		
+anim	land
+	loop	0
+	delay	25
+	offset	63 120
+	bbox	31 23 52 82
+	frame	data/chars/kurama/abaixar1.gif
+		
+anim	pain
+	loop	0
+	bbox	48 23 44 105
+	delay	12
+	offset	66 120
+	frame	data/chars/kurama/cainl6.gif
+	offset	66 120
+	delay	12
+	frame	data/chars/kurama/cainl4.gif
+	offset	66 120
+	delay	12
+	frame	data/chars/kurama/cainl6.gif
+		
+anim	pain2
+	bbox	13 15 38 90
+	loop	0
+	offset	11 141
+	delay	45
+	frame	data/chars/kurama/cainl0.gif
+	bbox	30 45 54 84
+	offset	42 166
+	frame	data/chars/kurama/cainl4.gif
+	bbox	13 15 38 90
+	offset	11 141
+	frame	data/chars/kurama/cainl0.gif
+	bbox	30 45 54 84
+	offset	42 166
+	frame	data/chars/kurama/cainl4.gif
+	bbox	13 15 38 90
+	offset	11 141
+	frame	data/chars/kurama/cainl0.gif
+		
+anim	rise
+	loop	0
+	offset	63 120
+	delay	20
+	frame	data/chars/kurama/cainl3.gif
+	frame	data/chars/kurama/abaixar2.gif
+	frame	data/chars/kurama/abaixar1.gif
+		
+anim	run
+	delay	13
+	bbox	55 51 34 71
+	offset	72 120
+	loop	1
+	frame	data/chars/kurama/run1.gif
+	offset	72 111
+	frame	data/chars/kurama/run2.gif
+	offset	72 120
+	frame	data/chars/kurama/run1.gif
+	offset	72 111
+	frame	data/chars/kurama/run2.gif
+		
+anim	runattack
+	sound	data/chars/kurama/rosewip.wav
+	bbox	55 49 37 78
+	move	7
+	delay	7
+	offset	72 120
+	frame	data/chars/kurama/stand1.gif
+	attack	84 39 106 66 5 1 1 0 0 0
+	offset	48 119
+	frame	data/chars/kurama/r1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	48 119
+	delay	9
+	frame	data/chars/kurama/r2.gif
+	attack	76 44 78 66 5 1 0 0 0 0
+	offset	48 119
+	frame	data/chars/kurama/r3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	48 119
+	frame	data/chars/kurama/r4.gif
+	attack	71 31 48 58 5 1 0 0 0 0
+	offset	48 119
+	frame	data/chars/kurama/r5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	41 119
+	frame	data/chars/kurama/r6.gif
+		
+anim	runjumpattack
+	loop	0
+	delay	17
+	offset	71 107
+	bbox	48 6 40 87
+	frame	data/chars/kurama/chute6.gif
+	attack	78 15 40 68 7 1 0 0 0 0
+	offset	71 107
+	bbox	58 10 35 108
+	delay	17
+	frame	data/chars/kurama/chute4.gif
+		
+anim	select
+	loop	0
+	delay	20
+	offset	72 120
+	bbox	42 46 45 80
+	sound	data/chars/kurama/win.wav
+	frame	data/chars/kurama/win1.gif
+	offset	72 120
+	frame	data/chars/kurama/win1.gif
+	offset	72 120
+	frame	data/chars/kurama/win2.gif
+	offset	72 120
+	frame	data/chars/kurama/win2.gif
+	offset	72 220
+	frame	data/chars/kurama/winv.gif
+	offset	72 220
+	frame	data/chars/kurama/winv.gif
+		
+anim	shock
+	loop	0
+	offset	72 128
+	bbox	42 31 54 102
+	delay	4
+	frame	data/chars/kurama/shock1.gif
+	offset	72 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	delay	4
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	72 128
+	bbox	42 31 54 102
+	delay	4
+	frame	data/chars/kurama/shock1.gif
+	offset	72 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	delay	4
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kurama/shock2.gif
+		
+anim	special
+	loop	0
+	sound	data/chars/kurama/fuka.wav
+	delay	10
+	offset	84 116
+	blast	13 3 137 131 30 1 0 0 0 0
+	frame	data/chars/kurama/rosewip1.gif
+	offset	84 116
+	frame	data/chars/kurama/rosewip2.gif
+	offset	84 116
+	frame	data/chars/kurama/rosewip3.gif
+	offset	84 116
+	frame	data/chars/kurama/rosewip4.gif
+	offset	84 116
+	frame	data/chars/kurama/rosewip5.gif
+	offset	83 116
+	delay	10
+	frame	data/chars/kurama/rosewip6.gif
+	offset	83 116
+	frame	data/chars/kurama/rosewip7.gif
+	offset	83 116
+	frame	data/chars/kurama/rosewip8.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	63 120
+	frame	data/chars/kurama/agarrao1.gif
+	frame	data/chars/kurama/cainl4.gif
+	frame	data/chars/kurama/cainl5.gif
+	frame	data/chars/kurama/abaixar1.gif
+	frame	data/chars/kurama/abaixar2.gif
+		
+anim	walk
+	bbox	52 37 42 87
+	loop	1
+	delay	15
+	offset	72 120
+	frame	data/chars/kurama/andar1.gif
+	offset	72 120
+	frame	data/chars/kurama/andar2.gif
+	offset	72 120
+	frame	data/chars/kurama/andar1.gif
+		
+#|edited by openBor Stats v 0.67
+		

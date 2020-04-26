@@ -1,0 +1,27 @@
+name	SPIKE
+type    TRAP
+shadow	0
+flash   flash
+noatflash 1
+
+
+anim idle
+	loop	1
+	delay	130
+	offset	47 98
+	frame	data/chars/misc/spike6.gif
+	delay	4
+	frame	data/chars/misc/spike5.gif
+	frame	data/chars/misc/spike4.gif
+        blast   40 65 15 35 15 0 0 5
+	frame	data/chars/misc/spike3.gif
+	frame	data/chars/misc/spike2.gif
+	frame	data/chars/misc/spike.gif
+	frame	data/chars/misc/spike.gif
+	frame	data/chars/misc/spike2.gif
+	BLAST  0 0 0 0 0 0 0 0 
+	frame	data/chars/misc/spike3.gif
+	frame	data/chars/misc/spike4.gif
+	frame	data/chars/misc/spike5.gif
+	frame	data/chars/misc/spike6.gif
+	

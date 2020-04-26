@@ -1,0 +1,39 @@
+# Arena Mashotsukai#
+
+music		data/music/necktie.bor
+bossmusic	data/music/jin.bor
+
+background	data/bgs/arena1/ceu.gif
+
+panel		data/bgs/arena1/arena5.gif
+order	a
+
+#frontpanel	data/bgs/warehous/front.gif
+#order	a
+
+#---------------------
+#Anim#
+spawn	koto	
+coords	265 185 5
+at	0
+
+# ---------------------
+#Grupo 1#
+
+spawn	Shermie
+map	1
+coords	360 230
+at	20
+
+
+
+spawn	jin
+alias	h_vento
+agression 70
+health	650
+boss	1
+coords	350 230
+at	80
+
+
+#----------------------------------

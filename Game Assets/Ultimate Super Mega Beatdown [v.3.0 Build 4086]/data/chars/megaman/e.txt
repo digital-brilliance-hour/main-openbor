@@ -1,0 +1,27 @@
+name	    MegamanE
+type	     none
+shadow	     0
+candamage   enemy obstacle
+lifespan    3
+antigravity
+flash	booma
+
+anim	idle
+	attack	3 3 41 21 15
+	loop	1
+	delay	3
+	offset	0 12
+	move	44
+	frame	data/chars/Megaman/e1.gif
+	attack	1 2 44 16 15
+	offset	-2 10
+	frame	data/chars/Megaman/e2.gif
+	attack	2 2 48 21 15
+	offset	2 12
+	frame	data/chars/Megaman/e3.gif
+	attack	1 2 42 17 15
+	offset	-1 10
+	frame	data/chars/Megaman/e4.gif
+		
+#|edited by openBor Stats v 0.50
+		

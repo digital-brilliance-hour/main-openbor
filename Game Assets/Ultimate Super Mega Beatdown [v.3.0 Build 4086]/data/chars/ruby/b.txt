@@ -1,0 +1,47 @@
+name	     RubyGhost
+type	     none
+shadow	     0
+candamage   enemy obstacle
+antigravity 100
+alpha	1
+animationscript   data/scripts2/script.c
+
+anim	idle
+	attack	5 3 124 88 1 0 1 0 0 0
+	loop	1
+	delay	8
+	offset	80 90
+	move	18
+	frame	data/chars/Ruby/b1.gif
+	offset	80 90
+	@cmd	slamstart2
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b2.gif
+	offset	75 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b3.gif
+	offset	80 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b2.gif
+	offset	75 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b3.gif
+	offset	80 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b2.gif
+	offset	75 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b3.gif
+	offset	80 90
+	@cmd	position 1 16 -4 0 1
+	frame	data/chars/Ruby/b2.gif
+	offset	75 90
+	@cmd	depost 1
+	@cmd	throw 38 1 8 0 0 1
+	@cnd	clearL
+	frame	data/chars/Ruby/b3.gif
+	@cmd	suicide()
+	frame	data/chars/Ruby/b3.gif
+		
+#|edited by openBor Stats v 0.51
+		

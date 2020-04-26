@@ -1,0 +1,36 @@
+name	     Phobusa
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+hitflash        kenc
+
+
+
+anim	idle
+	attack	1 29 114 125 12 1 0 0 24 15
+	dropv	5 1 0
+	loop	0
+	delay	3
+	offset	59 155
+	frame	data/chars/Phobus/a5.gif
+	offset	67 148
+	frame	data/chars/Phobus/a6.gif
+	offset	71 148
+	frame	data/chars/Phobus/a7.gif
+	offset	65 177
+	frame	data/chars/Phobus/a8.gif
+	offset	66 178
+	frame	data/chars/Phobus/a9.gif
+	offset	59 132
+	frame	data/chars/Phobus/a10.gif
+	offset	56 120
+	frame	data/chars/Phobus/a11.gif
+	offset	52 82
+	attack	0
+	frame	data/chars/Phobus/a12.gif
+	@cmd	suicide()
+	frame	data/chars/Phobus/a12.gif
+		
+#|edited by openBor Stats v 0.51
+		

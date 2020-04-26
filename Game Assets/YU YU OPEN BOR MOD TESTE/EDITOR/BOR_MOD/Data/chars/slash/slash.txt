@@ -1,0 +1,296 @@
+name	slash
+health	100
+speed   10
+type	enemy
+gfxshadow 1
+diesound data/chars/slash/morre.wav
+icon	data/chars/slash/icon.gif
+
+
+remap	data/chars/slash/walk2.gif data/chars/slash/cor1.gif
+remap	data/chars/slash/walk2.gif data/chars/slash/cor2.gif
+
+
+
+dust	dust
+projectilehit	enemy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	followanim	1
+	followcond	3
+	bbox	5 24 60 98
+	delay	10
+	offset	34 120
+	frame	data/chars/slash/ata1.gif
+	bbox	2 11 76 111
+	offset	52 121
+	frame	data/chars/slash/ata2.gif
+	sound	data/chars/slash/golpe.wav
+	attack	65 9 56 77 10 0 0 0 0 0
+	bbox	1 9 65 81
+	offset	33 93
+	frame	data/chars/slash/ata3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	3 5 63 97
+	offset	30 94
+	frame	data/chars/slash/ata4.gif
+	bbox	3 7 67 87
+	offset	31 90
+	frame	data/chars/slash/ata5.gif
+	bbox	5 4 61 66
+	offset	32 68
+	frame	data/chars/slash/ata6.gif
+	bbox	3 16 69 80
+	offset	37 95
+	frame	data/chars/slash/ata7.gif
+		
+anim	attack2
+	range	80 130
+	bbox	2 15 65 102
+	delay	10
+	offset	31 115
+	frame	data/chars/slash/ata200.gif
+	bbox	4 27 74 94
+	offset	42 119
+	frame	data/chars/slash/ata201.gif
+	sound	data/chars/slash/golpe.wav
+	delay	30
+	blast	74 16 67 46 10 1 0 0 0 0
+	bbox	21 2 57 86
+	offset	29 85
+	frame	data/chars/slash/ata202.gif
+	delay	10
+	blast	0 0 0 0 0 0 0 1 0 0
+	bbox	29 16 66 88
+	offset	32 102
+	frame	data/chars/slash/ata203.gif
+	bbox	8 12 59 92
+	offset	31 100
+	frame	data/chars/slash/ata204.gif
+	delay	15
+	offset	89 51
+	frame	data/chars/slash/death1.gif
+	frame	data/chars/slash/death2.gif
+	frame	data/chars/slash/death1.gif
+	frame	data/chars/slash/death2.gif
+	offset	71 24
+	frame	data/chars/slash/fall5.gif
+	frame	data/chars/slash/death3.gif
+	frame	data/chars/slash/fall5.gif
+	frame	data/chars/slash/death3.gif
+		
+anim	fall
+	sound	data/chars/slash/fall.wav
+	delay	10
+	offset	51 94
+	frame	data/chars/slash/fall1.gif
+	offset	91 89
+	frame	data/chars/slash/fall2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	71 66
+	frame	data/chars/slash/fall3.gif
+	offset	69 53
+	frame	data/chars/slash/fall4.gif
+	bbox	27 2 108 34
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	71 24
+	frame	data/chars/slash/fall5.gif
+		
+anim	follow
+	delay	10
+	bbox	3 5 63 97
+	offset	30 94
+	frame	data/chars/slash/ata4.gif
+	bbox	3 7 67 87
+	offset	31 90
+	frame	data/chars/slash/ata5.gif
+	bbox	5 4 61 66
+	offset	32 68
+	frame	data/chars/slash/ata6.gif
+	bbox	3 16 69 80
+	offset	37 95
+	frame	data/chars/slash/ata7.gif
+	bbox	2 15 65 102
+	delay	10
+	offset	31 115
+	frame	data/chars/slash/ata200.gif
+	bbox	4 27 74 94
+	offset	42 119
+	frame	data/chars/slash/ata201.gif
+	sound	data/chars/slash/golpe.wav
+	delay	30
+	blast	74 16 67 46 10 1 0 0 0 0
+	bbox	21 2 57 86
+	offset	29 85
+	frame	data/chars/slash/ata202.gif
+	delay	10
+	blast	0 0 0 0 0 0 0 1 0 0
+	bbox	29 16 66 88
+	offset	32 102
+	frame	data/chars/slash/ata203.gif
+	bbox	8 12 59 92
+	offset	31 100
+	frame	data/chars/slash/ata204.gif
+		
+anim	grabbed
+	loop	1
+	bbox	5 5 59 86
+	delay	30
+	offset	31 91
+	frame	data/chars/slash/pain2.gif
+	bbox	4 13 77 81
+	offset	46 95
+	frame	data/chars/slash/pain1.gif
+		
+anim	idle
+	loop	1
+	bbox	2 21 68 88
+	delay	15
+	offset	29 106
+	frame	data/chars/slash/idle1.gif
+	offset	29 107
+	frame	data/chars/slash/idle2.gif
+	offset	29 107
+	frame	data/chars/slash/idle3.gif
+	offset	29 107
+	frame	data/chars/slash/idle4.gif
+		
+anim	pain
+	bbox	5 5 59 86
+	delay	8
+	offset	31 91
+	frame	data/chars/slash/pain2.gif
+	bbox	0 0 0 0
+	offset	46 95
+	frame	data/chars/slash/pain1.gif
+	bbox	5 5 59 86
+	offset	31 91
+	frame	data/chars/slash/pain2.gif
+		
+anim	rise
+	delay	15
+	offset	89 51
+	frame	data/chars/slash/death1.gif
+	frame	data/chars/slash/death2.gif
+	offset	89 51
+	frame	data/chars/slash/death1.gif
+	frame	data/chars/slash/death2.gif
+	delay	12
+	offset	46 74
+	frame	data/chars/slash/rise1.gif
+	offset	39 85
+	frame	data/chars/slash/rise2.gif
+	offset	35 95
+	frame	data/chars/slash/rise3.gif
+		
+anim	riseattack
+	offset	33 94
+	delay	10
+	frame	data/chars/slash/rata1.gif
+	delay	25
+	attack	47 39 65 30 5 1 1 0 0 0
+	offset	30 82
+	frame	data/chars/slash/rata2.gif
+	delay	10
+	offset	33 94
+	frame	data/chars/slash/rata1.gif
+		
+anim	shock
+	sound	data/chars/slash/fall.wav
+	delay	3
+	offset	81 140
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	frame	data/chars/slash/xoc01.gif
+	frame	data/chars/slash/xoc02.gif
+	offset	51 94
+	frame	data/chars/slash/fall1.gif
+	offset	91 89
+	frame	data/chars/slash/fall2.gif
+	offset	71 66
+	frame	data/chars/slash/fall3.gif
+	offset	69 53
+	frame	data/chars/slash/fall4.gif
+	bbox	27 2 111 36
+	offset	71 24
+	frame	data/chars/slash/fall5.gif
+		
+anim	upper
+	bbox	11 3 60 101
+	delay	10
+	offset	37 101
+	frame	data/chars/slash/upper1.gif
+	bbox	12 4 70 101
+	offset	33 102
+	frame	data/chars/slash/upper2.gif
+	bbox	21 21 59 107
+	offset	35 125
+	frame	data/chars/slash/upper3.gif
+	sound	data/chars/slash/golpe.wav
+	delay	25
+	blast	44 1 40 71 10 1 0 0 0 0
+	bbox	15 30 53 102
+	offset	33 128
+	frame	data/chars/slash/upper4.gif
+	delay	10
+	blast	0 0 0 0 0 0 0 0 0 0
+	bbox	7 11 59 93
+	offset	33 101
+	frame	data/chars/slash/upper5.gif
+		
+anim	walk
+	loop	1
+	bbox	4 21 65 87
+	delay	10
+	offset	34 109
+	frame	data/chars/slash/walk1.gif
+	bbox	20 20 50 91
+	offset	35 110
+	frame	data/chars/slash/walk2.gif
+	bbox	6 20 47 91
+	offset	21 114
+	frame	data/chars/slash/walk3.gif
+	bbox	4 16 41 88
+	offset	23 110
+	frame	data/chars/slash/walk4.gif
+	bbox	4 10 43 95
+	offset	25 106
+	frame	data/chars/slash/walk5.gif
+	bbox	6 12 46 89
+	offset	24 106
+	frame	data/chars/slash/walk6.gif
+		
+#|edited by openBor Stats v 0.67
+		

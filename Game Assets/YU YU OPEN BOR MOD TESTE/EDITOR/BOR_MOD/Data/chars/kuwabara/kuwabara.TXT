@@ -1,0 +1,830 @@
+name	Kuwabara
+running 14 2 4 2 10
+health 100
+mp 100
+gfxshadow 1
+speed 8
+fmap 2
+type	player
+shadow	5
+icon	data/chars/kuwabara/icone3.gif
+diesound data/chars/kuwabara/die.wav
+dust dust
+load 		reikenfly
+
+remap	data/chars/kuwabara/idle1.gif data/chars/kuwabara/alter02.gif
+remap	data/chars/kuwabara/idle1.gif data/chars/kuwabara/alt3.gif
+
+
+palette  data/chars/kuwabara/kuwabara.gif  # cor 1 #
+alternatepal data/chars/kuwabara/alter02.gif
+alternatepal data/chars/kuwabara/alt3.gif
+
+com 		D F A freespecial2
+com             D F K freespecial3
+com 		D U A freespecial
+com 		D U K freespecial4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	63 120
+	bbox	42 46 45 80
+	frame	data/chars/kuwabara/3.gif
+	frame	data/chars/kuwabara/socoempe.gif
+	attack	80 43 58 32 10 0 1 0 0 0
+	bbox	43 45 42 80
+	frame	data/chars/kuwabara/socoempe2.gif
+	attack	81 48 47 26 0 0 1 0 0 0
+	delay	9
+	frame	data/chars/kuwabara/socoempe2.gif
+	delay	7
+	bbox	43 45 44 84
+	frame	data/chars/kuwabara/socoempe.gif
+		
+anim	attack2
+	bbox	54 44 34 83
+	loop	0
+	delay	6
+	offset	63 120
+	frame	data/chars/kuwabara/soco1.gif
+	attack	87 65 47 44 10 0 1 0 0 0
+	delay	12
+	offset	63 120
+	frame	data/chars/kuwabara/soco2.gif
+	delay	6
+	frame	data/chars/kuwabara/soco1.gif
+		
+anim	attack3
+	loop	0
+	delay	12
+	offset	63 120
+	frame	data/chars/kuwabara/chute1.gif
+	delay	12
+	offset	49 120
+	bbox	62 24 33 106
+	attack	93 10 39 90 12 1 0 0 0 0
+	frame	data/chars/kuwabara/chute2.gif
+	offset	63 120
+	delay	12
+	bbox	69 24 33 116
+	frame	data/chars/kuwabara/chute1.gif
+		
+anim	bpain
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/kuwabara/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/kuwabara/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/kuwabara/fire2.gif
+		
+anim	fall
+	attack	22 21 41 38 0 0 1 0 0 0
+	movez	0
+	movea	0
+	move	0
+	loop	0
+	offset	45 104
+	delay	20
+	frame	data/chars/kuwabara/cairlevantar.gif
+	movez	0
+	movea	0
+	move	0
+	offset	49 82
+	attack	13 50 73 25 17 1 0 0 0 0
+	frame	data/chars/kuwabara/caido.gif
+		
+anim	freespecial
+	sound	data/chars/kuwabara/reiken.wav
+	energycost	20
+	loop	0
+	delay	4
+	offset	63 120
+	bbox	87 44 -39 76
+	frame	data/chars/kuwabara/3.gif
+	offset	63 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	51 53 27 71
+	frame	data/chars/kuwabara/golpe1c.gif
+	move	0
+	offset	63 120
+	bbox	96 47 -39 81
+	delay	16
+	attack	85 63 45 33 15 0 0 0 0 0
+	frame	data/chars/kuwabara/golpe1b.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	63 120
+	bbox	60 43 34 86
+	delay	16
+	frame	data/chars/kuwabara/golpe1a.gif
+	offset	63 120
+	move	0
+	delay	16
+	frame	data/chars/kuwabara/3.gif
+	delay	10
+	move	0
+	offset	40 139
+	bbox	31 45 31 84
+	frame	data/chars/kuwabara/especial1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	12
+	move	0
+	offset	52 129
+	bbox	57 47 28 87
+	frame	data/chars/kuwabara/especial2.gif
+	attack	42 28 98 111 8 1 1 0 0 0
+	move	0
+	offset	52 129
+	bbox	32 54 47 83
+	frame	data/chars/kuwabara/swordrun4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	52 129
+	bbox	47 43 38 86
+	frame	data/chars/kuwabara/9.gif
+		
+anim	freespecial2
+	sound	data/chars/kuwabara/nitoriu.wav
+	energycost	20
+	custknife	reikenfly
+	throwframe	6
+	loop	0
+	delay	6
+	bbox	76 42 -31 87
+	offset	63 120
+	frame	data/chars/kuwabara/super1.gif
+	frame	data/chars/kuwabara/super1.gif
+	attack	120 24 -61 48 0 0 1 0 0 0
+	frame	data/chars/kuwabara/super3.gif
+	frame	data/chars/kuwabara/super3.gif
+	frame	data/chars/kuwabara/super3.gif
+	frame	data/chars/kuwabara/super3.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+	frame	data/chars/kuwabara/super2.gif
+		
+anim	freespecial3
+	sound	data/chars/kuwabara/run.wav
+	bbox	50 37 41 87
+	delay	10
+	offset	63 120
+	energycost	20
+	offset	63 120
+	frame	data/chars/kuwabara/idle3.gif
+	offset	63 120
+	frame	data/chars/kuwabara/3.gif
+	delay	9
+	move	25
+	attack	62 73 66 57 3 0 1 0 0 0
+	offset	70 120
+	frame	data/chars/kuwabara/swordrun6.gif
+	attack	0
+	frame	data/chars/kuwabara/swordrun3.gif
+	attack	72 67 56 63 3 0 1 0 0 0
+	frame	data/chars/kuwabara/swordrun6.gif
+	attack	0
+	frame	data/chars/kuwabara/swordrun3.gif
+	attack	71 50 59 79 3 1 1 0 0 0
+	frame	data/chars/kuwabara/swordrun6.gif
+	attack	0 0 0 0 0 1 0 0 0 0
+	frame	data/chars/kuwabara/swordrun3.gif
+	attack	71 50 59 79 3 1 1 0 0 0
+	frame	data/chars/kuwabara/swordrun6.gif
+	attack	0 0 0 0 0 1 0 0 0 0
+	frame	data/chars/kuwabara/swordrun3.gif
+	attack	71 50 59 79 3 1 1 0 0 0
+	offset	70 120
+	frame	data/chars/kuwabara/swordrun6.gif
+	attack	0 0 0 0 0 1 0 0 0 0
+	offset	70 120
+	frame	data/chars/kuwabara/swordrun3.gif
+		
+anim	freespecial4
+	attack	44 134 75 135 0 0 1 0 0 0
+	offset	76 267
+	sound	data/chars/kuwabara/reiken.wav
+	energycost	20
+	loop	0
+	delay	7
+	sound	data/chars/yusuke/energia.wav
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar1.gif
+	offset	76 267
+	attack	44 134 75 135 0 0 1 0 0 0
+	frame	data/chars/kuwabara/ar2.gif
+	offset	41 117
+	frame	data/chars/kuwabara/est8.gif
+	sound	data/chars/kuwabara/reiken.wav
+	offset	41 117
+	frame	data/chars/kuwabara/est7.gif
+	attack	79 43 57 28 10 0 1 0 0 0
+	offset	41 117
+	move	0
+	delay	16
+	frame	data/chars/kuwabara/est6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	41 117
+	delay	16
+	frame	data/chars/kuwabara/est5.gif
+	attack	64 25 115 50 10 1 0 0 0 20
+	offset	41 117
+	move	0
+	delay	16
+	frame	data/chars/kuwabara/est4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	16
+	move	0
+	offset	41 117
+	frame	data/chars/kuwabara/est3.gif
+	attack	75 35 231 37 10 1 1 0 0 0
+	delay	12
+	move	0
+	offset	41 117
+	frame	data/chars/kuwabara/est2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	41 117
+	frame	data/chars/kuwabara/est1.gif
+	bbox	28 45 41 81
+	move	0
+	offset	41 117
+	frame	data/chars/kuwabara/est8.gif
+		
+anim	get
+	loop	0
+	delay	5
+	offset	23 95
+	frame	data/chars/kuwabara/jump1.gif
+	offset	24 95
+	frame	data/chars/kuwabara/jump3.gif
+	offset	24 95
+	delay	5
+	frame	data/chars/kuwabara/jump3.gif
+	offset	63 120
+	frame	data/chars/kuwabara/idle3.gif
+		
+anim	grab
+	bbox	84 -4 -40 86
+	attack	0 0 0 0 0 0 0 0 0 0
+	loop	0
+	delay	100
+	offset	28 79
+	frame	data/chars/kuwabara/agarrao0.gif
+		
+anim	grabattack
+	attack	0 0 0 0 0 0 0 0 0 0
+	loop	0
+	offset	35 105
+	bbox	30 16 34 123
+	delay	35
+	frame	data/chars/kuwabara/agarrão1.gif
+	attack	33 59 60 59 6 0 0 0 0 0
+	frame	data/chars/kuwabara/agarrão2.gif
+		
+anim	grabbed
+	loop	0
+	offset	42 166
+	bbox	36 48 38 76
+	delay	45
+	frame	data/chars/kuwabara/apanhar2.gif
+	bbox	30 45 54 84
+	offset	42 166
+	frame	data/chars/kuwabara/apanhar1.gif
+	offset	42 166
+	frame	data/chars/kuwabara/apanhar2.gif
+		
+anim	idle
+	bbox	48 36 41 89
+	loop	1
+	delay	20
+	offset	63 120
+	frame	data/chars/kuwabara/idle1.gif
+	delay	10
+	frame	data/chars/kuwabara/idle2.gif
+	delay	10
+	frame	data/chars/kuwabara/idle3.gif
+	delay	10
+	frame	data/chars/kuwabara/idle2.gif
+		
+anim	jump
+	loop	0
+	delay	13
+	offset	24 95
+	bbox	7 9 43 101
+	frame	data/chars/kuwabara/2.gif
+	offset	27 170
+	bbox	15 32 35 70
+	frame	data/chars/kuwabara/jump2.gif
+	offset	27 170
+	bbox	15 32 35 70
+	frame	data/chars/kuwabara/jump2.gif
+	offset	27 170
+	bbox	15 32 35 70
+	frame	data/chars/kuwabara/jump2.gif
+	offset	24 120
+	bbox	4 1 54 91
+	frame	data/chars/kuwabara/2.gif
+	bbox	4 1 54 91
+	offset	24 120
+	frame	data/chars/kuwabara/2.gif
+	offset	27 95
+	bbox	0 0 58 105
+	frame	data/chars/kuwabara/Jump3.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	27 107
+	bbox	40 6 53 81
+	frame	data/chars/kuwabara/chute4.gif
+	attack	50 44 72 29 7 1 0 0 0 0
+	offset	26 107
+	frame	data/chars/kuwabara/chute3.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	7
+	offset	30 107
+	bbox	49 0 40 87
+	frame	data/chars/kuwabara/soco8.gif
+	attack	70 38 72 29 7 1
+	offset	23 107
+	bbox	27 3 66 87
+	frame	data/chars/kuwabara/soco9.gif
+		
+anim	land
+	loop	0
+	delay	25
+	offset	23 95
+	bbox	31 23 52 82
+	frame	data/chars/kuwabara/jump1.gif
+		
+anim	pain
+	bbox	27 23 64 101
+	loop	0
+	offset	59 117
+	delay	12
+	frame	data/chars/kuwabara/apanhar2.gif
+	bbox	32 39 61 89
+	offset	59 117
+	delay	12
+	frame	data/chars/kuwabara/apanhar4.gif
+	offset	59 117
+	delay	12
+	frame	data/chars/kuwabara/apanhar2.gif
+		
+anim	pain2
+	loop	0
+	offset	42 160
+	delay	45
+	bbox	30 45 54 84
+	offset	42 160
+	frame	data/chars/kuwabara/apanhar2.gif
+	offset	42 160
+	frame	data/chars/kuwabara/apanhar1.gif
+	offset	42 160
+	frame	data/chars/kuwabara/apanhar2.gif
+	offset	42 160
+	frame	data/chars/kuwabara/apanhar1.gif
+	offset	42 160
+	frame	data/chars/kuwabara/apanhar2.gif
+		
+anim	rise
+	loop	0
+	offset	42 72
+	delay	20
+	frame	data/chars/kuwabara/cairlevantar4.gif
+	offset	25 95
+	frame	data/chars/kuwabara/jump3.gif
+	offset	25 95
+	frame	data/chars/kuwabara/jump1.gif
+		
+anim	run
+	delay	13
+	bbox	55 51 34 71
+	offset	70 120
+	loop	1
+	frame	data/chars/kuwabara/swordrun1.gif
+	frame	data/chars/kuwabara/swordrun2.gif
+	frame	data/chars/kuwabara/swordrun1.gif
+	frame	data/chars/kuwabara/swordrun2.gif
+		
+anim	runattack
+	bbox	46 36 50 92
+	move	7
+	delay	10
+	offset	63 120
+	frame	data/chars/kuwabara/idle1.gif
+	offset	63 120
+	frame	data/chars/kuwabara/10.gif
+	attack	83 6 48 75 20 1 0 0 0 0
+	offset	63 120
+	delay	17
+	frame	data/chars/kuwabara/11.gif
+	delay	10
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/kuwabara/10.gif
+		
+anim	runjumpattack
+	loop	0
+	delay	17
+	offset	40 139
+	bbox	48 59 40 87
+	frame	data/chars/kuwabara/especial2.gif
+	attack	78 38 64 100 10 1 0 0 0 0
+	offset	52 129
+	bbox	41 45 45 88
+	delay	17
+	frame	data/chars/kuwabara/swordrun4.gif
+		
+anim	select
+	delay	20
+	loop	0
+	offset	63 120
+	sound	data/chars/kuwabara/win.wav
+	frame	data/chars/kuwabara/vitoria1.gif
+	frame	data/chars/kuwabara/vitoria2.gif
+	frame	data/chars/kuwabara/vitoria1.gif
+	frame	data/chars/kuwabara/vitoria2.gif
+	offset	63 220
+	frame	data/chars/kuwabara/vitoria3.gif
+	offset	63 220
+	frame	data/chars/kuwabara/vitoria3.gif
+		
+anim	shock
+	loop	0
+	offset	72 128
+	bbox	42 31 54 102
+	delay	4
+	frame	data/chars/kuwabara/shock1.gif
+	offset	72 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	delay	4
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	72 128
+	bbox	42 31 54 102
+	delay	4
+	frame	data/chars/kuwabara/shock1.gif
+	offset	72 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	delay	4
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock1.gif
+	bbox	0 0 0 0
+	offset	72 128
+	frame	data/chars/kuwabara/shock2.gif
+		
+anim	special
+	loop	0
+	sound	data/chars/kuwabara/usha.wav
+	delay	8
+	offset	63 120
+	blast	3 3 126 126 20 1 0 0 0 0
+	frame	data/chars/kuwabara/idle1.gif
+	offset	63 120
+	frame	data/chars/kuwabara/3.gif
+	attack	87 49 -55 98 0 0 1 0 0 0
+	offset	40 139
+	frame	data/chars/kuwabara/4.gif
+	attack	98 53 -57 92 0 0 1 0 0 0
+	offset	40 139
+	frame	data/chars/kuwabara/5.gif
+	offset	52 129
+	frame	data/chars/kuwabara/swordrun4.gif
+	offset	52 129
+	delay	8
+	frame	data/chars/kuwabara/swordrun5.gif
+	offset	52 129
+	frame	data/chars/kuwabara/6.gif
+	offset	52 129
+	frame	data/chars/kuwabara/7.gif
+	offset	52 129
+	frame	data/chars/kuwabara/8.gif
+	offset	52 129
+	frame	data/chars/kuwabara/9.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	30 71
+	bbox	48 44 38 82
+	sound	data/chars/yusuke.wav
+	frame	data/chars/kuwabara/agarrao0.gif
+	offset	63 118
+	frame	data/chars/kuwabara/apanhar1.gif
+	offset	42 72
+	frame	data/chars/kuwabara/cairlevantar4.gif
+	offset	25 95
+	frame	data/chars/kuwabara/jump3.gif
+	offset	25 95
+	frame	data/chars/kuwabara/jump1.gif
+		
+anim	walk
+	bbox	55 34 19 93
+	loop	1
+	delay	14
+	offset	63 120
+	frame	data/chars/kuwabara/walk2.gif
+	frame	data/chars/kuwabara/walk1.gif
+	frame	data/chars/kuwabara/walk2.gif
+		
+#|edited by openBor Stats v 0.67
+		

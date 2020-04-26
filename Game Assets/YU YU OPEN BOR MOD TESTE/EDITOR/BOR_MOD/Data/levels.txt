@@ -1,0 +1,201 @@
+                    # YU YU HAKUSHO OPENBOR DARQ TOURNAMENT #
+
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+
+#-------Lifebars, icons, names, etc.
+
+#olbarsize  200 5 0 0 0 0 0 0 0
+lbarsize   100 5 1 1 0 -9999 -9999 -9999 -9999 
+mpbarsize  84 5 1 1 0 -9999 -9999 -9999 -9999
+timeloc   149, 4, 21, 20 0 #144 50 33 21 0 # 1000 1000 1 1 1  # posição do relógio #
+timeicon data/bgs/relogio.gif 120 -25
+
+subject_to_hole  1
+subject_to_wall  1
+
+
+Loadingbg 1
+
+#fundo do ranking#
+Hiscorebg 1
+
+#fundo da pontuação#
+
+Completebg 1
+
+rush 1 1 HitCombo 1 0 MaxCombo 1 0
+p1rush 8 55 8 63 8 81 8 89
+p2rush 272 55 272 63 272 81 272 89
+
+
+p1life     38 8  # posição do life energia p1#
+p1mp        48   15  # posição da energia mp p1 #
+p1namej    -50  -50 -10 -10  20  20
+p1icon       0    3  # posição do icone p1 #
+p1lifen     2  30    # posição do icone valor de vida p1#
+p1lifex    -50  -50
+p1score   1000 1000 1000 1000 37 6 #-50  -50 -10 -10  48  42
+
+p2life     216 8    # posição do life energia p2 #
+p2mp       226  15  # posição da energia mp p2 #
+p2namej    -50  -50 -10 -10 184  20
+p2icon     178   3  # posição do icone p2 #
+p2lifen    310 30 # posição do icone valor de vida p2#
+p2lifex    -50  -50
+p2score    1000 1000 1000 1000 215 6 #-50  -50 -10 -10 212  42
+
+# icone do life e power dos inimigos #
+
+e1life		54 31 
+e1icon		37 23 
+
+e2life		215 57 
+e2icon          198 49
+
+#---------------------------- History----------------------------#
+
+set	HISTORIA
+scene	data/scenes/history.txt
+scene	data/scenes/cena_1.txt
+z 0 0 0 
+file	data/easy/Saeasy.txt    # makai # #OK# Confirmado
+file	data/easy/Sbeasy.txt    # castelo makai #  #ok#
+z 205 0 0                       #OK#
+file	data/easy/Sceasy.txt    # arena suzako  #  #0K#
+next
+scene	data/scenes/cena_2.txt
+select  data/select/2st.txt 
+z 0 0 0
+file	data/easy/0aeasy.txt    # floresta mansão tarukane #ok#
+file	data/easy/0beasy.txt    # mansão tarukane #  #ok#
+file	data/easy/0ceasy.txt    # arena tarukane  # ok #
+next
+scene	data/scenes/cena_3.txt
+select  data/select/3st.txt 
+z 192 0 0
+file	data/easy/bonus.txt    # bonus 1 "fliperama" #  #ok#
+z 0 0 0
+file	data/easy/1xeasy.txt   # tokyo street #  #ok#
+file	data/easy/1aeasy.txt   # park tokyo #  ok  #
+file	data/easy/1beasy.txt   # restaurante yumimura #  #ok#
+file	data/easy/1ceasy.txt   # cobertura ao luar #  #ok#
+next
+scene	data/scenes/cena_4.txt 
+select  data/select/4st.txt   # genkai selecionável #
+z 175 0 0
+file	data/easy/2easy.txt    # ponte "caminho Até o porto " #  #ok#
+next
+scene	data/scenes/cena_5.txt
+select  data/select/5st.txt    
+z 0 0 0
+file	data/easy/3aeasy.txt   # navio  1 #  #ok#
+file	data/easy/3beasy.txt   # navio  2 #  #ok#
+file	data/easy/3ceasy.txt   # navio  3 #  #ok#
+next
+scene	data/scenes/cena_6.txt
+select data/select/6st.txt 
+file	data/easy/4aeasy.txt   # praia #  #ok#
+file	data/easy/4ceasy.txt   # floresta hotel #  #ok#
+z 205 0 0
+file	data/easy/elev.txt     # elevador subindo #  #ok#
+file	data/easy/6aeasy.txt   # hotel interno # #ok#
+z 205 0 0
+file	data/easy/4beasy.txt   # time rokuyokai 1 batalha do torneio # chu #ok#
+next
+scene	data/scenes/cena_7.txt
+select data/select/7st.txt 
+z 0 0 0
+file	data/easy/Caeasy.txt   # cachoeira # #ok#
+z 0 0 0
+file	data/easy/Cbeasy.txt   # entrada do estadio # ok#
+z 205 0 0
+file	data/easy/Cceasy.txt   # time dr itigaki  2 batalha do #torneio #OK#
+next
+scene	data/scenes/cena_8.txt
+select data/select/8st.txt 
+z 205 0 0
+file	data/easy/Dxeasy.txt   # time Mashotsukai 3 batalha do #torneio  "toya"#  #ok#
+z 205 0 0
+file	data/easy/Daeasy.txt   # time Mashotsukai 3 batalha do #torneio  "jin"#  #ok#
+next
+scene	data/scenes/cena_9.txt 
+select data/select/9st.txt
+z 180 0 0
+file    data/easy/Eaeasy.txt  # pedras 2 mar dia # #ok#
+z 0 0 0
+file	data/easy/caverna.txt  # caverna #   #ok#
+z 205 0 0
+file	data/easy/Dbeasy.txt   # time Uraotogi 4 batalha do #torneio  "shishiwakamaru"# #ok#
+next
+scene	data/scenes/cena_10.txt
+select data/select/final.txt
+z 0 0 0
+file	data/easy/bonus2.txt  # bonus das arvores #
+z 205 0 0
+file	data/easy/elev2.txt   # elevador descendo # #pau#
+z 180 0 0
+file	data/easy/Fbeasy.txt   # pedras 2 mar noite #
+z 205 0 0
+file	data/easy/Cdeasy.txt   # entrada do estadio 2 # #ok#
+z 205 0 0
+file	data/easy/Gaeasy.txt   # time Toguro Karazu batle #   #ok#
+file	data/easy/Gbeasy.txt   # time Toguro Bui batle #    #ok#
+file	data/easy/Gceasy.txt   # time Toguro Ani Toguro batle #  #ok#
+file	data/easy/Gdeasy.txt   # time Toguro Toguro 80% batle #  #ok#
+next
+scene	data/scenes/cena_11.txt
+select data/select/final2.txt 
+z 205 0 0
+file	data/easy/Haeasy.txt   # Final Toguro 100 batle #  #ok#
+next
+scene	data/scenes/fim.txt
+scene   data/scenes/fest.txt
+scene	data/scenes/ending.txt
+
+#---------------------------- Genkai Aventura ----------------------------#
+
+set GENKAI
+z 0 0 0
+select  data/select/treina.txt 
+file	data/easy/bonus2.txt
+file	data/easy/gtreino.txt
+file	data/easy/temple.txt 
+next
+scene	data/scenes/ending.txt
+
+
+#---------------------------- Training Mode----------------------------#
+
+set	Training_Mode
+select  data/select/treina2.txt  
+z 135 0 0
+file	data/easy/Sespera.txt  # bonus 2 "ringue"   #ok#
+typemp 0
+custfade 100
+musicoverlap 0
+lives   3
+credits 1
+ifcomplete 1
+noshare 1
+
+
+#----------------------------------------------------------------------#
+
+
+
+
+
+
+
+
+
+
+

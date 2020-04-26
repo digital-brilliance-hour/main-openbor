@@ -1,0 +1,42 @@
+name	     Samarie
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+antigravity 100
+flash       flashp
+
+
+anim	follow
+	@cmd	stop
+	loop	0
+	delay	12
+	offset	60 23
+	frame	data/chars/Samari/e8.gif
+	frame	data/chars/Samari/e9.gif
+	@cmd	suicide()
+	frame	data/chars/Samari/e9.gif
+		
+anim	idle
+	followanim	1
+	followcond	1
+	attack	3 6 109 56 12 1 0 0 24 15
+	dropv	1 6 0
+	loop	1
+	delay	3
+	offset	57 25
+	move	25
+	frame	data/chars/Samari/e1.gif
+	offset	59 24
+	frame	data/chars/Samari/e2.gif
+	offset	58 24
+	frame	data/chars/Samari/e3.gif
+	offset	57 25
+	frame	data/chars/Samari/e4.gif
+	offset	59 24
+	frame	data/chars/Samari/e5.gif
+	offset	58 24
+	frame	data/chars/Samari/e6.gif
+		
+#|edited by openBor Stats v 0.51
+		

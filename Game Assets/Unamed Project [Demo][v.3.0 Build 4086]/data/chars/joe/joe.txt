@@ -1,0 +1,127 @@
+name	Joe
+health	100
+speed	8
+type	enemy
+shadow	4
+icon	data/chars/joe/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/joe/idle01.gif	data/chars/joe/alter1.gif
+remap	data/chars/joe/idle01.gif	data/chars/joe/alter2.gif
+remap	data/chars/joe/idle01.gif	data/chars/joe/alter3.gif
+remap	data/chars/joe/idle01.gif	data/chars/joe/alter4.gif
+
+
+anim idle
+	loop	1
+	offset	89 177
+	bbox	73 87 41 88
+	delay	10
+	frame	data/chars/joe/idle01.gif
+	frame	data/chars/joe/idle02.gif
+        delay   12
+	frame	data/chars/joe/idle03.gif
+        delay   10
+	frame	data/chars/joe/idle02.gif
+
+anim walk
+	loop	1
+	offset	89 177
+	bbox	73 87 41 88
+	delay	15
+	frame	data/chars/joe/wk1.gif
+        delay   11
+	frame	data/chars/joe/wk2.gif
+        delay   15
+	frame	data/chars/joe/wk3.gif
+        delay   11
+	frame	data/chars/joe/wk2.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	73 87 41 88
+	offset	89 177
+	frame	data/chars/joe/pain1.gif
+	delay   40
+	frame	data/chars/joe/pain2.gif
+	delay   11
+	frame	data/chars/joe/pain1.gif
+
+	
+
+anim fall
+	loop	0
+	delay	60
+	offset	92 129
+        attack  61 79 28 40 5 1
+	frame	data/chars/joe/fall1.gif
+        offset  89 177
+        delay   20
+	frame	data/chars/joe/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/joe/fall3.gif
+
+
+
+anim rise
+	loop	0
+	offset	89 177
+	delay	10
+	frame	data/chars/joe/fall2.gif
+	frame	data/chars/joe/rise1.gif
+	frame	data/chars/joe/rise2.gif
+	frame	data/chars/joe/idle04.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	9
+	offset	89 177
+	bbox	73 87 41 88
+	frame	data/chars/joe/a101.gif
+	frame	data/chars/joe/a102.gif
+        attack  96 75 63 48 11
+        delay   20
+	frame	data/chars/joe/a104.gif
+        attack  0 0 0 0 0
+        delay   10
+	frame	data/chars/joe/a102.gif
+	frame	data/chars/joe/a101.gif
+
+
+anim attack2
+	range	0 60
+	loop	0
+	delay	9
+	offset	89 177
+	bbox	73 87 41 88
+	frame	data/chars/joe/a101.gif
+	frame	data/chars/joe/a102.gif
+        attack  96 75 63 48 5
+        delay   20
+	frame	data/chars/joe/a104.gif
+        attack  0 0 0 0 0
+        delay   10
+	frame	data/chars/joe/a102.gif
+        attack  95 87 69 55 5
+        delay   20
+	frame	data/chars/joe/a103.gif
+        attack  0 0 0 0 0
+        delay   10
+	frame	data/chars/joe/a102.gif
+        attack  96 75 63 48 5 1
+        delay   20
+	frame	data/chars/joe/a104.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/joe/a102.gif
+	frame	data/chars/joe/a101.gif
+
+
+
+

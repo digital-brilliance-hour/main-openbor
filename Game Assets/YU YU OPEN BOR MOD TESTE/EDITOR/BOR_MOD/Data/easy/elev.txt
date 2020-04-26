@@ -1,0 +1,196 @@
+# Elev
+music		data/music/supertb.bor 1
+notime          1
+settime 0
+
+# Load images
+background	data/bgs/elev/back.gif
+
+
+# Front layer
+
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+
+panel		data/bgs/elev/platform2.gif	none none
+
+
+direction up
+
+
+# a = red sign
+# bcd =window
+# e = light
+# f = door
+# g = light
+# hi = wall left
+# j= blank
+# klm= wall right
+#  no= dark wall
+# pq= door
+# rst= left wall - brick - r wall
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	a
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+;--------------------------------------------------------
+group	1 2
+at	0
+
+spawn	Shermie
+alias	Prissy
+coords	20 180
+health	60
+at	100
+
+spawn	Shermie
+alias	Prissy
+map	1
+coords	10 210
+health	60
+at	0
+
+spawn	Yashiro
+alias	Johnny
+map	2
+coords	30 230
+health	100
+at	0
+
+group	1 1
+at	0
+
+
+#group	1 3
+#at	0
+
+spawn	Shermie
+alias	Prissy
+coords	200 200
+health	60
+at	0
+
+spawn	Ralf
+map	1
+alias	Rolfie
+coords	10 170
+health	70
+at	0
+
+spawn	Ralf
+map	2
+alias	Pete
+coords	20 230
+health	80
+at	0
+
+group	2 3
+at	0
+
+spawn	Yashiro
+#map	2
+coords	100 160
+health	50
+at	0
+
+spawn	Shermie
+map	1
+coords	-60 160
+health	50
+at	0
+
+spawn	Yashiro
+map	1
+coords	180 220
+health	50
+at	0
+
+spawn	Yashiro
+map	2
+coords	180 180
+health	50
+at	0
+
+spawn	Yashiro
+map	1
+coords	-60 200
+health	50
+at	0
+
+group	3 3
+at	0
+
+spawn	k'
+map	1
+coords	100 160
+health	60
+at	0
+
+spawn	Ralf
+map	2
+coords	-60 160
+health	75
+at	0
+
+spawn	Ralf
+map	3
+coords	10 220
+health	75
+at	0
+
+spawn	K'
+coords	10 190
+health	60
+at	0
+
+spawn	Shermie
+map	2
+coords	-60 -160
+health	50
+at	0
+
+

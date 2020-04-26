@@ -1,0 +1,540 @@
+name	       Samari
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+com             d f a freespecial4
+com             d u a freespecial
+com             d d a freespecial3
+com             a2 freespecial2
+com             a3 freespecial5
+com             a4 freespecial6
+com             u u a freespecial7
+com             d f s freespecial8
+
+icon	data/Chars/Samari/icon.gif	
+
+
+
+
+anim	attack1
+	cancel	0 4 0 d f a freespecial4
+	cancel	0 4 0 d u a freespecial
+	cancel	0 4 0 d d a freespecial3
+	cancel	0 4 0 a2 freespecial2
+	cancel	0 4 0 a3 freespecial5
+	cancel	0 4 0 a4 freespecial6
+	cancel	0 4 0 u u a freespecial7
+	cancel	0 4 0 d f s freespecial8
+	bbox	45 12 40 89
+	loop	0
+	delay	6
+	offset	61 101
+	frame	data/Chars/Samari/attack1.gif
+	offset	61 111
+	frame	data/Chars/Samari/attack2.gif
+	attack	81 16 144 84 7 0 0 0 4 15
+	bbox	59 16 40 96
+	frame	data/Chars/Samari/attack3.gif
+	bbox	54 10 39 86
+	offset	61 96
+	frame	data/Chars/Samari/attack4.gif
+	frame	data/Chars/Samari/attack5.gif
+		
+anim	attack2
+	cancel	0 4 0 d f a freespecial4
+	cancel	0 4 0 d u a freespecial
+	cancel	0 4 0 d d a freespecial3
+	cancel	0 4 0 a2 freespecial2
+	cancel	0 4 0 a3 freespecial5
+	cancel	0 4 0 a4 freespecial6
+	cancel	0 4 0 u u a freespecial7
+	cancel	0 4 0 d f s freespecial8
+	bbox	68 16 37 95
+	loop	0
+	delay	6
+	offset	75 114
+	frame	data/Chars/Samari/bttack1.gif
+	attack	78 19 129 122 7 0 1 0 4 15
+	offset	62 134
+	bbox	47 58 54 77
+	frame	data/Chars/Samari/bttack2.gif
+	bbox	43 14 56 79
+	offset	62 95
+	frame	data/Chars/Samari/bttack3.gif
+	offset	62 93
+	frame	data/Chars/Samari/bttack4.gif
+	frame	data/Chars/Samari/bttack5.gif
+		
+anim	attack3
+	cancel	0 6 0 d f a freespecial4
+	cancel	0 6 0 d u a freespecial
+	cancel	0 6 0 d d a freespecial3
+	cancel	0 6 0 a2 freespecial2
+	cancel	0 6 0 a3 freespecial5
+	cancel	0 6 0 a4 freespecial6
+	cancel	0 6 0 u u a freespecial7
+	cancel	0 6 0 d f s freespecial8
+	bbox	43 14 37 80
+	loop	0
+	delay	6
+	offset	50 96
+	frame	data/Chars/Samari/cttack1.gif
+	offset	56 96
+	frame	data/Chars/Samari/cttack2.gif
+	attack	37 5 178 156 7 0 0 0 4 15
+	bbox	40 80 55 99
+	offset	59 180
+	frame	data/Chars/Samari/cttack3.gif
+	offset	59 177
+	frame	data/Chars/Samari/cttack4.gif
+	offset	59 178
+	frame	data/Chars/Samari/cttack5.gif
+	offset	59 180
+	frame	data/Chars/Samari/cttack6.gif
+	offset	59 176
+	frame	data/Chars/Samari/cttack7.gif
+		
+anim	attack4
+	cancel	0 3 0 d f a freespecial4
+	cancel	0 3 0 d u a freespecial
+	cancel	0 3 0 d d a freespecial3
+	cancel	0 3 0 a2 freespecial2
+	cancel	0 3 0 a3 freespecial5
+	cancel	0 3 0 a4 freespecial6
+	cancel	0 3 0 u u a freespecial7
+	cancel	0 3 0 d f s freespecial8
+	bbox	15 14 71 89
+	loop	0
+	delay	6
+	offset	51 107
+	frame	data/Chars/Samari/dttack1.gif
+	bbox	38 9 68 83
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	attack	105 7 150 36 12 1 0 0 4 15
+	offset	63 103
+	bbox	37 10 72 91
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack4.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	59 74
+	frame	data/Chars/Samari/fall1.gif
+	offset	88 29
+	frame	data/Chars/Samari/fall2.gif
+		
+anim	freespecial
+	cancel	0 3 0 d f a freespecial8
+	attack	14 60 99 83 12 1 0 0 24 15
+	dropv	4 2 0
+	bbox	19 23 76 56
+	@cmd	leaper 5 3 0
+	loop	0
+	delay	6
+	offset	58 141
+	frame	data/Chars/Samari/anew1.gif
+	frame	data/Chars/Samari/anew1.gif
+	frame	data/Chars/Samari/anew1.gif
+	frame	data/Chars/Samari/anew1.gif
+		
+anim	freespecial2
+	cancel	0 4 0 d f a freespecial8
+	hitflash	samarib
+	bbox	51 6 52 108
+	loop	0
+	delay	6
+	offset	69 114
+	frame	data/Chars/Samari/bttack1.gif
+	bbox	47 44 61 86
+	attack	74 5 137 139 12 1 0 0 24 15
+	offset	60 135
+	frame	data/Chars/Samari/bttack2.gif
+	bbox	41 18 57 80
+	offset	60 96
+	frame	data/Chars/Samari/bttack3.gif
+	offset	60 94
+	frame	data/Chars/Samari/bttack4.gif
+	frame	data/Chars/Samari/bttack5.gif
+		
+anim	freespecial3
+	cancel	0 11 0 d f a freespecial8
+	bbox	53 23 43 105
+	attack	122 2 143 74 12 1 0 0 24 15
+	dropv	-1 2 0
+	loop	0
+	delay	6
+	offset	61 124
+	frame	data/Chars/Samari/bnew1.gif
+	attack	0
+	offset	62 125
+	frame	data/Chars/Samari/bnew2.gif
+	attack	149 1 138 94 12 1 0 0 24 15
+	dropv	1 2 0
+	offset	62 134
+	frame	data/Chars/Samari/bnew3.gif
+	attack	0
+	offset	62 141
+	frame	data/Chars/Samari/cnew4.gif
+	attack	136 3 158 123 12 1 0 0 24 15
+	dropv	-1 2 0
+	offset	63 145
+	frame	data/Chars/Samari/cnew5.gif
+	attack	0
+	offset	63 148
+	frame	data/Chars/Samari/cnew6.gif
+	attack	140 5 140 83 12 1 0 0 24 15
+	dropv	1 2 0
+	offset	65 105
+	frame	data/Chars/Samari/cnew7.gif
+	attack	0
+	bbox	59 5 38 93
+	offset	65 96
+	frame	data/Chars/Samari/cnew8.gif
+	frame	data/Chars/Samari/cnew9.gif
+	frame	data/Chars/Samari/cnew10.gif
+	attack	145 5 148 81 12 1 0 0 24 15
+	dropv	1.5 5 0
+	offset	65 93
+	frame	data/Chars/Samari/cnew11.gif
+	attack	0
+	offset	65 101
+	frame	data/Chars/Samari/cnew12.gif
+		
+anim	freespecial4
+	cancel	0 3 0 d f a freespecial8
+	fastattack	1
+	bbox	15 14 71 89
+	loop	0
+	delay	6
+	offset	51 107
+	frame	data/Chars/Samari/dttack1.gif
+	bbox	38 9 68 83
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	bbox	0
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack4.gif
+		
+anim	freespecial5
+	cancel	0 4 0 d f a freespecial8
+	hitflash	samaric
+	bbox	51 6 52 108
+	loop	0
+	delay	6
+	offset	69 114
+	frame	data/Chars/Samari/bttack1.gif
+	bbox	47 44 61 86
+	attack	74 5 137 139 12 1 0 0 24 15
+	offset	60 135
+	frame	data/Chars/Samari/bttack2.gif
+	bbox	41 18 57 80
+	offset	60 96
+	frame	data/Chars/Samari/bttack3.gif
+	offset	60 94
+	frame	data/Chars/Samari/bttack4.gif
+	frame	data/Chars/Samari/bttack5.gif
+		
+anim	freespecial6
+	cancel	0 4 0 d f a freespecial8
+	hitflash	samarid
+	bbox	51 6 52 108
+	loop	0
+	delay	6
+	offset	69 114
+	frame	data/Chars/Samari/bttack1.gif
+	bbox	47 44 61 86
+	attack	74 5 137 139 12 1 0 0 24 15
+	offset	60 135
+	frame	data/Chars/Samari/bttack2.gif
+	bbox	41 18 57 80
+	offset	60 96
+	frame	data/Chars/Samari/bttack3.gif
+	offset	60 94
+	frame	data/Chars/Samari/bttack4.gif
+	frame	data/Chars/Samari/bttack5.gif
+		
+anim	freespecial7
+	cancel	0 7 0 d f a freespecial8
+	fastattack	1
+	bbox	69 11 33 77
+	loop	0
+	delay	6
+	offset	90 90
+	frame	data/Chars/Samari/ettack1.gif
+	offset	90 82
+	frame	data/Chars/Samari/ettack2.gif
+	attack	55 3 194 97 12 1 0 0 14 15
+	dropv	2 0 0
+	offset	86 98
+	frame	data/Chars/Samari/ettack3.gif
+	attack	0
+	offset	86 75
+	frame	data/Chars/Samari/ettack4.gif
+	bbox	31 11 50 67
+	offset	55 86
+	frame	data/Chars/Samari/fttack1.gif
+	offset	55 81
+	frame	data/Chars/Samari/fttack2.gif
+	attack	75 1 119 106 12 1 0 0 14 15
+	dropv	2 4 0
+	bbox	59 43 49 74
+	offset	74 125
+	frame	data/Chars/Samari/fttack3.gif
+	attack	0
+	offset	73 122
+	frame	data/Chars/Samari/fttack4.gif
+		
+anim	freespecial8
+	fastattack	1
+	loop	0
+	delay	6
+	offset	51 107
+	@cmd	spawn01 "super" 0 73 0
+	frame	data/Chars/Samari/dttack1.gif
+	@cmd	spawn01 "flash3" 0 0 -1
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack2.gif
+	offset	63 103
+	@cmd	spawn01 "samarie" 190 74 0
+	frame	data/Chars/Samari/dttack3.gif
+	offset	63 99
+	frame	data/Chars/Samari/dttack4.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	66 84
+	frame	data/Chars/Samari/get.gif
+		
+anim	idle
+	bbox	15 3 78 97
+	loop	1
+	delay	6
+	offset	56 96
+	frame	data/Chars/Samari/idle1.gif
+	offset	57 98
+	frame	data/Chars/Samari/idle2.gif
+	offset	58 100
+	frame	data/Chars/Samari/idle3.gif
+	offset	59 102
+	frame	data/Chars/Samari/idle4.gif
+	offset	60 102
+	frame	data/Chars/Samari/idle5.gif
+	offset	61 102
+	frame	data/Chars/Samari/idle6.gif
+	frame	data/Chars/Samari/idle7.gif
+	offset	61 101
+	frame	data/Chars/Samari/idle8.gif
+	offset	59 98
+	frame	data/Chars/Samari/idle9.gif
+		
+anim	jump
+	loop	0
+	delay	6
+	offset	39 157
+	frame	data/Chars/Samari/jump1.gif
+	offset	39 133
+	frame	data/Chars/Samari/jump2.gif
+	offset	53 122
+	frame	data/Chars/Samari/jump3.gif
+	offset	53 126
+	frame	data/Chars/Samari/jump4.gif
+	offset	53 132
+	frame	data/Chars/Samari/jump5.gif
+	offset	60 134
+	frame	data/Chars/Samari/jump6.gif
+	offset	54 130
+	frame	data/Chars/Samari/jump7.gif
+		
+anim	jumpattack
+	bbox	62 16 29 85
+	loop	0
+	delay	6
+	offset	72 100
+	frame	data/Chars/Samari/ja1.gif
+	offset	47 95
+	frame	data/Chars/Samari/ja2.gif
+	offset	44 88
+	frame	data/Chars/Samari/ja3.gif
+	attack	67 10 138 131 12 1 0 0 24 15
+	frame	data/Chars/Samari/ja4.gif
+	offset	50 61
+	frame	data/Chars/Samari/ja5.gif
+	frame	data/Chars/Samari/ja6.gif
+	frame	data/Chars/Samari/ja7.gif
+	frame	data/Chars/Samari/ja8.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	66 84
+	frame	data/Chars/Samari/get.gif
+		
+anim	pain
+	bbox	16 9 97 96
+	loop	0
+	delay	6
+	offset	66 103
+	frame	data/Chars/Samari/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	66 84
+	frame	data/Chars/Samari/get.gif
+		
+anim	run
+	bbox	86 4 76 93
+	loop	1
+	delay	6
+	offset	97 111
+	frame	data/Chars/Samari/run1.gif
+	offset	101 118
+	frame	data/Chars/Samari/run2.gif
+	offset	152 104
+	frame	data/Chars/Samari/run3.gif
+	offset	112 108
+	frame	data/Chars/Samari/run4.gif
+	bbox	126 10 63 83
+	offset	138 99
+	frame	data/Chars/Samari/run5.gif
+	bbox	159 3 67 97
+	offset	160 102
+	frame	data/Chars/Samari/run6.gif
+		
+anim	runattack
+	cancel	0 11 0 d f a freespecial8
+	fastattack	1
+	bbox	53 23 43 105
+	attack	122 2 143 74 12 1 0 0 24 15
+	dropv	-1 2 0
+	loop	0
+	delay	6
+	offset	61 124
+	frame	data/Chars/Samari/bnew1.gif
+	attack	0
+	offset	62 125
+	frame	data/Chars/Samari/bnew2.gif
+	attack	149 1 138 94 12 1 0 0 24 15
+	dropv	1 2 0
+	offset	62 134
+	frame	data/Chars/Samari/bnew3.gif
+	attack	0
+	offset	62 141
+	frame	data/Chars/Samari/cnew4.gif
+	attack	136 3 158 123 12 1 0 0 24 15
+	dropv	-1 2 0
+	offset	63 145
+	frame	data/Chars/Samari/cnew5.gif
+	attack	0
+	offset	63 148
+	frame	data/Chars/Samari/cnew6.gif
+	attack	140 5 140 83 12 1 0 0 24 15
+	dropv	1 2 0
+	offset	65 105
+	frame	data/Chars/Samari/cnew7.gif
+	attack	0
+	bbox	59 5 38 93
+	offset	65 96
+	frame	data/Chars/Samari/cnew8.gif
+	frame	data/Chars/Samari/cnew9.gif
+	frame	data/Chars/Samari/cnew10.gif
+	attack	145 5 148 81 12 1 0 0 24 15
+	dropv	1.5 5 0
+	offset	65 93
+	frame	data/Chars/Samari/cnew11.gif
+	attack	0
+	offset	65 101
+	frame	data/Chars/Samari/cnew12.gif
+		
+anim	runjumpattack
+	bbox	35 15 69 70
+	attack	78 88 0 0 0 0 1 0 0 0
+	loop	0
+	delay	6
+	offset	78 89
+	frame	data/Chars/Samari/rja1.gif
+	attack	68 28 115 72 12 1 0 0 24 15
+	frame	data/Chars/Samari/rja2.gif
+		
+anim	walk
+	bbox	39 2 55 93
+	loop	1
+	delay	6
+	offset	47 92
+	frame	data/Chars/Samari/walk1.gif
+	offset	40 99
+	frame	data/Chars/Samari/walk2.gif
+	offset	27 109
+	frame	data/Chars/Samari/walk3.gif
+	offset	21 110
+	frame	data/Chars/Samari/walk4.gif
+	offset	21 108
+	frame	data/Chars/Samari/walk5.gif
+	offset	44 99
+	frame	data/Chars/Samari/walk6.gif
+	offset	44 94
+	frame	data/Chars/Samari/walk7.gif
+	offset	44 100
+	frame	data/Chars/Samari/walk8.gif
+	offset	27 105
+	frame	data/Chars/Samari/walk9.gif
+	frame	data/Chars/Samari/walk10.gif
+	frame	data/Chars/Samari/walk11.gif
+	bbox	22 5 54 89
+	offset	27 102
+	frame	data/Chars/Samari/walk12.gif
+		
+#|edited by openBor Stats v 0.51
+		

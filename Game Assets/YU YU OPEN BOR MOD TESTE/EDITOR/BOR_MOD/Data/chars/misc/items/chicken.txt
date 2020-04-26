@@ -1,0 +1,14 @@
+name    	 Chicken
+health  	 1
+type     	 item
+gfxshadow        1
+facing           1
+icon    	 data/chars/misc/items/smeticon.gif
+didhitscript     data/scripts/food50.c
+
+
+anim idle
+	delay	10
+	offset	12 14
+	bbox	0 0 27 18
+	frame	data/chars/misc/items/smeat.gif

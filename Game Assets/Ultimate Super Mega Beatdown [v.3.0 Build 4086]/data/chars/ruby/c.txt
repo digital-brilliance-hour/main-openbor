@@ -1,0 +1,25 @@
+name	     Rubybarrel
+type	     none
+shadow	     0
+candamage   enemy obstacle
+lifespan        2
+flash           flashp
+
+
+anim	spawn
+	blast	0 0 94 101 15 0 0 45
+	loop	1
+	delay	3
+	offset	51 102
+	move	25
+	hitfx	data/sounds/bukk.wav
+	frame	data/chars/Ruby/c1.gif
+	blast	2 2 92 99 15 0 0 45
+	frame	data/chars/Ruby/c2.gif
+	blast	2 3 94 97 15 0 0 45
+	frame	data/chars/Ruby/c3.gif
+	blast	2 1 94 100 15 0 0 45
+	frame	data/chars/Ruby/c4.gif
+		
+#|edited by openBor Stats v 0.51
+		

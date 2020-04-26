@@ -1,0 +1,53 @@
+name	     Blackhearta
+type      npc
+shadow	     0
+aimove       Chase
+hostile      enemy
+candamage   enemy obstacle
+lifespan        6
+
+
+anim	idle
+	attack	10 8 81 92 12 1 0 0 24 15
+	loop	1
+	delay	3
+	offset	42 105
+	frame	data/chars/Blackheart/a1.gif
+	offset	46 101
+	frame	data/chars/Blackheart/a2.gif
+	offset	38 93
+	frame	data/chars/Blackheart/a3.gif
+	offset	25 101
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/a4.gif
+		
+anim	spawn
+	attack	10 8 81 92 12 1 0 0 24 15
+	loop	0
+	delay	3
+	offset	42 105
+	frame	data/chars/Blackheart/a1.gif
+	offset	46 101
+	frame	data/chars/Blackheart/a2.gif
+	offset	38 93
+	frame	data/chars/Blackheart/a3.gif
+	offset	25 101
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/a4.gif
+		
+anim	walk
+	attack	10 8 81 92 12 1 0 0 24 15
+	loop	0
+	delay	3
+	offset	42 105
+	frame	data/chars/Blackheart/a1.gif
+	offset	46 101
+	frame	data/chars/Blackheart/a2.gif
+	offset	38 93
+	frame	data/chars/Blackheart/a3.gif
+	offset	25 101
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/a4.gif
+		
+#|edited by openBor Stats v 0.51
+		

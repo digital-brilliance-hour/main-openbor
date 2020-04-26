@@ -1,0 +1,24 @@
+name	CAUT
+type    obstacle
+health  1
+diesound  data/sounds/phone.wav
+nolife  1
+flash   flash
+noatflash 1
+#subtype    flydie
+
+anim idle
+	loop	0
+	delay	5
+	offset	25 97
+	bbox    16 30 30 70
+        platform  -5 -5 60 60 30 80
+	frame	data/chars/misc/caut.gif
+	
+anim fall
+	loop	0
+	delay	30 
+	offset	25 97
+	frame	data/chars/misc/caut.gif
+
+

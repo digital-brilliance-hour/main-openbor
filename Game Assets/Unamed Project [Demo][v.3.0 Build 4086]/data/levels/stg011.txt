@@ -1,0 +1,263 @@
+music           data/music/stg-01.bor
+bossmusic	data/music/subboss2.bor
+background	Data\Bgs\stg011/backg.gif
+panel		Data\Bgs\stg011/panel.gif
+order           a
+direction       right
+
+#-------1
+
+spawn   	ramndsp
+alias		Ramen_Display
+flip   		1
+item		Hotdog
+itemalias	Yakisoba_Dog
+coords  	350 165
+at      	0 
+
+spawn   sign1
+alias	Sign
+flip    1
+coords  460 165
+at      0 
+
+wait
+at	150
+
+group	3 3
+at	150
+
+spawn   joe
+alias   Takeshi
+coords  -30 210
+at      150
+
+spawn   joe
+alias   Takuya
+map	1
+coords  380 210
+at      150
+
+spawn   joe
+alias   Kurosu
+map	2
+coords  380 190
+at      150
+
+spawn   joe
+alias   Makoto
+map	3
+coords  380 210
+at      150
+
+spawn   joe
+alias   Bairei
+map	4
+coords  -30 210
+at      150
+
+#-------2
+
+spawn   sushisd
+alias	Sushi_Display
+flip    1
+coords  474 165
+at      160
+
+wait
+at	410
+
+group	3 3
+at	400
+
+spawn   joe
+alias   Rintaro
+map	4
+coords  -30 210
+at      400
+
+spawn   joe
+alias   Junichiro
+coords  380 210
+at      400
+
+spawn   joe
+alias   Subaru
+map	2
+coords  -30 190
+at      400
+
+spawn   joe
+alias   Noboru
+map	3
+coords  380 210
+at      400
+
+spawn   joe
+alias   Narahiko
+coords  -30 210
+at      400
+
+#-------3
+
+spawn   	Bcase
+alias		Beer_Case
+item		PowerD
+itemalias	Power_Drink
+coords  	335 165
+at      	475
+
+spawn   	Sign2
+alias		Sign
+flip		1
+coords  	586 162
+at      	475
+
+wait
+at	765
+
+group	3 3
+at	490
+
+spawn   joe
+alias   Misao
+map	4
+coords  380 210
+at      750
+
+spawn   joe
+alias   Terumoto
+map	2
+coords  -30 190
+at      750
+
+spawn   joe
+alias   Terao
+coords  -30 210
+at      750
+
+spawn   joe
+alias   Buncho
+map	1
+coords  380 210
+at      750
+
+spawn   joe
+alias   Hidehira
+map	3
+coords  380 180
+at      750
+
+spawn   joe
+alias   Ryobe
+map	4
+coords  -30 190
+at      750
+
+spawn   joe
+alias   Yohachi
+coords  380 210
+at      750
+
+#-------Final
+
+spawn   drum
+alias	Barrel
+2pitem	Hotdog
+coords  375 165
+at      770
+
+spawn   fence
+alias	Barricade
+flip	1
+coords  358 175
+at      770
+
+spawn   fence
+alias	Barricade
+flip	1
+coords  358 200
+at      770 
+
+spawn   drum
+alias	Barrel
+item	money
+coords  375 229
+at      770 
+
+spawn	k'
+alias	Kenji
+map	3
+boss	1
+health	450
+coords	350 190
+at	1000
+
+wait
+at	1000
+
+group	4 4
+at	1000
+
+spawn   joe
+alias   Shihei
+map	4
+coords  -30 210
+at      1000
+
+spawn   joe
+alias   Yasuhiko
+coords  -30 190
+at      1000
+
+spawn   joe
+alias   Eisaku
+map	1
+coords  350 210
+at      1000
+
+spawn   joe
+alias   Shojiro
+map	3
+coords  350 210
+at      1000
+
+spawn   joe
+alias   Tabito
+map	1
+coords  -30 210
+at      1000
+
+spawn   joe
+alias   Norinaga
+coords  350 195
+at      1000
+
+spawn   joe
+alias   Torajiro
+map	2
+coords  -30 190
+at      1000
+
+spawn   joe
+alias   Razan
+map	4
+coords  350 210
+at      1000
+
+spawn   joe
+alias   Seibei
+map	3
+coords  350 210
+at      1000
+
+spawn   joe
+alias   Noriyori
+map	1
+coords  -30 210
+at      1000
+
+spawn   joe
+alias   Ryutaro
+coords  350 195
+at      1000

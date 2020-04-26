@@ -1,0 +1,489 @@
+name	       Jin
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash	qflash2
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script          data/scripts2/toad.c
+jugglecost	15
+
+com             A2 freespecial4
+com             A3 freespecial3
+com             A4 freespecial5
+com             D F A freespecial
+com             D U A freespecial2
+
+
+icon           data/chars/Jin/icon.gif
+
+
+
+
+
+
+
+anim	attack1
+	bbox	48 3 24 75
+	loop	0
+	delay	6
+	offset	60 80
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Jin/attack1.gif
+	offset	60 78
+	frame	data/Chars/Jin/attack2.gif
+	attack	59 7 85 23 7
+	offset	60 79
+	frame	data/Chars/Jin/attack2.gif
+	offset	60 78
+	frame	data/Chars/Jin/attack4.gif
+		
+anim	attack2
+	bbox	21 12 53 36
+	loop	0
+	delay	5
+	offset	72 77
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Jin/bttack1.gif
+	offset	72 68
+	frame	data/Chars/Jin/bttack2.gif
+	bbox	69 4 46 36
+	offset	84 68
+	frame	data/Chars/Jin/bttack3.gif
+	attack	68 5 74 25 7
+	bbox	42 3 34 64
+	offset	50 69
+	frame	data/Chars/Jin/bttack4.gif
+		
+anim	attack3
+	bbox	10 3 30 75
+	loop	0
+	delay	5
+	offset	15 85
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Jin/cttack1.gif
+	offset	21 90
+	frame	data/Chars/Jin/cttack2.gif
+	attack	44 23 100 36 7
+	bbox	26 4 34 58
+	frame	data/Chars/Jin/cttack3.gif
+	offset	50 101
+	frame	data/Chars/Jin/cttack4.gif
+		
+anim	attack4
+	@cmd	leaper 1 4 0
+	bbox	13 5 43 59
+	loop	0
+	delay	5
+	offset	48 69
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/dttack1.gif
+	offset	48 64
+	frame	data/Chars/Jin/dttack2.gif
+	bbox	27 37 45 60
+	offset	48 105
+	frame	data/Chars/Jin/dttack3.gif
+	blast	57 8 115 50 16 0 0 35
+	bbox	16 10 64 47
+	offset	48 63
+	frame	data/Chars/Jin/dttack4.gif
+	frame	data/Chars/Jin/dttack5.gif
+	offset	48 77
+	frame	data/Chars/Jin/dttack6.gif
+		
+anim	attack5
+	@cmd	leaper 1 4 0
+	bbox	13 5 43 59
+	loop	0
+	delay	5
+	offset	48 69
+	hitflash	poww
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/dttack1.gif
+	offset	48 64
+	frame	data/Chars/Jin/dttack2.gif
+	bbox	27 37 45 60
+	offset	48 105
+	frame	data/Chars/Jin/dttack3.gif
+	blast	57 8 115 50 16 0 0 35
+	bbox	16 10 64 47
+	offset	48 63
+	frame	data/Chars/Jin/dttack4.gif
+	frame	data/Chars/Jin/dttack5.gif
+	offset	48 77
+	frame	data/Chars/Jin/dttack6.gif
+		
+anim	fall
+	loop	0
+	offset	68 97
+	delay	25
+	frame	data/Chars/Jin/fall1.gif
+	offset	61 75
+	frame	data/Chars/Jin/fall2.gif
+	offset	75 20
+	frame	data/Chars/Jin/fall3.gif
+		
+anim	freespecial
+	move	13
+	blast	76 9 143 86 16 0 0 35
+	dropv	4 3 0
+	bbox	39 32 55 26
+	loop	0
+	offset	147 85
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/anew1.gif
+	blast	85 18 136 74 16 0 0 35
+	dropv	4 3 0
+	offset	151 85
+	frame	data/Chars/Jin/anew2.gif
+	blast	79 20 138 78 16 0 0 35
+	dropv	4 3 0
+	offset	153 89
+	frame	data/Chars/Jin/anew3.gif
+	blast	83 7 137 80 16 0 0 35
+	dropv	4 3 0
+	offset	153 77
+	frame	data/Chars/Jin/anew4.gif
+	blast	76 9 143 86 16 0 0 35
+	dropv	4 3 0
+	bbox	39 32 55 26
+	loop	0
+	offset	147 85
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/anew1.gif
+	blast	85 18 136 74 16 0 0 35
+	dropv	4 3 0
+	offset	151 85
+	frame	data/Chars/Jin/anew2.gif
+	blast	79 20 138 78 16 0 0 35
+	dropv	4 3 0
+	offset	153 89
+	frame	data/Chars/Jin/anew3.gif
+	blast	83 7 137 80 16 0 0 35
+	dropv	4 3 0
+	offset	153 77
+	frame	data/Chars/Jin/anew4.gif
+		
+anim	freespecial2
+	move	8
+	blast	48 36 110 104 16 0 0 45
+	dropv	4 2 0
+	loop	0
+	offset	141 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/bnew1.gif
+	blast	65 64 110 94 16 0 0 45
+	dropv	4 2 0
+	offset	158 153
+	frame	data/Chars/Jin/bnew2.gif
+	blast	51 40 115 101 16 0 0 45
+	dropv	4 2 0
+	offset	146 136
+	frame	data/Chars/Jin/bnew3.gif
+	blast	68 51 110 101 16 0 0 45
+	dropv	4 2 0
+	offset	161 148
+	frame	data/Chars/Jin/bnew4.gif
+	blast	48 36 110 104 16 0 0 45
+	dropv	4 2 0
+	loop	0
+	offset	141 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/bnew1.gif
+	blast	65 64 110 94 16 0 0 45
+	dropv	4 2 0
+	offset	158 153
+	frame	data/Chars/Jin/bnew2.gif
+	blast	51 40 115 101 16 0 0 45
+	dropv	4 2 0
+	offset	146 136
+	frame	data/Chars/Jin/bnew3.gif
+	blast	68 51 110 101 16 0 0 45
+	dropv	4 2 0
+	offset	161 148
+	frame	data/Chars/Jin/bnew4.gif
+	blast	48 36 110 104 16 0 0 45
+	dropv	4 2 0
+	loop	0
+	offset	141 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/bnew1.gif
+	blast	65 64 110 94 16 0 0 45
+	dropv	4 2 0
+	offset	158 153
+	frame	data/Chars/Jin/bnew2.gif
+	blast	51 40 115 101 16 0 0 45
+	dropv	4 2 0
+	offset	146 136
+	frame	data/Chars/Jin/bnew3.gif
+	blast	68 51 110 101 16 0 0 45
+	dropv	4 2 0
+	offset	161 148
+	frame	data/Chars/Jin/bnew4.gif
+		
+anim	freespecial3
+	loop	0
+	offset	56 75
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/cnew1.gif
+	frame	data/Chars/Jin/cnew2.gif
+	frame	data/Chars/Jin/cnew3.gif
+	offset	56 70
+	delay	2
+	@cmd	spawn01 "jina" 0 0 0
+	frame	data/Chars/Jin/cnew4.gif
+		
+anim	freespecial4
+	bbox	51 10 21 69
+	loop	0
+	delay	6
+	offset	55 80
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Jin/attack1.gif
+	offset	55 78
+	frame	data/Chars/Jin/attack2.gif
+	@cmd	spawn01 "jinb" 14 45 0
+	frame	data/Chars/Jin/attack3.gif
+	frame	data/Chars/Jin/attack4.gif
+		
+anim	freespecial5
+	spawnframe	1 0 0 0 1
+	subentity	jind
+	loop	0
+	offset	56 75
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/cnew1.gif
+	frame	data/Chars/Jin/cnew2.gif
+	frame	data/Chars/Jin/cnew3.gif
+	offset	56 70
+	frame	data/Chars/Jin/cnew4.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	45 56
+	frame	data/Chars/Jin/get.gif
+		
+anim	idle
+	bbox	20 7 52 74
+	loop	1
+	delay	6
+	offset	44 82
+	frame	data/Chars/Jin/idle1.gif
+	offset	44 83
+	frame	data/Chars/Jin/idle2.gif
+	offset	44 85
+	frame	data/Chars/Jin/idle3.gif
+	offset	44 87
+	frame	data/Chars/Jin/idle4.gif
+	offset	44 88
+	frame	data/Chars/Jin/idle5.gif
+	offset	44 89
+	frame	data/Chars/Jin/idle6.gif
+	offset	44 87
+	frame	data/Chars/Jin/idle7.gif
+	offset	44 84
+	frame	data/Chars/Jin/idle8.gif
+	offset	44 82
+	frame	data/Chars/Jin/idle9.gif
+	frame	data/Chars/Jin/idle10.gif
+	offset	44 79
+	frame	data/Chars/Jin/idle11.gif
+	frame	data/Chars/Jin/idle12.gif
+	offset	44 78
+	frame	data/Chars/Jin/idle13.gif
+	offset	44 77
+	frame	data/Chars/Jin/idle14.gif
+	offset	44 82
+	frame	data/Chars/Jin/idle15.gif
+		
+anim	jump
+	bbox	7 4 45 92
+	loop	0
+	offset	27 99
+	delay	6
+	frame	data/Chars/Jin/jump1.gif
+	bbox	3 4 40 63
+	offset	16 69
+	frame	data/Chars/Jin/jump2.gif
+	offset	11 60
+	frame	data/Chars/Jin/jump3.gif
+	frame	data/Chars/Jin/jump4.gif
+	bbox	11 6 44 68
+	offset	27 69
+	frame	data/Chars/Jin/jump5.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	45 56
+	frame	data/Chars/Jin/get.gif
+		
+anim	pain
+	bbox	55 13 79 76
+	loop	0
+	offset	106 89
+	delay	6
+	frame	data/chars/Jin/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	45 56
+	frame	data/Chars/Jin/get.gif
+		
+anim	run
+	bbox	36 5 40 79
+	loop	1
+	delay	3
+	offset	44 87
+	frame	data/Chars/Jin/walk1.gif
+	offset	30 93
+	frame	data/Chars/Jin/walk2.gif
+	bbox	12 8 36 82
+	offset	12 94
+	frame	data/Chars/Jin/walk3.gif
+	frame	data/Chars/Jin/walk4.gif
+	bbox	28 5 42 84
+	offset	42 90
+	frame	data/Chars/Jin/walk5.gif
+	frame	data/Chars/Jin/walk6.gif
+	frame	data/Chars/Jin/walk7.gif
+	offset	42 92
+	frame	data/Chars/Jin/walk8.gif
+	offset	42 95
+	frame	data/Chars/Jin/walk9.gif
+	bbox	10 4 35 96
+	offset	12 98
+	frame	data/Chars/Jin/walk10.gif
+	frame	data/Chars/Jin/walk11.gif
+	bbox	19 4 50 92
+	offset	46 92
+	frame	data/Chars/Jin/walk12.gif
+	offset	46 89
+	frame	data/Chars/Jin/walk13.gif
+	offset	46 88
+	frame	data/Chars/Jin/walk14.gif
+		
+anim	runattack
+	move	8
+	blast	48 36 110 104 16 0 0 45
+	dropv	4 2 0
+	loop	0
+	offset	141 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/bnew1.gif
+	blast	65 64 110 94 16 0 0 45
+	dropv	4 2 0
+	offset	158 153
+	frame	data/Chars/Jin/bnew2.gif
+	blast	51 40 115 101 16 0 0 45
+	dropv	4 2 0
+	offset	146 136
+	frame	data/Chars/Jin/bnew3.gif
+	blast	68 51 110 101 16 0 0 45
+	dropv	4 2 0
+	offset	161 148
+	frame	data/Chars/Jin/bnew4.gif
+	blast	48 36 110 104 16 0 0 45
+	dropv	4 2 0
+	loop	0
+	offset	141 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/bnew1.gif
+	blast	65 64 110 94 16 0 0 45
+	dropv	4 2 0
+	offset	158 153
+	frame	data/Chars/Jin/bnew2.gif
+	blast	51 40 115 101 16 0 0 45
+	dropv	4 2 0
+	offset	146 136
+	frame	data/Chars/Jin/bnew3.gif
+	blast	68 51 110 101 16 0 0 45
+	dropv	4 2 0
+	offset	161 148
+	frame	data/Chars/Jin/bnew4.gif
+		
+anim	runjumpattack
+	bbox	17 7 40 60
+	loop	0
+	offset	47 73
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Jin/rja1.gif
+	blast	32 31 102 49 8
+	frame	data/Chars/Jin/rja2.gif
+		
+anim	select
+	loop	0
+	offset	33 120
+	delay	6
+	frame	data/Chars/Jin/sel1.gif
+	offset	33 122
+	frame	data/Chars/Jin/sel2.gif
+	offset	33 152
+	frame	data/Chars/Jin/sel3.gif
+	frame	data/Chars/Jin/sel4.gif
+	offset	33 151
+	frame	data/Chars/Jin/sel5.gif
+		
+anim	waiting
+	loop	0
+	offset	34 111
+	delay	6
+	frame	data/Chars/Jin/w1.gif
+		
+anim	walk
+	bbox	36 5 40 79
+	loop	1
+	delay	6
+	offset	44 87
+	frame	data/Chars/Jin/walk1.gif
+	offset	30 93
+	frame	data/Chars/Jin/walk2.gif
+	bbox	12 8 36 82
+	offset	12 94
+	frame	data/Chars/Jin/walk3.gif
+	frame	data/Chars/Jin/walk4.gif
+	bbox	28 5 42 84
+	offset	42 90
+	frame	data/Chars/Jin/walk5.gif
+	frame	data/Chars/Jin/walk6.gif
+	frame	data/Chars/Jin/walk7.gif
+	offset	42 92
+	frame	data/Chars/Jin/walk8.gif
+	offset	42 95
+	frame	data/Chars/Jin/walk9.gif
+	bbox	10 4 35 96
+	offset	12 98
+	frame	data/Chars/Jin/walk10.gif
+	frame	data/Chars/Jin/walk11.gif
+	bbox	19 4 50 92
+	offset	46 92
+	frame	data/Chars/Jin/walk12.gif
+	offset	46 89
+	frame	data/Chars/Jin/walk13.gif
+	offset	46 88
+	frame	data/Chars/Jin/walk14.gif
+		
+#|edited by openBor Stats v 0.50
+		

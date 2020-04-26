@@ -1,0 +1,435 @@
+name	       SonSon
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+icon	data/Chars/SonSon/icon.gif
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/attack1.gif
+	frame	data/Chars/SonSon/attack2.gif
+	frame	data/Chars/SonSon/attack3.gif
+	frame	data/Chars/SonSon/attack4.gif
+	frame	data/Chars/SonSon/attack5.gif
+	frame	data/Chars/SonSon/attack6.gif
+	frame	data/Chars/SonSon/attack7.gif
+	frame	data/Chars/SonSon/attack8.gif
+	frame	data/Chars/SonSon/attack9.gif
+	frame	data/Chars/SonSon/attack10.gif
+	frame	data/Chars/SonSon/attack11.gif
+	frame	data/Chars/SonSon/attack12.gif
+		
+anim	attack2
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/bttack1.gif
+	frame	data/Chars/SonSon/bttack2.gif
+	frame	data/Chars/SonSon/bttack3.gif
+	frame	data/Chars/SonSon/bttack4.gif
+	frame	data/Chars/SonSon/bttack5.gif
+	frame	data/Chars/SonSon/bttack6.gif
+	frame	data/Chars/SonSon/bttack7.gif
+	frame	data/Chars/SonSon/bttack8.gif
+	frame	data/Chars/SonSon/bttack9.gif
+	frame	data/Chars/SonSon/bttack10.gif
+	frame	data/Chars/SonSon/bttack11.gif
+	frame	data/Chars/SonSon/bttack12.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/cttack1.gif
+	frame	data/Chars/SonSon/cttack2.gif
+	frame	data/Chars/SonSon/cttack3.gif
+	frame	data/Chars/SonSon/cttack4.gif
+	frame	data/Chars/SonSon/cttack5.gif
+	frame	data/Chars/SonSon/cttack6.gif
+	frame	data/Chars/SonSon/cttack7.gif
+	frame	data/Chars/SonSon/cttack8.gif
+	frame	data/Chars/SonSon/cttack9.gif
+	frame	data/Chars/SonSon/cttack10.gif
+	frame	data/Chars/SonSon/cttack11.gif
+	frame	data/Chars/SonSon/cttack12.gif
+		
+anim	attack4
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/dttack1.gif
+	frame	data/Chars/SonSon/dttack2.gif
+	frame	data/Chars/SonSon/dttack3.gif
+	frame	data/Chars/SonSon/dttack4.gif
+	frame	data/Chars/SonSon/dttack5.gif
+	frame	data/Chars/SonSon/dttack6.gif
+	frame	data/Chars/SonSon/dttack7.gif
+	frame	data/Chars/SonSon/dttack8.gif
+	frame	data/Chars/SonSon/dttack9.gif
+	frame	data/Chars/SonSon/dttack10.gif
+	frame	data/Chars/SonSon/dttack11.gif
+	frame	data/Chars/SonSon/dttack12.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	47 66
+	frame	data/Chars/SonSon/fall1.gif
+	frame	data/Chars/SonSon/fall2.gif
+	frame	data/Chars/SonSon/fall3.gif
+	frame	data/Chars/SonSon/fall4.gif
+		
+anim	freespecia20
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/ax1.gif
+	frame	data/Chars/SonSon/ax2.gif
+	frame	data/Chars/SonSon/ax3.gif
+	frame	data/Chars/SonSon/ax4.gif
+	frame	data/Chars/SonSon/ax5.gif
+	frame	data/Chars/SonSon/ax6.gif
+	frame	data/Chars/SonSon/ax7.gif
+	frame	data/Chars/SonSon/ax8.gif
+	frame	data/Chars/SonSon/ax9.gif
+	frame	data/Chars/SonSon/ax10.gif
+	frame	data/Chars/SonSon/ax11.gif
+	frame	data/Chars/SonSon/ax12.gif
+		
+anim	freespecia21
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/bx1.gif
+	frame	data/Chars/SonSon/bx2.gif
+	frame	data/Chars/SonSon/bx3.gif
+	frame	data/Chars/SonSon/bx4.gif
+	frame	data/Chars/SonSon/bx5.gif
+	frame	data/Chars/SonSon/bx6.gif
+	frame	data/Chars/SonSon/bx7.gif
+	frame	data/Chars/SonSon/bx8.gif
+	frame	data/Chars/SonSon/bx9.gif
+	frame	data/Chars/SonSon/bx10.gif
+	frame	data/Chars/SonSon/bx11.gif
+	frame	data/Chars/SonSon/bx12.gif
+		
+anim	freespecial
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/anew1.gif
+	frame	data/Chars/SonSon/anew2.gif
+	frame	data/Chars/SonSon/anew3.gif
+	frame	data/Chars/SonSon/anew4.gif
+	frame	data/Chars/SonSon/anew5.gif
+	frame	data/Chars/SonSon/anew6.gif
+	frame	data/Chars/SonSon/anew7.gif
+	frame	data/Chars/SonSon/anew8.gif
+	frame	data/Chars/SonSon/anew9.gif
+	frame	data/Chars/SonSon/anew10.gif
+	frame	data/Chars/SonSon/anew11.gif
+	frame	data/Chars/SonSon/anew12.gif
+		
+anim	freespecial15
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 100);
+    }
+	@end_script	
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/aair1.gif
+	frame	data/Chars/SonSon/aair2.gif
+	frame	data/Chars/SonSon/aair3.gif
+	frame	data/Chars/SonSon/aair4.gif
+	frame	data/Chars/SonSon/aair5.gif
+	frame	data/Chars/SonSon/aair6.gif
+	frame	data/Chars/SonSon/aair7.gif
+	frame	data/Chars/SonSon/aair8.gif
+	frame	data/Chars/SonSon/aair9.gif
+	frame	data/Chars/SonSon/aair10.gif
+	frame	data/Chars/SonSon/aair11.gif
+		
+anim	freespecial16
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 100);
+    }
+	@end_script	
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/bair1.gif
+	frame	data/Chars/SonSon/bair2.gif
+	frame	data/Chars/SonSon/bair3.gif
+	frame	data/Chars/SonSon/bair4.gif
+	frame	data/Chars/SonSon/bair5.gif
+	frame	data/Chars/SonSon/bair6.gif
+	frame	data/Chars/SonSon/bair7.gif
+	frame	data/Chars/SonSon/bair8.gif
+	frame	data/Chars/SonSon/bair9.gif
+	frame	data/Chars/SonSon/bair10.gif
+	frame	data/Chars/SonSon/bair11.gif
+		
+anim	freespecial2
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/bnew1.gif
+	frame	data/Chars/SonSon/bnew2.gif
+	frame	data/Chars/SonSon/bnew3.gif
+	frame	data/Chars/SonSon/bnew4.gif
+	frame	data/Chars/SonSon/bnew5.gif
+	frame	data/Chars/SonSon/bnew6.gif
+	frame	data/Chars/SonSon/bnew7.gif
+	frame	data/Chars/SonSon/bnew8.gif
+	frame	data/Chars/SonSon/bnew9.gif
+	frame	data/Chars/SonSon/bnew10.gif
+	frame	data/Chars/SonSon/bnew11.gif
+	frame	data/Chars/SonSon/bnew12.gif
+		
+anim	freespecial22
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/cx1.gif
+	frame	data/Chars/SonSon/cx2.gif
+	frame	data/Chars/SonSon/cx3.gif
+	frame	data/Chars/SonSon/cx4.gif
+	frame	data/Chars/SonSon/cx5.gif
+	frame	data/Chars/SonSon/cx6.gif
+	frame	data/Chars/SonSon/cx7.gif
+	frame	data/Chars/SonSon/cx8.gif
+	frame	data/Chars/SonSon/cx9.gif
+	frame	data/Chars/SonSon/cx10.gif
+	frame	data/Chars/SonSon/cx11.gif
+	frame	data/Chars/SonSon/cx12.gif
+		
+anim	freespecial23
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/dx1.gif
+	frame	data/Chars/SonSon/dx2.gif
+	frame	data/Chars/SonSon/dx3.gif
+	frame	data/Chars/SonSon/dx4.gif
+	frame	data/Chars/SonSon/dx5.gif
+	frame	data/Chars/SonSon/dx6.gif
+	frame	data/Chars/SonSon/dx7.gif
+	frame	data/Chars/SonSon/dx8.gif
+	frame	data/Chars/SonSon/dx9.gif
+	frame	data/Chars/SonSon/dx10.gif
+	frame	data/Chars/SonSon/dx11.gif
+	frame	data/Chars/SonSon/dx12.gif
+		
+anim	freespecial3
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/cnew1.gif
+	frame	data/Chars/SonSon/cnew2.gif
+	frame	data/Chars/SonSon/cnew3.gif
+	frame	data/Chars/SonSon/cnew4.gif
+	frame	data/Chars/SonSon/cnew5.gif
+	frame	data/Chars/SonSon/cnew6.gif
+	frame	data/Chars/SonSon/cnew7.gif
+	frame	data/Chars/SonSon/cnew8.gif
+	frame	data/Chars/SonSon/cnew9.gif
+	frame	data/Chars/SonSon/cnew10.gif
+	frame	data/Chars/SonSon/cnew11.gif
+	frame	data/Chars/SonSon/cnew12.gif
+		
+anim	freespecial4
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/dnew1.gif
+	frame	data/Chars/SonSon/dnew2.gif
+	frame	data/Chars/SonSon/dnew3.gif
+	frame	data/Chars/SonSon/dnew4.gif
+	frame	data/Chars/SonSon/dnew5.gif
+	frame	data/Chars/SonSon/dnew6.gif
+	frame	data/Chars/SonSon/dnew7.gif
+	frame	data/Chars/SonSon/dnew8.gif
+	frame	data/Chars/SonSon/dnew9.gif
+	frame	data/Chars/SonSon/dnew10.gif
+	frame	data/Chars/SonSon/dnew11.gif
+	frame	data/Chars/SonSon/dnew12.gif
+		
+anim	freespecial5
+	loop	0
+	delay	6
+	offset	50 83
+	frame	data/Chars/SonSon/enew1.gif
+	frame	data/Chars/SonSon/enew2.gif
+	frame	data/Chars/SonSon/enew3.gif
+	frame	data/Chars/SonSon/enew4.gif
+	frame	data/Chars/SonSon/enew5.gif
+	frame	data/Chars/SonSon/enew6.gif
+	frame	data/Chars/SonSon/enew7.gif
+	frame	data/Chars/SonSon/enew8.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	40 51
+	frame	data/Chars/SonSon/get.gif
+		
+anim	idle
+	bbox	10 2 65 74
+	loop	1
+	delay	6
+	offset	45 74
+	frame	data/Chars/SonSon/idle1.gif
+	offset	48 75
+	frame	data/Chars/SonSon/idle2.gif
+	offset	48 71
+	frame	data/Chars/SonSon/idle3.gif
+	offset	44 72
+	frame	data/Chars/SonSon/idle4.gif
+	offset	42 73
+	frame	data/Chars/SonSon/idle5.gif
+	offset	43 74
+	frame	data/Chars/SonSon/idle6.gif
+	offset	46 75
+	frame	data/Chars/SonSon/idle7.gif
+	offset	42 69
+	frame	data/Chars/SonSon/idle8.gif
+	frame	data/Chars/SonSon/idle9.gif
+	offset	42 71
+	frame	data/Chars/SonSon/idle10.gif
+	offset	45 75
+	frame	data/Chars/SonSon/idle11.gif
+	offset	47 77
+	frame	data/Chars/SonSon/idle12.gif
+	offset	47 71
+	frame	data/Chars/SonSon/idle13.gif
+	offset	47 72
+	frame	data/Chars/SonSon/idle14.gif
+	offset	45 73
+	frame	data/Chars/SonSon/idle15.gif
+	offset	45 75
+	frame	data/Chars/SonSon/idle16.gif
+	offset	48 75
+	frame	data/Chars/SonSon/idle17.gif
+	offset	45 68
+	frame	data/Chars/SonSon/idle18.gif
+	frame	data/Chars/SonSon/idle19.gif
+	offset	45 70
+	frame	data/Chars/SonSon/idle20.gif
+		
+anim	jump
+	landframe	8
+	bbox	16 7 41 84
+	loop	0
+	delay	6
+	offset	29 101
+	frame	data/Chars/SonSon/jump1.gif
+	offset	26 70
+	frame	data/Chars/SonSon/jump2.gif
+	bbox	6 3 76 29
+	offset	26 42
+	frame	data/Chars/SonSon/jump3.gif
+	offset	26 65
+	frame	data/Chars/SonSon/jump4.gif
+	offset	26 67
+	frame	data/Chars/SonSon/jump5.gif
+	bbox	16 3 78 55
+	offset	26 65
+	frame	data/Chars/SonSon/jump6.gif
+	offset	26 105
+	frame	data/Chars/SonSon/jump7.gif
+	delay	400
+	bbox	17 6 91 68
+	offset	26 78
+	frame	data/Chars/SonSon/jump8.gif
+	offset	26 82
+	frame	data/Chars/SonSon/jump9.gif
+		
+anim	jumpattack
+	bbox	66 7 15 60
+	loop	0
+	delay	6
+	offset	62 72
+	frame	data/Chars/SonSon/ja1.gif
+	bbox	32 18 32 42
+	offset	39 74
+	frame	data/Chars/SonSon/ja2.gif
+	offset	47 74
+	frame	data/Chars/SonSon/ja3.gif
+	attack	3 13 149 52 12 1 0 0 24 15
+	offset	55 71
+	frame	data/Chars/SonSon/ja4.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	40 50
+	frame	data/Chars/SonSon/get.gif
+		
+anim	pain
+	bbox	19 4 71 75
+	loop	0
+	delay	6
+	offset	59 77
+	frame	data/Chars/SonSon/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	40 50
+	frame	data/Chars/SonSon/get.gif
+		
+anim	walk
+	bbox	45 2 59 69
+	loop	1
+	delay	6
+	offset	63 72
+	frame	data/Chars/SonSon/walk1.gif
+	offset	63 71
+	frame	data/Chars/SonSon/walk2.gif
+	offset	63 73
+	frame	data/Chars/SonSon/walk3.gif
+	offset	63 73
+	frame	data/Chars/SonSon/walk4.gif
+	offset	63 70
+	frame	data/Chars/SonSon/walk5.gif
+	offset	63 69
+	frame	data/Chars/SonSon/walk6.gif
+	offset	63 76
+	frame	data/Chars/SonSon/walk7.gif
+	offset	63 78
+	frame	data/Chars/SonSon/walk8.gif
+		
+#|edited by openBor Stats v 0.51
+		

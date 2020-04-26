@@ -1,0 +1,205 @@
+name	bui
+health  900
+speed	7
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+gfxshadow 1
+shadow	4
+dust dust
+icon	data/chars/bui/icone.gif
+diesound data/chars/misc/die2.wav
+
+palette data/chars/bui/bui.gif
+
+remap	data/chars/bui/stand1.gif data/chars/bui/alt1.gif
+
+load mac
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	bbox	16 7 41 106
+	range	0 75
+	loop	0
+	delay	9
+	offset	36 110
+	frame	data/chars/bui/ch1.gif
+	bbox	7 6 42 111
+	offset	26 107
+	frame	data/chars/bui/ch2.gif
+	bbox	7 4 46 104
+	attack	22 29 85 44 7 0 1 0 0 0
+	offset	28 107
+	delay	13
+	frame	data/chars/bui/ch3.gif
+	bbox	7 6 42 111
+	offset	26 107
+	frame	data/chars/bui/ch2.gif
+		
+anim	attack2
+	sound	data/chars/bui/mac.wav
+	range	80 100
+	bbox	21 18 45 99
+	custknife	mac
+	throwframe	5
+	bbox	50 74 43 109
+	loop	0
+	delay	10
+	offset	75 181
+	frame	data/chars/bui/mach1.gif
+	bbox	68 74 43 121
+	offset	90 187
+	frame	data/chars/bui/mach2.gif
+	bbox	107 99 51 115
+	offset	136 211
+	delay	13
+	frame	data/chars/bui/mach3.gif
+	bbox	97 82 49 106
+	offset	125 187
+	frame	data/chars/bui/mach4.gif
+	offset	69 210
+	bbox	39 121 51 92
+	offset	69 210
+	sound	data/chars/bui/sword.wav
+	frame	data/chars/bui/at1.gif
+	bbox	16 104 50 98
+	offset	38 196
+	frame	data/chars/bui/at2.gif
+	bbox	16 8 63 85
+	offset	44 93
+	delay	22
+	frame	data/chars/bui/mag2.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	38 121
+	frame	data/chars/bui/fal2.gif
+	offset	43 89
+	frame	data/chars/bui/fal1.gif
+	offset	50 58
+	frame	data/chars/bui/fal3.gif
+		
+anim	idle
+	bbox	10 5 48 103
+	loop	1
+	offset	29 105
+	delay	20
+	frame	data/chars/bui/idle1.gif
+	delay	20
+	offset	29 105
+	frame	data/chars/bui/idle2.gif
+		
+anim	pain
+	loop	0
+	offset	36 96
+	bbox	13 10 47 104
+	delay	12
+	frame	data/chars/bui/pain1.gif
+	bbox	28 16 45 86
+	offset	42 93
+	delay	12
+	frame	data/chars/bui/pain2.gif
+	bbox	13 10 47 104
+	offset	36 96
+	delay	12
+	frame	data/chars/bui/pain1.gif
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	35 66
+	frame	data/chars/bui/lev1.gif
+	offset	34 103
+	frame	data/chars/bui/lev2.gif
+	offset	44 84
+	delay	10
+	frame	data/chars/bui/lev3.gif
+		
+anim	upper
+	sound	data/chars/bui/mac.wav
+	hitflash	flash2
+	bbox	50 74 43 109
+	loop	0
+	delay	10
+	offset	75 181
+	frame	data/chars/bui/mach1.gif
+	bbox	68 74 43 121
+	offset	90 187
+	frame	data/chars/bui/mach2.gif
+	bbox	107 99 51 115
+	attack	40 11 85 44 7 0 1 0 0 0
+	offset	136 211
+	delay	13
+	frame	data/chars/bui/mach3.gif
+	bbox	97 82 49 106
+	offset	125 187
+	frame	data/chars/bui/mach4.gif
+	bbox	39 121 51 92
+	offset	64 210
+	sound	data/chars/bui/sword.wav
+	frame	data/chars/bui/at1.gif
+	attack	66 18 116 113 25 1 1 0 0 0
+	bbox	16 104 50 98
+	offset	38 196
+	frame	data/chars/bui/at2.gif
+	attack	92 39 135 102 25 1 1 0 0 0
+	bbox	19 42 63 83
+	offset	47 122
+	frame	data/chars/bui/at3.gif
+	bbox	16 104 50 98
+	offset	38 196
+	frame	data/chars/bui/at2.gif
+	bbox	39 121 51 92
+	offset	64 210
+	frame	data/chars/bui/at1.gif
+		
+anim	walk
+	loop	1
+	offset	31 103
+	bbox	11 12 41 105
+	delay	12
+	frame	data/chars/bui/walk1.gif
+	offset	31 105
+	frame	data/chars/bui/walk2.gif
+	offset	31 105
+	frame	data/chars/bui/walk3.gif
+		
+#|edited by openBor Stats v 0.67
+		

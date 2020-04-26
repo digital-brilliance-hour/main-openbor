@@ -1,0 +1,55 @@
+name	     Trona
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+flash       flamo
+
+
+anim	idle
+	loop	0
+	delay	5
+	offset	1 7
+	hitflash	flamo
+	frame	data/chars/Tron/a1.gif
+	blast	1 1 99 16 16
+	dropv	1 0 0
+	offset	0 16
+	frame	data/chars/Tron/a2.gif
+	blast	0 4 118 24 16
+	dropv	1 0 0
+	offset	0 25
+	frame	data/chars/Tron/a3.gif
+	blast	2 4 135 96 16
+	dropv	1 0 0
+	offset	0 89
+	frame	data/chars/Tron/a4.gif
+	blast	4 3 145 100 16
+	dropv	1 0 0
+	offset	0 90
+	frame	data/chars/Tron/a5.gif
+	blast	4 2 149 99 16
+	dropv	1 0 0
+	offset	1 93
+	frame	data/chars/Tron/a6.gif
+	blast	6 3 151 105 8
+	frame	data/chars/Tron/a7.gif
+	blast	0 1 159 105 16
+	dropv	1 0 0
+	offset	1 95
+	frame	data/chars/Tron/a8.gif
+	blast	5 8 136 66 16
+	dropv	1 0 0
+	offset	1 72
+	frame	data/chars/Tron/a9.gif
+	blast	1 2 138 71 16
+	dropv	1 0 0
+	frame	data/chars/Tron/a10.gif
+	offset	1 73
+	frame	data/chars/Tron/a11.gif
+	@cmd	suicide()
+	frame	data/chars/Tron/a11.gif
+		
+#|edited by openBor Stats v 0.50
+		

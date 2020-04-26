@@ -1,0 +1,55 @@
+name	     upweb
+type	     none
+health	1
+shadow	     0
+speed        30
+candamage    obstacle
+remove	0
+lifespan 3
+animationscript data/scripts2/item.c
+
+anim spawn
+	loop	1
+	delay	6
+	offset	1 31
+	blast	5 3 31 25 10 1
+	frame	data/chars/Spiderman/Spiderman10240000.gif
+	frame	data/chars/Spiderman/Spiderman10240001.gif
+		offset  3  33
+	frame	data/chars/Spiderman/Spiderman10240002.gif
+		offset  2  41
+		blast  9  10  36  27  10
+	frame	data/chars/Spiderman/Spiderman10240003.gif
+		offset  2  51
+		blast  7  7  53  37  10
+	frame	data/chars/Spiderman/Spiderman10240004.gif
+	frame	data/chars/Spiderman/Spiderman10240005.gif
+	frame	data/chars/Spiderman/Spiderman10240006.gif
+		offset  2  61
+		blast  4  6  67  47  10
+	frame	data/chars/Spiderman/Spiderman10240007.gif
+		offset  1  71
+	frame	data/chars/Spiderman/Spiderman10240008.gif
+		offset  1  73
+	frame	data/chars/Spiderman/Spiderman10240009.gif
+		offset  3  81
+		blast  0  14  95  58  10
+	frame	data/chars/Spiderman/Spiderman10240010.gif
+		offset  2  80
+	frame	data/chars/Spiderman/Spiderman10240011.gif
+		offset  2  81
+	frame	data/chars/Spiderman/Spiderman10240012.gif
+		offset  1  91
+		blast  21  4  87  74  10
+	frame	data/chars/Spiderman/Spiderman10240015.gif
+	frame	data/chars/Spiderman/Spiderman10240016.gif
+		offset  2  100
+	frame	data/chars/Spiderman/Spiderman10240017.gif
+	frame	data/chars/Spiderman/Spiderman10240018.gif
+	frame	data/chars/Spiderman/Spiderman10240019.gif
+		offset  2  111
+	frame	data/chars/Spiderman/Spiderman10240020.gif
+		Attack1  0
+		offset  44  73
+	frame	data/chars/Spiderman/emp.gif
+

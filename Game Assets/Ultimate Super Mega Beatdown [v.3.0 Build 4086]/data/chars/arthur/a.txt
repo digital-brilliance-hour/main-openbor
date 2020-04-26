@@ -1,0 +1,47 @@
+name	     Arthura
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+
+anim	follow
+	loop	0
+	delay	3
+	offset	9 27
+	@cmd	Blueman()
+	frame	data/chars/Arthur/a1.gif
+	@cmd	suicide()
+	frame	data/chars/Arthur/a1.gif
+		
+anim	idle
+	attack	2 3 16 22 7
+	followanim	1
+	followcond	1
+	loop	0
+	delay	3
+	offset	8 26
+	jumpframe	1 3 2 0
+	frame	data/chars/Arthur/a1.gif
+	offset	9 28
+	bbox	0 0 0 0
+	frame	data/chars/Arthur/a2.gif
+	offset	10 29
+	frame	data/chars/Arthur/a3.gif
+	offset	8 24
+	frame	data/chars/Arthur/a4.gif
+	offset	9 24
+	frame	data/chars/Arthur/a5.gif
+	offset	9 29
+	frame	data/chars/Arthur/a6.gif
+	offset	8 17
+	frame	data/chars/Arthur/a7.gif
+	offset	10 17
+	frame	data/chars/Arthur/a8.gif
+	offset	11 15
+	delay	50
+	frame	data/chars/Arthur/a9.gif
+	@cmd	anichange "ANI_FOLLOW"	
+	frame	data/chars/Arthur/a9.gif
+		
+#|edited by openBor Stats v 0.50
+		

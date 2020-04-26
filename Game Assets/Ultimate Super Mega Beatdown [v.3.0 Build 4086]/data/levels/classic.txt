@@ -1,0 +1,44 @@
+# Street
+music		data/music/niparis.ogg
+bossmusic	data/music/menu.bor
+
+# Load images
+background	data/bgs/fight/back2.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/fight/ring.gif
+
+
+direction both
+
+
+order a
+
+#--group1-----
+
+spawn   Akuma_E
+health    1000
+coords    190 215
+at          1
+
+spawn   Arthur_E
+health    1000
+coords    390 215
+at          1
+
+spawn   Strider_E
+health    1000
+coords    490 215
+at          1
+
+spawn   Chunli_E
+health    1000
+coords    590 215
+at          1
+
+spawn	Colossus_E
+health    1000
+coords    590 205
+at          1

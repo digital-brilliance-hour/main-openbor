@@ -1,0 +1,121 @@
+name	Billy
+health	300
+speed	9
+gfxshadow 1
+aimove chase
+aimove wander
+aimove normal
+type	enemy
+dust dust
+shadow	5
+icon	data/chars/billy/icon.gif
+diesound data/sounds/die2.wav
+
+palette data/chars/billy/billy.gif
+
+remap	data/chars/billy/idle01.gif data/chars/billy/alt2.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt3.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt4.gif
+remap	data/chars/billy/idle01.gif data/chars/billy/alt5.gif
+
+
+
+
+
+anim	attack1
+	sound	data/chars/billy/sword.wav
+	bbox	77 40 87 98
+	range	0 130
+	loop	0
+	delay	6
+	offset	110 141
+	frame	data/chars/billy/at1.gif
+	bbox	68 77 89 90
+	offset	90 173
+	frame	data/chars/billy/at1d.gif
+	attack	144 12 115 90 10 1 1 0 0 0
+	offset	105 187
+	frame	data/chars/billy/at1e.gif
+	attack	212 10 82 105 10 1 1 0 0 0
+	offset	82 115
+	bbox	75 41 50 80
+	frame	data/chars/billy/at1f.gif
+	offset	71 109
+	frame	data/chars/billy/at1b.gif
+	offset	84 138
+	frame	data/chars/billy/at1c.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	131 113
+	frame	data/chars/billy/apanhar2.gif
+	offset	93 127
+	frame	data/chars/billy/at1g.gif
+	offset	66 100
+	frame	data/chars/billy/lev.gif
+	offset	106 48
+	attack	49 29 92 23 12 1 0 0 0 0
+	frame	data/chars/billy/caido.gif
+		
+anim	idle
+	bbox	62 9 116 104
+	loop	1
+	offset	122 114
+	delay	10
+	frame	data/chars/billy/stand1.gif
+	offset	118 113
+	frame	data/chars/billy/stand2.gif
+	offset	122 119
+	frame	data/chars/billy/stand3.gif
+	offset	118 113
+	frame	data/chars/billy/stand2.gif
+		
+anim	pain
+	bbox	79 16 94 96
+	loop	0
+	offset	121 116
+	delay	12
+	frame	data/chars/billy/apanhar1.gif
+	delay	12
+	offset	131 113
+	frame	data/chars/billy/apanhar2.gif
+	offset	121 116
+	delay	12
+	frame	data/chars/billy/apanhar1.gif
+		
+anim	rise
+	loop	0
+	offset	66 100
+	delay	15
+	frame	data/chars/billy/lev.gif
+	offset	58 119
+	frame	data/chars/billy/lev2.gif
+	offset	48 138
+	frame	data/chars/billy/lev3.gif
+		
+anim	walk
+	loop	1
+	offset	66 124
+	bbox	48 9 36 101
+	delay	10
+	frame	data/chars/billy/walk1.gif
+	offset	65 124
+	frame	data/chars/billy/walk5.gif
+	offset	69 122
+	frame	data/chars/billy/walk2.gif
+	offset	68 134
+	frame	data/chars/billy/walk8.gif
+	offset	68 123
+	frame	data/chars/billy/walk7.gif
+	offset	70 127
+	frame	data/chars/billy/walk4.gif
+	offset	64 123
+	frame	data/chars/billy/walk5.gif
+	offset	76 124
+	frame	data/chars/billy/walk6.gif
+	offset	65 122
+	frame	data/chars/billy/walk3.gif
+		
+#|edited by openBor Stats v 0.67
+		

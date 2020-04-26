@@ -1,0 +1,72 @@
+name	     Blackheartd
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+lifespan        3
+
+
+
+
+anim	follow
+	move	0
+	attack	29 2 62 68 1 0 1 0 0 0
+	stun	2
+	loop	0
+	delay	4
+	offset	30 71
+	frame	data/chars/Blackheart/d7.gif
+	offset	22 58
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/d8.gif
+	offset	22 62
+	frame	data/chars/Blackheart/d9.gif
+	attack	22 1 62 62 12 1 0 0 24 15
+	dropv	0 0 0
+	frame	data/chars/Blackheart/d9.gif
+	offset	22 58
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/d8.gif
+	offset	22 62
+	frame	data/chars/Blackheart/d9.gif
+	attack	22 1 62 62 12 1 0 0 24 15
+	dropv	0 0 0
+	frame	data/chars/Blackheart/d9.gif
+	offset	22 58
+	bbox	0 0 0 0
+	frame	data/chars/Blackheart/d8.gif
+	offset	22 62
+	frame	data/chars/Blackheart/d9.gif
+	attack	22 1 62 62 12 1 0 0 24 15
+	dropv	0 0 0
+	frame	data/chars/Blackheart/d9.gif
+	@cmd	suicide
+	frame	data/chars/Blackheart/d9.gif
+		
+anim	idle
+	followanim	1
+	followcond	1
+	attack	2 2 58 72 1 0 1 0 0 0
+	loop	1
+	delay	6
+	offset	26 77
+	move	15
+	frame	data/chars/Blackheart/d1.gif
+	attack	1 2 52 61 1 0 1 0 0 0
+	offset	22 64
+	frame	data/chars/Blackheart/d2.gif
+	attack	1 2 54 67 1 0 1 0 0 0
+	bbox	0 0 0 0
+	offset	17 71
+	frame	data/chars/Blackheart/d3.gif
+	offset	19 67
+	frame	data/chars/Blackheart/d4.gif
+	attack	1 1 52 62 1 0 1 0 0 0
+	offset	20 65
+	frame	data/chars/Blackheart/d5.gif
+	attack	3 2 53 64 1 0 1 0 0 0
+	offset	24 67
+	frame	data/chars/Blackheart/d6.gif
+		
+#|edited by openBor Stats v 0.51
+		

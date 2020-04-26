@@ -1,0 +1,205 @@
+name	YANKEE
+health	90
+speed	15
+type	enemy
+shadow	4
+icon	data/chars/yankee/icon.gif
+diesound data/sounds/sukedie.wav
+projectilehit enemy obstacle
+antigravity 10
+jugglepoints 15
+bounce 1
+
+remap	data/chars/yankee/idle00.gif data/chars/yankee/map1.gif
+remap	data/chars/yankee/idle00.gif data/chars/yankee/map2.gif
+remap	data/chars/yankee/idle00.gif data/chars/yankee/map3.gif
+remap	data/chars/yankee/idle00.gif data/chars/yankee/map4.gif
+
+
+
+anim	attack1
+	range	10 90
+	loop	0
+	delay	5
+	offset	17 114
+	bbox	4 8 39 103
+	frame	data/chars/yankee/atk00.gif
+	offset	18 112
+	bbox	9 8 40 104
+	attack	36 14 49 28 5
+	frame	data/chars/yankee/atk01.gif
+	offset	17 113
+	frame	data/chars/yankee/atk02.gif
+	offset	18 112
+	bbox	9 8 40 104
+	frame	data/chars/yankee/atk01.gif
+	offset	17 114
+	bbox	4 8 39 103
+	attack	0 0 0 0 0
+	frame	data/chars/yankee/atk00.gif
+	offset	17 114
+	bbox	4 8 39 103
+	frame	data/chars/yankee/atk00.gif
+	offset	18 112
+	bbox	9 8 40 104
+	attack	36 14 49 28 5
+	frame	data/chars/yankee/atk01.gif
+	offset	17 113
+	frame	data/chars/yankee/atk02.gif
+	offset	18 112
+	bbox	9 8 40 104
+	frame	data/chars/yankee/atk01.gif
+	offset	17 114
+	bbox	4 8 39 103
+	attack	0 0 0 0 0
+	frame	data/chars/yankee/atk00.gif
+	offset	20 116
+	bbox	1 5 33 111
+	frame	data/chars/yankee/2atk00.gif
+	offset	13 115
+	bbox	1 5 33 111
+	frame	data/chars/yankee/2atk01.gif
+	offset	13 115
+	bbox	2 5 37 109
+	attack	25 5 79 52 8 1
+	frame	data/chars/yankee/2atk02.gif
+	offset	13 115
+	bbox	1 5 33 111
+	attack	0 0 0 0 0
+	frame	data/chars/yankee/2atk01.gif
+	offset	20 116
+	bbox	1 5 33 111
+	frame	data/chars/yankee/2atk00.gif
+		
+anim	attack2
+	range	10 90
+	loop	0
+	offset	29 124
+	delay	10
+	bbox	11 9 35 123
+	frame	data/chars/yankee/jumpk00.gif
+	offset	15 125
+	bbox	1 9 32 112
+	frame	data/chars/yankee/jumpk01.gif
+	offset	26 110
+	bbox	6 13 32 66
+	frame	data/chars/yankee/jumpk02.gif
+	offset	32 106
+	attack	39 32 76 47 9 1
+	frame	data/chars/yankee/jumpk03.gif
+	offset	31 108
+	attack	0 0 0 0 0
+	frame	data/chars/yankee/jumpk04.gif
+		
+anim	fall
+	bbox	2 3 92 109
+	loop	0
+	delay	5
+	offset	36 106
+	frame	data/chars/yankee/fall00.gif
+	offset	33 98
+	delay	65
+	ATTACK	0 0 1 94 76 15 1 0 0 0
+	BBOX	0 1 94 76
+	frame	data/chars/yankee/fall01.gif
+	bbox	2 1 96 71
+	offset	32 92
+	delay	15
+	frame	data/chars/yankee/fall02.gif
+	bbox	2 2 96 67
+	offset	48 69
+	delay	5
+	ATTACK	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yankee/fall03.gif
+	bbox	2 26 133 -79
+	offset	65 22
+	delay	35
+	frame	data/chars/yankee/fall04.gif
+		
+anim	idle
+	loop	1
+	offset	19 116
+	bbox	0 14 38 100
+	delay	10
+	frame	data/chars/yankee/idle00.gif
+	offset	18 115
+	frame	data/chars/yankee/idle01.gif
+	offset	17 115
+	frame	data/chars/yankee/idle02.gif
+	offset	17 115
+	frame	data/chars/yankee/idle03.gif
+	offset	17 115
+	frame	data/chars/yankee/idle04.gif
+	offset	17 115
+	frame	data/chars/yankee/idle05.gif
+	offset	17 116
+	frame	data/chars/yankee/idle06.gif
+	offset	18 116
+	frame	data/chars/yankee/idle07.gif
+	offset	19 116
+	frame	data/chars/yankee/idle08.gif
+	offset	20 116
+	frame	data/chars/yankee/idle09.gif
+		
+anim	pain
+	loop	0
+	offset	29 117
+	bbox	0 0 60 120
+	sound	data/sounds/MALEPAIN.wav
+	delay	5
+	frame	data/chars/yankee/pain00.gif
+	offset	46 115
+	delay	5
+	bbox	0 2 70 116
+	frame	data/chars/yankee/pain01.gif
+	offset	55 106
+	delay	25
+	bbox	1 1 74 107
+	frame	data/chars/yankee/pain02.gif
+	offset	46 115
+	delay	5
+	bbox	0 2 70 116
+	frame	data/chars/yankee/pain01.gif
+	offset	29 117
+	delay	5
+	bbox	0 0 60 120
+	frame	data/chars/yankee/pain00.gif
+		
+anim	rise
+	loop	0
+	offset	60 63
+	delay	7
+	frame	data/chars/yankee/rise00.gif
+	offset	50 96
+	frame	data/chars/yankee/rise01.gif
+	offset	60 64
+	frame	data/chars/yankee/rise02.gif
+	offset	52 95
+	frame	data/chars/yankee/rise03.gif
+	offset	20 61
+	frame	data/chars/yankee/rise04.gif
+	offset	20 73
+	frame	data/chars/yankee/rise05.gif
+		
+anim	walk
+	loop	1
+	offset	25 115
+	bbox	13 10 35 103
+	delay	5
+	frame	data/chars/yankee/walk00.gif
+	offset	37 116
+	bbox	26 13 39 100
+	frame	data/chars/yankee/walk01.gif
+	offset	29 118
+	bbox	18 11 29 97
+	frame	data/chars/yankee/walk02.gif
+	offset	16 118
+	bbox	0 8 33 104
+	frame	data/chars/yankee/walk03.gif
+	offset	16 117
+	frame	data/chars/yankee/walk04.gif
+	offset	17 116
+	frame	data/chars/yankee/walk05.gif
+		
+#|edited by openBor Stats v 0.50
+		

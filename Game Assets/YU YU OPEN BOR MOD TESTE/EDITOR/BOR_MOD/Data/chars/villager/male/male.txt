@@ -1,0 +1,33 @@
+#escaped version homem#
+
+name male
+health 20
+speed 8
+type enemy
+subtype arrow
+gfxshadow 1
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	10 73
+	frame	data/chars/villager/male/01.gif
+	frame	data/chars/villager/male/02.gif
+	frame	data/chars/villager/male/03.gif
+	frame	data/chars/villager/male/04.gif
+	frame	data/chars/villager/male/05.gif
+	frame	data/chars/villager/male/06.gif
+	
+
+anim spawn
+        delay	1
+	offset	8 15
+	#sound	data/sounds/grito.wav
+	frame	data/chars/foot/vazio.gif
+        frame	data/chars/villager/female/vazio.gif
+    
+
+remap	data/chars/villager/male/01.gif	 data/chars/villager/male/alter01.gif
+remap	data/chars/villager/male/01.gif	 data/chars/villager/male/alter02.gif
+         

@@ -1,0 +1,33 @@
+name	     Sentd
+type	     none
+shadow	     0
+candamage   enemy obstacle
+antigravity 100
+animationscript data/scripts2/script.c
+
+anim	idle
+	loop	0
+	delay	3
+	offset	7 12
+	frame	data/chars/Sentinel/d1.gif
+	frame	data/chars/Sentinel/d2.gif
+	offset	6 10
+	frame	data/chars/Sentinel/d3.gif
+	frame	data/chars/Sentinel/d8.gif
+	offset	6 12
+	frame	data/chars/Sentinel/d9.gif
+	offset	7 12
+	frame	data/chars/Sentinel/d1.gif
+	frame	data/chars/Sentinel/d2.gif
+	offset	6 10
+	frame	data/chars/Sentinel/d3.gif
+	frame	data/chars/Sentinel/d8.gif
+	offset	6 12
+	frame	data/chars/Sentinel/d9.gif
+	@cmd	spawn01 "sablast" 0 0 0
+	frame	data/chars/Sentinel/d1.gif
+	@cmd	suicide()
+	frame	data/chars/Sentinel/d1.gif
+		
+#|edited by openBor Stats v 0.50
+		

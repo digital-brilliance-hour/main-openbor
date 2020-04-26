@@ -1,0 +1,38 @@
+# Hit flash
+
+name	txt
+type	none
+health  1
+shadow	0
+setlayer  500
+lifespan  1.5
+
+
+anim idle
+	loop	0
+	offset	56  180
+	delay	6
+        drawmethod 56 256 
+	frame	data/chars/misc/0tx1.gif 
+        drawmethod 156 256 
+	frame	data/chars/misc/0tx1.gif 
+        nodrawmethod
+        delay   500
+	frame	data/chars/misc/0tx1.gif 
+
+
+	delay	7
+	offset	56  180
+       drawmethod 56 56 
+	frame	data/chars/misc/0tx2.gif 
+       drawmethod 156 156 
+	frame	data/chars/misc/0tx2.gif 
+        nodrawmethod
+        delay   500
+	frame	data/chars/misc/0tx2.gif 
+
+	frame	data/chars/misc/0tx3.gif 
+
+
+
+

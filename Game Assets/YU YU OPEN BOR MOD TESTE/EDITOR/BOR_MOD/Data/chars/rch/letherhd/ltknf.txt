@@ -1,0 +1,17 @@
+name	ltknf
+health	1
+type	enemy
+speed 12
+candamage player npc enemy obstacle 
+nolife 1
+noatflash 1
+flash cflash
+anim idle
+	loop	1
+	delay	5
+        offset  -28 22
+        hitfx data/sounds/knife.wav
+        bbox	18 19 14 5
+        attack  18 19 14 5 10 1 0 0 20
+        frame	data/chars/rch/letherhd/13.gif
+	

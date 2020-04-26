@@ -1,0 +1,18 @@
+name	Drum
+health	1
+type	obstacle
+shadow	3
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	delay	100
+	offset	27 66
+	bbox	2 -30 53 70
+	frame	data/chars/misc/drum.gif
+
+
+anim fall
+	delay	1000
+	offset	45 94
+	frame	data/chars/misc/drum2.gif

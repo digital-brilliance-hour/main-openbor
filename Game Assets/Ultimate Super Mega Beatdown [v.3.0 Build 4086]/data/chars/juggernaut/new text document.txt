@@ -1,0 +1,9 @@
+void self = getlocalvar("self");
+
+if(getentityproperty(self, "a") > getentityproperty(self, "base")){
+     changeentityproperty(self, "aiflag", "attacking", 0);
+     changeentityproperty(self, "aiflag", "idling", 0);
+     changeentityproperty(self, "aiflag", "jumping", 1);
+     changeentityproperty(self, "takeaction", "common_jump");
+     changeentityproperty(self, "animation", openborconstant("ANI_JUMP"), 1);
+}

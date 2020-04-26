@@ -1,0 +1,582 @@
+name	shiki
+health	125
+speed	12
+type	player
+shadow	0
+icon	data/chars/Aki/icon.gif
+remap	data/chars/Aki/idle01.gif data/chars/Aki/alter.gif
+diesound	data/sounds/die1.wav
+running	20 4 2 1
+atchain	1 1 2 3 4
+dust	dust
+com	D F A freespecial
+com	D U A freespecial2
+com	U F A freespecial3
+com	a2 freespecial3
+com	a3 freespecial2
+com	a4 freespecial
+makeinv	2
+#secret   1
+
+anim	idle
+	loop	1
+	delay	11
+	offset	106 217
+	bbox	103 109 31 112
+	frame	data/chars/Aki/idle01.gif
+	frame	data/chars/Aki/idle02.gif
+	frame	data/chars/Aki/idle03.gif
+	frame	data/chars/Aki/idle04.gif
+	frame	data/chars/Aki/idle05.gif
+	frame	data/chars/Aki/idle06.gif
+	frame	data/chars/Aki/idle07.gif
+	frame	data/chars/Aki/idle08.gif
+	frame	data/chars/Aki/idle09.gif
+	frame	data/chars/Aki/idle10.gif
+	frame	data/chars/Aki/idle11.gif
+	frame	data/chars/Aki/idle12.gif
+	frame	data/chars/Aki/idle13.gif
+	frame	data/chars/Aki/idle14.gif
+	frame	data/chars/Aki/idle15.gif
+	frame	data/chars/Aki/idle16.gif
+	frame	data/chars/Aki/idle17.gif
+	frame	data/chars/Aki/idle18.gif
+
+anim	walk
+	loop	1
+	delay	7
+	offset	106 217
+	bbox	102 108 28 114
+	frame	data/chars/Aki/walk1.gif
+	frame	data/chars/Aki/walk2.gif
+	frame	data/chars/Aki/walk3.gif
+	frame	data/chars/Aki/walk4.gif
+	frame	data/chars/Aki/walk5.gif
+	frame	data/chars/Aki/walk6.gif
+	frame	data/chars/Aki/walk7.gif
+	frame	data/chars/Aki/walk8.gif
+	frame	data/chars/Aki/walk9.gif
+	frame	data/chars/Aki/walk10.gif
+	frame	data/chars/Aki/walk11.gif
+	frame	data/chars/Aki/walk12.gif
+
+anim	get
+	loop	0
+	delay	20
+	offset	106 217
+	frame	data/chars/Aki/get.gif
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	106 217
+	bbox	101 108 37 112
+	frame	data/chars/Aki/hold1.gif
+	frame	data/chars/Aki/hold2.gif
+	attack	113 113 86 35 11
+	frame	data/chars/Aki/hold3.gif
+	attack	96 105 103 26 11
+	frame	data/chars/Aki/hold4.gif
+	attack	92 105 40 26 11
+	delay	4
+	frame	data/chars/Aki/hold5.gif
+	attack	92 105 40 26 0
+	frame	data/chars/Aki/hold6.gif
+	frame	data/chars/Aki/hold7.gif
+	frame	data/chars/Aki/hold8.gif
+
+anim	attack2
+	loop	0
+	delay	5
+	offset	106 217
+	bbox	97 109 35 111
+	frame	data/chars/Aki/at1.gif
+	bbox	110 131 70 89
+	attack	84 148 131 48 11
+	frame	data/chars/Aki/at2.gif
+	attack	157 143 62 52 11
+	bbox	113 140 67 81
+	frame	data/chars/Aki/at3.gif
+	attack	156 136 15 16 11
+	frame	data/chars/Aki/at4.gif
+	frame	data/chars/Aki/at5.gif
+	bbox	105 121 46 101
+	attack	0 0 0 0 0
+	frame	data/chars/Aki/at6.gif
+
+anim	attack3
+	loop	0
+	offset	106 217
+	bbox	118 124 58 97
+	delay	5
+	frame	data/chars/Aki/at13.gif
+	attack	102 117 116 41 11
+	frame	data/chars/Aki/at14.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Aki/at15.gif
+	attack	94 122 131 81 11
+	frame	data/chars/Aki/at16.gif
+	attack	91 146 38 42 11
+	frame	data/chars/Aki/at17.gif
+	bbox	113 126 48 93
+	attack	0 0 0 0 0
+	frame	data/chars/Aki/at18.gif
+	attack	0 0 0 0 0 0
+	bbox	105 116 31 102
+	frame	data/chars/Aki/at19.gif
+	bbox	101 108 34 113
+	frame	data/chars/Aki/at20.gif
+
+anim	attack4
+	loop	0
+	delay	6
+	offset	106 217
+	bbox	94 135 42 86
+	frame	data/chars/Aki/ball6.gif
+	bbox	110 139 48 81
+	frame	data/chars/Aki/ball7.gif
+	bbox	121 158 55 63
+	attack	87 141 120 61 16 2
+	frame	data/chars/Aki/ball8.gif
+	attack	139 170 67 33 16 2
+	frame	data/chars/Aki/ball9.gif
+	attack	0 0 0 0
+	frame	data/chars/Aki/ball10.gif
+	attack	0 0 0 0 0
+	bbox	113 137 50 83
+	frame	data/chars/Aki/ball11.gif
+	bbox	108 127 46 94
+	frame	data/chars/Aki/ball12.gif
+	bbox	102 109 36 114
+	frame	data/chars/Aki/ball13.gif
+
+anim	special
+	loop	0
+	offset	106 217
+	delay	6
+	sound	data/chars/Aki/special.wav
+	frame	data/chars/Aki/sp1.gif
+	frame	data/chars/Aki/sp2.gif
+	frame	data/chars/Aki/sp3.gif
+	frame	data/chars/Aki/sp4.gif
+	frame	data/chars/Aki/sp5.gif
+	frame	data/chars/Aki/sp7.gif
+	blast	115 145 121 122 19 1
+	frame	data/chars/Aki/sp8.gif
+	frame	data/chars/Aki/sp9.gif
+	frame	data/chars/Aki/sp10.gif
+	frame	data/chars/Aki/sp11.gif
+	frame	data/chars/Aki/sp12.gif
+	frame	data/chars/Aki/sp13.gif
+	frame	data/chars/Aki/sp14.gif
+	frame	data/chars/Aki/sp15.gif
+	frame	data/chars/Aki/sp16.gif
+	frame	data/chars/Aki/sp17.gif
+	frame	data/chars/Aki/sp18.gif
+	frame	data/chars/Aki/sp19.gif
+	frame	data/chars/Aki/sp20.gif
+	frame	data/chars/Aki/sp21.gif
+
+anim	freespecial3
+	followanim	1
+	followcond	1
+	fastattack	1
+	loop	0
+	offset	106 217
+	delay	5
+	sound	data/chars/Aki/free.wav
+	frame	data/chars/Aki/ball1.gif
+	frame	data/chars/Aki/ball2.gif
+	move	10
+	delay	6
+	attack	76 137 84 79 6
+	frame	data/chars/Aki/ball3.gif
+	attack	0
+	frame	data/chars/Aki/ball3.gif
+	attack	76 137 84 79 6
+	frame	data/chars/Aki/ball3.gif
+		attack  0  0  0  0  0
+	frame	data/chars/Aki/ball3.gif
+		attack  76  137  84  79  6
+	frame	data/chars/Aki/ball4.gif
+
+
+anim	jump
+	loop	0
+	offset	106 217
+	delay	15
+	bbox	103 109 30 114
+	frame	data/chars/Aki/jump1.gif
+	delay	8
+	bbox	102 108 31 98
+	frame	data/chars/Aki/jump2.gif
+	bbox	90 112 43 67
+	frame	data/chars/Aki/jump3.gif
+	bbox	93 111 41 81
+	frame	data/chars/Aki/jump4.gif
+	bbox	103 112 33 107
+	frame	data/chars/Aki/jump5.gif
+
+anim	jumpattack
+	loop	0
+	offset	106 217
+	delay	8
+	bbox	83 119 56 42
+	frame	data/chars/Aki/ak1.gif
+	frame	data/chars/Aki/ak2.gif
+	frame	data/chars/Aki/ak3.gif
+	attack	75 74 88 35 10 1
+	frame	data/chars/Aki/ak4.gif
+	attack	126 83 61 66 10 1
+	bbox	94 105 72 50
+	frame	data/chars/aki/ak5.gif
+	bbox	94 109 50 52
+	attack	132 144 32 45 10 1
+	frame	data/chars/aki/ak6.gif
+	bbox	96 106 43 76
+	attack	0 0 0 0 0 0
+	frame	data/chars/aki/ak7.gif
+
+anim	jumpattack2
+	loop	0
+	delay	8
+	offset	106 217
+	bbox	96 112 41 63
+	frame	data/chars/Aki/ap1.gif
+	attack	125 130 71 39 10 1
+	frame	data/chars/Aki/ap2.gif
+	attack	113 127 57 36 10 1
+	frame	data/chars/Aki/ap3.gif
+
+anim	grab
+	loop	0
+	offset	106 217
+	bbox	85 130 48 80
+	delay	1000
+	frame	data/chars/Aki/grab.gif
+
+anim	grabattack
+	loop	0
+	offset	106 217
+	delay	4
+	frame	data/chars/Aki/gra1.gif
+	frame	data/chars/Aki/gra2.gif
+	attack	126 122 33 57 8
+	frame	data/chars/Aki/gra3.gif
+	attack	113 109 55 55 8
+	frame	data/chars/Aki/gra4.gif
+	attack	87 78 79 61 8
+	frame	data/chars/Aki/gra5.gif
+	attack	43 84 37 73 8
+	frame	data/chars/Aki/gra6.gif
+	attack	0000
+	frame	data/chars/Aki/gra7.gif
+	frame	data/chars/Aki/gra8.gif
+	frame	data/chars/Aki/gra9.gif
+	frame	data/chars/Aki/gra10.gif
+		attack  0000  0  0  0
+	frame	data/chars/Aki/gra11.gif
+
+anim	grabattack2
+	loop	0
+	offset	106 217
+	delay	5
+	frame	data/chars/Aki/up1.gif
+	attack	131 89 88 106 9 1
+	frame	data/chars/Aki/up2.gif
+	attack	126 73 91 42 9 1
+	frame	data/chars/Aki/up3.gif
+	attack	125 141 81 59 9 1
+	frame	data/chars/Aki/up4.gif
+	frame	data/chars/Aki/up5.gif
+	frame	data/chars/Aki/up6.gif
+
+anim	throw
+	loop	0
+	offset	106 217
+	delay	5
+	sound	data/chars/aki/aki2.wav
+	frame	data/chars/Aki/throw1.gif
+	frame	data/chars/Aki/throw2.gif
+	frame	data/chars/Aki/throw3.gif
+	frame	data/chars/Aki/throw4.gif
+	frame	data/chars/Aki/throw5.gif
+	frame	data/chars/Aki/throw6.gif
+	frame	data/chars/Aki/throw7.gif
+	frame	data/chars/Aki/throw8.gif
+	frame	data/chars/Aki/throw9.gif
+	frame	data/chars/Aki/throw10.gif
+
+anim	pain
+	loop	0
+	bbox	85 130 48 80
+	delay	6
+	offset	106 217
+	frame	data/chars/Aki/pain1.gif
+	delay	40
+	frame	data/chars/Aki/pain2.gif
+	delay	6
+	frame	data/chars/Aki/pain1.gif
+
+anim	fall
+	loop	0
+	offset	106 217
+	delay	60
+	frame	data/chars/Aki/fall1.gif
+	delay	20
+	frame	data/chars/Aki/fall2.gif
+
+anim	rise
+	loop	0
+	offset	106 217
+	delay	8
+	frame	data/chars/Aki/rise1.gif
+	frame	data/chars/Aki/rise2.gif
+
+anim	land
+	loop	0
+	offset	106 217
+	delay	13
+	frame	data/chars/Aki/rise2.gif
+
+anim	run
+	loop	1
+	delay	10
+	offset	66 109
+	bbox	41 21 57 65
+	frame	data/chars/aki/run1.gif
+	frame	data/chars/aki/run2.gif
+	frame	data/chars/aki/run3.gif
+
+anim	follow
+	jumpframe	27 3
+	loop	0
+	delay	4
+	offset	112 155
+	fastattack	1
+	bbox	103 43 29 113
+	frame	data/chars/aki/fs1-1.gif
+	frame	data/chars/aki/fs1-2.gif
+	attack	100 41 69 38 4
+	bbox	88 46 39 110
+	frame	data/chars/aki/fs1-3.gif
+	attack	91 32 73 33 4
+	frame	data/chars/aki/fs1-4.gif
+	attack	0
+	frame	data/chars/aki/fs1-5.gif
+	attack	84 35 87 40 4
+	frame	data/chars/aki/fs1-6.gif
+	attack	108 41 58 41 4
+	attack	110 77 58 38 2
+	frame	data/chars/aki/fs1-3.gif
+	attack	0
+	frame	data/chars/aki/fs1-4.gif
+	attack	79 38 47 49 4
+	frame	data/chars/aki/fs1-5.gif
+	attack	92 37 78 38 4
+	frame	data/chars/aki/fs1-6.gif
+	attack	109 41 58 39 4
+	attack	110 77 58 38 2
+	frame	data/chars/aki/fs1-3.gif
+	attack	0
+	frame	data/chars/aki/fs1-4.gif
+	attack	74 39 52 49 4
+	frame	data/chars/aki/fs1-5.gif
+	attack	84 35 90 39 4
+	frame	data/chars/aki/fs1-6.gif
+	attack	108 41 58 40 4
+	attack	110 77 58 38 2
+	frame	data/chars/aki/fs1-3.gif
+	attack	0
+	frame	data/chars/aki/fs1-4.gif
+	attack	76 39 51 48 4
+	frame	data/chars/aki/fs1-5.gif
+	attack	85 36 87 41 4
+	frame	data/chars/aki/fs1-6.gif
+	attack	109 41 57 40 4
+	attack	110 77 58 38 2
+	frame	data/chars/aki/fs1-3.gif
+	attack	0
+	frame	data/chars/aki/fs1-4.gif
+	attack	77 40 49 46 5
+	frame	data/chars/aki/fs1-5.gif
+	attack	86 38 87 38 5 0
+	frame	data/chars/aki/fs1-6.gif
+	attack	135 36 39 29 5 0
+	frame	data/chars/aki/fs1-7.gif
+	attack	0
+	frame	data/chars/aki/fs1-8.gif
+	offset	108 155
+	frame	data/chars/aki/fs1-9.gif
+	frame	data/chars/aki/fs1-10.gif
+	frame	data/chars/aki/fs1-11.gif
+	attack	110 60 59 23 12 2
+	frame	data/chars/aki/fs1-12.gif
+	attack	66 42 100 42 12 2
+	frame	data/chars/aki/fs1-13.gif
+	attack	60 32 62 42 12 2
+	frame	data/chars/aki/fs1-14.gif
+	attack	96 32 50 27 12 2
+	frame	data/chars/aki/fs1-15.gif
+	attack	0
+	frame	data/chars/aki/fs1-16.gif
+	frame	data/chars/aki/fs1-17.gif
+	frame	data/chars/aki/fs1-18.gif
+	frame	data/chars/aki/fs1-19.gif
+
+anim	dodge
+	loop	0
+	delay	10
+	offset	66 109
+	bbox	55 26 28 30
+	frame	data/chars/aki/run1.gif
+	frame	data/chars/aki/run2.gif
+	frame	data/chars/aki/run3.gif
+
+anim	freespecial
+	loop	0
+	delay	6
+	offset	73 129
+	fastattack	1
+	frame	data/chars/aki/spec1.gif
+	frame	data/chars/aki/spec2.gif
+	offset	83 131
+	frame	data/chars/aki/spec3.gif
+	offset	86 126
+	frame	data/chars/aki/spec4.gif
+	frame	data/chars/aki/spec5.gif
+	offset	86 125
+	frame	data/chars/aki/spec6.gif
+	offset	93 127
+	frame	data/chars/aki/spec7.gif
+	frame	data/chars/aki/spec8.gif
+	frame	data/chars/aki/spec9.gif
+	frame	data/chars/aki/spec10.gif
+	offset	93 118
+	frame	data/chars/aki/spec11.gif
+	frame	data/chars/aki/spec12.gif
+	frame	data/chars/aki/spec13.gif
+	frame	data/chars/aki/spec14.gif
+	frame	data/chars/aki/spec15.gif
+	offset	77 100
+	attack	38 49 86 45 12 1
+	frame	data/chars/aki/spec16.gif
+	attack	0
+	offset	81 102
+	attack	19 32 111 67 5 1
+	frame	data/chars/aki/spec17.gif
+	offset	80 101
+	attack	10 21 132 73 10 1
+	frame	data/chars/aki/spec18.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/aki/spec19.gif
+	offset	86 102
+	attack	10 21 132 73 8 1
+	frame	data/chars/aki/spec20.gif
+	offset	81 104
+	attack	1 2 148 106 6
+	frame	data/chars/aki/spec21.gif
+
+anim	freespecial2
+	loop	0
+	offset	106 217
+	delay	5
+	sound	data/chars/Aki/free.wav
+	frame	data/chars/Aki/ball1.gif
+	frame	data/chars/Aki/ball2.gif
+	move	10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	6
+	attack	76 137 84 79 1
+	frame	data/chars/Aki/ball3.gif
+	attack	0
+	frame	data/chars/Aki/ball3.gif
+	attack	76 137 84 79 1
+	frame	data/chars/Aki/ball3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Aki/ball3.gif
+	frame	data/chars/Aki/ball4.gif
+	attack	76 137 84 79 1
+	frame	data/chars/Aki/ball6.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Aki/ball7.gif
+	attack	88 140 119 65 18 2
+	frame	data/chars/Aki/ball8.gif
+	attack	135 169 73 31 18 2
+	frame	data/chars/Aki/ball9.gif
+	attack	0 0 0 0
+	frame	data/chars/Aki/ball10.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Aki/ball11.gif
+	frame	data/chars/Aki/ball12.gif
+	frame	data/chars/Aki/ball13.gif
+
+anim	runattack
+	loop	0
+	offset	106 217
+	delay	5
+	sound	data/chars/Aki/free.wav
+	frame	data/chars/Aki/ball1.gif
+	frame	data/chars/Aki/ball2.gif
+	move	10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	delay	6
+	attack	76 137 84 79 6
+	frame	data/chars/Aki/ball3.gif
+	attack	0
+	frame	data/chars/Aki/ball3.gif
+	attack	76 137 84 79 6
+	frame	data/chars/Aki/ball3.gif
+		attack  0  0  0  0  0
+	frame	data/chars/Aki/ball3.gif
+		attack  76  137  84  79  6
+	frame	data/chars/Aki/ball4.gif
+	offset	141 220
+	bbox	139 136 35 76
+		attack  102  133  27  27  6
+	frame	data/chars/aki/slash1.gif
+		attack  186  181  21  39  0
+	frame	data/chars/aki/slash2.gif
+	attack	181 83 79 91 10 1
+	frame	data/chars/aki/slash3.gif
+		attack  178  90  70  41  10  1
+	frame	data/chars/aki/slash4.gif
+		attack  170  88  11  34  10  1
+	frame	data/chars/aki/slash5.gif
+		attack  140  118  39  16  10  1
+	frame	data/chars/aki/slash6.gif
+
+anim	faint
+	loop	1
+	delay	8
+	offset	73 115
+	bbox	69 36 23 74
+	frame	data/chars/aki/faint1.gif
+	frame	data/chars/aki/faint2.gif
+	frame	data/chars/aki/faint3.gif
+	frame	data/chars/aki/faint4.gif
+	frame	data/chars/aki/faint5.gif
+	frame	data/chars/aki/faint6.gif
+	frame	data/chars/aki/faint7.gif
+
+anim	grabforward
+	loop	0
+	offset	106 217
+	delay	5
+	frame	data/chars/Aki/up1.gif
+	attack	131 89 88 106 9 1
+	frame	data/chars/Aki/up2.gif
+	attack	126 73 91 42 9 1
+	frame	data/chars/Aki/up3.gif
+	attack	125 141 81 59 9 1
+	frame	data/chars/Aki/up4.gif
+	frame	data/chars/Aki/up5.gif
+	frame	data/chars/Aki/up6.gif
+
+

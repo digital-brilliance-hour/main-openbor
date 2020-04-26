@@ -1,0 +1,54 @@
+name	     Thanosb
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+alpha           5
+
+anim	follow
+	bbox	0 0 0 0
+	loop	0
+	delay	6
+	offset	77 116
+	@cmd	slamstart2
+	@cmd	position 1 -17 7 -1 0
+	jumpframe	2 7 0 0
+	landframe	6
+	frame	data/chars/Thanos/b1.gif
+	@cmd	position 1 -17 7 -1 0
+	frame	data/chars/Thanos/b1.gif
+	@cmd	position 1 -17 7 -1 0
+	frame	data/chars/Thanos/b1.gif
+	@cmd	position 1 -17 7 -1 0
+	frame	data/chars/Thanos/b1.gif
+	@cmd	position 1 -17 7 -1 0
+	frame	data/chars/Thanos/b1.gif
+	delay	130
+	@cmd	position 1 -17 7 -1 0
+	frame	data/chars/Thanos/b1.gif
+	@cmd	depost 1
+	@cmd	throw 1 35 0 -5 0 -1
+	@cmd	clearL
+	sound	data/sounds/bukk.wav
+	frame	data/chars/Thanos/b1.gif
+	@cmd	suicide()
+	frame	data/chars/Thanos/b1.gif
+		
+anim	idle
+	attack	3 2 144 115 1
+	followanim	1
+	followcond	1
+	loop	1
+	delay	6
+	offset	77 116
+	move	35
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+	frame	data/chars/Thanos/b1.gif
+		
+#|edited by openBor Stats v 0.50
+		

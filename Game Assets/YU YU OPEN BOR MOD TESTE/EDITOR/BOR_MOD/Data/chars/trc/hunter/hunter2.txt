@@ -1,0 +1,162 @@
+name	Hunter2
+health	200
+speed	15
+type	enemy
+aimove Chasez
+aimove Avoidx
+shadow	6
+gfxshadow 1
+diesound data/chars/trc/Hunter/hdie.wav
+icon	data/chars/trc/Hunter/icon.gif
+remap	data/chars/trc/Hunter/idle.gif  data/chars/trc/Hunter/alter.gif
+
+pallette data/chars/trc/Hunter/walk3.gif
+
+aggression 15
+
+
+anim	attack1
+	loop	0
+	delay	11
+	offset	80 115
+	frame	data/chars/trc/Hunter/hit.gif
+	offset	70 110
+	frame	data/chars/trc/Hunter/hit1.gif
+	offset	70 175
+	attack	73 30 118 149 25 1
+	frame	data/chars/trc/Hunter/hit2.gif
+		
+anim	burn
+	dropframe	1
+	forcedirection	-1
+	bouncefactor	2.2
+	drawmethod	tintmode 2
+	drawmethod	tintcolor 200_50_0
+	loop	0
+	delay	40
+	offset	94 120
+	bbox	47 20 39 89
+	frame	data/chars/trc/Hunter/fall2.gif
+	attack	49 8 111 108
+	frame	data/chars/trc/Hunter/fall2.gif
+	bbox	0 0 0 0
+	delay	50
+	nodrawmethod	
+	offset	91 34
+	frame	data/chars/trc/Hunter/fall4.gif
+		
+anim	death4
+	dropframe	1
+	loop	0
+	custbomb	bblod2
+	pbombframe	0 60
+	delay	20
+	offset	94 120
+	bbox	47 20 39 89
+	frame	data/chars/trc/Hunter/fall2.gif
+	attack	49 8 111 108
+	frame	data/chars/trc/Hunter/fall2.gif
+	bbox	0 0 0 0
+	offset	91 34
+	frame	data/chars/trc/Hunter/fall4.gif
+		
+anim	death5
+	dropframe	1
+	loop	0
+	custbomb	bblod2
+	pbombframe	0 60
+	delay	20
+	offset	94 120
+	bbox	47 20 39 89
+	frame	data/chars/trc/Hunter/fall2.gif
+	attack	49 8 111 108
+	frame	data/chars/trc/Hunter/fall2.gif
+	bbox	0 0 0 0
+	offset	91 34
+	frame	data/chars/trc/Hunter/fall4.gif
+		
+anim	fall
+	dropframe	1
+	loop	0
+	forcedirection	-1
+	bouncefactor	2.2
+	delay	20
+	offset	94 120
+	bbox	53 27 39 60
+	frame	data/chars/trc/Hunter/fall2.gif
+	frame	data/chars/trc/Hunter/fall2.gif
+	bbox	0 0 0 0
+	offset	91 37
+	frame	data/chars/trc/Hunter/fall4.gif
+		
+anim	idle
+	loop	1
+	offset	62 103
+	bbox	53 27 39 60
+	delay	17
+	frame	data/chars/trc/Hunter/idle.gif
+	frame	data/chars/trc/Hunter/idle2.gif
+		
+anim	jumpattack
+	loop	0
+	offset	80 165
+	delay	10
+	bbox	45 45 71 99
+	frame	data/chars/trc/Hunter/jump1.gif
+	offset	60 100
+	frame	data/chars/trc/Hunter/jump2.gif
+	offset	75 100
+	frame	data/chars/trc/Hunter/claw.gif
+	offset	75 100
+	attack	98 5 92 98 35 1
+	frame	data/chars/trc/Hunter/claw2.gif
+	offset	70 90
+	frame	data/chars/trc/Hunter/claw3.gif
+		
+anim	pain
+	loop	0
+	offset	60 110
+	bbox	50 23 57 75
+	delay	8
+	frame	data/chars/trc/Hunter/hurt.gif
+	delay	4
+	frame	data/chars/trc/Hunter/hurt2.gif
+	delay	8
+	frame	data/chars/trc/Hunter/hurt.gif
+		
+anim	rise
+	loop	0
+	offset	80 90
+	delay	10
+	frame	data/chars/trc/Hunter/rise.gif
+	offset	62 103
+	frame	data/chars/trc/Hunter/idle.gif
+		
+anim	special
+	range	10 80
+	loop	0
+	delay	11
+	offset	80 115
+	frame	data/chars/trc/Hunter/hit.gif
+	offset	70 110
+	frame	data/chars/trc/Hunter/hit1.gif
+	offset	70 175
+	attack	73 30 118 149 25 1
+	frame	data/chars/trc/Hunter/hit2.gif
+		
+anim	walk
+	loop	1
+	offset	60 115
+	bbox	47 20 55 80
+	delay	20
+	frame	data/chars/trc/Hunter/walk1.gif
+	frame	data/chars/trc/Hunter/walk2.gif
+	frame	data/chars/trc/Hunter/walk3.gif
+	frame	data/chars/trc/Hunter/walk4.gif
+	frame	data/chars/trc/Hunter/walk1.gif
+	frame	data/chars/trc/Hunter/walk2.gif
+	frame	data/chars/trc/Hunter/walk3.gif
+	frame	data/chars/trc/Hunter/walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

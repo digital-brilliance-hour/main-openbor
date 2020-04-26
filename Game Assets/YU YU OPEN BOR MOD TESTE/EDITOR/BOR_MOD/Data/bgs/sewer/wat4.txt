@@ -1,0 +1,59 @@
+name	wat4
+type	none
+toflip 1
+nomove 1 0
+jumpheight 0
+antigravity -100
+jumpheight 0
+anim idle
+        delay 1
+        offset 55 40
+        bbox	276 2999 1 1
+        movez 2
+        flipframe 1
+        frame	data/bgs/sewer/09.gif
+        delay 4
+        movez 0
+        frame	data/bgs/sewer/09.gif
+        delay 5
+        frame	data/bgs/sewer/10.gif
+        frame	data/bgs/sewer/11.gif
+        frame	data/bgs/sewer/12.gif
+        frame	data/bgs/sewer/13.gif
+        frame	data/bgs/sewer/14.gif
+        frame	data/bgs/sewer/15.gif
+        frame	data/bgs/sewer/16.gif
+anim attack1
+        delay 1
+        offset 55 40
+        bbox	276 2999 1 1
+        movez 2
+        frame	data/bgs/sewer/09.gif
+        delay 4
+        movez 0
+        frame	data/bgs/sewer/09.gif
+        delay 5
+        frame	data/bgs/sewer/10.gif
+        frame	data/bgs/sewer/11.gif
+        frame	data/bgs/sewer/12.gif
+        frame	data/bgs/sewer/13.gif
+        frame	data/bgs/sewer/14.gif
+        frame	data/bgs/sewer/15.gif
+        frame	data/bgs/sewer/16.gif
+anim attack2
+        delay 1
+        offset 55 40
+        bbox	276 2999 1 1
+        movez 2
+        frame	data/bgs/sewer/09.gif
+        delay 4
+        movez 0
+        frame	data/bgs/sewer/09.gif
+        delay 5
+        frame	data/bgs/sewer/10.gif
+        frame	data/bgs/sewer/11.gif
+        frame	data/bgs/sewer/12.gif
+        frame	data/bgs/sewer/13.gif
+        frame	data/bgs/sewer/14.gif
+        frame	data/bgs/sewer/15.gif
+        frame	data/bgs/sewer/16.gif

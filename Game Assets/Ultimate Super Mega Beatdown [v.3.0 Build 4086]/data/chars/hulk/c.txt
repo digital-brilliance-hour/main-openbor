@@ -1,0 +1,23 @@
+name	     Hulkc
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+flash       empty
+alpha       1
+palette data/chars/Hulk/pc1.gif
+
+
+anim	idle
+	blast	30 55 130 220 16 0 0 45
+	dropv	2 8 0
+	loop	0
+	delay	6
+	offset	24 167
+	frame	data/chars/Hulk/pc1.gif
+	@cmd	suicide()
+	frame	data/chars/Hulk/pc1.gif
+		
+#|edited by openBor Stats v 0.50
+		

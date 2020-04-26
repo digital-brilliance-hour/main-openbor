@@ -1,0 +1,23 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Bcase
+health	1
+type	obstacle
+shadow	2
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	16 61
+	bbox	0 -27 32 61
+	frame	data/chars/misc/bcase.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	23 89
+	frame	data/chars/misc/bcase2.gif

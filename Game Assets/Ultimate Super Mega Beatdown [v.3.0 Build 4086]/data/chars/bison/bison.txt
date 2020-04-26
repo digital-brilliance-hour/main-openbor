@@ -1,0 +1,736 @@
+name	       Bison
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  5.8  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash  flashp
+jumpheight     5.3
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+load            bisond
+
+com             A2 freespecial
+com             A3 freespecial2
+com             A4 freespecial3
+
+
+icon           data/chars/Bison/icon.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/Chars/Bison/ha1.wav
+	cancel	0 2 1 A2 freespecial
+	cancel	0 2 1 A3 freespecial2
+	cancel	0 2 1 A4 freespecial3
+	bbox	49 3 44 78
+	loop	0
+	delay	6
+	offset	59 82
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Bison/attack1.gif
+	offset	59 83
+	attack	69 2 104 25 7 0 0 0 24 15
+	frame	data/Chars/Bison/attack2.gif
+	offset	59 82
+	frame	data/Chars/Bison/attack3.gif
+		
+anim	attack2
+	sound	data/Chars/Bison/ha1.wav
+	cancel	0 3 1 A2 freespecial
+	cancel	0 3 1 A3 freespecial2
+	cancel	0 3 1 A4 freespecial3
+	bbox	69 7 49 92
+	loop	0
+	delay	5
+	offset	88 93
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Bison/bttack1.gif
+	bbox	47 4 45 81
+	offset	61 84
+	frame	data/Chars/Bison/bttack2.gif
+	attack	81 9 114 21 7 0 0 0 24 15
+	offset	73 84
+	frame	data/Chars/Bison/bttack3.gif
+	attack	88 6 101 24 7
+	offset	78 84
+	frame	data/Chars/Bison/bttack4.gif
+		
+anim	attack3
+	sound	data/Chars/Bison/3.wav
+	cancel	0 4 1 A2 freespecial
+	cancel	0 4 1 A3 freespecial2
+	cancel	0 4 1 A4 freespecial3
+	bbox	57 4 47 85
+	loop	0
+	delay	5
+	offset	79 91
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Bison/cttack1.gif
+	offset	78 93
+	frame	data/Chars/Bison/cttack2.gif
+	attack	39 11 140 40 8 0 0 0 24 15
+	offset	78 96
+	frame	data/Chars/Bison/cttack3.gif
+	offset	75 95
+	frame	data/Chars/Bison/cttack4.gif
+	frame	data/Chars/Bison/cttack5.gif
+		
+anim	attack4
+	sound	data/Chars/Bison/final.wav
+	cancel	0 5 1 A2 freespecial
+	cancel	0 5 1 A3 freespecial2
+	cancel	0 5 1 A4 freespecial3
+	bbox	43 3 52 86
+	loop	0
+	delay	5
+	offset	61 84
+	hitflash	Bisone
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Bison/dttack1.gif
+	blast	91 1 64 115 16 1 0 0 24 15
+	bbox	60 34 47 82
+	offset	73 116
+	frame	data/Chars/Bison/dttack2.gif
+	blast	92 3 58 114 16 1 0 0 24 15
+	offset	78 113
+	frame	data/Chars/Bison/dttack3.gif
+		
+anim	fall
+	loop	0
+	offset	82 113
+	delay	25
+	frame	data/Chars/Bison/fall.gif
+	offset	86 46
+	frame	data/Chars/Bison/fall2.gif
+	offset	58 50
+	frame	data/Chars/Bison/fall3.gif
+		
+anim	freespecial
+	sound	data/Chars/Bison/elec.wav
+	bbox	21 14 101 21
+	blast	107 1 98 44 16 0 0 0 24 15
+	loop	0
+	offset	106 81
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 8 0 0
+	hitflash	electo
+	frame	data/Chars/Bison/anew1.gif
+	delay	1
+	frame	data/Chars/Bison/anew5.gif
+	delay	6
+	offset	98 94
+	blast	120 4 94 62 16 0 0 0 24 15
+	bbox	14 25 125 16
+	frame	data/Chars/Bison/anew2.gif
+	delay	1
+	frame	data/Chars/Bison/anew6.gif
+	delay	6
+	blast	116 2 93 41 16 0 0 0 24 15
+	bbox	29 13 100 6
+	offset	107 64
+	frame	data/Chars/Bison/anew3.gif
+	delay	1
+	frame	data/Chars/Bison/anew7.gif
+	delay	6
+	offset	105 84
+	blast	103 3 109 62 16 0 0 0 24 15
+	bbox	10 18 123 24
+	frame	data/Chars/Bison/anew4.gif
+	delay	1
+	frame	data/Chars/Bison/anew8.gif
+		
+anim	freespecial2
+	sound	data/Chars/Bison/b2.wav
+	blast	141 8 94 86 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	68 43 104 22
+	loop	0
+	offset	144 103
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	electo
+	@cmd	leaper 9 0 0
+	frame	data/Chars/Bison/bnew1.gif
+	blast	184 21 84 121 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	105 63 105 22
+	offset	171 141
+	frame	data/Chars/Bison/bnew2.gif
+	blast	122 1 114 77 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	31 24 123 25
+	offset	126 86
+	frame	data/Chars/Bison/bnew3.gif
+	blast	168 5 128 111 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	86 45 109 32
+	offset	180 110
+	frame	data/Chars/Bison/bnew4.gif
+	blast	158 5 98 52 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	60 20 126 21
+	offset	152 84
+	frame	data/Chars/Bison/bnew5.gif
+	blast	142 6 116 97 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	49 43 138 26
+	offset	145 112
+	frame	data/Chars/Bison/bnew6.gif
+	blast	169 10 117 128 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 59 139 24
+	offset	185 117
+	frame	data/Chars/Bison/bnew7.gif
+	blast	155 8 137 90 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 40 132 23
+	offset	180 103
+	frame	data/Chars/Bison/bnew8.gif
+		
+anim	freespecial3
+	sound	data/Chars/Bison/haha.wav
+	offset	39 111
+	delay	5
+	@cmd	spawn01 "super" 0 64 0
+	frame	data/Chars/Bison/sel1.gif
+	delay	1
+	@cmd	spawn01 "flash3" 0 0 -1
+	sound	data/Chars/Bison/1.wav
+	frame	data/Chars/Bison/cnew1.gif
+	blast	131 4 131 95 16 0 0 0 44 15
+	dropv	1 7 0
+	bbox	87 40 121 21
+	loop	0
+	offset	143 107
+	delay	6
+	hitflash	booma
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 7 0 0
+	frame	data/Chars/Bison/cnew1.gif
+	sound	data/Chars/Bison/2.wav
+	blast	167 4 114 151 16 0 0 0 34 15
+	dropv	1 7 0
+	bbox	95 53 113 43
+	offset	169 142
+	sound	data/Chars/Bison/3.wav
+	frame	data/Chars/Bison/cnew2.gif
+	sound	data/Chars/Bison/4.wav
+	blast	124 0 104 78 16 0 0 0 34 15
+	dropv	1 7 0
+	bbox	53 27 104 18
+	offset	127 89
+	sound	data/Chars/Bison/5.wav
+	frame	data/Chars/Bison/cnew3.gif
+	blast	173 6 118 111 16 0 0 0 34 15
+	dropv	1 7 0
+	bbox	91 43 104 25
+	offset	178 116
+	sound	data/Chars/Bison/6.wav
+	frame	data/Chars/Bison/cnew4.gif
+	sound	data/Chars/Bison/7.wav
+	blast	152 4 108 52 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	61 22 141 20
+	offset	150 85
+	frame	data/Chars/Bison/cnew5.gif
+	sound	data/Chars/Bison/8.wav
+	blast	150 10 102 94 16 0 0 0 44 15
+	dropv	1 7 0
+	bbox	58 36 129 39
+	offset	145 117
+	frame	data/Chars/Bison/cnew6.gif
+	sound	data/Chars/Bison/9.wav
+	blast	164 8 120 131 16 0 0 0 44 15
+	dropv	1 7 0
+	bbox	68 50 142 33
+	offset	182 122
+	frame	data/Chars/Bison/cnew7.gif
+	sound	data/Chars/Bison/final.wav
+	blast	161 8 130 93 16 0 0 0 44 15
+	dropv	1 7 0
+	bbox	84 42 126 22
+	offset	176 107
+	frame	data/Chars/Bison/cnew8.gif
+		
+anim	freespecial4
+	cancel	0 7 0 A2 freespecial
+	cancel	0 7 0 A3 freespecial2
+	cancel	0 7 0 A4 freespecial3
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	loop	0
+	offset	48 63
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Bison/dnew1.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew2.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew3.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew4.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew5.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew6.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew7.gif
+	blast	5 3 77 59 16 0 0 0 24 15
+	dropv	5 1 0
+	frame	data/Chars/Bison/dnew8.gif
+		
+anim	freespecial5
+	sound	data/Chars/Bison/elec.wav
+	loop	0
+	offset	75 109
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Bison/enew1.gif
+	frame	data/Chars/Bison/enew2.gif
+	frame	data/Chars/Bison/enew3.gif
+		
+anim	freespecial6
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	delay	1
+	offset	106 41
+	frame	data/Chars/Bison/anew1.gif
+	bbox	21 14 101 21
+	blast	107 1 98 44 16 0 0 0 24 15
+	loop	0
+	offset	106 41
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 8 0 0
+	hitflash	electo
+	frame	data/Chars/Bison/anew1.gif
+	delay	1
+	frame	data/Chars/Bison/anew5.gif
+	delay	6
+	offset	98 54
+	blast	120 4 94 62 16 0 0 0 24 15
+	bbox	14 25 125 16
+	frame	data/Chars/Bison/anew2.gif
+	delay	1
+	frame	data/Chars/Bison/anew6.gif
+	delay	6
+	blast	116 2 93 41 16 0 0 0 24 15
+	bbox	29 13 100 6
+	offset	107 24
+	frame	data/Chars/Bison/anew3.gif
+	delay	1
+	frame	data/Chars/Bison/anew7.gif
+	delay	6
+	offset	105 44
+	blast	103 3 109 62 16 0 0 0 24 15
+	bbox	10 18 123 24
+	frame	data/Chars/Bison/anew4.gif
+	delay	1
+	frame	data/Chars/Bison/anew8.gif
+		
+anim	freespecial7
+	sound	data/Chars/Bison/b2.wav
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	delay	1
+	offset	144 63
+	frame	data/Chars/Bison/bnew1.gif
+	blast	141 8 94 86 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	68 43 104 22
+	loop	0
+	offset	144 63
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	electo
+	@cmd	leaper 12 0 0
+	frame	data/Chars/Bison/bnew1.gif
+	blast	184 21 84 121 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	105 63 105 22
+	offset	171 101
+	frame	data/Chars/Bison/bnew2.gif
+	blast	122 1 114 77 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	31 24 123 25
+	offset	126 46
+	frame	data/Chars/Bison/bnew3.gif
+	blast	168 5 128 111 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	86 45 109 32
+	offset	180 70
+	frame	data/Chars/Bison/bnew4.gif
+	blast	158 5 98 52 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	60 20 126 21
+	offset	152 44
+	frame	data/Chars/Bison/bnew5.gif
+	blast	142 6 116 97 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	49 43 138 26
+	offset	145 72
+	frame	data/Chars/Bison/bnew6.gif
+	blast	169 10 117 128 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 59 139 24
+	offset	185 77
+	frame	data/Chars/Bison/bnew7.gif
+	blast	155 8 137 90 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 40 132 23
+	offset	180 63
+	frame	data/Chars/Bison/bnew8.gif
+		
+anim	freespecial8
+	sound	data/Chars/Bison/champ.wav
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 130);
+    }
+	@end_script	
+	delay	1
+	offset	143 67
+	frame	data/Chars/Bison/cnew1.gif
+	blast	131 4 131 95 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	87 40 121 21
+	loop	0
+	offset	143 67
+	delay	6
+	hitflash	booma
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 12 0 0
+	frame	data/Chars/Bison/cnew1.gif
+	blast	167 4 114 151 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	95 53 113 43
+	offset	169 102
+	frame	data/Chars/Bison/cnew2.gif
+	blast	124 0 104 78 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	53 27 104 18
+	offset	127 49
+	frame	data/Chars/Bison/cnew3.gif
+	blast	173 6 118 111 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	91 43 104 25
+	offset	178 76
+	frame	data/Chars/Bison/cnew4.gif
+	blast	152 4 108 52 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	61 22 141 20
+	offset	150 45
+	frame	data/Chars/Bison/cnew5.gif
+	blast	150 10 102 94 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	58 36 129 39
+	offset	145 77
+	frame	data/Chars/Bison/cnew6.gif
+	blast	164 8 120 131 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	68 50 142 33
+	offset	182 82
+	frame	data/Chars/Bison/cnew7.gif
+	blast	161 8 130 93 16 0 0 0 24 15
+	dropv	1 7 0
+	bbox	84 42 126 22
+	offset	176 67
+	frame	data/Chars/Bison/cnew8.gif
+		
+anim	get
+	bbox	0 0 0 0
+	loop	0
+	delay	6
+	offset	92 53
+	frame	data/Chars/Bison/get.gif
+		
+anim	idle
+	bbox	31 6 73 78
+	offset	69 85
+	loop	1
+	delay	6
+	frame	data/Chars/Bison/idle1.gif
+	offset	70 87
+	frame	data/Chars/Bison/idle2.gif
+	offset	70 89
+	frame	data/Chars/Bison/idle3.gif
+	offset	70 90
+	frame	data/Chars/Bison/idle4.gif
+		
+anim	jump
+	bbox	3 7 58 120
+	loop	0
+	offset	37 132
+	delay	6
+	cancel	0 4 0 D freespecial6
+	cancel	0 4 0 U freespecial7
+	cancel	0 4 0 S freespecial8
+	frame	data/Chars/Bison/jump1.gif
+	bbox	40 9 63 88
+	offset	67 94
+	frame	data/Chars/Bison/jump2.gif
+	offset	71 84
+	frame	data/Chars/Bison/jump3.gif
+	bbox	62 34 56 89
+	offset	83 122
+	frame	data/Chars/Bison/jump4.gif
+	bbox	21 70 45 113
+	offset	44 184
+	frame	data/Chars/Bison/jump5.gif
+		
+anim	jumpattack
+	sound	data/Chars/Bison/noask.wav
+	blast	31 71 87 61 16 0 0 0 24 15
+	bbox	18 19 81 98
+	loop	0
+	offset	96 123
+	delay	4
+	@cmd	leaper 4 -4 0
+	hitflash	bisone
+	hitfx	data/sounds/bukk.wav
+	cancel	0 2 0 U freespecial7
+	cancel	0 2 0 S freespecial8
+	frame	data/Chars/Bison/bja1.gif
+	blast	39 73 80 60 17 0 0 0 24 15
+	frame	data/Chars/Bison/bja2.gif
+	frame	data/Chars/Bison/bja2.gif
+		
+anim	jumpattack2
+	sound	data/Chars/Bison/noask.wav
+	blast	31 71 87 61 16 0 0 0 24 15
+	bbox	18 19 81 98
+	loop	0
+	offset	96 123
+	delay	4
+	@cmd	leaper 4 -4 0
+	hitflash	bisone
+	hitfx	data/sounds/bukk.wav
+	cancel	0 2 0 U freespecial7
+	cancel	0 2 0 S freespecial8
+	frame	data/Chars/Bison/bja1.gif
+	blast	39 73 80 60 17 0 0 0 24 15
+	frame	data/Chars/Bison/bja2.gif
+	frame	data/Chars/Bison/bja2.gif
+		
+anim	runattack
+	sound	data/Chars/Bison/b2.wav
+	blast	141 8 94 86 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	68 43 104 22
+	loop	0
+	offset	144 103
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	electo
+	@cmd	leaper 9 0 0
+	frame	data/Chars/Bison/bnew1.gif
+	blast	184 21 84 121 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	105 63 105 22
+	offset	171 141
+	frame	data/Chars/Bison/bnew2.gif
+	blast	122 1 114 77 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	31 24 123 25
+	offset	126 86
+	frame	data/Chars/Bison/bnew3.gif
+	blast	168 5 128 111 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	86 45 109 32
+	offset	180 110
+	frame	data/Chars/Bison/bnew4.gif
+	blast	158 5 98 52 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	60 20 126 21
+	offset	152 84
+	frame	data/Chars/Bison/bnew5.gif
+	blast	142 6 116 97 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	49 43 138 26
+	offset	145 112
+	frame	data/Chars/Bison/bnew6.gif
+	blast	169 10 117 128 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 59 139 24
+	offset	185 117
+	frame	data/Chars/Bison/bnew7.gif
+	blast	155 8 137 90 16 0 0 0 24 15
+	dropv	1 6 0
+	bbox	82 40 132 23
+	offset	180 103
+	frame	data/Chars/Bison/bnew8.gif
+		
+anim	attackbackward
+	cancel	0 5 0 A2 freespecial
+	cancel	0 5 0 A3 freespecial2
+	cancel	0 5 0 A4 freespecial3
+	loop	0
+	offset	75 109
+	delay	5
+	hitfx	data/sounds/bukk.wav
+	move	-15
+	frame	data/Chars/Bison/enew1.gif
+	frame	data/Chars/Bison/enew2.gif
+	frame	data/Chars/Bison/enew3.gif
+	frame	data/Chars/Bison/enew1.gif
+	frame	data/Chars/Bison/enew2.gif
+	frame	data/Chars/Bison/enew3.gif
+		
+anim	pain
+	sound	data/Chars/Bison/pain.wav
+	bbox	17 4 84 96
+	loop	0
+	offset	62 93
+	delay	6
+	frame	data/chars/Bison/pain.gif
+		
+anim	rise
+	loop	0
+	offset	56 79
+	delay	6
+	frame	data/chars/Bison/rise1.gif
+	offset	56 68
+	frame	data/chars/Bison/rise2.gif
+	offset	75 73
+	frame	data/chars/Bison/rise3.gif
+		
+anim	run
+	bbox	88 6 84 74
+	loop	1
+	delay	6
+	offset	83 86
+	frame	data/Chars/Bison/run1.gif
+	offset	90 86
+	bbox	83 5 87 79
+	frame	data/Chars/Bison/run2.gif
+	offset	85 84
+	frame	data/Chars/Bison/run3.gif
+		
+anim	runjumpattack
+	blast	31 71 87 61 16 0 0 0 24 15
+	bbox	18 19 81 98
+	loop	0
+	offset	96 123
+	delay	3
+	@cmd	leaper 5 -4 0
+	hitflash	bisone
+	hitfx	data/sounds/bukk.wav
+	cancel	0 2 0 U freespecial7
+	cancel	0 2 0 S freespecial8
+	frame	data/Chars/Bison/bja1.gif
+	blast	39 73 80 60 17 0 0 0 24 15
+	frame	data/Chars/Bison/bja2.gif
+	frame	data/Chars/Bison/bja2.gif
+	frame	data/Chars/Bison/bja2.gif
+		
+anim	select
+	sound	data/Chars/Bison/haha.wav
+	bbox	0 0 0 0
+	loop	0
+	offset	41 111
+	delay	6
+	frame	data/Chars/Bison/sel1.gif
+	frame	data/Chars/Bison/sel2.gif
+	frame	data/Chars/Bison/sel3.gif
+	frame	data/Chars/Bison/sel4.gif
+	frame	data/Chars/Bison/sel5.gif
+	frame	data/Chars/Bison/sel6.gif
+	frame	data/Chars/Bison/sel7.gif
+	frame	data/Chars/Bison/sel8.gif
+	frame	data/Chars/Bison/sel9.gif
+	offset	43 111
+	frame	data/Chars/Bison/sel10.gif
+		
+anim	special
+	loop	0
+	offset	85 111
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	cancel	0 9 0 U freespecial
+	cancel	0 9 0 D freespecial2
+	cancel	0 9 0 A freespecial3
+	frame	data/Chars/Bison/s1.gif
+	frame	data/Chars/Bison/s2.gif
+	frame	data/Chars/Bison/s3.gif
+	offset	38 111
+	frame	data/Chars/Bison/s4.gif
+	offset	34 108
+	frame	data/Chars/Bison/s5.gif
+	move	300
+	frame	data/Chars/Bison/s5.gif
+	move	0
+	offset	38 111
+	frame	data/Chars/Bison/s4.gif
+	offset	85 111
+	frame	data/Chars/Bison/s3.gif
+	frame	data/Chars/Bison/s2.gif
+	frame	data/Chars/Bison/s1.gif
+		
+anim	waiting
+	loop	0
+	offset	40 111
+	delay	6
+	frame	data/Chars/Bison/w1.gif
+		
+anim	walk
+	bbox	51 3 52 111
+	loop	1
+	delay	6
+	offset	71 113
+	frame	data/Chars/Bison/walk1.gif
+	offset	78 113
+	frame	data/Chars/Bison/walk2.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,21 @@
+name	Table
+type	obstacle
+Health	1
+nolife        1
+shadow	5
+diesound data/sounds/wood.wav
+noatflash	1
+
+remap	data/chars/misc/table/table1.gif data/chars/misc/table/tablemap.gif
+
+anim idle
+	delay	100
+	offset	32 44
+	bbox	1 1 63 47
+	PlatForm	0 0  60 60 15 39
+	frame	data/chars/misc/table/table1.gif
+
+anim fall
+	delay	1000
+	offset	30 59
+	frame	data/chars/misc/table/table1b.gif

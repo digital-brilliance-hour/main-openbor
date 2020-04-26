@@ -1,0 +1,36 @@
+name	     Cyclopsc
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+flash           cyclopsd
+antigravity 100
+
+
+
+anim	idle
+	fastattack	1
+	loop	0
+	delay	2
+	offset	0 79
+	frame	data/chars/Cyclops/c1.gif
+	attack	3 9 147 144 13 1 0 0 24 15
+	dropv	1 4 0
+	frame	data/chars/Cyclops/c2.gif
+	attack	0
+	frame	data/chars/Cyclops/c3.gif
+	attack	3 7 216 143 12 1 0 0 24 15
+	dropv	1 8 0
+	frame	data/chars/Cyclops/c4.gif
+	attack	0
+	frame	data/chars/Cyclops/c5.gif
+	attack	15 11 937 126 25 1 0 0 24 15
+	dropv	1 13 0
+	frame	data/chars/Cyclops/c5.gif
+	attack	0
+	frame	data/chars/Cyclops/c5.gif
+	@cmd	suicide()
+	frame	data/chars/Cyclops/c5.gif
+		
+#|edited by openBor Stats v 0.51
+		

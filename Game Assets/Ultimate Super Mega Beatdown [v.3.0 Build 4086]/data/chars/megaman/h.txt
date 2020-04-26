@@ -1,0 +1,82 @@
+name	     MegamanH
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+lifespan        9
+
+anim	idle
+	loop	0
+	delay	3
+	offset	60 89
+	followanim	1
+	followcond	1
+	frame	data/chars/Megaman/h1.gif
+	frame	data/chars/Megaman/h3.gif
+	frame	data/chars/Megaman/h4.gif
+	blast	5 5 102 82 16 0 0 45
+	dropv	2 7 0
+	move	35
+	frame	data/chars/Megaman/h5.gif
+	blast	5 5 104 83 16 0 0 45
+	dropv	2 7 0
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+	frame	data/chars/Megaman/h6.gif
+		
+anim	follow1
+	loop	0
+	delay	3
+	offset	48 83
+	@cmd	stop
+	frame	data/chars/Megaman/h7.gif
+	offset	51 89
+	frame	data/chars/Megaman/h8.gif
+	offset	61 112
+	frame	data/chars/Megaman/h9.gif
+	@cmd	suicide()
+	frame	data/chars/Megaman/h9.gif
+		
+#|edited by openBor Stats v 0.50
+		

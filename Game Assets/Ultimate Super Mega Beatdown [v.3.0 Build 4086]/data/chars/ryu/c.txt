@@ -1,0 +1,35 @@
+name	     RYUc
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	37 50
+	frame	data/chars/RYU/c1.gif
+	offset	52 112
+	frame	data/chars/RYU/c2.gif
+	offset	51 134
+	frame	data/chars/RYU/c3.gif
+	offset	42 136
+	frame	data/chars/RYU/c4.gif
+	offset	36 137
+	frame	data/chars/RYU/c5.gif
+	offset	35 149
+	frame	data/chars/RYU/c6.gif
+	offset	36 157
+	frame	data/chars/RYU/c7.gif
+	offset	36 161
+	frame	data/chars/RYU/c8.gif
+	offset	36 152
+	frame	data/chars/RYU/c9.gif
+	offset	36 141
+	frame	data/chars/RYU/c10.gif
+	@cmd	suicide
+	frame	data/chars/RYU/c10.gif
+		
+#|edited by openBor Stats v 0.50
+		

@@ -1,0 +1,76 @@
+name	     Dragonflame
+type	     none
+health	1
+shadow	     0
+candamage    enemy obstacle
+lifespan 4
+antigravity 100
+flash       burnt
+animationscript data/scripts2/script.c
+
+
+
+
+
+
+anim	spawn
+	blast	6 21 186 250 35
+	loop	0
+	delay	3
+	offset	97 0
+	frame	data/chars/Dragon/Dragon20520000.gif
+	blast	8 21 181 248 35
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	blast	6 22 184 241 35
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	blast	6 22 178 245 35
+	offset	94 0
+	frame	data/chars/Dragon/Dragon20520003.gif
+	blast	12 24 180 241 35
+	offset	97 0
+	frame	data/chars/Dragon/Dragon20520000.gif
+	blast	5 25 186 242 35
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	offset	94 0
+	frame	data/chars/Dragon/Dragon20520003.gif
+	offset	97 0
+	frame	data/chars/Dragon/Dragon20520000.gif
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	blast	8 21 181 248 35
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	blast	6 22 184 241 35
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	blast	6 22 178 245 35
+	offset	94 0
+	frame	data/chars/Dragon/Dragon20520003.gif
+	blast	12 24 180 241 35
+	offset	97 0
+	frame	data/chars/Dragon/Dragon20520000.gif
+	blast	5 25 186 242 35
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	offset	94 0
+	frame	data/chars/Dragon/Dragon20520003.gif
+	offset	97 0
+	frame	data/chars/Dragon/Dragon20520000.gif
+	offset	96 0
+	frame	data/chars/Dragon/Dragon20520001.gif
+	offset	95 0
+	frame	data/chars/Dragon/Dragon20520002.gif
+	@cmd	suicide()
+	frame	data/chars/Dragon/Dragon20520003.gif
+		
+#|edited by openBor Stats v 0.50
+		

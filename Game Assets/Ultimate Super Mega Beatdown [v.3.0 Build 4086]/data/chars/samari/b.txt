@@ -1,0 +1,20 @@
+name	     Samarib
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+antigravity 100
+
+
+anim	idle
+	freeze	6 7 64 72 1 0 0 0 65 9
+	loop	0
+	delay	3
+	offset	42 41
+	frame	data/chars/Samari/b1.gif
+	frame	data/chars/Samari/b2.gif
+	@cmd	suicide()
+	frame	data/chars/Samari/b2.gif
+		
+#|edited by openBor Stats v 0.51
+		

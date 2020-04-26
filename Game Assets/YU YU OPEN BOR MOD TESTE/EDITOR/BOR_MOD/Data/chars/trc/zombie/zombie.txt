@@ -1,0 +1,227 @@
+name	zombie
+health	60
+speed	9
+shadow	4
+gfxshadow 1
+risetime	-50
+type		enemy
+aimove Chasez
+aimove Avoidx
+dust		dust
+bflash Block
+aggression -10
+falldie 1
+nodieblink 3
+
+icon	        data/chars/zombie/icon.gif
+diesound        data/sounds/alien.wav
+
+remap	data/chars/zombie/stand.gif   data/chars/zombie/map2.gif
+
+
+
+
+anim	burn
+dropframe 1
+forcedirection	-1
+	bouncefactor	2.2
+drawmethod	tintmode 2
+	drawmethod	tintcolor 200_50_0
+	loop	0
+	offset	160 140
+	bbox	137 80 74 71
+	attack	87 83 52 54 5 1 0 0 0 0
+	delay	12
+	move	-5
+	frame	data/chars/zombie/f1.gif
+	attack	0 0 0 0
+nodrawmethod
+	offset	160 127
+	frame	data/chars/zombie/f2.gif
+
+
+
+anim	attack1
+	guardcost	1
+	range	0 100
+	loop	0
+	delay	12
+	offset	160 162
+	bbox	135 100 100 50
+	sound	data/sounds/punch2.wav
+	hitfx	data/sounds/cut2.wav
+	hitflash	blood2
+	frame	data/chars/zombie/a1.gif
+	frame	data/chars/zombie/a2.gif
+	attack	200 100 50 20 10 0 0 0 0
+	frame	data/chars/zombie/a3.gif
+		
+anim	death4#headshot
+	loop	0
+flash bblod2
+	delay	8
+	offset	160 162
+	frame	data/chars/zombie/hit11.gif
+	frame	data/chars/zombie/hit12.gif
+	frame	data/chars/zombie/hit13.gif
+	frame	data/chars/zombie/hit14.gif
+	frame	data/chars/zombie/hit15.gif
+	frame	data/chars/zombie/hit16.gif
+	frame	data/chars/zombie/hit17.gif
+		
+anim	death
+	loop	0
+	delay	8
+	offset	160 162
+	frame	data/chars/zombie/d1.gif
+	frame	data/chars/zombie/d2.gif
+	frame	data/chars/zombie/d3.gif
+	frame	data/chars/zombie/d4.gif
+	frame	data/chars/zombie/d5.gif
+	frame	data/chars/zombie/d6.gif
+	frame	data/chars/zombie/d7.gif
+	frame	data/chars/zombie/d8.gif
+		
+anim	death2#cut
+	loop	0
+	delay	30
+	offset	160 162
+	#custbomb	bblod2
+	#pbombframe	1 60
+flash bblod2
+	sound	data/sounds/rip2.wav
+	frame	data/chars/zombie/hit4.gif
+	delay	10
+	frame	data/chars/zombie/hit5.gif
+	sound	data/sounds/blood2.wav
+	frame	data/chars/zombie/hit6.gif
+	delay	20
+	sound	data/sounds/monster2.wav
+	frame	data/chars/zombie/hit7.gif
+	frame	data/chars/zombie/hit8.gif
+	frame	data/chars/zombie/hit9.gif
+	delay	10
+	frame	data/chars/zombie/hit10.gif
+		
+anim	death3
+	loop	0
+	delay	20
+	offset	160 162
+	custbomb	bblod2
+	pbombframe	1 60
+	sound	data/sounds/rip2.wav
+	delay	20
+	frame	data/chars/zombie/hit9.gif
+	delay	10
+	frame	data/chars/zombie/hit10.gif
+
+anim	death5#cut
+	loop	0
+	delay	50
+	offset	160 162
+	#custbomb	bblod2
+	#pbombframe	1 60
+flash bblod2
+	sound	data/sounds/rip2.wav
+	frame	data/chars/zombie/hit4.gif
+	delay	10
+	frame	data/chars/zombie/hit5.gif
+	sound	data/sounds/blood2.wav
+	frame	data/chars/zombie/hit6.gif
+	delay	20
+	sound	data/sounds/monster2.wav
+	frame	data/chars/zombie/hit7.gif
+	frame	data/chars/zombie/hit8.gif
+	frame	data/chars/zombie/hit9.gif
+	delay	10
+	frame	data/chars/zombie/hit10.gif
+	
+		
+anim	fall
+	loop	0
+forcedirection	-1
+	bouncefactor	2.2
+	bbox	137 80 74 71
+	attack	87 83 52 54 5 1 0 0 0 0
+	offset	160 140
+	delay	7
+	move	-5
+	frame	data/chars/zombie/f1.gif
+	bbox	137 80 74 71
+	attack	87 83 52 54 5 1 0 0 0 0
+	offset	160 140
+	frame	data/chars/zombie/f1.gif
+	bbox	0 0 0 0
+	attack	87 83 52 54 5 1 0 0 0 0
+	offset	160 125
+	frame	data/chars/zombie/f2.gif
+		
+anim	idle
+	loop	1
+	offset	150 162
+	bbox	131 80 51 84
+	delay	60
+	frame	data/chars/zombie/stand.gif
+	delay	8
+	frame	data/chars/zombie/stand1.gif
+	frame	data/chars/zombie/stand2.gif
+		
+anim	pain
+	loop	0
+	delay	15
+	offset	150 162
+	bbox	110 80 56 83
+	move	0
+	frame	data/chars/zombie/hit1.gif
+delay	25
+	frame	data/chars/zombie/hit2.gif
+		
+anim	rise
+	loop	0
+	delay	18
+	offset	160 125
+	frame	data/chars/zombie/rise.gif
+	offset	150 165
+	delay	8
+	frame	data/chars/zombie/w2.gif
+		
+anim	death5
+	loop	0
+	delay	10
+	offset	160 162
+	frame	data/chars/zombie/hit1.gif
+	frame	data/chars/zombie/hit2.gif
+	delay	4
+	frame	data/chars/zombie/hit4.gif
+	frame	data/chars/zombie/hit2.gif
+	frame	data/chars/zombie/hit4.gif
+	frame	data/chars/zombie/hit2.gif
+	frame	data/chars/zombie/hit5.gif
+	frame	data/chars/zombie/hit6.gif
+	frame	data/chars/zombie/hit5.gif
+	frame	data/chars/zombie/hit6.gif
+	frame	data/chars/zombie/hit7.gif
+	frame	data/chars/zombie/hit8.gif
+	frame	data/chars/zombie/hit9.gif
+	frame	data/chars/zombie/hit10.gif
+		
+anim	spawn
+	loop	0
+	offset	150 162
+	delay	100
+	frame	data/chars/zombie/stand.gif
+		
+anim	walk
+	loop	1
+	offset	150 162
+	bbox	137 80 54 70
+	delay	12
+	frame	data/chars/zombie/w1.gif
+	offset	150 164
+	frame	data/chars/zombie/w2.gif
+	offset	150 168
+	frame	data/chars/zombie/w3.gif
+	frame	data/chars/zombie/w4.gif
+		
+#|edited by openBor Stats v 0.58
+		

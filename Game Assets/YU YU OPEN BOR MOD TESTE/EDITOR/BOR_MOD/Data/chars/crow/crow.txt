@@ -1,0 +1,209 @@
+name	CROW
+health	100
+speed	9
+type	enemy
+shadow  3
+remap	data/chars/crow/w1.gif   data/chars/crow/map1.gif
+remap	data/chars/crow/w1.gif   data/chars/crow/map2.gif
+remap	data/chars/crow/w1.gif   data/chars/crow/map3.gif
+remap	data/chars/crow/w1.gif   data/chars/crow/map4.gif
+dust   dust
+icon	data/chars/crow/icon.gif
+
+
+
+anim	attack1
+	range	0 80
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	75 130 35 70
+	move	3
+	hitflash	flash2
+	frame	data/chars/crow/a1.gif
+	frame	data/chars/crow/a1.gif
+	sound	data/chars/crow/a1.wav
+	attack	92 120 55 75 5
+	frame	data/chars/crow/a2.gif
+	move	0
+	frame	data/chars/crow/a2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a1.gif
+	frame	data/chars/crow/a1.gif
+	fastattack	1
+	attack	92 120 55 75 5
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a1.gif
+	frame	data/chars/crow/a1.gif
+	attack	92 120 55 75 5 1
+	fastattack	1
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a2.gif
+	frame	data/chars/crow/a2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a2.gif
+		
+anim	bpain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	65 102 46 76
+	sound	data/chars/crow/pain.wav
+	frame	data/chars/crow/fall4.gif
+	offset	87 192
+	frame	data/chars/crow/fall4.gif
+	offset	89 192
+	frame	data/chars/crow/fall4.gif
+	offset	87 192
+	frame	data/chars/crow/fall4.gif
+	offset	89 192
+	frame	data/chars/crow/fall4.gif
+	offset	87 192
+	frame	data/chars/crow/fall4.gif
+	offset	89 192
+	frame	data/chars/crow/fall4.gif
+	offset	87 192
+	frame	data/chars/crow/fall4.gif
+	offset	89 192
+	delay	50
+	frame	data/chars/crow/fall4.gif
+		
+anim	fall
+	loop	0
+	offset	90 192
+	delay	30
+	sound	data/chars/crow/fall.wav
+	frame	data/chars/crow/fall1.gif
+	frame	data/chars/crow/fall1.gif
+	attack	0 0 0 0 0 0 0 0 0
+	delay	40
+	frame	data/chars/crow/fall4.gif
+		
+anim	grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/crow/pain.gif
+	offset	88 192
+	frame	data/chars/crow/pain.gif
+	offset	90 192
+	delay	40
+	frame	data/chars/crow/pain.gif
+		
+anim	idle
+	loop	1
+	offset	88 192
+	bbox	75 130 35 70
+	delay	9
+	frame	data/chars/crow/idle.gif
+	frame	data/chars/crow/idle2.gif
+	frame	data/chars/crow/idle3.gif
+	frame	data/chars/crow/idle3.gif
+	frame	data/chars/crow/idle2.gif
+	frame	data/chars/crow/idle.gif
+		
+anim	pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	sound	data/chars/crow/pain.wav
+	move	-2
+	frame	data/chars/crow/pain.gif
+	offset	87 192
+	move	-2
+	frame	data/chars/crow/pain.gif
+	offset	89 192
+	move	0
+	delay	40
+	frame	data/chars/crow/pain.gif
+		
+anim	respawn
+	loop	0
+	offset	90 192
+	delay	5
+	frame	data/chars/crow/idle.gif
+		
+anim	rise
+	loop	0
+	offset	90 192
+	delay	8
+	frame	data/chars/crow/rise1.gif
+	frame	data/chars/crow/rise1.gif
+	frame	data/chars/crow/rise1.gif
+	frame	data/chars/crow/idle3.gif
+	frame	data/chars/crow/idle2.gif
+		
+anim	spain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	sound	data/chars/crow/pain.wav
+	frame	data/chars/crow/pain.gif
+	offset	87 192
+	frame	data/chars/crow/pain.gif
+	offset	89 192
+	delay	40
+	frame	data/chars/crow/pain.gif
+		
+anim	special
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	75 130 35 70
+	hitflash	vok
+	frame	data/chars/crow/a3.gif
+	frame	data/chars/crow/a3.gif
+	sound	data/chars/crow/a1.wav
+	frame	data/chars/crow/a4.gif
+	attack	92 140 50 25 5
+	frame	data/chars/crow/a5.gif
+	move	0
+	frame	data/chars/crow/a5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a4.gif
+	frame	data/chars/crow/a3.gif
+	frame	data/chars/crow/a3.gif
+	frame	data/chars/crow/a4.gif
+	fastattack	1
+	attack	92 140 50 25 5
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a4.gif
+	frame	data/chars/crow/a3.gif
+	frame	data/chars/crow/a3.gif
+	frame	data/chars/crow/a4.gif
+	attack	92 140 50 25 5 1
+	fastattack	1
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a5.gif
+	frame	data/chars/crow/a4.gif
+		
+anim	walk
+	loop	1
+	offset	85 192
+	bbox	75 130 35 70
+	delay	9
+	frame	data/chars/crow/w1.gif
+	frame	data/chars/crow/w2.gif
+	frame	data/chars/crow/w3.gif
+	frame	data/chars/crow/w4.gif
+	frame	data/chars/crow/w3.gif
+	frame	data/chars/crow/w2.gif
+		
+#|edited by openBor Stats v 0.67
+		

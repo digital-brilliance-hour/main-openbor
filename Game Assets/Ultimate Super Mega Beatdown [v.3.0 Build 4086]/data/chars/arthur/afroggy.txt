@@ -1,0 +1,22 @@
+name	     AFroggy
+type	     none
+shadow	     0
+candamage    enemy player obstacle
+remove	0
+lifespan 1
+
+anim	spawn
+	loop	0
+	delay	40
+	offset	32 38
+	spawnframe	4
+	subentity	sgblast
+	frame	data/chars/Arthur/Arthur308010009.gif
+	delay	8
+	frame	data/chars/Arthur/Arthur308010010.gif
+	frame	data/chars/Arthur/Arthur308010011.gif
+	frame	data/chars/Arthur/EMP.gif
+	frame	data/chars/Arthur/EMP.gif
+		
+#|edited by openBor Stats v 0.50
+		

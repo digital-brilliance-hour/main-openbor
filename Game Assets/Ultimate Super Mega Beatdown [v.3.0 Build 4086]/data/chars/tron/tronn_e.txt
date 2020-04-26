@@ -1,0 +1,899 @@
+name	       Tron_Bonne_E
+health         1000
+mp	       500
+speed	       12
+type	       enemy
+hostile		player enemy
+aimove	Chase
+subject_to_screen 1
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    player enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  enemy obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script	data/scripts/toad.c
+
+load            trona
+load            tronc
+load            tronb
+load            tronh
+
+com             d f a freespecial
+com             d d a freespecial3
+com             d u a freespecial7
+com             u u A freespecial5
+com             a2 freespecial2
+com             d f s freespecial8
+
+palette		data/Chars/Tron/idle1.gif
+alternatepal	data/Chars/Tron/alter1.gif
+alternatepal	data/Chars/Tron/alter2.gif
+alternatepal	data/Chars/Tron/alter3.gif
+alternatepal	data/Chars/Tron/alter4.gif
+alternatepal	data/Chars/Tron/alter5.gif
+alternatepal	data/Chars/Tron/alter6.gif
+alternatepal	data/Chars/Tron/alter7.gif
+alternatepal	data/Chars/Tron/alter8.gif
+
+icon           data/chars/Tron/icon.gif
+
+
+
+
+
+anim	attack1
+	cancel	0 3 1 d f a freespecial
+	cancel	0 3 1 d d a freespecial3
+	cancel	0 3 1 d u a freespecial7
+	cancel	0 3 1 u u A freespecial5
+	cancel	0 3 1 a2 freespecial2
+	cancel	0 3 1 d f s freespecial8
+	bbox	26 14 63 88
+	loop	0
+	delay	6
+	offset	59 103
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Tron/attack1.gif
+	attack	76 27 108 52 7
+	offset	60 103
+	frame	data/Chars/Tron/attack2.gif
+	frame	data/Chars/Tron/attack3.gif
+	offset	59 103
+	frame	data/Chars/Tron/attack4.gif
+		
+anim	attack2
+	cancel	0 10 1 d f a freespecial
+	cancel	0 10 1 d d a freespecial3
+	cancel	0 10 1 d u a freespecial7
+	cancel	0 10 1 u u A freespecial5
+	cancel	0 10 1 a2 freespecial2
+	cancel	0 10 1 d f s freespecial8
+	bbox	22 10 64 93
+	loop	0
+	delay	3
+	offset	51 101
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Tron/bttack1.gif
+	offset	50 100
+	frame	data/Chars/Tron/bttack2.gif
+	offset	52 98
+	frame	data/Chars/Tron/bttack3.gif
+	attack	33 47 110 42 7
+	offset	53 102
+	frame	data/Chars/Tron/bttack4.gif
+	attack	37 47 117 38 7
+	offset	53 99
+	frame	data/Chars/Tron/bttack5.gif
+	attack	41 48 109 41 7
+	offset	55 104
+	frame	data/Chars/Tron/bttack6.gif
+	attack	44 51 110 38 7
+	offset	55 102
+	frame	data/Chars/Tron/bttack7.gif
+	attack	48 49 111 42 7
+	offset	57 103
+	frame	data/Chars/Tron/bttack8.gif
+	attack	53 45 110 46 7
+	offset	57 101
+	frame	data/Chars/Tron/bttack9.gif
+	attack	51 49 123 42 7
+	offset	62 103
+	frame	data/Chars/Tron/bttack10.gif
+	attack	62 44 110 45 7
+	offset	62 101
+	frame	data/Chars/Tron/bttack11.gif
+		
+anim	attack3
+	cancel	0 10 1 d f a freespecial
+	cancel	0 10 1 d d a freespecial3
+	cancel	0 10 1 d u a freespecial7
+	cancel	0 10 1 u u A freespecial5
+	cancel	0 10 1 a2 freespecial2
+	cancel	0 10 1 d f s freespecial8
+	loop	0
+	delay	4
+	hitfx	data/Chars/Rogue/hit.wav
+	bbox	55 5 32 98
+	offset	84 106
+	frame	data/Chars/Tron/cttack2.gif
+	attack	21 25 79 53 7
+	bbox	46 8 30 95
+	offset	62 107
+	frame	data/Chars/Tron/cttack3.gif
+	attack	3 13 202 59 8
+	bbox	81 4 23 97
+	offset	91 107
+	frame	data/Chars/Tron/cttack4.gif
+	attack	2 13 205 71 8
+	bbox	97 4 36 105
+	offset	110 107
+	frame	data/Chars/Tron/cttack5.gif
+	attack	15 17 76 62 8
+	bbox	52 6 23 97
+	offset	62 108
+	frame	data/Chars/Tron/cttack6.gif
+	attack	1 14 209 69 8
+	bbox	78 7 27 101
+	offset	92 108
+	frame	data/Chars/Tron/cttack7.gif
+	attack	3 15 203 70 8
+	bbox	102 6 19 103
+	offset	109 108
+	frame	data/Chars/Tron/cttack8.gif
+	attack	29 23 100 58 8
+	bbox	26 7 23 91
+	offset	43 107
+	frame	data/Chars/Tron/cttack9.gif
+	bbox	50 4 28 96
+	offset	62 108
+	frame	data/Chars/Tron/cttack10.gif
+	attack	4 11 201 69 8
+	bbox	76 8 25 99
+	offset	91 108
+	frame	data/Chars/Tron/cttack11.gif
+		
+anim	attack4
+	cancel	0 9 1 d f a freespecial
+	cancel	0 9 1 d d a freespecial3
+	cancel	0 9 1 d u a freespecial7
+	cancel	0 9 1 u u A freespecial5
+	cancel	0 9 1 a2 freespecial2
+	cancel	0 9 1 d f s freespecial8
+	bbox	55 6 34 89
+	loop	0
+	delay	6
+	offset	75 94
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/dttack1.gif
+	bbox	19 6 63 50
+	offset	45 71
+	frame	data/Chars/Tron/dttack2.gif
+	offset	45 72
+	frame	data/Chars/Tron/dttack3.gif
+	offset	46 73
+	frame	data/Chars/Tron/dttack4.gif
+	blast	41 17 95 70 16 0 0 45
+	offset	45 107
+	frame	data/Chars/Tron/dttack5.gif
+	bbox	53 51 27 67
+	offset	71 150
+	frame	data/Chars/Tron/dttack6.gif
+	offset	72 144
+	frame	data/Chars/Tron/dttack7.gif
+	bbox	102 20 65 106
+	offset	144 134
+	frame	data/Chars/Tron/dttack8.gif
+	bbox	91 34 41 88
+	offset	106 121
+	@cmd	spawn01 "tronb" 108 45 0
+	frame	data/Chars/Tron/dttack9.gif
+	frame	data/Chars/Tron/dttack10.gif
+		
+anim	fall
+	loop	0
+	offset	69 62
+	delay	25
+	frame	data/Chars/Tron/fall1.gif
+	offset	64 65
+	frame	data/Chars/Tron/fall2.gif
+	offset	93 57
+	frame	data/Chars/Tron/fall3.gif
+		
+anim	freespecial
+	cancel	0 11 0 d f s freespecial8
+	bbox	32 13 68 83
+	loop	0
+	offset	70 99
+	delay	5
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/anew1.gif
+	bbox	27 8 29 97
+	offset	61 104
+	frame	data/Chars/Tron/anew2.gif
+	@cmd	spawn01 "trona" 39 63 0
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+	frame	data/Chars/Tron/anew2.gif
+		
+anim	freespecial2
+	cancel	0 19 0 d f s freespecial8
+	fastattack	1
+	loop	0
+	offset	52 98
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/s1.gif
+	blast	61 26 88 74 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	53 102
+	frame	data/Chars/Tron/s2.gif
+	blast	37 32 114 63 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	53 99
+	frame	data/Chars/Tron/s3.gif
+	blast	61 35 106 67 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	55 104
+	frame	data/Chars/Tron/s4.gif
+	blast	25 44 136 49 7 0 0 0 35 15
+	dropv	2 0 0
+	offset	55 102
+	frame	data/Chars/Tron/s5.gif
+	blast	40 33 125 64 7 0 0 0 35 15
+	dropv	2 0 0
+	offset	57 103
+	frame	data/Chars/Tron/s6.gif
+	blast	51 41 118 52 7 0 0 0 35 15
+	dropv	2 0 0
+	offset	57 101
+	frame	data/Chars/Tron/s7.gif
+	blast	88 34 77 60 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	62 103
+	frame	data/Chars/Tron/s8.gif
+	blast	66 40 106 50 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	62 101
+	frame	data/Chars/Tron/s9.gif
+	blast	75 42 100 49 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	65 103
+	frame	data/Chars/Tron/s10.gif
+	blast	78 32 98 57 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	65 101
+	frame	data/Chars/Tron/s11.gif
+	blast	82 29 97 66 7 0 0 0 35 15
+	dropv	3 0 0
+	frame	data/Chars/Tron/s12.gif
+	blast	74 38 126 54 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	67 102
+	frame	data/Chars/Tron/s13.gif
+	offset	67 100
+	frame	data/Chars/Tron/s14.gif
+	blast	105 39 98 57 7 0 0 0 35 15
+	offset	69 102
+	frame	data/Chars/Tron/s15.gif
+	blast	87 35 117 57 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s16.gif
+	blast	84 35 115 60 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	69 102
+	frame	data/Chars/Tron/s17.gif
+	blast	80 28 123 68 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s18.gif
+	blast	83 33 123 65 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	69 102
+	frame	data/Chars/Tron/s19.gif
+	blast	96 32 107 64 7 0 0 0 35 15
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s20.gif
+		
+anim	freespecial3
+	cancel	0 11 0 d f s freespecial8
+	bbox	51 7 61 69
+	loop	0
+	offset	69 79
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/cnew1.gif
+	bbox	15 12 75 71
+	offset	43 87
+	frame	data/Chars/Tron/cnew2.gif
+	offset	35 92
+	frame	data/Chars/Tron/cnew3.gif
+	blast	79 7 110 97 16 0 0 45
+	dropv	3 0 0
+	offset	37 97
+	frame	data/Chars/Tron/cnew4.gif
+	blast	90 5 102 102 16 0 0 45
+	dropv	3 0 0
+	frame	data/Chars/Tron/cnew5.gif
+	blast	86 8 146 128 16 0 0 45
+	dropv	3 0 0
+	offset	55 131
+	bbox	18 32 75 98
+	frame	data/Chars/Tron/cnew6.gif
+	blast	112 19 125 114 16 0 0 45
+	dropv	3 0 0
+	frame	data/Chars/Tron/cnew7.gif
+	blast	87 4 131 118 16 0 0 45
+	dropv	3 0 0
+	bbox	18 21 59 95
+	offset	40 121
+	frame	data/Chars/Tron/cnew8.gif
+	blast	77 11 142 108 16 0 0 45
+	dropv	3 0 0
+	bbox	6 23 70 91
+	frame	data/Chars/Tron/cnew9.gif
+	blast	86 4 141 109 16 0 0 45
+	dropv	3 0 0
+	offset	40 119
+	frame	data/Chars/Tron/cnew10.gif
+	blast	85 9 138 103 16 0 0 45
+	dropv	4 0 0
+	frame	data/Chars/Tron/cnew11.gif
+	frame	data/Chars/Tron/cnew12.gif
+		
+anim	freespecial4
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 110);
+    }
+	@end_script	
+	loop	0
+	offset	51 109
+	bbox	8 11 106 105
+	delay	6
+	hitflash	electo
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/dnew1.gif
+	offset	63 124
+	bbox	34 6 102 102
+	blast	114 4 124 122 16 0 0 45
+	dropv	2 0 0
+	frame	data/Chars/Tron/dnew2.gif
+	blast	127 7 106 82 16 0 0 45
+	dropv	2 0 0
+	offset	54 123
+	frame	data/Chars/Tron/dnew3.gif
+	blast	129 9 92 78 16 0 0 45
+	dropv	2 0 0
+	frame	data/Chars/Tron/dnew4.gif
+	blast	126 4 103 73 16 0 0 45
+	dropv	2 0 0
+	frame	data/Chars/Tron/dnew5.gif
+	blast	138 5 92 78 16 0 0 45
+	dropv	2 0 0
+	frame	data/Chars/Tron/dnew6.gif
+		
+anim	freespecial5
+	blast	1 11 206 72 16 0 0 45
+	dropv	2 0 0
+	bbox	74 3 24 135
+	loop	0
+	offset	76 134
+	delay	5
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/enew1.gif
+	blast	2 14 204 58 16 0 0 45
+	dropv	2 0 0
+	bbox	97 10 28 129
+	offset	102 134
+	frame	data/Chars/Tron/enew2.gif
+	bbox	15 12 44 120
+	offset	35 134
+	frame	data/Chars/Tron/enew4.gif
+	blast	2 9 209 77 16 0 0 45
+	dropv	2 0 0
+	bbox	70 5 40 131
+	offset	84 135
+	frame	data/Chars/Tron/enew5.gif
+	blast	1 9 208 66 16 0 0 45
+	dropv	2 0 0
+	bbox	93 10 23 129
+	offset	95 135
+	frame	data/Chars/Tron/enew6.gif
+	blast	1 20 84 77 16 0 0 45
+	dropv	2 0 0
+	bbox	24 10 27 129
+	offset	31 135
+	frame	data/Chars/Tron/enew8.gif
+	blast	0 9 211 75 16 0 0 45
+	dropv	2 0 0
+	bbox	79 9 30 127
+	offset	87 132
+	frame	data/Chars/Tron/enew9.gif
+		
+anim	freespecial6
+	loop	0
+	offset	57 100
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/fnew1.gif
+	frame	data/Chars/Tron/fnew2.gif
+	frame	data/Chars/Tron/fnew3.gif
+		
+anim	freespecial7
+	cancel	0 7 0 d f s freespecial8
+	bbox	42 5 73 103
+	loop	0
+	offset	90 107
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/gnew1.gif
+	bbox	7 9 76 98
+	offset	56 105
+	frame	data/Chars/Tron/gnew2.gif
+	bbox	22 36 77 97
+	offset	73 136
+	frame	data/Chars/Tron/gnew3.gif
+	offset	72 132
+	frame	data/Chars/Tron/gnew4.gif
+	bbox	0 0 0 0
+	offset	72 124
+	frame	data/Chars/Tron/gnew5.gif
+	offset	81 131
+	@cmd	spawn01 "tronh" 57 108 0
+	frame	data/Chars/Tron/gnew6.gif
+	offset	78 130
+	frame	data/Chars/Tron/gnew7.gif
+	frame	data/Chars/Tron/gnew8.gif
+		
+anim	freespecial8
+	bbox	0 0 0 0
+	loop	0
+	offset	70 102
+	delay	6
+	@cmd	spawn01 "super" 0 70 0
+	frame	data/Chars/Tron/sel1.gif
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/Chars/Tron/sel2.gif
+	bbox	0 0 0 0
+	offset	70 100
+	frame	data/Chars/Tron/sel3.gif
+	@cmd	spawn01 "tronc" 78 0 0
+	frame	data/Chars/Tron/sel3.gif
+	frame	data/Chars/Tron/sel3.gif
+	frame	data/Chars/Tron/sel3.gif
+	frame	data/Chars/Tron/sel3.gif
+	frame	data/Chars/Tron/sel3.gif
+		
+anim	grab
+	bbox	45 31 65 78
+	loop	0
+	offset	72 111
+	delay	6
+	frame	data/Chars/Tron/grab.gif
+		
+anim	grabattack
+	loop	0
+	offset	90 107
+	delay	6
+	@cmd	slamstart2
+	@cmd	position 1 -25 0 -1 1
+	frame	data/Chars/Tron/gnew1.gif
+	offset	56 105
+	@cmd	position 1 -11 -3 -1 1
+	frame	data/Chars/Tron/gnew2.gif
+	offset	73 136
+	@cmd	position 1 70 51 1 1
+	frame	data/Chars/Tron/gnew3.gif
+	bbox	0 0 0 0
+	offset	72 132
+	@cmd	position 1 67 51 1 1
+	frame	data/Chars/Tron/gnew4.gif
+	bbox	0 0 0 0
+	offset	72 124
+	@cmd	position 1 67 48 1 1
+	frame	data/Chars/Tron/gnew5.gif
+	@cmd	position 1 41 60 1 1
+	delay	1
+	offset	81 131
+	frame	data/Chars/Tron/gnew6.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 3 5 0 1
+	@cmd	clearL
+	delay	6
+	frame	data/Chars/Tron/gnew6.gif
+	offset	78 130
+	frame	data/Chars/Tron/gnew7.gif
+	frame	data/Chars/Tron/gnew8.gif
+		
+anim	grabbackward
+	bbox	0 0 0 0
+	loop	0
+	offset	53 92
+	delay	6
+	@cmd	slamstart2
+	@cmd	position 1 66 -2 0 -1
+	frame	data/Chars/Tron/gb1.gif
+	bbox	0 0 0 0
+	offset	72 135
+	delay	1
+	@cmd	position 1 -14 57 0 -1
+	frame	data/Chars/Tron/gb2.gif
+	delay	6
+	@cmd	depost 0
+	@cmd	throw 35 1 -5 3 0 1
+	@cmd	clearL
+	frame	data/Chars/Tron/gb2.gif
+		
+anim	grabdown
+	fastattack	1
+	blast	1 11 206 72 16 0 0 45
+	dropv	2 0 0
+	bbox	74 3 24 135
+	loop	0
+	offset	76 134
+	delay	5
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/enew1.gif
+	blast	2 14 204 58 16 0 0 45
+	dropv	2 0 0
+	bbox	97 10 28 129
+	offset	102 134
+	frame	data/Chars/Tron/enew2.gif
+	bbox	15 12 44 120
+	offset	35 134
+	frame	data/Chars/Tron/enew4.gif
+	blast	2 9 209 77 16 0 0 45
+	dropv	2 0 0
+	bbox	70 5 40 131
+	offset	84 135
+	frame	data/Chars/Tron/enew5.gif
+	blast	1 9 208 66 16 0 0 45
+	dropv	2 0 0
+	bbox	93 10 23 129
+	offset	95 135
+	frame	data/Chars/Tron/enew6.gif
+	blast	1 20 84 77 16 0 0 45
+	dropv	2 0 0
+	bbox	24 10 27 129
+	offset	31 135
+	frame	data/Chars/Tron/enew8.gif
+	blast	0 9 211 75 16 0 0 45
+	dropv	2 0 0
+	bbox	79 9 30 127
+	offset	87 132
+	frame	data/Chars/Tron/enew9.gif
+		
+anim	idle
+	bbox	10 4 84 99
+	offset	55 103
+	loop	1
+	delay	6
+	frame	data/Chars/Tron/idle1.gif
+	offset	55 104
+	frame	data/Chars/Tron/idle2.gif
+	offset	56 105
+	frame	data/Chars/Tron/idle3.gif
+	offset	57 107
+	frame	data/Chars/Tron/idle4.gif
+	offset	57 108
+	frame	data/Chars/Tron/idle5.gif
+	offset	59 109
+	frame	data/Chars/Tron/idle6.gif
+	offset	60 109
+	frame	data/Chars/Tron/idle7.gif
+	frame	data/Chars/Tron/idle8.gif
+	offset	60 108
+	frame	data/Chars/Tron/idle9.gif
+	offset	60 106
+	frame	data/Chars/Tron/idle10.gif
+	offset	60 105
+	frame	data/Chars/Tron/idle11.gif
+	offset	60 103
+	frame	data/Chars/Tron/idle12.gif
+	offset	59 102
+	frame	data/Chars/Tron/idle13.gif
+	offset	57 102
+	frame	data/Chars/Tron/idle14.gif
+	offset	55 102
+	frame	data/Chars/Tron/idle15.gif
+	frame	data/Chars/Tron/idle16.gif
+	frame	data/Chars/Tron/idle17.gif
+	frame	data/Chars/Tron/idle18.gif
+	frame	data/Chars/Tron/idle19.gif
+	frame	data/Chars/Tron/idle20.gif
+		
+anim	jump
+	bbox	40 7 73 112
+	loop	0
+	offset	96 159
+	delay	6
+	cancel	1 8 0 D freespecial4
+	cancel	1 8 0 U freespecial4
+	frame	data/Chars/Tron/jump2.gif
+	offset	96 119
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+	frame	data/Chars/Tron/jump3.gif
+		
+anim	jumpattack
+	cancel	1 4 0 D freespecial4
+	cancel	1 4 0 U freespecial4
+	bbox	5 5 101 82
+	loop	0
+	offset	87 77
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 2 -2 0
+	frame	data/Chars/Tron/bja1.gif
+	blast	44 52 72 55 15 0 0 45
+	dropv	1 0 0
+	bbox	12 17 69 43
+	offset	108 102
+	frame	data/Chars/Tron/bja2.gif
+	blast	97 57 108 98 15 0 0 45
+	dropv	1 0 0
+	bbox	55 27 52 31
+	offset	200 149
+	frame	data/Chars/Tron/bja3.gif
+	blast	80 48 103 88 15 0 0 45
+	dropv	1 0 0
+	bbox	39 14 64 45
+	offset	174 129
+	frame	data/Chars/Tron/bja4.gif
+	bbox	45 17 65 63
+	blast	103 64 91 80 15 0 0 45
+	dropv	1 0 0
+	offset	185 138
+	frame	data/Chars/Tron/bja5.gif
+		
+anim	jumpattack2
+	cancel	1 4 0 D freespecial4
+	cancel	1 4 0 U freespecial4
+	bbox	5 5 101 82
+	loop	0
+	offset	87 77
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 3 -4 0
+	frame	data/Chars/Tron/bja1.gif
+	blast	44 52 72 55 15 0 0 45
+	dropv	1 0 0
+	bbox	12 17 69 43
+	offset	108 102
+	frame	data/Chars/Tron/bja2.gif
+	blast	97 57 108 98 15 0 0 45
+	dropv	1 0 0
+	bbox	55 27 52 31
+	offset	200 149
+	frame	data/Chars/Tron/bja3.gif
+	blast	80 48 103 88 15 0 0 45
+	dropv	1 0 0
+	bbox	39 14 64 45
+	offset	174 129
+	frame	data/Chars/Tron/bja4.gif
+	bbox	45 17 65 63
+	blast	103 64 91 80 15 0 0 45
+	dropv	1 0 0
+	offset	185 138
+	frame	data/Chars/Tron/bja5.gif
+		
+anim	pain
+	bbox	12 5 124 101
+	loop	0
+	offset	77 99
+	delay	6
+	frame	data/chars/Tron/pain.gif
+		
+anim	rise
+	loop	0
+	offset	94 49
+	delay	6
+	frame	data/chars/Tron/rise1.gif
+	offset	81 76
+	frame	data/chars/Tron/rise2.gif
+	offset	69 99
+	frame	data/chars/Tron/rise3.gif
+	offset	72 64
+	frame	data/chars/Tron/rise4.gif
+	offset	72 95
+	frame	data/chars/Tron/rise5.gif
+		
+anim	run
+	bbox	10 12 82 84
+	loop	1
+	delay	3
+	offset	52 95
+	frame	data/Chars/Tron/walk1.gif
+	offset	52 101
+	frame	data/Chars/Tron/walk2.gif
+	offset	43 105
+	frame	data/Chars/Tron/walk3.gif
+	offset	52 105
+	frame	data/Chars/Tron/walk4.gif
+	offset	65 104
+	frame	data/Chars/Tron/walk5.gif
+	offset	62 98
+	frame	data/Chars/Tron/walk6.gif
+	offset	59 104
+	frame	data/Chars/Tron/walk7.gif
+	offset	52 106
+	frame	data/Chars/Tron/walk8.gif
+	frame	data/Chars/Tron/walk9.gif
+		
+anim	runattack
+	cancel	0 19 0 d f s freespecial8
+	loop	0
+	offset	52 98
+	delay	2
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Tron/s1.gif
+	blast	61 26 88 74 16 0 0 45
+	dropv	3 0 0
+	offset	53 102
+	frame	data/Chars/Tron/s2.gif
+	blast	37 32 114 63 16 0 0 45
+	dropv	3 0 0
+	offset	53 99
+	frame	data/Chars/Tron/s3.gif
+	blast	61 35 106 67 16 0 0 45
+	dropv	3 0 0
+	offset	55 104
+	frame	data/Chars/Tron/s4.gif
+	blast	25 44 136 49 16 0 0 45
+	dropv	3 0 0
+	offset	55 102
+	frame	data/Chars/Tron/s5.gif
+	blast	40 33 125 64 16 0 0 45
+	dropv	3 0 0
+	offset	57 103
+	frame	data/Chars/Tron/s6.gif
+	blast	51 41 118 52 16 0 0 45
+	dropv	2 0 0
+	offset	57 101
+	frame	data/Chars/Tron/s7.gif
+	blast	88 34 77 60 16 0 0 45
+	dropv	2 0 0
+	offset	62 103
+	frame	data/Chars/Tron/s8.gif
+	blast	66 40 106 50 16 0 0 45
+	dropv	2 0 0
+	offset	62 101
+	frame	data/Chars/Tron/s9.gif
+	blast	75 42 100 49 16 0 0 45
+	dropv	3 0 0
+	offset	65 103
+	frame	data/Chars/Tron/s10.gif
+	blast	78 32 98 57 16 0 0 45
+	dropv	3 0 0
+	offset	65 101
+	frame	data/Chars/Tron/s11.gif
+	blast	82 29 97 66 16 0 0 45
+	dropv	3 0 0
+	frame	data/Chars/Tron/s12.gif
+	blast	74 38 126 54 16 0 0 45
+	dropv	3 0 0
+	offset	67 102
+	frame	data/Chars/Tron/s13.gif
+	blast	90 30 111 61 16 0 0 45
+	dropv	3 0 0
+	offset	67 100
+	frame	data/Chars/Tron/s14.gif
+	blast	105 39 98 57 0 0 1 0 0 0
+	offset	69 102
+	frame	data/Chars/Tron/s15.gif
+	blast	87 35 117 57 16 0 0 45
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s16.gif
+	blast	84 35 115 60 16 0 0 45
+	dropv	3 0 0
+	offset	69 102
+	frame	data/Chars/Tron/s17.gif
+	blast	80 28 123 68 16 0 0 45
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s18.gif
+	blast	83 33 123 65 16 0 0 45
+	dropv	3 0 0
+	offset	69 102
+	frame	data/Chars/Tron/s19.gif
+	blast	96 32 107 64 16 0 0 45
+	dropv	3 0 0
+	offset	69 100
+	frame	data/Chars/Tron/s20.gif
+		
+anim	runjumpattack
+	cancel	1 4 0 D freespecial4
+	cancel	1 4 0 U freespecial4
+	bbox	5 5 101 82
+	loop	0
+	offset	87 77
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	leaper 3 -3 0
+	frame	data/Chars/Tron/bja1.gif
+	blast	44 52 72 55 15 0 0 45
+	dropv	1 0 0
+	bbox	12 17 69 43
+	offset	108 102
+	frame	data/Chars/Tron/bja2.gif
+	blast	97 57 108 98 15 0 0 45
+	dropv	1 0 0
+	bbox	55 27 52 31
+	offset	200 149
+	frame	data/Chars/Tron/bja3.gif
+	blast	80 48 103 88 15 0 0 45
+	dropv	1 0 0
+	bbox	39 14 64 45
+	offset	174 129
+	frame	data/Chars/Tron/bja4.gif
+	bbox	45 17 65 63
+	blast	103 64 91 80 15 0 0 45
+	dropv	1 0 0
+	offset	185 138
+	frame	data/Chars/Tron/bja5.gif
+		
+anim	select
+	loop	0
+	offset	70 102
+	delay	6
+	frame	data/Chars/Tron/sel1.gif
+	frame	data/Chars/Tron/sel2.gif
+	offset	70 100
+	frame	data/Chars/Tron/sel3.gif
+		
+anim	waiting
+	loop	0
+	offset	61 107
+	delay	6
+	frame	data/Chars/Tron/w1.gif
+		
+anim	walk
+	bbox	10 12 82 84
+	loop	1
+	delay	6
+	offset	52 95
+	frame	data/Chars/Tron/walk1.gif
+	offset	52 101
+	frame	data/Chars/Tron/walk2.gif
+	offset	43 105
+	frame	data/Chars/Tron/walk3.gif
+	offset	52 105
+	frame	data/Chars/Tron/walk4.gif
+	offset	65 104
+	frame	data/Chars/Tron/walk5.gif
+	offset	62 98
+	frame	data/Chars/Tron/walk6.gif
+	offset	59 104
+	frame	data/Chars/Tron/walk7.gif
+	offset	52 106
+	frame	data/Chars/Tron/walk8.gif
+	frame	data/Chars/Tron/walk9.gif
+		
+#|edited by openBor Stats v 0.51
+		

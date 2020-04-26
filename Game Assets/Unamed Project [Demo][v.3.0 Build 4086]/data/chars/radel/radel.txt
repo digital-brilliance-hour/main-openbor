@@ -1,0 +1,151 @@
+name	Radel
+health	600
+speed	8
+jumpheight 4
+type	enemy
+shadow	4
+icon	data/chars/K/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter1.gif
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter2.gif
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter3.gif
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter4.gif
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter5.gif
+remap	data/chars/radel/idle1.gif	data/chars/radel/alter6.gif
+
+anim idle
+	loop	1
+	offset	28 119
+	bbox	12 12 38 105
+	delay	15
+	frame	data/chars/radel/idle1.gif
+	frame	data/chars/radel/idle2.gif
+	frame	data/chars/radel/idle3.gif
+	frame	data/chars/radel/idle2.gif
+	frame	data/chars/radel/idle1.gif
+	frame	data/chars/radel/idle4.gif
+
+
+anim walk
+	loop	1
+	offset	42 98
+	bbox	37 6 24 92
+	delay	10
+	frame	data/chars/radel/walk1.gif
+	bbox	39 9 30 80
+	frame	data/chars/radel/walk2.gif
+	frame	data/chars/radel/walk3.gif
+	bbox	37 8 28 84
+	frame	data/chars/radel/walk4.gif
+	frame	data/chars/radel/walk5.gif
+	frame	data/chars/radel/walk6.gif
+	frame	data/chars/radel/walk7.gif
+	frame	data/chars/radel/walk8.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	24 8 48 99
+	offset	49 114
+	frame	data/chars/radel/pain1.gif
+	bbox	6 8 66 99
+	delay   20
+	frame	data/chars/radel/pain2.gif
+	bbox	24 8 48 99
+	delay   10
+	frame	data/chars/radel/pain1.gif
+
+	
+
+anim fall
+	loop	0
+	delay	60
+	offset	54 74
+        attack  0 14 40 28 5 1
+	frame	data/chars/radel/fall1.gif
+        offset  46 76
+        delay   20
+	attack	2 42 54 37 5 1
+	frame	data/chars/radel/fall2.gif
+	offset	60 30
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/radel/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	51 107
+	delay	9
+	frame	data/chars/radel/rise1.gif
+	frame	data/chars/radel/rise2.gif
+	frame	data/chars/radel/rise3.gif
+	frame	data/chars/radel/rise4.gif
+	frame	data/chars/radel/rise5.gif
+	frame	data/chars/radel/rise6.gif
+	frame	data/chars/radel/rise7.gif
+
+anim attack1
+	range	0 82
+	loop	0
+	delay	9
+	bbox	32 35 51 83
+	offset	53 126
+	frame	data/chars/radel/attk101.gif
+	bbox	43 35 33 83
+	frame	data/chars/radel/attk102.gif
+	frame	data/chars/radel/attk104.gif
+	delay	14
+	bbox	57 36 66 82
+	attack	77 42 45 13 35 1
+	frame	data/chars/radel/attk109.gif
+	attack	0 0 0 0 0
+	frame	data/chars/radel/attk109.gif
+	delay	9
+	bbox	44 35 38 83
+	frame	data/chars/radel/attk110.gif
+	frame	data/chars/radel/attk111.gif
+
+anim attack2
+	range	0 100
+	loop	0
+	delay	8
+	bbox	32 46 25 94
+	jumpframe 4 0
+	offset	51 137
+	frame	data/chars/radel/attk201.gif
+	bbox	50 72 31 62
+	frame	data/chars/radel/attk202.gif
+	frame	data/chars/radel/attk203.gif
+	attack	110 68 24 22 28 1
+	frame	data/chars/radel/attk204.gif
+	bbox	78 18 34 102
+	attack	87 15 21 114 28 1
+	move	3
+	delay	3
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk205.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	frame	data/chars/radel/attk206.gif
+	delay	12
+	attack	0 0 0 0 0
+	bbox	64 38 12 66
+	frame	data/chars/radel/attk207.gif
+	bbox	34 63 29 75
+	frame	data/chars/radel/attk208.gif
+
+

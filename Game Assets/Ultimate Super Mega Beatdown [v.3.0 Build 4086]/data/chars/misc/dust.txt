@@ -1,0 +1,21 @@
+name	Dust
+type	None
+toflip  1
+shadow	0
+animationscript data/scripts2/item.c
+
+anim idle
+	loop	0
+	delay	5
+	offset	57 40
+	frame	data/chars/misc/dust01.gif
+        frame	data/chars/misc/dust02.gif
+        frame	data/chars/misc/dust03.gif
+        frame	data/chars/misc/dust04.gif
+        frame	data/chars/misc/dust05.gif
+        frame	data/chars/misc/dust06.gif
+        frame	data/chars/misc/dust07.gif
+        frame	data/chars/misc/dust08.gif
+        frame	data/chars/misc/dust09.gif
+	@cmd	suicide()
+        frame	data/chars/misc/empty.gif

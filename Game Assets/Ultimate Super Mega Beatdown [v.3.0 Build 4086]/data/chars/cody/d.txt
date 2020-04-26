@@ -1,0 +1,38 @@
+name	     codyd
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+
+anim	idle
+	attack	3 7 37 27 16 1 1 0 24 15
+	dropv	1 8 0
+	loop	0
+	delay	3
+	offset	22 22
+	frame	data/chars/Cody/d1.gif
+	offset	21 25
+	frame	data/chars/Cody/d2.gif
+	offset	28 26
+	frame	data/chars/Cody/d3.gif
+	offset	25 25
+	frame	data/chars/Cody/d4.gif
+	offset	30 29
+	frame	data/chars/Cody/d5.gif
+	offset	32 26
+	frame	data/chars/Cody/d6.gif
+	offset	40 25
+	frame	data/chars/Cody/d7.gif
+	frame	data/chars/Cody/d8.gif
+	bbox	0
+	frame	data/chars/Cody/d9.gif
+	offset	46 25
+	frame	data/chars/Cody/d10.gif
+	offset	39 25
+	frame	data/chars/Cody/d11.gif
+	frame	data/chars/Cody/d12.gif
+	@cmd	suicide()
+	frame	data/chars/Cody/d12.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,49 @@
+# Street
+music		data/music/ham.bor
+bossmusic	data/music/menu.bor
+
+settime         0
+notime          1
+
+# Load images
+background	data/chars/mys/back.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel	data/chars/mys/back.gif
+
+direction both
+
+
+order a
+
+spawn mysti
+health	1200
+flip    1
+coords 0 276
+at 0
+
+spawn   raiden
+aggression    -89
+health    90000
+coords    380 215
+at          1
+
+spawn   yankee
+aggression    -89
+health    90000
+coords    380 215
+at          1
+
+spawn   yankee
+aggression    -89
+health    90000
+coords    380 215
+at          1
+
+spawn   yankee
+aggression    -89
+health    90000
+coords    380 215
+at          1

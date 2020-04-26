@@ -1,0 +1,124 @@
+name	BONUS
+health	200
+speed	0
+type	enemy
+
+cantgrab     1
+jumpheight 1
+nolife       1
+flash   dust
+noatflash 1
+noquake  1
+nodrop	 1
+nomove	 1      1
+
+setlayer     1
+
+palette data/chars/misc/ba1.gif
+
+
+
+
+
+anim	death
+	loop	0
+	delay	8
+	nodieblink	2
+	offset	74 80
+	sound	data/sounds/boom.wav
+	frame	data/chars/misc/b2.gif
+	offset	74 80
+	frame	data/chars/misc/b3.gif
+	offset	74 80
+	frame	data/chars/misc/b4.gif
+	offset	74 80
+	frame	data/chars/misc/b5.gif
+	offset	74 80
+	frame	data/chars/misc/b6.gif
+	offset	74 80
+	frame	data/chars/misc/b7.gif
+	offset	74 80
+	frame	data/chars/misc/b8.gif
+	offset	74 80
+	frame	data/chars/misc/b9.gif
+	offset	74 80
+	frame	data/chars/misc/b91.gif
+	offset	74 80
+	frame	data/chars/misc/b92.gif
+		
+anim	fall
+	loop	0
+	offset	80 99
+	delay	4
+	sound	data/chars/sounds/fall2.wav
+	frame	data/chars/misc/ba7.gif
+	offset	80 99
+	delay	10
+	frame	data/chars/misc/ba7.gif
+		
+anim	idle
+	loop	1
+	offset	108 99
+	delay	10
+	bbox	71 0 64 112
+	frame	data/chars/misc/ba1.gif
+		
+anim	pain
+	loop	0
+	delay	4
+	offset	108 99
+	bbox	71 0 64 112
+	sound	data/chars/robo/fall.wav
+	frame	data/chars/misc/ba5.gif
+	offset	108 99
+	frame	data/chars/misc/ba6.gif
+	offset	108 99
+	delay	40
+	frame	data/chars/misc/ba2.gif
+	offset	108 99
+	frame	data/chars/misc/ba4.gif
+	offset	108 99
+	frame	data/chars/misc/ba3.gif
+	offset	108 99
+	frame	data/chars/misc/ba2.gif
+	offset	108 99
+	frame	data/chars/misc/ba6.gif
+	offset	108 99
+	frame	data/chars/misc/ba1.gif
+		
+anim	rise
+	loop	0
+	delay	2
+	offset	108 99
+	bbox	71 0 64 112
+	frame	data/chars/misc/ba1.gif
+		
+anim	spain
+	loop	0
+	delay	4
+	offset	108 99
+	bbox	71 0 64 112
+	sound	data/chars/robo/fall.wav
+	frame	data/chars/misc/ba1.gif
+	offset	108 99
+	frame	data/chars/misc/ba1.gif
+	offset	108 99
+	delay	40
+	frame	data/chars/misc/ba1.gif
+		
+anim	spawn
+	loop	0
+	offset	108 99
+	delay	7
+	bbox	71 0 64 112
+	frame	data/chars/misc/ba1.gif
+		
+anim	walk
+	loop	1
+	offset	108 99
+	bbox	71 0 64 112
+	delay	11
+	frame	data/chars/misc/ba1.gif
+		
+#|edited by openBor Stats v 0.67
+		

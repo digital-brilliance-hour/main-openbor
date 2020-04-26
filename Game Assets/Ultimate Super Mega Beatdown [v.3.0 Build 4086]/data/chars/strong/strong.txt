@@ -1,0 +1,574 @@
+name	       Strong
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+icon	data/Chars/Strong/icon.gif
+
+com     d d a freespecial
+com     u d a freespecial3
+com     d f a freespecial7
+com     a2 freespecial20
+com     u u a freespecial5
+com     d u a freespecial6
+com     a3 freespecial2
+com     a4 freespecial4
+
+palette	   	data/Chars/Strong/idle1.gif
+altneratepal	data/Chars/Strong/alter1.gif
+altneratepal	data/Chars/Strong/alter2.gif
+altneratepal	data/Chars/Strong/alter3.gif
+altneratepal	data/Chars/Strong/alter4.gif
+altneratepal	data/Chars/Strong/alter5.gif
+altneratepal	data/Chars/Strong/alter6.gif
+altneratepal	data/Chars/Strong/alter7.gif
+altneratepal	data/Chars/Strong/alter8.gif
+altneratepal	data/Chars/Strong/alter9.gif
+
+anim	attack1
+	cancel	0 2 0 d d a freespecial
+	cancel	0 2 0 u d a freespecial3
+	cancel	0 2 0 d f a freespecial7
+	cancel	0 2 0 a2 freespecial20
+	cancel	0 2 0 u u a freespecial5
+	cancel	0 2 0 u f a freespecial6
+	cancel	0 2 0 a3 freespecial2
+	cancel	0 2 0 a4 freespecial4
+	bbox	49 12 64 137
+	loop	0
+	delay	6
+	offset	83 149
+	frame	data/Chars/Strong/attack1.gif
+	attack	67 9 159 66 7 0 0 0 24 15
+	bbox	52 5 46 129
+	offset	83 131
+	frame	data/Chars/Strong/attack2.gif
+	offset	60 121
+	frame	data/Chars/Strong/attack3.gif
+		
+anim	attack2
+	cancel	0 3 0 d d a freespecial
+	cancel	0 3 0 u d a freespecial3
+	cancel	0 3 0 d f a freespecial7
+	cancel	0 3 0 a2 freespecial20
+	cancel	0 3 0 u u a freespecial5
+	cancel	0 3 0 u f a freespecial6
+	cancel	0 3 0 a3 freespecial2
+	cancel	0 3 0 a4 freespecial4
+	bbox	35 2 90 140
+	loop	0
+	delay	6
+	offset	85 132
+	frame	data/Chars/Strong/bttack1.gif
+	attack	57 5 185 50 7 0 0 0 24 15
+	offset	56 137
+	frame	data/Chars/Strong/bttack2.gif
+	offset	57 136
+	frame	data/Chars/Strong/bttack3.gif
+	offset	56 137
+	frame	data/Chars/Strong/bttack4.gif
+		
+anim	attack3
+	cancel	0 3 0 d d a freespecial
+	cancel	0 3 0 u d a freespecial3
+	cancel	0 3 0 d f a freespecial7
+	cancel	0 3 0 a2 freespecial20
+	cancel	0 3 0 u u a freespecial5
+	cancel	0 3 0 u f a freespecial6
+	cancel	0 3 0 a3 freespecial2
+	cancel	0 3 0 a4 freespecial4
+	bbox	47 6 35 119
+	loop	0
+	delay	6
+	offset	54 122
+	frame	data/Chars/Strong/cttack1.gif
+	attack	53 11 109 91 7 0 0 0 24 15
+	offset	54 110
+	frame	data/Chars/Strong/cttack2.gif
+	offset	51 112
+	frame	data/Chars/Strong/cttack3.gif
+	offset	53 110
+	frame	data/Chars/Strong/cttack4.gif
+		
+anim	attack4
+	cancel	0 4 0 d d a freespecial
+	cancel	0 4 0 u d a freespecial3
+	cancel	0 4 0 d f a freespecial7
+	cancel	0 4 0 a2 freespecial20
+	cancel	0 4 0 u u a freespecial5
+	cancel	0 4 0 u f a freespecial6
+	cancel	0 4 0 a3 freespecial2
+	cancel	0 4 0 a4 freespecial4
+	bbox	49 52 75 115
+	loop	0
+	delay	6
+	offset	87 170
+	frame	data/Chars/Strong/dttack1.gif
+	offset	87 162
+	frame	data/Chars/Strong/dttack2.gif
+	offset	62 179
+	frame	data/Chars/Strong/dttack3.gif
+	attack	89 8 138 103 12 1 0 0 24 15
+	dropv	0 0 0
+	bbox	48 6 86 82
+	offset	62 104
+	frame	data/Chars/Strong/dttack4.gif
+	offset	62 103
+	frame	data/Chars/Strong/dttack5.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	73 70
+	frame	data/Chars/Strong/fall1.gif
+	offset	83 41
+	frame	data/Chars/Strong/fall2.gif
+	offset	83 46
+	frame	data/Chars/Strong/fall3.gif
+		
+anim	freespecial
+	fastattack	1
+	hitflash	electo
+	loop	0
+	delay	6
+	offset	41 109
+	frame	data/Chars/Strong/anew1.gif
+	offset	44 111
+	frame	data/Chars/Strong/anew2.gif
+	attack	2 4 100 117 12 1 0 0 24 15
+	offset	46 115
+	frame	data/Chars/Strong/anew3.gif
+	attack	0
+	offset	47 116
+	frame	data/Chars/Strong/anew4.gif
+	attack	2 5 103 116 12 1 0 0 24 15
+	offset	48 117
+	frame	data/Chars/Strong/anew5.gif
+	attack	0
+	offset	49 118
+	frame	data/Chars/Strong/anew6.gif
+	attack	3 4 100 128 12 1 0 0 24 15
+	frame	data/Chars/Strong/anew7.gif
+		
+anim	freespecial15
+	bbox	11 41 83 96
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 100);
+    }
+	@end_script	
+	loop	0
+	delay	6
+	offset	40 138
+	frame	data/Chars/Strong/aair1.gif
+	offset	55 138
+	frame	data/Chars/Strong/aair2.gif
+	bbox	43 8 83 100
+	attack	62 3 163 76 12 1 0 0 24 15
+	dropv	-6 0 0
+	offset	75 109
+	frame	data/Chars/Strong/aair3.gif
+	offset	81 110
+	frame	data/Chars/Strong/aair4.gif
+		
+anim	freespecial2
+	fastattack	1
+	bbox	128 9 81 73
+	move	35
+	attack	139 5 223 123 23 1 0 0 12 1
+	dropv	2 6 0
+	loop	0
+	delay	6
+	offset	175 122
+	frame	data/Chars/Strong/bnew1.gif
+	attack	0
+	offset	175 120
+	frame	data/Chars/Strong/bnew2.gif
+	attack	129 11 229 113 23 1 0 0 24 15
+	dropv	2 6 0
+	offset	175 122
+	frame	data/Chars/Strong/bnew3.gif
+	attack	139 5 223 123 23 1 0 0 12 1
+	dropv	2 6 0
+	loop	0
+	delay	6
+	offset	175 122
+	frame	data/Chars/Strong/bnew1.gif
+	attack	0
+	offset	175 120
+	frame	data/Chars/Strong/bnew2.gif
+	attack	129 11 229 113 23 1 0 0 24 15
+	dropv	2 6 0
+	offset	175 122
+	frame	data/Chars/Strong/bnew3.gif
+		
+anim	freespecial20
+	bbox	2 9 91 130
+	loop	0
+	delay	6
+	offset	50 146
+	frame	data/Chars/Strong/ax2.gif
+	bbox	23 6 96 129
+	offset	81 144
+	frame	data/Chars/Strong/ax3.gif
+	attack	75 39 146 55 12 1 0 0 24 15
+	dropv	1.4 8 0
+	offset	82 144
+	frame	data/Chars/Strong/ax4.gif
+	offset	72 140
+	frame	data/Chars/Strong/ax5.gif
+		
+anim	freespecial3
+	loop	0
+	delay	6
+	offset	99 154
+	frame	data/Chars/Strong/cnew1.gif
+	offset	109 162
+	frame	data/Chars/Strong/cnew2.gif
+	attack	-202 197 548 19 12 1 1 0 34 15
+	dropv	6 0 0
+	offset	48 203
+	frame	data/Chars/Strong/cnew3.gif
+	offset	48 200
+	frame	data/Chars/Strong/cnew4.gif
+	offset	47 161
+	frame	data/Chars/Strong/cnew5.gif
+		
+anim	freespecial4
+	loop	0
+	delay	6
+	offset	74 91
+	frame	data/Chars/Strong/dnew1.gif
+	@cmd	leaper 6 0 0
+	attack	126 13 85 115 12 1 0 0 24 15
+	dropv	1 5 0
+	bbox	107 36 35 69
+	offset	115 112
+	frame	data/Chars/Strong/dnew2.gif
+	offset	115 113
+	frame	data/Chars/Strong/dnew3.gif
+		
+anim	freespecial5
+	@cmd	leaper 5 5 0
+	attack	4 3 93 94 12 1 0 0 24 15
+	loop	0
+	delay	6
+	offset	50 98
+	frame	data/Chars/Strong/enew1.gif
+	frame	data/Chars/Strong/enew2.gif
+	frame	data/Chars/Strong/enew3.gif
+	frame	data/Chars/Strong/enew4.gif
+	frame	data/Chars/Strong/enew5.gif
+	frame	data/Chars/Strong/enew6.gif
+	frame	data/Chars/Strong/enew7.gif
+	frame	data/Chars/Strong/enew8.gif
+		
+anim	freespecial6
+	@cmd	leaper 1 8 0
+	attack	4 3 93 94 12 1 0 0 24 15
+	loop	0
+	delay	6
+	offset	50 98
+	frame	data/Chars/Strong/enew1.gif
+	frame	data/Chars/Strong/enew2.gif
+	frame	data/Chars/Strong/enew3.gif
+	frame	data/Chars/Strong/enew4.gif
+	frame	data/Chars/Strong/enew5.gif
+	frame	data/Chars/Strong/enew6.gif
+	frame	data/Chars/Strong/enew7.gif
+	frame	data/Chars/Strong/enew8.gif
+		
+anim	freespecial7
+	loop	0
+	delay	6
+	offset	76 129
+	frame	data/Chars/Strong/gnew1.gif
+	offset	76 153
+	frame	data/Chars/Strong/gnew2.gif
+	offset	45 163
+	frame	data/Chars/Strong/gnew3.gif
+	@cmd	spawn01 "strongb" 97 97 0
+	offset	60 139
+	frame	data/Chars/Strong/gnew4.gif
+		
+anim	get
+	bbox	16 7 79 87
+	loop	0
+	delay	6
+	offset	47 97
+	frame	data/Chars/Strong/get.gif
+		
+anim	grab
+	bbox	23 2 90 114
+	loop	0
+	offset	58 118
+	delay	6
+	frame	data/Chars/Strong/gb1.gif
+		
+anim	grabattack
+	@cmd	slamstart2
+	@cmd	position 1 -45 86 0 1
+	loop	0
+	delay	6
+	offset	83 153
+	frame	data/Chars/Strong/gu1.gif
+	@cmd	position 1 73 86 0 1
+	offset	43 163
+	frame	data/Chars/Strong/gu2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 7 1 0 1
+	@cmd	clearL
+	offset	58 139
+	frame	data/Chars/Strong/gu3.gif
+		
+anim	grabbackward
+	@cmd	slamstart2
+	@cmd	position 1 -45 86 0 1
+	loop	0
+	delay	6
+	offset	83 153
+	frame	data/Chars/Strong/gu1.gif
+	@cmd	position 1 73 86 0 1
+	offset	43 163
+	frame	data/Chars/Strong/gu2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 6 -1 0 1
+	@cmd	clearL
+	offset	58 139
+	frame	data/Chars/Strong/gu3.gif
+		
+anim	grabup
+	@cmd	position 1 -7 108 0 1
+	loop	0
+	delay	6
+	offset	76 167
+	frame	data/Chars/Strong/ga1.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 0 7 0 1
+	@cmd	clearL
+	offset	72 204
+	frame	data/Chars/Strong/ga2.gif
+		
+anim	idle
+	bbox	14 3 83 117
+	loop	1
+	delay	7
+	offset	50 115
+	frame	data/Chars/Strong/idle1.gif
+	offset	50 114
+	frame	data/Chars/Strong/idle2.gif
+	offset	50 113
+	frame	data/Chars/Strong/idle3.gif
+	offset	50 111
+	frame	data/Chars/Strong/idle4.gif
+	offset	50 114
+	frame	data/Chars/Strong/idle5.gif
+	offset	50 113
+	frame	data/Chars/Strong/idle6.gif
+	offset	50 111
+	frame	data/Chars/Strong/idle7.gif
+		
+anim	jump
+	cancel	0 7 0 u freespecial15
+	bbox	8 44 83 121
+	loop	0
+	delay	6
+	offset	50 202
+	frame	data/Chars/Strong/jump1.gif
+	bbox	15 8 83 102
+	offset	50 126
+	frame	data/Chars/Strong/jump2.gif
+	bbox	19 14 116 74
+	offset	76 97
+	frame	data/Chars/Strong/jump3.gif
+	bbox	15 9 117 71
+	offset	73 90
+	frame	data/Chars/Strong/jump4.gif
+	frame	data/Chars/Strong/jump4.gif
+	frame	data/Chars/Strong/jump4.gif
+	frame	data/Chars/Strong/jump4.gif
+	frame	data/Chars/Strong/jump4.gif
+		
+anim	jumpattack
+	bbox	23 14 98 83
+	loop	0
+	delay	6
+	offset	83 100
+	frame	data/Chars/Strong/ja1.gif
+	offset	83 86
+	frame	data/Chars/Strong/ja2.gif
+	attack	73 69 126 124 12 1 0 0 24 15
+	dropv	-4 0 0
+	offset	83 176
+	frame	data/Chars/Strong/ja3.gif
+	offset	83 166
+	frame	data/Chars/Strong/ja4.gif
+	offset	83 171
+	frame	data/Chars/Strong/ja5.gif
+		
+anim	jumpattack2
+	bbox	26 4 104 99
+	loop	0
+	delay	6
+	offset	62 104
+	frame	data/Chars/Strong/bja1.gif
+	offset	62 108
+	frame	data/Chars/Strong/bja2.gif
+	attack	90 7 160 86 12 1 0 0 24 15
+	dropv	1 7 0
+	offset	62 107
+	frame	data/Chars/Strong/bja3.gif
+	offset	65 105
+	frame	data/Chars/Strong/bja4.gif
+	offset	62 107
+	frame	data/Chars/Strong/bja5.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	47 97
+	frame	data/Chars/Strong/get.gif
+		
+anim	pain
+	bbox	14 5 103 140
+	loop	0
+	delay	6
+	offset	80 142
+	frame	data/Chars/Strong/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	47 97
+	frame	data/Chars/Strong/get.gif
+		
+anim	run
+	bbox	4 5 123 125
+	loop	1
+	delay	4
+	offset	57 137
+	frame	data/Chars/Strong/walk12.gif
+	offset	57 139
+	frame	data/Chars/Strong/walk11.gif
+	offset	57 140
+	frame	data/Chars/Strong/walk10.gif
+	offset	57 139
+	frame	data/Chars/Strong/walk9.gif
+	offset	57 134
+	frame	data/Chars/Strong/walk8.gif
+	offset	57 133
+	frame	data/Chars/Strong/walk7.gif
+	offset	57 130
+	frame	data/Chars/Strong/walk6.gif
+	offset	51 130
+	frame	data/Chars/Strong/walk5.gif
+	frame	data/Chars/Strong/walk4.gif
+	frame	data/Chars/Strong/walk3.gif
+	offset	54 135
+	frame	data/Chars/Strong/walk2.gif
+	frame	data/Chars/Strong/walk1.gif
+		
+anim	runattack
+	fastattack	1
+	bbox	128 9 81 73
+	move	35
+	attack	139 5 223 123 23 1 0 0 12 1
+	dropv	2 6 0
+	loop	0
+	delay	6
+	offset	175 122
+	frame	data/Chars/Strong/bnew1.gif
+	attack	0
+	offset	175 120
+	frame	data/Chars/Strong/bnew2.gif
+	attack	129 11 229 113 23 1 0 0 24 15
+	dropv	2 6 0
+	offset	175 122
+	frame	data/Chars/Strong/bnew3.gif
+	attack	139 5 223 123 23 1 0 0 12 1
+	dropv	2 6 0
+	loop	0
+	delay	6
+	offset	175 122
+	frame	data/Chars/Strong/bnew1.gif
+	attack	0
+	offset	175 120
+	frame	data/Chars/Strong/bnew2.gif
+	attack	129 11 229 113 23 1 0 0 24 15
+	dropv	2 6 0
+	offset	175 122
+	frame	data/Chars/Strong/bnew3.gif
+		
+anim	runjumpattack
+	attack	3 6 185 105 13 1 0 0 24 15
+	dropv	0 0 0
+	loop	0
+	delay	6
+	offset	86 115
+	frame	data/Chars/Strong/rja1.gif
+	offset	87 114
+	frame	data/Chars/Strong/rja2.gif
+		
+anim	select
+	loop	0
+	delay	6
+	offset	66 146
+	frame	data/Chars/Strong/sel1.gif
+	offset	66 154
+	frame	data/Chars/Strong/sel2.gif
+	frame	data/Chars/Strong/sel3.gif
+	frame	data/Chars/Strong/sel4.gif
+		
+anim	waiting
+	loop	1
+	delay	6
+	offset	65 146
+	frame	data/Chars/Strong/waiting.gif
+		
+anim	walk
+	bbox	4 5 123 125
+	loop	1
+	delay	6
+	offset	57 137
+	frame	data/Chars/Strong/walk12.gif
+	offset	57 139
+	frame	data/Chars/Strong/walk11.gif
+	offset	57 140
+	frame	data/Chars/Strong/walk10.gif
+	offset	57 139
+	frame	data/Chars/Strong/walk9.gif
+	offset	57 134
+	frame	data/Chars/Strong/walk8.gif
+	offset	57 133
+	frame	data/Chars/Strong/walk7.gif
+	offset	57 130
+	frame	data/Chars/Strong/walk6.gif
+	offset	51 130
+	frame	data/Chars/Strong/walk5.gif
+	frame	data/Chars/Strong/walk4.gif
+	frame	data/Chars/Strong/walk3.gif
+	offset	54 135
+	frame	data/Chars/Strong/walk2.gif
+	frame	data/Chars/Strong/walk1.gif
+		
+#|edited by openBor Stats v 0.51
+		

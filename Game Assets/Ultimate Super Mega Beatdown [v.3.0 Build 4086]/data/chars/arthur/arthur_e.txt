@@ -1,0 +1,728 @@
+name	       Arthur_E
+health         1000
+mp	       12000
+speed	       9
+type	       enemy
+hostile		player enemy
+aimove	Chase
+subject_to_screen 1
+candamage    enemy obstacle player
+shadow	       3
+makeinv        2
+running        30  4.1  2  1
+dust           dust
+throwdamage    26
+atchain	       1 2 3 4
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+flash flashp
+animationscript data/scripts2/script.c
+script	data/scripts/toad.c
+
+load	ASpear2
+knife	ASpear2
+load	AAxe2
+load	BAxe2
+load	AFroggy2
+load	ABall2
+load	AGHOUL
+load    JAXE
+load    KAXE
+
+com	A2 freespecial
+com	D F A freespecial2
+com	A3 freespecial3
+com	A4 freespecial15
+com	D D A freespecial14
+com     D F S freespecial6
+
+palette	data/chars/Arthur/idle1.gif
+alternatepal	data/Chars/Arthur/alter1.gif
+alternatepal	data/Chars/Arthur/alter2.gif
+alternatepal	data/Chars/Arthur/alter3.gif
+alternatepal	data/Chars/Arthur/alter4.gif
+alternatepal	data/Chars/Arthur/alter5.gif
+alternatepal	data/Chars/Arthur/alter6.gif
+alternatepal	data/Chars/Arthur/idle1.gif
+alternatepal	data/Chars/Arthur/alter7.gif
+alternatepal	data/Chars/Arthur/alter8.gif
+alternatepal	data/Chars/Arthur/alter9.gif
+
+
+icon           data/chars/Arthur/Arthur90000000.gif
+
+
+
+anim	attack1
+@script
+{
+    void self = getlocalvar("self");
+    void animation = getentityproperty(self,"animation");
+
+      int  iR = rand()%3 + 3;
+
+	if (iR >= 0 && iR < 2){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL1"));
+      }
+     else if (iR >= 1 && iR < 3){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL12"));
+      }
+      else if (iR >= 2 && iR < 4){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL3"));
+      }
+      else if (iR >= 3 && iR < 5){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL15"));
+      }
+      else if (iR >= 4 && iR < 6){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL17"));
+      }
+      else if (iR >= 5 && iR < 7){ 
+        performattack(self, openborconstant("ANI_FREESPECIAL6"));
+      }
+}
+	@end_script
+	loop	0
+	delay	6
+	offset	73 67
+	frame	data/chars/Arthur/attack1.gif
+	frame	data/chars/Arthur/attack1.gif
+
+
+
+anim	freespecial17
+	loop	0
+	delay	6
+	offset	73 67
+	bbox	42 67 75 -109
+	sound	data/Chars/Arthur/hit.wav
+	cancel	0 4 0 U freespecial12
+	frame	data/chars/Arthur/attack1.gif
+	offset	46 67
+	frame	data/chars/Arthur/attack2.gif
+	offset	36 66
+	bbox	29 13 15 32
+	attack	50 2 135 43 7 0 0 0 24 15
+	frame	data/chars/Arthur/attack3.gif
+	loop	0
+	delay	6
+	offset	73 67
+	bbox	38 1 94 66
+	sound	data/Chars/Arthur/hit.wav
+	cancel	0 4 0 U freespecial12
+	frame	data/chars/Arthur/attack1.gif
+	offset	46 67
+	frame	data/chars/Arthur/attack2.gif
+	offset	36 66
+	bbox	29 13 15 32
+	attack	50 2 135 43 7 0 0 0 24 15
+	frame	data/chars/Arthur/attack3.gif
+	loop	0
+	delay	6
+	offset	70 90
+	bbox	47 89 61 -147
+	frame	data/chars/Arthur/cttack1.gif
+	offset	42 133
+	bbox	15 131 69 -155
+	frame	data/chars/Arthur/cttack2.gif
+	offset	43 113
+	bbox	11 113 71 -156
+	attack	63 4 53 90 8 0 0 0 24 15
+	frame	data/chars/Arthur/cttack3.gif
+	bbox	8 69 77 -121
+	offset	31 68
+	frame	data/chars/Arthur/cttack4.gif
+	loop	0
+	delay	6
+	offset	68 67
+	bbox	46 67 54 -110
+	throwframe	4 30
+	cancel	1 8 1 A freespecial
+	sound	data/chars/Arthur/laugh.wav
+	offset	46 67
+	frame	data/chars/Arthur/attack2.gif
+	offset	36 66
+	attack	50 2 135 43 7 1 0 0 24 15
+	frame	data/chars/Arthur/attack3.gif
+	frame	data/chars/Arthur/attack3.gif
+		
+anim	attackbackward
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	44 88 51 -134
+	throwframe	4 30
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	fall
+	bbox	4 3 81 82
+	loop	0
+	offset	46 76
+	delay	25
+	frame	data/chars/Arthur/fall1.gif
+	attack	0
+	offset	42 30
+	frame	data/chars/Arthur/fall2.gif
+		
+anim	freespecial
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	44 88 51 -134
+	throwframe	4 30
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial10
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 50);
+    }
+	@end_script	
+	loop	0
+	delay	5
+	offset	43 97
+	bbox	10 98 58 -161
+	cancel	5 8 0 D freespecial11
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/dnew1.gif
+	offset	37 82
+	frame	data/chars/Arthur/dnew2.gif
+	offset	37 89
+	frame	data/chars/Arthur/dnew3.gif
+	offset	50 67
+	bbox	20 68 75 -119
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "arthura" 63 20 0
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial14
+	cancel	0 5 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	44 73
+	@cmd	spawn01 "AGHOUL" 0 0 0
+	frame	data/chars/Arthur/ghoulspawn.gif
+	frame	data/chars/Arthur/ghoulspawn.gif
+	frame	data/chars/Arthur/ghoulspawn.gif
+	frame	data/chars/Arthur/ghoulspawn.gif
+	frame	data/chars/Arthur/ghoulspawn.gif
+	frame	data/chars/Arthur/ghoulspawn.gif
+		
+anim	freespecial15
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	43 97
+	bbox	10 98 58 -161
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/dnew1.gif
+	offset	37 82
+	frame	data/chars/Arthur/dnew2.gif
+	offset	37 89
+	frame	data/chars/Arthur/dnew3.gif
+	offset	50 67
+	bbox	20 68 75 -119
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "arthura" 63 20 0
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial2
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	7
+	offset	36 64
+	spawnframe	2
+	subentity	AFroggy2
+	bbox	38 16 8 32
+	frame	data/chars/Arthur/bnew1.gif
+	sound	data/chars/Arthur/frog.wav
+	frame	data/chars/Arthur/bnew1.gif
+	frame	data/chars/Arthur/bnew1.gif
+		
+anim	freespecial3
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	43 94
+	bbox	33 42 10 26
+	spawnframe	5
+	subentity	AAxe2
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/cnew1.gif
+	offset	70 87
+	bbox	76 33 10 18
+	frame	data/chars/Arthur/cnew2.gif
+	offset	45 102
+	bbox	54 56 9 16
+	frame	data/chars/Arthur/cnew3.gif
+	offset	51 68
+	bbox	0
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial4
+@script
+    void vSelf = getlocalvar("self");	
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 50);
+    }
+	@end_script	
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	44 88 51 -134
+	attack	0 0 0 0 0 0 0 0 0 0
+	throwframe	4 30
+	cancel	5 8 0 U freespecial5
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial5
+@script
+    void vSelf = getlocalvar("self");	
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 50);
+    }
+	@end_script	
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	44 88 51 -134
+	attack	0 0 0 0 0 0 0 0 0 0
+	throwframe	4 30
+	cancel	5 8 0 U freespecial8
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial6
+	loop	0
+	delay	7
+	offset	45 82
+	spawnframe	1 0 -5 0
+	subentity	ABall2
+	sound	data/Chars/Arthur/behold.wav
+	@cmd	spawn01 "super" 0 62 0
+	frame	data/chars/Arthur/s1.gif
+	offset	45 92
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/chars/Arthur/s2.gif
+	offset	45 103
+	frame	data/chars/Arthur/s3.gif
+	offset	63 114
+	frame	data/chars/Arthur/s4.gif
+	frame	data/chars/Arthur/s5.gif
+	frame	data/chars/Arthur/s6.gif
+	frame	data/chars/Arthur/s7.gif
+	frame	data/chars/Arthur/s8.gif
+	offset	66 115
+	sound	data/chars/Arthur/hyper.wav
+	frame	data/chars/Arthur/s9.gif
+		
+anim	freespecial7
+	@cmd	spawn01 "super" -18 29 0
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	72 85
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	@cmd	spawn01 "flash3" 0 0 0
+	delay	3
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	@cmd	spawn01 "aspear3" 60 17 0
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial8
+@script
+    void vSelf = getlocalvar("self");	
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 50);
+    }
+	@end_script	
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	44 88 51 -134
+	attack	0 0 0 0 0 0 0 0 0 0
+	throwframe	4 30
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	freespecial9
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	38 71
+	bbox	10 69 62 -94
+	@cmd	spawn01 "Dragon" 120 150 0
+	frame	data/chars/Arthur/idle1.gif
+	offset	39 72
+	frame	data/chars/Arthur/idle2.gif
+	offset	40 74
+	frame	data/chars/Arthur/idle3.gif
+	frame	data/chars/Arthur/idle4.gif
+	offset	41 76
+	frame	data/chars/Arthur/idle5.gif
+	offset	41 77
+	frame	data/chars/Arthur/idle6.gif
+	offset	42 78
+	frame	data/chars/Arthur/idle7.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	36 60
+	frame	data/chars/Arthur/get.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	38 71
+	bbox	9 73 61 -97
+	frame	data/chars/Arthur/idle1.gif
+	offset	39 72
+	frame	data/chars/Arthur/idle2.gif
+	offset	40 74
+	frame	data/chars/Arthur/idle3.gif
+	frame	data/chars/Arthur/idle4.gif
+	offset	41 76
+	frame	data/chars/Arthur/idle5.gif
+	offset	41 77
+	frame	data/chars/Arthur/idle6.gif
+	bbox	13 79 55 -112
+	offset	42 78
+	frame	data/chars/Arthur/idle7.gif
+		
+anim	jump
+	loop	0
+	offset	75 85
+	delay	11
+	bbox	55 6 41 77
+	cancel	1 17 0 U freespecial4
+	cancel	1 17 0 D freespecial10
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+	frame	data/chars/Arthur/jump.gif
+		
+anim	jumpattack
+	loop	0
+	offset	82 71
+	delay	6
+	bbox	66 70 37 -100
+	Attack1	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Arthur/ja1.gif
+	offset	88 74
+	bbox	63 74 42 -113
+	blast	72 37 69 48 13 0 0 0 24 15
+	frame	data/chars/Arthur/ja2.gif
+		
+anim	land
+	loop	0
+	delay	8
+	offset	33 60
+	frame	data/chars/Arthur/get.gif
+		
+anim	pain
+	loop	0
+	offset	34 77
+	bbox	19 28 17 33
+	delay	15
+	frame	data/chars/Arthur/pain.gif
+		
+anim	rise
+	loop	0
+	delay	8
+	offset	34 60
+	frame	data/chars/Arthur/get.gif
+		
+anim	run
+	loop	1
+	delay	8
+	offset	97 109
+	bbox	82 11 26 34
+	sound	data/chars/Arthur/galop.wav
+	frame	data/chars/Arthur/run1.gif
+	offset	99 109
+	frame	data/chars/Arthur/run2.gif
+	offset	96 109
+	frame	data/chars/Arthur/run3.gif
+	offset	103 109
+	frame	data/chars/Arthur/run4.gif
+	offset	101 109
+	frame	data/chars/Arthur/run5.gif
+	offset	100 109
+	frame	data/chars/Arthur/run6.gif
+	offset	92 110
+	frame	data/chars/Arthur/run7.gif
+	offset	94 110
+	frame	data/chars/Arthur/run8.gif
+		
+anim	runattack
+	cancel	0 7 0 d f s freespecial6
+	loop	0
+	delay	5
+	offset	72 85
+	bbox	39 86 59 -118
+	throwframe	4 30
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/anew1.gif
+	offset	88 111
+	frame	data/chars/Arthur/anew2.gif
+	offset	56 93
+	frame	data/chars/Arthur/anew3.gif
+	offset	50 67
+	bbox	0
+	sound	data/chars/Arthur/knife.wav
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	delay	2
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+	frame	data/chars/Arthur/anew4.gif
+		
+anim	runjumpattack
+	loop	0
+	offset	86 71
+	delay	6
+	bbox	64 16 23 38
+	Attack1	0
+	frame	data/chars/Arthur/ja1.gif
+	blast	79 36 65 59 13 0 0 0 24 15
+	frame	data/chars/Arthur/ja2.gif
+		
+anim	select
+	loop	0
+	delay	9
+	offset	36 68
+	sound	data/chars/Arthur/laugh.wav
+	frame	data/chars/Arthur/sel1.gif
+	frame	data/chars/Arthur/sel2.gif
+	frame	data/chars/Arthur/sel3.gif
+	frame	data/chars/Arthur/sel4.gif
+	frame	data/chars/Arthur/sel5.gif
+	frame	data/chars/Arthur/sel6.gif
+	offset	36 69
+	frame	data/chars/Arthur/sel7.gif
+	offset	36 72
+	frame	data/chars/Arthur/sel8.gif
+	frame	data/chars/Arthur/sel9.gif
+	offset	36 71
+	frame	data/chars/Arthur/sel11.gif
+	frame	data/chars/Arthur/sel12.gif
+		
+anim	shock
+	loop	0
+	delay	1
+	offset	76 117
+	frame	data/chars/Arthur/shock1.gif
+	frame	data/chars/Arthur/shock2.gif
+	frame	data/chars/Arthur/shock1.gif
+	frame	data/chars/Arthur/shock2.gif
+	frame	data/chars/Arthur/shock1.gif
+	frame	data/chars/Arthur/shock2.gif
+	frame	data/chars/Arthur/shock1.gif
+	frame	data/chars/Arthur/shock2.gif
+		
+anim	waiting
+	loop	1
+	delay	6
+	offset	38 67
+	bbox	0
+	frame	data/chars/Arthur/waiting.gif
+		
+anim	walk
+	loop	1
+	delay	8
+	offset	35 122
+	bbox	26 63 11 30
+	frame	data/chars/Arthur/walk.gif
+	offset	35 121
+	frame	data/chars/Arthur/walk1.gif
+	offset	26 124
+	frame	data/chars/Arthur/walk2.gif
+	offset	41 124
+	frame	data/chars/Arthur/walk3.gif
+	offset	40 125
+	frame	data/chars/Arthur/walk4.gif
+	frame	data/chars/Arthur/walk5.gif
+	offset	27 122
+	frame	data/chars/Arthur/walk6.gif
+		
+#|edited by openBor Stats v 0.51
+		

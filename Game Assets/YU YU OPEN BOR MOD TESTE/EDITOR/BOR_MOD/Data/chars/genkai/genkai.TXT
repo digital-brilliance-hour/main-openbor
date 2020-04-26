@@ -1,0 +1,1099 @@
+name	Genkai
+health 95
+speed	11
+running 19 2 4 2 10
+mp 100
+fmap 2
+gfxshadow 1
+type	player
+shadow	5
+dust dust
+icon	data/chars/genkai/icone3.gif
+diesound data/chars/genkai/die.wav
+
+load			leigan2
+load                    leigan3
+
+
+palette  data/chars/genkai/genkai2.gif  # cor 1 #
+alternatepal data/chars/genkai/idle01.gif
+alternatepal data/chars/genkai/idle02.gif
+
+remap	data/chars/genkai/stand1.gif data/chars/genkai/idle01.gif
+remap	data/chars/genkai/stand1.gif data/chars/genkai/idle02.gif
+
+com 		D U A     freespecial
+com 		D F A     freespecial2
+com 		D U K     freespecial3
+com 		D F D F A freespecial4
+com             D F K     freespecial5
+com 		D F D F K freespecial6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	bbox	56 52 32 84
+	loop	0
+	delay	9
+	offset	69 120
+	frame	data/chars/genkai/at3.gif
+	attack	72 55 56 34 10 0 1 0 0 0
+	offset	69 120
+	frame	data/chars/genkai/at2.gif
+	offset	69 120
+	frame	data/chars/genkai/at3.gif
+		
+anim	attack2
+	bbox	92 54 -36 74
+	loop	0
+	delay	12
+	offset	69 120
+	frame	data/chars/genkai/at3.gif
+	attack	83 60 47 32 10 0 1 0 0 0
+	move	0
+	offset	69 120
+	frame	data/chars/genkai/at8.gif
+	offset	69 120
+	frame	data/chars/genkai/at3.gif
+		
+anim	attack3
+	loop	0
+	delay	5
+	offset	69 120
+	bbox	36 35 38 115
+	frame	data/chars/genkai/at1.gif
+	offset	69 120
+	bbox	60 44 44 84
+	frame	data/chars/genkai/at6.gif
+	offset	69 120
+	attack	86 56 49 47 10 0 1 0 0 0
+	delay	9
+	frame	data/chars/genkai/at5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 120
+	bbox	60 44 44 84
+	frame	data/chars/genkai/at6.gif
+	offset	69 120
+	attack	99 49 31 37 10 1 0 0 0 0
+	frame	data/chars/genkai/at7.gif
+		
+anim	bpain
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/genkai/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/genkai/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/genkai/fire2.gif
+		
+anim	fall
+	attack	27 86 76 21 0 0 0 1 0 0
+	loop	0
+	sound	data/chars/yusuke/die.wav
+	offset	69 120
+	delay	20
+	frame	data/chars/genkai/caindo2.gif
+	offset	69 120
+	attack	27 100 75 23 0 0 1 0 0 0
+	frame	data/chars/genkai/caindo3.gif
+		
+anim	follow1
+	bbox	31 2 27 54
+	hitflash	flash2
+	sound	data/chars/genkai/achut.wav
+	loop	0
+	energycost	20
+	delay	4
+	offset	43 52
+	frame	data/chars/genkai/nuk9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	23 3 25 60
+	offset	33 58
+	frame	data/chars/genkai/nuk11.gif
+	attack	41 18 46 18 10 0 0 0 0 0
+	move	0
+	offset	33 58
+	delay	9
+	sound	data/chars/genkai/achut.wav
+	frame	data/chars/genkai/nuk10.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	43 52
+	frame	data/chars/genkai/nuk9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	23 3 25 60
+	offset	33 58
+	frame	data/chars/genkai/nuk11.gif
+	attack	41 18 46 18 10 0 0 0 0 0
+	move	0
+	offset	33 58
+	delay	9
+	sound	data/chars/genkai/achut.wav
+	frame	data/chars/genkai/nuk12.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	43 52
+	frame	data/chars/genkai/nuk9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	23 3 25 60
+	offset	33 58
+	frame	data/chars/genkai/nuk11.gif
+	attack	41 18 46 18 10 0 0 0 0 0
+	move	0
+	offset	33 58
+	delay	9
+	sound	data/chars/genkai/achut.wav
+	frame	data/chars/genkai/nuk13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	43 52
+	frame	data/chars/genkai/nuk9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	23 3 25 60
+	offset	33 58
+	frame	data/chars/genkai/nuk11.gif
+	attack	41 18 46 18 10 1 0 0 0 0
+	move	0
+	offset	33 58
+	delay	9
+	sound	data/chars/genkai/achut.wav
+	frame	data/chars/genkai/nuk14.gif
+		
+anim	freespecial
+	sound	data/chars/genkai/shotgun.wav
+	bbox	9 75 33 71
+	loop	0
+	energycost	20
+	delay	4
+	offset	17 134
+	frame	data/chars/genkai/rdan6.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan2.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan.gif
+	attack	31 65 59 85 10 1 1 0 0 0
+	move	0
+	offset	18 134
+	delay	16
+	frame	data/chars/genkai/rdan9.gif
+	attack	0
+	move	0
+	offset	18 134
+	delay	14
+	frame	data/chars/genkai/rdan7.gif
+	attack	22 35 92 116 10 0 1 0 0 0
+	offset	18 134
+	move	0
+	delay	14
+	frame	data/chars/genkai/shotgun.gif
+	attack	0
+	delay	14
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/rdan3.gif
+	attack	22 22 105 126 10 0 1 0 0 0
+	delay	10
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/shotgun2.gif
+	attack	0
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/rdan10.gif
+	attack	35 7 100 135 10 0 1 0 0 0
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/rdan8.gif
+	attack	0
+	delay	12
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/rdan.gif
+	attack	26 20 98 125 10 0 1 0 0 0
+	frame	data/chars/genkai/shotgun2.gif
+	attack	0
+	move	0
+	offset	18 134
+	frame	data/chars/genkai/rdan10.gif
+	attack	22 10 105 136 10 1 1 0 0 0
+	frame	data/chars/genkai/rdan8.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan6.gif
+		
+anim	freespecial2
+	custknife	leigan2
+	sound	data/chars/genkai/leigan.wav
+	energycost	20
+	throwframe	7
+	loop	0
+	delay	8
+	bbox	63 70 13 43
+	offset	69 120
+	frame	data/chars/genkai/reigan4.gif
+	frame	data/chars/genkai/reigan6.gif
+	frame	data/chars/genkai/reigan.gif
+	frame	data/chars/genkai/reigan3.gif
+	frame	data/chars/genkai/reigan2.gif
+	frame	data/chars/genkai/reigan7.gif
+	frame	data/chars/genkai/reigan5.gif
+	delay	22
+	frame	data/chars/genkai/leigan2.gif
+	frame	data/chars/genkai/leigan1.gif
+		
+anim	freespecial3
+	sound	data/chars/genkai/achut.wav
+	energycost	20
+	loop	0
+	delay	4
+	offset	69 120
+	bbox	95 73 -39 57
+	frame	data/chars/genkai/at1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 120
+	bbox	62 53 27 71
+	frame	data/chars/genkai/at4.gif
+	move	0
+	offset	69 120
+	bbox	96 47 -39 81
+	delay	16
+	attack	85 63 45 33 12 0 0 0 0 0
+	frame	data/chars/genkai/at5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	10
+	offset	69 120
+	bbox	60 43 34 86
+	delay	16
+	frame	data/chars/genkai/at4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	range	0 0
+	offset	69 120
+	move	0
+	delay	16
+	frame	data/chars/genkai/at1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	79 55 -24 52
+	delay	16
+	move	0
+	offset	69 120
+	frame	data/chars/genkai/at4.gif
+	attack	83 55 53 55 12 1 1 0 0 0
+	delay	12
+	move	0
+	offset	69 120
+	bbox	57 47 28 87
+	frame	data/chars/genkai/at5.gif
+		
+anim	freespecial4
+	offset	69 120
+	custknife	leigan3
+	throwframe	20
+	loop	0
+	energycost	40
+	delay	7
+	frame	data/chars/genkai/stand1.gif
+	attack	18 100 84 145 0 0 1 0 0 0
+	sound	data/chars/yusuke/energia.wav
+	offset	61 241
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar2.gif
+	offset	61 241
+	attack	18 100 84 145 0 0 1 0 0 0
+	frame	data/chars/genkai/ar1.gif
+	bbox	64 64 13 43
+	offset	69 120
+	frame	data/chars/genkai/reigan4.gif
+	frame	data/chars/genkai/reigan6.gif
+	frame	data/chars/genkai/reigan.gif
+	frame	data/chars/genkai/reigan3.gif
+	frame	data/chars/genkai/reigan2.gif
+	sound	data/chars/genkai/leigan.wav
+	frame	data/chars/genkai/reigan7.gif
+	frame	data/chars/genkai/reigan5.gif
+	delay	20
+	frame	data/chars/genkai/leigan1.gif
+	frame	data/chars/genkai/reigan8.gif
+	frame	data/chars/genkai/reigan9.gif
+		
+anim	freespecial5
+	hitflash	flash5
+	sound	data/chars/genkai/kyohan3.wav
+	attack	46 29 126 103 5 0 1 0 0 0
+	delay	5
+	offset	104 121
+	energycost	30
+	offset	104 121
+	frame	data/chars/genkai/vaura2.gif
+	attack	46 29 126 103 0 0 1 0 0 0
+	offset	104 121
+	sound	data/chars/yusuke/energia.wav
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	attack	46 29 126 103 0 0 1 0 0 0
+	offset	104 121
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	offset	104 121
+	attack	46 29 126 103 0 0 1 0 0 0
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	offset	104 121
+	attack	46 29 126 103 0 0 1 0 0 0
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	offset	104 121
+	attack	46 29 126 103 0 0 1 0 0 0
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	attack	46 29 126 103 0 0 1 0 0 0
+	offset	104 121
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	attack	46 29 126 103 0 0 1 0 0 0
+	offset	104 121
+	frame	data/chars/genkai/vaura3.gif
+	offset	104 121
+	attack	46 29 126 103 5 0 1 0 0 0
+	frame	data/chars/genkai/vaura2.gif
+	attack	46 29 126 103 0 0 1 0 0 0
+	offset	104 121
+	frame	data/chars/genkai/vaura3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	59 64 49 80
+	offset	74 131
+	sound	data/chars/genkai/raio1.wav
+	frame	data/chars/genkai/r0.gif
+	attack	564 56 -470 57 10 0 1 0 0 100
+	offset	74 131
+	delay	3
+	frame	data/chars/genkai/r1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r2.gif
+	attack	483 50 -374 66 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r4.gif
+	attack	639 42 -524 88 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r6.gif
+	attack	706 38 -597 91 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r7.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r8.gif
+	attack	728 30 -607 103 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r10.gif
+	attack	155 22 633 108 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r11.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r12.gif
+	attack	769 29 -664 100 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r14.gif
+	attack	767 34 -623 92 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r16.gif
+	attack	768 39 -612 87 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r17.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r18.gif
+	attack	768 45 -677 81 10 0 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r19.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r20.gif
+	attack	145 54 656 56 10 1 1 0 0 100
+	offset	74 131
+	frame	data/chars/genkai/r21.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 131
+	frame	data/chars/genkai/r22.gif
+	offset	74 131
+	frame	data/chars/genkai/r0.gif
+		
+anim	freespecial6
+	followanim	1
+	followcond	1
+	delay	4
+	offset	20 76
+	energycost	40
+	mponly	1
+	delay	4
+	sound	data/chars/yusuke/energia.wav
+	frame	data/chars/genkai/nuk1.gif
+	attack	7 5 69 127 0 0 1 0 0 0
+	offset	40 121
+	frame	data/chars/genkai/nuk4.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk3.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk2.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk4.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk3.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk2.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk4.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk3.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk2.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk4.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk3.gif
+	offset	40 121
+	attack	7 5 69 127 0 0 1 0 0 0
+	frame	data/chars/genkai/nuk2.gif
+	offset	40 121
+	frame	data/chars/genkai/nuk4.gif
+	attack	30 0 48 53 0 0 1 0 0 0
+	delay	4
+	move	25
+	offset	33 45
+	frame	data/chars/genkai/nuk5.gif
+	offset	33 45
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/genkai/nuk6.gif
+	offset	33 45
+	attack	30 0 48 53 1 0 1 0 0 0
+	frame	data/chars/genkai/nuk7.gif
+	offset	33 45
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/genkai/nuk8.gif
+	attack	30 0 48 53 1 0 1 0 0 0
+	offset	33 45
+	frame	data/chars/genkai/nuk5.gif
+	offset	33 45
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/genkai/nuk6.gif
+	offset	33 45
+	attack	30 0 48 53 1 0 1 0 0 0
+	frame	data/chars/genkai/nuk7.gif
+	offset	33 45
+	attack	30 0 48 53 0 0 0 0 0 0
+	frame	data/chars/genkai/nuk8.gif
+		
+anim	get
+	loop	0
+	delay	5
+	offset	69 121
+	frame	data/chars/genkai/pular1.gif
+	offset	69 121
+	frame	data/chars/genkai/itens1.gif
+	offset	69 121
+	delay	8
+	frame	data/chars/genkai/itens1.gif
+	offset	69 121
+	frame	data/chars/genkai/pular1.gif
+		
+anim	grab
+	loop	0
+	delay	100
+	offset	63 120
+	bbox	71 53 35 75
+	frame	data/chars/genkai/agarrao.gif
+		
+anim	grabattack
+	bbox	57 51 24 65
+	loop	0
+	offset	69 120
+	delay	15
+	frame	data/chars/genkai/at4.gif
+	attack	88 52 33 76 6 0 1 0 0 0
+	offset	69 120
+	frame	data/chars/genkai/at5.gif
+		
+anim	grabbed
+	loop	0
+	offset	42 180
+	bbox	36 48 38 76
+	delay	90
+	frame	data/chars/genkai/apnhar.gif
+	bbox	30 45 54 84
+	offset	42 180
+	frame	data/chars/genkai/apnhar2.gif
+	offset	42 180
+	frame	data/chars/genkai/apnhar.gif
+		
+anim	idle
+	bbox	57 56 26 69
+	loop	1
+	delay	20
+	offset	69 120
+	frame	data/chars/genkai/stand1.gif
+	bbox	57 56 26 69
+	offset	69 120
+	frame	data/chars/genkai/stand3.gif
+	bbox	57 56 26 69
+	offset	69 120
+	frame	data/chars/genkai/stand2.gif
+	bbox	57 56 26 69
+	offset	69 120
+	frame	data/chars/genkai/stand3.gif
+		
+anim	jump
+	bbox	55 54 36 81
+	loop	0
+	delay	12
+	offset	69 120
+	frame	data/chars/genkai/pular2.gif
+	bbox	85 29 -37 69
+	offset	69 120
+	frame	data/chars/genkai/pular3.gif
+	bbox	54 13 38 63
+	offset	69 120
+	frame	data/chars/genkai/pular5.gif
+	bbox	61 39 23 60
+	offset	69 120
+	frame	data/chars/genkai/pular6.gif
+	bbox	59 70 41 56
+	offset	69 120
+	frame	data/chars/genkai/pular2.gif
+	bbox	61 60 28 62
+	offset	69 121
+	frame	data/chars/genkai/pular1.gif
+		
+anim	jumpattack
+	loop	0
+	delay	8
+	offset	69 120
+	bbox	40 6 43 92
+	frame	data/chars/genkai/at18.gif
+	attack	74 41 54 40 15 1 1 0 0 0
+	offset	69 120
+	delay	15
+	frame	data/chars/genkai/at17.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	7
+	offset	69 120
+	bbox	40 6 40 87
+	frame	data/chars/genkai/at14.gif
+	attack	84 19 50 61 10 0 1 0 0 0
+	offset	69 120
+	delay	15
+	frame	data/chars/genkai/at15.gif
+		
+anim	land
+	bbox	86 56 -36 69
+	loop	0
+	delay	25
+	offset	69 121
+	frame	data/chars/genkai/pular1.gif
+		
+anim	pain
+	bbox	51 57 27 69
+	loop	0
+	offset	65 121
+	delay	12
+	frame	data/chars/genkai/apnhar.gif
+	offset	65 121
+	delay	12
+	frame	data/chars/genkai/apnhar2.gif
+	offset	65 121
+	delay	12
+	frame	data/chars/genkai/apnhar.gif
+		
+anim	pain2
+	loop	0
+	offset	42 180
+	delay	45
+	bbox	45 57 38 71
+	offset	42 180
+	frame	data/chars/genkai/apnhar.gif
+	offset	42 180
+	frame	data/chars/genkai/apnhar2.gif
+	offset	42 180
+	frame	data/chars/genkai/apnhar.gif
+	offset	42 180
+	frame	data/chars/genkai/apnhar2.gif
+	offset	42 180
+	frame	data/chars/genkai/apnhar.gif
+		
+anim	rise
+	bbox	93 78 -38 47
+	loop	0
+	offset	69 120
+	delay	20
+	frame	data/chars/genkai/agarrao5.gif
+	offset	69 120
+	frame	data/chars/genkai/lev1.gif
+	offset	69 120
+	frame	data/chars/genkai/lev2.gif
+	offset	69 121
+	frame	data/chars/genkai/itens1.gif
+		
+anim	run
+	bbox	20 7 49 67
+	delay	10
+	offset	42 66
+	loop	1
+	frame	data/chars/genkai/run1.gif
+	offset	42 68
+	frame	data/chars/genkai/run2.gif
+	offset	42 66
+	frame	data/chars/genkai/run1.gif
+	offset	42 68
+	frame	data/chars/genkai/run2.gif
+		
+anim	runattack
+	bbox	55 49 37 78
+	move	7
+	delay	7
+	offset	70 120
+	sound	data/chars/genkai/achut.wav
+	frame	data/chars/genkai/stand1.gif
+	offset	70 120
+	frame	data/chars/genkai/imp1.gif
+	attack	83 44 48 58 4 1 0 0 0 0
+	offset	70 120
+	delay	5
+	hitfx	data/sounds/beat1.wav
+	frame	data/chars/genkai/imp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp3.gif
+	attack	83 44 48 58 4 1 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp3.gif
+	attack	83 44 48 58 4 1 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp3.gif
+	attack	83 44 48 58 4 1 0 0 0 0
+	offset	70 120
+	frame	data/chars/genkai/imp2.gif
+	offset	70 120
+	frame	data/chars/genkai/imp1.gif
+		
+anim	runjumpattack
+	loop	0
+	delay	17
+	offset	71 107
+	bbox	48 6 40 87
+	frame	data/chars/genkai/at18.gif
+	attack	53 15 40 68 7 1 0 0 0 0
+	offset	71 107
+	bbox	56 10 35 108
+	delay	17
+	frame	data/chars/genkai/at19.gif
+		
+anim	select
+	loop	0
+	delay	20
+	offset	69 120
+	sound	data/chars/genkai/win.wav
+	frame	data/chars/genkai/vitoria4.gif
+	offset	69 120
+	frame	data/chars/genkai/vitoria3.gif
+	frame	data/chars/genkai/vitoria2.gif
+	frame	data/chars/genkai/vitoria.gif
+	frame	data/chars/genkai/vitoria2.gif
+	offset	69 220
+	frame	data/chars/genkai/vitoriav.gif
+	offset	69 220
+	frame	data/chars/genkai/vitoriav.gif
+		
+anim	shock
+	loop	0
+	offset	72 121
+	bbox	39 30 54 102
+	delay	4
+	frame	data/chars/genkai/shock1.gif
+	offset	72 121
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	delay	4
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	72 121
+	bbox	39 31 54 102
+	delay	4
+	frame	data/chars/genkai/shock1.gif
+	offset	72 121
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	delay	4
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock1.gif
+	bbox	0 0 0 0
+	offset	72 121
+	frame	data/chars/genkai/shock2.gif
+		
+anim	special
+	loop	0
+	sound	data/chars/genkai/rdan.wav
+	delay	12
+	offset	18 134
+	blast	4 2 107 146 19 1 0 0 0 0
+	frame	data/chars/genkai/rdan2.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan9.gif
+	offset	18 134
+	frame	data/chars/genkai/rdan7.gif
+	offset	18 134
+	frame	data/chars/genkai/shotgun.gif
+		
+anim	throw
+	bbox	56 61 32 63
+	loop	0
+	delay	7
+	offset	69 120
+	frame	data/chars/genkai/agarrao.gif
+	bbox	44 108 53 32
+	offset	69 120
+	frame	data/chars/genkai/agarrao2.gif
+	offset	69 120
+	frame	data/chars/genkai/agarrao3.gif
+	bbox	62 73 22 56
+	offset	69 120
+	frame	data/chars/genkai/itens1.gif
+	offset	69 121
+	frame	data/chars/genkai/pular1.gif
+		
+anim	walk
+	bbox	58 55 31 71
+	loop	1
+	delay	15
+	offset	69 120
+	frame	data/chars/genkai/andar1.gif
+	offset	69 120
+	frame	data/chars/genkai/andar2.gif
+	offset	69 120
+	frame	data/chars/genkai/andar1.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,163 @@
+name	       Cammy
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  5.3  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+flash	flashp
+jumpmove 3 2
+jumpheight 5.3
+animationscript	data/scripts2/script.c
+
+icon           data/chars/Cammy/icon.gif
+
+anim	attack1
+	loop	0
+	delay	6
+	offset	37 92
+	bbox	25 2 35 91
+	frame	data/Chars/Cammy/attack1.gif
+	frame	data/Chars/Cammy/attack2.gif
+	frame	data/Chars/Cammy/attack3.gif
+	frame	data/Chars/Cammy/attack4.gif
+	frame	data/Chars/Cammy/attack5.gif
+	frame	data/Chars/Cammy/attack6.gif
+	frame	data/Chars/Cammy/attack7.gif
+	frame	data/Chars/Cammy/attack8.gif
+	frame	data/Chars/Cammy/attack9.gif
+	frame	data/Chars/Cammy/attack10.gif
+
+anim	attack2
+	loop	0
+	delay	6
+	offset	41 90
+	bbox	36 6 30 84
+	frame	data/Chars/Cammy/bttack1.gif
+	frame	data/Chars/Cammy/bttack2.gif
+	frame	data/Chars/Cammy/bttack3.gif
+	frame	data/Chars/Cammy/bttack4.gif
+	frame	data/Chars/Cammy/bttack5.gif
+	frame	data/Chars/Cammy/bttack6.gif
+	frame	data/Chars/Cammy/bttack7.gif
+	frame	data/Chars/Cammy/bttack8.gif
+	frame	data/Chars/Cammy/bttack9.gif
+	frame	data/Chars/Cammy/bttack10.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	offset	46 92
+	bbox	39 5 30 84
+	frame	data/Chars/Cammy/cttack1.gif
+	frame	data/Chars/Cammy/cttack2.gif
+	frame	data/Chars/Cammy/cttack3.gif
+	frame	data/Chars/Cammy/cttack4.gif
+	frame	data/Chars/Cammy/cttack5.gif
+	frame	data/Chars/Cammy/cttack6.gif
+	frame	data/Chars/Cammy/cttack7.gif
+	frame	data/Chars/Cammy/cttack8.gif
+	frame	data/Chars/Cammy/cttack9.gif
+	frame	data/Chars/Cammy/cttack10.gif
+		
+anim	attack4
+	loop	0
+	delay	6
+	offset	46 60
+	bbox	25 10 54 44
+	frame	data/Chars/Cammy/dttack1.gif
+	frame	data/Chars/Cammy/dttack2.gif
+	frame	data/Chars/Cammy/dttack3.gif
+	frame	data/Chars/Cammy/dttack4.gif
+	frame	data/Chars/Cammy/dttack5.gif
+	frame	data/Chars/Cammy/dttack6.gif
+	frame	data/Chars/Cammy/dttack7.gif
+	frame	data/Chars/Cammy/dttack8.gif
+	frame	data/Chars/Cammy/dttack9.gif
+	frame	data/Chars/Cammy/dttack10.gif
+		
+anim	fall
+	loop	0
+	offset	46 87
+	delay	25
+	frame	data/Chars/Cammy/fall1.gif
+	frame	data/Chars/Cammy/fall2.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	34 51
+	frame	data/Chars/Cammy/get.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	34 87
+	bbox	13 4 36 73
+	frame	data/Chars/Cammy/idle1.gif
+	frame	data/Chars/Cammy/idle2.gif
+	frame	data/Chars/Cammy/idle3.gif
+	frame	data/Chars/Cammy/idle4.gif
+	frame	data/Chars/Cammy/idle5.gif
+	frame	data/Chars/Cammy/idle6.gif
+	frame	data/Chars/Cammy/idle7.gif
+	frame	data/Chars/Cammy/idle8.gif
+	frame	data/Chars/Cammy/idle9.gif
+		
+anim	jump
+	loop	0
+	offset	21 90
+	delay	11
+	bbox	9 8 37 71
+	frame	data/Chars/Cammy/jump1.gif
+	frame	data/Chars/Cammy/jump2.gif
+	frame	data/Chars/Cammy/jump3.gif
+		
+anim	pain
+	loop	0
+	offset	35 91
+	bbox	-4 -3 71 93
+	delay	15
+	frame	data/chars/Cammy/pain.gif
+				
+anim	run
+	loop	1
+	delay	6
+	offset	34 82
+	bbox	39 4 49 61
+	frame	data/Chars/Cammy/run1.gif
+	frame	data/Chars/Cammy/run2.gif
+	frame	data/Chars/Cammy/run3.gif
+	frame	data/Chars/Cammy/run4.gif
+	frame	data/Chars/Cammy/run5.gif
+	frame	data/Chars/Cammy/run6.gif
+	frame	data/Chars/Cammy/run7.gif
+	frame	data/Chars/Cammy/run8.gif
+	frame	data/Chars/Cammy/run9.gif
+
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	34 82
+	bbox	39 4 49 61
+	frame	data/Chars/Cammy/walk1.gif
+	frame	data/Chars/Cammy/walk2.gif
+	frame	data/Chars/Cammy/walk3.gif
+	frame	data/Chars/Cammy/walk4.gif
+	frame	data/Chars/Cammy/walk5.gif
+	frame	data/Chars/Cammy/walk6.gif
+	frame	data/Chars/Cammy/walk7.gif
+	frame	data/Chars/Cammy/walk8.gif
+	frame	data/Chars/Cammy/walk9.gif
+		
+#|edited by openBor Stats v 0.48
+		

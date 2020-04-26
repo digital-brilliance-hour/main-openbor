@@ -1,0 +1,672 @@
+name	       Thanos_E
+health         1000
+mp	       500
+speed	       12
+type	       enemy
+aimove	       Chase
+hostile	       player enemy
+shadow	       3
+makeinv        2
+running        30  4.1  2  1
+dust           dust
+riseinv	1
+throwdamage    26
+candamage    player enemy obstacle
+atchain	       1 2 3 4
+flash	qflash2
+fmap           6
+projectilehit  enemy obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+subject_to_screen 1
+bounce	1
+stealth 1 1
+
+Offense all        1
+Offense burn       1
+Offense shock      2.5
+Offense steal      1
+Offense freeze     1
+
+knockdowncount 2
+Defense all        1      7       1            0          0
+Defense blast      1      7       1            0          0
+Defense burn       1      0       1            0          0
+Defense shock      -2     100000      0            0          0
+Defense steal      3      0       2            0          0
+Defense freeze     2      0       2            0          0
+
+com             A2 freespecial
+com             A3 freespecial4
+com             A4 freespecial6
+com             D F A freespecial2
+com             U D A freespecial5
+
+palette	data/chars/Thanos/idle1.gif
+alternatepal	data/chars/Thanos/alter1.gif
+alternatepal	data/chars/Thanos/alter2.gif
+alternatepal	data/chars/Thanos/alter3.gif
+alternatepal	data/chars/Thanos/alter4.gif
+
+
+icon           data/chars/Thanos/icon.gif
+
+
+
+anim	attack1
+	bbox	24 14 72 121
+	loop	0
+	delay	3
+	offset	58 134
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Thanos/attack1.gif
+	bbox	5 8 89 114
+	offset	66 130
+	frame	data/Chars/Thanos/attack2.gif
+	attack	84 39 117 57 8
+	bbox	21 7 66 125
+	offset	65 136
+	frame	data/Chars/Thanos/attack3.gif
+	offset	64 135
+	attack	90 34 82 67 9
+	frame	data/Chars/Thanos/attack4.gif
+	offset	76 135
+	frame	data/Chars/Thanos/attack5.gif
+	frame	data/Chars/Thanos/attack6.gif
+	offset	86 135
+	frame	data/Chars/Thanos/attack7.gif
+	bbox	11 11 74 107
+	offset	49 123
+	frame	data/Chars/Thanos/attack8.gif
+		
+anim	attack2
+	bbox	16 13 83 119
+	loop	0
+	delay	3
+	offset	64 129
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Thanos/bttack1.gif
+	offset	62 138
+	frame	data/Chars/Thanos/bttack2.gif
+	frame	data/Chars/Thanos/bttack3.gif
+	offset	82 140
+	frame	data/Chars/Thanos/bttack4.gif
+	attack	70 9 111 99 8
+	offset	75 139
+	frame	data/Chars/Thanos/bttack5.gif
+	attack	61 8 110 103 9
+	offset	70 137
+	frame	data/Chars/Thanos/bttack6.gif
+	attack	81 12 101 89 9
+	offset	70 135
+	frame	data/Chars/Thanos/bttack7.gif
+	frame	data/Chars/Thanos/bttack8.gif
+	offset	66 140
+	frame	data/Chars/Thanos/bttack9.gif
+		
+anim	attack3
+	bbox	37 28 77 123
+	loop	0
+	delay	5
+	offset	67 148
+	hitfx	data/Chars/Rogue/hit.wav
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Thanos/cttack1.gif
+	offset	67 145
+	attack	92 7 139 148 8
+	frame	data/Chars/Thanos/cttack2.gif
+	offset	67 131
+	frame	data/Chars/Thanos/cttack3.gif
+	offset	67 146
+	frame	data/Chars/Thanos/cttack4.gif
+		
+anim	attack4
+	bbox	47 40 89 104
+	loop	0
+	delay	3
+	offset	113 143
+	hitflash	electo
+	frame	data/Chars/Thanos/dttack1.gif
+	bbox	37 25 71 96
+	offset	85 125
+	frame	data/Chars/Thanos/dttack2.gif
+	blast	107 3 167 139 15 0 0 45
+	bbox	23 36 83 106
+	offset	71 143
+	frame	data/Chars/Thanos/dttack3.gif
+	blast	105 14 168 123 15 0 0 45
+	offset	71 148
+	frame	data/Chars/Thanos/dttack4.gif
+	blast	111 2 164 126 15 0 0 45
+	offset	71 135
+	frame	data/Chars/Thanos/dttack5.gif
+	blast	83 7 196 133 15 0 0 45
+	offset	71 141
+	frame	data/Chars/Thanos/dttack6.gif
+	blast	82 1 194 138 15 0 0 45
+	offset	71 142
+	frame	data/Chars/Thanos/dttack7.gif
+	blast	75 9 215 122 15 0 0 45
+	offset	71 146
+	frame	data/Chars/Thanos/dttack8.gif
+	blast	87 6 209 152 15 0 0 45
+	offset	71 154
+	frame	data/Chars/Thanos/dttack9.gif
+	blast	90 7 199 133 15 0 0 45
+	offset	71 149
+	frame	data/Chars/Thanos/dttack10.gif
+	offset	71 134
+	@cmd	combox
+	frame	data/Chars/Thanos/dttack11.gif
+		
+anim	fall
+	bbox	4 4 176 122
+	loop	0
+	offset	105 123
+	delay	25
+	frame	data/Chars/Thanos/fall1.gif
+	offset	71 132
+	frame	data/Chars/Thanos/fall2.gif
+	bbox	5 7 181 57
+	offset	84 51
+	frame	data/Chars/Thanos/fall3.gif
+		
+anim	freespecial
+	loop	0
+	offset	60 129
+	delay	5
+	frame	data/Chars/Thanos/sel1.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa" -200 80 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa2" -205 60 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa3" -210 40 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa4" -215 20 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa" -200 40 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa2" -215 80 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa3" -220 90 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa4" -225 60 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa" -210 65 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa2" -225 40 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa3" -230 30 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosa4" -245 50 0
+	frame	data/Chars/Thanos/sel2.gif
+	bbox	0
+	delay	30
+	frame	data/Chars/Thanos/sel2.gif
+		
+anim	freespecial12
+	loop	0
+	offset	60 129
+	delay	6
+	frame	data/Chars/Thanos/sel1.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosc" 100 0 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 140
+	frame	data/Chars/Thanos/sel3.gif
+	offset	70 141
+	frame	data/Chars/Thanos/sel4.gif
+		
+anim	freespecial2
+	bbox	16 25 112 75
+	loop	0
+	offset	51 95
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Thanos/bnew1.gif
+	bbox	31 31 94 108
+	offset	67 129
+	frame	data/Chars/Thanos/bnew2.gif
+	blast	74 15 153 123 15 0 0 45
+	offset	65 121
+	frame	data/Chars/Thanos/bnew3.gif
+	offset	68 129
+	blast	99 13 181 136 15 0 0 45
+	frame	data/Chars/Thanos/bnew4.gif
+	blast	103 15 212 122 15 0 0 45
+	offset	67 122
+	frame	data/Chars/Thanos/bnew5.gif
+	blast	114 17 241 134 15 0 0 45
+	offset	70 129
+	frame	data/Chars/Thanos/bnew6.gif
+	blast	132 20 246 119 15 0 0 45
+	offset	67 121
+	frame	data/Chars/Thanos/bnew7.gif
+	blast	130 35 289 115 15 0 0 45
+	offset	70 129
+	frame	data/Chars/Thanos/bnew8.gif
+	blast	140 54 291 88 15 0 0 45
+	offset	68 120
+	frame	data/Chars/Thanos/bnew9.gif
+		
+anim	freespecial3
+	loop	0
+	offset	60 129
+	delay	6
+	frame	data/Chars/Thanos/sel1.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosb" 120 0 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 140
+	delay	45
+	frame	data/Chars/Thanos/sel3.gif
+	offset	70 141
+	frame	data/Chars/Thanos/sel4.gif
+		
+anim	freespecial5
+	bbox	0
+	loop	0
+	offset	94 114
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	qflash2
+	frame	data/Chars/Thanos/enew1.gif
+	bbox	107 4 87 87
+	offset	170 94
+	frame	data/Chars/Thanos/enew2.gif
+	offset	163 94
+	frame	data/Chars/Thanos/enew3.gif
+	offset	156 94
+	frame	data/Chars/Thanos/enew4.gif
+	bbox	0
+	offset	99 94
+	frame	data/Chars/Thanos/enew5.gif
+	offset	99 101
+	frame	data/Chars/Thanos/enew6.gif
+	blast	117 3 91 99 15 0 0 45
+	offset	99 116
+	frame	data/Chars/Thanos/enew7.gif
+	blast	123 4 143 138 15 0 0 45
+	bbox	0
+	offset	99 132
+	frame	data/Chars/Thanos/enew8.gif
+	blast	124 3 168 151 15 0 0 45
+	offset	99 142
+	frame	data/Chars/Thanos/enew9.gif
+	blast	137 1 174 172 15 0 0 45
+	offset	99 150
+	frame	data/Chars/Thanos/enew10.gif
+	blast	136 6 178 189 15 0 0 45
+	offset	99 160
+	frame	data/Chars/Thanos/enew11.gif
+		
+anim	freespecial6
+	loop	0
+	offset	60 129
+	delay	6
+	frame	data/Chars/Thanos/sel1.gif
+	offset	70 143
+	@cmd	spawn01 "Thanosc" 100 0 0
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 140
+	frame	data/Chars/Thanos/sel3.gif
+	offset	70 141
+	frame	data/Chars/Thanos/sel4.gif
+		
+anim	freespecial7
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==3){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 120);
+    }
+	@end_script	
+	loop	0
+	bbox	0
+	offset	56 100
+	hitflash	electo
+	@cmd	leaper 7 0 0
+	frame	data/Chars/Thanos/cnew4.gif
+	blast	93 2 178 63 15 0 0 45 0
+	offset	56 98
+	frame	data/Chars/Thanos/cnew5.gif
+	blast	97 4 104 84 15 0 0 45 0
+	offset	56 96
+	frame	data/Chars/Thanos/cnew6.gif
+	offset	56 97
+	frame	data/Chars/Thanos/cnew7.gif
+	blast	94 2 119 91 15 0 0 45 0
+	frame	data/Chars/Thanos/cnew8.gif
+	blast	108 6 123 89 15 0 0 45 0
+	frame	data/Chars/Thanos/cnew9.gif
+	blast	106 3 104 88 15 0 0 45 0
+	offset	56 96
+	frame	data/Chars/Thanos/cnew10.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	37 88
+	frame	data/Chars/Thanos/get.gif
+		
+anim	grab
+	loop	0
+	offset	58 127
+	delay	6
+	frame	data/Chars/Thanos/grab.gif
+		
+anim	grabattack
+	bbox	0 0 0 0
+	loop	0
+	offset	55 141
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	slamstart2
+	@cmd	position 1 128 21 0 -1
+	frame	data/Chars/Thanos/ga1.gif
+	offset	55 146
+	@cmd	position 1 128 21 0 -1
+	frame	data/Chars/Thanos/ga2.gif
+	bbox	0 0 0 0
+	offset	55 147
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga3.gif
+	offset	55 148
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga4.gif
+	offset	55 149
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga5.gif
+	offset	55 141
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga6.gif
+	bbox	0 0 0 0
+	offset	55 197
+	@cmd	position 1 136 109 0 -1
+	frame	data/Chars/Thanos/ga7.gif
+	@cmd	position 1 136 109 0 -1
+	frame	data/Chars/Thanos/ga8.gif
+	bbox	0 0 0 0
+	offset	55 226
+	@cmd	position 1 69 179 0 -1
+	frame	data/Chars/Thanos/ga9.gif
+	offset	55 221
+	@cmd	position 1 69 179 0 -1
+	frame	data/Chars/Thanos/ga10.gif
+	bbox	0 0 0 0
+	offset	55 252
+	@cmd	position 1 -7 191 0 -1
+	frame	data/Chars/Thanos/ga11.gif
+	offset	55 241
+	@cmd	position 1 -7 191 0 -1
+	frame	data/Chars/Thanos/ga12.gif
+	bbox	0 0 0 0
+	offset	55 228
+	@cmd	position 1 38 191 0 -1
+	frame	data/Chars/Thanos/ga13.gif
+	offset	55 231
+	@cmd	depost 1
+	@cmd	throw 1 35 -5 5 0 -1
+	@cmd	clearL
+	frame	data/Chars/Thanos/ga14.gif
+		
+anim	grabbackward
+	bbox	0 0 0 0
+	loop	0
+	offset	55 141
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	slamstart2
+	@cmd	position 1 128 21 0 -1
+	frame	data/Chars/Thanos/ga1.gif
+	offset	55 146
+	@cmd	position 1 128 21 0 -1
+	frame	data/Chars/Thanos/ga2.gif
+	bbox	0 0 0 0
+	offset	55 147
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga3.gif
+	offset	55 148
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga4.gif
+	offset	55 149
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga5.gif
+	offset	55 141
+	@cmd	position 1 156 21 0 -1
+	frame	data/Chars/Thanos/ga6.gif
+	bbox	0 0 0 0
+	offset	55 197
+	@cmd	position 1 136 109 0 -1
+	frame	data/Chars/Thanos/ga7.gif
+	@cmd	position 1 136 109 0 -1
+	frame	data/Chars/Thanos/ga8.gif
+	bbox	0 0 0 0
+	offset	55 226
+	@cmd	position 1 69 179 0 -1
+	frame	data/Chars/Thanos/ga9.gif
+	offset	55 221
+	@cmd	position 1 69 179 0 -1
+	frame	data/Chars/Thanos/ga10.gif
+	bbox	0 0 0 0
+	offset	55 252
+	@cmd	position 1 -7 191 0 -1
+	frame	data/Chars/Thanos/ga11.gif
+	offset	55 241
+	@cmd	position 1 -7 191 0 -1
+	frame	data/Chars/Thanos/ga12.gif
+	bbox	0 0 0 0
+	offset	55 228
+	@cmd	position 1 38 191 0 -1
+	frame	data/Chars/Thanos/ga13.gif
+	offset	55 231
+	@cmd	depost 1
+	@cmd	throw 1 35 -5 5 0 -1
+	@cmd	clearL
+	frame	data/Chars/Thanos/ga14.gif
+		
+anim	idle
+	bbox	18 16 79 115
+	offset	61 126
+	loop	1
+	delay	6
+	frame	data/Chars/Thanos/idle1.gif
+	offset	61 127
+	frame	data/Chars/Thanos/idle2.gif
+	frame	data/Chars/Thanos/idle3.gif
+	frame	data/Chars/Thanos/idle4.gif
+	frame	data/Chars/Thanos/idle5.gif
+	frame	data/Chars/Thanos/idle6.gif
+	frame	data/Chars/Thanos/idle7.gif
+	@cmd	combox
+	frame	data/Chars/Thanos/idle8.gif
+		
+anim	jump
+	bbox	19 9 77 143
+	loop	0
+	offset	63 157
+	delay	6
+	cancel	0 9 0 D freespecial7
+	frame	data/Chars/Thanos/jump.gif
+	bbox	4 4 96 108
+	offset	36 114
+	frame	data/Chars/Thanos/jump2.gif
+	offset	27 96
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+	frame	data/Chars/Thanos/jump3.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	37 88
+	frame	data/Chars/Thanos/get.gif
+		
+anim	pain
+	bbox	8 8 104 121
+	loop	0
+	offset	72 130
+	delay	6
+	frame	data/chars/Thanos/pain.gif
+		
+anim	pain2
+	loop	0
+	delay	6
+	offset	37 88
+	@cmd	spawn01 "Redbomb" 0 0 0
+	frame	data/Chars/Thanos/get.gif
+	@cmd	suicide()
+	frame	data/Chars/Thanos/get.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	37 88
+	frame	data/Chars/Thanos/get.gif
+		
+anim	run
+	bbox	63 12 67 108
+	loop	1
+	delay	6
+	offset	67 127
+	frame	data/Chars/Thanos/run1.gif
+	offset	73 135
+	frame	data/Chars/Thanos/run2.gif
+	bbox	26 18 80 117
+	offset	63 138
+	frame	data/Chars/Thanos/run3.gif
+	bbox	7 10 69 118
+	offset	45 131
+	frame	data/Chars/Thanos/run4.gif
+	bbox	16 7 94 107
+	frame	data/Chars/Thanos/run5.gif
+	offset	67 132
+	frame	data/Chars/Thanos/run6.gif
+	offset	51 134
+	frame	data/Chars/Thanos/run7.gif
+	bbox	4 10 75 107
+	offset	43 123
+	frame	data/Chars/Thanos/run8.gif
+		
+anim	runattack
+	bbox	0
+	loop	0
+	bbox	33 25 122 49
+	offset	56 100
+	hitflash	electo
+	@cmd	leaper 7 0 0
+	frame	data/Chars/Thanos/cnew4.gif
+	blast	93 2 178 63 15 0 0 45 0
+	offset	56 98
+	frame	data/Chars/Thanos/cnew5.gif
+	blast	97 4 104 84 15 0 0 45 0
+	offset	56 96
+	frame	data/Chars/Thanos/cnew6.gif
+	offset	56 97
+	frame	data/Chars/Thanos/cnew7.gif
+	blast	94 2 119 91 15 0 0 45 0
+	frame	data/Chars/Thanos/cnew8.gif
+	blast	108 6 123 89 15 0 0 45 0
+	frame	data/Chars/Thanos/cnew9.gif
+	blast	106 3 104 88 15 0 0 45 0
+	offset	56 96
+	frame	data/Chars/Thanos/cnew10.gif
+	delay	30
+	bbox	0
+	frame	data/Chars/Thanos/cnew10.gif
+		
+anim	select
+	loop	0
+	offset	60 129
+	delay	6
+	frame	data/Chars/Thanos/sel1.gif
+	offset	70 143
+	frame	data/Chars/Thanos/sel2.gif
+	offset	70 140
+	frame	data/Chars/Thanos/sel3.gif
+	offset	70 141
+	frame	data/Chars/Thanos/sel4.gif
+		
+anim	special
+	hitflash	electo
+	blast	-59 3 316 120 15 0 0 45
+	loop	0
+	offset	77 182
+	delay	6
+	@cmd	spawn01 "super" 28 135 0
+	frame	data/Chars/Thanos/dnew1.gif
+	blast	-69 3 388 107 15 0 0 45
+	offset	76 181
+	frame	data/Chars/Thanos/dnew2.gif
+	blast	-72 6 360 110 15 0 0 45
+	offset	77 182
+	frame	data/Chars/Thanos/dnew3.gif
+	blast	-72 6 348 98 15 0 0 45
+	frame	data/Chars/Thanos/dnew4.gif
+	attack	-73 8 319 86 15 0 0 45
+	offset	76 181
+	frame	data/Chars/Thanos/dnew5.gif
+	blast	-27 8 287 121 15 0 0 45
+	offset	103 163
+	frame	data/Chars/Thanos/dnew6.gif
+	blast	-71 2 415 125 15 0 0 45
+	offset	122 132
+	frame	data/Chars/Thanos/dnew7.gif
+	blast	9 8 474 109 15 0 0 45
+	offset	67 128
+	frame	data/Chars/Thanos/dnew8.gif
+		
+anim	waiting
+	loop	0
+	offset	53 143
+	delay	6
+	frame	data/Chars/Thanos/w1.gif
+		
+anim	walk
+	bbox	20 10 92 123
+	attack	0 0 0 0 0 0 0 0 0 0
+	loop	1
+	delay	6
+	offset	60 133
+	frame	data/Chars/Thanos/walk1.gif
+	offset	50 135
+	frame	data/Chars/Thanos/walk2.gif
+	frame	data/Chars/Thanos/walk3.gif
+	offset	28 136
+	frame	data/Chars/Thanos/walk4.gif
+	offset	54 136
+	frame	data/Chars/Thanos/walk5.gif
+	offset	54 137
+	frame	data/Chars/Thanos/walk6.gif
+	offset	54 136
+	frame	data/Chars/Thanos/walk7.gif
+	offset	54 137
+	frame	data/Chars/Thanos/walk8.gif
+	offset	30 133
+	frame	data/Chars/Thanos/walk9.gif
+	offset	53 134
+	frame	data/Chars/Thanos/walk10.gif
+		
+#|edited by openBor Stats v 0.50
+		

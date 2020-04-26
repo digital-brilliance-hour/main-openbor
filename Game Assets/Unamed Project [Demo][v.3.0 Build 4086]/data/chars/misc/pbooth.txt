@@ -1,0 +1,20 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Phone
+health	45
+type	obstacle
+shadow	5
+diesound data/sounds/phone.wav
+
+
+anim idle
+	delay	1
+	offset	56 137
+	bbox	9 0 82 138
+	frame	data/chars/misc/Pbooth.gif
+
+anim fall
+	delay	1
+	offset	56 137
+	frame	data/chars/misc/Pbooth2.gif

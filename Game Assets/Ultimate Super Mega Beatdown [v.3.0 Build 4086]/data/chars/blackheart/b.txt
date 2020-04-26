@@ -1,0 +1,50 @@
+name	     Blackheartb
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+
+
+
+
+anim	idle
+	attack	11 32 73 60 2 0 1 0 0 0
+	loop	0
+	delay	3
+	offset	49 53
+	movea	25
+	frame	data/chars/Blackheart/b1.gif
+	@cmd	position 1 -1 -37 0 1
+	attack	0
+	frame	data/chars/Blackheart/b1.gif
+	@cmd	position 1 -1 -37 0 1
+	offset	49 51
+	frame	data/chars/Blackheart/b2.gif
+	@cmd	position 1 -1 -37 0 1
+	offset	37 48
+	frame	data/chars/Blackheart/b3.gif
+	@cmd	position 1 -1 -37 0 1
+	attack	0
+	frame	data/chars/Blackheart/b1.gif
+	@cmd	position 1 -1 -37 0 1
+	offset	49 51
+	frame	data/chars/Blackheart/b2.gif
+	@cmd	position 1 -1 -37 0 1
+	offset	37 48
+	frame	data/chars/Blackheart/b3.gif
+	@cmd	position 1 -1 -37 0 1
+	attack	0
+	frame	data/chars/Blackheart/b1.gif
+	@cmd	position 1 -1 -37 0 1
+	offset	49 51
+	frame	data/chars/Blackheart/b2.gif
+	@cmd	depost 1
+	@cmd	throw 35 1 -5 0 0 1
+	@cmd	clearL
+	offset	37 48
+	frame	data/chars/Blackheart/b3.gif
+	@cmd	suicide()
+	frame	data/chars/Blackheart/b3.gif
+		
+#|edited by openBor Stats v 0.51
+		

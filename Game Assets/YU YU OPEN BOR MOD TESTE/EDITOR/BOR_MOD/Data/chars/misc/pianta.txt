@@ -1,0 +1,24 @@
+
+name	pianta
+type    obstacle
+shadow	0
+health  1
+noatflash 1
+nolife  1
+flash     block
+diesound  data/sounds/beat4.wav
+
+
+anim idle
+	delay	1000
+	offset	36 84
+        bbox    10 5 40 80
+	frame	data/chars/misc/pianta.gif
+
+anim fall
+	delay	1000
+	offset	36 84
+	frame	data/chars/misc/pianta2.gif
+
+
+

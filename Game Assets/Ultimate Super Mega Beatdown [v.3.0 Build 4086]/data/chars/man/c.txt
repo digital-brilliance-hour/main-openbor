@@ -1,0 +1,23 @@
+name	     akumamegablast
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+alpha 1
+
+
+anim	idle
+	blast	0 15 944 141 16
+	dropv	3 0 0
+	hitflash	electo
+	loop	0
+	delay	30
+	offset	13 84
+	frame	data/chars/MAN/c1.gif
+	frame	data/chars/MAN/c1.gif
+	@cmd	suicide()
+	frame	data/chars/MAN/c1.gif
+		
+#|edited by openBor Stats v 0.50
+		

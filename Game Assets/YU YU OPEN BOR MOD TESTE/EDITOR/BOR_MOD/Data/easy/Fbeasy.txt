@@ -1,0 +1,259 @@
+# pedras de noite #
+music		data/music/kuronu.bor
+
+background	data/bgs/pier2/f2.gif	
+
+panel		data/bgs/pier2/piso3.gif
+
+#frontpanel      data/bgs/pier/front.gif
+
+
+order	a
+
+
+# ---------------------
+
+#ANIM#
+
+spawn onda2
+flip 1
+coords	0 243
+at	0
+
+spawn onda3
+flip 1
+coords	0 243
+at	0
+
+spawn sunny
+flip 1
+coords	600 140
+at	0
+
+spawn ichi
+flip 1
+coords	1700 170
+at	0
+
+
+;-----------------------
+
+
+group	100 100
+at	0
+
+spawn	billy
+health	70
+map	1
+coords	-30 200
+at	20
+
+spawn	billy
+health	70
+map	2
+coords	-30 160
+at	20
+
+spawn	billy
+health	60
+coords	380 230
+at	22
+
+
+spawn	Ralf
+health	70
+map	1
+coords	380 170
+at	350
+
+
+spawn	lipsy
+health	60
+map	3
+coords	-30 190
+at	350
+
+
+spawn	Angel
+health	100
+map	5
+coords	384 180
+at	680
+
+spawn	shermie
+alias	Devil
+health	100
+map	1
+coords	380 220
+at	680
+
+
+spawn	K'
+health	60
+coords	-30 190
+at	680
+
+
+wait
+at	950
+
+group	3 3
+at	950
+
+
+spawn	war
+health	60
+map	3
+coords	370 170
+at	950
+
+spawn	zedd
+health	60
+coords	-30 220
+at	950
+
+spawn	armagon
+health	70
+map	2
+coords	370 190
+at	950
+
+group	1 3
+at	950
+
+spawn	K'
+health	70
+coords	370 190
+at	950
+
+spawn	joe
+health	70
+map	1
+coords	370 210
+at	950
+
+spawn	Yashiro
+health	70
+map	2
+coords	-30 165
+at	950
+
+
+
+#---------------
+
+group	100 100
+at	1000
+
+spawn	silvh
+health	90
+map	4
+coords	370 170
+at	1050
+
+spawn	silvh
+health	90
+map	3
+coords	-30 200
+at	1050
+
+
+
+spawn	goldar
+health	80
+coords	370 230
+at	1400
+
+spawn	wingnut
+health	80
+coords	370 195
+at	1400
+
+spawn	lipsy
+health	60
+map	2
+coords	-30 200
+at	1400
+
+
+spawn	green
+health	80
+map	2
+coords	370 160
+at	1700
+
+spawn	Ralf
+health	80
+map	3
+coords	-30 190
+at	1700
+
+spawn	box
+flip	1
+item	meat
+coords	380 191
+at	1760
+
+spawn	crate
+flip	1
+2pitem	meat
+coords	380 190
+at	1812
+
+
+wait
+at	1900
+
+group	1 3
+at	1900
+
+spawn	bat
+health	80
+map	1
+coords	-30 195
+at	1900
+
+spawn	crow
+health	60
+map	1
+coords	-30 160
+at	1900
+
+spawn	crow
+health	60
+map	1
+coords	-30 230
+at	1900
+
+spawn	armagon
+health	60
+map	1
+coords	370 195
+at	1900
+
+
+#---------------
+
+group	100 100
+at	1950
+
+
+spawn	Ralf
+health	70
+coords	370 230
+at	2000
+
+spawn	Shermie
+health	60
+map	1
+coords	-30 165
+at	2000
+
+
+spawn	Yashiro
+health	75
+coords	380 220
+at	2400
+
+
+

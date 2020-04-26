@@ -1,0 +1,42 @@
+name	     websling
+type	     none
+health	1
+shadow	     0
+speed        30
+candamage    enemy obstacle
+remove	0
+lifespan 2
+animationscript data/scripts2/item.c
+
+anim spawn
+	loop	0
+	delay	6
+	offset	50 49
+		Attack1  26  13  47  36 0
+		jumpframe 1 -3 3 0
+	followanim 1
+	followcond 1
+	frame	data/chars/Spiderman/Spiderman11070000.gif
+		offset  50  51
+	frame	data/chars/Spiderman/Spiderman11070001.gif
+		offset  51  51
+	frame	data/chars/Spiderman/Spiderman11070002.gif
+		offset  47  55
+		attack1  20  26  43  25
+	frame	data/chars/Spiderman/Spiderman11070003.gif
+		offset  47  46
+		attack1  21  10  45  37
+	frame	data/chars/Spiderman/Spiderman11070004.gif
+		Attack1  0
+	@cmd suicide()
+	frame	data/chars/Spiderman/emp.gif
+
+anim follow1
+	loop	0
+	delay	6
+	offset	50 49
+	@cmd Webman()
+	frame	data/chars/Spiderman/emp.gif
+	@cmd suicide()
+	frame	data/chars/Spiderman/emp.gif
+

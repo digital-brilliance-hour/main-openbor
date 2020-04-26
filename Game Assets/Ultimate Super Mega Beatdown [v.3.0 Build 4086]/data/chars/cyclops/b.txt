@@ -1,0 +1,23 @@
+name	     Cyclopsb
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+antigravity 100
+
+anim	idle
+	loop	0
+	delay	3
+	offset	15 25
+	frame	data/chars/Cyclops/b1.gif
+	offset	16 31
+	frame	data/chars/Cyclops/b2.gif
+	frame	data/chars/Cyclops/b3.gif
+	offset	22 31
+	frame	data/chars/Cyclops/b4.gif
+	frame	data/chars/Cyclops/b5.gif
+	@cmd	suicide()
+	frame	data/chars/Cyclops/b5.gif
+		
+#|edited by openBor Stats v 0.51
+		

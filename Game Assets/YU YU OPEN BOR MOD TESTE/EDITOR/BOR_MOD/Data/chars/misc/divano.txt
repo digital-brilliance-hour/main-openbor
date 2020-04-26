@@ -1,0 +1,25 @@
+
+
+name	divano
+type    obstacle
+shadow	0
+health  1
+noatflash 1
+nolife  1
+flash    block
+diesound  data/sounds/beat4.wav
+
+
+anim idle
+	delay	1000
+	offset	63 75
+        bbox    15 20 95 50
+	frame	data/chars/misc/divano.gif
+
+
+anim fall
+	delay	1000
+	offset	63 75
+	frame	data/chars/misc/divano2.gif
+
+

@@ -1,0 +1,55 @@
+# Street
+music		data/music/ham.bor
+bossmusic	data/music/menu.bor
+
+settime         0
+notime          1
+
+# Load images
+background	data/chars/mys/back.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel	data/chars/mys/back.gif
+
+direction both
+
+
+order a
+
+spawn mysti
+health	1200
+flip    1
+coords 0 276
+at 0
+
+spawn  Spiderman_E
+health    1000
+coords    150 225
+at          1
+
+spawn  Juggernaut_E
+health    1000
+coords    210 225
+at          1
+
+spawn  Deadpool_E
+health    1000
+coords    340 225
+at          1
+
+spawn  Strider_E
+health    1000
+coords    340 225
+at          1
+
+spawn  Tron_Bonne_E
+health    1000
+coords    440 225
+at          1
+
+spawn   Colossus_E
+health    1000
+coords    590 225
+at          1

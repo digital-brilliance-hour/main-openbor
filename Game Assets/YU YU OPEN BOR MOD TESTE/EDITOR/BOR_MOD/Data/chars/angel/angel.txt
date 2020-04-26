@@ -1,0 +1,184 @@
+name	Angel
+diesound data/sounds/eek.wav
+speed	9
+health	60
+grabdistance 20
+aimove chase
+aimove wander
+aimove normal
+gfxshadow 1
+dust dust
+type	enemy
+shadow	3
+icon	data/chars/angel/icone.gif
+load			magia
+
+palette  data/chars/angel/angel.gif
+
+remap	data/chars/angel/parada1.gif data/chars/angel/idle1.gif
+remap	data/chars/angel/parada1.gif data/chars/angel/idle2.gif
+remap	data/chars/angel/parada1.gif data/chars/angel/idle3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	55 75
+	custknife	magia
+	throwframe	3
+	loop	0
+	range	180 300
+	delay	7
+	bbox	35 30 33 104
+	offset	48 123
+	sound	data/chars/angel/proja.wav
+	frame	data/chars/angel/magia1.gif
+	frame	data/chars/angel/magia2.gif
+	bbox	58 43 30 87
+	frame	data/chars/angel/magia3.gif
+	delay	22
+	frame	data/chars/angel/magia4.gif
+		
+anim	attack2
+	bbox	34 36 28 97
+	loop	0
+	sound	data/chars/angel/upera.wav
+	range	0 45
+	offset	45 122
+	delay	8
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/angel/ataque1.gif
+	offset	45 122
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/angel/ataque2.gif
+	attack	41 40 43 87 8 0 1 0 0 0
+	offset	45 122
+	frame	data/chars/angel/ataque3.gif
+	offset	45 122
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/angel/ataque2.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	56 85
+	frame	data/chars/angel/fall1.gif
+	offset	56 85
+	frame	data/chars/angel/fall2.gif
+	offset	56 87
+	frame	data/chars/angel/fall3.gif
+	offset	56 85
+	attack	21 68 94 20 12 1 0 0 0 0
+	frame	data/chars/angel/fall4.gif
+		
+anim	idle
+	loop	1
+	offset	31 112
+	bbox	19 21 33 96
+	delay	10
+	frame	data/chars/angel/parada3.gif
+	frame	data/chars/angel/parada2.gif
+	frame	data/chars/angel/parada1.gif
+		
+anim	pain
+	bbox	25 37 55 73
+	loop	0
+	offset	41 105
+	delay	12
+	frame	data/chars/angel/apanhando1.gif
+	bbox	27 21 61 88
+	offset	41 105
+	delay	12
+	frame	data/chars/angel/apanhando2.gif
+	bbox	25 37 55 73
+	offset	41 105
+	delay	12
+	frame	data/chars/angel/apanhando1.gif
+		
+anim	rise
+	loop	0
+	offset	36 96
+	delay	15
+	frame	data/chars/angel/lev1.gif
+	frame	data/chars/angel/lev2.gif
+	frame	data/chars/angel/lev3.gif
+		
+anim	upper
+	range	10 70
+	loop	0
+	jumpframe	2
+	delay	10
+	offset	25 91
+	bbox	14 46 29 52
+	sound	data/chars/angel/upera.wav
+	move	5
+	frame	data/chars/angel/up1.gif
+	bbox	10 17 39 74
+	offset	24 86
+	frame	data/chars/angel/up2.gif
+	attack	31 0 29 48 15 1 0 0 0 0
+	bbox	8 14 25 121
+	offset	21 150
+	move	0
+	delay	15
+	frame	data/chars/angel/up3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	9 24 33 107
+	offset	25 152
+	frame	data/chars/angel/up4.gif
+	attack	2 0 21 47 15 1 0 0 0 0
+	bbox	3 20 29 108
+	offset	18 148
+	frame	data/chars/angel/up5.gif
+	attack	0 0 0 0 0 1 0 0 0 0
+	offset	21 149
+	frame	data/chars/angel/up6.gif
+	bbox	5 3 42 98
+	offset	24 93
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	30
+	frame	data/chars/angel/up7.gif
+	bbox	25 27 31 72
+	offset	36 96
+	delay	10
+	frame	data/chars/angel/lev2.gif
+	bbox	20 11 35 93
+	offset	36 96
+	frame	data/chars/angel/lev3.gif
+		
+anim	walk
+	loop	1
+	offset	41 100
+	bbox	33 7 30 103
+	delay	12
+	frame	data/chars/angel/andar1.gif
+	frame	data/chars/angel/andar2.gif
+	frame	data/chars/angel/andar3.gif
+		
+#|edited by openBor Stats v 0.67
+		

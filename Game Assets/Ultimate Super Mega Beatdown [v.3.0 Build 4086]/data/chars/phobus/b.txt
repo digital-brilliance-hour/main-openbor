@@ -1,0 +1,43 @@
+name	     Phobusb
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+
+
+anim	idle
+	attack	1 4 70 37 12 1 0 0 24 15
+	dropv	1 6 0
+	loop	0
+	delay	3
+	offset	0 22
+	frame	data/chars/Phobus/b1.gif
+	attack	1 13 134 57 12 1 0 0 24 15
+	dropv	1 6 0
+	offset	0 42
+	frame	data/chars/Phobus/b2.gif
+	attack	3 9 162 51 12 1 0 0 24 15
+	offset	0 38
+	frame	data/chars/Phobus/b3.gif
+	attack	2 17 256 45 12 1 0 0 24 15
+	dropv	1 6 0
+	offset	0 42
+	frame	data/chars/Phobus/b4.gif
+	attack	3 5 297 64 12 1 0 0 24 15
+	dropv	1 6 0
+	frame	data/chars/Phobus/b5.gif
+	offset	0 43
+	frame	data/chars/Phobus/b6.gif
+	attack	6 0 601 17 12 1 0 0 24 15
+	dropv	1 6 0
+	offset	0 8
+	frame	data/chars/Phobus/b7.gif
+	offset	0 7
+	frame	data/chars/Phobus/b8.gif
+	offset	0 5
+	@cmd	suicide()
+	frame	data/chars/Phobus/b9.gif
+		
+#|edited by openBor Stats v 0.51
+		

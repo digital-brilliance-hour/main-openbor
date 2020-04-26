@@ -1,0 +1,499 @@
+name	       Juggernaut_E
+health         1000
+mp	       12000
+speed	       12
+type	       enemy
+hostile		player enemy
+aimove	Chase
+subject_to_screen 1
+candamage    enemy obstacle player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+
+
+com             d d a freespecial
+com             d f a freespecial2
+com             u u a freespecial4
+com             D U A freespecial12
+com             d f s freespecial5
+
+
+icon           data/chars/Juggernaut/icon.gif
+
+palette	data/Chars/Juggernaut/idle1.gif
+alternatepal	data/Chars/Juggernaut/alter1.gif
+alternatepal	data/Chars/Juggernaut/alter2.gif
+alternatepal	data/Chars/Juggernaut/alter3.gif
+alternatepal	data/Chars/Juggernaut/alter4.gif
+alternatepal	data/Chars/Juggernaut/alter5.gif
+alternatepal	data/Chars/Juggernaut/alter6.gif
+
+
+
+
+anim	attack1
+	cancel	0 3 1 d d a freespecial
+	cancel	0 3 1 d f a freespecial2
+	cancel	0 3 1 u u a freespecial4
+	cancel	0 3 1 d u a freespecial12
+	cancel	0 3 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/ha1.wav
+	bbox	52 20 55 129
+	loop	0
+	delay	6
+	offset	71 152
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Juggernaut/attack1.gif
+	bbox	60 4 69 109
+	offset	71 121
+	attack	115 9 169 103 7
+	frame	data/Chars/Juggernaut/attack2.gif
+	offset	66 126
+	frame	data/Chars/Juggernaut/attack3.gif
+	offset	61 128
+	frame	data/Chars/Juggernaut/attack4.gif
+		
+anim	attack2
+	cancel	0 2 1 d d a freespecial
+	cancel	0 2 1 d f a freespecial2
+	cancel	0 2 1 u u a freespecial4
+	cancel	0 2 1 d u a freespecial12
+	cancel	0 2 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/ha1.wav
+	bbox	58 6 57 139
+	loop	0
+	delay	6
+	offset	81 147
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Juggernaut/bttack1.gif
+	attack	115 3 170 101 7
+	bbox	83 4 47 113
+	offset	83 125
+	frame	data/Chars/Juggernaut/bttack2.gif
+	offset	72 125
+	frame	data/Chars/Juggernaut/bttack3.gif
+		
+anim	attack3
+	cancel	0 5 1 d d a freespecial
+	cancel	0 5 1 d f a freespecial2
+	cancel	0 5 1 u u a freespecial4
+	cancel	0 5 1 d u a freespecial12
+	cancel	0 5 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/ha1.wav
+	bbox	41 29 52 124
+	loop	0
+	delay	6
+	offset	55 162
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Juggernaut/cttack1.gif
+	bbox	61 52 47 125
+	offset	51 181
+	frame	data/Chars/Juggernaut/cttack2.gif
+	bbox	62 1 62 110
+	offset	59 116
+	frame	data/Chars/Juggernaut/cttack3.gif
+	attack	97 16 139 103 7
+	offset	63 119
+	frame	data/Chars/Juggernaut/cttack4.gif
+	offset	84 165
+	frame	data/Chars/Juggernaut/cttack5.gif
+	offset	84 136
+	frame	data/Chars/Juggernaut/cttack6.gif
+		
+anim	attack4
+	cancel	0 5 1 d d a freespecial
+	cancel	0 5 1 d f a freespecial2
+	cancel	0 5 1 u u a freespecial4
+	cancel	0 5 1 d u a freespecial12
+	cancel	0 5 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/jpunch.wav
+	bbox	56 9 81 126
+	loop	0
+	delay	6
+	offset	96 131
+	hitfx	data/sounds/bukk.wav
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Juggernaut/dttack1.gif
+	offset	98 131
+	frame	data/Chars/Juggernaut/dttack2.gif
+	offset	68 134
+	frame	data/Chars/Juggernaut/dttack3.gif
+	blast	104 9 182 85 16 0 0 45
+	dropv	2 7 0
+	offset	68 121
+	frame	data/Chars/Juggernaut/dttack4.gif
+	offset	72 126
+	frame	data/Chars/Juggernaut/dttack5.gif
+	offset	61 127
+	frame	data/Chars/Juggernaut/dttack6.gif
+		
+anim	fall
+	loop	0
+	offset	80 96
+	delay	25
+	frame	data/Chars/Juggernaut/fall1.gif
+	offset	76 84
+	frame	data/Chars/Juggernaut/fall2.gif
+	offset	82 63
+	frame	data/Chars/Juggernaut/fall3.gif
+		
+anim	freespecial
+	cancel	0 3 0 d f s freespecial5
+	loop	0
+	offset	100 153
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/anew1.gif
+	offset	133 149
+	frame	data/Chars/Juggernaut/anew2.gif
+	offset	24 113
+	frame	data/Chars/Juggernaut/anew3.gif
+	offset	25 101
+	@cmd	spawn01 "juggera" 149 0 0
+	frame	data/Chars/Juggernaut/anew4.gif
+		
+anim	freespecial12
+	cancel	0 5 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/pieceofme.wav
+	bbox	74 0 80 125
+	loop	0
+	offset	100 119
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/up1.gif
+	offset	56 113
+	frame	data/Chars/Juggernaut/up2.gif
+	blast	59 1 141 90 16 0 0 45
+	dropv	6 1 0
+	bbox	24 3 76 110
+	offset	36 128
+	frame	data/Chars/Juggernaut/up3.gif
+	offset	63 199
+	bbox	0 0 0 0
+	frame	data/Chars/Juggernaut/up4.gif
+	offset	35 196
+	frame	data/Chars/Juggernaut/up5.gif
+	bbox	25 24 96 123
+	offset	55 158
+	frame	data/Chars/Juggernaut/up6.gif
+		
+anim	freespecial2
+	cancel	0 6 1 d f s freespecial5
+	sound	data/Chars/Juggernaut/running.wav
+	blast	73 2 103 136 16 0 0 45
+	dropv	1 6 0
+	bbox	47 18 19 77
+	loop	0
+	offset	73 131
+	delay	6
+	@cmd	leaper 7 0 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/ra1.gif
+	blast	76 2 94 144 16 0 0 45
+	dropv	1 6 0
+	@cmd	clearL
+	frame	data/Chars/Juggernaut/ra2.gif
+	blast	74 4 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra3.gif
+	blast	75 2 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra4.gif
+	blast	83 3 88 139 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra5.gif
+	blast	76 4 93 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra6.gif
+	blast	83 0 87 138 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra7.gif
+		
+anim	freespecial4
+	cancel	0 4 0 d f s freespecial5
+	loop	0
+	offset	100 153
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/anew1.gif
+	offset	133 149
+	frame	data/Chars/Juggernaut/anew2.gif
+	offset	24 113
+	frame	data/Chars/Juggernaut/anew3.gif
+	offset	25 101
+	delay	1
+	@cmd	spawn01 "Juggerstone" 149 0 0
+	frame	data/Chars/Juggernaut/anew4.gif
+	delay	6
+	frame	data/Chars/Juggernaut/anew4.gif
+		
+anim	freespecial5
+	sound	data/Chars/Juggernaut/unstop.wav
+	offset	58 148
+	@cmd	spawn01 "super" 0 68 0
+	frame	data/Chars/Juggernaut/sel2.gif
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/Chars/Juggernaut/sel3.gif
+	blast	73 2 103 136 16 0 0 45
+	dropv	1 6 0
+	bbox	47 18 19 77
+	loop	0
+	offset	73 131
+	delay	6
+	@cmd	leaper 7 0 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/ra1.gif
+	blast	76 2 94 144 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra2.gif
+	blast	74 4 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra3.gif
+	blast	75 2 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra4.gif
+	blast	83 3 88 139 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra5.gif
+	blast	76 4 93 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra6.gif
+	blast	83 0 87 138 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra7.gif
+	blast	73 2 103 136 16 0 0 45
+	dropv	1 6 0
+	bbox	47 18 19 77
+	loop	0
+	offset	73 131
+	delay	6
+	@cmd	leaper 7 0 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/ra1.gif
+	blast	76 2 94 144 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra2.gif
+	blast	74 4 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra3.gif
+	blast	75 2 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra4.gif
+	blast	83 3 88 139 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra5.gif
+	blast	76 4 93 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra6.gif
+	blast	83 0 87 138 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra7.gif
+		
+anim	get
+	offset	56 135
+	loop	0
+	delay	6
+	frame	data/Chars/Juggernaut/idle1.gif
+		
+anim	idle
+	offset	56 135
+	loop	1
+	delay	6
+	frame	data/Chars/Juggernaut/idle1.gif
+	offset	56 134
+	frame	data/Chars/Juggernaut/idle2.gif
+	offset	56 133
+	frame	data/Chars/Juggernaut/idle3.gif
+	frame	data/Chars/Juggernaut/idle4.gif
+	frame	data/Chars/Juggernaut/idle5.gif
+	frame	data/Chars/Juggernaut/idle6.gif
+	offset	55 133
+	frame	data/Chars/Juggernaut/idle7.gif
+	offset	56 134
+	frame	data/Chars/Juggernaut/idle8.gif
+		
+anim	jump
+	bbox	41 52 64 134
+	loop	0
+	offset	51 213
+	delay	6
+	frame	data/Chars/Juggernaut/jump1.gif
+	offset	72 209
+	frame	data/Chars/Juggernaut/jump2.gif
+	bbox	19 15 131 121
+	offset	65 143
+	frame	data/Chars/Juggernaut/jump3.gif
+	offset	65 131
+	frame	data/Chars/Juggernaut/jump4.gif
+	offset	58 123
+	frame	data/Chars/Juggernaut/jump5.gif
+		
+anim	jumpattack
+	@cmd	leaper 2 -2 0
+	hitfx	data/sounds/bukk.wav
+	blast	5 4 251 127 15 0 0 35
+	dropv	0 0 0
+	offset	70 140
+	frame	data/Chars/Juggernaut/bja2.gif
+	frame	data/Chars/Juggernaut/bja2.gif
+	frame	data/Chars/Juggernaut/bja2.gif
+		
+anim	jumpattack2
+	@cmd	leaper 9 -9 0
+	hitfx	data/sounds/bukk.wav
+	blast	5 4 251 127 15 0 0 35
+	dropv	0 0 0
+	offset	70 140
+	frame	data/Chars/Juggernaut/bja2.gif
+	frame	data/Chars/Juggernaut/bja2.gif
+	frame	data/Chars/Juggernaut/bja2.gif
+		
+anim	land
+	offset	56 135
+	loop	0
+	delay	6
+	frame	data/Chars/Juggernaut/idle1.gif
+		
+anim	pain
+	sound	data/Chars/Juggernaut/pain.wav
+	bbox	13 11 124 123
+	loop	0
+	offset	70 130
+	delay	6
+	frame	data/chars/Juggernaut/pain.gif
+		
+anim	rise
+	loop	0
+	offset	84 85
+	delay	6
+	frame	data/chars/Juggernaut/rise1.gif
+	offset	84 90
+	frame	data/chars/Juggernaut/rise2.gif
+	offset	84 92
+	frame	data/chars/Juggernaut/rise3.gif
+		
+anim	run
+	bbox	15 4 126 133
+	loop	1
+	delay	3
+	offset	69 136
+	frame	data/Chars/Juggernaut/walk1.gif
+	offset	72 137
+	frame	data/Chars/Juggernaut/walk2.gif
+	offset	72 136
+	frame	data/Chars/Juggernaut/walk3.gif
+	offset	80 135
+	frame	data/Chars/Juggernaut/walk4.gif
+	offset	83 135
+	frame	data/Chars/Juggernaut/walk5.gif
+	offset	86 135
+	frame	data/Chars/Juggernaut/walk6.gif
+	frame	data/Chars/Juggernaut/walk7.gif
+	offset	83 135
+	frame	data/Chars/Juggernaut/walk8.gif
+	frame	data/Chars/Juggernaut/walk9.gif
+	frame	data/Chars/Juggernaut/walk10.gif
+	frame	data/Chars/Juggernaut/walk11.gif
+		
+anim	runattack
+	cancel	0 6 0 d f s freespecial5
+	sound	data/Chars/Juggernaut/running.wav
+	blast	73 2 103 136 16 0 0 45
+	dropv	1 6 0
+	bbox	47 18 19 77
+	loop	0
+	offset	73 131
+	delay	6
+	@cmd	leaper 7 0 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/ra1.gif
+	blast	76 2 94 144 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra2.gif
+	blast	74 4 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra3.gif
+	blast	75 2 96 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra4.gif
+	blast	83 3 88 139 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra5.gif
+	blast	76 4 93 141 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra6.gif
+	blast	83 0 87 138 16 0 0 45
+	dropv	1 6 0
+	frame	data/Chars/Juggernaut/ra7.gif
+		
+anim	runjumpattack
+	blast	15 6 192 132 15 0 0 35
+	dropv	0 0 0
+	loop	0
+	offset	64 140
+	delay	6
+	@cmd	leaper 4 -4 0
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Juggernaut/bja1.gif
+	blast	5 4 251 127 15 0 0 35
+	dropv	0 0 0
+	offset	70 140
+	frame	data/Chars/Juggernaut/bja2.gif
+		
+anim	select
+	loop	0
+	offset	73 144
+	delay	6
+	frame	data/Chars/Juggernaut/sel1.gif
+	offset	58 148
+	frame	data/Chars/Juggernaut/sel2.gif
+	frame	data/Chars/Juggernaut/sel3.gif
+	frame	data/Chars/Juggernaut/sel4.gif
+	frame	data/Chars/Juggernaut/sel5.gif
+	frame	data/Chars/Juggernaut/sel6.gif
+	frame	data/Chars/Juggernaut/sel7.gif
+	frame	data/Chars/Juggernaut/sel8.gif
+		
+anim	waiting
+	loop	0
+	offset	72 141
+	delay	33
+	frame	data/Chars/Juggernaut/w1.gif
+	offset	66 141
+	frame	data/Chars/Juggernaut/w2.gif
+		
+anim	walk
+	bbox	15 4 126 133
+	loop	1
+	delay	6
+	offset	69 136
+	frame	data/Chars/Juggernaut/walk1.gif
+	offset	72 137
+	frame	data/Chars/Juggernaut/walk2.gif
+	offset	72 136
+	frame	data/Chars/Juggernaut/walk3.gif
+	offset	80 135
+	frame	data/Chars/Juggernaut/walk4.gif
+	offset	83 135
+	frame	data/Chars/Juggernaut/walk5.gif
+	offset	86 135
+	frame	data/Chars/Juggernaut/walk6.gif
+	frame	data/Chars/Juggernaut/walk7.gif
+	offset	83 135
+	frame	data/Chars/Juggernaut/walk8.gif
+	frame	data/Chars/Juggernaut/walk9.gif
+	frame	data/Chars/Juggernaut/walk10.gif
+	frame	data/Chars/Juggernaut/walk11.gif
+		
+#|edited by openBor Stats v 0.51
+		

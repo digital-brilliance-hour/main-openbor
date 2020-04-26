@@ -1,0 +1,38 @@
+name	Bluefire2
+health	1
+nolife        1
+nomove 1 0
+hitenemy 0 0
+grabdistance 11
+candamage enemy
+type	trap
+shadow	0
+alpha   1
+lifespan	3
+antigravity 100
+
+palette data/chars/fire/alt.gif
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	64 70
+	blast	60 -51 72 140 8
+	dropv	2 0 0
+	frame	data/chars/fire/fire1.gif
+	frame	data/chars/fire/fire2.gif
+	frame	data/chars/fire/fire3.gif
+	frame	data/chars/fire/fire4.gif
+	frame	data/chars/fire/fire5.gif
+	frame	data/chars/fire/fire6.gif
+	frame	data/chars/fire/fire7.gif
+	frame	data/chars/fire/fire8.gif	
+	frame	data/chars/fire/fire9.gif
+	frame	data/chars/fire/fire10.gif
+	frame	data/chars/fire/fire11.gif
+	frame	data/chars/fire/fire12.gif
+	frame	data/chars/fire/fire13.gif
+	frame	data/chars/fire/fire14.gif
+	frame	data/chars/fire/fire15.gif	
+	frame	data/chars/fire/fire16.gif

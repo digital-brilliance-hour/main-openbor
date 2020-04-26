@@ -1,0 +1,25 @@
+name	     Wolverinea
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+
+
+
+anim	idle
+	blast	13 5 146 90 17 0 0 15
+	dropv	0 4 0
+	bbox	0 0 0 0
+	loop	1
+	delay	5
+	offset	40 94
+	frame	data/chars/Wolverine/a1.gif
+	frame	data/chars/Wolverine/a2.gif
+	frame	data/chars/Wolverine/a3.gif
+	frame	data/chars/Wolverine/a4.gif
+	@cmd	suicide()
+	frame	data/chars/Wolverine/a4.gif
+		
+#|edited by openBor Stats v 0.50
+		

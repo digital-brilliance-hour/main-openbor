@@ -1,0 +1,28 @@
+name	tyr
+type    obstacle
+shadow	0
+health  1
+diesound  data/sounds/opo.wav
+nolife  5
+flash   thwok #bflash
+noatflash 1
+
+gfxshadow  1
+
+
+anim	fall
+	loop	0
+	delay	3
+	offset	41 86
+	frame	data/chars/misc/tyr2.gif
+		
+anim	idle
+	loop	0
+	delay	5
+	offset	41 86
+	bbox	16 30 30 70
+	platform	15 15 65 65 5 50
+	frame	data/chars/misc/tyr1.gif
+		
+#|edited by openBor Stats v 0.63
+		

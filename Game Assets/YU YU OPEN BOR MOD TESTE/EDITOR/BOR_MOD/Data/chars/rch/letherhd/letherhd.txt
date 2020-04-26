@@ -1,0 +1,435 @@
+name	Letherhd
+health	499
+type	enemy
+aimove chase
+aimove wander
+aimove normal
+shadow	4
+speed  7
+diesound data/sounds/die2.wav
+icon data/chars/rch/letherhd/icon.gif
+throw 2 3
+jumpheight 3
+cantgrab 1
+dust dust
+
+escapehits 2
+falldie 2
+nodieblink 1
+throwdamage	20
+risetime 500
+
+
+load ltknf
+load rak
+hostile player npc
+candamage player npc enemy  
+score 6000 2
+running  16 4 2 1 0
+
+gfxshadow 1
+
+
+anim	attack
+	offset	59 81
+	bbox	44 15 31 55
+	delay	30
+	jumpframe	1 4 2 0
+	landframe	2
+	custknife	wat2
+	throwframe	2 -1
+	frame	data/chars/rch/letherhd/02.gif
+	delay	1100
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 81
+	delay	30
+	hitflash	bflash
+	blast	44 15 31 55 10 1 0 30
+	frame	data/chars/rch/letherhd/02.gif
+		
+anim	attack1
+	range	20 40
+	offset	59 81
+	bbox	44 15 31 55
+	delay	15
+	hitflash	bflash
+	frame	data/chars/rch/letherhd/03.gif
+	attack	57 25 53 15 6 0 0 0 20
+	frame	data/chars/rch/letherhd/04.gif
+		
+anim	attack10
+	range	150 160
+	offset	59 81
+	bbox	44 15 31 55
+	delay	20
+	counterframe	5 1 0
+	followanim	1
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+		
+anim	attack2
+	range	20 40
+	offset	59 81
+	bbox	44 15 31 55
+	delay	15
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/07.gif
+	frame	data/chars/rch/letherhd/10.gif
+	attack	57 24 62 18 12 1 0 0 20
+	delay	4
+	move	7
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+	frame	data/chars/rch/letherhd/11.gif
+		
+anim	attack3
+	range	20 40
+	offset	59 81
+	bbox	44 15 31 55
+	delay	10
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/07.gif
+	frame	data/chars/rch/letherhd/08.gif
+	frame	data/chars/rch/letherhd/09.gif
+	frame	data/chars/rch/letherhd/07.gif
+		
+anim	attack4
+	range	-20 20
+	offset	59 81
+	bbox	44 15 31 55
+	delay	1
+	custknife	wat2
+	throwframe	1 -1
+	flipframe	1
+	hitflash	bflash
+	delay	5
+	frame	data/chars/rch/letherhd/03.gif
+	blast	3 51 42 22 12 1 0 30
+	delay	20
+	frame	data/chars/rch/letherhd/03.gif
+		
+anim	attack5
+	range	150 160
+	offset	59 81
+	bbox	44 15 31 55
+	delay	15
+	custknife	ltknf
+	throwframe	3 47
+	frame	data/chars/rch/letherhd/07.gif
+	frame	data/chars/rch/letherhd/10.gif
+	frame	data/chars/rch/letherhd/11.gif
+	delay	30
+	frame	data/chars/rch/letherhd/14.gif
+		
+anim	attack6
+	range	150 160
+	offset	59 81
+	bbox	44 15 31 55
+	delay	15
+	custbomb	rak
+	tossframe	3 45
+	frame	data/chars/rch/letherhd/07.gif
+	frame	data/chars/rch/letherhd/08.gif
+	frame	data/chars/rch/letherhd/09.gif
+	delay	30
+	frame	data/chars/rch/letherhd/14.gif
+		
+anim	attack7
+	range	100 160
+	offset	72 50
+	bbox	0 0 0 0
+	delay	5
+	custknife	wat2
+	quakeframe	1 2 3
+	throwframe	2 -1
+	frame	data/chars/rch/letherhd/w3.gif
+	move	20
+	blast	49 16 76 37 10 0 0 15
+	frame	data/chars/rch/letherhd/w1.gif
+	blast	49 16 76 37 10 1 0 15
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	move	10
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+		
+anim	attack8
+	range	160 170
+	offset	59 81
+	bbox	44 15 31 55
+	delay	20
+	jumpframe	1 4 2 0
+	landframe	2
+	custknife	wat2
+	throwframe	2 -1
+	frame	data/chars/rch/letherhd/02.gif
+	delay	1100
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 81
+	delay	20
+	hitflash	bflash
+	blast	44 15 31 55 10 1 0 30
+	frame	data/chars/rch/letherhd/02.gif
+		
+anim	fall
+	offset	59 81
+	bbox	0 0 0 0
+	jumpframe	0 -2 -1 0
+	delay	20
+	frame	data/chars/rch/letherhd/06.gif
+		
+anim	fall2
+	offset	59 81
+	bbox	44 15 31 55
+	delay	1
+	jumpframe	1 -2 -1 0
+	frame	data/chars/rch/letherhd/06.gif
+	delay	60
+	frame	data/chars/rch/letherhd/06.gif
+	delay	40
+	bbox	0 0 0 0
+	frame	data/chars/rch/letherhd/06.gif
+		
+anim	follow1
+	offset	72 50
+	bbox	0 0 0 0
+	delay	10
+	custknife	wat2
+	throwframe	1 -1
+	quakeframe	1 2 3
+	quakeframe	3 2 3
+	quakeframe	5 2 3
+	quakeframe	7 2 3
+	frame	data/chars/rch/letherhd/w3.gif
+	move	15
+	attack4	49 16 76 37 10 0 1 1 5
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	attack4	49 16 76 37 10 0 1 1 5
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+		
+anim	idle
+	loop	1
+	offset	59 81
+	bbox	44 15 31 55
+	delay	20
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/02.gif
+		
+anim	pain
+	offset	59 81
+	bbox	44 15 31 55
+	delay	5
+	move	-1
+	frame	data/chars/rch/letherhd/06.gif
+	offset	60 81
+	frame	data/chars/rch/letherhd/06.gif
+	offset	59 81
+	frame	data/chars/rch/letherhd/06.gif
+	offset	60 81
+	frame	data/chars/rch/letherhd/06.gif
+	offset	59 81
+	frame	data/chars/rch/letherhd/06.gif
+	sound	data/sounds/bospn.wav
+	offset	60 81
+	frame	data/chars/rch/letherhd/06.gif
+		
+anim	rise
+	offset	59 81
+	bbox	44 15 31 55
+	delay	10
+	frame	data/chars/rch/letherhd/03.gif
+		
+anim	riseattack
+	range	-170 170
+	offset	72 50
+	seta	1
+	bbox	0 0 0 0
+	delay	5
+	custknife	wat2
+	flipframe	1
+	throwframe	2 -1
+	quakeframe	1 2 3
+	move	0 0
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	move	20 0 0 20
+	blast	49 16 76 37 10 0 0 5 5
+	frame	data/chars/rch/letherhd/w1.gif
+	blast	49 16 76 37 10 0 0 5 5
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+	frame	data/chars/rch/letherhd/w3.gif
+	frame	data/chars/rch/letherhd/w1.gif
+	frame	data/chars/rch/letherhd/w2.gif
+		
+anim	run
+	loop	1
+	offset	59 81
+	bbox	44 15 31 55
+	delay	1
+	frame	data/chars/rch/letherhd/02.gif
+	delay	2
+	offset	59 83
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 85
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 87
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 89
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 91
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 89
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 87
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 85
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 83
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 81
+	delay	20
+	frame	data/chars/rch/letherhd/02.gif
+		
+anim	runattack
+	range	20 40
+	offset	59 81
+	bbox	44 15 31 55
+	delay	10
+	jumpframe	0 0 1 0
+	frame	data/chars/rch/letherhd/07.gif
+	frame	data/chars/rch/letherhd/10.gif
+	attack	57 24 62 18 12 1 0 0 20
+	delay	20
+	frame	data/chars/rch/letherhd/11.gif
+		
+anim	spawn
+	offset	59 81
+	bbox	0 0 0 0
+	jumpframe	1 6 0 0
+	landframe	3
+	delay	1
+	custknife	wat2
+	throwframe	3 -1
+	quakeframe	4 2 3
+	frame	data/chars/misc/empty.gif
+	delay	50
+	frame	data/chars/misc/empty.gif
+	delay	95
+	offset	59 81
+	bbox	44 15 31 55
+	frame	data/chars/rch/letherhd/05.gif
+	delay	20
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+	frame	data/chars/rch/letherhd/01.gif
+	frame	data/chars/rch/letherhd/03.gif
+		
+anim	special2
+	range	-20 20
+	offset	59 81
+	bbox	44 15 31 55
+	delay	1
+	custknife	wat2
+	throwframe	1 -1
+	flipframe	1
+	hitflash	bflash
+	delay	5
+	frame	data/chars/rch/letherhd/03.gif
+	blast	3 51 42 22 12 1 0 30
+	delay	20
+	frame	data/chars/rch/letherhd/03.gif
+		
+anim	walk
+	loop	1
+	offset	59 81
+	bbox	44 15 31 55
+	delay	1
+	custknife	wat2
+	throwframe	10 -1
+	frame	data/chars/rch/letherhd/02.gif
+	delay	3
+	offset	59 83
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 85
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 87
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 89
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 91
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 89
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 87
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 85
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 83
+	frame	data/chars/rch/letherhd/05.gif
+	offset	59 81
+	delay	20
+	frame	data/chars/rch/letherhd/02.gif
+		
+#|edited by openBor Stats v 0.67
+		

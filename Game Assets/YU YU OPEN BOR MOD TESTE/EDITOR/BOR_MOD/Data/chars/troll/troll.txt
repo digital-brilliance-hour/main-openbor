@@ -1,0 +1,833 @@
+name	    Troll
+health	    100
+speed	    10
+running	20	2	2	0	0
+type	    enemy
+hostile player npc
+shadow	    3
+noquake     1
+dust    dust
+bflash bflash
+blockodds 1
+thold     49
+paingrab 1
+jumpheight   2
+antigravity 40
+turndelay 12
+falldie 2
+nodieblink 1
+
+jumpmove 3
+nolife  1
+load trock
+
+lifebarstatus 240 5 0 1 0 -300 -300 -300 -300
+lifeposition 119 13 
+nameposition 152 28
+iconposition 0 0
+
+
+icon	    data/chars/troll/Bicon.gif
+iconw       data/chars/troll/Biconw.gif
+icondie     data/chars/troll/Bicond.gif
+
+fmap 3
+hmap 3 3
+
+palette data/chars/troll/troll.gif #1
+
+remap	data/chars/troll/idle00.gif   data/chars/troll/alter01.gif
+remap	data/chars/troll/idle00.gif   data/chars/troll/alter02.gif
+remap	data/chars/troll/pain101.gif   data/chars/troll/freeze.gif
+
+
+
+
+
+anim	attack1
+	followcond	1
+	followanim	1
+	range	0 75
+	fastattack	1
+	loop	0
+	offset	220 166
+	bbox	201 84 43 82
+	hitfx	data/chars/troll/sounds/a1hit.wav
+	delay	6
+	frame	data/chars/troll/a101.gif
+	attack	220 110 114 56 5 0 0 0 30
+	sound	data/chars/troll/sounds/a1sw.wav
+	frame	data/chars/troll/a102.gif
+	delay	60
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/troll/a103.gif
+	delay	6
+	frame	data/chars/troll/a101.gif
+		
+anim	attack2
+	range	76 105
+	fastattack	1
+	loop	0
+	offset	220 166
+	bbox	201 84 43 82
+	hitfx	data/chars/troll/sounds/a1hit.wav
+	delay	2
+	move	-1
+	frame	data/chars/troll/wk01.gif
+	frame	data/chars/troll/wk01.gif
+	frame	data/chars/troll/wk01.gif
+	frame	data/chars/troll/wk02.gif
+	frame	data/chars/troll/wk02.gif
+	frame	data/chars/troll/wk02.gif
+	frame	data/chars/troll/wk03.gif
+	frame	data/chars/troll/wk03.gif
+	frame	data/chars/troll/wk03.gif
+	frame	data/chars/troll/wk04.gif
+	frame	data/chars/troll/wk04.gif
+	frame	data/chars/troll/wk04.gif
+	frame	data/chars/troll/wk05.gif
+	frame	data/chars/troll/wk05.gif
+	frame	data/chars/troll/wk05.gif
+	frame	data/chars/troll/wk06.gif
+	frame	data/chars/troll/wk06.gif
+	frame	data/chars/troll/wk06.gif
+	frame	data/chars/troll/wk07.gif
+	frame	data/chars/troll/wk07.gif
+	frame	data/chars/troll/wk07.gif
+	frame	data/chars/troll/wk08.gif
+	frame	data/chars/troll/wk08.gif
+	frame	data/chars/troll/wk08.gif
+	move	0
+	delay	6
+	frame	data/chars/troll/a201.gif
+	frame	data/chars/troll/a202.gif
+	sound	data/chars/troll/sounds/a1sw.wav
+	blast	220 110 138 56 15 1 0 0 30
+	frame	data/chars/troll/a203.gif
+	delay	60
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/troll/a204.gif
+	delay	8
+	frame	data/chars/troll/a205.gif
+	delay	8
+	frame	data/chars/troll/taunt01.gif
+	frame	data/chars/troll/taunt02.gif
+	delay	4
+	sound	data/chars/troll/sounds/a1.wav
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	delay	8
+	frame	data/chars/troll/taunt02.gif
+		
+anim	attack3
+	custknife	trock
+	throwframe	6
+	range	106 205
+	fastattack	1
+	loop	0
+	offset	220 166
+	bbox	201 84 43 82
+	hitfx	data/chars/troll/sounds/a1hit.wav
+	delay	6
+	frame	data/chars/troll/a301.gif
+	delay	15
+	frame	data/chars/troll/a302.gif
+	delay	6
+	frame	data/chars/troll/a303.gif
+	frame	data/chars/troll/a304.gif
+	delay	30
+	frame	data/chars/troll/a305.gif
+	sound	data/chars/troll/sounds/a1sw.wav
+	delay	6
+	frame	data/chars/troll/a306.gif
+	delay	60
+	frame	data/chars/troll/a307.gif
+		
+anim	attack4
+	jumpframe	1 2.5 3
+	range	206 245
+	quakeframe	10 15 5
+	loop	0
+	delay	15
+	offset	220 166
+	bbox	201 84 43 82
+	frame	data/chars/troll/jdel00.gif
+	sound	data/chars/troll/sounds/jump.wav
+	delay	35
+	frame	data/chars/troll/ju01.gif
+	delay	5
+	frame	data/chars/troll/ju01.gif
+	frame	data/chars/troll/ju01.gif
+	frame	data/chars/troll/ju02.gif
+	frame	data/chars/troll/ju03.gif
+	bbox	0 0 0 0
+	attack	203 82 91 84 10 1 0 0 30
+	frame	data/chars/troll/ju04.gif
+	frame	data/chars/troll/ju04.gif
+	frame	data/chars/troll/ju04.gif
+	delay	20
+	frame	data/chars/troll/ju04.gif
+	bbox	201 84 43 82
+	delay	2
+	sound	data/sounds/fall.wav
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+		
+anim	bdie
+	loop	0
+	offset	220 166
+	delay	2
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	delay	50
+	frame	data/chars/troll/fall04.gif
+	delay	10
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	delay	6
+	bbox	0 0 0 0
+	frame	data/chars/troll/rise00.gif
+	delay	15
+	frame	data/chars/troll/rise01.gif
+	delay	6
+	frame	data/chars/troll/rise02.gif
+	frame	data/chars/troll/rise03.gif
+	delay	20
+	frame	data/chars/troll/jdel00.gif
+	delay	15
+	sound	data/chars/troll/sounds/die.wav
+	frame	data/chars/troll/death01.gif
+	frame	data/chars/troll/death02.gif
+	frame	data/chars/troll/death03.gif
+	frame	data/chars/troll/death04.gif
+	frame	data/chars/troll/death05.gif
+	delay	50
+	frame	data/chars/troll/death06.gif
+		
+anim	block
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	0 0 0 0
+	move	-10
+	sound	data/sounds/guard.wav
+	frame	data/chars/troll/guar00.gif
+	offset	218 166
+	frame	data/chars/troll/guar00.gif
+	offset	220 166
+	move	-8
+	frame	data/chars/troll/guar00.gif
+	offset	218 166
+	frame	data/chars/troll/guar00.gif
+	offset	220 166
+	move	-6
+	frame	data/chars/troll/guar00.gif
+	offset	218 166
+	frame	data/chars/troll/guar00.gif
+	move	-4
+	offset	220 166
+	frame	data/chars/troll/guar00.gif
+	offset	218 166
+	frame	data/chars/troll/guar00.gif
+	offset	220 166
+	move	-2
+	frame	data/chars/troll/guar00.gif
+	offset	218 166
+	frame	data/chars/troll/guar00.gif
+	offset	220 166
+	delay	12
+	move	0
+	frame	data/chars/troll/guar00.gif
+	frame	data/chars/troll/guar00.gif
+	frame	data/chars/troll/guar00.gif
+	bbox	201 84 43 82
+	delay	8
+	frame	data/chars/troll/taunt01.gif
+	frame	data/chars/troll/taunt02.gif
+	delay	4
+	sound	data/chars/troll/sounds/a1.wav
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	delay	8
+	frame	data/chars/troll/taunt02.gif
+		
+anim	bpain
+	loop	0
+	offset	55 100
+	bbox	212 143 30 55
+	delay	4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	220 166
+	delay	1
+	frame	data/chars/troll/pain101.gif
+		
+anim	burn
+	landframe	16
+	loop	0
+	offset	55 100
+	delay	4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	220 166
+	delay	99
+	frame	data/chars/troll/fall01.gif
+	delay	1
+	frame	data/chars/troll/fall04.gif
+		
+anim	death
+	quakeframe	15 5 5
+	loop	0
+	offset	220 166
+	delay	50
+	frame	data/chars/troll/fall04.gif
+	delay	8
+	frame	data/chars/troll/fall03.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall03.gif
+	frame	data/chars/troll/fall04.gif
+	delay	2
+	offset	220 166
+	frame	data/chars/troll/fall03.gif
+	offset	218 166
+	frame	data/chars/troll/fall03.gif
+	offset	220 166
+	frame	data/chars/troll/fall03.gif
+	offset	218 166
+	frame	data/chars/troll/fall03.gif
+	offset	220 166
+	frame	data/chars/troll/fall03.gif
+	offset	218 166
+	frame	data/chars/troll/fall03.gif
+	offset	220 166
+	frame	data/chars/troll/fall03.gif
+	offset	218 166
+	frame	data/chars/troll/fall03.gif
+	offset	220 166
+	frame	data/chars/troll/fall03.gif
+	offset	218 166
+	sound	data/chars/troll/sounds/die.wav
+	frame	data/chars/troll/fall03.gif
+	sound	data/sounds/bigfall.wav
+	delay	10
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	delay	50
+	frame	data/chars/troll/fall04.gif
+		
+anim	fall
+	landframe	4
+	loop	0
+	offset	220 166
+	delay	10
+	sound	data/chars/troll/sounds/hit.wav
+	frame	data/chars/troll/fall00.gif
+	frame	data/chars/troll/fall01.gif
+	delay	60
+	frame	data/chars/troll/fall02.gif
+	delay	99
+	frame	data/chars/troll/fall03.gif
+	delay	1
+	frame	data/chars/troll/fall04.gif
+		
+anim	follow1
+	fastattack	1
+	loop	0
+	offset	220 166
+	bbox	201 84 43 82
+	hitfx	data/chars/troll/sounds/a1hit.wav
+	delay	50
+	frame	data/chars/troll/a102.gif
+	delay	6
+	frame	data/chars/troll/a103.gif
+	frame	data/chars/troll/a201.gif
+	frame	data/chars/troll/a202.gif
+	sound	data/chars/troll/sounds/a1sw.wav
+	blast	220 110 138 56 15 1 0 0 30
+	frame	data/chars/troll/a203.gif
+	delay	60
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/troll/a204.gif
+	delay	8
+	frame	data/chars/troll/a205.gif
+	delay	8
+	frame	data/chars/troll/taunt01.gif
+	frame	data/chars/troll/taunt02.gif
+	delay	4
+	sound	data/chars/troll/sounds/a1.wav
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	delay	8
+	frame	data/chars/troll/taunt02.gif
+		
+anim	idle
+	loop	1
+	delay	24
+	offset	220 166
+	bbox	201 84 43 82
+	frame	data/chars/troll/idle00.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	220 166
+	bbox	203 111 32 57
+	frame	data/chars/troll/pain101.gif
+	offset	218 166
+	frame	data/chars/troll/pain101.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	218 166
+	frame	data/chars/troll/pain101.gif
+	offset	220 166
+	delay	23
+	frame	data/chars/troll/pain101.gif
+		
+anim	pain2
+	loop	0
+	bbox	203 111 32 57
+	jumpframe	0 1 -2
+	delay	3
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+	offset	220 166
+	frame	data/chars/troll/pain102.gif
+	offset	218 166
+	frame	data/chars/troll/pain102.gif
+		
+anim	pain3
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox01.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	delay	8
+	bbox	212 143 30 55
+	frame	data/chars/misc/fox01.gif
+	frame	data/chars/misc/fox02.gif
+	frame	data/chars/misc/fox03.gif
+	frame	data/chars/misc/fox04.gif
+	frame	data/chars/misc/fox05.gif
+	frame	data/chars/misc/fox06.gif
+	frame	data/chars/misc/fox07.gif
+	delay	200
+	frame	data/chars/misc/fox08.gif
+	delay	4
+	bbox	0 0 0 0
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+	offset	35 53
+	frame	data/chars/misc/fox08.gif
+	offset	220 166
+	frame	data/chars/troll/pain101.gif
+		
+anim	pain4
+	loop	0
+	delay	240
+	offset	220 166
+	bbox	203 111 32 57
+	frame	data/chars/troll/pain101.gif
+		
+anim	rise
+	loop	0
+	offset	220 166
+	delay	2
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	delay	50
+	frame	data/chars/troll/fall04.gif
+	delay	10
+	frame	data/chars/troll/fall04.gif
+	frame	data/chars/troll/fall04.gif
+	delay	6
+	frame	data/chars/troll/rise00.gif
+	delay	15
+	frame	data/chars/troll/rise01.gif
+	delay	6
+	frame	data/chars/troll/rise02.gif
+	frame	data/chars/troll/rise03.gif
+	delay	20
+	frame	data/chars/troll/jdel00.gif
+		
+anim	riseattack
+	range	0 90
+	fastattack	1
+	loop	0
+	offset	220 166
+	bbox	201 84 43 82
+	hitfx	data/chars/troll/sounds/a1hit.wav
+	delay	6
+	frame	data/chars/troll/a201.gif
+	frame	data/chars/troll/a202.gif
+	sound	data/chars/troll/sounds/a1sw.wav
+	blast	220 108 137 58 15 1 0 0 30
+	frame	data/chars/troll/a203.gif
+	delay	60
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/troll/a204.gif
+	delay	8
+	frame	data/chars/troll/a205.gif
+	delay	8
+	frame	data/chars/troll/taunt01.gif
+	frame	data/chars/troll/taunt02.gif
+	delay	4
+	sound	data/chars/troll/sounds/a1.wav
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	delay	8
+	frame	data/chars/troll/taunt02.gif
+		
+anim	shock
+	landframe	16
+	loop	0
+	offset	55 100
+	delay	4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	220 166
+	delay	99
+	frame	data/chars/troll/fall01.gif
+	delay	1
+	frame	data/chars/troll/fall04.gif
+		
+anim	spain
+	loop	0
+	offset	55 100
+	bbox	212 143 30 55
+	delay	4
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	frame	data/chars/misc/bshoc02.gif
+	frame	data/chars/misc/bshoc01.gif
+	offset	220 166
+	delay	1
+	frame	data/chars/troll/pain101.gif
+		
+anim	spawn
+	quakeframe	6 4 5
+	jumpframe	3 2 4 0
+	loop	0
+	offset	220 166
+	delay	1
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	delay	15
+	sound	data/chars/troll/sounds/jump.wav
+	frame	data/chars/troll/ju03.gif
+	frame	data/chars/troll/ju02.gif
+	delay	45
+	frame	data/chars/troll/ju01.gif
+	delay	4
+	bbox	0 0 0 0
+	sound	data/sounds/fall.wav
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	frame	data/chars/troll/jdel00.gif
+	delay	8
+	frame	data/chars/troll/taunt01.gif
+	frame	data/chars/troll/taunt02.gif
+	delay	4
+	sound	data/chars/troll/sounds/a1.wav
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	frame	data/chars/troll/taunt03.gif
+	frame	data/chars/troll/taunt04.gif
+	delay	8
+	frame	data/chars/troll/taunt02.gif
+		
+anim	turn
+	loop	0
+	delay	15
+	offset	220 166
+	bbox	201 84 43 82
+	frame	data/chars/troll/turn00.gif
+	frame	data/chars/troll/turn01.gif
+	frame	data/chars/troll/turn02.gif
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	220 166
+	bbox	201 84 43 82
+	frame	data/chars/troll/wk01.gif
+	frame	data/chars/troll/wk02.gif
+	frame	data/chars/troll/wk03.gif
+	frame	data/chars/troll/wk04.gif
+	frame	data/chars/troll/wk05.gif
+	frame	data/chars/troll/wk06.gif
+	frame	data/chars/troll/wk07.gif
+	frame	data/chars/troll/wk08.gif
+		
+#|edited by openBor Stats v 0.67
+		

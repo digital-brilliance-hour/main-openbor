@@ -1,0 +1,761 @@
+name	malin
+health	150
+speed	13
+type	player
+subtype	chase
+aggression	15
+shadow	0
+icon	data/chars/malin/icon.gif
+diesound	data/chars/malin/die.wav
+running	20 4 2 1
+remap	data/chars/malin/idle1.gif	data/chars/malin/map1.gif
+remap	data/chars/malin/idle1.gif	data/chars/malin/map2.gif
+remap	data/chars/malin/idle1.gif	data/chars/malin/map3.gif
+remap	data/chars/malin/idle1.gif	data/chars/malin/map4.gif
+remap	data/chars/malin/idle1.gif	data/chars/malin/map5.gif
+com	D U A freespecial
+com	D F A freespecial2
+com	U F A freespecial3
+com	U D A freespecial4
+com	a2 freespecial4
+com	a3 freespecial2
+com	a4 freespecial
+makeinv	2
+
+
+anim	attack1
+	loop	0
+	delay	2
+	bbox	23 4 30 82
+	offset	34 87
+	frame	data/chars/malin/hit01.gif
+	bbox	28 4 30 82
+	attack1	0 0 0 0 0
+	attack	55 18 18 23 6
+	frame	data/chars/malin/hit02.gif
+	attack	0 0 0 0 0
+	frame	data/chars/malin/hit03.gif
+	attack2	0 0 0 0 0
+	delay	3
+	attack1	0 0 0 0
+	attack	53 21 57 15 7
+	frame	data/chars/malin/hit04.gif
+	attack	52 21 55 16 7
+	frame	data/chars/malin/hit05.gif
+	attack	0
+	delay	2
+	attack2	0 0 0 0
+	attack3	0 0 0 0 0
+	frame	data/chars/malin/hit06.gif
+	attack	61 15 25 21 6
+	frame	data/chars/malin/hit07.gif
+	bbox	23 4 30 82
+	attack2	0 0 0 0 0
+	attack	0 0 0 0 0
+	frame	data/chars/malin/hit01.gif
+		
+anim	attack2
+	loop	0
+	offset	29 86
+	delay	4
+	sound	data/chars/malin/ha.wav
+	bbox	24 7 31 80
+	attack	11 23 35 12 6
+	frame	data/chars/malin/grabup02.gif
+	bbox	29 7 34 80
+	attack	0 0 0 0 0
+	frame	data/chars/malin/grabup03.gif
+	delay	3
+	bbox	32 16 40 71
+	attack2	0 0 0 0 0 0
+	attack	56 26 43 32 6
+	frame	data/chars/malin/grabup04.gif
+	attack	56 24 26 26 6
+	frame	data/chars/malin/grabup05.gif
+	attack	46 22 22 24 6
+	frame	data/chars/malin/grabup06.gif
+	attack	0 0 0 0 0
+	frame	data/chars/malin/grabup07.gif
+	delay	4
+	bbox	29 7 34 80
+	frame	data/chars/malin/grabup08.gif
+	offset	64 115
+	bbox	41 34 35 78
+	attack	60 48 17 24 6
+	frame	data/chars/malin/at3-1.gif
+	attack	43 19 26 41 6
+	offset	64 114
+	frame	data/chars/malin/at3-2.gif
+	attack	48 21 23 41 6
+	offset	64 115
+	move	0
+	frame	data/chars/malin/at3-3.gif
+	attack	0
+	offset	50 113
+	bbox	40 47 36 66
+	frame	data/chars/malin/at3-4.gif
+	attack	60 68 67 11 7
+	offset	42 113
+	bbox	36 59 41 54
+	frame	data/chars/malin/at3-5.gif
+	attack	58 67 73 15 7
+	offset	42 114
+	frame	data/chars/malin/at3-6.gif
+	attack	60 67 73 17 7
+	offset	42 115
+	frame	data/chars/malin/at3-7.gif
+	attack	0 0 0 0 0
+	offset	42 113
+	bbox	36 57 41 57
+	frame	data/chars/malin/at3-8.gif
+	offset	50 114
+	bbox	41 42 35 72
+	frame	data/chars/malin/at3-9.gif
+	offset	55 114
+	bbox	50 33 33 81
+	frame	data/chars/malin/at3-10.gif
+		
+anim	attack3
+	loop	0
+	delay	5
+	offset	66 99
+	bbox	52 11 27 84
+	frame	data/chars/malin/at4-1.gif
+	bbox	44 10 22 85
+	offset	63 101
+	frame	data/chars/malin/at4-2.gif
+	frame	data/chars/malin/at4-3.gif
+	bbox	22 12 26 83
+	attack	46 39 65 24 7 0
+	offset	43 99
+	frame	data/chars/malin/at4-4.gif
+	attack	0 0 0 0 0
+	offset	44 100
+	frame	data/chars/malin/at4-5.gif
+	offset	47 101
+	frame	data/chars/malin/at4-6.gif
+	bbox	40 9 23 86
+	offset	53 101
+	frame	data/chars/malin/at4-7.gif
+	bbox	49 12 21 83
+	offset	54 98
+	frame	data/chars/malin/at4-8.gif
+	offset	24 134
+	bbox	12 91 41 44
+	sound	data/chars/malin/ha.wav
+	frame	data/chars/malin/at5-1.gif
+	frame	data/chars/malin/at5-2.gif
+	offset	22 134
+	frame	data/chars/malin/at5-3.gif
+	attack1	0 0 0 0 0
+	frame	data/chars/malin/at5-4.gif
+	attack	16 5 57 125 7 1
+	bbox	13 42 30 85
+	attack1	0
+	offset	25 138
+	frame	data/chars/malin/at5-5.gif
+	frame	data/chars/malin/at5-6.gif
+	offset	27 139
+	attack	15 5 28 132 7 1
+	frame	data/chars/malin/at5-7.gif
+	offset	20 137
+	attack	18 15 27 56 7 1
+	frame	data/chars/malin/at5-8.gif
+	bbox	28 56 20 72
+	attack	55 41 15 43 7 1
+	offset	22 137
+	frame	data/chars/malin/at5-9.gif
+		
+anim	dodge
+	loop	0
+	delay	7
+	offset	48 109
+	frame	data/chars/malin/dodge1.gif
+	frame	data/chars/malin/dodge2.gif
+	frame	data/chars/malin/dodge3.gif
+	frame	data/chars/malin/dodge4.gif
+	frame	data/chars/malin/dodge5.gif
+	frame	data/chars/malin/dodge6.gif
+		
+anim	faint
+	loop	1
+	delay	12
+	offset	78 104
+	bbox	64 44 18 66
+	frame	data/chars/malin/faint1.gif
+	frame	data/chars/malin/faint2.gif
+	frame	data/chars/malin/faint3.gif
+	frame	data/chars/malin/faint4.gif
+		
+anim	fall
+	loop	0
+	offset	44 93
+	delay	20
+	attack	25 4 40 57 10 1 1
+	frame	data/chars/malin/fall01.gif
+	attack	9 31 58 38 10 1 1
+	frame	data/chars/malin/fall02.gif
+	attack	0
+	frame	data/chars/malin/fall03.gif
+	frame	data/chars/malin/fall04.gif
+	frame	data/chars/malin/fall05.gif
+		
+anim	follow
+	fastattack	1
+	loop	0
+	delay	2
+	bbox	23 4 30 82
+	offset	34 85
+	frame	data/chars/malin/hit01.gif
+	bbox	28 4 30 82
+	attack	54 18 18 22 6
+	frame	data/chars/malin/hit02.gif
+	attack	0 0 0 0
+	frame	data/chars/malin/hit03.gif
+	attack2	0 0 0 0 0
+	delay	3
+	attack	53 21 56 14 6
+	frame	data/chars/malin/hit04.gif
+	attack	51 20 57 15 6
+	frame	data/chars/malin/hit05.gif
+	attack	0
+	delay	2
+	frame	data/chars/malin/hit06.gif
+	attack	60 14 25 20 6
+	frame	data/chars/malin/hit07.gif
+	bbox	23 4 30 82
+	attack	0
+	frame	data/chars/malin/hit01.gif
+	delay	7
+	offset	69 114
+	bbox	49 38 28 71
+	frame	data/chars/malin/ra1.gif
+	frame	data/chars/malin/ra2.gif
+	bbox	63 41 27 72
+	attack	37 50 76 21 6
+	frame	data/chars/malin/ra3.gif
+	sound	data/chars/malin/jk.wav
+	bbox	71 46 34 65
+	attack	122 56 41 14 6
+	frame	data/chars/malin/ra4.gif
+	attack	0
+	frame	data/chars/malin/ra4.gif
+	attack	122 56 41 14 6
+	frame	data/chars/malin/ra5.gif
+	attack	0
+	bbox	65 37 32 74
+	frame	data/chars/malin/ra6.gif
+	delay	3
+	offset	64 141
+	frame	data/chars/malin/spcial01.gif
+	frame	data/chars/malin/spcial02.gif
+	delay	2
+	attack	76 49 57 58 5
+	frame	data/chars/malin/roll02.gif
+	attack	0
+	frame	data/chars/malin/roll02.gif
+	attack	38 76 61 60 5
+	frame	data/chars/malin/roll03.gif
+	attack	0
+	frame	data/chars/malin/roll03.gif
+	attack	9 44 59 60 6
+	frame	data/chars/malin/roll04.gif
+	attack	0
+	frame	data/chars/malin/roll04.gif
+	attack	41 14 60 60 5
+	frame	data/chars/malin/roll01.gif
+	attack	0
+	frame	data/chars/malin/roll01.gif
+	attack	76 49 57 58 5
+	frame	data/chars/malin/roll02.gif
+	attack	0
+	frame	data/chars/malin/roll02.gif
+	attack	38 76 61 60 5
+	frame	data/chars/malin/roll03.gif
+	attack	0
+	frame	data/chars/malin/roll03.gif
+	attack	9 44 59 60 5
+	frame	data/chars/malin/roll04.gif
+	attack	0
+	frame	data/chars/malin/roll04.gif
+	attack	41 14 60 60 5
+	frame	data/chars/malin/roll01.gif
+	attack	0
+	frame	data/chars/malin/roll01.gif
+	attack	76 49 57 58 5
+	frame	data/chars/malin/roll02.gif
+	attack	0
+	frame	data/chars/malin/roll02.gif
+	attack	38 76 61 60 5
+	frame	data/chars/malin/roll03.gif
+	attack	0
+	frame	data/chars/malin/roll03.gif
+	attack	9 44 59 60 5
+	frame	data/chars/malin/roll04.gif
+	attack	0
+	frame	data/chars/malin/roll04.gif
+	attack	41 14 60 60 5
+	frame	data/chars/malin/roll01.gif
+	attack	0
+	frame	data/chars/malin/roll01.gif
+	attack	76 49 57 58 5
+	frame	data/chars/malin/roll02.gif
+	attack	0
+	frame	data/chars/malin/roll02.gif
+	attack	38 76 61 60 5
+	frame	data/chars/malin/roll03.gif
+	attack	0
+	frame	data/chars/malin/roll03.gif
+	attack	9 44 59 60 5
+	frame	data/chars/malin/roll04.gif
+	attack	0
+	frame	data/chars/malin/roll04.gif
+	offset	64 121
+	bbox	52 52 39 42
+	frame	data/chars/malin/slice01.gif
+	attack4	84 42 44 51 2
+	frame	data/chars/malin/slice02.gif
+	frame	data/chars/malin/slice02.gif
+	attack4	54 87 51 44 2
+	frame	data/chars/malin/slice03.gif
+	frame	data/chars/malin/slice03.gif
+	attack4	14 60 44 51 2
+	frame	data/chars/malin/slice04.gif
+	offset	64 141
+	delay	5
+	frame	data/chars/malin/spcial03.gif
+	frame	data/chars/malin/spcial04.gif
+	offset	40 121
+	bbox	24 33 27 89
+	frame	data/chars/malin/hk201.gif
+	bbox	22 32 29 90
+	frame	data/chars/malin/hk202.gif
+	frame	data/chars/malin/hk203.gif
+	bbox	7 35 43 87
+	frame	data/chars/malin/hk204.gif
+	delay	4
+	bbox	4 52 51 70
+	attack4	46 15 66 98 24 1 1
+	attack	40 15 72 98 6
+	frame	data/chars/malin/hk205.gif
+	attack	42 15 70 102 6
+	frame	data/chars/malin/hk206.gif
+	delay	3
+	bbox	14 32 42 90
+	attack	0
+	frame	data/chars/malin/hk207.gif
+	frame	data/chars/malin/hk208.gif
+	bbox	34 32 24 90
+	frame	data/chars/malin/hk209.gif
+		
+anim	freespecial
+	loop	0
+	delay	6
+	offset	67 135
+	attack	23 68 94 59 10 3
+	move	10
+	sound	data/chars/malin/spec1.wav
+	frame	data/chars/malin/fs2-1.gif
+	attack	56 67 59 53 7 2
+	frame	data/chars/malin/fs2-2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/malin/fs2-3.gif
+	blast	87 35 34 41 10 1
+	attack	64 34 58 81 7 2
+	frame	data/chars/malin/fs2-4.gif
+	attack	63 31 60 78 7 2
+	frame	data/chars/malin/fs2-5.gif
+	offset	64 136
+	attack	61 1 22 27 6
+	jumpframe	6 3
+	frame	data/chars/malin/fs2-6.gif
+	attack	0 0 0 0 0
+	frame	data/chars/malin/fs2-7.gif
+	attack	61 1 22 27 6
+	frame	data/chars/malin/fs2-8.gif
+	attack	0 0 0 0 0
+	frame	data/chars/malin/fs2-9.gif
+	attack	61 1 22 27 6
+	frame	data/chars/malin/fs2-10.gif
+	attack	0 0 0 0 0
+	frame	data/chars/malin/fs2-11.gif
+	attack	59 4 27 18 6
+	frame	data/chars/malin/fs2-12.gif
+	blast	61 1 22 27 10
+	attack	57 3 26 19 6
+	frame	data/chars/malin/fs2-13.gif
+		
+anim	freespecial2
+	loop	0
+	custknife	cut
+	throwframe	5 34
+	loop	0
+	delay	7
+	offset	66 96
+	bbox	57 17 20 80
+	sound	data/chars/malin/yoyo.wav
+	frame	data/chars/malin/yoyo1.gif
+	bbox	0 0 0 0
+	frame	data/chars/malin/yoyo2.gif
+	offset	66 94
+	frame	data/chars/malin/yoyo3.gif
+	frame	data/chars/malin/yoyo4.gif
+	offset	62 94
+	frame	data/chars/malin/yoyo5.gif
+	offset	55 94
+	frame	data/chars/malin/yoyo6.gif
+	offset	55 95
+	frame	data/chars/malin/yoyo7.gif
+	frame	data/chars/malin/yoyo8.gif
+	frame	data/chars/malin/yoyo9.gif
+	offset	55 92
+	frame	data/chars/malin/yoyo10.gif
+	bbox	53 31 23 63
+	offset	55 94
+	frame	data/chars/malin/yoyo11.gif
+		
+anim	freespecial3
+	followanim	1
+	followcond	1
+	fastattack	1
+	loop	0
+	delay	2
+	offset	80 144
+	bbox	66 56 25 89
+	frame	data/chars/malin/hammer01.gif
+	bbox	68 54 29 91
+	frame	data/chars/malin/hammer06.gif
+	bbox	72 59 28 86
+	frame	data/chars/malin/hammer05.gif
+	bbox	64 51 30 94
+	attack	14 2 57 77 8
+	frame	data/chars/malin/hammer07.gif
+	bbox	60 52 30 93
+	attack	35 110 47 34 8
+	frame	data/chars/malin/hammer08.gif
+	delay	6
+	bbox	66 59 25 86
+	attack	22 1 84 67 8
+	frame	data/chars/malin/hammer11.gif
+	move	5
+	bbox	48 57 34 88
+	attack	110 23 39 122 8
+	frame	data/chars/malin/hammer12.gif
+	bbox	47 59 39 86
+	attack	107 52 35 93 8
+	frame	data/chars/malin/hammer13.gif
+	move	0
+	delay	10
+	bbox	50 57 45 88
+	attack	109 96 32 50 8
+	frame	data/chars/malin/hammer14.gif
+	delay	6
+	attack	0
+	frame	data/chars/malin/hammer15.gif
+		
+anim	freespecial4
+	loop	0
+	delay	4
+	offset	107 193
+	frame	data/chars/malin/kill1.gif
+	frame	data/chars/malin/kill2.gif
+	frame	data/chars/malin/kill3.gif
+	frame	data/chars/malin/kill4.gif
+	frame	data/chars/malin/kill5.gif
+	move	10
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	offset	120 201
+	bbox	106 100 33 94
+	delay	2
+	frame	data/chars/malin/kill6.gif
+	frame	data/chars/malin/kill7.gif
+	frame	data/chars/malin/kill8.gif
+	frame	data/chars/malin/kill9.gif
+	move	6
+	frame	data/chars/malin/kill10.gif
+	move	5
+	frame	data/chars/malin/kill11.gif
+	offset	106 212
+	bbox	100 109 22 97
+	move	4
+	frame	data/chars/malin/kill12.gif
+	offset	105 208
+	bbox	87 124 25 86
+	attack	68 90 107 70 15 2
+	delay	4
+	move	3
+	frame	data/chars/malin/kill13.gif
+	move	2
+	frame	data/chars/malin/kill14.gif
+	move	1
+	frame	data/chars/malin/kill15.gif
+	move	0
+	frame	data/chars/malin/kill16.gif
+		
+anim	get
+	loop	0
+	offset	51 90
+	delay	7
+	frame	data/chars/malin/get1.gif
+	frame	data/chars/malin/get2.gif
+	frame	data/chars/malin/get3.gif
+		
+anim	grab
+	loop	0
+	offset	40 94
+	bbox	31 9 45 74
+	delay	500
+	frame	data/chars/malin/grab.gif
+		
+anim	grabattack
+	loop	0
+	delay	6
+	offset	52 123
+	frame	data/chars/malin/ga1-1.gif
+	attack	53 15 32 42 6
+	offset	52 124
+	frame	data/chars/malin/ga1-2.gif
+	attack	56 18 35 30 6
+	offset	52 125
+	frame	data/chars/malin/ga1-3.gif
+	attack	0 0 0 0 0
+	offset	52 124
+	frame	data/chars/malin/ga1-4.gif
+		
+anim	grabattack2
+	loop	0
+	delay	5
+	sound	data/chars/malin/ha.wav
+	offset	40 121
+	bbox	24 33 27 89
+	frame	data/chars/malin/hk201.gif
+	bbox	22 32 29 90
+	delay	6
+	attack	21 6 32 68 5
+	offset	36 123
+	frame	data/chars/malin/hk202.gif
+	attack3	0 0 0 0 0
+	delay	5
+	attack	0 0 0 0
+	offset	35 123
+	frame	data/chars/malin/hk203.gif
+	bbox	7 35 43 87
+	attack	40 6 38 61 7 1
+	offset	38 123
+	frame	data/chars/malin/hk204.gif
+	delay	4
+	bbox	4 52 51 70
+	attack4	0 0 0 0 0 0
+	attack3	0
+	attack	41 15 70 97 7 1
+	frame	data/chars/malin/hk205.gif
+	attack	45 16 43 99 7 1
+	frame	data/chars/malin/hk206.gif
+	attack	0
+	delay	3
+	bbox	14 32 42 90
+	frame	data/chars/malin/hk207.gif
+	frame	data/chars/malin/hk208.gif
+	bbox	34 32 24 90
+	offset	18 123
+	frame	data/chars/malin/hk209.gif
+		
+anim	grabforward
+	loop	0
+	delay	5
+	sound	data/chars/malin/ha.wav
+	offset	40 121
+	bbox	24 33 27 89
+	frame	data/chars/malin/hk201.gif
+	bbox	22 32 29 90
+	delay	6
+	attack	22 5 31 65 6
+	offset	36 123
+	frame	data/chars/malin/hk202.gif
+	delay	5
+	attack	0 0 0 0
+	offset	35 123
+	frame	data/chars/malin/hk203.gif
+	bbox	7 35 43 87
+	attack	43 7 34 59 8
+	offset	38 123
+	frame	data/chars/malin/hk204.gif
+	delay	4
+	bbox	4 52 51 70
+	attack	42 17 69 94 7
+	frame	data/chars/malin/hk205.gif
+	attack	41 54 46 60 8
+	frame	data/chars/malin/hk206.gif
+	attack	0
+	delay	3
+	bbox	14 32 42 90
+	frame	data/chars/malin/hk207.gif
+	frame	data/chars/malin/hk208.gif
+	bbox	34 32 24 90
+	offset	18 123
+	frame	data/chars/malin/hk209.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	bbox	27 14 21 86
+	offset	38 103
+	frame	data/chars/malin/idle1.gif
+	frame	data/chars/malin/idle2.gif
+	frame	data/chars/malin/idle3.gif
+	frame	data/chars/malin/idle4.gif
+	frame	data/chars/malin/idle3.gif
+	frame	data/chars/malin/idle2.gif
+	frame	data/chars/malin/idle1.gif
+		
+anim	jump
+	loop	0
+	delay	10
+	offset	42 115
+	bbox	26 3 28 109
+	frame	data/chars/malin/jump1.gif
+	bbox	24 9 32 99
+	frame	data/chars/malin/jump2.gif
+	bbox	28 14 28 89
+	frame	data/chars/malin/jump3.gif
+	frame	data/chars/malin/jump4.gif
+	bbox	26 32 35 52
+	frame	data/chars/malin/jump5.gif
+	frame	data/chars/malin/jump6.gif
+	bbox	24 23 33 70
+	frame	data/chars/malin/jump7.gif
+	bbox	26 13 31 89
+	frame	data/chars/malin/jump8.gif
+	bbox	25 16 33 100
+	frame	data/chars/malin/jump9.gif
+		
+anim	jumpattack
+	loop	0
+	delay	8
+	offset	60 96
+	bbox	30 9 36 66
+	attack	73 57 42 39 10 1
+	sound	data/chars/malin/jk.wav
+	frame	data/chars/malin/ja1-1.gif
+	frame	data/chars/malin/ja1-2.gif
+	frame	data/chars/malin/ja1-1.gif
+	frame	data/chars/malin/ja1-2.gif
+	frame	data/chars/malin/ja1-1.gif
+	frame	data/chars/malin/ja1-2.gif
+		
+anim	pain
+	loop	0
+	delay	6
+	offset	57 102
+	bbox	37 11 32 92
+	sound	data/chars/malin/pain.wav
+	frame	data/chars/malin/pain1.gif
+	bbox	31 13 28 92
+	frame	data/chars/malin/pain2.gif
+	bbox	26 13 33 89
+	frame	data/chars/malin/pain3.gif
+	frame	data/chars/malin/pain4.gif
+		
+anim	rise
+	loop	0
+	offset	84 113
+	delay	5
+	frame	data/chars/malin/rise1.gif
+	frame	data/chars/malin/rise2.gif
+	frame	data/chars/malin/rise3.gif
+		
+anim	run
+	loop	1
+	delay	10
+	offset	73 74
+	bbox	71 26 61 48
+	sound	data/chars/may/run.wav
+	frame	data/chars/malin/run1.gif
+	frame	data/chars/malin/run2.gif
+	bbox	69 24 62 53
+	frame	data/chars/malin/run3.gif
+	frame	data/chars/malin/run4.gif
+	frame	data/chars/malin/run5.gif
+	frame	data/chars/malin/run6.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	offset	69 114
+	bbox	49 38 28 71
+	move	13
+	frame	data/chars/malin/ra1.gif
+	frame	data/chars/malin/ra2.gif
+	bbox	63 41 27 72
+	attack	36 52 77 19 8 1
+	frame	data/chars/malin/ra3.gif
+	sound	data/chars/malin/jk.wav
+	move	19
+	bbox	71 46 34 65
+	attack	122 56 41 14 8 1
+	frame	data/chars/malin/ra4.gif
+	attack	118 57 45 14 8 1
+	frame	data/chars/malin/ra4.gif
+	attack	122 56 41 14 8 1
+	frame	data/chars/malin/ra5.gif
+	move	0
+	attack	0
+	bbox	65 37 32 74
+	frame	data/chars/malin/ra6.gif
+		
+anim	special
+	loop	0
+	delay	7
+	offset	81 125
+	sound	data/chars/malin/spec2.wav
+	frame	data/chars/malin/fs1-1.gif
+	frame	data/chars/malin/fs1-2.gif
+	frame	data/chars/malin/fs1-3.gif
+	blast	52 18 55 42 20 1
+	frame	data/chars/malin/fs1-4.gif
+	frame	data/chars/malin/fs1-5.gif
+	frame	data/chars/malin/fs1-6.gif
+	frame	data/chars/malin/fs1-7.gif
+	blast	0 0 0 0 0
+	frame	data/chars/malin/fs1-8.gif
+	blast	50 55 71 61 20 1
+	frame	data/chars/malin/fs1-9.gif
+	blast	0
+	frame	data/chars/malin/fs1-9.gif
+	offset	75 103
+	blast	3 12 144 92 20 1
+	frame	data/chars/malin/fs1-10.gif
+	blast	0 0 0 0 0
+	offset	81 125
+	frame	data/chars/malin/fs1-11.gif
+	frame	data/chars/malin/fs1-12.gif
+	frame	data/chars/malin/fs1-13.gif
+	frame	data/chars/malin/fs1-14.gif
+		
+anim	throw
+	loop	0
+	delay	10
+	offset	63 120
+	sound	data/chars/malin/throw.wav
+	frame	data/chars/malin/throw3.gif
+	frame	data/chars/malin/throw4.gif
+	frame	data/chars/malin/throw5.gif
+	frame	data/chars/malin/throw6.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	50 99
+	bbox	37 7 29 94
+	frame	data/chars/malin/walk1.gif
+	frame	data/chars/malin/walk2.gif
+	frame	data/chars/malin/walk3.gif
+	frame	data/chars/malin/walk4.gif
+	frame	data/chars/malin/walk5.gif
+	frame	data/chars/malin/walk6.gif
+	frame	data/chars/malin/walk7.gif
+		
+		

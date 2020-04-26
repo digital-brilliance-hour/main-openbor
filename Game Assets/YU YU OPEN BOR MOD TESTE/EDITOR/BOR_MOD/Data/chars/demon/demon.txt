@@ -1,0 +1,127 @@
+name	demon
+health	250
+speed	7
+type	enemy
+shadow	6
+diesound data/sounds/DDie.wav
+hostile player npc
+candamage player npc
+icon	data/chars/demon/icon.gif
+palette	 data/chars/demon/idle1.gif
+dust dust
+
+
+anim	attack1
+	range	1 200
+	loop	0
+	delay	10
+	bbox	219 93 59 106
+	offset	176 151
+	frame	data/chars/demon/atk1.gif
+	bbox	153 27 101 113
+	frame	data/chars/demon/atk2.gif
+	frame	data/chars/demon/atk3.gif
+	sound	data/sounds/DAttack.wav
+	attack	173 75 159 29 20 1
+	frame	data/chars/demon/atk4.gif
+	attack	0 0 0 0 0
+	attack	3 92 159 29 20 1
+	bbox	163 53 92 86
+	frame	data/chars/demon/atk5.gif
+	attack	0 0 0 0 0
+	bbox	219 93 59 106
+	frame	data/chars/demon/atk1.gif
+		
+anim	attack2
+	range	1 120
+	loop	0
+	delay	10
+	offset	147 183
+	sound	data/sounds/maxboom.wav
+	frame	data/chars/demon/spec1.gif
+	frame	data/chars/demon/spec2.gif
+	frame	data/chars/demon/spec3.gif
+	frame	data/chars/demon/spec4.gif
+	attack	4 6 208 173 30 1
+	frame	data/chars/demon/spec5.gif
+	frame	data/chars/demon/spec6.gif
+	frame	data/chars/demon/spec7.gif
+	frame	data/chars/demon/spec8.gif
+	frame	data/chars/demon/spec9.gif
+	frame	data/chars/demon/spec10.gif
+	frame	data/chars/demon/spec11.gif
+	frame	data/chars/demon/spec12.gif
+	frame	data/chars/demon/spec14.gif
+	frame	data/chars/demon/spec13.gif
+	frame	data/chars/demon/spec15.gif
+	frame	data/chars/demon/spec16.gif
+	attack	0 0 0 0 0
+		
+anim	fall
+	loop	0
+	offset	125 135
+	delay	20
+	frame	data/chars/demon/fall1.gif
+	frame	data/chars/demon/fall2.gif
+	frame	data/chars/demon/fall3.gif
+	frame	data/chars/demon/fall4.gif
+		
+anim	idle
+	delay	10
+	loop	1
+	offset	83 140
+	bbox	37 23 90 114
+	frame	data/chars/demon/idle1.gif
+	frame	data/chars/demon/idle2.gif
+	frame	data/chars/demon/idle3.gif
+	frame	data/chars/demon/idle4.gif
+	frame	data/chars/demon/idle3.gif
+	frame	data/chars/demon/idle2.gif
+	frame	data/chars/demon/idle1.gif
+		
+anim	pain
+	loop	0
+	offset	98 142
+	bbox	47 12 85 122
+	delay	15
+	frame	data/chars/demon/pain1.gif
+	frame	data/chars/demon/pain2.gif
+	frame	data/chars/demon/pain1.gif
+		
+anim	rise
+	loop	0
+	offset	127 161
+	delay	10
+	frame	data/chars/demon/rise1.gif
+	frame	data/chars/demon/rise2.gif
+	frame	data/chars/demon/rise3.gif
+	frame	data/chars/demon/rise4.gif
+	frame	data/chars/demon/rise5.gif
+	frame	data/chars/demon/rise6.gif
+	sound	data/sounds/DTeleport.wav
+	frame	data/chars/demon/rise7.gif
+	frame	data/chars/demon/rise8.gif
+	frame	data/chars/demon/rise9.gif
+	frame	data/chars/demon/rise10.gif
+	frame	data/chars/demon/rise11.gif
+	frame	data/chars/demon/rise12.gif
+	frame	data/chars/demon/rise11.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	74 142
+	bbox	31 21 90 125
+	frame	data/chars/demon/walk1.gif
+	frame	data/chars/demon/walk2.gif
+	frame	data/chars/demon/walk3.gif
+	frame	data/chars/demon/walk4.gif
+	frame	data/chars/demon/walk5.gif
+	frame	data/chars/demon/walk6.gif
+	frame	data/chars/demon/walk7.gif
+	frame	data/chars/demon/walk8.gif
+	frame	data/chars/demon/walk9.gif
+	frame	data/chars/demon/walk10.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,46 @@
+#YU YU HAKUSHO DARK TOUR#   #Fliperama Bonus#
+music		data/music/taga.bor
+
+#background	data/bgs/bonus/fundo3.gif
+panel	        data/bgs/bonus/fundo3.gif
+#frontpanel	data/bgs/bonus/fundo.gif
+order           a
+spawn1  120  30
+spawn2  200  30
+settime  20
+nohit   1 
+
+spawn	btext
+flip    1
+coords	160 230
+at      0
+
+
+group   2  2
+at      0
+
+spawn	bonus
+coords	40 192
+item    1up
+2phealth      400
+at	0
+
+spawn	bonus
+coords	280 192
+2phealth      400
+item    1up
+flip    1
+at	0
+
+group  0  1
+at     0
+
+spawn	very
+flip    1
+coords	160 230
+at      0
+
+spawn	goldar
+coords	-80 165
+health  20
+at      0

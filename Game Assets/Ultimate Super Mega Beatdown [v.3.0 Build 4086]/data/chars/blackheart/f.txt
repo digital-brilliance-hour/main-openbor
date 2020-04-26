@@ -1,0 +1,31 @@
+name	     Blackheartf
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+flash           electo
+
+anim	idle
+	attack	3 4 101 201 12 1 0 0 24 15
+	loop	0
+	delay	3
+	offset	60 203
+	frame	data/chars/Blackheart/f1.gif
+	attack	3 5 110 199 12 1 0 0 24 15
+	frame	data/chars/Blackheart/f2.gif
+	attack	4 11 88 199 12 1 0 0 24 1
+	offset	51 207
+	frame	data/chars/Blackheart/f3.gif
+	attack	8 7 99 192 12 1 0 0 24 15
+	offset	51 203
+	frame	data/chars/Blackheart/f4.gif
+	attack	5 5 102 192 12 1 0 0 24 15
+	frame	data/chars/Blackheart/f5.gif
+	attack	3 7 91 201 12 1 0 0 24 15
+	offset	51 207
+	frame	data/chars/Blackheart/f6.gif
+	@cmd	suicide()
+	frame	data/chars/Blackheart/f6.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,20 @@
+name	hammer
+type    trap
+#shadow	5
+health  1
+nolife  1
+flash   flash
+noatflash 1
+
+anim idle
+	loop	1
+	delay	50
+	offset	76 181
+        jumpframe  2   7
+        blast   5 125 150 60 15 0 0 10	
+	frame	data/chars/misc/hammer.gif
+	frame	data/chars/misc/hammer.gif
+        blast   0 0 0 0 0 0 0 0	
+	frame	data/chars/misc/hammer.gif
+
+

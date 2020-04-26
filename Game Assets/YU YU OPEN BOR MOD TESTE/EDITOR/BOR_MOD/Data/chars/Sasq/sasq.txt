@@ -1,0 +1,87 @@
+name	sasq
+health	100
+type	enemy
+shadow	5
+grabdistance 20
+aimove chase
+aimove wander
+aimove normal
+gfxshadow 1
+icon	data/chars/sasq/icon.gif
+diesound data/chars/sasq/die.wav
+dust dust
+
+palette data/chars/sasq/sasq.gif
+
+remap	data/chars/sasq/stand1.gif data/chars/sasq/alt1.gif
+remap	data/chars/sasq/stand1.gif data/chars/sasq/alt2.gif
+remap	data/chars/sasq/stand1.gif data/chars/sasq/alt3.gif
+remap	data/chars/sasq/stand1.gif data/chars/sasq/alt4.gif
+
+
+
+anim	attack1
+	sound	data/chars/sasq/at1.wav
+	bbox	19 27 52 88
+	range	0 75
+	loop	0
+	delay	15
+	offset	42 110
+	frame	data/chars/sasq/n.gif
+	attack	75 9 49 59 0 0 1 0 0 0
+	bbox	11 11 74 87
+	offset	51 97
+	frame	data/chars/sasq/m.gif
+	attack	64 34 50 45 0 0 1 0 0 0
+	offset	44 86
+	frame	data/chars/sasq/o.gif
+		
+anim	fall
+	loop	0
+	delay	25
+	offset	39 94
+	frame	data/chars/sasq/g.gif
+	offset	39 94
+	frame	data/chars/sasq/i.gif
+	offset	53 46
+	frame	data/chars/sasq/h.gif
+		
+anim	idle
+	bbox	9 16 53 86
+	loop	1
+	offset	30 98
+	delay	10
+	frame	data/chars/sasq/f.gif
+		
+anim	pain
+	bbox	15 3 48 87
+	loop	0
+	offset	39 94
+	delay	10
+	frame	data/chars/sasq/g.gif
+	offset	50 85
+	delay	30
+	frame	data/chars/sasq/i.gif
+		
+anim	rise
+	loop	0
+	offset	30 84
+	delay	15
+	frame	data/chars/sasq/b.gif
+	offset	38 85
+	frame	data/chars/sasq/i.gif
+		
+anim	walk
+	loop	1
+	offset	34 95
+	delay	15
+	frame	data/chars/sasq/idle4.gif
+	offset	30 87
+	frame	data/chars/sasq/idle3.gif
+	offset	35 90
+	frame	data/chars/sasq/idle2.gif
+	offset	30 87
+	frame	data/chars/sasq/idle3.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,211 @@
+name	wmolo
+health	1
+nolife  1
+type	npc
+hostile player
+candamage player
+speed	0
+nomove 1 1
+noquake 1
+falldie 1
+#subtype flydie
+shadow	0
+remove 0
+
+anim idle
+	loop	0
+	offset     238 100
+	bbox    222 157 27 28
+	jumpframe 0 3.3 3 0
+	landframe 81
+	hitfx   data/sounds/beat3.wav
+	delay	1
+	move 1.5
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/wood/molo04.gif
+	delay	99
+	frame	data/chars/wood/molo01.gif
+
+	bbox    0 0 0 0
+	move 0
+	delay	1
+	sound 	data/sounds/burn101.wav
+	frame	data/chars/wood/molo01.gif
+	delay	4
+	attack11  227 147 17 30 15 1
+	frame	data/chars/wood/molo05.gif
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	attack11  220 147 30 30 15 1
+	frame	data/chars/wood/molo06.gif
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	attack11  212 147 46 30 15 1
+	frame	data/chars/wood/molo07.gif
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	attack11  202 119 70 58 15 1
+	frame	data/chars/wood/molo08.gif
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	attack11  196 119 80 58 15 1
+	frame	data/chars/wood/molo09.gif
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/empty.gif
+
+	
+anim fall
+	loop	0
+	offset     238 100
+	bbox    0 0 0 0
+	delay	1
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/misc/empty.gif
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 100
+	bbox    0 0 0 0
+	delay	1
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wood/molo04.gif
+	frame	data/chars/misc/empty.gif
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
+

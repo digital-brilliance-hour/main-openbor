@@ -1,0 +1,131 @@
+name	Joe
+health	100
+speed	12
+gfxshadow 1
+type	enemy
+shadow	4
+grabdistance 20
+aimove chase
+aimove wander
+aimove normal
+dust dust
+icon	data/chars/joe/icon.gif
+diesound data/chars/joe/die.wav
+
+
+palette data/chars/joe/joe2.gif
+
+remap	data/chars/joe/stand1.gif data/chars/joe/alt1.gif
+remap	data/chars/joe/stand1.gif data/chars/joe/alt2.gif
+remap	data/chars/joe/stand1.gif data/chars/joe/alt3.gif
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	loop	0
+	offset	38 86
+	delay	10
+	frame	data/chars/joe/fall1.gif
+	offset	53 61
+	frame	data/chars/joe/fall2.gif
+	offset	51 41
+	frame	data/chars/joe/fall3.gif
+		
+anim	grab
+	sound	data/chars/joe/at1.wav
+	range	0 10
+	bbox	39 4 48 74
+	loop	0
+	offset	65 90
+	delay	32
+	frame	data/chars/joe/grab.gif
+	bbox	8 14 26 73
+	loop	0
+	delay	45
+	bbox	8 14 26 73
+	offset	26 96
+	delay	12
+	frame	data/chars/joe/ataque1.gif
+	attack2	42 23 44 30 17 1 1 0 0 0
+	offset	24 94
+	frame	data/chars/joe/ataque1b.gif
+	offset	26 96
+	frame	data/chars/joe/ataque1.gif
+		
+anim	idle
+	bbox	31 6 24 80
+	loop	1
+	offset	35 84
+	delay	17
+	frame	data/chars/joe/stand1.gif
+	offset	33 82
+	frame	data/chars/joe/stand2.gif
+		
+anim	pain
+	bbox	10 3 52 89
+	loop	0
+	offset	39 93
+	delay	12
+	frame	data/chars/joe/pain2.gif
+	delay	12
+	offset	39 93
+	frame	data/chars/joe/pain1.gif
+	offset	39 93
+	delay	12
+	frame	data/chars/joe/pain2.gif
+		
+anim	rise
+	loop	0
+	offset	33 52
+	delay	20
+	frame	data/chars/joe/lev1.gif
+	offset	37 86
+	frame	data/chars/joe/lev2.gif
+	offset	39 90
+	frame	data/chars/joe/pain2.gif
+		
+anim	upper
+	attack	0 0 0 0 0 0 0 0 0 0
+	sound	data/chars/joe/at1.wav
+	bbox	18 12 38 86
+	loop	0
+	offset	37 91
+	delay	12
+	frame	data/chars/joe/ataque2.gif
+	attack	59 11 45 22 9 0 1 0 0 0
+	offset	39 85
+	frame	data/chars/joe/ataque2b.gif
+	offset	35 84
+	frame	data/chars/joe/stand1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	14 13 17 84
+	offset	26 96
+	frame	data/chars/joe/ataque1.gif
+	attack	34 23 53 27 9 0 1 0 0 0
+	offset	24 94
+	frame	data/chars/joe/ataque1b.gif
+	offset	26 96
+	frame	data/chars/joe/ataque1.gif
+		
+anim	walk
+	bbox	20 3 45 84
+	loop	1
+	offset	38 84
+	delay	20
+	frame	data/chars/joe/walk2.gif
+	offset	34 98
+	frame	data/chars/joe/walk1.gif
+	offset	21 87
+	frame	data/chars/joe/walk3.gif
+	offset	34 98
+	frame	data/chars/joe/walk1.gif
+		
+#|edited by openBor Stats v 0.67
+		

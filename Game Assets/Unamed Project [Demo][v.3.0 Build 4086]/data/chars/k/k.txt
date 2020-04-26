@@ -1,0 +1,116 @@
+name	K'
+health	100
+speed	9
+type	enemy
+shadow	4
+icon	data/chars/K/icon.gif
+diesound data/sounds/die2.wav
+
+
+remap	data/chars/k/idle01.gif	data/chars/k/alter1.gif
+remap	data/chars/k/idle01.gif	data/chars/k/alter2.gif
+remap	data/chars/k/idle01.gif	data/chars/k/alter3.gif
+
+
+anim idle
+	loop	1
+	offset	79 182
+	bbox	63 80 38 98
+	delay	20
+	frame	data/chars/k/idle01.gif
+        delay   8
+	frame	data/chars/k/idle02.gif
+	frame	data/chars/k/idle03.gif
+        delay   500
+	frame	data/chars/k/idle04.gif
+        delay   8
+	frame	data/chars/k/idle03.gif
+	frame	data/chars/k/idle02.gif
+
+
+anim walk
+	loop	1
+	offset	79 182
+	bbox	63 80 38 98
+	delay	10
+	frame	data/chars/k/wk1.gif
+	frame	data/chars/k/wk2.gif
+	frame	data/chars/k/wk3.gif
+	frame	data/chars/k/wk4.gif
+	frame	data/chars/k/wk5.gif
+	frame	data/chars/k/wk6.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	63 80 38 98
+	offset	79 182
+	frame	data/chars/k/pain1.gif
+	delay   35
+	frame	data/chars/k/pain2.gif
+	delay   11
+	frame	data/chars/k/pain1.gif
+
+	
+
+anim fall
+	loop	0
+	delay	60
+	offset	87 162
+        attack  45 100 39 36 5 1
+	frame	data/chars/k/fall1.gif
+        offset  79 182
+        delay   20
+	frame	data/chars/k/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/k/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	79 182
+	delay	11
+	frame	data/chars/k/rise1.gif
+	frame	data/chars/k/rise2.gif
+	frame	data/chars/k/rise3.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	6
+	bbox	63 80 38 98
+	offset	79 182
+	frame	data/chars/k/a101.gif
+	frame	data/chars/k/a102.gif
+	frame	data/chars/k/a103.gif
+        attack  83 99 62 44 14 1
+        delay   10
+	frame	data/chars/k/a104.gif
+        delay   7
+        attack  0 0 0 0 0
+	frame	data/chars/k/a103.gif
+	frame	data/chars/k/a101.gif
+
+
+anim grab
+	delay	15
+	bbox	63 80 38 98
+	offset	79 182
+        jumpframe  3
+	frame	data/chars/k/gr1.gif
+        delay   6
+	frame	data/chars/k/gr2.gif
+        bbox    61 70 35 65
+	frame	data/chars/k/gr3.gif
+        attack  91 76 34 70 18 1
+        delay   15
+	frame	data/chars/k/gr4.gif
+        attack  0 0 0 0 0 0
+        delay   7
+	frame	data/chars/k/gr3.gif
+	frame	data/chars/k/a101.gif
+
+

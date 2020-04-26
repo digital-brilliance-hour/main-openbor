@@ -1,0 +1,39 @@
+name	     Bisond
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript   data/scripts2/script.c
+flash	bisone
+
+
+
+
+anim	follow
+	loop	0
+	delay	3
+	offset	25 16
+	frame	data/chars/Bison/empty.gif
+	@cmd	suicide()
+	frame	data/chars/Bison/empty.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	16 21
+	jumpframe	1 -3 5 0
+	followanim	1
+	follwcond	1
+	blast	3 5 44 19 15 0 0 45
+	frame	data/chars/Bison/d1.gif
+	blast	4 4 48 21 16 0 0 45
+	frame	data/chars/Bison/d1.gif
+	frame	data/chars/Bison/d1.gif
+	frame	data/chars/Bison/d1.gif
+	frame	data/chars/Bison/d1.gif
+	frame	data/chars/Bison/d1.gif
+	frame	data/chars/Bison/d1.gif
+	@cmd	suicide()
+	frame	data/chars/Bison/d1.gif
+		
+#|edited by openBor Stats v 0.50
+		

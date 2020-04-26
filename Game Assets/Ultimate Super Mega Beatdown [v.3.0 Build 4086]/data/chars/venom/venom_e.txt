@@ -1,0 +1,436 @@
+name	       Venom_E
+health         1000
+mp	       500
+speed	       12
+type	       enemy
+hostile	enemy player
+aimove	Chase
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    player enemy obstacle
+atchain	       1 2 3 4
+fmap           6
+flash		qflash2
+riseinv	1
+projectilehit  obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+onspawnscript	data/scripts2/pale.c
+script		data/scripts/toad.c
+bounce	1
+
+com	A2 freespecial
+com	A3 freespecial2
+com	A4 freespecial3
+
+palette		data/Chars/Venom/idle1.gif
+alternatepal	data/Chars/Venom/alter1.gif
+alternatepal	data/Chars/Venom/alter2.gif
+alternatepal	data/Chars/Venom/alter3.gif
+alternatepal	data/Chars/Venom/alter4.gif
+alternatepal	data/Chars/Venom/alter5.gif
+alternatepal	data/Chars/Venom/alter6.gif
+alternatepal	data/Chars/Venom/idle1.gif
+alternatepal	data/Chars/Venom/alter7.gif
+alternatepal	data/Chars/Venom/alter8.gif
+alternatepal	data/Chars/Venom/alter9.gif
+
+
+icon           data/chars/Venom/icon.gif
+
+
+
+
+
+
+
+anim	attack1
+	bbox	17 6 86 81
+	loop	0
+	delay	6
+	offset	53 84
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Venom/attack1.gif
+	attack	98 7 121 57 7
+	frame	data/Chars/Venom/attack2.gif
+	attack	98 7 121 57 7
+	offset	53 89
+	frame	data/Chars/Venom/attack3.gif
+		
+anim	attack2
+	bbox	38 19 83 74
+	loop	0
+	delay	6
+	offset	71 91
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Venom/bttack1.gif
+	offset	71 104
+	frame	data/Chars/Venom/bttack2.gif
+	attack	33 6 117 162 7
+	bbox	48 63 44 100
+	offset	71 171
+	frame	data/Chars/Venom/bttack3.gif
+	offset	71 159
+	frame	data/Chars/Venom/bttack4.gif
+	bbox	53 12 44 95
+	offset	71 105
+	frame	data/Chars/Venom/bttack5.gif
+		
+anim	attack3
+	bbox	32 0 75 113
+	loop	0
+	delay	6
+	offset	70 114
+	hitfx	data/Chars/Rogue/hit.wav
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Venom/cttack1.gif
+	offset	70 123
+	bbox	0
+	frame	data/Chars/Venom/cttack2.gif
+	offset	70 129
+	frame	data/Chars/Venom/cttack3.gif
+	attack	128 1 185 57 7
+	bbox	47 3 77 87
+	offset	68 92
+	frame	data/Chars/Venom/cttack4.gif
+	attack	109 2 176 68 7
+	offset	68 99
+	frame	data/Chars/Venom/cttack5.gif
+	attack	12 23 72 93 7
+	offset	68 116
+	frame	data/Chars/Venom/cttack6.gif
+	offset	68 110
+	frame	data/Chars/Venom/cttack7.gif
+	offset	68 96
+	frame	data/Chars/Venom/cttack8.gif
+		
+anim	attack4
+	bbox	27 18 82 51
+	loop	0
+	delay	6
+	offset	55 99
+	hitfx	data/sounds/bukk.wav
+	hitflash	poww
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Venom/dttack1.gif
+	offset	60 99
+	frame	data/Chars/Venom/dttack2.gif
+	offset	67 79
+	frame	data/Chars/Venom/dttack3.gif
+	blast	4 59 187 47 15 0 0 45
+	offset	53 100
+	frame	data/Chars/Venom/dttack4.gif
+	offset	57 101
+	frame	data/Chars/Venom/dttack5.gif
+	blast	2 50 179 57 15 0 0 45
+	offset	53 101
+	frame	data/Chars/Venom/dttack6.gif
+	offset	58 90
+	frame	data/Chars/Venom/dttack7.gif
+	offset	65 104
+	frame	data/Chars/Venom/dttack8.gif
+	frame	data/Chars/Venom/dttack9.gif
+		
+anim	fall
+	bbox	3 4 123 115
+	attack	3 4 123 115 7 1
+	loop	0
+	offset	70 124
+	delay	25
+	landframe	2
+	frame	data/Chars/Venom/fall1.gif
+	bbox	4 5 170 60
+	offset	82 54
+	delay	250
+	frame	data/Chars/Venom/fall2.gif
+	bbox	10 14 116 96
+	offset	69 101
+	frame	data/Chars/Venom/fall3.gif
+		
+anim	freespecial
+	bbox	25 6 78 82
+	loop	0
+	offset	48 90
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	poww
+	frame	data/Chars/Venom/anew1.gif
+	offset	51 80
+	frame	data/Chars/Venom/anew2.gif
+	blast	6 5 176 176 15 0 0 45
+	bbox	0 0 0 0
+	offset	51 124
+	@cmd	leaper 4 4 0
+	frame	data/Chars/Venom/anew3.gif
+	blast	9 5 209 131 15 0 0 45
+	offset	95 124
+	frame	data/Chars/Venom/anew4.gif
+	blast	5 3 261 82 15 0 0 45
+	bbox	30 4 219 68
+	offset	131 93
+	delay	15
+	frame	data/Chars/Venom/anew5.gif
+	blast	14 5 249 109 15 0 0 45
+	frame	data/Chars/Venom/anew6.gif
+		
+anim	freespecial2
+@script
+    void vSelf = getlocalvar("self");	
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 70);
+    }
+	@end_script	
+	bbox	29 6 96 82
+	loop	0
+	offset	63 87
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Venom/rja1.gif
+	offset	63 74
+	frame	data/Chars/Venom/rja2.gif
+	bbox	65 70 45 58
+	offset	95 144
+	@cmd	spawn01 "giantweb2" 0 0 0
+	frame	data/Chars/Venom/rja3.gif
+	offset	95 125
+	frame	data/Chars/Venom/rja4.gif
+		
+anim	freespecial3
+	offset	66 118
+	loop	0
+	hitfx	data/sounds/bukk.wav
+	hitflash	poww
+	@cmd	spawn01 "webball" 102 87 0
+	frame	data/Chars/Venom/cnew1.gif
+	frame	data/Chars/Venom/cnew1.gif
+		
+anim	freespecial5
+@script
+    void vSelf = getlocalvar("self");	
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 90);
+    }
+	@end_script	
+	blast	94 1 175 77 15 0 0 45
+	bbox	22 22 74 97
+	loop	0
+	offset	91 131
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	poww
+	frame	data/Chars/Venom/enew1.gif
+	blast	91 4 130 73 15 0 0 45
+	offset	89 135
+	frame	data/Chars/Venom/enew2.gif
+	blast	91 3 133 80 15 0 0 45
+	frame	data/Chars/Venom/enew3.gif
+	bbox	15 11 69 102
+	offset	53 117
+	frame	data/Chars/Venom/enew4.gif
+		
+anim	freespecial6
+	blast	112 4 163 73 15 0 0 45
+	bbox	23 18 48 116
+	loop	0
+	offset	67 134
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	poww
+	frame	data/Chars/Venom/dnew1.gif
+	blast	70 2 159 78 15 0 0 45
+	dropv	2 7 0
+	offset	60 137
+	frame	data/Chars/Venom/dnew2.gif
+	blast	66 1 163 82 15 0 0 45
+	dropv	2 7 0
+	frame	data/Chars/Venom/dnew3.gif
+	frame	data/Chars/Venom/dnew4.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	53 78
+	frame	data/Chars/Venom/get.gif
+		
+anim	grab
+	loop	0
+	offset	93 119
+	delay	6
+	frame	data/Chars/Venom/grab.gif
+		
+anim	grabattack
+	loop	0
+	offset	88 170
+	delay	6
+	@cmd	slamstart2
+	@cmd	position 1 75 80 1 -1
+	frame	data/Chars/Venom/ga1.gif
+	bbox	0 0 0 0
+	offset	88 163
+	@cmd	position 1 72 77 1 -1
+	frame	data/Chars/Venom/ga2.gif
+	bbox	0 0 0 0
+	offset	88 156
+	@cmd	position 1 -47 76 1 -1
+	frame	data/Chars/Venom/ga3.gif
+	offset	88 105
+	@cmd	position 1 79 -28 1 -1
+	frame	data/Chars/Venom/ga4.gif
+	offset	88 108
+	@cmd	depost 0
+	@cmd	throw 35 1 0 -5 0 -1
+	@cmd	clearL
+	frame	data/Chars/Venom/ga5.gif
+		
+anim	idle
+	bbox	6 4 116 108
+	offset	60 108
+	loop	1
+	delay	6
+	frame	data/Chars/Venom/idle1.gif
+	offset	60 98
+	frame	data/Chars/Venom/idle2.gif
+	bbox	12 1 130 94
+	offset	60 94
+	frame	data/Chars/Venom/idle3.gif
+	offset	60 83
+	frame	data/Chars/Venom/idle4.gif
+	offset	60 82
+	frame	data/Chars/Venom/idle5.gif
+	offset	60 79
+	frame	data/Chars/Venom/idle6.gif
+	offset	60 78
+	frame	data/Chars/Venom/idle7.gif
+	offset	60 77
+	frame	data/Chars/Venom/idle8.gif
+	offset	60 79
+	frame	data/Chars/Venom/idle9.gif
+	offset	60 83
+	frame	data/Chars/Venom/idle10.gif
+	offset	60 89
+	frame	data/Chars/Venom/idle11.gif
+	offset	60 95
+	frame	data/Chars/Venom/idle12.gif
+	offset	60 102
+	frame	data/Chars/Venom/idle13.gif
+		
+anim	jump
+	bbox	40 3 70 150
+	loop	0
+	offset	85 152
+	delay	6
+	cancel	1 9 0 D freespecial5
+	cancel	1 9 0 U freespecial6
+	frame	data/Chars/Venom/jump1.gif
+	offset	87 162
+	frame	data/Chars/Venom/jump2.gif
+	offset	68 111
+	bbox	45 3 50 98
+	frame	data/Chars/Venom/jump3.gif
+	offset	57 103
+	frame	data/Chars/Venom/jump4.gif
+	bbox	22 5 82 75
+	offset	48 85
+	frame	data/Chars/Venom/jump5.gif
+	frame	data/Chars/Venom/jump5.gif
+	frame	data/Chars/Venom/jump5.gif
+	frame	data/Chars/Venom/jump5.gif
+	frame	data/Chars/Venom/jump5.gif
+		
+anim	pain
+	bbox	23 4 77 109
+	loop	0
+	offset	56 111
+	delay	6
+	frame	data/chars/Venom/pain.gif
+		
+anim	rise
+	loop	0
+	offset	67 48
+	delay	6
+	frame	data/chars/Venom/rise1.gif
+	offset	50 76
+	frame	data/chars/Venom/rise2.gif
+	offset	50 115
+	frame	data/chars/Venom/rise3.gif
+	frame	data/chars/Venom/rise4.gif
+	offset	50 80
+	frame	data/chars/Venom/rise5.gif
+		
+anim	run
+	bbox	40 55 99 -136
+	loop	1
+	delay	6
+	offset	70 54
+	frame	data/Chars/Venom/walk1.gif
+	offset	69 54
+	frame	data/Chars/Venom/walk2.gif
+	offset	98 54
+	frame	data/Chars/Venom/walk3.gif
+	offset	101 52
+	frame	data/Chars/Venom/walk4.gif
+	offset	104 52
+	frame	data/Chars/Venom/walk5.gif
+	offset	92 52
+	frame	data/Chars/Venom/walk6.gif
+	frame	data/Chars/Venom/walk7.gif
+	offset	103 52
+	frame	data/Chars/Venom/walk8.gif
+		
+anim	select
+	loop	1
+	offset	67 123
+	delay	6
+	frame	data/Chars/Venom/sel1.gif
+	offset	67 119
+	frame	data/Chars/Venom/sel2.gif
+		
+anim	special
+	bbox	29 6 96 82
+	loop	0
+	offset	63 87
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Venom/rja1.gif
+	offset	63 74
+	frame	data/Chars/Venom/rja2.gif
+	bbox	65 70 45 58
+	offset	95 144
+	@cmd	spawn01 "giantweb2" 0 0 0
+	frame	data/Chars/Venom/rja3.gif
+	offset	95 125
+	frame	data/Chars/Venom/rja4.gif
+		
+anim	walk
+	bbox	40 55 99 -136
+	loop	1
+	delay	6
+	offset	70 54
+	frame	data/Chars/Venom/walk1.gif
+	offset	69 54
+	frame	data/Chars/Venom/walk2.gif
+	offset	98 54
+	frame	data/Chars/Venom/walk3.gif
+	offset	101 52
+	frame	data/Chars/Venom/walk4.gif
+	offset	104 52
+	frame	data/Chars/Venom/walk5.gif
+	offset	92 52
+	frame	data/Chars/Venom/walk6.gif
+	frame	data/Chars/Venom/walk7.gif
+	offset	103 52
+	frame	data/Chars/Venom/walk8.gif
+		
+#|edited by openBor Stats v 0.50
+		

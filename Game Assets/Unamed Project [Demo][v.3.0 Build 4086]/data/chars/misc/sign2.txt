@@ -1,0 +1,23 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Sign2
+health	1
+type	obstacle
+shadow	2
+diesound data/sounds/phone.wav
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	13 82
+	bbox	0 -27 26 87
+	frame	data/chars/misc/sgn021.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	13 43
+	frame	data/chars/misc/sgn022.gif

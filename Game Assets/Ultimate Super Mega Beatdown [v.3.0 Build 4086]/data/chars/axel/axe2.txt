@@ -1,0 +1,87 @@
+name		Axe2
+gfxshadow 1
+health		100
+mp		50
+grabdistance	22
+atchain	1
+com	a2 freespecial
+com	d d a freespecial7
+com	u u a freespecial8
+com	d u a freespecial6
+
+anim 	idle
+	delay	10
+	offset	20 70
+	bbox	4 4 29 66
+	frame	data/chars/axel/knife/idle01.gif
+
+
+anim 	walk
+	loop	1
+	delay	16
+	offset	25 77
+	bbox	6 3 42 77
+	frame	data/chars/axel/knife/walk01.gif
+	frame	data/chars/axel/knife/walk02.gif
+	frame	data/chars/axel/knife/walk03.gif
+	frame	data/chars/axel/knife/walk04.gif
+	frame	data/chars/axel/knife/walk05.gif
+	frame	data/chars/axel/knife/walk06.gif
+
+anim	attack1
+	hitfx	data/sounds/slash.wav
+	hitflash	fblood
+	delay	10
+	offset	23 78
+	bbox	14 5 20 74
+	frame	data/chars/axel/knife/att01.gif
+	
+	delay	20
+	offset	13 72
+	bbox	11 3 17 70
+	Attack	27 12 43 16 29 1 1 0 30
+	frame	data/chars/axel/knife/att02.gif
+	delay	10
+	Attack	0
+	offset	23 78
+	bbox	14 5 20 74
+	frame	data/chars/axel/knife/att01.gif
+
+anim	attack3
+	hitfx	data/sounds/slash.wav
+	hitflash	fblood
+	delay	10
+	offset	23 78
+	bbox	14 5 20 74
+	frame	data/chars/axel/knife/att01.gif
+	
+	delay	20
+	offset	13 72
+	bbox	11 3 17 70
+	Attack	27 12 43 16 29 1 1 0 30
+	frame	data/chars/axel/knife/att02.gif
+	delay	10
+	Attack	0
+	offset	23 78
+	bbox	14 5 20 74
+	frame	data/chars/axel/knife/att01.gif
+
+anim	attackboth
+	weaponframe	1 0
+	delay	25
+	offset	23 56
+	frame	data/chars/axel/get.gif
+	frame	data/chars/axel/get.gif
+
+anim 	grab
+	cancel	0 1 0 d u a freespecial6
+	delay	1000
+	offset	38 84
+	bbox	19 10 38 76
+	frame	data/chars/axel/grab1.gif
+
+
+
+
+
+

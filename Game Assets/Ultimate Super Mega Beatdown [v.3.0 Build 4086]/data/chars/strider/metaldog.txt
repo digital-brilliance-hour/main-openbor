@@ -1,0 +1,43 @@
+name	     MetalDog
+type	     none
+shadow	     0
+candamage   enemy obstacle
+lifespan 3
+flash	poww
+
+
+
+
+
+
+anim	spawn
+	blast	45 1 145 43 15 0 0 45
+	dropv	4 -3 0
+	loop	1
+	delay	4
+	offset	98 48
+	move	20
+	hitfx	data/sounds/bukk.wav
+	frame	data/chars/Strider/a1.gif
+	blast	6 4 185 53 15 0 0 45
+	dropv	4 -3 0
+	offset	98 64
+	frame	data/chars/Strider/a2.gif
+	blast	35 6 140 56 15 0 0 45
+	dropv	4 -3 0
+	frame	data/chars/Strider/a3.gif
+	attack	3 3 174 57 15 0 0 45
+	dropv	4 -3 0
+	offset	105 62
+	frame	data/chars/Strider/a4.gif
+	blast	2 1 176 56 15 0 0 45
+	dropv	4 -3 0
+	offset	105 60
+	frame	data/chars/Strider/a5.gif
+	blast	2 1 183 61 15 0 0 45
+	dropv	4 -3 0
+	offset	105 64
+	frame	data/chars/Strider/a6.gif
+		
+#|edited by openBor Stats v 0.50
+		

@@ -1,0 +1,36 @@
+name	     Jedahb
+type	     none
+shadow	     0
+candamage   enemy obstacle
+antigravity 100
+flash      Jedahc
+
+
+anim	idle
+	attack	8 5 129 115 12 1 0 0 5 24
+	dropv	1 4 0
+	loop	1
+	delay	3
+	offset	70 63
+	move	32
+	frame	data/chars/Jedah/b1.gif
+	attack	0
+	offset	74 63
+	frame	data/chars/Jedah/b2.gif
+	attack	4 5 146 114 12 1 0 0 4 24
+	dropv	1 4 0
+	offset	78 63
+	frame	data/chars/Jedah/b3.gif
+	attack	0
+	offset	78 56
+	frame	data/chars/Jedah/b4.gif
+	attack	7 7 144 105 12 1 0 0 4 24
+	dropv	1 4 0
+	offset	79 59
+	frame	data/chars/Jedah/b5.gif
+	attack	0
+	offset	77 62
+	frame	data/chars/Jedah/b6.gif
+		
+#|edited by openBor Stats v 0.51
+		

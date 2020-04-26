@@ -1,0 +1,255 @@
+name	toguro2
+health 600
+speed 9
+grabdistance 20
+aimove chase
+aimove wander
+aimove normal
+type	enemy
+shadow	4
+gfxshadow 1
+blockodds 1
+knockdowncount 1
+icon	data/chars/toguro2/icon.gif
+diesound data/chars/die.wav
+dust dust
+
+palette data/chars/toguro2/toguro2.gif
+
+remap	data/chars/toguro2/idle1.gif data/chars/toguro2/alt1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	0 75
+	sound	data/chars/toguro1/eia.wav
+	delay	10
+	offset	28 109
+	bbox	7 3 43 103
+	frame	data/chars/toguro2/soc1.gif
+	bbox	16 6 58 108
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	39 114
+	frame	data/chars/toguro2/soc2.gif
+	attack	57 4 51 39 11 0 1 0 0 0
+	bbox	32 12 25 100
+	offset	37 113
+	frame	data/chars/toguro2/soc3.gif
+	bbox	11 8 61 109
+	delay	9
+	offset	39 114
+	frame	data/chars/toguro2/soc2.gif
+	bbox	8 5 46 102
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	28 109
+	frame	data/chars/toguro2/soc1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	27 110
+	frame	data/chars/toguro2/chut3.gif
+	attack	29 33 67 42 11 1 1 0 0 0
+	offset	30 105
+	frame	data/chars/toguro2/chut2.gif
+	offset	30 105
+	frame	data/chars/toguro2/chut1.gif
+		
+anim	attack2
+	sound	data/chars/toguro1/rush.wav
+	range	30 75
+	bbox	11 7 38 80
+	delay	10
+	offset	46 91
+	frame	data/chars/toguro2/rot3.gif
+	delay	9
+	move	25
+	bbox	29 14 41 79
+	offset	46 91
+	frame	data/chars/toguro2/rot3.gif
+	attack	2 1 57 56 11 1 0 0 0 0
+	offset	39 105
+	frame	data/chars/toguro2/rot2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	29 14 41 79
+	offset	40 132
+	frame	data/chars/toguro2/rot1.gif
+	offset	42 82
+	attack	43 7 68 57 11 1 0 0 0 0
+	frame	data/chars/toguro2/rot4.gif
+	bbox	29 14 41 79
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	36 73
+	frame	data/chars/toguro2/lev2.gif
+	offset	37 90
+	frame	data/chars/toguro2/lev3.gif
+		
+anim	attack3
+	range	75 80
+	followanim	1
+	followcond	1
+	delay	10
+	offset	28 109
+	frame	data/chars/toguro2/soc1.gif
+	attack	63 18 57 61 10 1 1 0 3 0
+	offset	49 106
+	hitflash	flash4
+	frame	data/chars/toguro2/esp1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	4
+	move	25
+	offset	49 106
+	frame	data/chars/toguro2/esp2.gif
+	offset	49 106
+	attack	63 18 57 61 10 1 0 0 3 0
+	frame	data/chars/toguro2/esp1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	49 106
+	frame	data/chars/toguro2/esp2.gif
+		
+anim	block
+	bbox	5 3 50 120
+	blockodds	1
+	range	1 100
+	delay	10
+	offset	30 122
+	frame	data/chars/toguro2/defesa.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	33 110
+	frame	data/chars/toguro2/pain2.gif
+	offset	30 85
+	frame	data/chars/toguro2/fal1.gif
+	offset	47 49
+	frame	data/chars/toguro2/lev1.gif
+		
+anim	follow1
+	hitflash	flash4
+	sound	data/chars/toguro1/fullpower.wav
+	range	35 55
+	bbox	35 19 42 92
+	attack	66 26 56 51 40 1 1 0 0 0
+	delay	23
+	offset	48 106
+	frame	data/chars/toguro2/esp1.gif
+	offset	48 106
+	attack	0 0 0 0 40 1 0 0 0 0
+	frame	data/chars/toguro2/esp2.gif
+		
+anim	idle
+	bbox	11 4 44 112
+	loop	1
+	offset	30 114
+	delay	10
+	frame	data/chars/toguro2/idle3.gif
+	offset	30 114
+	frame	data/chars/toguro2/idle1.gif
+	offset	30 114
+	frame	data/chars/toguro2/idle2.gif
+	offset	30 114
+	frame	data/chars/toguro2/idle1.gif
+		
+anim	pain
+	loop	0
+	offset	33 112
+	bbox	13 10 38 99
+	delay	12
+	frame	data/chars/toguro2/pain2.gif
+	offset	33 112
+	delay	12
+	frame	data/chars/toguro2/pain1.gif
+	offset	33 112
+	delay	12
+	frame	data/chars/toguro2/pain2.gif
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	36 73
+	frame	data/chars/toguro2/lev2.gif
+	offset	37 90
+	delay	10
+	frame	data/chars/toguro2/lev3.gif
+		
+anim	upper
+	bbox	16 48 62 87
+	loop	0
+	delay	8
+	offset	54 136
+	frame	data/chars/toguro2/soch1.gif
+	offset	39 125
+	frame	data/chars/toguro2/soch2.gif
+	sound	data/sounds/boom.wav
+	bbox	20 22 56 70
+	offset	49 98
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/toguro2/soch6.gif
+	blast	54 45 79 85 11 0 1 0 0 0
+	offset	41 125
+	frame	data/chars/toguro2/soch4.gif
+	bbox	18 61 68 90
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	42 150
+	frame	data/chars/toguro2/soch7.gif
+	blast	54 68 79 85 11 1 1 0 0 0
+	offset	49 149
+	delay	8
+	frame	data/chars/toguro2/soch5.gif
+	offset	42 150
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/toguro2/soch7.gif
+	blast	54 68 79 85 11 1 1 0 0 0
+	offset	49 149
+	frame	data/chars/toguro2/soch5.gif
+	offset	42 150
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/toguro2/soch7.gif
+	blast	54 68 79 85 11 1 1 0 0 0
+	offset	49 149
+	frame	data/chars/toguro2/soch5.gif
+	offset	42 150
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/toguro2/soch7.gif
+	blast	59 68 79 85 11 1 1 0 0 0
+	offset	49 149
+	frame	data/chars/toguro2/soch5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	42 150
+	frame	data/chars/toguro2/soch7.gif
+	blast	59 43 79 84 11 1 1 0 0 0
+	offset	41 125
+	frame	data/chars/toguro2/soch4.gif
+	offset	49 98
+	frame	data/chars/toguro2/soch6.gif
+		
+anim	walk
+	loop	1
+	offset	30 111
+	bbox	11 12 41 105
+	delay	12
+	frame	data/chars/toguro2/walk1.gif
+	offset	32 111
+	frame	data/chars/toguro2/walk3.gif
+	offset	28 111
+	frame	data/chars/toguro2/walk2.gif
+	offset	32 111
+	frame	data/chars/toguro2/walk3.gif
+		
+#|edited by openBor Stats v 0.67
+		

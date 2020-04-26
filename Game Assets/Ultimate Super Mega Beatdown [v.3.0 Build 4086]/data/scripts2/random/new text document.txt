@@ -1,0 +1,10 @@
+ void s;
+  if ( self != NULL() )
+  {
+    if (
+       getentityproperty(self, "exists")
+   && !getentityproperty(self, "dead")  
+    ) {
+      s = 1;
+    }
+  }

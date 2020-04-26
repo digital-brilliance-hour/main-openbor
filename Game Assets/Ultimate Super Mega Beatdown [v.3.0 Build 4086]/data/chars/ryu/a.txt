@@ -1,0 +1,50 @@
+name	     RYUA
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+antigravity 100
+palette	data/chars/RYU/a1.gif
+flash   electo
+
+
+
+anim	follow
+	loop	0
+	delay	3
+	offset	61 45
+	frame	data/chars/RYU/a9.gif
+	offset	63 51
+	frame	data/chars/RYU/a10.gif
+	offset	61 59
+	frame	data/chars/RYU/a11.gif
+	@cmd	suicide()
+	frame	data/chars/RYU/a11.gif
+		
+anim	idle
+	followanim	1
+	followcond	1
+	blast	3 4 105 68 16 0 0 45
+	dropv	3 3 0
+	loop	1
+	delay	6
+	offset	110 39
+	move	25
+	frame	data/chars/RYU/a1.gif
+	offset	94 47
+	frame	data/chars/RYU/a2.gif
+	offset	109 37
+	frame	data/chars/RYU/a3.gif
+	offset	98 48
+	frame	data/chars/RYU/a4.gif
+	offset	90 48
+	frame	data/chars/RYU/a5.gif
+	offset	97 61
+	frame	data/chars/RYU/a6.gif
+	offset	94 37
+	frame	data/chars/RYU/a7.gif
+	offset	89 47
+	frame	data/chars/RYU/a8.gif
+		
+#|edited by openBor Stats v 0.50
+		

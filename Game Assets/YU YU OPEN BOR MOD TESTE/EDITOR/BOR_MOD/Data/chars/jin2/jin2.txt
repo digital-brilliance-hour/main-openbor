@@ -1,0 +1,663 @@
+name	jin2
+health 95
+running 16 2 4 2 10
+fmap 2
+mp 120
+speed 10
+type	player
+gfxshadow 1
+dust dust
+shadow 5
+icon	data/chars/jin2/icon.gif
+diesound data/chars/jin2/die.wav
+
+load cyclo
+
+com 		D F A     freespecial2
+com 		D F D F A freespecial
+
+
+palette data/chars/jin2/jin.gif
+
+remap	data/chars/jin2/idle1.gif data/chars/jin2/alt1.gif
+remap	data/chars/jin2/idle1.gif data/chars/jin2/alt2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/chars/jin2/iae.wav
+	loop	0
+	delay	7
+	offset	32 94
+	bbox	13 3 43 103
+	frame	data/chars/jin2/soc2.gif
+	attack	34 20 62 26 10 0 1 0 0 0
+	offset	32 94
+	frame	data/chars/jin2/soc1.gif
+	offset	32 94
+	frame	data/chars/jin2/soc2.gif
+		
+anim	attack2
+	sound	data/chars/jin2/iae.wav
+	loop	0
+	delay	7
+	offset	32 96
+	bbox	13 3 43 103
+	frame	data/chars/jin2/sc2.gif
+	attack	34 23 62 26 10 0 1 0 0 0
+	offset	32 96
+	frame	data/chars/jin2/sc1.gif
+	offset	32 96
+	frame	data/chars/jin2/sc2.gif
+		
+anim	attack3
+	sound	data/chars/jin2/iae.wav
+	loop	0
+	delay	7
+	offset	21 99
+	bbox	7 7 28 92
+	frame	data/chars/jin2/ch2.gif
+	bbox	17 11 33 90
+	offset	21 99
+	frame	data/chars/jin2/ch1.gif
+	attack	18 24 69 38 15 1 1 0 0 0
+	offset	21 99
+	frame	data/chars/jin2/ch3.gif
+	offset	21 99
+	frame	data/chars/jin2/ch1.gif
+	offset	21 99
+	bbox	7 7 28 92
+	frame	data/chars/jin2/ch2.gif
+		
+anim	bpain
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	46 104
+	frame	data/chars/jin2/pain2.gif
+	offset	45 68
+	frame	data/chars/jin2/fall2.gif
+	offset	46 36
+	frame	data/chars/jin2/fall3.gif
+		
+anim	freespecial
+	attack	28 149 80 97 0 0 1 0 0 0
+	energycost	20
+	custknife	cyclo
+	throwframe	13
+	loop	0
+	delay	7
+	offset	63 235
+	delay	7
+	sound	data/chars/jin2/wind.wav
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are1.gif
+	attack	28 149 80 97 0 0 1 0 0 0
+	frame	data/chars/jin2/are2.gif
+	sound	data/chars/jin2/ss.wav
+	offset	32 96
+	bbox	13 3 43 103
+	frame	data/chars/jin2/sc2.gif
+	attack	34 23 62 26 10 0 1 0 0 0
+	delay	70
+	offset	32 96
+	frame	data/chars/jin2/sc3.gif
+		
+anim	freespecial2
+	hitflash	flash8
+	sound	data/chars/jin2/ss.wav
+	energycost	20
+	bbox	11 7 38 80
+	delay	10
+	offset	26 89
+	frame	data/chars/jin2/sken1.gif
+	delay	9
+	bbox	29 14 41 79
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	25 97
+	frame	data/chars/jin2/sken2.gif
+	offset	27 90
+	frame	data/chars/jin2/sken3.gif
+	bbox	29 14 41 79
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	36 90
+	move	20
+	frame	data/chars/jin2/sken4.gif
+	offset	37 93
+	attack	43 7 68 57 10 1 0 0 0 20
+	frame	data/chars/jin2/sken5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	29 14 41 79
+	offset	37 88
+	frame	data/chars/jin2/sken6.gif
+	offset	36 90
+	attack	43 7 68 57 10 1 0 0 0 20
+	frame	data/chars/jin2/sken4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	29 14 41 79
+	offset	37 93
+	frame	data/chars/jin2/sken5.gif
+	offset	37 88
+	attack	43 7 68 57 10 1 0 0 0 20
+	frame	data/chars/jin2/sken6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	29 14 41 79
+	offset	36 90
+	frame	data/chars/jin2/sken4.gif
+	offset	37 93
+	attack	43 7 68 57 10 1 0 0 0 20
+	frame	data/chars/jin2/sken5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	37 88
+	frame	data/chars/jin2/sken6.gif
+		
+anim	get
+	bbox	9 11 40 84
+	offset	29 91
+	delay	10
+	frame	data/chars/jin2/lev3.gif
+	offset	28 90
+	frame	data/chars/jin2/lev4.gif
+	offset	29 91
+	delay	10
+	frame	data/chars/jin2/lev3.gif
+		
+anim	grab
+	loop	0
+	delay	100
+	offset	23 107
+	bbox	21 16 34 88
+	frame	data/chars/jin2/agar1.gif
+		
+anim	grabattack
+	attack	51 15 35 37 6 0 0 0 0 0
+	bbox	15 8 40 54
+	loop	0
+	offset	38 69
+	delay	35
+	frame	data/chars/jin2/gat.gif
+		
+anim	grabbed
+	loop	0
+	offset	42 141
+	bbox	35 22 38 76
+	delay	90
+	frame	data/chars/jin2/pain1.gif
+	offset	42 141
+	frame	data/chars/jin2/pain2.gif
+	offset	42 141
+	frame	data/chars/jin2/pain1.gif
+		
+anim	idle
+	bbox	8 3 42 95
+	loop	1
+	offset	30 91
+	delay	10
+	frame	data/chars/jin2/idle3.gif
+	offset	30 91
+	frame	data/chars/jin2/idle1.gif
+	offset	30 91
+	frame	data/chars/jin2/idle2.gif
+	offset	30 91
+	frame	data/chars/jin2/idle1.gif
+		
+anim	jump
+	bbox	12 12 33 77
+	loop	0
+	delay	10
+	offset	30 91
+	frame	data/chars/jin2/lev3.gif
+	offset	27 138
+	frame	data/chars/jin2/lev1.gif
+	offset	27 150
+	frame	data/chars/jin2/lev2.gif
+	offset	27 138
+	frame	data/chars/jin2/lev1.gif
+	offset	30 91
+	frame	data/chars/jin2/lev3.gif
+		
+anim	jumpattack
+	bbox	14 9 41 64
+	loop	0
+	delay	7
+	offset	29 107
+	frame	data/chars/jin2/chuta1.gif
+	offset	29 107
+	frame	data/chars/jin2/chuta2.gif
+	offset	29 107
+	attack	38 43 72 29 9 1 0 0 0 0
+	bbox	16 6 53 81
+	delay	15
+	frame	data/chars/jin2/chuta2.gif
+		
+anim	jumpattack2
+	bbox	7 13 44 50
+	loop	0
+	delay	7
+	offset	24 107
+	frame	data/chars/jin2/chur2.gif
+	attack	42 24 56 49 7 1 0 0 0 0
+	bbox	3 2 41 56
+	offset	25 104
+	delay	15
+	frame	data/chars/jin2/chur1.gif
+		
+anim	pain
+	bbox	22 4 46 101
+	loop	0
+	offset	54 103
+	delay	12
+	frame	data/chars/jin2/pain1.gif
+	bbox	14 26 56 73
+	offset	54 103
+	delay	12
+	frame	data/chars/jin2/pain2.gif
+	bbox	18 4 59 101
+	offset	54 103
+	delay	12
+	frame	data/chars/jin2/pain1.gif
+		
+anim	pain2
+	loop	0
+	offset	42 141
+	delay	45
+	bbox	30 17 54 84
+	offset	42 141
+	frame	data/chars/jin2/pain1.gif
+	offset	42 141
+	frame	data/chars/jin2/pain2.gif
+	offset	42 141
+	frame	data/chars/jin2/pain1.gif
+	offset	42 141
+	frame	data/chars/jin2/pain2.gif
+	offset	42 141
+	frame	data/chars/jin2/pain1.gif
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	28 90
+	frame	data/chars/jin2/lev4.gif
+	offset	29 91
+	delay	10
+	frame	data/chars/jin2/lev3.gif
+		
+anim	run
+	bbox	11 21 89 28
+	delay	12
+	offset	52 87
+	loop	1
+	frame	data/chars/jin2/run2.gif
+		
+anim	select
+	loop	0
+	delay	20
+	offset	30 91
+	frame	data/chars/jin2/idle1.gif
+	offset	29 122
+	frame	data/chars/jin2/lev3.gif
+	offset	62 250
+	sound	data/chars/jin2/win.wav
+	frame	data/chars/jin2/win2.gif
+	offset	62 250
+	frame	data/chars/jin2/win3.gif
+	offset	62 250
+	frame	data/chars/jin2/win1.gif
+		
+anim	shock
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+		
+anim	special
+	sound	data/chars/jin2/bakuf.wav
+	loop	0
+	delay	13
+	offset	27 101
+	frame	data/chars/jin2/bar4.gif
+	blast	0 1 69 112 20 11 0 0 0 0
+	offset	26 101
+	frame	data/chars/jin2/bar1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	26 101
+	frame	data/chars/jin2/bar3.gif
+	blast	0 1 69 112 20 1 0 0 0 0
+	offset	27 101
+	frame	data/chars/jin2/bar2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	26 101
+	frame	data/chars/jin2/bar3.gif
+	blast	0 1 69 112 20 1 0 0 0 0
+	offset	26 101
+	frame	data/chars/jin2/bar1.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	54 103
+	sound	data/chars/jin2.wav
+	frame	data/chars/jin2/pain1.gif
+	offset	54 103
+	frame	data/chars/jin2/pain2.gif
+	offset	46 36
+	frame	data/chars/jin2/fall3.gif
+	offset	28 90
+	frame	data/chars/jin2/lev4.gif
+	offset	29 91
+	delay	10
+	frame	data/chars/jin2/lev3.gif
+		
+anim	walk
+	bbox	6 1 43 100
+	loop	1
+	offset	30 91
+	delay	12
+	frame	data/chars/jin2/walk1.gif
+	offset	30 91
+	frame	data/chars/jin2/walk3.gif
+	offset	28 91
+	frame	data/chars/jin2/walk2.gif
+	offset	30 91
+	frame	data/chars/jin2/walk3.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,20 @@
+name	   Bench
+health	   15
+type	   obstacle
+gfxshadow  1
+icon	   data/chars/misc/bnchicon.gif
+diesound   data/sounds/wood.wav
+
+
+anim idle
+	delay	100
+	offset	52 52
+	bbox	3 -30 106 90
+	frame	data/chars/misc/bench.gif
+
+
+anim fall
+	loop	1
+	delay	100
+	offset	30 98
+	frame	data/chars/misc/bench2.gif

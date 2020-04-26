@@ -1,0 +1,139 @@
+name	B.Jenet
+health	100
+speed	11
+type	enemy
+shadow	3
+icon	data/chars/bjenet/icon.gif
+diesound data/sounds/eek.wav
+
+
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt1.gif
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt2.gif
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt3.gif
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt4.gif
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt5.gif
+remap	data/chars/bjenet/idle01.gif	data/chars/bjenet/alt6.gif
+
+anim idle
+	loop	1
+	offset	29 96
+	bbox	6 8 43 83
+	delay	8
+	frame	data/chars/bjenet/idle01.gif
+	frame	data/chars/bjenet/idle02.gif
+	frame	data/chars/bjenet/idle03.gif
+	frame	data/chars/bjenet/idle04.gif
+	frame	data/chars/bjenet/idle05.gif
+	frame	data/chars/bjenet/idle06.gif
+	frame	data/chars/bjenet/idle07.gif
+	frame	data/chars/bjenet/idle08.gif
+	frame	data/chars/bjenet/idle09.gif
+	frame	data/chars/bjenet/idle10.gif
+	frame	data/chars/bjenet/idle11.gif
+	frame	data/chars/bjenet/idle12.gif
+	frame	data/chars/bjenet/idle13.gif
+	frame	data/chars/bjenet/idle14.gif
+	frame	data/chars/bjenet/idle15.gif
+	frame	data/chars/bjenet/idle16.gif
+
+
+anim walk
+	loop	1
+	offset	32 101
+	bbox	11 11 39 82
+	delay	8
+	frame	data/chars/bjenet/walk01.gif
+	frame	data/chars/bjenet/walk02.gif
+	frame	data/chars/bjenet/walk03.gif
+	frame	data/chars/bjenet/walk04.gif
+	frame	data/chars/bjenet/walk05.gif
+	frame	data/chars/bjenet/walk06.gif
+	frame	data/chars/bjenet/walk07.gif
+	frame	data/chars/bjenet/walk08.gif
+	frame	data/chars/bjenet/walk09.gif
+	frame	data/chars/bjenet/walk10.gif
+	frame	data/chars/bjenet/walk11.gif
+	frame	data/chars/bjenet/walk12.gif
+	frame	data/chars/bjenet/walk13.gif
+	frame	data/chars/bjenet/walk14.gif
+
+ 
+anim pain
+	loop	0
+	delay	8
+	bbox	5 14 41 61
+	offset	27 83
+	frame	data/chars/bjenet/pain1.gif
+	delay   40
+	frame	data/chars/bjenet/pain2.gif
+	delay   11
+	frame	data/chars/bjenet/pain1.gif
+
+anim fall
+	loop	0
+	delay	60
+	offset	43 62
+        attack  0 15 27 47 5 1
+	frame	data/chars/bjenet/fall1.gif
+        offset  40 58
+        delay   20
+	attack	0 37 32 27 5 1
+	frame	data/chars/bjenet/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/bjenet/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	48 81
+	delay	9
+	frame	data/chars/bjenet/rise1.gif
+	frame	data/chars/bjenet/rise2.gif
+	frame	data/chars/bjenet/rise3.gif
+        delay   6
+	frame	data/chars/bjenet/rise4.gif
+
+
+
+anim attack1
+	range	0 41
+	loop	0
+	delay	8
+	bbox	31 7 33 84
+	offset	46 97
+	frame	data/chars/bjenet/atk101.gif
+	frame	data/chars/bjenet/atk102.gif
+        attack  64 10 27 20 12
+	frame	data/chars/bjenet/atk103.gif
+	frame	data/chars/bjenet/atk104.gif
+        delay   15
+	attack  0 0 0 0 0
+	frame	data/chars/bjenet/atk105.gif
+	delay	8
+	frame	data/chars/bjenet/atk101.gif
+	frame	data/chars/bjenet/atk102.gif
+        attack  64 10 27 20 12
+	frame	data/chars/bjenet/atk103.gif
+	frame	data/chars/bjenet/atk104.gif
+        delay   15
+	attack  0 0 0 0 0
+	frame	data/chars/bjenet/atk105.gif
+	delay	6
+	bbox	0 6 43 85
+	frame	data/chars/bjenet/atk106.gif
+	frame	data/chars/bjenet/atk107.gif
+	frame	data/chars/bjenet/atk108.gif
+	attack	46 3 61 34 18 1
+	frame	data/chars/bjenet/atk109.gif
+	frame	data/chars/bjenet/atk110.gif
+	attack	0 0 0 0
+	bbox	0 6 84 85
+	frame	data/chars/bjenet/atk111.gif
+	bbox	19 6 32 84
+	frame	data/chars/bjenet/atk112.gif
+	bbox	29 6 34 83
+	frame	data/chars/bjenet/atk113.gif
+
+
+

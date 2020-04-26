@@ -1,0 +1,27 @@
+name	     ShipCannon
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+antigravity 100
+
+
+anim	spawn
+	loop	1
+	delay	7
+	offset	12 21
+	frame	data/chars/Ruby/e1.gif
+	frame	data/chars/Ruby/e2.gif
+	@cmd	spawn01 "rubycannon" 42 9 0
+	frame	data/chars/Ruby/e3.gif
+	frame	data/chars/Ruby/e4.gif
+	frame	data/chars/Ruby/e5.gif
+	frame	data/chars/Ruby/e6.gif
+	frame	data/chars/Ruby/e6.gif
+	frame	data/chars/Ruby/e6.gif
+	frame	data/chars/Ruby/e6.gif
+	@cmd	suicide()
+	frame	data/chars/Ruby/e6.gif
+		
+#|edited by openBor Stats v 0.49
+		

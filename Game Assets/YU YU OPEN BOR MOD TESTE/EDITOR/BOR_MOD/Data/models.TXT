@@ -1,0 +1,312 @@
+#YU YU HAKUSHO #
+
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+
+# Options
+nolost 			0
+versusdamage 		1
+spdirection  		1 0 1 0      # posição dos rostos dos lutadores na barra de life #
+autoland  			2
+colourselect 		1
+ajspecial 			1
+maxattacks			50
+maxattacktypes		50
+maxfreespecials		50
+Nodropen
+Nocheats 1
+
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+load	Flash2		data/chars/misc/flash2.txt
+load	Flash3		data/chars/misc/flash3.txt
+load	Flash4		data/chars/misc/flash4.txt
+load	Flash5		data/chars/misc/flash5.txt
+load	Flash8		data/chars/misc/flash8.txt
+load    wham            data/chars/misc/wham.txt
+load	elec1		data/chars/suzako/elec1.txt
+load	elec2		data/chars/suzako/elec2.txt
+
+#Efeitos Golpes Adicionais#
+load	po	        data/chars/misc/po.txt
+load	dust	        data/chars/misc/dust.txt
+
+#Armadilhas#
+know	ptr	        data/chars/misc/ptr.txt
+know	spike	        data/chars/misc/spike.txt
+know	fir	        data/chars/misc/fir.txt
+know	mine	        data/chars/misc/mine.txt
+know	mine!	        data/chars/misc/minexp.txt
+know	grenade!        data/chars/misc/specfire.txt
+know	SBFiB           data/chars/misc/SBFiB.txt
+know	hammer	        data/chars/misc/hammer.txt
+know	axe	        data/chars/misc/axe.txt
+know	ped	        data/chars/misc/ped.txt
+know	ped2	        data/chars/misc/ped2.txt
+
+#Clima Efeitos#
+know	rain	        data/chars/misc/rain.txt  # Chuva #
+know	rain2	        data/chars/misc/rain2/rain2.txt  # Chuva2 #
+know	foglia	        data/chars/misc/foglia.txt  # Vento Folhas #
+know	fog             data/chars/misc/fog.txt  # Nevoa #
+know	neve            data/chars/misc/neve.txt  # Neve #
+know	drops           data/chars/misc/drops.txt  # gotas #
+know	trovao          data/bgs/trovao/trovao.txt  # raios #
+
+#Pessoas/Correndo/Veiculos/Outros#
+
+know   female      data/chars/villager/female/female.txt
+know   male        data/chars/villager/male/male.txt
+
+
+
+# Players must also be loaded.
+load    Yusuke          data/chars/yusuke/yusuke.txt
+load    Leigan          data/chars/yusuke/leigan.txt
+load    Hiei            data/chars/hiei/hiei.txt
+load    Cnegras         data/chars/hiei/cnegras.txt
+load    Kurama          data/chars/kurama/kurama.txt
+load    Rose            data/chars/kurama/rose.txt
+load    Superl          data/chars/yusuke/superl.txt
+load    Kuwabara        data/chars/kuwabara/kuwabara.txt
+load    Reikenfly       data/chars/kuwabara/reikenfly.txt
+know    Genkai          data/chars/genkai/genkai.txt
+know    Leigan2         data/chars/genkai/leigan2.txt
+know    Leigan3         data/chars/genkai/leigan3.txt
+know    jin2            data/chars/jin2/jin2.txt
+know    cyclo           data/chars/jin2/cyclo.txt
+know    chu2            data/chars/chu2/chu2.txt
+know    alqui2          data/chars/chu2/alqui2.txt
+know    alqui3          data/chars/chu2/alqui3.txt
+
+
+
+# Items and other objects can be loaded when needed.
+
+know	Apple		data/chars/misc/apple.txt
+know	Meat		data/chars/misc/meat.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+know	Gold		data/chars/misc/gold.txt
+know	Time		data/chars/misc/time.txt
+know	cola		data/chars/misc/cola.txt
+
+
+# Enfeites/Decorações Inanimados #
+know    tesouro         data/chars/misc/tesouro.txt
+know	fogo	        data/chars/misc/fogo.txt
+know	fogao	        data/chars/misc/fogao.txt
+know    tv              data/bgs/yukina/tv.txt
+know    telao           data/bgs/suzako/telao.txt
+know	carro	        data/chars/misc/carro.txt
+know	car2	        data/chars/misc/car2.txt
+know    yybr            data/chars/misc/yybr.txt
+know    heli2           data/chars/heli2/heli2.txt
+know    agua            data/bgs/floresta3/agua.txt
+know    agua2           data/bgs/floresta3/agua2.txt
+know    onda            data/bgs/pier2/onda.txt
+know    onda2           data/bgs/pier2/onda2.txt
+know    onda3           data/bgs/pier2/onda3.txt
+know    sunny           data/chars/misc/sunny.txt
+
+# Pessoas/Anim Extras #
+know	keiko		data/chars/misc/keiko.txt
+know	botan		data/chars/misc/botan.txt
+know	anoes		data/chars/misc/anoes.txt
+know	sakura	        data/chars/misc/sakura.txt
+know    koto            data/chars/misc/koto.txt
+know    juli            data/chars/misc/juli.txt
+know	mask		data/chars/misc/mask.txt
+know	quad		data/chars/misc/quad.txt
+know	garota		data/chars/misc/garota.txt
+know	vegeta		data/chars/misc/vegeta.txt
+know	goku		data/chars/misc/goku.txt
+know	gohan		data/chars/misc/gohan.txt
+know	chun		data/chars/misc/chun.txt
+know	naruto		data/chars/misc/naruto.txt
+know	lu		data/chars/misc/lu.txt
+know	car2		data/chars/misc/car2.txt
+know	carro2		data/chars/misc/carro2.txt
+know	bi		data/chars/misc/bi.txt
+know	girls		data/chars/misc/girls.txt
+know	gk		data/chars/misc/gk.txt
+know	guy		data/chars/misc/guy.txt
+know	saint		data/chars/misc/saint.txt
+know	ryu		data/chars/misc/ryu.txt
+know    ichi            data/chars/misc/ichi.txt
+know    inu             data/chars/misc/inu.txt
+know    an              data/chars/misc/an.txt
+know    sail            data/chars/misc/sail.txt
+know    piu             data/chars/misc/piu.txt
+know    mes             data/bgs/templo/mes.txt
+know    hector          data/chars/misc/hector.txt
+
+
+# Animais e outros #
+know    morcego         data/chars/misc/morcego.txt
+know    orca            data/chars/misc/orca.txt
+know    drag            data/chars/misc/drag.txt
+know    macac           data/chars/misc/macac.txt
+know    torcida         data/bgs/arena2/torcida.txt
+know    torcida2        data/bgs/arena2/torcida2.txt
+know    muguro          data/chars/misc/muguro.txt
+know    shark           data/chars/misc/shark.txt
+know	canc		data/chars/misc/canc.txt
+know	delfi		data/chars/misc/delfi.txt
+
+#Textos#
+know    btext           data/chars/misc/btext.txt
+know    btext2          data/chars/misc/btext2.txt
+know    very            data/chars/misc/very.txt
+
+#Bonus#
+know    bonus           data/chars/misc/bonus.txt
+know    bonus2          data/chars/misc/bonus2.txt
+
+# Obstacles (item containers)
+know	barricada	data/chars/misc/barricada.txt
+know	Box		data/chars/misc/box.txt
+know	Crate		data/chars/misc/crate.txt
+know	pedra2		data/chars/misc/pedra2.txt
+know	Chair		data/chars/misc/chair.txt
+know	Fence		data/chars/misc/fence.txt
+know	Drum		data/chars/misc/drum.txt
+know	Trolly		data/chars/misc/trolly.txt
+know	gt		data/chars/misc/gt.txt
+
+
+#Moveis e Quebraveis#
+
+know	sedia	        data/chars/misc/sedia.txt
+know	sedia2	        data/chars/misc/sedia2.txt
+know	tandc           data/chars/misc/tandc.txt
+know	vaso            data/chars/misc/vaso.txt
+know	divano          data/chars/misc/divano.txt
+know	pianta          data/chars/misc/pianta.txt
+know	torch           data/chars/misc/torch.txt
+know	caut            data/chars/misc/caut.txt
+know	armor           data/chars/misc/armor.txt
+know	phone           data/chars/misc/phone.txt
+know	trash2          data/chars/misc/trash2.txt
+know	Trash		data/chars/misc/trash.txt
+know	Table		data/chars/misc/table.txt
+know	mobile		data/chars/misc/mobile.txt
+know	barrel		data/chars/misc/barrel.txt
+know	bench		data/chars/misc/bench.txt
+know	carrao	        data/chars/misc/carrao.txt
+know	bzdrum	        data/chars/misc/bzdrum.txt
+know	bzdrum2	        data/chars/misc/bzdrum2.txt
+
+
+
+# Inimigos Comuns #
+
+know    Faces           data/chars/faces/faces.txt
+know    Genkai          data/chars/genkai/genkai.txt
+know    Leigan2         data/chars/genkai/leigan2.txt
+know    Leigan3         data/chars/genkai/leigan3.txt
+know	pedra		data/chars/armas/pedra.txt
+know	K'		data/chars/k/k.txt
+know	biker-K'	data/chars/biker-k/biker-k.txt
+know	Yashiro		data/chars/yashiro/yashiro.txt
+know	Ralf		data/chars/ralf/ralf.txt
+know	Shermie		data/chars/shermie/shermie.txt
+know	Eiji		data/chars/eiji/eiji.txt
+know	Joe		data/chars/joe/joe.txt
+know	Yamazaki	data/chars/yamazaki/yamazaki.txt
+know	Angel		data/chars/angel/angel.txt
+know	Magia		data/chars/angel/magia.txt
+know	Billy		data/chars/billy/billy.txt
+know	Jhun		data/chars/jhun/jhun.txt
+know	Mrbig		data/chars/mrbig/mrbig.txt
+know	Robert		data/chars/robert/robert.txt
+know    tigre           data/chars/tigre/tigre.txt
+know    carol           data/chars/carol/carol.txt
+know    sasq            data/chars/sasq/sasq.txt
+know    war             data/chars/war/war.txt
+know    wingnut         data/chars/wingnut/wingnut.txt
+know    armagon         data/chars/armagon/armagon.txt
+know    zedd            data/chars/zedd/zedd.txt
+know    goldar          data/chars/goldar/goldar.txt
+know    silvh           data/chars/silvh/silvh.txt
+know    wave            data/chars/silvh/wave.txt
+know    lipsy           data/chars/lipsy/lipsy.txt
+know    bat             data/chars/bat/bat.txt
+know    demon           data/chars/demon/demon.txt
+know    crow            data/chars/crow/crow.txt
+know    planta          data/chars/planta/planta.txt
+know    slash           data/chars/slash/slash.txt
+know    green           data/chars/green/green.txt
+know    ghgob           data/chars/ghgob/ghgob.txt
+know    zeru            data/chars/zeru/zeru.txt
+know    tor             data/chars/zeru/tor.txt
+know    itig            data/chars/itig/itig.txt
+know    toya            data/chars/toya/toya.txt
+know    ice             data/chars/toya/ice.txt
+know    suzuki          data/chars/suzuki/suzuki.txt
+know    pt              data/chars/suzuki/pt.txt
+know	snake		data/chars/misc/snake.txt
+
+
+# Mestres #
+
+know    Suzako          data/chars/suzako/suzako.txt
+know    Frecha          data/chars/suzako/frecha.txt
+know    Toguro1         data/chars/toguro1/toguro1.txt
+know    Toguro2         data/chars/toguro2/toguro2.txt
+know    Toguro3         data/chars/toguro3/toguro3.txt
+know    dedo            data/chars/toguro3/dedo.txt
+know    wav             data/chars/toguro3/wav.txt
+know	Arremer	        data/chars/arremer/arremer.txt
+know    Fire            data/chars/arremer/fire.txt
+know	Heavy		data/chars/heavy/heavy.txt
+know    Caveira         data/chars/heavy/caveira.txt
+know    Chu             data/chars/chu/chu.txt
+know    Alqui           data/chars/chu/alqui.txt
+know    Jin             data/chars/jin/jin.txt
+know    Shis            data/chars/shis/shis.txt
+know    Caveira2        data/chars/shis/caveira2.txt
+know    bui             data/chars/bui/bui.txt
+know    mac             data/chars/bui/mac.txt
+know    kazu            data/chars/kazu/kazu.txt
+know    bomba           data/chars/kazu/bomba.txt
+know    anitg           data/chars/anitg/anitg.txt
+
+#Treino Genkai  Chars Exclusivos#
+
+know    raptor         data/chars/trc/raptor/raptor.txt
+know    hunter         data/chars/trc/hunter/hunter.txt
+know    hunter2        data/chars/trc/hunter/hunter2.txt
+know    troll          data/chars/troll/troll.txt
+know    trock          data/chars/troll/trock.txt
+
+#Chars do Ringue#
+
+know   letherhd         data/chars/rch/letherhd/letherhd.txt
+know   rak              data/chars/rch/letherhd/rak.txt
+know   ltknf            data/chars/rch/letherhd/ltknf.txt
+
+
+
+# Not a real enemy... ;)
+know	Ramon		data/chars/ramon/ramon.txt
+
+# Other stuff
+know    fum             data/chars/misc/fum.txt
+know    ring            data/chars/misc/ring.txt
+know    lines           data/chars/misc/lines.txt
+know    crowd           data/chars/misc/crowd.txt
+know	Knife		data/chars/misc/knife.txt
+know	Knife2		data/chars/misc/knife2.txt
+know	Shot		data/chars/misc/shot.txt
+know	Star		data/chars/misc/star.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	Furnace		data/chars/misc/furnace.txt
+know	Crab		data/chars/crab/crab.txt
+know	Lobster		data/chars/Lobster/Lobster.txt

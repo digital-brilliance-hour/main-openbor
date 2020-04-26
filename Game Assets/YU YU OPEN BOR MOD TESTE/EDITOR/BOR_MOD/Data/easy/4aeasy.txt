@@ -1,0 +1,387 @@
+# Praia #
+music		data/music/hieimix.bor 1 
+
+background	data/bgs/pier/fundo2.gif
+water		data/bgs/pier/agua.gif		
+
+panel		data/bgs/pier/fundo.gif
+
+frontpanel      data/bgs/pier/front.gif
+
+
+order	a
+
+
+# ---------------------
+
+#ANIM#
+
+spawn	heli2	
+coords	140 155
+at	0
+
+
+spawn	heli2	
+coords	2800 155
+at	0
+
+spawn	shark	
+coords	90 128
+at	0
+
+
+
+spawn	canc	
+coords	140 140
+at	0
+
+spawn	canc	
+coords	340 140
+at	0
+
+
+spawn	canc	
+coords	580 140
+at	0
+
+
+spawn	canc	
+coords	900 140
+at	0
+
+
+spawn	canc	
+coords	1100 140
+at	0
+
+
+spawn	canc	
+coords	1400 140
+at	0
+
+
+spawn	canc	
+coords	1700 140
+at	0
+
+
+spawn	canc	
+coords	2000 140
+at	0
+
+
+spawn	canc	
+coords	2300 140
+at	0
+
+
+;-----------------------
+
+
+group	100 100
+at	0
+
+spawn	wingnut
+health	70
+map	1
+coords	-30 200
+at	20
+
+spawn	war
+health	70
+map	2
+coords	-30 160
+at	20
+
+spawn	armagon
+health	60
+coords	380 230
+at	22
+
+
+spawn	goldar
+health	70
+@map	1
+coords	380 170
+at	350
+
+
+spawn	lipsy
+health	60
+map	3
+coords	-30 190
+at	350
+
+
+spawn	Angel
+health	100
+map	5
+coords	384 180
+at	680
+
+spawn	shermie
+alias	Devil
+health	100
+map	1
+coords	380 220
+at	680
+
+
+spawn	K'
+health	60
+coords	-30 190
+at	680
+
+
+wait
+at	950
+
+group	3 3
+at	950
+
+
+spawn	lipsy
+health	60
+map	3
+coords	370 170
+at	950
+
+spawn	war
+health	60
+coords	-30 220
+at	950
+
+spawn	zedd
+health	70
+map	2
+coords	370 190
+at	950
+
+group	1 3
+at	950
+
+spawn	K'
+health	70
+coords	370 190
+at	950
+
+spawn	K'
+health	70
+map	1
+coords	370 210
+at	950
+
+spawn	shark	
+coords	90 128
+at	950
+
+
+spawn	Yashiro
+health	70
+map	2
+coords	-30 165
+at	950
+
+
+#---------------
+
+group	100 100
+at	1000
+
+spawn	shermie
+health	90
+map	2
+coords	370 170
+at	1050
+
+spawn	lipsy
+health	90
+map	3
+coords	-30 200
+at	1050
+
+
+spawn	joe
+health	80
+map	2
+coords	370 230
+at	1400
+
+
+spawn	angel
+health	60
+map	2
+coords	-30 200
+at	1400
+
+
+spawn	Yashiro
+health	80
+map	2
+coords	370 160
+at	1700
+
+
+spawn	shark	
+coords	90 128
+at	1680
+
+
+spawn	Ralf
+health	80
+map	3
+coords	-30 190
+at	1700
+
+spawn	box
+flip	1
+item	meat
+coords	380 161
+at	1760
+
+spawn	crate
+flip	1
+2pitem	meat
+coords	380 160
+at	1812
+
+
+wait
+at	1900
+
+group	1 3
+at	1900
+
+spawn	ghgob
+health	80
+map	1
+coords	-30 195
+at	1900
+
+spawn	Ralf
+health	60
+map	2
+coords	-30 160
+at	1900
+
+spawn	Ralf
+health	60
+map	1
+coords	-30 230
+at	1900
+
+spawn	sasq
+health	60
+map	1
+coords	370 195
+at	1900
+
+spawn	Biker-K'
+health	10
+coords	420 225
+at	1900
+
+spawn	Biker-K'
+health	10
+coords	425 165
+at	1900
+
+#---------------
+
+group	100 100
+at	1950
+
+
+spawn	Ralf
+health	70
+coords	370 230
+at	2000
+
+spawn	lipsy
+health	60
+map	1
+coords	-30 165
+at	2000
+
+spawn	shark	
+coords	90 128
+at	2200
+
+
+spawn	Jhun
+health	90
+coords	380 165
+at	2400
+
+spawn	Yashiro
+health	75
+coords	380 220
+at	2400
+
+spawn	crate
+flip	1
+item	money
+coords	380 161
+at	2410
+
+
+wait
+at	2700
+
+group	1 3
+at	2700
+
+spawn	Angel
+health	80
+coords	380 220
+at	2700
+
+spawn	Angel
+map	1
+health	80
+coords	-30 170
+at	2700
+
+spawn	armagon
+map	1
+health	60
+coords	380 230
+at	2700
+
+#----------------
+
+group	100 100
+at	2710
+
+spawn	goldar
+health	60
+coords	380 160
+at	2750
+
+spawn	zedd
+health	60
+coords	385 200
+at	2750
+
+spawn	lipsy
+map	3
+health	80
+coords	385 230
+at	2750
+
+
+spawn	crate
+flip	1
+item	Meat
+coords	380 230
+at	2800
+
+spawn	crate
+flip	1
+2pitem	meat
+coords	380 229
+at	2840
+
+
+
+

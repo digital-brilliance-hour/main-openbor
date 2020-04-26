@@ -1,0 +1,431 @@
+name	       Sentinel
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+flash	qflash
+candamage    enemy obstacle
+atchain	       1 2 3 4
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts2/toad.c
+
+com	A2 freespecial
+com	A4 freespecial3
+com	A3 freespecial4
+
+
+
+icon           data/chars/Sentinel/icon.gif
+
+anim	attack1
+	bbox	21 5 94 139
+	loop	0
+	delay	6
+	offset	48 144
+	hitfx	data/Chars/Rogue/hit.wav
+	hitflash	qFlash2
+	frame	data/Chars/Sentinel/bttack1.gif
+	attack	69 8 203 119 7
+	offset	48 143
+	frame	data/Chars/Sentinel/bttack2.gif
+	frame	data/Chars/Sentinel/bttack3.gif
+	frame	data/Chars/Sentinel/bttack4.gif
+	frame	data/Chars/Sentinel/bttack5.gif
+		
+anim	attack2
+	bbox	33 11 67 140
+	loop	0
+	delay	4
+	offset	55 153
+	hitfx	data/Chars/Rogue/hit.wav
+	frame	data/Chars/Sentinel/cttack1.gif
+	offset	53 171
+	hitflash	qFlash2
+	frame	data/Chars/Sentinel/cttack2.gif
+	attack	58 34 166 85 10
+	offset	53 170
+	frame	data/Chars/Sentinel/cttack3.gif
+		
+anim	attack3
+	bbox	24 5 98 97
+	loop	0
+	delay	6
+	offset	77 150
+	hitflash	qFlash2
+	hitfx	data/Chars/Rogue/hit.wav
+	cancel	0 4 0 D freespecial5
+	frame	data/Chars/Sentinel/ettack1.gif
+	attack	153 31 185 78 8
+	dropv	2 8 0
+	offset	112 170
+	@cmd	anti2
+	frame	data/Chars/Sentinel/ettack2.gif
+	attack	134 33 197 80 8
+	dropv	2 8 0
+	offset	99 170
+	@cmd	anti2
+	frame	data/Chars/Sentinel/ettack3.gif
+	attack	114 52 225 68 8
+	dropv	2 8 0
+	offset	111 171
+	@cmd	anti2
+	frame	data/Chars/Sentinel/ettack4.gif
+	offset	76 147
+	frame	data/Chars/Sentinel/ettack5.gif
+	attack	119 38 220 79 8
+	dropv	2 8 0
+	offset	111 170
+	@cmd	anti2
+	frame	data/Chars/Sentinel/ettack6.gif
+		
+anim	attack4
+	bbox	20 4 40 156
+	loop	0
+	delay	6
+	offset	45 168
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Sentinel/dttack1.gif
+	bbox	14 61 83 78
+	offset	81 209
+	@cmd	spawn01 "sentd" 50 -20 0
+	frame	data/Chars/Sentinel/dttack2.gif
+	bbox	17 43 65 85
+	offset	72 198
+	@cmd	spawn01 "sentd" 94 40 0
+	frame	data/Chars/Sentinel/dttack3.gif
+	bbox	17 57 60 82
+	offset	74 202
+	@cmd	spawn01 "sentd" 118 68 0
+	frame	data/Chars/Sentinel/dttack4.gif
+		
+anim	fall
+	loop	0
+	offset	92 170
+	delay	25
+	frame	data/Chars/Sentinel/fall1.gif
+	offset	107 66
+	frame	data/Chars/Sentinel/fall2.gif
+	offset	96 65
+	frame	data/Chars/Sentinel/fall3.gif
+		
+anim	freespecial
+	blast	83 76 162 135 16 0 0 35
+	dropv	2 0 0
+	bbox	71 12 76 70
+	loop	0
+	offset	108 195
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Sentinel/anew1.gif
+	blast	100 83 147 119 16 0 0 35
+	dropv	2 0 0
+	frame	data/Chars/Sentinel/anew2.gif
+	blast	101 84 146 124 16 0 0 35
+	dropv	2 0 0
+	frame	data/Chars/Sentinel/anew3.gif
+	blast	95 86 150 121 16 0 0 35
+	dropv	2 0 0
+	offset	108 196
+	frame	data/Chars/Sentinel/anew4.gif
+	blast	100 89 148 127 16 0 0 35
+	dropv	2 0 0
+	offset	108 198
+	frame	data/Chars/Sentinel/anew5.gif
+	blast	98 79 150 128 16 0 0 35
+	dropv	2 0 0
+	offset	108 196
+	frame	data/Chars/Sentinel/anew6.gif
+	blast	99 72 143 130 16 0 0 35
+	dropv	2 0 0
+	offset	108 194
+	frame	data/Chars/Sentinel/anew7.gif
+		
+anim	freespecial2
+	loop	0
+	offset	129 138
+	delay	3
+	hitfx	data/sounds/bukk.wav
+	move	45
+	frame	data/Chars/Sentinel/bnew1.gif
+	offset	99 130
+	frame	data/Chars/Sentinel/bnew2.gif
+		
+anim	freespecial3
+	bbox	0 0 0 0
+	loop	0
+	offset	62 155
+	delay	16
+	hitfx	data/sounds/bukk.wav
+	@cmd	spawn01 "senta" -41 84 0
+	frame	data/Chars/Sentinel/cnew1.gif
+	@cmd	spawn01 "senta" -41 54 0
+	frame	data/Chars/Sentinel/cnew1.gif
+	@cmd	spawn01 "senta" -41 24 0
+	frame	data/Chars/Sentinel/cnew1.gif
+	delay	3
+	frame	data/Chars/Sentinel/cnew1.gif
+		
+anim	freespecial4
+	bbox	9 7 83 140
+	loop	0
+	offset	44 148
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	flash
+	frame	data/Chars/Sentinel/dnew1.gif
+	bbox	32 24 78 127
+	offset	61 157
+	frame	data/Chars/Sentinel/dnew2.gif
+	frame	data/Chars/Sentinel/dnew3.gif
+	@cmd	spawn01 "sentc" 45 86 0
+	frame	data/Chars/Sentinel/dnew4.gif
+	frame	data/Chars/Sentinel/dnew5.gif
+		
+anim	get
+	offset	44 150
+	loop	0
+	delay	6
+	frame	data/Chars/Sentinel/idle1.gif
+		
+anim	grab
+	bbox	40 9 88 96
+	loop	0
+	offset	64 108
+	frame	data/Chars/Sentinel/ga5.gif
+		
+anim	grabattack
+	loop	0
+	offset	131 115
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	@cmd	slamstart2
+	@cmd	position 1 -90 27 -1 1
+	frame	data/Chars/Sentinel/ga1.gif
+	bbox	0 0 0 0
+	offset	113 138
+	@cmd	position 1 -87 68 -1 1
+	frame	data/Chars/Sentinel/ga2.gif
+	offset	71 149
+	@cmd	position 1 7 -14 -1 1
+	frame	data/Chars/Sentinel/ga3.gif
+	offset	71 133
+	@cmd	position 1 7 -14 -1 1
+	frame	data/Chars/Sentinel/ga4.gif
+	offset	71 109
+	@cmd	depost 1
+	@cmd	throw 30 1 0 -5 0 1
+	@cmd	clearL
+	frame	data/Chars/Sentinel/ga5.gif
+	frame	data/Chars/Sentinel/ga6.gif
+	frame	data/Chars/Sentinel/ga7.gif
+	frame	data/Chars/Sentinel/ga8.gif
+		
+anim	idle
+	offset	44 150
+	loop	1
+	delay	6
+	frame	data/Chars/Sentinel/idle1.gif
+	offset	44 149
+	frame	data/Chars/Sentinel/idle2.gif
+	frame	data/Chars/Sentinel/idle3.gif
+	frame	data/Chars/Sentinel/idle4.gif
+	offset	44 150
+	frame	data/Chars/Sentinel/idle5.gif
+	offset	44 151
+	frame	data/Chars/Sentinel/idle6.gif
+	frame	data/Chars/Sentinel/idle7.gif
+	frame	data/Chars/Sentinel/idle8.gif
+	frame	data/Chars/Sentinel/idle9.gif
+	frame	data/Chars/Sentinel/idle10.gif
+	frame	data/Chars/Sentinel/idle11.gif
+	frame	data/Chars/Sentinel/idle12.gif
+	frame	data/Chars/Sentinel/idle13.gif
+	frame	data/Chars/Sentinel/idle14.gif
+	frame	data/Chars/Sentinel/idle15.gif
+	frame	data/Chars/Sentinel/idle16.gif
+	offset	44 150
+	frame	data/Chars/Sentinel/idle17.gif
+	offset	44 149
+	frame	data/Chars/Sentinel/idle18.gif
+		
+anim	jump
+	loop	0
+	offset	79 164
+	delay	6
+	frame	data/Chars/Sentinel/jump1.gif
+	offset	73 164
+	frame	data/Chars/Sentinel/jump2.gif
+	offset	79 164
+	frame	data/Chars/Sentinel/jump3.gif
+	offset	73 164
+	frame	data/Chars/Sentinel/jump4.gif
+		
+anim	jumpattack
+	bbox	58 22 64 113
+	loop	0
+	offset	84 137
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Sentinel/ja1.gif
+	blast	104 6 171 183 16 0 0 45
+	bbox	57 55 73 113
+	offset	83 162
+	frame	data/Chars/Sentinel/ja2.gif
+	blast	128 31 134 104 16 0 0 45
+	bbox	27 21 82 106
+	offset	57 133
+	frame	data/Chars/Sentinel/ja3.gif
+	blast	130 17 160 135 16 0 0 45
+	offset	84 120
+	frame	data/Chars/Sentinel/ja4.gif
+	offset	57 120
+	frame	data/Chars/Sentinel/ja5.gif
+		
+anim	jumpattack2
+	bbox	64 2 46 93
+	loop	0
+	offset	64 142
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	frame	data/Chars/Sentinel/bja1.gif
+	offset	92 161
+	frame	data/Chars/Sentinel/bja2.gif
+	blast	111 47 113 126 16 0 0 45
+	dropv	2.5 0 0
+	bbox	100 28 39 59
+	offset	97 161
+	frame	data/Chars/Sentinel/bja3.gif
+	blast	80 62 145 123 16 0 0 45
+	dropv	2.5 0 0
+	offset	88 163
+	frame	data/Chars/Sentinel/bja4.gif
+	offset	104 158
+	frame	data/Chars/Sentinel/bja5.gif
+	offset	91 158
+	frame	data/Chars/Sentinel/bja6.gif
+		
+anim	pain
+	bbox	6 5 118 154
+	loop	0
+	offset	63 161
+	delay	6
+	frame	data/chars/Sentinel/pain.gif
+		
+anim	respawn
+	offset	44 150
+	loop	0
+	delay	6
+	frame	data/Chars/Sentinel/idle1.gif
+		
+anim	rise
+	loop	0
+	offset	114 59
+	delay	6
+	frame	data/chars/Sentinel/rise1.gif
+	offset	117 62
+	frame	data/chars/Sentinel/rise2.gif
+	offset	113 163
+	frame	data/chars/Sentinel/rise3.gif
+	offset	5 160
+	frame	data/chars/Sentinel/rise4.gif
+	offset	5 158
+	frame	data/chars/Sentinel/rise5.gif
+		
+anim	run
+	bbox	48 7 92 104
+	loop	1
+	delay	6
+	offset	77 139
+	frame	data/Chars/Sentinel/run1.gif
+	bbox	4 13 91 82
+	offset	43 139
+	frame	data/Chars/Sentinel/run2.gif
+	offset	76 140
+	frame	data/Chars/Sentinel/run3.gif
+	offset	40 140
+	frame	data/Chars/Sentinel/run4.gif
+		
+anim	spawn
+	offset	44 150
+	loop	0
+	delay	8
+	spawnframe	1 0 0 0
+	subentity	Cable2
+	frame	data/Chars/Sentinel/idle1.gif
+	frame	data/Chars/Sentinel/idle1.gif
+		
+anim	special
+	loop	0
+	offset	87 160
+	delay	6
+	hitfx	data/sounds/bukk.wav
+	hitflash	electo
+	frame	data/Chars/Sentinel/s1.gif
+	blast	2 34 182 90 17 0 0 45
+	offset	88 160
+	frame	data/Chars/Sentinel/s2.gif
+	offset	88 160
+	blast	0 37 184 71 17 0 0 45
+	frame	data/Chars/Sentinel/s3.gif
+	shock	1 38 194 86 17 0 0 45
+	offset	94 159
+	frame	data/Chars/Sentinel/s4.gif
+	blast	3 39 184 83 17 0 0 45
+	offset	89 160
+	frame	data/Chars/Sentinel/s5.gif
+	blast	1 41 197 83 17 0 0 45
+	frame	data/Chars/Sentinel/s6.gif
+	offset	87 163
+	frame	data/Chars/Sentinel/s7.gif
+		
+anim	walk
+	bbox	17 4 115 142
+	loop	1
+	delay	6
+	offset	64 146
+	frame	data/Chars/Sentinel/walk1.gif
+	offset	68 146
+	frame	data/Chars/Sentinel/walk2.gif
+	offset	75 151
+	frame	data/Chars/Sentinel/walk3.gif
+	offset	75 146
+	frame	data/Chars/Sentinel/walk4.gif
+	offset	75 150
+	frame	data/Chars/Sentinel/walk5.gif
+	offset	75 151
+	frame	data/Chars/Sentinel/walk6.gif
+	offset	77 149
+	frame	data/Chars/Sentinel/walk7.gif
+	offset	58 157
+	bbox	7 4 112 148
+	frame	data/Chars/Sentinel/walk8.gif
+	frame	data/Chars/Sentinel/walk9.gif
+	offset	64 155
+	frame	data/Chars/Sentinel/walk10.gif
+	offset	64 153
+	frame	data/Chars/Sentinel/walk11.gif
+	offset	64 151
+	frame	data/Chars/Sentinel/walk12.gif
+	offset	64 145
+	bbox	18 5 104 135
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/Chars/Sentinel/walk13.gif
+	offset	64 151
+	frame	data/Chars/Sentinel/walk14.gif
+	frame	data/Chars/Sentinel/walk15.gif
+	offset	64 149
+	frame	data/Chars/Sentinel/walk16.gif
+	frame	data/Chars/Sentinel/walk17.gif
+	frame	data/Chars/Sentinel/walk18.gif
+		
+#|edited by openBor Stats v 0.50
+		

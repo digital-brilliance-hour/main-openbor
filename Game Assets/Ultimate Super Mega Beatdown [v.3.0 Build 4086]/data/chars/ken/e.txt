@@ -1,0 +1,28 @@
+name	     Kene
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/script.c
+alpha           1
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	55 54
+	frame	data/chars/Ken/e1.gif
+	offset	58 57
+	frame	data/chars/Ken/e2.gif
+	offset	62 60
+	frame	data/chars/Ken/e3.gif
+	offset	65 65
+	frame	data/chars/Ken/e4.gif
+	offset	68 67
+	frame	data/chars/Ken/e5.gif
+	offset	72 74
+	frame	data/chars/Ken/e6.gif
+	@cmd	suicide()
+	frame	data/chars/Ken/e6.gif
+		
+#|edited by openBor Stats v 0.51
+		

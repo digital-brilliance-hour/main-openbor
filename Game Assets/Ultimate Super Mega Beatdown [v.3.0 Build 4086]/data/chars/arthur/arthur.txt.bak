@@ -1,0 +1,296 @@
+name	       Arthur
+health            1000
+mp	       500
+speed	       9
+type	       player
+shadow	       3
+makeinv        2
+running        30  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 1 2 3 
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+flash	RBlood
+
+load	ASpear
+knife	ASpear
+load	AAxe
+load	AFroggy
+
+com	D F A freespecial
+com	D U A freespecial2
+
+icon           data/chars/Arthur/Arthur90000000.gif
+
+anim waiting
+        	loop	1
+	delay	6
+	offset	75 129
+		bbox  0
+	frame	data/chars/Arthur/Arthur01910000.gif
+
+anim select
+	loop	0
+        	delay  	9
+	offset	138 163
+	frame	data/chars/Arthur/Arthur01910001.gif
+	frame	data/chars/Arthur/Arthur01910002.gif
+	frame	data/chars/Arthur/Arthur01910003.gif
+	frame	data/chars/Arthur/Arthur01910004.gif
+	frame	data/chars/Arthur/Arthur01910005.gif
+	frame	data/chars/Arthur/Arthur01910006.gif
+	frame	data/chars/Arthur/Arthur01910007.gif
+	frame	data/chars/Arthur/Arthur01910008.gif
+	frame	data/chars/Arthur/Arthur01910009.gif
+	frame	data/chars/Arthur/Arthur01910010.gif
+	frame	data/chars/Arthur/Arthur01910011.gif
+	frame	data/chars/Arthur/Arthur01910012.gif
+
+anim idle
+	loop	1
+	delay	8
+	offset	47 122
+	bbox	14 25 37 68
+	frame	data/chars/Arthur/Arthur100000000.gif
+	frame	data/chars/Arthur/Arthur100000001.gif
+	frame	data/chars/Arthur/Arthur100000002.gif
+	frame	data/chars/Arthur/Arthur100000003.gif
+	frame	data/chars/Arthur/Arthur100000004.gif
+	frame	data/chars/Arthur/Arthur100000005.gif
+	frame	data/chars/Arthur/Arthur100000006.gif
+
+anim shock
+	loop	1
+	delay	8
+	offset	47 122
+	bbox	14 25 37 68
+	frame	data/chars/Arthur/Arthur76960000.gif
+	frame	data/chars/Arthur/Arthur76960001.gif
+
+anim walk
+	loop	1
+	delay	8
+	offset	65 119
+	bbox	49 19 45 95
+	frame	data/chars/Arthur/Arthur100200000.gif
+	frame	data/chars/Arthur/Arthur100200001.gif
+	frame	data/chars/Arthur/Arthur100200002.gif
+	frame	data/chars/Arthur/Arthur100200003.gif
+	frame	data/chars/Arthur/Arthur100200004.gif
+	frame	data/chars/Arthur/Arthur100200005.gif
+	frame	data/chars/Arthur/Arthur100200006.gif
+
+anim run
+	loop	1
+	delay	8
+	offset	65 119
+	bbox	49 19 45 95
+	frame	data/chars/Arthur/Arthur37000000.gif
+	frame	data/chars/Arthur/Arthur37000001.gif
+	frame	data/chars/Arthur/Arthur37000002.gif
+	frame	data/chars/Arthur/Arthur37000003.gif
+	frame	data/chars/Arthur/Arthur37000004.gif
+	frame	data/chars/Arthur/Arthur37000005.gif
+	frame	data/chars/Arthur/Arthur37000006.gif
+	frame	data/chars/Arthur/Arthur37000007.gif
+
+anim get
+        	loop	0
+	delay	7
+	offset	89 76
+	frame	data/chars/Arthur/Arthur00100000.gif
+
+anim attack1
+	loop	0
+	delay	8
+	offset	59 118
+	bbox	35 20 50 87
+	frame	data/chars/Arthur/Arthur104000002.gif
+	frame	data/chars/Arthur/Arthur104000003.gif
+	frame	data/chars/Arthur/Arthur104000004.gif
+
+anim attack2
+	loop	0
+	delay	7
+	offset	51 125
+	bbox	26 23 45 90
+	frame	data/chars/Arthur/Arthur202200002.gif
+	frame	data/chars/Arthur/Arthur202200003.gif
+	frame	data/chars/Arthur/Arthur202200004.gif
+
+anim attack3
+	loop	0
+	delay	7
+	offset	82 110
+	bbox	65 18 36 83
+		attack  0
+	throwframe 4 30
+	frame	data/chars/Arthur/Arthur107500000.gif
+	frame	data/chars/Arthur/Arthur107500001.gif
+	frame	data/chars/Arthur/Arthur107500002.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+
+anim runattack
+	loop	0
+	delay	7
+	offset	82 110
+	bbox	65 18 36 83
+		attack  0
+	throwframe 4 30
+	frame	data/chars/Arthur/Arthur107500000.gif
+	frame	data/chars/Arthur/Arthur107500001.gif
+	frame	data/chars/Arthur/Arthur107500002.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+
+anim freespecial3
+	loop	0
+	delay	7
+	offset	59 122
+	bbox	38 22 41 91
+	spawnframe 1
+	subentity AAxe
+	frame	data/chars/Arthur/Arthur207500000.gif
+	frame	data/chars/Arthur/Arthur207500001.gif
+	frame	data/chars/Arthur/Arthur207500002.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+
+anim special
+	loop	0
+	delay	7
+	offset	52 122
+	spawnframe 2
+	subentity ABall
+	frame	data/chars/Arthur/Arthur300500039.gif
+	frame	data/chars/Arthur/Arthur300500040.gif
+	frame	data/chars/Arthur/Arthur300500041.gif
+	frame	data/chars/Arthur/Arthur300500042.gif
+	frame	data/chars/Arthur/Arthur300500043.gif
+	frame	data/chars/Arthur/Arthur300500044.gif
+	frame	data/chars/Arthur/Arthur300500045.gif
+	frame	data/chars/Arthur/Arthur300500046.gif
+	frame	data/chars/Arthur/Arthur300500047.gif
+
+anim freespecial2
+        	loop	0
+	delay	7
+	offset	89 76
+	spawnframe 2
+	subentity AFroggy
+	frame	data/chars/Arthur/Arthur00100000.gif
+	frame	data/chars/Arthur/Arthur00100000.gif
+	move	50
+	delay	8
+	offset	65 119
+	bbox	49 19 45 95
+	frame	data/chars/Arthur/Arthur100200000.gif
+	frame	data/chars/Arthur/Arthur100200001.gif
+	frame	data/chars/Arthur/Arthur100200002.gif
+	frame	data/chars/Arthur/Arthur100200003.gif
+	frame	data/chars/Arthur/Arthur100200004.gif
+
+anim freespecial
+	loop	0
+	delay	7
+	offset	82 110
+	bbox	65 18 36 83
+		attack  0
+	throwframe 4 30
+	frame	data/chars/Arthur/Arthur107500000.gif
+	frame	data/chars/Arthur/Arthur107500001.gif
+	frame	data/chars/Arthur/Arthur107500002.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+	frame	data/chars/Arthur/Arthur107500003.gif
+
+anim jump
+	loop	0
+	offset	58 226
+	delay	11
+	bbox	42 118 35 66
+	frame	data/chars/Arthur/Arthur106100001.gif
+
+anim dodge
+	loop	0
+	offset	56 226
+	delay	7
+	frame	data/chars/Arthur/Arthur106500001.gif
+	frame	data/chars/Arthur/Arthur106500001.gif
+	frame	data/chars/Arthur/Arthur106500001.gif
+
+anim jumpattack
+	loop	0
+        	offset	122 86
+	delay	6
+	bbox	71 21 58 51
+		blast  80  50  135  42  20  0  0  12
+	frame	data/chars/Arthur/Arthur106500000.gif
+	frame	data/chars/Arthur/Arthur106500001.gif
+
+anim runjumpattack
+	loop	0
+        	offset	122 86
+	delay	6
+	bbox	71 21 58 51
+		blast  80  50  135  42  20  0  0  12
+	frame	data/chars/Arthur/Arthur106500000.gif
+	frame	data/chars/Arthur/Arthur106500001.gif
+
+anim grab
+	loop	0
+        	offset  	75 113
+	bbox	21 21 51 83
+ 	frame	data/chars/Arthur/Arthur104000004.gif
+
+anim grabattack
+	loop	0
+	delay	7
+	offset	51 126
+	bbox	33 23 37 83
+	jumpframe 1 3 0 0
+	frame	data/chars/Arthur/Arthur206200001.gif
+	frame	data/chars/Arthur/Arthur206200002.gif
+	frame	data/chars/Arthur/Arthur206200003.gif
+	frame	data/chars/Arthur/Arthur206200004.gif
+
+anim grabbackward
+	loop	0
+	delay	7
+	offset	56 103
+	bbox	20 22 54 79
+		Attack1  0
+        	frame	data/chars/Arthur/Arthur104000002.gif
+
+anim pain
+	loop	0
+	offset	61 108
+	bbox	16 30 54 61
+	delay	15
+	frame	data/chars/Arthur/Arthur250100000.gif
+
+anim fall
+	loop	0
+	offset	68 87
+	delay	25
+	frame	data/chars/Arthur/Arthur250300010.gif
+	attack	0
+	offset	80 58
+              frame	data/chars/Arthur/Arthur250300020.gif
+
+anim rise
+	loop	0
+	delay	8
+	offset	43 102
+	frame	data/chars/Arthur/Arthur251200000.gif
+
+anim land
+	loop	0
+	delay	8
+	offset	50 122
+	frame	data/chars/Arthur/Arthur204000000.gif
+
+

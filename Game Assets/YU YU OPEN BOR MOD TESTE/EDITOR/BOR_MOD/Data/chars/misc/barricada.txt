@@ -1,0 +1,25 @@
+
+name	barricada
+health	20
+type	obstacle
+shadow	0
+icon	data/chars/misc/baricon.gif
+diesound data/sounds/klunk.wav
+
+
+
+anim	fall
+	loop	1
+	delay	1000
+	offset	66 73
+	frame	data/chars/misc/barricada2.gif
+		
+anim	idle
+	bbox	2 135 117 -167
+	loop	0
+	delay	100
+	offset	69 66
+	frame	data/chars/misc/barricada1.gif
+		
+#|edited by openBor Stats v 0.67
+		

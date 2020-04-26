@@ -1,0 +1,91 @@
+name	    Tronh
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	6 16
+	jumpframe	1 3 1 0
+	frame	data/chars/Tron/h1.gif
+	offset	6 33
+	frame	data/chars/Tron/h2.gif
+	offset	7 29
+	frame	data/chars/Tron/h3.gif
+	frame	data/chars/Tron/h4.gif
+	offset	6 26
+	frame	data/chars/Tron/h5.gif
+	offset	8 23
+	frame	data/chars/Tron/h6.gif
+	offset	5 24
+	frame	data/chars/Tron/h7.gif
+	offset	9 22
+	frame	data/chars/Tron/h8.gif
+	offset	8 28
+	frame	data/chars/Tron/h9.gif
+	offset	8 29
+	frame	data/chars/Tron/h10.gif
+	offset	8 37
+	frame	data/chars/Tron/h11.gif
+	offset	8 46
+	frame	data/chars/Tron/h12.gif
+	offset	29 43
+	frame	data/chars/Tron/h13.gif
+	offset	41 46
+	frame	data/chars/Tron/h14.gif
+	offset	36 46
+	frame	data/chars/Tron/h15.gif
+	offset	20 46
+	frame	data/chars/Tron/h16.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/Tron/h18.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/Tron/h18.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/tron/h18.gif
+	offset	20 46
+	frame	data/chars/Tron/h16.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/Tron/h18.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/Tron/h18.gif
+	blast	0 2 95 28 16 0 0 45
+	dropv	3 3 0
+	offset	41 46
+	frame	data/chars/Tron/h17.gif
+	blast	0 1 98 28 16 0 0 45
+	dropv	3 3 0
+	frame	data/chars/tron/h18.gif
+	@cmd	suicide()
+	frame	data/chars/Tron/h18.gif
+		
+#|edited by openBor Stats v 0.50
+		

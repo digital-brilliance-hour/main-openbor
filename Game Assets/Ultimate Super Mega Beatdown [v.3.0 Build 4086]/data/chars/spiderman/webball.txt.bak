@@ -1,0 +1,33 @@
+name	     webball
+type	     none
+health	1
+shadow	     0
+speed        30
+candamage    enemy obstacle
+remove	0
+lifespan 1
+antigravity 100
+animationscript data/scripts/item.c
+
+anim follow1
+	loop	1
+		offset  50  96
+	@cmd Webman()
+	frame	data/chars/Spiderman/emp.gif
+		Attack1  0
+	frame  data/chars/Spiderman/emp.gif
+	@cmd suicide()
+	frame  data/chars/Spiderman/emp.gif
+
+anim spawn
+	loop	1
+	delay	6
+	offset	53 19
+	jumpframe 1 0 2 0
+	followanim 1
+	followcond 1
+		attack1  1  0  95  19  0  0  0  1
+	frame	data/chars/Spiderman/Spiderman11000010.gif
+	frame	data/chars/Spiderman/Spiderman11000010.gif
+	frame	data/chars/Spiderman/Spiderman11000010.gif
+

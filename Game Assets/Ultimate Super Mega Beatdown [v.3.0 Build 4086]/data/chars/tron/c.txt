@@ -1,0 +1,105 @@
+name	     Tronc
+type	     none
+shadow	     0
+candamage   enemy obstacle
+animationscript data/scripts2/item.c
+
+
+
+
+anim	idle
+	loop	0
+	delay	3
+	offset	12 35
+	frame	data/chars/Tron/c1.gif
+	offset	10 35
+	frame	data/chars/Tron/c2.gif
+	offset	13 36
+	frame	data/chars/Tron/c3.gif
+	offset	14 39
+	frame	data/chars/Tron/c4.gif
+	offset	21 50
+	frame	data/chars/Tron/c5.gif
+	offset	23 64
+	frame	data/chars/Tron/c6.gif
+	offset	25 72
+	bbox	0 0 0 0
+	frame	data/chars/Tron/c7.gif
+	frame	data/chars/Tron/c8.gif
+	offset	32 72
+	frame	data/chars/Tron/c9.gif
+	offset	30 73
+	frame	data/chars/Tron/c10.gif
+	offset	30 70
+	frame	data/chars/Tron/c11.gif
+	offset	30 68
+	move	8
+	frame	data/chars/Tron/c12.gif
+	offset	31 68
+	frame	data/chars/Tron/c13.gif
+	blast	51 9 63 57 16 0 0 15
+	dropv	5 3 0
+	offset	28 66
+	frame	data/chars/Tron/c14.gif
+	frame	data/chars/Tron/c15.gif
+	offset	30 68
+	frame	data/chars/Tron/c16.gif
+	offset	31 68
+	frame	data/chars/Tron/c17.gif
+	blast	54 16 62 51 16 0 0 15
+	dropv	5 3 0
+	offset	31 66
+	frame	data/chars/Tron/c18.gif
+	frame	data/chars/Tron/c12.gif
+	offset	31 68
+	frame	data/chars/Tron/c13.gif
+	blast	51 9 63 57 16 0 0 15
+	dropv	5 3 0
+	offset	28 66
+	frame	data/chars/Tron/c14.gif
+	frame	data/chars/Tron/c15.gif
+	offset	30 68
+	frame	data/chars/Tron/c16.gif
+	offset	31 68
+	frame	data/chars/Tron/c17.gif
+	blast	54 16 62 51 16 0 0 15
+	dropv	5 3 0
+	offset	31 66
+	frame	data/chars/Tron/c18.gif
+	frame	data/chars/Tron/c12.gif
+	offset	31 68
+	frame	data/chars/Tron/c13.gif
+	blast	51 9 63 57 16 0 0 15
+	dropv	5 3 0
+	offset	28 66
+	frame	data/chars/Tron/c14.gif
+	frame	data/chars/Tron/c15.gif
+	offset	30 68
+	frame	data/chars/Tron/c16.gif
+	offset	31 68
+	frame	data/chars/Tron/c17.gif
+	blast	54 16 62 51 16 0 0 15
+	dropv	5 3 0
+	offset	31 66
+	frame	data/chars/Tron/c18.gif
+	frame	data/chars/Tron/c12.gif
+	offset	31 68
+	frame	data/chars/Tron/c13.gif
+	blast	51 9 63 57 16 0 0 15
+	dropv	5 3 0
+	offset	28 66
+	frame	data/chars/Tron/c14.gif
+	frame	data/chars/Tron/c15.gif
+	offset	30 68
+	frame	data/chars/Tron/c16.gif
+	offset	31 68
+	frame	data/chars/Tron/c17.gif
+	blast	54 16 62 51 16 0 0 15
+	dropv	5 3 0
+	offset	31 66
+	frame	data/chars/Tron/c18.gif
+	@cmd	suicide()
+	frame	data/chars/Tron/c18.gif
+		
+#|edited by openBor Stats v 0.50
+		

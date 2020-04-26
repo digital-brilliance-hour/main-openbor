@@ -1,0 +1,36 @@
+name	Biker-K'
+type	enemy
+subtype	biker
+gfxshadow 1
+health	3
+shadow	6
+icon	data/chars/k/icon.gif
+
+
+load	K'
+
+palette  data/chars/biker-k/moto.gif
+remap	data/chars/biker-k/moto2.gif	data/chars/biker-k/moto3.gif
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	100
+	offset	78 103
+	bbox	37 21 36 48
+	attack	108 66 37 40 10 1 0 0 0 0
+	frame	data/chars/biker-k/moto1.gif
+		
+anim	pain
+	loop	1
+	delay	5
+	offset	78 103
+	attack	112 65 37 40 10 1 0 0 0 0
+	frame	data/chars/biker-k/moto2.gif
+		
+#|edited by openBor Stats v 0.67
+		

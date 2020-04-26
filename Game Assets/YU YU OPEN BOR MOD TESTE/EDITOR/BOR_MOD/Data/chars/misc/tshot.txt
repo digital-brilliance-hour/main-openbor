@@ -1,0 +1,25 @@
+name	tshot
+type	none
+subtype  weapon
+shadow	0
+nolife  1 
+speed   0
+nolife 1
+
+
+
+anim	idle
+	delay	20
+	seta	1
+	loop	0
+	offset	70 10
+	hitflash	flash4
+	fastattack	1
+	hitfx	data/sounds/beat2.wav
+	attack	0 0 150 90 15 1 0 0 14
+	frame	data/chars/misc/0empty.gif
+	attack	0 0 0 0 0 0 0 0
+	frame	data/chars/misc/0empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

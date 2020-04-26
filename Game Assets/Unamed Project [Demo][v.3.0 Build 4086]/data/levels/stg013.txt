@@ -1,0 +1,332 @@
+music           data/music/stg-01.bor
+bossmusic	data/music/boss.bor
+background	Data\Bgs\stg013/backg.gif
+panel		Data\Bgs\stg013/panel.gif
+order           a
+direction       right
+
+spawn1	145 0 160
+spawn2	175 0 160
+
+#-------1
+
+spawn   box
+alias	Crate
+flip    1
+item	hotdog
+coords  410 160
+at      0
+
+spawn   box
+alias	Crate
+flip    1
+coords  490 160
+at      0 
+
+wait
+at	250
+
+group	4 4
+at	240
+
+spawn   joe
+alias   Yoshi
+coords  -30 210
+at      240
+
+spawn   shenwoo
+alias   Takeru
+coords  350 170
+at      240
+
+spawn   joe
+alias   Hirogane
+map	4
+coords  350 210
+at      240
+
+spawn   shenwoo
+alias   Keita
+map	6
+coords  -30 210
+at      240
+
+spawn   joe
+alias   Takehide
+map	2
+coords  -30 210
+at      240
+
+spawn   shenwoo
+alias   Dayu
+map	5
+coords  350 170
+at      240
+
+spawn   joe
+alias   Chojiro
+map	1
+coords  350 210
+at      240
+
+spawn   shenwoo
+alias   Sozen
+map	2
+coords  -30 210
+at      240
+
+spawn   shenwoo
+alias   Shozaburo
+map	1
+coords  350 170
+at      240
+
+spawn   joe
+alias   Naoaki
+map	3
+coords  350 210
+at      240
+
+#-------2
+
+spawn   sign3
+alias	Sign
+flip    1
+item	1up
+coords  379 165
+at      160
+
+wait
+at	500
+
+group	4 4
+at	490
+
+spawn   joe
+alias   Gihei
+map	4
+coords  -30 210
+at      490
+
+spawn   k'
+alias   Shuichi
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Sozui
+map	6
+coords  350 210
+at      490
+
+spawn   joe
+alias   Tsurayuki
+coords  350 170
+at      490
+
+spawn   k'
+alias   Takamasa
+map	1
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Hiroji
+coords  -30 170
+at      490
+
+spawn   joe
+alias   Shohei
+map	2
+coords  350 210
+at      490
+
+spawn   k'
+alias   Heiji
+map	3
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Tadakuni
+map	2
+coords  -30 210
+at      490
+
+spawn   joe
+alias   Tadayoshi
+map	1
+coords  -30 210
+at      490
+
+spawn   k'
+alias   Shinichi
+coords  350 190
+at      490
+
+spawn   shenwoo
+alias   Suezo
+map	6
+coords  350 210
+at      490
+
+#-------3
+
+spawn   	Bike
+item		Hotdog
+coords  	340 165
+at      	501
+
+spawn   	Bike
+item		Money
+coords  	377 165
+at      	501
+
+spawn   	Bike
+coords  	414 165
+at      	501
+
+wait
+at	765
+
+group	3 3
+at	490
+
+spawn   joe
+alias   Sadanobu
+coords  -30 210
+at      490
+
+spawn   k'
+alias   Takeo
+map	2
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Takuji
+coords  350 210
+at      490
+
+spawn   joe
+alias   Zeshin
+map	4
+coords  350 170
+at      490
+
+spawn   k'
+alias   Yoshino
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Miyazaki
+map	6
+coords  -30 170
+at      490
+
+spawn   joe
+alias   Tanosuke
+map	1
+coords  350 210
+at      490
+
+spawn   k'
+alias   Kosaku
+map	3
+coords  -30 190
+at      490
+
+spawn   shenwoo
+alias   Nariakira
+map	2
+coords  -30 210
+at      490
+
+spawn   joe
+alias   Kunisada
+map	2
+coords  -30 210
+at      490
+
+spawn   k'
+alias   Kichibei
+map	1
+coords  350 190
+at      490
+
+spawn   shenwoo
+alias   Keizo
+map	3
+coords  350 210
+at      490
+
+
+#-------Final
+
+group	4 4
+at	1050
+
+spawn	radel
+alias	E-72335
+boss	1
+coords	350 190
+at	1050
+
+spawn   joe
+alias   Yoshi
+coords  -30 210
+at      1050
+
+spawn   shenwoo
+alias   Takeru
+coords  350 170
+at      1050
+
+spawn   joe
+alias   Hirogane
+map	4
+coords  350 210
+at      1050
+
+spawn   shenwoo
+alias   Keita
+map	6
+coords  -30 210
+at      1050
+
+spawn   joe
+alias   Takehide
+map	2
+coords  -30 210
+at      1050
+
+spawn   shenwoo
+alias   Dayu
+map	5
+coords  350 170
+at      1050
+
+spawn   joe
+alias   Chojiro
+map	1
+coords  350 210
+at      1050
+
+spawn   shenwoo
+alias   Sozen
+map	2
+coords  -30 210
+at      1050
+
+spawn   shenwoo
+alias   Shozaburo
+map	1
+coords  350 170
+at      1050
+
+spawn   joe
+alias   Naoaki
+map	3
+coords  350 210
+at      1050

@@ -1,0 +1,31 @@
+
+
+
+name	warp
+health	1
+type	none
+shadow	0
+lifespan 0.8
+
+anim	idle
+	loop	0
+	delay	100
+	offset	19 47
+@script
+changeopenborvariant("slowmotion", 0);
+	@end_script	
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	19 47
+@script
+changeopenborvariant("slowmotion", 1);
+	@end_script	
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.50
+		

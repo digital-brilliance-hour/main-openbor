@@ -1,0 +1,89 @@
+name	faces
+health	150
+speed	10
+type	ENEMY
+shadow	0
+gfxshadow 1
+nolife 1
+diesound data/sounds/die1.wav
+#icon	data/chars/faces/icon.gif
+#remap data/chars/faces/stand6.gif data/chars/faces/ALT1.gif
+
+anim idle
+	loop	1
+	delay	8
+	offset	160 190
+	bbox	137 99 54 90
+	frame	data/chars/faces/stand1.gif
+	frame	data/chars/faces/stand2.gif
+	frame	data/chars/faces/stand3.gif
+	frame	data/chars/faces/stand4.gif
+	frame	data/chars/faces/stand5.gif
+	frame	data/chars/faces/stand6.gif
+	frame	data/chars/faces/stand7.gif
+	frame	data/chars/faces/stand8.gif
+		
+anim walk
+	loop	1
+	delay	8
+	offset	160 190
+	bbox	143 101 52 95
+	frame	data/chars/faces/stand1.gif
+	frame	data/chars/faces/stand2.gif
+	frame	data/chars/faces/stand3.gif
+	frame	data/chars/faces/stand4.gif
+	frame	data/chars/faces/stand5.gif
+	frame	data/chars/faces/stand6.gif
+	frame	data/chars/faces/stand7.gif
+	frame	data/chars/faces/stand8.gif
+		
+anim attack1
+	loop	0
+	delay	4
+	bbox	137 99 54 90
+	offset	160 190
+	move	10
+	frame	data/chars/faces/spin1.gif
+	frame	data/chars/faces/spin2.gif
+	attack	170 118 45 9 5
+	frame	data/chars/faces/spin3.gif
+	attack 	0 0 0 0 0
+	frame	data/chars/faces/spin4.gif
+	attack	170 118 45 9 5 1	
+	frame	data/chars/faces/spin5.gif
+	frame	data/chars/faces/spin6.gif
+	frame	data/chars/faces/spin7.gif
+	attack 	0 0 0 0 0
+	
+
+anim pain
+	loop	0
+	offset	160 190
+	bbox	137 99 54 90
+	delay	6
+	frame	data/chars/faces/pain1.gif
+	delay	40
+	bbox	102 122 74 82
+	frame	data/chars/faces/pain2.gif
+	delay	6
+	bbox	120 111 64 96
+	frame	data/chars/faces/pain1.gif
+	
+anim fall
+	loop	0
+	offset	160 190
+	delay	32
+	attack	23 30 83 44 10 1
+	frame	data/chars/faces/pain1.gif
+	attack	20 29 83 44 10 1
+	frame	data/chars/faces/pain2.gif
+	attack	19 43 98 26 10 1
+	frame	data/chars/faces/pain1.gif
+	
+anim rise
+	loop	0
+	offset	160 190
+	delay	10
+	frame	data/chars/faces/pain1.gif
+	frame	data/chars/faces/pain2.gif
+	

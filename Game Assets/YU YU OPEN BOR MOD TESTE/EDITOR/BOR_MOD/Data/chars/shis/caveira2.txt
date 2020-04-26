@@ -1,0 +1,40 @@
+name	caveira2
+health	0
+type	none
+alpha 6
+gfxshadow     	1
+speed 12
+candamage player obstacle
+knockdowncount 1
+
+
+
+
+
+
+anim	idle
+	hitflash	flash4
+	loop	1
+	remove	1
+	delay	2
+	offset	1 17
+	attack	6 2 47 30 20 1 0 0 0 0
+	frame	data/chars/shis/pr2.gif
+	attack	2 3 47 26 20 1 1 0 0 0
+	offset	7 16
+	frame	data/chars/shis/pr1.gif
+	attack	3 3 63 25 20 1 1 0 0 0
+	offset	7 16
+	frame	data/chars/shis/pr4.gif
+	attack	14 9 36 32 20 1 1 0 0 0
+	offset	4 27
+	frame	data/chars/shis/pr5.gif
+	attack	7 5 40 45 20 1 1 0 0 0
+	offset	4 27
+	frame	data/chars/shis/pr6.gif
+	attack	2 1 46 35 20 1 1 0 0 0
+	offset	7 16
+	frame	data/chars/shis/pr3.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,37 @@
+name    	   Chocolate
+health  	   1
+type    	   item
+gfxshadow          1
+facing             1
+icon    	   data/chars/misc/items/chocicon.gif
+didhitscript       data/scripts/food20.c
+
+
+anim spawn
+@script
+   void self = getlocalvar("self");
+   int x = getentityproperty(self, "x");
+   int z = getentityproperty(self, "z");
+
+   if (z > openborconstant("PLAYER_MAX_Z")){
+     changeentityproperty(self, "position", x, openborconstant("PLAYER_MAX_Z")); //Moves to Z Max
+   }
+   if (z < openborconstant("PLAYER_MIN_Z")){
+     changeentityproperty(self, "position", x, openborconstant("PLAYER_MIN_Z")); //Moves to Z Min
+   }
+@end_script
+	delay	3
+	offset	17 12
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+	frame	data/chars/misc/items/choco.gif
+
+anim idle
+	delay	100
+	offset	17 12
+	bbox	2 3 33 12
+	frame	data/chars/misc/items/choco.gif

@@ -1,0 +1,474 @@
+name	       Rogue
+health            1000
+mp	       500
+speed	       15
+type	       player
+shadow	       3
+makeinv        2
+running        30  4.1  2  1
+dust           dust
+throwdamage    26
+candamage     enemy obstacle
+atchain	       1 1 2 3 4
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+flash	Flash3
+animationscript data/scripts/script.c
+
+com	D U A freespecial12
+com	A4 freespecial3
+
+icon           data/chars/Rogue/Rogue90000000.gif
+
+anim waiting
+        	loop	0
+	delay	6
+	offset	47 93
+	bbox	40 13 15 39
+	frame	data/chars/Rogue/Rogue00000000.gif
+		offset  47  94
+	frame	data/chars/Rogue/Rogue00000001.gif
+	frame	data/chars/Rogue/Rogue00000002.gif
+		offset  47  92
+	frame	data/chars/Rogue/Rogue00000003.gif
+
+anim select
+        	loop	0
+	delay	6
+	offset	47 93
+	sound	data/chars/Rogue/tada.wav
+	frame	data/chars/Rogue/Rogue00000000.gif
+		offset  47  94
+	frame	data/chars/Rogue/Rogue00000001.gif
+	frame	data/chars/Rogue/Rogue00000002.gif
+		offset  47  92
+	frame	data/chars/Rogue/Rogue00000003.gif
+
+anim idle
+        	loop	1
+	delay	6
+	offset	47 93
+	bbox	40 13 15 39
+	@cmd clearL
+	@cmd    depost 0
+	frame	data/chars/Rogue/Rogue00000000.gif
+		offset  47  94
+	frame	data/chars/Rogue/Rogue00000001.gif
+	frame	data/chars/Rogue/Rogue00000002.gif
+		offset  47  92
+	frame	data/chars/Rogue/Rogue00000003.gif
+
+
+anim jump
+	loop	0
+	delay	8
+	offset	28 105
+	bbox	15 16 34 49
+	frame	data/chars/Rogue/Rogue00410002.gif
+	frame	data/chars/Rogue/Rogue00410003.gif
+	frame  Data/CHARS/Rogue/Rogue00410004.gif
+	frame  Data/CHARS/Rogue/Rogue00410005.gif
+	frame  Data/CHARS/Rogue/Rogue00410006.gif
+
+anim jumpattack
+	loop	1
+		delay  8
+		offset  48  85
+		bbox  15  21  40  32
+		attack1  6
+	frame  data/chars/Rogue/Rogue07000000.gif
+	frame	data/chars/Rogue/Rogue07000001.gif
+
+anim runjumpattack
+	loop	1
+	delay	8
+	offset	45 84
+	bbox	19 21 24 30
+		attack1  5  56  115  32  13  1  0  0  45
+	frame	data/chars/Rogue/Rogue07000001.gif
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	40 112
+	bbox	18 18 37 50
+	frame	data/chars/Rogue/Rogue00200000.gif
+		offset  40  110
+	frame	data/chars/Rogue/Rogue00200001.gif
+	frame	data/chars/Rogue/Rogue00200002.gif
+		offset  40  111
+	frame	data/chars/Rogue/Rogue00200003.gif
+		offset  32  109
+	frame	data/chars/Rogue/Rogue00200004.gif
+		offset  27  110
+	frame	data/chars/Rogue/Rogue00200005.gif
+	frame	data/chars/Rogue/Rogue00200006.gif
+	frame	data/chars/Rogue/Rogue00200007.gif
+		offset  39  109
+	frame	data/chars/Rogue/Rogue00200008.gif
+	frame	data/chars/Rogue/Rogue00200009.gif
+		offset  46  110
+	frame	data/chars/Rogue/Rogue00200010.gif
+		offset  40  110
+	frame	data/chars/Rogue/Rogue00200011.gif
+	frame	data/chars/Rogue/Rogue00200012.gif
+		offset  34  111
+	frame	data/chars/Rogue/Rogue00200013.gif
+	frame	data/chars/Rogue/Rogue00200014.gif
+	frame	data/chars/Rogue/Rogue00200015.gif
+		offset  28  111
+	frame	data/chars/Rogue/Rogue00200016.gif
+	frame	data/chars/Rogue/Rogue00200017.gif
+		offset  35  110
+	frame	data/chars/Rogue/Rogue00200018.gif
+	frame	data/chars/Rogue/Rogue00200019.gif
+
+anim run
+	loop	1
+	delay	6
+	offset	40 112
+	bbox	18 18 37 50
+	frame	data/chars/Rogue/Rogue00200000.gif
+		offset  40  110
+	frame	data/chars/Rogue/Rogue00200001.gif
+	frame	data/chars/Rogue/Rogue00200002.gif
+		offset  40  111
+	frame	data/chars/Rogue/Rogue00200003.gif
+		offset  32  109
+	frame	data/chars/Rogue/Rogue00200004.gif
+		offset  27  110
+	frame	data/chars/Rogue/Rogue00200005.gif
+	frame	data/chars/Rogue/Rogue00200006.gif
+	frame	data/chars/Rogue/Rogue00200007.gif
+		offset  39  109
+	frame	data/chars/Rogue/Rogue00200008.gif
+	frame	data/chars/Rogue/Rogue00200009.gif
+		offset  46  110
+	frame	data/chars/Rogue/Rogue00200010.gif
+		offset  40  110
+	frame	data/chars/Rogue/Rogue00200011.gif
+	frame	data/chars/Rogue/Rogue00200012.gif
+		offset  34  111
+	frame	data/chars/Rogue/Rogue00200013.gif
+	frame	data/chars/Rogue/Rogue00200014.gif
+	frame	data/chars/Rogue/Rogue00200015.gif
+		offset  28  111
+	frame	data/chars/Rogue/Rogue00200016.gif
+	frame	data/chars/Rogue/Rogue00200017.gif
+		offset  35  110
+	frame	data/chars/Rogue/Rogue00200018.gif
+	frame	data/chars/Rogue/Rogue00200019.gif
+
+anim get
+        	loop	0
+	delay	50
+	offset	49 93
+		bbox  41  16  16  32
+	frame	data/chars/Rogue/Rogue00000000.gif
+
+anim attack1
+        	loop	0
+	delay	8
+	offset	48 94
+	bbox	36 15 29 39
+		Attack1  0
+	sound	data/chars/Rogue/ya.wav
+	hitfx	data/chars/Rogue/hit.wav
+	frame	data/chars/Rogue/Rogue02000000.gif
+		attack1  74  12  58  18  9
+	frame	data/chars/Rogue/Rogue02000001.gif
+		offset  48  94
+	frame	data/chars/Rogue/Rogue02000002.gif
+
+anim attack2
+        	loop	0
+	delay	6
+	offset	43 96
+	bbox	41 17 22 48
+	cancel	1 4 1 D freespecial10
+	sound	data/chars/Rogue/ha.wav
+	hitfx	data/chars/Rogue/hit.wav
+	frame	data/chars/Rogue/Rogue02100001.gif
+		offset  65  95
+		bbox  69  18  24  48
+		attack1  105  11  44  37  10  0  0  10
+	frame	data/chars/Rogue/Rogue02100002.gif
+		Attack1  0
+	frame	data/chars/Rogue/Rogue02100003.gif
+	frame	data/chars/Rogue/Rogue02100004.gif
+
+anim attack3
+        	loop	0
+	delay	7
+	offset	58 105
+	bbox	50 19 28 45
+	cancel	1 6 1 D freespecial10
+	sound	data/chars/Rogue/hii.wav
+	hitfx	data/chars/Rogue/hit.wav
+	frame	data/chars/Rogue/Rogue03000000.gif
+		offset  41  111
+		bbox  17  12  44  65
+	frame	data/chars/Rogue/Rogue03000001.gif
+		offset  53  114
+		bbox  27  17  43  75
+		attack1  72  10  61  40  8
+	frame	data/chars/Rogue/Rogue03000002.gif
+	delay	3
+	attack	0
+	frame	data/chars/Rogue/Rogue03000002.gif
+	frame	data/chars/Rogue/Rogue03000002.gif
+	frame	data/chars/Rogue/Rogue03000002.gif
+
+
+anim attack4
+        	loop	0
+	delay	6
+	offset	89 61
+	bbox	29 24 79 10
+		blast  115  6  70  50  13  0  0  50
+	hitfx	data/sounds/bukk.wav
+	cancel	4 8 1 U freespecial11
+	sound	data/chars/Rogue/tada.wav
+	frame	data/chars/Rogue/Rogue20000102.gif
+		offset  89  69
+		bbox  41  29  57  19
+	frame	data/chars/Rogue/Rogue20000103.gif
+	frame	data/chars/Rogue/Rogue20000104.gif
+		bbox  38  40  53  8
+	frame	data/chars/Rogue/Rogue20000105.gif
+		offset  89  60
+		bbox  43  22  50  13
+	frame	data/chars/Rogue/Rogue20000106.gif
+		offset  89  48
+	frame	data/chars/Rogue/Rogue20000107.gif
+	delay	3
+	frame	data/chars/Rogue/Rogue20000107.gif
+	frame	data/chars/Rogue/Rogue20000107.gif
+
+anim grab
+        	loop	0
+	delay	6
+	offset	43 96
+	bbox	41 17 22 48
+	frame	data/chars/Rogue/Rogue03000000.gif
+
+anim freespecial12
+        loop	0
+	delay	6
+	offset	45 78
+	bbox	34 5 34 70
+	@cmd leaper 0 3 0
+	hitfx	data/sounds/bukk.wav
+	sound	data/chars/Rogue/tada.wav
+	frame	data/chars/Rogue/Rogue04200002.gif
+		offset  42  139
+		blast  8  -1  91  131  15  0  0  45
+		dropv 5 0 0
+	frame	data/chars/Rogue/Rogue04200003.gif
+		offset  30  136
+		bbox  14  30  33  88
+		blast  7  0  52  125  15  0  1  45
+		dropv 4 0 0
+	frame	data/chars/Rogue/Rogue04200004.gif
+		Attack1  0
+	frame	data/chars/Rogue/Rogue04200005.gif
+		offset  30  124
+	frame	data/chars/Rogue/Rogue04200006.gif
+		offset  30  113
+		bbox  3  4  39  108
+	frame	data/chars/Rogue/Rogue04200007.gif
+	frame	data/chars/Rogue/Rogue04200008.gif
+		offset  45  110
+		bbox  27  17  39  83
+	frame	data/chars/Rogue/Rogue04200009.gif
+
+anim freespecial10
+        	loop	0
+	delay	6
+	offset	75 79
+	bbox	72 3 39 72
+	hitfx	data/sounds/bukk.wav
+	sound	data/chars/Rogue/tada.wav
+	frame	data/chars/Rogue/Rogue14500000.gif
+		attack1  87  9  89  53  14
+	frame	data/chars/Rogue/Rogue14500001.gif
+		Attack1  0
+		offset  84  79
+	frame	data/chars/Rogue/Rogue14500002.gif
+	frame	data/chars/Rogue/Rogue14500003.gif
+	frame	data/chars/Rogue/Rogue14500004.gif
+		blast  98  13  76  59  15  0  0  45
+		dropv 2 9 0
+	frame	data/chars/Rogue/Rogue14500005.gif
+		blast  36  26  130  46  15  0  1
+		dropv 2 12 0
+	frame	data/chars/Rogue/Rogue14500006.gif
+		Attack1  0
+	frame	data/chars/Rogue/Rogue14500007.gif
+	frame	data/chars/Rogue/Rogue14500008.gif
+	frame	data/chars/Rogue/Rogue14500009.gif
+		offset  66  81
+		bbox  48  12  46  66
+	frame	data/chars/Rogue/Rogue14500010.gif
+
+
+anim grabattack
+        loop	0
+	delay	6
+	offset	58 97
+	@cmd slamstart2
+	@cmd position 1 64 3 1 1
+	jumpframe 4 5 2 0
+	landframe 8
+	sound	data/chars/Rogue/ya.wav
+	frame	data/chars/Rogue/Rogue20000063.gif
+		offset  59  101
+	@cmd position 1 51 6 1 1
+	frame	data/chars/Rogue/Rogue20000064.gif
+		offset  59  98
+	@cmd position 1 50 7 1 1
+	frame	data/chars/Rogue/Rogue20000065.gif
+		offset  25  94
+	@cmd position 1 45 -10 1 1
+	@cmd leaper 2 5 0
+	delay	130
+	frame	data/chars/Rogue/Rogue20000066.gif
+		offset  25  85
+	@cmd position 1 49 -14 1 1
+	frame	data/chars/Rogue/Rogue20000067.gif
+		offset  25  80
+	@cmd position 1 41 -9 1 1
+	frame	data/chars/Rogue/Rogue20000068.gif
+	delay	130
+		offset  34  78
+	@cmd position 1 36 -15 1 1
+	frame	data/chars/Rogue/Rogue20000069.gif
+	delay	1000
+		offset  34  86
+	@cmd position 1 36 -15 1 1
+	frame	data/chars/Rogue/Rogue20000070.gif
+	delay	6
+	@cmd    depost 1
+	@cmd finish 35 1 0 -5 0 0
+	@cmd clearL
+	frame	data/chars/Rogue/Rogue20000070.gif
+	frame	data/chars/Rogue/Rogue20000070.gif
+
+
+anim grabbackward
+        loop	0
+	delay	6
+	offset	55 91
+		Attack1  0
+	@cmd slamstart2
+	@cmd position 1 50 14 1 1
+	sound	data/chars/Rogue/ya.wav
+	frame	data/chars/Rogue/Rogue20000084.gif
+		offset  55  93
+	@cmd position 1 39 30 1 1
+	frame	data/chars/Rogue/Rogue20000085.gif
+		offset  55  94
+	@cmd position 1 19 58 1 1
+	frame	data/chars/Rogue/Rogue20000086.gif
+		offset  74  63
+	@cmd position 1 -68 -3 1 1
+	frame	data/chars/Rogue/Rogue20000087.gif
+	@cmd depost 1
+	@cmd throw 35 1 0 -5 0 0
+	frame	data/chars/Rogue/Rogue20000087.gif
+	@cmd clearL
+	frame	data/chars/Rogue/Rogue20000087.gif
+
+anim freespecial11
+        loop	0
+	delay	6
+	offset	69 59
+	bbox	31 12 37 33
+	@cmd leaper 4 1 0
+	hitfx	data/sounds/bukk.wav
+		blast  60  18  128  52  15  0  0  45
+		dropv 6 2 0
+	frame	data/chars/Rogue/Rogue07200003.gif
+		blast  60  18  128  52  15  0  1  45
+		dropv 6 2 0
+	frame	data/chars/Rogue/Rogue07200004.gif
+		blast  60  18  128  52  15  1  1  45
+		dropv 6 2 0
+		offset  71  58
+	frame	data/chars/Rogue/Rogue07200005.gif
+		offset  58  60
+	frame	data/chars/Rogue/Rogue07200006.gif
+
+anim freespecial3
+        loop	0
+	delay	19
+	offset	35 118
+	bbox	15 19 26 84
+		steal  23  0  58  111  25  25  0  0  45
+	sound	data/chars/Rogue/darling.wav
+	frame	data/chars/Rogue/Rogue14900006.gif
+
+anim  runattack
+        	loop	0
+	delay	6
+	offset	113 90
+	bbox	54 34 56 20
+		blast  114  3  97  72  20
+	move	30
+	hitfx	data/sounds/bukk.wav
+	sound	data/chars/Rogue/tada.wav
+	frame	data/chars/Rogue/Rogue20000118.gif
+		offset  81  104
+		bbox  32  50  51  20
+		blast  83  30  105  59  20
+	frame	data/chars/Rogue/Rogue20000119.gif
+		offset  91  104
+		bbox  53  60  62  13
+		blast  120  31  99  58  20
+	frame	data/chars/Rogue/Rogue20000120.gif
+		bbox  23  57  54  21
+		blast  85  36  96  52  20
+		offset  61  103
+	frame	data/chars/Rogue/Rogue20000121.gif
+		offset  81  91
+		bbox  40  41  65  20
+		blast  109  10  101  61  20
+	frame	data/chars/Rogue/Rogue20000122.gif
+		offset  52  75
+		bbox  35  18  67  27
+		blast  98  1  98  67  20
+	frame	data/chars/Rogue/Rogue20000123.gif
+
+anim pain
+        loop	0
+	delay	3
+	offset	48 103
+	bbox	22 22 35 45
+	sound	data/chars/Rogue/uh.wav
+	frame	data/chars/Rogue/Rogue50000000.gif
+
+anim fall
+	loop	0
+	offset	68 91
+	delay	100
+	sound	data/chars/Rogue/uh.wav
+	frame	data/chars/Rogue/Rogue50300010.gif
+		offset  64  28
+        	frame	data/chars/Rogue/Rogue50400012.gif
+
+anim rise
+        	loop	0
+	delay	8
+	offset	41 103
+	bbox	26 18 27 40
+	frame	data/chars/Rogue/Rogue53000001.gif
+
+anim land
+        	loop	0
+	delay	8
+	offset	41 73
+	bbox	24 28 23 32
+	frame	data/chars/Rogue/Rogue00060002.gif
+

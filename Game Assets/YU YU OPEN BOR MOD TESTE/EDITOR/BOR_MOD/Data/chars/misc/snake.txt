@@ -1,0 +1,198 @@
+name	SNAKE
+health	200
+type	enemy
+shadow  6
+cantgrab  1
+speed	30
+#flash   flash
+noquake  1
+nodrop	 1
+#nolife   1
+jumpheight 1
+
+
+anim spawn
+	loop	0
+	delay	3
+	offset	53 430
+	frame	data/chars/misc/SN1.gif
+	offset	53 420
+	frame	data/chars/misc/SN1.gif
+	offset	53 410
+	frame	data/chars/misc/SN1.gif
+	offset	53 400
+	frame	data/chars/misc/SN1.gif
+	offset	53 390
+	frame	data/chars/misc/SN1.gif
+	offset	53 380
+	frame	data/chars/misc/SN1.gif
+	offset	53 370
+	frame	data/chars/misc/SN1.gif
+	offset	53 360
+	frame	data/chars/misc/SN1.gif
+	offset	53 350
+	frame	data/chars/misc/SN1.gif
+	offset	53 340
+	frame	data/chars/misc/SN1.gif
+	offset	53 330
+	frame	data/chars/misc/SN1.gif
+
+anim idle
+	loop	1
+	offset	53 300
+	delay	50
+        jumpframe   0  1
+	frame	data/chars/misc/SN1.gif
+
+anim walk
+	loop	1
+	offset	53 300
+	delay	50
+        jumpframe   0  1
+	frame	data/chars/misc/SN1.gif
+
+anim attack1
+        range   -12   12  
+	delay	5
+        hitflash  blood
+        hitfx   data/sounds/beat2.wav
+	offset	53 300
+	frame	data/chars/misc/SN3.gif
+	offset	51 300
+	frame	data/chars/misc/SN3.gif
+	offset	53 300
+	frame	data/chars/misc/SN3.gif
+	offset	51 300
+	frame	data/chars/misc/SN3.gif
+	offset	53 300
+	frame	data/chars/misc/SN3.gif
+	delay	3
+	offset	53 290
+	frame	data/chars/misc/SN3.gif
+	offset	53 280
+	frame	data/chars/misc/SN3.gif
+	offset	53 270
+	frame	data/chars/misc/SN3.gif
+	offset	53 260
+	frame	data/chars/misc/SN3.gif
+	offset	53 250
+	bbox	35 170 45 95
+        blast   35 180 45 75 35 0 0 5
+	frame	data/chars/misc/SN4.gif
+        sound   data/sounds/fall.wav
+	frame	data/chars/misc/SN5.gif
+        blast   0 0 0 0 0 0 0 0
+	frame	data/chars/misc/SN6.gif
+	offset	53 250
+	frame	data/chars/misc/SN4.gif
+	offset	53 250
+	frame	data/chars/misc/SN5.gif
+	offset	53 250
+	frame	data/chars/misc/SN6.gif
+	offset	53 250
+	frame	data/chars/misc/SN4.gif
+	offset	53 250
+	frame	data/chars/misc/SN5.gif
+	offset	53 250
+	frame	data/chars/misc/SN6.gif
+	offset	53 250
+	frame	data/chars/misc/SN4.gif
+	offset	53 250
+	frame	data/chars/misc/SN5.gif
+	offset	53 250
+	frame	data/chars/misc/SN6.gif
+	offset	53 250
+        delay   60
+	frame	data/chars/misc/SN4.gif
+	bbox	0 0 0 0
+	delay	5
+	offset	53 260
+	frame	data/chars/misc/SN3.gif
+	offset	53 270
+	frame	data/chars/misc/SN3.gif
+	offset	53 280
+	frame	data/chars/misc/SN3.gif
+	offset	53 290
+	frame	data/chars/misc/SN3.gif
+	offset	53 300
+	frame	data/chars/misc/SN3.gif
+
+
+anim pain
+	delay	5
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 260
+	frame	data/chars/misc/SN2.gif
+	offset	53 270
+	frame	data/chars/misc/SN2.gif
+	offset	53 280
+	frame	data/chars/misc/SN2.gif
+	offset	53 290
+	frame	data/chars/misc/SN2.gif
+	offset	53 300
+	frame	data/chars/misc/SN2.gif
+
+
+anim death
+	delay	6
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 250
+	frame	data/chars/misc/SN2.gif
+	offset	51 250
+	frame	data/chars/misc/SN2.gif
+	offset	53 260
+	frame	data/chars/misc/SN2.gif
+	offset	53 270
+	frame	data/chars/misc/SN2.gif
+	offset	53 280
+	frame	data/chars/misc/SN2.gif
+	offset	53 290
+	frame	data/chars/misc/SN2.gif
+	offset	53 300
+	frame	data/chars/misc/SN2.gif
+	offset	53 310
+	frame	data/chars/misc/SN2.gif
+	offset	53 320
+	frame	data/chars/misc/SN2.gif
+	offset	53 340
+	frame	data/chars/misc/SN2.gif
+	offset	53 360
+	frame	data/chars/misc/SN2.gif
+	offset	53 380
+	frame	data/chars/misc/SN2.gif
+	offset	53 400
+	frame	data/chars/misc/SN2.gif
+	offset	53 420
+	frame	data/chars/misc/SN2.gif
+	offset	53 440
+	frame	data/chars/misc/SN2.gif
+	offset	53 460
+	frame	data/chars/misc/SN2.gif
+	offset	53 460
+        delay   80
+	frame	data/chars/misc/empty.gif
+
+
+anim rise
+	offset	53 300
+	delay	2
+	frame	data/chars/misc/SN1.gif
+

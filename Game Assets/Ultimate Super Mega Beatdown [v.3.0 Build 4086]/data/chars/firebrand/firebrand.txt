@@ -1,0 +1,374 @@
+name	       Firebrand
+health         1000
+mp	       500
+speed	       12
+type	       player
+shadow	       3
+makeinv        2
+running        35  4.1  2  1
+dust           dust
+throwdamage    26
+candamage    enemy obstacle
+atchain	       1 2 3 4
+flash flashp
+fmap           6
+projectilehit  player obstacle
+gfxshadow 1
+animationscript	data/scripts2/script.c
+script		data/scripts/toad.c
+icon            data/chars/Firebrand/icon.gif
+
+com             A2 freespecial
+com             A3 freespecial2
+com             d f s freespecial5
+
+
+
+
+
+
+anim	attack1
+	cancel	0 5 0 A2 freespecial
+	cancel	0 5 0 A3 freespecial2
+	cancel	0 5 0 d f s freespecial5
+	loop	0
+	delay	4
+	offset	68 101
+	frame	data/Chars/Firebrand/attack1.gif
+	offset	92 99
+	bbox	0 0 0 0
+	frame	data/Chars/Firebrand/attack2.gif
+	attack	57 26 80 37 7 0 0 0 24 15
+	offset	90 97
+	frame	data/Chars/Firebrand/attack3.gif
+	offset	100 104
+	frame	data/Chars/Firebrand/attack4.gif
+	frame	data/Chars/Firebrand/attack5.gif
+	frame	data/Chars/Firebrand/attack6.gif
+		
+anim	attack2
+	cancel	0 4 0 A2 freespecial
+	cancel	0 4 0 A3 freespecial2
+	cancel	0 4 0 d f s freespecial5
+	loop	0
+	delay	2
+	offset	76 112
+	frame	data/Chars/Firebrand/bttack1.gif
+	offset	62 109
+	frame	data/Chars/Firebrand/bttack2.gif
+	offset	51 110
+	frame	data/Chars/Firebrand/bttack3.gif
+	attack	71 7 58 98 7 0 0 0 0 15
+	offset	76 112
+	frame	data/Chars/Firebrand/bttack4.gif
+	offset	62 109
+	frame	data/Chars/Firebrand/bttack5.gif
+		
+anim	attack3
+	cancel	0 5 0 A2 freespecial
+	cancel	0 5 0 A3 freespecial2
+	cancel	0 5 0 d f s freespecial5
+	loop	0
+	delay	4
+	offset	82 122
+	frame	data/Chars/Firebrand/cttack1.gif
+	offset	84 132
+	frame	data/Chars/Firebrand/cttack2.gif
+	offset	84 131
+	frame	data/Chars/Firebrand/cttack3.gif
+	attack	92 30 76 83 7 0 0 0 24 15
+	offset	84 129
+	frame	data/Chars/Firebrand/cttack4.gif
+	offset	91 122
+	frame	data/Chars/Firebrand/cttack5.gif
+	offset	94 121
+	frame	data/Chars/Firebrand/cttack6.gif
+		
+anim	attack4
+	cancel	0 6 0 A2 freespecial
+	cancel	0 6 0 A3 freespecial2
+	cancel	0 6 0 d f s freespecial5
+	loop	0
+	delay	4
+	offset	63 97
+	frame	data/Chars/Firebrand/dttack1.gif
+	offset	64 102
+	frame	data/Chars/Firebrand/dttack2.gif
+	offset	65 100
+	frame	data/Chars/Firebrand/dttack3.gif
+	attack	59 20 63 82 12 1 0 0 24 15
+	dropv	2 5 0
+	frame	data/Chars/Firebrand/dttack4.gif
+	frame	data/Chars/Firebrand/dttack5.gif
+	offset	84 95
+	frame	data/Chars/Firebrand/dttack6.gif
+	offset	70 100
+	frame	data/Chars/Firebrand/dttack7.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	61 90
+	frame	data/Chars/Firebrand/fall1.gif
+	offset	60 66
+	frame	data/Chars/Firebrand/fall2.gif
+	offset	61 36
+	frame	data/Chars/Firebrand/fall3.gif
+		
+anim	freespecial
+	cancel	4 6 0 a2 freespecial
+	loop	0
+	delay	6
+	offset	62 110
+	frame	data/Chars/Firebrand/anew1.gif
+	offset	63 105
+	frame	data/Chars/Firebrand/anew2.gif
+	frame	data/Chars/Firebrand/anew4.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	frame	data/Chars/Firebrand/anew7.gif
+	frame	data/Chars/Firebrand/anew7.gif
+		
+anim	freespecial2
+	cancel	4 6 0 a3 freespecial2
+	loop	0
+	delay	6
+	offset	62 110
+	frame	data/Chars/Firebrand/anew1.gif
+	offset	63 105
+	frame	data/Chars/Firebrand/anew2.gif
+	frame	data/Chars/Firebrand/anew4.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebranda" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	frame	data/Chars/Firebrand/anew7.gif
+	frame	data/Chars/Firebrand/anew7.gif
+		
+anim	freespecial3
+	@cmd	leaper 7 0 0
+	loop	0
+	delay	8
+	offset	130 155
+	@cmd	slamstart2
+	@cmd	position 1 4 -35 0 1
+	frame	data/Chars/Firebrand/cnew1.gif
+	offset	127 163
+	@cmd	position 1 4 -35 0 1
+	frame	data/Chars/Firebrand/cnew2.gif
+	offset	118 160
+	@cmd	position 1 4 -35 0 1
+	frame	data/Chars/Firebrand/cnew3.gif
+	@cmd	stop
+	offset	108 119
+	@cmd	depost 1
+	@cmd	throw 35 1 0 -5 0 1
+	@cmd	clearL
+	frame	data/Chars/Firebrand/cnew4.gif
+		
+anim	freespecial4
+	cancel	4 5 0 a2 freespecial4
+@script
+    void vSelf = getlocalvar("self");
+
+    if(frame==1){
+      int  iTime = openborvariant("elapsed_time");
+
+      changeentityproperty(vSelf, "velocity", 0, 0 , 0); // This is to stop entity from moving forward
+      changeentityproperty(vSelf, "tosstime", iTime + 120);
+    }
+	@end_script	
+	loop	0
+	delay	6
+	offset	62 110
+	frame	data/Chars/Firebrand/anew1.gif
+	offset	63 105
+	frame	data/Chars/Firebrand/anew2.gif
+	frame	data/Chars/Firebrand/anew4.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	frame	data/Chars/Firebrand/anew7.gif
+		
+anim	freespecial5
+	@cmd	spawn01 "super" -19 50 0
+	cancel	4 6 0 a2 freespecial
+	loop	0
+	delay	6
+	offset	62 110
+	frame	data/Chars/Firebrand/anew1.gif
+	offset	63 105
+	@cmd	spawn01 "flash3" 0 0 -1
+	frame	data/Chars/Firebrand/anew2.gif
+	frame	data/Chars/Firebrand/anew4.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 27 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	frame	data/Chars/Firebrand/anew7.gif
+	frame	data/Chars/Firebrand/anew7.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	76 76
+	frame	data/Chars/Firebrand/get.gif
+		
+anim	idle
+	bbox	47 17 57 96
+	loop	1
+	delay	6
+	offset	75 109
+	frame	data/Chars/Firebrand/idle1.gif
+	offset	74 109
+	frame	data/Chars/Firebrand/idle2.gif
+	offset	75 110
+	frame	data/Chars/Firebrand/idle3.gif
+	offset	73 109
+	frame	data/Chars/Firebrand/idle4.gif
+	offset	76 109
+	frame	data/Chars/Firebrand/idle5.gif
+		
+anim	jump
+	cancel	0 5 0 a2 freespecial4
+	bbox	33 16 35 111
+	loop	0
+	delay	6
+	offset	55 130
+	frame	data/Chars/Firebrand/jump1.gif
+	offset	54 131
+	frame	data/Chars/Firebrand/jump2.gif
+	bbox	59 19 26 89
+	offset	72 111
+	frame	data/Chars/Firebrand/jump3.gif
+	bbox	84 21 25 83
+	offset	94 107
+	frame	data/Chars/Firebrand/jump4.gif
+	bbox	53 77 32 90
+	offset	65 167
+	frame	data/Chars/Firebrand/jump5.gif
+	offset	64 166
+	frame	data/Chars/Firebrand/jump6.gif
+		
+anim	land
+	loop	0
+	delay	6
+	offset	78 77
+	frame	data/Chars/Firebrand/get.gif
+		
+anim	pain
+	bbox	43 11 48 95
+	loop	0
+	delay	6
+	offset	62 103
+	frame	data/Chars/Firebrand/pain.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	78 77
+	frame	data/Chars/Firebrand/get.gif
+		
+anim	run
+	bbox	91 78 71 81
+	loop	1
+	delay	6
+	offset	127 158
+	frame	data/Chars/Firebrand/walk1.gif
+	offset	123 165
+	frame	data/Chars/Firebrand/walk2.gif
+	offset	114 162
+	frame	data/Chars/Firebrand/walk3.gif
+	bbox	62 32 77 92
+	offset	104 121
+	frame	data/Chars/Firebrand/walk4.gif
+	bbox	39 3 61 86
+	offset	68 85
+	frame	data/Chars/Firebrand/walk5.gif
+	bbox	15 3 48 84
+	offset	40 82
+	frame	data/Chars/Firebrand/walk6.gif
+	frame	data/Chars/Firebrand/walk7.gif
+		
+anim	runattack
+	cancel	4 6 0 a2 freespecial
+	loop	0
+	delay	6
+	offset	62 110
+	frame	data/Chars/Firebrand/anew1.gif
+	offset	63 105
+	frame	data/Chars/Firebrand/anew2.gif
+	frame	data/Chars/Firebrand/anew4.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 7 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	offset	80 89
+	frame	data/Chars/Firebrand/anew5.gif
+	offset	108 79
+	@cmd	spawn01 "firebrandb" 7 48 0
+	frame	data/Chars/Firebrand/anew6.gif
+	frame	data/Chars/Firebrand/anew7.gif
+	frame	data/Chars/Firebrand/anew7.gif
+		
+anim	walk
+	bbox	91 78 71 81
+	loop	1
+	delay	6
+	offset	127 158
+	frame	data/Chars/Firebrand/walk1.gif
+	offset	123 165
+	frame	data/Chars/Firebrand/walk2.gif
+	offset	114 162
+	frame	data/Chars/Firebrand/walk3.gif
+	bbox	62 32 77 92
+	offset	104 121
+	frame	data/Chars/Firebrand/walk4.gif
+	bbox	39 3 61 86
+	offset	68 85
+	frame	data/Chars/Firebrand/walk5.gif
+	bbox	15 3 48 84
+	offset	40 82
+	frame	data/Chars/Firebrand/walk6.gif
+	frame	data/Chars/Firebrand/walk7.gif
+		
+#|edited by openBor Stats v 0.51
+		

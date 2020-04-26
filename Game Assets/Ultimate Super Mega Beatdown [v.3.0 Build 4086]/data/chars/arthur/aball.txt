@@ -1,0 +1,57 @@
+name	     ABall
+type	     none
+shadow	     0
+candamage    enemy obstacle
+remove	0
+lifespan 3
+
+anim spawn
+	loop	0
+	delay	2
+	offset	58 96
+		blast  6  4  102  80  15
+        	frame	data/chars/Arthur/Arthur301000000.gif
+		offset  88  146
+		blast  7  19  153  115  15
+        	frame	data/chars/Arthur/Arthur301000002.gif
+		offset  107  173
+		blast  6  18  190  142  15
+        	frame	data/chars/Arthur/Arthur301000003.gif
+		offset  146  203
+		blast  4  7  267  188  15
+        	frame	data/chars/Arthur/Arthur301000004.gif
+		offset  152  205
+		blast  8  12  278  192  15
+        	frame	data/chars/Arthur/Arthur301000005.gif
+		offset  160  208
+        	frame	data/chars/Arthur/Arthur301000006.gif
+        	frame	data/chars/Arthur/Arthur301000007.gif
+		offset  155  198
+        	frame	data/chars/Arthur/Arthur301000008.gif
+        	frame	data/chars/Arthur/Arthur301000009.gif
+		offset  154  206
+        	frame	data/chars/Arthur/Arthur301000010.gif
+        	frame	data/chars/Arthur/Arthur301000011.gif
+		offset  140  202
+        	frame	data/chars/Arthur/Arthur301000012.gif
+        	frame	data/chars/Arthur/Arthur301000013.gif
+		offset  160  211
+        	frame	data/chars/Arthur/Arthur301000014.gif
+		offset  152  212
+        	frame	data/chars/Arthur/Arthur301000015.gif
+		offset  156  200
+        	frame	data/chars/Arthur/Arthur301000016.gif
+		offset  155  206
+        	frame	data/chars/Arthur/Arthur301000017.gif
+		offset  157  213
+        	frame	data/chars/Arthur/Arthur301000018.gif
+        	frame	data/chars/Arthur/Arthur301000019.gif
+		offset  147  201
+        	frame	data/chars/Arthur/Arthur301000020.gif
+        	frame	data/chars/Arthur/Arthur301000021.gif
+		offset  159  213
+        	frame	data/chars/Arthur/Arthur301000022.gif
+		Attack1  0
+		offset  88  212
+        	frame	data/chars/Arthur/EMP.gif
+

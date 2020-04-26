@@ -1,0 +1,38 @@
+name	BCaller
+type	panel
+alpha	1
+speed	10
+
+animationscript	data/scripts/common/spawn.c
+load	FBomb 1
+
+anim	idle
+	loop	1
+	offset	1 1
+	delay	50
+	quakeframe	1 11 1
+	@cmd	spawn01 "FBomb" 20 50 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 300 200 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 150 100 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 30 220 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 150 240 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 270 220 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 0 120 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 310 150 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 250 50 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb"	220 200 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb"	90 50 240
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FBomb" 180 120 240
+	frame	data/chars/misc/empty.gif
+	

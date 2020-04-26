@@ -1,0 +1,20 @@
+name	     noner
+type	     none
+shadow	     0
+animationscript data/scripts2/script.c
+
+anim	idle
+	loop	0
+	delay	6
+	offset	28 76
+	delay	300
+	frame	data/chars/Redbomb/empty.gif
+	delay	3
+	@cmd	spawn01 "Little" 0 0 0
+	frame	data/chars/Redbomb/empty.gif
+	@cmd	suicide()
+	frame	data/chars/Redbomb/empty.gif
+
+		
+#|edited by openBor Stats v 0.50
+		
