@@ -1,0 +1,199 @@
+name	jack
+health	70
+speed	4
+type	enemy
+shadow  1
+gfxshadow  1
+falldie 2
+nodieblink 2
+icon	data/chars/jack/icon.png
+palette   data/chars/jack/idle000.png
+alternatepal data/chars/jack/map1.png
+alternatepal data/chars/jack/map2.png
+alternatepal data/chars/jack/map3.png
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	47 145
+	bbox	15 -9 75 141
+	frame	data/chars/jack/punch000.png
+	offset	40 151
+	bbox	21 -9 72 152
+	frame	data/chars/jack/punch001.png
+	offset	40 138
+	attack	104 16 72 49 10 0 0 0 0 0
+	frame	data/chars/jack/punch002.png
+		
+anim	attack2
+	loop	0
+	delay	7
+	offset	45 152
+	bbox	11 -9 56 146
+	frame	data/chars/jack/kick0.png
+	offset	42 154
+	bbox	11 -9 64 150
+	frame	data/chars/jack/kick1.png
+	offset	38 152
+	attack	74 62 67 46 10 0 0 0 0 0
+	frame	data/chars/jack/kick2.png
+	offset	45 137
+	frame	data/chars/jack/kick3.png
+		
+anim	attack3
+	loop	0
+	delay	7
+	range	20 60
+	offset	64 146
+	bbox	38 -9 60 147
+	frame	data/chars/jack/spunch000.png
+	offset	77 146
+	bbox	58 -9 52 151
+	frame	data/chars/jack/spunch001.png
+	offset	54 137
+	bbox	39 -8 64 130
+	frame	data/chars/jack/spunch002.png
+	offset	54 135
+	attack	67 2 95 49 10 0 0 0 0 0
+	frame	data/chars/jack/spunch003.png
+	offset	53 134
+	bbox	40 2 64 106
+	frame	data/chars/jack/spunch004.png
+	offset	53 133
+	bbox	40 2 64 106
+	frame	data/chars/jack/spunch005.png
+	offset	57 136
+	bbox	40 2 64 106
+	frame	data/chars/jack/spunch006.png
+		
+anim	death
+	loop	0
+	delay	10
+	offset	62 90
+	frame	data/chars/jack/rise1.png
+	offset	47 125
+	frame	data/chars/jack/rise2.png
+	offset	44 137
+	frame	data/chars/jack/rise3.png
+	offset	74 144
+	frame	data/chars/jack/pain02.png
+sound	data/sounds/die12.wav
+	offset	74 144
+	frame	data/chars/jack/die0.png
+	offset	74 144
+	frame	data/chars/jack/die1.png
+offset	74 144
+	frame	data/chars/jack/die0.png
+	offset	74 144
+	frame	data/chars/jack/die1.png
+offset	74 144
+	frame	data/chars/jack/die0.png
+	offset	74 144
+	frame	data/chars/jack/die1.png
+delay	8
+	offset	74 144
+	frame	data/chars/jack/die2.png
+	sound	data/sounds/explo.wav
+	offset	74 144
+	frame	data/chars/jack/die3.png
+	offset	74 144
+	frame	data/chars/jack/die4.png
+	offset	74 153
+	frame	data/chars/jack/die5.png
+	offset	74 144
+	frame	data/chars/jack/die3.png
+	offset	74 144
+	frame	data/chars/jack/die4.png
+	offset	74 153
+	frame	data/chars/jack/die5.png
+	offset	74 144
+	frame	data/chars/jack/die6.png
+	offset	74 172
+	frame	data/chars/jack/die7.png
+	offset	74 177
+	frame	data/chars/jack/die8.png
+	offset	74 172
+	frame	data/chars/jack/die7.png
+	offset	74 177
+	frame	data/chars/jack/die8.png
+	offset	74 171
+	frame	data/chars/jack/die9.png
+	offset	74 162
+	frame	data/chars/jack/die10.png
+	offset	74 157
+	frame	data/chars/jack/die11.png
+	offset	74 153
+	frame	data/chars/jack/die12.png
+	offset	74 143
+	frame	data/chars/jack/die13.png
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	54 125
+	frame	data/chars/jack/fall00.png
+	offset	64 131
+	frame	data/chars/jack/fall02.png
+	offset	64 50
+	frame	data/chars/jack/fall01.png
+		
+anim	idle
+	loop	1
+	offset	43 150
+	bbox	17 -1 69 151
+	delay	10
+	frame	data/chars/jack/idle000.png
+	offset	43 146
+	frame	data/chars/jack/idle001.png
+	offset	43 141
+	frame	data/chars/jack/idle002.png
+	offset	43 138
+	frame	data/chars/jack/idle003.png
+		
+anim	pain
+	loop	0
+	offset	54 149
+	bbox	17 5 77 136
+	delay	12
+	frame	data/chars/jack/pain01.png
+	offset	74 144
+	delay	50
+	frame	data/chars/jack/pain02.png
+	offset	91 155
+	delay	12
+	frame	data/chars/jack/pain03.png
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	62 90
+	frame	data/chars/jack/rise1.png
+	offset	47 125
+	frame	data/chars/jack/rise2.png
+	offset	44 137
+	frame	data/chars/jack/rise3.png
+		
+anim	walk
+	loop	1
+	offset	37 151
+	bbox	7 -1 71 159
+	delay	10
+	frame	data/chars/jack/walk000.png
+	delay	10
+	offset	59 151
+	frame	data/chars/jack/walk001.png
+	delay	10
+	offset	61 151
+	frame	data/chars/jack/walk002.png
+	delay	10
+	offset	32 151
+	frame	data/chars/jack/walk003.png
+	delay	10
+	offset	54 151
+	frame	data/chars/jack/walk004.png
+	delay	10
+	offset	57 150
+	frame	data/chars/jack/walk005.png
+		
+#|edited by openBor Stats v 0.41
+		

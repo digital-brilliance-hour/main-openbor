@@ -1,0 +1,352 @@
+bossmusic	data/music/boss.bor
+music		data/music/ruin.ogg
+background	data/levels/ruin/bg.gif  1  1  0  -90  0  0  5000  5000  0  0
+panel	      data/levels/ruin/ruin2.gif
+
+order           a
+
+spawn	mur1
+coords	1085 260  67
+	at  0
+
+spawn	cloudfog
+coords	1141 260  55
+at	0
+
+spawn	helicog
+coords 702 294  200
+at	0
+
+spawn  helicog
+	coords  1621  169  196
+	at  0
+
+spawn	sac
+coords	183 186  0
+at	0
+
+spawn	pneu
+coords	1231 203  0
+at	0
+light  246 -100
+at 0
+cameraoffset 0 0
+spawn1 110 20
+spawn2 152 57
+
+spawn	ticon
+coords	163 6
+at	0
+
+spawn	sac
+item money
+coords	46 250  0
+at	0
+
+
+spawn	p00
+coords	84 281  7
+at	0
+
+spawn  p00
+	coords  267  277  2
+	at  0
+
+spawn  pneu
+	coords  357  207  0
+	at  0
+
+spawn	Steamer
+coords	405 280
+at	0
+
+spawn	p02
+coords	449 276  0
+	at  0
+
+spawn	sac
+item	apple
+coords	531 260  0
+at	0
+
+spawn	Steamer
+coords	587 276
+at	0
+
+spawn  p00
+	coords  632  279  2
+	at  0
+
+spawn  p00
+	coords  849  274  0
+	at  0
+
+spawn	Steamer
+coords	863 275
+at	0
+
+spawn	sac
+item	apple
+coords	901 212  0
+at	0
+
+spawn	corbac
+coords	1031 266  0
+at	0
+
+spawn	p03
+coords	1032 276  0
+at	0
+
+spawn	Steamer
+coords	1049 273
+at	0
+
+spawn  pneu
+	coords  1131  200  0
+	at  0
+
+spawn	p01
+coords	1214 278  3
+at	0
+
+spawn	Steamer
+coords	1263 280
+at	0
+
+spawn  pneu
+	coords  1289  225  0
+	at  0
+
+spawn  pneu
+	coords  1313  262  0
+	at  0
+
+spawn  p02
+	coords  1396  283  7
+	at  0
+
+spawn	Steamer
+coords	1496 269
+at	0
+
+
+spawn	Steamer
+coords	1502 276
+at	0
+
+spawn  p00
+	coords  1579  278  0
+	at  0
+
+spawn	Steamer
+coords	1662 270
+at	0
+
+
+spawn  pneu
+	coords  1690  243  0
+	at  0
+
+
+
+spawn	decide
+coords	320 260  240
+at	0
+
+spawn  corbac
+	coords  1252  174
+	at  0
+
+spawn	mur
+coords	93 260  56
+	flip  1
+at	0
+
+
+#------------------
+wait
+at 40
+
+spawn	godarmy
+map 2
+health	50
+coords	600 200  0
+at	40
+
+
+spawn	godarmy
+map 2
+health	50
+coords	-30 268  0
+at	40
+spawn  cloudfog
+	coords  691  260  53
+	at  40
+spawn  cloudfog
+	coords  1437  260  62
+	at  40
+spawn  mur1
+	coords  1375  260  67
+	flip  1
+	at  40
+spawn  cloudfog
+	coords  264  260  59
+	at  80
+
+
+wait
+at 200
+
+
+spawn	godarmy2
+map 2
+health	60
+coords	-30 260  0
+at	200
+
+
+spawn	godarmy2
+map 2
+health	60
+coords	550 200  0
+at	200
+
+
+spawn	godarmy3
+map 2
+health	20
+coords	550 250  0
+at	200
+
+
+#--group3-----------
+
+
+wait
+at	480
+
+
+spawn	godarmy3
+map 2
+health	20
+coords	600 250  0
+at	480
+
+
+
+spawn	godarmy2
+map 2
+health	60
+coords	-40 265  0
+at	480
+
+spawn	hugo
+map 2
+health	60
+coords	550 270  0
+at	480
+
+wait
+at	600
+
+spawn	hugo
+map 1
+health	60
+coords	-40 210  0
+at	600
+
+
+spawn	godarmy
+map 2
+health	60
+coords	-30 250  0
+at	600
+
+spawn	godarmy2
+map 2
+health	60
+coords	550 220  0
+at	600
+
+wait
+at	1000
+
+spawn	bikerduck
+item meat
+health	1
+coords	600 260  0
+at	1000
+
+spawn	hugo
+map 2
+health	60
+coords	600 220  0
+at	1000
+
+
+spawn	godarmy
+map 2
+health	30
+coords	-40 210  0
+at	1000
+
+
+
+spawn	godarmy3
+map 2
+health	20
+coords	-40 230  0
+at	1000
+
+spawn	godarmy
+map 2
+health	40
+coords	600 230  0
+at	1000
+
+spawn	colonel
+boss	1
+coords	550 220  0
+at	1350
+
+#after
+
+spawn	godarmy
+map 2
+health	50
+coords	555 265  0
+at	1350
+
+spawn	godarmy2
+map 2
+health	50
+coords	4500 210  0
+at	1350
+
+spawn	godarmy2
+map 2
+health	50
+coords	-4500 265  0
+at	1350
+
+
+spawn	godarmy3
+map 2
+health	20
+coords	2500 210  0
+at	1350
+
+
+spawn	godarmy
+map 2
+health	50
+coords	-2500 260  0
+at	1350
+
+spawn	godarmy
+map 2
+health	50
+coords	2500 265  0
+at	1350
+

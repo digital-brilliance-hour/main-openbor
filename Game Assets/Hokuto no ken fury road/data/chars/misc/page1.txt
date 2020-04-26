@@ -1,0 +1,28 @@
+name	page1
+health	1
+type	obstacle
+shadow	0
+nolife  1
+nomove 1 1
+hostile player
+flash   obfla
+noatflash 1
+facing 2
+subject_to_gravity 0
+subject_to_obstacle 0
+subject_to_wall 0
+subject_to_platform 0
+no_adjust_base 1
+
+anim	idle
+
+	loop	0
+	delay	1000
+	offset	11 41
+	bbox	0 0 14 103
+	frame	data/chars/misc/page1.png
+
+
+		
+#|edited by openBor Stats v 0.41
+		

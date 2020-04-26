@@ -1,0 +1,34 @@
+
+music		data/music/train.ogg
+panel	data/levels/train/train.gif
+order           a
+light  -600 -250
+at 0
+cameraoffset 0 0
+settime 0
+spawn1  252 0 260
+spawn2  252 0 260
+type 1 0 0
+
+
+spawn	training
+coords	320 260  240
+at	0
+
+spawn	ticon
+coords	163 6
+at	0
+
+
+
+spawn	dummy
+coords	400 400
+at	0
+
+
+
+spawn mat
+map 3
+coords	400 260
+at	0
+

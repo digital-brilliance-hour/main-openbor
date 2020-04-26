@@ -1,0 +1,54 @@
+name    gku
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	22
+	offset	0 0 
+frame	data/scenes/gku/1.png
+sound	data/sounds/gokameha.wav
+frame	data/scenes/gku/2.png
+sound	data/sounds/flame2.wav
+frame	data/scenes/gku/3.png
+frame	data/scenes/gku/4.png
+frame	data/scenes/gku/5.png
+frame	data/scenes/gku/6.png
+frame	data/scenes/gku/7.png
+frame	data/scenes/gku/8.png
+frame	data/scenes/gku/9.png
+frame	data/scenes/gku/10.png
+sound	data/sounds/goscream.wav
+frame	data/scenes/gku/19.png
+frame	data/scenes/gku/20.png
+frame	data/scenes/gku/21.png
+frame	data/scenes/gku/22.png
+frame	data/scenes/gku/11.png
+frame	data/scenes/gku/12.png
+frame	data/scenes/gku/13.png
+frame	data/scenes/gku/18.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/gku/18.png
+
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

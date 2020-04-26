@@ -1,0 +1,138 @@
+name   ozed
+health   80
+type   enemy
+shadow   0
+nolife 1
+diesound  data/sounds/die1.wav
+falldie 1
+nodieblink 2
+palette data/chars/ozed/idle000.png
+aimove chase
+jumpheight 1
+hostile player
+agression 20
+subject_to_hole 1
+animationscript   data/scripts/ani0020.h
+
+
+
+
+anim	attack1
+	loop	0
+	delay	10
+	offset	19 53
+	bbox	1 0 35 62
+	frame	data/chars/ozed/punch000.png
+	offset	18 53
+	frame	data/chars/ozed/punch001.png
+	attack	28 10 32 20 6 0 1 0 0 0
+	offset	18 53
+	delay	20
+	frame	data/chars/ozed/punch002.png
+		
+anim	death
+	loop	0
+	delay	20
+	offset	20 32
+	frame	data/chars/ozed/die1.png
+	delay	8
+	offset	20 44
+	frame	data/chars/ozed/die2.png
+	delay	8
+	offset	20 44
+	frame	data/chars/ozed/die3.png
+	delay	8
+	offset	20 51
+	frame	data/chars/ozed/die4.png
+	delay	8
+	offset	20 51
+	frame	data/chars/ozed/die5.png
+	delay	8
+	offset	20 24
+	frame	data/chars/ozed/die6.png
+		
+anim	fall
+	loop	0
+	delay	8
+	offset	30 35
+	frame	data/chars/ozed/fall00.png
+	offset	26 31
+	frame	data/chars/ozed/fall01.png
+	offset	31 10
+	frame	data/chars/ozed/fall02.png
+		
+anim	follow1
+	loop	1
+	delay	8
+	offset	17 85
+	bbox	1 0 38 65
+	@cmd	attack1 10 100 100 "ANI_FOLLOW2"
+	frame	data/chars/ozed/spawn0.png
+	offset	17 85
+	frame	data/chars/ozed/spawn00.png
+	offset	17 85
+	frame	data/chars/ozed/spawn000.png
+		
+anim	follow2
+	loop	0
+	delay	12
+	offset	8 51
+	bbox	1 0 38 65
+	frame	data/chars/ozed/spawn1.png
+		
+
+anim	follow3
+	loop	1
+	delay	8
+	offset	20 56
+	@cmd	attack1 10 100 100 "ANI_IDLE"
+	frame	data/chars/ozed/spawn2.png
+	
+
+
+anim	idle
+	loop	0
+	delay	10
+	offset	20 56
+	bbox	1 0 38 65
+	frame	data/chars/ozed/idle000.png
+		
+anim	pain
+	loop	0
+	delay	8
+	offset	22 57
+	bbox	1 0 38 65
+	frame	data/chars/ozed/pain01.png
+	offset	17 50
+	frame	data/chars/ozed/pain02.png
+		
+anim	rise
+	loop	0
+	delay	10
+	offset	20 42
+	bbox	1 0 38 36
+	frame	data/chars/ozed/rise.png
+		
+anim	walk
+	loop	1
+	delay	8
+	offset	17 53
+	bbox	1 0 38 59
+	frame	data/chars/ozed/walk000.png
+	offset	31 53
+	frame	data/chars/ozed/walk001.png
+	offset	33 53
+	frame	data/chars/ozed/walk002.png
+	offset	26 53
+	frame	data/chars/ozed/walk003.png
+	offset	18 53
+	frame	data/chars/ozed/walk004.png
+	offset	30 53
+	frame	data/chars/ozed/walk005.png
+	offset	32 53
+	frame	data/chars/ozed/walk006.png
+	offset	22 53
+	frame	data/chars/ozed/walk007.png
+		
+#|edited by openBor Stats v 0.41
+		

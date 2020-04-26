@@ -1,0 +1,390 @@
+name	sdshu
+health	200
+speed	12
+type	none
+shadow  0
+gfxshadow  0
+mprate 2
+running 20 2 1 1 0
+mp 150
+subject_to_obstacle 1
+icon	data/chars/shu/icon.png
+diesound data/sounds/shu/die.wav
+palette         data/chars/shu/idle001.png
+com U U A2 freespecial3
+com A2	freespecial
+animationscript   data/scripts/ani0020.h
+
+
+
+
+
+remap  data/chars/shu/idle000.png
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	followanim	2
+	followcond	3
+	delay	8
+	offset	18 56
+	bbox	7 2 29 60
+	frame	data/chars/shu/sdshu/punch000.png
+	sound	data/sounds/shu/huh.wav
+	offset	13 53
+	attack	38 3 33 41 8 0 0 0 0 0
+	bbox	3 1 39 61
+	frame	data/chars/shu/sdshu/punch001.png
+	offset	18 56
+	frame	data/chars/shu/sdshu/punch000.png
+		
+anim	attack2
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	10
+	offset	18 56
+	bbox	7 2 29 60
+	frame	data/chars/shu/sdshu/punch000.png
+	offset	13 53
+	attack	28 3 33 41 8 0 0 0 0 0
+	bbox	3 1 39 61
+	frame	data/chars/shu/sdshu/punch001.png
+	offset	18 56
+	frame	data/chars/shu/sdshu/punch000.png
+		
+anim	attack3
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	12
+	offset	18 56
+	bbox	6 0 30 57
+	frame	data/chars/shu/sdshu/punch000.png
+	offset	17 52
+	frame	data/chars/shu/sdshu/a3-00.png
+	sound	data/sounds/shu/hah.wav
+	attack	34 1 42 37 7 0 0 0 0 0
+	offset	16 48
+	frame	data/chars/shu/sdshu/a3-01.png
+	offset	18 56
+	frame	data/chars/shu/sdshu/punch000.png
+		
+anim	fall
+	loop	0
+	offset	34 42
+	delay	20
+	frame	data/chars/shu/sdshu/fall00.png
+	offset	32 31
+	frame	data/chars/shu/sdshu/fall01.png
+	offset	31 8
+	frame	data/chars/shu/sdshu/fall02.png
+		
+anim	follow1
+	loop	0
+	delay	10
+	offset	19 53
+	bbox	1 1 30 48
+	range	-45 185
+	rangez	-45 45
+	frame	data/chars/shu/sdshu/hk0.png
+	offset	18 59
+	frame	data/chars/shu/sdshu/hk1.png
+	bbox	7 1 28 64
+	offset	18 59
+	blast	32 0 31 69 15 0 0 0 0 0
+	delay	12
+	frame	data/chars/shu/sdshu/hk2.png
+		
+anim	follow2
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	followanim	3
+	followcond	3
+	delay	10
+	offset	18 56
+	bbox	7 2 29 60
+	frame	data/chars/shu/sdshu/punch000.png
+	offset	13 53
+	attack	28 3 33 41 8 0 0 0 0 0
+	bbox	3 1 39 61
+	frame	data/chars/shu/sdshu/punch001.png
+	offset	18 56
+	frame	data/chars/shu/sdshu/punch000.png
+		
+anim	follow3
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	10
+	offset	18 56
+	bbox	6 0 30 57
+	frame	data/chars/shu/sdshu/punch000.png
+	offset	17 52
+	frame	data/chars/shu/sdshu/a3-00.png
+	sound	data/sounds/shu/hah.wav
+	attack	34 1 42 37 7 0 0 0 0 0
+	offset	16 48
+	frame	data/chars/shu/sdshu/a3-01.png
+	offset	18 56
+	frame	data/chars/shu/sdshu/punch000.png
+		
+anim	forwardjump
+	loop	0
+	delay	10
+	cancel	0 2 0 A2 freespecial4
+	offset	18 54
+	bbox	12 0 24 53
+	frame	data/chars/shu/sdshu/jump01.png
+	offset	12 101
+	delay	10
+	bbox	3 1 34 61
+	frame	data/chars/shu/sdshu/jump02.png
+		
+anim	freespecial
+	sound	data/sounds/shu/kick.wav
+	loop	0
+	delay	8
+	offset	19 53
+	bbox	5 5 25 51
+	@cmd	ani0020 openborconstant("ANI_FOLLOW1") openborconstant("ANI_PAIN2")
+	cancel	3 4 1 A2 freespecial15
+	frame	data/chars/shu/sdshu/ak0.png
+	offset	16 53
+	frame	data/chars/shu/sdshu/ak1.png
+	delay	12
+	attack2	24 2 39 38 5 0 0 0 0 0
+	offset	14 55
+	frame	data/chars/shu/sdshu/ak2.png
+	offset	19 53
+	frame	data/chars/shu/sdshu/ak0.png
+		
+anim	freespecial15
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	7
+	offset	19 53
+	bbox	7 3 23 48
+	frame	data/chars/shu/sdshu/hk0.png
+	offset	18 59
+	frame	data/chars/shu/sdshu/hk1.png
+	bbox	7 1 28 64
+	offset	18 59
+	blast	38 0 31 69 15 0 0 0 0 0
+	delay	12
+	frame	data/chars/shu/sdshu/hk2.png
+		
+anim	freespecial3
+	loop	0
+	delay	8
+	offset	22 54
+	bbox	4 0 32 58
+	frame	data/chars/shu/sdshu/spec0.png
+	offset	13 51
+	bbox	8 -1 24 56
+	frame	data/chars/shu/sdshu/a3-00.png
+	sound	data/sounds/shu/haku.wav
+	delay	12
+	attack	29 6 40 25 24 1 0 0 2 0
+	offset	13 50
+	bbox	13 0 27 51
+	frame	data/chars/shu/sdshu/spec1.png
+	delay	6
+	offset	13 51
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	13 0 26 54
+	frame	data/chars/shu/sdshu/a3-00.png
+		
+anim	freespecial4
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	8
+	offset	17 114
+	bbox	6 0 31 63
+	frame	data/chars/shu/sdshu/jk0.png
+	offset	19 117
+	attack	26 36 35 34 8 1 0 0 0 0
+	bbox	4 1 29 57
+	frame	data/chars/shu/sdshu/jk1.png
+		
+anim	get
+	loop	0
+	delay	5
+	offset	21 44
+	frame	data/chars/shu/sdshu/jump00.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	17 56
+	bbox	4 3 28 54
+	frame	data/chars/shu/sdshu/idle000.png
+		
+anim	jump
+	loop	0
+	delay	10
+	cancel	0 2 0 A2 freespecial4
+	offset	18 54
+	bbox	8 0 24 53
+	frame	data/chars/shu/sdshu/jump01.png
+	offset	12 103
+	delay	10
+	bbox	4 1 24 57
+	frame	data/chars/shu/sdshu/jump02.png
+		
+anim	jumpattack
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	7
+	offset	21 111
+	bbox	9 0 26 57
+	frame	data/chars/shu/sdshu/jp0.png
+	offset	21 98
+	attack	22 19 31 35 7 0 0 0 0 0
+	bbox	9 2 20 38
+	frame	data/chars/shu/sdshu/jp1.png
+		
+anim	jumpattack2
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	7
+	offset	21 111
+	bbox	9 0 26 57
+	frame	data/chars/shu/sdshu/jp0.png
+	offset	21 98
+	attack	21 18 31 35 7 0 0 0 0 0
+	bbox	9 2 20 38
+	frame	data/chars/shu/sdshu/jp1.png
+		
+anim	jumpdelay
+	loop	0
+	delay	7
+	offset	21 44
+	bbox	9 3 28 44
+	frame	data/chars/shu/sdshu/jump00.png
+		
+anim	pain
+	loop	0
+	offset	17 55
+	bbox	0 1 33 54
+	delay	8
+	frame	data/chars/shu/sdshu/pain01.png
+	offset	25 51
+	delay	36
+	frame	data/chars/shu/sdshu/pain02.png
+		
+anim	respawn
+	sound	data/sounds/shu/nanto.wav
+	offset	17 54
+	loop	0
+	delay	40
+	jumpframe	1 4 0 0
+	frame	data/chars/shu/sdshu/jump01.png
+	offset	14 57
+	frame	data/chars/shu/sdshu/jump02.png
+		
+anim	rise
+	loop	0
+	offset	21 44
+	delay	10
+	frame	data/chars/shu/sdshu/jump00.png
+	offset	18 54
+	delay	10
+	frame	data/chars/shu/sdshu/jump01.png
+		
+anim	run
+	loop	0
+	delay	1
+	offset	15 54
+	bbox	6 0 26 56
+	@cmd	run0001
+	frame	data/chars/shu/sdshu/walk000.png
+	offset	27 53
+	frame	data/chars/shu/sdshu/walk001.png
+		
+anim	runattack
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	6
+	offset	20 54
+	bbox	6 0 30 57
+	frame	data/chars/shu/sdshu/spec0.png
+	offset	19 52
+	frame	data/chars/shu/sdshu/a3-00.png
+	sound	data/sounds/shu/hah.wav
+	attack	34 1 42 37 7 0 0 0 0 0
+	offset	16 47
+	frame	data/chars/shu/sdshu/a3-01.png
+		
+anim	runjump
+	loop	0
+	delay	10
+	cancel	0 2 0 A2 freespecial4
+	offset	18 54
+	bbox	12 0 24 53
+	frame	data/chars/shu/sdshu/jump01.png
+	offset	12 103
+	delay	10
+	bbox	-2 1 34 61
+	frame	data/chars/shu/sdshu/jump02.png
+		
+anim	spawn
+	offset	17 56
+	loop	0
+	delay	8
+	offset	17 56
+	frame	data/chars/shu/sdshu/idle000.png
+		
+anim	special
+	energycost	50
+	mponly	1
+	sound	data/sounds/shu/tornado.wav
+	loop	0
+	delay	7
+	attack	-8 -6 57 68 18 0 0 0 0 0
+	bbox	34 6 -13 12
+	offset	16 75
+	frame	data/chars/shu/sdshu/sp0.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	7
+	offset	33 73
+	frame	data/chars/shu/sdshu/sp1.png
+	attack	-3 -2 63 68 18 0 0 0 0 0
+	offset	23 73
+	movea	0
+	frame	data/chars/shu/sdshu/ak1.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	7
+	offset	27 73
+	frame	data/chars/shu/sdshu/jk1.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	13 54
+	bbox	6 0 26 56
+	frame	data/chars/shu/sdshu/walk000.png
+	offset	25 54
+	frame	data/chars/shu/sdshu/walk001.png
+	offset	28 54
+	frame	data/chars/shu/sdshu/walk002.png
+	offset	22 54
+	frame	data/chars/shu/sdshu/walk003.png
+	offset	27 54
+	frame	data/chars/shu/sdshu/walk005.png
+	offset	31 54
+	frame	data/chars/shu/sdshu/walk006.png
+	offset	12 54
+	frame	data/chars/shu/sdshu/walk004.png
+		
+anim	walkoff
+	loop	0
+	delay	10
+	offset	14 57
+	frame	data/chars/shu/sdshu/jump02.png
+		
+#|edited by openBor Stats v 0.41
+		

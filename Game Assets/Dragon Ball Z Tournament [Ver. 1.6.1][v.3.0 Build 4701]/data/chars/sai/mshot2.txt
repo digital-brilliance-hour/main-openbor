@@ -1,0 +1,32 @@
+name	mshot2
+speed   20
+type 	none
+shadow	0
+load hittt
+flash hittt
+candamage player obstacle npc
+
+offscreenkill 1000
+
+palette 	data/chars/goku/mini01.gif
+
+anim idle
+	loop	1
+	delay	5
+	offset	1 24
+drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+        attack  31 6 37 37 50 0 0 0 0 100
+	frame	data/chars/goku/mini01.gif
+nodrawmethod
+        attack  0 0 0 0 0
+	frame	data/chars/misc/hit05.gif
+drawmethod	tintmode 4
+	drawmethod	tintcolor 197_138_0
+        attack  31 6 37 37 50 0 0 0 0 100
+	frame	data/chars/goku/mini02.gif
+delay 2
+nodrawmethod
+        attack  0
+	frame	data/chars/misc/hit05.gif
+		

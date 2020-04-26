@@ -1,0 +1,45 @@
+name   hadoz
+type   none
+load hittt
+flash hittt
+lifespan 3
+antigravity 100
+setlayer 999
+candamage enemy obstacle shot
+
+alpha 1
+
+anim	idle
+	hitflash	sakahit
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 0_100_200
+	drawmethod	520 520
+	loop	0
+	delay	6
+	offset	128 41
+	sound	data/sounds/laser8.wav
+hitfx	data/sounds/burnt.wav
+	frame	data/chars/hado/thunder1.gif
+	attack3	120 3 1600 100 150 1 1 0 0 300
+	dropv	1 30 10
+	frame	data/chars/hado/thunder1b.gif
+	attack	0
+	frame	data/chars/hado/thunder2.gif
+	attack3	120 1 1600 100 150 1 1 0 0 300
+	dropv	1 30 10
+	frame	data/chars/hado/thunder3.gif
+	attack	0
+	frame	data/chars/hado/thunder4.gif
+	attack3	120 16 1600 100 150 1 1 0 0 300
+	dropv	1 30 10
+	frame	data/chars/hado/thunder5.gif
+	attack	0
+	frame	data/chars/hado/thunder6.gif
+	attack3	120 52 1600 100 150 1 1 0 0 300
+	dropv	1 30 10
+	frame	data/chars/hado/thunder7.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

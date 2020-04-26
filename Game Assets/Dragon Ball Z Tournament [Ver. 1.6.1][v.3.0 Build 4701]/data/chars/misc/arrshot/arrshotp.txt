@@ -1,0 +1,211 @@
+name			arrshotp
+health			1
+type  			none
+
+speed   		20
+subject_to_gravity 	0
+candamage               enemy  obstacle shot
+offscreenkill 100
+shadow 3
+remove                    1
+
+script @script
+void main()
+{
+void self = getlocalvar("self");
+void parent = getentityproperty(self,"parent");
+int direction = getentityproperty(parent,"direction");
+int layer = getentityproperty(parent,"setlayer");
+
+
+
+	if ((getentityproperty(parent,"animationid")==openborconstant("ani_upper") || getentityproperty(parent,"animationid")==openborconstant("ani_follow33") ) && getentityproperty(self,"animationid")!=openborconstant("ani_follow1"))
+   		{
+ 		changeentityproperty(self,"setlayer",layer + 1000);
+ 		performattack(self,openborconstant("ani_follow1"));
+
+   		}
+
+   	if(getentityproperty(self,"animationid")==openborconstant("ani_follow1"))
+     	{
+
+     		if (direction ==1)changeentityproperty(self,"velocity",3,-3,0);
+     		if (direction ==0)changeentityproperty(self,"velocity",-3,-3,0);
+     	}
+
+
+	if(getentityproperty(parent,"name")=="pfollower" && getentityproperty(self,"animationid")!=openborconstant("ani_follow4") )
+	{
+	performattack(self,openborconstant("ani_follow4"));
+	changeentityproperty(self,"subject_to_gravity",0);
+	changeentityproperty(self,"a",450);
+	}
+
+	if(getentityproperty(self,"animationid")==openborconstant("ani_follow2"))
+	{
+
+	changeentityproperty(self,"velocity",0,0,-10);
+         if(getentityproperty(self,"a")<=0)
+		{
+		 performattack(self,openborconstant("ani_follow3"));
+		}
+	}
+
+}
+@end_script
+
+
+animationscript  @script
+
+
+void anichange(void anim)
+{
+ void self = getlocalvar("self");
+ performattack(self,openborconstant(anim));
+
+}
+
+  void spawner(void vName, float fX, float fY, float fZ)
+{
+
+
+	void self = getlocalvar("self");
+	void vSpawn; //Spawn object.
+	int  vAlias = getentityproperty(self, "name");
+	int  iHealth = getentityproperty(self, "health");
+	int  iDirection = getentityproperty(self, "direction");
+
+	clearspawnentry(); //Clear current spawn entry.
+      setspawnentry("name", vName); //Acquire spawn entity by name.
+
+	if (iDirection == 0){ //Is entity facing left?
+          fX = -fX; ////Reverse X direction to match facing.
+	}
+
+      fX = fX + getentityproperty(self, "x"); //Get X location and add adjustment.
+      fY = fY + getentityproperty(self, "a"); //Get Y location and add adjustment.
+      fZ = fZ + getentityproperty(self, "z"); //Get Z location and add adjustment.
+
+	vSpawn = spawn(); //Spawn in entity.
+
+	changeentityproperty(vSpawn, "position", fX, fZ, fY); //Set spawn location.
+	changeentityproperty(vSpawn, "parent", self); //Set caller as parent.
+	changeentityproperty(vSpawn, "name", vAlias); //Set name.
+	changeentityproperty(vSpawn, "health", iHealth); //Set health.
+	changeentityproperty(vSpawn, "velocity",0); //Set health.
+	changeentityproperty(vSpawn, "direction", iDirection); //Set direction.
+	return vSpawn; //Return spawn.
+}
+
+	@end_script	
+		
+		
+anim	follow1
+	loop	1
+	delay	1
+	offset	24 69
+	
+	hitflash	sakahit
+	drawmethod	rotate -45
+	drawmethod	fliprotate	1
+	movea	0
+attack	50 3 52 37 50 0 0 0 0 100
+	frame	data/chars/misc/arrshot/knife1.gif
+	//move	1
+	frame	data/chars/misc/arrshot/knife2.gif
+	frame	data/chars/misc/arrshot/knife3.gif
+	frame	data/chars/misc/arrshot/knife4.gif
+	attack	50 3 52 37 50 0 0 0 0 100
+	frame	data/chars/misc/arrshot/knife5.gif
+	frame	data/chars/misc/arrshot/knife6.gif
+	frame	data/chars/misc/arrshot/knife7.gif
+	attack	50 3 52 37 50 0 0 0 0 100
+	frame	data/chars/misc/arrshot/knife8.gif
+	frame	data/chars/misc/arrshot/knife9.gif
+	frame	data/chars/misc/arrshot/knife10.gif
+		
+anim	follow2
+	loop	1
+	delay	1
+	offset	141 70
+	attack	30 46 115 47 50 0 0 0 0 100
+	hitflash	sakahit
+	drawmethod	rotate 90
+	drawmethod	fliprotate	1
+	movea	0
+	frame	data/chars/misc/arrshot/knife1.gif
+	//move	1
+	frame	data/chars/misc/arrshot/knife2.gif
+	frame	data/chars/misc/arrshot/knife3.gif
+	frame	data/chars/misc/arrshot/knife4.gif
+	frame	data/chars/misc/arrshot/knife5.gif
+	frame	data/chars/misc/arrshot/knife6.gif
+	frame	data/chars/misc/arrshot/knife7.gif
+	frame	data/chars/misc/arrshot/knife8.gif
+	frame	data/chars/misc/arrshot/knife9.gif
+	frame	data/chars/misc/arrshot/knife10.gif
+	frame	data/chars/misc/arrshot/knife5.gif
+	frame	data/chars/misc/arrshot/knife6.gif
+	frame	data/chars/misc/arrshot/knife7.gif
+	frame	data/chars/misc/arrshot/knife8.gif
+	frame	data/chars/misc/arrshot/knife9.gif
+	//@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/arrshot/knife10.gif
+		
+anim	follow3
+	offset	24 69
+	delay	1
+	@cmd	spawner "sakahit" 0 0 0
+	frame	none
+	@cmd	killentity getlocalvar("self")
+	frame	none
+	frame	none
+	frame	none
+	frame	none
+		
+anim	follow4
+	offset	24 69
+	delay	100
+	frame	none
+	frame	none
+	frame	none
+	@cmd	anichange "ani_follow2"
+	frame	none
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	24 69	
+	followcond	1
+	followanim	5
+	attack	44 51 95 37 50 0 0 0 100
+	hitflash	sakahit
+	frame	data/chars/misc/arrshot/knife1.gif
+	frame	data/chars/misc/arrshot/knife2.gif
+	frame	data/chars/misc/arrshot/knife3.gif
+	frame	data/chars/misc/arrshot/knife4.gif
+	attack	44 51 95 37 50 0 0 0 100
+	frame	data/chars/misc/arrshot/knife5.gif
+	frame	data/chars/misc/arrshot/knife6.gif
+	frame	data/chars/misc/arrshot/knife7.gif
+	attack	27 11 110 117 50 0 0 0 100
+	frame	data/chars/misc/arrshot/knife8.gif
+	frame	data/chars/misc/arrshot/knife9.gif
+	frame	data/chars/misc/arrshot/knife10.gif
+		
+anim	follow5
+	offset	24 69
+	delay	100
+	frame	none
+	frame	none
+	frame	none
+	@cmd	killentity getlocalvar("self")
+	frame	none
+		
+anim	spawn
+	delay	1
+	sound	data/chars/misc/arrshot/fx51.wav
+	frame	none
+		
+#|edited by openBor Stats v 0.66
+		

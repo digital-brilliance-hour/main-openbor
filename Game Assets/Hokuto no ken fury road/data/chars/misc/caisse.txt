@@ -1,0 +1,26 @@
+name	caisse
+health	30
+type	obstacle
+shadow  1
+gfxshadow  1
+diesound data/sounds/jeep.wav
+flash  obfla
+noatflash 1
+nolife 1
+
+
+
+
+anim	fall
+	delay	1000
+	offset	61 53
+	frame	data/chars/misc/caisse.png
+		
+anim	idle
+	delay	1000
+	offset	61 53
+	bbox	-2 -1 116 62
+	frame	data/chars/misc/caisse.png
+		
+#|edited by openBor Stats v 0.41
+		

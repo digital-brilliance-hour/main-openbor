@@ -1,0 +1,264 @@
+
+music		data/music/boss.bor
+background	data/levels/sd/nb2.png  0.5  0.5  -2  0  0  0  5000  5000  0  0
+panel	data/levels/sd/nb11.png
+order           a
+cameraoffset 0 0
+settime 0
+direction both
+notime 1
+setweap 2
+cameratype 1
+
+spawn  ozed
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW3"));
+} @end_script
+	coords  20  256  4
+	at 0
+
+spawn  gold
+	coords  1332  256  0
+	at  0
+
+spawn  meat
+	coords  1218  256  0
+	at  0
+
+
+spawn  ozed
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW1"));
+} @end_script
+	coords  874  256  4
+	at 0
+
+spawn  plat11
+	coords  1265  256  39
+	at  0
+
+spawn  crusher
+	coords  1161  256  39
+	at  0
+
+
+spawn  croc
+	coords  417  256  14
+	at  0
+
+spawn  croc
+	coords  367  256  14
+	at  0
+
+
+spawn	croc
+coords	313 256  14
+at	0
+
+spawn	pac1
+coords	168 256  96
+at	0
+
+spawn	pac
+coords	168 256  135
+at	0
+
+spawn	pac2
+coords	168 256  56
+at	0
+
+spawn	trap1
+coords	1295 256  30
+at	0
+
+
+spawn	mzed
+coords	1395 256  193
+at	0
+
+
+spawn	nb
+coords	1526 293  119
+at	0
+
+
+spawn	wall7
+coords	1463 256  175
+at	0
+
+spawn	wall6
+coords	1464 256  0
+at	0
+
+spawn	wall5
+coords	1353 256  8
+at	0
+
+spawn	wall4
+coords	1084 256  0
+at	0
+
+spawn	wall2
+coords	902 256  0
+at	0
+
+spawn	jump
+coords	1065 256  104
+at	0
+
+
+spawn	plat6
+coords	965 256  132
+at	0
+
+spawn	wall1
+coords	611 256  79
+at	0
+
+spawn	plat0
+coords	390 256  75
+at	0
+
+spawn	plat1
+coords	360 256  153
+at	0
+
+spawn	plat2
+coords	236 256  184
+at	0
+
+spawn	wall0
+coords	185 256  64
+at	0
+
+spawn	wall1
+coords	611 256  82
+at	0
+
+spawn	plat3
+coords	812 256  132
+at	0
+
+spawn	plat4
+coords	970 256  26
+at	0
+
+spawn	plat8
+coords	1355 256  179
+at	0
+
+spawn	plat9
+coords	1402 256  49
+at	0
+
+spawn	wall3
+coords	1039 256  0
+at	0
+
+spawn	page
+coords	609 256  41
+at	0
+
+spawn	page1
+health 30
+coords	696 256  44
+at	0
+
+spawn	gpage
+coords	1471 256  136
+at	0
+
+spawn	plat5
+coords	1107 256  132
+at	0
+
+spawn  pic
+coords  1076 256  0
+at  0
+
+spawn  trap
+coords  670 256  16
+at  0
+
+spawn  bar
+coords  317  256  58
+at  0
+
+spawn	oneup
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_IDLE"));
+} @end_script
+coords   361 256 172
+at   0
+
+
+
+
+
+
+
+
+spawn	end
+coords	1600 256  0
+at	0
+
+
+spawn	gtrap
+coords	1577 256  88
+at	0
+
+
+spawn  mmzed
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW1"));
+} @end_script
+	coords  581  256  0
+	at 0
+
+
+spawn  skel1
+	coords  1270  256  0
+	at  0
+
+spawn  drum2
+	coords  1438  256  176
+	at  0
+
+spawn  plat10
+	coords  1118  256  39
+	at  0
+spawn  money
+	coords  1125  256  0
+	at  0
+
+spawn  p100
+	coords  1166  256  0
+	at  0
+
+
+spawn  letter
+coords  732  256  131
+item gold
+at  0
+
+
+
+spawn  bar
+	coords  539  256  58
+	at  40
+
+spawn  bar
+	coords  495  256  58
+	at  40
+
+spawn  bar
+	coords  969  256  6
+	at  40
+
+spawn  mmzed
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW1"));
+} @end_script
+	coords  917  256  34
+	at  0
+

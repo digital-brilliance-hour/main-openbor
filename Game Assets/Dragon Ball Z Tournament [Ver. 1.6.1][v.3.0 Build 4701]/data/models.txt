@@ -1,0 +1,184 @@
+nolost 1
+#nodropen	1
+forcemode 1
+nocheats  1
+colourselect  1
+maxattacks 15
+maxattacktypes 15
+maxfollows 15
+maxfreespecials  15
+
+nodropen	1
+noaircancel 2
+
+spdirection 1 1 1 1 
+versusdamage 1 
+
+ajspecial	1
+
+offscreen_noatk_factor 1
+
+know    super02  	 data/chars/misc/power/super02/super02.txt
+know	pw19            data/chars/misc/power/19/pw19.txt
+know	carregaball            data/chars/misc/power/19/carregaball.txt
+
+know    fsoldier1     data/chars/fsoldier1/fsoldier1.txt
+
+know turtle data/chars/misc/turtle/turtle.txt
+
+know pw16 data/chars/misc/power/17/pw16.txt
+
+know RXPlos data/chars/misc/xplos/RXPlos.txt
+
+know    rock     data/chars/misc/rock/rock.txt
+know    cap     data/chars/misc/cap/cap.txt
+know    tree    data/chars/misc/tree/tree.txt
+#know    ship     data/chars/misc/ship/ship.txt
+
+
+load    fight      data/sprites/fight.txt
+load    comp      data/sprites/comp.txt
+
+Load 	sakahit 	Data/chars/misc/sakahit/sakahit.txt
+load 	arrshot 	Data/chars/misc/arrshot/arrshot.txt
+load 	arrshotp 	Data/chars/misc/arrshot/arrshotp.txt
+
+
+
+#other
+know    delay      data/sprites/delay.txt
+know    orb     data/chars/misc/orb/orb.txt
+know    ki2     data/chars/misc/orb/ki2.txt
+load    orbg     data/chars/misc/orb/orbg.txt 
+load    dust	data/chars/misc/dust/dust.txt
+#load    dust	data/chars/misc/dust.txt
+know    squirt      data/chars/misc/squirt.txt
+know    sb      data/chars/misc/sb/sb.txt
+
+know    empty      data/chars/misc/empty.txt
+
+#scenes
+know gin1 data/scenes/gin1/gin1.txt
+know gin2 data/scenes/gin2/gin2.txt
+know gin3 data/scenes/gin3/gin3.txt
+know gin5 data/scenes/gin5/gin5.txt
+know sat2 data/scenes/satan/sat2.txt
+know sat1 data/scenes/satan/sat1.txt
+know cel1 data/scenes/cel1/cel1.txt
+know fr1 data/scenes/fr1/fr1.txt
+know fra data/scenes/fra/fra.txt
+know fra2 data/scenes/fra/fra2.txt
+know frkik data/scenes/frkik/frkik.txt
+know gb data/scenes/gb/gb.txt
+know gku data/scenes/gku/gku.txt
+know ssgt data/scenes/ssg/ssgt.txt
+know saib data/scenes/saib/saib.txt
+know spirit data/scenes/spirit/spirit.txt
+
+
+know pic1 data/scenes/pic1/pic1.txt
+know pic2 data/scenes/pic2/pic2.txt
+know pic3 data/scenes/pic3/pic3.txt
+know pic4 data/scenes/pic4/pic4.txt
+
+know ssvt data/scenes/ssv/ssvt.txt
+know ssva data/scenes/ssva/ssva.txt
+know ssvff data/scenes/ssvff/ssvff.txt
+know vegatt data/scenes/vegatt/vegatt.txt
+
+know nap1 data/scenes/nap1/nap1.txt
+know nap2 data/scenes/nap2/nap2.txt
+
+know ape1 data/scenes/apet/ape1.txt
+
+know rad1 data/scenes/rad1/rad1.txt
+know rad2 data/scenes/rad2/rad2.txt
+know rad3 data/scenes/rad3/rad3.txt
+
+know expl data/scenes/expl/expl.txt
+know boom data/scenes/boom/boom.txt
+know sensu data/scenes/sensu/sensu.txt
+know sensup data/scenes/sensu/sensup.txt
+know sensuv data/scenes/sensu/sensuv.txt
+
+
+# Story entities
+load	Story	data/chars/misc/story/story.txt	
+know	Stop	data/chars/misc/story/stop.txt
+
+
+
+#            playables
+
+load	goku	data/chars/goku/goku.txt
+load	SSG	data/chars/SSG/SSG.txt
+load	vegeta	data/chars/vegeta/vegeta.txt
+load	SSV	data/chars/SSV/SSV.txt
+load	piccolo	data/chars/picolo/piccolo.txt
+load	SP	data/chars/picolo/SP.txt
+know	clone	data/chars/picolo/clone.txt
+
+#load	sst	data/chars/sst/sst.txt
+#load	raditzp	data/chars/raditz/raditzp.txt
+#load	ape	data/chars/ape/ape.txt
+
+#            effects
+
+load	mshot	data/chars/goku/mshot.txt
+load	aura	data/chars/goku/aura.txt
+load	aura2	data/chars/SSG/aura2.txt
+load	teleport	data/chars/misc/teleport/teleport.txt
+
+#            others
+load	Flash		data/chars/misc/flash.txt
+load	BFlash		data/chars/misc/bflash.txt
+load	Flash2		data/chars/misc/flash2.txt
+load	phit           data/chars/misc/phit/phit.txt
+load	hit           data/chars/misc/hit.txt
+load        hitt    	data/chars/misc/hit/hitt.txt
+load	smoke      data/chars/item/smoke.txt
+load	shine      	data/chars/item/shine.txt
+load	heat    	data/chars/beam/heat.txt
+load	mshot2  	data/chars/sai/mshot2.txt
+load	bki 	data/chars/misc/bki/bki.txt
+
+load	stone 	data/chars/misc/stone/stone.txt
+
+load	haa     	data/chars/haa/haa.txt
+load	hado     	data/chars/hado/hado.txt
+load	hadoz     	data/chars/hado/hadoz.txt
+load	ehado     	data/chars/hado/ehado.txt
+load	hittt   	data/chars/misc/hittt.txt
+
+
+#            items
+load	CP      	data/chars/item/CP.txt
+know	HP      	data/chars/item/HP.txt
+
+
+#            enemies & bosses
+know   18     data/chars/18/18.txt
+know   ginyu      data/chars/ginyu/ginyu.txt
+know   satan      data/chars/satan/satan.txt
+know   sai1       data/chars/sai/sai1.txt
+know   sai2       data/chars/sai/sai2.txt
+know   robo      data/chars/robo/robo.txt
+know   roboL     data/chars/robo/roboL.txt
+
+know	dball	data/chars/misc/ball/Dball.txt
+know	disc	data/chars/frieza/disc/disc.txt
+
+know	frieza	data/chars/frieza/frieza.txt
+know	nappa	data/chars/nappa/nappa.txt
+know	raditz	data/chars/raditz/raditz.txt
+
+know	cell	data/chars/cell/cell.txt
+
+
+
+
+
+
+know  data/chars//.txt
+know  data/chars//.txt
+know  data/chars//.txt

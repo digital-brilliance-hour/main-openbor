@@ -1,0 +1,31 @@
+
+music		data/music/hokuto.bor
+background	data/levels/sel/sel.png  1  1  0  -45  0  0  5000  5000  0  0
+panel	      data/levels/sel/sel.png
+order           a
+light		-250 60
+at       	0
+cameraoffset 0 0
+nofadeout 1
+
+spawn   sel1
+@script
+  void main()
+  {
+    void P1 = getplayerproperty(0, "entity");
+
+    if(P1){
+      void Model = getentityproperty(P1, "model");
+
+      if(Model == "kenshiro"){
+        jumptobranch("kenStart",1);
+      } else if(Model == "toki"){
+        jumptobranch("tokiStart",1);
+   
+      }
+    }
+  }
+@end_script
+coords   500 190
+at   0
+

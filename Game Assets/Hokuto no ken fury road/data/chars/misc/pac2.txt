@@ -1,0 +1,26 @@
+name	pac2
+type	trap
+shadow	0
+nolife  1
+subject_to_gravity 0
+
+
+anim	idle
+	loop	1
+	delay 20
+	attack	0 0 52 20 50 0 0 1 0 0
+	offset	6 45
+	frame	data/chars/misc/pac2.png
+	attack	0 0 35 20 50 0 0 1 0 0
+	offset	6 44
+	frame	data/chars/misc/pac1.png
+	attack	-2 -2 21 19 50 0 1 1 0 0
+	delay	10
+	offset	6 43
+	frame	data/chars/misc/pac.png
+	attack	1 -1 35 20 50 0 0 1 0 0
+	offset	6 44
+	frame	data/chars/misc/pac1.png
+		
+#|edited by openBor Stats v 0.41
+		

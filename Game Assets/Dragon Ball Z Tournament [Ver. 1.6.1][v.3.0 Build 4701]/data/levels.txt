@@ -1,0 +1,188 @@
+#-------HUD
+
+lbarsize 145 10 0 1 
+mpbarsize 85 6 0 1
+timeloc 435 8 21 20 1
+
+p1shoot 165 60 7
+ p2shoot 855 60 7
+
+hiscorebg  1
+loadingbg 2 0 0 0  0 -50
+loadingbg2 2 0 0 0 0 -50
+completebg 1
+
+equalairpause		1
+
+showcomplete 75 60 311 60 371 60
+clearbonus 12 122 445 112 0 0 0 0 0 0 
+lifebonus  12 152 445 152 0 0 0 0 0 0 
+totalscore 12 207 445 207 0 0 0 0 0 0
+
+rush  1 2 HITS: 6 6 MAX_HITS 6 6
+
+p1score 112 46 10 -992 50 5 4
+p1icon 50 30 
+p1lifex 20 -445 
+p1lifen 113 60 7
+p1life 50 20 
+p1mp  111 33
+p1rush 113 84 170 84 113 100 223 100
+p1namej 20 -100 20 2 20 2 5
+p1smenu 120 410 100 110
+
+p2score 802 46 450 -992 740 5 4
+p2icon 740 30 
+p2lifex 460 -445 
+p2lifen 803 60 7
+p2life 740 20 
+p2mp  801 33
+p2rush 803 84 860 84 803 100 913 100
+p2namej 710 -100 710 2 710 2  5
+p2smenu 840 410 820 110
+
+
+#e1life 112 200 
+e1life -444 -4460 
+e2life -444 -444 
+e3life -444 -444 
+e4life -444 -444 
+
+e1icon -444 -444 
+e2icon  -444 -444 
+e3icon  -444 -444 
+e4icon  -444 -444 
+
+e1name -444 -444 
+e2name  -444 -444 
+e3name -444 -444 
+e4name -444 -444 
+
+
+loadingbg 1 100 100 100 100 80 3
+loadingbg2 1 100 100 100 100 80 3
+
+
+#-------other
+
+hiscorebg 1
+
+#-------arcade 
+
+
+
+
+set	 Tournament
+credits  6
+lives    1
+cansave 2
+custfade 100
+noslowfx    1 	
+maxplayers 1
+noshare 1
+nosame 1
+typemp 2
+
+
+
+
+scene data/scenes/shenron.txt
+
+file data/levels/intro/intro.txt
+#scene data/scenes/start.txt
+scene data/scenes/next.txt
+z        150 820
+file	 data/levels/desert.txt
+next
+
+z        150 820
+file	 data/levels/mountain.txt
+next
+
+scene data/scenes/next.txt
+z        150 820
+file	 data/levels/namek.txt
+next
+
+scene data/scenes/next.txt
+z        150 820 210
+file	 data/levels/fri.txt
+next
+
+scene data/scenes/next.txt
+z        150 820 210
+file	 data/levels/cel.txt
+next
+scene data/scenes/end.txt
+end
+
+
+
+
+set	 challenge
+credits  1
+lives    1
+cansave 2
+custfade 100
+noslowfx    1 	
+maxplayers 2
+noshare 1
+nosame 1
+
+
+
+
+scene data/scenes/next.txt
+z        150 820 210
+file	 data/levels/saiba.txt
+next
+scene data/scenes/next.txt
+z        150 820
+file	 data/levels/miyako.txt
+next
+scene data/scenes/next.txt
+next
+end
+
+
+set	 double_team
+ifcomplete 1
+credits  3
+lives    1
+cansave 2
+custfade 100
+noslowfx    1 	
+maxplayers 2
+noshare 1
+nosame 1
+
+
+scene data/scenes/next.txt
+z        150 820
+file	 data/levels/both.txt
+next
+scene data/scenes/next.txt
+z        150 820
+file	 data/levels/both2.txt
+next
+scene data/scenes/end.txt
+end
+
+set	 Ultimate_fight
+ifcomplete 1
+credits  1
+lives    1
+cansave 2
+custfade 100
+noslowfx    1 	
+maxplayers 1
+noshare 1
+nosame 1
+
+scene data/scenes/next.txt
+z        400 450
+file	 data/levels/satan.txt
+next
+end
+
+

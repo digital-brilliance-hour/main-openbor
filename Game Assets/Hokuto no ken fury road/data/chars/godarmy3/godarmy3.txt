@@ -1,0 +1,157 @@
+name	godarmy3
+health	20
+speed	10
+type	enemy
+shadow  1
+gfxshadow  1
+aimove chasez
+aimove wander
+aggression 5
+knife godarmy3f
+falldie 2
+nodieblink 2
+hostile player
+escapehits 3
+icon	data/chars/godarmy3/icon.png
+
+
+palette   data/chars/godarmy3/idle000.png
+alternatepal data/chars/godarmy3/map1.png
+alternatepal data/chars/godarmy3/map2.png
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	28 101
+	range	15 60
+	followanim	1
+	followcond	3
+	bbox	15 2 45 119
+	frame	data/chars/godarmy3/punch000.png
+	delay	7
+	offset	28 100
+	attack	45 8 48 81 8 0 0 0 0 0
+	bbox	3 1 51 116
+	frame	data/chars/godarmy3/punch001.png
+		
+anim	death
+	loop	0
+	delay	12
+	offset	35 76
+	frame	data/chars/godarmy3/rise1.png
+delay	8
+sound   data/sounds/die10.wav
+	offset	27 99
+	frame	data/chars/godarmy3/fire0.png
+	offset	29 98
+	frame	data/chars/godarmy3/fire1.png
+	offset	32 91
+	frame	data/chars/godarmy3/fire2.png
+delay	7
+sound   data/sounds/die11.wav
+	offset	32 91
+	frame	data/chars/godarmy3/die0.png
+	offset	32 98
+	frame	data/chars/godarmy3/die1.png
+	sound	data/sounds/explo.wav
+	offset	32 91
+	frame	data/chars/godarmy3/die2.png
+	offset	32 96
+	frame	data/chars/godarmy3/die3.png
+	offset	32 93
+	frame	data/chars/godarmy3/die4.png
+	offset	32 98
+	frame	data/chars/godarmy3/die5.png
+	offset	32 97
+	frame	data/chars/godarmy3/die6.png
+offset	32 96
+	frame	data/chars/godarmy3/die3.png
+	offset	32 93
+	frame	data/chars/godarmy3/die4.png
+	offset	32 98
+	frame	data/chars/godarmy3/die5.png
+	offset	32 97
+	frame	data/chars/godarmy3/die6.png
+	offset	32 91
+	frame	data/chars/godarmy3/die7.png
+	offset	32 91
+	frame	data/chars/godarmy3/die8.png
+		
+anim	fall
+	loop	0
+	offset	51 101
+	delay	20
+	frame	data/chars/godarmy3/fall00.png
+	offset	56 75
+	frame	data/chars/godarmy3/fall02.png
+	offset	53 30
+	frame	data/chars/godarmy3/fall01.png
+		
+anim	freespecial9
+	loop	0
+	throwframe	3 75
+	range	0 260
+	offset	27 99
+	bbox	8 -3 44 109
+	frame	data/chars/godarmy3/fire0.png
+	offset	29 98
+	frame	data/chars/godarmy3/fire1.png
+	sound	data/sounds/shu/fu.wav
+	offset	32 91
+	frame	data/chars/godarmy3/fire2.png
+	offset	34 88
+	frame	data/chars/godarmy3/fire3.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	28 104
+	bbox	11 -1 47 113
+	frame	data/chars/godarmy3/idle000.png
+	offset	28 102
+	bbox	11 3 36 113
+	frame	data/chars/godarmy3/idle001.png
+	offset	28 104
+	bbox	11 3 36 113
+	frame	data/chars/godarmy3/idle002.png
+	offset	28 106
+	bbox	11 3 36 113
+	frame	data/chars/godarmy3/idle003.png
+	offset	28 107
+	bbox	11 3 36 113
+	frame	data/chars/godarmy3/idle004.png
+		
+anim	pain
+	loop	0
+	offset	31 98
+	bbox	0 1 48 105
+	delay	8
+	frame	data/chars/godarmy3/pain01.png
+	offset	31 86
+	delay	36
+	frame	data/chars/godarmy3/pain02.png
+		
+anim	rise
+	loop	0
+	offset	35 76
+	delay	10
+	frame	data/chars/godarmy3/rise1.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	29 107
+	bbox	16 0 35 122
+	frame	data/chars/godarmy3/walk000.png
+	offset	20 107
+	frame	data/chars/godarmy3/walk001.png
+	offset	10 107
+	frame	data/chars/godarmy3/walk002.png
+	offset	25 107
+	frame	data/chars/godarmy3/walk003.png
+	offset	25 107
+	frame	data/chars/godarmy3/walk004.png
+		
+#|edited by openBor Stats v 0.41
+		

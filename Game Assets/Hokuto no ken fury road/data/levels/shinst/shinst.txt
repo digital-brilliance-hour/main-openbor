@@ -1,0 +1,29 @@
+bossmusic	data/music/boss.bor
+background	data/levels/shinst/ssun.gif  -0.5  -0.5  0  0  0  0  5000  5000  0  0
+panel	data/levels/shinst/shinst1.gif
+order           a
+light  50 -246
+at 0
+cameraoffset 0 0
+settime 0
+direction both
+notime 1
+cameratype 1
+
+spawn	spawnshin
+coords	228 256  0
+at	0
+
+
+spawn	shin
+boss 1
+coords	228 256  0
+at	0
+
+
+
+
+
+
+
+

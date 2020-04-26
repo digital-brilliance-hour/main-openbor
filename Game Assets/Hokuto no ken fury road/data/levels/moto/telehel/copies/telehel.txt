@@ -1,0 +1,2185 @@
+name	 telehel
+health   200
+type     enemy
+speedf		0.5
+jumpheight	0
+nolife   1
+falldie	 1
+nodieblink	3
+noquake		1
+gfxshadow	0
+nodrop		2
+antigrab	10
+nomove	 	1 1
+subject_to_gravity 0
+subject_to_minz    0
+subject_to_maxz    0
+lifespan 20
+offscreenkill 	1000
+hostile		player npc
+candamage	player npc
+setlayer	50
+
+animationscript data/scripts/ani0020.h
+
+load	teleha
+
+
+anim	death
+	loop	0
+	delay	5
+	offset	76 43
+	bbox	0 0 0 0
+	movez	-1
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	sound	data/sounds/heli1.wav
+	movez	1
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	1
+	move	-6
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	offset	150 155
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	68 75
+	movez	-1
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	move	-100
+	movez	0
+	delay	30
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+	frame	data/levels/moto/telehel/empty.png
+		
+anim	fall
+	loop	0
+	delay	1
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/levels/moto/telehel/empty.png
+		
+anim	idle
+	loop	1
+	delay	150
+	offset	68 75
+	bbox	0 0 0 0
+
+	frame	data/levels/moto/telehel/empty.png
+	delay	5
+	move	-6
+	movez	-1
+	sound	data/sounds/heli1.wav
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	50 50
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	55 55
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	60 60
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	65 65
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	70 70
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	75 75
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	80 80
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	85 85
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	90 90
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	95 95
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	100 100
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	105 105
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	110 110
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	115 115
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	120 120
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	125 125
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	130 130
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	135 135
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	140 140
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	145 145
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	150 150
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	155 155
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	160 160
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	170 170
+	nodrawmethod	
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	move	0
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	170 170
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	76 43
+	delay	8
+	movez	1
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	sound	data/sounds/gun.wav
+	frame	data/levels/moto/telehel/h10.png
+	@cmd	spawn01 "teleha" -260 -80 5
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	
+	delay	5
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	movez	-1
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	sound	data/sounds/heli1.wav
+	offset	68 75
+	movez	-1
+	drawmethod	140 140
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	135 135
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	130 130
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	drawmethod	125 125
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	120 120
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	115 115
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	110 110
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	105 105
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	100 100
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	95 95
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	90 90
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	85 85
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	80 80
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	75 75
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	70 70
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	drawmethod	65 65
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	60 60
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	55 55
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	50 50
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	move	0
+	delay	150
+	frame	data/levels/moto/telehel/empty.png
+		
+anim	spawn
+	loop	0
+	delay	5
+	bbox	0 0 0 0
+
+	move	-9
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	sound	data/sounds/heli1.wav
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	drawmethod	40 40
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	45 45
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	50 50
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	55 55
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	60 60
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	65 65
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	70 70
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	75 75
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	drawmethod	80 80
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	85 85
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	90 90
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	95 95
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	drawmethod	100 100
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	105 105
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	drawmethod	110 110
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	115 115
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	67 43
+	move	-6
+	drawmethod	120 120
+	frame	data/levels/moto/telehel/h3.png
+	offset	76 43
+	drawmethod	125 125
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	130 130
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	135 135
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	140 140
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	145 145
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	drawmethod	150 150
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	155 155
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	drawmethod	160 160
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	165 165
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	170 170
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	175 175
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	180 180
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	185 185
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	190 190
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	195 195
+	offset	67 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	200 200
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	205 205
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	210 210
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	215 215
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	220 220
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	225 225
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	230 230
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	235 235
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	240 240
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	245 245
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	250 250
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	255 255
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	nodrawmethod	
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	move	0
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-2
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	offset	170 170
+	delay	8
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+offset	76 43
+	delay	8
+	movez	1
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	sound	data/sounds/gun.wav
+	frame	data/levels/moto/telehel/h10.png
+	@cmd	spawn01 "teleha" -260 -80 5
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	1
+	sound	data/sounds/gun6.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	movez	-1
+	sound	data/sounds/gun.wav
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h10.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h9.png
+	
+	delay	5
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	movez	-1
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	1
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+offset	67 43
+	frame	data/levels/moto/telehel/h12.png
+offset	76 43
+	frame	data/levels/moto/telehel/h11.png
+	sound	data/sounds/heli1.wav
+	offset	68 75
+	movez	-1
+	drawmethod	140 140
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	135 135
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	130 130
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	drawmethod	125 125
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	120 120
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	115 115
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	110 110
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	105 105
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	100 100
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	95 95
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	90 90
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	85 85
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	80 80
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	75 75
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	70 70
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	drawmethod	65 65
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	drawmethod	60 60
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	55 55
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	50 50
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	movez	1
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	move	0
+	delay	150
+	frame	data/levels/moto/telehel/empty.png
+	movez	-1
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	offset	76 43
+	frame	data/levels/moto/telehel/h5.png
+	offset	67 43
+	frame	data/levels/moto/telehel/h6.png
+	sound	data/sounds/heli1.wav
+	delay	5
+	move	-6
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	250 250
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	245 245
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	240 240
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	235 235
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	230 230
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	225 225
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	220 220
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	215 215
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	210 210
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	205 205
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	200 200
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	195 195
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	190 190
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	185 185
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	180 180
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	175 175
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	170 170
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	165 165
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	160 160
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	drawmethod	155 155
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	150 150
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	145 145
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	140 140
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	150 155
+	drawmethod	135 135
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	130 130
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	125 125
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	120 120
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	115 115
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	110 110
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	drawmethod	105 105
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	100 100
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	95 95
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	90 90
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	-1
+	drawmethod	85 85
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	80 80
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	movez	1
+	drawmethod	75 75
+	offset	67 43
+	frame	data/levels/moto/telehel/h3.png
+	drawmethod	70 70
+	offset	76 43
+	frame	data/levels/moto/telehel/h4.png
+	offset	68 75
+	movez	-1
+	drawmethod	65 65
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	60 60
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	drawmethod	55 55
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	50 50
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	drawmethod	45 45
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	drawmethod	40 40
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	sound	data/sounds/heli1.wav
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	sound	data/sounds/heli1.wav
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	-1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	movez	1
+	offset	68 75
+	frame	data/levels/moto/telehel/h1.png
+	offset	74 75
+	frame	data/levels/moto/telehel/h2.png
+	move	0
+	delay	200
+	frame	data/levels/moto/telehel/empty.png
+		
+anim	walk
+	loop	0
+	delay	5
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/levels/moto/telehel/empty.png
+		
+#|edited by openBor Stats v 0.41
+		

@@ -1,0 +1,323 @@
+name	shin
+health	450
+speed	15
+type	enemy
+shadow  1
+gfxshadow  1
+nolife 1
+risetime 400
+aimove chase
+aimove wander
+aggression 80
+hostile player
+escapehits 2
+lifebarstatus 300 10 1 0 0 0 0 0 0
+lifeposition 88 254 
+iconposition 60 242
+nameposition 218 256
+icon	data/chars/shin/icon.png
+diesound data/sounds/shin/yuriaa.wav
+subject_to_screen 1
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/sounds/shin/punch000.wav
+	loop	0
+	delay	5
+	offset	38 110
+	range	15 60
+	followanim	1
+	followcond	3
+	bbox	7 2 45 119
+	frame	data/chars/shin/punch000.png
+	sound	data/sounds/shin/hua.wav
+	offset	31 115
+	bbox	3 1 51 116
+	frame	data/chars/shin/punch001.png
+	offset	31 110
+	attack	50 8 58 39 8 0 0 0 0 0
+	bbox	3 1 51 116
+	frame	data/chars/shin/punch002.png
+		
+anim	attack2
+	sound	data/sounds/shin/kick.wav
+	range	0 80
+	loop	0
+	delay	7
+	offset	31 115
+	bbox	10 -9 43 108
+	frame	data/chars/shin/kick0.png
+	offset	31 117
+	bbox	10 -9 43 108
+	frame	data/chars/shin/kick1.png
+	offset	28 115
+	bbox	10 -9 43 108
+	frame	data/chars/shin/kick2.png
+	offset	58 115
+	attack	55 13 81 57 10 0 0 0 0 0
+	frame	data/chars/shin/kick3.png
+	offset	43 115
+	bbox	14 7 43 108
+	frame	data/chars/shin/kick4.png
+		
+anim	attack3
+	sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	4
+	offset	31 109
+	bbox	15 0 51 81
+	frame	data/chars/shin/spunch1.png
+	offset	31 109
+	bbox	15 0 51 81
+	frame	data/chars/shin/spunch2.png
+	offset	31 112
+	bbox	15 0 51 81
+	frame	data/chars/shin/spunch3.png
+	delay	12
+	blast	62 3 88 66 24 1 0 0 2 0
+	offset	28 101
+	bbox	40 0 38 96
+	frame	data/chars/shin/spunch4.png
+		
+anim	fall
+	loop	0
+	offset	45 101
+	delay	20
+	frame	data/chars/shin/fall00.png
+	offset	53 77
+	frame	data/chars/shin/fall01.png
+	offset	53 67
+	frame	data/chars/shin/fall02.png
+	offset	53 20
+	frame	data/chars/shin/fall03.png
+		
+anim	follow1
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	range	15 90
+	delay	4
+	offset	31 109
+	frame	data/chars/shin/spunch1.png
+	sound	data/sounds/shin/punchshin.wav
+	offset	31 109
+	bbox	15 0 51 81
+	frame	data/chars/shin/spunch2.png
+	offset	31 112
+	bbox	15 0 51 81
+	frame	data/chars/shin/spunch3.png
+	delay	12
+	blast	66 3 85 68 24 1 0 0 2 0
+	offset	28 101
+	frame	data/chars/shin/spunch4.png
+		
+anim	freespecial2
+	sound	data/sounds/shin/goketoken.wav
+	loop	0
+	delay	8
+	offset	43 134
+	bbox	17 0 46 81
+	frame	data/chars/shin/sp0.png
+	blast	-14 -12 156 86 60 0 1 0 0 2
+	sound	data/sounds/Kenshiro/spec1.wav
+	delay	20
+	offset	58 124
+	move	80
+	bbox	27 -1 44 56
+	frame	data/chars/shin/sp1.png
+	delay	6
+	move	30
+	offset	58 124
+	blast	-13 -12 156 86 60 0 0 0 0 0
+	bbox	27 -1 44 56
+	frame	data/chars/shin/sp1.png
+		
+anim	freespecial3
+	loop	0
+	delay	8
+	offset	31 92
+	bbox	22 0 46 81
+	sound	data/sounds/shin/shine.wav
+	frame	data/chars/shin/spec0.png
+	sound	data/sounds/toki/spec1.wav
+	offset	38 92
+	bbox	53 -1 44 83
+	frame	data/chars/shin/spec1.png
+	blast	6 0 154 50 10 0 0 0 0 0
+	delay	6
+	offset	26 95
+	bbox	54 0 36 80
+	move	50
+	frame	data/chars/shin/spec2.png
+	offset	34 95
+	blast	6 0 154 50 15 0 0 0 0 0
+	bbox	61 0 34 80
+	frame	data/chars/shin/spec3.png
+	offset	30 95
+	blast	6 0 154 50 15 0 0 0 0 0
+	bbox	56 0 34 80
+	frame	data/chars/shin/spec4.png
+		
+anim	freespecial9
+	sound	data/sounds/Kenshiro/super.wav
+	loop	0
+	delay	7
+	bbox	28 8 31 70
+	offset	31 102
+	frame	data/chars/shin/fire0.png
+	delay	7
+	sound	data/sounds/shin/multi.wav
+	offset	31 108
+	frame	data/chars/shin/fire1.png
+	bbox	34 13 31 70
+	offset	31 106
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shin/fire2.png
+	bbox	34 6 31 70
+	offset	31 108
+	attack	23 3 97 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/shin/fire3.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	34 6 31 70
+	offset	31 109
+	frame	data/chars/shin/fire4.png
+	bbox	34 6 31 70
+	offset	31 112
+	attack	23 3 97 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/shin/fire5.png
+	bbox	34 6 31 70
+	offset	31 113
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shin/fire6.png
+	bbox	34 6 31 70
+	offset	31 114
+	attack	23 3 110 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/shin/fire7.png
+	bbox	34 6 31 68
+	offset	31 102
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/shin/fire8.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	31 110
+	bbox	11 3 36 113
+	frame	data/chars/shin/idle000.png
+	offset	31 110
+	bbox	11 3 36 113
+	frame	data/chars/shin/idle001.png
+	offset	31 110
+	bbox	11 3 36 113
+	frame	data/chars/shin/idle002.png
+	offset	31 110
+	bbox	11 3 36 113
+	frame	data/chars/shin/idle003.png
+		
+anim	jump
+	loop	0
+	delay	10
+	offset	19 121
+	bbox	3 3 38 103
+	frame	data/chars/shin/jump0.png
+	offset	20 133
+	bbox	3 0 38 100
+	frame	data/chars/shin/jump1.png
+	offset	28 136
+	delay	10
+	bbox	7 1 34 85
+	frame	data/chars/shin/jump2.png
+		
+anim	jumpattack
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	7
+	offset	23 127
+	bbox	6 0 37 79
+	frame	data/chars/shin/jpunch0.png
+	offset	30 117
+	attack	50 23 55 48 7 0 0 0 0 0
+	bbox	14 2 33 69
+	frame	data/chars/shin/jpunch1.png
+		
+anim	land
+	loop	0
+	delay	25
+	offset	22 130
+	bbox	7 11 31 88
+	frame	data/chars/shin/jump3.png
+		
+anim	pain
+	loop	0
+	offset	32 109
+	bbox	0 1 48 105
+	delay	8
+	frame	data/chars/shin/pain00.png
+	sound	data/sounds/shin/pain.wav
+	offset	35 109
+	frame	data/chars/shin/pain01.png
+	offset	61 98
+	frame	data/chars/shin/pain02.png
+		
+anim	rise
+	loop	0
+	offset	35 70
+	delay	10
+	frame	data/chars/shin/rise0.png
+	offset	34 99
+	delay	10
+	frame	data/chars/shin/rise1.png
+		
+anim	spawn
+	delay	1
+	offset	27 117
+	bbox	6 0 35 122
+	frame	data/chars/shin/blank.png
+		
+anim	special2
+	sound	data/sounds/shin/goketoken.wav
+	loop	0
+	delay	8
+	offset	43 134
+	bbox	17 0 46 81
+	frame	data/chars/shin/sp0.png
+	blast	-13 -12 156 86 60 0 1 0 0 2
+	sound	data/sounds/Kenshiro/spec1.wav
+	delay	20
+	offset	58 124
+	move	100
+	bbox	28 -1 44 56
+	frame	data/chars/shin/sp1.png
+	delay	6
+	move	50
+	offset	58 124
+	blast	-13 -12 156 86 60 0 0 0 0 0
+	bbox	27 -1 44 56
+	frame	data/chars/shin/sp1.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	24 115
+	bbox	6 0 35 122
+	frame	data/chars/shin/walk000.png
+	offset	24 115
+	frame	data/chars/shin/walk001.png
+	offset	24 115
+	frame	data/chars/shin/walk002.png
+	offset	24 115
+	frame	data/chars/shin/walk003.png
+	offset	24 115
+	frame	data/chars/shin/walk005.png
+	offset	24 115
+	frame	data/chars/shin/walk005.png
+		
+#|edited by openBor Stats v 0.41
+		

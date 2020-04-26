@@ -1,0 +1,28 @@
+name	sac
+type    obstacle
+cantgrab 1
+shadow  1
+gfxshadow  1
+health  20
+diesound  data/sounds/sac.wav
+nolife  1
+offscreenkill  2000
+flash   obfla
+noatflash 1
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	98 173
+	bbox    56 100 73 105
+      platform   55 177 0 0 90 90 15 55
+	frame	data/chars/misc/sac1.gif
+	
+anim fall
+	loop	0
+	delay	5
+	offset	98 173
+	frame	data/chars/misc/sac2.gif
+      frame	data/chars/misc/sac3.gif
+

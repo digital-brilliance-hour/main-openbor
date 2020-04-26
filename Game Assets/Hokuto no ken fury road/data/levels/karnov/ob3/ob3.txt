@@ -1,0 +1,31 @@
+name	ob3
+health	1
+type	obstacle
+shadow	0
+nolife  1
+flash   obfla
+noatflash 1
+antigravity 100
+
+
+anim	fall
+	loop	0
+	delay	5
+	offset	11 47
+	frame	data/levels/karnov/ob3/fird0.png
+	offset	11 47
+	frame	data/levels/karnov/ob3/fird1.png
+	offset	18 51
+	frame	data/levels/karnov/ob3/fird2.png
+	offset	19 53
+	frame	data/levels/karnov/ob3/fird3.png
+		
+anim	idle
+	loop	1
+	delay	1000
+	offset	19 63
+	bbox	0 0 42 47
+	frame	data/levels/karnov/ob3/fire3.png
+		
+#|edited by openBor Stats v 0.41
+		

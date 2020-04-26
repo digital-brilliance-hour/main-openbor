@@ -1,0 +1,52 @@
+
+music		data/music/circus.ogg
+panel	data/levels/hito/hito/panel.png
+order           a
+cameraoffset 0 0
+settime 0
+spawn1  252 0 260
+spawn2  252 0 260
+type 1 0 0
+
+
+
+
+spawn	aladend
+alias elev
+	coords  24  260  0
+	at  0
+
+spawn	esc
+coords	71 260  46
+	flip  1
+at	0
+
+spawn	lap
+coords	200 260  46
+	flip  1
+at	0
+
+spawn	hit0
+coords	441 260  0
+at	0
+
+spawn	dummy
+coords	400 400
+at	0
+
+
+spawn	hit1
+coords	436 260  151
+item 1up
+at	0
+
+spawn	hit3
+coords	436 260  22
+item p100
+at	0
+
+spawn	hit2
+coords	436 260  86
+item money
+at	0
+

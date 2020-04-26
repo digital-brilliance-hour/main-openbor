@@ -1,0 +1,283 @@
+name	sorya
+health	450
+speed	12
+type	enemy
+shadow	0
+knife  soryaf
+aimove chase
+aimove wander
+aggression 60
+hostile player
+escapehits 3
+nolife 1
+lifebarstatus 300 10 1 0 0 0 0 0 0
+lifeposition 88 244 
+iconposition 60 232
+nameposition 218 246
+icon	data/chars/sorya/icon.png
+diesound data/sounds/die1.wav
+
+palette   data/chars/sorya/idle000.png
+
+
+anim	attack1
+sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	5
+	offset	25 113
+	range 15 60
+	followanim 1
+	followcond 3
+	bbox	7 2 45 119
+	frame	data/chars/sorya/punch000.png
+	offset	17 113
+	attack	45 8 49 39 8 0 0 0 0 0
+	bbox	3 1 51 116
+	frame	data/chars/sorya/punch001.png
+	
+
+anim	follow1
+sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	6
+	offset	17 101
+	followanim 2
+	followcond 3
+	bbox	18 -5 50 115
+	frame	data/chars/sorya/a3-000.png
+	offset	18 97
+	frame	data/chars/sorya/a3-001.png
+	offset	17 103
+	attack	51 3 47 39 7 0 0 0 0 0
+	bbox	23 2 34 103
+	frame	data/chars/sorya/a3-002.png
+
+
+anim	follow2
+sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	8
+	offset	15 90
+	bbox	15 0 51 81
+	frame	data/chars/sorya/upper0.png
+	delay	12
+	attack	19 3 62 66 24 1 0 0 2 0
+	offset	23 131
+	bbox	9 0 41 112
+	frame	data/chars/sorya/upper1.png
+	
+anim	attack2
+sound	data/sounds/shu/kick.wav
+	loop	0
+	delay	7
+	offset	31 113
+	bbox	10 -9 43 108
+	frame	data/chars/sorya/kick0.png
+	offset	37 111
+	attack	29 57 65 57 10 0 0 0 0 0
+	frame	data/chars/sorya/kick1.png
+		
+anim	attack3
+sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	6
+	offset	17 101
+	bbox	18 -5 50 115
+	frame	data/chars/sorya/a3-000.png
+	offset	18 97
+	frame	data/chars/sorya/a3-001.png
+	offset	17 103
+	attack	51 3 47 39 7 0 0 0 0 0
+	bbox	23 2 34 103
+	frame	data/chars/sorya/a3-002.png
+		
+anim	attack4
+sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	8
+	offset	15 90
+	bbox	15 0 51 81
+	frame	data/chars/sorya/upper0.png
+	delay	12
+	attack	19 3 62 66 24 1 0 0 2 0
+	offset	23 131
+	bbox	9 0 41 112
+	frame	data/chars/sorya/upper1.png
+		
+anim	attack5
+sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	7
+	offset	47 104
+	range 15 70
+	bbox	9 4 44 92
+	frame	data/chars/sorya/hkick0.png
+	offset	47 105
+	frame	data/chars/sorya/hkick1.png
+	bbox	9 1 40 82
+	offset	39 105
+	frame	data/chars/sorya/hkick2.png
+	offset	46 109
+	blast	62 0 53 101 15 0 0 0 0 0
+	frame	data/chars/sorya/hkick3.png
+		
+anim	special2
+sound	data/sounds/shu/super.wav
+	loop	0
+	delay	12
+	offset	25 102
+	blast	-17 0 148 98 20 1 0 0 0 0
+	frame	data/chars/sorya/spunch0.png
+sound	data/sounds/shu/tornado.wav
+	frame	data/chars/sorya/spunch1.png
+	frame	data/chars/sorya/spunch2.png
+	offset	25 103
+	frame	data/chars/sorya/spunch3.png
+	offset	25 105
+	frame	data/chars/sorya/spunch4.png
+	offset	25 103
+	frame	data/chars/sorya/spunch5.png
+	offset	25 103
+	frame	data/chars/sorya/spunch6.png
+
+		
+anim	fall
+	loop	0
+	offset	51 109
+	delay	20
+	frame	data/chars/sorya/fall00.png
+	offset	53 36
+	frame	data/chars/sorya/fall01.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	27 114
+	bbox	11 3 36 113
+	frame	data/chars/sorya/idle000.png
+	delay	16
+	offset	27 114
+	loop	1
+	frame	data/chars/sorya/idle001.png
+	delay	8
+	loop	1
+	bbox	5 8 52 112
+	offset	27 115
+	frame	data/chars/sorya/idle002.png
+	delay	8
+	loop	1
+	offset	27 115
+	frame	data/chars/sorya/idle003.png
+	delay	8
+	loop	1
+	offset	27 116
+	frame	data/chars/sorya/idle004.png
+	offset	28 116
+	delay	8
+	loop	1
+	frame	data/chars/sorya/idle005.png
+	delay	8
+	loop	1
+	frame	data/chars/sorya/idle006.png
+	offset	28 115
+	delay	8
+	loop	1
+	frame	data/chars/sorya/idle007.png
+		
+
+anim	jump
+	loop	0
+	delay	10
+	offset	45 137
+	bbox	15 3 38 103
+	frame	data/chars/sorya/jump000.png
+	offset	37 130
+	bbox	19 0 38 100
+	frame	data/chars/sorya/jump001.png
+	offset	36 133
+	delay	10
+	bbox	18 1 34 85
+	frame	data/chars/sorya/jump002.png
+		
+anim	jumpattack
+sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	7
+	offset	29 132
+	bbox	12 0 35 79
+	frame	data/chars/sorya/jumpat00.png
+	offset	28 109
+	attack	53 23 40 56 7 0 0 0 0 0
+	bbox	14 2 33 69
+	frame	data/chars/sorya/jumpat01.png
+		
+anim	jumpattack2
+sound	data/sounds/shu/fuuu.wav
+	loop	0
+	delay	7
+	offset	29 132
+	bbox	12 0 35 79
+	frame	data/chars/sorya/jk0.png
+	offset	28 115
+	attack	53 23 40 56 7 0 0 0 0 0
+	bbox	14 2 33 69
+	frame	data/chars/sorya/jk1.png
+		
+anim	pain
+	loop	0
+	offset	35 116
+	bbox	0 1 48 105
+	delay	8
+	frame	data/chars/sorya/pain01.png
+	offset	49 115
+	delay	36
+	frame	data/chars/sorya/pain02.png
+	offset	58 114
+	delay	6
+	frame	data/chars/sorya/pain03.png
+		
+anim	rise
+	loop	0
+	offset	47 44
+	delay	10
+	frame	data/chars/sorya/rise1.png
+	offset	30 81
+	frame	data/chars/sorya/rise2.png
+		
+anim	freespecial9
+sound	data/sounds/shu/dkick.wav
+	loop	0
+	throwframe	4 75
+	range 0 135
+	offset	34 114
+	bbox	19 2 34 106
+	frame	data/chars/sorya/fire0.png
+	offset	50 117
+	frame	data/chars/sorya/fire1.png
+	offset	58 118
+	frame	data/chars/sorya/fire2.png
+	offset	57 118
+	frame	data/chars/sorya/fire3.png
+sound	data/sounds/shu/wav.wav
+	offset	14 94
+	frame	data/chars/sorya/fire4.png
+	offset	14 99
+	frame	data/chars/sorya/fire5.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	24 117
+	bbox	6 0 35 122
+	frame	data/chars/sorya/walk000.png
+	offset	24 117
+	frame	data/chars/sorya/walk001.png
+	offset	28 117
+	frame	data/chars/sorya/walk002.png
+	offset	31 117
+	frame	data/chars/sorya/walk003.png
+	offset	24 116
+	frame	data/chars/sorya/walk005.png
+		
+#|edited by openBor Stats v 0.41
+		

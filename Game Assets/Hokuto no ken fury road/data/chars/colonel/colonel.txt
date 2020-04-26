@@ -1,0 +1,173 @@
+name	colonel
+health	280
+speed	14
+type	enemy
+shadow  1
+gfxshadow  1
+knife  colonelf
+nolife 1
+aimove chase
+aimove wander
+aggression 60
+hostile player
+escapehits 3
+lifebarstatus 300 10 1 0 0 0 0 0 0
+lifeposition 88 244 
+iconposition 60 232
+nameposition 218 246
+icon	data/chars/colonel/icon.png
+diesound data/sounds/die1.wav
+
+palette   data/chars/colonel/idle000.png
+
+
+anim	attack1
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	5
+	offset	26 107
+	range	15 60
+	followanim	1
+	followcond	3
+	bbox	7 2 45 119
+	frame	data/chars/colonel/punch000.png
+	offset	26 108
+	attack	45 8 58 39 8 0 0 0 0 0
+	bbox	3 1 51 116
+	frame	data/chars/colonel/punch001.png
+		
+anim	attack2
+	sound	data/sounds/shu/kick.wav
+	range	0 80
+	loop	0
+	delay	7
+	offset	28 102
+	bbox	10 -9 43 108
+	frame	data/chars/colonel/kick0.png
+	offset	40 105
+	attack	29 28 81 57 10 0 0 0 0 0
+	frame	data/chars/colonel/kick1.png
+		
+anim	attack3
+	sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	4
+	offset	27 95
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch0.png
+	offset	26 98
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch1.png
+	offset	27 94
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch2.png
+	offset	26 97
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch3.png
+	delay	12
+	blast	62 3 88 66 24 1 0 0 2 0
+	offset	24 91
+	bbox	40 0 38 96
+	frame	data/chars/colonel/spunch4.png
+		
+anim	fall
+	loop	0
+	offset	51 78
+	delay	20
+	frame	data/chars/colonel/fall00.png
+	offset	53 27
+	frame	data/chars/colonel/fall01.png
+		
+anim	follow1
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	range	15 90
+	delay	4
+	offset	27 95
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch0.png
+	offset	26 98
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch1.png
+	offset	27 94
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch2.png
+	offset	26 97
+	bbox	15 0 51 81
+	frame	data/chars/colonel/spunch3.png
+	delay	12
+	blast	66 3 85 68 24 1 0 0 2 0
+	offset	24 91
+	frame	data/chars/colonel/spunch4.png
+		
+anim	freespecial9
+	sound	data/sounds/shu/hum.wav
+	loop	0
+	throwframe	2 75
+	range	0 135
+	offset	27 103
+	bbox	19 2 34 106
+	frame	data/chars/colonel/fire0.png
+	offset	27 105
+	frame	data/chars/colonel/fire1.png
+	sound	data/sounds/shu/fu.wav
+	offset	36 148
+	frame	data/chars/colonel/fire2.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	25 111
+	bbox	11 3 36 113
+	frame	data/chars/colonel/idle000.png
+		
+anim	pain
+	loop	0
+	offset	44 100
+	bbox	0 1 48 105
+	delay	8
+	frame	data/chars/colonel/pain01.png
+	offset	53 106
+	delay	36
+	frame	data/chars/colonel/pain02.png
+		
+anim	rise
+	loop	0
+	offset	35 70
+	delay	10
+	frame	data/chars/colonel/rise1.png
+		
+anim	special2
+	sound	data/sounds/shu/dkick.wav
+	loop	0
+	offset	27 103
+	bbox	19 2 34 106
+	frame	data/chars/colonel/fire0.png
+	offset	27 105
+	frame	data/chars/colonel/fire1.png
+	blast	26 14 48 86 0 0 1 0 0 0
+	sound	data/sounds/shu/wav.wav
+	offset	36 148
+	frame	data/chars/colonel/fire2.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	27 104
+	bbox	6 0 35 122
+	frame	data/chars/colonel/walk000.png
+	offset	20 104
+	frame	data/chars/colonel/walk001.png
+	offset	17 104
+	frame	data/chars/colonel/walk002.png
+	offset	17 104
+	frame	data/chars/colonel/walk003.png
+	offset	17 104
+	frame	data/chars/colonel/walk005.png
+	offset	17 104
+	frame	data/chars/colonel/walk006.png
+	offset	21 104
+	frame	data/chars/colonel/walk007.png
+		
+#|edited by openBor Stats v 0.41
+		

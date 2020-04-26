@@ -1,0 +1,52 @@
+name	gtrap
+type	trap
+shadow	0
+nolife  1
+subject_to_gravity 0
+
+
+anim	idle
+	loop	1
+	attack	3 0 109 104 3000 0 1 1 0 0
+	delay	6
+	offset	22 150
+	frame	data/chars/misc/gtrap00.png
+	attack	0 0 115 134 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap0.png
+	attack	0 0 115 174 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap1.png
+	attack	0 0 115 190 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap2.png
+	attack	0 0 115 205 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap3.png
+	attack	0 15 115 206 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap4.png
+	delay	10
+	attack	0 2 115 200 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap3.png
+	delay	10
+	attack	0 0 115 190 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap2.png
+	delay	10
+	attack	0 0 115 174 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap1.png
+	delay	10
+	attack	0 0 115 134 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap0.png
+	delay	150
+	delay	150
+	attack	0 0 115 104 3000 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/gtrap00.png
+		
+#|edited by openBor Stats v 0.41
+		

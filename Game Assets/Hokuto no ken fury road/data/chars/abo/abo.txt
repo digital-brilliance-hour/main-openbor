@@ -1,0 +1,148 @@
+name	abo
+health	70
+speed	6
+shadow  1
+gfxshadow  1
+type	enemy
+falldie 2
+nodieblink 2
+icon	data/chars/abo/icon.png
+
+
+palette   data/chars/abo/idle000.png
+alternatepal data/chars/abo/map1.png
+alternatepal data/chars/abo/map2.png
+alternatepal data/chars/abo/map3.png
+
+anim	attack1
+	loop	0
+	delay	12
+	offset	38 112
+	bbox	15 -9 75 141
+	frame	data/chars/abo/punch000.png
+	attack	91 8 71 38 10 0 0 0 0 0
+	offset	34 109
+	bbox	21 -9 79 127
+	frame	data/chars/abo/punch001.png
+	delay	4
+	offset	38 112
+	bbox	15 -9 75 141
+	frame	data/chars/abo/punch000.png
+		
+anim	attack2
+	loop	0
+	delay	15
+	offset	38 104
+	bbox	11 -4 73 116
+	frame	data/chars/abo/kick0.png
+	offset	38 112
+	bbox	11 -3 72 124
+	frame	data/chars/abo/punch000.png
+	offset	34 109
+	attack	91 5 72 36 10 0 0 0 0 0
+	frame	data/chars/abo/punch001.png
+		
+anim	death
+	loop	0
+	delay	8
+	offset	55 83
+	frame	data/chars/abo/crouch.png
+delay 12
+	offset	51 124
+	frame	data/chars/abo/die00.png
+sound data/sounds/bou.wav
+delay 12
+	offset	52 126
+	frame	data/chars/abo/die01.png
+delay 12
+	offset	54 129
+	frame	data/chars/abo/die02.png
+delay 12
+	offset	51 124
+	frame	data/chars/abo/die00.png
+delay 12
+	offset	52 126
+	frame	data/chars/abo/die01.png
+delay 12
+	offset	54 129
+	frame	data/chars/abo/die02.png
+	offset	47 149
+	sound	data/sounds/explo.wav
+	frame	data/chars/abo/die03.png
+sound data/sounds/die7.wav
+	offset	47 149
+	frame	data/chars/abo/die04.png
+	offset	47 149
+	frame	data/chars/abo/die03.png
+	offset	47 149
+	frame	data/chars/abo/die04.png
+	offset	47 166
+	frame	data/chars/abo/die05.png
+	offset	47 166
+	frame	data/chars/abo/die06.png
+	offset	59 171
+	frame	data/chars/abo/die07.png
+	offset	47 108
+	frame	data/chars/abo/die08.png
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	54 125
+	frame	data/chars/abo/fall00.png
+	offset	67 81
+	frame	data/chars/abo/fall01.png
+	offset	64 38
+	frame	data/chars/abo/fall02.png
+		
+anim	idle
+	loop	1
+	offset	43 115
+	bbox	17 -1 72 121
+	delay	10
+	frame	data/chars/abo/idle000.png
+	offset	43 115
+	frame	data/chars/abo/idle001.png
+	offset	43 115
+	frame	data/chars/abo/idle002.png
+		
+anim	pain
+	loop	0
+	offset	51 113
+	bbox	17 5 77 136
+	delay	12
+	frame	data/chars/abo/pain01.png
+	offset	56 112
+	delay	50
+	frame	data/chars/abo/pain02.png
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	48 83
+	frame	data/chars/abo/crouch.png
+		
+anim	walk
+	loop	1
+	offset	47 116
+	bbox	7 -1 71 159
+	delay	10
+	frame	data/chars/abo/walk000.png
+	delay	10
+	offset	47 116
+	frame	data/chars/abo/walk001.png
+	delay	10
+	offset	46 120
+	frame	data/chars/abo/walk002.png
+	delay	10
+	offset	46 120
+	frame	data/chars/abo/walk003.png
+	delay	10
+	offset	46 120
+	frame	data/chars/abo/walk004.png
+	delay	10
+	offset	47 116
+	frame	data/chars/abo/walk005.png
+		
+#|edited by openBor Stats v 0.41
+		

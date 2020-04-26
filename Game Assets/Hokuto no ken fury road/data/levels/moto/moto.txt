@@ -1,0 +1,176 @@
+
+music		data/music/20.ogg
+background	data/levels/moto/back1.gif  1  1  0  -145  0  0  5000  5000  0  0
+
+panel	data/levels/moto/back1.gif
+order           a
+cameraoffset 0 0
+settime 0
+notime 1
+direction      	 both
+setweap		3
+cameratype	1
+
+
+bglayer              data/levels/moto/back1.gif 0.8 0 0 -1 0 9999 9999 9999 1 0 0 0 0 0 0
+spawn1  252 0 300
+spawn2  252 0 300
+
+
+
+spawn   road		1
+flip 1
+coords  200 256 53
+at     0
+
+
+spawn   rspeed
+coords  -80 -90
+at      0
+
+#--group-----------
+
+
+
+spawn	bzdrum
+coords	250 256  0
+at	1000
+
+spawn	motozed
+coords	60 272  0
+at	800
+
+
+spawn	motopic
+coords	280 272  0
+at	1200
+
+spawn   telehel
+spawnscript data/scripts/noscpos.c
+coords  -150 90
+at      1300
+
+
+
+
+spawn	motocrad
+coords	230 240  0
+at	2000
+
+
+
+spawn	motopic
+map 1
+coords	120 272  0
+at	2500
+
+spawn	motocrad
+map 1
+coords	190 240  0
+at	3000
+
+
+
+
+spawn	motozed
+map 2
+coords	300 272  0
+at	4000
+
+spawn	motopic
+map 2
+coords	90 272  0
+at	5000
+
+spawn	motopac
+map 1
+coords	260 240  0
+at	5500
+
+spawn	motocrad
+map 2
+coords	280 240  0
+at	6000
+
+spawn	motopic
+map 2
+coords	90 272  0
+at	6400
+
+spawn	motocrad
+map 2
+coords	200 240  0
+at	6800
+
+spawn	motozed
+map 1
+coords	300 272  0
+at	7200
+
+spawn	motopic
+map 2
+coords	90 272  0
+at	7800
+
+spawn	motopac
+map 2
+coords	220 240  0
+at	8000
+
+spawn	motopic
+coords	90 272  0
+at	8500
+
+spawn	motozed
+coords	60 272  0
+at	9000
+
+
+spawn	motozed
+map 1
+coords	300 272  0
+at	9400
+
+
+spawn	bzdrum
+coords	250 256  0
+at	10000
+
+spawn	bzdrum
+coords	250 256  0
+at	10500
+
+spawn	motozed
+map 1
+coords	60 272  0
+at	10600
+
+spawn	buggy
+coords	258 272  0
+at	12000
+
+spawn	motocrad
+coords	230 240  0
+at	13200
+
+
+
+
+spawn   telehel
+spawnscript data/scripts/noscpos.c
+coords  -150 90
+at      10000
+
+spawn	motocrad
+map 2
+coords	280 240  0
+at	15500
+
+spawn	motopic
+map 2
+coords	90 272  0
+at	16800
+
+spawn	buggy
+coords	258 272  0
+at	17500

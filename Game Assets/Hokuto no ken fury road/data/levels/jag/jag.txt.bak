@@ -1,0 +1,40 @@
+bossmusic	data/music/boss.bor
+background	data/levels/jag/rsky.gif
+panel	data/levels/jag/jag1.png
+
+bgspeed 0.1 0
+order           a
+cameraoffset 0 0
+settime 0
+direction both
+notime 1
+cameratype 1
+light  50 -246
+at -2
+
+
+spawn	helicogg
+coords	375 205  196
+at	0
+
+spawn	spawnjagi
+coords	228 256  0
+at	0
+
+spawn	oil
+coords	133 229  0
+at	0
+
+spawn	oil1
+coords	123 224  0
+at	0
+
+spawn rain
+coords  485 710 450
+at      0
+
+spawn	jagi
+boss 1
+coords	228 256  0
+at	0
+

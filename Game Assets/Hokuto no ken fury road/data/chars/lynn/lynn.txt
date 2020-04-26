@@ -1,0 +1,65 @@
+name	lynn
+health	1
+speed	5
+type	npc
+subtype follow
+aimove chase
+shadow	0
+falldie 1
+nodieblink 2
+subject_to_screen 1
+facing 0
+animationscript   data/scripts/ani0020.h
+
+
+anim	backwalk
+	loop	1
+	offset	5 10
+	bbox	-5 -2 17 22
+	delay	12
+	frame	data/chars/lynn/walk1.png
+	offset	4 10
+	frame	data/chars/lynn/idle1.png
+		
+anim	death
+
+   @cmd   jumptobranch "cage" 1
+subentity	failed
+	summonframe	0 320 240 235 1
+@cmd Restart
+	bbox	-5 -2 17 22
+	loop	0
+	delay	20
+	offset	4 10
+	frame	data/chars/lynn/idle.png
+delay	0
+	offset	4 10
+	frame	data/chars/lynn/idle.png
+		
+anim	idle
+	rangea	-5 12
+	range	-14 26
+	loop	1
+	offset	4 10
+	bbox	-5 -2 15 22
+	delay	10
+	frame	data/chars/lynn/idle.png
+		
+anim	spawn
+	loop	0
+	offset	4 12
+	bbox	-5 -2 17 22
+	delay	10
+	frame	data/chars/lynn/idle.png
+		
+anim	walk
+	loop	1
+	offset	5 10
+	bbox	-5 -2 17 22
+	delay	12
+	frame	data/chars/lynn/walk.png
+	offset	4 10
+	frame	data/chars/lynn/idle.png
+		
+#|edited by openBor Stats v 0.41
+		

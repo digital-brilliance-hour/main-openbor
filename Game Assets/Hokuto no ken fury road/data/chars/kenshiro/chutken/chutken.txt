@@ -1,0 +1,90 @@
+name	chutken
+health	200
+speed	24
+type	none
+falldie 1
+facing 1
+shadow  0
+gfxshadow  0
+
+icon	data/chars/kenshiro/icon.png
+
+
+
+
+
+anim	attack1
+	sound	data/sounds/kenshiro/shinken.wav
+	delay	0
+	offset	22 58
+	bbox	-22 -1 93 67
+	frame	data/chars/kenshiro/chutken/ch1.png
+		
+anim	attackbackward
+		
+anim	block
+		
+anim	forwardjump
+		
+anim	idle
+	bbox	-13 -2 76 77
+	loop	1
+	delay	8
+	offset	22 58
+	frame	data/chars/kenshiro/chutken/ch1.png
+	bbox	-16 -1 80 71
+	offset	22 59
+	frame	data/chars/kenshiro/chutken/ch2.png
+
+
+anim	respawn
+	bbox	-13 -2 76 77
+	delay	1
+	offset	22 58
+	frame	data/chars/kenshiro/chutken/ch1.png
+	bbox	-16 -1 80 71
+	offset	22 59
+	frame	data/chars/kenshiro/chutken/ch2.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+	loop	0
+	delay	8
+	offset	22 58
+	bbox	-20 -1 88 68
+	frame	data/chars/kenshiro/chutken/ch1.png
+	bbox	-18 -3 87 71
+	offset	22 59
+	frame	data/chars/kenshiro/chutken/ch2.png
+		
+anim	RUNATTACK
+	loop	0
+	delay	8
+	offset	22 58
+	bbox	-21 -1 91 66
+	frame	data/chars/kenshiro/chutken/ch1.png
+	bbox	-11 -1 72 70
+	offset	22 58
+	frame	data/chars/kenshiro/chutken/ch2.png
+		
+anim	special
+		
+anim	turn
+		
+anim	walk
+	loop	0
+	delay	8
+	offset	22 58
+	bbox	-17 -1 87 66
+	frame	data/chars/kenshiro/chutken/ch1.png
+	bbox	-18 -1 90 65
+	offset	22 59
+	frame	data/chars/kenshiro/chutken/ch2.png
+		
+#|edited by openBor Stats v 0.41
+		

@@ -1,0 +1,48 @@
+name    nap1
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	26
+	offset	0 0 
+sound	data/sounds/electric.wav
+	frame	data/scenes/nap1/1.png
+sound	data/sounds/nappa/udie.wav
+	frame	data/scenes/nap1/2.png
+	frame	data/scenes/nap1/3.png
+	frame	data/scenes/nap1/4.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/nap1/5.png
+	frame	data/scenes/nap1/6.png
+	frame	data/scenes/nap1/7.png
+	frame	data/scenes/nap1/8.png
+	frame	data/scenes/nap1/9.png
+	frame	data/scenes/nap1/10.png
+	frame	data/scenes/nap1/11.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/nap1/12.png
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/nap1/12.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,507 @@
+music 		data/music/stage22.ogg
+
+fglayer      	data/Levels/chut/empty.png  -10000 0 0 0 -120 0 0 1 -1 1			
+fglayer      	data/Levels/chut/empty.png -8000 0 -0.5 0 -31000 0 0 1 -1 1				 
+panel		data/Levels/chut/empty.png
+
+
+direction down
+light  		10  -30
+at 0
+cameratype 0
+cameraoffset 0 0
+notime 1
+settime         0
+order		a
+spawn1  252 0 250
+spawn2  252 0 250
+setweap 5
+
+
+
+#-------------
+spawn speed3
+coords  485 800 450
+at      0
+
+
+spawn	chut1
+coords	200 210  0
+at	0
+
+spawn	chut2
+coords	200 210  0
+at	0
+
+spawn	chut3
+coords	0 0  0
+at	0
+#-------------
+spawn	coin
+coords	300 220  0
+at	100
+
+
+spawn	coin
+coords	220 220  0
+at	100
+
+#-------------
+spawn	coin
+coords	210 220  0
+at	600
+
+spawn	coin
+coords	70 220  0
+at	600
+
+spawn	coin
+coords	420 220  0
+at	600
+
+#-------------
+spawn	coin
+coords	210 250  0
+at	750
+
+spawn	coin
+coords	20 220  0
+at	750
+
+spawn	coin
+coords	450 250  0
+at	750
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	900
+
+spawn	coin
+coords	270 220  0
+at	950
+
+spawn	coin
+coords	472 190  0
+at	1000
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	1100
+
+spawn	coin
+coords	10 190  0
+at	1100
+#-------------
+spawn	coin
+coords	472 190  0
+at	1200
+
+spawn	coin
+coords	472 250  0
+at	1200
+
+#-------------
+spawn	coin
+coords	444 190  0
+at	1350
+
+spawn	coin
+coords	5 250  0
+at	1350
+#-------------
+spawn	coin
+coords	478 185  0
+at	1500
+
+spawn	coin
+coords	240 250  0
+at	1500
+
+spawn	coin
+coords	444 190  0
+at	1350
+
+spawn	coin
+coords	5 250  0
+at	1350
+#-------------
+spawn	coin
+coords	478 192  0
+at	1500
+
+spawn	coin
+coords	240 250  0
+at	1500
+#-------------
+spawn	coin
+coords	2 200  0
+at	1700
+
+spawn	coin
+coords	5 231  0
+at	1700
+
+spawn	coin
+coords	327 185  0
+at	1700
+
+spawn	coin
+coords	240 250  0
+at	1700
+#-------------
+spawn	coin
+coords	444 190  0
+at	1900
+
+spawn	coin
+coords	5 250  0
+at	1950
+
+spawn	coin
+coords	478 260  0
+at	2000
+
+spawn	coin
+coords	156 250  0
+at	2000
+#-------------
+spawn	coin
+coords	10 220  0
+at	2200
+
+spawn	coin
+coords	80 240  0
+at	2250
+
+spawn	coin
+coords	190 260  0
+at	2200
+
+spawn	coin
+coords	300 250  0
+at	2200
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	2400
+
+spawn	coin
+coords	80 250  0
+at	2450
+
+spawn	coin
+coords	190 250  0
+at	2400
+
+spawn	coin
+coords	250 250  0
+at	2400
+
+spawn	coin
+coords	322 250  0
+at	2400
+
+spawn	coin
+coords	405 250  0
+at	2400
+
+#-------------
+spawn	coin
+coords	10 190  0
+at	2600
+
+spawn	coin
+coords	10 250  0
+at	2600
+
+#-------------
+spawn	coin
+coords	470 190  0
+at	2800
+
+spawn	coin
+coords	470 250  0
+at	2850
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	3000
+
+spawn	coin
+coords	100 250  0
+at	3000
+
+spawn	coin
+coords	200 250  0
+at	3000
+
+spawn	coin
+coords	300 250  0
+at	3000
+
+spawn	coin
+coords	400 250  0
+at	3000
+
+
+#-------------
+spawn	coin
+coords	10 220  0
+at	3200
+
+spawn	coin
+coords	400 220  0
+at	3200
+
+#-------------
+spawn	coin
+coords	320 195  0
+at	3400
+
+spawn	coin
+coords	320 2550  0
+at	3400
+
+#-------------
+spawn	coin
+coords	300 220  0
+at	3600
+
+
+spawn	coin
+coords	220 220  0
+at	3600
+
+#-------------
+spawn	coin
+coords	210 220  0
+at	3800
+
+spawn	coin
+coords	70 220  0
+at	3800
+
+spawn	coin
+coords	420 220  0
+at	3800
+
+#-------------
+spawn	coin
+coords	210 250  0
+at	4000
+
+spawn	coin
+coords	20 220  0
+at	4000
+
+spawn	coin
+coords	450 250  0
+at	4000
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	4200
+
+spawn	coin
+coords	270 220  0
+at	4250
+
+spawn	coin
+coords	472 190  0
+at	4290
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	4400
+
+spawn	coin
+coords	10 190  0
+at	4400
+#-------------
+spawn	coin
+coords	472 190  0
+at	4600
+
+spawn	coin
+coords	472 250  0
+at	4600
+
+#-------------
+spawn	coin
+coords	444 190  0
+at	4850
+
+spawn	coin
+coords	5 250  0
+at	4850
+#-------------
+spawn	coin
+coords	478 185  0
+at	5000
+
+spawn	coin
+coords	240 250  0
+at	5000
+
+spawn	coin
+coords	444 190  0
+at	5050
+
+spawn	coin
+coords	5 250  0
+at	5050
+#-------------
+spawn	coin
+coords	478 192  0
+at	5200
+
+spawn	coin
+coords	240 250  0
+at	5200
+#-------------
+spawn	coin
+coords	2 200  0
+at	5400
+
+spawn	coin
+coords	5 231  0
+at	5400
+
+spawn	coin
+coords	327 185  0
+at	5400
+
+spawn	coin
+coords	240 250  0
+at	5400
+#-------------
+spawn	coin
+coords	444 190  0
+at	5600
+
+spawn	coin
+coords	5 250  0
+at	5650
+
+spawn	coin
+coords	478 260  0
+at	5690
+
+spawn	coin
+coords	156 250  0
+at	5690
+#-------------
+spawn	coin
+coords	10 220  0
+at	5800
+
+spawn	coin
+coords	80 240  0
+at	5850
+
+spawn	coin
+coords	190 260  0
+at	5800
+
+spawn	coin
+coords	300 250  0
+at	5800
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	6000
+
+spawn	coin
+coords	80 250  0
+at	6050
+
+spawn	coin
+coords	190 250  0
+at	6000
+
+spawn	coin
+coords	250 250  0
+at	6000
+
+spawn	coin
+coords	322 250  0
+at	6000
+
+spawn	coin
+coords	405 250  0
+at	6000
+
+#-------------
+spawn	coin
+coords	10 190  0
+at	6200
+
+spawn	coin
+coords	10 250  0
+at	6200
+
+#-------------
+spawn	coin
+coords	470 190  0
+at	6200
+
+spawn	coin
+coords	470 250  0
+at	6250
+
+#-------------
+spawn	coin
+coords	10 250  0
+at	6400
+
+spawn	coin
+coords	100 250  0
+at	6400
+
+spawn	coin
+coords	200 250  0
+at	6400
+
+spawn	coin
+coords	300 250  0
+at	6400
+
+spawn	coin
+coords	400 250  0
+at	6400
+
+
+#-------------
+spawn	coin
+coords	10 220  0
+at	6600
+
+spawn	coin
+coords	400 220  0
+at	6600
+
+#-------------
+spawn	coin
+coords	320 195  0
+at	6800
+
+spawn	coin
+coords	320 2550  0
+at	6800
+
+
+
+
+
+
+
+
+
+

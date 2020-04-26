@@ -1,0 +1,26 @@
+    name      chut2
+    type      none
+    shadow      0
+    antigravity   100
+    subject_to_wall 0
+    subject_to_obstacle 0
+    subject_to_platform 0
+    animationscript data/scripts/prscript.c
+    load       chut1
+
+
+    anim spawn
+       delay   10
+       offset   1 1
+            @cmd    shooter "chut1" 0 0 0 10
+       frame   data/levels/chut/empty.png
+
+    anim idle
+       loop   1
+       delay   1
+       offset   1 1
+       frame   data/levels/chut/empty.png
+       delay   10
+            @cmd    shooter "chut1" 0 0 0 10
+       frame   data/levels/chut/empty.png
+

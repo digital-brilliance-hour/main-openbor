@@ -1,0 +1,46 @@
+name    rad1
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+flip 1
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	40
+	offset	0 0 
+sound	data/sounds/rataunt3.wav
+	frame	data/scenes/rad1/1.png
+	frame	data/scenes/rad1/2.png
+	frame	data/scenes/rad1/3.png
+delay 26
+sound	data/sounds/electric.wav
+	frame	data/scenes/rad1/4.png
+frame	data/scenes/rad1/5.png
+frame	data/scenes/rad1/4.png
+frame	data/scenes/rad1/5.png
+frame	data/scenes/rad1/4.png
+frame	data/scenes/rad1/5.png
+delay 100
+	frame	data/scenes/rad1/6.png
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/rad1/6.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

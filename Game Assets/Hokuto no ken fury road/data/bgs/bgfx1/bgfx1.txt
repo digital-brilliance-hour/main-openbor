@@ -1,0 +1,29 @@
+name	bgfx1
+health	1
+type	panel
+speed 10
+shadow 0
+setlayer -2000
+facing 1
+
+palette none
+
+
+anim	idle
+	loop	1 1 11  
+	offset	0 0
+	delay	11
+sound data/sounds/selc.wav
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/bgs/bgfx1/1.gif
+@cmd	changeentityproperty getlocalvar("self") "setlayer" -2000
+frame	data/bgs/bgfx1/2.gif
+frame	data/bgs/bgfx1/3.gif
+frame	data/bgs/bgfx1/4.gif
+frame	data/bgs/bgfx1/5.gif
+frame	data/bgs/bgfx1/6.gif
+frame	data/bgs/bgfx1/7.gif
+frame	data/bgs/bgfx1/8.gif
+frame	data/bgs/bgfx1/9.gif
+frame	data/bgs/bgfx1/10.gif
+frame	data/bgs/bgfx1/11.gif

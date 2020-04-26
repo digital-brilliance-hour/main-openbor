@@ -1,0 +1,81 @@
+direction	both
+cameratype 1
+
+settime 0 
+notime 1
+
+spawn2 150 100 829
+spawn1 50  200 829
+
+
+cameraoffset 0  -200
+
+music		data/music/muteki.ogg
+
+background	data/bgs/tourn.png
+panel		data/bgs/dammy.gif	
+
+fglayer data/bgs/light1.png 1 -0.3 -0.2 -220 -20 0 0 -1 1 1 1
+
+order	a
+
+wall		0 60 -500 -500 7500 7500 60 5000
+type		1 0 0
+
+#-------1
+
+
+
+group   1 1
+at      0
+
+spawn story
+alias fun1
+at 0
+
+
+spawn  delay
+         health  1
+	coords  320  400  100
+	at  0
+
+
+spawn  fight
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+	coords  0 0
+	at  0
+
+spawn  satan
+coords 700 400
+at     0
+
+group   1 1
+at      0
+
+
+
+spawn  comp
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+	coords  0 0
+	at  0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0

@@ -1,0 +1,43 @@
+name grenade
+speed 9
+jumpheight 4
+type none
+shadow 1
+candamage player
+
+anim	attack1
+	delay	8
+	offset	39 62
+	sound	data/sounds/boom.wav
+	frame	data/chars/buggy/gra1.gif
+	offset	39 63
+	frame	data/chars/buggy/gra2.gif
+	frame	data/chars/buggy/gra3.gif
+	frame	data/chars/buggy/gra4.gif
+		
+anim	attack2
+	delay	8
+	offset	39 62
+	sound	data/sounds/boom.wav
+	frame	data/chars/buggy/gra1.gif
+	offset	39 63
+	frame	data/chars/buggy/gra2.gif
+	frame	data/chars/buggy/gra3.gif
+	frame	data/chars/buggy/gra4.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	12 13
+	attack	-1 -1 20 20 15 0 0 0 0 0
+	frame	data/chars/buggy/g1.gif
+	frame	data/chars/buggy/g2.gif
+	frame	data/chars/buggy/g3.gif
+	frame	data/chars/buggy/g4.gif
+	frame	data/chars/buggy/g5.gif
+	frame	data/chars/buggy/g6.gif
+	frame	data/chars/buggy/g7.gif
+	frame	data/chars/buggy/g8.gif
+		
+#|edited by openBor Stats v 0.41
+		

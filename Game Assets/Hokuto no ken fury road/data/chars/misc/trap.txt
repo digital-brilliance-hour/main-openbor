@@ -1,0 +1,69 @@
+name	trap
+type	trap
+shadow	0
+nolife  1
+subject_to_gravity
+
+
+anim	idle
+	loop	1
+	attack	3 0 66 84 67 0 1 1 0 0
+	delay	15
+	offset	22 150
+	frame	data/chars/misc/trap0.png
+	attack	0 0 69 90 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap1.png
+	attack	0 0 69 97 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap2.png
+	attack	0 0 69 102 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap3.png
+	delay	6
+	attack	0 0 69 115 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap4.png
+	delay	6
+	attack	0 0 69 127 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap5.png
+	attack	2 0 67 139 67 0 1 0 0 0
+	delay	6
+	offset	22 150
+	frame	data/chars/misc/trap6.png
+	attack	3 0 66 163 67 0 1 0 0 0
+	delay	6
+	offset	22 150
+	frame	data/chars/misc/trap7.png
+	attack	0 0 69 138 67 0 1 0 0 0
+	delay	15
+	offset	22 150
+	frame	data/chars/misc/trap6.png
+	delay	15
+	attack	3 0 66 125 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap5.png
+	delay	15
+	attack	3 0 66 115 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap4.png
+	delay	15
+	attack	0 0 69 102 67 0 0 1 0 0
+	offset	22 150
+	frame	data/chars/misc/trap3.png
+	delay	15
+	attack	3 0 66 98 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap2.png
+	delay	15
+	attack	3 0 66 90 67 0 1 0 0 0
+	offset	22 150
+	frame	data/chars/misc/trap1.png
+	attack	2 0 67 83 67 0 1 0 0 0
+	delay	200
+	offset	22 150
+	frame	data/chars/misc/trap0.png
+		
+#|edited by openBor Stats v 0.41
+		

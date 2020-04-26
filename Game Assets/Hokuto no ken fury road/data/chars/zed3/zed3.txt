@@ -1,0 +1,175 @@
+name	zed3
+health	60
+speed	9
+type	enemy
+aimove chase
+aimove wander
+aggression 20
+hostile player
+shadow  1
+gfxshadow  1
+falldie 2
+nodieblink 2
+icon	data/chars/zed3/icon.png
+
+palette   data/chars/zed3/idle000.png
+alternatepal data/chars/zed3/map1.png
+alternatepal data/chars/zed3/map2.png
+alternatepal data/chars/zed3/map3.png
+alternatepal data/chars/zed3/map4.png
+
+
+anim	attack1
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	7
+	offset	30 120
+	bbox	2 0 44 118
+	frame	data/chars/zed3/kick0.png
+	delay	21
+	offset	45 112
+	attack	41 21 80 51 10 0 0 0 0 0
+	frame	data/chars/zed3/kick1.png
+		
+anim	attack2
+	sound	data/sounds/Kenshiro/punch002.wav
+	loop	0
+	delay	9
+	offset	35 111
+	bbox	7 1 41 116
+	frame	data/chars/zed3/punch000.png
+	offset	35 113
+	frame	data/chars/zed3/punch001.png
+	delay	20
+	attack	47 1 34 66 7 0 1 0 0 0
+	offset	36 124
+	frame	data/chars/zed3/punch002.png
+	offset	35 119
+	frame	data/chars/zed3/punch003.png
+		
+anim	death
+	loop	0
+	delay	8
+	offset	30 95
+	frame	data/chars/zed3/rise1.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die0.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die1.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die0.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die1.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die0.png
+delay 8
+	offset	35 114
+	frame	data/chars/zed3/die1.png
+sound	data/sounds/die6.wav
+	offset	35 149
+	frame	data/chars/zed3/die2.png
+	offset	35 147
+	frame	data/chars/zed3/die3.png
+	offset	35 143
+	frame	data/chars/zed3/die4.png
+	offset	35 143
+	frame	data/chars/zed3/die5.png
+	offset	35 143
+	frame	data/chars/zed3/die6.png
+	sound	data/sounds/explo.wav
+	offset	35 147
+	frame	data/chars/zed3/die7.png
+	offset	35 147
+	frame	data/chars/zed3/die8.png
+	offset	35 147
+	frame	data/chars/zed3/die9.png
+	offset	38 161
+	frame	data/chars/zed3/die10.png
+	offset	38 161
+	frame	data/chars/zed3/die11.png
+	offset	38 161
+	frame	data/chars/zed3/die12.png
+	offset	38 161
+	frame	data/chars/zed3/die13.png
+	offset	45 161
+	frame	data/chars/zed3/die14.png
+	offset	45 161
+	frame	data/chars/zed3/die15.png
+	offset	45 161
+	frame	data/chars/zed3/die16.png
+	offset	58 161
+	frame	data/chars/zed3/die17.png
+	offset	58 161
+	frame	data/chars/zed3/die18.png
+	offset	58 161
+	frame	data/chars/zed3/die19.png
+	offset	58 161
+	frame	data/chars/zed3/die20.png
+	offset	58 161
+	frame	data/chars/zed3/die21.png
+	offset	58 161
+	frame	data/chars/zed3/die22.png
+	offset	35 102
+	frame	data/chars/zed3/die23.png
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	53 106
+	frame	data/chars/zed3/fall00.png
+	offset	52 71
+	frame	data/chars/zed3/fall02.png
+	offset	54 33
+	frame	data/chars/zed3/fall01.png
+		
+anim	idle
+	loop	1
+	offset	35 114
+	bbox	7 2 50 115
+	delay	10
+	frame	data/chars/zed3/idle000.png
+		
+anim	pain
+	loop	0
+	offset	57 116
+	bbox	16 16 39 97
+	delay	12
+	frame	data/chars/zed3/pain01.png
+	offset	63 115
+	delay	50
+	frame	data/chars/zed3/pain02.png
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	28 96
+	frame	data/chars/zed3/rise1.png
+		
+anim	walk
+	loop	1
+	offset	33 117
+	bbox	15 -1 31 109
+	delay	8
+	frame	data/chars/zed3/walk000.png
+	offset	21 117
+	frame	data/chars/zed3/walk001.png
+	offset	22 117
+	frame	data/chars/zed3/walk002.png
+	offset	22 117
+	frame	data/chars/zed3/walk003.png
+	offset	17 117
+	frame	data/chars/zed3/walk004.png
+	offset	25 117
+	frame	data/chars/zed3/walk005.png
+	offset	33 117
+	frame	data/chars/zed3/walk006.png
+	offset	36 117
+	frame	data/chars/zed3/walk007.png
+		
+#|edited by openBor Stats v 0.41
+		

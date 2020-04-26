@@ -1,0 +1,93 @@
+music           data/music/futa.ogg
+fglayer      	data/Levels/elev/rsky.gif  -10000 0 0 0 -120 0 0 1 -1 1			
+fglayer      	data/Levels/elev/elev1.png -8000 0 -0.5 0 -31000 0 0 1 -1 1				 
+panel		data/Levels/elev/elev.png
+frontpanel		data/Levels/elev/front.png
+
+direction up
+light  		10  -30
+at 0
+cameratype 0
+cameraoffset 0 0
+notime 1
+settime         0
+order		a
+spawn1  252 0 300
+spawn2  252 0 300
+rock 3
+
+
+
+
+spawn rain1
+coords  485 710 450
+at      0
+
+spawn front1
+coords  485 710 450
+at      0
+
+#--group-----------
+
+
+
+spawn	grif
+coords	400 220  0
+at	0
+
+spawn	grif
+map 2
+coords	40 200  0
+at	0
+
+
+group 3-3
+at 0
+
+spawn	zed
+map 1
+health	40
+coords	-30 265  0
+at	0
+
+spawn	zed2
+map 1
+health	50
+coords	-30 185  0
+at	0
+
+spawn	grif
+map 1
+coords	200 220  0
+at	0
+
+
+group 1-1
+at 0
+
+spawn	zed2
+map 3
+health	40
+coords	-30 220  0
+at	0
+
+
+group 3-3
+at 0
+
+spawn	grif
+map 3
+item meat
+coords	400 220  0
+at	0
+
+
+
+
+
+spawn	cass
+health 100
+map 3
+coords	550 210  0
+at	0
+

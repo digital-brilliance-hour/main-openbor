@@ -1,0 +1,492 @@
+name	ape
+health	200
+mp      200
+speed	40
+type	none
+shadow	2
+noquake 0
+makeinv 2 0
+antigravity 10
+subject_to_gravity 1
+falldie 1
+
+
+
+  riseinv 1
+bounce  0
+atchain 1 2 3 
+
+defense all 0.5
+
+
+
+
+weaploss 2
+nodrop 1
+nopain 1
+diesound 	data/chars/ape/fall.wav
+
+
+
+
+running 80 1 1 1 1
+
+candamage enemy obstacle
+palette   data/chars/ape/Ozaru_Toteppo.gif
+
+load 	super02
+load  pw19
+load  carregaball
+
+load arrshotp
+load teleport
+load aura
+
+
+projectilehit obstacle
+
+animationscript data/scripts/animscript.c
+
+
+
+com a2 freespecial
+com D F A2 freespecial2
+com a3 freespecial3
+com D F a3 freespecial4
+
+com D F a freespecial5
+com D U a freespecial6
+
+anim	freespecial4
+energycost	200
+	mponly	1
+	loop	0
+	delay	7
+	hitflash	flash2
+	subentity	super02
+spawnframe	1 45 0 100 0
+	bbox	0 0 0 0
+	offset	112 164
+	frame	data/chars/ape/144.gif
+	offset	123 149
+	frame	data/chars/ape/146.gif
+	delay	60
+	frame	data/chars/ape/146.gif
+	sound	data/chars/ape/ap2.wav
+	frame	data/chars/ape/146.gif
+
+
+anim	attack1
+	loop	0
+	delay	6
+	offset	108 157
+	frame	data/chars/ape/96.gif
+	delay	12
+	attack	72 74 134 70 20 0 0 0 10 100
+	offset	75 157
+	frame	data/chars/ape/100.gif
+	delay	6
+	attack	0 0 0 0
+	offset	104 159
+	frame	data/chars/ape/52.gif
+		
+anim	attack2
+	loop	0
+	delay	6
+	offset	55 157
+	frame	data/chars/ape/122.gif
+	delay	8
+	attack	52 74 119 87 20 0 0 0 10 100
+	offset	55 157
+	frame	data/chars/ape/124.gif
+	attack	50 51 134 93 20 0 0 0 10 100
+	offset	55 157
+	frame	data/chars/ape/126.gif
+	delay	6
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	55 157
+	frame	data/chars/ape/130.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	bbox	74 9 105 153
+	offset	115 152
+	frame	data/chars/ape/104.gif
+	delay	8
+	sound	data/chars/ape/at1.wav
+	delay	12
+	attack	95 45 169 104 20 1 1 0 0 100
+	bbox	74 0 119 152
+	offset	98 145
+	frame	data/chars/ape/106.gif
+	delay	7
+	attack	82 58 155 77 20 1 0 0 10 100
+	offset	69 149
+	frame	data/chars/ape/108.gif
+	delay	1
+	attack	0 0 0 0
+	offset	69 149
+	frame	data/chars/ape/108.gif
+		
+anim	chargeattack
+	chargetime	0.4
+	fastattack	1
+	delay	10
+	bbox	74 -4 82 175
+	offset	109 158
+	frame	data/chars/ape/152.gif
+	delay	7
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	5
+	attack	0 0 0 0
+	bbox	48 5 104 160
+	offset	98 153
+	frame	data/chars/ape/158.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	7
+	attack	0 0 0 0
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	5
+	attack	0 0 0 0
+	bbox	48 5 104 160
+	offset	98 153
+	frame	data/chars/ape/158.gif
+	delay	12
+	attack9	89 1 130 164 10 1 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	7
+	attack	0 0 0 0
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	41 9 111 152
+	offset	98 153
+	frame	data/chars/ape/158.gif
+
+anim	freespecial6
+	fastattack	1
+	delay	10
+	bbox	74 -4 82 175
+	offset	109 158
+	frame	data/chars/ape/152.gif
+	delay	7
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	5
+	attack	0 0 0 0
+	bbox	48 5 104 160
+	offset	98 153
+	frame	data/chars/ape/158.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	7
+	attack	0 0 0 0
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	12
+	attack9	89 1 130 164 10 0 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	5
+	attack	0 0 0 0
+	bbox	48 5 104 160
+	offset	98 153
+	frame	data/chars/ape/158.gif
+	delay	12
+	attack9	89 1 130 164 10 1 0 0 10 150
+	bbox	48 49 99 175
+	offset	94 220
+	frame	data/chars/ape/154.gif
+	delay	7
+	attack	0 0 0 0
+	bbox	50 42 101 175
+	offset	94 220
+	frame	data/chars/ape/156.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	41 9 111 152
+	offset	98 153
+	frame	data/chars/ape/158.gif
+		
+anim	dodge
+	delay	5
+	sound	data/sounds/elec1.wav
+	@cmd	spawn01 "teleport" 0 0 5 40
+	offset	86 139
+	bbox	0 0 0 0
+	frame	data/chars/ape/94.gif
+	offset	125 247
+	frame	data/chars/ape/92.gif
+	move	30
+	delay	30
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	5
+	sound	data/sounds/elec1.wav
+	@cmd	spawn01 "teleport" 0 0 5 40
+	offset	125 247
+	bbox	0 0 0 0
+	frame	data/chars/ape/92.gif
+	offset	86 139
+	frame	data/chars/ape/94.gif
+		
+anim	faint
+	delay	25
+	loop	1
+	bbox	50 13 119 154
+	offset	104 159
+	frame	data/chars/ape/84.gif
+	frame	data/chars/ape/84.gif
+	frame	data/chars/ape/84.gif
+		
+anim	fall
+	loop	0
+	delay	10
+	bbox	0 0 0 0
+	offset	104 159
+	frame	data/chars/ape/52.gif
+	frame	data/chars/ape/53.gif
+	frame	data/chars/ape/54.gif
+		
+anim	freespecial1
+	energycost	30
+	mponly	1
+	loop	0
+	delay	8
+	offset	112 158
+	bbox	62 16 95 150
+	frame	data/chars/ape/132.gif
+	offset	76 137
+	bbox	25 2 109 140
+	frame	data/chars/ape/134.gif
+	delay	15
+	sound	data/sounds/shot.wav
+	@cmd	shoot "arrshotp" 24 100 0
+	offset	117 137
+	bbox	67 8 107 133
+	frame	data/chars/ape/136.gif
+		
+anim	freespecial2
+	custknife	pw19
+	Subentity	carregaball
+	summonframe	1 0 0 125 0
+	unsummonframe	4
+	throwframe	4
+	energycost	100
+	mponly	1
+	loop	0
+	delay	1
+	bbox	0 0 0 0
+	offset	112 172
+	sound	data/chars/ape/carrega.wav
+	frame	data/chars/ape/144.gif
+	delay	7
+	frame	data/chars/ape/144.gif
+	frame	data/chars/ape/144.gif
+	frame	data/chars/ape/144.gif
+	offset	123 157
+	sound	data/chars/ape/lanca2.wav
+	frame	data/chars/ape/146.gif
+	delay	22
+	frame	data/chars/ape/146.gif
+	sound	data/chars/ape/explosao.wav
+	frame	data/chars/ape/146.gif
+		
+anim	freespecial3
+	custentity	aura
+	spawnframe	4 0 0 0
+	loop	0
+	delay	10
+	offset	117 182
+	bbox	58 14 106 170
+	frame	data/chars/ape/138.gif
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	delay	5
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	@cmd	keyint "ANI_FOLLOW1" 0 "A3" 0
+	offset	117 182
+	bbox	58 14 106 170
+	frame	data/chars/ape/138.gif
+
+
+anim	follow1
+@script
+	void self = getlocalvar("self");
+	int mp = getentityproperty(self, "mp");
+	if(frame == 0){ //Start increasing MP in the very beginning which is first frame
+	changeentityproperty(self, "mp", mp+4); //Increasing MP 4 times
+	}
+	@end_script	
+	custentity	aura
+	spawnframe	0 0 0 0
+	delay	5
+	loop	1
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	127 206
+	bbox	58 40 106 170
+	frame	data/chars/ape/140.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+		
+anim	follow2
+@script
+	changeentityproperty(getlocalvar("self"), "mp", NULL());
+	@end_script	
+	delay	5
+	offset	116 202
+	bbox	49 33 106 170
+	frame	data/chars/ape/142.gif
+	frame	data/chars/ape/142.gif
+frame	data/chars/ape/142.gif
+		
+anim	idle
+	delay	20
+	loop	1
+	bbox	50 13 119 154
+	offset	104 159
+	frame	data/chars/ape/52.gif
+	frame	data/chars/ape/53.gif
+	frame	data/chars/ape/54.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	bbox	0 0 0 0
+	offset	104 159
+	frame	data/chars/ape/52.gif
+	frame	data/chars/ape/53.gif
+	frame	data/chars/ape/54.gif
+		
+anim	rise
+	loop	0
+	delay	10
+	bbox	0 0 0 0
+	offset	104 159
+	frame	data/chars/ape/52.gif
+	frame	data/chars/ape/53.gif
+	frame	data/chars/ape/54.gif
+		
+anim	run
+	loop	1
+	delay	15
+	bbox	43 11 103 175
+	sound	data/chars/ape/run.wav
+	offset	82 197
+	frame	data/chars/ape/88.gif
+	frame	data/chars/ape/88.gif
+	frame	data/chars/ape/88.gif
+		
+anim	runattack
+	jumpframe	0 0 9 0
+	delay	15
+	bbox	74 0 118 159
+	offset	125 146
+	sound	data/chars/ape/run.wav
+	offset	125 146
+	attack	64 2 144 157 20 1 1 1 0 150
+	frame	data/chars/ape/72.gif
+	offset	128 150
+	frame	data/chars/ape/74.gif
+	sound	data/chars/ape/piso.wav
+	offset	147 143
+	frame	data/chars/ape/76.gif
+	offset	111 164
+	frame	data/chars/ape/78.gif
+	sound	data/chars/ape/piso.wav
+	offset	129 142
+	frame	data/chars/ape/80.gif
+	@cmd	dasher 0 0 0
+	attack	0 0 0 0
+	offset	129 148
+	frame	data/chars/ape/82.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	bbox	58 16 82 175
+	offset	103 176
+	sound	data/chars/ape/piso.wav
+	offset	103 176
+	frame	data/chars/ape/90.gif
+	frame	data/chars/ape/90.gif
+	frame	data/chars/ape/90.gif
+		
+#|edited by openBor Stats v 0.67
+		

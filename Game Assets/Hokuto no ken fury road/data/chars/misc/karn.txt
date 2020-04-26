@@ -1,0 +1,30 @@
+name	karn
+health	150
+type	obstacle
+nomove 1 1
+shadow  1
+gfxshadow  1
+diesound data/sounds/stone.wav
+flash   obfla
+noatflash 1
+nolife  1
+falldie 1
+
+
+
+anim	death
+	delay	12
+	offset	120 175
+	frame	data/chars/misc/karn2.png
+	delay	12
+	offset	120 175
+	frame	data/chars/misc/karn3.png
+		
+anim	idle
+	delay	100
+	offset	120 175
+	bbox	63 20 91 161
+	frame	data/chars/misc/karn1.png
+		
+#|edited by openBor Stats v 0.41
+		

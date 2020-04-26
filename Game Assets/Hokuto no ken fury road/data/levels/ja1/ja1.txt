@@ -1,0 +1,293 @@
+
+music		data/music/aku.ogg
+background	data/levels/ja1/rsky.gif  1  1  0  -45  0  0  5000  5000  0  0
+panel	      data/levels/ja1/ja2.gif
+order           a
+
+
+
+
+light  		10   -30
+at       	0
+cameraoffset 0 0
+spawn1 110 20
+spawn2 120 40
+
+
+spawn	sjagi
+map 1
+item   aladin
+itemalias hito
+coords	198 200  0
+at 0
+
+
+
+spawn rain
+coords  485 710 450
+at      0
+
+spawn	p05
+coords	571 442  5
+at	0
+
+spawn	rskull1
+item p100
+coords	739 190  0
+at	0
+
+
+spawn	Drom
+coords	360 201  0
+at	0
+
+spawn	Drom
+coords	960 260  81
+at	0
+
+spawn	ticon
+coords	163 6
+at	0
+
+
+spawn	Drom
+item money
+coords	263 260
+at	0
+
+
+spawn	Steamer
+coords	850 275
+at	0
+
+
+spawn  Drom
+	coords  1114  203  0
+	at  0
+
+
+spawn	Steamer
+coords	1280 275
+at	0
+
+
+
+spawn  Drom
+	coords  1518  263  0
+	at  0
+
+spawn	Steamer
+coords	1620 275
+at	0
+
+
+spawn	decide
+coords	320 260  240
+at	0
+
+
+
+#--group-----------
+wait
+at 20
+
+
+spawn	abo
+map 3
+health	40
+coords	600 200  0
+at	20
+
+
+spawn	grif1
+map 2
+health	60
+coords	-30 200  0
+at	20
+spawn  p05
+	coords  1183  442  0
+	at  40
+
+
+
+
+wait
+at	60
+
+spawn  souris
+	coords  749  143  6
+	at  60
+
+spawn  souris
+	coords  480  143  6
+	at  60
+
+spawn	zed
+map 1
+health	40
+coords	-30 265  0
+at	60
+
+spawn	zed2
+map 1
+health	50
+coords	-30 185  0
+at	60
+
+
+spawn	eath
+map 1
+coords	550 220  0
+at	60
+
+
+spawn  souris
+	coords  490  143  6
+	at  120
+
+spawn  souris
+	coords  485  160  6
+	at  120
+
+spawn  souris
+	coords  480  180  6
+	at  120
+
+spawn  souris
+	coords  490  220  6
+	at  120
+
+spawn  souris
+	coords  520  250  6
+	at  120
+
+spawn  souris
+	coords  550  175  6
+	at  120
+
+spawn  souris
+	coords  640  195 6
+	at  120
+
+wait
+at	480
+
+spawn  souris
+	coords  485  160  6
+	at  480
+
+
+spawn	zed
+map 2
+health	40
+coords	550 260  0
+at	480
+
+spawn	zed3
+map 2
+health	50
+coords	-30 195  0
+at	480
+
+
+spawn	zed2
+map 2
+health	50
+coords	550 195  0
+at	480
+
+
+wait
+at	600
+
+spawn  souris
+	coords  520  225  6
+	at  600
+
+spawn  souris
+	coords  480  165  6
+	at  600
+
+spawn	cass
+map 1
+coords	550 260  0
+at	600
+
+spawn	brion
+map 2
+health	60
+coords	-40 260  0
+at	600
+
+spawn	grif1
+map 2
+coords	550 240  0
+at	800
+
+
+
+wait
+at	1000
+
+spawn  souris
+	coords  610  242  6
+	at  1000
+
+spawn  souris
+	coords  480  186  6
+	at  1000
+
+spawn	abo
+map 2
+health	60
+coords	-30 220  0
+at	1000
+
+spawn	grif1
+map 1
+coords	-30 260  0
+at	1000
+
+spawn	hugo
+map 2
+health	60
+coords	622 200  0
+at	1000
+
+
+
+wait
+at	1100
+
+spawn	zed2
+map 4
+health	50
+coords	-30 265  0
+at	1100
+
+spawn	eath
+@script
+void main()
+{
+    jumptobranch("ja2", 0);
+}
+@end_script
+map 3
+health	80
+coords	562 265  0
+at	1100
+
+
+
+spawn	cass
+@script
+void main()
+{
+    jumptobranch("Elev", 0);
+}
+@end_script
+map 2
+coords	539 212  0
+at	1100
+
+

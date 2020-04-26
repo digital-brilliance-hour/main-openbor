@@ -1,0 +1,37 @@
+name	bikezed
+type    obstacle
+subtype    arrow
+speed 17
+health  1
+shadow  1
+gfxshadow  1
+nolife  1
+nomove 1 1
+nodieblink 2
+noatflash 1
+falldie 1
+diesound   data/sounds/shaah.wav
+
+
+anim	death
+	loop	0
+delay 2
+	offset	90 120
+	frame	data/chars/bikezed/ablood0.png
+	frame	data/chars/bikezed/ablood1.png
+	frame	data/chars/bikezed/ablood2.png
+frame	data/chars/bikezed/ablood3.png
+frame	data/chars/bikezed/ablood4.png
+frame	data/chars/bikezed/ablood5.png
+frame	data/chars/bikezed/ablood6.png
+	
+		
+anim	spawn
+	loop	1
+	offset	35 116
+	bbox	7 2 50 115
+	delay	10
+	frame	data/chars/bikezed/idle000.png
+		
+#|edited by openBor Stats v 0.41
+		

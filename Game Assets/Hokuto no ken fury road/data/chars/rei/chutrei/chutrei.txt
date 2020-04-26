@@ -1,0 +1,88 @@
+name	chutrei
+health	200
+speed	24
+type	none
+falldie 1
+facing 1
+shadow  0
+gfxshadow  0
+
+icon	data/chars/rei/icon.png
+
+
+
+anim	attack1
+	sound	data/sounds/rei/spawn.wav
+	delay	0
+	offset	17 131
+	bbox	-13 -1 78 144
+	frame	data/chars/rei/chutrei/ch1.png
+		
+anim	attackbackward
+		
+anim	block
+		
+anim	forwardjump
+		
+anim	idle
+	bbox	-20 0 78 143
+	loop	1
+	delay	8
+	offset	17 131
+	frame	data/chars/rei/chutrei/ch1.png
+	bbox	-20 -1 78 146
+	offset	17 132
+	frame	data/chars/rei/chutrei/ch2.png
+
+anim	respawn
+	bbox	-20 0 78 143
+	loop	0
+	delay	1
+	offset	17 131
+	frame	data/chars/rei/chutrei/ch1.png
+	bbox	-20 -1 78 146
+	offset	17 132
+	frame	data/chars/rei/chutrei/ch2.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+	loop	0
+	delay	8
+	offset	17 131
+	bbox	-20 -1 78 145
+	frame	data/chars/rei/chutrei/ch1.png
+	bbox	-20 -1 78 144
+	offset	17 132
+	frame	data/chars/rei/chutrei/ch2.png
+		
+anim	RUNATTACK
+	loop	0
+	delay	8
+	offset	17 131
+	bbox	-20 -1 78 144
+	frame	data/chars/rei/chutrei/ch1.png
+	bbox	-20 -1 78 138
+	offset	17 131
+	frame	data/chars/rei/chutrei/ch2.png
+		
+anim	special
+		
+anim	turn
+		
+anim	walk
+	loop	0
+	delay	8
+	offset	17 131
+	bbox	-20 -1 78 145
+	frame	data/chars/rei/chutrei/ch1.png
+	bbox	-20 -1 78 145
+	offset	17 131
+	frame	data/chars/rei/chutrei/ch2.png
+		
+#|edited by openBor Stats v 0.41
+		

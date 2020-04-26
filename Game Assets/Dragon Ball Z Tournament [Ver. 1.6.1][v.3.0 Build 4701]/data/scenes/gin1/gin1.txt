@@ -1,0 +1,68 @@
+name    gin1
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	13
+	offset	0 0 
+	frame	data/scenes/gin1/4.png
+	frame	data/scenes/gin1/5.png
+	frame	data/scenes/gin1/6.png
+	frame	data/scenes/gin1/7.png
+	frame	data/scenes/gin1/8.png
+frame	data/scenes/gin1/9.png
+frame	data/scenes/gin1/10.png
+frame	data/scenes/gin1/11.png
+frame	data/scenes/gin1/12.png
+frame	data/scenes/gin1/13.png
+frame	data/scenes/gin1/14.png
+frame	data/scenes/gin1/15.png
+frame	data/scenes/gin1/16.png
+frame	data/scenes/gin1/17.png
+frame	data/scenes/gin1/18.png
+frame	data/scenes/gin1/19.png
+frame	data/scenes/gin1/20.png
+sound	data/sounds/giintro.wav
+frame	data/scenes/gin1/21.png
+frame	data/scenes/gin1/22.png
+frame	data/scenes/gin1/23.png
+frame	data/scenes/gin1/24.png
+frame	data/scenes/gin1/25.png
+frame	data/scenes/gin1/26.png
+delay 20
+frame	data/scenes/gin1/27.png
+frame	data/scenes/gin1/28.png
+frame	data/scenes/gin1/29.png
+frame	data/scenes/gin1/30.png
+frame	data/scenes/gin1/31.png
+frame	data/scenes/gin1/32.png
+frame	data/scenes/gin1/33.png
+frame	data/scenes/gin1/34.png
+frame	data/scenes/gin1/35.png
+frame	data/scenes/gin1/36.png
+frame	data/scenes/gin1/37.png
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/gin1/37.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

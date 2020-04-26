@@ -1,0 +1,92 @@
+name	garmy2
+health	1
+speed	8
+type	enemy
+subtype chase
+falldie 1
+aimove chasex
+hostile npc
+candamage npc
+aggression 80
+shadow  0
+gfxshadow  0
+nodieblink 2
+flash   obfla
+noatflash 1
+nolife  1
+subject_to_screen 1
+
+
+diesound data/sounds/p9.wav
+
+
+anim	attack1
+	rangea	-6 10
+	range	-1 13
+	attack	8 5 9 10 1 0 1 0 0 0
+	delay	10
+	offset	7 17
+	bbox	0 0 15 23
+	frame	data/chars/garmy2/punch.png
+		
+anim	attackbackward
+		
+anim	backwalk
+	bbox	0 0 15 23
+	loop	1
+	delay	4
+	offset	7 17
+	frame	data/chars/garmy2/walk1.png
+	offset	7 17
+	frame	data/chars/garmy2/walk2.png
+		
+anim	block
+		
+anim	death
+	delay	8
+	offset	7 18
+	frame	data/chars/garmy2/die0.png
+	offset	7 26
+	frame	data/chars/garmy2/die1.png
+	offset	11 32
+	frame	data/chars/garmy2/die2.png
+	delay 1
+	offset	7 17
+	frame	data/chars/garmy2/die3.png
+		
+anim	forwardjump
+		
+anim	idle
+	bbox	-1 0 15 23
+	loop	1
+	delay	5
+	offset	7 17
+	frame	data/chars/garmy2/idle.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+		
+anim	RUNATTACK
+		
+anim	spawn
+		
+anim	special
+		
+anim	turn
+		
+anim	walk
+	bbox	0 0 15 23
+	loop	1
+	delay	4
+	offset	7 17
+	frame	data/chars/garmy2/walk.png
+	offset	7 17
+	frame	data/chars/garmy2/idle.png
+		
+#|edited by openBor Stats v 0.41
+		

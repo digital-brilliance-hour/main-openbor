@@ -1,0 +1,111 @@
+name	duck
+health	30
+speed	7
+type	enemy
+shadow  1
+gfxshadow  1
+icon	data/chars/duck/icon.png
+diesound data/sounds/die1.wav
+
+palette   data/chars/duck/idle000.png
+alternatepal data/chars/duck/map1.png
+alternatepal data/chars/duck/map2.png
+
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	23 107
+	bbox	15 -9 33 111
+	frame	data/chars/duck/punch000.png
+	offset	12 106
+	attack	41 11 38 24 10 0 0 0 0 0
+	frame	data/chars/duck/punch001.png
+		
+anim	attack2
+	loop	0
+	delay	7
+	offset	26 106
+	bbox	10 -9 43 108
+	frame	data/chars/duck/kick0.png
+	offset	27 95
+	attack	29 57 47 40 10 0 0 0 0 0
+	frame	data/chars/duck/kick1.png
+		
+anim	attack3
+	loop	0
+	delay	7
+	offset	24 109
+	bbox	15 -9 33 111
+	frame	data/chars/duck/spunch000.png
+	offset	24 103
+	attack	41 16 47 20 10 0 0 0 0 0
+	frame	data/chars/duck/spunch001.png
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	41 99
+	frame	data/chars/duck/fall00.png
+	offset	47 52
+	frame	data/chars/duck/fall01.png
+		
+anim	idle
+	loop	1
+	offset	24 106
+	bbox	9 -12 40 115
+	delay	10
+	frame	data/chars/duck/idle000.png
+	offset	24 108
+	frame	data/chars/duck/idle001.png
+	
+	offset	36 106
+	frame	data/chars/duck/idle003.png
+	offset	36 106
+	frame	data/chars/duck/idle003.png
+	offset	28 108
+	frame	data/chars/duck/idle005.png
+		
+anim	pain
+	loop	0
+	offset	28 107
+	bbox	13 5 33 96
+	delay	12
+	frame	data/chars/duck/pain01.png
+	offset	36 104
+	delay	50
+	frame	data/chars/duck/pain02.png
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	38 45
+	frame	data/chars/duck/rise1.png
+	offset	24 74
+	frame	data/chars/duck/rise2.png
+	offset	24 90
+	frame	data/chars/duck/rise3.png
+		
+anim	walk
+	loop	1
+	offset	25 104
+	bbox	18 0 47 109
+	delay	8
+	frame	data/chars/duck/walk000.png
+	offset	22 104
+	frame	data/chars/duck/walk001.png
+	offset	38 109
+	frame	data/chars/duck/walk002.png
+	offset	41 105
+	frame	data/chars/duck/walk003.png
+	offset	35 107
+	frame	data/chars/duck/walk004.png
+	offset	23 96
+	frame	data/chars/duck/walk005.png
+	offset	44 107
+	frame	data/chars/duck/walk006.png
+	offset	42 106
+	frame	data/chars/duck/walk007.png
+		
+#|edited by openBor Stats v 0.41
+		

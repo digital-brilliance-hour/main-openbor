@@ -1,0 +1,39 @@
+
+music		data/music/20.ogg
+background	data/levels/moto/back1.gif  1  1  0  -145  0  0  5000  5000  0  0
+
+panel	data/levels/moto/back1.gif
+order           a
+cameraoffset 0 0
+settime 0
+notime 1
+direction      	 both
+setweap		3
+cameratype	1
+
+
+bglayer              data/levels/moto/back1.gif 0.8 0 0 -1 0 9999 9999 9999 1 0 0 0 0 0 0
+spawn1  252 0 300
+spawn2  252 0 300
+
+
+
+spawn   road		1
+flip 1
+coords  200 256 53
+at     0
+
+
+spawn   rspeed
+coords  -80 -90
+at      0
+
+#--group-----------
+
+spawn	buggy
+coords	258 272  0
+at	20
+
+spawn	buggy
+coords	260 272  0
+at	300

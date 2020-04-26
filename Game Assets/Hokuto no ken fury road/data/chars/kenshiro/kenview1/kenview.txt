@@ -1,0 +1,207 @@
+name          	kenview
+type          	none
+health        	200
+
+shadow        	0
+noquake       	0
+speedf		2
+falldie	      	1
+nodieblink    	2
+nodrop		1
+gfxshadow     	0
+facing		1
+running 0 0 0 0 0
+jumpheight 0	
+jumpspeedf 0
+atchain         	1 1
+combostyle 2
+icon            	data/chars/Kenshiro/icon.png
+diesound      	data/sounds/kenshiro/die.wav
+setlayer	35
+animationscript   data/scripts/ani0020.h
+
+
+
+com	a2	freespecial2
+com	D D A	freespecial7
+
+
+
+
+
+
+anim	attack1
+	hitflash hitf
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	8
+	offset	92 47
+	bbox	37 2 182 31
+	frame	data/chars/kenshiro/kenview/idle000.png
+	sound	data/sounds/Kenshiro/punch001.wav
+delay	12
+	attack	67 0 152 135 10 0 1 0 0 0
+	offset	93 132
+	frame	data/chars/kenshiro/kenview/p1.png
+		
+anim	death
+	sound	data/sounds/Kenshiro/die.wav
+	loop	0
+	delay	8
+	offset	92 47
+	bbox	58 0 182 3
+	frame	data/chars/kenshiro/kenview/idle000.png
+		
+		
+anim	freespecial2
+	hitflash hitf
+	loop	0
+	delay	8
+	offset	92 47
+	bbox	58 0 182 26
+	sound	data/sounds/Kenshiro/a3.wav
+	frame	data/chars/kenshiro/kenview/idle000.png
+	sound	data/sounds/Kenshiro/a31.wav
+delay	15
+	attack	47 0 131 118 12 0 1 0 0 0
+	offset	106 140
+	frame	data/chars/kenshiro/kenview/p2.png
+		
+
+
+anim	freespecial7
+hitflash hitf
+sound	data/sounds/shu/super.wav
+	loop	0
+	delay	8
+	offset	92 47
+	frame	data/chars/kenshiro/kenview/idle000.png
+sound	data/sounds/Kenshiro/ata.wav
+	attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+attack	0 0 250 139 5 0 0 0 0 0
+	offset	101 132
+	frame	data/chars/kenshiro/kenview/sp2.png
+attack	0 0 0 0 0 0 0 0 0 0
+	offset	101 141
+	frame	data/chars/kenshiro/kenview/sp1.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png
+	
+
+anim	jump
+	loop	0
+	delay	1
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png
+	
+
+anim	fall
+	loop	0
+	delay	1
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png
+
+
+anim	rise
+	loop	0
+	delay	1
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png
+
+
+anim	run
+	loop	0
+	delay	1
+	offset	92 47
+@cmd	run0001
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png	
+
+	
+
+
+
+anim	pain
+	loop	0
+	delay	8
+	offset	92 47
+	bbox	58 0 182 200
+	frame	data/chars/kenshiro/kenview/idle000.png
+		
+anim	respawn
+	loop	0
+	delay	4
+	offset	92 47
+	bbox	58 0 182 200
+	frame	data/chars/kenshiro/kenview/idle000.png
+		
+	
+anim	runattack
+	loop	0
+	delay	1
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png	
+		
+
+anim	runjumpattack
+	loop	0
+	delay	1
+	offset	92 47
+	bbox	-37 -197 300 300
+	frame	data/chars/kenshiro/kenview/idle000.png	
+
+	
+anim	spawn
+	loop	0
+	delay	8
+	offset	92 47
+	bbox	58 0 182 9
+	frame	data/chars/kenshiro/kenview/idle000.png
+		
+anim	walk
+	loop	1
+	delay	8
+	offset	92 47
+	bbox	-6 -172 250 250
+	frame	data/chars/kenshiro/kenview/idle000.png
+		
+#|edited by openBor Stats v 0.41
+		

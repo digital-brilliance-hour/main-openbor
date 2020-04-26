@@ -1,0 +1,34 @@
+ So you have 2 problems regarding drill, here are the solutions:
+
+1. About Rocksteady, you could spawn a delay entity together with drill. The delay will hold Rocksteady or any enemy to be spawned before it's removed. Read OpenBoR Tricks Tutorial to see how to make delay entity.
+
+ The level should be something like this:
+
+spawn  FootSoldier
+coords x z
+at        0
+
+.... (foot soldiers are spawned at this time)
+
+group 1 1
+at       0
+
+spawn Drill
+spawnscript  data/scripts/noscpos.c (see #2 below)
+coords  x z
+at       0
+
+spawn delay
+health  15
+coords  x z
+at       0
+
+spawn Rocksteady
+coords  x z
+at       0
+
+ delay is enemy therefore Rocksteady won't be spawned until delay removed itself.
+
+2. There's a spawnscript to make drill always spawned at exact spot regardless of scrollpos. It's attached below. Place it inside data/scripts folder.
+
+ Oh yes, this is with the assumption the stage is using direction both.

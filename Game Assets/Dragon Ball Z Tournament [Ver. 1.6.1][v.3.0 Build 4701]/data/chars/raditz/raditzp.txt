@@ -1,0 +1,1195 @@
+name	raditzp
+
+icon	data/chars/raditz/radi.png 
+
+health	200
+
+speed	30
+type	player
+shadow	2
+
+palette none
+
+projectilehit obstacle
+
+mp 200
+
+autoland 1
+
+antigravity 10
+subject_to_gravity 1
+falldie 1
+
+subject_to_screen 1
+
+running 60 9  2  1  1
+  makeinv 2
+
+load arrshotp
+
+weapons ape
+
+load rad3
+load ape1
+
+load bflash
+bflash bflash
+
+load dball
+load expl
+
+load teleport
+load aura
+load frkik
+load fra2
+load nap2
+load rad2
+load gku
+load gin3
+load gin5
+load ssgt
+load sensu
+load boom
+
+atchain 1 2 3 4
+
+
+com a2 freespecial
+com D F A2 freespecial2
+com a3 freespecial3
+com D F a3 freespecial4
+
+com D F a freespecial5
+com D U a freespecial6
+
+subject_to_screen 1
+
+animationscript data/scripts/animscript.c
+
+anim	attack1
+	delay	5
+	offset	73 144
+	bbox	44 13 55 116
+	frame	data/chars/raditz/lk1.png
+	delay	8
+	attack	89 53 104 66 10 0 1 0 0 80
+	offset	95 135
+	bbox	69 5 44 127
+	frame	data/chars/raditz/lk2.png
+	attack	64 61 68 66 10 0 1 0 0 80
+	delay	4
+	offset	63 140
+	bbox	44 8 44 131
+	frame	data/chars/raditz/lk3.png
+	delay	3
+	attack	0 0 0 0
+	offset	73 144
+	bbox	44 13 55 116
+	frame	data/chars/raditz/lk1.png
+		
+anim	attack2
+	delay	6
+	offset	88 142
+	bbox	44 29 72 98
+	frame	data/chars/raditz/25.png
+	move	5
+	delay	7
+	offset	88 143
+	bbox	44 14 72 98
+	attack	81 44 69 66 10 0 1 0 0 80
+	dropv	4 6 10
+	frame	data/chars/raditz/26.png
+	delay	5
+	attack	81 44 69 66 10 0 1 0 0 80
+	dropv	4 6 10
+	offset	88 142
+	bbox	44 15 72 98
+	frame	data/chars/raditz/27.png
+	move	0
+	delay	6
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	81 138
+	frame	data/chars/raditz/25.png
+		
+anim	attack3
+	hitflash	flash2
+	loop	0
+	delay	5
+	offset	71 156
+	bbox	39 55 64 98
+	@cmd	randSound "raat1.wav" "raat2.wav" "null.wav"
+	frame	data/chars/raditz/39.png
+	offset	71 156
+	bbox	44 42 61 98
+	frame	data/chars/raditz/40.png
+	delay	6
+	bbox	43 16 60 108
+	offset	60 126
+	move	5
+	attack	61 40 82 91 10 0 0 0 0 30
+	dropv	11 1 6
+	frame	data/chars/raditz/41.png
+	delay	7
+	attack	61 40 82 91 10 0 0 0 0 30
+	dropv	11 1 6
+	bbox	37 39 60 121
+	offset	60 154
+	frame	data/chars/raditz/42.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	43 16 60 108
+	offset	60 154
+	frame	data/chars/raditz/43.png
+	move	0
+	bbox	36 41 60 120
+	offset	60 154
+	delay	5
+	frame	data/chars/raditz/44.png
+		
+anim	attack4
+	jumpframe	1
+	landframe	4
+	loop	0
+	delay	8
+	offset	80 172
+	bbox	45 44 58 98
+	@cmd	randSound "raat1.wav" "raat2.wav" "null.wav"
+	frame	data/chars/raditz/45.png
+	frame	data/chars/raditz/46.png
+	frame	data/chars/raditz/47.png
+	hitflash	flash2
+	delay	25
+	bbox	34 67 76 82
+	blast	35 27 132 133 10 1 1 0 0 50
+	dropv	2 10 10
+	offset	57 195
+	bbox	34 67 76 82
+	frame	data/chars/raditz/48.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 171
+	bbox	34 67 76 82
+	frame	data/chars/raditz/49.png
+	delay	12
+	offset	85 99
+	bbox	47 19 76 82
+	frame	data/chars/raditz/57.png
+		
+anim	chargeattack
+	chargetime	0.4
+	fastattack	1
+	forcedirection	-1
+	loop	0
+	delay	6
+	offset	63 138
+	bbox	45 23 47 109
+	hitflash	flash2
+	@cmd	randSound "raat1.wav" "raat2.wav" "null.wav"
+	frame	data/chars/raditz/34.png
+	frame	data/chars/raditz/35.png
+	delay	5
+	attack	58 34 129 70 3 0 0 0 0 50
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	5
+	attack	58 34 137 74 3 0 0 0 0 50
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	5
+	attack	58 34 128 69 3 0 0 0 0 50
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	5
+	attack	58 34 136 73 3 0 0 0 0 50
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	5
+	attack	58 34 129 69 3 0 0 0 0 50
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	7
+	attack	58 34 135 72 3 0 0 0 0 50
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	8
+	frame	data/chars/raditz/38.png
+		
+anim	death
+	loop	0
+	delay	7
+	offset	82 99
+	frame	data/chars/raditz/57.png
+	frame	data/chars/raditz/58.png
+	frame	data/chars/raditz/59.png
+		
+anim	death10
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	7
+	offset	82 99
+	move	-80
+	movea	40
+	frame	data/chars/raditz/57.png
+	frame	data/chars/raditz/58.png
+	frame	data/chars/raditz/59.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/59.png
+		
+anim	death11
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	7
+	offset	82 99
+	move	-80
+	movea	40
+	frame	data/chars/raditz/57.png
+	frame	data/chars/raditz/58.png
+	frame	data/chars/raditz/59.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/59.png
+		
+anim	death2
+	subentity	fra2
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	7
+	offset	82 99
+	move	-80
+	movea	40
+	frame	data/chars/raditz/57.png
+	frame	data/chars/raditz/58.png
+	frame	data/chars/raditz/59.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/59.png
+		
+anim	death4
+	subentity	frkik
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	7
+	offset	82 99
+	move	-80
+	movea	40
+	frame	data/chars/raditz/57.png
+	frame	data/chars/raditz/58.png
+	frame	data/chars/raditz/59.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/59.png
+		
+anim	dodge
+	move	30
+	delay	5
+	sound	data/sounds/elec1.wav
+	@cmd	spawn01 "teleport" 0 0 5 40
+	offset	67 130
+	bbox	0 0 0 0
+	frame	data/chars/raditz/14.png
+	delay	20
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	5
+	@cmd	spawn01 "teleport" 0 0 5 40
+	sound	data/sounds/elec1.wav
+	offset	67 130
+	bbox	0 0 0 0
+	frame	data/chars/raditz/13.png
+		
+anim	faint
+	loop	1
+	delay	22
+	offset	49 129
+	bbox	19 9 67 128
+	frame	data/chars/raditz/6.png
+	offset	49 130
+	bbox	19 9 67 128
+	frame	data/chars/raditz/7.png
+	offset	49 131
+	bbox	19 9 67 128
+	frame	data/chars/raditz/8.png
+	offset	49 130
+	bbox	19 9 67 128
+	frame	data/chars/raditz/7.png
+		
+anim	fall
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+		
+anim	fall10
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall11
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall2
+	subentity	fra2
+	spawnframe	0 0 0 0 1
+	loop	0
+	quakeframe	1 1 -6
+	dropframe	1
+	landframe	4
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	nodrawmethod	
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall3
+	subentity	boom
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	offset	98 123
+	bbox	0 0 0 0
+	move	-20
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	attack	46 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/55.png
+	offset	98 142
+	frame	data/chars/raditz/56.png
+	offset	98 142
+	frame	data/chars/raditz/56.png
+	nodrawmethod	
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	offset	84 103
+	frame	data/chars/raditz/58.png
+	delay	4
+	move	0
+	offset	85 102
+	frame	data/chars/raditz/57.png
+		
+anim	fall4
+	subentity	frkik
+	spawnframe	0 0 0 0 1
+	loop	0
+	quakeframe	1 1 -6
+	dropframe	1
+	landframe	4
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	nodrawmethod	
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall6
+	subentity	nap2
+	spawnframe	0 0 0 0 1
+	loop	0
+	quakeframe	1 1 -6
+	dropframe	1
+	landframe	4
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	nodrawmethod	
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall7
+	subentity	rad2
+	spawnframe	0 0 0 0 1
+	loop	0
+	quakeframe	1 1 -6
+	dropframe	1
+	landframe	4
+	loop	0
+	delay	10
+	offset	112 138
+	bbox	75 9 67 128
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	move	-80
+	movea	40
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	bbox	75 9 67 128
+	attack	60 20 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/52.png
+	offset	60 123
+	bbox	12 9 67 128
+	attack	5 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/54.png
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	87 102
+	frame	data/chars/raditz/57.png
+	move	0
+	movea	0
+	nodrawmethod	
+	delay	1
+	frame	data/chars/raditz/57.png
+		
+anim	fall8
+	subentity	expl
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	offset	98 123
+	bbox	0 0 0 0
+	move	-20
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	attack	46 8 84 118 100 1 0 0 0 50
+	frame	data/chars/raditz/55.png
+	offset	98 142
+	frame	data/chars/raditz/56.png
+	offset	98 142
+	frame	data/chars/raditz/56.png
+	nodrawmethod	
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	offset	84 103
+	frame	data/chars/raditz/58.png
+	delay	4
+	move	0
+	offset	85 102
+	frame	data/chars/raditz/57.png
+		
+anim	follow1
+@script
+	void self = getlocalvar("self");
+	int mp = getentityproperty(self, "mp");
+	if(frame == 0){ //Start increasing MP in the very beginning which is first frame
+	changeentityproperty(self, "mp", mp+4); //Increasing MP 4 times
+	}
+	@end_script	
+	custentity	aura
+	spawnframe	0 0 0 0
+	delay	5
+	loop	1
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+		
+anim	follow2
+@script
+	changeentityproperty(getlocalvar("self"), "mp", NULL());
+	@end_script	
+	delay	5
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	frame	data/chars/raditz/tame05.png
+	frame	data/chars/raditz/tame05.png
+		
+anim	follow3
+	forcedirection	-1
+	followanim	4
+	followcond	1
+	fastattack	1
+	jumpframe	0 0 8 0
+	nodrawmethod	
+	delay	2
+	offset	42 89
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	68 138
+	bbox	44 41 72 98
+	frame	data/chars/raditz/21.png
+	offset	68 138
+	bbox	44 41 72 98
+	frame	data/chars/raditz/21.png
+	delay	12
+	offset	85 138
+	bbox	44 41 72 98
+	frame	data/chars/raditz/20.png
+	delay	25
+	attack	84 21 86 75 1 0 1 0 0 100
+	dropv	1 30 10
+	offset	87 129
+	bbox	54 18 86 76
+	frame	data/chars/raditz/23.png
+	frame	data/chars/raditz/23.png
+	frame	data/chars/raditz/23.png
+	delay	10
+	@cmd	dasher 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	85 138
+	bbox	54 30 82 82
+	frame	data/chars/raditz/20.png
+	offset	70 138
+	bbox	54 30 82 82
+	frame	data/chars/raditz/21.png
+		
+anim	follow4
+	@cmd	dasher 0 0 0
+	@cmd	randSound "raat1.wav" "raat2.wav" "null.wav"
+	move	0
+	delay	4
+	offset	63 138
+	bbox	45 23 47 109
+	hitflash	flash2
+	frame	data/chars/raditz/34.png
+	frame	data/chars/raditz/35.png
+	delay	4
+	attack9	58 34 129 70 3 0 0 0 0 80
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	4
+	attack9	58 34 137 74 3 0 0 0 0 80
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	4
+	attack9	58 34 128 69 3 0 0 0 0 80
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	4
+	attack9	58 34 136 73 3 0 0 0 0 80
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	4
+	offset	63 130
+	sound	data/sounds/elec1.wav
+	bbox	0 0 0 0
+	frame	data/chars/raditz/12.png
+	move	33
+	delay	7
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	4
+	sound	data/sounds/elec1.wav
+	@cmd	flip
+	offset	63 130
+	bbox	0 0 0 0
+	frame	data/chars/raditz/12.png
+	delay	4
+	offset	63 138
+	bbox	45 23 47 109
+	hitflash	flash2
+	frame	data/chars/raditz/34.png
+	frame	data/chars/raditz/35.png
+	delay	4
+	attack9	58 34 129 70 3 0 0 0 0 80
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	4
+	attack9	58 34 137 74 3 0 0 0 0 80
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	4
+	attack9	58 34 128 69 3 0 0 0 0 80
+	frame	data/chars/raditz/36.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/36.png
+	delay	4
+	attack9	58 34 136 73 3 0 0 0 0 80
+	frame	data/chars/raditz/37.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/37.png
+	delay	4
+	offset	63 130
+	sound	data/sounds/elec1.wav
+	bbox	0 0 0 0
+	frame	data/chars/raditz/12.png
+	move	33
+	delay	8
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	4
+	sound	data/sounds/elec1.wav
+	@cmd	flip
+	offset	63 130
+	bbox	0 0 0 0
+	frame	data/chars/raditz/12.png
+	delay	4
+	offset	71 156
+	bbox	39 55 64 98
+	frame	data/chars/raditz/39.png
+	offset	71 156
+	bbox	44 42 61 98
+	frame	data/chars/raditz/40.png
+	delay	8
+	bbox	43 16 60 108
+	offset	60 126
+	move	5
+	attack	61 40 82 91 10 1 1 0 0 100
+	dropv	11 1 6
+	frame	data/chars/raditz/41.png
+	bbox	37 39 60 121
+	offset	60 154
+	frame	data/chars/raditz/42.png
+	delay	12
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	43 16 60 108
+	offset	60 154
+	frame	data/chars/raditz/43.png
+	move	0
+	bbox	36 41 60 120
+	offset	60 154
+	delay	4
+	frame	data/chars/raditz/44.png
+		
+anim	freespecial1
+energycost	30
+	mponly	1
+	loop	0
+	delay	8
+	offset	107 137
+	bbox	77 16 55 123
+	frame	data/chars/raditz/28.png
+	bbox	74 25 60 115
+	frame	data/chars/raditz/29.png
+	delay	15
+	sound	data/sounds/shot.wav
+	@cmd	shoot "arrshotp" 24 100 0
+	offset	101 138
+	bbox	65 30 52 109
+	frame	data/chars/raditz/31.png
+	delay	4
+	bbox	74 25 60 115
+	frame	data/chars/raditz/29.png
+	offset	107 137
+	bbox	77 16 55 123
+	frame	data/chars/raditz/28.png
+		
+anim	freespecial2
+subentity	rad3
+	spawnframe	1 0 0 0 1
+	energycost	100
+	mponly	1
+	loop	0
+	delay	8
+	offset	107 137
+	bbox	77 16 55 123
+	@cmd	paus0001 1 100
+	frame	data/chars/raditz/28.png
+	offset	64 156
+	bbox	34 25 55 133
+	frame	data/chars/raditz/44.png
+	delay	25
+	sound	data/sounds/shot.wav
+	@cmd	spawn01 "dball" 24 100 0
+	offset	118 152
+	bbox	79 19 60 115
+	frame	data/chars/raditz/sp1.png
+	delay	4
+	offset	64 156
+	bbox	34 25 55 133
+	frame	data/chars/raditz/44.png
+	offset	107 137
+	bbox	77 16 55 123
+	frame	data/chars/raditz/28.png
+		
+anim	freespecial3
+	custentity	aura
+	spawnframe	4 0 0 0
+	loop	0
+	delay	10
+	offset	48 132
+	bbox	17 4 65 136
+	frame	data/chars/raditz/0.png
+	offset	43 146
+	bbox	17 4 65 136
+	frame	data/chars/raditz/tame02.png
+	offset	43 150
+	bbox	17 4 65 136
+	frame	data/chars/raditz/tame03.png
+	delay	5
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	offset	67 111
+	bbox	32 4 65 116
+	frame	data/chars/raditz/tame05.png
+	offset	70 112
+	bbox	35 4 65 113
+	frame	data/chars/raditz/tame04.png
+	@cmd	keyint "ANI_FOLLOW1" 0 "A3" 0
+	offset	48 134
+	bbox	17 4 65 136
+	frame	data/chars/raditz/2.png
+
+
+anim	freespecial4
+subentity	ape1
+	spawnframe	3 0 0 0 1
+	energycost	200
+	mponly	1
+	loop	0
+	delay	25
+	weaponframe	4 1
+offset	43 146
+	bbox	0 0 0 0
+	frame	data/chars/raditz/tame02.png
+	offset	43 150
+	frame	data/chars/raditz/tame03.png
+	delay	30
+	offset	70 112
+	frame	data/chars/raditz/tame04.png
+	offset	67 111
+	frame	data/chars/raditz/tame05.png
+delay 1
+offset	67 111
+	frame	data/chars/raditz/empty.png
+
+		
+anim	freespecial5
+	energycost	30
+	mponly	1
+	hitflash	empty
+	loop	0
+	followanim	3
+	followcond	1
+	fastattack	1
+	delay	10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	bbox	0 0 0 0
+	attack	46 32 370 86 0 0 1 0 0 100
+	offset	65 139
+	frame	data/chars/raditz/34.png
+	nodrawmethod	
+	delay	5
+	frame	data/chars/raditz/34.png
+	delay	10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	bbox	0 0 0 0
+	attack	46 2 370 86 0 0 1 0 0 100
+	offset	48 134
+	frame	data/chars/raditz/34.png
+	nodrawmethod	
+	delay	5
+	frame	data/chars/raditz/34.png
+	delay	10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	bbox	0 0 0 0
+	attack	46 2 370 86 0 0 1 0 0 100
+	offset	48 134
+	frame	data/chars/raditz/34.png
+	nodrawmethod	
+	delay	1
+	frame	data/chars/raditz/34.png
+		
+anim	freespecial6
+	fastattack	1
+	forcedirection	-1
+	@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 0)){
+		changeentityproperty(self, "velocity", 8, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 2)){
+		changeentityproperty(self, "velocity", -8, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 5){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+	delay	7
+	offset	88 142
+	bbox	44 29 72 98
+	frame	data/chars/raditz/25.png
+	delay	8
+	offset	88 142
+	bbox	44 14 72 98
+	attack	81 44 69 66 30 0 0 0 0 80
+	dropv	4 6 10
+	frame	data/chars/raditz/26.png
+	frame	data/chars/raditz/26.png
+	frame	data/chars/raditz/26.png
+	delay	5
+	attack	81 44 69 66 30 0 0 0 0 80
+	dropv	4 6 10
+	offset	88 142
+	bbox	44 15 72 98
+	frame	data/chars/raditz/27.png
+	move	0
+	delay	8
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	81 138
+	frame	data/chars/raditz/25.png
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	48 132
+	bbox	17 4 65 136
+	nodrawmethod	
+	frame	data/chars/raditz/0.png
+	offset	48 133
+	bbox	17 4 65 136
+	frame	data/chars/raditz/1.png
+	offset	48 134
+	bbox	17 4 65 136
+	frame	data/chars/raditz/2.png
+	offset	48 133
+	bbox	17 4 65 136
+	frame	data/chars/raditz/1.png
+		
+anim	land
+	delay	10
+	offset	52 123
+	frame	data/chars/raditz/rise.png
+		
+anim	pain
+	loop	0
+	move	-5
+	delay	5
+	offset	91 131
+	bbox	65 21 50 117
+	frame	data/chars/raditz/50.png
+	delay	8
+	frame	data/chars/raditz/51.png
+	move	0
+	delay	5
+	frame	data/chars/raditz/50.png
+		
+anim	pain5
+	delay	5
+	offset	48 132
+	bbox	17 4 65 136
+	frame	data/chars/raditz/0.png
+	frame	data/chars/raditz/0.png
+		
+anim	pain9
+	loop	0
+	move	0
+	delay	7
+	offset	91 131
+	bbox	65 21 50 117
+	frame	data/chars/raditz/50.png
+	delay	30
+	frame	data/chars/raditz/51.png
+	frame	data/chars/raditz/51.png
+	delay	7
+	frame	data/chars/raditz/50.png
+		
+anim	respawn
+	subentity	sensu
+	spawnframe	0 0 0 0 1
+ @script
+ void self = getlocalvar("self");
+
+ changeentityproperty(self, "mp", 0);
+
+	@end_script	
+	delay	10
+	offset	85 206
+	bbox	0 0 0 0
+	frame	data/chars/raditz/18.png
+	frame	data/chars/raditz/16.png
+		
+anim	rise
+	loop	0
+	delay	5
+	move	0
+	bbox	0 0 0 0
+	offset	52 123
+	@cmd	randSound "rarise.wav" "rarise2.wav" "null.wav"
+	frame	data/chars/raditz/rise.png
+		
+anim	riseattack
+	flipframe	9
+	loop	0
+	delay	8
+	offset	52 123
+	frame	data/chars/raditz/rise.png
+	sound	data/sounds/elec1.wav
+	@cmd	spawn01 "teleport" 0 0 5 40
+	bbox	0 0 0 0
+	offset	67 130
+	frame	data/chars/raditz/13.png
+	move	50
+	delay	10
+	frame	data/chars/vegeta/empty.gif
+	frame	data/chars/vegeta/empty.gif
+	frame	data/chars/vegeta/empty.gif
+	frame	data/chars/vegeta/empty.gif
+	frame	data/chars/vegeta/empty.gif
+	frame	data/chars/vegeta/empty.gif
+	move	0
+	delay	3
+	sound	data/sounds/elec1.wav
+	@cmd	spawn01 "teleport" 0 0 5 40
+	offset	67 130
+	bbox	0 0 0 0
+	frame	data/chars/raditz/14.png
+	frame	data/chars/raditz/13.png
+		
+anim	run
+	loop	1
+	subentity	dust
+	spawnframe	1 0
+	delay	12
+	offset	87 138
+	bbox	54 37 84 75
+	frame	data/chars/raditz/20.png
+	frame	data/chars/raditz/20.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/raditz/20.png
+		
+anim	runattack
+	jumpframe	0 0 6 0
+	loop	0
+	delay	7
+	hitflash	flash2
+	offset	104 137
+	bbox	65 17 63 88
+	frame	data/chars/raditz/k1.png
+	delay	13
+	attack	93 42 87 69 10 1 1 0 0 80
+	dropv	1 30 10
+	offset	109 172
+	bbox	65 42 66 75
+	frame	data/chars/raditz/k2.png
+	attack	93 42 87 69 10 1 1 0 0 80
+	dropv	1 30 10
+	offset	67 178
+	bbox	28 66 58 75
+	frame	data/chars/raditz/k3.png
+	attack	93 42 87 69 10 1 1 0 0 80
+	dropv	1 30 10
+	offset	62 152
+	bbox	22 54 58 75
+	frame	data/chars/raditz/k4.png
+	@cmd	dasher 0 0 0
+	offset	52 124
+	bbox	14 17 51 75
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/raditz/k5.png
+		
+anim	spawn
+ @script
+ void self = getlocalvar("self");
+
+ changeentityproperty(self, "mp", 0);
+
+	@end_script	
+	loop	0
+delay 1
+offset	85 201
+	bbox	0 0 0 0
+	frame	data/chars/raditz/empty.png
+	delay	20
+	offset	85 201
+	bbox	0 0 0 0
+	frame	data/chars/raditz/18.png
+	frame	data/chars/raditz/16.png
+
+anim	select
+	loop	0
+	delay	15
+	offset	112 317
+	frame	data/chars/raditz/radp.png
+
+anim	waiting
+	loop	0
+	delay	15
+	offset	112 317
+	frame	data/chars/raditz/radp.png
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	86 196
+	bbox	54 71 60 123
+	frame	data/chars/raditz/16.png
+	frame	data/chars/raditz/16.png
+		
+#|edited by openBor Stats v 0.67
+		

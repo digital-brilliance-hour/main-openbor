@@ -1,0 +1,183 @@
+name	hugo
+health	80
+speed	6
+type	enemy
+shadow  1
+gfxshadow  1
+aimove chase
+aimove wander
+aggression 50
+falldie 1
+nodieblink 2
+hostile player
+icon	data/chars/hugo/icon.png
+diesound data/sounds/die7.wav
+
+palette   data/chars/hugo/idle000.png
+alternatepal data/chars/hugo/map1.png
+alternatepal data/chars/hugo/map2.png
+
+
+
+anim	attack1
+	sound	data/sounds/shu/fu.wav
+	loop	0
+	delay	5
+	offset	38 165
+	range	15 60
+	bbox	7 2 85 170
+	frame	data/chars/hugo/punch000.png
+	offset	38 170
+	attack	80 48 102 68 8 0 0 0 0 0
+	bbox	20 1 70 169
+	frame	data/chars/hugo/punch001.png
+	offset	37 161
+	bbox	21 1 72 160
+	frame	data/chars/hugo/punch002.png
+	offset	47 162
+	bbox	21 1 60 159
+	frame	data/chars/hugo/punch003.png
+		
+anim	attack2
+	sound	data/sounds/shu/kick.wav
+	loop	0
+	delay	7
+	offset	42 163
+	bbox	17 0 55 151
+	frame	data/chars/hugo/kick0.png
+	offset	41 161
+	bbox	11 1 63 155
+	frame	data/chars/hugo/kick1.png
+	offset	62 175
+	blast	68 34 106 86 10 0 0 0 0 0
+	frame	data/chars/hugo/kick2.png
+	offset	55 178
+	bbox	12 5 62 156
+	frame	data/chars/hugo/kick3.png
+		
+anim	attack3
+	sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	4
+	offset	73 175
+	bbox	39 0 75 170
+	frame	data/chars/hugo/spunch0.png
+	offset	69 165
+	bbox	54 0 80 169
+	frame	data/chars/hugo/spunch1.png
+	offset	33 155
+	bbox	45 0 75 156
+	frame	data/chars/hugo/spunch2.png
+	blast	84 10 112 90 24 1 0 0 2 0
+	offset	33 156
+	bbox	30 0 53 157
+	frame	data/chars/hugo/spunch3.png
+	offset	32 169
+	bbox	50 0 68 173
+	frame	data/chars/hugo/spunch4.png
+		
+anim	death
+	loop	0
+	delay	8
+	offset	36 174
+	frame	data/chars/hugo/die0.png
+	offset	67 185
+	frame	data/chars/hugo/die1.png
+	sound	data/sounds/explo.wav
+	offset	138 176
+	frame	data/chars/hugo/die2.png
+	offset	198 119
+	frame	data/chars/hugo/die3.png
+	offset	187 128
+	frame	data/chars/hugo/die4.png
+	offset	220 120
+	frame	data/chars/hugo/die5.png
+	offset	220 118
+	frame	data/chars/hugo/die6.png
+	offset	56 108
+	frame	data/chars/hugo/die7.png
+	offset	36 50
+	frame	data/chars/hugo/die8.png
+		
+anim	fall
+	loop	0
+	offset	56 169
+	delay	20
+	frame	data/chars/hugo/fall00.png
+	offset	81 92
+	frame	data/chars/hugo/fall02.png
+	offset	64 130
+	frame	data/chars/hugo/fall03.png
+	offset	64 45
+	frame	data/chars/hugo/fall01.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	39 182
+	bbox	5 3 56 170
+	frame	data/chars/hugo/idle000.png
+	offset	36 174
+	bbox	5 3 56 170
+	frame	data/chars/hugo/idle001.png
+	offset	39 179
+	frame	data/chars/hugo/idle002.png
+	offset	38 177
+	frame	data/chars/hugo/idle003.png
+	offset	38 176
+	frame	data/chars/hugo/idle004.png
+	offset	37 177
+	frame	data/chars/hugo/idle005.png
+	offset	39 177
+	frame	data/chars/hugo/idle006.png
+	offset	39 178
+	frame	data/chars/hugo/idle007.png
+		
+anim	pain
+	loop	0
+	offset	80 170
+	bbox	26 1 70 170
+	delay	8
+	frame	data/chars/hugo/pain01.png
+	offset	88 157
+	delay	36
+	frame	data/chars/hugo/pain02.png
+	offset	99 142
+	delay	36
+	frame	data/chars/hugo/pain03.png
+		
+anim	rise
+	loop	0
+	offset	61 63
+	delay	10
+	frame	data/chars/hugo/rise1.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	43 176
+	bbox	7 0 63 174
+	frame	data/chars/hugo/walk000.png
+	offset	41 177
+	frame	data/chars/hugo/walk001.png
+	offset	40 176
+	frame	data/chars/hugo/walk002.png
+	offset	37 176
+	frame	data/chars/hugo/walk003.png
+	offset	45 178
+	frame	data/chars/hugo/walk005.png
+	offset	45 178
+	frame	data/chars/hugo/walk006.png
+	offset	44 176
+	frame	data/chars/hugo/walk007.png
+	offset	43 174
+	frame	data/chars/hugo/walk008.png
+	offset	40 176
+	frame	data/chars/hugo/walk009.png
+	offset	39 176
+	frame	data/chars/hugo/walk010.png
+	offset	37 176
+	frame	data/chars/hugo/walk011.png
+		
+#|edited by openBor Stats v 0.41
+		

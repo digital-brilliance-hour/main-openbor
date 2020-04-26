@@ -1,0 +1,101 @@
+direction	both
+
+bgspeed	 1	Left
+
+music		data/music/muteki.ogg
+
+background	data/bgs/kbg.png
+panel		data/bgs/kpanel.png	
+
+fglayer data/bgs/light1.png 2300 0.5 0 -250 -5 0 0 1 1 1 1 0 0 0 0 0
+
+order	a
+
+
+
+noslow 1
+
+
+spawn1  250  40
+spawn2  220  60
+spawn3  190  80
+
+
+
+ settime  0
+ notime  1
+
+
+gravity  -25
+maxfallspeed -150
+
+cameratype  1
+cameraoffset 0  -100 
+
+
+
+
+
+#-------1
+
+
+group   2 2
+at      0
+
+spawn  robo
+coords 200 155
+at     0
+
+spawn  robo
+coords 500 355
+at     0
+
+spawn  robo
+coords 600 555
+at     0
+
+#-------2
+
+
+group   2 3
+at      0
+
+spawn  robo
+item cp
+coords 700 155
+at     0
+
+spawn  robo
+coords 500 355
+at     0
+
+spawn  robo
+coords 400 555
+at     0
+
+
+#-------3
+
+
+group   3 3
+at      0
+
+spawn  robo
+coords 600 155
+at     0
+
+spawn  robo
+coords 500 355
+at     0
+
+spawn  robo
+coords 700 555
+at     0
+
+
+group   1 1
+at      0
+
+spawn  18
+coords 700 200
+at     0

@@ -1,0 +1,68 @@
+name	 	pw16
+type    	none
+shadow  	0
+alpha		1
+lifespan  	12
+offscreenkill 	250
+falldie	 	1
+nolife          1
+subject_to_hole 0
+subject_to_gravity 0
+subject_to_wall 0
+subject_to_platform 0
+subject_to_minz    0
+subject_to_maxz    0
+candamage       player npc obstacle
+
+
+
+
+
+
+
+
+
+
+anim	idle
+@script
+    void self = getlocalvar("self");
+    int z = getentityproperty(self, "z");
+
+    if( frame >= 1 ){
+      if( z > openborvariant("PLAYER_MAX_Z") ) {
+        killentity(self); //Suicide!
+      } else if( z < openborvariant("PLAYER_MIN_Z") ) {
+        killentity(self); //Suicide!
+      }
+    }
+	@end_script	
+	loop	0
+	delay	8
+	offset	117 245
+	bbox	0 0 0 0
+	hitflash	sakahit
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/misc/power/17/b01.gif
+	frame	data/chars/misc/power/17/b02.gif
+	attack11	44 89 134 185 50 1 1 0 0 150
+	dropv	4 5 0
+	frame	data/chars/misc/power/17/b03.gif
+	frame	data/chars/misc/power/17/b04.gif
+	frame	data/chars/misc/power/17/b05.gif
+	frame	data/chars/misc/power/17/b06.gif
+	frame	data/chars/misc/power/17/b07.gif
+	frame	data/chars/misc/power/17/b08.gif
+	frame	data/chars/misc/power/17/b09.gif
+	frame	data/chars/misc/power/17/b10.gif
+	frame	data/chars/misc/power/17/b11.gif
+	frame	data/chars/misc/power/17/b12.gif
+	frame	data/chars/misc/power/17/b13.gif
+	frame	data/chars/misc/power/17/b14.gif
+	frame	data/chars/misc/power/17/b15.gif
+	frame	data/chars/misc/power/17/b16.gif
+	attack11	0 0 0 0
+	frame	data/chars/misc/power/17/empty.gif
+	frame	data/chars/misc/power/17/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,48 @@
+copy n paste this to any animation for perform random attack
+
+Example 1:
+anim attack1
+@script
+    void self = getlocalvar("self");
+
+    if( frame == 0){
+      int r = rand()%30;
+
+      if( r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      }
+    }
+@end_script
+...
+
+
+
+Example 2:
+anim attack1
+@script
+    void self = getlocalvar("self");
+
+    if( frame == 0){
+      int r = rand()%30;
+      if( r > 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < -10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+@end_script
+        range   0 65
+   delay   1
+   offset   65 115
+   bbox   53 14 23 102   
+   frame   data/chars/castor/walk1.png
+   delay   6
+        bbox    50 20 30 96
+        frame   data/chars/castor/punch1.png
+        delay   10
+   attack  75 40 45 11 10 0 0 0 10
+        frame   data/chars/castor/punch2.png
+   delay   6
+        attack   0
+        frame   data/chars/castor/punch3.png
+

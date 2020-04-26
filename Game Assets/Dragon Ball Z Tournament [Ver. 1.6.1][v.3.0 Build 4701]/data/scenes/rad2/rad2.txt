@@ -1,0 +1,57 @@
+name    rad2
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	16
+	offset	0 0 
+sound	data/sounds/raat1.wav
+	frame	data/scenes/rad2/1.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/rad2/2.png
+	frame	data/scenes/rad2/3.png
+sound	data/sounds/raat2.wav
+frame	data/scenes/rad2/4.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/rad2/5.png
+sound	data/sounds/raat1.wav
+frame	data/scenes/rad2/1.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/rad2/2.png
+	frame	data/scenes/rad2/3.png
+sound	data/sounds/raat2.wav
+frame	data/scenes/rad2/4.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/rad2/5.png
+delay 25
+sound	data/sounds/raat1.wav
+frame	data/scenes/rad2/k1.png
+	frame	data/scenes/rad2/k2.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/rad2/k3.png
+	frame	data/scenes/rad2/k4.png
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/rad2/k4.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

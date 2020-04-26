@@ -1,0 +1,391 @@
+name	jagi
+health	470
+speed	15
+type	enemy
+shadow  1
+gfxshadow  1
+nolife 1
+risetime 500
+aimove chase notargetidle
+aimove wander
+aggression 85
+hostile player
+knife jagif
+escapehits 2
+lifebarstatus 300 10 1 0 0 0 0 0 0
+lifeposition 88 254 
+iconposition 60 242
+nameposition 218 256
+icon	data/chars/jagi/icon.png
+diesound data/sounds/jagi/die.wav
+subject_to_screen 1
+
+
+
+
+
+
+
+anim	attack1
+	sound	data/sounds/jagi/punch000.wav
+	loop	0
+	delay	5
+	offset	30 106
+	range	15 60
+	followanim	1
+	followcond	3
+	bbox	7 2 45 119
+	frame	data/chars/jagi/punch000.png
+	sound	data/sounds/jagi/sheu.wav
+	offset	30 107
+	bbox	3 1 51 116
+	attack	50 8 58 39 8 0 0 0 0 0
+	frame	data/chars/jagi/punch001.png
+	offset	30 107
+	bbox	3 1 51 116
+	frame	data/chars/jagi/punch002.png
+		
+anim	attack2
+	sound	data/sounds/jagi/kick.wav
+	range	0 80
+	loop	0
+	delay	7
+	offset	31 103
+	bbox	10 -9 43 108
+	frame	data/chars/jagi/kick0.png
+	offset	29 107
+	bbox	1 -9 43 108
+	frame	data/chars/jagi/kick1.png
+	offset	30 105
+	bbox	3 2 43 108
+	frame	data/chars/jagi/kick2.png
+	offset	31 99
+	frame	data/chars/jagi/kick3.png
+	sound	data/sounds/jagi/hua.wav
+	blast	42 13 71 57 10 0 0 0 0 0
+	offset	39 89
+	bbox	8 -3 43 108
+	frame	data/chars/jagi/kick4.png
+		
+anim	attack3
+	sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	8
+	offset	21 109
+	bbox	-2 2 44 106
+	frame	data/chars/jagi/spunch0.png
+	offset	17 102
+	bbox	13 6 33 81
+	blast	40 0 58 53 24 1 0 0 2 0
+	frame	data/chars/jagi/spunch1.png
+	offset	39 100
+	bbox	15 0 51 81
+	frame	data/chars/jagi/spunch2.png
+		
+anim	fall
+	loop	0
+	offset	47 130
+	delay	20
+	frame	data/chars/jagi/fall00.png
+	offset	56 81
+	frame	data/chars/jagi/fall02.png
+	offset	54 67
+	frame	data/chars/jagi/fall03.png
+	offset	53 19
+	frame	data/chars/jagi/fall04.png
+		
+anim	follow1
+sound	data/sounds/shu/fuu.wav
+	loop	0
+	delay	8
+	offset	21 109
+	bbox	-2 2 44 106
+	frame	data/chars/jagi/spunch0.png
+	offset	17 102
+	bbox	13 6 33 81
+	blast	40 0 58 53 24 1 0 0 2 0
+	frame	data/chars/jagi/spunch1.png
+	offset	39 100
+	bbox	15 0 51 81
+	frame	data/chars/jagi/spunch2.png
+
+
+
+
+anim freespecial2
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	range	15 90
+	delay	4
+	offset	30 97
+	frame	data/chars/jagi/blast0.png
+	sound	data/sounds/jagi/blast.wav
+	offset	30 98
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast1.png
+	offset	31 93
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast2.png
+	offset	31 94
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast3.png
+	blast	50 7 50 50 20 0 1 0 0 0
+	offset	30 86
+	frame	data/chars/jagi/blast4.png
+	delay	12
+	frame	data/chars/jagi/blast5.png
+	offset	31 93
+	frame	data/chars/jagi/blast6.png
+		
+anim	forwardjump
+	loop	0
+	delay	10
+	offset	19 124
+	bbox	3 3 39 50
+	frame	data/chars/jagi/jf0.png
+	offset	20 124
+	bbox	3 1 38 54
+	frame	data/chars/jagi/jf1.png
+	offset	27 125
+	bbox	7 1 34 71
+	frame	data/chars/jagi/jf2.png
+	offset	28 99
+	bbox	7 1 38 59
+	frame	data/chars/jagi/jf3.png
+		
+anim	freespecial4
+	loop	0
+	throwframe	5 50
+	range	100 300
+	offset	31 107
+	bbox	8 -3 44 109
+	sound	data/sounds/jagi/shot1.wav
+	frame	data/chars/jagi/shot0.png
+	offset	31 107
+	frame	data/chars/jagi/shot1.png
+	offset	31 107
+	frame	data/chars/jagi/shot2.png
+	sound	data/sounds/jagi/shot.wav
+	offset	31 107
+	frame	data/chars/jagi/shot3.png
+	offset	34 121
+	frame	data/chars/jagi/shot4.png
+	offset	33 156
+	frame	data/chars/jagi/shot5.png
+		
+anim	freespecial8
+	sound	data/sounds/Kenshiro/super.wav
+range 1 50
+	loop	0
+	delay	7
+	bbox	28 8 31 70
+	offset	30 100
+	frame	data/chars/jagi/sp0.png
+	delay	7
+	sound	data/sounds/jagi/ora.wav
+	offset	30 99
+	frame	data/chars/jagi/sp1.png
+	bbox	34 13 31 70
+	offset	30 100
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jagi/sp2.png
+	bbox	34 6 31 70
+	offset	30 119
+	attack	23 3 97 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/jagi/sp3.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	25 6 32 100
+	offset	30 118
+	frame	data/chars/jagi/sp4.png
+	bbox	34 6 31 70
+	offset	30 106
+	attack	23 3 97 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/jagi/sp5.png
+	bbox	34 6 31 70
+	offset	30 100
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jagi/sp6.png
+	bbox	34 6 31 70
+	offset	30 97
+	attack	23 3 110 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/jagi/sp7.png
+	bbox	34 6 31 68
+	offset	30 97
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/jagi/sp8.png
+	bbox	34 6 31 70
+	offset	28 98
+	delay	7
+	frame	data/chars/jagi/sp9.png
+	bbox	34 6 31 70
+	offset	28 98
+	delay	4
+	frame	data/chars/jagi/sp10.png
+	sound	data/sounds/jagi/ora.wav
+	bbox	34 6 31 70
+	offset	25 111
+	blast	23 3 110 106 4 0 0 0 0 0
+	delay	7
+	frame	data/chars/jagi/sp11.png
+	bbox	34 6 31 70
+	offset	25 113
+	delay	7
+	frame	data/chars/jagi/sp12.png
+	bbox	34 6 31 70
+	offset	28 98
+	delay	7
+	frame	data/chars/jagi/sp13.png
+	bbox	18 6 31 70
+	offset	31 93
+	delay	7
+	frame	data/chars/jagi/sp14.png
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	31 107
+	bbox	11 3 36 113
+	frame	data/chars/jagi/idle000.png
+	offset	31 107
+	bbox	11 3 36 113
+	frame	data/chars/jagi/idle001.png
+	offset	31 106
+	bbox	11 3 36 113
+	frame	data/chars/jagi/idle002.png
+		
+anim	jump
+	loop	0
+	delay	10
+	offset	19 121
+	bbox	3 3 38 103
+	frame	data/chars/jagi/jump1.png
+	offset	29 127
+	bbox	3 0 43 83
+	frame	data/chars/jagi/jump2.png
+	offset	47 129
+	delay	10
+	bbox	29 1 34 72
+	frame	data/chars/jagi/jump3.png
+		
+anim	jumpattack
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	7
+	offset	23 142
+	bbox	15 11 36 79
+	frame	data/chars/jagi/jp0.png
+	offset	25 143
+	bbox	14 15 32 69
+	frame	data/chars/jagi/jp1.png
+	attack	27 23 43 50 5 0 1 0 0 0
+	offset	19 126
+	bbox	6 0 37 79
+	frame	data/chars/jagi/jp2.png
+		
+anim	land
+	loop	0
+	delay	25
+	offset	22 132
+	bbox	7 11 31 88
+	frame	data/chars/jagi/jump0.png
+		
+anim	pain
+	loop	0
+	offset	39 102
+	bbox	0 1 48 105
+	delay	8
+	frame	data/chars/jagi/pain01.png
+	offset	50 102
+	frame	data/chars/jagi/pain02.png
+	offset	68 100
+	frame	data/chars/jagi/pain03.png
+		
+anim	rise
+	loop	0
+	offset	30 68
+	delay	10
+	frame	data/chars/jagi/rise1.png
+		
+anim	run
+	loop	1
+range 200 300
+	bbox	0 0 0 0
+	delay	8
+	offset	38 92
+	sound	data/sounds/step.wav
+	frame	data/chars/jagi/r1.png
+	delay	8
+	offset	44 96
+	frame	data/chars/jagi/r2.png
+	offset	41 94
+	frame	data/chars/jagi/r3.png
+	offset	27 93
+	frame	data/chars/jagi/r4.png
+	offset	10 92
+	frame	data/chars/jagi/r5.png
+	offset	37 92
+	frame	data/chars/jagi/r6.png
+	offset	41 92
+	frame	data/chars/jagi/r7.png
+	offset	25 94
+	frame	data/chars/jagi/r8.png
+	offset	12 92
+	frame	data/chars/jagi/r9.png
+		
+anim	spawn
+	delay	1
+	offset	27 117
+	bbox	6 0 35 122
+	frame	data/chars/jagi/empty.png
+		
+anim	special2
+	sound	data/sounds/shu/fuuu.wav
+	loop	0
+	range	15 90
+	delay	4
+	offset	30 97
+	frame	data/chars/jagi/blast0.png
+	sound	data/sounds/jagi/blast.wav
+	offset	30 98
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast1.png
+	offset	31 93
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast2.png
+	offset	31 94
+	bbox	15 0 51 81
+	frame	data/chars/jagi/blast3.png
+	blast	50 7 50 50 20 0 1 0 0 0
+	offset	30 86
+	frame	data/chars/jagi/blast4.png
+	delay	12
+	frame	data/chars/jagi/blast5.png
+	offset	31 93
+	frame	data/chars/jagi/blast6.png
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	22 104
+	bbox	6 0 35 122
+	frame	data/chars/jagi/walk000.png
+	offset	25 104
+	frame	data/chars/jagi/walk001.png
+	offset	12 104
+	frame	data/chars/jagi/walk002.png
+	offset	13 104
+	frame	data/chars/jagi/walk003.png
+	offset	23 104
+	frame	data/chars/jagi/walk004.png
+	offset	25 104
+	frame	data/chars/jagi/walk005.png
+	offset	12 104
+	frame	data/chars/jagi/walk006.png
+	offset	13 104
+	frame	data/chars/jagi/walk007.png
+		
+#|edited by openBor Stats v 0.41
+		

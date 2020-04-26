@@ -1,0 +1,25 @@
+name		Block0
+type    	enemy
+health  	1
+speed   	0
+shadow		0
+nolife  	1
+lifespan	2.0
+score		0 -1
+falldie		1
+nodieblink	3
+
+anim	death
+	loop	0
+	delay	1
+	offset	42 124
+	frame	data/chars/misc/block0.gif
+		
+anim	spawn
+	loop	0
+	delay	15
+	offset	10 145
+	frame	data/chars/misc/block0.gif
+		
+#|edited by openBor Stats v 0.41
+		

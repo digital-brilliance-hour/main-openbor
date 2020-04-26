@@ -1,0 +1,20 @@
+name       alado
+type       endlevel
+antigravity     100
+
+anim	idle
+	bbox	1 0 68 50
+@script
+    void self = getlocalvar("self");
+    char Name = getentityproperty(self,"name");
+
+    if(frame == 1){
+      jumptobranch("karnov", 1);
+    }
+	@end_script	
+	delay	100
+	offset	37 27
+	frame	data/chars/misc/alado.gif
+		
+#|edited by openBor Stats v 0.41
+		

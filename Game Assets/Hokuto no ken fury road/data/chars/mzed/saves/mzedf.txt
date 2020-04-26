@@ -1,0 +1,65 @@
+name   mzedf
+health   1
+speed     19
+type   enemy
+jumpheight 1
+subtype   arrow
+shadow   0
+nolife 1
+diesound  data/sounds/klunk.wav
+noquake   1
+candamage player enemy obstacle
+no_adjust_base  1
+subject_to_platform 0
+
+
+		
+anim	attack1
+loop	0
+	delay	4
+	offset	11 23
+	frame	data/chars/mzed/roll4.png
+	frame	data/chars/mzed/roll5.png
+	frame	data/chars/mzed/roll6.png
+	frame	data/chars/mzed/roll7.png
+
+
+
+anim	attack2
+loop	0
+	delay	4
+	offset	11 23
+	frame	data/chars/mzed/roll4.png
+	frame	data/chars/mzed/roll5.png
+	frame	data/chars/mzed/roll6.png
+	frame	data/chars/mzed/roll7.png
+		
+anim	death
+	delay	4
+	offset	11 23
+	frame	data/chars/mzed/roll4.png
+	frame	data/chars/mzed/roll5.png
+	frame	data/chars/mzed/roll6.png
+	frame	data/chars/mzed/roll7.png
+		
+anim	fall
+	delay	4
+	offset	11 23
+	frame	data/chars/mzed/roll4.png
+	frame	data/chars/mzed/roll5.png
+	frame	data/chars/mzed/roll6.png
+	frame	data/chars/mzed/roll7.png
+		
+anim	idle
+	loop	0
+	delay	10
+	offset	11 23
+	bbox	1 0 27 29
+	attack	2 0 26 29 10 1 0 0 0 0
+	frame	data/chars/mzed/roll0.png
+	frame	data/chars/mzed/roll1.png
+	frame	data/chars/mzed/roll2.png
+	frame	data/chars/mzed/roll3.png
+		
+#|edited by openBor Stats v 0.41
+		

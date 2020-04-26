@@ -1,0 +1,44 @@
+name	hit1
+health	120
+nomove 1 1
+type	obstacle
+shadow  0
+falldie 1
+nodieblink 2
+subject_to_gravity 0
+flash  obfla
+noatflash 1
+nolife 1
+setlayer -1
+
+
+anim	death
+	loop	0
+	delay	8
+	offset	17 69
+	frame	data/levels/hito/hito/die0.png
+	offset	17 69
+	frame	data/levels/hito/hito/die1.png
+	offset	17 69
+	frame	data/levels/hito/hito/die2.png
+		
+anim	idle
+	loop	1
+	offset	17 69
+	bbox	1 0 30 54
+	delay	10
+	frame	data/levels/hito/hito/hit1.png
+		
+anim	pain
+	loop	0
+	offset	17 69
+	bbox	1 -1 30 55
+	delay	2
+	frame	data/levels/hito/hito/pain0.png
+	frame	data/levels/hito/hito/pain1.png
+	frame	data/levels/hito/hito/pain2.png
+	frame	data/levels/hito/hito/pain3.png
+	frame	data/levels/hito/hito/pain4.png
+		
+#|edited by openBor Stats v 0.41
+		

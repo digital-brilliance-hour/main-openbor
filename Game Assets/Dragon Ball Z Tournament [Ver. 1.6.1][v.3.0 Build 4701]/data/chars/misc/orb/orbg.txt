@@ -1,0 +1,74 @@
+name    	orbg
+type    	none
+shadow  	0
+nomove  	1
+nolife          1
+alpha 5
+
+anim death
+loop 0
+delay 50
+offset	19 38
+	frame	data/chars/misc/orb/death.png
+delay 150
+offset	19 38
+	frame	data/chars/misc/orb/death2.png
+
+
+anim	idle
+	loop	1
+	delay	10
+	offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+	offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+ @cmd    killentity getlocalvar("self")
+	offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+		
+anim	spawn
+	loop	0
+	delay	10
+	offset	19 38
+	bbox	3 10 34 34
+	jumpframe	1 5 4 0
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+offset	19 38
+	bbox	3 10 34 34
+	frame	data/chars/misc/orb/1.png
+offset	19 37
+	bbox	3 9 34 34
+	frame	data/chars/misc/orb/2.png
+		
+#|edited by openBor Stats v 0.67
+		

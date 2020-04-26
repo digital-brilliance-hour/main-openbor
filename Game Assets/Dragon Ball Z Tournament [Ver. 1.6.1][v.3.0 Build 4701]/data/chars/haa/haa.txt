@@ -1,0 +1,68 @@
+name   haa
+type   none
+load hittt
+flash hittt
+lifespan 3
+antigravity 100
+setlayer 999
+candamage enemy obstacle shot
+
+palette data/chars/haa/01.gif
+
+anim	idle
+hitflash	sakahit
+	loop	0
+	delay	4
+	offset	45 54
+	sound	data/sounds/ha.wav
+hitfx	data/sounds/burnt.wav
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/03.gif
+	attack	0 0 176 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/a01.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/b02.gif
+	attack	0 0 431 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/c03.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/d01.gif
+	attack	0 0 516 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e02.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e03.gif
+	attack	0 0 601 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e01.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e02.gif
+	attack	0 0 601 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e03.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e01.gif
+	attack	0 0 601 102 100 0 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/haa/e02.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+	offset	41 130
+	drawmethod	256 128
+	frame	data/chars/haa/e03.gif
+	attack	0 0 601 102 100 1 0 0 0 300
+	frame	data/chars/misc/empty.gif
+	offset	41 140
+	drawmethod	256 96
+	frame	data/chars/haa/e01.gif
+	attack	0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

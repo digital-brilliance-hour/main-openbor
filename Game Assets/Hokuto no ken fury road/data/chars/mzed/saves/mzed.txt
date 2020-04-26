@@ -1,0 +1,62 @@
+name   mzed
+health   1
+type   enemy
+nomove 1 1
+shadow   0
+nolife 1
+diesound  data/sounds/die1.wav
+falldie 1
+nodieblink 2
+bomb mzedf
+agression 50
+palette data/chars/mzed/idle000.png
+
+
+
+
+
+
+anim	attack1
+	rangea	-216 300
+	range	-29 300
+	loop	0
+	delay	10
+	offset	17 55
+	tossframe	2 30
+	bbox	1 0 70 62
+	frame	data/chars/mzed/sp0.png
+	offset	17 55
+	frame	data/chars/mzed/sp1.png
+	offset	17 55
+	delay	150
+	frame	data/chars/mzed/sp2.png
+		
+anim	death
+	loop	0
+	delay	5
+	offset	17 60
+	frame	data/chars/mzed/die0.png
+	frame	data/chars/mzed/die1.png
+	offset	17 70
+	frame	data/chars/mzed/die2.png
+	offset	17 70
+	frame	data/chars/mzed/die3.png
+	offset	17 45
+	frame	data/chars/mzed/die5.png
+		
+anim	fall
+	loop	0
+	delay	10
+	offset	17 60
+	bbox	1 0 38 65
+	frame	data/chars/mzed/idle000.png
+		
+anim	idle
+	loop	0
+	delay	10
+	offset	17 60
+	bbox	1 0 38 65
+	frame	data/chars/mzed/idle000.png
+		
+#|edited by openBor Stats v 0.41
+		

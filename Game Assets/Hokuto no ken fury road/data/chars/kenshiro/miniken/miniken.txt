@@ -1,0 +1,75 @@
+name	miniken
+health	200
+speed	9
+type	none
+shadow  0
+gfxshadow  0
+weapnum 6
+icon	data/chars/kenshiro/icon.png
+diesound data/sounds/kenshiro/die.wav
+
+
+anim	special
+		
+anim	attack1
+sound data/sounds/p8.wav
+	attack	7 9 11 8 1 0 1 0 0 0
+	delay	10
+	offset	7 17
+	bbox	0 0 15 23
+	frame	data/chars/kenshiro/miniken/punch.png
+		
+anim	attackbackward
+		
+anim	block
+		
+anim	fall
+		
+anim	forwardjump
+		
+anim	idle
+	rangea	-6 10
+	range	-26 49
+	bbox	0 0 13 23
+	loop	1
+	delay	5
+	offset	7 17
+	frame	data/chars/kenshiro/miniken/idle.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+		
+anim	runattack
+		
+anim	spawn
+	bbox	0 0 13 23
+	loop	0
+	delay	1
+	offset	7 17
+	frame	data/chars/kenshiro/miniken/idle.png
+
+anim	respawn
+	bbox	0 0 13 23
+	loop	0
+	delay	1
+	offset	7 17
+	frame	data/chars/kenshiro/miniken/idle.png
+		
+anim	turn
+		
+anim	walk
+	bbox	0 0 13 23
+	loop	1
+	delay	6
+	offset	7 17
+	frame	data/chars/kenshiro/miniken/walk.png
+	offset	7 17
+	frame	data/chars/kenshiro/miniken/idle.png
+		
+#|edited by openBor Stats v 0.41
+		

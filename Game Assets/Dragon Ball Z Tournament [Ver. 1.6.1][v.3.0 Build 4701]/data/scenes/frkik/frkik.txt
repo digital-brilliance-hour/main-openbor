@@ -1,0 +1,47 @@
+name    frkik
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	12
+	offset	0 0 
+sound	data/sounds/frtaunt3.wav
+frame	data/scenes/frkik/0.png
+frame	data/scenes/frkik/0b.png
+frame	data/scenes/frkik/0c.png
+frame	data/scenes/frkik/1.png
+frame	data/scenes/frkik/2.png
+sound	data/sounds/electric.wav
+frame	data/scenes/frkik/3.png
+frame	data/scenes/frkik/4.png
+	frame	data/scenes/frkik/5.png
+	frame	data/scenes/frkik/6.png
+	frame	data/scenes/frkik/7.png
+delay 20
+	frame	data/scenes/frkik/8.png
+	frame	data/scenes/frkik/9.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/frkik/9.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

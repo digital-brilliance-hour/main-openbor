@@ -1,0 +1,1137 @@
+name	piccolo
+
+health	200
+
+speed	50
+type	player
+shadow	2
+
+palette none
+
+mp 200
+
+autoland 1
+
+antigravity 10
+
+falldie 1
+
+subject_to_screen 1
+
+running 80 9  2  1  1
+  makeinv 2
+
+bounce  1
+atchain 1 2 3 4 5
+
+load teleport
+load mshot
+
+knife mshot
+
+load pic1
+load pic3
+
+load aura
+load frkik
+load fra
+load nap2
+load rad2
+load boom
+load sensup
+load gin3
+load gin5
+
+projectilehit obstacle
+
+icon	data/chars/picolo/prof1.png
+
+com a2 freespecial1
+com D F A2 freespecial2
+com a3 freespecial3
+com D F a3 freespecial4
+com D F a freespecial5
+com d u a freespecial6
+
+weapons SP
+
+
+
+animationscript data/scripts/animscript.c
+
+anim	attack1
+	@cmd	randSound "pat1.wav" "pat2.wav" "null.wav"
+	loop	0
+	delay	4
+	offset	74 130
+	bbox	45 2 50 129
+	frame	data/chars/picolo/100.png
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/101.png
+	move	5
+	delay	7
+	attack	74 30 93 54 10 0 0 0 0 100
+	offset	72 127
+	bbox	70 29 48 95
+	frame	data/chars/picolo/102.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	delay	4
+	offset	72 127
+	bbox	67 35 49 98
+	frame	data/chars/picolo/103.png
+		
+anim	attack2
+	@cmd	randSound "pat1.wav" "pat2.wav" "null.wav"
+	loop	0
+	delay	4
+	offset	55 125
+	bbox	26 1 53 126
+	frame	data/chars/picolo/35.png
+	sound	data/sounds/2.wav
+	delay	7
+	attack	48 35 98 98 10 0 0 0 0 100
+	offset	50 124
+	bbox	19 12 57 115
+	frame	data/chars/picolo/36.png
+	frame	data/chars/picolo/37.png
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	48 120
+	bbox	21 11 56 116
+	frame	data/chars/picolo/38.png
+		
+anim	attack3
+	@cmd	randSound "pat3.wav" "pat4.wav" "null.wav"
+	loop	0
+	delay	4
+	move	7
+	offset	49 160
+	bbox	23 30 48 135
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/86.png
+	delay	5
+	attack	35 47 66 90 10 0 0 0 0 100
+	offset	33 161
+	bbox	18 18 48 94
+	frame	data/chars/picolo/87.png
+	frame	data/chars/picolo/88.png
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	42 143
+	bbox	27 0 48 95
+	frame	data/chars/picolo/89.png
+	move	0
+	offset	50 159
+	bbox	26 21 48 133
+	frame	data/chars/picolo/90.png
+		
+anim	attack4
+	@cmd	randSound "pat3.wav" "pat4.wav" "null.wav"
+	loop	0
+	delay	4
+	offset	81 144
+	bbox	52 14 48 134
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/39.png
+	delay	5
+	attack	63 7 108 90 10 0 0 0 0 100
+	offset	61 144
+	bbox	36 2 48 131
+	frame	data/chars/picolo/40.png
+	frame	data/chars/picolo/41.png
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	71 143
+	bbox	34 3 48 145
+	frame	data/chars/picolo/42.png
+	offset	69 143
+	bbox	38 11 48 134
+	frame	data/chars/picolo/43.png
+	offset	66 140
+	bbox	44 14 48 129
+	frame	data/chars/picolo/44.png
+		
+anim	attack5
+	@cmd	randSound "pat4.wav" "pat5.wav" "null.wav"
+	loop	0
+	delay	4
+	offset	99 151
+	bbox	54 3 49 110
+	hitflash	flash2
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/91.png
+	delay	7
+	offset	75 151
+	bbox	46 44 63 73
+	blast	70 -1 96 159 30 1 1 0 0 120
+	dropv	1 20 10
+	frame	data/chars/picolo/92.png
+	delay	4
+	offset	74 150
+	bbox	46 39 61 78
+	frame	data/chars/picolo/93.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	73 150
+	bbox	46 54 57 48
+	frame	data/chars/picolo/94.png
+	offset	71 150
+	bbox	44 54 57 82
+	frame	data/chars/picolo/95.png
+		
+anim	chargeattack
+	chargetime	0.4
+	fastattack	1
+	@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 0)){
+		changeentityproperty(self, "velocity", 4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 2)){
+		changeentityproperty(self, "velocity", -4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 5){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+	@cmd	randSound "pat2.wav" "pat3.wav" "null.wav"
+	loop	0
+	delay	5
+	offset	69 193
+	bbox	69 29 45 123
+	hitflash	flash2
+	frame	data/chars/picolo/56.png
+	sound	data/sounds/2.wav
+	offset	62 221
+	bbox	41 54 45 96
+	frame	data/chars/picolo/57.png
+	attack	68 81 116 111 5 0 0 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	27 29 45 123
+	frame	data/chars/picolo/58.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	bbox	31 21 45 123
+	frame	data/chars/picolo/59.png
+	attack	52 94 131 105 5 0 0 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	34 29 45 123
+	frame	data/chars/picolo/60.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	bbox	29 12 45 123
+	frame	data/chars/picolo/59.png
+	attack	41 88 146 108 10 1 1 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	28 29 45 107
+	frame	data/chars/picolo/61.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 193
+	bbox	44 29 45 123
+	frame	data/chars/picolo/62.png
+
+anim	freespecial6
+	fastattack	1
+	@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 0)){
+		changeentityproperty(self, "velocity", 4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 2)){
+		changeentityproperty(self, "velocity", -4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 5){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+	@cmd	randSound "pat2.wav" "pat3.wav" "null.wav"
+	loop	0
+	delay	5
+	offset	69 193
+	bbox	69 29 45 123
+	hitflash	flash2
+	frame	data/chars/picolo/56.png
+	sound	data/sounds/2.wav
+	offset	62 221
+	bbox	41 54 45 96
+	frame	data/chars/picolo/57.png
+	attack	68 81 116 111 5 0 0 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	27 29 45 123
+	frame	data/chars/picolo/58.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	bbox	31 21 45 123
+	frame	data/chars/picolo/59.png
+	attack	52 94 131 105 5 0 0 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	34 29 45 123
+	frame	data/chars/picolo/60.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	bbox	29 12 45 123
+	frame	data/chars/picolo/59.png
+	attack	41 88 146 108 10 1 1 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	bbox	28 29 45 107
+	frame	data/chars/picolo/61.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 193
+	bbox	44 29 45 123
+	frame	data/chars/picolo/62.png
+		
+anim	death
+	loop	0
+	delay	10
+	offset	86 96
+	frame	data/chars/picolo/128.png
+	frame	data/chars/picolo/129.png
+	frame	data/chars/picolo/130.png
+		
+anim	death2
+	subentity	fra
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	offset	58 153
+	bbox	0 0 0 0
+	move	-80
+	movea	40
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+	frame	data/chars/picolo/125.png
+		
+anim	death4
+	subentity	frkik
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	offset	58 153
+	bbox	0 0 0 0
+	move	-80
+	movea	40
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+	frame	data/chars/picolo/125.png
+		
+anim	dodge
+	move	30
+	delay	5
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 0_100_160
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	delay	10
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	5
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	nodrawmethod	
+	delay	1
+	frame	data/chars/picolo/121.png
+		
+anim	faint
+	loop	1
+	delay	20
+	offset	58 107
+	bbox	33 5 56 108
+	frame	data/chars/picolo/4.png
+	offset	58 108
+	bbox	33 5 56 108
+	frame	data/chars/picolo/5.png
+	offset	58 109
+	bbox	33 5 56 108
+	frame	data/chars/picolo/6.png
+	offset	58 108
+	bbox	33 5 56 108
+	frame	data/chars/picolo/5.png
+		
+anim	fall
+	dropframe	1
+	landframe	4
+	loop	0
+	delay	10
+	bbox	40 3 44 79
+	offset	66 98
+	attack	36 2 84 97 100 1 0 0 0 50
+	frame	data/chars/picolo/126.png
+	frame	data/chars/picolo/126.png
+	delay	30
+	bbox	0 0 0 0
+	frame	data/chars/picolo/127.png
+	frame	data/chars/picolo/127.png
+	frame	data/chars/picolo/127.png
+	delay	5
+	bbox	0 0 0 0
+	attack	0 0 0 0
+	frame	data/chars/picolo/126.png
+
+anim	fall10
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+attack	36 2 84 97 100 1 0 0 0 50
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+
+anim	death10
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+attack	36 2 84 97 100 1 0 0 0 50
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+
+anim	fall11
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+attack	36 2 84 97 100 1 0 0 0 50
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+
+anim	death11
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+attack	36 2 84 97 100 1 0 0 0 50
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+		
+anim	fall2
+	subentity	fra
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+attack	36 2 84 97 100 1 0 0 0 50
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+		
+anim	fall3
+	subentity	boom
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+	offset	54 118
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+		
+anim	fall4
+	subentity	frkik
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+	offset	54 118
+	move	-80
+	movea	40
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+	frame	data/chars/picolo/125.png
+		
+anim	fall6
+	subentity	nap2
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+	offset	54 118
+attack	36 2 84 97 100 1 0 0 0 50
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	1
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+		
+anim	fall7
+	subentity	rad2
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	bbox	33 5 44 120
+	offset	54 118
+attack	36 2 84 97 100 1 0 0 0 50
+	move	-80
+	movea	40
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/picolo/124.png
+	frame	data/chars/picolo/125.png
+	move	0
+	movea	0
+	delay	2
+	bbox	0 0 0 0
+attack 0 0 0 0
+	nodrawmethod	
+	frame	data/chars/picolo/125.png
+	frame	data/chars/picolo/125.png
+		
+anim	follow1
+@script
+	void self = getlocalvar("self");
+	int mp = getentityproperty(self, "mp");
+	if(frame == 0){ //Start increasing MP in the very beginning which is first frame
+	changeentityproperty(self, "mp", mp+4); //Increasing MP 4 times
+	}
+	@end_script	
+	custentity	aura
+	spawnframe	0 0 0 0
+	delay	5
+	loop	1
+	offset	78 151
+	bbox	57 35 49 121
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/picolo/121.png
+		
+anim	follow2
+@script
+	changeentityproperty(getlocalvar("self"), "mp", NULL());
+	@end_script	
+	delay	5
+	offset	58 125
+	frame	data/chars/picolo/1.png
+	frame	data/chars/picolo/1.png
+	frame	data/chars/picolo/1.png
+		
+anim	follow3
+	forcedirection	-1
+	followanim	4
+	followcond	1
+	fastattack	1
+	jumpframe	0 0 8 0
+	nodrawmethod	
+	delay	2
+	attack	0 0 0 0
+	offset	105 118
+	bbox	0 0 0 0
+	frame	data/chars/picolo/28.png
+	delay	10
+	attack9	34 -2 120 86 1 0 1 0 0 100
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+	@cmd	dasher 0 0 0
+	delay	1
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/picolo/28.png
+		
+anim	follow4
+	@cmd	dasher 0 0 0
+	move	0
+	delay	4
+	offset	69 193
+	bbox	0 0 0 0
+	@cmd	randSound "pat5.wav" "ptaunt1.wav" "null.wav"
+	frame	data/chars/picolo/56.png
+	sound	data/sounds/2.wav
+	offset	62 221
+	frame	data/chars/picolo/57.png
+	attack9	68 81 116 111 1 0 1 0 0 100
+	offset	62 235
+	frame	data/chars/picolo/58.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	frame	data/chars/picolo/59.png
+	attack9	52 94 131 105 1 0 1 0 0 100
+	offset	62 235
+	frame	data/chars/picolo/60.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	62 235
+	frame	data/chars/picolo/59.png
+	attack9	41 88 146 108 1 0 1 0 0 100
+	dropv	1 20 10
+	offset	62 235
+	frame	data/chars/picolo/61.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 193
+	frame	data/chars/picolo/62.png
+	delay	4
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 0_100_160
+	sound	data/sounds/elec1.wav
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	move	30
+	delay	7
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	@cmd	flip
+	nodrawmethod	
+	delay	5
+	sound	data/sounds/elec1.wav
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	delay	4
+	offset	81 144
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/39.png
+	delay	4
+	attack9	63 7 108 90 1 0 1 0 0 100
+	offset	61 144
+	frame	data/chars/picolo/40.png
+	frame	data/chars/picolo/41.png
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	71 143
+	frame	data/chars/picolo/42.png
+	offset	69 143
+	frame	data/chars/picolo/43.png
+	delay	4
+	offset	55 125
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/35.png
+	delay	5
+	attack9	48 35 98 98 1 0 1 0 0 100
+	offset	50 124
+	frame	data/chars/picolo/36.png
+	frame	data/chars/picolo/37.png
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	48 120
+	frame	data/chars/picolo/38.png
+	delay	4
+	offset	99 151
+	sound	data/sounds/2.wav
+	frame	data/chars/picolo/91.png
+	delay	5
+	offset	75 151
+	attack9	70 -1 96 159 1 0 1 0 0 100
+	frame	data/chars/picolo/92.png
+	delay	4
+	offset	74 150
+	frame	data/chars/picolo/93.png
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	73 150
+	frame	data/chars/picolo/94.png
+	delay	4
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 0_100_160
+	sound	data/sounds/elec1.wav
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	move	30
+	delay	7
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	@cmd	flip
+	nodrawmethod	
+	delay	5
+	sound	data/sounds/elec1.wav
+	offset	79 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	delay	5
+	sound	data/sounds/2.wav
+	offset	83 147
+	move	10
+	frame	data/chars/picolo/71.png
+	attack	77 10 41 116 20 1 0 0 0 100
+	dropv	1 20 10
+	frame	data/chars/picolo/72.png
+	delay	10
+	attack	64 10 145 116 20 1 0 0 0 100
+	dropv	1 20 10
+	offset	89 149
+	frame	data/chars/picolo/73.png
+	attack	64 10 145 116 20 1 0 0 0 100
+	dropv	1 20 10
+	frame	data/chars/picolo/73b.png
+	attack	83 54 66 93 10 0 0 0 0 100
+	dropv	1 20 10
+	frame	data/chars/picolo/74.png
+	frame	data/chars/picolo/74.png
+	attack	0 0 0 0
+	move	0
+	offset	91 157
+	frame	data/chars/picolo/74.png
+		
+anim	freespecial1
+	energycost	30
+	mponly	1
+	loop	0
+	delay	5
+	offset	58 145
+	bbox	30 6 55 145
+	frame	data/chars/picolo/82.png
+	offset	58 145
+	bbox	33 0 48 149
+	frame	data/chars/picolo/83.png
+	sound	data/sounds/shot.wav
+	@cmd	projectile 1 "mshot" 40 20 140 1 0 0 20
+	offset	58 145
+	bbox	25 8 44 108
+	frame	data/chars/picolo/84.png
+	offset	58 145
+	bbox	26 8 44 108
+	frame	data/chars/picolo/84.png
+	offset	58 145
+	bbox	29 8 43 142
+	frame	data/chars/picolo/85.png
+		
+anim	freespecial2
+	subentity	pic3
+	spawnframe	3 0 0 0 1
+	energycost	100
+	mponly	1
+	loop	0
+	delay	15
+	offset	77 156
+	@cmd	randSound "ptaunt3.wav" "ptaunt2.wav" "null.wav"
+	frame	data/chars/picolo/109.png
+	offset	77 156
+	frame	data/chars/picolo/110.png
+	offset	77 156
+	frame	data/chars/picolo/111.png
+	offset	77 156
+	frame	data/chars/picolo/111.png
+	frame	data/chars/picolo/112.png
+	delay	50
+	offset	77 156
+	@cmd	spawn01 "hadoz" 80 100 -1
+	frame	data/chars/picolo/113.png
+	delay	15
+	offset	77 156
+	frame	data/chars/picolo/109.png
+		
+anim	freespecial3
+	custentity	aura
+	spawnframe	4 0 0 0
+	loop	0
+	delay	10
+	sound	data/sounds/pyell.wav
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 150
+	bbox	57 35 49 121
+	frame	data/chars/picolo/122.png
+	sound	data/sounds/shin.wav
+	offset	77 148
+	bbox	57 35 49 121
+	frame	data/chars/picolo/123.png
+	delay	5
+	offset	77 148
+	bbox	57 35 49 121
+	frame	data/chars/picolo/123.png
+	offset	78 150
+	bbox	57 35 49 121
+	frame	data/chars/picolo/122.png
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/122.png
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	bbox	57 35 49 121
+	@cmd	keyint "ANI_FOLLOW1" 0 "A3" 0
+	frame	data/chars/picolo/121.png
+		
+anim	freespecial4
+	subentity	pic1
+	spawnframe	6 0 0 0 1
+	energycost	200
+	mponly	1
+	loop	0
+	delay	10
+	weaponframe	7 1
+	offset	58 132
+	sound	data/sounds/pssp.wav
+	offset	78 151
+	bbox	57 35 49 121
+	frame	data/chars/picolo/121.png
+	offset	78 150
+	frame	data/chars/picolo/122.png
+	sound	data/sounds/shin.wav
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	5
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	offset	78 150
+	frame	data/chars/picolo/122.png
+	offset	78 151
+	frame	data/chars/picolo/122.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+		
+anim	freespecial5
+	energycost	30
+	mponly	1
+	hitflash	empty
+	loop	0
+	followanim	3
+	followcond	1
+	fastattack	1
+	delay	5
+	offset	78 151
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	offset	78 150
+	frame	data/chars/picolo/122.png
+	sound	data/sounds/shin.wav
+	delay	10
+	attack9	46 26 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	5
+	nodrawmethod	
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	10
+	attack9	46 2 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	5
+	nodrawmethod	
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	10
+	attack9	46 2 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	5
+	nodrawmethod	
+	offset	77 148
+	frame	data/chars/picolo/123.png
+	delay	4
+	offset	78 150
+	frame	data/chars/picolo/122.png
+	offset	78 151
+	frame	data/chars/picolo/121.png
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	58 124
+	bbox	33 4 53 130
+	frame	data/chars/picolo/0.png
+	offset	58 125
+	bbox	33 4 53 130
+	frame	data/chars/picolo/1.png
+	offset	58 126
+	bbox	33 4 53 130
+	frame	data/chars/picolo/2.png
+	offset	58 125
+	bbox	33 4 53 130
+	frame	data/chars/picolo/1.png
+		
+anim	pain
+	loop	0
+	delay	5
+	move	-5
+	offset	54 118
+	bbox	33 5 44 120
+	frame	data/chars/picolo/124.png
+	delay	10
+	frame	data/chars/picolo/125.png
+	delay	5
+	move	0
+	frame	data/chars/picolo/124.png
+		
+anim	respawn
+	subentity	sensup
+	spawnframe	0 0 0 0 1
+ @script
+ void self = getlocalvar("self");
+
+ changeentityproperty(self, "mp", 0);
+
+	@end_script	
+	delay	45
+	offset	155 206
+	bbox	0 0 0 0
+	sound	data/sounds/prespawn.wav
+	frame	data/chars/picolo/131.png
+	delay	8
+	frame	data/chars/picolo/132.png
+	frame	data/chars/picolo/133.png
+	frame	data/chars/picolo/134.png
+	frame	data/chars/picolo/135.png
+		
+anim	rise
+	loop	0
+	delay	10
+	offset	87 96
+	@cmd	randSound "prise.wav" "prise.wav" "null.wav"
+	frame	data/chars/picolo/128.png
+		
+anim	riseattack
+	jumpframe	3 0 6 0
+	flipframe	9
+	loop	0
+	delay	8
+	offset	87 96
+	frame	data/chars/picolo/128.png
+	offset	78 150
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	delay	10
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	@cmd	dasher 0 0 0
+	delay	4
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	78 150
+	bbox	0 0 0 0
+	frame	data/chars/picolo/121.png
+	bbox	0 0 0 0
+	frame	data/chars/picolo/122.png
+		
+anim	run
+	subentity	dust
+	spawnframe	1 0
+	loop	1
+	delay	11
+	offset	105 118
+	bbox	50 5 106 60
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+	frame	data/chars/picolo/28.png
+		
+anim	runattack
+	loop	0
+	delay	5
+	sound	data/sounds/2.wav
+	offset	83 147
+	bbox	86 27 53 101
+	jumpframe	0 0 5.7 0
+	frame	data/chars/picolo/71.png
+	attack	77 10 41 116 10 1 0 0 0 100
+	dropv	1 20 10
+	frame	data/chars/picolo/72.png
+	delay	10
+	attack	64 10 145 116 10 1 0 0 0 100
+	dropv	1 20 10
+	offset	89 149
+	bbox	69 68 78 55
+	frame	data/chars/picolo/73.png
+	attack	64 10 145 116 10 1 0 0 0 50
+	dropv	1 20 10
+	frame	data/chars/picolo/73b.png
+	attack	83 54 66 93 10 0 0 0 0 100
+	dropv	1 20 10
+	frame	data/chars/picolo/74.png
+	frame	data/chars/picolo/74.png
+	attack	0 0 0 0
+	@cmd	dasher 0 0 0
+	offset	91 157
+	bbox	50 47 89 60
+	frame	data/chars/picolo/74.png
+		
+anim	select
+	loop	0
+	delay	15
+	offset	112 317
+	frame	data/chars/picolo/ps.png
+		
+anim	spawn
+ @script
+ void self = getlocalvar("self");
+
+ changeentityproperty(self, "mp", 0);
+
+	@end_script	
+	delay	1
+	offset	157 206
+	bbox	0 0 0 0
+	frame	data/chars/picolo/empty.png
+	delay	45
+	offset	157 206
+	bbox	0 0 0 0
+	frame	data/chars/picolo/131.png
+	delay	8
+	frame	data/chars/picolo/132.png
+	frame	data/chars/picolo/133.png
+	frame	data/chars/picolo/134.png
+	frame	data/chars/picolo/135.png
+		
+anim	waiting
+	loop	1
+	delay	10
+	offset	112 317
+	frame	data/chars/picolo/ps.png
+		
+anim	walk
+	loop	0
+	delay	15
+	offset	72 130
+	bbox	53 6 61 117
+	frame	data/chars/picolo/136.png
+	offset	73 129
+	bbox	57 1 59 96
+	frame	data/chars/picolo/137.png
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,40 @@
+name	tree
+type    obstacle
+
+health  50
+diesound  data/sounds/wood.wav
+nomove 1 1
+cantgrab 1
+projectilehit enemy obstacle 
+
+shadow 0
+
+
+
+dust		dust
+
+bounce		1
+
+death 2
+falldie 2
+nodieblink 3
+
+offscreenkill 99999
+
+anim	fall
+	loop	0
+	delay	20
+	offset	61 354
+	frame	data/chars/misc/tree/2.png
+	frame	data/chars/misc/tree/3.png
+	frame	data/chars/misc/tree/4.png
+		
+anim	idle
+	loop	0
+	delay	5
+	offset	61 354
+	bbox	22 37 78 306
+	frame	data/chars/misc/tree/1.png
+		
+#|edited by openBor Stats v 0.67
+		

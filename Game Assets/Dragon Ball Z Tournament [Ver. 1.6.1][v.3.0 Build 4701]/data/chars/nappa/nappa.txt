@@ -1,0 +1,509 @@
+name	nappa
+
+health	2000
+speed	40
+type	enemy
+aggression 100
+shadow	2
+
+makeinv 2 0
+nolife 1
+falldie 1
+blockodds 1
+
+
+cantgrab 	1
+
+hostile player npc
+candamage player npc obstacle
+projectilehit enemy obstacle 
+
+load bflash
+bflash bflash
+
+load boom
+load expl
+
+load teleport
+
+ lifebarstatus		760 10 0 1 0 0 0 0 0
+lifeposition		100 430
+nameposition		520 450
+iconposition		0 0
+
+subject_to_screen 1
+
+animationscript data/scripts/animscript.c
+
+anim	attack1
+	pausetime	0
+	loop	0
+	delay	6
+	offset	49 124
+	bbox	28 23 72 109
+	hitflash	flash2
+	attack	39 34 114 61 12 0 0 0 0 100
+	frame	data/chars/nappa/50.png
+	attack	49 41 122 61 12 0 0 0 0 100
+	frame	data/chars/nappa/51.png
+	delay	10
+	frame	data/chars/nappa/52.png
+	move	0
+	delay	6
+	attack	0
+	frame	data/chars/nappa/51.png
+	frame	data/chars/nappa/50.png
+		
+anim	attack2
+	pausetime	0
+	loop	0
+	delay	8
+	offset	77 173
+	bbox	44 66 72 98
+	frame	data/chars/nappa/135.png
+	hitflash	flash2
+	delay	10
+	bbox	43 16 60 108
+	offset	60 115
+	frame	data/chars/nappa/116.png
+	attack	58 1 111 67 12 0 0 0 0 100
+	frame	data/chars/nappa/115.png
+	delay	7
+	attack	0 0 0 0
+	frame	data/chars/nappa/114.png
+	move	0
+	frame	data/chars/nappa/116.png
+		
+anim	attack3
+	pausetime	0
+	loop	0
+	delay	9
+	offset	70 156
+	bbox	58 46 72 98
+	frame	data/chars/nappa/197.png
+	hitflash	flash2
+	delay	12
+	bbox	75 52 50 98
+	attack	61 6 150 143 12 0 0 0 0 100
+	offset	77 155
+	frame	data/chars/nappa/196.png
+	delay	7
+	attack	81 15 61 100 12 0 0 0 0 100
+	dropv	7 3
+	frame	data/chars/nappa/195.png
+	delay	6
+	attack	0 0 0 0
+	frame	data/chars/nappa/194.png
+	move	0
+	attack	0
+	frame	data/chars/nappa/193.png
+		
+anim	attack4
+	pausetime	0
+	loop	0
+	delay	10
+	offset	48 172
+	bbox	23 80 72 98
+	frame	data/chars/nappa/146.png
+	frame	data/chars/nappa/145.png
+	hitflash	flash2
+	delay	15
+	bbox	34 35 50 140
+	move	15
+	attack	35 17 132 159 22 1 1 0 0 100
+	dropv	6 3 5
+	offset	36 174
+	frame	data/chars/nappa/144.png
+	frame	data/chars/nappa/143.png
+	attack	0 0 0 0
+	frame	data/chars/nappa/142.png
+	move	0
+	delay	7
+	attack	0
+	frame	data/chars/nappa/141.png
+	delay	15
+	offset	63 158
+	frame	data/chars/nappa/253.png
+	frame	data/chars/nappa/252.png
+	delay	25
+	frame	data/chars/nappa/251.png
+	delay	12
+	frame	data/chars/nappa/252.png
+	frame	data/chars/nappa/253.png
+		
+anim	backwalk
+	loop	0
+	delay	15
+	offset	50 114
+	bbox	22 0 72 120
+	frame	data/chars/nappa/265.png
+	frame	data/chars/nappa/265.png
+		
+anim	block
+	pausetime	0
+	loop	0
+	delay	11
+	move	-30
+	offset	64 118
+	bbox	32 10 72 109
+	frame	data/chars/nappa/14.png
+	frame	data/chars/nappa/13.png
+	frame	data/chars/nappa/12.png
+	delay	5
+	move	0
+	frame	data/chars/nappa/13.png
+	frame	data/chars/nappa/14.png
+		
+anim	death
+	loop	1
+	delay	7
+	offset	61 94
+	movea	-5
+	frame	data/chars/nappa/255.png
+	frame	data/chars/nappa/254.png
+		
+anim	faint
+	loop	1
+	delay	22
+	offset	56 103
+	bbox	12 0 89 111
+	frame	data/chars/nappa/4.png
+	offset	56 104
+	frame	data/chars/nappa/5.png
+	offset	56 105
+	frame	data/chars/nappa/6.png
+	offset	56 106
+	frame	data/chars/nappa/7.png
+	offset	56 105
+	frame	data/chars/nappa/6.png
+	offset	56 104
+	frame	data/chars/nappa/5.png
+		
+anim	fall
+	loop	0
+	delay	10
+	offset	68 112
+	bbox	31 15 89 103
+	attack	18 13 95 88 100 0 0 0 0 50
+	frame	data/chars/nappa/212.png
+	frame	data/chars/nappa/211.png
+	frame	data/chars/nappa/211.png
+	move	0
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	frame	data/chars/nappa/212.png
+		
+anim	fall3
+	subentity	boom
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	bbox	0 0 0 0
+	move	-10
+	offset	82 152
+	attack	18 13 95 88 100 0 0 0 0 50
+	frame	data/chars/nappa/244.png
+	frame	data/chars/nappa/244.png
+	bbox	0 0 0 0
+	offset	74 113
+	frame	data/chars/nappa/211.png
+	bbox	0 0 0 0
+	offset	81 157
+	move	0
+	nodrawmethod	
+	bbox	0 0 0 0
+	attack	0 0 0 0
+	frame	data/chars/nappa/27.png
+		
+anim	fall8
+	subentity	expl
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	bbox	0 0 0 0
+	move	-10
+	offset	82 152
+	attack	18 13 95 88 100 0 0 0 0 80
+	frame	data/chars/nappa/244.png
+	frame	data/chars/nappa/244.png
+	bbox	0 0 0 0
+	offset	74 113
+	frame	data/chars/nappa/211.png
+	bbox	0 0 0 0
+	offset	81 157
+	move	0
+	nodrawmethod	
+	bbox	0 0 0 0
+	attack	0 0 0 0
+	frame	data/chars/nappa/27.png
+		
+anim	follow1
+@script
+    if(frame==0){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FREESPECIAL4"));
+      }
+    }
+	@end_script
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 0_100_200
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	delay	8
+	offset	63 158
+	bbox	0 0 0 0
+	frame	data/chars/nappa/251.png
+	frame	data/chars/nappa/252.png
+	delay	12
+	frame	data/chars/nappa/253.png
+	delay	5
+	move	150
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	delay	7
+	move	0
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	frame	data/chars/nappa/253.png
+	nodrawmethod	
+	frame	data/chars/nappa/252.png
+	frame	data/chars/nappa/251.png
+		
+anim	freespecial
+@script
+    if(frame==0){
+      void self = getlocalvar("self");
+      int r = rand()%30;
+
+      if(r > 0){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      }
+    }
+	@end_script	
+	range	300 490
+	loop	0
+	delay	20
+	hitflash	flash2
+	offset	68 138
+	bbox	54 46 72 98
+@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 2)){
+		changeentityproperty(self, "velocity", 10, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 3)){
+		changeentityproperty(self, "velocity", -10, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 5){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 0_100_200
+	frame	data/chars/nappa/99.png
+	nodrawmethod	
+	frame	data/chars/nappa/99.png
+	attack6	58 6 78 123 100 1 1 0 0 100
+	dropv	1 30 10
+	frame	data/chars/nappa/97.png
+	frame	data/chars/nappa/97.png
+	frame	data/chars/nappa/97.png
+	delay	15
+	attack	0 0 0 0
+	frame	data/chars/nappa/95.png
+	frame	data/chars/nappa/95.png
+		
+anim	freespecial3
+	loop	0
+	delay	9
+	offset	88 143
+	bbox	55 32 72 98
+	frame	data/chars/nappa/182.png
+	frame	data/chars/nappa/183.png
+	hitflash	flash2
+	delay	15
+	bbox	49 19 50 98
+	move	7
+	blast	57 26 130 88 22 1 1 0 0 100
+	dropv	4 6 10
+	offset	88 143
+	frame	data/chars/nappa/184.png
+	blast	81 26 130 88 20 1 0 0 0 100
+	dropv	4 6 10
+	frame	data/chars/nappa/185.png
+	frame	data/chars/nappa/184.png
+	move	0
+	delay	7
+	attack	0 0 0 0
+	frame	data/chars/nappa/183.png
+	frame	data/chars/nappa/182.png
+		
+anim	freespecial4
+	range	500 700
+	loop	0
+	delay	8
+	offset	71 151
+	bbox	36 48 72 98
+	frame	data/chars/nappa/176.png
+	offset	71 151
+	bbox	37 45 72 98
+	frame	data/chars/nappa/175.png
+	delay	20
+	sound	data/sounds/shot.wav
+	@cmd	shoot "bki" 60 110 0
+	offset	77 152
+	bbox	55 39 72 98
+	frame	data/chars/nappa/174.png
+	delay	5
+	offset	71 151
+	bbox	37 45 72 98
+	frame	data/chars/nappa/175.png
+	offset	71 151
+	bbox	36 48 72 98
+	frame	data/chars/nappa/176.png
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	52 111
+	bbox	11 4 99 119
+	nodrawmethod	
+	frame	data/chars/nappa/0.png
+	offset	52 112
+	frame	data/chars/nappa/1.png
+	offset	52 113
+	frame	data/chars/nappa/2.png
+	offset	52 114
+	frame	data/chars/nappa/3.png
+	offset	52 113
+	frame	data/chars/nappa/2.png
+	offset	52 112
+	frame	data/chars/nappa/1.png
+		
+anim	land
+	delay	10
+	offset	63 107
+	frame	data/chars/nappa/213.png
+		
+anim	pain
+	loop	0
+	delay	7
+	offset	62 114
+	bbox	50 35 50 98
+	frame	data/chars/nappa/212.png
+	delay	12
+	frame	data/chars/nappa/211.png
+	move	0
+	delay	7
+	frame	data/chars/nappa/212.png
+		
+anim	pain9
+	loop	0
+	move	0
+	delay	7
+	offset	62 114
+	bbox	50 35 50 98
+	frame	data/chars/nappa/212.png
+	delay	60
+	frame	data/chars/nappa/211.png
+	delay	7
+	frame	data/chars/nappa/212.png
+		
+anim	rise
+	loop	0
+	@cmd	randSound "grr.wav" "dareu.wav" "null.wav"
+	delay	10
+	offset	63 107
+	frame	data/chars/nappa/213.png
+		
+anim	riseattack
+	loop	0
+	hitflash	flash2
+	delay	10
+	bbox	0 0 0 0
+	offset	63 107
+	frame	data/chars/nappa/213.png
+	delay	12
+	offset	88 143
+	frame	data/chars/nappa/182.png
+	frame	data/chars/nappa/183.png
+	delay	15
+	move	4
+	attack	57 26 130 88 22 1 1 0 0 100
+	dropv	4 6 10
+	offset	88 143
+	frame	data/chars/nappa/184.png
+	attack	81 26 130 88 22 1 0 0 0 100
+	dropv	4 6 10
+	frame	data/chars/nappa/185.png
+	frame	data/chars/nappa/184.png
+	move	0
+	delay	8
+	attack	0 0 0 0
+	frame	data/chars/nappa/183.png
+	frame	data/chars/nappa/182.png
+		
+anim	run
+	loop	1
+	delay	15
+	offset	67 158
+	bbox	32 39 86 123
+	attack	57 43 108 88 20 1 1 0 0 50
+	dropv	4 6 10
+	frame	data/chars/nappa/94.png
+	delay	1
+	attack	0 0 0 0
+	frame	data/chars/nappa/94.png
+		
+anim	runattack
+	loop	0
+	jumpframe	0 0 5.7 0
+	delay	5
+	offset	67 158
+	bbox	32 39 86 123
+	attack	57 43 108 88 20 1 1 0 0 80
+	dropv	4 6 10
+	frame	data/chars/nappa/94.png
+	frame	data/chars/nappa/94.png
+	frame	data/chars/nappa/94.png
+	delay	1
+	@cmd	dasher 0 0 0
+	attack	0 0 0 0
+	frame	data/chars/nappa/94.png
+		
+anim	spawn
+	loop	0
+	delay	40
+	offset	63 158
+	bbox	0 0 0 0
+	frame	data/chars/nappa/251.png
+	frame	data/chars/nappa/252.png
+	frame	data/chars/nappa/253.png
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	61 124
+	bbox	32 3 86 123
+	frame	data/chars/nappa/263.png
+	frame	data/chars/nappa/263.png
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,59 @@
+name		Drum2
+health		1
+type		obstacle
+gfxshadow	1
+death		1
+defense		all 0
+nodieblink	3
+nolife 1
+subject_to_gravity 0
+
+takedamagescript data/scripts/switch.c
+diesound 	data/sounds/klunk.wav
+
+
+anim idle
+@script
+    void self = getlocalvar("self"); //Get calling entity.
+    void State = getentityvar(self,1);
+
+    if(State == 3){
+      setindexedvar(0, 1);
+      performattack(self, openborconstant("ANI_FOLLOW1"));
+    }
+@end_script
+	loop	1 1 3
+	delay	100
+	offset	22 63
+	frame	data/chars/misc/drum.png
+	delay	10
+	bbox	0 -25 29 32
+	frame	data/chars/misc/drum.png
+	frame	data/chars/misc/drum.png
+	frame	data/chars/misc/drum.png
+
+anim follow1
+@script
+    void self = getlocalvar("self"); //Get calling entity.
+    void State = getentityvar(self,1);
+
+    if(State == NULL()){
+      setindexedvar(0, NULL());
+      setidle(self, openborconstant("ANI_IDLE"));
+    }
+@end_script
+	loop	1 1 3
+	delay	100
+	offset	22 63
+	frame	data/chars/misc/drum3.png
+	delay	10
+	bbox	0 -25 29 32
+	frame	data/chars/misc/drum3.png
+	frame	data/chars/misc/drum3.png
+	frame	data/chars/misc/drum3.png
+
+anim death
+	delay	10
+	offset	22 63
+	frame	data/chars/misc/drum3.png
+	frame	data/chars/misc/drum3.png

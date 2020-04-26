@@ -1,0 +1,91 @@
+music	data/music/circus.ogg
+background	data/levels/karnov/back.png
+panel	data/levels/karnov/panel.png
+
+type 1 0 0
+order           a
+cameraoffset 0 0
+settime 0
+direction both
+
+spawn	bonustage
+coords	320 260  240
+at	0
+
+spawn	ticon
+coords	163 6
+at	0
+
+spawn	flag
+coords	458 55  0
+at	0
+
+spawn	church
+coords	242 223  0
+at	0
+
+spawn	decor
+coords	390 171  0
+at	0
+
+spawn	church1
+coords	115 223  0
+at	0
+
+spawn	karno
+coords	260 256  0
+at	0
+
+spawn	dummy
+coords	400 400
+at	0
+
+spawn	coffre
+
+coords	58 249  0
+	flip  1
+at	0
+
+
+spawn	aladend1
+alias castle
+coords	444 256  0
+at	0
+
+group 4-4
+at 1
+spawn	ob1
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_IDLE"));
+} @end_script
+item money
+coords	185 260  160
+at	1
+
+
+
+spawn	ob2
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_IDLE"));
+} @end_script
+item gold
+coords	245 260  160
+at	1
+
+
+spawn	ob3
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_IDLE"));
+} @end_script
+item meat
+coords	305 260  160
+at	1
+
+spawn	ob4
+@script void main() {
+   performattack(getlocalvar("self"), openborconstant("ANI_IDLE"));
+} @end_script
+item 1up
+coords	365 260  160
+at	1
+

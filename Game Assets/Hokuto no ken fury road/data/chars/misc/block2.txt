@@ -1,0 +1,20 @@
+name		Block2
+type    	enemy
+health  	1
+speed   	35
+shadow		0
+nolife  	1
+subtype   	arrow
+score		0 -1
+
+
+anim	idle
+
+	loop	0
+	delay	150
+	offset	48 85
+	blast	3 1 92 141 200 0 0 0 0 0
+	frame	data/chars/misc/block2.gif
+		
+#|edited by openBor Stats v 0.41
+		

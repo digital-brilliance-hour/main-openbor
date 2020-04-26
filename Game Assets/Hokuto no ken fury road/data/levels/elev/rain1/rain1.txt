@@ -1,0 +1,33 @@
+name	rain1
+type	none
+subject_to_gravity 0
+shadow	0
+speed	10
+alpha	1
+setlayer	-9000
+
+
+
+anim idle
+	loop	1
+	drawmethod	284 288 0 0 0 1
+	delay	3
+	offset	1 256
+sound data/sounds/elev.wav
+	frame	data/levels/elev/rain1/1.gif
+	frame	data/levels/elev/rain1/2.gif
+	frame	data/levels/elev/rain1/3.gif
+	frame	data/levels/elev/rain1/4.gif
+	frame	data/levels/elev/rain1/5.gif
+	frame	data/levels/elev/rain1/6.gif
+	frame	data/levels/elev/rain1/7.gif
+	frame	data/levels/elev/rain1/8.gif
+
+
+
+
+
+
+
+
+

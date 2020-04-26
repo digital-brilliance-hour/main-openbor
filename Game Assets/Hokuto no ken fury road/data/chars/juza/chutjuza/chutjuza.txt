@@ -1,0 +1,89 @@
+name	chutjuza
+health	200
+speed	24
+type	none
+falldie 1
+facing 1
+shadow  0
+gfxshadow  0
+
+icon	data/chars/juza/icon.png
+diesound data/sounds/juza/die.wav
+
+
+
+
+anim	attack1
+	sound	data/sounds/juza/rire.wav
+	delay	0
+	offset	65 40
+	bbox	0 -1 108 47
+	frame	data/chars/juza/chutjuza/ch1.png
+		
+anim	attackbackward
+		
+anim	block
+		
+anim	forwardjump
+		
+anim	idle
+	bbox	0 -1 113 55
+	loop	1
+	delay	8
+	offset	65 40
+	frame	data/chars/juza/chutjuza/ch1.png
+	bbox	0 -1 112 56
+	offset	65 41
+	frame	data/chars/juza/chutjuza/ch2.png
+
+anim	respawn
+	bbox	0 -1 113 55
+	delay	1
+	offset	65 40
+	frame	data/chars/juza/chutjuza/ch1.png
+	bbox	0 -1 112 56
+	offset	65 41
+	frame	data/chars/juza/chutjuza/ch2.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+	loop	0
+	delay	8
+	offset	65 40
+	bbox	0 -1 108 47
+	frame	data/chars/juza/chutjuza/ch1.png
+	bbox	0 -1 108 47
+	offset	65 40
+	frame	data/chars/juza/chutjuza/ch2.png
+		
+anim	RUNATTACK
+	loop	0
+	delay	8
+	offset	65 40
+	bbox	0 -1 108 47
+	frame	data/chars/juza/chutjuza/ch1.png
+	bbox	0 -1 108 47
+	offset	65 40
+	frame	data/chars/juza/chutjuza/ch2.png
+		
+anim	special
+		
+anim	turn
+		
+anim	walk
+	loop	0
+	delay	8
+	offset	65 40
+	bbox	0 -1 113 54
+	frame	data/chars/juza/chutjuza/ch1.png
+	bbox	0 -1 115 54
+	offset	65 40
+	frame	data/chars/juza/chutjuza/ch2.png
+		
+#|edited by openBor Stats v 0.41
+		

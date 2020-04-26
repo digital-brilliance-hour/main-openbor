@@ -1,0 +1,25 @@
+    name      coin1
+    type      none
+score 1000 -1
+    shadow      0
+
+
+    subject_to_wall 0
+    subject_to_obstacle 0
+    subject_to_platform 0
+    animationscript data/scripts/prscript.c
+    load       coin
+
+
+    
+
+    anim idle
+       loop   0
+       delay   10
+     offset	16 37
+bbox	-1 0 34 33
+       frame   data/levels/chut/empty.png
+       delay   30
+            @cmd    shooter "coin" 0 0 0 6
+       frame   data/levels/chut/empty.png
+

@@ -1,0 +1,154 @@
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+
+loadingbg 1 200 50 150 250 40 
+
+rush 1 1 RUSH 2 3 CHAIN 2 3
+p1rush 160 45 205 40 160 65 205 60
+p2rush 275 45 320 40 275 65 320 60
+
+p1smenu 0 -250 999 999
+p2smenu 0 -525 999 999
+
+lbarsize  110 7 1 1 0 0 0 0 -9999
+olbarsize 100 5 1 1 0 0 0 0 -9999
+timeloc 151 7 21 20 1
+
+
+
+mpbarsize  7 27 1 1 1 0 0 0 -9999
+p1mp 151 3
+p2mp 470 3
+
+
+p1namej      -999 -999   57  3  57   3 7
+p2namej     -999    -999   236  3  236   3 7
+
+p1score -999 -999 -999 -999 30 5 1
+p2score 999 -999 -999 -999 350 5 1
+
+p1life     29  20
+p2life     348 20
+
+p1icon 0 3
+p2icon 319 3
+
+p1lifen     129  2  
+p2lifen     448 2  
+
+p1lifex     -999 -999
+p2lifex     -999 -999
+
+e1icon	15 41
+e1life	43 55
+e1name	1000 1000
+
+e2icon	334 41
+e2life	362 55
+e2name	1000 1000
+
+
+
+set	fury_road
+showcomplete 999 999 999 999 999 999
+clearbonus 3 80 100 80 150 80 999 999 999 999
+lifebonus 3  120 100 120 150 120 999 999 999 999
+totalscore 3 160 100 160 150 160 999 999 999 999
+completebg  1
+typemp 1
+noshare 1
+nosame 0
+lives 4
+credits 0
+
+
+
+scene   data/scenes/chapter1.txt
+scene   data/scenes/shin.txt
+scene   data/scenes/shina.txt
+scene   data/scenes/shinaa.txt
+scene   data/scenes/st1.txt
+scene   data/scenes/z1.txt
+z 200 260
+file data/levels/sun/sun.txt
+z 290 290 
+file data/levels/punch/punch.txt
+scene   data/scenes/z2.txt
+scene   data/scenes/zeed.txt
+
+next
+
+scene   data/scenes/st2.txt
+scene   data/scenes/l1.txt
+branch cage
+z 162 162 162
+file data/levels/cage/cage.txt
+scene   data/scenes/ago.txt
+z 256 256 256
+file data/levels/sd/sd.txt
+branch chut
+z 150 270 
+file data/levels/chut/chut.txt
+branch ruin
+z 200 260
+file data/levels/ruin/ruin.txt
+scene   data/scenes/colonel.txt
+
+next
+
+scene   data/scenes/st3.txt
+z 256 256 256
+file data/levels/moto/moto.txt
+scene   data/scenes/v1.txt
+z 200 260
+file data/levels/precastle/precastle.txt
+branch karnov
+z 256 256 256
+file data/levels/karnov/karnov.txt
+branch castle
+z 200 260
+file data/levels/castle/castle.txt
+scene   data/scenes/v2.txt
+z 256 256 256
+file data/levels/shinst/shinst.txt
+scene   data/scenes/v3.txt
+
+next
+
+
+scene   data/scenes/chapter2.txt
+scene   data/scenes/jag1.txt
+scene   data/scenes/st4.txt
+z 180 260
+file data/levels/bike2/bike.txt
+scene   data/scenes/jag2.txt
+z 200 260
+file data/levels/ja1/ja1.txt
+branch hito
+z 260 260 260
+file data/levels/hito/hito/hito.txt
+branch ja2
+z 200 260
+file data/levels/ja2/ja2.txt
+branch elev
+z 200 260
+file data/levels/elev/elev.txt
+scene   data/scenes/jag3.txt
+z 256 256 256
+file data/levels/jag/jag.txt
+scene   data/scenes/jag4.txt
+end
+
+set	training
+maxplayers 2
+disablegameover 1
+disablehof 1
+z 260 260 260
+file data/levels/train/train.txt

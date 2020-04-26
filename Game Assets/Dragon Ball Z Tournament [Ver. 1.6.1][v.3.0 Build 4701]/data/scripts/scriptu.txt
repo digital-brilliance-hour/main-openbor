@@ -1,0 +1,107 @@
+ Function description:
+
+- block {int}
+ Sets blocking status
+ 0 = block status is off
+ 1 = block status is on
+
+- move {x} {z} {y}
+ Teleports with certain distance
+ x = x movement
+ z = z movement
+ y = y movement
+
+
+- dasher {x} {y} {z}
+ Dash with desired speed. Similar to 'jumpframe' with no frame requirement
+ x = x speed
+ y = y speed
+ z = z speed
+
+- leaper {x} {y} {z}
+ Jump with desired speed. Same as 'jumpframe' with no frame requirement
+ x = x speed
+ y = y speed
+ z = z speed
+
+- mpcost {cost}
+ Spend some MP. Just like 'energycost' but can be declared more than once.
+ cost = Mp cost
+
+- limiter {limit}
+ Prevents hero from performing the animation if his/her MP is less than Limit. If MP is not enough, hero is forced to play IDLE.
+ limit = Mp limit
+
+- clearL
+ Clears all local variables
+
+- keyint {animation} {frame} {key} {hold} {minhealth}
+ Change current animation if defined key is pressed or released provided HP is more than minimum health
+ animation = animation to change to
+ frame = frame to start
+ key = key to press or release. Accepted values are:
+  "U" = Up
+  "D" = Down
+  "J" = Jump
+  "A" = Attack
+  "S" = Special
+  "A2" = Attack2
+ hold = hold/release flag.
+  0 = Hold
+  1 = Release
+ minhealth = Minimum health char must have
+
+- keyflip
+ Change facing direction if left or right is pressed
+
+- shoot {projectilename} {x} {y} {z}
+ Shoot projectile from certain distance. Same as 'throwframe' without frame requirement
+ projectilename = name of shot projectile
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+
+- shooter {projectilename} {x} {y} {z} {Vx} {Vy} {Vz}
+ Shoot projectile from certain distance and with certain speed
+ projectilename = name of shot projectile
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+ Vx = x velocity
+ Vy = y velocity
+ Vz = z velocity
+
+- keyshoot {projectilename} {x} {y} {z} {Vx} {Vz}
+ Shooting projectile with key based speed control. Up or down key moves the projectile up or down respectively. Projectile moves forward whether up or down is pressed or not
+ projectilename = name of shot projectile
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+ Vx = x velocity
+ Vz = z velocity
+
+- toss {bombname} {x} {y} {z}
+ Toss bomb from certain distance. Same as 'tossframe' without frame requirement
+ bombname = name of shot projectile
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+
+- spawn01 {name} {x} {y} {z}
+ Spawn certain entity at certain distance. Same as 'spawnframe' without frame requirement
+ name = name of spawned entity
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+
+
+- shooter2 {projectilename} {x} {y} {z} {Vx} {Vy} {Vz}
+ Shoot special projectile from certain distance and with certain speed
+ projectilename = name of shot projectile
+ x = x distance relative to char
+ y = y distance relative to char
+ z = z distance relative to char
+ Vx = x velocity
+ Vy = y velocity
+ Vz = z velocity
+

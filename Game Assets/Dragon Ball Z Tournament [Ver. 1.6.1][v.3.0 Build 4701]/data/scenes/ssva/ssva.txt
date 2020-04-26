@@ -1,0 +1,67 @@
+name    ssva
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	22
+	offset	0 0 
+frame	data/scenes/ssva/1.png
+frame	data/scenes/ssva/2.png
+sound	data/sounds/vyell3.wav
+frame	data/scenes/ssva/3.png
+frame	data/scenes/ssva/1.png
+frame	data/scenes/ssva/2.png
+frame	data/scenes/ssva/3.png
+delay 20
+sound	data/sounds/electric.wav
+frame	data/scenes/ssva/12.png
+sound	data/sounds/shot.wav
+	frame	data/scenes/ssva/14.png
+	frame	data/scenes/ssva/16.png
+delay 17
+sound	data/sounds/electric.wav
+	frame	data/scenes/ssva/17.png
+sound	data/sounds/shot.wav
+	frame	data/scenes/ssva/18.png
+	frame	data/scenes/ssva/19.png
+	frame	data/scenes/ssva/21.png
+	frame	data/scenes/ssva/23.png
+	sound	data/sounds/electric.wav
+frame	data/scenes/ssva/21.png
+sound	data/sounds/shot.wav
+frame	data/scenes/ssva/19.png
+frame	data/scenes/ssva/18.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/ssva/17.png
+sound	data/sounds/shot.wav
+	frame	data/scenes/ssva/18.png
+	frame	data/scenes/ssva/19.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/ssva/21.png
+sound	data/sounds/shot.wav
+	frame	data/scenes/ssva/23.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/ssva/23.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

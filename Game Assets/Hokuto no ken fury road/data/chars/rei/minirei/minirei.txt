@@ -1,0 +1,74 @@
+name	minirei
+health	200
+speed	9
+type	none
+shadow  0
+gfxshadow  0
+weapnum 6
+icon	data/chars/rei/icon.png
+diesound data/sounds/rei/die.wav
+
+
+anim	special
+		
+anim	attack1
+	attack	7 9 11 8 1 0 1 0 0 0
+	delay	10
+	offset	7 17
+	bbox	0 0 15 23
+	frame	data/chars/rei/minirei/punch.png
+		
+anim	attackbackward
+		
+anim	block
+		
+anim	fall
+		
+anim	forwardjump
+		
+anim	idle
+	rangea	-6 10
+	range	-26 49
+	bbox	0 0 13 23
+	loop	1
+	delay	5
+	offset	7 17
+	frame	data/chars/rei/minirei/idle.png
+		
+anim	jump
+		
+anim	jumpdelay
+		
+anim	jumpland
+		
+anim	run
+		
+anim	runattack
+		
+anim	spawn
+	bbox	0 0 13 23
+	loop	0
+	delay	1
+	offset	7 17
+	frame	data/chars/rei/minirei/idle.png
+
+anim	respawn
+	bbox	0 0 13 23
+	loop	0
+	delay	1
+	offset	7 17
+	frame	data/chars/rei/minirei/idle.png
+		
+anim	turn
+		
+anim	walk
+	bbox	0 0 13 23
+	loop	1
+	delay	6
+	offset	7 17
+	frame	data/chars/rei/minirei/walk.png
+	offset	7 17
+	frame	data/chars/rei/minirei/idle.png
+		
+#|edited by openBor Stats v 0.41
+		

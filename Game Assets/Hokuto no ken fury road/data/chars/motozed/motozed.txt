@@ -1,0 +1,116 @@
+name	motozed
+health	5
+speed	16
+type	enemy
+aimove chasex
+hostile player
+nolife 1
+shadow	0
+falldie 1
+nodieblink 2
+setlayer 4
+diesound data/sounds/die5.wav
+subject_to_screen 1
+palette   data/chars/motozed/idle000.png
+alternatepal data/chars/motozed/map1.png
+alternatepal data/chars/motozed/map2.png
+
+
+
+
+anim	attack1
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	9
+	offset	18 75
+	bbox	-1 1 41 78
+	frame	data/chars/motozed/punch000.png
+	delay	15
+	offset	17 75
+	attack	28 8 22 26 10 0 0 0 0 0
+	frame	data/chars/motozed/punch001.png
+		
+anim	attack2
+	sound	data/sounds/Kenshiro/punch000.wav
+	loop	0
+	delay	9
+	offset	18 75
+	bbox	0 1 43 78
+	frame	data/chars/motozed/punch000.png
+	delay	15
+	offset	17 75
+	attack	24 10 27 22 10 0 0 0 0 0
+	frame	data/chars/motozed/punch001.png
+		
+anim	death
+	loop	0
+	delay	20
+	offset	18 74
+	frame	data/chars/motozed/idle000.png
+	offset	18 74
+	frame	data/chars/motozed/die00.png
+	delay	15
+	offset	18 74
+	frame	data/chars/motozed/die01.png
+	sound	data/sounds/explo.wav
+	delay	10
+	offset	18 89
+	frame	data/chars/motozed/die02.png
+	delay	10
+	offset	18 89
+	frame	data/chars/motozed/die03.png
+	delay	10
+	offset	18 88
+	frame	data/chars/motozed/die04.png
+	delay	10
+	offset	18 89
+	frame	data/chars/motozed/die05.png
+	delay	5
+	offset	18 60
+	frame	data/chars/motozed/die06.png
+		
+anim	idle
+	loop	1
+sound	data/sounds/bikebike.wav
+	offset	18 74
+	bbox	0 -2 31 80
+	delay	4
+	frame	data/chars/motozed/idle000.png
+	offset	18 74
+	bbox	0 -2 31 80
+	delay	4
+	loop	1
+	frame	data/chars/motozed/idle001.png
+		
+anim	pain
+	loop	0
+	offset	17 74
+	bbox	4 5 26 74
+	delay	12
+	frame	data/chars/motozed/pain01.png
+	offset	18 74
+	delay	50
+	frame	data/chars/motozed/pain02.png
+		
+anim	spawn
+	delay	12
+	offset	26 41
+	frame	data/chars/motozed/spawn00.png
+	delay	12
+	offset	21 53
+	frame	data/chars/motozed/spawn01.png
+	delay	12
+	offset	18 80
+	frame	data/chars/motozed/spawn02.png
+		
+anim	walk
+	loop	1
+sound	data/sounds/bikebike.wav
+	delay	8
+	offset	8 53
+	frame	data/chars/motozed/walk001.png
+	offset	8 53
+	frame	data/chars/motozed/walk002.png
+		
+#|edited by openBor Stats v 0.41
+		

@@ -1,0 +1,20 @@
+name	roboL
+speed   20
+type 	none
+shadow	0
+load hittt
+flash hittt
+candamage player npc obstacle
+
+palette data/chars/robo/idle01.gif
+
+anim	idle
+	loop	1
+	delay	7
+	offset	0 4
+	frame	data/chars/robo/B01.gif
+	attack	0 0 53 8 20 1 1 0 0 50
+	frame	data/chars/robo/B02.gif
+		
+#|edited by openBor Stats v 0.67
+		

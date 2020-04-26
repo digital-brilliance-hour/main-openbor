@@ -1,0 +1,46 @@
+name    	RXplos
+type    	none
+nolife		1
+lifespan  	1
+
+no_adjust_base  0
+candamage	enemy obstacle
+
+
+anim	idle
+hitflash hittt
+@script
+    void self = getlocalvar("self");
+    int z = getentityproperty(self, "z");
+
+    if( frame >= 1 ){
+      if( z > openborvariant("PLAYER_MAX_Z") ) {
+        killentity(self); //Suicide!
+      } else if( z < openborvariant("PLAYER_MIN_Z") ) {
+        killentity(self); //Suicide!
+      }
+    }
+	@end_script	
+	delay	10
+	offset	246 257
+	sound	data/sounds/exp.wav
+	hitfx	data/sounds/burnt.wav
+	frame	data/chars/misc/xplos/Rx01.png
+	frame	data/chars/misc/xplos/Rx02.png
+	attack8	91 89 288 200 200 1 1 0 0 150
+	dropv	4 5 0
+	frame	data/chars/misc/xplos/Rx03.png
+	frame	data/chars/misc/xplos/Rx04.png
+	frame	data/chars/misc/xplos/Rx05.png
+	frame	data/chars/misc/xplos/Rx06.png
+	frame	data/chars/misc/xplos/Rx07.png
+	frame	data/chars/misc/xplos/Rx08.png
+	attack	0 0 0 0
+	frame	data/chars/misc/xplos/Rx09.png
+	frame	data/chars/misc/xplos/Rx10.png
+	frame	data/chars/misc/xplos/Rx11.png
+	frame	data/chars/misc/xplos/Rx12.png
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

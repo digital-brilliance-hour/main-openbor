@@ -1,0 +1,193 @@
+name	bgfx
+health	1
+type	panel
+speed 10
+shadow 0
+setlayer -2000
+facing 1
+
+palette none
+
+
+anim	idle
+	loop	2 23  
+	offset	0 0
+	delay	5
+
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/bgs/bgfx/1.gif
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" -2000
+sound	data/sounds/annonce.wav
+delay 100
+frame	data/bgs/bgfx/2.gif
+delay 8
+frame	data/bgs/bgfx/3.gif
+frame	data/bgs/bgfx/4.gif
+frame	data/bgs/bgfx/5.gif
+frame	data/bgs/bgfx/6.gif
+sound	data/sounds/furyroad.wav
+frame	data/bgs/bgfx/7.gif
+frame	data/bgs/bgfx/8.gif
+frame	data/bgs/bgfx/9.gif
+frame	data/bgs/bgfx/10.gif
+delay 8
+frame	data/bgs/bgfx/11.gif
+frame	data/bgs/bgfx/12.gif
+frame	data/bgs/bgfx/13.gif
+frame	data/bgs/bgfx/14.gif
+frame	data/bgs/bgfx/15.gif
+frame	data/bgs/bgfx/16.gif
+frame	data/bgs/bgfx/17.gif
+frame	data/bgs/bgfx/18.gif
+frame	data/bgs/bgfx/19.gif
+frame	data/bgs/bgfx/20.gif
+frame	data/bgs/bgfx/21.gif
+delay 500
+frame	data/bgs/bgfx/22.gif
+delay 6
+frame	data/bgs/bgfx/23.gif
+frame	data/bgs/bgfx/24.gif
+frame	data/bgs/bgfx/25.gif
+frame	data/bgs/bgfx/26.gif
+frame	data/bgs/bgfx/27.gif
+frame	data/bgs/bgfx/28.gif
+frame	data/bgs/bgfx/29.gif
+frame	data/bgs/bgfx/30.gif
+frame	data/bgs/bgfx/31.gif
+frame	data/bgs/bgfx/32.gif
+frame	data/bgs/bgfx/33.gif
+frame	data/bgs/bgfx/34.gif
+frame	data/bgs/bgfx/35.gif
+frame	data/bgs/bgfx/36.gif
+frame	data/bgs/bgfx/37.gif
+frame	data/bgs/bgfx/38.gif
+frame	data/bgs/bgfx/39.gif
+frame	data/bgs/bgfx/40.gif
+frame	data/bgs/bgfx/41.gif
+frame	data/bgs/bgfx/42.gif
+frame	data/bgs/bgfx/43.gif
+frame	data/bgs/bgfx/44.gif
+frame	data/bgs/bgfx/45.gif
+delay 250
+frame	data/bgs/bgfx/46.gif
+
+
+delay 6
+frame	data/bgs/bgfx/47.gif
+frame	data/bgs/bgfx/48.gif
+frame	data/bgs/bgfx/49.gif
+frame	data/bgs/bgfx/50.gif
+frame	data/bgs/bgfx/51.gif
+frame	data/bgs/bgfx/52.gif
+frame	data/bgs/bgfx/53.gif
+frame	data/bgs/bgfx/54.gif
+frame	data/bgs/bgfx/55.gif
+frame	data/bgs/bgfx/56.gif
+frame	data/bgs/bgfx/57.gif
+frame	data/bgs/bgfx/58.gif
+frame	data/bgs/bgfx/59.gif
+frame	data/bgs/bgfx/60.gif
+frame	data/bgs/bgfx/61.gif
+frame	data/bgs/bgfx/62.gif
+frame	data/bgs/bgfx/63.gif
+frame	data/bgs/bgfx/64.gif
+frame	data/bgs/bgfx/65.gif
+frame	data/bgs/bgfx/66.gif
+frame	data/bgs/bgfx/67.gif
+frame	data/bgs/bgfx/68.gif
+frame	data/bgs/bgfx/69.gif
+frame	data/bgs/bgfx/70.gif
+delay 250
+frame	data/bgs/bgfx/71.gif
+
+
+delay 6
+frame	data/bgs/bgfx/72.gif
+frame	data/bgs/bgfx/73.gif
+frame	data/bgs/bgfx/74.gif
+frame	data/bgs/bgfx/75.gif
+frame	data/bgs/bgfx/76.gif
+frame	data/bgs/bgfx/77.gif
+frame	data/bgs/bgfx/78.gif
+frame	data/bgs/bgfx/79.gif
+frame	data/bgs/bgfx/80.gif
+frame	data/bgs/bgfx/81.gif
+frame	data/bgs/bgfx/82.gif
+frame	data/bgs/bgfx/83.gif
+frame	data/bgs/bgfx/84.gif
+frame	data/bgs/bgfx/85.gif
+frame	data/bgs/bgfx/86.gif
+frame	data/bgs/bgfx/87.gif
+frame	data/bgs/bgfx/88.gif
+frame	data/bgs/bgfx/89.gif
+frame	data/bgs/bgfx/90.gif
+frame	data/bgs/bgfx/91.gif
+frame	data/bgs/bgfx/92.gif
+frame	data/bgs/bgfx/93.gif
+frame	data/bgs/bgfx/94.gif
+frame	data/bgs/bgfx/95.gif
+delay 250
+frame	data/bgs/bgfx/96.gif
+
+
+
+delay 6
+frame	data/bgs/bgfx/97.gif
+frame	data/bgs/bgfx/98.gif
+frame	data/bgs/bgfx/99.gif
+frame	data/bgs/bgfx/100.gif
+frame	data/bgs/bgfx/101.gif
+frame	data/bgs/bgfx/102.gif
+frame	data/bgs/bgfx/103.gif
+frame	data/bgs/bgfx/104.gif
+frame	data/bgs/bgfx/105.gif
+frame	data/bgs/bgfx/106.gif
+frame	data/bgs/bgfx/107.gif
+frame	data/bgs/bgfx/108.gif
+frame	data/bgs/bgfx/109.gif
+frame	data/bgs/bgfx/110.gif
+frame	data/bgs/bgfx/111.gif
+frame	data/bgs/bgfx/112.gif
+frame	data/bgs/bgfx/113.gif
+frame	data/bgs/bgfx/114.gif
+frame	data/bgs/bgfx/115.gif
+frame	data/bgs/bgfx/116.gif
+frame	data/bgs/bgfx/117.gif
+frame	data/bgs/bgfx/118.gif
+frame	data/bgs/bgfx/119.gif
+frame	data/bgs/bgfx/120.gif
+delay 250
+sound	data/sounds/mo.wav
+frame	data/bgs/bgfx/121.gif
+
+
+delay 6
+frame	data/bgs/bgfx/122.gif
+sound	data/sounds/mi.wav
+frame	data/bgs/bgfx/123.gif
+frame	data/bgs/bgfx/124.gif
+frame	data/bgs/bgfx/125.gif
+frame	data/bgs/bgfx/126.gif
+frame	data/bgs/bgfx/127.gif
+frame	data/bgs/bgfx/128.gif
+frame	data/bgs/bgfx/129.gif
+frame	data/bgs/bgfx/130.gif
+frame	data/bgs/bgfx/131.gif
+frame	data/bgs/bgfx/132.gif
+frame	data/bgs/bgfx/133.gif
+frame	data/bgs/bgfx/134.gif
+frame	data/bgs/bgfx/135.gif
+frame	data/bgs/bgfx/136.gif
+frame	data/bgs/bgfx/137.gif
+frame	data/bgs/bgfx/138.gif
+frame	data/bgs/bgfx/139.gif
+frame	data/bgs/bgfx/140.gif
+frame	data/bgs/bgfx/141.gif
+frame	data/bgs/bgfx/142.gif
+frame	data/bgs/bgfx/143.gif
+frame	data/bgs/bgfx/144.gif
+frame	data/bgs/bgfx/145.gif
+delay 500
+frame	data/bgs/bgfx/146.gif
+#|edited by openBor Stats v 0.67
+		

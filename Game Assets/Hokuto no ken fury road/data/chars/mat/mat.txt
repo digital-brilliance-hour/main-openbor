@@ -1,0 +1,113 @@
+name	mat
+health	9999999999
+speed	6
+type	enemy
+shadow	1
+gfxshadow 1
+nolife 1
+diesound data/sounds/die1.wav
+subject_to_screen 1
+palette   data/chars/mat/idle000.png
+alternatepal data/chars/mat/map1.png
+alternatepal data/chars/mat/map2.png
+alternatepal data/chars/mat/map3.png
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	12 107
+	bbox	15 -9 33 111
+	frame	data/chars/mat/punch000.png
+	offset	12 106
+	attack	41 16 47 20 0 0 0 0 0 0
+	frame	data/chars/mat/punch001.png
+		
+anim	attack2
+	loop	0
+	delay	7
+	offset	17 101
+	bbox	1 -9 37 108
+	frame	data/chars/mat/kick0.png
+	offset	22 99
+	attack	29 57 47 40 0 0 0 0 0 0
+	frame	data/chars/mat/kick1.png
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	41 99
+	frame	data/chars/mat/fall00.png
+	offset	45 26
+	frame	data/chars/mat/fall01.png
+		
+anim	idle
+	loop	1
+	offset	23 102
+	bbox	1 -10 50 115
+	delay	10
+	frame	data/chars/mat/idle000.png
+	offset	25 104
+	frame	data/chars/mat/idle001.png
+	offset	25 105
+	frame	data/chars/mat/idle002.png
+	offset	26 106
+	frame	data/chars/mat/idle003.png
+	offset	25 105
+	frame	data/chars/mat/idle004.png
+	offset	25 104
+	frame	data/chars/mat/idle005.png
+
+anim	spawn
+	loop	0
+	offset	23 102
+	bbox	1 -10 50 115
+	delay	10
+	frame	data/chars/mat/idle000.png
+	
+		
+anim	pain
+	loop	0
+	offset	26 99
+	bbox	13 5 33 96
+	delay	12
+	frame	data/chars/mat/pain01.png
+	offset	33 99
+	delay	50
+	frame	data/chars/mat/pain02.png
+	offset	38 88
+	delay	12
+	frame	data/chars/mat/pain03.png
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	21 74
+	frame	data/chars/mat/rise1.png
+	offset	21 84
+	frame	data/chars/mat/rise2.png
+		
+anim	walk
+	loop	1
+	offset	22 104
+	bbox	15 -1 25 109
+	delay	8
+	frame	data/chars/mat/walk000.png
+	offset	26 106
+	frame	data/chars/mat/walk001.png
+	frame	data/chars/mat/walk002.png
+	offset	23 104
+	frame	data/chars/mat/walk003.png
+	offset	22 104
+	frame	data/chars/mat/walk004.png
+	offset	23 105
+	frame	data/chars/mat/walk005.png
+	offset	26 105
+	frame	data/chars/mat/walk006.png
+	offset	26 106
+	frame	data/chars/mat/walk007.png
+	frame	data/chars/mat/walk008.png
+		
+#|edited by openBor Stats v 0.41
+		

@@ -1,0 +1,43 @@
+name	rock
+type    obstacle
+
+health  100
+diesound  data/sounds/wood.wav
+nomove 1 1
+cantgrab 1
+projectilehit enemy obstacle 
+
+gfxshadow 1
+noatflash 1
+flash   hittt
+
+
+dust		dust
+
+bounce		1
+
+death 2
+falldie 2
+nodieblink 3
+
+offscreenkill 99999
+
+anim	fall
+	loop	0
+	delay	20
+	offset	216 316
+	frame	data/chars/misc/rock/2.png
+	frame	data/chars/misc/rock/3.png
+	frame	data/chars/misc/rock/4.png
+		
+anim	idle
+	loop	0
+	delay	5
+	fshadow	0
+	offset	214 460
+	bbox	57 20 365 461 60
+	platform	135 490 -70 -70 270 270 235 210
+	frame	data/chars/misc/rock/1.png
+		
+#|edited by openBor Stats v 0.67
+		

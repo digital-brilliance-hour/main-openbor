@@ -1,0 +1,159 @@
+bossmusic	data/music/boss.bor
+music		data/music/nanto.bor
+background	data/levels/precastle/sun2.gif  1  1  0  -45  0  0  5000  5000  0  0
+panel	      data/levels/precastle/precastle1.gif
+order           a
+light  50 -226
+at 0
+cameraoffset 0 0
+spawn1 110 20
+spawn2 120 40
+
+
+spawn  karn
+item   alado
+itemalias karnov
+	coords	800 200  0
+	at  0
+
+spawn	decide
+coords	320 260  240
+at	0
+
+spawn	ticon
+coords	163 6
+at	0
+
+spawn	corb
+coords	575 143  0
+at	0
+
+
+spawn  pflag
+	coords  1126  260  77
+	at  0
+
+
+
+spawn  barel
+	coords  320  205  0
+	at  0
+
+
+
+#--group-----------
+wait
+at 40
+
+
+spawn	zed
+
+map 2
+health	40
+coords	600 200  0
+at	40
+
+
+spawn	abo
+map 1
+health	70
+coords	-30 200  0
+at	40
+
+spawn	zed
+map 3
+health	40
+coords	-30 265  0
+at	40
+
+spawn  corb
+	coords  749  143  6
+	at  40
+spawn  barel
+	coords  526  205  0
+	at  40
+spawn  barel
+	coords  627  193  0
+	item  Apple
+	at  80
+
+
+wait
+at	80
+
+spawn	zed
+map 1
+health	40
+coords	-30 265  0
+at	80
+
+spawn	zed2
+health	50
+coords	-30 185  0
+at	80
+
+
+spawn	abo
+health	70
+coords	550 220  0
+at	80
+
+spawn  corb
+	coords  1008  130  0
+	at  80
+
+
+spawn  corb
+	coords  1338  134  0
+	at  120
+spawn  barel
+	coords  670  235  0
+	at  120
+
+spawn  corb
+	coords  1571  140  1
+	at  160
+
+spawn  barel
+	coords  791  235  0
+	at  160
+
+spawn  corb
+	coords  1717  136  1
+	at  200
+
+
+
+
+wait
+at	480
+
+
+
+spawn	zed
+map 2
+health	40
+coords	550 260  0
+at	480
+
+spawn	zed3
+map 4
+health	50
+coords	-30 195  0
+at	480
+
+
+wait
+at	850
+
+spawn	eath
+@script
+void main()
+{
+    jumptobranch("castle", 0);
+}
+@end_script
+map 1
+coords	550 260  0
+at	850
+

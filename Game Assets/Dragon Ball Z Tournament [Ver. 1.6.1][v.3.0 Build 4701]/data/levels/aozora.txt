@@ -1,0 +1,189 @@
+direction	both
+cameratype 1
+settime 0 
+notime 1
+
+spawn2 150 100 829
+spawn1 50  200 829
+spawn3 150 300 829
+scrollspeed 100
+bgspeed	 1	Left
+
+music		data/music/battle.ogg
+
+background	data/bgs/1.png
+panel		data/bgs/dammy2.gif	
+
+order	a
+
+
+
+
+
+
+
+
+#-------1
+
+
+group   2 3
+at      0
+
+wait
+at      0
+
+spawn  sai1
+coords 350 155
+at     500
+
+spawn  sai2
+coords 700 355
+at     500
+
+spawn  sai1
+coords 200 322
+at     500
+
+spawn  sai2
+coords 500 322
+at     500
+
+spawn  sai1
+coords 400 322
+at     500
+
+spawn  sai2
+item cp
+coords 600 322
+at     500
+
+
+#-------2
+
+group   3 3
+at      900
+
+wait
+at      900
+
+spawn  sai1
+coords 700 155
+at     900
+
+spawn  sai2
+coords 200 355
+at     900
+
+spawn  sai1
+coords 300 322
+at     900
+
+spawn  sai2
+coords 400 322
+at     900
+
+spawn  sai1
+coords 500 322
+at     900
+
+spawn  sai2
+coords 600 322
+at     900
+
+
+#-------3
+
+group   3 4
+at      1500
+
+wait
+at      1500
+
+spawn  sai1
+coords 700 155
+at     1500
+
+spawn  sai2
+coords 250 355
+at     1500
+
+spawn  sai1
+coords 200 322
+at     1500
+
+spawn  sai2
+coords 300 322
+at     1500
+
+spawn  sai1
+coords 400 322
+at     1500
+
+spawn  sai2
+item cp
+coords 500 322
+at     1500
+
+#-------4
+
+group   4 4
+at      2000
+
+wait
+at      2000
+
+spawn  sai1
+coords 700 155
+at     2000
+
+spawn  sai2
+coords 150 355
+at     2000
+
+spawn  sai1
+coords 200 322
+at     2000
+
+spawn  sai2
+coords 200 322
+at     2000
+
+spawn  sai1
+coords 300 322
+at     2000
+
+spawn  sai2
+coords 300 322
+at     2000
+
+#-------4
+
+group   4 5
+at      2500
+
+wait
+at      2500
+
+spawn  sai1
+coords 300 155
+at     2500
+
+spawn  sai2
+coords 400 355
+at     2500
+
+spawn  sai1
+coords 400 322
+at     2500
+
+spawn  sai2
+coords 500 322
+at     2500
+
+spawn  sai1
+coords 500 322
+at     2500
+
+spawn  sai2
+coords 700 322
+at     2500
