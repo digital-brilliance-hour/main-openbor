@@ -1,0 +1,36 @@
+name    sSmk
+type	    pshot
+speed       1
+nolife      1
+gfxshadow   1
+alpha	6
+
+
+	animationscript	data/scripts/aniScp.c
+
+
+anim	idle
+	loop	0
+	delay	4
+	offset	12 11
+	frame	data/chars/misc2/ssmk1.gif
+	offset	17 20
+	frame	data/chars/misc2/ssmk2.gif
+	offset	15 25
+	frame	data/chars/misc2/ssmk3.gif
+	offset	12 29
+	frame	data/chars/misc2/ssmk4.gif
+	offset	13 31
+	frame	data/chars/misc2/ssmk5.gif
+	offset	12 31
+	frame	data/chars/misc2/ssmk6.gif
+	offset	14 25
+	frame	data/chars/misc2/ssmk7.gif
+	offset	13 21
+	frame	data/chars/misc2/ssmk8.gif
+	offset	13 18
+	@cmd	freeself 1
+	frame	data/chars/misc2/ssmk9.gif
+		
+#|edited by openBor Stats v 0.23
+		

@@ -1,0 +1,21 @@
+name	GO31
+type	endlevel
+branch  31
+shadow 1
+offscreenkill 1000000
+
+
+animationscript	data/scripts/aniScp.c
+
+anim	idle
+	loop	1
+	delay	4
+	offset	62 58
+	bbox	27 7 66 48
+	@cmd	displaystagecompleted 3
+	frame	DATA/chars/misc2/GO/U3.gif
+	bbox	27 7 66 48
+	frame	DATA/chars/misc2/GO/U3.gif
+		
+#|edited by openBor Stats v 0.46
+		

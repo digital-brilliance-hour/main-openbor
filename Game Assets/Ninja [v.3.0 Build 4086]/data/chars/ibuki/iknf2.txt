@@ -1,0 +1,38 @@
+name    iknf2
+type     none
+nolife      1
+remove      1
+gfxshadow   1
+candamage   enemy obstacle
+alpha   1
+
+animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+
+
+anim	idle
+	offset	20 21
+	attack	0 0 40 42 6 0 0 0 6 0
+	bbox	2 1 36 40
+	loop	1
+	delay	6
+	otg	1
+	staydown	-500 500
+	hitfx	data/chars/maru/snd/sslash.wav
+	frame	data/chars/ibuki/733.gif
+	offset	21 21
+	frame	data/chars/ibuki/734.gif
+	offset	24 19
+	frame	data/chars/ibuki/735.gif
+	offset	24 19
+	@cmd	killselfonfloor 1
+	@cmd	killselfoutofzboundry 40
+	frame	data/chars/ibuki/736.gif
+		
+#|edited by openBor Stats v 0.49
+		

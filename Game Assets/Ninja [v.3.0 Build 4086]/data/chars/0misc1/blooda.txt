@@ -1,0 +1,41 @@
+name	 blooda
+health   0
+speed    7
+type     enemy
+jumpheight 4
+nolife   1
+
+bomb    bloodb
+
+anim idle
+	loop	0
+	delay	1
+	offset	37 58
+	tossframe 1
+	frame   data/chars/0misc1/empty.gif
+	delay	12
+	frame   data/chars/0misc1/bloo01.gif
+	frame   data/chars/0misc1/bloo02.gif
+	frame   data/chars/0misc1/bloo03.gif
+	frame   data/chars/0misc1/bloo04.gif
+	delay   9
+	frame   data/chars/0misc1/bloo05.gif
+	frame   data/chars/0misc1/bloo06.gif
+	frame   data/chars/0misc1/bloo07.gif
+
+anim attack1
+	loop	0
+	delay	20
+	offset	37 58
+	frame   data/chars/0misc1/bloo08.gif
+	frame   data/chars/0misc1/bloo09.gif
+
+anim death
+	loop	0
+	delay	20
+	offset	37 58
+	frame   data/chars/0misc1/bloo08.gif
+	frame   data/chars/0misc1/bloo09.gif
+
+
+

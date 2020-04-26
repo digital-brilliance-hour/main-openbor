@@ -1,0 +1,29 @@
+name	tam
+health	1
+type	obstacle
+nolife	1
+gfxshadow	1
+noatflash 1
+flash	flash1
+subtype	flydie
+
+diesound  data/sounds/klunk.wav
+
+anim idle
+	delay 100
+	loop 1
+       offset 24 79
+       bbox 1 -18 48 93
+       frame data/chars/misc/tam1.gif
+	delay	3
+	frame data/chars/misc/tam1.gif
+	
+anim fall
+	loop 1
+	delay 10
+       offset 29 82
+       frame data/chars/misc/tam5.gif
+	attack 8 2 42 79 20 1 0 0 0
+       frame data/chars/misc/tam4.gif
+       frame data/chars/misc/tam3.gif
+       frame data/chars/misc/tam2.gif

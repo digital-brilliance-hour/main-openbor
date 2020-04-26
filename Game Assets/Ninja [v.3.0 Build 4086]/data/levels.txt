@@ -1,0 +1,98 @@
+#-------misc stuff
+
+maxplayers	1
+noslowfx   	1
+hiscorebg 	1
+completebg      1
+#loadingbg    1 5 200 310 120 180 1
+#loadingbg2   1 5 200 310 120 180 3
+
+#-------Menu placement
+
+#p1smenu	-1 -1 999 999
+#p2smenu -1 -273 999 999
+#p3smenu -1 -545 999 999
+
+#-------Lifebars, icons, names, etc.
+
+lbarsize  36 4 1 1 0 -9999 -9999 -9999 -9999
+mpbarsize 36 4 1 0 0 -9999 -9999 -9999 -9999
+olbarsize 4 18 1 1 1 -9999 -9999 -9999 -9999
+timeloc   -100 -500 21 20 1
+
+p1life      27 13
+p1mp        27 20
+p1namej     13 29   13 0   13 15
+p1icon      10 10
+p1lifen     68 11
+p1lifex     -999 -999
+p1score     13 0   -999 -999   14 29
+e1life      99 11
+e1icon      97 8
+e1name      -999 -999
+
+p2life	    197 13
+p2mp	    197 20
+p2namej     185 29   185 0   185 15
+p2icon      180 10
+p2lifen     238 11
+p2lifex    -999 -999
+p2score     183 0   -999 -999   184 29
+e2life      269 11
+e2icon      267 8
+e2name      -999 -999
+
+p3life      367 13
+p3mp        367 20
+p3namej     353 29   353 0   353 15
+p3icon      350 10
+p3lifen     408 11
+p3lifex    -999 -999
+p3score     353 0   -999 -999   354 29
+e3life      439 11
+e3icon      437 8
+e3name     -999 -999
+
+
+##################################### Game Test
+
+set	   Game Test
+lives      3
+credits    9
+custfade   90
+nosame     1
+noshare    1
+maxplayers 1
+#typemp     1
+#skipselect kazuya
+
+
+scene    data/scenes/Bronze.txt
+#next
+z       290     370 160
+file 	Data/levels/Lvl1-3/lvl1-3.txt
+
+z 150 240 190
+file       data/levels/st00.txt
+
+
+z 150 240 190
+file data/levels/field.txt
+
+z	    182	240	
+FILE        DATA/LEVELS/level52.TXT
+
+z 330 360 190
+file 	Data/levels/stage101.txt
+
+z 150 240 190
+file	data/levels/level6.txt
+
+#next
+z       220     365 160
+file 	Data/levels/Lvl2-3/lvl2-3.txt
+
+z       160     280 160
+file 	Data/levels/Lvl2-4/lvl2-4.txt
+
+

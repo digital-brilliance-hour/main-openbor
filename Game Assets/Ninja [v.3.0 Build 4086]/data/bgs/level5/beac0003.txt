@@ -1,0 +1,20 @@
+#Drop layer 1 for Sound level5.
+
+name	 beac0003
+health	 1
+type	 panel
+Speedf   0.3
+setlayer -11
+
+anim idle 
+
+	loop	1
+	delay	15
+	offset	0 0
+	bbox	0
+	frame data/bgs/level5/drop0003.gif
+	frame data/bgs/level5/drop0004.gif
+	frame data/bgs/level5/drop0005.gif
+	frame data/bgs/level5/drop0004.gif
+	
+	

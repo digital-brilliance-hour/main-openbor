@@ -1,0 +1,331 @@
+name	ZANKURO
+health	2000
+speed	6
+type	enemy
+shadow	6
+dust    dust
+blockodds   1
+icon	data/chars/zankuro/1.gif
+iconpain     data/chars/zankuro/2.gif
+diesound data/sounds/zankdie.wav
+aggression 10
+nopassiveblock 1
+gfxshadow 1
+palette data/chars/ZANKURO/idle00.gif
+remap	data/chars/zankuro/idle00.gif data/chars/zankuro/map1.gif
+
+
+
+anim idle
+	loop	1
+	offset	85 133
+	bbox	40 11 70 122
+	delay	8
+	frame         data/chars/ZANKURO/idle00.gif
+offset	87 134
+	frame         data/chars/ZANKURO/idle01.gif
+offset	87 133
+	frame         data/chars/ZANKURO/idle02.gif
+offset	87 131
+	frame         data/chars/ZANKURO/idle03.gif
+offset	87 130
+	frame         data/chars/ZANKURO/idle04.gif
+offset	87 132
+	frame         data/chars/ZANKURO/idle05.gif
+offset	85 133
+	frame         data/chars/ZANKURO/idle06.gif
+
+
+
+anim walk
+	loop	1
+	offset	87 122
+	bbox	43 15 77 130
+	delay	12
+	frame         data/chars/ZANKURO/wk00.gif
+offset       85 127
+                  frame         data/chars/ZANKURO/wk01.gif
+offset       83 134
+                  frame         data/chars/ZANKURO/wk02.gif
+offset        83 139
+                  frame         data/chars/ZANKURO/wk03.gif
+offset        89 140
+                  frame         data/chars/ZANKURO/wk04.gif
+offset        89 142
+                  frame         data/chars/ZANKURO/wk05.gif
+offset        89 139
+                  frame         data/chars/ZANKURO/wk06.gif
+offset        90 126
+                  frame         data/chars/ZANKURO/wk07.gif
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	84 131
+	bbox	23 10 100 122
+	sound       data/sounds/zankpain.wav
+	delay	5
+	frame         data/chars/ZANKURO/pain1.gif
+offset	68 157
+	delay	5
+	frame         data/chars/ZANKURO/pain2.gif
+offset	73 147
+                  delay	10
+	frame         data/chars/ZANKURO/pain3.gif
+offset	68 157
+	delay	5
+	frame         data/chars/ZANKURO/pain2.gif
+
+
+anim fall
+	loop	0
+	offset	127 151 
+	delay	5
+	frame         data/chars/ZANKURO/fall1.gif
+offset	124 139
+                  DELAY           70
+        ATTACK  27 36 62 45 10 1
+	frame         data/chars/ZANKURO/fall2.gif
+offset	114 136
+                  DELAY        15
+	frame         data/chars/ZANKURO/fall3.gif
+offset	90 76
+                  DELAY     35
+	frame         data/chars/ZANKURO/fall4.gif
+offset	77 98
+        ATTACK  0 0 0 0 0 0
+	delay	20
+	frame         data/chars/ZANKURO/rise1.gif
+offset	90 76
+                  frame         data/chars/ZANKURO/fall4.gif
+
+
+anim rise
+	loop	0
+	offset	77 98
+	delay	20
+	frame         data/chars/ZANKURO/rise1.gif
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         5  
+offset	81 148
+	frame         data/chars/ZANKURO/block1.gif
+offset	57 137
+                  frame         data/chars/ZANKURO/block2.gif   
+offset	60 139
+	frame         data/chars/ZANKURO/block3.gif
+offset	66 145
+	frame         data/chars/ZANKURO/block4.gif
+
+
+
+
+
+
+anim attack1
+	loop	0
+	offset	55 133
+	delay	7
+	bbox	23 15 58 112
+                  hitfx             data/sounds/fast.wav
+	frame         data/chars/ZANKURO/ATK01.gif
+offset	60 130
+                  attack        84 14 80 69 8
+	bbox	43 18 38 103          
+	frame         data/chars/ZANKURO/ATK02.gif
+offset	55 133
+	bbox	23 15 58 112
+	frame         data/chars/ZANKURO/ATK03.gif
+offset       57 126
+                  bbox           29 21 37 94
+                  attack          0 0 0 0 0 
+	frame         data/chars/ZANKURO/ATK04.gif
+offset        62 126
+                  attack         92 34 73 54 8 
+                  frame         data/chars/ZANKURO/ATK05.gif   
+offset        62 126
+                  attack         0 0 0 0 0
+                  frame         data/chars/ZANKURO/ATK05.gif   
+offset	76 153
+                  attack         75 0 98 122 8
+	frame         data/chars/ZANKURO/ATK06.gif
+offset	76 153
+	bbox	47 30 58 113
+                  attack        0 0 0 0 0
+                  frame         data/chars/ZANKURO/ATK07.gif
+offset	67 137
+                  BBOX        24 15 69 114
+	frame         data/chars/ZANKURO/ATK08.gif
+offset	55 134
+	bbox	11 14 71 118
+	frame         data/chars/ZANKURO/ATK09.gif
+offset	56 143
+	frame         data/chars/ZANKURO/ATK10.gif
+offset	56 152
+                  frame         data/chars/ZANKURO/ATK11.gif   
+offset	58 166
+	bbox	35 47 55 106
+	frame         data/chars/ZANKURO/ATK12.gif
+offset	52 119
+                  bbox          51 29 50 74
+                  frame         data/chars/ZANKURO/ATK13.gif
+offset	60 110
+                  attack          99 29 80 88 8
+	frame         data/chars/ZANKURO/ATK14.gif
+offset	59 109
+                  attack          0 0 0 0 0
+	frame         data/chars/ZANKURO/ATK15.gif
+offset	59 109
+	frame         data/chars/ZANKURO/ATK15.gif
+offset	53 105
+                  attack          99 29 80 88 8 1
+	frame         data/chars/ZANKURO/ATK16.gif
+offset	53 97
+                  attack          0 0 0 0 0 0
+   	frame         data/chars/ZANKURO/ATK17.gif
+offset	66 115
+                  bbox           45 9 65 101
+	frame         data/chars/ZANKURO/ATK18.gif
+offset	62 124
+                   bbox          34 13 57 113                                  
+	frame         data/chars/ZANKURO/ATK19.gif
+
+
+
+
+
+anim attack2
+                  RANGE     50 120
+	loop	0
+	delay	8
+	bbox	 11 16 58 113
+                  offset       60 138
+                  move          5  
+	hitfx             data/sounds/fast.wav
+                  sound         data/sounds/zankatk2.wav 
+                   frame         data/chars/ZANKURO/ATK200.gif
+offset         92 132
+	bbox	 42 17 64 103
+                  frame         data/chars/ZANKURO/ATK201.gif
+offset	57 126
+	bbox	 38 20 58 105
+                   frame         data/chars/ZANKURO/ATK202.gif
+offset	61 126
+	bbox	 38 19 38 102
+                 attack           79 30 74 62 8
+                  frame         data/chars/ZANKURO/ATK203.gif
+offset	57 126
+	bbox	 38 20 58 105
+                   frame         data/chars/ZANKURO/ATK202.gif
+offset	56 140
+                  attack         0 0 0 0 0
+                  move         0
+                  frame         data/chars/ZANKURO/ATK204.gif
+offset	60 124
+                  attack         97 31 64 73 8
+                  frame         data/chars/ZANKURO/ATK205.gif
+offset	56 140
+                  attack         0 0 0 0 0 
+	bbox	 38 20 58 105
+                  frame         data/chars/ZANKURO/ATK204.gif
+offset	56 152
+	bbox	 12 31 63 120
+                  frame         data/chars/ZANKURO/ATK206.gif
+offset	59 134
+                   frame         data/chars/ZANKURO/ATK207.gif
+offset	65 130
+	bbox	41 16 47 104
+                   frame         data/chars/ZANKURO/ATK208.gif
+offset	111 143
+                  bbox           52 22 45 74
+                  frame         data/chars/ZANKURO/ATK209.gif
+offset	109 138
+                  frame         data/chars/ZANKURO/ATK210.gif
+offset	108 138
+                  frame         data/chars/ZANKURO/ATK211.gif
+offset	80 145
+                  blast         62 35 107 10 15 0
+                  frame         data/chars/ZANKURO/ATK212.gif
+offset	108 138
+                   frame         data/chars/ZANKURO/ATK211.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim attack3
+                  RANGE    170 300
+	loop	0
+	delay	6
+	offset	65 174
+	bbox	52 65 68 81
+                  move           25
+                  frame         data/chars/ZANKURO/ATK300.gif
+offset	71 176
+	frame         data/chars/ZANKURO/ATK301.gif
+offset	75 175
+	frame         data/chars/ZANKURO/ATK302.gif
+offset	73 176
+	frame         data/chars/ZANKURO/ATK303.gif
+offset	83 125
+                  bbox          22 26 73 92
+                  sound         data/sounds/zankatk.wav 
+	frame         data/chars/ZANKURO/ATK304.gif
+offset	71 126
+                  bbox          0 0 0 0
+	frame         data/chars/ZANKURO/ATK305.gif
+offset	61 141
+                  blast           28 9 135 117 30 0
+	frame         data/chars/ZANKURO/ATK306.gif
+offset	59 231
+	frame         data/chars/ZANKURO/ATK307.gif
+offset	62 237
+	frame         data/chars/ZANKURO/ATK308.gif
+offset	59 139
+	frame         data/chars/ZANKURO/ATK309.gif
+
+
+anim special
+                	loop	0
+	delay	6
+	offset	83 125
+                  sound         data/sounds/zankatk.wav 
+	frame         data/chars/ZANKURO/ATK304.gif
+offset	71 126
+                  bbox          0 0 0 0
+	frame         data/chars/ZANKURO/ATK305.gif
+offset	61 141
+                  attack           28 9 135 117 20 1
+	frame         data/chars/ZANKURO/ATK306.gif
+offset	59 231
+attack         0 0 0 0 0 0
+	frame         data/chars/ZANKURO/ATK307.gif
+offset	62 237
+	frame         data/chars/ZANKURO/ATK308.gif
+offset	59 139
+	frame         data/chars/ZANKURO/ATK309.gif
+
+
+
+
+
+
+
+

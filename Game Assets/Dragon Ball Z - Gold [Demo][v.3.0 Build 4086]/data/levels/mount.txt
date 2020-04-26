@@ -1,0 +1,923 @@
+# Street
+music		data/music/goku.bor
+bossmusic	data/music/boss.BOR
+
+
+# Load images
+background	data/bgs/mount/back.gif
+panel		data/bgs/mount/stage.gif	none	
+frontpanel      data/bgs/mount/f00.gif                        
+
+order	a
+
+spawn	rock
+item    meat
+coords	70 160
+at	0
+
+spawn	rock
+item    diamond
+coords	70 190
+at	0
+
+spawn	rock
+item    gold
+coords	70 220
+at	0
+
+spawn	rock
+item    apple
+coords	700 165
+at	0
+
+spawn	rock
+item    burger
+coords	1333 170
+at	0
+
+spawn	rock
+item    1up
+coords	1540 210
+at	0
+
+spawn	rock
+item    gold
+coords	1600 210
+at	0
+
+spawn	rock
+coords	2270 165
+at	0
+
+spawn	rock
+coords	2270 195
+at	0
+
+spawn	rock
+item    diamond
+coords	2270 225
+at	0
+
+spawn	rock
+item    apple
+coords	2570 165
+at	0
+
+spawn	rock
+item    burger
+coords	2570 195
+at	0
+
+#--group1-----
+
+group	6 6
+at	0
+
+wait
+at	0
+
+spawn	Boar
+coords	350 160
+at	0
+
+spawn	Boar
+map     1
+coords	350 220
+at	0
+
+spawn	Boar
+map     2
+coords	350 230
+at	0
+
+spawn	Boar
+map     3
+coords	350 160
+at	0
+
+spawn	Boar
+map     4
+coords	350 220
+at	0
+
+spawn	Boar
+map     1
+coords	350 230
+at	0
+
+spawn	Boar
+map     2
+coords	350 160
+at	0
+
+spawn	Boar
+map     3
+coords	350 220
+at	0
+
+spawn	Boar
+map     1
+coords	350 230
+at	0
+
+spawn	Boar
+map     2
+coords	350 160
+at	0
+
+spawn	Boar
+map     3
+coords	350 220
+at	0
+
+spawn	Boar
+coords	350 230
+at	0
+
+
+#---group2----------
+
+group	1 4
+at	0
+
+wait
+at	220
+
+spawn	Boar
+map	1
+coords	350 190
+at	100
+
+spawn	Boar
+map     4
+coords	-30 160
+at	120
+
+spawn	Boar
+map     4
+coords	-30 160
+at	100
+
+spawn	Boar
+coords	350 160
+at	120
+
+spawn	Wolf
+map	1
+coords	350 190
+at	100
+
+spawn	Wolf
+coords	-30 160
+at	120
+
+spawn	Wolf
+map     2
+coords	-30 160
+at	100
+
+spawn	Wolf
+map     2
+coords	350 160
+at	120
+
+#--group3-----------
+
+group	4 4
+at	0
+
+wait
+at	470
+
+spawn	Wolf
+coords	-30 200
+at	450
+
+spawn	Boar
+coords	340 210
+at	470
+
+spawn	Wolf
+map	1
+coords	-30 160
+at	470
+
+spawn	Boar
+map     1
+coords	350 165
+at	470
+
+spawn	Wolf
+coords	350 165
+at	470
+
+spawn	Boar
+coords	-30 160
+at	470
+
+
+
+wait
+at	720
+
+#--------------
+
+group	1 4
+at	0
+
+wait
+at	750
+
+spawn	Dino
+map     4
+coords	350 220
+at	750
+
+spawn	Dino
+map     1
+coords	-30 170
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Dino
+map     3
+coords	350 170
+at	750
+
+spawn	Dino
+coords	350 170
+at	750
+
+spawn	Wolf
+map     2
+coords	-30 170
+at	750
+
+spawn	Wolf
+map     1
+coords	-30 200
+at	750
+
+spawn	Boar
+coords	350 220
+at	750
+
+spawn	Boar
+coords	-30 170
+at	750
+
+#--------------
+group	1 3
+at	0
+
+wait
+at	1110
+
+spawn	Boar2
+map     1
+coords	350 170
+at	750
+
+spawn	Boar2
+coords	-30 170
+at	750
+
+spawn	Boar2
+map     1
+coords	-30 170
+at	750
+
+group	1 2
+at	0
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	350 160
+at	750
+
+#--------------
+
+group	1 5
+at	0
+
+wait
+at	1500
+
+spawn	Dino
+map     3
+coords	350 170
+at	750
+
+spawn	Dino
+map     4
+coords	-30 170
+at	750
+
+spawn	Dino
+coords	-30 170
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 160
+at	750
+
+spawn	Boar2
+coords	350 170
+at	750
+
+spawn	Boar
+map     1
+coords	-30 170
+at	750
+
+spawn	Dino
+map     2
+coords	-30 170
+at	750
+
+spawn	Dino
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+coords	350 160
+at	750
+
+spawn	Boar2
+coords	350 170
+at	750
+
+spawn	Boar2
+map     1
+coords	-30 170
+at	750
+
+spawn	Wolf
+coords	-30 170
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Wolf
+coords	350 160
+at	750
+
+spawn	Boar
+coords	350 170
+at	750
+
+spawn	Boar
+map     1
+coords	-30 170
+at	750
+
+spawn	Dino
+map     1
+coords	-30 170
+at	750
+
+spawn	Boar
+map     1
+coords	350 200
+at	750
+
+spawn	Boar2
+coords	350 160
+at	750
+
+#-------------
+group	3 3
+at	1967
+
+spawn	Boar
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 170
+at	750
+
+spawn	Boar
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Dino
+map     2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 160
+at	750
+
+
+
+group	3 3
+at	0
+
+spawn	Theif
+boss    1
+alias   Bear_Theif
+health  600
+coords	-30 160
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+map     1
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     2
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Boar
+map     3
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     3
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     3
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     4
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+map     1
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     2
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Boar
+map     3
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     3
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     3
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     4
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+map     1
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     2
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Boar
+map     3
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     3
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     3
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     4
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+map     1
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     2
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Boar
+map     3
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     3
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     3
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     4
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750
+
+spawn	Boar
+map     1
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     1
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     1
+coords	350 200
+at	750
+
+spawn	Boar
+map     2
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     2
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     2
+coords	350 200
+at	750
+
+spawn	Boar
+map     3
+coords	-30 160
+at	750
+
+spawn	Boar2
+map     1
+coords	350 200
+at	750
+
+spawn	Dino
+map     3
+coords	-30 200
+at	750
+
+spawn	Wolf
+map     3
+coords	350 200
+at	750
+
+spawn	Boar
+map     4
+coords	-30 160
+at	750
+
+spawn	Boar2
+coords	350 200
+at	750
+
+spawn	Dino
+map     4
+coords	-30 200
+at	750
+
+spawn	Wolf
+coords	350 200
+at	750

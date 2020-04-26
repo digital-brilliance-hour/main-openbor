@@ -1,0 +1,51 @@
+music		data/music/asia.bor
+
+direction	both
+
+cameratype 1
+
+settime         0
+notime          1
+#cansave	0
+
+spawn1  20      40
+spawn2  30      50
+spawn3  40      60
+spawn4  50      70
+                                        #{xratio} {yratio} {xposition} {yposition} {xspacing} {yspacing} {xrepeat} {yrepeat} {transparency} {alpha}
+#bglayer         data/levels/Lvl2-4/Backx.png 0.5      0.4       0           0          0           0          1         1          1
+
+#     {xpos} {ypos} {upperleft} {lowerleft} {upperright} {lowerright} {depth}{height}
+wall   0      190       -50          -50          500           330          60    250
+wall   640    190       -210          -30         350           350        60    250
+
+updatescript data/scripts/traileru.c
+
+#panel		data/levels/Lvl2-4/Flr4.gif none none
+#panel		data/levels/Lvl2-4/Backx.png none none
+panel		data/levels/Lvl2-4/plat.gif none none
+
+order	a
+
+light   200 -100
+at      0
+
+
+spawn lvl24b
+#flip 0
+coords	0 190 1
+at 0
+
+
+
+spawn   zankuro
+boss 1
+health 500
+coords	960 200 1
+at      51
+
+#spawn irohah
+#coords	0 266 1
+#item go00
+#at 693
+

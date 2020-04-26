@@ -1,0 +1,103 @@
+name	Grey
+health	100
+speed	12
+#dust	dust
+type	player
+gfxshadow  1
+icon	data/chars/grey/icon.gif
+diesound data/sounds/die1.wav
+aggression	4
+#projectilehit   enemy npc obstacle
+palette       data/chars/grey/idle1.gif
+nodieblink 3
+combostyle      1
+atchain         1 
+
+remap	data/chars/grey/idle1.gif data/chars/grey/map1.gif
+remap	data/chars/grey/idle1.gif data/chars/grey/map2.gif
+remap	data/chars/grey/idle1.gif data/chars/grey/map3.gif
+
+anim idle
+	loop	1
+	offset	100  175
+	bbox	80 70 30 100
+	delay	16
+	frame	data/chars/grey/idle1.gif
+	frame	data/chars/grey/idle2.gif
+	frame	data/chars/grey/idle3.gif
+
+
+anim walk
+	loop	1
+	offset	100  175
+	bbox	85 70 30 105
+	delay	12
+	frame	data/chars/grey/walk1.gif
+	frame	data/chars/grey/walk2.gif
+	frame	data/chars/grey/walk3.gif
+	frame	data/chars/grey/walk4.gif
+	frame	data/chars/grey/walk5.gif
+	frame	data/chars/grey/walk6.gif
+
+
+anim pain
+	loop	0
+	offset	100  175
+	bbox	78 70 30 105
+	delay	12
+	frame	data/chars/grey/pain1.gif
+		bbox  68  70  30  105
+	frame	data/chars/grey/pain2.gif
+
+
+anim fall
+	loop	0
+	delay	12
+	offset	100  175
+	bbox	65 76 65 85
+	throwframe 5
+		attack  65  76  30  85 5 1
+	frame	data/chars/grey/fall1.gif
+		bbox	35 100 120 45
+
+		attack  40  76  65  85  5  1
+	frame	data/chars/grey/fall2.gif
+		bbox	35 100 120 40
+
+		attack  0  0  0  0
+	frame	data/chars/grey/fall3.gif
+		bbox  50  100  90  75
+	frame	data/chars/grey/fall4.gif
+	frame	data/chars/grey/fall5.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	100  175
+	delay	10
+	frame	data/chars/grey/rise1.gif
+	frame	data/chars/grey/rise2.gif
+	frame	data/chars/grey/rise3.gif
+	frame	data/chars/grey/rise4.gif
+	frame	data/chars/grey/rise5.gif
+
+
+
+
+anim attack1
+	range	10 80
+	loop	0
+	delay	12
+	offset	100  175
+	bbox	88 70 30 105
+	frame	data/chars/grey/ata1.gif
+	attack	120 85 40 25 15 1
+	frame	data/chars/grey/ata2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/grey/ata3.gif
+	frame	data/chars/grey/idle1.gif
+
+
+

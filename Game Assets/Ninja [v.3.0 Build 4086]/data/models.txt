@@ -1,0 +1,137 @@
+nodropen	1
+noaircancel     2
+ajspecial	1
+nolost    	1
+autoland  	2
+blockratio	1
+spdirection 	1 1 1
+versusdamage 	0
+nodropen  	1
+maxattacks	10
+maxfollows	50
+maxfreespecials 50
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/0gamefx/flash.txt
+load	Darken		data/chars/0gamefx/darken.txt
+load	KMlist		data/chars/0gamefx/ml-km.txt
+load	BombA		data/chars/0gamefx/attack/bomba.txt
+load	DBFlash		data/chars/0gamefx/dflash.txt
+load	Smoke		data/chars/0gamefx/smoke.txt
+load	DBFlash		data/chars/0gamefx/dust.txt
+know	Star		data/chars/misc/star.txt
+load    knife           data/chars/misc/knife.txt
+#load dust2 data/chars/misc2/dust/dust2.txt
+load	blood       	data/chars/misc/blood.txt
+
+
+# Players must also be loaded.
+#load	Kazuya		data/chars/1kazuya/kazuya.txt
+load	Slash		data/chars/misc/flash/slash.txt
+
+load	Ninja		data/chars/ninja/ninja.txt
+load	Piau		data/chars/ninja/piau/piau.txt
+load	NSmoke		data/chars/ninja/smoke/nsmoke.txt
+load   		kgetsura	data/chars/kgetsura/kgetsura.txt
+#load	Asuka		data/chars/asuka/asuka.txt
+#load	Brian		data/chars/bryan/bryan.txt
+#know Ibuki  data/chars/Ibuki/Ibuki.txt
+#know zibuki  data/chars/Ibuki/zibuki.txt
+#know Ibuki  data/chars/Ibuki/Ibuki.txt
+#know iknf1 data/chars/Ibuki/iknf1.txt
+#know iknf2 data/chars/Ibuki/iknf2.txt
+#know iknf4 data/chars/Ibuki/iknf4.txt
+#know iobll1 data/chars/Ibuki/iobll1.txt
+#know dmlght data/chars/deathm/dmlght.txt
+
+# Enemies
+load   shingo	        data/chars/3shingo/shingo.txt
+load   hanzofly		data/chars/sshanzo/sshanzof.txt
+load   hanzoatk		data/chars/sshanzo/sshanzoa.txt
+load hanzogray		data/chars/sshanzo/sshanzoc.txt
+load   hanzoblaze	data/chars/sshanzo/sshanzob.txt
+load hanzogray2		data/chars/sshanzo/sshanzod.txt
+load hanzogray3		data/chars/sshanzo/sshanzoe.txt
+know    		ninja1	data/chars/ninja1/ninja1.txt
+know    		ninja2	data/chars/ninja2/ninja2.txt
+know    		mukuro	data/chars/mukuro/mukuro.txt
+know Another_K		data/chars/k2/k2.txt
+know    		Tsan	data/chars/Tsan/Tsan.txt
+know	Eiji		data/chars/5eiji/eiji.txt
+know	Eiji2		data/chars/5eiji/eiji2.txt
+know	Zankuro		data/chars/Zankuro/Zankuro.txt
+know	Musashi		data/chars/musashi/musashi.txt
+know K		data/chars/k/k.txt
+know gal	data/chars/gal/gal.txt
+know joe	data/chars/joe/joe.txt
+know maru	data/chars/maru/maru.txt
+know shermie	data/chars/shermie/shermie.txt
+know vision	data/chars/vision/vision.txt
+know    shigen	      data/chars/shigen/shigen.txt
+
+
+# Items and other objects can be loaded when needed.
+know	Apple		data/chars/misc/apple.txt
+know	Meat		data/chars/misc/meat.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+know	Gold		data/chars/misc/gold.txt
+know	Time		data/chars/misc/time.txt
+know	fire	   data/chars/misc/fire.txt
+know    Money      data/chars/misc/money.txt
+know    Jewel      data/chars/misc/jewel.txt
+know    1up        data/chars/misc/1up.txt
+know    Hamburger  data/chars/misc/hamb.txt
+know    Meat       data/chars/misc/meat.txt
+know	ypress	   data/chars/misc/ypress.txt
+know	xpress	   data/chars/misc/xpress.txt
+know	earde	   data/chars/misc/earde.txt
+know	farde	   data/chars/misc/farde.txt
+know	farde	   data/chars/misc/farde.txt
+know	1up		data/chars/misc/1up.txt
+know	apple		data/chars/misc/apple.txt
+know	chicken		data/chars/misc/chicken.txt
+know	pork		data/chars/misc/pork.txt
+know	fire		data/chars/misc/fire.txt
+know	fish		data/chars/misc/fish.txt
+know	jewel		data/chars/misc/jewel.txt
+know	lobster		data/chars/misc/lobster.txt
+know	meat		data/chars/misc/meat.txt
+know	money		data/chars/misc/money.txt
+know	scroll		data/chars/misc/scroll.txt
+know	shore		data/chars/misc/shore.txt
+know	snack		data/chars/misc/snack.txt
+know	sushi		data/chars/misc/sushi.txt
+know	time		data/chars/misc/time.txt
+know	wind		data/chars/misc/wind.txt
+know	wod		data/chars/misc/wod.txt
+know	skull		data/chars/misc/skull.txt
+know	jar		data/chars/misc/jar.txt
+
+# Obstacles (item containers)
+know	Box		data/chars/misc/box.txt
+know	Crate		data/chars/misc/crate.txt
+know	Trash		data/chars/misc/trash.txt
+know	Table		data/chars/misc/table.txt
+know	Chair		data/chars/misc/chair.txt
+know	Fence		data/chars/misc/fence.txt
+know	Drum		data/chars/misc/drum.txt
+know	Trolly		data/chars/misc/trolly.txt
+
+# Other stuff
+
+know	lvl13f	data/levels/lvl1-3/lvl13f.txt
+know	lvl13b	data/levels/lvl1-3/lvl13b.txt
+know    lvl23tr   data/levels/Lvl2-3/lvl23tr.txt
+know    lvl24b   data/levels/Lvl2-4/lvl24b.txt
+KNOW      beach     DATA/BGS/LEVEL5/beach.TXT
+
+#-------Sound Beach-------
+
+know	beac0001	data/bgs/level5/beac0001.txt				#Sound level5 background layer 0a.
+know	beac0002	data/bgs/level5/beac0002.txt				#Sound level5 background layer 0b.
+know	beac0003	data/bgs/level5/beac0003.txt				#Sound level5 background layer 1a.
+know	beac0004	data/bgs/level5/beac0004.txt				#Sound level5 background layer 1b.
+know	beac0005	data/bgs/level5/beac0005.txt				#Sound level5 background layer 1c.
+know	beac0006	data/bgs/level5/beac0006.txt				#Sound level5 background layer 2a.
+know	beac0008	data/bgs/level5/beac0008.txt				#Sound level5 foreground layer 0b.

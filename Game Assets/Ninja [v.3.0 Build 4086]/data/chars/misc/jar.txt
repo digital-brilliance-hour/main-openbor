@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	jar
+health	1
+type	obstacle
+shadow	0
+icon	data/chars/misc/jaricon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	25 40
+	bbox	0 -20 57 80
+	frame	data/chars/misc/jar.gif
+
+anim fall
+	delay	1000
+	offset	30 67
+	frame	data/chars/misc/jar2.gif

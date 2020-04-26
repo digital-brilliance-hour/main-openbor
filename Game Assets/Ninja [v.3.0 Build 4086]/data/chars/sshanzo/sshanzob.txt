@@ -1,0 +1,199 @@
+name          hanzoblaze
+type          enemy
+health        100
+speed         5
+blockodds     1
+palette	      data/chars/sshanzo/a102.png
+#palette 	data/chars/sshanzo/idle01.png
+jumpheight    4
+throw         5 2
+throwdamage   10
+bomb	      BombA
+aggression    -150
+gfxshadow     1
+noquake	      1
+
+icon	      data/chars/sshanzo/icon.png
+falldie	      2
+nodieblink 3
+aimove        Chasex
+atchain       3
+projectilehit enemy obstacle
+diesound      data/sounds/die1.wav
+animationscript data/scripts/scripts.c
+
+#-------remap  
+
+#-------animations
+anim spawn
+	 loop       0
+	 delay      40
+	 offset     19 117
+	 bbox       23 52 50 87
+	@cmd spawn01 "smoke" 0 0 1
+	 frame	    data/chars/0gamefx/empty.png        
+	 frame	    data/chars/sshanzo/idle01.png
+
+anim idle
+	 loop       1
+	 delay      25
+	 offset     19 117
+	 bbox       2 12 40 108
+         frame      data/chars/sshanzo/idle01.png
+
+anim walk
+	 loop      1
+	 delay     11
+	 offset    47 137
+	 bbox      23 52 50 87
+         frame     data/chars/sshanzo/wk01.png
+         frame     data/chars/sshanzo/wk02.png
+         frame     data/chars/sshanzo/wk03.png
+         frame     data/chars/sshanzo/wk04.png
+         frame     data/chars/sshanzo/wk05.png
+         frame     data/chars/sshanzo/wk06.png
+         frame	   data/chars/sshanzo/wk07.png
+
+anim attack1
+	range	   1 300
+	loop	   0
+	delay	   35
+	tossframe  1 50
+	bbox	   9 7 37 107
+	offset	   28 111
+	frame	   data/chars/sshanzo/throw.png
+	bbox	   3 15 92 72
+	offset	   66 86
+	frame	   data/chars/sshanzo/a104.png
+
+anim grabbed
+	 loop       0
+	 delay      10
+	 offset     40 95
+	 bbox       10 6 48 91
+         frame      data/chars/sshanzo/pain1.png
+
+anim block
+	 loop	   0
+	 delay     1
+	 offset    49 89
+         frame     data/chars/sshanzo/block.png
+	 move	   -15
+	 delay     4
+         frame     data/chars/sshanzo/block.png
+         frame     data/chars/sshanzo/block.png
+         frame     data/chars/sshanzo/block.png
+	 move	   -5
+         frame     data/chars/sshanzo/block.png
+         frame     data/chars/sshanzo/block.png
+         frame     data/chars/sshanzo/block.png
+
+
+anim pain
+	 loop       0
+	 delay      3
+	 offset     40 95
+	 bbox       10 6 48 91
+         frame      data/chars/sshanzo/pain1.png
+	 offset     38 95
+         frame      data/chars/sshanzo/pain1.png
+	 offset     40 95
+         frame      data/chars/sshanzo/pain1.png
+	 delay      40
+	 offset     38 95
+         frame      data/chars/sshanzo/pain1.png
+
+anim pain2
+	 loop       0
+	 delay      3
+	 offset     32 103
+	 bbox       6 12 58 93
+         frame      data/chars/sshanzo/pain2.png
+	 offset     30 103
+         frame      data/chars/sshanzo/pain2.png
+	 offset     32 103
+         frame      data/chars/sshanzo/pain2.png
+	 delay      40
+	 offset     30 103
+         frame      data/chars/sshanzo/pain2.png
+
+anim fall
+	 loop       0
+         landframe  3
+	 delay      30
+	 offset     60 75
+	 bbox       5 12 118 78
+         frame      data/chars/sshanzo/fall1.png
+	 delay      10
+         frame      data/chars/sshanzo/fall2.png
+	 delay      1000
+         frame      data/chars/sshanzo/fall3.png
+	 offset     60 62
+	 bbox       3 30 122 36
+         frame      data/chars/sshanzo/fall4.png
+
+anim rise
+	 loop       0
+	 delay      20
+	 offset     35 75
+	 bbox       0 0 0 0
+         frame      data/chars/sshanzo/rise01.png
+
+anim death
+	 loop       0
+         landframe  3
+	 delay      30
+	 offset     55 57
+         frame      data/chars/sshanzo/fall4.png
+
+#################################################################
+#			Slam Animations				#
+#################################################################
+
+anim fall7
+	delay 1000
+
+## offset head ##
+
+# 0 - start fall up 
+	 offset	8 33
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/fall1.png
+# 1 - falling down 
+	 offset	14 69
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/fall3.png
+# 2 - slam
+	 offset	7 98
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/slam01.png
+# 3 - slamed
+	 offset	7 98
+	 bbox	1 18 50 81
+	 frame	data/chars/sshanzo/slam01.png
+# 4 - picked up
+	 offset	86 54
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/slam03.png
+# 5 - picked down
+	 offset	35 87
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/slam04.png
+# 6 - grabbed
+	 offset	29 20
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/pain2.png
+# 7 - grabbed upside down
+	 offset	13 90
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/slam06.png
+# 8 - falling straight face up
+	 offset	16 53
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/fall2.png
+# 9 - falling straight face down
+	 offset	113 48
+	 bbox	0 0 0 0
+	 frame	data/chars/sshanzo/slam05.png
+
+

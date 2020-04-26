@@ -1,0 +1,27 @@
+name	 pwwv
+health   0
+speed    25
+type     pshot
+counter  9999
+shootnum 9999
+nolife   1
+alpha    1
+remove   1
+candamage enemy obstacle
+gfxshadow	1
+
+anim idle
+	loop	1
+	delay	3
+	offset	50 78
+	seta    0
+	attack  62 85 69 71 14 1 0 0 13
+	frame	data/chars/0misc1/gnd01.gif
+	frame	data/chars/0misc1/gnd02.gif
+	frame	data/chars/0misc1/gnd03.gif
+	frame	data/chars/0misc1/gnd04.gif
+
+
+
+
+

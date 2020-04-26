@@ -1,0 +1,77 @@
+name    Dif2
+health  100
+type enemy
+nomove	1, 1
+cantgrab	 1
+gfxshadow	1
+icon	data/chars/misc/lampicon.gif
+speed   0
+subtype notgrab
+offscreenkill 1000000
+
+
+
+	animationscript	data/scripts/aniScp.c
+
+
+
+anim	idle
+	bbox	42 0 34 108
+	delay	14
+	loop	1
+	offset	60 102
+	frame	data/chars/misc2/scr/diffdwn.gif
+		
+anim	pain
+	loop	0
+	bbox	0 0 0 0
+	delay	5
+	offset	60 102
+	@cmd	increasehealth 50
+	@cmd	setvdifficulty 0
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+	@cmd	setvdifficulty 2
+	frame	data/chars/misc2/scr/diffdwn.gif
+		
+#|edited by openBor Stats v 0.48
+		

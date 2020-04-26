@@ -1,0 +1,37 @@
+Name	brn
+type	none
+alpha    1
+lifespan 1.15
+subject_to_gravity	 0
+
+	animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	38 57
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/burn/brn1.gif
+	frame	data/chars/misc2/burn/brn2.gif
+	frame	data/chars/misc2/burn/brn3.gif
+	offset	37 59
+	frame	data/chars/misc2/burn/brn4.gif
+	offset	37 61
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/burn/brn5.gif
+	frame	data/chars/misc2/burn/brn6.gif
+	offset	37 64
+	frame	data/chars/misc2/burn/brn7.gif
+	offset	37 65
+	frame	data/chars/misc2/burn/brn8.gif
+	offset	37 66
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/burn/brn9.gif
+		
+#|edited by openBor Stats v 0.50
+		

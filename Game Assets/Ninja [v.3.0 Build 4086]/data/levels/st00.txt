@@ -1,0 +1,69 @@
+#music		data/music/ki2jago.ogg
+music		data/music/entertheninja.bor
+background	data/levels/st00/b01.gif
+panel		data/levels/st00/p01.gif
+frontpanel	data/levels/st00/fg2.gif
+direction       both
+light  		10   -30
+at       	0
+settime         0
+notime          1
+noslow          1
+order		a
+cameratype 	1
+
+#wall    624 224 -90 0 8000 8000 90 8000
+
+#script
+#updatescript data/scripts/traileru.c
+
+#-------1
+
+group   100 100
+at      0
+
+spawn   hanzoblaze
+coords  300 190
+at      0
+
+spawn   hanzofly
+coords  200 280
+at      0
+
+spawn   hanzoatk
+coords  260 250
+at      0
+
+spawn	hanzoblaze
+alias   Ninja
+coords	350 200
+at	0
+
+spawn	hanzoblaze
+alias   Ninja
+coords	-30 200
+at	0
+
+spawn	hanzoblaze
+alias   Ninja
+coords	350 160
+at	350
+
+spawn	hanzoatk
+alias   Ninja
+coords	350 220
+at	350
+
+spawn	hanzoblaze
+alias   Ninja
+health	200
+coords	500 190
+at	400
+
+spawn	Eiji2
+alias   Ninja_Leader
+boss 1
+#map 3
+health	250
+coords	520 190
+at	400

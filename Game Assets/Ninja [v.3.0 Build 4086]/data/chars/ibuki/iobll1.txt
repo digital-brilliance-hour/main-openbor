@@ -1,0 +1,60 @@
+name    iobll1
+type	    pshot
+nolife      1
+remove      0
+gfxshadow   1
+candamage   enemy obstacle
+alpha   1
+
+animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	rangea	50 53
+	range	-65 130
+	rangez	-65 65
+	burn	0 0 132 104 18 4 0 0 6 60
+	delay	8
+	move	10
+	offset	66 53
+	hitflash	fbubb
+	sound	data/chars/cab/s/fx19.wav
+	@cmd	tossentityduringfall 2 2 0
+	frame	data/chars/ibuki/821.gif
+	@cmd	tossentityduringfall 2 2 0
+	frame	data/chars/ibuki/822.gif
+	@cmd	tossentityduringfall 2 2 0
+	frame	data/chars/ibuki/823.gif
+	@cmd	tossentityduringfall 2 2 0
+	frame	data/chars/ibuki/824.gif
+	@cmd	tossentityduringfall 2 2 0
+	burn	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ibuki/825.gif
+	@cmd	tossentityduringfall 2 2 0
+	offset	50 16
+	frame	data/chars/ibuki/826.gif
+	offset	50 24
+	frame	data/chars/ibuki/827.gif
+	frame	data/chars/ibuki/828.gif
+	offset	50 13
+	frame	data/chars/ibuki/829.gif
+	offset	50 15
+	frame	data/chars/ibuki/830.gif
+	offset	50 19
+	frame	data/chars/ibuki/831.gif
+	@cmd	freeself 1
+	frame	data/chars/ibuki/831.gif
+		
+#|edited by openBor Stats v 0.49
+		

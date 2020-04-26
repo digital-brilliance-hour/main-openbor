@@ -1,0 +1,45 @@
+name    gShot
+
+speed       1
+nolife      1
+remove      0
+alpha   6
+subject_to_gravity	0
+candamage	enemy obstacle
+
+
+	animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+
+
+
+anim	idle
+	attack	0 0 300 35 8 1 0 0 6 38
+	loop	0
+	delay	4
+	offset	2 16
+	hitflash	fbubb
+	frame	data/chars/misc2/gshot1.gif
+	offset	1 17
+	frame	data/chars/misc2/gshot2.gif
+	offset	1 22
+	frame	data/chars/misc2/gshot3.gif
+	offset	1 25
+	frame	data/chars/misc2/gshot4.gif
+	offset	1 25
+	frame	data/chars/misc2/gshot5.gif
+	offset	1 22
+	frame	data/chars/misc2/gshot6.gif
+	offset	1 14
+	frame	data/chars/misc2/gshot7.gif
+	offset	1 14
+	@cmd	freeself 1
+	frame	data/chars/misc2/gshot7.gif
+		
+#|edited by openBor Stats v 0.49
+		

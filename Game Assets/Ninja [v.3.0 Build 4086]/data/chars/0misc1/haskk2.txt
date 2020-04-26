@@ -1,0 +1,33 @@
+name	 haskk2
+health   0
+speed    20
+type     pshot
+counter  9999
+shootnum 9999
+nolife   1
+remove   1
+candamage enemy obstacle
+gfxshadow	1
+alpha	 1
+
+anim idle
+	loop	1
+	delay	3
+	offset	15 87
+	hitfx   data/sounds/beat4.wav
+	hitflash Flash3
+	attack  89 24 48 155 80 1 0 0 13
+	dropv   3 3 0
+	frame	data/chars/0misc1/haskk01.gif
+	frame	data/chars/0misc1/haskk02.gif
+	frame	data/chars/0misc1/haskk03.gif
+	frame	data/chars/0misc1/haskk04.gif
+	frame	data/chars/0misc1/haskk05.gif
+
+
+
+
+
+
+
+

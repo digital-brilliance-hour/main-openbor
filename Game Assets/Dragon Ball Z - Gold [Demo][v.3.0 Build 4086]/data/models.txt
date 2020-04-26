@@ -1,0 +1,47 @@
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+# Players must also be loaded.
+load	Goku	        data/chars/Goku/Goku.txt
+load	Gohan	        data/chars/Gohan/Gohan.txt
+
+# Items and other objects can be loaded when needed.
+know	Apple		data/chars/misc/apple.txt
+know	Burger		data/chars/misc/burger.txt
+know	1up		data/chars/misc/1up.txt
+know	Milk		data/chars/misc/milk.txt
+know	Gold		data/chars/misc/gold.txt
+know	Diamond		data/chars/misc/diamond.txt
+know	Meat		data/chars/misc/Meat.txt
+
+
+# Obstacles (item containers)
+know	Box		data/chars/misc/box.txt
+know	Rock		data/chars/misc/rock.txt
+know	Block		data/chars/misc/block.txt
+
+
+# Enemies
+know	Wolf	        data/chars/Wolf/Wolf.txt
+know	Boar	        data/chars/Boar/Boar.txt
+know	Dino	        data/chars/Dino/Dino.txt
+know	Boar2	        data/chars/Boar2/Boar2.txt
+know	Ball	        data/chars/Ball/Ball.txt
+know	Theif	        data/chars/Theif/Theif.txt
+
+# Other stuff
+know	Knife		data/chars/misc/knife.txt
+know	Shot		data/chars/misc/shot.txt
+know	Star		data/chars/misc/star.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	Furnace		data/chars/misc/furnace.txt
+know	Crab		data/chars/crab/crab.txt
+know	Lobster		data/chars/Lobster/Lobster.txt

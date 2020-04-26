@@ -1,0 +1,42 @@
+Name	brne
+type	none
+alpha    1
+lifespan 1.15
+candamage enemy
+subject_to_gravity	 0
+
+	animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	12
+	offset	37 61
+	quakeframe	0 1 2
+	@cmd	bindtoparent 1 0 0 1
+	burn	0 0 87 96 6 0 0 0 6 60
+	offset	37 61
+	frame	data/chars/misc2/burn/brn6.gif
+	offset	37 64
+	frame	data/chars/misc2/burn/brn7.gif
+	offset	37 65
+	frame	data/chars/misc2/burn/brn8.gif
+	offset	37 66
+	@cmd	bindtoparent 1 0 0 1
+	frame	data/chars/misc2/burn/brn9.gif
+	@cmd	freeself 1
+	frame	data/chars/misc2/burn/brn9.gif
+		
+#|edited by openBor Stats v 0.50
+		

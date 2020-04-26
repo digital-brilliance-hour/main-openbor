@@ -1,0 +1,78 @@
+name    snk3d
+health  100
+type enemy
+nomove	1, 1
+antigrab	1000
+cantgrab	 1
+gfxshadow	1
+icon	data/chars/misc/lampicon.gif
+speed   0
+subtype notgrab
+score 0
+offscreenkill 1000000
+
+
+
+animationscript	data/scripts/aniScp.c
+
+
+anim	idle
+	bbox	42 0 34 108
+	delay	14
+	loop	1
+	offset	60 102
+	frame	Data/chars/misc2/scr/snk3d.gif
+		
+anim	pain
+	loop	0
+	bbox	0 0 0 0
+	delay	5
+	offset	60 102
+	@cmd	increasehealth 50
+	@cmd	setsnkdepth 1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+	@cmd	setsnkdepth -1
+	frame	Data/chars/misc2/scr/snk3d.gif
+		
+#|edited by openBor Stats v 0.48
+		

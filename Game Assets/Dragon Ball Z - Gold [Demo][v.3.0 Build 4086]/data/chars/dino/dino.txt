@@ -1,0 +1,78 @@
+
+name	Dino
+health	25
+speed	10
+type	enemy
+shadow	3
+icon	data/chars/Dino/icon.gif
+
+
+remap	data/chars/Dino/idle00.gif data/chars/Dino/map1.gif
+remap	data/chars/Dino/idle00.gif data/chars/Dino/map2.gif
+remap	data/chars/Dino/idle00.gif data/chars/Dino/map3.gif
+remap	data/chars/Dino/idle00.gif data/chars/Dino/map4.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	39 40 44 33	
+	frame	data/chars/Dino/idle00.gif
+  	frame	data/chars/Dino/idle01.gif
+	frame	data/chars/Dino/idle02.gif
+  	frame	data/chars/Dino/idle03.gif
+	frame	data/chars/Dino/idle04.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	39 40 44 33	
+	frame	data/chars/Dino/idle00.gif
+  	frame	data/chars/Dino/idle01.gif
+	frame	data/chars/Dino/idle02.gif
+  	frame	data/chars/Dino/idle03.gif
+	frame	data/chars/Dino/idle04.gif
+
+
+anim attack1
+	loop	0
+	delay	10
+	offset	38 77
+        move    20
+	attack	49 43 33 25 9 1
+  	frame	data/chars/Dino/dive.gif
+  	frame	data/chars/Dino/dive.gif
+  	frame	data/chars/Dino/dive.gif
+  	frame	data/chars/Dino/dive.gif
+
+
+anim pain
+	loop	0
+	offset	38 77
+	bbox	39 40 44 33		
+	delay	20
+	frame   data/chars/Dino/pain.gif
+
+
+anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	39 32 20 38 4 1
+	frame   data/chars/Dino/fall00.gif
+	frame   data/chars/Dino/fall00.gif
+	frame   data/chars/Dino/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	38 77
+	delay	7
+	frame   data/chars/Dino/fall01.gif
+	frame   data/chars/Dino/fall00.gif
+	frame   data/chars/Dino/pain.gif

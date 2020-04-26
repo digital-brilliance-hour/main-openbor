@@ -1,0 +1,414 @@
+name	Kagetsura
+health	100
+speed	9
+type	player
+shadow	0
+diesound data/sounds/die1.wav
+icon	data/chars/Kgetsura/icon.gif
+palette data/chars/Kgetsura/stand01.gif #data/chars/Kgetsura/ALT1.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	160 190
+	bbox	137 99 54 90
+	frame	data/chars/Kgetsura/stand01.gif
+	frame	data/chars/Kgetsura/stand02.gif
+	frame	data/chars/Kgetsura/stand03.gif
+	frame	data/chars/Kgetsura/stand04.gif
+	frame	data/chars/Kgetsura/stand05.gif
+	frame	data/chars/Kgetsura/stand06.gif
+	frame	data/chars/Kgetsura/stand07.gif
+	frame	data/chars/Kgetsura/stand08.gif
+		
+anim walk
+	loop	1
+	delay	10
+	offset	160 190
+	bbox	143 101 52 95
+	frame	data/chars/Kgetsura/walk01.gif
+	frame	data/chars/Kgetsura/walk02.gif
+	frame	data/chars/Kgetsura/walk03.gif
+	frame	data/chars/Kgetsura/walk04.gif
+	frame	data/chars/Kgetsura/walk05.gif
+	frame	data/chars/Kgetsura/walk06.gif
+	frame	data/chars/Kgetsura/walk07.gif
+	frame	data/chars/Kgetsura/walk08.gif
+	
+anim get
+	loop	0
+	delay	5
+	offset	110 215
+	frame	data/chars/Kgetsura/get01.gif
+	frame	data/chars/Kgetsura/get02.gif
+	frame	data/chars/Kgetsura/get03.gif
+	delay	30
+	frame	data/chars/Kgetsura/get03.gif
+	delay	5
+	frame	data/chars/Kgetsura/get03.gif
+	frame	data/chars/Kgetsura/get02.gif
+	
+anim attack1
+	loop	0
+	delay	4
+	bbox	126 101 62 97
+	offset	150 192
+	frame	data/chars/Kgetsura/punch01.gif
+	frame	data/chars/Kgetsura/punch02.gif
+	attack	170 118 45 9 5
+	frame	data/chars/Kgetsura/punch03.gif
+	attack 	0 0 0 0 0
+	frame	data/chars/Kgetsura/punch04.gif
+	delay	4
+	frame	data/chars/Kgetsura/punch05.gif
+	attack 	0 0 0 0 0
+	
+anim attack2
+	loop	0
+	delay	3
+	offset	94 137
+	bbox	66 49 43 88
+	frame	data/chars/Kgetsura/AT2-01.gif
+	frame	data/chars/Kgetsura/AT2-02.gif
+	bbox	73 49 43 88
+	frame	data/chars/Kgetsura/AT2-03.gif
+#	frame	data/chars/Kgetsura/AT2-04.gif
+	bbox	65 43 45 95
+	frame	data/chars/Kgetsura/AT2-05.gif
+	frame	data/chars/Kgetsura/AT2-06.gif
+	bbox	77 43 45 95
+	frame	data/chars/Kgetsura/AT2-07.gif
+	bbox	94 44 45 95
+	frame	data/chars/Kgetsura/AT2-08.gif
+	bbox	113 49 45 95
+	frame	data/chars/Kgetsura/AT2-09.gif
+	frame	data/chars/Kgetsura/AT2-10.gif
+	attack	138 54 73 84 15
+	frame	data/chars/Kgetsura/AT2-09.gif
+	frame	data/chars/Kgetsura/AT2-10.gif
+	frame	data/chars/Kgetsura/AT2-09.gif
+	frame	data/chars/Kgetsura/AT2-10.gif
+	frame	data/chars/Kgetsura/AT2-09.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Kgetsura/AT2-11.gif
+	frame	data/chars/Kgetsura/AT2-12.gif
+	frame	data/chars/Kgetsura/AT2-13.gif
+	frame	data/chars/Kgetsura/AT2-14.gif
+	bbox	94 48 45 95
+	frame	data/chars/Kgetsura/AT2-15.gif
+	bbox	75 43 45 95
+	frame	data/chars/Kgetsura/AT2-16.gif
+	frame	data/chars/Kgetsura/AT2-17.gif
+	attack	111 53 73 84 12
+	frame	data/chars/Kgetsura/AT2-16.gif
+	frame	data/chars/Kgetsura/AT2-17.gif
+	frame	data/chars/Kgetsura/AT2-16.gif
+	frame	data/chars/Kgetsura/AT2-17.gif
+	frame	data/chars/Kgetsura/AT2-16.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kgetsura/AT2-18.gif
+	frame	data/chars/Kgetsura/AT2-19.gif
+	frame	data/chars/Kgetsura/AT2-20.gif
+	frame	data/chars/Kgetsura/AT2-21.gif
+
+anim attack3
+	loop	0
+ 	delay	3
+	offset	86 136
+	bbox	72 36 57 102
+	sound	data/chars/kgetsura/sounds/at3.wav
+	frame	data/chars/Kgetsura/AT3-01.gif
+	frame	data/chars/Kgetsura/AT3-02.gif
+	bbox	84 43 57 102
+	frame	data/chars/Kgetsura/AT3-03.gif
+	frame	data/chars/Kgetsura/AT3-04.gif
+	bbox	88 55 68 85
+	frame	data/chars/Kgetsura/AT3-05.gif
+	attack	127 79 91 52 45 1
+	bbox	92 59 70 82
+	frame	data/chars/Kgetsura/AT3-06.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kgetsura/AT3-07.gif
+	frame	data/chars/Kgetsura/AT3-08.gif
+	frame	data/chars/Kgetsura/AT3-09.gif
+	frame	data/chars/Kgetsura/AT3-10.gif
+	DELAY	25
+	frame	data/chars/Kgetsura/AT3-10b.gif
+	DELAY	3
+	sound	data/chars/kgetsura/sounds/spin.wav
+	frame	data/chars/Kgetsura/AT3-11.gif
+	frame	data/chars/Kgetsura/AT3-12.gif
+	frame	data/chars/Kgetsura/AT3-13.gif
+	frame	data/chars/Kgetsura/AT3-14.gif
+	frame	data/chars/Kgetsura/AT3-15.gif
+	frame	data/chars/Kgetsura/AT3-16.gif
+	frame	data/chars/Kgetsura/AT3-17.gif
+	frame	data/chars/Kgetsura/AT3-18.gif
+	frame	data/chars/Kgetsura/AT3-19.gif
+	offset	86 153
+	bbox	84 66 51 89
+	frame	data/chars/Kgetsura/AT3-20.gif
+	offset	86 136
+	frame	data/chars/Kgetsura/AT3-21.gif
+	frame	data/chars/Kgetsura/AT3-22.gif
+	frame	data/chars/Kgetsura/AT3-23.gif
+	bbox	72 44 48 96
+	frame	data/chars/Kgetsura/AT3-24.gif
+	frame	data/chars/Kgetsura/AT3-25.gif
+	
+anim special
+	loop	0
+	delay	5
+	offset 	150 180
+	frame	data/chars/Kgetsura/LSP01.gif
+	frame	data/chars/Kgetsura/LSP02.gif
+	frame	data/chars/Kgetsura/LSP03.gif
+	frame	data/chars/Kgetsura/LSP04.gif
+	frame	data/chars/Kgetsura/LSP05.gif
+	frame	data/chars/Kgetsura/LSP06.gif
+	frame	data/chars/Kgetsura/LSP07.gif
+	frame	data/chars/Kgetsura/LSP08.gif
+	sound	data/chars/kgetsura/sounds/electric.wav
+	frame	data/chars/Kgetsura/LSP09.gif	
+	frame	data/chars/Kgetsura/LSP10.gif
+	attack	61 56 179 139 5
+	frame	data/chars/Kgetsura/LSP11.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kgetsura/LSP12.gif
+	frame	data/chars/Kgetsura/LSP13.gif
+	frame	data/chars/Kgetsura/LSP14.gif
+	attack	61 56 179 139 5
+	frame	data/chars/Kgetsura/LSP15.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kgetsura/LSP16.gif
+	frame	data/chars/Kgetsura/LSP17.gif
+	frame	data/chars/Kgetsura/LSP18.gif
+	attack	61 56 179 139 5
+	frame	data/chars/Kgetsura/LSP19.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kgetsura/LSP20.gif
+	frame	data/chars/Kgetsura/LSP21.gif
+	frame	data/chars/Kgetsura/LSP22.gif
+	blast	61 56 179 139 5 1
+	frame	data/chars/Kgetsura/LSP23.gif
+	frame	data/chars/Kgetsura/LSP24.gif
+	frame	data/chars/Kgetsura/LSP25.gif
+	frame	data/chars/Kgetsura/LSP26.gif
+	frame	data/chars/Kgetsura/LSP27.gif
+	frame	data/chars/Kgetsura/LSP28.gif
+	frame	data/chars/Kgetsura/LSP29.gif
+	frame	data/chars/Kgetsura/LSP30.gif
+	frame	data/chars/Kgetsura/LSP31.gif
+	frame	data/chars/Kgetsura/LSP32.gif
+	blast	0 0 0 0 0
+	
+anim freespecial
+	loop	0
+	delay	4
+	offset	154 209
+	bbox	132 117 57 97
+	sound	data/chars/kgetsura/sounds/storm.wav
+	frame	data/chars/Kgetsura/FSP01.gif
+	frame	data/chars/Kgetsura/FSP02.gif
+	frame	data/chars/Kgetsura/FSP03.gif
+	frame	data/chars/Kgetsura/FSP04.gif
+	frame	data/chars/Kgetsura/FSP05.gif
+	frame	data/chars/Kgetsura/FSP06.gif
+	bbox	122 105 60 111
+	frame	data/chars/Kgetsura/FSP07.gif
+	frame	data/chars/Kgetsura/FSP08.gif
+	frame	data/chars/Kgetsura/FSP09.gif
+	bbox	141 103 60 108
+	frame	data/chars/Kgetsura/FSP10.gif
+	bbox	151 117 65 97
+	frame	data/chars/Kgetsura/FSP11.gif
+	frame	data/chars/Kgetsura/FSP12.gif
+	ATTACK	186 141 111 28 35 1
+	bbox	164 138 69 75
+	frame	data/chars/Kgetsura/FSP13.gif
+	frame	data/chars/Kgetsura/FSP14.gif
+	frame	data/chars/Kgetsura/FSP15.gif
+	frame	data/chars/Kgetsura/FSP16.gif
+	frame	data/chars/Kgetsura/FSP17.gif
+	frame	data/chars/Kgetsura/FSP18.gif
+	frame	data/chars/Kgetsura/FSP19.gif
+	frame	data/chars/Kgetsura/FSP20.gif
+	frame	data/chars/Kgetsura/FSP21.gif
+	ATTACK	0 0 0 0 0
+	frame	data/chars/Kgetsura/FSP22.gif
+	bbox	156 127 64 85
+	frame	data/chars/Kgetsura/FSP23.gif
+	frame	data/chars/Kgetsura/FSP24.gif
+	bbox	146 113 64 102
+	frame	data/chars/Kgetsura/FSP25.gif
+	bbox	139 110 51 104
+	frame	data/chars/Kgetsura/FSP26.gif
+	frame	data/chars/Kgetsura/FSP27.gif
+
+anim jump
+	loop	0
+	offset	40 115
+	delay	10
+	bbox	9 51 67 81
+	frame	data/chars/Kgetsura/jump01.gif
+	bbox	22 28 48 109
+	frame	data/chars/Kgetsura/jump02.gif
+	bbox	19 45 52 85
+delay	30
+	frame	data/chars/Kgetsura/jump03.gif
+	bbox	16 18 50 113
+	offset	38 115
+delay	50
+	frame	data/chars/Kgetsura/jump04.gif
+	
+anim jumpattack
+	loop	0
+	offset	75 115
+	delay	6
+	bbox	67 27 46 96
+	sound	data/chars/kgetsura/sounds/jump.wav
+	frame	data/chars/Kgetsura/JA1-01.gif
+	bbox	55 17 55 106
+	frame	data/chars/Kgetsura/JA1-02.gif
+	bbox	63 24 46 95
+	frame	data/chars/Kgetsura/JA1-03.gif
+	attack	95 8 72 122 20 1
+	bbox	58 30 59 86
+	frame	data/chars/Kgetsura/JA1-04.gif
+	frame	data/chars/Kgetsura/JA1-05.gif
+	frame	data/chars/Kgetsura/JA1-06.gif
+	delay	50
+	attack	0 0 0 0 0 0
+	
+anim jumpattack2
+	loop	0
+	offset	50 115
+	delay	10
+	bbox	39 37 51 77
+	frame	data/chars/Kgetsura/JA2-01.gif
+	attack	70 53 62 63 10
+	bbox	33 31 75 68
+	frame	data/chars/Kgetsura/JA2-02.gif
+	frame	data/chars/Kgetsura/JA2-03.gif
+	frame	data/chars/Kgetsura/JA2-02.gif
+	frame	data/chars/Kgetsura/JA2-03.gif
+	frame	data/chars/Kgetsura/JA2-02.gif
+	frame	data/chars/Kgetsura/JA2-03.gif
+	frame	data/chars/Kgetsura/JA2-02.gif
+	frame	data/chars/Kgetsura/JA2-03.gif
+	frame	data/chars/Kgetsura/JA2-02.gif
+	frame	data/chars/Kgetsura/JA2-03.gif
+	attack 	0 0 0 0 0
+
+anim grab
+	loop	0
+	offset	190 200
+	bbox	165 105 53 96
+	delay	10
+	frame	data/chars/Kgetsura/grab1.gif
+	frame	data/chars/Kgetsura/grab2.gif
+	
+anim grabattack
+	loop	0
+	offset	190 200
+	bbox	145 106 62 95
+	delay	7
+	frame	data/chars/Kgetsura/grab01.gif
+	bbox	156 107 79 90
+	frame	data/chars/Kgetsura/grab02.gif
+	attack	190 109 81 48 10
+	delay	17
+	bbox	155 105 68 100
+	frame	data/chars/Kgetsura/grab03.gif	
+	attack	0 0 0 0 0
+
+anim grabattack2
+	loop	0
+	offset	165 200
+	bbox	148 118 50 89
+	delay	5
+	frame	data/chars/Kgetsura/gra01.gif
+	sound	data/chars/kgetsura/sounds/kick.wav
+	frame	data/chars/Kgetsura/gra02.gif
+	bbox	145 92 48 112
+	frame	data/chars/Kgetsura/gra03.gif
+	bbox	148 91 47 95
+	frame	data/chars/Kgetsura/gra04.gif
+	bbox	148 93 61 86
+	frame	data/chars/Kgetsura/gra05.gif
+	bbox	147 91 71 80
+	frame	data/chars/Kgetsura/gra06.gif
+	bbox	174 89 66 78
+	attack	198 122	66 22 25 1
+	frame	data/chars/Kgetsura/gra07.gif
+	frame	data/chars/Kgetsura/gra08.gif
+	bbox	156 94 71 80
+	DELAY	6
+	frame	data/chars/Kgetsura/gra09.gif
+	bbox	151 97 58 90
+	frame	data/chars/Kgetsura/gra10.gif
+	bbox	147 103 55 101
+	frame	data/chars/Kgetsura/gra11.gif
+	bbox	140 112 52 93
+	frame	data/chars/Kgetsura/gra12.gif
+	bbox	134 131 63 72
+	frame	data/chars/Kgetsura/gra13.gif
+	frame	data/chars/Kgetsura/gra14.gif
+	attack 	0 0 0 0 0
+	
+anim throw
+	loop	0
+	offset	100 200
+	delay	5
+	sound	data/chars/kgetsura/sounds/throw.wav
+	frame	data/chars/Kgetsura/THROW01.GIF
+	frame	data/chars/Kgetsura/THROW02.GIF
+	frame	data/chars/Kgetsura/THROW03.GIF
+	frame	data/chars/Kgetsura/THROW04.GIF
+	frame	data/chars/Kgetsura/THROW05.GIF
+	frame	data/chars/Kgetsura/THROW06.GIF
+	frame	data/chars/Kgetsura/THROW07.GIF
+	frame	data/chars/Kgetsura/THROW08.GIF
+	frame	data/chars/Kgetsura/THROW09.GIF
+	frame	data/chars/Kgetsura/THROW10.GIF
+
+anim pain
+	loop	0
+	offset	160 200
+	bbox	120 111 64 96
+	delay	8
+	frame	data/chars/Kgetsura/pain01.gif
+	delay	40
+	bbox	102 122 74 82
+	frame	data/chars/Kgetsura/pain02.gif
+	delay	8
+	bbox	120 111 64 96
+	frame	data/chars/Kgetsura/pain01.gif
+	
+anim fall
+	loop	0
+	offset	60 68
+	delay	32
+	sound	data/chars/kgetsura/sounds/fall2.wav
+	attack	23 30 83 44 10 1
+	frame	data/chars/Kgetsura/fall01.gif
+	attack	20 29 83 44 10 1
+	frame	data/chars/Kgetsura/fall03.gif
+	attack	19 43 98 26 10 1
+	frame	data/chars/Kgetsura/fall05.gif
+	
+anim rise
+	loop	0
+	offset	90 194
+	delay	10
+	frame	data/chars/Kgetsura/rise01.gif
+	frame	data/chars/Kgetsura/rise02.gif
+	frame	data/chars/Kgetsura/rise03.gif
+	frame	data/chars/Kgetsura/rise03.gif
+	
+anim land
+	loop	0
+	offset	40 125
+	delay	25
+	bbox	19 29 33 84
+	frame	data/chars/Kgetsura/jump01.gif

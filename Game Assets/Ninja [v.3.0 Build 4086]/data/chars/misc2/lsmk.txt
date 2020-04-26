@@ -1,0 +1,31 @@
+name    lsmk
+type	    pshot
+speed       4
+nolife      1
+gfxshadow   1
+alpha	6
+
+
+	animationscript	data/scripts/aniScp.c
+
+anim	idle
+	loop	0
+	delay	8
+	offset	52 84
+	frame	data/chars/misc2/lsmk1.gif
+	offset	52 113
+	frame	data/chars/misc2/lsmk2.gif
+	offset	43 118
+	frame	data/chars/misc2/lsmk3.gif
+	offset	52 119
+	frame	data/chars/misc2/lsmk4.gif
+	offset	52 122
+	frame	data/chars/misc2/lsmk5.gif
+	offset	6 103
+	frame	data/chars/misc2/lsmk6.gif
+	offset	8 92
+	@cmd	freeself 1
+	frame	data/chars/misc2/lsmk7.gif
+		
+#|edited by openBor Stats v 0.23
+		

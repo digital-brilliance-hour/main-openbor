@@ -1,0 +1,48 @@
+name flght
+type	none
+shadow	0
+toflip  1
+alpha   6
+lifespan 1.15
+subject_to_gravity	 0
+
+animationscript	data/scripts/aniScp.c
+
+
+
+anim	idle
+	loop	1
+	delay	3
+	offset	96 100
+	offset	28 25
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/flsh/lght1.gif
+	offset	31 28
+	frame	data/chars/misc2/flsh/lght2.gif
+	offset	33 21
+	frame	data/chars/misc2/flsh/lght3.gif
+	offset	28 23
+	frame	data/chars/misc2/flsh/lght4.gif
+	offset	27 27
+	frame	data/chars/misc2/flsh/lght5.gif
+	offset	26 25
+	frame	data/chars/misc2/flsh/lght6.gif
+	offset	28 26
+	frame	data/chars/misc2/flsh/lght7.gif
+	offset	32 31
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/flsh/lght8.gif
+	offset	26 25
+	frame	data/chars/misc2/flsh/lght9.gif
+	offset	25 26
+	frame	data/chars/misc2/flsh/lght10.gif
+	offset	27 29
+	frame	data/chars/misc2/flsh/lght11.gif
+	offset	25 22
+	frame	data/chars/misc2/flsh/lght12.gif
+	offset	7 18
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/misc2/flsh/lght13.gif
+		
+#|edited by openBor Stats v 0.50
+		

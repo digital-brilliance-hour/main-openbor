@@ -1,0 +1,142 @@
+name zibuki
+icon data/chars/Ibuki/150.gif
+type enemy
+health  100
+nomove	1, 1
+antigrab	1000
+cantgrab	 1
+gfxshadow	1
+speed   0
+subtype notgrab
+score 0
+offscreenkill 1000000
+
+animationscript	data/scripts/aniScp.c
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	6
+	loop	1
+	bbox	22 6 44 89
+	offset	37 94
+	frame	data/chars/ibuki/0.gif
+	offset	37 94
+	frame	data/chars/ibuki/1.gif
+	offset	37 94
+	frame	data/chars/ibuki/2.gif
+	offset	37 94
+	frame	data/chars/ibuki/3.gif
+	offset	37 94
+	frame	data/chars/ibuki/4.gif
+	offset	37 94
+	frame	data/chars/ibuki/5.gif
+	offset	37 94
+	frame	data/chars/ibuki/6.gif
+	offset	37 95
+	frame	data/chars/ibuki/7.gif
+	offset	37 95
+	frame	data/chars/ibuki/8.gif
+	offset	37 96
+	frame	data/chars/ibuki/9.gif
+	offset	37 95
+	frame	data/chars/ibuki/10.gif
+	offset	37 95
+	frame	data/chars/ibuki/11.gif
+	offset	37 94
+	frame	data/chars/ibuki/12.gif
+	offset	37 94
+	frame	data/chars/ibuki/13.gif
+	offset	37 94
+	frame	data/chars/ibuki/14.gif
+	offset	37 94
+	frame	data/chars/ibuki/15.gif
+	offset	37 94
+	frame	data/chars/ibuki/16.gif
+	offset	37 94
+	frame	data/chars/ibuki/17.gif
+	offset	37 94
+	frame	data/chars/ibuki/18.gif
+	offset	37 95
+	frame	data/chars/ibuki/19.gif
+	offset	37 95
+	frame	data/chars/ibuki/20.gif
+	offset	37 95
+	frame	data/chars/ibuki/21.gif
+	offset	37 95
+	frame	data/chars/ibuki/22.gif
+	offset	37 95
+	frame	data/chars/ibuki/23.gif
+	offset	37 94
+	frame	data/chars/ibuki/24.gif
+	offset	37 94
+	frame	data/chars/ibuki/25.gif
+	offset	37 94
+	frame	data/chars/ibuki/26.gif
+	offset	39 94
+	frame	data/chars/ibuki/27.gif
+	bbox	29 8 44 87
+	offset	43 94
+	frame	data/chars/ibuki/28.gif
+	offset	42 94
+	frame	data/chars/ibuki/29.gif
+	bbox	26 6 44 90
+	offset	41 95
+	frame	data/chars/ibuki/30.gif
+	bbox	25 10 43 86
+	offset	38 96
+	frame	data/chars/ibuki/31.gif
+	offset	37 96
+	frame	data/chars/ibuki/32.gif
+	offset	37 95
+	frame	data/chars/ibuki/33.gif
+	offset	37 95
+	frame	data/chars/ibuki/34.gif
+	offset	37 94
+	frame	data/chars/ibuki/35.gif
+	offset	37 94
+	frame	data/chars/ibuki/36.gif
+	offset	37 94
+	frame	data/chars/ibuki/37.gif
+	offset	37 94
+	frame	data/chars/ibuki/38.gif
+	offset	37 94
+	frame	data/chars/ibuki/39.gif
+	offset	37 94
+	frame	data/chars/ibuki/40.gif
+	offset	37 94
+	frame	data/chars/ibuki/41.gif
+	offset	37 95
+	frame	data/chars/ibuki/42.gif
+	offset	37 95
+	frame	data/chars/ibuki/43.gif
+	offset	37 95
+	frame	data/chars/ibuki/44.gif
+	offset	37 95
+	frame	data/chars/ibuki/45.gif
+		
+anim	pain
+	bbox	19 2 33 92
+	delay	6
+	offset	37 92
+	sound	data/chars/ibuki/s/pain49.wav
+	frame	data/chars/ibuki/566.gif
+	@cmd	increasehealth 50
+	@cmd	loadallentities 4
+	offset	37 93
+	frame	data/chars/ibuki/569.gif
+	bbox	39 10 42 88
+	offset	70 96
+	frame	data/chars/ibuki/572.gif
+	bbox	9 7 42 88
+	offset	37 93
+	frame	data/chars/ibuki/569.gif
+		
+#|edited by openBor Stats v 0.50
+		

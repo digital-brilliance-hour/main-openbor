@@ -1,0 +1,25 @@
+name	cc1
+health	1
+type	obstacle
+shadow	0
+
+anim idle
+	loop	1
+	delay	8
+	offset	134 160
+	bbox    0 0 0 0 
+	frame	data/chars/misc/cc1.gif
+	frame	data/chars/misc/cc2.gif
+	frame	data/chars/misc/cc3.gif
+	frame	data/chars/misc/cc4.gif
+	frame	data/chars/misc/cc5.gif
+	frame	data/chars/misc/cc6.gif
+	frame	data/chars/misc/cc7.gif
+	frame	data/chars/misc/cc8.gif
+anim fall
+	delay	1000
+	offset	942 207
+	frame	data/chars/misc/cc1.gif
+
+
+

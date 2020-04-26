@@ -1,0 +1,158 @@
+name	RALF
+health	100
+speed	7
+type	enemy
+shadow	5
+diesound data/sounds/die1.wav
+remap data/chars/RALF/stand04.gif data/chars/RALF/ALT1.gif
+remap data/chars/RALF/stand04.gif data/chars/RALF/ALT2.gif
+remap data/chars/RALF/stand14.gif data/chars/RALF/ALT3.gif
+remap data/chars/RALF/stand04.gif data/chars/RALF/ALT4.gif
+remap data/chars/RALF/stand04.gif data/chars/RALF/ALT5.gif
+remap data/chars/RALF/stand01.gif data/chars/RALF/ALT6.gif
+remap data/chars/RALF/stand01.gif data/chars/RALF/ALT7.gif
+icon	data/chars/RALF/icon.gif
+
+anim idle
+	delay	11
+	loop	1
+	offset	90 200
+	bbox	62 102 56 105
+	frame	data/chars/RALF/stand01.gif
+	#frame	data/chars/RALF/stand02.gif
+	#frame	data/chars/RALF/stand03.gif
+	#frame	data/chars/RALF/stand04.gif
+	#frame	data/chars/RALF/stand05.gif
+	#frame	data/chars/RALF/stand06.gif
+	#frame	data/chars/RALF/stand07.gif
+	#frame	data/chars/RALF/stand08.gif
+	#frame	data/chars/RALF/stand09.gif
+	#frame	data/chars/RALF/stand10.gif
+	#frame	data/chars/RALF/stand11.gif
+	#frame	data/chars/RALF/stand12.gif
+	#frame	data/chars/RALF/stand13.gif
+	#frame	data/chars/RALF/stand14.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	245 197
+	bbox	219 93 59 106
+	frame	data/chars/RALF/walk01.gif
+	frame	data/chars/RALF/walk02.gif
+	frame	data/chars/RALF/walk03.gif
+	frame	data/chars/RALF/walk04.gif
+	frame	data/chars/RALF/walk05.gif
+	frame	data/chars/RALF/walk06.gif
+	frame	data/chars/RALF/walk07.gif
+	frame	data/chars/RALF/walk08.gif
+	
+anim attack1
+	RANGE	0 100
+	loop	0
+	delay	5
+	bbox	258 115 84 111
+	offset	245 197
+	move   	1
+	frame	data/chars/RALF/at1-01.gif
+	frame	data/chars/RALF/at1-02.gif
+	frame	data/chars/RALF/at1-03.gif
+	frame	data/chars/RALF/at1-04.gif
+	attack	277 131 54 115 3
+	frame	data/chars/RALF/at1-05.gif
+	frame	data/chars/RALF/at1-06.gif
+	attack	0 0 0 0 0
+	frame	data/chars/RALF/at1-07.gif
+	frame	data/chars/RALF/at1-08.gif
+	frame	data/chars/RALF/at1-09.gif
+	attack	291 124 74 96 3 1
+	frame	data/chars/RALF/at1-10.gif
+	frame	data/chars/RALF/at1-11.gif
+	frame	data/chars/RALF/at1-12.gif
+	attack	0 0 0 0 0	
+	frame	data/chars/RALF/at1-13.gif
+	frame	data/chars/RALF/at1-14.gif
+
+anim upper
+	loop	0
+	RANGE	0 100
+	delay	5
+	offset	90 200
+	bbox	62 102 56 105
+	frame	data/chars/RALF/sp1.gif
+	frame	data/chars/RALF/sp2.gif
+	frame	data/chars/RALF/sp3.gif
+	frame	data/chars/RALF/sp4.gif
+	frame	data/chars/RALF/sp5.gif
+	frame	data/chars/RALF/sp6.gif
+	attack	102 120 109 205 3 
+	frame	data/chars/RALF/sp7.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp8.gif
+	attack	102 120 109 205 3 
+	frame	data/chars/RALF/sp9.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp10.gif
+	attack	102 120 109 205 3 
+	frame	data/chars/RALF/sp11.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp12.gif
+	attack	102 120 109 205 3 
+	frame	data/chars/RALF/sp13.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp14.gif
+	attack	102 120 109 205 3 
+	frame	data/chars/RALF/sp15.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp16.gif
+	attack	102 120 109 205 3  
+	frame	data/chars/RALF/sp17.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp18.gif
+	attack	102 120 109 205 3 1
+	frame	data/chars/RALF/sp19.gif
+	attack	0 0 0 0 0 
+	frame	data/chars/RALF/sp20.gif
+	frame	data/chars/RALF/sp21.gif
+	frame	data/chars/RALF/sp22.gif
+	frame	data/chars/RALF/sp23.gif
+	
+anim pain
+	loop	0
+	offset	116 197
+	bbox	65 102 74 102
+	delay	5
+	frame	data/chars/RALF/pain03.gif
+	delay	5
+	bbox	65 102 74 102
+	frame	data/chars/RALF/pain02.gif
+	delay	5
+	bbox	65 102 74 102
+	frame	data/chars/RALF/pain01.gif
+	
+
+anim fall
+	loop	0
+	offset	60 80
+	delay	20
+	bbox	43 30 48 69
+	attack	32 22 39 41 10 1
+	frame	data/chars/RALF/fall01.gif
+	attack	10 36 62 28 10 1
+	frame	data/chars/RALF/fall02.gif
+	attack	11 35 74 23 10 1
+	frame	data/chars/RALF/fall03.gif
+	attack	19 30 49 32 10 1
+	bbox	0 0 0 0
+	frame	data/chars/RALF/fall04.gif
+	
+
+anim rise
+	loop	0
+	offset	70 200
+	delay	10
+	frame	data/chars/RALF/rise01.gif
+	frame	data/chars/RALF/rise02.gif
+	frame	data/chars/RALF/rise03.gif
+	
+	

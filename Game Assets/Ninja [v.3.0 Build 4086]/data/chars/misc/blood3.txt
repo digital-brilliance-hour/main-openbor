@@ -1,0 +1,50 @@
+name	blood3
+type	none
+setlayer 5
+nomove 1 1
+jumpheight 0
+cantgrab 1
+anim idle
+	loop 1
+	delay 5
+	offset 58 20
+	bbox    0 0 0 0
+	frame	data/chars/misc/ze1
+anim attack1
+	delay 5
+	offset 58 115
+	bbox    0 0 0 0
+	frame	data/chars/misc/ze4
+	frame	data/chars/misc/ze5
+	frame	data/chars/misc/ze6
+	delay 400
+	frame	data/chars/misc/ze7
+	delay 10
+	drawmethod 192 192
+	frame	data/chars/misc/ze7
+	drawmethod 128 128
+	frame	data/chars/misc/ze7
+	drawmethod 64 64
+	frame	data/chars/misc/ze7
+	delay 1
+	frame	data/chars/misc/empty
+anim attack2
+	delay 5
+	offset 58 115
+	bbox    0 0 0 0
+	frame	data/chars/misc/ze4
+	frame	data/chars/misc/ze5
+	frame	data/chars/misc/ze6
+	delay 400
+	frame	data/chars/misc/ze7
+	delay 10
+	drawmethod 192 192
+	frame	data/chars/misc/ze7
+	drawmethod 128 128
+	frame	data/chars/misc/ze7
+	drawmethod 64 64
+	frame	data/chars/misc/ze7
+	delay 1
+	frame	data/chars/misc/empty
+
+

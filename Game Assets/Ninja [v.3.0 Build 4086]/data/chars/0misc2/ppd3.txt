@@ -1,0 +1,28 @@
+name	ppd3
+type	none
+gfxshadow 1
+
+remap	data/chars/0misc2/ppd26.gif	data/chars/0misc2/ppalt2.gif
+remap	data/chars/0misc2/ppd26.gif     data/chars/0misc2/ppalt3.gif
+remap	data/chars/0misc2/ppd26.gif	data/chars/0misc2/ppalt4.gif
+remap	data/chars/0misc2/ppd26.gif	data/chars/0misc2/ppalt5.gif
+
+anim idle
+	 loop      1
+	 delay     13
+	 offset    101 153
+	 bbox      49 50 110 105
+	 frame	   data/chars/0misc2/ppd26.gif
+	 delay     8
+	 frame	   data/chars/0misc2/ppd27.gif
+	 frame	   data/chars/0misc2/ppd28.gif
+	 frame	   data/chars/0misc2/ppd29.gif
+	 delay     13
+	 frame	   data/chars/0misc2/ppd30.gif
+	 delay     10
+	 frame	   data/chars/0misc2/ppd31.gif
+	 frame	   data/chars/0misc2/ppd30.gif
+	 frame	   data/chars/0misc2/ppd29.gif
+	 frame	   data/chars/0misc2/ppd28.gif
+	 frame	   data/chars/0misc2/ppd27.gif
+

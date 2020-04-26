@@ -1,0 +1,152 @@
+name	Kouryu
+health	100
+speed	8
+type	enemy
+shadow	4
+icon	data/chars/Kouryu/icon.gif
+diesound data/chars/Kouryu/sounds/die.wav
+load	knife
+
+anim idle
+	loop	1
+	delay	8
+	offset	99 183
+	bbox	79 95 40 84
+	frame   data/chars/Kouryu/idle1.gif
+	#frame   data/chars/Kouryu/idle2.gif
+	#frame   data/chars/Kouryu/idle3.gif
+	#frame   data/chars/Kouryu/idle4.gif
+	#frame   data/chars/Kouryu/idle5.gif
+	#frame   data/chars/Kouryu/idle4.gif
+	#frame   data/chars/Kouryu/idle3.gif
+	#frame   data/chars/Kouryu/idle2.gif
+anim walk
+	loop	1
+	delay	12
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Kouryu/walk1.gif
+	frame   data/chars/Kouryu/walk2.gif
+	frame   data/chars/Kouryu/walk3.gif
+	frame   data/chars/Kouryu/walk4.gif
+	frame   data/chars/Kouryu/walk5.gif
+	frame   data/chars/Kouryu/walk4.gif
+	frame   data/chars/Kouryu/walk3.gif
+	frame   data/chars/Kouryu/walk2.gif
+
+anim attack1
+                range 0 80
+	loop	0
+	delay	6
+	offset	99 183
+	bbox	79 95 40 84
+	sound	data/chars/Kouryu/sounds/at1.wav
+	frame	data/chars/Kouryu/at5.gif
+	frame	data/chars/Kouryu/at6.gif
+	frame	data/chars/Kouryu/at7.gif
+	attack	155 107 111 144 10
+	frame	data/chars/Kouryu/at8.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kouryu/at9.gif
+	attack	155 107 111 144 10
+	frame	data/chars/Kouryu/at10.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kouryu/at11.gif
+	blast	155 107 111 144 10 1
+	frame	data/chars/Kouryu/at12.gif
+	frame	data/chars/Kouryu/at13.gif
+	frame	data/chars/Kouryu/at14.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kouryu/at15.gif
+	frame	data/chars/Kouryu/at16.gif
+
+anim attack2
+        range 100  250
+	throwframe	4
+	loop	0
+	delay	7
+	offset	99 183
+	bbox	28 22 43 103
+	sound	data/chars/Kouryu/sounds/up.wav
+	frame	data/chars/Kouryu/shoot01.gif
+	frame	data/chars/Kouryu/shoot02.gif
+	frame	data/chars/Kouryu/shoot03.gif
+	frame	data/chars/Kouryu/shoot04.gif
+	bbox	15 34 53 93
+	frame	data/chars/Kouryu/shoot05.gif
+	bbox	8 43 57 84
+	frame	data/chars/Kouryu/shoot06.gif
+	frame	data/chars/Kouryu/shoot07.gif
+	frame	data/chars/Kouryu/shoot08.gif
+	frame	data/chars/Kouryu/shoot09.gif
+	bbox	21 41 52 88
+	frame	data/chars/Kouryu/shoot10.gif
+	bbox	32 34 47 95
+	frame	data/chars/Kouryu/shoot11.gif
+	bbox	45 35 54 94
+	frame	data/chars/Kouryu/shoot12.gif
+	frame	data/chars/Kouryu/shoot13.gif
+	frame	data/chars/Kouryu/shoot14.gif
+	frame	data/chars/Kouryu/shoot15.gif
+	frame	data/chars/Kouryu/shoot16.gif
+	bbox	37 25 43 105
+	frame	data/chars/Kouryu/shoot17.gif
+
+anim upper
+	loop	0
+	RANGE	0 100
+	delay	7
+	bbox	47 114 49 83
+	offset	99 183
+	sound	data/chars/Kouryu/sounds/jmp.wav
+	frame	data/chars/Kouryu/up1.gif
+	frame	data/chars/Kouryu/up2.gif
+	attack	109 82 151 112 15
+	frame	data/chars/Kouryu/up3.gif
+	frame	data/chars/Kouryu/up4.gif
+	frame	data/chars/Kouryu/up5.gif
+	frame	data/chars/Kouryu/up6.gif
+	frame	data/chars/Kouryu/up8.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Kouryu/up8.gif
+
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	15
+	frame	data/chars/Kouryu/pain1.gif
+	frame	data/chars/Kouryu/pain2.gif
+	frame	data/chars/Kouryu/pain1.gif
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	bbox	43 30 48 69
+	frame	data/chars/Kouryu/fall1.gif
+        offset  88 134
+	frame	data/chars/Kouryu/fall2.gif
+	frame	data/chars/Kouryu/fall3.gif
+        offset  93 124
+	frame	data/chars/Kouryu/fall4.gif
+	bbox	0 0 0 0
+	frame	data/chars/Kouryu/fall5.gif
+
+anim rise
+	loop	0
+	offset	93 124
+	delay	8
+	frame	data/chars/Kouryu/rise1.gif
+        	frame	data/chars/Kouryu/rise2.gif
+	frame	data/chars/Kouryu/rise3.gif
+	frame	data/chars/Kouryu/rise4.gif
+	frame	data/chars/Kouryu/rise4.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/Kouryu/rise4.gif
+

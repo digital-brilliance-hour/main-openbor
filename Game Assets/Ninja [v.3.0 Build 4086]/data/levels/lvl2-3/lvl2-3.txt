@@ -1,0 +1,58 @@
+music		data/music/orient2.bor
+
+direction	both
+
+cameratype 1
+
+settime         0
+notime          1
+#cansave	0
+nopain	 1
+
+spawn1  20      20
+spawn2  30      30
+spawn3  40      40
+spawn4  50      50
+                                        #{xratio} {yratio} {xposition} {yposition} {xspacing} {yspacing} {xrepeat} {yrepeat} {transparency} {alpha}
+#bglayer         data/levels/Lvl2-3/Backx.png 0.5      0.4       0           0          0           0          1         1          1
+
+#     {xpos} {ypos} {upperleft} {lowerleft} {upperright} {lowerright} {depth}{height}
+wall   0      240       -130          80          385           100          120    380
+wall   370    240       -90          80         380           370        80    380
+
+updatescript data/scripts/traileru.c
+
+#panel		data/levels/Lvl1-4/0000600000.png none none
+#panel		data/levels/Lvl2-3/Flr4.gif none none
+panel           data/levels/Lvl2-3/Backx.png none none
+
+order	a
+
+light   200 -100
+at      0
+
+#------------
+
+spawn lvl23tr
+alias Tree.Of.Life
+health 600
+flip 1
+coords	265 250 1
+at 0
+
+spawn   ninja1
+coords  680 260 1
+at      1
+
+spawn   ninja1
+coords  -480 330 1
+at      2
+
+spawn   ninja1
+coords  680 340 1
+at      3
+
+spawn Musashi
+coords	560 280 1
+boss 1
+at 4

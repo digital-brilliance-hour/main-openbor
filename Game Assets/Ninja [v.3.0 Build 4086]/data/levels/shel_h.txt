@@ -1,0 +1,434 @@
+#shelter
+music		data/music/RAININGB.bor
+bossmusic	data/music/demonb.bor
+
+# Load images
+background 	data/bgs/shelter/bground.gif 
+	
+# Front layer
+frontpanel	data/bgs/shelter/fground.gif
+
+
+panel		data/bgs/shelter/ground.gif	none	none
+
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	a
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+#--group1-----
+spawn	1up
+coords	270 230
+at	0
+
+spawn	android
+health	50
+coords	-30 165
+at	0
+
+spawn	android
+health	50
+coords	-30 165
+at	0
+
+spawn	android
+health	70
+coords	380 195
+at	10
+
+spawn	android
+health	75
+coords	-30 200
+at	10
+
+
+spawn	android
+health	70
+coords	-30 165
+at	380
+
+spawn	android
+health	70
+coords	-30 230
+at	380
+
+spawn	android
+map	4
+health	80
+coords	380 195
+at	380
+
+spawn	android
+map	4
+health	85
+coords	-30 210
+at	390
+
+spawn	android
+health	50
+coords	-30 165
+at	0
+
+spawn	android
+health	50
+coords	-30 165
+at	0
+
+spawn	android
+health	70
+coords	380 195
+at	10
+
+spawn	android
+health	75
+coords	-30 200
+at	10
+
+
+spawn	android
+health	70
+coords	-30 165
+at	380
+
+spawn	android
+health	70
+coords	-30 230
+at	380
+
+spawn	android
+map	4
+health	80
+coords	380 195
+at	380
+
+spawn	android
+map	4
+health	85
+coords	-30 210
+at	390
+
+wait
+at	400
+
+#-------------
+
+spawn	android
+map	4
+health	90
+coords	-30 210
+at	450
+
+spawn	android
+map	4
+health	100
+coords	-30 170
+at	450
+
+spawn	android
+map	5
+health	90
+coords	380 210
+at	455
+
+spawn	android
+map	4
+health	90
+coords	-30 210
+at	450
+
+spawn	android
+map	4
+health	100
+coords	-30 170
+at	450
+
+spawn	android
+map	5
+health	90
+coords	380 210
+at	455
+
+wait
+at	550
+
+#----------------
+
+group	2 2
+at	800
+
+wait
+at	840
+
+spawn	android
+map	5
+health	160
+coords	-30 195
+at	800
+
+spawn	android
+map	5
+health	160
+coords	-30 195
+at	800
+
+spawn	android
+map	5
+health	160
+coords	-30 195
+at	800
+
+spawn	android
+map	5
+health	160
+coords	-30 195
+at	800
+
+spawn	android
+map	5
+health	80
+coords	380 210
+at	840
+
+spawn	android
+map	5
+health	70
+coords	-30 160
+at	840
+
+spawn	android
+map	5
+health	70
+coords	-30 180
+at	840
+
+spawn	android
+map	5
+health	80
+coords	380 210
+at	840
+
+spawn	android
+map	5
+health	70
+coords	-30 160
+at	840
+
+spawn	android
+map	5
+health	70
+coords	-30 180
+at	840
+
+#--------------------
+
+group	100 100
+at	850
+
+spawn	box
+item	meat
+coords	340 160
+at	900
+
+spawn	box
+2pitem	meat
+coords	340 150
+at	950
+
+spawn	box
+item	meat
+coords	240 160
+at	900
+
+spawn	box
+2pitem	meat
+coords	240 150
+at	950
+
+spawn	android
+map	6
+health	60
+coords	380 195
+at	950
+
+spawn	android
+map	6
+health	60
+coords	-30 200
+at	950
+
+spawn	android
+map	6
+health	70
+coords	-30 220
+at	950
+
+spawn	android
+map	6
+health	60
+coords	380 195
+at	950
+
+spawn	android
+map	6
+health	60
+coords	-30 200
+at	950
+
+spawn	android
+map	6
+health	70
+coords	-30 220
+at	950
+
+wait
+at	1000
+
+#----------------
+
+wait
+at	1200
+
+group	1 4
+at	1200
+
+spawn	Creature
+map	4
+health	65
+coords	-30 220
+at	1200
+
+spawn	Creature
+health	65
+map	4
+coords	-32 210
+at	1200
+
+spawn	Creature
+map	5
+health	65
+coords	-34 200
+at	1200
+
+spawn	Creature
+map	5
+health	2
+coords	-36 190
+at	1200
+
+spawn	Creature
+map	4
+health	65
+coords	-30 220
+at	1200
+
+spawn	Creature
+health	65
+map	4
+coords	-32 210
+at	1200
+
+spawn	Creature
+map	5
+health	65
+coords	-34 200
+at	1200
+
+spawn	Creature
+map	5
+health	2
+coords	-36 190
+at	1200
+
+
+spawn	Creature
+health	80
+map	4
+coords	380 160
+at	1200
+
+spawn	Creature
+map	5
+health	80
+coords	380 170
+at	1200
+
+spawn	Creature
+health	80
+map	4
+coords	380 180
+at	1200
+
+spawn	Creature
+health	80
+map	5
+coords	380 190
+at	1200
+
+spawn	Creature
+health	80
+map	4
+coords	380 160
+at	1200
+
+spawn	Creature
+map	5
+health	80
+coords	380 170
+at	1200
+
+spawn	Creature
+health	80
+map	4
+coords	380 180
+at	1200
+
+spawn	Creature
+health	80
+map	5
+coords	380 190
+at	1200
+
+

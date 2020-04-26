@@ -1,0 +1,20 @@
+name	Barrel
+type    obstacle
+shadow	0
+gfxshadow 1
+health  1
+diesound  data/sounds/wood.wav
+
+anim idle
+	loop	0
+	delay	5
+	offset	34 82
+	bbox    7 0 55 85
+	frame	data/chars/misc/barrel1.gif
+	
+anim fall
+	loop	0
+	delay	5
+	offset	34 82
+	frame	data/chars/misc/barrel2.gif
+	

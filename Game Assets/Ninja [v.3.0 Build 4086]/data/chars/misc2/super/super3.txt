@@ -1,0 +1,48 @@
+name Super3
+type none
+setlayer 1000
+alpha 6
+
+subject_to_gravity	 0
+
+animationscript	data/scripts/aniScp.c
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	offset	16 16
+	frame	data/chars/misc2/super/31.gif
+	offset	4 3
+	frame	data/chars/misc2/super/32.gif
+	offset	2 1
+	frame	data/chars/misc2/super/33.gif
+	offset	51 40
+	frame	data/chars/misc2/super/34.gif
+	offset	77 64
+	frame	data/chars/misc2/super/35.gif
+	offset	96 77
+	frame	data/chars/misc2/super/36.gif
+	offset	119 94
+	frame	data/chars/misc2/super/37.gif
+	offset	127 101
+	frame	data/chars/misc2/super/38.gif
+	offset	134 107
+	frame	data/chars/misc2/super/39.gif
+	offset	142 114
+	frame	data/chars/misc2/super/40.gif
+	offset	147 118
+	frame	data/chars/misc2/super/41.gif
+	offset	155 124
+	frame	data/chars/misc2/super/42.gif
+	offset	163 131
+	frame	data/chars/misc2/super/43.gif
+	offset	164 132
+	frame	data/chars/misc2/super/44.gif
+	@cmd	freeself 1
+	offset	164 132
+	frame	data/chars/misc2/super/44.gif
+		
+#|edited by openBor Stats v 0.50
+		

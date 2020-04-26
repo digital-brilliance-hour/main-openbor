@@ -1,0 +1,93 @@
+name	Kagami
+health	100
+speed	13
+type	enemy
+shadow	0
+icon	data/chars/Kagami/icon.gif
+
+load	shot
+
+diesound data/sounds/die1.wav
+
+anim idle
+	loop	1
+	offset	99 183
+	bbox	79 95 40 84
+	delay	7
+	frame   data/chars/Kagami/idle0.gif
+	#frame   data/chars/Kagami/idle1.gif
+	#frame   data/chars/Kagami/idle2.gif
+	#frame   data/chars/Kagami/idle3.gif
+	#frame   data/chars/Kagami/idle4.gif
+	#frame   data/chars/Kagami/idle5.gif
+	#frame   data/chars/Kagami/idle6.gif
+	#frame   data/chars/Kagami/idle7.gif
+	#frame   data/chars/Kagami/idle2.gif
+	#frame   data/chars/Kagami/idle3.gif
+	#frame   data/chars/Kagami/idle4.gif
+	#frame   data/chars/Kagami/idle5.gif
+	#frame   data/chars/Kagami/idle6.gif
+	#frame   data/chars/Kagami/idle7.gif
+
+anim walk
+	loop	1
+	delay	5
+	offset	99 183
+	bbox	86 94 42 81
+	frame   data/chars/Kagami/walk1.gif
+	frame   data/chars/Kagami/walk2.gif
+	frame   data/chars/Kagami/walk3.gif
+	frame   data/chars/Kagami/walk4.gif
+	frame   data/chars/Kagami/walk5.gif
+	frame   data/chars/Kagami/walk6.gif
+	#frame   data/chars/Kagami/walk7.gif
+	#frame   data/chars/Kagami/walk8.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	99 183
+	bbox	80 87 39 83
+	range 100  250
+                shootframe  4
+	frame   data/chars/Kagami/shot1.gif
+        	frame   data/chars/Kagami/shot2.gif
+      	frame   data/chars/Kagami/shot3.gif
+       	frame   data/chars/Kagami/shot4.gif
+       	frame   data/chars/Kagami/shot5.gif
+     	frame   data/chars/Kagami/shot6.gif
+     	frame   data/chars/Kagami/shot7.gif
+	frame   data/chars/Kagami/shot8.gif
+     	frame   data/chars/Kagami/shot9.gif
+  	
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	8
+	frame	data/chars/Kagami/pain1.gif
+	delay	40
+	bbox	102 122 74 82
+	frame	data/chars/Kagami/pain2.gif
+	delay	8
+	bbox	120 111 64 96
+	frame	data/chars/Kagami/pain1.gif
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Kagami/fall1.gif
+        offset  88 134
+	frame	data/chars/Kagami/fall1.gif
+	frame	data/chars/Kagami/fall3.gif
+        offset  93 124
+	frame	data/chars/Kagami/fall4.gif
+	frame	data/chars/Kagami/fall5.gif
+anim rise
+	loop	0
+	offset  93 124
+	delay	8
+	frame	data/chars/Kagami/fall4.gif
+	frame	data/chars/Kagami/fall5.gif

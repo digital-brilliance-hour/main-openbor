@@ -1,0 +1,254 @@
+# village
+music		data/music/slim.BOR
+#bossmusic	data/music/RAININGB.BOR
+
+# Load images
+background 	data/bgs/village/bground.gif 
+	
+# Front layer
+frontpanel	data/bgs/village/fground.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/village/ground.gif	none	none
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	a
+order	a
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+#--group1-----
+wait
+at	320
+
+spawn	Rain
+coords	1499 240
+at	0
+
+#spawn	drops
+#coords	-5 218
+#at	1
+
+spawn	1up
+coords	200 180
+at	0
+
+spawn	eiji
+coords	350 160
+at	10
+
+spawn	eiji
+alias	hatchet
+
+health	30
+coords	350 220
+at	15
+
+spawn	eiji
+map	1
+coords	380 241
+at	20
+
+spawn	eiji
+alias	sticky
+map	1
+health	50
+coords	350 190
+at	200
+
+spawn	eiji
+alias	killa
+map	1
+health	25
+coords	-30 160
+at	220
+
+#--group3-----------
+wait
+at	500
+
+spawn	money
+coords	370 165
+at	400
+
+spawn	gold
+coords	370 180
+at	400
+
+spawn	h-ninja
+alias	Madchen
+health	30
+coords	-30 200
+at	450
+
+spawn	h-ninja
+alias	Hubchen
+health	50
+coords	340 210
+at	470
+
+spawn	h-ninja
+map	1
+alias	Jimmy
+health	55
+coords	350 165
+at	470
+
+
+group	3 3
+at	500
+
+spawn	eiji
+map	1
+coords	200 220
+at	500
+
+spawn	eiji
+map	2
+coords	80 160
+at	500
+
+spawn	eiji
+map	3
+coords	-30 230
+at	500
+
+spawn	eiji
+map	4
+coords	380 160
+at	500
+
+#------------
+wait
+at	1200
+
+group	100 100
+at	510
+
+spawn	Ninja1
+coords	380 220
+at	800
+
+spawn	Ninja1
+coords	-30 180
+at	800
+
+spawn	ninja
+coords	400 220
+at	1000
+
+spawn	ninja
+health	100
+coords	-80 220
+at	1000
+
+#------------------
+
+wait
+at	1500
+
+group	1 3
+at	1500
+
+spawn	ninja1
+alias	shinobi
+coords	-30 180
+at	1500
+
+spawn	ninja1
+alias	huyabuso
+coords	-30 220
+at	1500
+
+spawn	gal
+alias	killa
+coords	380 160
+at	1500
+
+spawn	gal
+alias	hatchet
+health	300
+boss	1
+coords	380 230
+at	1500
+
+spawn	eiji
+map	5
+coords	-30 180
+at	1500
+
+
+group	2 2
+at	2100
+
+
+spawn	ninja1
+coords	-30 230
+at	2100
+
+spawn	gal
+map	1
+coords	-30 230
+at	2100
+
+spawn	eiji
+coords	-30 230
+at	2100
+
+spawn	eiji
+coords	-30 230
+at	2100
+
+spawn	r-ninja
+map	1
+coords	-30 230
+at	2400
+
+spawn	h-ninja
+coords	-30 230
+at	2400
+
+
+

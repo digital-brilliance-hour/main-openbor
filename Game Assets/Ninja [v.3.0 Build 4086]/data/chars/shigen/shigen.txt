@@ -1,0 +1,100 @@
+name	Shigen
+health	300
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/Shigen/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/Shigen/idle2.gif data/chars/Shigen/alt1.gif
+remap	data/chars/Shigen/idle1.gif data/chars/Shigen/alt2.gif
+remap	data/chars/Shigen/idle3.gif data/chars/Shigen/alt3.gif
+remap	data/chars/Shigen/idle1.gif data/chars/Shigen/alt4.gif
+
+anim idle
+	loop	1
+	offset	99 183
+	bbox	79 95 40 84
+	delay	8
+	frame	data/chars/Shigen/idle1.gif
+	frame	data/chars/Shigen/idle2.gif
+	frame	data/chars/Shigen/idle3.gif
+	frame	data/chars/Shigen/idle4.gif
+	frame	data/chars/Shigen/idle5.gif
+	frame	data/chars/Shigen/idle6.gif
+	frame	data/chars/Shigen/idle7.gif
+	
+anim walk
+	loop	1
+	offset	99 183
+	bbox	86 94 42 81
+	delay	10
+	frame	data/chars/Shigen/walk1.gif
+	frame	data/chars/Shigen/walk2.gif
+	frame	data/chars/Shigen/walk3.gif
+	frame	data/chars/Shigen/walk4.gif
+	frame	data/chars/Shigen/walk5.gif
+	frame	data/chars/Shigen/walk6.gif
+	frame	data/chars/Shigen/walk7.gif
+	frame	data/chars/Shigen/walk8.gif
+	
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	8
+	frame	data/chars/Shigen/pain00.gif
+	delay	30
+	frame	data/chars/Shigen/pain01.gif
+	delay	8
+	frame	data/chars/Shigen/pain00.gif
+
+anim fall
+	loop	0
+	offset	90 160 
+	delay	17
+	attack	70 87 56 61 17 1
+	bbox	43 30 48 69
+	frame	data/chars/Shigen/fall1.gif
+	frame	data/chars/Shigen/fall2.gif
+	frame	data/chars/Shigen/fall3.gif
+	offset	99 183
+	frame	data/chars/Shigen/fall4.gif
+	bbox	0 0 0 0
+	frame	data/chars/Shigen/fall5.gif
+
+
+anim rise
+	loop	0
+	offset	99 183
+	delay	17
+	frame	data/chars/Shigen/rise00.gif
+	frame	data/chars/Shigen/rise01.gif
+	frame	data/chars/Shigen/rise02.gif
+
+anim attack1
+	loop	0
+	delay	6
+	offset	99 183
+	bbox	18 13 42 107
+	sound	data/chars/Shigen/TIGER.wav
+	frame   data/chars/Shigen/s00.gif
+	frame   data/chars/Shigen/s01.gif
+        	frame   data/chars/Shigen/s02.gif
+	frame   data/chars/Shigen/s03.gif
+                frame   data/chars/Shigen/s04.gif
+	attack	131 95 113 142 25
+	frame   data/chars/Shigen/s05.gif
+                frame   data/chars/Shigen/s06.gif
+	attack	0 0 0 0 0
+	bbox	18 13 42 107
+	sound	data/chars/Shigen/UPERCUT.wav
+	frame	data/chars/Shigen/slash00.gif
+	frame	data/chars/Shigen/slash01.gif
+	bbox	36 5 36 118
+	attack	141 95 81 100 25 1
+	frame	data/chars/Shigen/slash02.gif
+	frame	data/chars/Shigen/slash03.gif
+	frame	data/chars/Shigen/slash04.gif
+	attack	00000
+

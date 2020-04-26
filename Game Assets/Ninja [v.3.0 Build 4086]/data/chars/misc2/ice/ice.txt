@@ -1,0 +1,39 @@
+Name ice
+type	none
+alpha 6
+lifespan 1.15
+subject_to_gravity	 0
+
+animationscript	data/scripts/aniScp.c
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	21 22
+	frame	data/chars/sas/020213.gif
+	offset	26 29
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/sas/020214.gif
+	offset	35 37
+	frame	data/chars/sas/020215.gif
+	offset	41 46
+	frame	data/chars/sas/020216.gif
+	offset	41 44
+	frame	data/chars/sas/020217.gif
+	offset	41 45
+	frame	data/chars/sas/020218.gif
+	offset	35 41
+	frame	data/chars/sas/020219.gif
+	offset	32 36
+	frame	data/chars/sas/02021010.gif
+	offset	25 30
+	@cmd	bindtoparent 1 0 50 1
+	frame	data/chars/sas/02021011.gif
+	offset	20 29
+	frame	data/chars/sas/02021012.gif
+		
+#|edited by openBor Stats v 0.50
+		

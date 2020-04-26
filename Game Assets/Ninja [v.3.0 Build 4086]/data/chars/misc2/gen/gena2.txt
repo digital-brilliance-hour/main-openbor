@@ -1,0 +1,31 @@
+name    gena2
+type	obstacle 
+Health  6
+nomove	1 0
+speed       1
+
+
+animationscript data/scripts/aniscp.c
+onspawnscript data/scripts/genrtr.c
+
+
+anim	idle
+	loop	1
+	delay	1
+	offset	45 44
+	frame	data/chars/misc2/gen1.gif
+	@cmd	randomcreator 1 -1 -1 1
+	offset	45 42
+	frame	data/chars/misc2/gen2.gif
+	delay	32
+	offset	45 43
+	frame	data/chars/misc2/gen3.gif
+	offset	45 43
+	frame	data/chars/misc2/gen4.gif
+	offset	45 43
+	frame	data/chars/misc2/gen5.gif
+	offset	45 43
+	frame	data/chars/misc2/gen6.gif
+		
+#|edited by openBor Stats v 0.49
+		

@@ -1,0 +1,21 @@
+name	Table
+health	10
+type	obstacle
+shadow	5
+icon	data/chars/misc/tablicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	29 51
+	bbox	0 -30 59 41
+	frame	data/chars/misc/table1.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	29 51
+	frame	data/chars/misc/table2.gif

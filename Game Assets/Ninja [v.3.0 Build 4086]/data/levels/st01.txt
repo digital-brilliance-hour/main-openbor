@@ -1,0 +1,33 @@
+music		data/music/ki2combo.ogg
+background	data/levels/st01/b01.png
+panel		data/levels/st01/p01.png
+direction       both
+light  		10   -30
+at       	0
+settime         0
+notime          1
+noslow          1
+order		a
+cameratype 	1
+
+#wall    624 224 -90 0 8000 8000 90 8000
+
+#script
+updatescript data/scripts/traileru.c
+
+#-------1
+
+group   0 3
+at      0
+
+spawn   Shingo
+coords  230 250
+at      0
+
+spawn   Shingo
+coords  300 150
+at      0
+
+spawn   Shingo
+coords  320 0
+at      0

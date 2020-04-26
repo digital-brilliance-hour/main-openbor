@@ -1,0 +1,19 @@
+name	star
+health	1
+type	enemy
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+anim idle
+	loop	1
+	delay	4
+	offset	12 5
+	attack	0 0 27 9 10 1
+	hitflash   blood
+	hitfx   data/sounds/starhit.wav
+        sound   data/sounds/star.wav
+	frame	data/chars/misc/star1.gif
+	frame	data/chars/misc/star2.gif
+	frame	data/chars/misc/star3.gif
+	frame	data/chars/misc/star4.gif
+	

@@ -1,0 +1,382 @@
+#Edited by vision     KillaKat.com
+name	VisioN
+health	150
+speed	11
+type	enemy#player
+shadow	5
+diesound data/sounds/die1.wav
+icon	data/chars/vision/icon.gif
+
+remap data/chars/vision/stand.gif data/chars/vision/map1.gif
+remap data/chars/vision/stand.gif data/chars/vision/map2.gif
+
+anim idle
+	loop	1
+	delay	10
+	offset	39 87
+	bbox	20 12 33 69
+	frame	data/chars/vision/idle1.gif
+	frame	data/chars/vision/idle2.gif
+	frame	data/chars/vision/idle3.gif
+	frame	data/chars/vision/idle4.gif
+	frame	data/chars/vision/idle5.gif
+	frame	data/chars/vision/idle6.gif
+	frame	data/chars/vision/idle7.gif
+	frame	data/chars/vision/idle8.gif
+	frame	data/chars/vision/idle9.gif
+		
+anim walk
+	loop	1
+	delay	8
+	offset	47 96
+	bbox	33 17 35 73
+	frame	data/chars/vision/walk1.gif
+	frame	data/chars/vision/walk2.gif
+	frame	data/chars/vision/walk3.gif
+	frame	data/chars/vision/walk4.gif
+	frame	data/chars/vision/walk5.gif
+	frame	data/chars/vision/walk6.gif
+	frame	data/chars/vision/walk7.gif
+			
+anim get
+	loop	0
+	delay	5
+	sound	data/chars/vision/get1.wav
+	offset	36 86
+	frame	data/chars/vision/get1.gif
+	frame	data/chars/vision/get2.gif
+	frame	data/chars/vision/get3.gif
+	frame	data/chars/vision/get4.gif
+	frame	data/chars/vision/get5.gif
+	frame	data/chars/vision/get6.gif
+	frame	data/chars/vision/get7.gif
+	frame	data/chars/vision/get8.gif
+
+anim attack1
+	loop	0
+	delay	4
+	bbox	22 19 34 62
+	offset	32 91
+	frame	data/chars/vision/atk101.gif
+	bbox	32 17 34 62
+	frame	data/chars/vision/atk102.gif
+	attack	69 14 55 17 5
+	frame	data/chars/vision/atk103.gif
+	frame	data/chars/vision/atk102.gif
+	frame	data/chars/vision/atk101.gif
+	attack	0 0 0 0 0
+	
+anim attack2
+	loop	0
+	delay	5
+	offset	44 90
+	bbox	22 24 36 61
+	frame	data/chars/vision/atk201.gif
+	bbox	34 23 36 61
+	frame	data/chars/vision/atk202.gif
+	bbox	50 17 36 61
+	attack	86 26 61 47 5 0
+	frame	data/chars/vision/atk203.gif
+	attack	0 0 0 0 0
+	attack	91 23 68 47 5 0
+	frame	data/chars/vision/atk204.gif
+	frame	data/chars/vision/atk205.gif
+	bbox	35 22 36 61
+	frame	data/chars/vision/atk206.gif
+	bbox	22 24 36 61
+	frame	data/chars/vision/atk201.gif
+	attack	0 0 0 0 0
+	
+anim attack3
+	loop	0
+	delay	6
+	offset	38 158
+	sound	data/chars/terry/pgeiser.wav
+	bbox	21 93 37 63
+	frame	data/chars/vision/atk301.gif
+	bbox	40 91 37 63
+	frame	data/chars/vision/atk302.gif
+	attack	0 0 0 0 0
+	bbox 	52 91 68 64
+	attack	113 34 58 110 6 1
+	frame	data/chars/vision/atk303.gif
+	attack	0 0 0 0 0
+	attack	41 14 128 88 6 1
+	frame	data/chars/vision/atk304.gif
+	frame	data/chars/vision/atk305.gif
+	frame	data/chars/vision/atk306.gif
+	frame	data/chars/vision/atk307.gif
+	attack	0 0 0 0 0
+	bbox	54 88 32 65
+	frame	data/chars/vision/atk308.gif
+	delay	15
+	bbox	40 91 37 63
+	frame	data/chars/vision/atk309.gif
+	bbox	21 93 37 63
+	frame	data/chars/vision/atk310.gif
+	
+anim special
+	loop	0
+	delay	10
+	offset	90 290
+	sound	data/chars/vision/super.wav
+	frame	data/chars/vision/super5.gif
+	frame	data/chars/vision/super6.gif
+	frame	data/chars/vision/super7.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super8.gif
+	frame	data/chars/vision/super9.gif
+	frame	data/chars/vision/super10.gif
+#	sound	data/chars/vision/flame1.wav
+	frame	data/chars/vision/super11.gif
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super12.gif
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super13.gif	
+	attack	0 0 0 0 0 
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super14.gif
+	frame	data/chars/vision/super13.gif
+	attack	0 0 0 0 0 
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super14.gif
+	frame	data/chars/vision/super13.gif
+	attack	0 0 0 0 0 
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super14.gif
+	frame	data/chars/vision/super13.gif
+	attack	0 0 0 0 0 
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super14.gif
+	frame	data/chars/vision/super13.gif
+	attack	0 0 0 0 0
+	delay	15 
+	attack	1 1 192 295 30 1
+	frame	data/chars/vision/super14.gif
+	frame	data/chars/vision/super15.gif
+	frame	data/chars/vision/super16.gif
+	frame	data/chars/vision/super17.gif
+	delay	10
+	frame	data/chars/vision/super1.gif
+	frame	data/chars/vision/super2.gif
+	frame	data/chars/vision/super3.gif
+	attack	0 0 0 0 0 
+	delay	30
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+	frame	data/chars/vision/super4.gif
+	frame	data/chars/vision/super3.gif
+			
+anim freespecial
+	loop	0
+	delay	7
+	offset	63 285
+	sound	data/chars/vision/free1.wav
+	frame	data/chars/vision/free201.gif
+	frame	data/chars/vision/free202.gif
+	frame	data/chars/vision/free203.gif
+	frame	data/chars/vision/free204.gif
+	frame	data/chars/vision/free205.gif
+	delay	18
+	attack	1 148 161 153 20 1
+	frame	data/chars/vision/free206.gif
+	frame	data/chars/vision/free207.gif
+	frame	data/chars/vision/free208.gif
+	attack	0 0 0 0 0 0
+	delay	4
+	attack	27 39 87 139 20 1
+	frame	data/chars/vision/free313.gif
+	attack	0 0 0 0 0 0
+	attack	27 47 87 140 20 1
+	frame	data/chars/vision/free314.gif
+	attack	0 0 0 0 0 0
+	attack	31 81 84 121 20 1
+	frame	data/chars/vision/free315.gif
+	attack	0 0 0 0 0 0
+	attack	30 110 83 114 20 1
+	frame	data/chars/vision/free316.gif
+	attack	0 0 0 0 0 0
+	attack	30 123 84 113 20 1
+	frame	data/chars/vision/free317.gif
+	attack	0 0 0 0 0 0
+	attack	32 152 83 119 20 1
+	frame	data/chars/vision/free318.gif
+	attack	0 0 0 0 0
+	frame	data/chars/vision/free319.gif
+	frame	data/chars/vision/free320.gif
+	delay	5
+	frame	data/chars/vision/free323.gif
+	frame	data/chars/vision/free322.gif
+	delay	10
+	frame	data/chars/vision/free321.gif
+	frame	data/chars/vision/free322.gif
+	frame	data/chars/vision/free323.gif
+		
+anim jump
+	loop	0
+	offset	47 140
+	delay	6
+	bbox	21 51 44 73
+	frame	data/chars/vision/jump1.gif
+	bbox	24 51 54 48
+	frame	data/chars/vision/jump2.gif
+	frame	data/chars/vision/jump3.gif
+	frame	data/chars/vision/jump4.gif
+	frame	data/chars/vision/jump5.gif
+	frame	data/chars/vision/jump6.gif
+	frame	data/chars/vision/jump7.gif
+	frame	data/chars/vision/jump8.gif
+	frame	data/chars/vision/jump9.gif
+	delay	15
+	bbox	34 41 30 87
+	frame	data/chars/vision/jump10.gif
+		
+anim jumpattack
+	sound	data/chars/terry/hua.wav
+	loop	0
+	offset	42 74
+	delay	5
+	bbox	14 17 33 57
+	frame	data/chars/vision/jkick201.gif
+	frame	data/chars/vision/jkick202.gif
+	attack	52 28 68 33 6 1
+	delay	11
+	frame	data/chars/vision/jkick203.gif
+	attack	0 0 0 0 0 0
+		
+anim jumpattack2
+	loop	0
+	offset	68 118
+	delay	5
+	bbox	35 45 32 57
+	frame	data/chars/vision/jatk1.gif
+	bbox	53 48 35 63
+	frame	data/chars/vision/jatk2.gif
+	attack	12 22 38 112 7 1
+	bbox	52 57 61 49
+	frame	data/chars/vision/jatk3.gif
+	attack	0 0 0 0 0 0
+
+anim grab
+	loop	0
+	offset	40 98
+	bbox	29 19 41 69
+	delay	7
+	frame	data/chars/vision/grab1.gif
+	bbox	48 20 41 69
+	frame	data/chars/vision/grab2.gif
+	bbox	39 14 31 41
+	frame	data/chars/vision/grab3.gif
+	
+anim grabattack
+	loop	0
+	offset	48 98
+	bbox	36 20 39 68
+	delay	7
+	frame	data/chars/vision/gatk101.gif
+	attack	67 12 41 65 6
+	frame	data/chars/vision/gatk102.gif
+	frame	data/chars/vision/gatk103.gif
+	frame	data/chars/vision/gatk101.gif
+	attack	0 0 0 0 0
+	
+anim grabattack2
+	loop	0
+	offset	45 168
+	bbox	24 104 33 58
+	delay	10
+	sound	data/chars/terry/burning.wav
+	frame	data/chars/vision/gatk201.gif
+	bbox	30 82 37 82
+	frame	data/chars/vision/gatk202.gif
+	bbox	35 63 37 82
+	attack 	44 4 58 117 10 1
+	frame	data/chars/vision/gatk203.gif
+	bbox	35 62 37 89
+	frame	data/chars/vision/gatk204.gif
+	bbox	38 59 35 77
+	frame	data/chars/vision/gatk205.gif
+	bbox	37 59 35 42
+	frame	data/chars/vision/gatk206.gif
+	bbox	40 56 33 77
+	frame	data/chars/vision/gatk207.gif
+	bbox	35 84 36 76
+	frame	data/chars/vision/gatk208.gif
+	move	7
+	offset	53 168
+	bbox	24 104 33 58
+	frame	data/chars/vision/gatk209.gif
+	blast	0 0 0 0 0 0
+
+
+anim throw
+	loop	0
+	offset	102 88
+	delay	10
+	sound	data/chars/vision/throw1.wav
+	frame	data/chars/vision/throw1.GIF
+	frame	data/chars/vision/throw2.GIF
+	delay	20
+	frame	data/chars/vision/throw3.GIF
+		
+anim pain
+	loop	0
+	offset	60 92
+	bbox	20 15 54 69
+	delay	5
+	frame	data/chars/vision/pain1.gif
+	delay	20
+	bbox	55 79 10 9
+	frame	data/chars/vision/pain2.gif
+	delay	5
+	bbox	20 15 54 69
+	frame	data/chars/vision/pain1.gif
+	delay	5
+	bbox	43 16 39 72
+	frame	data/chars/vision/pain3.gif
+
+anim fall
+	loop	0
+	offset	49 70
+	delay	20
+	attack	19 24 73 47 10 1
+	frame	data/chars/vision/fall1.gif
+	attack	21 28 73 47 10 1
+	frame	data/chars/vision/fall2.gif
+	delay	23
+	frame	data/chars/vision/fall3.gif
+	
+anim rise
+	loop	0
+	offset	74 71
+	delay	10
+	frame	data/chars/vision/rise1.gif
+	frame	data/chars/vision/rise2.gif
+	frame	data/chars/vision/rise3.gif
+	frame	data/chars/vision/rise4.gif
+	
+anim land
+	loop	0
+	offset	36 86
+	delay	25
+	bbox	19 29 33 84
+	frame	data/chars/vision/get6.gif
+	frame	data/chars/vision/get7.gif
+	frame	data/chars/vision/get8.gif

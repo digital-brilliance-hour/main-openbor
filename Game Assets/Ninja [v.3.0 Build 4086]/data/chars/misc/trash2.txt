@@ -1,0 +1,19 @@
+name	   Trash2
+health	   10
+type	   obstacle
+shadow	0
+gfxshadow 1
+diesound   data/sounds/klunk.wav
+
+
+anim idle
+	delay	100
+	offset	22 86
+	bbox	0 11 45 76
+	frame	data/chars/misc/trash2.gif
+
+anim fall
+	loop	1
+	delay	100
+	offset	22 86
+	frame	data/chars/misc/trashed2.gif
