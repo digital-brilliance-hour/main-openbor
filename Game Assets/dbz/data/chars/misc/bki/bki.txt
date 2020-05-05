@@ -1,0 +1,43 @@
+name		bki
+type		none
+subject_to_gravity	0
+shadow		0
+remove		1
+alpha		1
+offscreenkill	400
+speed		30
+
+candamage player obstacle
+
+anim	idle
+	loop	1
+	hitflash	hittt
+	Delay	3
+	OffSet	43 75
+sound	data/sounds/exp.wav
+	hitfx	data/sounds/burnt.wav
+	Attack	69 24 54 112 43 1 0 0 0 60
+	Frame	data\chars\misc\bki\cwave00.gif
+	OffSet	45 78
+	Frame	data\chars\misc\bki\cwave01.gif
+	OffSet	38 80
+	Attack	57 31 60 103 43 1 0 0 0 60
+	Frame	data\chars\misc\bki\cwave02.gif
+	OffSet	39 54
+	Attack	53 18 66 81 43 1 0 0 0 60
+	Frame	data\chars\misc\bki\cwave03.gif
+	OffSet	41 55
+	Frame	data\chars\misc\bki\cwave04.gif
+	OffSet	43 56
+	Frame	data\chars\misc\bki\cwave05.gif
+	OffSet	45 59
+	Frame	data\chars\misc\bki\cwave06.gif
+	OffSet	48 65
+	Attack	75 21 57 94 43 1 0 0 0 60
+	Frame	data\chars\misc\bki\cwave07.gif
+	OffSet	44 81
+	Attack	74 21 48 119 43 1 0 0 0 60
+	Frame	data\chars\misc\bki\cwave08.gif
+	OffSet	46 78
+	Frame	data\chars\misc\bki\cwave09.gif
+

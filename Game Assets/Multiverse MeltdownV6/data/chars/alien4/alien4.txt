@@ -1,0 +1,165 @@
+#Alien3 by Kingherb
+
+name	Alien4
+health	40
+speed	9
+type	enemy
+gfxshadow 1
+#diesound 	data/sounds/die1.wav
+icon	  data/chars/Alien3/iconA.gif
+iconpain  data/chars/Alien3/iconB.gif
+icondie   data/chars/Alien3/iconB.gif
+candamage Player
+
+palette       data/chars/Alien3/Pal
+alternatepal  data/chars/Alien3/FreezeM.gif
+fmap 1
+jugglepoints 1
+
+anim idle
+	delay	12
+	loop	1
+	offset	245 197
+	bbox.position.x 223
+	bbox.position.y 133
+	bbox.size.x 55
+	bbox.size.y 66
+	frame	data/chars/Alien3/stand00.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	245 197
+	bbox.position.x 198
+	bbox.position.y 157
+	bbox.size.x 99
+	bbox.size.y 46
+	frame	data/chars/Alien3/walk01.gif
+	frame	data/chars/Alien3/walk02.gif
+	frame	data/chars/Alien3/walk03.gif
+	frame	data/chars/Alien3/walk04.gif
+	frame	data/chars/Alien3/walk05.gif
+	frame	data/chars/Alien3/walk06.gif
+	frame	data/chars/Alien3/walk07.gif
+
+anim attack1
+	loop	0
+	delay	4
+	bbox	72 118 50 80
+	offset	98 197
+	BBOX	84 99 52 105
+	frame	data/chars/Alien3/at1-09.gif
+	frame	data/chars/Alien3/at1-09.gif
+	frame	data/chars/Alien3/at1-10.gif
+	attack2	107 150 92 37 9  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien3/at1-10.gif
+	frame	data/chars/Alien3/at1-10.gif
+	frame	data/chars/Alien3/at1-10.gif
+	ATTACK1	0 0 0 0 0
+	frame	data/chars/Alien3/at1-11.gif
+		bbox  83  118  46  78
+	frame	data/chars/Alien3/at1-12.gif
+	frame	data/chars/Alien3/at1-13.gif
+
+anim pain
+	loop	0
+	sound	data/sounds/alienp1.wav
+	offset	88 197
+	bbox	52 114 50 84
+	delay	10
+	frame	data/chars/Alien3/pain02.gif
+	bbox	61 114 50 84
+	frame	data/chars/Alien3/pain01.gif
+	frame	data/chars/Alien3/pain01.gif
+
+anim pain2
+	loop	0
+	offset	88 197
+	bbox	52 114 50 84
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-2
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-1
+	frame	data/chars/Alien3/pain02.gif
+	bbox	61 114 50 84
+	frame	data/chars/Alien3/pain01.gif
+	Move	0
+	delay	8
+	frame	data/chars/Alien3/pain01.gif
+	frame	data/chars/Alien3/pain01.gif
+
+anim pain3
+	loop	0
+	offset	88 197
+	bbox	52 114 50 84
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-4
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-3
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-2
+	frame	data/chars/Alien3/pain02.gif
+	frame	data/chars/Alien3/pain02.gif
+	Move	-1
+	frame	data/chars/Alien3/pain02.gif
+	delay	100
+	frame	data/chars/Alien3/pain02.gif
+	Move	0
+	delay	2
+	delay	8
+	bbox	61 114 50 84
+	frame	data/chars/Alien3/pain01.gif
+	frame	data/chars/Alien3/pain01.gif
+	delay	10
+	frame	data/chars/Alien3/pain01.gif
+	frame	data/chars/Alien3/pain01.gif
+
+anim fall
+	loop	0
+	offset	60 80
+	delay	20
+	Landframe 3
+	bbox	14 35 84 43
+	attack1 14 35 84 43 10 1 0 0 0 20
+	frame	data/chars/Alien3/fall01.gif
+	frame	data/chars/Alien3/fall01.gif
+	delay	100
+	frame	data/chars/Alien3/fall01.gif
+	bbox	0 0 0 0
+		Attack1  0
+	delay	7
+	frame	data/chars/Alien3/fall02.gif
+	offset	60 72
+	frame	data/chars/Alien3/fall01.gif
+	offset	60 80
+	frame	data/chars/Alien3/fall02.gif
+
+anim rise
+	loop	0
+	offset	70 200
+	delay	10
+	frame	data/chars/Alien3/rise01.gif
+	frame	data/chars/Alien3/rise02.gif
+
+
+

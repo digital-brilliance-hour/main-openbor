@@ -1,0 +1,21 @@
+name	Dark_Pulse
+type	None
+shadow	0
+nolife  1
+speed	20
+Remove 0
+Nomove 1
+candamage  Enemy
+
+
+anim idle
+	loop	0
+	delay	6
+	offset	113 127
+	frame	data/chars/effects/DPulse0.gif
+	frame	data/chars/effects/DPulse1.gif
+	frame	data/chars/effects/DPulse2.gif
+	frame	data/chars/effects/DPulse3.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/effects/DPulse3.gif
+

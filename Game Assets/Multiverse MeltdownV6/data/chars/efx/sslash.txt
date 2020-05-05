@@ -1,0 +1,19 @@
+name	SSlash
+health	1
+type	none
+shadow	0
+#candamage enemy Obsticle
+
+anim idle
+        delay   4
+	offset	164 96
+		#sound  Data/CHARS/Omega/hold.wav
+		drawmethod  356  256  0  0  0  -1  -1
+	frame	data/chars/EFX/SSlash0.gif
+		drawmethod  356  256  0  0  0  -1  -1
+	frame	data/chars/EFX/SSlash1.gif
+		drawmethod  356  256  0  0  0  -1  -1
+	frame	data/chars/EFX/SSlash2.gif
+		drawmethod  356  256  0  0  0  -1  -1
+	frame	data/chars/EFX/SSlash3.gif
+

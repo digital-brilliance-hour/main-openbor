@@ -1,0 +1,494 @@
+name	SAND_CYCLOPSP
+health	300
+mp 80
+mprate 8
+speed	11
+type	Player
+icon     data/chars/StrkWolf/IconA.gif 1
+iconpain data/chars/StrkWolf/IconB.gif 1
+icondie  data/chars/StrkWolf/IconB.gif 1
+
+
+
+
+running 21	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    SONIC_ SONIC__
+
+palette       data/chars/SandCy/Pal
+
+#alternatepal  data/chars/Sonic/Map1
+#alternatepal  data/chars/Sonic/Map2
+#alternatepal  data/chars/Sonic/Map3
+#alternatepal  data/chars/Sonic/Map4
+#alternatepal  data/chars/Sonic/Map5
+
+
+
+
+com a2 Freespecial1
+com a3 Freespecial2
+com a4 Freespecial3
+jumpmove  3  2
+
+animationscript data/scripts/script.c
+
+
+anim	attack1
+	loop	0
+	delay	8
+	offset	185 150
+	bbox	167 122 33 31
+	frame	data/chars/SandCy/A1-0.gif
+		attack2  172  130  29  21  11  0  0  0  0  20
+	delay	4
+		move  7
+	frame	data/chars/SandCy/A1-1.gif
+	frame	data/chars/SandCy/A1-1.gif
+	delay	8
+		Attack1  0
+	frame	data/chars/SandCy/A1-2.gif
+		move  0
+	frame	data/chars/SandCy/A1-2.gif
+	frame	data/chars/SandCy/A1-2.gif
+
+anim	attack2
+	loop	0
+	delay	8
+	offset	185 150
+	bbox	167 122 33 31
+	frame	data/chars/SandCy/A1-0.gif
+		attack2  172  130  29  21  11  0  0  0  0  20
+	delay	4
+		move  7
+	frame	data/chars/SandCy/A1-1.gif
+	frame	data/chars/SandCy/A1-1.gif
+	delay	8
+		move  7
+		Attack1  0
+	frame	data/chars/SandCy/A1-2.gif
+
+anim	attack3
+	loop	0
+	delay	8
+	offset	185 150
+	bbox	167 122 33 31
+	frame	data/chars/SandCy/A1-0.gif
+		attack2  172  130  29  21  11  0  0  0  0  20
+	delay	4
+		move  7
+	frame	data/chars/SandCy/A1-1.gif
+	frame	data/chars/SandCy/A1-1.gif
+	delay	8
+		move  7
+		Attack1  0
+	frame	data/chars/SandCy/A1-2.gif
+
+anim	fall
+	loop	0
+	offset	153 133
+	delay	8
+	quakeframe	0 3 4
+	Landframe	3
+	attack3	138 99 41 32 10 0 0 0 0 20
+	bbox	138 99 41 32
+	#sound	Data/CHARS/Sonic/whoa.wav
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/StrkWolf/pain.gif
+		offset  153  129
+	frame	data/chars/StrkWolf/pain.gif
+	delay	500
+		offset  153  125
+	frame	data/chars/StrkWolf/pain.gif
+	bbox	0
+	delay	8
+	Attack1	0
+		offset  153  124
+	frame	data/chars/StrkWolf/pain.gif
+		offset  153  122
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	freespecial1
+	loop	0
+	delay	6
+	offset	185 150
+	bbox	165 133 39 22
+	frame	data/chars/SandCy/A2-0.gif
+	frame	data/chars/SandCy/A2-1.gif
+	frame	data/chars/SandCy/A2-2.gif
+	frame	data/chars/SandCy/A2-1.gif
+	frame	data/chars/SandCy/A2-0.gif
+	frame	data/chars/SandCy/A2-3.gif
+	frame	data/chars/SandCy/A2-4.gif
+	frame	data/chars/SandCy/A2-5.gif
+	frame	data/chars/SandCy/A2-6.gif
+	frame	data/chars/SandCy/A2-7.gif
+	delay	3
+        Move    8
+	frame	data/chars/SandCy/A2-8.gif
+	frame	data/chars/SandCy/A2-8.gif
+	frame	data/chars/SandCy/A2-9.gif
+	frame	data/chars/SandCy/A2-9.gif
+	frame	data/chars/SandCy/A2-10.gif
+	frame	data/chars/SandCy/A2-10.gif
+	frame	data/chars/SandCy/A2-11.gif
+	frame	data/chars/SandCy/A2-11.gif
+	frame	data/chars/SandCy/A2-12.gif
+	frame	data/chars/SandCy/A2-12.gif
+	frame	data/chars/SandCy/A2-13.gif
+	frame	data/chars/SandCy/A2-13.gif
+	frame	data/chars/SandCy/A2-14.gif
+	frame	data/chars/SandCy/A2-14.gif
+	frame	data/chars/SandCy/A2-15.gif
+	frame	data/chars/SandCy/A2-15.gif
+	frame	data/chars/SandCy/A2-16.gif
+	frame	data/chars/SandCy/A2-16.gif
+        Move    0
+	delay	6
+	frame	data/chars/SandCy/A2-17.gif
+	frame	data/chars/SandCy/A2-18.gif
+	frame	data/chars/SandCy/A2-19.gif
+	frame	data/chars/SandCy/A2-20.gif
+	frame	data/chars/SandCy/A2-2.gif
+	frame	data/chars/SandCy/A2-1.gif
+	frame	data/chars/SandCy/A2-0.gif
+
+anim	freespecial2
+	loop	0
+	delay	4
+	offset	153 133
+        hitflash QStrike
+	Fastattack	1
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	20
+	delay	2
+	attack3  99  105  110  29  14  1  0  0  0  20
+		bbox  0
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	delay	3
+	move	3
+	attack3  0
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	1
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	0
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	freespecial3
+	loop	0
+	delay	9
+	offset	153 133
+        Jumpframe 1 2 3
+        Landframe 3
+        hitflash TFang
+	bbox	136 110 44 24
+	frame	data/chars/StrkWolf/A1-0.gif
+		attack2  131  105  55  26  20  0  0  0  0  20
+	frame	data/chars/StrkWolf/Run-3.gif
+	delay	100
+	frame	data/chars/StrkWolf/Run-3.gif
+	delay	6
+		Attack1  0
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	idle
+	loop	1
+	delay	8
+	offset	185 150
+	bbox	166 125 36 24
+	frame	data/chars/SandCy/Idle.gif
+
+anim	jump
+	loop	1
+	delay	10
+	offset	153 128
+	bbox	131 104 45 24
+        Dropframe 2
+	frame	data/chars/StrkWolf/Jump0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	100
+	frame	data/chars/StrkWolf/Jump1.gif
+	delay	10
+	frame	data/chars/StrkWolf/Jump2.gif
+	frame	data/chars/StrkWolf/Jump3.gif
+
+anim	walkoff
+	loop	0
+	loop	0
+	delay	9
+	offset	153 128
+        Landframe 24
+        Jumpreframe 0 0 0
+		bbox  123  100  49  28
+	frame	data/chars/StrkWolf/Jump2.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	frame	data/chars/StrkWolf/Jump3.gif
+		bbox  0
+	offset	153 133
+	delay	8
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	Jumpland
+	loop	0
+	offset	153 133
+	delay	8
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	5
+	offset	153 133
+	#sound	Data/CHARS/Sonic/hya.wav
+		bbox  126  100  53  31
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+		attack3  133  104  55  28  12  0  0  0  0  20
+	frame	data/chars/StrkWolf/A1-1.gif
+	frame	data/chars/StrkWolf/A1-1.gif
+
+
+anim	jumpattack2
+	loop	0
+	delay	5
+	offset	153 133
+	#sound	Data/CHARS/Sonic/hya.wav
+		bbox  126  100  53  31
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+		attack2  133  104  55  28  9  0  0  0  0  20
+	frame	data/chars/StrkWolf/A1-1.gif
+	frame	data/chars/StrkWolf/A1-1.gif
+
+anim	pain
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	delay	7
+	quakeframe	0 2 4
+	#sound	Data/CHARS/Sonic/Pain.wav
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	pain2
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-2
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-1
+	bbox  153  86  28  51
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	pain3
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-4
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-3
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-2
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	Move	-1
+	frame	data/chars/StrkWolf/pain.gif
+	delay	100
+	frame	data/chars/StrkWolf/pain.gif
+	Move	0
+	delay	2
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	delay	10
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	pain4
+	loop	0
+	delay	6
+	offset  153  122
+	bbox	136 108 45 16
+	#sound	data/chars/Sonic/pain.wav
+		Attack1  0
+	frame	data/chars/StrkWolf/pain.gif
+	offset  155  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  153  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  155  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  153  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  155  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  153  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  155  122
+	frame	data/chars/StrkWolf/pain.gif
+	offset  153  122
+	delay	50
+	frame	data/chars/StrkWolf/pain.gif
+	bbox	0 0 0 0
+	offset	153 133
+	delay	13
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	pain5
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/StrkWolf/pain.gif
+	delay	2
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	delay	9
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	pain6
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/StrkWolf/pain.gif
+	delay	2
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	frame	data/chars/StrkWolf/pain.gif
+	delay	9
+	frame	data/chars/StrkWolf/pain.gif
+
+anim	rise
+	loop	0
+	offset	153 133
+	delay	13
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	run
+	loop	1
+	delay	6
+	offset	153 133
+	bbox	130 100 54 33
+	frame	data/chars/StrkWolf/Run-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/StrkWolf/Run-1.gif
+		offset  153  133
+	frame	data/chars/StrkWolf/Run-2.gif
+	frame	data/chars/StrkWolf/Run-3.gif
+	frame	data/chars/StrkWolf/Run-4.gif
+
+anim	Special
+	loop	0
+	delay	4
+	MPcost	50
+	Energycost	50
+	offset	153 133
+	Fastattack	1
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	10
+	delay	2
+	attack3  99  105  110  29  35  1  0  0  0  20
+		bbox  0
+	@cmd	shoot "SRush" 0 0 0
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	frame	data/chars/StrkWolf/FSP.gif
+	delay	3
+	move	3
+	attack3  0
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	1
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+	move	0
+	frame	data/chars/StrkWolf/A1-0.gif
+	frame	data/chars/StrkWolf/A1-0.gif
+
+anim	walk
+	loop	1
+	delay	8
+	offset	185 150
+	bbox	166 124 37 25
+	frame	data/chars/SandCy/Move.gif
+

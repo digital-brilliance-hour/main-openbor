@@ -1,0 +1,22 @@
+name	JrBAFSP1
+type	None
+shadow	0
+nolife  1
+remove  0
+Speed   15
+#Nomove 1
+#alpha 4
+candamage player obstacle
+
+#palette       data/chars/Bison/B502.pcx
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	287 310
+	attack3 287 276 41 42 15 0 0 0 0 20
+	frame	data/chars/JrBalrog/0_6-0.gif
+	frame	data/chars/JrBalrog/0_6-1.gif
+	frame	data/chars/JrBalrog/0_6-2.gif
+	

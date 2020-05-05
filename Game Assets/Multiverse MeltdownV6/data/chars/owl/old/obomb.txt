@@ -1,0 +1,49 @@
+name	OBomb
+health	1
+type	NPC
+shadow	0
+speed	10
+candamage enemy Obsticle
+jumpheight 3
+
+anim idle
+	loop	1
+	delay	4
+	offset	117 137
+		attack  133  91  16  19  5
+	frame	data/chars/Owl/OBomb-0.gif
+	frame	data/chars/Owl/OBomb-1.gif
+	frame	data/chars/Owl/OBomb-2.gif
+	frame	data/chars/Owl/OBomb-3.gif
+	frame	data/chars/Owl/OBomb-4.gif
+	frame	data/chars/Owl/OBomb-5.gif
+	frame	data/chars/Owl/OBomb-6.gif
+	frame	data/chars/Owl/OBomb-7.gif
+
+anim attack1
+	offset	117 105
+        delay   1
+		attack  0
+	frame	data/chars/Owl/OBomb-9.gif
+	frame  data/chars/Owl/OBomb-9.gif
+		delay  9
+		blast  115  62  53  43  22
+	frame  data/chars/Owl/OBomb-9.gif
+	frame	data/chars/Owl/OBomb-10.gif
+	frame	data/chars/Owl/OBomb-11.gif
+	frame	data/chars/Owl/OBomb-12.gif
+	frame	data/chars/Owl/OBomb-13.gif
+	frame	data/chars/Owl/OBomb-14.gif
+	frame	data/chars/Owl/OBomb-15.gif
+	frame	data/chars/Owl/OBomb-16.gif
+	frame	data/chars/Owl/OBomb-17.gif
+	frame	data/chars/Owl/OBomb-18.gif
+	frame	data/chars/Owl/OBomb-19.gif
+	frame	data/chars/Owl/OBomb-20.gif
+	frame	data/chars/Owl/OBomb-21.gif
+	frame	data/chars/Owl/OBomb-22.gif
+	frame	data/chars/Owl/OBomb-23.gif
+
+
+
+

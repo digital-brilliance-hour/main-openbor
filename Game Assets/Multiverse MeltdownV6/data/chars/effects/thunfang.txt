@@ -1,0 +1,26 @@
+name	ThunFang
+type	None
+shadow	0
+nolife  1
+speed	20
+Remove 0
+Nomove 1
+candamage  Enemy
+
+
+anim idle
+	loop	0
+	delay	3
+	offset	138 117
+	attack1    137 91 33 28   15  1  0  0  0  20
+	frame	data/chars/effects/TFang-0.gif
+	attack1  138  94  32  23  15  1  0  0  0  20
+	frame	data/chars/effects/TFang-1.gif
+	attack1  137  96  33  20  15  1  0  0  0  20
+	frame	data/chars/effects/TFang-2.gif
+	attack1  136  100  34  16  15  1  0  0  0  20
+	delay	14
+	frame	data/chars/effects/TFang-3.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/effects/TFang-3.gif
+

@@ -1,0 +1,70 @@
+name	NBombF
+health	1
+type	None
+shadow	0
+candamage enemy obstacle
+Nomove 1
+Remove 0
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Owl/Freeze/OBombFP
+
+anim idle
+	loop	0
+	delay	6
+	offset	113 98
+	attack1  0
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  113  98
+	drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  113  98
+	drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+#-----------------------------
+	offset	131 120
+          Fastattack 1
+	delay  6
+	attack1  0
+           @cmd    changemap 1
+		drawmethod  206  206  0  0  0  -1  -1
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		freeze	128  113  9  8  15  8  0  0  0  20
+           Move 0
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		freeze	121  105  23  19  15  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-1.gif
+		freeze	110  89  47  41  15  8  0  0  0  20
+		offset  132  120
+	frame    data/chars/Owl/Burn/OBB-2.gif
+		freeze	107  88  51  42  15  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-3.gif
+		freeze	109  92  48  38  15  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-4.gif
+		offset  133  120
+	frame    data/chars/Owl/Burn/OBB-5.gif
+	frame    data/chars/Owl/Burn/OBB-6.gif
+@cmd killentity getlocalvar("self")
+	frame    data/chars/Owl/Burn/OBB-6.gif
+

@@ -1,0 +1,81 @@
+name	Ghoul
+health	200
+speed   11
+type	enemy
+diesound	data/sounds/beast.wav
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	8 28
+	bbox    8 28 35 39
+	frame	data/chars/ghoul/stance.gif
+	
+	
+
+anim walk
+	loop	1
+	delay	19
+	offset	7 28
+	bbox    7 28 47 40
+	frame	data/chars/ghoul/walk1.gif
+	delay	54
+	offset	9 28
+	bbox    9 28 35 39
+	frame	data/chars/ghoul/stance.gif
+	
+	
+	
+	
+anim pain
+	loop	0
+	delay	20
+	offset  11 27
+	bbox    11 27 48 44
+	frame	data/chars/ghoul/hit.gif
+	
+	
+anim fall
+	loop	0
+	delay	10
+	offset  14 20
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/lie.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  14 20
+	frame	data/chars/ghoul/hit.gif
+	
+
+
+	
+
+
+	
+anim attack1
+	
+	loop	0
+	offset	15 30
+	delay	8
+	frame	data/chars/ghoul/a1.gif
+	offset  13 32
+	delay	10
+	frame	data/chars/ghoul/a2.gif
+	attack	13 32 56 43 60 1
+	offset	11 29
+	frame	data/chars/ghoul/a3.gif
+	attack	11 29 56 43 60 1
+	offset	15 30
+	move	3
+	delay	8
+	frame	data/chars/ghoul/a1.gif
+	offset  13 32
+	delay	10
+	frame	data/chars/ghoul/a2.gif
+	attack	13 32 56 43 60 1
+	offset	11 29
+	frame	data/chars/ghoul/a3.gif
+	attack	11 29 56 43 60 1

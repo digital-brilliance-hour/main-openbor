@@ -1,0 +1,19 @@
+name	ImpS1
+health	1
+type	Pshot
+shadow	0
+speed	16
+candamage Enemy
+remove 1
+
+anim idle
+	loop	1
+	delay	3
+           fastattack 1
+	offset	112 132
+	Burn	143 106 15 27 8 0 0 0 0 20
+	frame	data/chars/Impmon/FSP1-0.gif
+	frame	data/chars/Impmon/FSP1-1.gif
+	frame	data/chars/Impmon/FSP1-2.gif
+	frame	data/chars/Impmon/FSP1-3.gif
+

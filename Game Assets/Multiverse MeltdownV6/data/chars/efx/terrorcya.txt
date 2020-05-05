@@ -1,0 +1,30 @@
+name	TerrorCyA
+type	none
+shadow	0
+nolife  1
+speed	24
+Remove 0
+nomove 1
+Alpha   1
+candamage player npc
+
+anim idle
+	loop	1
+        delay   3
+	offset	108 97
+	move	20
+		#sound  Data/CHARS/Omega/hold.wav
+	attack3 65 44 67 50 30 1 0 0 0 20
+	frame	data/chars/EFX/TerrorCy0.gif
+	frame	data/chars/EFX/TerrorCy1.gif
+	frame	data/chars/EFX/TerrorCy0.gif
+	frame	data/chars/EFX/TerrorCy1.gif
+	frame	data/chars/EFX/TerrorCy0.gif
+	frame	data/chars/EFX/TerrorCy1.gif
+	frame	data/chars/EFX/TerrorCy0.gif
+	frame	data/chars/EFX/TerrorCy1.gif
+	frame	data/chars/EFX/TerrorCy0.gif
+	frame	data/chars/EFX/TerrorCy1.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/EFX/TerrorCy1.gif
+

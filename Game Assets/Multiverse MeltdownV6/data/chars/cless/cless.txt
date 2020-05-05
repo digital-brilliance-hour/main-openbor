@@ -1,0 +1,672 @@
+name	CLESS
+health	500
+mp 100
+mprate 10
+speed	15
+type	player
+icon     data/chars/Cless/IconA.gif 1
+iconget  data/chars/Cless/IconB.gif 1
+iconpain data/chars/Cless/IconC.gif 1
+icondie  data/chars/Cless/IconC.gif 1
+#diesound   data/chars/Zero/die2.wav
+running 25 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+knife   ZShot
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Cless/0_0-0p
+alternatepal  data/chars/Cless/Pal0
+alternatepal  data/chars/Cless/Pal1
+alternatepal  data/chars/Cless/Pal2
+alternatepal  data/chars/Cless/Pal3
+alternatepal  data/chars/Cless/Pal4
+alternatepal  data/chars/Cless/Pal5
+alternatepal  data/chars/Cless/Pal6
+
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+#weaploss 2
+animationscript data/scripts/script.c
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	fastattack 1
+	cancel	4 7 0 a freespecial
+	offset	192 181
+	bbox 179 145 22 36
+	frame	data/chars/Cless/0_200-0.gif
+	move	5
+	delay	5
+	attack1 188 127 19 52 10 0 0 0 0 20
+	frame	data/chars/Cless/0_200-1.gif
+	move	0
+	attack1 193 154 38 25 10 0 0 0 0 20
+	bbox 184 148 22 32
+	frame	data/chars/Cless/0_200-2.gif
+	attack1 192 161 39 19 10 0 0 0 0 20
+	frame	data/chars/Cless/0_200-3.gif
+	attack1	0
+	delay	2
+	frame	data/chars/Cless/0_200-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+
+anim	dodge
+	loop	0
+	delay	5
+	offset	192 181
+	frame	data/chars/Cless/0_41-0.gif
+	offset	192 183
+	frame	data/chars/Cless/0_41-0.gif
+	offset	192 185
+	frame	data/chars/Cless/0_41-0.gif
+	offset	192 187
+	frame	data/chars/Cless/0_44-0.gif
+	offset	192 185
+	frame	data/chars/Cless/0_44-0.gif
+	offset	192 183
+	frame	data/chars/Cless/0_44-0.gif
+	delay	6
+	offset	192 181
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-0.gif
+
+anim	fall
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	Landframe	3
+	offset	192 181
+	bbox 177 140 25 38
+	attack3 177 140 25 38 10 0 0 0 0 20
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	delay	500
+	offset	192 175
+	bbox 170 143 33 30
+	attack3 170 143 33 30 10 0 0 0 0 20
+	frame	data/chars/Cless/0_5030-30.gif
+	bbox 0 0 0 0
+	delay	9
+	Attack1	0
+	offset	192 181
+	frame	data/chars/Cless/0_5040-10.gif
+	offset	192 169
+	frame	data/chars/Cless/0_5030-30.gif
+	frame	data/chars/Cless/0_5030-30.gif
+	offset	192 181
+	frame	data/chars/Cless/0_5040-10.gif
+
+anim	freespecial
+	loop	0
+	delay	8
+	fastattack 1
+	cancel	4 8 0 a freespecial2
+	offset	192 181
+	bbox 54 90 15 36
+	frame	data/chars/Cless/0_210-0.gif
+	delay	3
+	attack1 192 157 43 22 12 0 0 0 0 20
+	frame	data/chars/Cless/0_210-1.gif
+	bbox 52 93 23 34
+	attack1 191 159 53 22 12 0 0 0 0 20
+	frame	data/chars/Cless/0_210-2.gif
+	frame	data/chars/Cless/0_210-3.gif
+	delay	14
+	attack1 191 157 57 24 12 0 0 0 0 20
+	frame	data/chars/Cless/0_210-4.gif
+	attack1	0
+	delay	2
+	frame	data/chars/Cless/0_210-4.gif
+	frame	data/chars/Cless/0_210-4.gif
+	frame	data/chars/Cless/0_210-4.gif
+	frame	data/chars/Cless/0_210-4.gif
+
+anim	freespecial2
+	loop	0
+	delay	7
+	fastattack 1
+	cancel	3 7 0 a freespecial3
+	offset	192 181
+	bbox 53 97 19 31
+	frame	data/chars/Cless/0_220-0.gif
+	delay	5
+	attack1 153 151 35 36 12 0 0 0 0 20
+	bbox 55 92 19 34
+	frame	data/chars/Cless/0_220-1.gif
+	attack1 191 123 35 58 12 0 0 0 0 20
+	frame	data/chars/Cless/0_220-2.gif
+	attack1 162 130 42 50 12 0 0 0 0 20
+	frame	data/chars/Cless/0_220-3.gif
+	delay	2
+	frame	data/chars/Cless/0_220-4.gif
+	frame	data/chars/Cless/0_220-4.gif
+	frame	data/chars/Cless/0_220-4.gif
+	frame	data/chars/Cless/0_220-4.gif
+
+anim	freespecial3
+	loop	0
+	delay	7
+	offset	192 181
+	bbox 48 87 20 39
+	fastattack 1
+	move 5
+	attack3 0
+	frame	data/chars/Cless/0_230-0.gif
+	move 7
+	delay	5
+	bbox 53 88 14 38
+	frame	data/chars/Cless/0_230-1.gif
+	move 9
+	attack3 192 169 43 20 13 0 0 0 0 20
+	bbox 42 103 29 22
+	frame	data/chars/Cless/0_230-2.gif
+	move 0
+	attack3 192 175 45 22 13 0 0 0 0 20
+	frame	data/chars/Cless/0_230-3.gif
+	delay	7
+	attack3 192 177 40 24 13 0 0 0 0 20
+	frame	data/chars/Cless/0_230-4.gif
+	attack3 0
+	frame	data/chars/Cless/0_230-4.gif
+	bbox 55 101 18 25
+	frame	data/chars/Cless/0_11-1.gif
+
+anim	freespecial4
+	loop	0
+	delay	6
+	Fastattack 1
+	mpcost	10
+	mponly	1
+	offset	192 183
+	frame	data/chars/Cless/0_210-0.gif
+	frame	data/chars/Cless/0_210-0.gif
+	move 10
+	frame	data/chars/Cless/0_210-1.gif
+	###
+	move 0
+	attack1 191 158 53 25 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1a.gif
+	attack1 192 141 57 39 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-3a.gif
+	attack1 191 163 56 19 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-4a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1.gif
+	attack1 191 158 53 25 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1a.gif
+	attack1 192 141 57 39 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-3a.gif
+	attack1 191 163 56 19 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-4a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1.gif
+	attack1 191 158 53 25 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1a.gif
+	attack1 192 141 57 39 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-3a.gif
+	attack1 191 163 56 19 1 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-4a.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-1.gif
+	attack3 191 158 53 25 5 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-2.gif
+	###
+	frame	data/chars/Cless/0_210-3.gif
+	attack3 191 158 58 25 5 0 0 0 0 20
+	dropv 1.0 0.0
+	frame	data/chars/Cless/0_210-4.gif
+	attack1 0
+	frame	data/chars/Cless/0_210-4.gif
+
+anim	freespecial5
+	loop	0
+	delay	15
+	Fastattack	1
+	mpcost	10
+	mponly	1
+	offset	192 183
+	frame	data/chars/Cless/0_1500-0.gif
+	delay	4
+	frame	data/chars/Cless/0_1500-1.gif
+	@cmd	shoot "ClFSP2" 0 0 0
+	frame	data/chars/Cless/0_1500-2.gif
+	frame	data/chars/Cless/0_1500-3.gif
+	delay	9
+	frame	data/chars/Cless/0_1500-4.gif
+	frame	data/chars/Cless/0_1500-4.gif
+
+anim	freespecial6
+	loop	0
+	delay	7
+	mpcost	20
+	mponly	1
+	jumpframe 1 2 -2
+	landframe 36
+	offset	192 183
+	frame	data/chars/Cless/0_220-0.gif
+	###
+	frame	data/chars/Cless/FSP3-0.gif
+	frame	data/chars/Cless/FSP3-0.gif
+	frame	data/chars/Cless/FSP3-1.gif
+	@cmd	leaper  7 2 0
+	delay	2
+	attack3 184 151 50 49 20 1 0 0 0 20
+	dropv 3.0 4.0
+	frame	data/chars/Cless/FSP3-2.gif
+	frame	data/chars/Cless/FSP3-3.gif
+	frame	data/chars/Cless/FSP3-4.gif
+	frame	data/chars/Cless/FSP3-5.gif
+	frame	data/chars/Cless/FSP3-6.gif
+	frame	data/chars/Cless/FSP3-7.gif
+	frame	data/chars/Cless/FSP3-8.gif
+	delay	4
+	frame	data/chars/Cless/FSP3-9.gif
+	frame	data/chars/Cless/FSP3-10.gif
+	frame	data/chars/Cless/FSP3-11.gif
+	attack3 184 151 56 49 20 1 0 0 0 20
+	dropv 3.0 4.0
+	frame	data/chars/Cless/FSP3-12.gif
+	frame	data/chars/Cless/FSP3-13.gif
+	frame	data/chars/Cless/FSP3-14.gif
+	frame	data/chars/Cless/FSP3-15.gif
+	frame	data/chars/Cless/FSP3-16.gif
+	frame	data/chars/Cless/FSP3-17.gif
+	frame	data/chars/Cless/FSP3-18.gif
+	frame	data/chars/Cless/FSP3-12.gif
+	frame	data/chars/Cless/FSP3-13.gif
+	frame	data/chars/Cless/FSP3-14.gif
+	frame	data/chars/Cless/FSP3-15.gif
+	frame	data/chars/Cless/FSP3-16.gif
+	frame	data/chars/Cless/FSP3-17.gif
+	frame	data/chars/Cless/FSP3-18.gif
+	frame	data/chars/Cless/FSP3-12.gif
+	frame	data/chars/Cless/FSP3-13.gif
+	frame	data/chars/Cless/FSP3-14.gif
+	frame	data/chars/Cless/FSP3-15.gif
+	frame	data/chars/Cless/FSP3-16.gif
+	frame	data/chars/Cless/FSP3-17.gif
+	frame	data/chars/Cless/FSP3-18.gif
+	delay	50
+	frame	data/chars/Cless/FSP3-18.gif
+	###
+	move 5
+	delay	2
+	frame	data/chars/Cless/FSP3-19.gif
+	attack3 0
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-1.gif
+	move 2
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-1.gif
+	move 1
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-1.gif
+	move 0
+	delay	8
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-1.gif
+
+anim	get
+	loop	0
+	delay	9
+	offset	194 183
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-0.gif
+
+anim	idle
+	loop	1
+	delay	17
+	offset	192 183
+	bbox 180 142 23 40
+	frame	data/chars/Cless/0_0-0.gif
+	frame	data/chars/Cless/0_0-1.gif
+	frame	data/chars/Cless/0_0-2.gif
+	frame	data/chars/Cless/0_0-1.gif
+
+anim	jump
+	loop	0
+	delay	35
+	offset	192 181
+	bbox 185 140 18 40
+	frame	data/chars/Cless/0_41-0.gif
+	delay	5
+	frame	data/chars/Cless/0_44-0.gif
+
+anim	jumpland
+	loop	0
+	delay	9
+	offset	194 183
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	192 181
+	bbox 180 145 19 39
+	frame	data/chars/Cless/0_230-0.gif
+	delay	5
+	bbox 180 146 23 36
+	frame	data/chars/Cless/0_230-1.gif
+	attack3 191 163 43 28 13 0 0 0 0 20
+	bbox 184 157 27 24
+	frame	data/chars/Cless/0_230-2.gif
+	attack3 192 177 44 20 13 0 0 0 0 20
+	frame	data/chars/Cless/0_230-3.gif
+	delay	7
+	attack3 190 176 42 23 13 0 0 0 0 20
+	frame	data/chars/Cless/0_230-4.gif
+
+anim	jumpattack2
+	loop	0
+	delay	4
+	offset	192 181
+	bbox 182 145 25 37
+	attack1	0
+	frame	data/chars/Cless/0_2600-37.gif
+	bbox 183 146 24 37
+	attack2 192 149 50 31 9 0 0 0 0 20
+	frame	data/chars/Cless/0_2600-38.gif
+	attack2 192 162 49 18 9 0 0 0 0 20
+	frame	data/chars/Cless/0_2600-39.gif
+
+anim	land
+	delay	9
+	offset	194 183
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-0.gif
+
+anim	pain
+	loop	0
+	offset	192 181
+	bbox 184 152 25 29
+	delay	5
+	quakeframe	0 3 4
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+
+anim	pain2
+	loop	0
+	offset	192 181
+	bbox 184 152 25 29
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-2
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-1
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+
+anim	pain3
+	loop	0
+	offset	192 181
+	bbox 184 152 25 29
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-4
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-3
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-2
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	-1
+	frame	data/chars/Cless/0_5000-0.gif
+	delay	100
+	frame	data/chars/Cless/0_5000-0.gif
+	Move	0
+	delay	2
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+	delay	10
+	frame	data/chars/Cless/0_5000-0.gif
+	frame	data/chars/Cless/0_5000-0.gif
+
+anim	rise
+	loop	0
+	delay	12
+	offset	192 181
+	frame	data/chars/Cless/0_5040-10.gif
+	delay	14
+	frame	data/chars/Cless/0_11-1.gif
+	frame	data/chars/Cless/0_11-0.gif
+
+anim	run
+	loop	1
+	delay	9
+	offset	192 181
+	bbox 184 152 25 29
+	frame	data/chars/Cless/0_100-0.gif
+	frame	data/chars/Cless/0_100-1.gif
+	frame	data/chars/Cless/0_100-2.gif
+	frame	data/chars/Cless/0_100-3.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	2
+	offset	192 183
+	bbox 177 148 18 32
+	move 5
+	frame	data/chars/Cless/0_1500-0.gif
+	frame	data/chars/Cless/0_1500-0.gif
+	frame	data/chars/Cless/0_1500-0.gif
+	attack3 152 137 32 42 13 0 0 0 0 20
+	bbox 182 151 21 29
+	frame	data/chars/Cless/0_1500-1.gif
+	frame	data/chars/Cless/0_1500-1.gif
+	frame	data/chars/Cless/0_1500-1.gif
+	delay	2
+	move 8
+	attack3 179 160 44 36 13 0 0 0 0 20
+	bbox 181 151 27 30
+	frame	data/chars/Cless/0_1500-2.gif
+	frame	data/chars/Cless/0_1500-2.gif
+	frame	data/chars/Cless/0_1500-2.gif
+	attack3 181 130 38 51 13 0 0 0 0 20
+	bbox 182 149 29 31
+	frame	data/chars/Cless/0_1500-3.gif
+	frame	data/chars/Cless/0_1500-3.gif
+	frame	data/chars/Cless/0_1500-3.gif
+	delay	4
+	move 3
+	attack3 0
+	frame	data/chars/Cless/0_1500-4.gif
+	frame	data/chars/Cless/0_1500-4.gif
+	delay	8
+	move 0
+	attack3 0
+	frame	data/chars/Cless/0_1500-4.gif
+
+anim	special
+	loop	0
+	delay	5
+	followanim	1
+	followcond	1
+	offset	192 181
+	fastattack 1
+	Energycost	50 1
+	frame	data/chars/Cless/0_210-0.gif
+	delay	3
+	move 20
+	attack1 192 159 43 22 10 0 0 0 0 20
+	frame	data/chars/Cless/0_210-1.gif
+	frame	data/chars/Cless/0_210-1.gif
+	attack1 191 156 52 24 10 0 0 0 0 20
+	frame	data/chars/Cless/0_210-2.gif
+	frame	data/chars/Cless/0_210-2.gif
+	move 0
+	delay	7
+	attack1 191 159 56 23 10 0 0 0 0 20
+	frame	data/chars/Cless/0_210-3.gif
+	frame	data/chars/Cless/0_210-3.gif
+	delay	2
+	attack1 0
+	frame	data/chars/Cless/0_210-4.gif
+	frame	data/chars/Cless/0_210-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+	
+ anim	follow1
+	loop	0
+	delay	15
+	fastattack	1
+	offset	192 183
+	attack1 0
+	move 15
+	jumpframe 28 3 0
+	landframe 35
+	frame	data/chars/Cless/0_1500-0.gif
+	move 0
+	delay	4
+	frame	data/chars/Cless/0_1500-1.gif
+	#@cmd	shoot "KyFSP2" 0 0 0
+	attack1 189 160 33 36 1 0 0 0 0 20
+	frame	data/chars/Cless/0_1500-2.gif
+	frame	data/chars/Cless/0_1500-3.gif
+	delay	9
+	frame	data/chars/Cless/0_1500-4.gif
+	frame	data/chars/Cless/0_1500-4.gif
+	attack1	0
+	frame	data/chars/Cless/0_210-0.gif
+	delay	5
+	attack1 191 159 44 23 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-1.gif
+	attack1 191 158 53 24 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-2.gif
+	frame	data/chars/Cless/0_210-3.gif
+	delay	8
+	attack1 191 158 57 24 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-4.gif
+	attack1	0
+	frame	data/chars/Cless/0_210-0.gif
+	delay	5
+	attack1 191 159 44 23 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-1.gif
+	attack1 191 158 53 24 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-2.gif
+	frame	data/chars/Cless/0_210-3.gif
+	delay	8
+	attack1 191 158 57 24 1 0 0 0 0 20
+	frame	data/chars/Cless/0_210-4.gif
+	attack1	0
+	frame	data/chars/Cless/0_1500-0.gif
+	delay	4
+	frame	data/chars/Cless/0_1500-1.gif
+	#@cmd	shoot "KyFSP2" 0 0 0
+	attack1 189 160 33 36 1 0 0 0 0 20
+	frame	data/chars/Cless/0_1500-2.gif
+	frame	data/chars/Cless/0_1500-3.gif
+	delay	9
+	frame	data/chars/Cless/0_1500-4.gif
+	frame	data/chars/Cless/0_1500-4.gif
+	attack1	0
+	frame	data/chars/Cless/0_230-0.gif
+	delay	5
+	frame	data/chars/Cless/0_230-1.gif
+	attack1 191 163 43 28 1 0 0 0 0 20
+	frame	data/chars/Cless/0_230-2.gif
+	attack1 192 177 44 20 1 0 0 0 0 20
+	frame	data/chars/Cless/0_230-3.gif
+	delay	7
+	attack3 190 176 42 23 1 0 0 0 0 20
+	frame	data/chars/Cless/0_230-4.gif
+	attack1	0
+	frame	data/chars/Cless/0_240-0.gif
+	frame	data/chars/Cless/0_240-1.gif
+	attack1 191 122 40 80 1 0 0 0 0 20
+	frame	data/chars/Cless/0_240-2.gif
+	frame	data/chars/Cless/0_240-3.gif
+	attack1 198 122 33 43 1 0 0 0 0 20
+	frame	data/chars/Cless/0_240-4.gif
+	attack1	0
+	@cmd	leaper  0 -2 0
+	frame	data/chars/Cless/0_230-0.gif
+	delay	5
+	frame	data/chars/Cless/0_230-1.gif
+	delay	50
+	frame	data/chars/Cless/0_230-2.gif
+	#@cmd	shoot "LoSP6" 0 -12 0
+	@cmd	shoot "LoSP6a" 0 0 -1
+	@cmd	shoot "LoSP6b" 0 0 0
+	delay	5
+	frame	data/chars/Cless/0_230-3.gif
+	delay	70
+	frame	data/chars/Cless/0_230-4.gif
+	delay	7
+	frame	data/chars/Cless/0_200-4.gif
+	frame	data/chars/Cless/0_200-4.gif
+
+anim	walk
+	loop	1
+	delay	11
+	offset	192 182
+	bbox 182 142 23 40
+	frame	data/chars/Cless/0_20-0.gif
+	frame	data/chars/Cless/0_20-1.gif
+	frame	data/chars/Cless/0_20-2.gif
+	frame	data/chars/Cless/0_20-3.gif
+	frame	data/chars/Cless/0_20-2.gif
+	frame	data/chars/Cless/0_20-1.gif
+
+
+#|edited by openBor Stats v 0.37
+
+

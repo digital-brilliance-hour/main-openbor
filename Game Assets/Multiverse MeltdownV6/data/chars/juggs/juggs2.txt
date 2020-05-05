@@ -1,0 +1,324 @@
+name	Juggs
+health	60
+speed	10
+type	enemy
+shadow	4
+falldie 1
+nodieblink 2
+cantgrab  1
+nodrop	1
+icon	  data/chars/Juggs/icon.gif
+iconpain  data/chars/Juggs/iconP.gif
+icondie   data/chars/Juggs/iconD.gif
+palette       data/chars/Juggs/Pal
+alternatepal  data/chars/Juggs/FreezeM.gif
+fmap 1
+diesound   data/sounds/dead1.wav
+candamage Enemy Player
+
+
+anim idle
+	loop	1
+	delay	20
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/at1.GIF
+	frame	data/chars/Juggs/walk1.GIF
+
+anim walk
+	loop	1
+	delay	20
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/walk1.GIF
+	frame	data/chars/Juggs/walk2.GIF
+	frame	data/chars/Juggs/walk3.GIF
+	frame	data/chars/Juggs/walk4.GIF
+	frame	data/chars/Juggs/walk3.GIF
+	frame	data/chars/Juggs/walk2.GIF
+
+anim pain
+	loop	0
+	delay	20
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/pain.gif
+
+anim BPAIN
+	loop	0
+	offset	56	109
+	delay	3
+	bbox	21	21	78	88
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+
+anim SPAIN
+	loop	0
+	offset	56	109
+	delay	3
+	bbox	21	21	78	88
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+
+anim pain2
+	loop	0
+	offset	56	109
+	delay	3
+	bbox	21	21	78	88
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+	frame	data/chars/juggs/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	56	109
+	delay	3
+	bbox	21	21	78	88
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/pain.gif
+
+anim BURN
+	loop	0
+	offset	56	109
+           landframe 19
+	delay	3
+	attack1   21 21 78 88 10 0 0 0 0 20
+	bbox	21 21 78 88
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/BurnP.gif
+	frame	data/chars/juggs/at2.gif
+	delay	100
+	frame	data/chars/Juggs/pain.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/Juggs/pain.gif
+
+anim Shock
+	loop	0
+	offset	56	109
+           landframe 19
+	delay	3
+	attack1   21 21 78 88 10 0 0 0 0 20
+	bbox	21 21 78 88
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/ShockP.gif
+	frame	data/chars/juggs/at2.gif
+	delay	100
+	frame	data/chars/juggs/at2.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/juggs/at2.gif
+
+anim Fall3
+	loop	0
+	offset	56	109
+           landframe 19
+	delay	3
+	attack1   21 21 78 88 10 0 0 0 0 20
+	bbox	21 21 78 88
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	frame	data/chars/juggs/DrainP.gif
+	frame	data/chars/juggs/at2.gif
+	delay	100
+	frame	data/chars/juggs/at2.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/juggs/at2.gif
+	
+anim death
+	loop	0
+	offset	56	109
+	delay	15
+	frame	data/chars/Juggs/walk3.gif
+	frame	data/chars/Juggs/die1.gif
+	frame	data/chars/Juggs/walk3.gif
+	frame	data/chars/Juggs/die1.gif
+	frame	data/chars/Juggs/walk3.gif
+	frame	data/chars/Juggs/die1.gif
+	frame	data/chars/Juggs/die2.gif
+	sound   data/sounds/dead1.wav
+	frame	data/chars/Juggs/die3.gif
+	frame	data/chars/Juggs/die4.gif
+	frame	data/chars/Juggs/die5.gif
+	frame	data/chars/Juggs/die6.gif
+	frame	data/chars/Juggs/die7.gif
+	frame	data/chars/Juggs/die8.gif
+	frame	data/chars/Juggs/die9.gif
+
+anim rise
+	loop	0
+	delay	2
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/pain.gif
+
+	
+
+anim attack1
+	loop	0
+	delay	2
+	offset	56	109
+	bbox	21	21	78	88
+	frame	data/chars/Juggs/at1.gif
+	frame	data/chars/Juggs/at1.gif
+	attack	44	8	70	61	10	1
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif
+
+anim upper
+	loop	0
+	delay	3
+	offset	56	109
+	move	10
+	frame	data/chars/Juggs/at1.gif
+	frame	data/chars/Juggs/at1.gif
+	attack	44	8	70	61	10	1
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif
+
+anim special
+	loop	0
+	delay	2
+	offset	56	109
+	move	10
+	frame	data/chars/Juggs/at1.gif
+	frame	data/chars/Juggs/at1.gif
+	attack	44	8	70	61	10	1
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at2.gif
+	frame	data/chars/Juggs/at3.gif
+	frame	data/chars/Juggs/at3.gif

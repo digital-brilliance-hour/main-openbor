@@ -1,0 +1,81 @@
+music		data/music/BLOCK.BOR
+
+background	data/bgs/1-b/back.gif
+panel	        data/bgs/1-b/p01.gif
+panel	        data/bgs/1-b/p02.gif
+panel	        data/bgs/1-b/p03.gif
+panel	        data/bgs/1-b/p04.gif
+panel	        data/bgs/1-b/p07.gif
+panel	        data/bgs/1-b/p05.gif
+panel	        data/bgs/1-b/p06.gif
+frontpanel	        data/bgs/1-b/front.gif
+
+order	abcdefg
+
+direction both
+settime 0
+notime 1
+
+group 6 6
+at 0
+
+#--group1-----
+spawn	CHARMELEON_B
+alias       CHARMELEON
+health	200
+coords	200 160 1
+at	0
+aggression -2
+
+spawn	CROCONAW_B
+alias       CROCONAW
+health	200
+coords	200 200 1
+at	0
+aggression -2
+
+spawn	GROVYLE_B
+alias       GROVYLE
+health	200
+coords	200 240 1
+at	0
+aggression -2
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	400 160 1
+at	0
+aggression -2
+
+spawn	URSARING_B
+alias       URSARING
+health	200
+coords	400 200 1
+at	0
+aggression -2
+
+spawn	ZANGOOSE_B
+alias       ZANGOOSE
+health	200
+coords	400 240 1
+at	0
+aggression -2
+
+#--group1-----
+
+
+spawn	TOXICROAK_B
+alias       TOXICROAK
+health	200
+coords	200 160 1
+at	0
+aggression -2
+
+spawn	GABITE_B
+alias       GABITE
+health	200
+coords	200 200 1
+at	0
+aggression -2
+

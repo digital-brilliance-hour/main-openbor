@@ -1,0 +1,54 @@
+name		ship
+type		none
+subtype		biker
+health		50
+shadow 0
+speed 		40
+palette 	none
+
+
+candamage enemy player obstacle
+
+
+anim	follow1
+	loop	1
+	delay	15
+	offset	239 268
+	bbox	78 69 331 218
+	frame	data/chars/misc/ship/ship.png
+	delay	20
+	frame	data/chars/misc/ship/ship.png
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	239 268
+	bbox	78 69 331 218
+	frame	data/chars/misc/ship/ship.png
+	delay	20
+	frame	data/chars/misc/ship/ship.png
+		
+anim	pain
+	sound	data/sounds/maxboom.wav
+	delay	4
+	offset	239 268
+	bbox	78 69 331 218
+	frame	data/chars/misc/ship/ship.png
+	frame	data/chars/misc/ship/ship.png
+	frame	data/chars/misc/ship/ship.png
+		
+anim	spawn
+@script
+  if(frame==1){
+    void self = getlocalvar("self");
+    setentityvar(self, 1, 1);
+  }
+@end_script
+	delay	2
+	offset	239 268
+	bbox	78 69 331 218
+	frame	data/chars/misc/ship/ship.png
+	frame	data/chars/misc/ship/ship.png
+		
+#|edited by openBor Stats v 0.67
+		

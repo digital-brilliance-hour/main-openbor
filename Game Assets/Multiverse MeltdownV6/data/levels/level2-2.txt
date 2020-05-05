@@ -1,0 +1,317 @@
+notime 1
+music		data/music/DBALIEN.ogg
+bgspeed      2
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+BGLayer	           data/bgs/stage2-2/BG2.gif 0 0 0 12 0 0 1 1 1
+BGLayer	           data/bgs/stage2-2/BG.gif 0.5 0 0 12 0 0 2000000000 1 0 0 0 0 0 0 10
+panel		data/bgs/stage2-2/Panel.gif
+frontpanel	           data/bgs/Fpanal.gif
+							
+order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+#spawn	ready
+#coords	0 240
+#flip    1
+#at	0
+
+
+#-------1
+
+
+group   6 6
+at      20
+
+spawn	alien1
+health	50
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	560 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 20
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 20
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 20
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 20
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 20
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 20
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	-60 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 40
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 40
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 40
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 40
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 40
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 40
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	560 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 60
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 60
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 60
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 60
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 60
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 60
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	-60 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 80
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 80
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 80
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 80
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 80
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 80
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	560 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 100
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 100
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 100
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 100
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 100
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 100
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	-60 210 1
+at      0
+
+spawn	alien1
+health	50
+aggression 120
+coords	560 210 1
+at      0
+
+spawn	alien2
+health	50
+aggression 120
+coords	-60 210 1
+at      0
+
+spawn	alien3
+health	50
+aggression 120
+coords	560 210 1
+at      0
+
+spawn	alien4
+health	50
+aggression 120
+coords	-60 210 1
+at      0
+
+spawn	alien5
+health	50
+aggression 120
+coords	560 210 1
+at      0
+
+spawn	alien6
+health	50
+aggression 120
+coords	-60 210 1
+at      0
+
+spawn	ROYAL_GUARD
+health	100
+aggression 150
+coords	560 210 1
+at      0
+
+

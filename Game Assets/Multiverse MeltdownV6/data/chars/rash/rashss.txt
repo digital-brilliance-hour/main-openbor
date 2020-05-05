@@ -1,0 +1,150 @@
+name	RASHS
+health	100
+speed	7
+type	none
+shadow	3
+grabdistance	40
+running 24	3	2.80	1	0
+icon	data/chars/rash/icon.gif
+jumpheight 3.8
+makeinv  1
+dust   dust
+
+anim get
+	loop	0
+	offset	88 195
+	delay   10
+	frame	data/chars/rash/wget.gif
+
+anim jump
+	loop	0
+	delay	6
+	offset	88 195
+	bbox	82 125 20 50
+	sound   data/chars/rash/p2.wav
+	frame	data/chars/rash/wj1.gif
+	frame	data/chars/rash/j2.gif
+	frame	data/chars/rash/j3.gif
+	frame	data/chars/rash/j4.gif
+	frame	data/chars/rash/j5.gif
+	frame	data/chars/rash/j6.gif
+	frame	data/chars/rash/j7.gif
+	frame	data/chars/rash/j8.gif
+	frame	data/chars/rash/j9.gif
+	frame	data/chars/rash/wj1.gif
+
+
+
+anim idle
+	loop	1
+	delay	13
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/idlew.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/wW1.gif
+	frame	data/chars/rash/wW2.gif
+	frame	data/chars/rash/wW3.gif
+	frame	data/chars/rash/wW4.gif
+	frame	data/chars/rash/wW5.gif
+	frame	data/chars/rash/wW6.gif
+	frame	data/chars/rash/wW7.gif
+
+
+anim attack1
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+        jumpframe  1 2
+        hitflash    smack
+        hitfx   data/sounds/beat3.wav
+	sound   data/chars/rash/p1.wav
+	frame	data/chars/rash/ST1.gif
+        MOVE    4
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST2.gif
+	attack  90 145 55 45 30 1 0 0 30
+	frame	data/chars/rash/ST3.gif
+	attack  0 0 0 0 0 0 0 0
+	delay	30
+        MOVE    0
+	frame	data/chars/rash/ST3.gif
+	delay	2
+	offset	88 190
+	frame	data/chars/rash/ST3.gif
+	offset	88 185
+	frame	data/chars/rash/ST3.gif
+	offset	88 180
+	frame	data/chars/rash/ST3.gif
+
+anim  jumpattack
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+        hitflash    vok
+        hitfx   data/sounds/beat3.wav
+	sound   data/chars/rash/p1.wav
+	frame	data/chars/rash/ST1.gif
+        MOVE    4
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST2.gif
+	attack  90 145 55 45 30 1 0 0 30
+	frame	data/chars/rash/ST3.gif
+	attack  0 0 0 0 0 0 0 0
+	delay	30
+        MOVE    0
+	frame	data/chars/rash/ST3.gif
+	delay	2
+	offset	88 190
+	frame	data/chars/rash/ST3.gif
+	offset	88 185
+	frame	data/chars/rash/ST3.gif
+	offset	88 180
+	frame	data/chars/rash/ST3.gif
+
+anim  runjumpattack
+	loop	0
+	delay	3
+	offset	88 195
+	bbox	82 145 20 50
+        hitflash    smack
+        hitfx   data/sounds/beat3.wav
+	sound   data/chars/rash/p1.wav
+	frame	data/chars/rash/ST1.gif
+        MOVE    4
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST1.gif
+	frame	data/chars/rash/ST2.gif
+	attack  90 145 55 45 30 1 0 0 30
+	frame	data/chars/rash/ST3.gif
+	attack  0 0 0 0 0 0 0 0
+	delay	30
+        MOVE    0
+	frame	data/chars/rash/ST3.gif
+	delay	2
+	offset	88 190
+	frame	data/chars/rash/ST3.gif
+	offset	88 185
+	frame	data/chars/rash/ST3.gif
+	offset	88 180
+	frame	data/chars/rash/ST3.gif
+
+anim run
+	loop	1
+	delay	6
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/wr1.gif
+	frame	data/chars/rash/wr2.gif
+	frame	data/chars/rash/wr3.gif
+	frame	data/chars/rash/wr4.gif
+	frame	data/chars/rash/wr5.gif

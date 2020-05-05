@@ -1,0 +1,130 @@
+name	Beetle_Rally
+health	100
+speed	10
+type	enemy
+shadow	0
+icon	data/chars/roller/icon.gif
+diesound data/sounds/edie.wav
+
+
+
+anim idle
+	loop	1
+	offset	114 127
+	bbox	88 101 46 27
+	delay	3
+	frame	data/chars/Beetle/Idle.gif
+
+anim walk
+	loop	1
+	offset	114 127
+	bbox	89 100 45 29
+	delay	8
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+
+
+anim pain
+	loop	0
+	delay	5
+	offset	114 127
+	bbox	87 101 48 28
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+
+anim fall
+	loop	0
+	delay	5
+	offset	114 127
+	bbox	88 100 45 30
+		attack1  88  100  46  31  10  0  0  0  0  20
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+	frame	data/chars/Beetle/Idle.gif
+	frame	data/chars/Beetle/Pain.gif
+
+
+anim rise
+	loop	0
+	delay	5
+	offset	114 127
+	frame	data/chars/Beetle/Idle.gif
+
+
+anim attack1
+	loop	0
+	delay	2
+	offset	114 127
+	bbox	89 100 44 28
+        Move -3
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move1.gif
+        Move -2
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move3.gif
+        Move -1
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move1.gif
+        Move 9
+		attack1  93  99  41  29  15  1  0  0  0  20
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move1.gif
+        Move 2
+		Attack1  0
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move1.gif
+	frame	data/chars/Beetle/Move1.gif
+        Move 1
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move2.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move3.gif
+	frame	data/chars/Beetle/Move0.gif
+	frame	data/chars/Beetle/Move0.gif
+

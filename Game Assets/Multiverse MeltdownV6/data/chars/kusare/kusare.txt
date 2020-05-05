@@ -1,0 +1,171 @@
+name	Kusare
+diesound data/sounds/shaah.wav
+health	60
+speed	5
+type	enemy
+shadow	6
+icon	data/chars/kusare/icon.gif
+#falldie 1
+#nodieblink 3
+gfxshadow 1
+palette	data/chars/kusare/idle1.gif
+alternatepal	data/chars/kusare/alt1.gif
+alternatepal	data/chars/kusare/alt2.gif
+alternatepal	data/chars/kusare/alt3.gif
+alternatepal	data/chars/kusare/alt4.gif
+alternatepal	data/chars/kusare/alt5.gif
+
+
+
+anim idle
+	loop	1
+	offset	65 152
+	bbox	23 31 89 121
+	delay	10
+	frame	data/chars/kusare/idle1.gif
+	frame	data/chars/kusare/idle2.gif
+	frame	data/chars/kusare/idle3.gif
+	frame	data/chars/kusare/idle4.gif
+	frame	data/chars/kusare/idle3.gif
+	frame	data/chars/kusare/idle2.gif
+	frame	data/chars/kusare/idle1.gif
+
+anim walk
+	loop	1
+	offset	120 207
+	bbox 71 75 116 133
+	delay	10
+	frame	data/chars/kusare/walk01.gif
+	bbox 69 89 124 116
+	frame	data/chars/kusare/walk02.gif
+	frame	data/chars/kusare/walk03.gif
+	frame	data/chars/kusare/walk04.gif
+	offset	125 207
+	bbox 75 93 124 111
+	frame	data/chars/kusare/walk05.gif
+	offset	137 207
+	bbox 94 84 114 120
+	frame	data/chars/kusare/walk06.gif
+
+
+anim pain
+	loop	0
+	offset	65 139
+	bbox	32 17 79 123
+	delay	10
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain1.gif
+	frame	data/chars/kusare/pain1.gif
+
+anim	pain2
+	loop	0
+	delay	3
+	offset	65 139
+	bbox	32 17 79 123
+	quakeframe	0 3 4
+        Move    -3
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+        Move    -2
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+        Move    -1
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+        Move    0
+	delay	8
+	frame	data/chars/kusare/pain1.gif
+	frame	data/chars/kusare/pain1.gif
+
+anim	pain3
+	loop	0
+	delay	2
+	offset	65 139
+	bbox	32 17 79 123
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	Move	-4
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	Move	-3
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	Move	-2
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	Move	-1
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain2.gif
+	Move	0
+	frame	data/chars/kusare/pain2.gif
+	frame	data/chars/kusare/pain1.gif
+	delay	8
+	frame	data/chars/kusare/pain1.gif
+	frame	data/chars/kusare/pain1.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	64 156
+	attack	0 0 202 185 20 1
+	frame	data/chars/kusare/fall1.gif
+	attack	0 0 202 185 20 1
+	frame	data/chars/kusare/fall2.gif
+	attack	0 0 202 185 20 1
+	frame	data/chars/kusare/fall3.gif
+	delay	10
+	attack	0 0 202 185 20 1
+	frame	data/chars/kusare/fall4.gif
+
+anim rise
+	loop	0
+	delay	15
+	offset	78 146
+	frame	data/chars/kusare/rise1.gif
+	offset	78 146
+	frame	data/chars/kusare/rise2.gif
+	offset	78 146
+	frame	data/chars/kusare/rise3.gif
+
+
+anim attack1
+	range	0 109
+	loop	0
+	delay	4
+	offset	58 152
+	bbox	28 40 85 112
+	frame	data/chars/kusare/punch1.gif
+	frame	data/chars/kusare/punch2.gif
+	attack	128 80 109 40 30 0
+	frame	data/chars/kusare/punch3.gif
+	delay	10
+	frame	data/chars/kusare/punch2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/kusare/punch1.gif
+
+
+anim attack2
+	range	0 145
+	loop	0
+	delay	10
+	offset	58 211
+	bbox	33 102 74 110
+	frame	data/chars/kusare/upper1.gif
+	frame	data/chars/kusare/upper2.gif
+	attack	146 76 87 145 35 1
+	frame	data/chars/kusare/upper3.gif
+	attack	146 3 87 145 35 1
+	frame	data/chars/kusare/upper4.gif
+	bbox	33 102 74 110
+	attack 	0 0 0 0 0
+	frame	data/chars/kusare/upper5.gif
+	frame	data/chars/kusare/upper6.gif
+	delay	10
+	frame	data/chars/kusare/upper1.gif

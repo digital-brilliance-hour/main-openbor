@@ -1,0 +1,714 @@
+name	LONI
+health	500
+mp 100
+mprate 10
+speed	13
+type	player
+icon     data/chars/Loni/IconA.gif 1
+iconget  data/chars/Loni/IconB.gif 1
+iconpain data/chars/Loni/IconC.gif 1
+icondie  data/chars/Loni/IconC.gif 1
+#diesound   data/chars/Zero/die2.wav
+running 23 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+knife   ZShot
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Loni/Pal
+alternatepal  data/chars/Loni/Pal0
+alternatepal  data/chars/Loni/Pal1
+alternatepal  data/chars/Loni/Pal2
+alternatepal  data/chars/Loni/Pal3
+alternatepal  data/chars/Loni/Pal4
+alternatepal  data/chars/Loni/Pal5
+
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+#weaploss 2
+animationscript data/scripts/script.c
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	fastattack 1
+	cancel	5 10 0 a freespecial
+	offset	133 207
+	bbox 119 170 21 36
+	frame	data/chars/Loni/0_200-0.gif
+	frame	data/chars/Loni/0_200-1.gif
+	move	3
+	bbox 126 167 17 38
+	frame	data/chars/Loni/0_200-2.gif
+	attack1 137 174 41 36 12 0 0 0 0 20
+	bbox 129 173 27 34
+	frame	data/chars/Loni/0_200-3.gif
+	move	0
+	frame	data/chars/Loni/0_200-4.gif
+	delay	6
+	attack1 138 193 38 18 12 0 0 0 0 20
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	attack1	0
+	delay	2
+	bbox 124 170 21 37
+	frame	data/chars/Loni/0_200-6.gif
+	frame	data/chars/Loni/0_200-6.gif
+	frame	data/chars/Loni/0_200-7.gif
+	frame	data/chars/Loni/0_200-7.gif
+
+anim	dodge
+	loop	0
+	delay	5
+	offset	133 207
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 209
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 211
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 213
+	frame	data/chars/Loni/0_40-1.gif
+	offset	133 211
+	frame	data/chars/Loni/0_40-1.gif
+	offset	133 209
+	frame	data/chars/Loni/0_40-1.gif
+	delay	5
+	offset	133 207
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	fall
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	Landframe	3
+	offset	133 207
+	bbox 119 174 20 33
+	attack3 119 174 20 33 10 0 0 0 0 20
+	frame	data/chars/Loni/0_5000-0.gif
+	frame	data/chars/Loni/0_5000-0.gif
+	delay	500
+	frame	data/chars/Loni/0_5000-0.gif
+	bbox 0 0 0 0
+	delay	7
+	Attack1	0
+	offset	133 202
+	frame	data/chars/Loni/0_5060-10.gif
+	frame	data/chars/Loni/0_5060-10.gif
+	frame	data/chars/Loni/0_5060-10.gif
+
+anim	freespecial
+	loop	0
+	delay	6
+	fastattack 1
+	cancel	4 8 0 a freespecial2
+	offset	133 207
+	bbox 125 178 24 29
+	frame	data/chars/Loni/0_220-0.gif
+	delay	3
+	attack1 140 146 33 60 12 0 0 0 0 20
+	bbox 122 171 18 35
+	frame	data/chars/Loni/0_220-1.gif
+	attack1 100 146 34 59 12 0 0 0 0 20
+	frame	data/chars/Loni/0_220-2.gif
+	delay	7
+	frame	data/chars/Loni/0_220-3.gif
+	frame	data/chars/Loni/0_220-3.gif
+	delay	2
+	attack1	0
+	frame	data/chars/Loni/0_220-4.gif
+	frame	data/chars/Loni/0_220-4.gif
+	frame	data/chars/Loni/0_220-4.gif
+	frame	data/chars/Loni/0_220-4.gif
+
+anim	freespecial2
+	loop	0
+	delay	6
+	fastattack 1
+	cancel	4 8 0 a freespecial3
+	offset	133 207
+	bbox 120 170 22 37
+	frame	data/chars/Loni/0_210-0.gif
+	delay	3
+	attack2 137 173 57 33 12 0 0 0 0 20
+	bbox 132 173 22 33
+	frame	data/chars/Loni/0_210-1.gif
+	frame	data/chars/Loni/0_210-2.gif
+	delay	7
+	frame	data/chars/Loni/0_210-3.gif
+	frame	data/chars/Loni/0_210-3.gif
+	attack1	0
+	delay	2
+	bbox 129 177 22 29
+	frame	data/chars/Loni/0_220-0.gif
+	frame	data/chars/Loni/0_220-0.gif
+	bbox 120 170 22 37
+	frame	data/chars/Loni/0_200-7.gif
+	frame	data/chars/Loni/0_200-7.gif
+
+anim	freespecial3
+	loop	0
+	delay	7
+	offset	133 207
+	bbox 122 172 20 34
+	frame	data/chars/Loni/0_200-7.gif
+	offset	133 205
+	frame	data/chars/Loni/0_240-0.gif
+	move 14
+	delay	2
+	bbox 123 172 22 34
+	attack3 132 171 24 33 14 0 0 0 0 20
+	frame	data/chars/Loni/0_240-1.gif
+	frame	data/chars/Loni/0_240-1.gif
+	frame	data/chars/Loni/0_240-1.gif
+	move 0
+	delay	15
+	frame	data/chars/Loni/0_240-2.gif
+	attack3 0
+	bbox 122 172 20 34
+	offset	133 207
+	delay	10
+	frame	data/chars/Loni/0_250-0.gif
+
+anim	freespecial4
+	loop	0
+	delay	8
+	Fastattack 1
+	Jumpframe 10 2 2
+	Landframe 16
+	mpcost	10
+	mponly	1
+	offset	133 205
+	frame	data/chars/Loni/0_240-0.gif
+	move 10
+	delay	2
+	attack1 132 171 24 33 2 0 0 0 0 20
+	frame	data/chars/Loni/0_240-1.gif
+	frame	data/chars/Loni/0_240-1.gif
+	frame	data/chars/Loni/0_240-1.gif
+	move 0
+	frame	data/chars/Loni/0_240-2.gif
+	frame	data/chars/Loni/0_240-2.gif
+	delay	9
+	attack3 0
+	offset	133 207
+	frame	data/chars/Loni/0_250-0.gif
+	attack2 132 171 24 33 2 0 0 0 0 20
+	frame	data/chars/Loni/0_250-1.gif
+	attack3 0
+	frame	data/chars/Loni/0_250-2.gif
+	delay	5
+	frame	data/chars/Loni/0_620-0.gif
+	attack3 129 176 31 30 2 0 0 0 0 20
+	frame	data/chars/Loni/0_620-1.gif
+	attack3 133 179 20 26 2 0 0 0 0 20
+	frame	data/chars/Loni/0_620-2.gif
+	attack2 0
+	offset	130 211
+	frame	data/chars/Loni/0_610-0.gif
+	offset	133 207
+	frame	data/chars/Loni/0_620-0.gif
+	attack3 129 176 31 30 10 0 0 0 0 20
+	frame	data/chars/Loni/0_620-1.gif
+	delay	100
+	attack3 133 179 20 26 10 0 0 0 0 20
+	frame	data/chars/Loni/0_620-2.gif
+	delay	2
+	move	2
+	attack3 0
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	delay	10
+	move	0
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	freespecial5
+	loop	0
+	delay	2
+	mpcost	15
+	mponly	1
+	Fastattack	1
+	offset	133 207
+	Jumpframe 13 3 4
+	Landframe 31
+	move -5
+	frame	data/chars/Loni/0_40-0.gif
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 209
+	frame	data/chars/Loni/0_40-0.gif
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 211
+	frame	data/chars/Loni/0_40-0.gif
+	frame	data/chars/Loni/0_40-0.gif
+	offset	133 213
+	frame	data/chars/Loni/0_40-1.gif
+	frame	data/chars/Loni/0_40-1.gif
+	offset	133 211
+	frame	data/chars/Loni/0_40-1.gif
+	frame	data/chars/Loni/0_40-1.gif
+	offset	133 209
+	frame	data/chars/Loni/0_40-1.gif
+	frame	data/chars/Loni/0_40-1.gif
+	move 0
+	offset	133 207
+	delay	10
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_610-0.gif
+	delay	3
+	offset	133 199
+	drawmethod flipy 0
+	attack2 138 177 27 37 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-1.gif
+	offset	133 175
+	drawmethod flipy 1
+	attack1 0
+	frame	data/chars/Loni/0_610-1.gif
+	attack2 133 134 32 35 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-2.gif
+	attack1 0
+	offset	133 199
+	drawmethod flipy 0
+	frame	data/chars/Loni/0_610-2.gif
+	offset	133 199
+	drawmethod flipy 0
+	attack2 138 177 27 37 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-1.gif
+	offset	133 175
+	drawmethod flipy 1
+	attack1 0
+	frame	data/chars/Loni/0_610-1.gif
+	attack2 133 134 32 35 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-2.gif
+	attack1 0
+	offset	133 199
+	drawmethod flipy 0
+	frame	data/chars/Loni/0_610-2.gif
+	offset	133 199
+	drawmethod flipy 0
+	attack2 138 177 27 37 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-1.gif
+	offset	133 175
+	drawmethod flipy 1
+	attack1 0
+	frame	data/chars/Loni/0_610-1.gif
+	attack2 133 134 32 35 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-2.gif
+	attack1 0
+	offset	133 199
+	drawmethod flipy 0
+	frame	data/chars/Loni/0_610-2.gif
+	offset	133 199
+	drawmethod flipy 0
+	attack2 138 177 27 37 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-1.gif
+	offset	133 175
+	drawmethod flipy 1
+	attack1 0
+	frame	data/chars/Loni/0_610-1.gif
+	attack2 133 134 32 35 4 0 0 0 0 20
+	frame	data/chars/Loni/0_610-2.gif
+	attack1 0
+	offset	133 199
+	drawmethod flipy 0
+	frame	data/chars/Loni/0_610-2.gif
+	offset	133 210
+	delay	50
+	frame	data/chars/Loni/0_610-3.gif
+	offset	133 207
+	delay	2
+	move 3
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	delay	10
+	move 0
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	freespecial6
+	loop	0
+	delay	5
+	fastattack 1
+	mpcost	20
+	mponly	1
+	offset	133 207
+	frame	data/chars/Loni/0_200-0.gif
+	frame	data/chars/Loni/0_200-1.gif
+	move	5
+	frame	data/chars/Loni/0_200-2.gif
+	attack3 137 174 41 36 5 0 0 0 0 20
+	frame	data/chars/Loni/0_200-3.gif
+	move	0
+	frame	data/chars/Loni/0_200-4.gif
+	delay	4
+	attack3 138 193 38 18 5 0 0 0 0 20
+	frame	data/chars/Loni/0_200-5.gif
+	attack3 0
+	frame	data/chars/Loni/0_200-5.gif
+	delay	2
+	move	5
+	frame	data/chars/Loni/0_100-0.gif
+	blast 117 184 44 30 20 0 0 0 20
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-5.gif
+	frame	data/chars/Loni/0_100-5.gif
+	frame	data/chars/Loni/0_100-5.gif
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-5.gif
+	frame	data/chars/Loni/0_100-5.gif
+	frame	data/chars/Loni/0_100-5.gif
+	delay	2
+	move	2
+	attack3 0
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	frame	data/chars/Loni/0_200-5.gif
+	attack3 0
+	delay	13
+	frame	data/chars/Loni/0_200-6.gif
+	frame	data/chars/Loni/0_200-7.gif
+
+anim	get
+	loop	0
+	delay	8
+	offset	133 207
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	idle
+	loop	1
+	delay	10
+	offset	133 207
+	bbox 121 171 22 35
+	frame	data/chars/Loni/0_0-0.gif
+	frame	data/chars/Loni/0_0-1.gif
+	frame	data/chars/Loni/0_0-2.gif
+	frame	data/chars/Loni/0_0-3.gif
+	frame	data/chars/Loni/0_0-2.gif
+	frame	data/chars/Loni/0_0-1.gif
+
+anim	jump
+	loop	0
+	delay	35
+	offset	133 207
+	bbox 126 164 17 42
+	frame	data/chars/Loni/0_40-0.gif
+	delay	5
+	frame	data/chars/Loni/0_40-1.gif
+
+anim	jumpland
+	loop	0
+	delay	6
+	offset	133 207
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	9
+	offset	133 207
+	bbox 123 163 18 43
+	frame	data/chars/Loni/0_230-0.gif
+	attack3 107 137 30 55 14 0 0 0 0 20
+	frame	data/chars/Loni/0_230-1.gif
+	bbox 120 178 33 27
+	attack3 134 178 40 32 14 0 0 0 0 20
+	delay	4
+	frame	data/chars/Loni/0_230-2.gif
+	attack3 133 191 33 34 14 0 0 0 0 20
+	frame	data/chars/Loni/0_230-3.gif
+	attack3 129 197 30 28 14 0 0 0 0 20
+	frame	data/chars/Loni/0_230-4.gif
+
+anim	jumpattack2
+	loop	0
+	delay	9
+	offset	133 207
+	bbox 125 173 16 31
+	frame	data/chars/Loni/0_610-0.gif
+	attack2 119 185 20 21 9 0 0 0 0 20
+	frame	data/chars/Loni/0_620-0.gif
+	bbox 122 171 23 31
+	attack2 129 176 31 30 9 0 0 0 0 20
+	frame	data/chars/Loni/0_620-1.gif
+	attack2 133 179 20 26 9 0 0 0 0 20
+	frame	data/chars/Loni/0_620-2.gif
+
+anim	land
+	loop	0
+	delay	15
+	offset	112 132
+	frame	data/chars/Zero/Rise-6.gif
+	delay	5
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	pain
+	loop	0
+	offset	133 207
+	bbox 119 174 20 33
+	delay	5
+	quakeframe	0 3 4
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+
+anim	pain2
+	loop	0
+	offset	133 207
+	bbox 119 174 20 33
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-2
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-1
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	0
+	delay	8
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+
+anim	pain3
+	loop	0
+	offset	133 207
+	bbox 119 174 20 33
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-4
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-3
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-2
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	-1
+	frame	data/chars/Loni/0_5000-1.gif
+	delay	100
+	frame	data/chars/Loni/0_5000-1.gif
+	Move	0
+	delay	2
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+	delay	10
+	frame	data/chars/Loni/0_5000-1.gif
+	frame	data/chars/Loni/0_5000-1.gif
+
+anim	rise
+	loop	0
+	delay	6
+	offset	133 202
+	frame	data/chars/Loni/0_5060-10.gif
+	delay	4
+	offset	133 207
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	run
+	loop	1
+	delay	7
+	offset	133 207
+	bbox 123 175 23 31
+	frame	data/chars/Loni/0_100-0.gif
+	frame	data/chars/Loni/0_100-1.gif
+	frame	data/chars/Loni/0_100-2.gif
+	frame	data/chars/Loni/0_100-3.gif
+	frame	data/chars/Loni/0_100-4.gif
+	frame	data/chars/Loni/0_100-5.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	8
+	offset	130 211
+	bbox 52 141 22 44
+	Jumpframe 0 2 3
+	landframe 4
+	attack2 0
+	offset	130 211
+	frame	data/chars/Loni/0_610-0.gif
+	offset	133 207
+	attack3 123 173 17 32 13 0 0 0 0 20
+	frame	data/chars/Loni/0_620-0.gif
+	attack3 129 176 31 30 13 0 0 0 0 20
+	frame	data/chars/Loni/0_620-1.gif
+	delay	100
+	attack3 133 179 20 26 13 0 0 0 0 20
+	frame	data/chars/Loni/0_620-2.gif
+	delay	2
+	move	2
+	attack3 0
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	frame	data/chars/Loni/0_10-0.gif
+	delay	10
+	move	0
+	frame	data/chars/Loni/0_10-0.gif
+
+anim	special
+	loop	0
+	delay	5
+	followanim	1
+	followcond	1
+	offset	133 207
+	fastattack 1
+	Energycost	50 1
+	frame	data/chars/Loni/0_210-0.gif
+	delay	3
+	move 20
+	attack1 137 173 41 33 10 0 0 0 0 20
+	frame	data/chars/Loni/0_210-1.gif
+	frame	data/chars/Loni/0_210-1.gif
+	frame	data/chars/Loni/0_210-2.gif
+	frame	data/chars/Loni/0_210-2.gif
+	move 0
+	delay	7
+	frame	data/chars/Loni/0_210-3.gif
+	frame	data/chars/Loni/0_210-3.gif
+	attack1	0
+	delay	2
+	frame	data/chars/Loni/0_220-0.gif
+	frame	data/chars/Loni/0_220-0.gif
+	frame	data/chars/Loni/0_200-7.gif
+	frame	data/chars/Loni/0_200-7.gif
+ 
+ anim	follow1
+	loop	0
+	delay	7
+	fastattack	1
+	offset	133 207
+	attack1 0
+	frame	data/chars/Loni/0_210-3.gif
+	frame	data/chars/Loni/0_220-0.gif
+	attack1 141 145 37 61 1 0 0 0 0 20
+	@cmd	shoot "LoSP1" 0 0 0
+	frame	data/chars/Loni/0_220-1.gif
+	attack1 101 145 34 60 1 0 0 0 0 20
+	frame	data/chars/Loni/0_220-2.gif
+	attack1 0
+	frame	data/chars/Loni/0_220-3.gif
+	frame	data/chars/Loni/0_200-1.gif
+	frame	data/chars/Loni/0_200-2.gif
+	attack1 147 165 30 44 1 0 0 0 0 25
+	@cmd	shoot "LoSP2" -190 0 0
+	frame	data/chars/Loni/0_200-3.gif
+	frame	data/chars/Loni/0_200-4.gif
+	attack1 138 193 38 18 1 0 0 0 0 20
+	frame	data/chars/Loni/0_200-5.gif
+	attack3 0
+	frame	data/chars/Loni/0_250-0.gif
+	attack2 129 151 46 55 1 0 0 0 0 25
+	@cmd	shoot "LoSP3" 0 0 0
+	delay	3
+	move 15
+	frame	data/chars/Loni/0_250-1.gif
+	frame	data/chars/Loni/0_250-1.gif
+	move 0
+	delay	7
+	attack3 0
+	frame	data/chars/Loni/0_250-2.gif
+	frame	data/chars/Loni/0_210-0.gif
+	attack1 133 172 61 34 1 0 0 0 0 20
+	@cmd	shoot "LoSP4" -100 0 0
+	@cmd	shoot "LoSP5" -100 0 0
+	frame	data/chars/Loni/0_210-1.gif
+	frame	data/chars/Loni/0_210-2.gif
+	frame	data/chars/Loni/0_210-3.gif
+	attack3 0
+	frame	data/chars/Loni/0_220-0.gif
+	attack1 141 145 37 61 1 0 0 0 0 20
+	@cmd	shoot "LoSP1" 0 0 0
+	frame	data/chars/Loni/0_220-1.gif
+	attack1 101 145 34 60 1 0 0 0 0 20
+	frame	data/chars/Loni/0_220-2.gif
+	attack3 0
+	frame	data/chars/Loni/0_220-3.gif
+	frame	data/chars/Loni/0_3303-4.gif
+	frame	data/chars/Loni/0_3303-5.gif
+	#@cmd	shoot "LoSP6" 0 -12 0
+	@cmd	shoot "LoSP6a" 0 0 -1
+	@cmd	shoot "LoSP6b" 0 0 0
+	offset	133 207
+	delay	75
+	frame	data/chars/Loni/0_3303-6.gif
+	delay	7
+	frame	data/chars/Loni/0_200-6.gif
+	frame	data/chars/Loni/0_200-7.gif
+
+anim	walk
+	loop	1
+	delay	14
+	offset	133 207
+	bbox 124 163 20 42
+	frame	data/chars/Loni/0_20-0.gif
+	frame	data/chars/Loni/0_20-1.gif
+	frame	data/chars/Loni/0_20-2.gif
+	frame	data/chars/Loni/0_20-3.gif
+
+
+#|edited by openBor Stats v 0.37
+
+

@@ -1,0 +1,56 @@
+name    pic1
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	60
+	offset	0 0 
+frame	data/scenes/pic1/1.png
+delay 23
+frame	data/scenes/pic1/2.png
+delay 25
+frame	data/scenes/pic1/3.png
+delay 28
+frame	data/scenes/pic1/4.png
+delay 23
+	frame	data/scenes/pic1/7.png
+sound	data/sounds/pyell.wav
+	frame	data/scenes/pic1/8.png
+frame	data/scenes/pic1/9.png
+frame	data/scenes/pic1/10.png
+sound	data/sounds/electric.wav
+delay 25
+	frame	data/scenes/pic1/11.png
+	frame	data/scenes/pic1/12.png
+	frame	data/scenes/pic1/13.png
+	frame	data/scenes/pic1/14.png
+	frame	data/scenes/pic1/15.png
+frame	data/scenes/pic1/14.png
+	frame	data/scenes/pic1/15.png
+frame	data/scenes/pic1/14.png
+	frame	data/scenes/pic1/15.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/pic1/15.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

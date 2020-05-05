@@ -1,0 +1,480 @@
+name	Hygogg
+health	500
+mp 100
+mprate 5
+speed	13
+type	player
+icon	   data/chars/Hygogg/icon.gif 1
+#iconpain   data/chars/Zero/iconP.gif
+#icondie    data/chars/Zero/iconD.gif
+#diesound   data/chars/Zero/die2.wav
+running 23 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Hygogg/Pal
+alternatepal  data/chars/Hygogg/Map0
+alternatepal  data/chars/Hygogg/Map1
+alternatepal  data/chars/Hygogg/Map2
+alternatepal  data/chars/Hygogg/Map3
+alternatepal  data/chars/Hygogg/Map4
+alternatepal  data/chars/Hygogg/Map5
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+weaploss 2
+
+animationscript data/scripts/script.c
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	Fastattack	1
+	cancel	5 9 0 a freespecial
+	offset	114 129
+	bbox	100 100 30 30
+	frame	data/chars/Hygogg/A1-0.gif
+	attack1  91  83  66  49  15  0  0  0  5  20
+	bbox  101  98  32  33
+	frame	data/chars/Hygogg/A1-1.gif
+	frame	data/chars/Hygogg/A1-2.gif
+	attack1  90  83  67  24  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A1-3.gif
+	attack1  91  82  31  27  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A1-4.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	delay	3
+	Attack1  0
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+
+anim	freespecial
+	loop	0
+	delay	4
+	Fastattack	1
+	cancel	5 9 0 a freespecial2
+	offset	114 129
+	bbox	100 100 30 30
+	frame	data/chars/Hygogg/A1-0.gif
+	attack1  91  83  66  49  15  0  0  0  5  20
+	bbox  101  98  32  33
+	frame	data/chars/Hygogg/A1-1.gif
+	frame	data/chars/Hygogg/A1-2.gif
+	attack1  90  83  67  24  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A1-3.gif
+	attack1  91  82  31  27  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A1-4.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	delay	3
+	Attack1  0
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+	frame	data/chars/Hygogg/A1-5.gif
+
+anim	freespecial2
+	loop	0
+	delay	6
+	Fastattack	1
+	cancel	4 8 0 a freespecial3
+	offset	114 129
+	bbox	102 98 28 35
+		Attack1  0
+	frame	data/chars/Hygogg/A2-0.gif
+		attack1  101  91  55  44  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A2-1.gif
+		attack1  97  108  60  26  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A2-2.gif
+		attack1  98  111  29  23  15  0  0  0  5  20
+	frame	data/chars/Hygogg/A2-3.gif
+	frame	data/chars/Hygogg/A2-4.gif
+	delay	3
+		Attack1  0
+	frame	data/chars/Hygogg/A2-4.gif
+	frame	data/chars/Hygogg/A2-4.gif
+	frame	data/chars/Hygogg/A2-4.gif
+	frame	data/chars/Hygogg/A2-4.gif
+
+anim	freespecial3
+	loop	0
+	delay	3
+	Fastattack	1
+	offset	114 129
+	bbox	100 91 25 39
+	hitflash	Flash2
+		Attack1  0
+	frame	data/chars/Hygogg/A3-0.gif
+		attack1  75  84  34  45  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-0.gif
+	delay	6
+		attack1  87  76  79  63  19  1  0  0  5  20
+		bbox  103  100  31  30
+	frame	data/chars/Hygogg/A3-1.gif
+	frame	data/chars/Hygogg/A3-2.gif
+		attack1  109  74  57  68  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-3.gif
+		attack1  114  104  52  39  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-4.gif
+		attack1  115  114  20  30  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-5.gif
+
+anim	DODGE
+	loop	0
+	delay	5
+	offset	114 129
+	frame	data/chars/Hygogg/Jump-0.gif
+	offset	114 133
+	frame	data/chars/Hygogg/Jump-1.gif
+	offset	114 137
+	frame	data/chars/Hygogg/Jump-2.gif
+	offset	114 133
+	frame	data/chars/Hygogg/Jump-3.gif
+	offset	114 129
+	frame	data/chars/Hygogg/Jump-4.gif
+
+anim	fall
+	loop	0
+	offset	114 129
+	delay	24
+           Landframe 2
+	quakeframe	0 3 4
+	frame	data/chars/Hygogg/Pain.gif
+	delay	100
+	frame	data/chars/Hygogg/Fall-0.gif
+	delay	10
+		offset  103  127
+	frame	data/chars/Hygogg/Fall-1.gif
+
+anim	Freespecial4
+	loop	0
+	delay	14
+	mpcost	10
+	mponly	1
+	offset	114 129
+	frame	data/chars/Hygogg/A1-0.gif
+	delay	84
+	@cmd	shoot "H-AX" 0 0 0
+	frame	data/chars/Hygogg/FSP1-0.gif
+	delay	17
+	frame	data/chars/Hygogg/A1-0.gif
+
+anim	Freespecial5
+	loop	0
+	delay	6
+	offset	114 129
+	mpcost	10
+	mponly	1
+	frame	data/chars/Hygogg/FSP2-0.gif
+	@cmd	shoot "HShot" 0 0 0
+	delay	10
+	frame	data/chars/Hygogg/FSP2-1.gif
+	delay	12
+	frame	data/chars/Hygogg/FSP2-2.gif
+
+anim	Freespecial6
+	loop	0
+	delay	3
+	offset	114 129
+           Fastattack 1
+	mpcost	10
+	mponly	1
+	move      8
+	frame	data/chars/Hygogg/FSP3-0.gif
+	move      0
+		attack1  128  98  45  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		attack1  128  98  57  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  69  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-3.gif
+		attack1  128  98  57  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  45  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		Attack1  0
+	frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  134  93  40  36  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-4.gif
+		attack1  135  92  49  38  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-5.gif
+		attack1  134  89  63  42  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-6.gif
+		attack1  134  92  52  40  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-5.gif
+		attack1  134  95  40  38  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-4.gif
+		Attack1  0
+           frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  128  99  47  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-7.gif
+		attack1  128  100  57  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-8.gif
+		attack1  127  102  70  28  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-9.gif
+		attack1  127  101  59  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-8.gif
+		attack1  127  100  46  32  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-7.gif
+		Attack1  0
+           frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  128  98  45  29  7  1  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		attack1  128  98  57  29  7  1  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  69  29  7  1  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-3.gif
+		attack1  128  98  57  29  7  1  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  45  29  7  1  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		Attack1  0
+	frame	data/chars/Hygogg/FSP3-0.gif
+
+anim	get
+	loop	0
+	offset    108  127
+	delay	9
+	frame	data/chars/Hygogg/Rise-1.gif
+	frame	data/chars/Hygogg/Rise-2.gif
+	frame	data/chars/Hygogg/Rise-3.gif
+	delay	16
+	frame	data/chars/Hygogg/Rise-4.gif
+
+anim	idle
+	loop	1
+	delay	12
+	offset	114 129
+	bbox	101 96 30 32
+	frame	data/chars/Hygogg/Idle-0.gif
+	frame	data/chars/Hygogg/Idle-1.gif
+		delay  16
+	frame	data/chars/Hygogg/Idle-3.gif
+		delay  12
+	frame     data/chars/Hygogg/Idle-2.gif
+
+anim	jump
+	loop	0
+	delay	12
+	offset	114 129
+	bbox	105 86 21 46
+	frame	data/chars/Hygogg/Jump-0.gif
+	delay	20
+	frame	data/chars/Hygogg/Jump-1.gif
+	delay	9
+	frame	data/chars/Hygogg/Jump-2.gif
+	frame	data/chars/Hygogg/Jump-3.gif
+	frame	data/chars/Hygogg/Jump-4.gif
+
+anim	jumpattack
+	loop	0
+	delay	7
+	Fastattack	1
+	offset	114 129
+	bbox	100 91 25 39
+	hitflash	Flash2
+		attack1  75  84  34  45  12  1  0  0  0  20
+	frame	data/chars/Hygogg/A3-0.gif
+		attack1  87  76  79  63  12  1  0  0  0  20
+		bbox  103  100  31  30
+	frame	data/chars/Hygogg/A3-1.gif
+	frame	data/chars/Hygogg/A3-2.gif
+		attack1  109  74  57  68  12  1  0  0  0  20
+	frame	data/chars/Hygogg/A3-3.gif
+		attack1  114  104  52  39  12  1  0  0  0  20
+	frame	data/chars/Hygogg/A3-4.gif
+		attack1  115  114  20  30  12  1  0  0  0  20
+	frame	data/chars/Hygogg/A3-5.gif
+
+anim	jumpattack2
+	loop	0
+	delay	5
+	offset	114 129
+	bbox	100 92 19 30
+	attack1	98  106  27  20  8  0  0  0  10  20
+	frame	data/chars/Hygogg/JA2.gif
+
+anim	land
+	loop	0
+	offset    108  127
+	delay	9
+	frame	data/chars/Hygogg/Rise-1.gif
+	frame	data/chars/Hygogg/Rise-2.gif
+	frame	data/chars/Hygogg/Rise-3.gif
+	delay	16
+	frame	data/chars/Hygogg/Rise-4.gif
+
+anim	pain
+	loop	0
+	offset	114 129
+	bbox	102 97 23 32
+	delay	7
+	quakeframe	0 3 4
+	frame	data/chars/Hygogg/Pain.gif
+	frame	data/chars/Hygogg/Pain.gif
+		bbox  98  97  31  33
+	frame	data/chars/Hygogg/Pain.gif
+
+anim	rise
+	loop	0
+	offset    103  127
+	delay	20
+	frame	data/chars/Hygogg/Fall-1.gif
+	delay	9
+	frame	data/chars/Hygogg/Rise-0.gif
+	offset    108  127
+	frame	data/chars/Hygogg/Rise-1.gif
+	frame	data/chars/Hygogg/Rise-2.gif
+	frame	data/chars/Hygogg/Rise-3.gif
+	delay	16
+	frame	data/chars/Hygogg/Rise-4.gif
+
+anim	run
+	loop	1
+	delay	5
+	offset	114 129
+	bbox	95 110 32 22
+	frame	data/chars/Hygogg/Run-0.gif
+	frame	data/chars/Hygogg/Run-1.gif
+	frame     data/chars/Hygogg/Run-3.gif
+	frame	data/chars/Hygogg/Run-2.gif
+	frame	data/chars/Hygogg/Run-3.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	4
+	Fastattack	1
+	cancel	6 9 0 a freespecial
+	offset	114 129
+	bbox	100 100 30 30
+	Move	20
+	frame	data/chars/Hygogg/A1-0.gif
+	attack1  91  83  66  49  15  1  0  0  0  20
+	bbox  101  98  32  33
+	frame	data/chars/Hygogg/A1-1.gif
+	move	8
+	frame	data/chars/Hygogg/A1-2.gif
+	attack1  90  83  67  24  15  1  0  0  0  20
+	frame	data/chars/Hygogg/A1-3.gif
+	attack1  91  82  31  27  15  1  0  0  0  20
+	move	4
+	frame	data/chars/Hygogg/A1-4.gif
+	frame	data/chars/Hygogg/A1-5.gif
+
+anim	special
+	loop	0
+	delay	3
+	offset	114 129
+           Fastattack 1
+	mpcost	10
+	mponly	1
+	move      8
+	frame	data/chars/Hygogg/FSP3-0.gif
+	move      0
+		attack1  128  98  45  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		attack1  128  98  57  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  69  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-3.gif
+		attack1  128  98  57  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  45  29  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		Attack1  0
+	frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  134  93  40  36  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-4.gif
+		attack1  135  92  49  38  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-5.gif
+		attack1  134  89  63  42  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-6.gif
+		attack1  134  92  52  40  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-5.gif
+		attack1  134  95  40  38  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-4.gif
+		Attack1  0
+           frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  128  99  47  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-7.gif
+		attack1  128  100  57  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-8.gif
+		attack1  127  102  70  28  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-9.gif
+		attack1  127  101  59  30  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-8.gif
+		attack1  127  100  46  32  5  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-7.gif
+		Attack1  0
+           frame	data/chars/Hygogg/FSP3-0.gif
+		attack1  128  98  45  29  7  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		attack1  128  98  57  29  7  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  69  29  7  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-3.gif
+		attack1  128  98  57  29  7  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-2.gif
+		attack1  128  98  45  29  7  0  0  0  0  20
+	frame	data/chars/Hygogg/FSP3-1.gif
+		Attack1  0
+	frame	data/chars/Hygogg/FSP3-0.gif
+	delay	7
+	offset	114 129
+	hitflash	Flash2
+           Move      25
+		attack1  75  84  34  45  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-0.gif
+		attack1  87  76  79  63  19  1  0  0  5  20
+		bbox  103  100  31  30
+	delay	3
+           Move      8
+	frame	data/chars/Hygogg/A3-1.gif
+	frame	data/chars/Hygogg/A3-1.gif
+	frame	data/chars/Hygogg/A3-2.gif
+	frame	data/chars/Hygogg/A3-2.gif
+		attack1  109  74  57  68  19  1  0  0  5  20
+	frame	data/chars/Hygogg/A3-3.gif
+	frame	data/chars/Hygogg/A3-3.gif
+		attack1  114  104  52  39  19  1  0  0  5  20
+	delay	5
+           Move      0
+	frame	data/chars/Hygogg/A3-4.gif
+		attack1  115  114  20  30  19  1  0  0  5  20
+	delay	7
+	frame	data/chars/Hygogg/A3-5.gif
+
+anim	walk
+	loop	1
+	delay	7
+	offset	114 129
+	bbox	107 97 28 32
+	frame	data/chars/Hygogg/Walk-0.gif
+		offset  114  130
+	frame	data/chars/Hygogg/Walk-1.gif
+		offset  114  131
+	frame	data/chars/Hygogg/Walk-2.gif
+		offset  114  130
+	frame	data/chars/Hygogg/Walk-3.gif
+		offset  114  129
+	frame	data/chars/Hygogg/Walk-4.gif
+		offset  114  130
+	frame	data/chars/Hygogg/Walk-5.gif
+		offset  114  131
+	frame	data/chars/Hygogg/Walk-6.gif
+		offset  114  130
+	frame	data/chars/Hygogg/Walk-7.gif
+		offset  114  129
+	frame	data/chars/Hygogg/Walk-8.gif
+		offset  114  128
+	frame	data/chars/Hygogg/Walk-9.gif
+

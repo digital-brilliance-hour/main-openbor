@@ -1,0 +1,29 @@
+# File modified by Level Editor on 12/29/2009
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+music		data/music/GetMore.bor
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+Background	data/bgs/Hub/BGaa.gif #0.5 0.5 0 20 0 0 20 1 1
+panel		data/bgs/Hub/BGeb.gif
+frontpanel	           data/bgs/Fpanal.gif
+order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+#group 8 8
+#at 5000
+
+#-----------------
+
+spawn DARKHOUND_E
+alias DARKHOUND
+Health 900
+spawnscript data/scripts/noscpos.c
+coords 540 178 1
+at 0
+

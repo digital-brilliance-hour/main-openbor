@@ -1,0 +1,31 @@
+
+name	Gleam
+notgrab 1
+health	1
+speed   0
+nomove 1 0
+type	item
+#grabdistance 51
+jumpheight 0
+#hitenemy 1 0
+candamage enemy cpu player obstacle
+shadow	0
+nolife        1
+#icon	data/chars/misc/gleam_icon.gif
+alpha 5
+
+anim idle
+	loop	0
+	delay	9
+	offset	650 250
+        sound   data/chars/adamx/bomb/bomb3.wav
+	delay	7
+	frame   data/chars/adamx/bomb/gleam1.gif
+	delay	3
+	frame   data/chars/adamx/bomb/gleam2.gif
+	frame   data/chars/adamx/bomb/gleam3.gif
+	frame   data/chars/adamx/bomb/gleam4.gif
+	frame   data/chars/adamx/bomb/gleam5.gif
+	frame   data/chars/adamx/bomb/gleam6.gif
+#	delay	37
+	frame   data/chars/adamx/bomb/empty3.gif

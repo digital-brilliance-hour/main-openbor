@@ -1,0 +1,30 @@
+name	txt1
+type    panel
+shadow	0
+health  1
+speed 10
+
+anim idle
+	loop	0
+	bbox    0
+	delay	200
+	offset	0 239
+	frame	data/chars/txt/1Zero1.gif
+	frame	data/chars/txt/1Owl1.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/txt/B.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

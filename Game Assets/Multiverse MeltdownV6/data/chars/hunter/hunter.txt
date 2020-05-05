@@ -1,0 +1,241 @@
+name	 hunter
+health 	 120
+speed	 10
+type	  enemy
+nolife   1
+gfxshadow 1
+#shadow  3
+nolife   1
+
+
+anim  respawn
+	loop	0
+	delay	5
+	offset	90 192
+	frame	data/chars/man2/w1.gif
+
+
+anim idle
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay	9
+	frame	data/chars/man2/w1.gif
+
+
+anim walk
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay   5
+	frame	data/chars/man2/w1.gif
+	frame	data/chars/man2/w1.gif
+	frame	data/chars/man2/idle.gif
+	offset	90 190
+	frame	data/chars/man2/idle.gif
+	offset	90 192
+	frame	data/chars/man2/idle.gif
+	offset	90 194
+	frame	data/chars/man2/idle.gif
+	offset	90 196
+	frame	data/chars/man2/idle.gif
+	offset	90 197
+	frame	data/chars/man2/idle.gif
+	offset	90 195
+	frame	data/chars/man2/idle.gif
+	offset	90 192
+	frame	data/chars/man2/idle.gif
+
+anim burn
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+anim shock
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+
+
+anim pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/man2/fall.wav
+        move    -2
+	frame	data/chars/man2/pain.gif
+	offset  87 192
+        move    -2
+	frame	data/chars/man2/pain.gif
+	offset  89 192
+        move    0
+	delay   40
+	frame	data/chars/man2/pain.gif
+
+anim spain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/man2/fall.wav
+	frame	data/chars/man2/pain.gif
+	offset  87 192
+	frame	data/chars/man2/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/man2/pain.gif
+
+anim grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/man2/pain.gif
+	offset  87 192
+	frame	data/chars/man2/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/man2/pain.gif
+
+anim bpain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	65 102 46 76
+        sound   data/chars/man2/fall.wav
+	frame	data/chars/man2/fall4.gif
+	offset  87 192
+	frame	data/chars/man2/fall4.gif
+	offset  89 192
+	frame	data/chars/man2/fall4.gif
+	offset  87 192
+	frame	data/chars/man2/fall4.gif
+	offset  89 192
+	frame	data/chars/man2/fall4.gif
+	offset  87 192
+	frame	data/chars/man2/fall4.gif
+	offset  89 192
+	frame	data/chars/man2/fall4.gif
+	offset  87 192
+	frame	data/chars/man2/fall4.gif
+	offset  89 192
+	delay   50
+	frame	data/chars/man2/fall4.gif
+
+anim fall
+	loop	0
+	offset	90 192
+	delay   30
+        sound   data/chars/man2/fall.wav
+	frame	data/chars/man2/fall1.gif
+	attack  85 125 10 50 5 1 
+	frame	data/chars/man2/fall1.gif
+	attack  0 0 0 0 0 0 0 0 0
+	delay   40
+	frame	data/chars/man2/fall4.gif
+
+anim rise
+	loop	0
+	offset	90 192
+	delay	15
+	frame	data/chars/man2/rise2.gif
+	frame	data/chars/man2/rise2.gif
+	frame	data/chars/man2/rise1.gif
+	frame	data/chars/man2/rise2.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	75 130 35 70
+        move    3
+	frame	data/chars/man2/idle.gif
+        sound   data/chars/man2/a1.wav
+	frame	data/chars/man2/a1.gif
+	frame	data/chars/man2/a1.gif
+	attack  92 140 35 25 5
+	frame	data/chars/man2/a2.gif
+        move    0
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a1.gif
+        fastattack	1
+	attack  92 140 35 25 5
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a1.gif
+	attack  92 140 35 25 5 1
+        fastattack	1
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+
+anim upper
+#	range	90 130
+	loop	0
+	delay	5
+        jumpframe  1  3
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/man2/idle.gif
+        sound   data/chars/fat/hym.wav
+	delay	15
+	frame	data/chars/man2/a3.gif
+	attack  65 125 90 45 5 1
+	frame	data/chars/man2/a4.gif
+	frame	data/chars/man2/a4.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a4.gif
+
+
+
+anim  riseattack
+	range	0 60
+	loop	0
+	delay	5
+	offset	90 192
+        move    3
+	frame	data/chars/man2/idle.gif
+        sound   data/chars/man2/a1.wav
+	frame	data/chars/man2/a1.gif
+	frame	data/chars/man2/a1.gif
+	attack  92 140 35 25 5
+	frame	data/chars/man2/a2.gif
+        move    0
+	bbox	75 130 35 70
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a1.gif
+        fastattack	1
+	attack  92 140 35 25 5
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a1.gif
+	attack  92 140 35 25 5 1
+        fastattack	1
+	frame	data/chars/man2/a2.gif
+	frame	data/chars/man2/a2.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man2/a2.gif
+

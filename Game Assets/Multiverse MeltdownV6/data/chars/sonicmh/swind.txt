@@ -1,0 +1,83 @@
+name	Swind
+health	1
+speed   19
+type	trap
+#hitenemy 1 0
+grabdistance 72
+candamage enemy
+shadow	0
+nolife        1
+#icon	data/chars/misc/super_icon.gif
+alpha 5
+
+anim idle
+	loop	0
+	delay	5
+        fastattack 1
+	offset	65 182
+	attack	0 0 128 191 3 0 0 0 0  100
+#	hitfx   data/chars/Sonic/pheh.wav
+	@cmd changeentityproperty getlocalvar("self") "Subject_to_Gravity" 0
+	frame	data/chars/SonicMH/Swind1.gif
+	frame	data/chars/SonicMH/Swind2.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind3.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind4.gif
+	frame	data/chars/SonicMH/Swind5.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind6.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind7.gif
+	frame	data/chars/SonicMH/Swind8.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind9.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind10.gif
+	frame	data/chars/SonicMH/Swind6.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind7.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind8.gif
+	frame	data/chars/SonicMH/Swind9.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMHM/Swind10.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind6.gif
+	frame	data/chars/SonicMH/Swind7.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind8.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind9.gif
+	frame	data/chars/SonicMH/Swind10.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind6.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind7.gif
+	frame	data/chars/SonicMH/Swind8.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind9.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind10.gif
+	frame	data/chars/SonicMH/Swind6.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind7.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind8.gif
+	frame	data/chars/SonicMH/Swind9.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind10.gif
+	attack	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind11.gif
+	attack	0 0 0 0
+	frame	data/chars/SonicMH/Swind12.gif
+	Blast	0 0 128 191 3 0 0 0 0  100
+	frame	data/chars/SonicMH/Swind13.gif
+	delay	1
+@cmd killentity getlocalvar("self")
+	frame	data/chars/SonicMH/empty.gif
+
+
+
+
+

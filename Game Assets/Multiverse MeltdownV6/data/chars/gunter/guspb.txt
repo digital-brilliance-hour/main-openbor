@@ -1,0 +1,53 @@
+name GuSPB
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+nomove 1
+
+
+anim	idle
+	loop	1
+	delay	3
+	offset	154 213
+	attack3 0
+	frame	data/chars/Gunter/0_30-0.gif
+	attack3 121 189 71 35 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-1.gif
+	attack3 113 178 90 45 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-2.gif
+	attack3 103 143 102 80 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-3.gif
+	attack3 102 99 123 125 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-4.gif
+	attack3 114 1 93 222 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-5.gif
+	attack3 101 1 115 222 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-6.gif
+	attack3 90 1 136 221 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-7.gif
+	attack3 118 1 87 222 10 1 0 0 0 25
+	dropv 5.0 3.0
+	frame	data/chars/Gunter/0_30-8.gif
+	frame	data/chars/Gunter/0_30-9.gif
+	attack3 0
+	frame	data/chars/Gunter/0_30-10.gif
+	frame	data/chars/Gunter/0_30-11.gif
+	frame	data/chars/Gunter/0_30-12.gif
+	frame	data/chars/Gunter/0_30-13.gif
+	frame	data/chars/Gunter/0_30-14.gif
+	frame	data/chars/Gunter/0_30-15.gif
+	frame	data/chars/Gunter/0_30-16.gif
+	frame	data/chars/Gunter/0_30-17.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Neku/NFlame9.gif
+

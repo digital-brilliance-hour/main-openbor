@@ -1,0 +1,3761 @@
+name	Scarlet_Spider
+health	500
+mp 80
+mprate 10
+speed	13
+type	player
+icon     data/chars/Manic/Icon-A.gif 1
+iconget  data/chars/Manic/Icon-B.gif 1
+iconpain data/chars/Manic/Icon-C.gif 1
+icondie  data/chars/Manic/Icon-C.gif 1
+
+
+
+
+running 23	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/MVC2_Spiderman/3.gif
+
+
+#alternatepal  data/chars/Manic/Pal0
+#alternatepal  data/chars/Manic/Pal1
+#alternatepal  data/chars/Manic/Pal2
+#alternatepal  data/chars/Manic/Pal3
+#alternatepal  data/chars/Manic/Pal4
+#alternatepal  data/chars/Manic/Pal5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/0.gif
+ offset 0 1
+ frame data/chars/MVC2_Spiderman/1.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/2.gif
+
+anim idle
+ delay 7
+ offset 59 86
+ frame data/chars/MVC2_Spiderman/3.gif
+ offset 59 85
+ frame data/chars/MVC2_Spiderman/4.gif
+ offset 59 84
+ frame data/chars/MVC2_Spiderman/5.gif
+ offset 59 84
+ frame data/chars/MVC2_Spiderman/6.gif
+ offset 59 85
+ frame data/chars/MVC2_Spiderman/7.gif
+ offset 59 88
+ frame data/chars/MVC2_Spiderman/8.gif
+ offset 58 87
+ frame data/chars/MVC2_Spiderman/9.gif
+ offset 58 86
+ frame data/chars/MVC2_Spiderman/10.gif
+ offset 58 86
+ frame data/chars/MVC2_Spiderman/11.gif
+
+anim turn
+ delay 7
+ offset 59 44
+ frame data/chars/MVC2_Spiderman/12.gif
+ offset 59 46
+ frame data/chars/MVC2_Spiderman/13.gif
+
+anim 0006
+ delay 7
+ offset 43 35
+ frame data/chars/MVC2_Spiderman/14.gif
+ offset 34 36
+ frame data/chars/MVC2_Spiderman/15.gif
+
+anim 0010
+ delay 7
+ offset 59 82
+ frame data/chars/MVC2_Spiderman/16.gif
+ offset 47 49
+ frame data/chars/MVC2_Spiderman/17.gif
+ offset 34 45
+ frame data/chars/MVC2_Spiderman/18.gif
+ offset 34 40
+ frame data/chars/MVC2_Spiderman/19.gif
+ offset 59 83
+ frame data/chars/MVC2_Spiderman/20.gif
+
+anim 0011
+ delay 7
+ offset 34 43
+ frame data/chars/MVC2_Spiderman/21.gif
+
+anim walk
+ delay 7
+ offset 33 81
+ frame data/chars/MVC2_Spiderman/22.gif
+ offset 37 82
+ frame data/chars/MVC2_Spiderman/23.gif
+ offset 31 83
+ frame data/chars/MVC2_Spiderman/24.gif
+ offset 25 82
+ frame data/chars/MVC2_Spiderman/25.gif
+ offset 26 82
+ frame data/chars/MVC2_Spiderman/26.gif
+ offset 27 81
+ frame data/chars/MVC2_Spiderman/27.gif
+ offset 27 80
+ frame data/chars/MVC2_Spiderman/28.gif
+ offset 26 80
+ frame data/chars/MVC2_Spiderman/29.gif
+ offset 25 80
+ frame data/chars/MVC2_Spiderman/30.gif
+ offset 24 80
+ frame data/chars/MVC2_Spiderman/31.gif
+ offset 23 80
+ frame data/chars/MVC2_Spiderman/32.gif
+ offset 28 80
+ frame data/chars/MVC2_Spiderman/33.gif
+
+anim jump
+ delay 7
+ offset 32 132
+ frame data/chars/MVC2_Spiderman/34.gif
+ offset 33 117
+ frame data/chars/MVC2_Spiderman/35.gif
+ offset 39 100
+ frame data/chars/MVC2_Spiderman/36.gif
+ offset 39 94
+ frame data/chars/MVC2_Spiderman/37.gif
+ offset 40 93
+ frame data/chars/MVC2_Spiderman/38.gif
+ offset 47 112
+ frame data/chars/MVC2_Spiderman/39.gif
+ offset 42 126
+ frame data/chars/MVC2_Spiderman/40.gif
+ offset 32 131
+ frame data/chars/MVC2_Spiderman/41.gif
+ offset 43 125
+ frame data/chars/MVC2_Spiderman/42.gif
+
+anim jumpforward
+ delay 7
+ offset 52 108
+ frame data/chars/MVC2_Spiderman/43.gif
+ offset 59 105
+ frame data/chars/MVC2_Spiderman/44.gif
+ offset 57 92
+ frame data/chars/MVC2_Spiderman/45.gif
+ offset 38 90
+ frame data/chars/MVC2_Spiderman/46.gif
+ offset 28 103
+ frame data/chars/MVC2_Spiderman/47.gif
+ offset 33 98
+ frame data/chars/MVC2_Spiderman/48.gif
+ offset 28 97
+ frame data/chars/MVC2_Spiderman/49.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/50.gif
+ offset 47 96
+ frame data/chars/MVC2_Spiderman/51.gif
+ offset 45 110
+ frame data/chars/MVC2_Spiderman/52.gif
+ offset 41 114
+ frame data/chars/MVC2_Spiderman/53.gif
+
+anim 0043
+ delay 7
+ offset 33 121
+ frame data/chars/MVC2_Spiderman/54.gif
+ offset 33 119
+ frame data/chars/MVC2_Spiderman/55.gif
+ offset 33 110
+ frame data/chars/MVC2_Spiderman/56.gif
+ offset 46 100
+ frame data/chars/MVC2_Spiderman/57.gif
+ offset 43 112
+ frame data/chars/MVC2_Spiderman/58.gif
+ offset 41 117
+ frame data/chars/MVC2_Spiderman/59.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/60.gif
+
+anim jumpland
+ delay 7
+ offset 51 75
+ frame data/chars/MVC2_Spiderman/61.gif
+ offset 30 49
+ frame data/chars/MVC2_Spiderman/62.gif
+ offset 47 58
+ frame data/chars/MVC2_Spiderman/63.gif
+ offset 59 84
+ frame data/chars/MVC2_Spiderman/64.gif
+
+anim run
+ delay 7
+ offset 40 59
+ frame data/chars/MVC2_Spiderman/65.gif
+ offset 26 79
+ frame data/chars/MVC2_Spiderman/66.gif
+ offset 29 81
+ frame data/chars/MVC2_Spiderman/67.gif
+ offset 40 59
+ frame data/chars/MVC2_Spiderman/68.gif
+
+anim dodge
+ delay 7
+ offset 54 69
+ frame data/chars/MVC2_Spiderman/69.gif
+ offset 54 74
+ frame data/chars/MVC2_Spiderman/70.gif
+ offset 49 74
+ frame data/chars/MVC2_Spiderman/71.gif
+ offset 47 75
+ frame data/chars/MVC2_Spiderman/72.gif
+
+anim block120
+ delay 7
+ offset 59 77
+ frame data/chars/MVC2_Spiderman/73.gif
+ offset 59 89
+ frame data/chars/MVC2_Spiderman/74.gif
+ offset 59 89
+ frame data/chars/MVC2_Spiderman/75.gif
+ offset 59 77
+ frame data/chars/MVC2_Spiderman/76.gif
+ offset 59 53
+ frame data/chars/MVC2_Spiderman/77.gif
+
+anim block121
+ delay 7
+ offset 40 42
+ frame data/chars/MVC2_Spiderman/78.gif
+ offset 56 57
+ frame data/chars/MVC2_Spiderman/79.gif
+ offset 54 55
+ frame data/chars/MVC2_Spiderman/80.gif
+ offset 40 42
+ frame data/chars/MVC2_Spiderman/81.gif
+ offset 33 38
+ frame data/chars/MVC2_Spiderman/82.gif
+
+anim block122
+ delay 7
+ offset 29 110
+ frame data/chars/MVC2_Spiderman/83.gif
+ offset 36 114
+ frame data/chars/MVC2_Spiderman/84.gif
+ offset 35 114
+ frame data/chars/MVC2_Spiderman/85.gif
+
+anim 0171
+ delay 7
+ offset 33 94
+ frame data/chars/MVC2_Spiderman/86.gif
+ offset 47 106
+ frame data/chars/MVC2_Spiderman/87.gif
+ offset 47 107
+ frame data/chars/MVC2_Spiderman/88.gif
+ offset 46 107
+ frame data/chars/MVC2_Spiderman/89.gif
+
+anim 0181
+ delay 7
+ offset 59 59
+ frame data/chars/MVC2_Spiderman/90.gif
+ offset 33 94
+ frame data/chars/MVC2_Spiderman/91.gif
+ offset 32 110
+ frame data/chars/MVC2_Spiderman/92.gif
+ offset 33 108
+ frame data/chars/MVC2_Spiderman/93.gif
+ offset 33 107
+ frame data/chars/MVC2_Spiderman/94.gif
+ offset 33 107
+ frame data/chars/MVC2_Spiderman/95.gif
+
+anim 0182
+ delay 7
+ offset 59 59
+ frame data/chars/MVC2_Spiderman/96.gif
+ offset 54 94
+ frame data/chars/MVC2_Spiderman/97.gif
+ offset 41 108
+ frame data/chars/MVC2_Spiderman/98.gif
+ offset 41 109
+ frame data/chars/MVC2_Spiderman/99.gif
+ offset 41 109
+ frame data/chars/MVC2_Spiderman/100.gif
+ offset 41 105
+ frame data/chars/MVC2_Spiderman/101.gif
+ offset 41 106
+ frame data/chars/MVC2_Spiderman/102.gif
+
+anim 0183
+ delay 7
+ offset 59 62
+ frame data/chars/MVC2_Spiderman/103.gif
+ offset 37 68
+ frame data/chars/MVC2_Spiderman/104.gif
+ offset 49 69
+ frame data/chars/MVC2_Spiderman/105.gif
+ offset 49 66
+ frame data/chars/MVC2_Spiderman/106.gif
+ offset 49 85
+ frame data/chars/MVC2_Spiderman/107.gif
+ offset 49 149
+ frame data/chars/MVC2_Spiderman/108.gif
+ offset 49 214
+ frame data/chars/MVC2_Spiderman/109.gif
+ offset 62 70
+ frame data/chars/MVC2_Spiderman/110.gif
+ offset 40 74
+ frame data/chars/MVC2_Spiderman/111.gif
+ offset 34 74
+ frame data/chars/MVC2_Spiderman/112.gif
+ offset 35 75
+ frame data/chars/MVC2_Spiderman/113.gif
+ offset 63 94
+ frame data/chars/MVC2_Spiderman/114.gif
+ offset 47 110
+ frame data/chars/MVC2_Spiderman/115.gif
+ offset 41 108
+ frame data/chars/MVC2_Spiderman/116.gif
+ offset 41 107
+ frame data/chars/MVC2_Spiderman/117.gif
+ offset 57 107
+ frame data/chars/MVC2_Spiderman/118.gif
+ offset 56 107
+ frame data/chars/MVC2_Spiderman/119.gif
+ offset 56 107
+ frame data/chars/MVC2_Spiderman/120.gif
+
+anim 0192
+ delay 7
+ offset 97 206
+ frame data/chars/MVC2_Spiderman/121.gif
+ offset 87 206
+ frame data/chars/MVC2_Spiderman/122.gif
+ offset 76 206
+ frame data/chars/MVC2_Spiderman/123.gif
+ offset 5 206
+ frame data/chars/MVC2_Spiderman/124.gif
+ offset 2 206
+ frame data/chars/MVC2_Spiderman/125.gif
+ offset 38 110
+ frame data/chars/MVC2_Spiderman/126.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/127.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/128.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/129.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/130.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/131.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/132.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/133.gif
+ offset 4 220
+ frame data/chars/MVC2_Spiderman/134.gif
+ offset 36 210
+ frame data/chars/MVC2_Spiderman/135.gif
+ offset 38 206
+ frame data/chars/MVC2_Spiderman/136.gif
+ offset 74 43
+ frame data/chars/MVC2_Spiderman/137.gif
+ offset 67 53
+ frame data/chars/MVC2_Spiderman/138.gif
+ offset 41 61
+ frame data/chars/MVC2_Spiderman/139.gif
+ offset 28 45
+ frame data/chars/MVC2_Spiderman/140.gif
+
+anim 0194
+ delay 7
+ offset 43 107
+ frame data/chars/MVC2_Spiderman/141.gif
+ offset 41 124
+ frame data/chars/MVC2_Spiderman/142.gif
+ offset 41 124
+ frame data/chars/MVC2_Spiderman/143.gif
+ offset 41 107
+ frame data/chars/MVC2_Spiderman/144.gif
+ offset 61 84
+ frame data/chars/MVC2_Spiderman/145.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/146.gif
+ offset 61 86
+ frame data/chars/MVC2_Spiderman/147.gif
+ offset 61 86
+ frame data/chars/MVC2_Spiderman/148.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/149.gif
+
+anim select
+ delay 7
+ offset 61 70
+ frame data/chars/MVC2_Spiderman/150.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/151.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/152.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/153.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/154.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/155.gif
+
+anim pain5000
+ delay 7
+ offset 84 91
+ frame data/chars/MVC2_Spiderman/156.gif
+ offset 59 92
+ frame data/chars/MVC2_Spiderman/157.gif
+
+anim pain5001
+ delay 7
+ offset 63 59
+ frame data/chars/MVC2_Spiderman/158.gif
+
+anim pain5002
+ delay 7
+ offset 69 25
+ frame data/chars/MVC2_Spiderman/159.gif
+
+anim pain5000
+ delay 7
+ offset 98 67
+ frame data/chars/MVC2_Spiderman/160.gif
+ offset 59 97
+ frame data/chars/MVC2_Spiderman/161.gif
+
+anim pain5001
+ delay 7
+ offset 77 38
+ frame data/chars/MVC2_Spiderman/162.gif
+
+anim pain5002
+ delay 7
+ offset 40 17
+ frame data/chars/MVC2_Spiderman/163.gif
+
+anim pain5003
+ delay 7
+ offset 122 70
+ frame data/chars/MVC2_Spiderman/164.gif
+ offset 109 55
+ frame data/chars/MVC2_Spiderman/165.gif
+ offset 114 57
+ frame data/chars/MVC2_Spiderman/166.gif
+ offset 114 55
+ frame data/chars/MVC2_Spiderman/167.gif
+ offset 91 72
+ frame data/chars/MVC2_Spiderman/168.gif
+
+anim pain5001
+ delay 7
+ offset 94 35
+ frame data/chars/MVC2_Spiderman/169.gif
+
+anim pain5002
+ delay 7
+ offset 46 38
+ frame data/chars/MVC2_Spiderman/170.gif
+
+anim pain5010
+ delay 7
+ offset 62 65
+ frame data/chars/MVC2_Spiderman/171.gif
+ offset 60 60
+ frame data/chars/MVC2_Spiderman/172.gif
+
+anim pain5011
+ delay 7
+ offset 24 40
+ frame data/chars/MVC2_Spiderman/173.gif
+
+anim pain5012
+ delay 7
+ offset 53 31
+ frame data/chars/MVC2_Spiderman/174.gif
+
+anim pain5010
+ delay 7
+ offset 53 78
+ frame data/chars/MVC2_Spiderman/175.gif
+ offset 42 70
+ frame data/chars/MVC2_Spiderman/176.gif
+ offset 28 68
+ frame data/chars/MVC2_Spiderman/177.gif
+
+anim pain5011
+ delay 7
+ offset 13 35
+ frame data/chars/MVC2_Spiderman/178.gif
+
+anim pain5012
+ delay 7
+ offset 50 26
+ frame data/chars/MVC2_Spiderman/179.gif
+
+anim pain5010
+ delay 7
+ offset 52 80
+ frame data/chars/MVC2_Spiderman/180.gif
+ offset 48 74
+ frame data/chars/MVC2_Spiderman/181.gif
+ offset 34 68
+ frame data/chars/MVC2_Spiderman/182.gif
+ offset 32 37
+ frame data/chars/MVC2_Spiderman/183.gif
+ offset 33 46
+ frame data/chars/MVC2_Spiderman/184.gif
+
+anim pain5011
+ delay 7
+ offset 14 38
+ frame data/chars/MVC2_Spiderman/185.gif
+
+anim pain5012
+ delay 7
+ offset 37 39
+ frame data/chars/MVC2_Spiderman/186.gif
+
+anim pain5020
+ delay 7
+ offset 44 51
+ frame data/chars/MVC2_Spiderman/187.gif
+ offset 34 40
+ frame data/chars/MVC2_Spiderman/188.gif
+ offset 63 54
+ frame data/chars/MVC2_Spiderman/189.gif
+ offset 36 40
+ frame data/chars/MVC2_Spiderman/190.gif
+ offset 59 41
+ frame data/chars/MVC2_Spiderman/191.gif
+ offset 65 36
+ frame data/chars/MVC2_Spiderman/192.gif
+ offset 63 35
+ frame data/chars/MVC2_Spiderman/193.gif
+ offset 54 39
+ frame data/chars/MVC2_Spiderman/194.gif
+
+anim fall5035
+ delay 7
+ offset 84 91
+ frame data/chars/MVC2_Spiderman/195.gif
+
+anim fall5030
+ delay 7
+ offset 46 94
+ frame data/chars/MVC2_Spiderman/196.gif
+
+anim fall5031
+ delay 7
+ offset 49 24
+ frame data/chars/MVC2_Spiderman/197.gif
+
+anim fall5032
+ delay 7
+ offset 8 6
+ frame data/chars/MVC2_Spiderman/198.gif
+
+anim fall5030
+ delay 7
+ offset 46 94
+ frame data/chars/MVC2_Spiderman/199.gif
+
+anim fall5031
+ delay 7
+ offset 49 23
+ frame data/chars/MVC2_Spiderman/200.gif
+
+anim fall5032
+ delay 7
+ offset 8 6
+ frame data/chars/MVC2_Spiderman/201.gif
+
+anim fall5036
+ delay 7
+ offset 45 80
+ frame data/chars/MVC2_Spiderman/202.gif
+
+anim fall5034
+ delay 7
+ offset 42 17
+ frame data/chars/MVC2_Spiderman/203.gif
+
+anim fall5033
+ delay 7
+ offset 6 29
+ frame data/chars/MVC2_Spiderman/204.gif
+
+anim fall5030
+ delay 7
+ offset 45 80
+ frame data/chars/MVC2_Spiderman/205.gif
+
+anim fall5031
+ delay 7
+ offset 42 17
+ frame data/chars/MVC2_Spiderman/206.gif
+
+anim fall5032
+ delay 7
+ offset 6 31
+ frame data/chars/MVC2_Spiderman/207.gif
+
+anim fall5030
+ delay 7
+ offset 16 108
+ frame data/chars/MVC2_Spiderman/208.gif
+
+anim fall5031
+ delay 7
+ offset 17 55
+ frame data/chars/MVC2_Spiderman/209.gif
+
+anim fall5032
+ delay 7
+ offset 10 86
+ frame data/chars/MVC2_Spiderman/210.gif
+
+anim fall5030
+ delay 7
+ offset -9 84
+ frame data/chars/MVC2_Spiderman/211.gif
+
+anim fall5031
+ delay 7
+ offset 17 54
+ frame data/chars/MVC2_Spiderman/212.gif
+
+anim fall5032
+ delay 7
+ offset 0 54
+ frame data/chars/MVC2_Spiderman/213.gif
+
+anim fall5040
+ delay 7
+ offset 17 62
+ frame data/chars/MVC2_Spiderman/214.gif
+ offset 21 81
+ frame data/chars/MVC2_Spiderman/215.gif
+
+anim fall5041
+ delay 7
+ offset 20 47
+ frame data/chars/MVC2_Spiderman/216.gif
+
+anim fall5042
+ delay 7
+ offset 48 59
+ frame data/chars/MVC2_Spiderman/217.gif
+
+anim fall5040
+ delay 7
+ offset 70 34
+ frame data/chars/MVC2_Spiderman/218.gif
+ offset 64 36
+ frame data/chars/MVC2_Spiderman/219.gif
+ offset 70 34
+ frame data/chars/MVC2_Spiderman/220.gif
+ offset 68 35
+ frame data/chars/MVC2_Spiderman/221.gif
+
+anim fall5043
+ delay 7
+ offset 79 30
+ frame data/chars/MVC2_Spiderman/222.gif
+
+anim fall5044
+ delay 7
+ offset 120 33
+ frame data/chars/MVC2_Spiderman/223.gif
+
+anim fall5045
+ delay 7
+ offset 75 40
+ frame data/chars/MVC2_Spiderman/224.gif
+
+anim fall5046
+ delay 7
+ offset 87 37
+ frame data/chars/MVC2_Spiderman/225.gif
+
+anim fall5047
+ delay 7
+ offset 108 9
+ frame data/chars/MVC2_Spiderman/226.gif
+
+anim fall5055
+ delay 7
+ offset 28 99
+ frame data/chars/MVC2_Spiderman/227.gif
+ offset 27 99
+ frame data/chars/MVC2_Spiderman/228.gif
+
+anim fall5060
+ delay 7
+ offset 32 114
+ frame data/chars/MVC2_Spiderman/229.gif
+
+anim fall5061
+ delay 7
+ offset 32 41
+ frame data/chars/MVC2_Spiderman/230.gif
+
+anim fall5062
+ delay 7
+ offset 31 6
+ frame data/chars/MVC2_Spiderman/231.gif
+
+anim fall5060
+ delay 7
+ offset 15 118
+ frame data/chars/MVC2_Spiderman/232.gif
+
+anim fall5061
+ delay 7
+ offset 20 68
+ frame data/chars/MVC2_Spiderman/233.gif
+
+anim fall5062
+ delay 7
+ offset 32 97
+ frame data/chars/MVC2_Spiderman/234.gif
+
+anim fall5070
+ delay 7
+ offset 66 105
+ frame data/chars/MVC2_Spiderman/235.gif
+
+anim fall5071
+ delay 7
+ offset 69 49
+ frame data/chars/MVC2_Spiderman/236.gif
+
+anim fall5072
+ delay 7
+ offset 87 8
+ frame data/chars/MVC2_Spiderman/237.gif
+
+anim fall5070
+ delay 7
+ offset 63 87
+ frame data/chars/MVC2_Spiderman/238.gif
+
+anim fall5071
+ delay 7
+ offset 68 38
+ frame data/chars/MVC2_Spiderman/239.gif
+
+anim fall5072
+ delay 7
+ offset 76 6
+ frame data/chars/MVC2_Spiderman/240.gif
+
+anim fall5070
+ delay 7
+ offset 95 101
+ frame data/chars/MVC2_Spiderman/241.gif
+
+anim fall5071
+ delay 7
+ offset 94 55
+ frame data/chars/MVC2_Spiderman/242.gif
+
+anim fall5072
+ delay 7
+ offset 130 41
+ frame data/chars/MVC2_Spiderman/243.gif
+
+anim 5160
+ delay 7
+ offset 57 63
+ frame data/chars/MVC2_Spiderman/244.gif
+
+anim 5170
+ delay 7
+ offset 77 86
+ frame data/chars/MVC2_Spiderman/245.gif
+ offset 81 104
+ frame data/chars/MVC2_Spiderman/246.gif
+ offset 71 113
+ frame data/chars/MVC2_Spiderman/247.gif
+
+anim 5250
+ delay 7
+ offset 31 114
+ frame data/chars/MVC2_Spiderman/248.gif
+ offset 32 114
+ frame data/chars/MVC2_Spiderman/249.gif
+ offset 27 114
+ frame data/chars/MVC2_Spiderman/250.gif
+ offset 32 114
+ frame data/chars/MVC2_Spiderman/251.gif
+ offset 15 114
+ frame data/chars/MVC2_Spiderman/252.gif
+ offset 16 114
+ frame data/chars/MVC2_Spiderman/253.gif
+
+anim 5251
+ delay 7
+ offset 33 115
+ frame data/chars/MVC2_Spiderman/254.gif
+ offset 17 115
+ frame data/chars/MVC2_Spiderman/255.gif
+ offset 19 115
+ frame data/chars/MVC2_Spiderman/256.gif
+ offset 32 115
+ frame data/chars/MVC2_Spiderman/257.gif
+ offset 35 115
+ frame data/chars/MVC2_Spiderman/258.gif
+ offset 27 115
+ frame data/chars/MVC2_Spiderman/259.gif
+
+anim faint
+ delay 7
+ offset 56 60
+ frame data/chars/MVC2_Spiderman/260.gif
+ offset 56 59
+ frame data/chars/MVC2_Spiderman/261.gif
+ offset 56 59
+ frame data/chars/MVC2_Spiderman/262.gif
+ offset 56 60
+ frame data/chars/MVC2_Spiderman/263.gif
+ offset 56 61
+ frame data/chars/MVC2_Spiderman/264.gif
+ offset 56 61
+ frame data/chars/MVC2_Spiderman/265.gif
+
+anim 7610
+ delay 7
+ offset 59 85
+ frame data/chars/MVC2_Spiderman/266.gif
+ offset 61 92
+ frame data/chars/MVC2_Spiderman/267.gif
+ offset 61 90
+ frame data/chars/MVC2_Spiderman/268.gif
+ offset 60 89
+ frame data/chars/MVC2_Spiderman/269.gif
+ offset 59 89
+ frame data/chars/MVC2_Spiderman/270.gif
+
+anim 7615
+ delay 7
+ offset 47 65
+ frame data/chars/MVC2_Spiderman/271.gif
+ offset 46 56
+ frame data/chars/MVC2_Spiderman/272.gif
+ offset 39 61
+ frame data/chars/MVC2_Spiderman/273.gif
+ offset 45 54
+ frame data/chars/MVC2_Spiderman/274.gif
+ offset 54 55
+ frame data/chars/MVC2_Spiderman/275.gif
+
+anim 7620
+ delay 7
+ offset 35 112
+ frame data/chars/MVC2_Spiderman/276.gif
+ offset 36 108
+ frame data/chars/MVC2_Spiderman/277.gif
+ offset 37 108
+ frame data/chars/MVC2_Spiderman/278.gif
+ offset 36 107
+ frame data/chars/MVC2_Spiderman/279.gif
+ offset 38 114
+ frame data/chars/MVC2_Spiderman/280.gif
+ offset 35 114
+ frame data/chars/MVC2_Spiderman/281.gif
+
+anim 7800
+ delay 7
+ offset 47 57
+ frame data/chars/MVC2_Spiderman/282.gif
+ offset 38 36
+ frame data/chars/MVC2_Spiderman/283.gif
+ offset 28 47
+ frame data/chars/MVC2_Spiderman/284.gif
+ offset 33 36
+ frame data/chars/MVC2_Spiderman/285.gif
+ offset 28 33
+ frame data/chars/MVC2_Spiderman/286.gif
+ offset 21 42
+ frame data/chars/MVC2_Spiderman/287.gif
+ offset 29 35
+ frame data/chars/MVC2_Spiderman/288.gif
+
+anim 8501
+ delay 7
+ offset 34 94
+ frame data/chars/MVC2_Spiderman/289.gif
+ offset 33 110
+ frame data/chars/MVC2_Spiderman/290.gif
+ offset 34 108
+ frame data/chars/MVC2_Spiderman/291.gif
+ offset 34 107
+ frame data/chars/MVC2_Spiderman/292.gif
+ offset 34 107
+ frame data/chars/MVC2_Spiderman/293.gif
+ offset 34 107
+ frame data/chars/MVC2_Spiderman/294.gif
+
+anim 8502
+ delay 7
+ offset 84 70
+ frame data/chars/MVC2_Spiderman/295.gif
+ offset 75 69
+ frame data/chars/MVC2_Spiderman/296.gif
+ offset 67 69
+ frame data/chars/MVC2_Spiderman/297.gif
+ offset 65 69
+ frame data/chars/MVC2_Spiderman/298.gif
+ offset 78 69
+ frame data/chars/MVC2_Spiderman/299.gif
+ offset 76 69
+ frame data/chars/MVC2_Spiderman/300.gif
+
+anim attack200
+ delay 7
+ offset 58 67
+ frame data/chars/MVC2_Spiderman/301.gif
+ offset 58 67
+ frame data/chars/MVC2_Spiderman/302.gif
+ offset 58 67
+ frame data/chars/MVC2_Spiderman/303.gif
+ offset 59 58
+ frame data/chars/MVC2_Spiderman/304.gif
+ offset 59 82
+ frame data/chars/MVC2_Spiderman/305.gif
+
+anim attack210
+ delay 7
+ offset 58 54
+ frame data/chars/MVC2_Spiderman/306.gif
+ offset 41 82
+ frame data/chars/MVC2_Spiderman/307.gif
+ offset -11 132
+ frame data/chars/MVC2_Spiderman/308.gif
+ offset -11 131
+ frame data/chars/MVC2_Spiderman/309.gif
+ offset -11 131
+ frame data/chars/MVC2_Spiderman/310.gif
+ offset -6 129
+ frame data/chars/MVC2_Spiderman/311.gif
+ offset 41 87
+ frame data/chars/MVC2_Spiderman/312.gif
+
+anim attack220
+ delay 7
+ offset 41 109
+ frame data/chars/MVC2_Spiderman/313.gif
+ offset 24 113
+ frame data/chars/MVC2_Spiderman/314.gif
+ offset 24 103
+ frame data/chars/MVC2_Spiderman/315.gif
+ offset 10 115
+ frame data/chars/MVC2_Spiderman/316.gif
+ offset 1 113
+ frame data/chars/MVC2_Spiderman/317.gif
+ offset 1 113
+ frame data/chars/MVC2_Spiderman/318.gif
+ offset 1 113
+ frame data/chars/MVC2_Spiderman/319.gif
+ offset -6 88
+ frame data/chars/MVC2_Spiderman/320.gif
+ offset 32 78
+ frame data/chars/MVC2_Spiderman/321.gif
+
+anim attack300
+ delay 7
+ offset 29 76
+ frame data/chars/MVC2_Spiderman/322.gif
+ offset 39 88
+ frame data/chars/MVC2_Spiderman/323.gif
+ offset 27 85
+ frame data/chars/MVC2_Spiderman/324.gif
+
+anim attack310
+ delay 7
+ offset 59 44
+ frame data/chars/MVC2_Spiderman/325.gif
+ offset 49 95
+ frame data/chars/MVC2_Spiderman/326.gif
+ offset 46 119
+ frame data/chars/MVC2_Spiderman/327.gif
+ offset 37 118
+ frame data/chars/MVC2_Spiderman/328.gif
+ offset 17 118
+ frame data/chars/MVC2_Spiderman/329.gif
+ offset 21 110
+ frame data/chars/MVC2_Spiderman/330.gif
+ offset 32 78
+ frame data/chars/MVC2_Spiderman/331.gif
+
+anim attack311
+ delay 7
+ offset 50 105
+ frame data/chars/MVC2_Spiderman/332.gif
+ offset 5 105
+ frame data/chars/MVC2_Spiderman/333.gif
+ offset -6 88
+ frame data/chars/MVC2_Spiderman/334.gif
+
+anim attack320
+ delay 7
+ offset 11 62
+ frame data/chars/MVC2_Spiderman/335.gif
+ offset 34 95
+ frame data/chars/MVC2_Spiderman/336.gif
+ offset 27 92
+ frame data/chars/MVC2_Spiderman/337.gif
+ offset 12 90
+ frame data/chars/MVC2_Spiderman/338.gif
+ offset 17 102
+ frame data/chars/MVC2_Spiderman/339.gif
+ offset 55 118
+ frame data/chars/MVC2_Spiderman/340.gif
+ offset 56 68
+ frame data/chars/MVC2_Spiderman/341.gif
+
+anim attack400
+ delay 7
+ offset 33 38
+ frame data/chars/MVC2_Spiderman/342.gif
+ offset 33 41
+ frame data/chars/MVC2_Spiderman/343.gif
+ offset 33 38
+ frame data/chars/MVC2_Spiderman/344.gif
+ offset 34 38
+ frame data/chars/MVC2_Spiderman/345.gif
+
+anim attack410
+ delay 7
+ offset 33 40
+ frame data/chars/MVC2_Spiderman/346.gif
+ offset 33 33
+ frame data/chars/MVC2_Spiderman/347.gif
+ offset 33 78
+ frame data/chars/MVC2_Spiderman/348.gif
+ offset 33 78
+ frame data/chars/MVC2_Spiderman/349.gif
+ offset 33 78
+ frame data/chars/MVC2_Spiderman/350.gif
+ offset 33 57
+ frame data/chars/MVC2_Spiderman/351.gif
+ offset 33 36
+ frame data/chars/MVC2_Spiderman/352.gif
+
+anim attack420
+ delay 7
+ offset 39 42
+ frame data/chars/MVC2_Spiderman/353.gif
+ offset -10 53
+ frame data/chars/MVC2_Spiderman/354.gif
+ offset -10 45
+ frame data/chars/MVC2_Spiderman/355.gif
+ offset -9 48
+ frame data/chars/MVC2_Spiderman/356.gif
+ offset 1 46
+ frame data/chars/MVC2_Spiderman/357.gif
+
+anim attack500
+ delay 7
+ offset 31 51
+ frame data/chars/MVC2_Spiderman/358.gif
+ offset 26 56
+ frame data/chars/MVC2_Spiderman/359.gif
+ offset 33 51
+ frame data/chars/MVC2_Spiderman/360.gif
+
+anim attack510
+ delay 7
+ offset -5 46
+ frame data/chars/MVC2_Spiderman/361.gif
+ offset -8 86
+ frame data/chars/MVC2_Spiderman/362.gif
+ offset -5 46
+ frame data/chars/MVC2_Spiderman/363.gif
+ offset 15 51
+ frame data/chars/MVC2_Spiderman/364.gif
+
+anim attack520
+ delay 7
+ offset 3 52
+ frame data/chars/MVC2_Spiderman/365.gif
+ offset -31 53
+ frame data/chars/MVC2_Spiderman/366.gif
+ offset -41 49
+ frame data/chars/MVC2_Spiderman/367.gif
+ offset -38 50
+ frame data/chars/MVC2_Spiderman/368.gif
+ offset -21 52
+ frame data/chars/MVC2_Spiderman/369.gif
+ offset 9 53
+ frame data/chars/MVC2_Spiderman/370.gif
+ offset 24 46
+ frame data/chars/MVC2_Spiderman/371.gif
+
+anim jumpattack600
+ delay 7
+ offset 32 114
+ frame data/chars/MVC2_Spiderman/372.gif
+ offset 35 109
+ frame data/chars/MVC2_Spiderman/373.gif
+ offset 29 113
+ frame data/chars/MVC2_Spiderman/374.gif
+
+anim jumpattack610
+ delay 7
+ offset 30 117
+ frame data/chars/MVC2_Spiderman/375.gif
+ offset 25 112
+ frame data/chars/MVC2_Spiderman/376.gif
+ offset 49 142
+ frame data/chars/MVC2_Spiderman/377.gif
+ offset 49 142
+ frame data/chars/MVC2_Spiderman/378.gif
+ offset 49 142
+ frame data/chars/MVC2_Spiderman/379.gif
+ offset 25 112
+ frame data/chars/MVC2_Spiderman/380.gif
+
+anim jumpattack620
+ delay 7
+ offset 76 115
+ frame data/chars/MVC2_Spiderman/381.gif
+ offset 45 124
+ frame data/chars/MVC2_Spiderman/382.gif
+ offset 30 122
+ frame data/chars/MVC2_Spiderman/383.gif
+ offset 30 122
+ frame data/chars/MVC2_Spiderman/384.gif
+ offset 30 122
+ frame data/chars/MVC2_Spiderman/385.gif
+
+anim jumpattack700
+ delay 7
+ offset 41 115
+ frame data/chars/MVC2_Spiderman/386.gif
+ offset 53 124
+ frame data/chars/MVC2_Spiderman/387.gif
+ offset 58 118
+ frame data/chars/MVC2_Spiderman/388.gif
+
+anim jumpattack710
+ delay 7
+ offset 31 125
+ frame data/chars/MVC2_Spiderman/389.gif
+ offset 64 105
+ frame data/chars/MVC2_Spiderman/390.gif
+ offset 49 141
+ frame data/chars/MVC2_Spiderman/391.gif
+ offset 49 141
+ frame data/chars/MVC2_Spiderman/392.gif
+ offset 49 141
+ frame data/chars/MVC2_Spiderman/393.gif
+ offset 64 105
+ frame data/chars/MVC2_Spiderman/394.gif
+
+anim jumpattack720
+ delay 7
+ offset 28 100
+ frame data/chars/MVC2_Spiderman/395.gif
+ offset 25 108
+ frame data/chars/MVC2_Spiderman/396.gif
+ offset 52 119
+ frame data/chars/MVC2_Spiderman/397.gif
+
+anim 0810
+ delay 7
+ offset 46 48
+ frame data/chars/MVC2_Spiderman/398.gif
+ offset 37 74
+ frame data/chars/MVC2_Spiderman/399.gif
+ offset 72 76
+ frame data/chars/MVC2_Spiderman/400.gif
+ offset 62 105
+ frame data/chars/MVC2_Spiderman/401.gif
+ offset 73 107
+ frame data/chars/MVC2_Spiderman/402.gif
+ offset 49 127
+ frame data/chars/MVC2_Spiderman/403.gif
+ offset 31 102
+ frame data/chars/MVC2_Spiderman/404.gif
+ offset 33 91
+ frame data/chars/MVC2_Spiderman/405.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/406.gif
+
+anim 0840
+ delay 7
+ offset 59 78
+ frame data/chars/MVC2_Spiderman/407.gif
+ offset 59 77
+ frame data/chars/MVC2_Spiderman/408.gif
+ offset 61 109
+ frame data/chars/MVC2_Spiderman/409.gif
+ offset 72 113
+ frame data/chars/MVC2_Spiderman/410.gif
+ offset 72 102
+ frame data/chars/MVC2_Spiderman/411.gif
+ offset 128 95
+ frame data/chars/MVC2_Spiderman/412.gif
+ offset 84 113
+ frame data/chars/MVC2_Spiderman/413.gif
+ offset 84 88
+ frame data/chars/MVC2_Spiderman/414.gif
+ offset 79 78
+ frame data/chars/MVC2_Spiderman/415.gif
+ offset 50 83
+ frame data/chars/MVC2_Spiderman/416.gif
+
+anim 0930
+ delay 7
+ offset 37 90
+ frame data/chars/MVC2_Spiderman/417.gif
+ offset 72 92
+ frame data/chars/MVC2_Spiderman/418.gif
+ offset 56 121
+ frame data/chars/MVC2_Spiderman/419.gif
+ offset 67 110
+ frame data/chars/MVC2_Spiderman/420.gif
+ offset 49 127
+ frame data/chars/MVC2_Spiderman/421.gif
+ offset 31 102
+ frame data/chars/MVC2_Spiderman/422.gif
+ offset 33 91
+ frame data/chars/MVC2_Spiderman/423.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/424.gif
+
+anim freespecial1340
+ delay 7
+ offset 36 190
+ frame data/chars/MVC2_Spiderman/425.gif
+ offset 37 190
+ frame data/chars/MVC2_Spiderman/426.gif
+ offset 43 190
+ frame data/chars/MVC2_Spiderman/427.gif
+ offset 46 190
+ frame data/chars/MVC2_Spiderman/428.gif
+ offset 49 190
+ frame data/chars/MVC2_Spiderman/429.gif
+ offset 52 190
+ frame data/chars/MVC2_Spiderman/430.gif
+ offset 51 190
+ frame data/chars/MVC2_Spiderman/431.gif
+ offset 50 190
+ frame data/chars/MVC2_Spiderman/432.gif
+ offset 49 190
+ frame data/chars/MVC2_Spiderman/433.gif
+ offset 47 190
+ frame data/chars/MVC2_Spiderman/434.gif
+ offset 46 190
+ frame data/chars/MVC2_Spiderman/435.gif
+ offset 44 190
+ frame data/chars/MVC2_Spiderman/436.gif
+ offset 37 190
+ frame data/chars/MVC2_Spiderman/437.gif
+ offset 35 190
+ frame data/chars/MVC2_Spiderman/438.gif
+ offset 30 190
+ frame data/chars/MVC2_Spiderman/439.gif
+ offset 26 190
+ frame data/chars/MVC2_Spiderman/440.gif
+ offset 21 190
+ frame data/chars/MVC2_Spiderman/441.gif
+ offset 15 190
+ frame data/chars/MVC2_Spiderman/442.gif
+ offset -4 190
+ frame data/chars/MVC2_Spiderman/443.gif
+ offset -18 190
+ frame data/chars/MVC2_Spiderman/444.gif
+ offset -30 190
+ frame data/chars/MVC2_Spiderman/445.gif
+ offset -42 190
+ frame data/chars/MVC2_Spiderman/446.gif
+ offset -56 190
+ frame data/chars/MVC2_Spiderman/447.gif
+ offset -68 190
+ frame data/chars/MVC2_Spiderman/448.gif
+ offset -100 190
+ frame data/chars/MVC2_Spiderman/449.gif
+ offset -109 190
+ frame data/chars/MVC2_Spiderman/450.gif
+ offset -109 190
+ frame data/chars/MVC2_Spiderman/451.gif
+ offset -109 190
+ frame data/chars/MVC2_Spiderman/452.gif
+ offset -109 190
+ frame data/chars/MVC2_Spiderman/453.gif
+ offset -181 132
+ frame data/chars/MVC2_Spiderman/454.gif
+
+anim freespecial1341
+ delay 7
+ offset 36 117
+ frame data/chars/MVC2_Spiderman/455.gif
+ offset 21 121
+ frame data/chars/MVC2_Spiderman/456.gif
+
+anim freespecial1450
+ delay 7
+ offset 59 61
+ frame data/chars/MVC2_Spiderman/457.gif
+ offset 59 63
+ frame data/chars/MVC2_Spiderman/458.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/459.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/460.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/461.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/462.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/463.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/464.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/465.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/466.gif
+
+anim freespecial1451
+ delay 7
+ offset 49 109
+ frame data/chars/MVC2_Spiderman/467.gif
+ offset 46 107
+ frame data/chars/MVC2_Spiderman/468.gif
+ offset 33 91
+ frame data/chars/MVC2_Spiderman/469.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/470.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/471.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/472.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/473.gif
+ offset 34 88
+ frame data/chars/MVC2_Spiderman/474.gif
+ offset 33 90
+ frame data/chars/MVC2_Spiderman/475.gif
+ offset 32 89
+ frame data/chars/MVC2_Spiderman/476.gif
+
+anim freespecial1480
+ delay 7
+ offset 59 61
+ frame data/chars/MVC2_Spiderman/477.gif
+ offset 59 62
+ frame data/chars/MVC2_Spiderman/478.gif
+ offset 58 54
+ frame data/chars/MVC2_Spiderman/479.gif
+ offset 41 82
+ frame data/chars/MVC2_Spiderman/480.gif
+ offset 21 134
+ frame data/chars/MVC2_Spiderman/481.gif
+ offset 21 133
+ frame data/chars/MVC2_Spiderman/482.gif
+ offset 21 131
+ frame data/chars/MVC2_Spiderman/483.gif
+ offset 26 131
+ frame data/chars/MVC2_Spiderman/484.gif
+ offset 47 132
+ frame data/chars/MVC2_Spiderman/485.gif
+ offset 30 136
+ frame data/chars/MVC2_Spiderman/486.gif
+ offset 30 126
+ frame data/chars/MVC2_Spiderman/487.gif
+ offset 20 138
+ frame data/chars/MVC2_Spiderman/488.gif
+ offset 15 136
+ frame data/chars/MVC2_Spiderman/489.gif
+ offset 16 136
+ frame data/chars/MVC2_Spiderman/490.gif
+ offset 16 136
+ frame data/chars/MVC2_Spiderman/491.gif
+ offset 23 113
+ frame data/chars/MVC2_Spiderman/492.gif
+ offset 9 114
+ frame data/chars/MVC2_Spiderman/493.gif
+ offset 30 119
+ frame data/chars/MVC2_Spiderman/494.gif
+ offset 29 113
+ frame data/chars/MVC2_Spiderman/495.gif
+
+anim freespecial1510
+ delay 7
+ offset 52 112
+ frame data/chars/MVC2_Spiderman/496.gif
+ offset 38 92
+ frame data/chars/MVC2_Spiderman/497.gif
+ offset 38 93
+ frame data/chars/MVC2_Spiderman/498.gif
+ offset 38 90
+ frame data/chars/MVC2_Spiderman/499.gif
+ offset 33 89
+ frame data/chars/MVC2_Spiderman/500.gif
+ offset 32 88
+ frame data/chars/MVC2_Spiderman/501.gif
+ offset 27 96
+ frame data/chars/MVC2_Spiderman/502.gif
+
+anim freespecial1511
+ delay 7
+ offset 36 139
+ frame data/chars/MVC2_Spiderman/503.gif
+ offset 22 119
+ frame data/chars/MVC2_Spiderman/504.gif
+ offset 22 120
+ frame data/chars/MVC2_Spiderman/505.gif
+ offset 22 117
+ frame data/chars/MVC2_Spiderman/506.gif
+ offset 17 116
+ frame data/chars/MVC2_Spiderman/507.gif
+ offset 16 115
+ frame data/chars/MVC2_Spiderman/508.gif
+ offset 28 110
+ frame data/chars/MVC2_Spiderman/509.gif
+
+anim freespecial1515
+ delay 7
+ offset 52 112
+ frame data/chars/MVC2_Spiderman/510.gif
+ offset 38 122
+ frame data/chars/MVC2_Spiderman/511.gif
+ offset 38 132
+ frame data/chars/MVC2_Spiderman/512.gif
+ offset 38 142
+ frame data/chars/MVC2_Spiderman/513.gif
+ offset 38 152
+ frame data/chars/MVC2_Spiderman/514.gif
+ offset 40 162
+ frame data/chars/MVC2_Spiderman/515.gif
+ offset 27 173
+ frame data/chars/MVC2_Spiderman/516.gif
+ offset 33 158
+ frame data/chars/MVC2_Spiderman/517.gif
+ offset 30 158
+ frame data/chars/MVC2_Spiderman/518.gif
+ offset 25 158
+ frame data/chars/MVC2_Spiderman/519.gif
+ offset 20 158
+ frame data/chars/MVC2_Spiderman/520.gif
+ offset 17 158
+ frame data/chars/MVC2_Spiderman/521.gif
+ offset 13 158
+ frame data/chars/MVC2_Spiderman/522.gif
+ offset 7 158
+ frame data/chars/MVC2_Spiderman/523.gif
+ offset 0 158
+ frame data/chars/MVC2_Spiderman/524.gif
+ offset -9 158
+ frame data/chars/MVC2_Spiderman/525.gif
+ offset -18 158
+ frame data/chars/MVC2_Spiderman/526.gif
+ offset -29 158
+ frame data/chars/MVC2_Spiderman/527.gif
+ offset -41 158
+ frame data/chars/MVC2_Spiderman/528.gif
+ offset -53 158
+ frame data/chars/MVC2_Spiderman/529.gif
+ offset -65 158
+ frame data/chars/MVC2_Spiderman/530.gif
+ offset -75 158
+ frame data/chars/MVC2_Spiderman/531.gif
+ offset -85 158
+ frame data/chars/MVC2_Spiderman/532.gif
+ offset -97 158
+ frame data/chars/MVC2_Spiderman/533.gif
+ offset -109 158
+ frame data/chars/MVC2_Spiderman/534.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/535.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/536.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/537.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/538.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/539.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/540.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/541.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/542.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/543.gif
+ offset -111 158
+ frame data/chars/MVC2_Spiderman/544.gif
+
+anim freespecial1516
+ delay 7
+ offset 38 142
+ frame data/chars/MVC2_Spiderman/545.gif
+ offset 38 152
+ frame data/chars/MVC2_Spiderman/546.gif
+ offset 38 162
+ frame data/chars/MVC2_Spiderman/547.gif
+ offset 44 173
+ frame data/chars/MVC2_Spiderman/548.gif
+ offset 25 183
+ frame data/chars/MVC2_Spiderman/549.gif
+ offset 30 168
+ frame data/chars/MVC2_Spiderman/550.gif
+ offset 28 168
+ frame data/chars/MVC2_Spiderman/551.gif
+ offset 25 168
+ frame data/chars/MVC2_Spiderman/552.gif
+ offset 20 168
+ frame data/chars/MVC2_Spiderman/553.gif
+ offset 15 168
+ frame data/chars/MVC2_Spiderman/554.gif
+ offset 11 168
+ frame data/chars/MVC2_Spiderman/555.gif
+ offset 5 168
+ frame data/chars/MVC2_Spiderman/556.gif
+ offset -1 168
+ frame data/chars/MVC2_Spiderman/557.gif
+ offset -10 168
+ frame data/chars/MVC2_Spiderman/558.gif
+ offset -19 168
+ frame data/chars/MVC2_Spiderman/559.gif
+ offset -28 168
+ frame data/chars/MVC2_Spiderman/560.gif
+ offset -40 168
+ frame data/chars/MVC2_Spiderman/561.gif
+ offset -52 168
+ frame data/chars/MVC2_Spiderman/562.gif
+ offset -64 168
+ frame data/chars/MVC2_Spiderman/563.gif
+ offset -78 168
+ frame data/chars/MVC2_Spiderman/564.gif
+ offset -90 168
+ frame data/chars/MVC2_Spiderman/565.gif
+ offset -100 168
+ frame data/chars/MVC2_Spiderman/566.gif
+ offset -112 168
+ frame data/chars/MVC2_Spiderman/567.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/568.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/569.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/570.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/571.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/572.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/573.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/574.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/575.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/576.gif
+ offset -124 168
+ frame data/chars/MVC2_Spiderman/577.gif
+
+anim freespecial1517
+ delay 7
+ offset 38 152
+ frame data/chars/MVC2_Spiderman/578.gif
+ offset 38 162
+ frame data/chars/MVC2_Spiderman/579.gif
+ offset 38 173
+ frame data/chars/MVC2_Spiderman/580.gif
+ offset 42 183
+ frame data/chars/MVC2_Spiderman/581.gif
+ offset 30 193
+ frame data/chars/MVC2_Spiderman/582.gif
+ offset 31 178
+ frame data/chars/MVC2_Spiderman/583.gif
+ offset 28 178
+ frame data/chars/MVC2_Spiderman/584.gif
+ offset 25 178
+ frame data/chars/MVC2_Spiderman/585.gif
+ offset 22 178
+ frame data/chars/MVC2_Spiderman/586.gif
+ offset 17 178
+ frame data/chars/MVC2_Spiderman/587.gif
+ offset 12 178
+ frame data/chars/MVC2_Spiderman/588.gif
+ offset 8 178
+ frame data/chars/MVC2_Spiderman/589.gif
+ offset 2 178
+ frame data/chars/MVC2_Spiderman/590.gif
+ offset -4 178
+ frame data/chars/MVC2_Spiderman/591.gif
+ offset -13 178
+ frame data/chars/MVC2_Spiderman/592.gif
+ offset -25 178
+ frame data/chars/MVC2_Spiderman/593.gif
+ offset -34 178
+ frame data/chars/MVC2_Spiderman/594.gif
+ offset -46 178
+ frame data/chars/MVC2_Spiderman/595.gif
+ offset -62 178
+ frame data/chars/MVC2_Spiderman/596.gif
+ offset -74 178
+ frame data/chars/MVC2_Spiderman/597.gif
+ offset -88 178
+ frame data/chars/MVC2_Spiderman/598.gif
+ offset -100 178
+ frame data/chars/MVC2_Spiderman/599.gif
+ offset -114 178
+ frame data/chars/MVC2_Spiderman/600.gif
+ offset -130 178
+ frame data/chars/MVC2_Spiderman/601.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/602.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/603.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/604.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/605.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/606.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/607.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/608.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/609.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/610.gif
+ offset -136 178
+ frame data/chars/MVC2_Spiderman/611.gif
+
+anim freespecial1540
+ delay 7
+ offset 59 61
+ frame data/chars/MVC2_Spiderman/612.gif
+ offset 59 62
+ frame data/chars/MVC2_Spiderman/613.gif
+ offset 59 65
+ frame data/chars/MVC2_Spiderman/614.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/615.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/616.gif
+ offset 61 97
+ frame data/chars/MVC2_Spiderman/617.gif
+ offset 61 96
+ frame data/chars/MVC2_Spiderman/618.gif
+ offset 61 116
+ frame data/chars/MVC2_Spiderman/619.gif
+ offset 61 113
+ frame data/chars/MVC2_Spiderman/620.gif
+ offset 60 71
+ frame data/chars/MVC2_Spiderman/621.gif
+ offset 58 74
+ frame data/chars/MVC2_Spiderman/622.gif
+ offset 58 82
+ frame data/chars/MVC2_Spiderman/623.gif
+ offset 58 99
+ frame data/chars/MVC2_Spiderman/624.gif
+ offset 58 90
+ frame data/chars/MVC2_Spiderman/625.gif
+ offset 119 97
+ frame data/chars/MVC2_Spiderman/626.gif
+ offset 161 112
+ frame data/chars/MVC2_Spiderman/627.gif
+ offset 119 129
+ frame data/chars/MVC2_Spiderman/628.gif
+ offset 58 134
+ frame data/chars/MVC2_Spiderman/629.gif
+ offset 58 130
+ frame data/chars/MVC2_Spiderman/630.gif
+ offset 58 112
+ frame data/chars/MVC2_Spiderman/631.gif
+ offset 58 118
+ frame data/chars/MVC2_Spiderman/632.gif
+ offset 57 100
+ frame data/chars/MVC2_Spiderman/633.gif
+ offset 59 80
+ frame data/chars/MVC2_Spiderman/634.gif
+ offset 60 65
+ frame data/chars/MVC2_Spiderman/635.gif
+ offset 60 65
+ frame data/chars/MVC2_Spiderman/636.gif
+ offset 146 65
+ frame data/chars/MVC2_Spiderman/637.gif
+ offset 60 65
+ frame data/chars/MVC2_Spiderman/638.gif
+ offset 52 53
+ frame data/chars/MVC2_Spiderman/639.gif
+ offset 62 84
+ frame data/chars/MVC2_Spiderman/640.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/641.gif
+ offset 61 95
+ frame data/chars/MVC2_Spiderman/642.gif
+ offset 61 112
+ frame data/chars/MVC2_Spiderman/643.gif
+
+anim freespecial1541
+ delay 7
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/644.gif
+ offset 61 69
+ frame data/chars/MVC2_Spiderman/645.gif
+ offset 60 77
+ frame data/chars/MVC2_Spiderman/646.gif
+ offset 60 81
+ frame data/chars/MVC2_Spiderman/647.gif
+ offset 60 83
+ frame data/chars/MVC2_Spiderman/648.gif
+ offset 58 91
+ frame data/chars/MVC2_Spiderman/649.gif
+ offset 58 101
+ frame data/chars/MVC2_Spiderman/650.gif
+ offset 58 105
+ frame data/chars/MVC2_Spiderman/651.gif
+
+anim freespecial1542
+ delay 7
+ offset 61 195
+ frame data/chars/MVC2_Spiderman/652.gif
+ offset 61 193
+ frame data/chars/MVC2_Spiderman/653.gif
+ offset 60 175
+ frame data/chars/MVC2_Spiderman/654.gif
+ offset 58 162
+ frame data/chars/MVC2_Spiderman/655.gif
+ offset 58 160
+ frame data/chars/MVC2_Spiderman/656.gif
+ offset 58 160
+ frame data/chars/MVC2_Spiderman/657.gif
+ offset 58 151
+ frame data/chars/MVC2_Spiderman/658.gif
+
+anim freespecial1543
+ delay 7
+ offset 61 233
+ frame data/chars/MVC2_Spiderman/659.gif
+ offset 61 233
+ frame data/chars/MVC2_Spiderman/660.gif
+ offset 61 230
+ frame data/chars/MVC2_Spiderman/661.gif
+ offset 60 186
+ frame data/chars/MVC2_Spiderman/662.gif
+ offset 60 178
+ frame data/chars/MVC2_Spiderman/663.gif
+ offset 58 167
+ frame data/chars/MVC2_Spiderman/664.gif
+ offset 58 155
+ frame data/chars/MVC2_Spiderman/665.gif
+ offset 58 147
+ frame data/chars/MVC2_Spiderman/666.gif
+
+anim freespecial3000
+ delay 7
+ offset 35 118
+ frame data/chars/MVC2_Spiderman/667.gif
+ offset 35 111
+ frame data/chars/MVC2_Spiderman/668.gif
+ offset 28 115
+ frame data/chars/MVC2_Spiderman/669.gif
+ offset 30 115
+ frame data/chars/MVC2_Spiderman/670.gif
+ offset 28 45
+ frame data/chars/MVC2_Spiderman/671.gif
+ offset 30 49
+ frame data/chars/MVC2_Spiderman/672.gif
+
+anim freespecial3001
+ delay 7
+ offset 46 129
+ frame data/chars/MVC2_Spiderman/673.gif
+ offset 46 129
+ frame data/chars/MVC2_Spiderman/674.gif
+ offset 82 113
+ frame data/chars/MVC2_Spiderman/675.gif
+ offset 82 113
+ frame data/chars/MVC2_Spiderman/676.gif
+ offset 90 106
+ frame data/chars/MVC2_Spiderman/677.gif
+ offset 64 99
+ frame data/chars/MVC2_Spiderman/678.gif
+ offset 64 121
+ frame data/chars/MVC2_Spiderman/679.gif
+ offset 33 136
+ frame data/chars/MVC2_Spiderman/680.gif
+ offset 33 137
+ frame data/chars/MVC2_Spiderman/681.gif
+
+anim freespecial3040
+ delay 7
+ offset 46 109
+ frame data/chars/MVC2_Spiderman/682.gif
+ offset 54 111
+ frame data/chars/MVC2_Spiderman/683.gif
+
+anim freespecial3041
+ delay 7
+ offset 34 88
+ frame data/chars/MVC2_Spiderman/684.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/685.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/686.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/687.gif
+ offset 36 94
+ frame data/chars/MVC2_Spiderman/688.gif
+ offset 61 90
+ frame data/chars/MVC2_Spiderman/689.gif
+ offset 89 90
+ frame data/chars/MVC2_Spiderman/690.gif
+ offset 119 90
+ frame data/chars/MVC2_Spiderman/691.gif
+ offset 133 90
+ frame data/chars/MVC2_Spiderman/692.gif
+ offset 154 90
+ frame data/chars/MVC2_Spiderman/693.gif
+ offset 158 90
+ frame data/chars/MVC2_Spiderman/694.gif
+ offset 141 103
+ frame data/chars/MVC2_Spiderman/695.gif
+ offset 136 103
+ frame data/chars/MVC2_Spiderman/696.gif
+ offset 136 114
+ frame data/chars/MVC2_Spiderman/697.gif
+ offset 136 122
+ frame data/chars/MVC2_Spiderman/698.gif
+ offset 134 136
+ frame data/chars/MVC2_Spiderman/699.gif
+ offset 94 149
+ frame data/chars/MVC2_Spiderman/700.gif
+ offset 82 174
+ frame data/chars/MVC2_Spiderman/701.gif
+ offset 65 187
+ frame data/chars/MVC2_Spiderman/702.gif
+ offset 43 193
+ frame data/chars/MVC2_Spiderman/703.gif
+ offset 33 194
+ frame data/chars/MVC2_Spiderman/704.gif
+ offset 28 171
+ frame data/chars/MVC2_Spiderman/705.gif
+ offset 28 171
+ frame data/chars/MVC2_Spiderman/706.gif
+ offset 28 169
+ frame data/chars/MVC2_Spiderman/707.gif
+ offset 28 161
+ frame data/chars/MVC2_Spiderman/708.gif
+ offset 28 131
+ frame data/chars/MVC2_Spiderman/709.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/710.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/711.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/712.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/713.gif
+ offset 21 101
+ frame data/chars/MVC2_Spiderman/714.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/715.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/716.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/717.gif
+ offset 30 94
+ frame data/chars/MVC2_Spiderman/718.gif
+ offset 56 94
+ frame data/chars/MVC2_Spiderman/719.gif
+ offset 91 90
+ frame data/chars/MVC2_Spiderman/720.gif
+ offset 111 90
+ frame data/chars/MVC2_Spiderman/721.gif
+ offset 137 90
+ frame data/chars/MVC2_Spiderman/722.gif
+ offset 153 90
+ frame data/chars/MVC2_Spiderman/723.gif
+ offset 160 90
+ frame data/chars/MVC2_Spiderman/724.gif
+ offset 140 103
+ frame data/chars/MVC2_Spiderman/725.gif
+ offset 141 103
+ frame data/chars/MVC2_Spiderman/726.gif
+ offset 136 108
+ frame data/chars/MVC2_Spiderman/727.gif
+ offset 56 121
+ frame data/chars/MVC2_Spiderman/728.gif
+ offset 56 121
+ frame data/chars/MVC2_Spiderman/729.gif
+ offset 56 121
+ frame data/chars/MVC2_Spiderman/730.gif
+ offset 56 121
+ frame data/chars/MVC2_Spiderman/731.gif
+ offset 80 110
+ frame data/chars/MVC2_Spiderman/732.gif
+ offset 98 110
+ frame data/chars/MVC2_Spiderman/733.gif
+ offset 122 110
+ frame data/chars/MVC2_Spiderman/734.gif
+ offset 142 110
+ frame data/chars/MVC2_Spiderman/735.gif
+ offset 150 127
+ frame data/chars/MVC2_Spiderman/736.gif
+ offset 166 127
+ frame data/chars/MVC2_Spiderman/737.gif
+ offset 173 127
+ frame data/chars/MVC2_Spiderman/738.gif
+ offset 174 127
+ frame data/chars/MVC2_Spiderman/739.gif
+ offset 79 122
+ frame data/chars/MVC2_Spiderman/740.gif
+ offset 67 152
+ frame data/chars/MVC2_Spiderman/741.gif
+ offset 38 190
+ frame data/chars/MVC2_Spiderman/742.gif
+ offset 31 197
+ frame data/chars/MVC2_Spiderman/743.gif
+ offset 33 135
+ frame data/chars/MVC2_Spiderman/744.gif
+ offset 33 125
+ frame data/chars/MVC2_Spiderman/745.gif
+ offset 33 95
+ frame data/chars/MVC2_Spiderman/746.gif
+ offset 33 91
+ frame data/chars/MVC2_Spiderman/747.gif
+ offset 33 91
+ frame data/chars/MVC2_Spiderman/748.gif
+
+anim 6120
+ delay 7
+ offset 0 77
+ frame data/chars/MVC2_Spiderman/749.gif
+ offset 35 92
+ frame data/chars/MVC2_Spiderman/750.gif
+ offset 31 90
+ frame data/chars/MVC2_Spiderman/751.gif
+ offset 31 90
+ frame data/chars/MVC2_Spiderman/752.gif
+ offset 31 89
+ frame data/chars/MVC2_Spiderman/753.gif
+ offset 28 86
+ frame data/chars/MVC2_Spiderman/754.gif
+ offset 25 80
+ frame data/chars/MVC2_Spiderman/755.gif
+ offset 23 73
+ frame data/chars/MVC2_Spiderman/756.gif
+ offset 19 58
+ frame data/chars/MVC2_Spiderman/757.gif
+ offset 15 44
+ frame data/chars/MVC2_Spiderman/758.gif
+
+anim 6121
+ delay 7
+ offset -26 43
+ frame data/chars/MVC2_Spiderman/759.gif
+ offset 13 61
+ frame data/chars/MVC2_Spiderman/760.gif
+ offset 13 59
+ frame data/chars/MVC2_Spiderman/761.gif
+ offset 12 60
+ frame data/chars/MVC2_Spiderman/762.gif
+ offset 11 58
+ frame data/chars/MVC2_Spiderman/763.gif
+ offset 10 55
+ frame data/chars/MVC2_Spiderman/764.gif
+ offset 9 44
+ frame data/chars/MVC2_Spiderman/765.gif
+ offset 5 36
+ frame data/chars/MVC2_Spiderman/766.gif
+ offset 3 22
+ frame data/chars/MVC2_Spiderman/767.gif
+ offset -1 14
+ frame data/chars/MVC2_Spiderman/768.gif
+
+anim 6122
+ delay 7
+ offset -18 118
+ frame data/chars/MVC2_Spiderman/769.gif
+ offset 5 131
+ frame data/chars/MVC2_Spiderman/770.gif
+ offset 4 126
+ frame data/chars/MVC2_Spiderman/771.gif
+ offset 3 128
+ frame data/chars/MVC2_Spiderman/772.gif
+ offset 2 126
+ frame data/chars/MVC2_Spiderman/773.gif
+ offset 1 124
+ frame data/chars/MVC2_Spiderman/774.gif
+ offset -1 119
+ frame data/chars/MVC2_Spiderman/775.gif
+ offset 1 116
+ frame data/chars/MVC2_Spiderman/776.gif
+ offset 3 108
+ frame data/chars/MVC2_Spiderman/777.gif
+ offset 2 99
+ frame data/chars/MVC2_Spiderman/778.gif
+ offset 3 128
+ frame data/chars/MVC2_Spiderman/779.gif
+
+anim 6183
+ delay 7
+ offset 5 214
+ frame data/chars/MVC2_Spiderman/780.gif
+ offset 9 214
+ frame data/chars/MVC2_Spiderman/781.gif
+
+anim 6195
+ delay 7
+ offset 73 94
+ frame data/chars/MVC2_Spiderman/782.gif
+ offset 73 93
+ frame data/chars/MVC2_Spiderman/783.gif
+ offset 73 94
+ frame data/chars/MVC2_Spiderman/784.gif
+ offset 73 94
+ frame data/chars/MVC2_Spiderman/785.gif
+ offset 73 93
+ frame data/chars/MVC2_Spiderman/786.gif
+ offset 73 94
+ frame data/chars/MVC2_Spiderman/787.gif
+
+anim 21450
+ delay 7
+ offset 30 7
+ frame data/chars/MVC2_Spiderman/788.gif
+ offset 27 6
+ frame data/chars/MVC2_Spiderman/789.gif
+ offset 29 5
+ frame data/chars/MVC2_Spiderman/790.gif
+ offset 24 5
+ frame data/chars/MVC2_Spiderman/791.gif
+ offset 29 6
+ frame data/chars/MVC2_Spiderman/792.gif
+ offset -10 30
+ frame data/chars/MVC2_Spiderman/793.gif
+ offset -1 35
+ frame data/chars/MVC2_Spiderman/794.gif
+ offset -20 40
+ frame data/chars/MVC2_Spiderman/795.gif
+ offset -17 42
+ frame data/chars/MVC2_Spiderman/796.gif
+ offset -16 43
+ frame data/chars/MVC2_Spiderman/797.gif
+ offset 29 10
+ frame data/chars/MVC2_Spiderman/798.gif
+ offset 31 12
+ frame data/chars/MVC2_Spiderman/799.gif
+ offset 33 13
+ frame data/chars/MVC2_Spiderman/800.gif
+ offset 22 17
+ frame data/chars/MVC2_Spiderman/801.gif
+ offset 27 7
+ frame data/chars/MVC2_Spiderman/802.gif
+ offset -6 -8
+ frame data/chars/MVC2_Spiderman/803.gif
+ offset 0 -5
+ frame data/chars/MVC2_Spiderman/804.gif
+ offset -3 -2
+ frame data/chars/MVC2_Spiderman/805.gif
+ offset -1 0
+ frame data/chars/MVC2_Spiderman/806.gif
+ offset 0 1
+ frame data/chars/MVC2_Spiderman/807.gif
+ offset 30 24
+ frame data/chars/MVC2_Spiderman/808.gif
+ offset 40 29
+ frame data/chars/MVC2_Spiderman/809.gif
+ offset 42 4
+ frame data/chars/MVC2_Spiderman/810.gif
+ offset 46 2
+ frame data/chars/MVC2_Spiderman/811.gif
+ offset 46 2
+ frame data/chars/MVC2_Spiderman/812.gif
+
+anim 21451
+ delay 7
+ offset 46 114
+ frame data/chars/MVC2_Spiderman/813.gif
+ offset 46 116
+ frame data/chars/MVC2_Spiderman/814.gif
+ offset 49 110
+ frame data/chars/MVC2_Spiderman/815.gif
+ offset 47 112
+ frame data/chars/MVC2_Spiderman/816.gif
+ offset 47 112
+ frame data/chars/MVC2_Spiderman/817.gif
+ offset 47 112
+ frame data/chars/MVC2_Spiderman/818.gif
+ offset 47 112
+ frame data/chars/MVC2_Spiderman/819.gif
+
+anim 21452
+ delay 7
+ offset 64 136
+ frame data/chars/MVC2_Spiderman/820.gif
+ offset 62 143
+ frame data/chars/MVC2_Spiderman/821.gif
+ offset 65 135
+ frame data/chars/MVC2_Spiderman/822.gif
+ offset 63 138
+ frame data/chars/MVC2_Spiderman/823.gif
+ offset 63 138
+ frame data/chars/MVC2_Spiderman/824.gif
+ offset 63 138
+ frame data/chars/MVC2_Spiderman/825.gif
+ offset 63 138
+ frame data/chars/MVC2_Spiderman/826.gif
+
+anim 21453
+ delay 7
+ offset 55 6
+ frame data/chars/MVC2_Spiderman/827.gif
+ offset 71 20
+ frame data/chars/MVC2_Spiderman/828.gif
+ offset 82 27
+ frame data/chars/MVC2_Spiderman/829.gif
+ offset 87 25
+ frame data/chars/MVC2_Spiderman/830.gif
+ offset 88 21
+ frame data/chars/MVC2_Spiderman/831.gif
+ offset 88 20
+ frame data/chars/MVC2_Spiderman/832.gif
+ offset 55 6
+ frame data/chars/MVC2_Spiderman/833.gif
+ offset 71 20
+ frame data/chars/MVC2_Spiderman/834.gif
+ offset 82 27
+ frame data/chars/MVC2_Spiderman/835.gif
+ offset 87 25
+ frame data/chars/MVC2_Spiderman/836.gif
+ offset 88 21
+ frame data/chars/MVC2_Spiderman/837.gif
+ offset 88 20
+ frame data/chars/MVC2_Spiderman/838.gif
+ offset 71 9
+ frame data/chars/MVC2_Spiderman/839.gif
+ offset 84 14
+ frame data/chars/MVC2_Spiderman/840.gif
+ offset 90 17
+ frame data/chars/MVC2_Spiderman/841.gif
+ offset 100 20
+ frame data/chars/MVC2_Spiderman/842.gif
+ offset 105 19
+ frame data/chars/MVC2_Spiderman/843.gif
+ offset 105 19
+ frame data/chars/MVC2_Spiderman/844.gif
+ offset 71 8
+ frame data/chars/MVC2_Spiderman/845.gif
+ offset 84 14
+ frame data/chars/MVC2_Spiderman/846.gif
+ offset 90 18
+ frame data/chars/MVC2_Spiderman/847.gif
+ offset 100 20
+ frame data/chars/MVC2_Spiderman/848.gif
+ offset 105 19
+ frame data/chars/MVC2_Spiderman/849.gif
+ offset 105 19
+ frame data/chars/MVC2_Spiderman/850.gif
+ offset 9 6
+ frame data/chars/MVC2_Spiderman/851.gif
+ offset 4 20
+ frame data/chars/MVC2_Spiderman/852.gif
+ offset -8 27
+ frame data/chars/MVC2_Spiderman/853.gif
+ offset -7 25
+ frame data/chars/MVC2_Spiderman/854.gif
+ offset -7 21
+ frame data/chars/MVC2_Spiderman/855.gif
+ offset -7 20
+ frame data/chars/MVC2_Spiderman/856.gif
+ offset 9 6
+ frame data/chars/MVC2_Spiderman/857.gif
+ offset 4 20
+ frame data/chars/MVC2_Spiderman/858.gif
+ offset -8 27
+ frame data/chars/MVC2_Spiderman/859.gif
+ offset -7 25
+ frame data/chars/MVC2_Spiderman/860.gif
+ offset -7 21
+ frame data/chars/MVC2_Spiderman/861.gif
+ offset -7 20
+ frame data/chars/MVC2_Spiderman/862.gif
+ offset 8 9
+ frame data/chars/MVC2_Spiderman/863.gif
+ offset 6 14
+ frame data/chars/MVC2_Spiderman/864.gif
+ offset 4 17
+ frame data/chars/MVC2_Spiderman/865.gif
+ offset 1 20
+ frame data/chars/MVC2_Spiderman/866.gif
+ offset 2 19
+ frame data/chars/MVC2_Spiderman/867.gif
+ offset 0 19
+ frame data/chars/MVC2_Spiderman/868.gif
+ offset 8 8
+ frame data/chars/MVC2_Spiderman/869.gif
+ offset 6 14
+ frame data/chars/MVC2_Spiderman/870.gif
+ offset 4 18
+ frame data/chars/MVC2_Spiderman/871.gif
+ offset 1 20
+ frame data/chars/MVC2_Spiderman/872.gif
+ offset 2 19
+ frame data/chars/MVC2_Spiderman/873.gif
+ offset 0 19
+ frame data/chars/MVC2_Spiderman/874.gif
+
+anim 21454
+ delay 7
+ offset 57 106
+ frame data/chars/MVC2_Spiderman/875.gif
+ offset 73 120
+ frame data/chars/MVC2_Spiderman/876.gif
+ offset 84 127
+ frame data/chars/MVC2_Spiderman/877.gif
+ offset 89 125
+ frame data/chars/MVC2_Spiderman/878.gif
+ offset 90 121
+ frame data/chars/MVC2_Spiderman/879.gif
+ offset 90 120
+ frame data/chars/MVC2_Spiderman/880.gif
+
+anim 21455
+ delay 7
+ offset 90 129
+ frame data/chars/MVC2_Spiderman/881.gif
+ offset 103 135
+ frame data/chars/MVC2_Spiderman/882.gif
+ offset 109 139
+ frame data/chars/MVC2_Spiderman/883.gif
+ offset 119 141
+ frame data/chars/MVC2_Spiderman/884.gif
+ offset 124 140
+ frame data/chars/MVC2_Spiderman/885.gif
+ offset 124 140
+ frame data/chars/MVC2_Spiderman/886.gif
+
+anim 21540
+ delay 7
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/887.gif
+ offset -17 9
+ frame data/chars/MVC2_Spiderman/888.gif
+ offset -19 13
+ frame data/chars/MVC2_Spiderman/889.gif
+ offset -19 15
+ frame data/chars/MVC2_Spiderman/890.gif
+ offset -17 16
+ frame data/chars/MVC2_Spiderman/891.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/892.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/893.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/894.gif
+ offset -19 9
+ frame data/chars/MVC2_Spiderman/895.gif
+ offset -23 13
+ frame data/chars/MVC2_Spiderman/896.gif
+ offset -27 15
+ frame data/chars/MVC2_Spiderman/897.gif
+ offset -31 16
+ frame data/chars/MVC2_Spiderman/898.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/899.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/900.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/901.gif
+ offset -21 9
+ frame data/chars/MVC2_Spiderman/902.gif
+ offset -27 13
+ frame data/chars/MVC2_Spiderman/903.gif
+ offset -33 15
+ frame data/chars/MVC2_Spiderman/904.gif
+ offset -39 16
+ frame data/chars/MVC2_Spiderman/905.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/906.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/907.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/908.gif
+ offset -23 9
+ frame data/chars/MVC2_Spiderman/909.gif
+ offset -31 13
+ frame data/chars/MVC2_Spiderman/910.gif
+ offset -39 15
+ frame data/chars/MVC2_Spiderman/911.gif
+ offset -45 16
+ frame data/chars/MVC2_Spiderman/912.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/913.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/914.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/915.gif
+ offset -25 9
+ frame data/chars/MVC2_Spiderman/916.gif
+ offset -35 13
+ frame data/chars/MVC2_Spiderman/917.gif
+ offset -45 15
+ frame data/chars/MVC2_Spiderman/918.gif
+ offset -55 16
+ frame data/chars/MVC2_Spiderman/919.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/920.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/921.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/922.gif
+ offset -27 9
+ frame data/chars/MVC2_Spiderman/923.gif
+ offset -39 13
+ frame data/chars/MVC2_Spiderman/924.gif
+ offset -51 15
+ frame data/chars/MVC2_Spiderman/925.gif
+ offset -61 16
+ frame data/chars/MVC2_Spiderman/926.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/927.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/928.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/929.gif
+ offset -29 9
+ frame data/chars/MVC2_Spiderman/930.gif
+ offset -43 13
+ frame data/chars/MVC2_Spiderman/931.gif
+ offset -57 15
+ frame data/chars/MVC2_Spiderman/932.gif
+ offset -71 16
+ frame data/chars/MVC2_Spiderman/933.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/934.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/935.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/936.gif
+ offset -31 9
+ frame data/chars/MVC2_Spiderman/937.gif
+ offset -47 13
+ frame data/chars/MVC2_Spiderman/938.gif
+ offset -63 15
+ frame data/chars/MVC2_Spiderman/939.gif
+ offset -79 16
+ frame data/chars/MVC2_Spiderman/940.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/941.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/942.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/943.gif
+ offset -33 9
+ frame data/chars/MVC2_Spiderman/944.gif
+ offset -51 13
+ frame data/chars/MVC2_Spiderman/945.gif
+ offset -69 15
+ frame data/chars/MVC2_Spiderman/946.gif
+ offset -87 16
+ frame data/chars/MVC2_Spiderman/947.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/948.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/949.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/950.gif
+ offset -35 9
+ frame data/chars/MVC2_Spiderman/951.gif
+ offset -55 13
+ frame data/chars/MVC2_Spiderman/952.gif
+ offset -75 15
+ frame data/chars/MVC2_Spiderman/953.gif
+ offset -95 16
+ frame data/chars/MVC2_Spiderman/954.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/955.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/956.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/957.gif
+ offset -37 9
+ frame data/chars/MVC2_Spiderman/958.gif
+ offset -59 13
+ frame data/chars/MVC2_Spiderman/959.gif
+ offset -81 15
+ frame data/chars/MVC2_Spiderman/960.gif
+ offset -101 16
+ frame data/chars/MVC2_Spiderman/961.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/962.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/963.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/964.gif
+ offset -39 9
+ frame data/chars/MVC2_Spiderman/965.gif
+ offset -63 13
+ frame data/chars/MVC2_Spiderman/966.gif
+ offset -87 15
+ frame data/chars/MVC2_Spiderman/967.gif
+ offset -111 16
+ frame data/chars/MVC2_Spiderman/968.gif
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/969.gif
+ offset 1 1
+ frame data/chars/MVC2_Spiderman/970.gif
+
+anim 21541
+ delay 7
+ offset 168 12
+ frame data/chars/MVC2_Spiderman/971.gif
+ offset 168 12
+ frame data/chars/MVC2_Spiderman/972.gif
+ offset 168 12
+ frame data/chars/MVC2_Spiderman/973.gif
+ offset 170 14
+ frame data/chars/MVC2_Spiderman/974.gif
+ offset 174 19
+ frame data/chars/MVC2_Spiderman/975.gif
+ offset 175 19
+ frame data/chars/MVC2_Spiderman/976.gif
+ offset 175 17
+ frame data/chars/MVC2_Spiderman/977.gif
+
+anim 21542
+ delay 7
+ offset 3 17
+ frame data/chars/MVC2_Spiderman/978.gif
+ offset -9 26
+ frame data/chars/MVC2_Spiderman/979.gif
+ offset -6 28
+ frame data/chars/MVC2_Spiderman/980.gif
+ offset -3 29
+ frame data/chars/MVC2_Spiderman/981.gif
+ offset -2 30
+ frame data/chars/MVC2_Spiderman/982.gif
+ offset 2 17
+ frame data/chars/MVC2_Spiderman/983.gif
+ offset 3 18
+ frame data/chars/MVC2_Spiderman/984.gif
+ offset 3 27
+ frame data/chars/MVC2_Spiderman/985.gif
+ offset -10 36
+ frame data/chars/MVC2_Spiderman/986.gif
+ offset -12 38
+ frame data/chars/MVC2_Spiderman/987.gif
+ offset -15 39
+ frame data/chars/MVC2_Spiderman/988.gif
+ offset -14 40
+ frame data/chars/MVC2_Spiderman/989.gif
+ offset 3 27
+ frame data/chars/MVC2_Spiderman/990.gif
+ offset 2 28
+ frame data/chars/MVC2_Spiderman/991.gif
+ offset 3 37
+ frame data/chars/MVC2_Spiderman/992.gif
+ offset -12 46
+ frame data/chars/MVC2_Spiderman/993.gif
+ offset -14 48
+ frame data/chars/MVC2_Spiderman/994.gif
+ offset -18 49
+ frame data/chars/MVC2_Spiderman/995.gif
+ offset -22 50
+ frame data/chars/MVC2_Spiderman/996.gif
+ offset 4 37
+ frame data/chars/MVC2_Spiderman/997.gif
+ offset 3 38
+ frame data/chars/MVC2_Spiderman/998.gif
+ offset 3 47
+ frame data/chars/MVC2_Spiderman/999.gif
+ offset -13 56
+ frame data/chars/MVC2_Spiderman/1000.gif
+ offset -17 58
+ frame data/chars/MVC2_Spiderman/1001.gif
+ offset -25 59
+ frame data/chars/MVC2_Spiderman/1002.gif
+ offset -30 60
+ frame data/chars/MVC2_Spiderman/1003.gif
+ offset 3 47
+ frame data/chars/MVC2_Spiderman/1004.gif
+ offset 4 48
+ frame data/chars/MVC2_Spiderman/1005.gif
+ offset 3 57
+ frame data/chars/MVC2_Spiderman/1006.gif
+ offset -13 66
+ frame data/chars/MVC2_Spiderman/1007.gif
+ offset -18 68
+ frame data/chars/MVC2_Spiderman/1008.gif
+ offset -27 69
+ frame data/chars/MVC2_Spiderman/1009.gif
+ offset -30 70
+ frame data/chars/MVC2_Spiderman/1010.gif
+ offset 2 57
+ frame data/chars/MVC2_Spiderman/1011.gif
+ offset 3 58
+ frame data/chars/MVC2_Spiderman/1012.gif
+ offset 3 67
+ frame data/chars/MVC2_Spiderman/1013.gif
+ offset -15 76
+ frame data/chars/MVC2_Spiderman/1014.gif
+ offset -21 78
+ frame data/chars/MVC2_Spiderman/1015.gif
+ offset -33 79
+ frame data/chars/MVC2_Spiderman/1016.gif
+ offset -40 80
+ frame data/chars/MVC2_Spiderman/1017.gif
+ offset 3 67
+ frame data/chars/MVC2_Spiderman/1018.gif
+ offset 2 68
+ frame data/chars/MVC2_Spiderman/1019.gif
+ offset 3 77
+ frame data/chars/MVC2_Spiderman/1020.gif
+ offset -16 86
+ frame data/chars/MVC2_Spiderman/1021.gif
+ offset -22 88
+ frame data/chars/MVC2_Spiderman/1022.gif
+ offset -34 89
+ frame data/chars/MVC2_Spiderman/1023.gif
+ offset -42 90
+ frame data/chars/MVC2_Spiderman/1024.gif
+ offset 4 77
+ frame data/chars/MVC2_Spiderman/1025.gif
+ offset 3 78
+ frame data/chars/MVC2_Spiderman/1026.gif
+ offset 3 87
+ frame data/chars/MVC2_Spiderman/1027.gif
+ offset -16 96
+ frame data/chars/MVC2_Spiderman/1028.gif
+ offset -24 98
+ frame data/chars/MVC2_Spiderman/1029.gif
+ offset -39 99
+ frame data/chars/MVC2_Spiderman/1030.gif
+ offset -45 100
+ frame data/chars/MVC2_Spiderman/1031.gif
+ offset 3 87
+ frame data/chars/MVC2_Spiderman/1032.gif
+ offset 4 88
+ frame data/chars/MVC2_Spiderman/1033.gif
+ offset 3 97
+ frame data/chars/MVC2_Spiderman/1034.gif
+ offset -17 106
+ frame data/chars/MVC2_Spiderman/1035.gif
+ offset -26 108
+ frame data/chars/MVC2_Spiderman/1036.gif
+ offset -43 109
+ frame data/chars/MVC2_Spiderman/1037.gif
+ offset -50 110
+ frame data/chars/MVC2_Spiderman/1038.gif
+ offset 2 97
+ frame data/chars/MVC2_Spiderman/1039.gif
+ offset 3 98
+ frame data/chars/MVC2_Spiderman/1040.gif
+ offset 3 107
+ frame data/chars/MVC2_Spiderman/1041.gif
+ offset -19 116
+ frame data/chars/MVC2_Spiderman/1042.gif
+ offset -28 118
+ frame data/chars/MVC2_Spiderman/1043.gif
+ offset -46 119
+ frame data/chars/MVC2_Spiderman/1044.gif
+ offset -57 120
+ frame data/chars/MVC2_Spiderman/1045.gif
+ offset 3 107
+ frame data/chars/MVC2_Spiderman/1046.gif
+ offset 2 108
+ frame data/chars/MVC2_Spiderman/1047.gif
+ offset 3 117
+ frame data/chars/MVC2_Spiderman/1048.gif
+ offset -20 126
+ frame data/chars/MVC2_Spiderman/1049.gif
+ offset -31 128
+ frame data/chars/MVC2_Spiderman/1050.gif
+ offset -53 129
+ frame data/chars/MVC2_Spiderman/1051.gif
+ offset -65 130
+ frame data/chars/MVC2_Spiderman/1052.gif
+ offset 4 117
+ frame data/chars/MVC2_Spiderman/1053.gif
+ offset 3 118
+ frame data/chars/MVC2_Spiderman/1054.gif
+ offset 3 127
+ frame data/chars/MVC2_Spiderman/1055.gif
+ offset -21 136
+ frame data/chars/MVC2_Spiderman/1056.gif
+ offset -32 138
+ frame data/chars/MVC2_Spiderman/1057.gif
+ offset -54 139
+ frame data/chars/MVC2_Spiderman/1058.gif
+ offset -67 140
+ frame data/chars/MVC2_Spiderman/1059.gif
+ offset 3 127
+ frame data/chars/MVC2_Spiderman/1060.gif
+ offset 4 128
+ frame data/chars/MVC2_Spiderman/1061.gif
+
+anim 21544
+ delay 7
+ offset 6 23
+ frame data/chars/MVC2_Spiderman/1062.gif
+ offset 15 26
+ frame data/chars/MVC2_Spiderman/1063.gif
+ offset 21 26
+ frame data/chars/MVC2_Spiderman/1064.gif
+ offset 24 26
+ frame data/chars/MVC2_Spiderman/1065.gif
+ offset 24 26
+ frame data/chars/MVC2_Spiderman/1066.gif
+ offset 6 23
+ frame data/chars/MVC2_Spiderman/1067.gif
+ offset 7 23
+ frame data/chars/MVC2_Spiderman/1068.gif
+ offset 6 36
+ frame data/chars/MVC2_Spiderman/1069.gif
+ offset 15 39
+ frame data/chars/MVC2_Spiderman/1070.gif
+ offset 21 39
+ frame data/chars/MVC2_Spiderman/1071.gif
+ offset 24 39
+ frame data/chars/MVC2_Spiderman/1072.gif
+ offset 24 39
+ frame data/chars/MVC2_Spiderman/1073.gif
+ offset 6 36
+ frame data/chars/MVC2_Spiderman/1074.gif
+ offset 7 36
+ frame data/chars/MVC2_Spiderman/1075.gif
+ offset 6 49
+ frame data/chars/MVC2_Spiderman/1076.gif
+ offset 15 52
+ frame data/chars/MVC2_Spiderman/1077.gif
+ offset 21 52
+ frame data/chars/MVC2_Spiderman/1078.gif
+ offset 24 52
+ frame data/chars/MVC2_Spiderman/1079.gif
+ offset 24 52
+ frame data/chars/MVC2_Spiderman/1080.gif
+ offset 6 49
+ frame data/chars/MVC2_Spiderman/1081.gif
+ offset 7 49
+ frame data/chars/MVC2_Spiderman/1082.gif
+ offset 6 62
+ frame data/chars/MVC2_Spiderman/1083.gif
+ offset 15 65
+ frame data/chars/MVC2_Spiderman/1084.gif
+ offset 21 65
+ frame data/chars/MVC2_Spiderman/1085.gif
+ offset 24 65
+ frame data/chars/MVC2_Spiderman/1086.gif
+ offset 24 65
+ frame data/chars/MVC2_Spiderman/1087.gif
+ offset 6 62
+ frame data/chars/MVC2_Spiderman/1088.gif
+ offset 7 62
+ frame data/chars/MVC2_Spiderman/1089.gif
+ offset 6 75
+ frame data/chars/MVC2_Spiderman/1090.gif
+ offset 15 78
+ frame data/chars/MVC2_Spiderman/1091.gif
+ offset 21 78
+ frame data/chars/MVC2_Spiderman/1092.gif
+ offset 24 78
+ frame data/chars/MVC2_Spiderman/1093.gif
+ offset 24 78
+ frame data/chars/MVC2_Spiderman/1094.gif
+ offset 6 75
+ frame data/chars/MVC2_Spiderman/1095.gif
+ offset 7 75
+ frame data/chars/MVC2_Spiderman/1096.gif
+ offset 6 88
+ frame data/chars/MVC2_Spiderman/1097.gif
+ offset 15 91
+ frame data/chars/MVC2_Spiderman/1098.gif
+ offset 21 91
+ frame data/chars/MVC2_Spiderman/1099.gif
+ offset 24 91
+ frame data/chars/MVC2_Spiderman/1100.gif
+ offset 24 91
+ frame data/chars/MVC2_Spiderman/1101.gif
+ offset 6 88
+ frame data/chars/MVC2_Spiderman/1102.gif
+ offset 7 88
+ frame data/chars/MVC2_Spiderman/1103.gif
+ offset 6 101
+ frame data/chars/MVC2_Spiderman/1104.gif
+ offset 15 104
+ frame data/chars/MVC2_Spiderman/1105.gif
+ offset 21 104
+ frame data/chars/MVC2_Spiderman/1106.gif
+ offset 24 104
+ frame data/chars/MVC2_Spiderman/1107.gif
+ offset 24 104
+ frame data/chars/MVC2_Spiderman/1108.gif
+ offset 6 101
+ frame data/chars/MVC2_Spiderman/1109.gif
+ offset 7 101
+ frame data/chars/MVC2_Spiderman/1110.gif
+ offset 6 114
+ frame data/chars/MVC2_Spiderman/1111.gif
+ offset 15 117
+ frame data/chars/MVC2_Spiderman/1112.gif
+ offset 21 117
+ frame data/chars/MVC2_Spiderman/1113.gif
+ offset 24 117
+ frame data/chars/MVC2_Spiderman/1114.gif
+ offset 24 117
+ frame data/chars/MVC2_Spiderman/1115.gif
+ offset 6 114
+ frame data/chars/MVC2_Spiderman/1116.gif
+ offset 7 114
+ frame data/chars/MVC2_Spiderman/1117.gif
+ offset 6 127
+ frame data/chars/MVC2_Spiderman/1118.gif
+ offset 15 130
+ frame data/chars/MVC2_Spiderman/1119.gif
+ offset 21 130
+ frame data/chars/MVC2_Spiderman/1120.gif
+ offset 24 130
+ frame data/chars/MVC2_Spiderman/1121.gif
+ offset 24 130
+ frame data/chars/MVC2_Spiderman/1122.gif
+ offset 6 127
+ frame data/chars/MVC2_Spiderman/1123.gif
+ offset 7 127
+ frame data/chars/MVC2_Spiderman/1124.gif
+ offset 6 140
+ frame data/chars/MVC2_Spiderman/1125.gif
+ offset 15 143
+ frame data/chars/MVC2_Spiderman/1126.gif
+ offset 21 143
+ frame data/chars/MVC2_Spiderman/1127.gif
+ offset 24 143
+ frame data/chars/MVC2_Spiderman/1128.gif
+ offset 24 143
+ frame data/chars/MVC2_Spiderman/1129.gif
+ offset 6 140
+ frame data/chars/MVC2_Spiderman/1130.gif
+ offset 7 140
+ frame data/chars/MVC2_Spiderman/1131.gif
+ offset 6 153
+ frame data/chars/MVC2_Spiderman/1132.gif
+ offset 15 156
+ frame data/chars/MVC2_Spiderman/1133.gif
+ offset 21 156
+ frame data/chars/MVC2_Spiderman/1134.gif
+ offset 24 156
+ frame data/chars/MVC2_Spiderman/1135.gif
+ offset 24 156
+ frame data/chars/MVC2_Spiderman/1136.gif
+ offset 6 153
+ frame data/chars/MVC2_Spiderman/1137.gif
+ offset 7 153
+ frame data/chars/MVC2_Spiderman/1138.gif
+ offset 6 166
+ frame data/chars/MVC2_Spiderman/1139.gif
+ offset 15 169
+ frame data/chars/MVC2_Spiderman/1140.gif
+ offset 21 169
+ frame data/chars/MVC2_Spiderman/1141.gif
+ offset 24 169
+ frame data/chars/MVC2_Spiderman/1142.gif
+ offset 24 169
+ frame data/chars/MVC2_Spiderman/1143.gif
+ offset 6 166
+ frame data/chars/MVC2_Spiderman/1144.gif
+ offset 7 166
+ frame data/chars/MVC2_Spiderman/1145.gif
+
+anim 23040
+ delay 7
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1146.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1147.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1148.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1149.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1150.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1151.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1152.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1153.gif
+ offset 2 -2
+ frame data/chars/MVC2_Spiderman/1154.gif
+ offset -5 -4
+ frame data/chars/MVC2_Spiderman/1155.gif
+
+anim 27610
+ delay 7
+ offset 23 97
+ frame data/chars/MVC2_Spiderman/1156.gif
+ offset -53 94
+ frame data/chars/MVC2_Spiderman/1157.gif
+ offset -61 101
+ frame data/chars/MVC2_Spiderman/1158.gif
+ offset -61 100
+ frame data/chars/MVC2_Spiderman/1159.gif
+ offset -29 92
+ frame data/chars/MVC2_Spiderman/1160.gif
+ offset -1 90
+ frame data/chars/MVC2_Spiderman/1161.gif
+
+anim 27615
+ delay 7
+ offset 12 63
+ frame data/chars/MVC2_Spiderman/1162.gif
+ offset 10 64
+ frame data/chars/MVC2_Spiderman/1163.gif
+ offset 9 67
+ frame data/chars/MVC2_Spiderman/1164.gif
+ offset 10 67
+ frame data/chars/MVC2_Spiderman/1165.gif
+ offset 12 68
+ frame data/chars/MVC2_Spiderman/1166.gif
+ offset 13 59
+ frame data/chars/MVC2_Spiderman/1167.gif
+ offset 12 60
+ frame data/chars/MVC2_Spiderman/1168.gif
+
+anim 27620
+ delay 7
+ offset -1 131
+ frame data/chars/MVC2_Spiderman/1169.gif
+ offset -32 123
+ frame data/chars/MVC2_Spiderman/1170.gif
+ offset -28 126
+ frame data/chars/MVC2_Spiderman/1171.gif
+ offset -29 128
+ frame data/chars/MVC2_Spiderman/1172.gif
+ offset -27 131
+ frame data/chars/MVC2_Spiderman/1173.gif
+ offset 1 135
+ frame data/chars/MVC2_Spiderman/1174.gif
+ offset 4 126
+ frame data/chars/MVC2_Spiderman/1175.gif
+ offset 3 128
+ frame data/chars/MVC2_Spiderman/1176.gif
+
+anim 7020
+ delay 7
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1177.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1178.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1179.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1180.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1181.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1182.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1183.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1184.gif
+ offset 167 152
+ frame data/chars/MVC2_Spiderman/1185.gif
+
+anim 7022
+ delay 7
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1186.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1187.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1188.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1189.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1190.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1191.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1192.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1193.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1194.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1195.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1196.gif
+ offset 162 216
+ frame data/chars/MVC2_Spiderman/1197.gif
+
+anim 7023
+ delay 7
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1198.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1199.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1200.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1201.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1202.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1203.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1204.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1205.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1206.gif
+ offset 153 218
+ frame data/chars/MVC2_Spiderman/1207.gif
+
+anim 7024
+ delay 7
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1208.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1209.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1210.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1211.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1212.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1213.gif
+ offset 319 140
+ frame data/chars/MVC2_Spiderman/1214.gif
+
+anim 7025
+ delay 7
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1215.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1216.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1217.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1218.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1219.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1220.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1221.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1222.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1223.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1224.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1225.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1226.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1227.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1228.gif
+ offset 310 251
+ frame data/chars/MVC2_Spiderman/1229.gif
+
+anim 7052
+ delay 7
+ offset 47 12
+ frame data/chars/MVC2_Spiderman/1230.gif
+ offset 69 16
+ frame data/chars/MVC2_Spiderman/1231.gif
+ offset 76 17
+ frame data/chars/MVC2_Spiderman/1232.gif
+ offset 81 18
+ frame data/chars/MVC2_Spiderman/1233.gif
+ offset 83 18
+ frame data/chars/MVC2_Spiderman/1234.gif
+ offset 83 19
+ frame data/chars/MVC2_Spiderman/1235.gif
+ offset 83 17
+ frame data/chars/MVC2_Spiderman/1236.gif
+
+anim 7055
+ delay 7
+ offset 64 6
+ frame data/chars/MVC2_Spiderman/1237.gif
+ offset 83 11
+ frame data/chars/MVC2_Spiderman/1238.gif
+ offset 90 12
+ frame data/chars/MVC2_Spiderman/1239.gif
+ offset 96 14
+ frame data/chars/MVC2_Spiderman/1240.gif
+ offset 100 18
+ frame data/chars/MVC2_Spiderman/1241.gif
+ offset 104 21
+ frame data/chars/MVC2_Spiderman/1242.gif
+ offset 104 25
+ frame data/chars/MVC2_Spiderman/1243.gif
+ offset 108 32
+ frame data/chars/MVC2_Spiderman/1244.gif
+ offset 110 34
+ frame data/chars/MVC2_Spiderman/1245.gif
+ offset 112 34
+ frame data/chars/MVC2_Spiderman/1246.gif
+ offset 114 34
+ frame data/chars/MVC2_Spiderman/1247.gif
+
+anim 7056
+ delay 7
+ offset 3 4
+ frame data/chars/MVC2_Spiderman/1248.gif
+ offset 4 5
+ frame data/chars/MVC2_Spiderman/1249.gif
+ offset 5 6
+ frame data/chars/MVC2_Spiderman/1250.gif
+ offset 6 7
+ frame data/chars/MVC2_Spiderman/1251.gif
+ offset 5 8
+ frame data/chars/MVC2_Spiderman/1252.gif
+ offset 7 8
+ frame data/chars/MVC2_Spiderman/1253.gif
+ offset 7 8
+ frame data/chars/MVC2_Spiderman/1254.gif
+ offset 7 8
+ frame data/chars/MVC2_Spiderman/1255.gif
+ offset 7 8
+ frame data/chars/MVC2_Spiderman/1256.gif
+ offset 6 8
+ frame data/chars/MVC2_Spiderman/1257.gif
+
+anim 7057
+ delay 7
+ offset 2 16
+ frame data/chars/MVC2_Spiderman/1258.gif
+ offset 1 20
+ frame data/chars/MVC2_Spiderman/1259.gif
+ offset 1 17
+ frame data/chars/MVC2_Spiderman/1260.gif
+
+anim 7100
+ delay 7
+ offset 20 2
+ frame data/chars/MVC2_Spiderman/1261.gif
+ offset 15 2
+ frame data/chars/MVC2_Spiderman/1262.gif
+ offset 11 1
+ frame data/chars/MVC2_Spiderman/1263.gif
+ offset 7 1
+ frame data/chars/MVC2_Spiderman/1264.gif
+ offset 4 1
+ frame data/chars/MVC2_Spiderman/1265.gif
+
+anim 7101
+ delay 7
+ offset 35 2
+ frame data/chars/MVC2_Spiderman/1266.gif
+ offset 28 2
+ frame data/chars/MVC2_Spiderman/1267.gif
+ offset 22 2
+ frame data/chars/MVC2_Spiderman/1268.gif
+ offset 16 1
+ frame data/chars/MVC2_Spiderman/1269.gif
+ offset 9 1
+ frame data/chars/MVC2_Spiderman/1270.gif
+
+anim 7102
+ delay 7
+ offset 39 4
+ frame data/chars/MVC2_Spiderman/1271.gif
+ offset 32 3
+ frame data/chars/MVC2_Spiderman/1272.gif
+ offset 26 3
+ frame data/chars/MVC2_Spiderman/1273.gif
+ offset 19 2
+ frame data/chars/MVC2_Spiderman/1274.gif
+ offset 13 2
+ frame data/chars/MVC2_Spiderman/1275.gif
+
+anim 7103
+ delay 7
+ offset 20 2
+ frame data/chars/MVC2_Spiderman/1276.gif
+ offset 15 2
+ frame data/chars/MVC2_Spiderman/1277.gif
+ offset 11 1
+ frame data/chars/MVC2_Spiderman/1278.gif
+ offset 7 1
+ frame data/chars/MVC2_Spiderman/1279.gif
+ offset 4 1
+ frame data/chars/MVC2_Spiderman/1280.gif
+
+anim 7104
+ delay 7
+ offset 37 2
+ frame data/chars/MVC2_Spiderman/1281.gif
+ offset 30 2
+ frame data/chars/MVC2_Spiderman/1282.gif
+ offset 24 2
+ frame data/chars/MVC2_Spiderman/1283.gif
+ offset 18 1
+ frame data/chars/MVC2_Spiderman/1284.gif
+ offset 11 1
+ frame data/chars/MVC2_Spiderman/1285.gif
+
+anim 7107
+ delay 7
+ offset 10 10
+ frame data/chars/MVC2_Spiderman/1286.gif
+ offset 13 11
+ frame data/chars/MVC2_Spiderman/1287.gif
+ offset 15 13
+ frame data/chars/MVC2_Spiderman/1288.gif
+ offset 16 14
+ frame data/chars/MVC2_Spiderman/1289.gif
+ offset 18 15
+ frame data/chars/MVC2_Spiderman/1290.gif
+ offset 19 15
+ frame data/chars/MVC2_Spiderman/1291.gif
+ offset 20 15
+ frame data/chars/MVC2_Spiderman/1292.gif
+ offset 21 15
+ frame data/chars/MVC2_Spiderman/1293.gif
+ offset 22 15
+ frame data/chars/MVC2_Spiderman/1294.gif
+ offset 22 15
+ frame data/chars/MVC2_Spiderman/1295.gif
+ offset 22 15
+ frame data/chars/MVC2_Spiderman/1296.gif
+ offset 23 15
+ frame data/chars/MVC2_Spiderman/1297.gif
+
+anim 7200
+ delay 7
+ offset 38 42
+ frame data/chars/MVC2_Spiderman/1298.gif
+ offset 83 90
+ frame data/chars/MVC2_Spiderman/1299.gif
+ offset 94 86
+ frame data/chars/MVC2_Spiderman/1300.gif
+ offset 19 16
+ frame data/chars/MVC2_Spiderman/1301.gif
+ offset 38 36
+ frame data/chars/MVC2_Spiderman/1302.gif
+ offset 23 44
+ frame data/chars/MVC2_Spiderman/1303.gif
+ offset 25 -25
+ frame data/chars/MVC2_Spiderman/1304.gif
+
+anim 7201
+ delay 7
+ offset 24 35
+ frame data/chars/MVC2_Spiderman/1305.gif
+ offset 62 49
+ frame data/chars/MVC2_Spiderman/1306.gif
+ offset 30 50
+ frame data/chars/MVC2_Spiderman/1307.gif
+ offset 30 43
+ frame data/chars/MVC2_Spiderman/1308.gif
+ offset 32 41
+ frame data/chars/MVC2_Spiderman/1309.gif
+ offset 35 42
+ frame data/chars/MVC2_Spiderman/1310.gif
+ offset 30 35
+ frame data/chars/MVC2_Spiderman/1311.gif
+ offset 20 27
+ frame data/chars/MVC2_Spiderman/1312.gif
+
+anim 7220
+ delay 7
+ offset 80 68
+ frame data/chars/MVC2_Spiderman/1313.gif
+ offset 237 46
+ frame data/chars/MVC2_Spiderman/1314.gif
+ offset 235 46
+ frame data/chars/MVC2_Spiderman/1315.gif
+ offset 89 47
+ frame data/chars/MVC2_Spiderman/1316.gif
+ offset 80 45
+ frame data/chars/MVC2_Spiderman/1317.gif
+ offset 68 33
+ frame data/chars/MVC2_Spiderman/1318.gif
+ offset -11 -2
+ frame data/chars/MVC2_Spiderman/1319.gif
+
+anim 7221
+ delay 7
+ offset 60 56
+ frame data/chars/MVC2_Spiderman/1320.gif
+ offset 79 64
+ frame data/chars/MVC2_Spiderman/1321.gif
+ offset 68 66
+ frame data/chars/MVC2_Spiderman/1322.gif
+ offset 70 58
+ frame data/chars/MVC2_Spiderman/1323.gif
+ offset 42 64
+ frame data/chars/MVC2_Spiderman/1324.gif
+ offset 43 90
+ frame data/chars/MVC2_Spiderman/1325.gif
+ offset 43 94
+ frame data/chars/MVC2_Spiderman/1326.gif
+ offset -22 96
+ frame data/chars/MVC2_Spiderman/1327.gif
+
+anim 7240
+ delay 7
+ offset 79 67
+ frame data/chars/MVC2_Spiderman/1328.gif
+ offset 171 150
+ frame data/chars/MVC2_Spiderman/1329.gif
+ offset 157 164
+ frame data/chars/MVC2_Spiderman/1330.gif
+ offset 95 32
+ frame data/chars/MVC2_Spiderman/1331.gif
+ offset 93 67
+ frame data/chars/MVC2_Spiderman/1332.gif
+ offset 95 38
+ frame data/chars/MVC2_Spiderman/1333.gif
+ offset 60 44
+ frame data/chars/MVC2_Spiderman/1334.gif
+
+anim 7241
+ delay 7
+ offset 63 56
+ frame data/chars/MVC2_Spiderman/1335.gif
+ offset 101 72
+ frame data/chars/MVC2_Spiderman/1336.gif
+ offset 82 75
+ frame data/chars/MVC2_Spiderman/1337.gif
+ offset 110 77
+ frame data/chars/MVC2_Spiderman/1338.gif
+ offset 117 78
+ frame data/chars/MVC2_Spiderman/1339.gif
+ offset 124 79
+ frame data/chars/MVC2_Spiderman/1340.gif
+ offset 67 34
+ frame data/chars/MVC2_Spiderman/1341.gif
+ offset 67 4
+ frame data/chars/MVC2_Spiderman/1342.gif
+
+anim 7260
+ delay 7
+ offset 1 2
+ frame data/chars/MVC2_Spiderman/1343.gif
+ offset 3 3
+ frame data/chars/MVC2_Spiderman/1344.gif
+ offset 14 11
+ frame data/chars/MVC2_Spiderman/1345.gif
+ offset 47 39
+ frame data/chars/MVC2_Spiderman/1346.gif
+ offset 76 65
+ frame data/chars/MVC2_Spiderman/1347.gif
+ offset 95 77
+ frame data/chars/MVC2_Spiderman/1348.gif
+ offset 119 95
+ frame data/chars/MVC2_Spiderman/1349.gif
+ offset 127 102
+ frame data/chars/MVC2_Spiderman/1350.gif
+ offset 135 108
+ frame data/chars/MVC2_Spiderman/1351.gif
+ offset 143 117
+ frame data/chars/MVC2_Spiderman/1352.gif
+ offset 148 120
+ frame data/chars/MVC2_Spiderman/1353.gif
+
+anim 7280
+ delay 7
+ offset 160 84
+ frame data/chars/MVC2_Spiderman/1354.gif
+ offset 179 93
+ frame data/chars/MVC2_Spiderman/1355.gif
+ offset 190 97
+ frame data/chars/MVC2_Spiderman/1356.gif
+ offset 197 100
+ frame data/chars/MVC2_Spiderman/1357.gif
+ offset 197 100
+ frame data/chars/MVC2_Spiderman/1358.gif
+
+anim 7283
+ delay 7
+ offset 31 153
+ frame data/chars/MVC2_Spiderman/1359.gif
+ offset 17 167
+ frame data/chars/MVC2_Spiderman/1360.gif
+ offset 9 173
+ frame data/chars/MVC2_Spiderman/1361.gif
+ offset 4 175
+ frame data/chars/MVC2_Spiderman/1362.gif
+ offset 2 179
+ frame data/chars/MVC2_Spiderman/1363.gif
+
+anim 7284
+ delay 7
+ offset 153 32
+ frame data/chars/MVC2_Spiderman/1364.gif
+ offset 167 18
+ frame data/chars/MVC2_Spiderman/1365.gif
+ offset 173 10
+ frame data/chars/MVC2_Spiderman/1366.gif
+ offset 175 5
+ frame data/chars/MVC2_Spiderman/1367.gif
+ offset 179 3
+ frame data/chars/MVC2_Spiderman/1368.gif
+
+anim 7410
+ delay 7
+ offset 18 15
+ frame data/chars/MVC2_Spiderman/1369.gif
+ offset 15 10
+ frame data/chars/MVC2_Spiderman/1370.gif
+ offset 28 18
+ frame data/chars/MVC2_Spiderman/1371.gif
+ offset 18 15
+ frame data/chars/MVC2_Spiderman/1372.gif
+ offset 21 19
+ frame data/chars/MVC2_Spiderman/1373.gif
+ offset 24 23
+ frame data/chars/MVC2_Spiderman/1374.gif
+ offset 25 24
+ frame data/chars/MVC2_Spiderman/1375.gif
+ offset 27 25
+ frame data/chars/MVC2_Spiderman/1376.gif
+ offset 27 25
+ frame data/chars/MVC2_Spiderman/1377.gif
+ offset 28 26
+ frame data/chars/MVC2_Spiderman/1378.gif
+ offset 28 26
+ frame data/chars/MVC2_Spiderman/1379.gif
+ offset 24 20
+ frame data/chars/MVC2_Spiderman/1380.gif
+
+anim 7419
+ delay 7
+ offset 38 29
+ frame data/chars/MVC2_Spiderman/1381.gif
+ offset 33 17
+ frame data/chars/MVC2_Spiderman/1382.gif
+ offset 60 43
+ frame data/chars/MVC2_Spiderman/1383.gif
+ offset 38 27
+ frame data/chars/MVC2_Spiderman/1384.gif
+ offset 49 36
+ frame data/chars/MVC2_Spiderman/1385.gif
+ offset 52 42
+ frame data/chars/MVC2_Spiderman/1386.gif
+ offset 55 43
+ frame data/chars/MVC2_Spiderman/1387.gif
+ offset 59 44
+ frame data/chars/MVC2_Spiderman/1388.gif
+ offset 59 45
+ frame data/chars/MVC2_Spiderman/1389.gif
+ offset 60 46
+ frame data/chars/MVC2_Spiderman/1390.gif
+ offset 62 47
+ frame data/chars/MVC2_Spiderman/1391.gif
+ offset 58 35
+ frame data/chars/MVC2_Spiderman/1392.gif
+
+anim 7423
+ delay 7
+ offset 12 11
+ frame data/chars/MVC2_Spiderman/1393.gif
+ offset 36 31
+ frame data/chars/MVC2_Spiderman/1394.gif
+ offset 33 104
+ frame data/chars/MVC2_Spiderman/1395.gif
+ offset 42 125
+ frame data/chars/MVC2_Spiderman/1396.gif
+ offset 58 125
+ frame data/chars/MVC2_Spiderman/1397.gif
+ offset 46 133
+ frame data/chars/MVC2_Spiderman/1398.gif
+ offset 44 135
+ frame data/chars/MVC2_Spiderman/1399.gif
+ offset 43 134
+ frame data/chars/MVC2_Spiderman/1400.gif
+ offset 39 134
+ frame data/chars/MVC2_Spiderman/1401.gif
+ offset 41 133
+ frame data/chars/MVC2_Spiderman/1402.gif
+ offset 39 136
+ frame data/chars/MVC2_Spiderman/1403.gif
+ offset 37 135
+ frame data/chars/MVC2_Spiderman/1404.gif
+
+anim 7500
+ delay 7
+ offset 10 20
+ frame data/chars/MVC2_Spiderman/1405.gif
+ offset 76 55
+ frame data/chars/MVC2_Spiderman/1406.gif
+ offset 86 65
+ frame data/chars/MVC2_Spiderman/1407.gif
+ offset 88 66
+ frame data/chars/MVC2_Spiderman/1408.gif
+ offset 92 68
+ frame data/chars/MVC2_Spiderman/1409.gif
+ offset 94 75
+ frame data/chars/MVC2_Spiderman/1410.gif
+ offset 98 80
+ frame data/chars/MVC2_Spiderman/1411.gif
+ offset 102 87
+ frame data/chars/MVC2_Spiderman/1412.gif
+ offset 95 88
+ frame data/chars/MVC2_Spiderman/1413.gif
+ offset 95 70
+ frame data/chars/MVC2_Spiderman/1414.gif
+ offset 94 47
+ frame data/chars/MVC2_Spiderman/1415.gif
+ offset 66 5
+ frame data/chars/MVC2_Spiderman/1416.gif
+
+anim 7512
+ delay 7
+ offset 53 47
+ frame data/chars/MVC2_Spiderman/1417.gif
+ offset 161 134
+ frame data/chars/MVC2_Spiderman/1418.gif
+ offset 183 144
+ frame data/chars/MVC2_Spiderman/1419.gif
+ offset 119 110
+ frame data/chars/MVC2_Spiderman/1420.gif
+ offset 118 153
+ frame data/chars/MVC2_Spiderman/1421.gif
+ offset 120 186
+ frame data/chars/MVC2_Spiderman/1422.gif
+ offset 115 191
+ frame data/chars/MVC2_Spiderman/1423.gif
+ offset 119 200
+ frame data/chars/MVC2_Spiderman/1424.gif
+ offset 85 210
+ frame data/chars/MVC2_Spiderman/1425.gif
+ offset 82 212
+ frame data/chars/MVC2_Spiderman/1426.gif
+ offset 79 212
+ frame data/chars/MVC2_Spiderman/1427.gif
+
+anim 8051
+ delay 7
+ offset 24 35
+ frame data/chars/MVC2_Spiderman/1428.gif
+ offset 28 38
+ frame data/chars/MVC2_Spiderman/1429.gif
+ offset 21 38
+ frame data/chars/MVC2_Spiderman/1430.gif
+ offset 22 34
+ frame data/chars/MVC2_Spiderman/1431.gif
+ offset 25 38
+ frame data/chars/MVC2_Spiderman/1432.gif
+ offset 24 40
+ frame data/chars/MVC2_Spiderman/1433.gif
+ offset 28 42
+ frame data/chars/MVC2_Spiderman/1434.gif
+ offset 27 40
+ frame data/chars/MVC2_Spiderman/1435.gif
+ offset 39 48
+ frame data/chars/MVC2_Spiderman/1436.gif
+ offset 40 51
+ frame data/chars/MVC2_Spiderman/1437.gif
+ offset 41 51
+ frame data/chars/MVC2_Spiderman/1438.gif
+ offset 42 52
+ frame data/chars/MVC2_Spiderman/1439.gif
+ offset 45 51
+ frame data/chars/MVC2_Spiderman/1440.gif
+ offset 37 45
+ frame data/chars/MVC2_Spiderman/1441.gif
+
+anim 8052
+ delay 7
+ offset 27 26
+ frame data/chars/MVC2_Spiderman/1442.gif
+ offset 30 29
+ frame data/chars/MVC2_Spiderman/1443.gif
+ offset 32 22
+ frame data/chars/MVC2_Spiderman/1444.gif
+ offset 27 24
+ frame data/chars/MVC2_Spiderman/1445.gif
+ offset 26 28
+ frame data/chars/MVC2_Spiderman/1446.gif
+ offset 25 26
+ frame data/chars/MVC2_Spiderman/1447.gif
+ offset 27 27
+ frame data/chars/MVC2_Spiderman/1448.gif
+ offset 31 32
+ frame data/chars/MVC2_Spiderman/1449.gif
+ offset 25 26
+ frame data/chars/MVC2_Spiderman/1450.gif
+ offset 24 27
+ frame data/chars/MVC2_Spiderman/1451.gif
+ offset 26 30
+ frame data/chars/MVC2_Spiderman/1452.gif
+ offset 24 23
+ frame data/chars/MVC2_Spiderman/1453.gif
+ offset 6 19
+ frame data/chars/MVC2_Spiderman/1454.gif
+
+anim 8053
+ delay 7
+ offset 14 14
+ frame data/chars/MVC2_Spiderman/1455.gif
+ offset 14 14
+ frame data/chars/MVC2_Spiderman/1456.gif
+ offset 15 17
+ frame data/chars/MVC2_Spiderman/1457.gif
+ offset 15 18
+ frame data/chars/MVC2_Spiderman/1458.gif
+ offset 15 18
+ frame data/chars/MVC2_Spiderman/1459.gif
+ offset 15 17
+ frame data/chars/MVC2_Spiderman/1460.gif
+ offset 15 15
+ frame data/chars/MVC2_Spiderman/1461.gif
+ offset 15 12
+ frame data/chars/MVC2_Spiderman/1462.gif
+ offset 15 9
+ frame data/chars/MVC2_Spiderman/1463.gif
+
+anim 8431
+ delay 7
+ offset 21 13
+ frame data/chars/MVC2_Spiderman/1464.gif
+ offset 25 32
+ frame data/chars/MVC2_Spiderman/1465.gif
+ offset 25 34
+ frame data/chars/MVC2_Spiderman/1466.gif
+ offset 27 37
+ frame data/chars/MVC2_Spiderman/1467.gif
+ offset 25 38
+ frame data/chars/MVC2_Spiderman/1468.gif
+ offset 23 38
+ frame data/chars/MVC2_Spiderman/1469.gif
+ offset 22 40
+ frame data/chars/MVC2_Spiderman/1470.gif
+ offset 21 29
+ frame data/chars/MVC2_Spiderman/1471.gif
+ offset 21 24
+ frame data/chars/MVC2_Spiderman/1472.gif
+
+anim 32701
+ delay 7
+ offset -92 267
+ frame data/chars/MVC2_Spiderman/1473.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1474.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1475.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1476.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1477.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1478.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1479.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1480.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1481.gif
+ offset 325 267
+ frame data/chars/MVC2_Spiderman/1482.gif
+ offset 119 119
+ frame data/chars/MVC2_Spiderman/1483.gif
+ offset 166 166
+ frame data/chars/MVC2_Spiderman/1484.gif
+ offset 245 245
+ frame data/chars/MVC2_Spiderman/1485.gif
+ offset 275 267
+ frame data/chars/MVC2_Spiderman/1486.gif
+ offset 301 267
+ frame data/chars/MVC2_Spiderman/1487.gif
+ offset 81 80
+ frame data/chars/MVC2_Spiderman/1488.gif
+ offset 86 85
+ frame data/chars/MVC2_Spiderman/1489.gif
+ offset 88 88
+ frame data/chars/MVC2_Spiderman/1490.gif
+ offset 91 90
+ frame data/chars/MVC2_Spiderman/1491.gif
+ offset 93 92
+ frame data/chars/MVC2_Spiderman/1492.gif
+ offset 99 99
+ frame data/chars/MVC2_Spiderman/1493.gif
+ offset 102 101
+ frame data/chars/MVC2_Spiderman/1494.gif
+ offset 105 104
+ frame data/chars/MVC2_Spiderman/1495.gif
+
+anim 32710
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1496.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1497.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1498.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1499.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1500.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1501.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1502.gif
+
+anim 32715
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1503.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1504.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1505.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1506.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1507.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1508.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1509.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1510.gif
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1511.gif
+
+anim 8201
+ delay 7
+ offset 25 30
+ frame data/chars/MVC2_Spiderman/1512.gif
+ offset 31 74
+ frame data/chars/MVC2_Spiderman/1513.gif
+ offset 35 108
+ frame data/chars/MVC2_Spiderman/1514.gif
+ offset 39 133
+ frame data/chars/MVC2_Spiderman/1515.gif
+ offset 42 61
+ frame data/chars/MVC2_Spiderman/1516.gif
+ offset 53 78
+ frame data/chars/MVC2_Spiderman/1517.gif
+ offset 59 89
+ frame data/chars/MVC2_Spiderman/1518.gif
+ offset 66 101
+ frame data/chars/MVC2_Spiderman/1519.gif
+ offset 24 81
+ frame data/chars/MVC2_Spiderman/1520.gif
+ offset 11 89
+ frame data/chars/MVC2_Spiderman/1521.gif
+ offset 13 93
+ frame data/chars/MVC2_Spiderman/1522.gif
+ offset 12 96
+ frame data/chars/MVC2_Spiderman/1523.gif
+
+anim 8211
+ delay 7
+ offset 56 56
+ frame data/chars/MVC2_Spiderman/1524.gif
+ offset 59 60
+ frame data/chars/MVC2_Spiderman/1525.gif
+ offset 63 63
+ frame data/chars/MVC2_Spiderman/1526.gif
+ offset 66 67
+ frame data/chars/MVC2_Spiderman/1527.gif
+ offset 74 74
+ frame data/chars/MVC2_Spiderman/1528.gif
+ offset 53 73
+ frame data/chars/MVC2_Spiderman/1529.gif
+ offset 59 85
+ frame data/chars/MVC2_Spiderman/1530.gif
+ offset 66 96
+ frame data/chars/MVC2_Spiderman/1531.gif
+ offset 27 28
+ frame data/chars/MVC2_Spiderman/1532.gif
+ offset 26 25
+ frame data/chars/MVC2_Spiderman/1533.gif
+ offset 26 26
+ frame data/chars/MVC2_Spiderman/1534.gif
+ offset 23 23
+ frame data/chars/MVC2_Spiderman/1535.gif
+
+anim 8221
+ delay 7
+ offset 56 56
+ frame data/chars/MVC2_Spiderman/1536.gif
+ offset 59 59
+ frame data/chars/MVC2_Spiderman/1537.gif
+ offset 63 63
+ frame data/chars/MVC2_Spiderman/1538.gif
+ offset 66 67
+ frame data/chars/MVC2_Spiderman/1539.gif
+ offset 74 74
+ frame data/chars/MVC2_Spiderman/1540.gif
+ offset 58 80
+ frame data/chars/MVC2_Spiderman/1541.gif
+ offset 64 91
+ frame data/chars/MVC2_Spiderman/1542.gif
+ offset 71 102
+ frame data/chars/MVC2_Spiderman/1543.gif
+ offset 31 45
+ frame data/chars/MVC2_Spiderman/1544.gif
+ offset 29 48
+ frame data/chars/MVC2_Spiderman/1545.gif
+ offset 29 52
+ frame data/chars/MVC2_Spiderman/1546.gif
+ offset 21 55
+ frame data/chars/MVC2_Spiderman/1547.gif
+
+anim 7696
+ delay 7
+ offset 46 118
+ frame data/chars/MVC2_Spiderman/1548.gif
+ offset 46 118
+ frame data/chars/MVC2_Spiderman/1549.gif
+
+anim 32717
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1550.gif
+
+anim 32718
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1551.gif
+
+anim 32767
+ delay 7
+ offset 0 0
+ frame data/chars/MVC2_Spiderman/1552.gif

@@ -1,0 +1,54 @@
+name	Crash
+health	1
+type	none
+shadow	0
+alpha 5
+#setlayer -1
+candamage enemy obstacle
+
+anim idle
+	loop	0
+	delay	6
+	offset	120 137
+        quakeframe 0 11 6
+        sound   data/chars/Badnick/boom.wav
+	@cmd changeentityproperty getlocalvar("self") "Subject_to_Gravity" 0
+	burn  85  45  82  82  25  1  0  0  0  50
+        dropv 3 3
+	frame	data/chars/Omega/Crash-0.gif
+	burn  62  26  120  116  25  1  0  0  0  50
+        dropv 3 3
+	frame	data/chars/Omega/Crash-1.gif
+	burn  81  38  88  96  25  1  0  0  0  50
+        dropv 3 3
+	frame	data/chars/Omega/Crash-2.gif
+	burn  79  38  102  104  25  1  0  0  0  50
+        dropv 3 3
+	frame	data/chars/Omega/Crash-3.gif
+	burn  73  34  120  113  25  1  0  0  0  50
+        dropv 3 3
+	frame	data/chars/Omega/Crash-4.gif
+	frame	data/chars/Omega/Crash-5.gif
+	frame	data/chars/Omega/Crash-6.gif
+	frame	data/chars/Omega/Crash-7.gif
+	attack  0
+	frame	data/chars/Omega/Crash-8.gif
+	frame	data/chars/Omega/Crash-9.gif
+	frame	data/chars/Omega/Crash-10.gif
+	frame	data/chars/Omega/Crash-11.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Omega/Crash-11.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+

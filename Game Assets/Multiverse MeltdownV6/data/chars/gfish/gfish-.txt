@@ -1,0 +1,131 @@
+name	GFish
+health	50
+speed	9
+type	enemy
+shadow	3
+cantgrab 1
+icon	  data/chars/GFish/icon.gif
+iconpain  data/chars/GFish/iconP.gif
+icondie   data/chars/GFish/iconD.gif
+diesound  	data/sounds/exp.wav
+nodieblink 2
+candamage Enemy Player
+
+anim idle
+	loop	1
+	delay	8
+	offset	99 109
+	bbox	80 61 35 49
+	frame	data/chars/GFish/stand1.gif
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	99 109
+	bbox	80 61 35 49
+	frame	data/chars/GFish/jp1.gif
+	frame	data/chars/GFish/jp2.gif
+	frame	data/chars/GFish/jp3.gif
+	frame	data/chars/GFish/jp4.gif
+	frame	data/chars/GFish/jp5.gif
+	frame	data/chars/GFish/jp4.gif
+	frame	data/chars/GFish/jp3.gif
+	frame	data/chars/GFish/jp2.gif
+	frame	data/chars/GFish/jp1.gif
+	delay	8
+	frame	data/chars/GFish/land1.gif
+	frame	data/chars/GFish/land2.gif
+
+
+anim pain
+	loop	0
+	delay	14
+	offset	99 109
+	bbox	76 68 42 45
+	frame	data/chars/GFish/pain1.gif
+
+
+anim fall
+	loop	0
+	delay	34
+	offset	99 109
+	attack	80 55 39 47 12 1
+	frame	data/chars/GFish/pain1.gif
+
+
+anim rise
+	loop	0
+	delay	8
+	offset	99 109
+	frame	data/chars/GFish/land1.gif
+	frame	data/chars/GFish/land2.gif
+
+
+anim attack1
+	range	1 86
+	loop	0
+	delay	14
+	offset	99 109
+	bbox	71 42 45 71
+	frame	data/chars/GFish/act1.gif
+	delay	8
+	attack	86 70 113 28 8 1
+	frame	data/chars/GFish/act2.gif
+	delay	18
+	frame	data/chars/GFish/act3.gif
+
+
+anim jumpattack
+	range	1 120
+	loop	0
+	delay	6
+	offset	99 109
+	bbox	71 42 45 71
+	frame	data/chars/GFish/jump1.gif
+	frame	data/chars/GFish/jump2.gif
+	frame	data/chars/GFish/jump1.gif
+	frame	data/chars/GFish/jump2.gif
+	frame	data/chars/GFish/jump1.gif
+	frame	data/chars/GFish/jump2.gif
+	frame	data/chars/GFish/jump3.gif
+	delay	4
+	bbox	0
+	attack	69 47 63 62 10 1
+	frame	data/chars/GFish/jump4.gif
+	frame	data/chars/GFish/jump5.gif
+	frame	data/chars/GFish/jump6.gif
+	frame	data/chars/GFish/jump4.gif
+	frame	data/chars/GFish/jump5.gif
+	frame	data/chars/GFish/jump6.gif
+	delay	4
+	frame	data/chars/GFish/jump1.gif
+	frame	data/chars/GFish/jump2.gif
+	frame	data/chars/GFish/jump1.gif
+	frame	data/chars/GFish/jump2.gif
+	delay	12
+	offset	99 109
+	frame	data/chars/GFish/land1.gif
+	delay	8
+	frame	data/chars/GFish/land2.gif
+
+anim death
+	loop	0
+	delay	5
+	offset	45 65
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif
+
+
+

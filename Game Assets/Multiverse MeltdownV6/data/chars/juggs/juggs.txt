@@ -1,0 +1,116 @@
+name	Juggs
+health	100
+speed	9
+type	enemy
+gfxshadow 1
+#shadow	3
+noquake  1
+icon    data/chars/elic/icon.gif
+diesound data/sounds/die1.wav
+
+
+anim idle
+	loop	1
+	offset	69 136
+	bbox	54 61 35 77
+	delay	2
+	frame	data/chars/elic/idle01.gif
+	frame	data/chars/elic/idle03.gif
+
+anim burn
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+anim shock
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+
+anim walk
+	loop	1
+        delay   18
+	offset	68 136
+	bbox	52 67 40 70
+	frame	data/chars/elic/wk1.gif
+        delay   14
+	frame	data/chars/elic/wk2.gif
+        delay   18
+	frame	data/chars/elic/wk3.gif
+        delay   14
+	frame	data/chars/elic/wk2.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	74 136
+	bbox	52 64 41 58
+	frame	data/chars/elic/pain.gif
+	offset	69 136
+	frame	data/chars/elic/pain.gif
+	offset	74 136
+	frame	data/chars/elic/pain.gif
+        offset  69 136
+	delay	35
+	frame	data/chars/elic/pain.gif
+
+anim fall
+	loop	0
+	delay	60
+        offset  69 136
+	attack	45 72 28 47 5 1 0 0 15
+	frame	data/chars/elic/fall1.gif
+        delay   10
+	frame	data/chars/elic/fall2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/elic/fall2.gif
+
+anim rise
+	loop	0
+	delay	15
+	offset	69 136
+	frame	data/chars/elic/rise.gif
+
+anim attack1
+        range   0 70
+	loop	0
+	delay	8
+	offset	69 136
+	bbox	52 64 41 58	
+	sound   data/sounds/enemy.wav
+	frame	data/chars/elic/a101.gif
+        delay   3
+	frame	data/chars/elic/a102.gif
+        shock   48 68 63 29 18 1 0 0 15
+        offset  35 136
+        bbox    19 72 31 64
+	frame	data/chars/elic/a103.gif
+	shock   43 69 84 31 18 1 0 0 15
+	frame	data/chars/elic/a104.gif
+	shock   40 67 93 26 18 1 0 0 15
+	frame	data/chars/elic/a105.gif
+        shock   41 67 109 33 18 1 0 0 15
+	frame	data/chars/elic/a107.gif
+        shock   40 67 93 26 18 1 0 0 15
+	frame	data/chars/elic/a106.gif
+	shock   40 67 93 26 18 1 0 0 15
+	frame	data/chars/elic/a105.gif
+        shock   41 67 109 33 18 1 0 0 15
+	frame	data/chars/elic/a107.gif
+        shock   40 67 93 26 18 1 0 0 15
+	frame	data/chars/elic/a106.gif
+        shock   0 0 0 0 0 0
+        delay   12
+        offset  69 136
+	bbox	52 64 41 58
+	frame	data/chars/elic/a102.gif
+	delay	8
+	frame	data/chars/elic/a101.gif
+

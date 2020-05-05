@@ -1,0 +1,21 @@
+name RDragon
+type None
+shadow 0
+nolife 1
+candamage Player
+speed 15
+remove 1
+jugglepoints 1
+
+
+anim	idle
+	loop	1
+	delay	9
+	offset	164 138
+jugglecost 1
+        hitflash RSPFX
+	attack3  165  96  97  41  15  0  0  0  0  25
+	frame	data/chars/Reaper1/RDragon.gif
+	attack3  196  95  65  41  15  0  0  0  0  25
+	frame	data/chars/Reaper1/RDragon.gif
+

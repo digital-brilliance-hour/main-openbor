@@ -1,0 +1,284 @@
+name	Monster
+health	200
+speed   12
+type	enemy
+gfxshadow 1
+candamage Enemy Player
+icon	  data/chars/monster/icon.gif
+iconpain  data/chars/monster/iconP.gif
+icondie   data/chars/monster/iconD.gif
+palette       data/chars/monster/Pal
+alternatepal  data/chars/monster/FreezeM.gif
+fmap 1
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	20 45
+	bbox    5 7 32 36
+	frame	data/chars/monster/stance.gif
+
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	21 46
+	bbox    5 7 32 38
+	frame	data/chars/monster/walk1.gif
+	frame	data/chars/monster/stance.gif
+	frame	data/chars/monster/walk2.gif
+	frame	data/chars/monster/stance.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset  17 45
+	bbox    5 8 32 36
+		sound  data/chars/sla/pain.wav
+	frame	data/chars/monster/hit.gif
+
+anim BPAIN
+	loop	0
+	offset  17 45
+	delay	3
+	bbox    5 8 32 36
+	sound     data/chars/sla/pain.wav
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/BurnP.gif
+	frame	data/chars/monster/hit.gif
+
+anim SPAIN
+	loop	0
+	offset  17 45
+	delay	3
+	bbox    5 8 32 36
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/ShockP.gif
+	frame	data/chars/monster/hit.gif
+
+anim pain2
+	loop	0
+	offset  17 45
+	delay	3
+	bbox    5 8 32 36
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+	frame	data/chars/monster/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset  17 45
+	delay	3
+	bbox    5 8 32 36
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+	frame	data/chars/monster/DrainP.gif
+	frame	data/chars/monster/hit.gif
+
+anim fall
+	loop	0
+	delay	15
+	offset    22 35
+           Landframe 2
+	attack    10  6  33  33  10  1  0  0  0  20
+	bbox     10  6  33  33
+	sound	data/chars/sounds/beast.wav
+	frame	data/chars/monster/lie.gif
+	delay	150
+	frame	data/chars/monster/lie.gif
+	delay	15
+		bbox  0
+		Attack1  0
+	frame	data/chars/monster/lie.gif
+
+anim BURN
+	loop	0
+	offset    22 35
+           landframe 19
+	delay	3
+	Burn    10  6  33  33  10  1  0  0  0  20
+	bbox     10  6  33  33
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/BurnF.gif
+	frame	data/chars/monster/lie.gif
+	delay	100
+	frame	data/chars/monster/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/monster/lie.gif
+
+anim Shock
+	loop	0
+	offset    22 35
+           landframe 19
+	delay	3
+	Shock    10  6  33  33  10  1  0  0  0  20
+	bbox     10  6  33  33
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/ShockF.gif
+	frame	data/chars/monster/lie.gif
+	delay	100
+	frame	data/chars/monster/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/monster/lie.gif
+
+anim Fall3
+	loop	0
+	offset    22 35
+           landframe 19
+	delay	3
+	attack3    10  6  33  33  10  1  0  0  0  20
+	bbox     10  6  33  33
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	frame	data/chars/monster/DrainF.gif
+	frame	data/chars/monster/lie.gif
+	delay	100
+	frame	data/chars/monster/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/monster/lie.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  18 46
+	frame	data/chars/monster/walk2.gif
+
+
+
+anim attack1
+	loop	0
+	offset	27 45
+	delay	35
+		bbox  10  5  28  38
+	frame	data/chars/monster/a1.gif
+	offset  19 44
+		attack  9  13  31  32  25  1
+		delay  10
+		move  20
+	frame	data/chars/monster/a2.gif
+	frame	data/chars/monster/a2.gif
+	frame	data/chars/monster/a2.gif
+	frame	data/chars/monster/a2.gif
+	frame	data/chars/monster/a2.gif
+
+
+
+
+
+anim land
+	loop	0
+	delay	6
+	offset	17 45
+	frame	data/chars/monster/hit.gif
+

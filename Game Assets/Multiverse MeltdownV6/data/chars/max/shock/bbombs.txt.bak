@@ -1,0 +1,54 @@
+name	BBombS
+health	1
+type	NPC
+gfxshadow 1
+speed	10
+candamage enemy obstacle
+jumpheight 3
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Owl/Shock/OBombSP
+
+anim idle
+	loop	1
+	delay	20
+	offset	115 99
+	attack  106  86  17  18  5
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+
+
+
+anim attack1
+	offset	132 117
+          Fastattack 1
+	delay  1
+	attack1  0
+           Move 0
+           @cmd    changemap 1
+		drawmethod  306  306  0  0  0  -1  -1
+	frame    data/chars/Owl/Shock/OSB-0.gif
+	shock	119  90  28  33  19  1  0  0  0  20
+		delay  6
+	frame    data/chars/Owl/Shock/OSB-0.gif
+	shock	0
+	frame    data/chars/Owl/Shock/OSB-1.gif
+	frame    data/chars/Owl/Shock/OSB-2.gif
+	frame    data/chars/Owl/Shock/OSB-0.gif
+	frame    data/chars/Owl/Shock/OSB-1.gif
+	frame    data/chars/Owl/Shock/OSB-2.gif
+	frame    data/chars/Owl/Shock/OSB-0.gif
+	frame    data/chars/Owl/Shock/OSB-1.gif
+	frame    data/chars/Owl/Shock/OSB-2.gif
+	frame    data/chars/Owl/Shock/OSB-0.gif
+	frame    data/chars/Owl/Shock/OSB-1.gif
+	frame    data/chars/Owl/Shock/OSB-2.gif
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+name	MKFSP2
+type	None
+health	1
+speed   15
+jumpheight 1
+shadow	0
+hitenemy 1
+noquake  1
+candamage enemy Obstacle
+palette       data/chars/MKnux/Pal
+alternatepal	data/chars/MKnux/palSP.gif
+
+animationscript data/scripts/script.c
+
+anim idle
+	loop	1
+	delay	20
+	offset	126 94
+		Blast  119  86  16  17  10  4  0  0  0  20
+	frame	data/chars/MKnux/FSP2.gif
+
+anim attack1
+	loop	0
+	delay	9
+	offset	62 61
+        quakeframe 2 1 7
+        blast   34 36 57 42 30 0 0 0 20
+        sound   data/chars/MKnux/bomb/bomb2.wav
+	delay	7
+           @cmd    changemap 1
+	frame   data/chars/MKnux/bomb/ping1.gif
+	delay	3
+		blast  21  23  75  63  30 0 0 0 30
+		offset  60  61
+	frame   data/chars/MKnux/bomb/ping2.gif
+	delay	5
+		blast  13  13  92  73  30 0 0 0 30
+	frame   data/chars/MKnux/bomb/ping3.gif
+		blast  8  3  107  87  30 0 0 0 30
+	frame   data/chars/MKnux/bomb/ping4.gif
+	frame   data/chars/MKnux/bomb/ping5.gif
+	delay	7
+	frame   data/chars/MKnux/bomb/ping6.gif
+	frame   data/chars/MKnux/bomb/ping7.gif
+	delay	9
+	frame   data/chars/MKnux/bomb/ping8.gif
+	delay   11
+	frame   data/chars/MKnux/bomb/ping9.gif
+	delay   13
+	frame   data/chars/MKnux/bomb/ping10.gif
+	delay   1
+        attack  0
+	frame   data/chars/MKnux/bomb/empty.gif
+	delay   17
+	frame   data/chars/MKnux/bomb/empty.gif
+	delay   1
+	frame   data/chars/MKnux/bomb/empty.gif
+

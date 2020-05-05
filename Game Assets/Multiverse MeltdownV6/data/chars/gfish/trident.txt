@@ -1,0 +1,29 @@
+name	        Trident
+type	        none
+gfxshadow 1
+remove          0
+nolife          1
+aimove          star
+lifespan        1
+candamage       player
+
+
+anim idle
+@script
+    void self = getlocalvar("self"); //Get calling entity
+
+    if(frame > 0){
+      changeentityproperty(self, "velocity", 0, 0);
+    }
+@end_script
+	delay	  500
+	offset	  10 64
+        landframe 1
+           noreflect 1
+	attack3	4 36 11 31 10 0 0 0 20
+           DropV     1 2
+	frame	data/chars/gfish/trident.gif
+#	attack	0
+	delay	  200
+	frame	data/chars/gfish/trident.gif
+	frame	data/chars/misc/empty.gif

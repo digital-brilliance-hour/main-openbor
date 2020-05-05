@@ -1,0 +1,570 @@
+name	MECHA_KNUCKLES
+Weapons VECTORMAN_ VECTORMAN__
+health	500
+mp 150
+mprate 5
+speed 8
+type	Player
+icon	 data/chars/MKnux/Icon-A.gif
+iconget  data/chars/MKnux/Icon-B.gif
+iconpain data/chars/MKnux/Icon-C.gif
+icondie  data/chars/MKnux/Icon-D.gif
+
+running 19 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+jumpmove  3  2
+atchain 1 2 3 4
+
+palette       data/chars/MKnux/Pal
+
+
+
+
+
+
+
+
+animationscript data/scripts/script.c
+
+com a2 Freespecial2
+com a3 Freespecial3
+com a4 Freespecial4
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	3
+	offset	116 124
+	bbox	101 69 30 54
+	DropV	1 2
+	frame	data/chars/MKnux/A-0.gif
+	@cmd	shoot "MKA1" 0 0 0
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-0.gif
+	frame	data/chars/MKnux/A-0.gif
+		
+anim	attack2
+	loop	0
+	delay	3
+	offset	116 124
+	bbox	101 69 30 54
+	DropV	1 2
+	frame	data/chars/MKnux/A-0.gif
+	@cmd	shoot "MKA1" 0 0 0
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-0.gif
+	frame	data/chars/MKnux/A-0.gif
+		
+anim	attack3
+	loop	0
+	delay	3
+	offset	116 124
+	bbox	101 69 30 54
+	DropV	1 2
+	frame	data/chars/MKnux/A-0.gif
+	@cmd	shoot "MKA1" 0 0 0
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-0.gif
+	frame	data/chars/MKnux/A-0.gif
+		
+anim	attack4
+	loop	0
+	delay	3
+	offset	116 124
+	bbox	101 69 30 54
+	DropV	1 2
+	frame	data/chars/MKnux/A-0.gif
+	@cmd	shoot "MKA1" 0 0 0
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-1.gif
+	frame	data/chars/MKnux/A-0.gif
+	frame	data/chars/MKnux/A-0.gif
+		
+anim	dodge
+	loop	0
+	delay	4
+	offset	116 124
+	frame	data/chars/MKnux/Land.gif
+	frame	data/chars/MKnux/Land.gif
+	delay	3
+	offset	119 111
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+	delay	4
+	offset	116 124
+	frame	data/chars/MKnux/Land.gif
+	frame	data/chars/MKnux/Land.gif
+		
+anim	fall
+	loop	0
+	offset	116 124
+	delay	9
+	Landframe	40
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	attack3	87 68 64 52 10 0 0 0 0 20
+	DropV	1 3
+	bbox	90 69 62 51
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Fall-1.gif
+	frame	data/chars/MKnux/Fall-2.gif
+	frame	data/chars/MKnux/Fall-3.gif
+	delay	15
+	Attack1	0
+	bbox	0
+	frame	data/chars/MKnux/Fall-4.gif
+		
+anim	freespecial2
+	loop	0
+	delay	8
+	offset	116 124
+	bbox	101 69 30 54
+	mpcost	5
+	mponly	1
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+	@cmd	shoot "MKFSP1" 4 31 0
+	frame	data/chars/MKnux/A-1.gif
+		
+anim	freespecial3
+	loop	0
+	delay	24
+	offset	116 124
+	bbox	101 69 30 54
+	mpcost	25
+	mponly	1
+	@cmd	toss "MKFSP2" 0 30 0
+	frame	data/chars/MKnux/A-1.gif
+		
+anim	freespecial4
+	loop	0
+	delay	9
+	offset	116 124
+	bbox	101 69 30 54
+	frame	data/chars/MKnux/FSP3-0.gif
+	frame	data/chars/MKnux/FSP3-1.gif
+	frame	data/chars/MKnux/FSP3-2.gif
+	delay	12
+	@cmd	shoot "MKFSP3a" 0 0 0
+	@cmd	shoot "MKFSP3a" 50 0 0
+	frame	data/chars/MKnux/FSP3-3.gif
+	@cmd	shoot "MKFSP3b" 0 0 0
+	@cmd	shoot "MKFSP3d" 50 0 0
+	@cmd	shoot "MKFSP3" 0 0 0
+	@cmd	shoot "MKFSP3" 51 6 0
+	frame	data/chars/MKnux/FSP3-4.gif
+	delay	17
+	@cmd	shoot "MKFSP3c" 0 0 0
+	@cmd	shoot "MKFSP3e" 50 0 0
+	frame	data/chars/MKnux/FSP3-4.gif
+	delay	6
+	frame	data/chars/MKnux/FSP3-1.gif
+	frame	data/chars/MKnux/FSP3-0.gif
+		
+anim	get
+	loop	0
+	delay	14
+	offset	116 124
+	frame	data/chars/MKnux/Land.gif
+		
+anim	grabbed
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	delay	3
+	frame	data/chars/MKnux/idle.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	116 124
+	bbox	101 69 30 54
+		@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 1);
+		}
+	@end_script	
+	frame	data/chars/MKnux/idle.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/idle.gif
+		
+anim	jump
+	loop	0
+	delay	4
+	Landframe	8
+	offset	116 124
+	bbox	103 125 37 -60
+	frame	data/chars/MKnux/Walk-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MKnux/Walk-1.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-2.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-3.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	delay	150
+	frame	data/chars/MKnux/Walk-0.gif
+	delay	14
+	frame	data/chars/MKnux/Land.gif
+	delay	9
+	frame	data/chars/MKnux/rise.gif
+		
+anim	jumpattack
+	loop	1
+	delay	5
+	offset	119 124
+	bbox	108 83 29 32
+	attack3	95 78 46 41 14 0 0 0 0 20
+	DropV	1 3
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+		
+anim	land
+	loop	0
+	offset	116 124
+	delay	14
+	frame	data/chars/MKnux/Land.gif
+	delay	9
+	frame	data/chars/MKnux/rise.gif
+		
+anim	pain
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	delay	3
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+		
+anim	pain2
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	Attack1	0
+	frame	data/chars/MKnux/idle.gif
+	Move	-2
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	Move	-1
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+		
+anim	pain3
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	Move	-4
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	Move	-3
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	Move	-2
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	Move	-1
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	Move	0
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	delay	8
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+		
+anim	pain4
+	loop	0
+	delay	6
+	offset	116 105
+	bbox	87 82 61 33
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	118 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	116 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	118 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	116 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	118 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	116 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	118 105
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	116 105
+	delay	50
+	bbox	0
+	frame	data/chars/MKnux/Fall-1.gif
+	offset	116 124
+	delay	15
+	frame	data/chars/MKnux/Rise.gif
+		
+anim	pain5
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	jumpframe	0 3
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MKnux/idle.gif
+	delay	2
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	delay	9
+	frame	data/chars/MKnux/idle.gif
+		
+anim	pain6
+	loop	0
+	offset	116 124
+	bbox	101 69 30 54
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MKnux/idle.gif
+	delay	2
+	frame	data/chars/MKnux/pain.gif
+	frame	data/chars/MKnux/idle.gif
+	frame	data/chars/MKnux/pain.gif
+	delay	9
+	frame	data/chars/MKnux/idle.gif
+		
+anim	rise
+	loop	0
+	offset	116 124
+	delay	15
+	frame	data/chars/MKnux/Rise.gif
+		
+anim	run
+	loop	1
+	delay	4
+	offset	116 124
+	bbox	103 125 37 -60
+		@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 1);
+		}
+	@end_script	
+	frame	data/chars/MKnux/Walk-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MKnux/Walk-1.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-2.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-3.gif
+		
+anim	runattack
+	loop	0
+	delay	2
+	offset	119 111
+	move	10
+	bbox	108 83 29 32
+	attack3	95 78 46 41 14 0 0 0 0 20
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-1.gif
+	move	4
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-0.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-1.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-2.gif
+	frame	data/chars/MKnux/JA-3.gif
+	frame	data/chars/MKnux/JA-3.gif
+		
+anim	special
+	loop	0
+	delay	7
+	offset	116 124
+	bbox	101 69 30 54
+	frame	data/chars/MKnux/SP-0.gif
+	frame	data/chars/MKnux/SP-1.gif
+	frame	data/chars/MKnux/SP-2.gif
+	frame	data/chars/MKnux/SP-3.gif
+	frame	data/chars/MKnux/SP-4.gif
+	delay	5
+	frame	data/chars/MKnux/SP-5.gif
+	frame	data/chars/MKnux/SP-6.gif
+	frame	data/chars/MKnux/SP-7.gif
+	frame	data/chars/MKnux/SP-6.gif
+	frame	data/chars/MKnux/SP-5.gif
+	frame	data/chars/MKnux/SP-6.gif
+	frame	data/chars/MKnux/SP-7.gif
+	frame	data/chars/MKnux/SP-6.gif
+	frame	data/chars/MKnux/SP-5.gif
+	frame	data/chars/MKnux/SP-6.gif
+	frame	data/chars/MKnux/SP-7.gif
+	delay	24
+	@cmd	shoot "MKnuxSP" 0 0 0
+	frame	data/chars/MKnux/SP-4.gif
+	delay	6
+	frame	data/chars/MKnux/SP-3.gif
+	frame	data/chars/MKnux/SP-2.gif
+	frame	data/chars/MKnux/SP-1.gif
+	frame	data/chars/MKnux/SP-0.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	116 124
+	bbox	103 125 37 -60
+		@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 1);
+		}
+	@end_script	
+	frame	data/chars/MKnux/Walk-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MKnux/Walk-1.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-2.gif
+	frame	data/chars/MKnux/Walk-0.gif
+	frame	data/chars/MKnux/Walk-3.gif
+		
+#|edited by openBor Stats v 0.53
+		

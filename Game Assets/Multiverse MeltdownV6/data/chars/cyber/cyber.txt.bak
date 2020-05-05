@@ -1,0 +1,381 @@
+name	Cyber
+health	70
+speed	8
+type	enemy
+gfxshadow 1
+icon	  data/chars/cyber/icon.gif
+iconpain  data/chars/cyber/iconP.gif
+icondie   data/chars/cyber/iconD.gif
+flash   flash
+noatflash 1
+falldie	 1
+dust   dust
+candamage Enemy Player
+
+anim respawn
+	loop	0
+	offset	89 194
+	delay	5
+        sound   data/sounds/spawn.wav
+	frame	data/chars/cyber/idle.gif
+
+
+anim idle
+	loop	1
+	offset	87 194
+	bbox	75 130 35 70
+	delay	9
+	frame	data/chars/cyber/idle.gif
+
+
+
+
+anim walk
+	loop	1
+	offset	87 194
+	bbox	75 130 35 70
+	delay   13
+	frame	data/chars/cyber/idle.gif
+	frame	data/chars/cyber/w1.gif
+	frame	data/chars/cyber/w2.gif
+	frame	data/chars/cyber/w1.gif
+
+
+anim jump
+	loop	0
+	range   75  70
+	offset	89 194
+	bbox	75 130 35 70
+	delay   11
+	frame	data/chars/cyber/j.gif
+	frame	data/chars/cyber/j.gif
+	frame	data/chars/cyber/j.gif
+
+anim pain
+	loop	0
+	delay	6
+	offset	89 194
+	bbox	75 130 35 70
+        sound   data/chars/robo/fall.wav
+        move    -2
+	frame	data/chars/cyber/pain.gif
+	offset  87 194
+	frame	data/chars/cyber/pain.gif
+	offset  89 194
+        move    0
+	delay   40
+	frame	data/chars/cyber/pain.gif
+
+anim BPAIN
+	loop	0
+	offset	89 194
+	delay	3
+	bbox	75 130 35 70
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/BurnP.gif
+	frame	data/chars/cyber/pain.gif
+
+anim SPAIN
+	loop	0
+	offset	89 194
+	delay	3
+	bbox	75 130 35 70
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/ShockP.gif
+	frame	data/chars/cyber/pain.gif
+
+anim pain2
+	loop	0
+	offset	238 197
+	delay	6
+	bbox	195 99 93 103
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+	frame	data/chars/cyber/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	238 197
+	delay	3
+	bbox	195 99 93 103
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+	frame	data/chars/cyber/DrainP.gif
+	frame	data/chars/cyber/pain.gif
+
+anim grabbed
+	loop	0
+	delay	6
+	offset	89 194
+	bbox	75 130 35 70
+	frame	data/chars/cyber/pain.gif
+	offset  87 194
+	frame	data/chars/cyber/pain.gif
+	offset  89 194
+	delay   40
+	frame	data/chars/cyber/pain.gif
+
+anim fall
+	loop	0
+	offset	89 194
+	delay   30
+           landframe 2
+            sound   data/chars/robo/fall.wav
+	attack1  75 125 15 70 5 1
+	frame	data/chars/cyber/fall1.gif
+	delay   100
+	frame	data/chars/cyber/fall1.gif
+	attack1  0 0 0 0 0 0 0 0 0
+	delay   4
+	frame	data/chars/cyber/fall4.gif
+
+anim BURN
+	loop	0
+	offset	89 194
+           landframe 19
+	delay	3
+	attack1  55 138 78	66 10  1  0  0  0  20
+	bbox     55 138 78	66
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/BurnF.gif
+	frame	data/chars/cyber/fall1.gif
+	delay	100
+	frame	data/chars/cyber/fall1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/Chrys/fall4.gif
+
+anim Shock
+	loop	0
+	offset	89 194
+           landframe 19
+	delay	3
+	attack1  55 138 78	66 10  1  0  0  0  20
+	bbox     55 138 78	66
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/ShockF.gif
+	frame	data/chars/cyber/fall1.gif
+	delay	100
+	frame	data/chars/cyber/fall1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/Chrys/fall4.gif
+
+anim Fall3
+	loop	0
+	offset	89 194
+           landframe 19
+	delay	3
+	attack1  55 138 78	66 10  1  0  0  0  20
+	bbox     55 138 78	66
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	frame	data/chars/cyber/DrainF.gif
+	frame	data/chars/cyber/fall1.gif
+	delay	100
+	frame	data/chars/cyber/fall1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/Chrys/fall4.gif
+
+anim rise
+	loop	0
+	offset	87 194
+	delay	13
+	frame	data/chars/cyber/rise1.gif
+	frame	data/chars/cyber/rise2.gif
+
+
+anim attack1
+	range	0 50
+	loop	0
+	delay	5
+	offset	87 194
+	bbox	75 130 35 70
+      move    3
+	frame	data/chars/cyber/idle.gif
+        sound   data/chars/cyber/a1.wav
+	frame	data/chars/cyber/a0.gif
+	frame	data/chars/cyber/a0.gif
+	attack1  96 129 35 44 7  0  0  0  0  10
+	frame	data/chars/cyber/a1.gif
+	frame	data/chars/cyber/a1.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/idle.gif
+	frame	data/chars/cyber/a0.gif
+       move    0
+	frame	data/chars/cyber/a0.gif
+        fastattack	1
+	attack1  94 130 38 48 7  0  0  0  0  10
+	frame	data/chars/cyber/a1.gif
+	frame	data/chars/cyber/a1.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/idle.gif
+	frame	data/chars/cyber/a0.gif
+	frame	data/chars/cyber/a0.gif
+	attack1  95 130 36 47 7 1  0  0  0  10
+        fastattack	1
+	frame	data/chars/cyber/a1.gif
+	frame	data/chars/cyber/a1.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/a1.gif
+
+anim  riseattack
+	range	0 55
+	loop	0
+	delay	5
+	offset	87 194
+	bbox	75 130 35 70
+        move    4
+	frame	data/chars/cyber/idle.gif
+        sound   data/chars/cyber/a1.wav
+	frame	data/chars/cyber/a2.gif
+	frame	data/chars/cyber/a2.gif
+	attack1  92 140 30 25 5
+	frame	data/chars/cyber/a3.gif
+        move    0
+	frame	data/chars/cyber/a3.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/a3.gif
+	frame	data/chars/cyber/a2.gif
+	frame	data/chars/cyber/a2.gif
+        fastattack	1
+	attack1  92 140 30 25 5
+	frame	data/chars/cyber/a3.gif
+	frame	data/chars/cyber/a3.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/a3.gif
+	frame	data/chars/cyber/a2.gif
+	frame	data/chars/cyber/a2.gif
+	attack1  92 140 30 25 5 1
+        fastattack	1
+	frame	data/chars/cyber/a3.gif
+	frame	data/chars/cyber/a3.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/cyber/a3.gif
+
+anim death
+	loop	0
+	delay	11
+	offset	74  70
+        nodieblink    2
+	sound	data/sounds/boom.wav
+	frame	data/chars/robot/b2.gif
+	frame	data/chars/robot/b3.gif
+	frame	data/chars/robot/b4.gif
+	frame	data/chars/robot/b5.gif
+	frame	data/chars/robot/b6.gif
+	frame	data/chars/robot/b7.gif
+	frame	data/chars/robot/b8.gif
+	frame	data/chars/robot/b9.gif
+	frame	data/chars/robot/b91.gif
+	frame	data/chars/robot/b92.gif
+
+
+

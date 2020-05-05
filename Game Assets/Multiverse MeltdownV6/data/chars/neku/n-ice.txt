@@ -1,0 +1,37 @@
+name N-Ice
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+nomove 1
+
+
+anim	idle
+	loop	1
+	delay	6
+	offset	233 127
+		Attack1  0
+	frame	data/chars/Neku/N-Ice0.gif
+		attack3  215  76  38  63  14  1  0  0  0  25
+        DropV   5 1
+	frame	data/chars/Neku/N-Ice1.gif
+		attack3  200  1  63  137  14  1  0  0  0  25
+        DropV   5 1
+	frame	data/chars/Neku/N-Ice2.gif
+		offset  233  148
+		attack3  201  23  63  137  14  1  0  0  0  25
+        DropV   5 1
+	frame	data/chars/Neku/N-Ice3.gif
+	frame	data/chars/Neku/N-Ice4.gif
+	frame	data/chars/Neku/N-Ice5.gif
+	frame	data/chars/Neku/N-Ice6.gif
+	frame	data/chars/Neku/N-Ice7.gif
+	frame	data/chars/Neku/N-Ice8.gif
+	frame	data/chars/Neku/N-Ice9.gif
+		offset  233  148
+	frame	data/chars/Neku/N-Ice10.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Neku/N-Ice10.gif
+

@@ -1,0 +1,92 @@
+name		TrushR
+health		42
+nolife  	1
+speed		4
+type		enemy
+gfxshadow     	1
+cantgrab 	1
+nodieblink 	2
+falldie		1
+nodrop		2
+nopain		1
+icon		data/chars/TrushR/icon.gif
+diesound  	data/sounds/exp.wav
+
+
+anim idle
+	loop	1
+	delay	8
+	offset	74 146
+	bbox	22 52 118 96
+	frame	data/chars/TrushR/stand0.gif
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	74 146
+	bbox	22 52 118 96
+	frame	data/chars/TrushR/walk0.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk2.gif
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	74 146
+	bbox	22 52 118 96
+	frame	data/chars/TrushR/stand0.gif
+
+
+anim fall
+	loop	0
+	offset	74 146
+	delay	20
+	attack	22 52 118 96 18 1
+	frame	data/chars/TrushR/stand0.gif
+
+
+anim rise
+	delay	8
+	offset	74 146
+	frame	data/chars/TrushR/stand0.gif
+
+
+anim attack1
+	range	0 120
+	offset	74 146
+	delay	6
+	jumpframe 0 0 2 0
+	bbox	22 52 118 96
+	attack	22 52 118 96 12 1
+	frame	data/chars/TrushR/walk0.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk2.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk0.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk2.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk0.gif
+	frame	data/chars/TrushR/walk1.gif
+	frame	data/chars/TrushR/walk2.gif
+
+
+anim death
+	loop	0
+	delay	5
+	offset	45 65
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif

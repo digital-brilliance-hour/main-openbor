@@ -1,0 +1,70 @@
+name	NBombB
+health	1
+type	None
+shadow	0
+candamage enemy obstacle
+Nomove 1
+Remove 0
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Owl/Burn/OBombBP
+
+anim idle
+	loop	0
+	delay	6
+	offset	113 98
+	attack1  0
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  113  98
+	drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  113  98
+	drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	offset  114  99
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  296  296  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+	drawmethod  276  276  0  0  0  -1  -1
+	frame	data/chars/Max/Bomb.gif
+#-----------------------------
+	offset	131 120
+	delay  6
+           @cmd    changemap 1
+		drawmethod  216  216  0  0  0  -1  -1
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		Burn  125  110  13  11  22  1  0  0  0  20
+           Move 0
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		Burn  119  104  27  18  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-1.gif
+		Burn  112  88  48  44  22  1  0  0  0  20
+		offset  132  120
+	frame    data/chars/Owl/Burn/OBB-2.gif
+		Burn  106  86  55  50  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-3.gif
+		Burn  108  90  52  40  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-4.gif
+		offset  133  120
+	frame    data/chars/Owl/Burn/OBB-5.gif
+	frame    data/chars/Owl/Burn/OBB-6.gif
+@cmd killentity getlocalvar("self")
+	frame    data/chars/Owl/Burn/OBB-6.gif
+
+
+

@@ -1,0 +1,127 @@
+name	SONIC__
+weapnum 2
+health	500
+mp 150
+mprate 5
+speed	25
+type	none
+icon	 data/chars/Sonic/Icon-A.gif
+iconget  data/chars/Sonic/Icon-B.gif
+iconpain data/chars/Sonic/Icon-C.gif
+icondie  data/chars/Sonic/Icon-D.gif
+
+
+
+
+running 25	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+turndelay 9000
+
+palette       data/chars/Sonic/Idle1
+
+alternatepal  data/chars/Sonic/Map1
+alternatepal  data/chars/Sonic/Map2
+alternatepal  data/chars/Sonic/Map3
+alternatepal  data/chars/Sonic/Map4
+alternatepal  data/chars/Sonic/Map5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+
+jumpmove  3  2
+atchain 1 1 1 1
+throwframewait 10
+knife   S-Wave
+
+
+anim	attack1
+	loop	0
+	delay	1
+	offset	0 7
+	attack1   0  0  6  8  1  0  0  0  0  50
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	Spawn
+	loop	0
+	delay	1
+	offset	0 7
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	freespecial
+	loop	0
+	delay	1
+	offset	0 7
+	attack1   0  0  6  8  1  0  0  0  0  50
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	DODGE
+	loop	0
+	delay	1
+	offset	0 7
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	idle
+	loop	1
+	delay	1
+	offset	0 7
+	cancel	0 3 0 J freespecial
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	jump
+	loop	1
+	delay	1
+	offset	0 7
+	attack1   0  0  6  8  1  0  0  0  0  50
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	backwalk
+	loop	1
+	delay	1
+	offset	0 7
+	cancel	0 3 0 J freespecial
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	special
+	loop	0
+	delay	1
+	offset	0 7
+	attack1   0  0  6  8  1  0  0  0  0  50
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	run
+	loop	1
+	delay	1
+	offset	0 7
+	cancel	0 3 0 J freespecial
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+
+anim	walk
+	loop	1
+	delay	1
+	offset	0 7
+	cancel	0 3 0 J freespecial
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+	frame	data/chars/Sonic/Cursor.gif
+

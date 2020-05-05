@@ -1,0 +1,95 @@
+name	Ninja_Hawk
+health	200
+speed   15
+type	enemy
+
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	31 58
+	bbox    31 58 67 59
+	frame	data/chars/hawk/stance.gif
+	
+	
+
+anim walk
+	loop	1
+	delay	15
+	offset	34 67
+	bbox    33 65 58 66
+	frame	data/chars/xcon/walk1.gif
+	offset	33 56
+	bbox    33 56 71 57
+	frame	data/chars/xcon/walk2.gif	
+	offset	32 51
+	bbox    32 51 68 52
+	frame	data/chars/xcon/walk3.gif
+	
+	
+anim pain
+	loop	0
+	delay	10
+	offset	33 56
+	bbox    33 56 71 57
+	frame	data/chars/xcon/walk2.gif
+	frame	data/chars/xcon/walk2.gif
+	
+	
+anim fall
+	loop	0
+	delay	10
+	offset  31 44
+	frame	data/chars/xcon/fall.gif
+	frame	data/chars/xcon/fall.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  33 56
+	frame	data/chars/xcon/walk2.gif
+	
+
+
+	
+
+
+	
+anim attack1
+	loop	0
+	offset	31 77
+	delay	10
+	frame	data/chars/xcon/a1.gif
+	offset  41 55
+	delay	10
+	frame	data/chars/xcon/a2.gif
+	attack	30 42 56 43 60 1
+	offset	24 58
+	frame	data/chars/xcon/a3.gif
+	attack	24 58 79 60 60 1
+	offset	24 56
+	frame	data/chars/xcon/a4.gif
+	attack	24 56 105 60 60 1
+	offset  21 56
+	frame	data/chars/xcon/a5.gif
+	attack	21 56 133 60 60 1
+	offset	24 56
+	frame	data/chars/xcon/a4.gif
+	attack	24 56 105 60 60 1
+	offset	24 58
+	frame	data/chars/xcon/a3.gif
+	attack	24 58 79 60 60 1	
+
+
+
+
+	
+
+anim land
+	loop	0
+	offset	32 51
+	bbox    32 51 68 52
+	frame	data/chars/xcon/walk3.gif
+	
+

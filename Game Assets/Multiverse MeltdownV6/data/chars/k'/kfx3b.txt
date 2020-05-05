@@ -1,0 +1,60 @@
+name	Kfx3b
+type	none
+shadow	0
+nolife  1
+remove  0
+Speed 42
+alpha 1
+candamage enemy obstacle
+
+
+anim idle
+	loop	1
+	delay	7
+	Fastattack 1
+	#hitflash	SpMg3
+ offset 200 274
+	attack3 188 202 92 53 16 1 0 0 0 25
+		drawmethod  86  86  0  0  0  -1  -1
+	frame	data/chars/K'/Kfx0.gif
+	frame	data/chars/K'/Kfx1.gif
+		drawmethod  86  86  0  0  0  -1  -1
+		attack3  203  202  92  53  16  1  0  0  0  25
+	frame	data/chars/K'/Kfx2.gif
+	frame	data/chars/K'/Kfx3.gif
+	frame	data/chars/K'/Kfx4.gif
+		drawmethod  86  86  0  0  0  -1  -1
+		attack3  211  202  92  53  16  1  0  0  0  25
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+	frame	data/chars/K'/Kfx6.gif
+	frame	data/chars/K'/Kfx7.gif
+	frame	data/chars/K'/Kfx5.gif
+		drawmethod  86  86  0  0  0  -1  -1
+	frame	data/chars/K'/Kfx6.gif
+	attack3 0
+	frame	data/chars/K'/Kfx7.gif
+

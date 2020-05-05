@@ -1,0 +1,17 @@
+name	Leaf_Blade
+type	None
+shadow	0
+nolife  1
+speed	19
+candamage  Enemy
+Remove 0
+
+
+anim idle
+	loop	1
+	delay	2
+           hitflash   Cut1
+	offset	113 128
+	attack3   117  111  12  20  30  1  0  0  0  20
+	frame	data/chars/effects/Leaf.gif
+

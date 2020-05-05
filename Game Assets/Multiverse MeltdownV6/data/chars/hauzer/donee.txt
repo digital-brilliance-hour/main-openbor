@@ -1,0 +1,47 @@
+anim	attacks x)
+anim	fall x)
+anim	Freespecial x)
+anim	Freespecial2 x)
+anim	idle x)
+anim	pain x)
+anim	rise x)
+anim	run x)
+anim	RUNATTACK x)
+anim	walk x)
+erase unneeded animation when switching to enemy
+find nofall
+
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+
+
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	
+	
+	attack.damage.type 0
+	
+	
+ frame data/chars/venom/V_200-0.png
+	move	4
+	attack.damage.force 12
+	attack.damage.type 1
+	attack.position.x 163
+	attack.position.y 94
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 144
+	attack.size.y 52
+	attack.size.z.1 20
+	
+	
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0

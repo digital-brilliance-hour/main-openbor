@@ -1,0 +1,129 @@
+name	ver
+health  2
+type panel
+shadow 0
+speed  10
+nolife  1
+ subject_to_platform 1
+ subject_to_obstacle 1
+ subject_to_wall 1
+nomove 1 1
+nodrop 1
+nopain  1
+setlayer   555
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	offset	165	53
+	delay	5
+	sound	data/sounds/comp.wav
+	frame	data/sprites/fight.gif
+	delay	10
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	frame	data/sprites/ko.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	frame	data/sprites/ko.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	delay	40
+	frame	data/sprites/ko.gif
+	@cmd	changeentityproperty getlocalvar("self") "velocity" 0 0 10
+	frame	data/sprites/ko.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/ko.gif
+		
+anim	idle
+	loop	0
+	offset	165	53
+	delay	5
+	sound	data/sounds/laser2.wav
+	frame	data/sprites/fight.gif
+	delay	10
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	frame	data/sprites/ko.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	frame	data/sprites/ko.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/ko.gif
+	nodrawmethod	
+	delay	40
+	frame	data/sprites/ko.gif
+	@cmd	changeentityproperty getlocalvar("self") "velocity" 0 0 10
+	frame	data/sprites/ko.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/ko.gif
+		
+anim	spawn
+   			@script
+                void self = getlocalvar("self");
+	                 if (frame == 6){
+         setglobalvar("vers",2);
+	}
+	@end_script	
+	loop	0
+	offset	165	53
+	delay	5
+	frame	data/sprites/0.gif
+	delay	5
+	sound	data/sounds/laser2.wav
+	frame	data/sprites/fight.gif
+	delay	10
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	nodrawmethod	
+	frame	data/sprites/fight.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	nodrawmethod	
+	frame	data/sprites/fight.gif
+	drawmethod	tintmode 1
+	drawmethod	tintcolor 200_200_200
+	frame	data/sprites/fight.gif
+	nodrawmethod	
+	delay	20
+	frame	data/sprites/fight.gif
+	@cmd	changeentityproperty getlocalvar("self") "velocity" 0 0 10
+	frame	data/sprites/fight.gif
+	frame	data/sprites/fight.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/fight.gif
+		
+#|edited by openBor Stats v 0.67
+		

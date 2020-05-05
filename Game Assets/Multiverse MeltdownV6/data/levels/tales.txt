@@ -1,0 +1,226 @@
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+# File modified by Level Editor on 7/26/2009
+# File modified by Level Editor on 7/16/2009
+# Street
+music		data/music/TakeTheCross.ogg
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+
+bgspeed 1
+Background	data/bgs/Tales/BG.gif 0.3 0.4 0 -4 0 0 2 1 1 0 0 0 0 0 0
+
+panel		data/bgs/Tales/panel.gif
+frontpanel 	data/bgs/Fpanal.gif
+order	aa
+
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+#spawn	ready
+#coords	0 240
+#flip    1
+#at	0
+
+
+load DARKHOUND_E_
+load DARKION_E_
+load SHADOWBAT_E_
+load ghgob
+
+load JILLIAN
+load SHADOWKRO_E_
+load DARKBRITTO_E_
+#-------1
+
+Light 128 -128
+at 0
+
+group   1 1
+at      2
+###########################1
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords 560 168 1
+mp 8
+at 0
+spawn TaleA
+coords 560 222 1
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 8
+at 0
+###########################2
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords 560 168 1
+mp 9
+at 0
+spawn TaleA
+coords 560 222 1
+mp 9
+at 0
+spawn TaleA
+coords -80 199 1
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+###########################3
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords -80 168 1
+mp 8
+at 0
+spawn TaleA
+coords -80 222 1
+mp 8
+at 0
+spawn TaleB
+coords 560 199 1
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 8
+at 0
+###########################4
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords 560 168 1
+mp 9
+at 0
+spawn TaleA
+coords 560 222 1
+mp 9
+at 0
+spawn TaleA
+coords -80 168 1
+mp 9
+at 0
+spawn TaleA
+coords -80 222 1
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+###########################5
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords 560 168 1
+mp 8
+at 0
+spawn TaleA
+coords 560 222 1
+mp 8
+at 0
+spawn TaleA
+coords -80 168 1
+mp 8
+at 0
+spawn TaleA
+coords -80 222 1
+mp 8
+at 0
+spawn TaleB
+coords 560 199 1
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 8
+at 0
+###########################4
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TaleA
+coords 560 168 1
+mp 9
+at 0
+spawn TaleA
+coords 560 222 1
+mp 9
+at 0
+spawn TaleA
+coords -80 168 1
+mp 9
+at 0
+spawn TaleA
+coords -80 222 1
+mp 9
+at 0
+spawn TaleB
+coords 560 199 1
+mp 9
+at 0
+spawn TaleB
+coords -80 199 1
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0

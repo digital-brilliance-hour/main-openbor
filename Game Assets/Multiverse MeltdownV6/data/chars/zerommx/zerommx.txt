@@ -1,0 +1,780 @@
+name	ZERO_MMX
+health	500
+mp 100
+mprate 5
+speed	15
+type	player
+icon     data/chars/ZeroMMX/IconA.gif 1
+iconget  data/chars/ZeroMMX/IconB.gif 1
+iconpain data/chars/ZeroMMX/IconC.gif 1
+icondie  data/chars/ZeroMMX/IconC.gif 1
+#diesound   data/chars/Zero/die2.wav
+running 25 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+knife   ZShot
+
+atchain 1 1 1 0
+
+com a2  Freespecial3
+com a3  Freespecial5
+com a4  Freespecial7
+jumpmove  3  2
+
+palette       data/chars/ZeroMMX/Z_0-0
+alternatepal  data/chars/ZeroMMX/Pal1
+alternatepal  data/chars/ZeroMMX/Pal2
+alternatepal  data/chars/ZeroMMX/Pal3
+alternatepal  data/chars/ZeroMMX/Pal4
+alternatepal  data/chars/ZeroMMX/Pal4b
+alternatepal  data/chars/ZeroMMX/Pal5
+alternatepal  data/chars/ZeroMMX/Pal6
+
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+#weaploss 2
+animationscript data/scripts/script.c
+
+
+
+
+anim	attack1
+	loop	0
+	delay	2
+	Fastattack	1
+	cancel	6 11 0 a freespecial
+	offset	64 185
+	bbox 50 141 29 43
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_200-0.gif
+	frame	data/chars/ZeroMMX/Z_200-1.gif
+	attack1 60 124 32 60 12 0 0 0 0 20
+	bbox 57 146 23 38
+	frame	data/chars/ZeroMMX/Z_200-2.gif
+	attack1 74 124 46 60 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_200-3.gif
+	move 8
+	frame	data/chars/ZeroMMX/Z_200-4.gif
+	move 0
+	attack1 83 147 44 39 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_200-5.gif
+	delay	3
+	frame	data/chars/ZeroMMX/Z_200-6.gif
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_200-7.gif
+	delay	2
+	frame	data/chars/ZeroMMX/Z_200-8.gif
+	frame	data/chars/ZeroMMX/Z_200-9.gif
+	frame	data/chars/ZeroMMX/Z_200-10.gif
+	frame	data/chars/ZeroMMX/Z_200-11.gif
+	
+
+anim	freespecial
+	loop	0
+	delay	3
+	Fastattack	1
+	cancel	6 10 0 a freespecial2
+	offset	64 185
+	bbox 58 147 26 38
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_210-0.gif
+	attack1 64 157 47 27 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_210-1.gif
+	attack1 64 157 65 27 12 0 0 0 0 20
+	bbox 59 147 22 39
+	frame	data/chars/ZeroMMX/Z_210-2.gif
+	attack1 32 157 104 27 12 0 0 0 0 20
+	bbox 53 144 24 41
+	frame	data/chars/ZeroMMX/Z_210-3.gif
+	attack1 20 157 33 27 12 0 0 0 0 20
+	bbox 51 143 24 42
+	frame	data/chars/ZeroMMX/Z_210-4.gif
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_210-5.gif
+	frame	data/chars/ZeroMMX/Z_210-6.gif
+	delay	2
+	frame	data/chars/ZeroMMX/Z_210-7.gif
+	frame	data/chars/ZeroMMX/Z_210-8.gif
+	frame	data/chars/ZeroMMX/Z_210-9.gif
+	frame	data/chars/ZeroMMX/Z_210-10.gif
+
+anim	freespecial2
+	loop	0
+	delay	3
+	Fastattack	1
+	offset	64 185
+	bbox 54 141 25 44
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_220-0.gif
+	frame	data/chars/ZeroMMX/Z_220-1.gif
+	bbox 60 147 23 38
+	frame	data/chars/ZeroMMX/Z_220-2.gif
+	attack1 58 122 83 62 7 0 0 0 0 20
+	bbox 63 149 29 37
+	frame	data/chars/ZeroMMX/Z_220-3.gif
+	attack3 0
+	frame	data/chars/ZeroMMX/Z_220-4.gif
+	attack3 73 132 76 61 7 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_220-5.gif
+	frame	data/chars/ZeroMMX/Z_220-6.gif
+	attack3 75 172 42 22 7 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_220-7.gif
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_220-8.gif
+	frame	data/chars/ZeroMMX/Z_220-9.gif
+	frame	data/chars/ZeroMMX/Z_220-10.gif
+	frame	data/chars/ZeroMMX/Z_220-11.gif
+	frame	data/chars/ZeroMMX/Z_220-12.gif
+	bbox 56 145 30 39
+	frame	data/chars/ZeroMMX/Z_220-13.gif
+
+anim	DODGE
+	loop	0
+	delay	2
+	offset	64 185
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	frame	data/chars/ZeroMMX/Z_100-4.gif
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	frame	data/chars/ZeroMMX/Z_100-4.gif
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	frame	data/chars/ZeroMMX/Z_100-4.gif
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	
+anim	fall
+	loop	0
+	offset	64 185
+	delay	5
+	Landframe	12
+	attack1	94 95 37 37 10 1 0 0 0 20
+	quakeframe	0 1 4
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	delay	7
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+
+anim	freespecial3
+	loop	0
+	delay	3
+	Fastattack	1
+	cancel	6 19 0 a2 freespecial4
+	mpcost	5
+	mponly	1
+	offset	64 185
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-0.gif
+	frame	data/chars/ZeroMMX/Z_1000-4.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-10a.gif
+	frame	data/chars/ZeroMMX/Z_1000-11.gif
+	frame	data/chars/ZeroMMX/Z_1000-12.gif
+
+anim	Freespecial4
+	loop	0
+	delay	3
+	Fastattack	1
+	cancel	5 17 0 a2 freespecial8
+	mpcost	5
+	mponly	1
+	offset	64 185
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack2 41 133 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack2 38 130 83 57 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack2 41 137 77 52 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack2 51 146 58 40 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-10a.gif
+	frame	data/chars/ZeroMMX/Z_1000-11.gif
+	frame	data/chars/ZeroMMX/Z_1000-12.gif
+
+anim	Freespecial8
+	loop	0
+	delay	3
+	Fastattack	1
+	cancel	5 17 0 a2 freespecial4
+	mpcost	5
+	mponly	1
+	offset	64 185
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack1 41 133 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack1 38 130 83 57 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack1 41 137 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack1 41 133 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack1 38 130 83 57 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack1 41 137 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	frame	data/chars/ZeroMMX/Z_1000-5a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-6a.gif
+	attack1 41 133 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7a.gif
+	attack1 38 130 83 57 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-7aa.gif
+	attack1 41 137 77 52 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-8a.gif
+	attack1 51 146 58 40 10 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1000-9a.gif
+	attack1 0
+	frame	data/chars/ZeroMMX/Z_1000-10a.gif
+	frame	data/chars/ZeroMMX/Z_1000-11.gif
+	frame	data/chars/ZeroMMX/Z_1000-12.gif
+
+anim	Freespecial5
+	loop	0
+	delay	4
+	offset	64 185
+	cancel	4 8 0 a3 freespecial6
+	mpcost	5
+	mponly	1
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	@cmd	shoot "ZFSP2" 0 0 0
+	frame	data/chars/ZeroMMX/Z_1005-1.gif
+	frame	data/chars/ZeroMMX/Z_1005-2.gif
+	frame	data/chars/ZeroMMX/Z_1005-3.gif
+	frame	data/chars/ZeroMMX/Z_1005-4.gif
+	delay	2
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+
+anim	Freespecial6
+	loop	0
+	delay	4
+	offset	64 185
+	cancel	4 8 0 a3 freespecial5
+	mpcost	5
+	mponly	1
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	@cmd	shoot "ZFSP2" 0 0 0
+	frame	data/chars/ZeroMMX/Z_1005-1.gif
+	frame	data/chars/ZeroMMX/Z_1005-2.gif
+	frame	data/chars/ZeroMMX/Z_1005-3.gif
+	frame	data/chars/ZeroMMX/Z_1005-4.gif
+	delay	2
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+	frame	data/chars/ZeroMMX/Z_1005-0.gif
+
+anim	Freespecial7
+	loop	0
+	delay	5
+	offset	64 185
+	mpcost	10
+	mponly	1
+	Fastattack	1
+	frame	data/chars/ZeroMMX/Z_100-8.gif
+	frame	data/chars/ZeroMMX/Z_100-8.gif
+	delay	2
+	move 20
+	attack2 45 154 46 29 15 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	frame	data/chars/ZeroMMX/Z_100-4.gif
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	frame	data/chars/ZeroMMX/Z_100-4.gif
+	frame	data/chars/ZeroMMX/Z_100-2.gif
+	frame	data/chars/ZeroMMX/Z_100-3.gif
+	delay	3
+	move 2
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_100-5.gif
+	frame	data/chars/ZeroMMX/Z_100-5.gif
+	frame	data/chars/ZeroMMX/Z_100-6.gif
+	frame	data/chars/ZeroMMX/Z_100-6.gif
+	delay	4
+	frame	data/chars/ZeroMMX/Z_100-7.gif
+	frame	data/chars/ZeroMMX/Z_100-7.gif
+	delay	5
+	move 0
+	frame	data/chars/ZeroMMX/Z_100-8.gif
+	frame	data/chars/ZeroMMX/Z_100-8.gif
+
+
+anim	get
+	loop	0
+	delay	13
+	offset	64 185
+	frame	data/chars/ZeroMMX/Z_11-1.gif
+	delay	5
+	frame	data/chars/ZeroMMX/Z_11-0.gif
+	frame	data/chars/ZeroMMX/Z_11-0.gif
+
+anim	idle
+	loop	1
+	delay	17
+	offset	64 185
+	bbox 52 141 22 44
+	frame	data/chars/ZeroMMX/Z_0-0.gif
+	frame	data/chars/ZeroMMX/Z_0-1.gif
+	frame	data/chars/ZeroMMX/Z_0-1.gif
+	frame	data/chars/ZeroMMX/Z_0-2.gif
+	frame	data/chars/ZeroMMX/Z_0-3.gif
+	frame	data/chars/ZeroMMX/Z_0-3.gif
+
+anim	jump
+	loop	0
+	delay	7
+	offset	64 185
+	bbox 52 141 22 44
+	frame	data/chars/ZeroMMX/Z_41-1.gif
+	frame	data/chars/ZeroMMX/Z_41-2.gif
+	frame	data/chars/ZeroMMX/Z_41-3.gif
+	frame	data/chars/ZeroMMX/Z_41-2.gif
+	frame	data/chars/ZeroMMX/Z_41-3.gif
+	frame	data/chars/ZeroMMX/Z_41-2.gif
+	frame	data/chars/ZeroMMX/Z_41-3.gif
+	delay	5
+	frame	data/chars/ZeroMMX/Z_41-4.gif
+	frame	data/chars/ZeroMMX/Z_41-5.gif
+	frame	data/chars/ZeroMMX/Z_41-6.gif
+	frame	data/chars/ZeroMMX/Z_41-7.gif
+	frame	data/chars/ZeroMMX/Z_41-8.gif
+	frame	data/chars/ZeroMMX/Z_41-9.gif
+	frame	data/chars/ZeroMMX/Z_41-10.gif
+	frame	data/chars/ZeroMMX/Z_41-11.gif
+	frame	data/chars/ZeroMMX/Z_41-8.gif
+	frame	data/chars/ZeroMMX/Z_41-9.gif
+	frame	data/chars/ZeroMMX/Z_41-10.gif
+	frame	data/chars/ZeroMMX/Z_41-11.gif
+	frame	data/chars/ZeroMMX/Z_41-8.gif
+	frame	data/chars/ZeroMMX/Z_41-9.gif
+	frame	data/chars/ZeroMMX/Z_41-10.gif
+	frame	data/chars/ZeroMMX/Z_41-11.gif
+
+anim	jumpland
+	loop	0
+	delay	8
+	offset	64 185
+	frame	data/chars/ZeroMMX/Z_41-12.gif
+	frame	data/chars/ZeroMMX/Z_41-13.gif
+	frame	data/chars/ZeroMMX/Z_41-14.gif
+
+anim	jumpattack
+	loop	1
+	delay	3
+	offset	75 194
+	bbox 63 141 24 50
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_610-9.gif
+	bbox 56 144 30 37
+	frame	data/chars/ZeroMMX/Z_610-8.gif
+	offset	64 185
+	attack3 69 103 50 58 12 0 0 0 0 20
+	bbox 53 137 31 35
+	frame	data/chars/ZeroMMX/Z_610-7.gif
+	attack3 77 108 47 72 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-6.gif
+	attack3 58 174 64 28 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-5.gif
+	attack3 34 166 55 42 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-4.gif
+	attack3 13 144 53 61 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-3.gif
+	attack3 7 127 46 70 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-2.gif
+	attack3 8 104 62 48 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-1.gif
+	attack3 41 98 52 51 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-0.gif
+	attack3 69 103 50 58 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-7.gif
+	attack3 77 108 47 72 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-6.gif
+	attack3 58 174 64 28 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-5.gif
+	attack3 34 166 55 42 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-4.gif
+	attack3 13 144 53 61 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-3.gif
+	attack3 7 127 46 70 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-2.gif
+	attack3 8 104 62 48 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-1.gif
+	attack3 41 98 52 51 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-0.gif
+	attack3 69 103 50 58 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-7.gif
+	attack3 77 108 47 72 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-6.gif
+	attack3 58 174 64 28 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-5.gif
+	attack3 34 166 55 42 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-4.gif
+	attack3 13 144 53 61 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-3.gif
+	attack3 7 127 46 70 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-2.gif
+	attack3 8 104 62 48 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-1.gif
+	attack3 41 98 52 51 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-0.gif
+	attack3 69 103 50 58 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-7.gif
+	attack3 77 108 47 72 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-6.gif
+	attack3 58 174 64 28 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-5.gif
+	attack3 34 166 55 42 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-4.gif
+	attack3 13 144 53 61 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-3.gif
+	attack3 7 127 46 70 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-2.gif
+	attack3 8 104 62 48 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-1.gif
+	attack3 41 98 52 51 12 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_610-0.gif
+	offset	75 194
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_610-8.gif
+	frame	data/chars/ZeroMMX/Z_610-9.gif
+
+anim	jumpattack2
+	loop	0
+	delay	5
+	offset	75 194
+	bbox 65 146 19 41
+	attack1	0
+	frame	data/chars/ZeroMMX/Z_1030-0.gif
+	bbox 67 147 19 41
+	attack2 80 137 24 76 8 0 0 0 0 20
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+	frame	data/chars/ZeroMMX/JA2-0.gif
+	frame	data/chars/ZeroMMX/JA2-1.gif
+	frame	data/chars/ZeroMMX/JA2-2.gif
+	frame	data/chars/ZeroMMX/JA2-3.gif
+
+anim	land
+	loop	0
+	delay	15
+	offset	112 132
+	frame	data/chars/Zero/Rise-6.gif
+	delay	5
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	pain
+	loop	0
+	offset	64 185
+	bbox 52 141 22 44
+	delay	5
+	quakeframe	0 3 4
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+
+anim	pain2
+	loop	0
+	offset	64 185
+	bbox 52 141 22 44
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	Move	-2
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	Move	-1
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+
+anim	pain3
+	loop	0
+	offset	64 185
+	bbox 52 141 22 44
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	Move	-4
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	Move	-3
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	Move	-2
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-1.gif
+	Move	-1
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	delay	100
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	Move	0
+	delay	2
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	delay	10
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+	frame	data/chars/ZeroMMX/Z_5010-0.gif
+
+anim	rise
+	loop	0
+	offset	64 185
+	delay	4
+	frame	data/chars/ZeroMMX/Z_0-3.gif
+
+anim	run
+	loop	1
+	delay	4
+	offset	64 185
+	bbox 52 141 22 44
+	frame	data/chars/ZeroMMX/Z_20-2.gif
+	frame	data/chars/ZeroMMX/Z_20-3.gif
+	frame	data/chars/ZeroMMX/Z_20-4.gif
+	frame	data/chars/ZeroMMX/Z_20-5.gif
+	frame	data/chars/ZeroMMX/Z_20-6.gif
+	frame	data/chars/ZeroMMX/Z_20-7.gif
+	frame	data/chars/ZeroMMX/Z_20-8.gif
+	frame	data/chars/ZeroMMX/Z_20-9.gif
+	frame	data/chars/ZeroMMX/Z_20-10.gif
+	frame	data/chars/ZeroMMX/Z_20-11.gif
+	frame	data/chars/ZeroMMX/Z_20-12.gif
+	frame	data/chars/ZeroMMX/Z_20-13.gif
+	frame	data/chars/ZeroMMX/Z_20-14.gif
+	frame	data/chars/ZeroMMX/Z_20-15.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	2
+	offset	64 185
+	bbox 52 141 22 44
+	move 5
+	frame	data/chars/ZeroMMX/Z_1020-0.gif
+	frame	data/chars/ZeroMMX/Z_1020-0.gif
+	frame	data/chars/ZeroMMX/Z_1020-1.gif
+	frame	data/chars/ZeroMMX/Z_1020-1.gif
+	attack3 106 98 59 40 13 0 0 0 0 20
+	frame	data/chars/ZeroMMX/Z_1020-2.gif
+	frame	data/chars/ZeroMMX/Z_1020-2.gif
+	frame	data/chars/ZeroMMX/Z_1020-3.gif
+	frame	data/chars/ZeroMMX/Z_1020-3.gif
+	frame	data/chars/ZeroMMX/Z_1020-4.gif
+	frame	data/chars/ZeroMMX/Z_1020-4.gif
+	frame	data/chars/ZeroMMX/Z_1020-5.gif
+	frame	data/chars/ZeroMMX/Z_1020-5.gif
+	move 3
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_1020-6.gif
+	frame	data/chars/ZeroMMX/Z_1020-6.gif
+	move 2
+	offset	68 185
+	frame	data/chars/ZeroMMX/Z_1020-7.gif
+	frame	data/chars/ZeroMMX/Z_1020-7.gif
+	frame	data/chars/ZeroMMX/Z_1020-8.gif
+	move 1
+	frame	data/chars/ZeroMMX/Z_1020-8.gif
+	frame	data/chars/ZeroMMX/Z_1020-9.gif
+	frame	data/chars/ZeroMMX/Z_1020-9.gif
+	move 0
+	frame	data/chars/ZeroMMX/Z_1020-10.gif
+	frame	data/chars/ZeroMMX/Z_1020-10.gif
+
+anim	special
+	loop	0
+	delay	5
+	offset	64 185
+	fastattack 1
+	MPcost	30
+	Energycost	30
+	attackNone 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ZeroMMX/Z_1200-0.gif
+	frame	data/chars/ZeroMMX/Z_1200-1.gif
+	frame	data/chars/ZeroMMX/Z_1200-2.gif
+	attack2 63 119 20 65 2 0 0 0 3 20
+	frame	data/chars/ZeroMMX/Z_1200-3.gif
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_1200-4.gif
+	attack2 63 53 25 130 2 0 0 0 3 20
+	frame	data/chars/ZeroMMX/Z_1200-5.gif
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_1200-6.gif
+	attack2 64 2 21 182 2 0 0 0 3 20
+	frame	data/chars/ZeroMMX/Z_1200-8.gif
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_1200-5.gif
+	attack3 64 15 21 172 4 0 0 0 3 20
+	frame	data/chars/ZeroMMX/Z_1200-6.gif
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_1200-8.gif
+	delay	3
+	offset	65 185
+	blast 71 147 41 37 30 0 0 0 20
+	@cmd	shoot "ZSP" 0 0 0
+	frame	data/chars/ZeroMMX/Z_221-3.gif
+	frame	data/chars/ZeroMMX/Z_221-4.gif
+	attack2 0
+	frame	data/chars/ZeroMMX/Z_221-5.gif
+	frame	data/chars/ZeroMMX/Z_221-6.gif
+	frame	data/chars/ZeroMMX/Z_221-7.gif
+	frame	data/chars/ZeroMMX/Z_221-8.gif
+	frame	data/chars/ZeroMMX/Z_221-9.gif
+	frame	data/chars/ZeroMMX/Z_221-10.gif
+	frame	data/chars/ZeroMMX/Z_225-0.gif
+	frame	data/chars/ZeroMMX/Z_225-1.gif
+	frame	data/chars/ZeroMMX/Z_225-2.gif
+	frame	data/chars/ZeroMMX/Z_225-3.gif
+	frame	data/chars/ZeroMMX/Z_225-4.gif
+
+anim	walk
+	loop	1
+	delay	5
+	offset	64 185
+	bbox 52 141 22 44
+	frame	data/chars/ZeroMMX/Z_20-2.gif
+	frame	data/chars/ZeroMMX/Z_20-3.gif
+	frame	data/chars/ZeroMMX/Z_20-4.gif
+	frame	data/chars/ZeroMMX/Z_20-5.gif
+	frame	data/chars/ZeroMMX/Z_20-6.gif
+	frame	data/chars/ZeroMMX/Z_20-7.gif
+	frame	data/chars/ZeroMMX/Z_20-8.gif
+	frame	data/chars/ZeroMMX/Z_20-9.gif
+	frame	data/chars/ZeroMMX/Z_20-10.gif
+	frame	data/chars/ZeroMMX/Z_20-11.gif
+	frame	data/chars/ZeroMMX/Z_20-12.gif
+	frame	data/chars/ZeroMMX/Z_20-13.gif
+	frame	data/chars/ZeroMMX/Z_20-14.gif
+	frame	data/chars/ZeroMMX/Z_20-15.gif
+
+
+#|edited by openBor Stats v 0.37
+
+

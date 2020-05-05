@@ -1,0 +1,271 @@
+name	Alien_Hominid
+health	400
+mp 100
+mprate 5
+speed	10
+type	player
+icon	   data/chars/Owl/icon.gif
+#iconpain   data/chars/Owl/iconP.gif
+#icondie    data/chars/Owl/iconD.gif
+#diesound   data/chars/Owl/die2.wav
+running 20	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+atchain 1 2 1 2
+#knife    Oknife
+
+animationscript data/scripts/script.c
+
+palette       data/chars/Alien/Pal
+
+#alternatepal  data/chars/Alien/Map1
+
+com a2  Freespecial2
+com a3  Freespecial3
+com a4  Freespecial4
+jumpmove  3  2
+
+
+
+anim idle
+	loop	1
+	delay	11
+	offset	117 121
+	bbox	108 99 20 23
+	frame	data/chars/Alien/Idle0.gif
+	frame	data/chars/Alien/Idle1.gif
+	frame	data/chars/Alien/Idle2.gif
+	frame	data/chars/Alien/Idle3.gif
+	frame	data/chars/Alien/Idle4.gif
+	frame	data/chars/Alien/Idle3.gif
+	frame	data/chars/Alien/Idle2.gif
+	frame	data/chars/Alien/Idle1.gif
+
+
+anim walk
+	loop	1
+	delay	8
+	offset	117 125
+	bbox	110 100 20 28
+	frame	data/chars/Alien/Run0.gif
+	offset  117  124
+	frame	data/chars/Alien/Run1.gif
+	offset  117  122
+	frame	data/chars/Alien/Run2.gif
+	frame	data/chars/Alien/Run3.gif
+	offset  117  124
+	frame	data/chars/Alien/Run4.gif
+	offset  117  125
+	frame	data/chars/Alien/Run5.gif
+
+anim get
+	loop	0
+	delay  7
+	offset	117 121
+	frame  data/chars/Alien/Get.gif
+	frame  data/chars/Alien/Get.gif
+	frame  data/chars/Alien/Get.gif
+
+anim jump
+	loop	0
+	delay	8
+	offset	117 121
+	bbox	110 92 19 29
+	frame	data/chars/Alien/Jump0.gif
+	frame	data/chars/Alien/Jump1.gif
+	frame	data/chars/Alien/Jump2.gif
+	frame	data/chars/Alien/Jump3.gif
+	frame	data/chars/Alien/Jump4.gif
+	frame	data/chars/Alien/Jump5.gif
+	frame	data/chars/Alien/Jump6.gif
+
+anim attack1
+	loop	0
+	delay	8
+	offset	117 121
+	bbox	112 91 16 29
+	frame	data/chars/Alien/A1-0.gif
+	frame	data/chars/Alien/A1-1.gif
+	delay	5
+	attack1   104  78  43  41  9  0  0  0  0  20
+	move      10
+	frame	data/chars/Alien/A1-2.gif
+	attack1   101  77  18  44  9  0  0  0  0  20
+	move      0
+	frame	data/chars/Alien/A1-3.gif
+	delay	8
+	Attack1   0
+	frame	data/chars/Alien/A1-4.gif
+
+anim attack2
+	loop	0
+	delay	8
+	offset	117 121
+	bbox	111 92 19 30
+	frame	data/chars/Alien/A1-0.gif
+	frame	data/chars/Alien/A1-1.gif
+	delay	5
+	attack1   104  78  43  41  9  0  0  0  0  20
+	frame	data/chars/Alien/A1-2.gif
+	attack1   101  77  18  44  9  0  0  0  0  20
+	frame	data/chars/Alien/A1-3.gif
+	delay     8
+	Attack1  0
+	frame	data/chars/Alien/A1-4.gif
+
+anim pain
+	loop	0
+	offset	117 121
+	bbox	106 82 20 39
+	delay	7
+	quakeframe	0 1 4
+	frame	data/chars/Alien/Pain.gif
+	frame	data/chars/Alien/Pain.gif
+	frame	data/chars/Alien/Pain.gif
+
+anim fall
+	loop	0
+	offset	117 121
+	delay	500
+	Landframe	1
+	attack1	104 84 24 39 10 1 0 0 0 20
+	quakeframe	0 1 4
+	frame	data/chars/Alien/Fall-0.gif
+	delay	7
+		Attack1  0
+	frame	data/chars/Alien/Fall-1.gif
+
+
+anim rise
+	loop	0
+	offset	117 121
+	delay	20
+	frame	data/chars/Alien/Fall-1.gif
+		offset  119  123
+	frame	data/chars/Alien/Rise-1.gif
+
+anim special
+	loop	0
+	delay	6
+	mpcost	25
+	mponly	1
+	offset	117 121
+	frame	data/chars/Alien/A3-0.gif
+	@cmd	shoot "AHS3" 0 0 0
+	frame	data/chars/Alien/A3-1.gif
+	frame	data/chars/Alien/A3-2.gif
+	frame	data/chars/Alien/A3-3.gif
+	frame	data/chars/Alien/A3-4.gif
+	frame	data/chars/Alien/A3-5.gif
+
+anim RUNATTACK
+	loop	0
+	delay	8
+	offset	117 121
+	bbox	108 99 20 23
+	move      15
+	frame	data/chars/Alien/A1-0.gif
+	frame	data/chars/Alien/A1-1.gif
+	delay	5
+	attack1   104  78  43  41  9  0  0  0  0  20
+	frame	data/chars/Alien/A1-2.gif
+	attack1   101  77  18  44  9  0  0  0  0  20
+	move      4
+	frame	data/chars/Alien/A1-3.gif
+	delay	8
+	Attack1   0
+	frame	data/chars/Alien/A1-4.gif
+
+
+
+anim land
+	loop	0
+	delay	20
+	offset     119  123
+	frame	data/chars/Alien/Rise-1.gif
+
+anim run
+	loop	1
+	delay	5
+	offset	117 125
+	bbox	110 100 20 28
+	frame	data/chars/Alien/Run0.gif
+	offset  117  124
+	frame	data/chars/Alien/Run1.gif
+	offset  117  122
+	frame	data/chars/Alien/Run2.gif
+	frame	data/chars/Alien/Run3.gif
+	offset  117  124
+	frame	data/chars/Alien/Run4.gif
+	offset  117  125
+	frame	data/chars/Alien/Run5.gif
+
+anim Freespecial2
+	loop	0
+	delay	6
+	mpcost	10
+	mponly	1
+	offset	117 121
+		bbox  108  97  22  26
+	frame	data/chars/Alien/A2-0.gif
+	frame	data/chars/Alien/A2-1.gif
+	frame	data/chars/Alien/A2-2.gif
+	delay	18
+	@cmd	toss "Obomb" 0 0 0
+	frame	data/chars/Alien/A2-3.gif
+
+
+anim Freespecial3
+	loop	0
+	delay	6
+	mpcost	4
+	mponly	1
+	offset	117 121
+		bbox  108  96  20  28
+	frame	data/chars/Alien/A3-0.gif
+	@cmd	shoot "AHS1" 0 0 0
+	frame	data/chars/Alien/A3-1.gif
+	frame	data/chars/Alien/A3-2.gif
+	frame	data/chars/Alien/A3-3.gif
+	frame	data/chars/Alien/A3-4.gif
+	frame	data/chars/Alien/A3-5.gif
+
+anim Freespecial4
+	loop	0
+	delay	6
+	mpcost	15
+	mponly	1
+	offset	117 121
+		bbox  109  95  17  28
+	frame	data/chars/Alien/A3-0.gif
+	@cmd	shoot "AHS2" 0 0 0
+	frame	data/chars/Alien/A3-1.gif
+	frame	data/chars/Alien/A3-2.gif
+	frame	data/chars/Alien/A3-3.gif
+	frame	data/chars/Alien/A3-4.gif
+	frame	data/chars/Alien/A3-5.gif
+
+anim DODGE
+	loop	0
+	delay	5
+	offset	117 121
+	frame	data/chars/Alien/Jump0.gif
+	offset	117 125
+	frame	data/chars/Alien/Jump1.gif
+	offset	117 129
+	frame	data/chars/Alien/Jump2.gif
+	frame	data/chars/Alien/Jump3.gif
+	offset	117 125
+	frame	data/chars/Alien/Jump4.gif
+	offset	117 121
+	frame	data/chars/Alien/Jump5.gif
+
+anim Jumpattack
+	loop	1
+	delay	5
+	offset	112 132
+	bbox	111 92 21 27
+		attack1  113  106  19  17  9  1  0  0  0  20
+	frame	data/chars/Alien/A1-0.gif
+

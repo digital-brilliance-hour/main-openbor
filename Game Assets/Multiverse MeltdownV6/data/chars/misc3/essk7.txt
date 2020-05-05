@@ -1,0 +1,39 @@
+name	ESSK7
+type	Panel
+shadow	0
+alpha   0
+remove  0
+speed 10
+setlayer -10
+offscreenkill 5000
+
+palette       data/chars/misc/empty.gif
+
+animationscript data/scripts/script.c
+
+anim idle
+        loop    1
+	 @script
+     if(frame==1){
+      setindexedvar(7, 1);
+     }
+     else if(frame==3){
+      setindexedvar(7, 7);
+     }
+     @end_script
+	delay	50
+	offset	161 131
+	bbox	139 61 45 71
+	 frame     data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+
+

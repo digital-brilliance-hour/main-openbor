@@ -1,0 +1,48 @@
+name	BBombF
+health	1
+type	NPC
+gfxshadow 1
+speed	13
+candamage enemy obstacle
+jumpheight 3
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Owl/Freeze/OBombFP
+
+anim idle
+	loop	1
+	delay	20
+	offset	115 99
+	attack  106  86  17  18  5
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+
+
+
+anim attack1
+	offset	131 120
+          Fastattack 1
+	delay  6
+	attack1  0
+           @cmd    changemap 1
+		drawmethod  306  306  0  0  0  -1  -1
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		freeze	126  109  15  14  12  8  0  0  0  20
+           Move 0
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		freeze	115  97  34  28  12  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-1.gif
+		freeze	102  75  66  58  12  8  0  0  0  20
+		offset  132  120
+	frame    data/chars/Owl/Burn/OBB-2.gif
+		freeze	96  74  74  64  12  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-3.gif
+		freeze	99  78  72  56  12  8  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-4.gif
+		offset  133  120
+	frame    data/chars/Owl/Burn/OBB-5.gif
+	frame    data/chars/Owl/Burn/OBB-6.gif
+

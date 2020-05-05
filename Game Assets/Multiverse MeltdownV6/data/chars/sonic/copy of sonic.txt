@@ -1,0 +1,738 @@
+name	Sonic
+health	511
+mp 146
+mprate 5
+speed	11
+type	player
+icon	data/chars/Sonic/icon.gif
+#iconpain data/chars/Knuckles/IPain.gif
+#icondie data/chars/Knuckles/IDie.gif
+#iconget data/chars/Knuckles/IGet.gif
+diesound data/chars/Knuckles/die2.wav
+running 22	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+#parrow	           data/chars/Sonic/px2.gif -42 -80
+#parrow2	   data/chars/Sonic/px2.gif -42 -80
+#parrow3	   data/chars/Sonic/px2.gif -42 -80
+#parrow4	   data/chars/Sonic/px2.gif -42 -80
+
+palette       data/chars/Sonic/Idle0
+
+#alternatepal  data/chars/Knuckles/Map1
+#alternatepal  data/chars/Knuckles/Map2
+#alternatepal  data/chars/Knuckles/Map3
+#alternatepal  data/chars/Knuckles/Map4
+#alternatepal  data/chars/Knuckles/6
+
+
+#remap	data/chars/Knuckles/Idle1(1).gif data/chars/Knuckles/Map1.gif
+#remap	data/chars/Knuckles/Idle1(1).gif data/chars/Knuckles/Map2.gif
+#remap	data/chars/Knuckles/Idle1(1).gif data/chars/Knuckles/Map3.gif
+#remap	data/chars/Knuckles/Idle1(1).gif data/chars/Knuckles/Map4.gif
+
+
+com a2 Freespecial2
+com a3 Freespecial3
+com a4 Freespecial4
+#load  S-Wave
+jumpmove  3  2
+atchain 1 2 3 4
+throwframewait 6
+knife   S-Wave
+
+
+anim idle
+	loop	1
+	delay	7
+	offset	120 141
+	bbox  108  111  22  31
+@script
+void self = getlocalvar("self");
+int pi = getentityproperty(self, "playerindex");
+int jumpdown = playerkeys(pi, 0, "Attack", "movedown");
+if(jumpdown){
+changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+}
+@end_script
+	frame	data/chars/Sonic/Idle0.gif
+@cmd changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Sonic/Idle1.gif
+	frame	data/chars/Sonic/Idle2.gif
+	frame	data/chars/Sonic/Idle3.gif
+	frame	data/chars/Sonic/Idle4.gif
+	frame	data/chars/Sonic/Idle5.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	120 141
+	bbox	108 108 24 34
+@script
+void self = getlocalvar("self");
+int pi = getentityproperty(self, "playerindex");
+int jumpdown = playerkeys(pi, 0, "Attack", "movedown");
+if(jumpdown){
+changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+}
+@end_script
+	frame	data/chars/Sonic/Walk0.gif
+	frame	data/chars/Sonic/Walk1.gif
+	frame	data/chars/Sonic/Walk2.gif
+	frame	data/chars/Sonic/Walk3.gif
+	frame	data/chars/Sonic/Walk4.gif
+	frame	data/chars/Sonic/Walk5.gif
+	frame	data/chars/Sonic/Walk6.gif
+
+anim follow4
+	loop	0
+	delay	5
+	offset	120 141
+	bbox	64 64 33 35
+	sound   Data/CHARS/Sonic/Huh.wav
+@cmd changeentityproperty getlocalvar("self") "Subject_to_Platform" 0
+	frame	data/chars/Sonic/Jump3.gif
+@cmd changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Sonic/Jump4.gif
+	frame	data/chars/Sonic/Jump3.gif
+	frame	data/chars/Sonic/Jump4.gif
+
+anim get
+	loop	0
+	delay	5
+	offset	120 141
+	sound   Data/CHARS/Sonic/Yeah.wav
+	frame	data/chars/Sonic/Get-0.gif
+	frame	data/chars/Sonic/Get-1.gif
+	frame	data/chars/Sonic/Get-2.gif
+	frame	data/chars/Sonic/Get-1.gif
+	frame	data/chars/Sonic/Get-0.gif
+
+
+anim jump
+	loop	0
+	dropframe  5
+	delay	10
+	offset	120 141
+	sound   Data/CHARS/Sonic/Huh.wav
+	frame	data/chars/Sonic/Jump0.gif
+	frame	data/chars/Sonic/Jump1.gif
+	frame	data/chars/Sonic/Jump2.gif
+	frame	data/chars/Sonic/Jump3.gif
+	frame	data/chars/Sonic/Jump4.gif
+	frame	data/chars/Sonic/Jump3.gif
+	frame	data/chars/Sonic/Jump4.gif
+	frame	data/chars/Sonic/Jump3.gif
+	frame	data/chars/Sonic/Jump4.gif
+
+
+anim jumpattack
+	loop	0
+	delay	5
+	offset	120 141
+	sound   Data/CHARS/Sonic/hya.wav
+	frame	data/chars/Sonic/JA1-0.gif
+	frame	data/chars/Sonic/JA1-1.gif
+	frame	data/chars/Sonic/JA1-2.gif
+	frame	data/chars/Sonic/JA1-3.gif
+	frame	data/chars/Sonic/JA1-4.gif
+		attack  110  98  31  38  13  1  0  0  0  20
+	frame	data/chars/Sonic/JA1-5.gif
+	frame	data/chars/Sonic/JA1-6.gif
+		attack  106  115  29  22  13  1  0  0  0  20
+	frame	data/chars/Sonic/JA1-7.gif
+	frame	data/chars/Sonic/JA1-8.gif
+
+
+anim jumpattack2
+	loop	0
+	delay	5
+	offset	120 141
+        fastattack 1
+	sound   Data/CHARS/Sonic/hya.wav
+	frame	data/chars/Sonic/JA2-0.gif
+		attack  107  105  29  31  8  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+		attack  106  104  29  33  10  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+		attack  107  105  29  31  8  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+		attack  106  104  29  33  10  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+		attack  107  105  29  31  8  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+		attack  106  104  29  33  10  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+		attack  107  105  29  31  8  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+		attack  106  104  29  33  10  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+
+#       atchain 1 2 3 4 5
+
+anim attack1
+	loop	0
+	delay	3
+	offset	120 141
+	bbox	108 113 24 27
+	move	2
+	frame	data/chars/Sonic/A1-0.gif
+	frame	data/chars/Sonic/A1-1.gif
+		attack  120  117  30  18  9  0  0  0  0  20
+	frame	data/chars/Sonic/A1-2.gif
+		attack  120  117  26  18  9  0  0  0  0  20
+	frame	data/chars/Sonic/A1-3.gif
+		attack  118  122  19  14  9  0  0  0  0  20
+	frame	data/chars/Sonic/A1-4.gif
+		attack  0
+	frame	data/chars/Sonic/A1-5.gif
+
+anim attack2
+	loop	0
+	delay	5
+	offset	120 141
+	bbox	109 111 25 29
+	frame	data/chars/Sonic/A2-0.gif
+	frame	data/chars/Sonic/A2-1.gif
+	frame	data/chars/Sonic/A2-2.gif
+		attack  121  115  21  23  9  0  0  0  0  20
+	frame	data/chars/Sonic/A2-3.gif
+	frame	data/chars/Sonic/A2-4.gif
+		attack  0
+	frame	data/chars/Sonic/A2-5.gif
+
+anim attack3
+	loop	0
+	delay	5
+	offset	120 141
+	bbox	101 107 29 36
+	move  2
+	sound   Data/CHARS/Sonic/hya.wav
+	frame	data/chars/Sonic/A3-0.gif
+		attack  0
+	frame	data/chars/Sonic/A3-1.gif
+	frame	data/chars/Sonic/A3-2.gif
+	frame	data/chars/Sonic/A3-3.gif
+	frame	data/chars/Sonic/A3-4.gif
+		attack  108  117  25  25  10
+	frame	data/chars/Sonic/A3-5.gif
+	frame	data/chars/Sonic/A3-6.gif
+	frame	data/chars/Sonic/A3-3.gif
+		attack  0
+	frame	data/chars/Sonic/A3-1.gif
+	frame	data/chars/Sonic/A3-2.gif
+
+
+anim attack4
+	loop	0
+	delay	4
+	offset	120 141
+	bbox	108 109 24 34
+        hitflash Flash2
+	sound   Data/CHARS/Sonic/Yeah.wav
+	frame	data/chars/Sonic/A4-0.gif
+	frame	data/chars/Sonic/A4-1.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+		attack  120  112  24  30  14  1  0  0  0  20
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+		attack  101  110  43  32  11  1  0  0  0  20
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+		attack  96  102  31  39  11  1  0  0  0  20
+	sound   Data/CHARS/Sonic/Sweat.wav
+	frame	data/chars/Sonic/A4-10.gif
+	frame	data/chars/Sonic/A4-11.gif
+	frame	data/chars/Sonic/A4-12.gif
+		attack  0
+	frame	data/chars/Sonic/A4-13.gif
+	frame	data/chars/Sonic/A4-14.gif
+	frame	data/chars/Sonic/A4-15.gif
+	frame	data/chars/Sonic/A4-16.gif
+	frame	data/chars/Sonic/A4-17.gif
+	frame	data/chars/Sonic/A4-18.gif
+	frame	data/chars/Sonic/A4-19.gif
+	frame	data/chars/Sonic/A4-20.gif
+	frame	data/chars/Sonic/A4-21.gif
+	frame	data/chars/Sonic/A4-22.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	120 141
+	bbox	110 110 26 33
+	frame	data/chars/Sonic/grab.gif
+
+anim throw
+	loop	0
+	delay	4
+	offset	120 141
+	sound   Data/CHARS/Sonic/hya.wav
+	frame	data/chars/Sonic/EX-T0.gif
+	frame	data/chars/Sonic/EX-T1.gif
+	frame	data/chars/Sonic/EX-T2.gif
+	frame	data/chars/Sonic/EX-T3.gif
+	frame	data/chars/Sonic/EX-T4.gif
+	frame	data/chars/Sonic/EX-T5.gif
+	frame	data/chars/Sonic/EX-T6.gif
+	frame	data/chars/Sonic/EX-T7.gif
+	frame	data/chars/Sonic/EX-T8.gif
+	frame	data/chars/Sonic/EX-T9.gif
+	frame	data/chars/Sonic/EX-T10.gif
+	frame	data/chars/Sonic/EX-T11.gif
+	frame	data/chars/Sonic/EX-T12.gif
+	frame	data/chars/Sonic/EX-T13.gif
+	frame	data/chars/Sonic/EX-T14.gif
+
+anim pain
+	loop	0
+	offset	120 141
+	offset	120 141
+	delay	9
+        quakeframe 0 3 4
+	bbox  102  109  32  34
+	sound   Data/CHARS/Sonic/Pain.wav
+	frame	data/chars/Sonic/pain0.gif
+	frame	data/chars/Sonic/pain2.gif
+	frame	data/chars/Sonic/pain1.gif
+
+
+anim fall
+	loop	0
+	offset	120 141
+	delay	5
+        quakeframe 0 3 4
+	attack  101  105  37  38  10  1
+	sound   Data/CHARS/Sonic/whoa.wav
+	frame	data/chars/Sonic/Fall-0.gif
+	frame	data/chars/Sonic/Fall-1.gif
+	frame	data/chars/Sonic/Fall-2.gif
+	frame	data/chars/Sonic/Fall-3.gif
+	frame	data/chars/Sonic/Fall-0.gif
+	frame	data/chars/Sonic/Fall-1.gif
+	frame	data/chars/Sonic/Fall-2.gif
+	frame	data/chars/Sonic/Fall-3.gif
+	frame	data/chars/Sonic/Fall-4.gif
+	frame	data/chars/Sonic/Fall-5.gif
+	frame	data/chars/Sonic/Fall-6.gif
+	frame	data/chars/Sonic/Fall-7.gif
+	frame	data/chars/Sonic/Fall-8.gif
+	frame	data/chars/Sonic/Fall-9.gif
+
+
+anim rise
+	loop	0
+	offset	120 141
+	delay	8
+        jumpframe     0   2
+	sound   Data/CHARS/Sonic/Happened.wav
+	frame	data/chars/Sonic/rise-0.gif
+	frame	data/chars/Sonic/rise-1.gif
+	frame	data/chars/Sonic/rise-2.gif
+	frame	data/chars/Sonic/rise-3.gif
+	frame	data/chars/Sonic/rise-4.gif
+	frame	data/chars/Sonic/rise-5.gif
+	frame	data/chars/Sonic/rise-6.gif
+	frame	data/chars/Sonic/rise-7.gif
+
+
+anim special
+	loop	0
+	delay	4
+	offset	120 141
+        fastattack 1
+        hitflash Flash2
+        subentity Swind
+        custentity Swind
+        summonframe 1 0 9 0 0
+        unsummonframe 42
+	sound   Data/CHARS/Sonic/BringIt.wav
+	frame	data/chars/Sonic/A4-0.gif
+	frame	data/chars/Sonic/A4-1.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+	frame	data/chars/Sonic/A4-10.gif
+	frame	data/chars/Sonic/A4-11.gif
+	frame	data/chars/Sonic/A4-12.gif
+	frame	data/chars/Sonic/A4-13.gif
+	frame	data/chars/Sonic/A4-14.gif
+	frame	data/chars/Sonic/A4-15.gif
+	frame	data/chars/Sonic/A4-16.gif
+	frame	data/chars/Sonic/A4-17.gif
+	frame	data/chars/Sonic/A4-18.gif
+	frame	data/chars/Sonic/A4-19.gif
+	frame	data/chars/Sonic/A4-20.gif
+	frame	data/chars/Sonic/A4-21.gif
+	frame	data/chars/Sonic/A4-22.gif
+# FFP special.
+
+
+
+anim RUNATTACK
+ 	loop	0
+ 	delay	4
+	offset	120 141
+ 	bbox	0
+	move	2
+ 	frame	data/chars/Sonic/RunA0.GIF
+ 	frame	data/chars/Sonic/RunA1.GIF
+ 	frame	data/chars/Sonic/RunA2.GIF
+ 	frame	data/chars/Sonic/RunA3.GIF
+ 	frame	data/chars/Sonic/RunA4.GIF
+ 	frame	data/chars/Sonic/RunA5.GIF
+ 	frame	data/chars/Sonic/RunA6.GIF
+ 	frame	data/chars/Sonic/RunA7.GIF
+		move  6
+		attack  144  117  33  32  15  1
+ 	frame	data/chars/Sonic/RunA8.GIF
+ 	frame	data/chars/Sonic/RunA9.GIF
+ 	frame	data/chars/Sonic/RunA10.GIF
+ 	frame	data/chars/Sonic/RunA11.GIF
+ 	frame	data/chars/Sonic/RunA12.GIF
+ 	frame	data/chars/Sonic/RunA13.GIF
+ 	frame	data/chars/Sonic/RunA8.GIF
+ 	frame	data/chars/Sonic/RunA9.GIF
+ 	frame	data/chars/Sonic/RunA10.GIF
+ 	frame	data/chars/Sonic/RunA11.GIF
+ 	frame	data/chars/Sonic/RunA12.GIF
+ 	frame	data/chars/Sonic/RunA13.GIF
+		move  2
+		attack  142  121  27  27  8
+ 	frame	data/chars/Sonic/RunA14.GIF
+ 	frame	data/chars/Sonic/RunA15.GIF
+ 	frame	data/chars/Sonic/RunA16.GIF
+
+
+
+anim grabattack
+	loop	0
+	delay	5
+	offset	120 141
+	bbox	109 111 25 29
+	frame	data/chars/Sonic/A2-0.gif
+	frame	data/chars/Sonic/A2-1.gif
+	frame	data/chars/Sonic/A2-2.gif
+		attack  121  115  21  23  9  0  0  0  0  20
+	frame	data/chars/Sonic/A2-3.gif
+	frame	data/chars/Sonic/A2-4.gif
+		attack  0
+	frame	data/chars/Sonic/A2-5.gif
+
+anim grabattack2
+	loop	0
+	delay	5
+	offset	120 141
+	bbox	101 107 29 36
+        hitflash Flash2
+	frame	data/chars/Sonic/A3-0.gif
+		attack  0
+	frame	data/chars/Sonic/A3-1.gif
+	frame	data/chars/Sonic/A3-2.gif
+	frame	data/chars/Sonic/A3-3.gif
+	frame	data/chars/Sonic/A3-4.gif
+		attack  108  117  25  25  10
+	frame	data/chars/Sonic/A3-5.gif
+	frame	data/chars/Sonic/A3-6.gif
+	frame	data/chars/Sonic/A3-3.gif
+		attack  0
+	frame	data/chars/Sonic/A3-1.gif
+	frame	data/chars/Sonic/A3-2.gif
+	frame	data/chars/Sonic/A4-0.gif
+	frame	data/chars/Sonic/A4-1.gif
+	frame	data/chars/Sonic/A4-2.gif
+	frame	data/chars/Sonic/A4-3.gif
+		attack  120  112  24  30  14  1  0  0  0  20
+	frame	data/chars/Sonic/A4-4.gif
+	frame	data/chars/Sonic/A4-5.gif
+	frame	data/chars/Sonic/A4-6.gif
+	frame	data/chars/Sonic/A4-7.gif
+		attack  101  110  43  32  11  1  0  0  0  20
+	frame	data/chars/Sonic/A4-8.gif
+	frame	data/chars/Sonic/A4-9.gif
+		attack  96  102  31  39  11  1  0  0  0  20
+	frame	data/chars/Sonic/A4-10.gif
+	frame	data/chars/Sonic/A4-11.gif
+	frame	data/chars/Sonic/A4-12.gif
+		attack  0
+	frame	data/chars/Sonic/A4-13.gif
+	frame	data/chars/Sonic/A4-14.gif
+	frame	data/chars/Sonic/A4-15.gif
+	frame	data/chars/Sonic/A4-16.gif
+	frame	data/chars/Sonic/A4-17.gif
+	frame	data/chars/Sonic/A4-18.gif
+	frame	data/chars/Sonic/A4-19.gif
+	frame	data/chars/Sonic/A4-20.gif
+	frame	data/chars/Sonic/A4-21.gif
+	frame	data/chars/Sonic/A4-22.gif
+
+
+anim land
+	loop	0
+	offset	120 141
+	delay	8
+	frame	data/chars/Sonic/Land-0.gif
+	frame	data/chars/Sonic/Land-1.gif
+	frame	data/chars/Sonic/Land-2.gif
+	frame	data/chars/Sonic/Land-1.gif
+	frame	data/chars/Sonic/Land-0.gif
+
+anim run
+	loop	1
+	delay	5
+	offset	120 141
+	frame	data/chars/Sonic/Run0.gif
+	frame	data/chars/Sonic/Run1.gif
+	frame	data/chars/Sonic/Run2.gif
+	frame	data/chars/Sonic/Run3.gif
+	frame	data/chars/Sonic/Run4.gif
+	frame	data/chars/Sonic/Run5.gif
+	frame	data/chars/Sonic/Run6.gif
+	frame	data/chars/Sonic/Run7.gif
+
+anim Freespecial2
+	loop	0
+	delay	3
+	offset	120 141
+        Fastattack 1
+	bbox	101 107 29 36
+	move  5
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-0.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-1.gif
+	frame	data/chars/Sonic/FSP3-2.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-3.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-4.gif
+	frame	data/chars/Sonic/FSP3-5.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-6.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-7.gif
+	frame	data/chars/Sonic/FSP3-0.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-1.gif
+	frame	data/chars/Sonic/FSP3-2.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-3.gif
+	frame	data/chars/Sonic/FSP3-4.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-5.gif
+	frame	data/chars/Sonic/FSP3-6.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-7.gif
+	frame	data/chars/Sonic/FSP3-0.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-1.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-2.gif
+	frame	data/chars/Sonic/FSP3-3.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-4.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-5.gif
+	frame	data/chars/Sonic/FSP3-6.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-7.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-0.gif
+	frame	data/chars/Sonic/FSP3-1.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-2.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-3.gif
+	frame	data/chars/Sonic/FSP3-4.gif
+	attack  93  120  54  27  4
+	frame	data/chars/Sonic/FSP3-5.gif
+	attack  0
+	frame	data/chars/Sonic/FSP3-6.gif
+	attack  93  120  54  27  4  1
+	frame	data/chars/Sonic/FSP3-7.gif
+
+anim Freespecial3
+	loop	0
+	delay	4
+	offset	120 141
+        Fastattack 1
+        Throwframe 9 1
+        mpcost  15
+        mponly  1
+	frame	data/chars/Sonic/FSP2-0.gif
+	attack  88  114  46  33
+	frame	data/chars/Sonic/FSP2-1.gif
+	attack  0
+	frame	data/chars/Sonic/FSP2-2.gif
+	attack  88  114  46  33
+	frame	data/chars/Sonic/FSP2-3.gif
+	attack  0
+	frame	data/chars/Sonic/FSP2-4.gif
+	attack  88  114  46  33
+	frame	data/chars/Sonic/FSP2-5.gif
+	attack  0
+	frame	data/chars/Sonic/FSP2-6.gif
+	attack  88  114  46  33
+	frame	data/chars/Sonic/FSP2-7.gif
+	frame	data/chars/Sonic/FSP2-8.gif
+	frame	data/chars/Sonic/FSP2-9.gif
+	frame	data/chars/Sonic/FSP2-10.gif
+	frame	data/chars/Sonic/FSP2-11.gif
+	frame	data/chars/Sonic/FSP2-12.gif
+	frame	data/chars/Sonic/FSP2-13.gif
+	move	-3
+	frame	data/chars/Sonic/FSP2-14.gif
+	frame	data/chars/Sonic/FSP2-15.gif
+	frame	data/chars/Sonic/FSP2-16.gif
+	frame	data/chars/Sonic/FSP2-17.gif
+	frame	data/chars/Sonic/FSP2-18.gif
+		offset  120  134
+	frame	data/chars/Sonic/FSP2-19.gif
+
+
+anim DODGE
+	loop	0
+	delay	5
+	offset	120 131
+	frame	data/chars/Sonic/JA2-0.gif
+	frame	data/chars/Sonic/JA2-1.gif
+	frame	data/chars/Sonic/JA2-2.gif
+	frame	data/chars/Sonic/JA2-3.gif
+	frame	data/chars/Sonic/JA2-0.gif
+	frame	data/chars/Sonic/JA2-1.gif
+	frame	data/chars/Sonic/JA2-2.gif
+	frame	data/chars/Sonic/JA2-3.gif
+
+anim    GRABup
+	loop	0
+	delay	4
+	offset	120 141
+	bbox	108 113 24 27
+	frame	data/chars/Sonic/EX-0.GIF
+	frame	data/chars/Sonic/EX-1.GIF
+	attack  123  109  24  33  9  0  0  0  0  20
+	frame	data/chars/Sonic/EX-2.GIF
+	frame	data/chars/Sonic/EX-3.GIF
+	attack  0
+	frame	data/chars/Sonic/EX-4.GIF
+	frame	data/chars/Sonic/EX-5.GIF
+	frame	data/chars/Sonic/EX-6.GIF
+	frame	data/chars/Sonic/Throw0.GIF
+	frame	data/chars/Sonic/Throw1.GIF
+	attack  109  96  38  45  11  1  0  0  0  20
+	frame	data/chars/Sonic/Throw2.GIF
+	frame	data/chars/Sonic/Throw3.GIF
+	attack  0
+	frame	data/chars/Sonic/Throw4.GIF
+	frame	data/chars/Sonic/Throw5.GIF
+	frame	data/chars/Sonic/Throw6.GIF
+	frame	data/chars/Sonic/Throw7.GIF
+
+
+anim    GRABdown
+	loop	0
+	delay	5
+	offset	120 131
+        fastattack 1
+	frame	data/chars/Sonic/JA2-0.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+		attack  0 0 0 0
+	frame	data/chars/Sonic/JA2-0.gif
+	attack  108  96  59  45  5  0  0  0  0  20
+	frame	data/chars/Sonic/JA2-1.gif
+		attack  0
+	frame	data/chars/Sonic/JA2-2.gif
+	attack  108  96  59  45  10  1  0  0  0  20
+	frame	data/chars/Sonic/JA2-3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

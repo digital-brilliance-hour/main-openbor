@@ -1,0 +1,17 @@
+name	WolfShot
+type	None
+shadow	0
+nolife  1
+speed	20
+Remove 0
+candamage  Enemy
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	113 127
+	Blast      135 99 27 28 27  0  0  0  20
+	frame	data/chars/werewolf/WShot-0.GIF
+	frame	data/chars/werewolf/WShot-1.GIF
+

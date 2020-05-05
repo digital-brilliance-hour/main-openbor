@@ -1,0 +1,419 @@
+name	Impmon
+health	500
+mp 100
+mprate 5
+speed	14
+type	player
+icon	   data/chars/Impmon/icon.gif 1
+#iconpain   data/chars/Zero/iconP.gif
+#icondie    data/chars/Zero/iconD.gif
+#diesound   data/chars/Zero/die2.wav
+running 24 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Impmon/Pal.gif
+alternatepal  data/chars/Impmon/Pal0
+alternatepal  data/chars/Impmon/Pal1
+alternatepal  data/chars/Impmon/Pal2
+alternatepal  data/chars/Impmon/Pal3
+alternatepal  data/chars/Impmon/Pal4
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+weaploss 2
+
+animationscript data/scripts/script.c
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	Fastattack	1
+	cancel	5 9 0 a freespecial
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/A1-0.gif
+	frame	data/chars/Impmon/A1-1.gif
+		Burn  137  104  15  31  8  0  0  0  0  20
+	frame	data/chars/Impmon/A1-2.gif
+		Burn  137  110  22  25  8  0  0  0  0  20
+	frame	data/chars/Impmon/A1-3.gif
+	frame	data/chars/Impmon/A1-4.gif
+	frame	data/chars/Impmon/A1-5.gif
+	delay	2
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+
+anim	freespecial
+	loop	0
+	delay	5
+	Fastattack	1
+	cancel	5 9 0 a freespecial2
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/A1-0.gif
+	frame	data/chars/Impmon/A1-1.gif
+		Burn  137  104  15  31  8  0  0  0  0  20
+	frame	data/chars/Impmon/A1-2.gif
+		Burn  137  110  22  25  8  0  0  0  0  20
+	frame	data/chars/Impmon/A1-3.gif
+	frame	data/chars/Impmon/A1-4.gif
+	frame	data/chars/Impmon/A1-5.gif
+	delay	2
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+	frame	data/chars/Impmon/A1-6.gif
+
+anim	freespecial2
+	loop	0
+	delay	3
+	Fastattack	1
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/A2-0.gif
+	frame	data/chars/Impmon/A2-1.gif
+	frame	data/chars/Impmon/A2-2.gif
+	frame	data/chars/Impmon/A2-3.gif
+		Burn  97  100  17  34  8  0  0  0  0  20
+	frame	data/chars/Impmon/A2-4.gif
+	frame	data/chars/Impmon/A2-5.gif
+	delay	2
+	frame	data/chars/Impmon/A2-6.gif
+	frame	data/chars/Impmon/A2-7.gif
+	frame	data/chars/Impmon/A2-8.gif
+		Burn  104  91  16  44  8  0  0  0  0  20
+	frame	data/chars/Impmon/A2-9.gif
+		Burn  120  94  13  41  8  0  0  0  0  20
+	frame	data/chars/Impmon/A2-10.gif
+		Burn  130  100  15  34  8  0  0  0  0  20
+	frame	data/chars/Impmon/A2-11.gif
+		Attack1  0
+	frame	data/chars/Impmon/A2-12.gif
+	delay	3
+		Burn  128  107  28  27  4  0  0  0  0  20
+	frame	data/chars/Impmon/A2-13.gif
+		Attack1  0
+	frame	data/chars/Impmon/A2-14.gif
+		Burn  128  107  28  27  4  0  0  0  0  20
+	frame	data/chars/Impmon/A2-15.gif
+		Attack1  0
+	frame	data/chars/Impmon/A2-16.gif
+		Burn  128  107  28  27  4  0  0  0  0  20
+	frame	data/chars/Impmon/A2-13.gif
+		Attack1  0
+	frame	data/chars/Impmon/A2-14.gif
+		Burn  128  107  28  27  4  1  0  0  0  20
+	frame	data/chars/Impmon/A2-15.gif
+		Attack1  0
+	frame	data/chars/Impmon/A2-16.gif
+	delay	4
+	frame	data/chars/Impmon/A2-17.gif
+	frame	data/chars/Impmon/A2-18.gif
+	frame	data/chars/Impmon/A2-19.gif
+	frame	data/chars/Impmon/A2-20.gif
+
+anim	DODGE
+	loop	0
+	delay	4
+	offset	118 135
+	frame	data/chars/Impmon/Jump-0.gif
+	offset	118 137
+	frame	data/chars/Impmon/Jump-1.gif
+	offset	118 139
+	frame	data/chars/Impmon/Jump-2.gif
+	offset	118 142
+	frame	data/chars/Impmon/Jump-3.gif
+	offset	118 138
+	frame	data/chars/Impmon/Jump-4.gif
+	offset	118 136
+	frame	data/chars/Impmon/Jump-5.gif
+	offset	118 133
+	frame	data/chars/Impmon/Jump-6.gif
+
+anim	fall
+	loop	0
+	offset	118 133
+	Landframe	2
+	attack1	103 105 28 26 10 1 0 0 0 20
+	quakeframe	0 1 4
+	delay	20
+	frame	data/chars/Impmon/Fall-0.gif
+	delay	150
+		attack1  100  109  37  23  10  1  0  0  0  20
+	frame	data/chars/Impmon/Fall-1.gif
+	delay	15
+		Attack1  0
+		offset  118  127
+	frame	data/chars/Impmon/Fall-2.gif
+
+anim	Freespecial4
+	loop	0
+	delay	5
+	mpcost	2
+	mponly	1
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/A1-0.gif
+	frame	data/chars/Impmon/A1-1.gif
+	frame	data/chars/Impmon/A1-2.gif
+	frame	data/chars/Impmon/A1-3.gif
+	@cmd	shoot "ImpS1" 0 0 0
+	frame	data/chars/Impmon/A1-4.gif
+	frame	data/chars/Impmon/A1-5.gif
+	frame	data/chars/Impmon/A1-6.gif
+
+anim	Freespecial5
+	loop	0
+	delay	3
+	mpcost	8
+	mponly	1
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/A2-0.gif
+	frame	data/chars/Impmon/A2-1.gif
+	frame	data/chars/Impmon/A2-2.gif
+	frame	data/chars/Impmon/A2-3.gif
+		Burn  97  100  17  34  10  1  0  0  0  20
+	frame	data/chars/Impmon/A2-4.gif
+	frame	data/chars/Impmon/A2-5.gif
+	delay	2
+	frame	data/chars/Impmon/A2-6.gif
+	frame	data/chars/Impmon/A2-7.gif
+	frame	data/chars/Impmon/A2-8.gif
+		Burn  104  91  16  44  10  1  0  0  0  20
+	frame	data/chars/Impmon/A2-9.gif
+		Burn  120  94  13  41  10  1  0  0  0  20
+	frame	data/chars/Impmon/A2-10.gif
+		Burn  130  100  15  34  10  1  0  0  0  20
+	frame	data/chars/Impmon/A2-11.gif
+		attack1  0
+	@cmd	shoot "ImpS2" 0 0 0
+	delay	4
+	frame	data/chars/Impmon/A2-17.gif
+	frame	data/chars/Impmon/A2-18.gif
+	frame	data/chars/Impmon/A2-19.gif
+	frame	data/chars/Impmon/A2-20.gif
+
+anim	Freespecial6
+	loop	0
+	delay	4
+	mpcost	15
+	mponly	1
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/FSP-0.gif
+	frame	data/chars/Impmon/FSP-1.gif
+	frame	data/chars/Impmon/FSP-2.gif
+	frame	data/chars/Impmon/FSP-3.gif
+	frame	data/chars/Impmon/FSP-4.gif
+	frame	data/chars/Impmon/FSP-5.gif
+	frame	data/chars/Impmon/FSP-6.gif
+	frame	data/chars/Impmon/FSP-7.gif
+	delay	12
+	@cmd	shoot "ImpS3" 0 0 0
+	frame	data/chars/Impmon/FSP-8.gif
+	delay	4
+	frame	data/chars/Impmon/FSP-9.gif
+	frame	data/chars/Impmon/FSP-10.gif
+	frame	data/chars/Impmon/FSP-11.gif
+	frame	data/chars/Impmon/FSP-12.gif
+
+anim	get
+	loop	0
+	delay	18
+	offset	118 133
+	frame	data/chars/Impmon/Land-1.gif
+	delay	12
+	frame	data/chars/Impmon/Land-2.gif
+
+anim	idle
+	loop	1
+	delay	10
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/Idle-0.gif
+	frame	data/chars/Impmon/Idle-1.gif
+	frame	data/chars/Impmon/Idle-2.gif
+	frame	data/chars/Impmon/Idle-3.gif
+	frame	data/chars/Impmon/Idle-4.gif
+	frame	data/chars/Impmon/Idle-5.gif
+	frame	data/chars/Impmon/Idle-6.gif
+	frame	data/chars/Impmon/Idle-7.gif
+	frame	data/chars/Impmon/Idle-8.gif
+	frame	data/chars/Impmon/Idle-9.gif
+	frame	data/chars/Impmon/Idle-10.gif
+	frame	data/chars/Impmon/Idle-11.gif
+	frame	data/chars/Impmon/Idle-12.gif
+	frame	data/chars/Impmon/Idle-13.gif
+	frame	data/chars/Impmon/Idle-14.gif
+	frame	data/chars/Impmon/Idle-15.gif
+	frame	data/chars/Impmon/Idle-16.gif
+	frame	data/chars/Impmon/Idle-17.gif
+	frame	data/chars/Impmon/Idle-18.gif
+	frame	data/chars/Impmon/Idle-19.gif
+	frame	data/chars/Impmon/Idle-20.gif
+	frame	data/chars/Impmon/Idle-21.gif
+	frame	data/chars/Impmon/Idle-22.gif
+
+anim	jump
+	loop	0
+	delay	15
+	offset	118 133
+	bbox	107 97 22 35
+	frame	data/chars/Impmon/Jump-0.gif
+	frame	data/chars/Impmon/Jump-1.gif
+		delay  6
+	frame	data/chars/Impmon/Jump-2.gif
+		offset  118  129
+		bbox  106  97  25  29
+	frame	data/chars/Impmon/Jump-3.gif
+	frame	data/chars/Impmon/Jump-4.gif
+	frame	data/chars/Impmon/Jump-5.gif
+	frame	data/chars/Impmon/Jump-6.gif
+
+anim	jumpattack
+	loop	0
+	delay	8
+	offset	118 133
+	custstar	ImpJA
+	Throwframe	2 1
+	bbox	108 99 21 29
+	frame	data/chars/Impmon/JA-0.gif
+	frame	data/chars/Impmon/JA-1.gif
+		bbox  107  101  25  26
+	frame	data/chars/Impmon/JA-2.gif
+	frame	data/chars/Impmon/JA-3.gif
+	frame	data/chars/Impmon/JA-4.gif
+	frame	data/chars/Impmon/JA-5.gif
+
+anim	land
+	loop	0
+	delay	9
+	offset	118 133
+	frame	data/chars/Impmon/Land-0.gif
+	delay	12
+	frame	data/chars/Impmon/Land-1.gif
+	delay	9
+	frame	data/chars/Impmon/Land-2.gif
+
+anim	pain
+	loop	0
+	offset	118 133
+		bbox  108  107  22  26
+	delay	9
+	quakeframe	0 1 4
+	frame	data/chars/Impmon/Pain-1.gif
+	frame	data/chars/Impmon/Pain-0.gif
+	frame	data/chars/Impmon/Pain-1.gif
+	frame	data/chars/Impmon/Pain-2.gif
+
+anim	rise
+	loop	0
+	offset	118 127
+	delay	8
+	frame	data/chars/Impmon/Rise-0.gif
+		offset  118  129
+	frame	data/chars/Impmon/Rise-1.gif
+		offset  118  135
+	frame	data/chars/Impmon/Rise-2.gif
+		offset  118  137
+	frame	data/chars/Impmon/Rise-3.gif
+		offset  115  139
+	frame	data/chars/Impmon/Rise-4.gif
+		offset  113  138
+	frame	data/chars/Impmon/Rise-5.gif
+
+anim	run
+	loop	1
+	delay	3
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/Walk-0.gif
+	frame	data/chars/Impmon/Walk-1.gif
+	frame	data/chars/Impmon/Walk-2.gif
+	frame	data/chars/Impmon/Walk-3.gif
+	frame	data/chars/Impmon/Walk-4.gif
+	frame	data/chars/Impmon/Walk-5.gif
+	frame	data/chars/Impmon/Walk-6.gif
+	frame	data/chars/Impmon/Walk-7.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	3
+	offset	112 132
+	Move	16
+	bbox	108 106 27 27
+	attack1   109  105  26  28  8  0  0  0  0  20
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	move	10
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	move	8
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	move	6
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+	frame	data/chars/Impmon/RunA-0.gif
+	frame	data/chars/Impmon/RunA-1.gif
+
+anim	special
+	loop	0
+	delay	4
+	mpcost	20
+	offset	118 133
+	bbox.position.x 108
+	bbox.position.y 106
+	bbox.size.x 18
+	bbox.size.y 28
+	frame	data/chars/Impmon/FSP-0.gif
+	frame	data/chars/Impmon/FSP-1.gif
+	frame	data/chars/Impmon/FSP-2.gif
+	frame	data/chars/Impmon/FSP-3.gif
+	frame	data/chars/Impmon/FSP-4.gif
+	frame	data/chars/Impmon/FSP-5.gif
+	frame	data/chars/Impmon/FSP-6.gif
+	frame	data/chars/Impmon/FSP-7.gif
+	delay	12
+	@cmd	shoot "ImpSP" 0 0 0
+	frame	data/chars/Impmon/FSP-8.gif
+	delay	4
+	frame	data/chars/Impmon/FSP-9.gif
+	frame	data/chars/Impmon/FSP-10.gif
+	frame	data/chars/Impmon/FSP-11.gif
+	frame	data/chars/Impmon/FSP-12.gif
+
+anim	walk
+	loop	1
+	delay	8
+	offset	118 133
+	bbox	108 106 18 28
+	frame	data/chars/Impmon/Walk-0.gif
+	frame	data/chars/Impmon/Walk-1.gif
+	frame	data/chars/Impmon/Walk-2.gif
+	frame	data/chars/Impmon/Walk-3.gif
+	frame	data/chars/Impmon/Walk-4.gif
+	frame	data/chars/Impmon/Walk-5.gif
+	frame	data/chars/Impmon/Walk-6.gif
+	frame	data/chars/Impmon/Walk-7.gif
+

@@ -1,0 +1,87 @@
+name	Goblin	
+health	100
+speed   15
+type	enemy
+diesound	data/sounds/die2.wav
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	16 31
+	bbox    16 31 35 39
+	frame	data/chars/goblin/stance.gif
+	
+	
+
+anim walk
+	loop	1
+	delay	10
+	offset	20 30
+	bbox    20 30 47 40
+	frame	data/chars/goblin/walk1.gif
+	offset	16 31
+	bbox    16 31  35 39
+	frame	data/chars/goblin/stance.gif	
+	offset	16 30
+	bbox    16 30 48 40
+	frame	data/chars/goblin/walk2.gif
+	offset	16 31
+	bbox    16 31  35 39
+	frame	data/chars/goblin/stance.gif	
+	
+	
+anim pain
+	loop	0
+	delay	10
+	offset  15 30
+	bbox    15 30 48 44
+	frame	data/chars/goblin/hit.gif
+	
+	
+anim fall
+	loop	0
+	delay	19
+	offset  15 26
+	frame	data/chars/goblin/hit.gif
+	frame	data/chars/goblin/lie.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  15 30
+	frame	data/chars/goblin/hit.gif
+	
+
+
+	
+
+
+	
+anim attack1
+	loop	0
+	offset	26 34
+	delay   8
+	sound	data/chars/brute/doh.wav
+	frame	data/chars/goblin/a1.gif
+	offset  19 31
+	frame	data/chars/goblin/a2.gif
+	attack	25 50 28 49 30 1
+	offset  19 31
+	frame	data/chars/goblin/a3.gif
+	attack	19 31 56 43 30 1
+	
+	
+
+
+
+
+	
+
+anim land
+	loop	0
+	delay	6
+	offset	26 34
+	frame	data/chars/goblin/a1.gif
+	
+

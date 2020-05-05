@@ -1,0 +1,26 @@
+name	MKA1
+type	pshot
+shadow	0
+nolife  1
+candamage enemy obstacle shot
+Speed  18
+nomove 1
+remove 0
+
+
+anim idle
+	loop	0
+	delay	3
+	offset	116 124
+        Move 10
+		attack3  121  91  20  33  13 0 0 0 0 20
+	frame	data/chars/MKnux/A-3.gif
+	frame	data/chars/MKnux/A-2.gif
+	frame	data/chars/MKnux/A-3.gif
+	frame	data/chars/MKnux/A-2.gif
+        Move -10
+	frame	data/chars/MKnux/A-3.gif
+	frame	data/chars/MKnux/A-3.gif
+	frame	data/chars/MKnux/A-3.gif
+	frame	data/chars/MKnux/A-3.gif
+

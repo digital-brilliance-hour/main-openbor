@@ -1,0 +1,48 @@
+name	Bulldoze
+type	None
+shadow	0
+nolife  1
+speed	20
+Remove 0
+Nomove 1
+candamage  Enemy
+
+
+anim idle
+	loop	0
+	delay	4
+        Fastattack 1
+	offset	154 119
+	attack1    105 107 100 12   5  0  0  0  0  30
+           DropV     1 0
+	frame	data/chars/effects/Buldoze1.gif
+	attack1    94  96  118  23  5  0  0  0  0  30
+           DropV     1 0
+	frame	data/chars/effects/Buldoze0.gif
+		Attack1  0
+	frame	data/chars/misc/empty.gif
+	attack1    105 107 100 12   5  0  0  0  0  30
+           DropV     1 0
+	frame	data/chars/effects/Buldoze1.gif
+	attack1    94  96  118  23  5  0  0  0  0  30
+           DropV     1 0
+	frame	data/chars/effects/Buldoze0.gif
+		Attack1  0
+	frame	data/chars/misc/empty.gif
+	attack1    105 107 100 12   5  0  0  0  0  30
+           DropV     0 0
+	frame	data/chars/effects/Buldoze1.gif
+	attack1    94  96  118  23  5  0  0  0  0  30
+           DropV     0 0
+	frame	data/chars/effects/Buldoze0.gif
+		Attack1  0
+	frame	data/chars/misc/empty.gif
+	attack1    105 107 100 12   15  1  0  0  0  30
+	frame	data/chars/effects/Buldoze1.gif
+	attack1    94  96  118  23  15  1  0  0  0  30
+	frame	data/chars/effects/Buldoze0.gif
+		Attack1  0
+	frame	data/chars/misc/empty.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+

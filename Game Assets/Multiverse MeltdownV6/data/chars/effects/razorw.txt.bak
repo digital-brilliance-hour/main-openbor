@@ -1,0 +1,18 @@
+name	RazorW
+type	None
+shadow	0
+nolife  1
+speed	19
+candamage  Enemy
+Remove 0
+
+
+anim idle
+	loop	1
+	delay	2
+	offset	116 128
+	attack3    116 100 32 32 30  1  0  0  0  20
+        DropV 3 -1
+	frame	data/chars/effects/RazorW0.gif
+	frame	data/chars/effects/RazorW1.gif
+

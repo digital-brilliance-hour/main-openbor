@@ -1,0 +1,90 @@
+name	squirt
+type	none
+speed  40
+subject_to_hole 0
+subject_to_obstacle 0
+subject_to_platform 0
+subject_to_gravity 0   
+offscreenkill  200
+lifespan  3
+
+
+anim	attack1
+	loop	0
+	offset	35 10
+	bbox	0 0 0 0
+	drawmethod	alpha 1
+	jumpframe	1 18 -8
+	drawmethod	rotate 45
+	sound	data/sounds/pop.wav
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/robla.png
+	delay	80
+	frame	data/chars/misc/robla.png
+	frame	data/chars/misc/robla.png
+		
+	
+anim	idle
+	offset	35 10
+	forcedirection	-1
+	drawmethod	alpha 1
+	delay	10
+	drawmethod	scale 0.4 1
+	sound	data/sounds/laser3.wav
+	attack	12 -19 10 57 60 1 1 0 0 100
+	attackone	1
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 0.8 0.7
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1.4 0.5
+	drawmethod	tintmode 0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1 0.8
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 0.4 1
+	drawmethod	tintmode 0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 0.8 0.7
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1.4 0.5
+	drawmethod	tintmode 0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1 0.8
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 0.4 1
+	drawmethod	tintmode 0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 0.8 0.7
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1.4 0.5
+	drawmethod	tintmode 0
+	frame	data/chars/misc/robla.png
+	drawmethod	scale 1 0.2
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 255_50_0
+	frame	data/chars/misc/robla.png
+	@cmd	killentity getlocalvar("self")
+attack 0 0 0 0
+	frame	data/chars/misc/0.png
+		
+anim	spawn	
+	loop	0
+	offset	35 10
+	bbox	0 0 0 0
+	delay	1
+	frame	data/chars/misc/0.png
+	frame	data/chars/misc/0.png
+		
+#|edited by openBor Stats v 0.67
+		

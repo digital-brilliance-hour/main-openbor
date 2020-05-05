@@ -1,0 +1,42 @@
+name    boom
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+delay	20
+	offset	0 0
+sound	data/sounds/beam.wav 
+sound	data/sounds/flame2.wav
+frame	data/scenes/boom/18.png
+frame	data/scenes/boom/19.png
+frame	data/scenes/boom/20.png
+frame	data/scenes/boom/21.png
+	frame	data/scenes/boom/22.png
+	frame	data/scenes/boom/23.png
+	frame	data/scenes/boom/24.png
+frame	data/scenes/boom/25.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/boom/25.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,28 @@
+name	Marker
+type	NPC
+shadow	0
+subtype follow
+alpha 1
+nolife  1
+nomove 1
+
+palette       data/chars/effects/Marker
+
+animationscript data/scripts/script.c
+#animationscript data/scripts/Map.c
+
+
+anim idle
+	loop	1
+	delay	4
+	offset	113 127
+	@cmd changeentityproperty getlocalvar("self") "Subject_to_Gravity" 0
+	frame	data/chars/effects/Marker.gif
+	
+anim Walk
+	loop	1
+	delay	4
+	offset	113 127
+	@cmd changeentityproperty getlocalvar("self") "Subject_to_Gravity" 0
+	frame	data/chars/effects/Marker.gif
+

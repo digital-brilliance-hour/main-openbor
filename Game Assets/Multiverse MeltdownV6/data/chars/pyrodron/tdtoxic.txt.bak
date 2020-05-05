@@ -1,0 +1,51 @@
+name TDToxic
+type none
+shadow 0
+nolife 1
+candamage enemy obstacle player
+speed 10
+jumpheight 1
+
+
+anim	idle
+	loop	1
+	delay	2
+	offset	39 55
+	attack3  31  40  17  16  25  0  0  0  0  15
+                DropV 2 1
+	frame	data/chars/PyroDron/Toxic0.gif
+
+anim attack1
+	offset	39 55
+	delay	10
+	attack3  106  120  23  13  15  1  0  0  0  20
+	followanim	1
+	followcond	3
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+	frame	data/chars/PyroDron/Toxicb.gif
+
+anim	follow1
+	loop	0
+	delay	15
+	offset	122 117
+	move	0
+           fastattack 1
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Sonic/empty.gif
+
+anim attack2
+	offset	39 55
+        delay   6
+	frame	data/chars/PyroDron/Toxic1.gif
+	frame	data/chars/PyroDron/Toxic2.gif
+	frame	data/chars/PyroDron/Toxic3.gif
+	frame	data/chars/PyroDron/Toxic4.gif
+	frame	data/chars/PyroDron/Toxic5.gif
+	frame	data/chars/PyroDron/Toxic6.gif
+	frame	data/chars/misc/empty.gif
+

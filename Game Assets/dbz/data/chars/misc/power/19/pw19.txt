@@ -1,0 +1,28 @@
+name	 	pw19
+health	0
+type	pshot
+shadow 0
+speed 23
+candamage enemy obstacle
+subject_to_gravity 0
+alpha 1
+
+
+
+anim	idle
+	loop	1
+	fastattack	1
+	hitflash	RXPlos
+	hitfx	data/chars/bardock/ball.wav
+	delay	6
+	offset	-6 64
+	bbox	0 0 0 0
+	frame	data/chars/misc/power/19/pw8.gif
+	offset	-2 72
+	burn	15 0 180 120 50 1 1 0 0 30
+	frame	data/chars/misc/power/19/pw9.gif
+	offset	0 75
+	frame	data/chars/misc/power/19/pw10.gif
+		
+#|edited by openBor Stats v 0.67
+		

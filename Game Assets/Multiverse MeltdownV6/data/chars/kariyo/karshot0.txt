@@ -1,0 +1,43 @@
+name Karshot0
+type None
+shadow 0
+nolife 1
+candamage player npc
+speed 15
+remove 0
+#jugglepoints 1
+nomove 1
+
+
+anim	idle
+	loop	0
+	delay	4
+	offset	149 138
+	fastattack 1
+jugglecost 1
+	attack1 201 84 26 50 1 0 0 0 0 25
+	frame	data/chars/Kariyo/AEfx1-0.gif
+	attack3 0
+	frame	data/chars/Kariyo/AEfx1-1.gif
+	attack1 194 79 37 57 1 0 0 0 0 25
+	frame	data/chars/Kariyo/AEfx1-2.gif
+	attack3 0
+	frame	data/chars/Kariyo/AEfx1-3.gif
+	attack1 197 79 36 57 1 0 0 0 0 25
+	delay	8
+	frame	data/chars/Kariyo/AEfx1-4.gif
+	attack3 0
+	delay	1
+	frame	data/chars/Kariyo/AEfx1-4.gif
+	attack1 201 84 26 50 1 0 0 0 0 25
+	frame	data/chars/Kariyo/AEfx1-0.gif
+	attack3 0
+	frame	data/chars/Kariyo/AEfx1-1.gif
+	attack3 194 79 37 57 1 0 0 0 0 25
+	frame	data/chars/Kariyo/AEfx1-2.gif
+	frame	data/chars/Kariyo/AEfx1-3.gif
+	attack3 0
+	frame	data/chars/Kariyo/AEfx1-4.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Kariyo/AEfx1-0.gif
+

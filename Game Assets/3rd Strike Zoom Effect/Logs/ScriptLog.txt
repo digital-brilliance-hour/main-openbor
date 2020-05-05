@@ -1,0 +1,178 @@
+
+####animationscript function main#####
+# data/chars/mary/mary.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==7)
+    {
+        if(frame==0)
+        {
+            spawnbind("zoomin", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            spawnbind("zoomout", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/misc/zoomin.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==30)
+    {
+        if(frame==1)
+        {
+            setglobalvar("zoomentity", getlocalvar("self"));
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomx", 0);
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomy", -80);
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomvalue", 260);
+        }
+        if(frame==2)
+        {
+            setglobalvar("zoomvalue", 270);
+        }
+        if(frame==3)
+        {
+            setglobalvar("zoomvalue", 280);
+        }
+        if(frame==4)
+        {
+            setglobalvar("zoomvalue", 290);
+        }
+        if(frame==5)
+        {
+            setglobalvar("zoomvalue", 300);
+        }
+        if(frame==6)
+        {
+            setglobalvar("zoomvalue", 310);
+        }
+        if(frame==7)
+        {
+            setglobalvar("zoomvalue", 320);
+        }
+        if(frame==8)
+        {
+            setglobalvar("zoomvalue", 330);
+        }
+        if(frame==9)
+        {
+            setglobalvar("zoomvalue", 340);
+        }
+        if(frame==10)
+        {
+            setglobalvar("zoomvalue", 350);
+        }
+        if(frame==11)
+        {
+            setglobalvar("zoomvalue", 360);
+        }
+        if(frame==12)
+        {
+            killentity(getlocalvar("self"));
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/misc/zoomout.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==31)
+    {
+        if(frame==1)
+        {
+            setglobalvar("zoomentity", getlocalvar("self"));
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomx", 0);
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomy", -80);
+        }
+        if(frame==1)
+        {
+            setglobalvar("zoomvalue", 360);
+        }
+        if(frame==2)
+        {
+            setglobalvar("zoomvalue", 350);
+        }
+        if(frame==3)
+        {
+            setglobalvar("zoomvalue", 340);
+        }
+        if(frame==4)
+        {
+            setglobalvar("zoomvalue", 330);
+        }
+        if(frame==5)
+        {
+            setglobalvar("zoomvalue", 320);
+        }
+        if(frame==6)
+        {
+            setglobalvar("zoomvalue", 310);
+        }
+        if(frame==7)
+        {
+            setglobalvar("zoomvalue", 310);
+        }
+        if(frame==8)
+        {
+            setglobalvar("zoomvalue", 300);
+        }
+        if(frame==9)
+        {
+            setglobalvar("zoomvalue", 290);
+        }
+        if(frame==10)
+        {
+            setglobalvar("zoomvalue", 280);
+        }
+        if(frame==11)
+        {
+            setglobalvar("zoomvalue", 270);
+        }
+        if(frame==12)
+        {
+            setglobalvar("zoomvalue", 260);
+        }
+        if(frame==13)
+        {
+            setglobalvar("zoomentity", NULL());
+        }
+        if(frame==14)
+        {
+            killentity(getlocalvar("self"));
+        }
+        return;
+    }
+
+}

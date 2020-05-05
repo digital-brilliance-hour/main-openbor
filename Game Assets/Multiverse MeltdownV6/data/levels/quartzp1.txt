@@ -1,0 +1,575 @@
+# File modified by Level Editor on 12/29/2009
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+music		data/music/RedyFunk.bor
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+BGSpeed 1
+Background	data/bgs/QuartzP/BG0.gif  0.5 0.4 0 35 0 0 2000000000 1 1 0 0 0 0 0 5
+BGLayer	data/bgs/QuartzP/BG1.gif  0.4 0.3 0 5 0 0 2000000000 1 1 0 0 0 0 0 7
+BGLayer	data/bgs/QuartzP/BG2.gif  0.1 0.1 0 45 0 0 2000000000 1 1 0 0 0 0 0 9
+BGLayer	data/bgs/QuartzP/SP.gif  0   0   0 -1 0 0 2000000000 1 1 0 0 0 0 0 12
+
+panel		data/bgs/QuartzP/SP2.gif
+frontpanel	           data/bgs/Fpanal.gif
+order	a
+
+#Background	data/bgs/CChaos/BG.gif 0.5 0.5 0 -10 0 0 20 1 1
+#panel		data/bgs/CChaos/Panel.gif
+#frontpanel	           data/bgs/Fpanal.gif
+#order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+Setweap 3
+
+#light 0 256
+#at 0
+
+#group 8 8
+#at 3072
+#186 246
+#-----------------
+#-----------------1
+group 6 6
+at 200
+
+spawn Beetle_Rally_
+Health 20
+coords 530 428 1
+at 0
+
+group 6 6
+at 0
+
+spawn Badnick_
+Health 60
+coords -30 410 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -30 470 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords 530 410 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 50
+coords -30 460 1
+at 0
+
+spawn Bombardier_Blast_
+Health 20
+coords 530 435 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 50
+coords -30 440 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 485 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords 530 410 1
+at 0
+
+spawn Bombardier_Blast_
+Health 20
+coords -30 460 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -30 425 1
+at 0
+
+group 1 1
+at 0
+#-----------------2
+group 6 6
+at 0
+
+spawn Badnick-Hover_
+Health 60
+coords -30 465 1
+at 0
+
+spawn Badnick_
+Health 60
+coords -30 472 1
+at 0
+
+spawn Bombardier_Blast_
+Health 20
+coords 530 440 1
+at 0
+
+spawn Badnick_
+Health 40
+coords -30 410 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords 530 460 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords -30 410 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 40
+coords 530 455 1
+at 0
+
+spawn Badnick-Hover_
+Health 60
+coords 530 410 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 30
+coords -30 465 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords 540 420 1
+at 0
+
+spawn Badnick-Hover_
+Health 40
+coords 540 475 1
+at 0
+
+spawn Badnick-Hover_
+Health 40
+coords 540 410 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 50
+coords -40 472 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -40 420 1
+at 0
+
+group 1 1
+at 0
+#-----------------3
+group 8 8
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords 530 460 1
+at 0
+
+spawn Bombardier_Blast_
+Health 40
+coords 530 415 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords 530 450 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 460 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -30 430 1
+at 0
+
+spawn Badnick-Hover_
+Health 50
+coords -30 460 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords 530 455 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 30
+coords -30 415 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 460 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 30
+coords 530 410 1
+at 0
+
+spawn BeetleSaw_
+Health 40
+coords 530 465 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 430 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 425 1
+at 0
+
+spawn Badnick_
+Health 50
+coords 530 460 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 425 1
+at 0
+
+group 1 1
+at 0
+#-----------------4
+group 8 8
+at 0
+
+spawn Eggpawn_
+Health 40
+coords -30 460 1
+at 0
+
+spawn Bombardier_Blast_
+Health 60
+coords 530 470 1
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords 530 450 1
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords -30 425 1
+at 0
+
+spawn Beetle_Rally_
+Health 40
+coords 530 445 1
+at 0
+
+spawn Badnick_
+Health 80
+coords -30 410 1
+at 0
+
+spawn Beetle_Rally_
+Health 40
+coords -30 460 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords 530 465 1
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords -30 415 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords -30 460 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords 530 460 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 460 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 430 1
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords 530 455 1
+at 0
+
+group 1 1
+at 0
+#-----------------5
+group 8 8
+at 0
+
+spawn Badnick-Hover_
+Health 50
+coords -30 460 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords 530 455 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 428 1
+at 0
+
+spawn Badnick_
+Health 40
+coords -30 410 1
+at 0
+
+spawn Bombardier_Blast_
+Health 20
+coords 530 460 1
+at 0
+
+spawn Badnick-Hover_
+Health 50
+coords 530 415 1
+at 0
+
+spawn BeetleSaw_
+Health 40
+coords -30 460 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -30 470 1
+at 0
+
+spawn DAMSILTRON
+Health 40
+coords -30 410 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords 530 460 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 460 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 430 1
+at 0
+
+spawn Bombardier_Blast
+Health 20
+coords -30 460 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords 530 430 1
+at 0
+
+spawn Badnick_
+Health 40
+coords -30 415 1
+at 0
+
+group 1 1
+at 0
+#-----------------6
+group 8 8
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 410 1
+at 0
+
+spawn Badnick_
+Health 50
+coords 530 440 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords -30 460 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords 530 470 1
+at 0
+
+spawn Eggpawn_
+Health 40
+coords 530 440 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 60
+coords -30 415 1
+at 0
+
+spawn BeetleSaw_
+Health 40
+coords -30 460 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 449 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords 530 420 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 460 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 30
+coords 530 408 1
+at 0
+
+spawn Badnick_
+Health 60
+coords 530 420 1
+at 0
+
+spawn Eggpawn_
+Health 20
+coords -30 470 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 435 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 413 1
+at 0
+
+group 1 1
+at 0
+#-----------------7
+group 6 6
+at 200
+
+spawn DAMSILTRON
+Health 20
+coords -30 460 1
+at 0
+
+spawn Beetle_Rally_
+Health 20
+coords 530 430 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords -30 460 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords -30 430 1
+at 0
+
+spawn Beetle_Rally_
+Health 40
+coords 530 428 1
+at 0
+
+spawn Badnick_
+Health 60
+coords -30 410 1
+at 0
+
+spawn Eggpawn_
+Health 40
+coords -30 470 1
+at 0
+
+spawn Badnick-Hover_
+Health 80
+coords 530 460 1
+at 0
+
+spawn Bombardier_Blast_
+Health 20
+coords 530 415 1
+at 0
+
+spawn DAMSILTRON
+Health 20
+coords 530 450 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords -30 460 1
+at 0
+
+spawn BeetleSaw_
+Health 20
+coords 530 460 1
+at 0
+
+spawn HopterCopter
+Health 60
+coords 530 455 1
+at 0
+
+spawn DAMSILTRON
+Health 40
+coords 530 410 1
+at 0
+
+spawn Eggpawn-Knight_
+Health 50
+coords -30 460 1
+at 0
+
+group 1 1
+at 0

@@ -1,0 +1,20 @@
+name GTBlast
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 20
+remove 0
+#alpha 3
+
+
+anim	idle
+	loop	1
+	delay	12
+	offset	166 135
+	Blast  184  44  87  90  40  0  0  0  30
+	frame	data/chars/Guy/TBlast-0.gif
+	frame	data/chars/Guy/TBlast-1.gif
+	frame	data/chars/Guy/TBlast-2.gif
+	frame	data/chars/Guy/TBlast-3.gif
+

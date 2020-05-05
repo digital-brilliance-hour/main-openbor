@@ -1,0 +1,54 @@
+name	AHG
+health	1
+type	None
+shadow	0
+speed	10
+candamage enemy Obsticle
+jumpheight 3
+
+palette       data/chars/Alien/Pal
+alternatepal  data/chars/Owl/Map0
+
+animationscript       data/scripts/escript.c
+
+anim idle
+	loop	1
+	delay	3
+	offset	117 121
+		attack  133  91  16  19  5
+	frame	data/chars/Alien/AHG-0.gif
+	frame	data/chars/Alien/AHG-1.gif
+	frame	data/chars/Alien/AHG-2.gif
+	frame	data/chars/Alien/AHG-3.gif
+
+anim attack1
+	offset	131 120
+          delay   1
+          Fastattack 1
+	attack1  0
+           @cmd    changemap 1
+	frame    data/chars/Owl/OBEX-0.gif
+	delay  6
+		blast  116  80  35  40  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-0.gif
+	frame    data/chars/Owl/OBEX-1.gif
+	frame    data/chars/Owl/OBEX-2.gif
+		blast  113  78  41  42  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-3.gif
+	frame    data/chars/Owl/OBEX-4.gif
+		blast  107  73  52  50  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-5.gif
+	frame    data/chars/Owl/OBEX-6.gif
+		blast  109  69  45  41  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-7.gif
+	frame    data/chars/Owl/OBEX-8.gif
+		Attack1  0
+	frame    data/chars/Owl/OBEX-9.gif
+	frame	data/chars/Owl/OBEX-10.gif
+	frame	data/chars/Owl/OBEX-11.gif
+	frame	data/chars/Owl/OBEX-12.gif
+	frame	data/chars/Owl/OBEX-13.gif
+
+
+
+

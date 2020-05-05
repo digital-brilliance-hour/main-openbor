@@ -1,0 +1,317 @@
+name	Mecha_Sonic
+health	100
+type	enemy
+icon	data/chars/m/icon.gif
+shadow 	3
+#diesound data/sounds/alien.wav
+
+animationscript data/scripts/script.c
+
+palette       data/chars/M/Pal
+
+alternatepal  data/chars/M/PalSC
+
+anim idle
+	loop	1
+	offset	155 136
+	bbox	139 82 29 54
+	delay	10
+	frame	data/chars/m/Idle.gif
+
+
+
+anim pain
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	delay	36
+	frame	data/chars/m/pain.gif
+
+anim	pain2
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Attack1	0
+	frame	data/chars/m/pain.gif
+	Move	-2
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	-1
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+
+anim	pain3
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	-4
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	-3
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	-2
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	-1
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	Move	0
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	delay	8
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+
+anim	pain4
+	loop	0
+	delay	6
+	offset	155 136
+	jumpframe	11 2.4
+	landframe	18
+	bbox	108 113 29 21
+	frame	data/chars/m/Fall1.gif
+	offset	157 136
+	bbox	107 118 29 18
+	frame	data/chars/m/Fall1.gif
+	offset	155 136
+	frame	data/chars/m/Fall1.gif
+	offset	157 136
+	frame	data/chars/m/Fall1.gif
+	offset	155 136
+	frame	data/chars/m/Fall1.gif
+	offset	157 136
+	frame	data/chars/m/Fall1.gif
+	offset	155 136
+	frame	data/chars/m/Fall1.gif
+	offset	157 136
+	frame	data/chars/m/Fall1.gif
+	offset	155 136
+	delay	50
+	bbox	0 0 0 0
+	frame	data/chars/m/Fall1.gif
+	offset	155 136
+	delay	15
+	frame	data/chars/m/Rise0.gif
+	frame	data/chars/m/Rise1.gif
+
+anim	pain5
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	jumpframe	0 3
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/m/pain.gif
+	delay	2
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	delay	9
+	frame	data/chars/m/pain.gif
+
+anim	pain6
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/m/pain.gif
+	delay	2
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	frame	data/chars/m/pain.gif
+	delay	9
+	frame	data/chars/m/pain.gif
+
+
+
+anim fall
+	loop	0
+	delay	15
+        Landframe 2
+	offset	155 136
+		bbox  128  94  48  41
+		attack3  128  94  49  41  10  0  0  0  0  20
+	frame	data/chars/m/Fall0.gif
+	delay	100
+	frame	data/chars/m/Fall0.gif
+	delay	25
+		bbox  0
+		Attack1  0
+	frame	data/chars/m/Fall1.gif
+
+anim walk
+	loop	1
+	delay	6
+	offset	155 136
+	bbox	141 87 43 50
+	frame	data/chars/m/Walk-0.gif
+	frame	data/chars/m/Walk-1.gif
+	frame	data/chars/m/Walk-2.gif
+	frame	data/chars/m/Walk-1.gif
+	frame	data/chars/m/Walk-3.gif
+	frame	data/chars/m/Walk-1.gif
+
+anim rise
+	loop	0
+	offset	155 136
+	delay	15
+	frame	data/chars/m/Rise0.gif
+	frame	data/chars/m/Rise1.gif
+
+
+
+anim attack1
+	loop	0
+	delay	2
+        Range   0 100
+	offset	155 136
+		Attack1  0
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-2.gif
+        Move    11
+		attack1  130  91  49  45  20  1  0  0  0  20
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-2.gif
+        Move    3
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-0.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-1.gif
+	frame	data/chars/m/A1-2.gif
+	frame	data/chars/m/A1-2.gif
+        Move    2
+		move  1
+		Attack1  0
+	frame	data/chars/m/A1-3.gif
+	frame	data/chars/m/A1-3.gif
+	frame	data/chars/m/A1-4.gif
+	frame	data/chars/m/A1-4.gif
+	frame	data/chars/m/A1-5.gif
+	frame	data/chars/m/A1-5.gif
+	frame	data/chars/m/A1-6.gif
+	frame	data/chars/m/A1-6.gif
+	frame	data/chars/m/A1-7.gif
+	frame	data/chars/m/A1-7.gif
+	frame	data/chars/m/A1-5.gif
+	frame	data/chars/m/A1-5.gif
+	frame	data/chars/m/A1-6.gif
+	frame	data/chars/m/A1-6.gif
+	frame	data/chars/m/A1-7.gif
+	frame	data/chars/m/A1-7.gif
+
+
+
+
+anim attack2
+	loop	0
+	delay	8
+        Range   100 130
+	offset	155 136
+		bbox  136  86  47  52
+		Attack1  0
+	frame	data/chars/m/A2-0.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-2.gif
+	delay	7
+	frame	data/chars/m/A2-4.gif
+	@cmd	shoot "MShot1" 0 0 0
+	frame	data/chars/m/A2-3.gif
+	frame	data/chars/m/A2-4.gif
+	@cmd	shoot "MShot1" 0 0 0
+	frame	data/chars/m/A2-3.gif
+	frame	data/chars/m/A2-4.gif
+	@cmd	shoot "MShot1" 0 0 0
+		delay  18
+	frame	data/chars/m/A2-3.gif
+	delay	8
+	frame	data/chars/m/A2-2.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-0.gif
+
+anim attack3
+	loop	0
+	delay	8
+        Range   130 190
+	offset	155 136
+		bbox  139  83  42  53
+		Attack1  0
+	frame	data/chars/m/A2-0.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-2.gif
+	delay	7
+	frame	data/chars/m/A3-3.gif
+	frame	data/chars/m/A3-4.gif
+	frame	data/chars/m/A3-3.gif
+	frame	data/chars/m/A3-4.gif
+		delay  18
+	@cmd	shoot "MShot2" 0 0 0
+	frame	data/chars/m/A3-3.gif
+	delay	7
+	frame	data/chars/m/A2-2.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-0.gif
+
+anim attack4
+	loop	0
+	delay	8
+        Range   190 300
+	offset	155 136
+		bbox  138  83  45  51
+		Attack1  0
+	frame	data/chars/m/A2-0.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-2.gif
+	delay	7
+	frame	data/chars/m/A4-3.gif
+	frame	data/chars/m/A4-4.gif
+	frame	data/chars/m/A4-3.gif
+	frame	data/chars/m/A4-4.gif
+	@cmd	shoot "MShot3" 0 0 0
+		delay  18
+	frame	data/chars/m/A4-3.gif
+	delay	8
+	frame	data/chars/m/A2-2.gif
+	frame	data/chars/m/A2-1.gif
+	frame	data/chars/m/A2-0.gif
+

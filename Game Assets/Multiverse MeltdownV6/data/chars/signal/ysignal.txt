@@ -1,0 +1,219 @@
+name	Weakgames
+health	100
+speed	9
+type	player
+shadow	3
+dust    dust
+icon	data/chars/Signal/icono.gif
+diesound data/sounds/die3.wav
+
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt2.gif
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt1.gif
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt3.gif
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt4.gif
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt5.gif
+remap data/chars/Signal/idel1.gif data/chars/Signal/alt6.gif
+
+anim idle
+	loop	0
+       offset	29 92
+	bbox	19 19 29 74
+        delay    15
+      	frame	data/chars/Signal/idel1.gif
+	frame	data/chars/Signal/idel2.gif
+	frame	data/chars/Signal/idel3.gif
+	frame	data/chars/Signal/idel4.gif
+  
+anim pain
+	loop	0
+	offset	31 68
+	bbox	15 6 45 62
+	delay	3
+	frame	data/chars/Signal/pain1.gif
+	delay	2
+	move 5
+	frame	data/chars/Signal/pain1.gif
+	move -5
+	frame	data/chars/Signal/pain1.gif
+	move 5
+	frame	data/chars/Signal/pain1.gif
+	move -5
+	delay 12
+	frame	data/chars/Signal/pain1.gif
+       
+anim fall
+	loop	0
+	delay	40
+	offset	30 56
+	frame	data/chars/Signal/fall1.gif
+        offset	63 27
+	attack	10 13 83 13 6 1
+	frame	data/chars/Signal/fall2.gif
+
+anim walk
+	loop	1
+	delay	20
+	offset	30 95
+	bbox	17 15 33 77
+	frame	data/chars/Signal/walk1.gif
+	frame	data/chars/Signal/walk2.gif
+      	frame	data/chars/Signal/walk3.gif
+       frame	data/chars/Signal/walk4.gif
+
+anim rise
+	loop	0
+	offset	26 58
+	delay	24
+	frame	data/chars/Signal/getup1.gif
+	offset	63 27
+	
+	frame	data/chars/Signal/fall2.gif
+	offset	26 58
+	frame	data/chars/Signal/getup1.gif
+	frame	data/chars/Signal/getup2.gif
+
+anim attack1
+	loop	0
+	offset	17 93
+      	 bbox	7 9 43 70
+	delay	6
+	attack	24 36 38 9 8 0
+	frame	data/chars/Signal/punch1.gif
+
+anim attack2
+	loop	0
+	 offset	36 92
+      	 bbox	18 17 47 77
+	delay	8
+	frame	data/chars/Signal/punch2.gif
+	frame	data/chars/Signal/punch3.gif
+	attack	47 30 40 14 11 0
+	frame	data/chars/Signal/punch4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Signal/punch3.gif
+
+anim attack3
+	loop	0
+	 offset	18 65
+      	 bbox	8 9 40 57
+	delay	9
+	frame	data/chars/Signal/slide1.gif
+	offset	46 42
+	attack	24 24 74 19 16 1
+	delay	8
+	move	10
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	 offset	18 65
+	frame	data/chars/Signal/slide1.gif
+
+anim throw
+	loop	0
+	delay	7
+	offset	55 81
+	sound	data/sounds/punk.wav
+	frame	data/chars/signal/throw1.gif
+	frame	data/chars/signal/throw2.gif
+	
+anim get
+    loop 0  
+    offset	26 58
+    frame	data/chars/Signal/getup2.gif
+
+anim grab
+        loop	0
+       offset	29 92
+	bbox	19 19 29 74
+      	frame	data/chars/Signal/idel1.gif
+
+anim jump
+         loop 0
+         delay 5
+         offset	26 58
+          frame	data/chars/Signal/getup2.gif
+          frame	data/chars/Signal/idel1.gif
+
+anim jumpattack
+         loop 0
+         delay 6
+         offset	18 65
+      	 bbox	8 9 40 57
+         attack 24 24 74 19 10 1
+         sound	data/sounds/punk.wav
+         frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+
+
+anim grabattack
+	loop	0
+	offset	17 93
+      	 bbox	7 9 43 70
+	delay	6
+	attack	24 36 38 9 8 0
+	frame	data/chars/Signal/punch1.gif
+
+anim grabattack2
+       loop	0
+	 offset	36 92
+      	 bbox	18 17 47 77
+	delay	8
+	frame	data/chars/Signal/punch2.gif
+	frame	data/chars/Signal/punch3.gif
+	attack	47 30 40 14 11 1
+	frame	data/chars/Signal/punch4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Signal/punch3.gif
+
+
+
+anim freespecial
+       loop	0
+	 offset	18 65
+      	 bbox	8 9 40 57
+	delay	8
+	frame	data/chars/Signal/slide1.gif
+	offset	46 42
+	attack	24 24 74 19 18 1
+	delay	8
+	move	18
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	 offset	18 65
+	frame	data/chars/Signal/slide1.gif
+
+anim special
+       loop	0
+	 offset	36 92
+      	 bbox	18 17 47 77
+	delay	10
+	frame	data/chars/Signal/punch2.gif
+	frame	data/chars/Signal/punch3.gif
+	attack	47 30 40 14 12 0
+	frame	data/chars/Signal/punch4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Signal/punch3.gif
+         offset	18 65
+      	 bbox	8 9 40 57
+	delay	10
+	frame	data/chars/Signal/slide1.gif
+	offset	46 42
+	attack	24 24 74 19 19 1
+	delay	8
+	move	18
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	frame	data/chars/Signal/slide2.gif
+	 offset	18 65
+	frame	data/chars/Signal/slide1.gif
+

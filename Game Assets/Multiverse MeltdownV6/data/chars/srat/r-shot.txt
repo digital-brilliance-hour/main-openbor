@@ -1,0 +1,14 @@
+name	R-shot
+type	pshot
+shadow	0
+nolife  1
+candamage obstacle player npc
+
+anim idle
+	loop	0
+	delay	5
+	offset	90 192
+           noreflect 1
+	attack2  119 157 19 35 6 0  0  0  0  20
+	frame	data/chars/srat/R-shot.gif
+

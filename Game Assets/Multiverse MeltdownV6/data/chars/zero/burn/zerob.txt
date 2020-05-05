@@ -1,0 +1,500 @@
+name	ZeroB
+weapnum 1
+health	500
+mp 100
+mprate 5
+speed	11
+type none
+icon	   data/chars/Zero/icon.gif 1
+iconpain   data/chars/Zero/iconP.gif 1
+icondie    data/chars/Zero/iconD.gif 1
+#diesound   data/chars/Zero/die2.wav
+running 21 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+knife   ZBShot
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Zero/Burn/Pal
+weapons  ZeroB  ZeroS  ZeroF  ZeroD
+weaploss 2
+
+alternatepal  data/chars/Zero/Burn/Map0
+alternatepal  data/chars/Zero/Burn/Map1
+alternatepal  data/chars/Zero/Burn/Map2
+alternatepal  data/chars/Zero/Burn/Map3
+alternatepal  data/chars/Zero/Burn/Map4
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	Fastattack	1
+	cancel	8 11 0 a freespecial
+	offset	112 132
+	bbox	100 99 25 33
+	frame	data/chars/Zero/A1-0.gif
+	Burn	98 92 63 31 16  0  0  0  0  20
+	frame	data/chars/Zero/A1-1.gif
+	frame	data/chars/Zero/A1-2.gif
+	attack1	0
+	frame	data/chars/Zero/A1-3.gif
+	frame	data/chars/Zero/A1-4.gif
+	frame	data/chars/Zero/A1-5.gif
+	frame	data/chars/Zero/A1-6.gif
+	frame	data/chars/Zero/A1-7.gif
+	delay	2
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+
+anim	freespecial
+	loop	0
+	delay	4
+	Fastattack	1
+	cancel	8 11 0 a freespecial2
+	offset	112 132
+	bbox	100 99 25 33
+	frame	data/chars/Zero/A1-0.gif
+	Burn	98 92 63 31 16  0  0  0  0  20
+	frame	data/chars/Zero/A1-1.gif
+	frame	data/chars/Zero/A1-2.gif
+	attack1	0
+	frame	data/chars/Zero/A1-3.gif
+	frame	data/chars/Zero/A1-4.gif
+	frame	data/chars/Zero/A1-5.gif
+	frame	data/chars/Zero/A1-6.gif
+	frame	data/chars/Zero/A1-7.gif
+	delay	2
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+	frame	data/chars/Zero/A1-7.gif
+
+anim	freespecial2
+	loop	0
+	delay	5
+	cancel	9 12 0 a freespecial3
+	offset	112 132
+	bbox	101 99 23 33
+	Burn	89 91 73 46 18  0  0  0  0  20
+	frame	data/chars/Zero/A2-0.gif
+	frame	data/chars/Zero/A2-1.gif
+	Burn	89 91 73 46 18  0  0  0  0  20
+	frame	data/chars/Zero/A2-2.gif
+	attack1	0
+	frame	data/chars/Zero/A2-3.gif
+	frame	data/chars/Zero/A2-4.gif
+	frame	data/chars/Zero/A2-5.gif
+	frame	data/chars/Zero/A2-6.gif
+	frame	data/chars/Zero/A2-7.gif
+	frame	data/chars/Zero/A2-8.gif
+	delay	2
+	frame	data/chars/Zero/A2-8.gif
+	frame	data/chars/Zero/A2-8.gif
+	frame	data/chars/Zero/A2-8.gif
+	frame	data/chars/Zero/A2-8.gif
+
+anim	freespecial3
+	loop	0
+	delay	5
+	Fastattack	1
+	offset	112 132
+	bbox	102 99 22 33
+	hitflash	Flash2
+	frame	data/chars/Zero/A3-0.gif
+	frame	data/chars/Zero/A3-1.gif
+	frame	data/chars/Zero/A3-2.gif
+	Burn	89 79 74 51 20 1 0 0 0 20
+	frame	data/chars/Zero/A3-3.gif
+	frame	data/chars/Zero/A3-4.gif
+	Burn	89 79 74 51 20 1 0 0 0 20
+	frame	data/chars/Zero/A3-5.gif
+	frame	data/chars/Zero/A3-6.gif
+	attack1	0
+	frame	data/chars/Zero/A3-7.gif
+	frame	data/chars/Zero/A3-8.gif
+	frame	data/chars/Zero/A3-9.gif
+	frame	data/chars/Zero/A3-10.gif
+
+anim	DODGE
+	loop	0
+	delay	4
+	offset	112 132
+	frame	data/chars/Zero/Jump-4.gif
+	offset	112 136
+	frame	data/chars/Zero/Jump-5.gif
+	offset	112 140
+	frame	data/chars/Zero/Jump-6.gif
+	offset	112 144
+	frame	data/chars/Zero/Jump-7.gif
+	offset	112 140
+	frame	data/chars/Zero/Jump-8.gif
+	offset	112 136
+	frame	data/chars/Zero/Jump-7.gif
+	offset	112 132
+	frame	data/chars/Zero/Jump-8.gif
+
+anim	fall
+	loop	0
+	offset	112 132
+	delay	500
+	Landframe	1
+	attack1	94 95 37 37 10 1
+	quakeframe	0 1 4
+	frame	data/chars/Zero/Pain.gif
+	delay	7
+	frame	data/chars/Zero/Fall.gif
+
+anim	Freespecial4
+	loop	0
+	delay	8
+	custknife	BSheild
+	Throwframe	2 1
+	mpcost	10
+	mponly	1
+	offset	112 132
+	frame	data/chars/Zero/FSP2-0.gif
+	frame	data/chars/Zero/FSP2-1.gif
+	frame	data/chars/Zero/FSP2-2.gif
+	frame	data/chars/Zero/FSP2-3.gif
+	frame	data/chars/Zero/FSP2-4.gif
+
+anim	Freespecial5
+	loop	0
+	delay	9
+	throwframe	0 1
+	offset	112 132
+	mpcost	10
+	mponly	1
+	frame	data/chars/Zero/FSP1-0.gif
+	frame	data/chars/Zero/FSP1-1.gif
+	frame	data/chars/Zero/FSP1-2.gif
+
+anim	Freespecial6
+	loop	0
+	delay	4
+	offset	112 132
+	mpcost	10
+	mponly	1
+	Fastattack	1
+	cancel	11 14 0 a4 freespecial7
+	frame	data/chars/Zero/FSP4-0.gif
+	Burn	119 108 50 19 15 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-1.gif
+	frame	data/chars/Zero/FSP4-2.gif
+	frame	data/chars/Zero/FSP4-3.gif
+	attack1	0
+	frame	data/chars/Zero/FSP4-4.gif
+	frame	data/chars/Zero/FSP4-5.gif
+	frame	data/chars/Zero/FSP4-6.gif
+	frame	data/chars/Zero/FSP4-7.gif
+	Burn	107 107 63 18 15 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-8.gif
+	frame	data/chars/Zero/FSP4-9.gif
+	frame	data/chars/Zero/FSP4-10.gif
+	attack1	0
+	frame	data/chars/Zero/FSP4-11.gif
+	frame	data/chars/Zero/FSP4-12.gif
+	frame	data/chars/Zero/FSP4-12.gif
+	frame	data/chars/Zero/FSP4-12.gif
+
+anim	Freespecial7
+	loop	0
+	delay	4
+	offset	112 132
+	mpcost	10
+	mponly	1
+	Fastattack	1
+	cancel	11 14 0 a4 freespecial8
+	frame	data/chars/Zero/FSP4-0.gif
+	Burn	119 108 50 19 15 0 0 0 20
+	frame	data/chars/Zero/FSP4-1.gif
+	frame	data/chars/Zero/FSP4-2.gif
+	frame	data/chars/Zero/FSP4-3.gif
+	attack1	0
+	frame	data/chars/Zero/FSP4-4.gif
+	frame	data/chars/Zero/FSP4-5.gif
+	frame	data/chars/Zero/FSP4-6.gif
+	frame	data/chars/Zero/FSP4-7.gif
+	Burn	107 107 63 18 15 0 0 0 20
+	frame	data/chars/Zero/FSP4-8.gif
+	frame	data/chars/Zero/FSP4-9.gif
+	frame	data/chars/Zero/FSP4-10.gif
+	attack1	0
+	frame	data/chars/Zero/FSP4-11.gif
+	frame	data/chars/Zero/FSP4-12.gif
+	frame	data/chars/Zero/FSP4-12.gif
+	frame	data/chars/Zero/FSP4-12.gif
+
+anim	Freespecial8
+	loop	0
+	delay	4
+	offset	112 132
+	Fastattack	1
+	Attack1	0
+	frame	data/chars/Zero/FSP4-12.gif
+	Burn	105 104 66 22 2 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-13.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-14.gif
+	Burn	124 104 47 29 2 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-15.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-16.gif
+	Burn	114 91 57 35 2 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-17.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-18.gif
+	Burn	120 94 57 37 2 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-19.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-12.gif
+	Burn	105 104 66 22 3 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-13.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-14.gif
+	Burn	124 104 47 29 3 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-15.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-16.gif
+	Burn	114 91 57 35 3 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-17.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-18.gif
+	Burn	120 94 57 37 3 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-19.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-12.gif
+	Burn	105 104 66 22 3 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-13.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-14.gif
+	Burn	124 104 47 29 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-15.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-16.gif
+	Burn	114 91 57 35 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-17.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-18.gif
+	Burn	120 94 57 37 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-19.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-12.gif
+	Burn	105 104 66 22 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-13.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-14.gif
+	Burn	124 104 47 29 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-15.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-16.gif
+	Burn	114 91 57 35 4 0 0 0 0 20
+	frame	data/chars/Zero/FSP4-17.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-18.gif
+	Burn	120 94 57 37 6 1 0 0 0 20
+	frame	data/chars/Zero/FSP4-19.gif
+	Attack1	0
+	frame	data/chars/Zero/FSP4-20.gif
+
+anim	get
+	loop	0
+	delay	15
+	offset	112 132
+	frame	data/chars/Zero/Rise-6.gif
+	delay	5
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	idle
+	loop	1
+	delay	14
+	offset	112 132
+	bbox	101 97 23 35
+	frame	data/chars/Zero/Idle-0.gif
+	frame	data/chars/Zero/Idle-1.gif
+	frame	data/chars/Zero/Idle-2.gif
+	frame	data/chars/Zero/Idle-3.gif
+	frame	data/chars/Zero/Idle-4.gif
+	frame	data/chars/Zero/Idle-5.gif
+
+anim	jump
+	loop	0
+	dropframe	0
+	delay	8
+	offset	112 132
+	bbox	105 86 21 46
+	frame	data/chars/Zero/Jump-0.gif
+	frame	data/chars/Zero/Jump-1.gif
+	frame	data/chars/Zero/Jump-2.gif
+	frame	data/chars/Zero/Jump-3.gif
+	frame	data/chars/Zero/Jump-4.gif
+	frame	data/chars/Zero/Jump-5.gif
+	frame	data/chars/Zero/Jump-6.gif
+	frame	data/chars/Zero/Jump-7.gif
+	frame	data/chars/Zero/Jump-8.gif
+
+anim	jumpattack
+	loop	1
+	delay	5
+	offset	112 132
+	bbox	106 96 18 32
+	attack1	0
+	frame	data/chars/Zero/JumpA-0.gif
+	Burn	100 84 49 46 19 1 0 0 0 20
+	frame	data/chars/Zero/JumpA-1.gif
+	frame	data/chars/Zero/JumpA-2.gif
+	frame	data/chars/Zero/JumpA-3.gif
+	frame	data/chars/Zero/JumpA-4.gif
+	frame	data/chars/Zero/JumpA-5.gif
+	frame	data/chars/Zero/JumpA-6.gif
+	frame	data/chars/Zero/JumpA-7.gif
+	frame	data/chars/Zero/JumpA-8.gif
+
+anim	jumpattack2
+	loop	0
+	delay	5
+	offset	112 132
+	bbox	106 96 18 32
+	attack1	0
+	frame	data/chars/Zero/JA2-0.gif
+	Burn	100 84 49 46 11 0 0 0 0 20
+	frame	data/chars/Zero/JA2-1.gif
+	frame	data/chars/Zero/JA2-2.gif
+	frame	data/chars/Zero/JA2-3.gif
+	frame	data/chars/Zero/JA2-4.gif
+	frame	data/chars/Zero/JA2-5.gif
+	attack1	0
+	frame	data/chars/Zero/JA2-6.gif
+	frame	data/chars/Zero/JA2-7.gif
+	frame	data/chars/Zero/JA2-8.gif
+
+anim	land
+	loop	0
+	delay	15
+	offset	112 132
+	frame	data/chars/Zero/Rise-6.gif
+	delay	5
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	pain
+	loop	0
+	offset	112 132
+	bbox	102 97 23 32
+	delay	7
+	quakeframe	0 3 4
+	frame	data/chars/Zero/Pain.gif
+	frame	data/chars/Zero/Pain.gif
+	frame	data/chars/Zero/Pain.gif
+
+anim	rise
+	loop	0
+	offset	112 132
+	delay	4
+	frame	data/chars/Zero/Rise-0.gif
+	frame	data/chars/Zero/Rise-1.gif
+	frame	data/chars/Zero/Rise-2.gif
+	frame	data/chars/Zero/Rise-3.gif
+	frame	data/chars/Zero/Rise-4.gif
+	frame	data/chars/Zero/Rise-5.gif
+	frame	data/chars/Zero/Rise-6.gif
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	run
+	loop	1
+	delay	6
+	offset	112 132
+	bbox	95 110 32 22
+	frame	data/chars/Zero/Dash-0.gif
+	frame	data/chars/Zero/Dash-1.gif
+	frame	data/chars/Zero/Dash-2.gif
+	frame	data/chars/Zero/Dash-3.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	4
+	offset	112 132
+	Move	10
+	bbox	95 110 32 22
+	frame	data/chars/Zero/DA-0.gif
+	Burn	106 98 59 40 17 1 0 0 0 20
+	frame	data/chars/Zero/DA-1.gif
+	frame	data/chars/Zero/DA-2.gif
+	frame	data/chars/Zero/DA-3.gif
+	attack1	0
+	frame	data/chars/Zero/DA-4.gif
+	frame	data/chars/Zero/DA-5.gif
+	frame	data/chars/Zero/DA-6.gif
+	move	9
+	frame	data/chars/Zero/DA-7.gif
+	move	7
+	frame	data/chars/Zero/DA-8.gif
+	move	5
+	frame	data/chars/Zero/DA-9.gif
+	move	2
+	frame	data/chars/Zero/DA-9.gif
+	frame	data/chars/Zero/DA-9.gif
+	frame	data/chars/Zero/DA-9.gif
+
+anim	special
+	loop	0
+	delay	7
+	offset	112 132
+	mpcost	20
+	hitflash	Flash2
+	frame	data/chars/Zero/SP-0.gif
+	frame	data/chars/Zero/SP-1.gif
+	           Burn	99 71 85 62 45  1  0  0  20
+          dropv 3 4
+	frame	data/chars/Zero/SP-2.gif
+	delay	4
+		Burn  130  68  55  66  45  1  0  0  20
+          dropv 3 4
+	frame	data/chars/Zero/SP-3.gif
+	frame	data/chars/Zero/SP-4.gif
+		Burn  130  62  55  72  45  1  0  0  20
+          dropv 3 4
+	frame	data/chars/Zero/SP-5.gif
+		Burn  132  61  54  73  45  1  0  0  20
+          dropv 3 4
+	frame	data/chars/Zero/SP-6.gif
+	frame	data/chars/Zero/SP-7.gif
+		Attack1  0
+	frame	data/chars/Zero/SP-8.gif
+	frame	data/chars/Zero/SP-9.gif
+	frame	data/chars/Zero/SP-10.gif
+
+anim	walk
+	loop	1
+	delay	9
+	offset	112 132
+	bbox	101 97 24 36
+	frame	data/chars/Zero/Run-0.gif
+	frame	data/chars/Zero/Run-1.gif
+	frame	data/chars/Zero/Run-2.gif
+	frame	data/chars/Zero/Run-3.gif
+	frame	data/chars/Zero/Run-4.gif
+	frame	data/chars/Zero/Run-5.gif
+	frame	data/chars/Zero/Run-6.gif
+	frame	data/chars/Zero/Run-7.gif
+	frame	data/chars/Zero/Run-8.gif
+	frame	data/chars/Zero/Run-9.gif
+
+
+#|edited by openBor Stats v 0.37
+
+

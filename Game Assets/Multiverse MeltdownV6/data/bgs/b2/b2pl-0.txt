@@ -1,0 +1,16 @@
+name	B2PL-0
+type	none
+shadow	0
+alpha   0
+remove  0
+setlayer 1
+
+anim idle
+	 loop      0
+	 delay     1000
+	 offset    0 0
+	@cmd changeentityproperty getlocalvar("self") "Subject_to_Gravity" 0
+	 drawmethod  256  256  1  0  0  -1  -1
+	platform  41  8  -42  -42  86  86  15  1
+	 frame     data/bgs/B2/B2PL-0.gif
+

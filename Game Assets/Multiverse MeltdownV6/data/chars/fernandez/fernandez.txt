@@ -1,0 +1,313 @@
+name	FERNANDEZ
+health	60
+mp 80
+mprate 10
+speed	17
+type	enemy
+hostile Player npc
+Candamage  Player  NPC
+icon     data/chars/Fernandez/Icon.gif 1
+
+running 27	3.9	2.80	1	1
+gfxshadow 1
+grabdistance 26
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/Fernandez/0_0-1.gif
+
+#alternatepal  data/chars/Bison/B002.pcx
+#alternatepal  data/chars/Manic/Pal1
+#alternatepal  data/chars/Manic/Pal2
+#alternatepal  data/chars/Manic/Pal3
+#alternatepal  data/chars/Manic/Pal4
+#alternatepal  data/chars/Manic/Pal5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+#atchain 1 2 3 4
+jugglepoints 2
+#animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+    offset 164 258
+	fastattack	1
+	bbox 109 153 104 105
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+jugglecost 1
+	range 0 80
+	rangea 0 20
+ frame data/chars/Fernandez/0_1000-0.gif
+	delay	2
+	move	4
+ frame data/chars/Fernandez/0_1000-1.gif
+ frame data/chars/Fernandez/0_1000-1.gif
+ frame data/chars/Fernandez/0_1000-2.gif
+ frame data/chars/Fernandez/0_1000-2.gif
+ frame data/chars/Fernandez/0_1000-3.gif
+ frame data/chars/Fernandez/0_1000-3.gif
+	attack3 167 192 88 63 10 0 0 0 0 20
+ frame data/chars/Fernandez/0_1000-4.gif
+ frame data/chars/Fernandez/0_1000-4.gif
+	delay	2
+	move	2
+	attack3 166 187 103 69 10 0 0 0 0 20
+ frame data/chars/Fernandez/0_1000-5.gif
+ frame data/chars/Fernandez/0_1000-5.gif
+ frame data/chars/Fernandez/0_1000-5.gif
+ frame data/chars/Fernandez/0_1000-5.gif
+	attack3 0
+	move	0
+	delay	4
+ frame data/chars/Fernandez/0_1000-4.gif
+ frame data/chars/Fernandez/0_1000-3.gif
+ frame data/chars/Fernandez/0_1000-2.gif
+ frame data/chars/Fernandez/0_1000-1.gif
+ frame data/chars/Fernandez/0_1000-0.gif
+
+anim	fall
+	loop	0
+	delay	12
+    offset 164 238
+	quakeframe	0 3 4
+	Landframe	4
+	bbox 112 97 103 138
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+ frame data/chars/Fernandez/1_5030-0.gif
+    offset 192 228
+	bbox 139 104 113 117
+ frame data/chars/Fernandez/1_5030-20.gif
+    offset 185 228
+	bbox 134 91 112 134
+ frame data/chars/Fernandez/1_5030-40.gif
+	delay	500
+    offset 166 228
+	bbox 115 105 107 123
+ frame data/chars/Fernandez/1_5030-50.gif
+	delay	8
+	bbox 0 0 0 0
+    offset 191 248
+ frame data/chars/Fernandez/1_5040-0.gif
+	delay	6
+    offset 270 403
+ frame data/chars/Fernandez/1_5040-1.gif
+    offset 265 433
+ frame data/chars/Fernandez/1_5040-2.gif
+    offset 154 274
+ frame data/chars/Fernandez/0_5040-10.gif
+
+anim	freespecial4
+	loop	0
+	delay	4
+    offset 164 258
+	fastattack	1
+	bbox 109 153 104 105
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+jugglecost 1
+	range 80 99
+	rangea 0 20
+ frame data/chars/Fernandez/0_1100-0.gif
+	delay	2
+	move	4
+ frame data/chars/Fernandez/0_1100-1.gif
+ frame data/chars/Fernandez/0_1100-1.gif
+ frame data/chars/Fernandez/0_1100-2.gif
+ frame data/chars/Fernandez/0_1100-2.gif
+ frame data/chars/Fernandez/0_1100-3.gif
+ frame data/chars/Fernandez/0_1100-3.gif
+	attack3 165 199 50 56 15 0 0 0 0 20
+ frame data/chars/Fernandez/0_1100-4.gif
+ frame data/chars/Fernandez/0_1100-4.gif
+	delay	2
+	move	2
+	attack3 169 146 93 111 15 0 0 0 0 20
+ frame data/chars/Fernandez/0_1100-5.gif
+ frame data/chars/Fernandez/0_1100-5.gif
+ frame data/chars/Fernandez/0_1100-5.gif
+ frame data/chars/Fernandez/0_1100-5.gif
+	attack3 0
+	move	0
+	delay	4
+ frame data/chars/Fernandez/0_1100-4.gif
+ frame data/chars/Fernandez/0_1100-3.gif
+ frame data/chars/Fernandez/0_1100-2.gif
+ frame data/chars/Fernandez/0_1100-1.gif
+ frame data/chars/Fernandez/0_1100-0.gif
+
+anim	idle
+	loop	1
+	delay	4
+    offset 164 258
+	bbox 109 153 104 105
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+frame data/chars/Fernandez/0_0-1.gif
+frame data/chars/Fernandez/0_0-2.gif
+frame data/chars/Fernandez/0_0-3.gif
+frame data/chars/Fernandez/0_0-4.gif
+frame data/chars/Fernandez/0_0-5.gif
+frame data/chars/Fernandez/0_0-6.gif
+frame data/chars/Fernandez/0_0-7.gif
+frame data/chars/Fernandez/0_0-8.gif
+frame data/chars/Fernandez/0_0-9.gif
+frame data/chars/Fernandez/0_0-10.gif
+frame data/chars/Fernandez/0_0-11.gif
+frame data/chars/Fernandez/0_0-12.gif
+frame data/chars/Fernandez/0_0-13.gif
+frame data/chars/Fernandez/0_0-14.gif
+frame data/chars/Fernandez/0_0-15.gif
+frame data/chars/Fernandez/0_0-16.gif
+frame data/chars/Fernandez/0_0-17.gif
+frame data/chars/Fernandez/0_0-18.gif
+frame data/chars/Fernandez/0_0-19.gif
+frame data/chars/Fernandez/0_0-20.gif
+frame data/chars/Fernandez/0_0-21.gif
+frame data/chars/Fernandez/0_0-22.gif
+frame data/chars/Fernandez/0_0-23.gif
+frame data/chars/Fernandez/0_0-24.gif
+frame data/chars/Fernandez/0_0-25.gif
+frame data/chars/Fernandez/0_0-26.gif
+frame data/chars/Fernandez/0_0-27.gif
+frame data/chars/Fernandez/0_0-28.gif
+frame data/chars/Fernandez/0_0-29.gif
+frame data/chars/Fernandez/0_0-30.gif
+
+anim	pain
+	loop	0
+	delay	9
+    offset 164 258
+	bbox 99 107 103 149
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+	quakeframe	0 2 4
+ frame data/chars/Fernandez/1_5000-20.gif
+	bbox 115 135 110 121
+ frame data/chars/Fernandez/1_5000-10.gif
+	bbox 124 145 104 111
+ frame data/chars/Fernandez/1_5000-0.gif
+
+anim	pain2
+	loop	0
+    offset 164 258
+	bbox 99 107 103 149
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+	Move	-2
+ frame data/chars/Fernandez/1_5000-20.gif
+	bbox 115 135 110 121
+ frame data/chars/Fernandez/1_5000-10.gif
+	Move	-1
+ frame data/chars/Fernandez/1_5000-10.gif
+ frame data/chars/Fernandez/1_5000-10.gif
+	Move	0
+	delay	8
+ bbox 124 145 104 111
+ frame data/chars/Fernandez/1_5000-0.gif
+ frame data/chars/Fernandez/1_5000-0.gif
+
+anim	pain3
+	loop	0
+    offset 164 258
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	bbox 99 107 103 149
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+	Move	-4
+ frame data/chars/Fernandez/1_5000-20.gif
+ frame data/chars/Fernandez/1_5000-20.gif
+	Move	-3
+ frame data/chars/Fernandez/1_5000-20.gif
+	bbox 115 135 110 121
+ frame data/chars/Fernandez/1_5000-10.gif
+	Move	-2
+ frame data/chars/Fernandez/1_5000-10.gif
+ frame data/chars/Fernandez/1_5000-10.gif
+	Move	-1
+ frame data/chars/Fernandez/1_5000-10.gif
+ frame data/chars/Fernandez/1_5000-10.gif
+	Move	0
+ bbox 124 145 104 111
+ frame data/chars/Fernandez/1_5000-0.gif
+ frame data/chars/Fernandez/1_5000-0.gif
+	delay	8
+ frame data/chars/Fernandez/1_5000-0.gif
+ frame data/chars/Fernandez/1_5000-0.gif
+
+anim	rise
+	loop	0
+	delay	7
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+    offset 154 274
+ frame data/chars/Fernandez/0_5040-10.gif
+    offset 154 320
+ frame data/chars/Fernandez/0_5072-0.gif
+    offset 124 330
+ frame data/chars/Fernandez/0_5072-10.gif
+
+anim	walk
+	loop	1
+	delay	3
+    offset 164 258
+	bbox 109 153 104 105
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+frame data/chars/Fernandez/0_20-0.gif
+frame data/chars/Fernandez/0_20-1.gif
+frame data/chars/Fernandez/0_20-2.gif
+frame data/chars/Fernandez/0_20-3.gif
+frame data/chars/Fernandez/0_20-4.gif
+frame data/chars/Fernandez/0_20-5.gif
+frame data/chars/Fernandez/0_20-6.gif
+frame data/chars/Fernandez/0_20-7.gif
+frame data/chars/Fernandez/0_20-8.gif
+frame data/chars/Fernandez/0_20-9.gif
+frame data/chars/Fernandez/0_20-10.gif
+frame data/chars/Fernandez/0_20-11.gif
+frame data/chars/Fernandez/0_20-12.gif
+frame data/chars/Fernandez/0_20-13.gif
+frame data/chars/Fernandez/0_20-14.gif
+frame data/chars/Fernandez/0_20-15.gif
+frame data/chars/Fernandez/0_20-16.gif
+frame data/chars/Fernandez/0_20-17.gif
+frame data/chars/Fernandez/0_20-18.gif
+frame data/chars/Fernandez/0_20-19.gif
+frame data/chars/Fernandez/0_20-20.gif
+frame data/chars/Fernandez/0_20-21.gif
+frame data/chars/Fernandez/0_20-22.gif
+frame data/chars/Fernandez/0_20-23.gif
+frame data/chars/Fernandez/0_20-24.gif
+

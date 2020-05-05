@@ -1,0 +1,178 @@
+# File modified by Level Editor on 12/29/2009
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+music		data/music/DarkSkies.ogg
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+
+Background	data/bgs/GvM/BG.gif  0.9 0.7 0 -40 0 0 1 1 0
+#BGLayer	data/bgs/MKRoofT/BG1.gif  0.7 0.5 80 0 0 0 1 1 1
+
+panel		data/bgs/GvM/Panel.gif
+frontpanel	           data/bgs/Fpanal.gif
+order	a
+
+#Background	data/bgs/CChaos/BG.gif 0.5 0.5 0 -10 0 0 20 1 1
+#panel		data/bgs/CChaos/Panel.gif
+#frontpanel	           data/bgs/Fpanal.gif
+#order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+#Z 291 342
+#-----------------
+#1a--------
+
+group 4 4
+at 30
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 298
+at 30
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 570 340
+at 40
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords 590 340
+at 50
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords 610 298
+at 0
+
+spawn JILLIAN
+Health 150
+Flip 1
+coords -70 298
+at 0
+
+group 4 4
+at 0
+
+spawn METAL_GEAR
+Health 700
+Flip 1
+aggression 200
+coords 550 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 340
+at 0
+
+spawn JILLIAN
+Health 150
+Flip 1
+aggression 80
+coords -70 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 340
+at 0
+
+spawn JILLIAN
+Health 150
+Flip 1
+aggression 80
+coords -70 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 298
+at 0
+
+spawn JILLIAN
+Health 150
+Flip 1
+aggression 80
+coords 550 298
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+coords 550 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 340
+at 0
+
+spawn INFECTED_FUNGRA
+Health 100
+Flip 1
+coords -70 298
+at 0

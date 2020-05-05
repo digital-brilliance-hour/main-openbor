@@ -1,0 +1,20 @@
+name	SpMg2b
+type	none
+shadow	0
+Speed 25
+candamage enemy obstacle
+
+
+anim idle
+	loop	1
+	delay	5
+	Fastattack 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	hitflash	SpMg3
+ offset 200 174
+	attack3 240 75 22 64 2 0 0 0 0 25
+	frame	data/chars/Spawn/FSP2fx4.gif
+	attack 0
+	frame	data/chars/Spawn/FSP2fx4.gif
+

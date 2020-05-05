@@ -1,0 +1,161 @@
+name	SRAT
+health	100
+speed	9
+type	enemy
+gfxshadow 1
+falldie	 1
+icon	   data/chars/SRAT/icon.gif
+iconpain   data/chars/SRAT/iconP.gif
+icondie    data/chars/SRAT/iconD.gif
+knife     R-shot
+dust   dust
+score 1 0
+
+anim respawn
+	loop	0
+	offset	90 192
+	delay	5
+	frame	data/chars/srat/idle.gif
+
+
+anim idle
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay	12
+	frame	data/chars/srat/idle.gif
+	frame	data/chars/srat/idle2.gif
+	frame	data/chars/srat/idle3.gif
+	frame	data/chars/srat/idle2.gif
+	frame	data/chars/srat/idle.gif
+
+anim walk
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay   9
+	frame	data/chars/srat/w1.gif
+	frame	data/chars/srat/idle.gif
+        frame	data/chars/srat/w2.gif
+	frame	data/chars/srat/idle.gif
+
+
+anim jump
+	loop	0
+	range   75  70
+	offset	90 192
+	bbox	75 130 35 70
+	delay   11
+	frame	data/chars/srat/w1.gif
+	frame	data/chars/srat/w1.gif
+	frame	data/chars/srat/w1.gif
+
+anim pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/rat/pain.wav
+        move    0
+	frame	data/chars/srat/pain.gif
+	offset  87 192
+	frame	data/chars/srat/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/srat/pain.gif
+
+anim spain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/rat/pain.wav
+	frame	data/chars/srat/pain.gif
+	offset  87 192
+	frame	data/chars/srat/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/srat/pain.gif
+
+anim grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/srat/pain.gif
+	offset  87 192
+	frame	data/chars/srat/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/srat/pain.gif
+
+anim bpain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	65 102 46 76
+        sound   data/chars/rat/pain.wav
+	frame	data/chars/srat/fall4.gif
+	offset  87 192
+	frame	data/chars/srat/fall4.gif
+	offset  89 192
+	frame	data/chars/srat/fall4.gif
+	offset  87 192
+	frame	data/chars/srat/fall4.gif
+	offset  89 192
+	frame	data/chars/srat/fall4.gif
+	offset  87 192
+	frame	data/chars/srat/fall4.gif
+	offset  89 192
+	frame	data/chars/srat/fall4.gif
+	offset  87 192
+	frame	data/chars/srat/fall4.gif
+	offset  89 192
+	delay   50
+	frame	data/chars/srat/fall4.gif
+
+anim fall
+	loop	0
+	offset	90 192
+	delay   30
+        sound   data/chars/rat/fall.wav
+	frame	data/chars/srat/fall1.gif
+	attack  85 125 10 50 5 1
+	frame	data/chars/srat/fall1.gif
+	attack  0 0 0 0 0 0 0 0 0
+	delay   40
+	frame	data/chars/srat/fall4.gif
+
+anim rise
+	loop	0
+	offset	90 192
+	delay	20
+	frame	data/chars/srat/rise1.gif
+
+anim attack1
+	range	20 140
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	75 130 35 70
+        shootframe	2	-1
+	frame	data/chars/srat/a1.gif
+        sound   data/chars/srat/a1.wav
+	frame	data/chars/srat/a2.gif
+	frame	data/chars/srat/a1.gif
+	frame	data/chars/srat/a2.gif
+	frame	data/chars/srat/a1.gif
+
+
+anim death
+	loop	0
+	offset	90 192
+	delay	8
+        nodieblink   1
+	frame	data/chars/rat/d1.gif
+	frame	data/chars/rat/d2.gif
+	frame	data/chars/rat/d3.gif
+	frame	data/chars/rat/d4.gif
+
+
+

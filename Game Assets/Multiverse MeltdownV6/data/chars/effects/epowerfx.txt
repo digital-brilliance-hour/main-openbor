@@ -1,0 +1,30 @@
+name	EPowerFx
+health	1
+type	None
+nolife  1
+shadow	0
+candamage enemy Obsticle
+toflip 1
+
+anim idle
+	offset	139 129
+           delay      7
+           Fastattack 1
+	frame	data/chars/effects/EPower-1.gif
+	attack1  119  99  22  34  15  1  0  1  0  20
+           DropV    4 1
+	frame	data/chars/effects/EPower-2.gif
+	attack1  119  64  22  69  15  1  0  1  0  20
+	frame	data/chars/effects/EPower-3.gif
+	attack1  119  70  23  64  15  1  0  1  0  20
+	frame	data/chars/effects/EPower-4.gif
+	attack1  119  77  24  57  15  1  0  1  0  20
+	frame	data/chars/effects/EPower-5.gif
+	attack1  119  83  24  51  15  1  0  1  0  20
+	frame	data/chars/effects/EPower-6.gif
+	attack1  118  124  26  9  15  1  0  1  0  20
+	frame	data/chars/effects/EPower-7.gif
+	Attack1  0
+	frame	data/chars/effects/EPower-8.gif
+	frame	data/chars/effects/EPower-9.gif
+

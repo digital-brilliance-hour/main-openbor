@@ -1,0 +1,327 @@
+notime 1
+music		data/music/XvsZeroBREIS.ogg
+#bossmusic	           data/music/Wings.bor
+background	data/bgs/stage4-2/back.gif
+panel		data/bgs/stage4-2/n01.gif
+frontpanel	data/bgs/f.gif			
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+						
+order	aaaaaaaaaaa
+
+
+load Beetle_
+load Beetler_
+load GFish_
+load GFish2_
+load SpikeB_
+load SpikeS_
+load TrushR_
+load TrushS_
+load Quaker_
+load Stomper_
+load Fly_
+#-----------------
+
+spawn	ready
+coords	0 240
+flip    1
+at	0
+
+#Group 1-----------------
+
+#Wait
+#at      340
+#z 142 225
+
+###########################
+spawn MegaBrosESa
+coords 650 163 1
+mp 8
+at 5
+spawn MegaBrosESb
+coords 650 283 1
+mp 8
+at 5
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 5
+
+spawn ESK15s
+coords 220 218 1
+at 5
+###########################
+spawn MegaBrosESa
+coords 650 163 1
+mp 9
+at 500
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 500
+spawn MegaBrosESa
+coords 650 203 1
+mp 9
+at 500
+
+spawn ESK10s
+coords 220 218 1
+at 500
+###########################
+spawn MegaBrosESa
+coords 650 163 1
+mp 8
+at 1100
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 1100
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 1100
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 1100
+
+spawn ESK15s
+coords 220 218 1
+at 1100
+###########################
+spawn MegaBrosESa
+coords 650 163 1
+mp 9
+at 1500
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 1500
+spawn MegaBrosESa
+coords 650 203 1
+mp 9
+at 1500
+
+spawn ESK10s
+coords 220 218 1
+at 1500
+###########################
+spawn MegaBrosESb
+coords 650 203 1
+mp 8
+at 2100
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 2100
+spawn MegaBrosESa
+coords 650 163 1
+mp 8
+at 2100
+
+spawn ESK15s
+coords 220 218 1
+at 2100
+###########################
+spawn MegaBrosESb
+coords 650 203 1
+mp 9
+at 2500
+spawn MegaBrosESa
+coords 650 183 1
+mp 9
+at 2500
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 2500
+spawn MegaBrosESa
+coords 650 163 1
+mp 9
+at 2500
+
+spawn ESK10s
+coords 220 218 1
+at 2500
+###########################
+spawn MegaBrosESb
+coords 650 163 1
+mp 8
+at 3100
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+at 3100
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 3100
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 3100
+
+spawn ESK15s
+coords 220 218 1
+at 3100
+###########################
+spawn MegaBrosESb
+coords 650 163 1
+mp 9
+at 3500
+spawn MegaBrosESa
+coords 650 183 1
+mp 9
+at 3500
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 3500
+spawn MegaBrosESa
+coords 650 203 1
+mp 9
+at 3500
+
+spawn ESK10s
+coords 220 218 1
+at 3500
+###########################
+spawn MegaBrosESb
+coords 650 163 1
+mp 8
+at 4000
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+at 4000
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 4000
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 4000
+
+spawn ESK15s
+coords 220 218 1
+at 4000
+###########################
+
+spawn Grizzy
+Boss 1
+aggression 100
+Health 300
+coords 600 218 1
+at 4500
+
+spawn Slash
+Boss 1
+Health 300
+coords 600 218 1
+at 4500
+
+spawn MegaBrosESb
+coords 650 203 1
+mp 9
+at 4400
+spawn MegaBrosESa
+coords 650 183 1
+mp 9
+at 4400
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 4400
+spawn MegaBrosESa
+coords 650 163 1
+mp 9
+at 4400
+
+spawn ESK10s
+coords 220 218 1
+at 4400
+###########################
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+at 9100
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+at 5100
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 5100
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 5100
+spawn MegaBrosESb
+coords 650 163 1
+mp 8
+at 5100
+
+spawn ESK15s
+coords 220 218 1
+at 5100
+###########################
+spawn MegaBrosESa
+coords 650 183 1
+mp 9
+at 5500
+spawn MegaBrosESb
+coords 650 183 1
+mp 9
+at 5500
+spawn MegaBrosESa
+coords 650 203 1
+mp 9
+at 5500
+spawn MegaBrosESb
+coords 650 163 1
+mp 9
+at 5500
+
+spawn ESK10s
+coords 220 218 1
+at 5500
+###########################
+
+spawn MegaBrosESa
+coords 650 183 1
+mp 8
+at 5970
+spawn MegaBrosESb
+coords 650 183 1
+mp 8
+at 5970
+spawn MegaBrosESa
+coords 650 203 1
+mp 8
+at 5970
+spawn MegaBrosESb
+coords 650 163 1
+mp 8
+at 5970
+
+spawn ESK15s
+coords 220 218 1
+at 5970
+###########################
+
+#Wait
+#at 5970
+
+#group 1 1
+#at 5970
+
+#5970

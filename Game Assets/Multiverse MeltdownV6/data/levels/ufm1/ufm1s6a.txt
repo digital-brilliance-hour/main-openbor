@@ -1,0 +1,323 @@
+# File modified by Level Editor on 12/29/2009
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+music		data/music/WhateverItTakes.ogg
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+BGSpeed 0
+vbgspeed 2 1
+Background	data/bgs/elevs/BG.gif            0.4 0.5 0  0   0  0  2  -1000000  1 0 0  0  0  0  1
+############################################ XR  ZR  XP ZP  XS ZP XR ZR        T A WM AM WL WS BGS
+
+panel		data/bgs/elevs/floor2.gif
+frontpanel	           data/bgs/Fpanal.gif
+order	a
+
+direction both
+settime 0
+notime 1
+#Cameratype 1
+
+#light 0 256
+#at 0
+
+#group 8 8
+#at 3072
+#186 246
+
+
+load DARKHOUND_E_
+load DARKION_E_
+load SHADOWBAT_E_
+load HAUZERe
+load INFECTED_FUNGRA
+load PIG
+load alien1
+load alien2
+load alien3
+load ghgob
+load PIGMAN
+load RAT
+load RATMAN
+load SRAT
+load WRENCHIE
+load Cheribu
+load alien4
+load alien5
+load alien6
+load goblin_
+
+load RAT_
+load Caprcorn
+load Juggs
+load JILLIAN
+load SHADOWKRO_E_
+load DARKBRITTO_E_
+load kusare
+load sasqua
+load JR.BALROG
+
+load soul
+load specter
+load Testa
+load That
+
+load FERNANDEZ_
+#Group 1-----------------
+
+Light 128 -128
+at 0
+
+#Wait
+#at      340
+#z 162 230
+
+#spawn UniFC
+#coords 650 235 1
+#mp 8
+#at 5
+
+#spawn ESK15s
+#coords 220 154 1
+#at 5
+#spawn ESK15s
+#coords 240 184 1
+#at 25
+
+group   1 1
+at 0
+###########################1
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn UniFA
+coords 90 215 300
+mp 8
+at 0
+spawn UniFB
+coords 390 215 300
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+
+###########################2
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn UniFC
+coords 90 215 300
+mp 9
+at 0
+spawn UniFD
+coords 390 215 300
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+
+###########################3
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn UniFA
+coords 90 215 300
+mp 8
+at 0
+spawn UniFD
+coords 240 215 300
+mp 8
+at 0
+spawn UniFB
+coords 390 215 300
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+spawn Juggs
+item Meat
+coords 240 215 300
+at 0
+
+###########################4
+
+spawn ESK10TF
+coords 220 218 1
+at 0
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn UniFC
+coords 90 215 300
+mp 9
+at 0
+spawn TFerS
+coords 240 215 300
+mp 10
+at 0
+spawn UniFD
+coords 390 215 300
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+spawn ESK10TF
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+
+###########################5
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn UniFB
+coords 90 215 300
+mp 8
+at 0
+spawn UniFB
+coords 240 215 300
+mp 8
+at 0
+spawn UniFB
+coords 390 215 300
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn FERNANDEZ__
+coords 240 215 300
+at 0
+
+###########################6
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn UniFD
+coords 90 215 300
+mp 9
+at 0
+spawn UniFD
+coords 390 215 300
+mp 9
+at 0
+
+spawn ESK10s
+coords 220 218 1
+at 0
+
+spawn TempE
+coords 0 210 1
+mp 9
+at 0
+
+###########################7
+
+spawn ESK10TF
+coords 220 218 1
+at 0
+spawn ESK15s
+coords 220 218 1
+at 0
+
+spawn UniFA
+coords 90 215 300
+mp 8
+at 0
+spawn TFerS
+coords 240 215 300
+mp 10
+at 0
+spawn UniFA
+coords 390 215 300
+mp 8
+at 0
+
+spawn ESK15s
+coords 220 218 1
+at 0
+spawn FERNANDEZ
+coords 240 215 300
+at 0
+
+###########################B
+
+group   2 2
+at 0
+
+spawn ROYAL_GUARD
+Flip 1
+aggression 100
+Health 100
+coords 90 215 300
+at 0
+
+spawn ROYAL_GUARD
+aggression 100
+Health 100
+coords 390 215 300
+at 0
+
+###########################
+
+group   1 1
+at 0
+
+spawn HAUZER
+aggression 100
+Health 150
+coords 240 215 300
+at 0
+
+###########################
+
+spawn Golem
+Boss 1
+aggression 100
+Health 200
+coords 240 215 300
+at 0
+
+#Wait
+#at 5970
+
+#group 1 1
+#at 5970
+
+#5970

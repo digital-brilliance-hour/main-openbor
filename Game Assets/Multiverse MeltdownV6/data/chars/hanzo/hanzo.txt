@@ -1,0 +1,855 @@
+name	HANZO
+health	500
+mp 80
+mprate 10
+speed	16
+type	player
+icon     data/chars/Hanzo/IconA.gif 1
+iconget  data/chars/Hanzo/IconB.gif 1
+iconpain data/chars/Hanzo/IconC.gif 1
+icondie  data/chars/Hanzo/IconC.gif 1
+
+
+
+
+running 26	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/Hanzo/PalG
+
+alternatepal  data/chars/Hanzo/Pal0
+alternatepal  data/chars/Hanzo/Pal1
+alternatepal  data/chars/Hanzo/Pal2
+alternatepal  data/chars/Hanzo/Pal3
+alternatepal  data/chars/Hanzo/Pal4
+alternatepal  data/chars/Hanzo/Pal5
+alternatepal  data/chars/Hanzo/Pal6
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	cancel	4 8 0 a freespecial
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 220 200
+	bbox 207 122 55 77
+	frame data/chars/Hanzo/0_1200-0.gif
+	move	7
+	attack1 240 139 75 61 11 0 0 0 0 20
+	bbox 220 122 50 76
+	frame data/chars/Hanzo/0_1200-1.gif
+	attack1 242 163 74 36 11 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-2.gif
+	move	0
+	bbox 225 127 54 71
+	attack1 241 169 44 31 11 0 0 0 0 20
+	delay	6
+	frame data/chars/Hanzo/0_1200-3.gif
+	frame data/chars/Hanzo/0_1200-3.gif
+	Attack1  0
+	move	0
+	delay	2
+	frame data/chars/Hanzo/0_1200-4.gif
+	frame data/chars/Hanzo/0_1200-5.gif
+	bbox 215 125 51 74
+	frame data/chars/Hanzo/0_1200-6.gif
+ offset 241 200
+	bbox 220 123 56 75
+	frame data/chars/Hanzo/0_1200-7.gif
+
+anim	dodge
+	loop	0
+	delay	2
+        offset 243 200
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	frame	data/chars/Hanzo/0_170-0.gif
+	frame	data/chars/Hanzo/0_190-0.gif
+	frame	data/chars/Hanzo/0_190-1.gif
+	frame	data/chars/Hanzo/0_190-2.gif
+	delay	7
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	delay	2
+	frame	data/chars/Hanzo/0_190-2.gif
+	frame	data/chars/Hanzo/0_190-1.gif
+	frame	data/chars/Hanzo/0_190-0.gif
+	frame	data/chars/Hanzo/0_170-0.gif
+anim	fall
+	loop	0
+	delay	12
+	quakeframe	0 3 4
+	Landframe	4
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	bbox 215 129 61 69
+	offset 243 200
+	frame   data/chars/Hanzo/0_6030-0.gif
+	bbox 208 131 80 63
+	frame   data/chars/Hanzo/0_6030-10.gif
+	offset 243 182
+	frame   data/chars/Hanzo/0_6030-20.gif
+	delay	200
+	offset 243 177
+	bbox 208 126 79 44
+	frame   data/chars/Hanzo/0_6030-30.gif
+	bbox 0 0 0 0
+	delay	6
+	Attack1	0
+	offset 243 198
+	frame   data/chars/Hanzo/0_6040-10.gif
+	frame   data/chars/Hanzo/0_6030-30.gif
+	frame   data/chars/Hanzo/0_6040-10.gif
+
+anim	freespecial
+	loop	0
+	delay	6
+	cancel	2 7 0 a freespecial2
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	bbox 204 118 55 81
+	offset 221 200
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 243 138 86 61 11 0 0 0 0 20
+	bbox 220 127 58 72
+	frame data/chars/Hanzo/0_1210-0.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1210-1.gif
+	frame data/chars/Hanzo/0_1210-1.gif
+	delay	2
+	bbox 18 3 66 92
+	frame data/chars/Hanzo/0_1210-2.gif
+	frame data/chars/Hanzo/0_1210-3.gif
+	bbox 211 120 54 79
+	frame data/chars/Hanzo/0_1210-4.gif
+	frame data/chars/Hanzo/0_1210-4.gif
+
+anim	freespecial2
+	loop	0
+	delay	5
+	cancel	5 9 0 a freespecial3
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	bbox 216 128 52 70
+ offset 239 200
+	frame data/chars/Hanzo/0_1230-0.gif
+ offset 221 200
+	bbox 211 123 59 77
+	frame data/chars/Hanzo/0_1230-1.gif
+	attack2 231 143 59 56 11 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-2.gif
+	attack2 243 138 86 61 11 0 0 0 0 20
+	bbox 220 127 58 72
+	frame data/chars/Hanzo/0_1210-0.gif
+	bbox 200 122 60 77
+	attack2 215 121 53 78 11 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-3.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1230-4.gif
+	delay	2
+	bbox 195 121 62 78
+	frame data/chars/Hanzo/0_1230-4.gif
+	frame data/chars/Hanzo/0_1230-4.gif
+	frame data/chars/Hanzo/0_1230-4.gif
+	frame data/chars/Hanzo/0_1230-4.gif
+
+anim	freespecial3
+	loop	0
+	delay	4
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 221 200
+	bbox 195 121 62 78
+	frame data/chars/Hanzo/0_1230-4.gif
+	bbox 194 120 58 78
+ offset 223 200
+	attack1 0
+	frame data/chars/Hanzo/0_1230-5.gif
+ offset 213 200
+	bbox 210 112 48 87
+	frame data/chars/Hanzo/0_1230-6.gif
+	bbox 211 120 58 81
+	attack3 251 81 17 117 14 0 0 0 0 20
+	move 7
+	frame data/chars/Hanzo/0_1230-7.gif
+	attack3 232 132 78 66 14 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-8.gif
+	bbox 217 133 58 65
+	attack3 231 153 61 46 14 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-9.gif
+	move 0
+	frame data/chars/Hanzo/0_1230-10.gif
+	attack3 0
+	frame data/chars/Hanzo/0_1230-10.gif
+	frame data/chars/Hanzo/0_1230-10.gif
+ offset 218 200
+	bbox 212 120 53 80
+	frame data/chars/Hanzo/0_1210-4.gif
+ offset 240 200
+	frame data/chars/Hanzo/0_1200-7.gif
+
+anim	freespecial4
+	loop	0
+	delay	2
+	jumpframe 0 2 4
+	landframe 28
+	Fastattack 1
+	Energycost	10 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	frame	data/chars/Hanzo/0_1240-0.gif
+	frame	data/chars/Hanzo/0_1240-0.gif
+	attack2 244 105 55 78 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-1.gif
+	attack2 262 136 53 33 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-8.gif
+	attack2 250 158 44 48 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-2.gif
+	attack2 238 172 30 49 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-3.gif
+	attack2 0
+	frame	data/chars/Hanzo/0_1240-4.gif
+	frame	data/chars/Hanzo/0_1240-5.gif
+	frame	data/chars/Hanzo/0_1240-6.gif
+	attack2 230 86 30 66 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-7.gif
+	attack2 244 105 55 78 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-1.gif
+	attack2 262 136 53 33 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-8.gif
+	attack2 250 158 44 48 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-2.gif
+	attack2 238 172 30 49 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-3.gif
+	attack2 0
+	frame	data/chars/Hanzo/0_1240-4.gif
+	frame	data/chars/Hanzo/0_1240-5.gif
+	frame	data/chars/Hanzo/0_1240-6.gif
+	attack2 230 86 30 66 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-7.gif
+	attack2 244 105 55 78 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-1.gif
+	attack2 262 136 53 33 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-8.gif
+	attack2 250 158 44 48 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-2.gif
+	attack2 238 172 30 49 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-3.gif
+	attack2 0
+	frame	data/chars/Hanzo/0_1240-4.gif
+	frame	data/chars/Hanzo/0_1240-5.gif
+	frame	data/chars/Hanzo/0_1240-6.gif
+	attack2 230 86 30 66 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-7.gif
+	attack2 244 105 55 78 1 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-1.gif
+	frame	data/chars/Hanzo/0_1240-8.gif
+	delay	1
+	attack2 0
+	frame	data/chars/Hanzo/0_1240-9.gif
+	delay	7
+	attack3 229 146 61 54 12 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1240-9.gif
+	frame	data/chars/Hanzo/0_1240-9.gif
+	frame	data/chars/Hanzo/0_1240-10.gif
+	frame	data/chars/Hanzo/0_1300-0.gif
+
+anim	freespecial5
+	loop	0
+	delay	5
+	Energycost	1 1
+	Fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	frame	data/chars/Hanzo/0_2000-0.gif
+	frame	data/chars/Hanzo/0_2000-0.gif
+	frame	data/chars/Hanzo/0_2000-0.gif
+	frame	data/chars/Hanzo/0_2000-1.gif
+	frame	data/chars/Hanzo/0_2000-2.gif
+	@cmd	shoot "HanFSP1a" 0 0 0
+	frame	data/chars/Hanzo/0_2000-3.gif
+	frame	data/chars/Hanzo/0_2000-3.gif
+	frame	data/chars/Hanzo/0_2000-4.gif
+	frame	data/chars/Hanzo/0_2000-5.gif
+	frame	data/chars/Hanzo/0_2000-6.gif
+	frame	data/chars/Hanzo/0_2000-6.gif
+	frame	data/chars/Hanzo/0_2000-7.gif
+	
+anim	freespecial6
+	loop	0
+	delay	4
+	followanim	1
+	followcond	1
+	Energycost	2 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	fastattack 1
+ offset 243 200
+	frame	data/chars/Hanzo/0_170-0.gif
+	frame	data/chars/Hanzo/0_190-0.gif
+	frame	data/chars/Hanzo/0_190-1.gif
+	frame	data/chars/Hanzo/0_190-2.gif
+	frame	data/chars/empty.gif
+	attack1 243 124 35 80 1 0 0 0 0 20
+	move	8
+	delay	2
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	frame	data/chars/empty.gif
+	delay	4
+	move	0
+	attack1	0
+	frame	data/chars/empty.gif
+	frame	data/chars/Hanzo/0_190-2.gif
+	frame	data/chars/Hanzo/0_190-1.gif
+	frame	data/chars/Hanzo/0_190-0.gif
+	frame	data/chars/Hanzo/0_170-0.gif
+	frame	data/chars/Hanzo/0_170-0.gif
+ 
+ anim	follow1
+	loop	0
+	delay	3
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 220 200
+	attack1 0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 240 139 75 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-1.gif
+	attack1 242 163 74 36 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-2.gif
+	attack1 241 169 44 31 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-3.gif
+	frame data/chars/Hanzo/0_1200-3.gif
+	offset 221 200
+	Attack1  0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1210-1.gif
+	frame data/chars/Hanzo/0_1210-2.gif
+	frame data/chars/Hanzo/0_1210-4.gif
+ offset 239 200
+	frame data/chars/Hanzo/0_1230-0.gif
+ offset 221 200
+	frame data/chars/Hanzo/0_1230-1.gif
+	attack1 231 143 59 56 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-2.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	attack1 215 121 53 78 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-3.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1230-4.gif
+ offset 223 200
+	attack1 0
+	frame data/chars/Hanzo/0_1230-5.gif
+ offset 213 200
+	frame data/chars/Hanzo/0_1230-6.gif
+	attack1 251 81 17 117 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-7.gif
+	attack1 232 132 78 66 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-8.gif
+	attack1 231 153 61 46 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-9.gif
+	frame data/chars/Hanzo/0_1230-10.gif
+ offset 220 200
+	attack1 0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 240 139 75 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-1.gif
+	attack1 242 163 74 36 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-2.gif
+	attack1 241 169 44 31 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-3.gif
+	frame data/chars/Hanzo/0_1200-3.gif
+	offset 221 200
+	Attack1  0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1210-1.gif
+	frame data/chars/Hanzo/0_1210-2.gif
+	frame data/chars/Hanzo/0_1210-4.gif
+ offset 239 200
+	frame data/chars/Hanzo/0_1230-0.gif
+ offset 221 200
+	frame data/chars/Hanzo/0_1230-1.gif
+	attack1 231 143 59 56 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-2.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	attack1 215 121 53 78 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-3.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1230-4.gif
+ offset 223 200
+	attack1 0
+	frame data/chars/Hanzo/0_1230-5.gif
+ offset 213 200
+	frame data/chars/Hanzo/0_1230-6.gif
+	attack1 251 81 17 117 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-7.gif
+	attack1 232 132 78 66 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-8.gif
+	attack1 231 153 61 46 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-9.gif
+	frame data/chars/Hanzo/0_1230-10.gif
+ offset 220 200
+	attack1 0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 240 139 75 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-1.gif
+	attack1 242 163 74 36 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-2.gif
+	attack1 241 169 44 31 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1200-3.gif
+	frame data/chars/Hanzo/0_1200-3.gif
+	offset 221 200
+	Attack1  0
+	frame data/chars/Hanzo/0_1200-0.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1210-1.gif
+	frame data/chars/Hanzo/0_1210-2.gif
+	frame data/chars/Hanzo/0_1210-4.gif
+ offset 239 200
+	frame data/chars/Hanzo/0_1230-0.gif
+ offset 221 200
+	frame data/chars/Hanzo/0_1230-1.gif
+	attack1 231 143 59 56 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-2.gif
+	attack1 243 138 86 61 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1210-0.gif
+	attack1 215 121 53 78 1 0 0 0 0 20
+	frame data/chars/Hanzo/0_1230-3.gif
+	Attack1  0
+	frame data/chars/Hanzo/0_1230-4.gif
+ offset 223 200
+	attack1 0
+	frame data/chars/Hanzo/0_1230-5.gif
+ offset 213 200
+	frame data/chars/Hanzo/0_1230-6.gif
+	attack3 251 81 17 117 17 1 0 0 0 20
+	frame data/chars/Hanzo/0_1230-7.gif
+	attack3 232 132 78 66 17 1 0 0 0 20
+	frame data/chars/Hanzo/0_1230-8.gif
+	attack3 231 153 61 46 17 1 0 0 0 20
+	frame data/chars/Hanzo/0_1230-9.gif
+	frame data/chars/Hanzo/0_1230-10.gif
+	attack3 0
+	frame data/chars/Hanzo/0_1230-10.gif
+	frame data/chars/Hanzo/0_1230-10.gif
+	delay	7
+	frame data/chars/Hanzo/0_1230-10.gif
+ offset 218 200
+	frame data/chars/Hanzo/0_1210-4.gif
+ offset 240 200
+	frame data/chars/Hanzo/0_1200-7.gif
+
+anim	get
+	loop	0
+	delay	7
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	offset 243 200
+	frame	data/chars/Hanzo/0_6120-3.gif
+	frame	data/chars/Hanzo/0_6120-3.gif
+
+anim	idle
+	loop	1
+	delay	8
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	offset 243 200
+	bbox 215 128 62 70
+	frame	data/chars/Hanzo/0_1000-0.gif
+	frame	data/chars/Hanzo/0_1000-1.gif
+	frame	data/chars/Hanzo/0_1000-2.gif
+	frame	data/chars/Hanzo/0_1000-3.gif
+	frame	data/chars/Hanzo/0_1000-4.gif
+	frame	data/chars/Hanzo/0_1000-5.gif
+	frame	data/chars/Hanzo/0_1000-6.gif
+	frame	data/chars/Hanzo/0_1000-7.gif
+	frame	data/chars/Hanzo/0_1000-8.gif
+	frame	data/chars/Hanzo/0_1000-9.gif
+	frame	data/chars/Hanzo/0_1000-10.gif
+
+anim	jump
+	loop	0
+	delay	8
+	bbox	10 28 48 99
+	Dropframe 2
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	bbox	15 8 58 99
+	frame	data/chars/Hanzo/0_1042-0.gif
+	frame	data/chars/Hanzo/0_1042-1.gif
+	frame	data/chars/Hanzo/0_1042-2.gif
+	frame	data/chars/Hanzo/0_1042-3.gif
+	frame	data/chars/Hanzo/0_1042-4.gif
+	frame	data/chars/Hanzo/0_1042-5.gif
+	frame	data/chars/Hanzo/0_1042-6.gif
+	frame	data/chars/Hanzo/0_1041-5.gif
+
+anim	jumpattack
+	loop	0
+	delay	6
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	bbox 221 113 35 49
+	frame	data/chars/Hanzo/0_1540-0.gif
+	bbox 212 114 53 50
+	attack3 212 136 84 50 11 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1540-1.gif
+
+anim	jumpattack2
+	loop	0
+	delay	7
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	bbox 216 113 46 61
+	frame	data/chars/Hanzo/0_1400-0.gif
+	attack2 242 150 70 40 10 0 0 0 0 20
+	bbox 229 113 38 75
+	frame	data/chars/Hanzo/0_1400-1.gif
+	attack2 241 161 42 38 10 0 0 0 0 20
+	frame	data/chars/Hanzo/0_1400-2.gif
+
+anim	jumpland
+	loop	0
+	delay	5
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	frame	data/chars/Hanzo/0_1011-0.gif
+	frame	data/chars/Hanzo/0_1010-2.gif
+	frame	data/chars/Hanzo/0_1010-1.gif
+	frame	data/chars/Hanzo/0_1010-0.gif
+
+anim	pain
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	offset 243 200
+	bbox 193 135 69 62
+	frame	data/chars/Hanzo/0_6000-20.gif
+	bbox 202 126 64 71
+	frame	data/chars/Hanzo/0_6000-10.gif
+	bbox 209 123 63 76
+	frame	data/chars/Hanzo/0_6000-0.gif
+
+anim	pain2
+	loop	0
+	offset 243 200
+	bbox 94 54 78 86
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	bbox 193 135 69 62
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	Move	-2
+	bbox 202 126 64 71
+	frame	data/chars/Hanzo/0_6000-10.gif
+	frame	data/chars/Hanzo/0_6000-10.gif
+	Move	-1
+	frame	data/chars/Hanzo/0_6000-10.gif
+	bbox 209 123 63 76
+	frame	data/chars/Hanzo/0_6000-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/Hanzo/0_6000-0.gif
+	frame	data/chars/Hanzo/0_6000-0.gif
+
+anim	pain3
+	loop	0
+	offset 243 200
+	bbox 193 135 69 62
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	Move	-4
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	frame	data/chars/Hanzo/0_6000-20.gif
+	Move	-3
+	frame	data/chars/Hanzo/0_6000-20.gif
+	bbox 202 126 64 71
+	frame	data/chars/Hanzo/0_6000-10.gif
+	frame	data/chars/Hanzo/0_6000-10.gif
+	Move	-2
+	frame	data/chars/Hanzo/0_6000-10.gif
+	frame	data/chars/Hanzo/0_6000-10.gif
+	Move	-1
+	frame	data/chars/Hanzo/0_6000-10.gif
+	delay	100
+	frame	data/chars/Hanzo/0_6000-10.gif
+	Move	0
+	delay	2
+	frame	data/chars/Hanzo/0_6000-10.gif
+	bbox 209 123 63 76
+	frame	data/chars/Hanzo/0_6000-0.gif
+	delay	10
+	frame	data/chars/Hanzo/0_6000-0.gif
+	frame	data/chars/Hanzo/0_6000-0.gif
+
+anim	rise
+	loop	0
+	delay	7
+	offset 243 198
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	frame   data/chars/Hanzo/0_6120-0.gif
+	frame   data/chars/Hanzo/0_6120-1.gif
+	offset 243 200
+	frame   data/chars/Hanzo/0_6120-2.gif
+	frame   data/chars/Hanzo/0_6120-3.gif
+	frame   data/chars/Hanzo/0_6120-4.gif
+
+anim	run
+	loop	1
+	delay	4
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 213 200
+	bbox 189 135 72 64
+	frame	data/chars/Hanzo/0_1100-0.gif
+	frame	data/chars/Hanzo/0_1100-1.gif
+	frame	data/chars/Hanzo/0_1100-2.gif
+	frame	data/chars/Hanzo/0_1100-3.gif
+
+anim	runattack
+	loop	0
+	delay	2
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	bbox 149 72 75 58
+	offset 199 200
+	move	6
+	attack3 177 74 72 67 0 0 0 0 0 20
+	frame data/chars/Hanzo/0_1105-4.gif
+	frame data/chars/Hanzo/0_1105-4.gif
+	frame data/chars/Hanzo/0_1105-4.gif
+	frame data/chars/Hanzo/0_1105-4.gif
+	frame data/chars/Hanzo/0_1105-4.gif
+	frame data/chars/Hanzo/0_1105-4.gif
+	move	0
+	offset 213 200
+	frame data/chars/Hanzo/0_1105-3.gif
+	frame data/chars/Hanzo/0_1105-3.gif
+	frame data/chars/Hanzo/0_1105-3.gif
+	frame data/chars/Hanzo/0_1105-3.gif
+	offset 223 200
+	move	10
+	frame data/chars/Hanzo/0_1105-2.gif
+	move	0
+	frame data/chars/Hanzo/0_1105-2.gif
+	frame data/chars/Hanzo/0_1105-2.gif
+	frame data/chars/Hanzo/0_1105-2.gif
+	move	15
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	frame data/chars/Hanzo/0_1105-1.gif
+	move 20
+	offset 243 200
+	frame data/chars/Hanzo/0_1105-0.gif
+	move 7
+	frame data/chars/Hanzo/0_1105-0.gif
+	frame data/chars/Hanzo/0_1105-0.gif
+	move 4
+	offset 247 200
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	frame data/chars/Hanzo/0_1101-1.gif
+	move 1
+	frame data/chars/Hanzo/0_1101-0.gif
+	frame data/chars/Hanzo/0_1101-0.gif
+	frame data/chars/Hanzo/0_1101-0.gif
+	frame data/chars/Hanzo/0_1101-0.gif
+
+anim	special
+	loop	0
+	delay	6
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+	Energycost	40 0
+	jumpframe 2 9 0
+	#jumpframe 15 -7 0
+	landframe 28
+ offset 243 200
+	frame	data/chars/Hanzo/0_3100-1.gif
+	frame	data/chars/Hanzo/0_3100-1.gif
+	delay	3
+	frame	data/chars/Hanzo/0_3100-2.gif
+	frame	data/chars/Hanzo/0_3100-3.gif
+	frame	data/chars/Hanzo/0_3100-4.gif
+	frame	data/chars/Hanzo/0_3100-5.gif
+	frame	data/chars/Hanzo/0_3100-2.gif
+	frame	data/chars/Hanzo/0_3100-3.gif
+	frame	data/chars/Hanzo/0_3100-4.gif
+	frame	data/chars/Hanzo/0_3100-5.gif
+	frame	data/chars/Hanzo/0_3100-2.gif
+	frame	data/chars/Hanzo/0_3100-3.gif
+	frame	data/chars/Hanzo/0_3100-4.gif
+	frame	data/chars/Hanzo/0_3100-5.gif
+	@cmd	leaper 0 -12 0
+	frame	data/chars/Hanzo/0_1105-4.gif
+	frame	data/chars/Hanzo/0_3100-6.gif
+	frame	data/chars/Hanzo/0_3100-7.gif
+	frame	data/chars/Hanzo/0_3100-8.gif
+	frame	data/chars/Hanzo/0_3100-9.gif
+	frame	data/chars/Hanzo/0_3100-6.gif
+	frame	data/chars/Hanzo/0_3100-7.gif
+	frame	data/chars/Hanzo/0_3100-8.gif
+	frame	data/chars/Hanzo/0_3100-9.gif
+	frame	data/chars/Hanzo/0_3100-6.gif
+	frame	data/chars/Hanzo/0_3100-7.gif
+	frame	data/chars/Hanzo/0_3100-8.gif
+	frame	data/chars/Hanzo/0_3100-9.gif
+	delay	100
+	frame	data/chars/Hanzo/0_3100-10.gif
+	@cmd	shoot "HanSPA" 0 0 0
+	@cmd	shoot "HanSPB" 0 0 0
+	delay	4
+	frame	data/chars/Hanzo/0_2000-3.gif
+	frame	data/chars/Hanzo/0_2000-4.gif
+	frame	data/chars/Hanzo/0_2000-5.gif
+	delay	20
+	frame	data/chars/Hanzo/0_2000-6.gif
+	delay	4
+	frame	data/chars/Hanzo/0_2000-2.gif
+	delay	5
+	frame	data/chars/Hanzo/0_3110-0.gif
+	frame	data/chars/Hanzo/0_3110-1.gif
+	frame	data/chars/Hanzo/0_3110-2.gif
+	frame	data/chars/Hanzo/0_3110-3.gif
+	frame	data/chars/Hanzo/0_3110-0.gif
+	frame	data/chars/Hanzo/0_3110-1.gif
+	frame	data/chars/Hanzo/0_3110-2.gif
+	frame	data/chars/Hanzo/0_3110-3.gif
+	frame	data/chars/Hanzo/0_3110-0.gif
+	frame	data/chars/Hanzo/0_3110-0.gif
+	frame	data/chars/Hanzo/0_3110-0.gif
+
+anim	walk
+	loop	1
+	delay	6
+	drawmethod scalex 0.9
+	drawmethod scaley 0.87
+ offset 243 200
+	bbox 213 126 56 72
+	frame	data/chars/Hanzo/0_1020-0.gif
+	frame	data/chars/Hanzo/0_1020-1.gif
+	frame	data/chars/Hanzo/0_1020-2.gif
+	frame	data/chars/Hanzo/0_1020-3.gif
+	frame	data/chars/Hanzo/0_1020-4.gif
+	frame	data/chars/Hanzo/0_1020-5.gif
+	frame	data/chars/Hanzo/0_1020-6.gif
+	frame	data/chars/Hanzo/0_1020-7.gif
+	frame	data/chars/Hanzo/0_1020-8.gif
+	frame	data/chars/Hanzo/0_1020-9.gif
+
+anim	walkoff
+	loop	0
+	delay	10
+	offset	23 77
+	Landframe	2
+	Jumpreframe	0 0 0
+	bbox	6 2 40 75
+	frame	data/chars/mike/93.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	offset	26 71
+	bbox	5 0 44 72
+	frame	data/chars/mike/94.gif
+	delay	4
+	offset	24 52
+	bbox	0
+	frame	data/chars/mike/91.gif
+	frame	data/chars/mike/91.gif
+	frame	data/chars/mike/91.gif
+

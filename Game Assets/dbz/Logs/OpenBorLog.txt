@@ -1,13 +1,13 @@
-Total Ram: 17039638528 Bytes
- Free Ram: 13807673344 Bytes
- Used Ram: 6021120 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 7170048000 Bytes
+ Used Ram: 3678208 Bytes
 
 debug:nativeWidth, nativeHeight, bpp, Hz  1920, 1080, 24, 60
 OpenBoR v3.0 Build , Compile Date: Jul 20 2018
 
 Game Selected: ./Paks/dbz.pak
 
-FileCaching System Init......	Enabled
+FileCaching System Init......	Disabled
 Initializing video............
 Reading video settings from 'data/video.txt'.
 
@@ -42,6 +42,7 @@ Warning: Unknown command in lifebar.txt: 'colormagic200'.
 Warning: Unknown command in lifebar.txt: 'colormagic300'.
 Warning: Unknown command in lifebar.txt: 'colormagic400'.
 Warning: Unknown command in lifebar.txt: 'colormagic500'.
+Joystick: "UNKNOWN" connected at port: 0 at 2020-05-03 09:25:47
 Cacheing 'super02' from data/chars/misc/power/super02/super02.txt
 Cacheing 'pw19' from data/chars/misc/power/19/pw19.txt
 Cacheing 'carregaball' from data/chars/misc/power/19/carregaball.txt
@@ -236,7 +237,9 @@ Loaded 'hp' from data/chars/item/HP.txt
 
 Loading models...............	Done!
 Object engine init...........	Done!
-Input init...................	No Joystick(s) Found!
+Input init...................	
+1 joystick(s) found!
+UNKNOWN - 4 axes, 12 buttons, 1 hat(s)
 Done!
 Create blending tables.......	Done!
 Save settings so far........	Done!
@@ -271,9 +274,9 @@ Warning: Unknown command in lifebar.txt: 'colormagic300'.
 Warning: Unknown command in lifebar.txt: 'colormagic400'.
 Warning: Unknown command in lifebar.txt: 'colormagic500'.
 Level Loading:   'data/levels/intro/intro.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13600960512 Bytes
- Used Ram: 231464960 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6932058112 Bytes
+ Used Ram: 234377216 Bytes
 
 Warning: Unknown command in lifebar.txt: 'colormagic25'.
 Warning: Unknown command in lifebar.txt: 'colormagic50'.
@@ -299,25 +302,25 @@ Warning: Unknown command in lifebar.txt: 'colormagic400'.
 Warning: Unknown command in lifebar.txt: 'colormagic500'.
 
 Level Loaded:    'data/levels/intro/intro.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13600534528 Bytes
- Used Ram: 231968768 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6948786176 Bytes
+ Used Ram: 234885120 Bytes
 Total sprites mapped: 951
 
 Level Unloading: 'data/levels/intro/intro.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13601427456 Bytes
- Used Ram: 232579072 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6919663616 Bytes
+ Used Ram: 235339776 Bytes
 
 RAM Status:
-Total Ram: 17039638528 Bytes
- Free Ram: 13601427456 Bytes
- Used Ram: 232579072 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6919663616 Bytes
+ Used Ram: 235339776 Bytes
 
 Level Loading:   'data/levels/desert.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13599199232 Bytes
- Used Ram: 234418176 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6930300928 Bytes
+ Used Ram: 235372544 Bytes
 
 Warning: Unknown command in lifebar.txt: 'colormagic25'.
 Warning: Unknown command in lifebar.txt: 'colormagic50'.
@@ -352,46 +355,25 @@ Warning: Unknown command in lifebar.txt: 'colormagic400'.
 Warning: Unknown command in lifebar.txt: 'colormagic500'.
 
 Level Loaded:    'data/levels/desert.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13580849152 Bytes
- Used Ram: 253161472 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6904856576 Bytes
+ Used Ram: 254132224 Bytes
 Total sprites mapped: 1034
 
 Allocating sprite : raditz_1...
-Sprite allocated : #421673200
+Sprite allocated : #349418304
 Allocating sprite : GOKU...
-Sprite allocated : #401903624
+Sprite allocated : #349618512
 Level Unloading: 'data/levels/desert.txt'
-Total Ram: 17039638528 Bytes
- Free Ram: 13584551936 Bytes
- Used Ram: 256315392 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6886572032 Bytes
+ Used Ram: 250294272 Bytes
 
 RAM Status:
-Total Ram: 17039638528 Bytes
- Free Ram: 13586718720 Bytes
- Used Ram: 253452288 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6888837120 Bytes
+ Used Ram: 247427072 Bytes
 
-Warning: Unknown command in lifebar.txt: 'colormagic25'.
-Warning: Unknown command in lifebar.txt: 'colormagic50'.
-Warning: Unknown command in lifebar.txt: 'colormagic100'.
-Warning: Unknown command in lifebar.txt: 'colormagic200'.
-Warning: Unknown command in lifebar.txt: 'colormagic300'.
-Warning: Unknown command in lifebar.txt: 'colormagic400'.
-Warning: Unknown command in lifebar.txt: 'colormagic500'.
-Warning: Unknown command in lifebar.txt: 'colormagic25'.
-Warning: Unknown command in lifebar.txt: 'colormagic50'.
-Warning: Unknown command in lifebar.txt: 'colormagic100'.
-Warning: Unknown command in lifebar.txt: 'colormagic200'.
-Warning: Unknown command in lifebar.txt: 'colormagic300'.
-Warning: Unknown command in lifebar.txt: 'colormagic400'.
-Warning: Unknown command in lifebar.txt: 'colormagic500'.
-Warning: Unknown command in lifebar.txt: 'colormagic25'.
-Warning: Unknown command in lifebar.txt: 'colormagic50'.
-Warning: Unknown command in lifebar.txt: 'colormagic100'.
-Warning: Unknown command in lifebar.txt: 'colormagic200'.
-Warning: Unknown command in lifebar.txt: 'colormagic300'.
-Warning: Unknown command in lifebar.txt: 'colormagic400'.
-Warning: Unknown command in lifebar.txt: 'colormagic500'.
 
 ************ Shutting Down ************
 
@@ -402,9 +384,9 @@ OpenBOR is the open source continuation of Beats of Rage by Senile Team.
 
 Special thanks to SEGA and SNK.
 
-Total Ram: 17039638528 Bytes
- Free Ram: 13590646784 Bytes
- Used Ram: 249282560 Bytes
+Total Ram: 34311979008 Bytes
+ Free Ram: 6888976384 Bytes
+ Used Ram: 247435264 Bytes
 
 Release level data...........
 Done!

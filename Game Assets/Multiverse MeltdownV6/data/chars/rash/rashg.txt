@@ -1,0 +1,85 @@
+name	RASHG
+health	100
+speed	7
+type	none
+shadow	3
+grabdistance	40
+running 24	3	2.80	1	1
+icon	data/chars/rash/icon.gif
+jumpheight 3.8
+makeinv  1
+knife    gshot
+dust   dust
+
+
+anim get
+	loop	0
+	offset	88 195
+	delay   10
+	frame	data/chars/rash/gget.gif
+
+anim jump
+	loop	0
+	delay	6
+	offset	88 195
+	bbox	82 125 20 50
+	sound   data/chars/rash/p2.wav
+	frame	data/chars/rash/gj1.gif
+	frame	data/chars/rash/j2.gif
+	frame	data/chars/rash/j3.gif
+	frame	data/chars/rash/j4.gif
+	frame	data/chars/rash/j5.gif
+	frame	data/chars/rash/j6.gif
+	frame	data/chars/rash/j7.gif
+	frame	data/chars/rash/j8.gif
+	frame	data/chars/rash/j9.gif
+	frame	data/chars/rash/gj1.gif
+
+
+
+anim idle
+	loop	1
+	delay	13
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/gat2.gif
+
+anim walk
+	loop	1
+	delay	9
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/gW1.gif
+	frame	data/chars/rash/gW2.gif
+	frame	data/chars/rash/gW3.gif
+	frame	data/chars/rash/gW4.gif
+	frame	data/chars/rash/gW5.gif
+	frame	data/chars/rash/gW6.gif
+	frame	data/chars/rash/gW7.gif
+
+anim attack1
+	loop	0
+	delay	2
+	offset	88 195
+	bbox	82 145 20 50
+        throwframe	2	-1  
+	frame	data/chars/rash/gat1.gif
+	sound   data/chars/robo/a1.wav
+	frame	data/chars/rash/gat2.gif
+	frame	data/chars/rash/gat1.gif
+	frame	data/chars/rash/gat2.gif
+	frame	data/chars/rash/gat1.gif
+	frame	data/chars/rash/gat2.gif
+
+
+anim run
+	loop	1
+	delay	6
+	offset	88 195
+	bbox	82 145 20 50
+	frame	data/chars/rash/gr1.gif
+	frame	data/chars/rash/gr2.gif
+	frame	data/chars/rash/gr3.gif
+	frame	data/chars/rash/gr4.gif
+	frame	data/chars/rash/gr5.gif
+

@@ -1,0 +1,47 @@
+name    gb
+type	text
+
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+delay	15
+	offset	0 0 
+sound	data/sounds/beam.wav
+frame	data/scenes/gb/1.png
+sound	data/sounds/flame2.wav
+frame	data/scenes/gb/2.png
+frame	data/scenes/gb/3.png
+frame	data/scenes/gb/4.png
+	frame	data/scenes/gb/5.png
+	frame	data/scenes/gb/6.png
+	frame	data/scenes/gb/7.png
+	frame	data/scenes/gb/8.png
+	frame	data/scenes/gb/9.png
+sound	data/sounds/boom.wav
+	frame	data/scenes/gb/10.png
+	frame	data/scenes/gb/11.png
+	frame	data/scenes/gb/12.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/gb/12.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

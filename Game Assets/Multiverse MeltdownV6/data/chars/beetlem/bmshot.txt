@@ -1,0 +1,19 @@
+name	BMShot
+health	1
+type	Pshot
+shadow	0
+speed	20
+candamage Enemy
+remove 0
+
+anim idle
+	loop	1
+	delay	5
+	offset	115 128
+           hitflash BMSF
+		drawmethod  365  355  0  0  0  -1  -1
+		shock  177  87  21  42  22  1  0  0  0  20
+	frame	data/chars/Beetlem/FSP3fx0.gif
+	frame	data/chars/Beetlem/FSP3fx1.gif
+	frame	data/chars/Beetlem/FSP3fx2.gif
+

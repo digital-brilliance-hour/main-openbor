@@ -1,0 +1,18 @@
+name	MCafx
+health	1
+type	none
+shadow	0
+toflip 1
+candamage enemy Obsticle
+
+anim idle
+	offset  121  125
+           delay      4
+		drawmethod  256  256  1  0  0  -1  -1
+	frame	data/chars/effects/MCafx-0.gif
+	frame	data/chars/effects/MCafx-1.gif
+	frame	data/chars/effects/MCafx-2.gif
+	frame	data/chars/effects/MCafx-3.gif
+           delay      20
+	frame	data/chars/effects/MCafx-4.gif
+

@@ -1,0 +1,19 @@
+name	TerrorShot
+type	none
+shadow	0
+nolife  1
+speed	24
+#Remove 0
+candamage player npc
+
+anim idle
+	loop	1
+        delay   4
+	offset	167 128
+		#sound  Data/CHARS/Omega/hold.wav
+		attack2  201  93  18  34 13  0  0  0  0  20
+	frame	data/chars/EFX/TerrorS0.gif
+	frame	data/chars/EFX/TerrorS1.gif
+	frame	data/chars/EFX/TerrorS2.gif
+	frame	data/chars/EFX/TerrorS3.gif
+

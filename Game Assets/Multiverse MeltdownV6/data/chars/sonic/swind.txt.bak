@@ -1,0 +1,69 @@
+name	Swind
+health	1
+speed   19
+type	trap
+#hitenemy 1 0
+grabdistance 72
+candamage enemy npc
+shadow	0
+nolife        1
+#icon	data/chars/misc/super_icon.gif
+alpha 5
+
+anim idle
+#        energycost  31
+	loop	0
+	delay	4
+        fastattack 1
+	offset	65 182
+	Attack	0 0 128 191 5 0 0 0 13
+#	hitfx   data/chars/Sonic/pheh.wav
+	frame	data/chars/Sonic/Swind1.gif
+	frame	data/chars/Sonic/Swind2.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind3.gif
+	frame	data/chars/Sonic/Swind4.gif
+	frame	data/chars/Sonic/Swind5.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind6.gif
+	frame	data/chars/Sonic/Swind7.gif
+	frame	data/chars/Sonic/Swind8.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind9.gif
+	frame	data/chars/Sonic/Swind10.gif
+	frame	data/chars/Sonic/Swind6.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind7.gif
+	frame	data/chars/Sonic/Swind8.gif
+	frame	data/chars/Sonic/Swind9.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind10.gif
+	frame	data/chars/Sonic/Swind6.gif
+	frame	data/chars/Sonic/Swind7.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind8.gif
+	frame	data/chars/Sonic/Swind9.gif
+	frame	data/chars/Sonic/Swind10.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind6.gif
+	frame	data/chars/Sonic/Swind7.gif
+	frame	data/chars/Sonic/Swind8.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind9.gif
+	frame	data/chars/Sonic/Swind10.gif
+	frame	data/chars/Sonic/Swind6.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind7.gif
+	frame	data/chars/Sonic/Swind8.gif
+	frame	data/chars/Sonic/Swind9.gif
+	Attack	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind10.gif
+	frame	data/chars/Sonic/Swind11.gif
+	frame	data/chars/Sonic/Swind12.gif
+	Blast	0 0 128 191 22 1 0 0 13
+	frame	data/chars/Sonic/Swind13.gif
+	delay	1
+	frame	data/chars/Sonic/empty.gif
+
+
+

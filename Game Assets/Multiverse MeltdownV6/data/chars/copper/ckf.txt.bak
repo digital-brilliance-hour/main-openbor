@@ -1,0 +1,55 @@
+name	CKFire
+type	None
+shadow	0
+nolife  1
+Nomove 1
+Remove 0
+candamage  Enemy
+
+
+anim idle
+	loop	0
+	delay	2
+	offset	115 129
+           Move     5
+	attack1      135 99 27 28 17  1  0  0  20
+           DropV     3 1
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-0.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-1.GIF
+	frame	data/chars/copper/CKF-2.GIF
+	frame	data/chars/copper/CKF-2.GIF
+@cmd killentity getlocalvar("self")
+	frame	data/chars/copper/CKF-2.GIF
+

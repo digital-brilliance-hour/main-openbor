@@ -1,0 +1,18 @@
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+
+
+blendfx 1 1 1 1 1 1 1
+
+set	Grouping
+
+skipselect Mandy
+
+file	data/levels/example1.txt

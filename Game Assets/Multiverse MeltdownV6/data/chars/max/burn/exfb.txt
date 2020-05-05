@@ -1,0 +1,31 @@
+name	EXfB
+health	1
+type	none
+shadow	0
+candamage enemy Obsticle
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Owl/Burn/OBombBP
+
+anim idle
+	offset	131 120
+	delay  6
+           @cmd    changemap 1
+		drawmethod  256  256  0  0  0  -1  -1
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		Burn  125  110  13  11  22  1  0  0  0  20
+           Move 0
+	frame    data/chars/Owl/Burn/OBB-0.gif
+		Burn  117  101  30  22  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-1.gif
+		Burn  105  82  58  50  22  1  0  0  0  20
+		offset  132  120
+	frame    data/chars/Owl/Burn/OBB-2.gif
+		Burn  100  80  65  55  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-3.gif
+		Burn  103  84  61  47  22  1  0  0  0  20
+	frame    data/chars/Owl/Burn/OBB-4.gif
+		offset  133  120
+	frame    data/chars/Owl/Burn/OBB-5.gif
+	frame    data/chars/Owl/Burn/OBB-6.gif
+

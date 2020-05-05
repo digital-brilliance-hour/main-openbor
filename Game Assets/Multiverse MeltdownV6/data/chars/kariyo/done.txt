@@ -1,0 +1,36 @@
+anim	attacks x)
+anim	fall x)
+anim	Freespecial1 x)
+anim	Freespecial2 x-
+anim	Freespecial3 x-
+anim	idle x)
+anim	jump 
+anim	walkoff 
+anim	Jumpland 
+anim	jumpattack 
+anim	pain x)
+anim	pain4 
+anim	rise x)
+anim	run x)
+anim	RUNATTACK 
+anim	Spawn 
+anim	walk x)
+
+
+anim	idle
+	loop	1
+	delay	14
+	offset	149 138
+	bbox 140 78 18 57
+	frame	data/chars/Kariyo/Idle3.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Kariyo/Idle2.gif
+	frame	data/chars/Kariyo/Idle7.gif
+	frame	data/chars/Kariyo/Idle6.gif
+	frame	data/chars/Kariyo/Idle8.gif
+	frame	data/chars/Kariyo/Idle4.gif
+	frame	data/chars/Kariyo/Idle6.gif
+	frame	data/chars/Kariyo/Idle8.gif
+	frame	data/chars/Kariyo/Idle0.gif
+	frame	data/chars/Kariyo/Idle1.gif
+	frame	data/chars/Kariyo/Idle5.gif

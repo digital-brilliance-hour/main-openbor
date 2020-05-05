@@ -1,0 +1,328 @@
+notime 1
+music		data/music/CeniorArmy.ogg
+background	data/bgs/ntb/city.gif
+water           data/bgs/ntb/sea.gif 3
+frontpanel	           data/bgs/Fpanal.gif
+
+panel		data/bgs/ntb/bs1.gif       none		                none
+panel		data/bgs/ntb/bs2.gif       none		                none
+panel		data/bgs/ntb/bs3.gif       none		                none
+panel		data/bgs/ntb/bs4.gif       none		                none
+panel		data/bgs/ntb/bs5.gif       none		                none
+panel		data/bgs/ntb/bs6.gif       none		                none
+panel		data/bgs/ntb/bs7.gif       none		                none
+panel		data/bgs/ntb/bs8.gif       none		                none
+panel		data/bgs/ntb/bs9.gif       none		                none
+panel		data/bgs/ntb/bs10.gif      none		                none
+panel		data/bgs/ntb/bs11.gif      none		                none
+panel		data/bgs/ntb/bs12.gif      none		                none
+panel		data/bgs/ntb/bs13.gif      none		                none
+panel		data/bgs/ntb/bs14.gif      none		                none
+panel		data/bgs/ntb/bs15.gif      none		                none
+panel		data/bgs/ntb/bs16.gif      none		                none	
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+type 0 0 0
+						
+order	abcdefghijklmnopmnop
+
+
+load DARKHOUND_E_
+load DARKION_E_
+load SHADOWBAT_E_
+load HAUZERe
+load INFECTED_FUNGRA
+load PIG
+load alien1
+load alien2
+load alien3
+load ghgob
+load PIGMAN
+load RAT
+load RATMAN
+load SRAT
+load WRENCHIE
+load Cheribu
+load alien4
+load alien5
+load alien6
+load goblin_
+
+load RAT_
+load Caprcorn
+load Juggs
+load JILLIAN
+load SHADOWKRO_E_
+load DARKBRITTO_E_
+load kusare
+load sasqua
+load JR.BALROG
+#Group 1-----------------
+
+#Wait
+#at      340
+#z 154 228
+
+#spawn UniFC
+#coords 650 235 1
+#mp 8
+#at 5
+
+#spawn ESK15s
+#coords 220 154 1
+#at 5
+#spawn ESK15s
+#coords 240 184 1
+#at 25
+###########################
+spawn UniFA
+coords 650 163 1
+mp 8
+at 5
+spawn UniFB
+coords 650 283 1
+mp 9
+at 5
+
+spawn ESK15s
+coords 220 218 1
+at 5
+spawn ESK15s
+coords 220 218 1
+at 15
+###########################
+spawn UniFA
+coords 650 173 1
+mp 9
+at 500
+spawn UniFA
+coords 650 193 1
+mp 9
+at 500
+
+spawn ESK10s
+coords 220 218 1
+at 500
+spawn ESK10s
+coords 220 218 1
+at 510
+###########################
+spawn UniFA
+coords 650 173 1
+mp 8
+at 1100
+spawn UniFA
+coords 650 193 1
+mp 8
+at 1100
+
+spawn ESK15s
+coords 220 218 1
+at 1100
+spawn ESK15s
+coords 220 218 1
+at 1110
+spawn Juggs
+item Meat
+coords 650 203 1
+at 1200
+###########################
+spawn UniFB
+coords 650 163 1
+mp 9
+at 1500
+spawn UniFA
+coords 650 183 1
+mp 9
+at 1500
+spawn UniFB
+coords 650 203 1
+mp 9
+at 1500
+
+spawn ESK10s
+coords 220 218 1
+at 1500
+spawn ESK10s
+coords 220 218 1
+at 1510
+###########################
+spawn UniFB
+coords 650 203 1
+mp 8
+at 2100
+spawn UniFB
+coords 650 183 1
+mp 8
+at 2100
+spawn UniFC
+coords 650 163 1
+mp 8
+at 2100
+
+spawn ESK15s
+coords 220 218 1
+at 2100
+spawn ESK15s
+coords 220 218 1
+at 2110
+spawn Juggs
+item Meat
+coords 650 203 1
+at 2210
+###########################
+spawn UniFB
+coords 650 203 1
+mp 9
+at 2500
+spawn UniFA
+coords 650 183 1
+mp 9
+at 2500
+spawn UniFA
+coords 650 163 1
+mp 9
+at 2500
+
+spawn ESK10s
+coords 220 218 1
+at 2500
+spawn ESK10s
+coords 220 218 1
+at 2510
+###########################
+spawn UniFB
+coords 650 203 1
+mp 8
+at 3100
+spawn UniFB
+coords 650 183 1
+mp 8
+at 3100
+spawn UniFC
+coords 650 163 1
+mp 8
+at 3100
+
+spawn ESK15s
+coords 220 218 1
+at 3100
+spawn ESK15s
+coords 220 218 1
+at 3110
+###########################
+spawn UniFB
+coords 650 203 1
+mp 9
+at 3500
+spawn UniFC
+coords 650 183 1
+mp 9
+at 3500
+spawn UniFA
+coords 650 163 1
+mp 9
+at 3500
+
+spawn ESK10s
+coords 220 218 1
+at 3500
+spawn ESK10s
+coords 220 218 1
+at 3510
+spawn Juggs
+item Meat
+coords 650 203 1
+at 3710
+###########################
+spawn UniFB
+coords 650 203 1
+mp 8
+at 4000
+spawn UniFB
+coords 650 183 1
+mp 8
+at 4000
+spawn UniFC
+coords 650 163 1
+mp 8
+at 4000
+spawn FERNANDEZ
+coords 650 203 1
+at 4000
+
+spawn ESK15s
+coords 220 218 1
+at 4000
+spawn ESK15s
+coords 220 218 1
+at 4010
+###########################
+spawn UniFB
+coords 650 203 1
+mp 9
+at 4400
+spawn UniFC
+coords 650 183 1
+mp 9
+at 4400
+spawn UniFA
+coords 650 163 1
+mp 9
+at 4400
+
+spawn ESK10s
+coords 220 218 1
+at 4400
+spawn ESK10s
+coords 220 218 1
+at 4410
+spawn ESK10s
+coords 220 218 1
+at 4430
+spawn ESK10s
+coords 220 218 1
+at 4440
+###########################
+
+spawn ROYAL_GUARD
+Boss 1
+aggression 100
+Health 300
+coords 600 164 1
+at 4500
+
+spawn ROYAL_GUARD
+Boss 1
+aggression 100
+Health 300
+coords 600 218 1
+at 4500
+
+#spawn UniFB
+#coords 650 203 1
+#mp 8
+#at 4500
+#spawn UniFA
+#coords 650 183 1
+#mp 8
+#at 4500
+
+#spawn ESK15s
+#coords 220 218 1
+#at 4500
+#spawn ESK15s
+#coords 220 218 1
+#at 4510
+###########################
+
+#Wait
+#at 5970
+
+#group 1 1
+#at 5970
+
+#5970

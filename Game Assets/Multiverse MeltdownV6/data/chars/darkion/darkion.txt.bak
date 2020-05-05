@@ -1,0 +1,443 @@
+name	DARKION
+health	300
+mp 80
+mprate 8
+speed	11
+type	Player
+icon     data/chars/Sonic/Icon-A.gif 1
+iconget  data/chars/Sonic/Icon-B.gif 1
+iconpain data/chars/Sonic/Icon-C.gif 1
+icondie  data/chars/Sonic/Icon-D.gif 1
+
+
+
+
+running 21	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    SONIC_ SONIC__
+
+palette       data/chars/Darkion/PalD
+
+#alternatepal  data/chars/Sonic/Map1
+#alternatepal  data/chars/Sonic/Map2
+#alternatepal  data/chars/Sonic/Map3
+#alternatepal  data/chars/Sonic/Map4
+#alternatepal  data/chars/Sonic/Map5
+
+
+
+
+com a2 Freespecial1
+com a3 Freespecial2
+com a4 Freespecial3
+jumpmove  3  2
+
+animationscript data/scripts/script.c
+
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+        Move 10
+		attack2  143  105  59  29  11  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+        Move 0
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	attack2
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+        Move 10
+		attack3  143  105  59  29  11  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+        Move 0
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	attack3
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+        Move 10
+		attack3  143  105  59  29  11  1  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+        Move 0
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	dodge
+	loop	0
+	delay	6
+	offset	158 133
+	frame	data/chars/Darkion/Walk0.gif
+	frame	data/chars/Darkion/Walk1.gif
+	frame	data/chars/Darkion/Walk2.gif
+	frame	data/chars/Darkion/Walk3.gif
+	frame	data/chars/Darkion/Walk4.gif
+
+anim	fall
+	loop	0
+	offset	158 133
+	delay	7
+	quakeframe	0 3 4
+	Landframe	16
+	attack3	142 111 29 20 10 0 0 0 0 20
+	bbox	142 111 29 20
+	#sound	Data/CHARS/Sonic/whoa.wav
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Fall0.gif
+	frame	data/chars/Darkion/Fall1.gif
+	frame	data/chars/Darkion/Fall2.gif
+	frame	data/chars/Darkion/Fall0.gif
+	frame	data/chars/Darkion/Fall1.gif
+	frame	data/chars/Darkion/Fall2.gif
+	frame	data/chars/Darkion/Fall0.gif
+	frame	data/chars/Darkion/Fall1.gif
+	frame	data/chars/Darkion/Fall2.gif
+	frame	data/chars/Darkion/Fall0.gif
+	frame	data/chars/Darkion/Fall1.gif
+	frame	data/chars/Darkion/Fall2.gif
+	frame	data/chars/Darkion/Fall0.gif
+	frame	data/chars/Darkion/Fall1.gif
+	frame	data/chars/Darkion/Fall2.gif
+	delay	500
+	frame	data/chars/Darkion/Fall0.gif
+	bbox	0
+	delay	8
+	Attack1	0
+	frame	data/chars/Darkion/Fall3.gif
+	frame	data/chars/Darkion/Fall3.gif
+	frame	data/chars/Darkion/Fall3.gif
+
+anim	freespecial1
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+	@cmd	shoot "StingSh" 0 0 0
+	frame	data/chars/Darkion/A-1.gif
+        Move 0
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	freespecial2
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Fastattack 1
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+	delay	5
+        Move 15
+		attack1  143  105  59  29  2  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+        Move 0
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+		attack1  143  105  59  29  2  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+		attack1  143  105  59  29  2  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+		attack1  143  105  59  29  2  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+		attack3  143  105  59  29  6  0  0  0  0  20
+	frame	data/chars/Darkion/A-1.gif
+		Attack1  0
+	delay	7
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	freespecial3
+	loop	0
+	delay	7
+	offset	158 133
+	bbox	147 118 25 17
+        Range 0 1
+	frame	data/chars/Darkion/A-0.gif
+	@cmd	shoot "Dsting" 0 0 0
+	frame	data/chars/Darkion/A-1.gif
+		Attack1  0
+	frame	data/chars/Darkion/A-2.gif
+	frame	data/chars/Darkion/A-2.gif
+
+anim	get
+	loop	0
+	offset	158 133
+	delay	8
+	frame	data/chars/Darkion/Rise.gif
+	frame	data/chars/Darkion/Rise.gif
+
+anim	idle
+	loop	1
+	delay	8
+	offset	158 133
+	bbox	144 114 28 20
+	frame	data/chars/Darkion/Idle.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Idle.gif
+
+anim	jump
+	loop	1
+	delay	7
+	offset	158 133
+	bbox	148 111 21 21
+	frame	data/chars/Darkion/Walk0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Walk0.gif
+
+anim	walkoff
+	loop	0
+	loop	0
+	delay	9
+	offset	158 133
+        Landframe 3
+        Jumpreframe 0 0 0
+	bbox	148 111 21 21
+	frame	data/chars/Darkion/Walk0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Walk0.gif
+	delay	500
+	frame	data/chars/Darkion/Walk0.gif
+	offset	158 133
+	delay	6
+		bbox  0
+	frame	data/chars/Darkion/Rise.gif
+
+anim	Jumpland
+	loop	0
+	offset	158 133
+	delay	8
+	frame	data/chars/Darkion/Rise.gif
+	frame	data/chars/Darkion/Rise.gif
+
+anim	pain
+	loop	0
+	offset	158 133
+	bbox	138 99 41 32
+	delay	7
+	quakeframe	0 2 4
+	#sound	Data/CHARS/Sonic/Pain.wav
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+
+anim	pain2
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-2
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-1
+	bbox  153  86  28  51
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+
+anim	pain3
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-4
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-3
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-2
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	Move	-1
+	frame	data/chars/Darkion/pain.gif
+	delay	100
+	frame	data/chars/Darkion/pain.gif
+	Move	0
+	delay	2
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	delay	10
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+
+anim	pain4
+	loop	0
+	delay	6
+	offset	158 133
+	bbox	132 108 50 16
+	#sound	data/chars/Sonic/pain.wav
+		Attack1  0
+	frame	data/chars/Darkion/Fall3.gif
+	offset	160 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	158  133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	160 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	158 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	160 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	158 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	160 133
+	frame	data/chars/Darkion/Fall3.gif
+	offset	158 133
+	delay	50
+	frame	data/chars/Darkion/Fall3.gif
+	bbox	0 0 0 0
+	offset	158 133
+	delay	8
+	frame	data/chars/Darkion/Rise.gif
+	frame	data/chars/Darkion/Rise.gif
+
+anim	pain5
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/Darkion/pain.gif
+	delay	2
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	delay	9
+	frame	data/chars/Darkion/pain.gif
+
+anim	pain6
+	loop	0
+	offset	153 133
+	bbox	138 99 41 32
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/Darkion/pain.gif
+	delay	2
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	frame	data/chars/Darkion/pain.gif
+	delay	9
+	frame	data/chars/Darkion/pain.gif
+
+anim	rise
+	loop	0
+	offset	158 133
+	delay	8
+	frame	data/chars/Darkion/Rise.gif
+	frame	data/chars/Darkion/Rise.gif
+
+anim	run
+	loop	1
+	delay	7
+	offset	158 133
+	bbox	148 111 21 21
+	frame	data/chars/Darkion/Walk0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Walk1.gif
+	frame	data/chars/Darkion/Walk2.gif
+	frame	data/chars/Darkion/Walk3.gif
+	frame	data/chars/Darkion/Walk4.gif
+
+anim	Special
+	loop	0
+	delay	2
+	MPcost	50
+	Energycost	50
+	offset	153 133
+	Fastattack	1
+	frame	data/chars/Darkion/A-0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/A-0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/A-0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/A-0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	move	25
+	delay	2
+	attack3  99  105  110  29  35  1  0  0  0  20
+	frame	data/chars/Darkion/DSP1.gif
+	frame	data/chars/Darkion/DSP1.gif
+	frame	data/chars/Darkion/DSP1.gif
+	move	7
+	frame	data/chars/Darkion/DSP1.gif
+	frame	data/chars/Darkion/DSP1.gif
+	move	3
+	frame	data/chars/Darkion/DSP1.gif
+	frame	data/chars/Darkion/DSP1.gif
+	attack3  0
+	move	1
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	frame	data/chars/Darkion/DSP0.gif
+	move	0
+	frame	data/chars/Darkion/A-0.gif
+	frame	data/chars/Darkion/DSP0.gif
+
+anim	walk
+	loop	1
+	delay	9
+	offset	158 133
+	bbox	148 111 21 21
+	frame	data/chars/Darkion/Walk0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Darkion/Walk1.gif
+	frame	data/chars/Darkion/Walk2.gif
+	frame	data/chars/Darkion/Walk3.gif
+	frame	data/chars/Darkion/Walk4.gif
+

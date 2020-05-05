@@ -1,0 +1,42 @@
+name	HDD
+health	1
+type	none
+shadow	0
+Speed    13
+Remove 0
+#alpha 5
+#setlayer -1
+nomove 1
+candamage enemy obstacle
+
+anim idle
+	loop	0
+	delay	2
+	move 16
+           Fastattack 1
+	offset	250 270
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	blast 266 191 51 78 18 0 0 0 20
+	DropV	2 4
+	frame	data/chars/HeavyD/HDD-0.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/HeavyD/HDD-1.gif
+	blast 263 188 57 81 18 0 0 0 20
+	DropV	2 4
+	frame	data/chars/HeavyD/HDD-2.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame   data/chars/HeavyD/HDD-3.gif
+	blast 266 191 51 78 18 0 0 0 20
+	DropV	2 4
+	frame	data/chars/HeavyD/HDD-0.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/HeavyD/HDD-1.gif
+	blast 263 188 57 81 18 0 0 0 20
+	DropV	2 4
+	frame	data/chars/HeavyD/HDD-2.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame   data/chars/HeavyD/HDD-3.gif
+@cmd killentity getlocalvar("self")
+	frame   data/chars/HeavyD/HDD-3.gif
+

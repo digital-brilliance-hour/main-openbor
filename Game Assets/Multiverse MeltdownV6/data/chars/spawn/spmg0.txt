@@ -1,0 +1,18 @@
+name	SpMg0
+type	none
+shadow	0
+nomove 1
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	-90 144
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 200 174
+	frame	data/chars/Spawn/FSP2fx0.gif
+ offset 199 175
+	frame	data/chars/Spawn/FSP2fx1.gif
+		@cmd killentity getlocalvar("self")
+	frame	data/chars/Spawn/FSP2fx1.gif

@@ -1,0 +1,27 @@
+name	M-Wave
+type	pshot
+shadow	0
+nolife  1
+remove  0
+Speed   16
+candamage enemy obstacle
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	154 138
+        hitflash MWFX
+        Attack3  166  113  34  26  12 1 0 0 0 20
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/MWave0.gif
+		offset  154  134
+		attack3  169  112  29  22  12  1  0  0  0  20
+	frame	data/chars/Manic/MWave1.gif
+		offset  154  130
+		attack3  164  107  37  25  12  1  0  0  0  20
+	frame	data/chars/Manic/MWave2.gif
+		offset  154  132
+		attack3  169  108  31  24  12  1  0  0  0  20
+	frame	data/chars/Manic/MWave3.gif
+

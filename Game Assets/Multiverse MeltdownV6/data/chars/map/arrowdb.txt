@@ -1,0 +1,54 @@
+name	ArrowDB
+nomove      1
+type	obstacle
+nolife     1
+score      0 -1
+candamage     player
+hostile Player
+health	1
+facing 2
+falldie	 1
+cantgrab 1
+nodieblink 2
+setlayer -1
+Nomove 1 0
+
+
+animationscript data/scripts/script.c
+
+
+anim idle
+	loop	1
+	delay	10
+	offset  20  45
+	bbox    1  1  28  44
+	frame	data/chars/Map/arrow.gif
+	delay	1
+	frame	data/chars/Map/arrow.gif
+
+anim attack1
+	loop	0
+	delay	90
+        #Range -5 5
+        #RangeZ -10 10
+	offset	20 22
+           hitfx   data/sounds/silent.wav
+	bbox      15  16  11  11
+           attack1   0
+	frame	data/chars/Map/arrow.gif
+	delay	1
+        attack1   15  16  11  11 0 0 1 1
+           noreflect   1
+	frame	data/chars/Map/arrow.gif
+
+anim fall
+        delay	1
+	offset  20  45
+	bbox    1  1  28  44
+           hitfx   data/sounds/silent.wav
+	frame	data/chars/Map/arrow.gif
+        @cmd    jumptobranch "HubB" 1
+           delay	150
+	frame	data/chars/Map/arrow.gif
+	frame	data/chars/Map/arrow.gif
+

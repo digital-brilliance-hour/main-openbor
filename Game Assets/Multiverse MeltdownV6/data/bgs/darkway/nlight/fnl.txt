@@ -1,0 +1,29 @@
+# Do not forget to name your character.
+# Health is optional.
+
+
+name	FNL
+health	1
+nolife        1
+type	none
+shadow	0
+alpha   6
+
+#icon	data/chars/misc/nlight/icon.gif
+
+
+anim idle
+	loop	100
+	delay	9
+	offset	0 97
+        frame   data/bgs/darkway/nlight/fnl1.gif
+	delay	7
+        frame   data/bgs/darkway/nlight/fnl2.gif
+        frame   data/bgs/darkway/nlight/fnl3.gif
+        frame   data/bgs/darkway/nlight/fnl4.gif
+	delay	31
+        frame   data/bgs/darkway/nlight/fnl5.gif
+	delay	7
+        frame   data/bgs/darkway/nlight/fnl4.gif
+        frame   data/bgs/darkway/nlight/fnl3.gif
+        frame   data/bgs/darkway/nlight/fnl2.gif

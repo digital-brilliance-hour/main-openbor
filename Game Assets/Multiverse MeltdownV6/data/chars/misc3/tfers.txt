@@ -1,0 +1,649 @@
+name	TFerS
+type	Panel
+shadow	0
+alpha   0
+remove  0
+speed 10
+setlayer -10
+offscreenkill 5000
+
+palette       data/chars/misc/empty.gif
+
+animationscript data/scripts/script.c
+
+anim idle
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 5){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+		@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow1
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 0 150 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow2
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 100 150 20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow3
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 200 150 40
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow4
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" -200 150 -20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow5
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" -100 150 -40
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow6
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 0 150 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow7
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 100 150 20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow8
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" 200 150 40
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow9
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" -200 150 -20
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow10
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%10;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW3"));
+      } else if( r < 4){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW4"));
+      } else if( r < 5){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW5"));
+      } else if( r < 6){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW6"));
+      } else if( r < 7){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW7"));
+      } else if( r < 8){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW8"));
+      } else if( r < 9){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW9"));
+      } else if( r < 10){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW10"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	5
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ_" -100 150 -40
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow11
+        loop    1
+	delay	1
+	offset	161 131
+	frame	data/chars/misc/empty.gif
+	offset    123 127
+	delay     3
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame   data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+
+

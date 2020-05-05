@@ -1,0 +1,271 @@
+name	Ghoul
+health	200
+speed   11
+type	enemy
+icon	  data/chars/ghoul/icon.gif
+iconpain  data/chars/ghoul/iconP.gif
+icondie   data/chars/ghoul/iconD.gif
+diesound	data/sounds/beast.wav
+gfxshadow 1
+candamage Enemy Player
+palette       data/chars/ghoul/Pal
+alternatepal  data/chars/ghoul/FreezeM.gif
+fmap 1
+animationscript data/scripts/escript.c
+
+anim idle
+	loop	1
+	delay	54
+	offset	12 29
+	bbox    3 2 20 26
+	frame	data/chars/ghoul/stance.gif
+
+anim walk
+	loop	1
+	delay	19
+	offset	10 29
+	bbox    2 2 18 28
+	frame	data/chars/ghoul/walk1.gif
+	delay	54
+	offset	12 28
+	frame	data/chars/ghoul/stance.gif
+
+anim pain
+	loop	0
+	delay	20
+	offset  14 27
+	bbox    3 4 23 22
+	frame	data/chars/ghoul/hit.gif
+
+anim BPAIN
+	loop	0
+	offset  14 27
+	delay	3
+	bbox    3 4 23 22
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+
+anim SPAIN
+	loop	0
+	offset  14 27
+	delay	3
+	bbox    3 4 23 22
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+
+anim pain2
+	loop	0
+	offset  14 27
+	delay	3
+	bbox    3 4 23 22
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+	frame	data/chars/ghoul/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset  14 27
+	delay	3
+	bbox    3 4 23 22
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+
+anim fall
+	loop	0
+	delay	10
+	offset  14 20
+	attack  4  4  22  22  10  1
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/lie.gif
+
+anim BURN
+	loop	0
+	offset  14 20
+           landframe 19
+	delay	3
+	attack    4  4  22  22  10  1  0  0  0  20
+	bbox     4  4  22  22
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/BurnP.gif
+	frame	data/chars/ghoul/hit.gif
+	delay	100
+	frame	data/chars/ghoul/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/ghoul/lie.gif
+
+anim Shock
+	loop	0
+	offset  14 20
+           landframe 19
+	delay	3
+	attack    4  4  22  22  10  1  0  0  0  20
+	bbox     4  4  22  22
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/ShockP.gif
+	frame	data/chars/ghoul/hit.gif
+	delay	100
+	frame	data/chars/ghoul/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/ghoul/lie.gif
+
+anim Fall3
+	loop	0
+	offset  14 20
+           landframe 19
+	delay	3
+	attack    4  4  22  22  10  1  0  0  0  20
+	bbox     4  4  22  22
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	frame	data/chars/ghoul/DrainP.gif
+	frame	data/chars/ghoul/hit.gif
+	delay	100
+	frame	data/chars/ghoul/lie.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/ghoul/lie.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  14 27
+	frame	data/chars/ghoul/hit.gif
+
+anim attack1
+	loop	0
+        rangez  -150 150
+	range	-200 200
+	offset	15 29
+	delay	7
+	move  10
+	bbox    3 4 23 22
+        @cmd    target 3 1.5 0 0 0
+        @cmd    leap 2
+	attack  1  6  27  25  10
+	frame	data/chars/ghoul/a1.gif
+	offset  13 32
+	frame	data/chars/ghoul/a2.gif
+	offset	14 31
+	frame	data/chars/ghoul/a3.gif
+	offset	16 29
+	frame	data/chars/ghoul/a1.gif
+	offset  12 31
+	frame	data/chars/ghoul/a2.gif
+	offset	13 30
+	frame	data/chars/ghoul/a3.gif
+
+
+
+

@@ -1,0 +1,290 @@
+name	WORMWOOD
+health	200
+mp 100
+mprate 20
+speed	10
+type	player
+icon data/chars/wormwood/icon.gif
+
+
+running 20 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+palette       data/chars/wormwood/Pal
+alternatepal  data/chars/wormwood/Pal0
+
+animationscript data/scripts/script.c
+
+
+
+com a2 Freespecial1
+jumpmove  3  2
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  15  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	attack2
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  15  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	attack3
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  15  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	DODGE
+	loop	0
+	delay	4
+	offset    113  130
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  137
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  142
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  137
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  130
+	frame	data/chars/wormwood/SP-0.GIF
+
+anim	fall
+	loop	0
+	delay	20
+	offset	113 127
+	bbox	96 87 27 42
+	frame	data/chars/wormwood/Pain.gif
+
+anim	Freespecial1
+	loop	0
+	delay	11
+	offset	113 127
+	mpcost	20
+           mponly    1
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A2-0.GIF
+		bbox  101  88  26  41
+	frame	data/chars/wormwood/A2-1.GIF
+	frame	data/chars/wormwood/A2-2.GIF
+		bbox  100  106  35  22
+		attack2  110  110  36  21  20  0  0  0  0  20
+		move  15
+	frame	data/chars/wormwood/A2-3.GIF
+		move  0
+	frame	data/chars/wormwood/A2-4.GIF
+
+anim	get
+	loop	1
+	delay	25
+	offset	111 127
+	bbox	0 0 0 0
+	frame	data/chars/wormwood/Get.gif
+
+anim	idle
+	loop	1
+	delay	15
+	offset	115 127
+	bbox	101 103 30 26
+	frame	data/chars/wormwood/Idle0.GIF
+	frame	data/chars/wormwood/Idle1.GIF
+	frame	data/chars/wormwood/Idle2.GIF
+	frame	data/chars/wormwood/Idle1.GIF
+
+anim	jump
+	loop	0
+	delay	20
+	offset	113 127
+	frame	data/chars/wormwood/SP-0.GIF
+
+anim	jumpattack
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	pain
+	loop	0
+	delay	20
+	offset	113 127
+	bbox	96 87 27 42
+	frame	data/chars/wormwood/Pain.gif
+
+anim	pain2
+	loop	0
+	offset	113 127
+	bbox	95 87 29 42
+	delay	2
+	quakeframe	0 3 4
+	Move	-15
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	0
+	delay	15
+	frame	data/chars/wormwood/Pain.gif
+
+anim	rise
+	loop	0
+	delay	1
+	offset	115 127
+	bbox	101 103 30 26
+	frame	data/chars/wormwood/Idle0.GIF
+
+anim	run
+	loop	1
+	delay	16
+	offset	115 127
+	bbox	104 107 28 22
+	frame	data/chars/wormwood/Walk-0.gif
+		delay  8
+	frame	data/chars/wormwood/Walk-1.gif
+	frame	data/chars/wormwood/Walk-2.gif
+	frame	data/chars/wormwood/Walk-1.gif
+		delay  16
+	frame	data/chars/wormwood/Walk-3.gif
+		delay  8
+	frame	data/chars/wormwood/Walk-5.gif
+	frame	data/chars/wormwood/Walk-4.gif
+	frame	data/chars/wormwood/Walk-5.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  14
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  15  0  0  0  0  20
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  15  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	special
+	loop	0
+	delay	20
+	offset	113 127
+	mpcost	100
+	frame	data/chars/wormwood/SP-0.GIF
+	delay	4
+	frame	data/chars/wormwood/SP-1.GIF
+	frame	data/chars/wormwood/SP-2.GIF
+	@cmd	shoot "DragonShot" 0 0 0
+	delay	19
+	frame	data/chars/wormwood/SP-3.GIF
+	frame	data/chars/wormwood/SP-3.GIF
+
+anim	waiting
+	loop	1
+	delay	15
+	offset	112 129
+	bbox	0 0 0 0
+	frame	data/chars/wormwood/Wait-0.GIF
+	frame	data/chars/wormwood/Wait-1.GIF
+	frame	data/chars/wormwood/Wait-2.GIF
+	frame	data/chars/wormwood/Wait-1.GIF
+
+anim	walk
+	loop	1
+	delay	18
+	offset	115 127
+	bbox	104 107 28 22
+	frame	data/chars/wormwood/Walk-0.gif
+		delay  10
+	frame	data/chars/wormwood/Walk-1.gif
+	frame	data/chars/wormwood/Walk-2.gif
+	frame	data/chars/wormwood/Walk-1.gif
+		delay  18
+	frame	data/chars/wormwood/Walk-3.gif
+		delay  10
+	frame	data/chars/wormwood/Walk-5.gif
+	frame	data/chars/wormwood/Walk-4.gif
+	frame	data/chars/wormwood/Walk-5.gif
+

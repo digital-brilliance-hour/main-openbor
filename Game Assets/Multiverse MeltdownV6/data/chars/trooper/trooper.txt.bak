@@ -1,0 +1,79 @@
+name	Trooper	
+health	200
+speed   29
+type	enemy
+diesound	data/sounds/die1.wav
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	15 28
+	bbox    15 28  35 39
+	frame	data/chars/trooper/1.gif
+	
+	
+
+anim walk
+	loop	1
+	delay	10
+	offset	12 29
+	bbox    13 29 47 40
+	frame	data/chars/trooper/walk2.gif
+	offset	13 31
+	bbox    13 31 35 39
+	frame	data/chars/trooper/walk1.gif	
+	offset	12 29
+	bbox    12 29 48 40
+	frame	data/chars/trooper/walk3.gif
+	offset	13 31
+	bbox    13 31 35 39
+	frame	data/chars/trooper/walk1.gif
+	
+	
+anim pain
+	loop	0
+	delay	10
+	offset  13 31
+	bbox    13 31 48 44
+	frame	data/chars/trooper/walk3.gif
+	
+	
+anim fall
+	loop	0
+	delay	10
+	offset  15 25
+	frame	data/chars/trooper/lie.gif
+	frame	data/chars/trooper/lie.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  16 30
+	frame	data/chars/trooper/a1.gif
+	
+
+
+	
+
+
+	
+anim attack1
+	
+	loop	0
+	move	20
+	delay	10
+	offset	8 30
+	attack  8 30 22 32 42 1
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	frame	data/chars/trooper/a1.gif
+	
+	

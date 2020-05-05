@@ -1,0 +1,939 @@
+name	SSG
+
+health	200
+mp      200
+mprate 0
+speed	40
+type	none
+shadow	2
+noquake 0
+makeinv 2 0
+antigravity 10
+subject_to_gravity 1
+falldie 1
+
+running 80 9  2  1  1
+
+  riseinv 1
+bounce  0
+atchain 1 2 3 4
+
+defense all 0.5
+
+
+
+palette none
+
+weaploss 2
+
+com a2 freespecial1
+com D F A2 freespecial2
+com a3 freespecial3
+com D F a3 freespecial4
+com D F a freespecial5
+com d u a freespecial6
+
+load rad2
+load aura2
+load gku
+load frkik
+load spirit
+load nap2
+load gin3
+load gin5
+load sb
+load teleport
+
+load boom
+
+icon	data/chars/SSG/prof2.png
+
+projectilehit obstacle
+
+animationscript data/scripts/animscript.c
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	58 174
+	bbox	39 46 50 98
+@cmd	randSound "goat1.wav" "goat2.wav" "null.wav"
+	frame	data/chars/SSG/ATK01.gif
+	delay	6
+sound	data/sounds/2.wav
+	offset	52 169
+	bbox	36 44 50 98
+	attack	59 58 88 47 20 0 0 0 0 300
+	frame	data/chars/SSG/ATK02.gif
+	delay	2
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	58 174
+	bbox	38 36 50 118
+	frame	data/chars/SSG/ATK01.gif
+	frame	data/chars/SSG/ATK01.gif
+		
+anim	attack2
+	loop	0
+	delay	5
+	offset	67 165
+	bbox	41 35 50 98
+@cmd	randSound "goat1.wav" "goat2.wav" "null.wav"
+	frame	data/chars/SSG/KICK01.gif
+sound	data/sounds/2.wav
+	offset	70 169
+	bbox	28 29 50 98
+	attack	48 40 103 98 30 0 0 0 0 300
+	frame	data/chars/SSG/KICK02.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	offset	71 160
+	bbox	40 23 50 98
+	frame	data/chars/SSG/KICK03.gif
+	offset	76 155
+	bbox	52 35 50 98
+	frame	data/chars/SSG/KICK04.gif
+		
+anim	attack3
+	loop	0
+	delay	5
+	offset	35 159
+	bbox	13 16 50 98
+@cmd	randSound "goat2.wav" "goat3.wav" "null.wav"
+	frame	data/chars/SSG/k1.png
+sound	data/sounds/2.wav
+	offset	36 160
+	bbox	13 14 50 98
+	frame	data/chars/SSG/k2.png
+	move	5
+	delay	5
+	offset	42 147
+	bbox	24 9 50 98
+	attack	26 27 97 63 20 0 0 0 0 300
+	frame	data/chars/SSG/k3.png
+	frame	data/chars/SSG/k3.png
+	delay	4
+	move	0
+	offset	36 148
+	bbox	14 14 50 98
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/SSG/k2.png
+	offset	42 147
+	bbox	18 20 50 98
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/SSG/k1.png
+		
+anim	attack4
+	loop	0
+	delay	5
+	offset	35 137
+	bbox	15 10 50 98
+	hitflash	flash2
+@cmd	randSound "goat2.wav" "goat3.wav" "null.wav"
+	frame	data/chars/SSG/k4.png
+sound	data/sounds/2.wav
+	offset	44 148
+	bbox	19 13 50 98
+	frame	data/chars/SSG/k5.png
+	delay	5
+	move	15
+	offset	58 132
+	blast	29 26 125 55 30 1 1 0 0 300
+	dropv	1 20 10
+	bbox	37 23 50 60
+	frame	data/chars/SSG/k6.png
+	frame	data/chars/SSG/k6.png
+	frame	data/chars/SSG/k6.png
+	frame	data/chars/SSG/k6.png
+	delay	5
+	offset	65 122
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	bbox	29 15 50 44
+	frame	data/chars/SSG/k7.png
+		
+anim	chargeattack
+@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 2)){
+		changeentityproperty(self, "velocity", 4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 4)){
+		changeentityproperty(self, "velocity", -4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 6){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+	chargerate	0.4
+jumpframe	3 0 8 0
+	loop	0
+	delay	5
+	offset	58 97
+	bbox	34 10 50 91
+	hitflash	flash2
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/u1.png
+	offset	30 113
+	bbox	11 15 50 98
+	frame	data/chars/SSG/u2.png
+	offset	49 126
+	bbox	29 15 50 98
+	frame	data/chars/SSG/u3.png
+delay 8
+	offset	27 169
+	attack	5 -1 71 159 30 1 0 0 0 300
+	dropv	5 2
+	bbox	13 46 50 60
+	frame	data/chars/SSG/u4.png
+attack	5 -1 71 159 30 1 0 0 0 300
+	dropv	5 2
+	offset	32 187
+	bbox	20 31 50 75
+	frame	data/chars/SSG/u5.png
+	delay	4
+	offset	26 154
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	7 23 50 98
+	frame	data/chars/SSG/u6.png
+	frame	data/chars/SSG/u6.png
+	frame	data/chars/SSG/u6.png
+
+anim	freespecial6
+@script
+                void self = getlocalvar("self");
+                	void	dummy;
+                int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+ 		if ((getentityproperty(self, "direction")==1)&&(frame == 2)){
+		changeentityproperty(self, "velocity", 4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+		if ((getentityproperty(self, "direction")==0)&&(frame == 4)){
+		changeentityproperty(self, "velocity", -4, 0, 0);
+			setglobalvar("bikermap", getentityproperty(getlocalvar("self"), "map"));
+		}
+						if (frame == 6){
+		changeentityproperty(self, "velocity", 0, 0, 0);
+		}
+	@end_script	
+jumpframe	3 0 8 0
+	loop	0
+	delay	5
+	offset	58 97
+	bbox	34 10 50 91
+	hitflash	flash2
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/u1.png
+	offset	30 113
+	bbox	11 15 50 98
+	frame	data/chars/SSG/u2.png
+	offset	49 126
+	bbox	29 15 50 98
+	frame	data/chars/SSG/u3.png
+delay 8
+	offset	27 169
+	attack	5 -1 71 159 30 1 0 0 0 300
+	dropv	5 2
+	bbox	13 46 50 60
+	frame	data/chars/SSG/u4.png
+attack	5 -1 71 159 30 1 0 0 0 300
+	dropv	5 2
+	offset	32 187
+	bbox	20 31 50 75
+	frame	data/chars/SSG/u5.png
+	delay	4
+	offset	26 154
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	7 23 50 98
+	frame	data/chars/SSG/u6.png
+	frame	data/chars/SSG/u6.png
+	frame	data/chars/SSG/u6.png
+		
+anim	death
+	loop	0
+	delay	10
+	offset	56 156
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	dodge
+	delay	5
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN06.gif
+	frame	data/chars/goku/HEN05.gif
+move	30
+	delay	30
+	frame	data/chars/goku/empty.gif
+	move	0
+	delay	5
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	frame	data/chars/goku/HEN06.gif
+		
+anim	fall
+	loop	0
+	delay	15
+	bbox	33 26 44 136
+	quakeframe	1 1 -6
+	dropframe	1
+	landframe	4
+	offset	56 159
+attack	22 40 61 117 100 1 0 0 0 50
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	50
+	bbox	0 0 0 0
+attack 0 0 0 0
+	frame	data/chars/SSG/PAIN02.gif
+	delay	30
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+
+anim	fall10
+	dropframe	1
+	landframe	3
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+
+anim	death10
+	dropframe	1
+	landframe	3
+	subentity	gin3
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+
+anim	fall11
+	dropframe	1
+	landframe	3
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+
+anim	death11
+	dropframe	1
+	landframe	3
+	subentity	gin5
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	fall2
+	dropframe	1
+	landframe	3
+	subentity	expl
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	fall3
+	dropframe	1
+	landframe	3
+	subentity	boom
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	fall4
+	dropframe	1
+	landframe	3
+	subentity	frkik
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	fall6
+	dropframe	1
+	landframe	3
+	subentity	nap2
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	fall7
+	dropframe	1
+	landframe	3
+	subentity	rad2
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	15
+	offset	58 158
+	move	-10
+	movea	-10
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	delay	1
+	move	0
+	nodrawmethod	
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	follow1
+@script
+	void self = getlocalvar("self");
+	int mp = getentityproperty(self, "mp");
+	if(frame == 0){ //Start increasing MP in the very beginning which is first frame
+	changeentityproperty(self, "mp", mp+4); //Increasing MP 4 times
+	}
+	@end_script	
+	custentity	aura2
+	spawnframe	0 0 0 0
+	delay	5
+	loop	1
+	offset	59 155
+	bbox	32 39 49 126
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame04.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame05.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame04.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame05.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame04.gif
+	@cmd	keyint "ANI_FOLLOW2" 0 "A3" 1
+	frame	data/chars/SSG/tame05.gif
+		
+anim	follow2
+@script
+	changeentityproperty(getlocalvar("self"), "mp", NULL());
+	@end_script	
+	delay	5
+	offset	56 156
+	frame	data/chars/SSG/idle01.gif
+	frame	data/chars/SSG/idle01.gif
+	frame	data/chars/SSG/idle01.gif
+		
+anim	follow3
+	forcedirection	-1
+	followanim	4
+	followcond	1
+	fastattack	1
+	jumpframe	0 0 8 0
+	nodrawmethod	
+	delay	2
+	attack	0 0 0 0
+	offset	96 166
+	bbox	0 0 0 0
+	frame	data/chars/SSG/dash02.gif
+	delay	10
+	offset	96 166
+	bbox	0 0 0 0
+	attack9	16 41 120 86 1 0 1 0 0 100
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+	@cmd	dasher 0 0 0
+	delay	1
+	bbox	0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/SSG/dash02.gif
+		
+anim	follow4
+	@cmd	dasher 0 0 0
+	move	0
+	delay	4
+	bbox	0 0 0 0
+	offset	56 173
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/ATK04.gif
+	delay	3
+	offset	63 174
+	attack9	60 54 73 63 2 0 1 0 0 100
+	frame	data/chars/SSG/ATK03.gif
+	delay	5
+	offset	63 174
+	attack9	73 54 73 63 2 0 1 0 0 100
+	frame	data/chars/SSG/ATK02.gif
+	delay	2
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	56 173
+	frame	data/chars/SSG/ATK04.gif
+	delay	4
+	offset	67 165
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/KICK01.gif
+	offset	70 169
+	attack9	48 40 103 98 2 0 1 0 0 100
+	frame	data/chars/SSG/KICK02.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	offset	71 160
+	frame	data/chars/SSG/KICK03.gif
+	offset	76 155
+	frame	data/chars/SSG/KICK04.gif
+	delay	3
+	offset	36 169
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/FIN01.gif
+	frame	data/chars/SSG/FIN02.gif
+	frame	data/chars/SSG/FIN03.gif
+	delay	6
+	attack9	34 13 96 159 2 0 1 0 0 100
+	frame	data/chars/SSG/FIN04.gif
+	delay	4
+	attack	0
+	frame	data/chars/SSG/FIN05.gif
+	delay	4
+	sound	data/sounds/elec1.wav
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	move	30
+	delay	7
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	@cmd	flip
+	delay	4
+	sound	data/sounds/elec1.wav
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	delay	4
+	bbox	0 0 0 0
+	offset	56 173
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/ATK04.gif
+	delay	3
+	offset	63 174
+	attack9	60 54 73 63 2 0 1 0 0 100
+	frame	data/chars/SSG/ATK03.gif
+	delay	5
+	offset	63 174
+	attack9	73 54 73 63 2 0 1 0 0 100
+	frame	data/chars/SSG/ATK02.gif
+	delay	2
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	56 173
+	frame	data/chars/SSG/ATK04.gif
+	delay	4
+	offset	67 165
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/KICK01.gif
+	offset	70 169
+	attack9	48 40 103 98 2 0 1 0 0 100
+	frame	data/chars/SSG/KICK02.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	offset	71 160
+	frame	data/chars/SSG/KICK03.gif
+	offset	76 155
+	frame	data/chars/SSG/KICK04.gif
+	delay	3
+	offset	36 169
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/FIN01.gif
+	frame	data/chars/SSG/FIN02.gif
+	frame	data/chars/SSG/FIN03.gif
+	delay	6
+	attack9	34 13 96 159 2 0 1 0 0 100
+	frame	data/chars/SSG/FIN04.gif
+	delay	4
+	attack	0
+	frame	data/chars/SSG/FIN05.gif
+	delay	4
+	sound	data/sounds/elec1.wav
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	move	30
+	delay	7
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	move	0
+	@cmd	flip
+	delay	4
+	sound	data/sounds/elec1.wav
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	delay	5
+	offset	65 169
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/dw01.gif
+	offset	65 169
+	frame	data/chars/SSG/dw02.gif
+	move	12
+	offset	65 169
+	frame	data/chars/SSG/dw03.gif
+	offset	65 169
+	attack9	35 13 96 159 20 1 1 0 0 150
+	dropv	1 20 10
+	frame	data/chars/SSG/dw04.gif
+	offset	65 169
+	frame	data/chars/SSG/dw05.gif
+	offset	65 169
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/SSG/dw07.gif
+	frame	data/chars/SSG/dw07.gif
+	move	0
+	frame	data/chars/SSG/dw07.gif
+		
+anim	freespecial1
+	energycost	30
+	mponly	1
+	loop	0
+	delay	5
+	offset	50 159
+	bbox	32 35 50 126
+	frame	data/chars/SSG/SHOT01.gif
+	sound	data/sounds/shot.wav
+delay 7
+	@cmd	shoot "mshot" 80 80 0
+	frame	data/chars/SSG/SHOT02.gif
+	frame	data/chars/SSG/SHOT03.gif
+	
+		
+anim	freespecial2
+	subentity	gku
+	spawnframe	6 0 0 0 1
+	energycost	100
+	mponly	1
+	loop	0
+	delay	10
+	offset	55 159
+	bbox	40 35 50 125
+	sound	data/sounds/hen.wav
+	frame	data/chars/SSG/HA01.gif
+	frame	data/chars/SSG/HA02.gif
+	frame	data/chars/SSG/HA03.gif
+	frame	data/chars/SSG/HA04.gif
+	frame	data/chars/SSG/HA05.gif
+	frame	data/chars/SSG/HA06.gif
+	delay	50
+	@cmd	spawn01 "hado" 100 80 -1
+	frame	data/chars/SSG/HA07.gif
+	delay	15
+	frame	data/chars/SSG/HA08.gif
+	frame	data/chars/SSG/HA09.gif
+		
+anim	freespecial3
+	custentity	aura2
+	spawnframe	4 0 0 0
+	loop	0
+	delay	10
+	offset	59 155
+	bbox	32 39 49 126
+	frame	data/chars/SSG/tame01.gif
+	frame	data/chars/SSG/tame02.gif
+	sound	data/sounds/shin.wav
+	frame	data/chars/SSG/tame03.gif
+	delay	5
+	frame	data/chars/SSG/tame04.gif
+	frame	data/chars/SSG/tame05.gif
+	frame	data/chars/SSG/tame04.gif
+	frame	data/chars/SSG/tame05.gif
+	frame	data/chars/SSG/tame04.gif
+	frame	data/chars/SSG/tame04.gif
+	frame	data/chars/SSG/tame05.gif
+	@cmd	keyint "ANI_FOLLOW1" 0 "A3" 0
+	frame	data/chars/SSG/tame04.gif
+		
+anim	freespecial4
+	subentity	spirit
+	spawnframe	2 0 0 0 1
+	energycost	200
+	mponly	1
+	loop	0
+	delay	27
+	offset	52 155
+	bbox	0 0 0 0
+	hitflash	flash2
+	sound	data/sounds/2.wav
+	frame	data/chars/SSG/1.png
+	offset	51 155
+	frame	data/chars/SSG/2.png
+	sound	data/sounds/shot.wav
+	@cmd	spawn01 "sb" 10 120 5 40
+	offset	50 156
+	frame	data/chars/SSG/3.png
+	offset	49 157
+	frame	data/chars/SSG/4.png
+	offset	47 153
+	frame	data/chars/SSG/5.png
+	delay	22
+	offset	65 169
+	frame	data/chars/SSG/dw03.gif
+	offset	65 169
+	frame	data/chars/SSG/dw04.gif
+	offset	65 169
+	frame	data/chars/SSG/dw05.gif
+		
+anim	freespecial5
+	energycost	30
+	mponly	1
+	hitflash	empty
+	loop	0
+	followanim	3
+	followcond	1
+	fastattack	1
+	delay	5
+	offset	59 155
+	bbox	0 0 0 0
+	sound	data/sounds/shin.wav
+	frame	data/chars/SSG/tame03.gif
+	delay	10
+	attack9	46 53 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/tame04.gif
+	nodrawmethod	
+	delay	5
+	frame	data/chars/SSG/tame05.gif
+	delay	10
+	attack9	46 56 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/tame04.gif
+	nodrawmethod	
+	delay	5
+	frame	data/chars/SSG/tame05.gif
+	delay	10
+	attack9	46 51 370 86 0 0 1 0 0 100
+	drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/SSG/tame04.gif
+	nodrawmethod	
+	delay	5
+	frame	data/chars/SSG/tame05.gif
+	delay	5
+	offset	59 155
+	frame	data/chars/SSG/tame03.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	56 156
+	bbox	32 13 50 151
+	frame	data/chars/SSG/idle01.gif
+	offset	56 157
+	frame	data/chars/SSG/idle02.gif
+	offset	56 158
+	frame	data/chars/SSG/idle03.gif
+	offset	56 159
+	frame	data/chars/SSG/idle04.gif
+	offset	56 158
+	frame	data/chars/SSG/idle03.gif
+	offset	56 157
+	frame	data/chars/SSG/idle02.gif
+		
+anim	land
+	loop	0
+	delay	1
+	offset	56 159
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN02.gif
+		
+anim	pain
+	loop	0
+	delay	8
+	offset	56 160
+	bbox	50 35 50 98
+	frame	data/chars/SSG/PAIN01.gif
+	frame	data/chars/SSG/PAIN02.gif
+	frame	data/chars/SSG/PAIN01.gif
+		
+anim	pain5
+	delay	5
+	bbox	0 0 0 0
+	offset	59 155
+	frame	data/chars/SSG/tame04.gif
+	offset	36 169
+	frame	data/chars/SSG/tame05.gif
+		
+anim	rise
+	loop	0
+	delay	10
+	offset	59 169
+	bbox	0 0 0 0
+@cmd	randSound "gorise.wav" "gorise.wav" "null.wav"
+	frame	data/chars/SSG/ATK01.gif
+		
+anim	riseattack
+	jumpframe	3 0 5.7 0
+	flipframe	9
+	loop	0
+	delay	8
+	offset	87 138
+	bbox	0 0 0 0
+	frame	data/chars/ssg/ATK01.gif
+	offset	53 155
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	delay	4
+	frame	data/chars/goku/HEN06.gif
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	delay	10
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	frame	data/chars/goku/empty.gif
+	@cmd	dasher 0 0 0
+	delay	4
+	sound	data/sounds/elec1.wav
+@cmd	spawn01 "teleport" 0 0 5 40
+	offset	53 155
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+	bbox	0 0 0 0
+	frame	data/chars/goku/HEN05.gif
+		
+anim	run
+	loop	1
+subentity	dust
+	spawnframe	1 0
+	delay	11
+	offset	96 166
+	bbox	33 35 111 98
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+	frame	data/chars/SSG/dash02.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	offset	36 169
+	bbox	67 35 50 98
+	hitflash	flash2
+	sound	data/sounds/2.wav
+	jumpframe	0 0 5.7 0
+	frame	data/chars/SSG/FIN01.gif
+	frame	data/chars/SSG/FIN02.gif
+	frame	data/chars/SSG/FIN03.gif
+	blast	34 13 96 159 30 0 0 0 0 200
+	dropv	1 20 10
+	frame	data/chars/SSG/FIN04.gif
+	frame	data/chars/SSG/FIN04.gif
+	frame	data/chars/SSG/FIN04.gif
+	attack	0
+	@cmd	dasher 0 0 0
+	frame	data/chars/SSG/FIN05.gif
+		
+anim	walk
+	loop	0
+	delay	15
+	offset	52 160
+	bbox	35 23 50 129
+	frame	data/chars/SSG/FW01.gif
+	offset	52 160
+	bbox	37 16 50 126
+	frame	data/chars/SSG/FW02.gif
+		
+#|edited by openBor Stats v 0.67
+		

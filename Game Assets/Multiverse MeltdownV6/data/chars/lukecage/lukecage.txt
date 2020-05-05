@@ -1,0 +1,709 @@
+name	LUKE_CAGE
+health	500
+mp 80
+mprate 10
+speed	13
+type	player
+icon     data/chars/LukeCage/IconA.gif 1
+iconget  data/chars/LukeCage/IconB.gif 1
+iconpain data/chars/LukeCage/IconC.gif 1
+icondie  data/chars/LukeCage/IconC.gif 1
+
+
+
+
+running 23	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/LukeCage/Pal.gif
+
+alternatepal  data/chars/LukeCage/Pal0
+alternatepal  data/chars/LukeCage/Pal1
+alternatepal  data/chars/LukeCage/Pal2
+alternatepal  data/chars/LukeCage/Pal3
+alternatepal  data/chars/LukeCage/Pal4
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+#animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	cancel	2 6 0 a freespecial
+    offset 163 189
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 139 107 64 82
+	frame	data/chars/LukeCage/0_220-0.gif
+	delay	4
+	move	5
+	attack1 170 118 68 72 10 0 0 0 0 20
+	DropV	1 2
+	frame	data/chars/LukeCage/0_220-1.gif
+	frame	data/chars/LukeCage/0_220-1.gif
+	attack1 165 109 57 79 10 0 0 0 0 20
+	bbox 137 101 74 87
+	#frame	data/chars/LukeCage/0_220-2.gif
+	move	0
+	delay	2
+	attack 0
+	bbox 139 107 64 82
+	frame	data/chars/LukeCage/0_220-0.gif
+	frame	data/chars/LukeCage/0_220-0.gif
+	frame	data/chars/LukeCage/0_220-0.gif
+	frame	data/chars/LukeCage/0_220-0.gif
+
+anim	dodge
+	loop	0
+	delay	5
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_800-0.gif
+	frame	data/chars/LukeCage/0_22-0.gif
+	frame	data/chars/LukeCage/0_22-1.gif
+	frame	data/chars/LukeCage/0_22-2.gif
+	frame	data/chars/LukeCage/0_22-3.gif
+	frame	data/chars/LukeCage/0_800-0.gif
+
+anim	fall
+	loop	0
+	delay	12
+	quakeframe	0 3 4
+	Landframe	4
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+    offset 163 189
+	bbox 116 102 113 84
+	attack3 116 102 113 84 10 0 0 0 0 20
+	frame	data/chars/LukeCage/0_5030-10.gif
+	bbox 111 109 104 77
+	attack3 111 109 104 77 10 0 0 0 0 20
+	frame	data/chars/LukeCage/0_5030-20.gif
+	bbox 106 136 131 44
+	attack3 106 136 131 44 10 0 0 0 0 20
+	frame	data/chars/LukeCage/0_5030-30.gif
+	delay	500
+	bbox 108 135 124 49
+	attack3 108 135 124 49 10 0 0 0 0 20
+	frame	data/chars/LukeCage/0_5030-40.gif
+	delay	4
+	bbox 0 0 0 0
+	attack3 0
+    offset 163 185
+	frame	data/chars/LukeCage/0_5040-0.gif
+	frame	data/chars/LukeCage/0_5040-20.gif
+	frame	data/chars/LukeCage/0_5040-10.gif
+	frame	data/chars/LukeCage/0_5040-10.gif
+
+anim	freespecial
+	loop	0
+	delay	8
+	cancel	2 5 0 a freespecial2
+    offset 163 189
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 133 103 66 86
+	attack 0
+	frame	data/chars/LukeCage/0_200-0.gif
+	attack1 164 106 66 82 10 0 0 0 0 20
+	DropV	1 2
+	bbox 136 97 75 91
+	frame	data/chars/LukeCage/0_200-1.gif
+	delay	2
+	attack 0
+	bbox 133 103 66 86
+	frame	data/chars/LukeCage/0_200-2.gif
+	frame	data/chars/LukeCage/0_200-2.gif
+	frame	data/chars/LukeCage/0_200-2.gif
+	frame	data/chars/LukeCage/0_200-2.gif
+
+anim	freespecial2
+	loop	0
+	delay	6
+	cancel	4 8 0 a freespecial3
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+    offset 163 189
+	bbox 137 106 68 82
+	attack 0
+	frame	data/chars/LukeCage/0_210-0.gif
+	bbox 135 102 67 86
+	frame	data/chars/LukeCage/0_210-1.gif
+	frame	data/chars/LukeCage/0_210-2.gif
+	attack1 183 122 100 67 12 0 0 0 0 20
+	DropV	1 2
+	bbox 153 114 75 74
+	frame	data/chars/LukeCage/0_210-3.gif
+	attack1 165 120 93 67 12 0 0 0 0 20
+	DropV	1 2
+	bbox 144 109 67 79
+	frame	data/chars/LukeCage/0_210-4.gif
+	delay	2
+	attack 0
+	bbox 140 109 68 79
+	frame	data/chars/LukeCage/0_210-5.gif
+	frame	data/chars/LukeCage/0_210-5.gif
+	frame	data/chars/LukeCage/0_210-5.gif
+	frame	data/chars/LukeCage/0_210-5.gif
+
+anim	freespecial3
+	loop	0
+	delay	8
+	fastattack	1
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 131 106 73 82
+	attack 0
+	frame	data/chars/LukeCage/0_420-1.gif
+	delay	4
+	move 5
+	bbox 140 96 79 92
+	attack3 175 71 52 118 14 0 0 0 0 20
+	frame	data/chars/LukeCage/0_420-2.gif
+	frame	data/chars/LukeCage/0_420-2.gif
+	move 0
+	delay	8
+	frame	data/chars/LukeCage/0_420-2.gif
+	bbox 144 105 63 82
+	attack 0
+	frame	data/chars/LukeCage/0_420-3.gif
+	bbox 131 106 73 82
+	frame	data/chars/LukeCage/0_420-1.gif
+
+anim	freespecial4
+	loop	0
+	delay	3
+	Jumpframe 6 3 1
+	Landframe 11
+	offset 163 189
+	#Energycost	2 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	move 5
+	frame	data/chars/LukeCage/0_800-0.gif
+	frame	data/chars/LukeCage/0_800-0.gif
+	frame	data/chars/LukeCage/0_800-0.gif
+	frame	data/chars/LukeCage/0_800-1.gif
+	frame	data/chars/LukeCage/0_800-1.gif
+	frame	data/chars/LukeCage/0_800-1.gif
+	delay	8
+	attack3 149 51 57 137 10 1 0 0 0 20
+	DropV	5 2
+	frame	data/chars/LukeCage/0_800-2.gif
+	frame	data/chars/LukeCage/0_800-2.gif
+	attack3 0
+	frame	data/chars/LukeCage/0_800-3.gif
+	frame	data/chars/LukeCage/0_800-4.gif
+	delay	150
+	frame	data/chars/LukeCage/0_800-5.gif
+	delay	20
+	frame	data/chars/LukeCage/0_800-6.gif
+
+anim	freespecial5
+	loop	0
+	delay	8
+	offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_1200-0.gif
+	frame	data/chars/LukeCage/0_1200-1.gif
+	move 10
+	delay	2
+	blast 164 112 103 75 16 0 0 10 20
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	move 2
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	frame	data/chars/LukeCage/0_1200-2.gif
+	attack3 0
+	move 1
+	delay	6
+	frame	data/chars/LukeCage/0_0-7.gif
+	frame	data/chars/LukeCage/0_0-7.gif
+
+anim	freespecial6
+	loop	0
+	delay	13
+	offset 163 189
+	followanim	1
+	followcond	1
+	#Energycost	2 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	attack3 0
+	frame	data/chars/LukeCage/0_200-0.gif
+	attack1 162 105 53 83 1 0 0 0 0 20
+	delay	2
+	Move 8
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	frame	data/chars/LukeCage/0_200-1.gif
+	Move 2
+	attack1 0
+	frame	data/chars/LukeCage/0_210-0.gif
+	frame	data/chars/LukeCage/0_210-0.gif
+	frame	data/chars/LukeCage/0_210-0.gif
+	frame	data/chars/LukeCage/0_210-0.gif
+	Move 1
+	frame	data/chars/LukeCage/0_210-0.gif
+ 
+  anim	follow1
+	loop	0
+	delay	10
+	offset 163 189
+	fastattack 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	#attack2 151 54 86 66 1 0 0 0 0 25
+	frame	data/chars/LukeCage/0_200-2.gif
+	frame	data/chars/LukeCage/0_1000-5.gif
+	delay	1
+	#frame	data/chars/LukeCage/0_1000-6.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	attack1 173 92 70 95 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-7.gif
+	frame	data/chars/LukeCage/0_1000-7.gif
+	attack1 173 91 66 98 1 0 0 0 0 20
+	frame	data/chars/LukeCage/0_1000-8.gif
+	attack1 0
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-8.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	frame	data/chars/LukeCage/0_1000-9.gif
+	delay	6
+	frame	data/chars/LukeCage/0_420-1.gif
+	move 13
+	attack3 173 91 66 98 16 1 0 0 0 20
+	DropV	5 2
+	frame	data/chars/LukeCage/0_420-2.gif
+	move 0
+	frame	data/chars/LukeCage/0_420-2.gif
+	frame	data/chars/LukeCage/0_420-3.gif
+	frame	data/chars/LukeCage/0_420-1.gif
+
+anim	get
+	loop	0
+	delay	7
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_800-0.gif
+	frame	data/chars/LukeCage/0_10-1.gif
+	frame	data/chars/LukeCage/0_10-0.gif
+
+anim	idle
+	loop	1
+	delay	16
+    offset 163 189
+	bbox 136 90 58 97
+	drawmethod scalex 0.9
+	drawmethod scaley 0.829
+	frame	data/chars/LukeCage/0_0-0.gif
+	frame	data/chars/LukeCage/0_0-1.gif
+	frame	data/chars/LukeCage/0_0-2.gif
+	frame	data/chars/LukeCage/0_0-3.gif
+	frame	data/chars/LukeCage/0_0-4.gif
+	frame	data/chars/LukeCage/0_0-5.gif
+
+anim	jump
+	loop	0
+	delay	8
+    offset 163 189
+	bbox 143 81 45 105
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_41-0.gif
+	bbox 146 92 58 89
+	frame	data/chars/LukeCage/0_41-1.gif
+	bbox 143 96 64 58
+	frame	data/chars/LukeCage/0_41-2.gif
+	frame	data/chars/LukeCage/0_41-3.gif
+	frame	data/chars/LukeCage/0_41-3.gif
+	frame	data/chars/LukeCage/0_41-3.gif
+	frame	data/chars/LukeCage/0_41-2.gif
+	bbox 146 92 58 89
+	frame	data/chars/LukeCage/0_41-1.gif
+	bbox 143 81 45 105
+	frame	data/chars/LukeCage/0_41-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	10
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.81
+	bbox 137 101 63 68
+	frame	data/chars/LukeCage/0_600-0.gif
+	attack3 154 99 105 68 15 0 0 0 0 20
+	frame	data/chars/LukeCage/0_600-1.gif
+
+anim	jumpattack2
+	loop	0
+	delay	10
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 148 103 57 63
+	frame	data/chars/LukeCage/0_620-0.gif
+	attack2 163 91 54 80 10 0 0 0 0 20
+	bbox 143 100 49 62
+	frame	data/chars/LukeCage/0_610-0.gif
+
+anim	jumpland
+	loop	0
+	delay	7
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_10-2.gif
+	frame	data/chars/LukeCage/0_10-1.gif
+	frame	data/chars/LukeCage/0_10-0.gif
+
+anim	pain
+	loop	0
+	delay	5
+    offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+    offset 163 189
+	bbox 117 94 80 94
+	frame	data/chars/LukeCage/0_5000-20.gif
+	frame	data/chars/LukeCage/0_5000-10.gif
+	bbox 126 93 72 94
+	frame	data/chars/LukeCage/0_5000-0.gif
+	frame	data/chars/LukeCage/0_5000-0.gif
+	
+anim	pain2
+	loop	0
+	delay	3
+    offset 163 189
+	bbox 117 94 80 94
+	quakeframe	0 3 4
+	Move	-3
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_5000-20.gif
+	frame	data/chars/LukeCage/0_5000-20.gif
+	frame	data/chars/LukeCage/0_5000-20.gif
+	Move	-2
+	frame	data/chars/LukeCage/0_5000-10.gif
+	frame	data/chars/LukeCage/0_5000-10.gif
+	Move	-1
+	frame	data/chars/LukeCage/0_5000-10.gif
+	bbox 126 93 72 94
+	frame	data/chars/LukeCage/0_5000-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/LukeCage/0_5000-0.gif
+	frame	data/chars/LukeCage/0_5000-0.gif
+
+anim	pain3
+	loop	0
+    offset 163 189
+	bbox 120 120 73 67
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_5010-20.gif
+	frame	data/chars/LukeCage/0_5010-20.gif
+	Attack1	0
+	frame	data/chars/LukeCage/0_5010-20.gif
+	frame	data/chars/LukeCage/0_5010-20.gif
+	Move	-4
+	frame	data/chars/LukeCage/0_5010-20.gif
+	frame	data/chars/LukeCage/0_5010-20.gif
+	frame	data/chars/LukeCage/0_5010-20.gif
+	Move	-3
+	frame	data/chars/LukeCage/0_5010-10.gif
+	frame	data/chars/LukeCage/0_5010-10.gif
+	frame	data/chars/LukeCage/0_5010-10.gif
+	Move	-2
+	frame	data/chars/LukeCage/0_5010-10.gif
+	frame	data/chars/LukeCage/0_5010-10.gif
+	Move	-1
+	frame	data/chars/LukeCage/0_5010-10.gif
+	frame	data/chars/LukeCage/0_5010-10.gif
+	Move	0
+	bbox 133 110 68 77
+	frame	data/chars/LukeCage/0_5010-0.gif
+	frame	data/chars/LukeCage/0_5010-0.gif
+	delay	8
+	frame	data/chars/LukeCage/0_5010-0.gif
+	frame	data/chars/LukeCage/0_5010-0.gif
+
+anim	rise
+	loop	0
+	delay	8
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+    offset 163 185
+	frame	data/chars/LukeCage/0_5120-0.gif
+	frame	data/chars/LukeCage/0_5120-1.gif
+	frame	data/chars/LukeCage/0_5120-2.gif
+	frame	data/chars/LukeCage/0_5120-3.gif
+	frame	data/chars/LukeCage/0_5120-4.gif
+    offset 163 189
+	frame	data/chars/LukeCage/0_10-2.gif
+	frame	data/chars/LukeCage/0_10-1.gif
+	frame	data/chars/LukeCage/0_10-0.gif
+	
+anim	run
+	loop	1
+	delay	10
+    offset 163 195
+	bbox 147 108 54 85
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/LukeCage/0_101-0.gif
+	frame	data/chars/LukeCage/0_101-1.gif
+    offset 161 193
+	frame	data/chars/LukeCage/0_101-2.gif
+    offset 166 193
+	frame	data/chars/LukeCage/0_101-3.gif
+    offset 156 193
+	frame	data/chars/LukeCage/0_101-4.gif
+    offset 166 193
+	frame	data/chars/LukeCage/0_101-5.gif
+
+anim	runattack
+	loop	0
+	delay	3
+	offset 163 189
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	move 2
+	bbox 138 100 64 90
+	frame	data/chars/LukeCage/0_100-1.gif
+	delay	2
+	move 5
+	bbox 131 104 92 84
+	attack3 178 105 72 82 13 0 0 0 0 20
+	frame	data/chars/LukeCage/0_100-3.gif
+	frame	data/chars/LukeCage/0_100-3.gif
+	frame	data/chars/LukeCage/0_100-3.gif
+	frame	data/chars/LukeCage/0_100-3.gif
+	frame	data/chars/LukeCage/0_100-2.gif
+	frame	data/chars/LukeCage/0_100-2.gif
+	frame	data/chars/LukeCage/0_100-2.gif
+	frame	data/chars/LukeCage/0_100-2.gif
+	attack3 0
+	move 1
+	bbox 133 102 72 86
+	frame	data/chars/LukeCage/0_100-1.gif
+	frame	data/chars/LukeCage/0_100-1.gif
+
+anim	special
+	loop	0
+	delay	3
+	Energycost	10 0
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+    offset 163 189
+	Energycost	30 0
+	#@cmd	shoot "KSPa" 0 0 -1
+	frame	data/chars/LukeCage/0_3000-0.gif
+	frame	data/chars/LukeCage/0_3000-0.gif
+	frame	data/chars/LukeCage/0_3000-0.gif
+	move 10
+	blast  141 87 48 101  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-1.gif
+	blast 117 97 111 91  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-2.gif
+	blast 111 89 108 98  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-3.gif
+	blast 149 90 114 99  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-4.gif
+	blast 111 89 135 100  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-5.gif
+	blast 92 93 129 95  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-6.gif
+	blast  141 87 48 101  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-1.gif
+	blast 117 97 111 91  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-2.gif
+	blast 111 89 108 98  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-3.gif
+	blast 149 90 114 99  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-4.gif
+	blast 111 89 135 100  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-5.gif
+	blast 92 93 129 95  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-6.gif
+	blast  141 87 48 101  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-1.gif
+	blast 117 97 111 91  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-2.gif
+	blast 111 89 108 98  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-3.gif
+	blast 149 90 114 99  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-4.gif
+	blast 111 89 135 100  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-5.gif
+	blast 92 93 129 95  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-6.gif
+	blast  141 87 48 101  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-1.gif
+	blast 117 97 111 91  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-2.gif
+	blast 111 89 108 98  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-3.gif
+	blast 149 90 114 99  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-4.gif
+	blast 111 89 135 100  40  0  0  20  20
+	frame	data/chars/LukeCage/0_3000-5.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	move 0
+	frame	data/chars/LukeCage/0_3000-0.gif
+	frame	data/chars/LukeCage/0_3000-0.gif
+
+anim	walk
+	loop	1
+	delay	12
+    offset 163 193
+	bbox 136 105 55 86
+	drawmethod scalex 0.9
+	drawmethod scaley 0.79
+	frame	data/chars/LukeCage/0_20-0.gif
+    offset 163 191
+	frame	data/chars/LukeCage/0_20-1.gif
+	frame	data/chars/LukeCage/0_20-2.gif
+	frame	data/chars/LukeCage/0_20-3.gif
+    offset 163 193
+	frame	data/chars/LukeCage/0_20-4.gif
+    offset 163 191
+	frame	data/chars/LukeCage/0_20-5.gif
+	frame	data/chars/LukeCage/0_20-6.gif
+    offset 163 193
+	frame	data/chars/LukeCage/0_20-7.gif
+

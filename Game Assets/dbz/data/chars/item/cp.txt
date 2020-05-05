@@ -1,0 +1,43 @@
+name	CP
+health	50
+type	obstacle
+shadow	0
+remove 1
+nolife 1
+falldie 1
+
+load hp
+
+palette data/chars/item/CP.gif
+
+animationscript data/scripts/animscript.c
+
+anim	death
+custentity	hp
+	spawnframe	0 0 0 0
+	loop	0
+	delay	5
+	offset	34 73
+	@cmd	spawn01 "smoke" 0 0 1
+	frame	data/chars/misc/empty.gif
+frame	data/chars/misc/empty.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	34 73
+	bbox	6 14 58 46
+	frame	data/chars/item/Cp.gif
+	offset	34 72
+	frame	data/chars/item/Cp.gif
+	offset	34 71
+	frame	data/chars/item/Cp.gif
+	offset	34 70
+	frame	data/chars/item/Cp.gif
+	offset	34 71
+	frame	data/chars/item/Cp.gif
+	offset	34 72
+	frame	data/chars/item/Cp.gif
+		
+#|edited by openBor Stats v 0.67
+		

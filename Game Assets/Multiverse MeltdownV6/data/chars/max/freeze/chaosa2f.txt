@@ -1,0 +1,32 @@
+name ChaosA2F
+type pshot
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 1
+animationscript       data/scripts/escript.c
+palette       data/chars/Max/Pal
+alternatepal  data/chars/Max/Freeze/Pal
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	119 127
+           @cmd    changemap 1
+        hitflash ChaosFF
+		attack  127  103  8  19  5  0  0  0  0  20
+	frame	data/chars/Max/SShot-0.gif
+		attack  126  108  10  10  5  0  0  0  0  20
+	frame	data/chars/Max/SShot-1.gif
+	frame	data/chars/Max/SShot-2.gif
+	frame	data/chars/Max/SShot-3.gif
+	frame	data/chars/Max/SShot-4.gif
+	frame	data/chars/Max/SShot-5.gif
+	frame	data/chars/Max/SShot-6.gif
+
+
+#|edited by openBor Stats v 0.25
+
+

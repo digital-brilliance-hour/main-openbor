@@ -1,0 +1,613 @@
+name	KYLE
+health	500
+mp 100
+mprate 10
+speed	15
+type	player
+icon     data/chars/Kyle/IconA.gif 1
+iconget  data/chars/Kyle/IconB.gif 1
+iconpain data/chars/Kyle/IconC.gif 1
+icondie  data/chars/Kyle/IconC.gif 1
+#diesound   data/chars/Zero/die2.wav
+running 25 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+knife   ZShot
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Kyle/Pal
+alternatepal  data/chars/Kyle/Pal0
+alternatepal  data/chars/Kyle/Pal1
+alternatepal  data/chars/Kyle/Pal2
+alternatepal  data/chars/Kyle/Pal3
+alternatepal  data/chars/Kyle/Pal4
+alternatepal  data/chars/Kyle/Pal5
+
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+#weaploss 2
+animationscript data/scripts/script.c
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	fastattack 1
+	cancel	3 7 0 a freespecial
+	offset	62 128
+	bbox 53 90 16 38
+	frame	data/chars/Kyle/0_200-0.gif
+	move	5
+	delay	3
+	attack1 63 86 42 41 10 0 0 0 0 20
+	bbox 54 95 19 33
+	frame	data/chars/Kyle/0_200-1.gif
+	move	0
+	attack1 62 105 41 30 10 0 0 0 0 20
+	bbox 56 97 19 30
+	frame	data/chars/Kyle/0_200-2.gif
+	delay	11
+	frame	data/chars/Kyle/0_200-3.gif
+	attack1	0
+	delay	2
+	frame	data/chars/Kyle/0_200-4.gif
+	frame	data/chars/Kyle/0_200-4.gif
+	frame	data/chars/Kyle/0_200-5.gif
+	frame	data/chars/Kyle/0_200-5.gif
+
+anim	dodge
+	loop	0
+	delay	5
+	offset	62 128
+	frame	data/chars/Kyle/0_40-0.gif
+	offset	62 130
+	frame	data/chars/Kyle/0_40-0.gif
+	offset	62 132
+	frame	data/chars/Kyle/0_40-0.gif
+	offset	62 134
+	frame	data/chars/Kyle/0_40-1.gif
+	offset	62 132
+	frame	data/chars/Kyle/0_40-1.gif
+	offset	62 130
+	frame	data/chars/Kyle/0_40-1.gif
+	delay	6
+	offset	62 128
+	frame	data/chars/Kyle/0_5100-0.gif
+	frame	data/chars/Kyle/0_10-0.gif
+
+anim	fall
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	Landframe	3
+	offset	62 128
+	bbox 52 95 20 31
+	attack3 52 95 20 31 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	delay	500
+	offset	61 122
+	bbox 43 95 35 21
+	attack3 43 95 35 21 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_5030-30.gif
+	bbox 0 0 0 0
+	delay	9
+	Attack1	0
+	offset	62 131
+	frame	data/chars/Kyle/0_5041-10.gif
+	offset	61 110
+	frame	data/chars/Kyle/0_5030-30.gif
+	frame	data/chars/Kyle/0_5030-30.gif
+	offset	62 131
+	frame	data/chars/Kyle/0_5041-10.gif
+
+anim	freespecial
+	loop	0
+	delay	8
+	fastattack 1
+	cancel	4 8 0 a freespecial2
+	offset	62 128
+	bbox 54 90 15 36
+	frame	data/chars/Kyle/0_201-0.gif
+	delay	3
+	attack1 49 104 27 33 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_201-1.gif
+	bbox 52 93 23 34
+	attack1 51 66 42 61 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_201-2.gif
+	frame	data/chars/Kyle/0_201-3.gif
+	delay	8
+	attack1 49 66 12 57 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_201-4.gif
+	attack1	0
+	delay	2
+	frame	data/chars/Kyle/0_201-4.gif
+	frame	data/chars/Kyle/0_201-4.gif
+	frame	data/chars/Kyle/0_201-5.gif
+	frame	data/chars/Kyle/0_201-5.gif
+
+anim	freespecial2
+	loop	0
+	delay	7
+	fastattack 1
+	cancel	3 7 0 a freespecial3
+	offset	62 128
+	bbox 53 97 19 31
+	frame	data/chars/Kyle/0_252-0.gif
+	delay	3
+	attack1 62 89 35 36 10 0 0 0 0 20
+	bbox 55 92 19 34
+	frame	data/chars/Kyle/0_252-1.gif
+	attack1 62 77 42 49 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_252-2.gif
+	delay	9
+	attack1 62 80 42 48 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_252-3.gif
+	delay	2
+	frame	data/chars/Kyle/0_252-3.gif
+	frame	data/chars/Kyle/0_252-3.gif
+	frame	data/chars/Kyle/0_252-3.gif
+	frame	data/chars/Kyle/0_252-3.gif
+
+anim	freespecial3
+	loop	0
+	delay	7
+	offset	62 128
+	bbox 48 87 20 39
+	move 5
+	frame	data/chars/Kyle/0_520-0.gif
+	move 7
+	bbox 53 88 14 38
+	frame	data/chars/Kyle/0_520-1.gif
+	move 9
+	delay	3
+	attack3 61 93 37 42 13 0 0 0 0 20
+	bbox 42 103 29 22
+	frame	data/chars/Kyle/0_520-2.gif
+	move 0
+	attack3 63 112 34 23 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_520-3.gif
+	delay	7
+	attack3 58 121 38 13 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_520-4.gif
+	attack3 0
+	frame	data/chars/Kyle/0_520-4.gif
+	frame	data/chars/Kyle/0_520-4.gif
+	attack3 0
+	move -5
+	bbox 55 101 18 25
+	frame	data/chars/Kyle/0_1001-2.gif
+
+anim	freespecial4
+	loop	0
+	delay	6
+	Fastattack 1
+	mpcost	5
+	mponly	1
+	offset	62 128
+	@cmd	shoot "KyFSP1a" 0 0 0
+	@cmd	shoot "KyFSP1a" -8 -2 0
+	@cmd	shoot "KyFSP1a" -16 -4 0
+	frame	data/chars/Kyle/0_220-0.gif
+	delay	2
+	move 4
+	drawmethod scalex 1
+	drawmethod scaley 1
+	
+	offset	62 128
+	@cmd	shoot "KyFSP1a" 4 0 0
+	@cmd	shoot "KyFSP1a" 6 -6 0
+	@cmd	shoot "KyFSP1a" 8 -15 0
+	@cmd	shoot "KyFSP1a" 4 14 0
+	@cmd	shoot "KyFSP1a" 14 8 0
+	@cmd	shoot "KyFSP1a" 26 4 0
+	attack1 61 90 35 37 5 0 0 0 0 20
+	frame	data/chars/Kyle/0_220-1.gif
+	delay	6
+	attack1 54 57 43 68 5 0 0 0 0 20
+	frame	data/chars/Kyle/0_220-2.gif
+	@cmd	shoot "KyFSP1a" 10 25 0
+	@cmd	shoot "KyFSP1a" 18 31 0
+	@cmd	shoot "KyFSP1a" 23 37 0
+	@cmd	shoot "KyFSP1a" -5 25 0
+	@cmd	shoot "KyFSP1a" -10 37 0
+	@cmd	shoot "KyFSP1a" -16 49 0
+	attack1 19 58 41 69 5 0 0 0 0 20
+	delay	4
+	frame	data/chars/Kyle/0_220-3.gif
+	move 0
+	@cmd	shoot "KyFSP1a" -17 23 0
+	@cmd	shoot "KyFSP1a" -23 33 0
+	@cmd	shoot "KyFSP1a" -29 41 0
+	@cmd	shoot "KyFSP1a" -25 19 0
+	@cmd	shoot "KyFSP1a" -33 23 0
+	@cmd	shoot "KyFSP1a" -39 26 0
+	attack1 0
+	frame	data/chars/Kyle/0_220-4.gif
+	frame	data/chars/Kyle/0_220-5.gif
+	delay	8
+	frame	data/chars/Kyle/0_251-1.gif
+	delay	2
+	frame	data/chars/Kyle/0_251-2.gif
+	move 8
+	@cmd	shoot "KyFSP1b" 6 0 0
+	frame	data/chars/Kyle/0_251-3.gif
+	frame	data/chars/Kyle/0_251-4.gif
+	delay	8
+	move 0
+	frame	data/chars/Kyle/0_251-5.gif
+	frame	data/chars/Kyle/0_251-6.gif
+	frame	data/chars/Kyle/0_251-7.gif
+
+anim	freespecial5
+	loop	0
+	delay	9
+	Fastattack	1
+	mpcost	10
+	mponly	1
+	offset	62 128
+	frame	data/chars/Kyle/0_201-0.gif
+	delay	2
+	frame	data/chars/Kyle/0_201-1.gif
+	@cmd	shoot "KyFSP2" 0 0 0
+	frame	data/chars/Kyle/0_201-2.gif
+	frame	data/chars/Kyle/0_201-3.gif
+	delay	7
+	frame	data/chars/Kyle/0_201-4.gif
+	frame	data/chars/Kyle/0_201-4.gif
+	frame	data/chars/Kyle/0_201-5.gif
+
+anim	freespecial6
+	loop	0
+	delay	7
+	mpcost	20
+	mponly	1
+	DropV	4 1
+	move	10
+	offset	62 128
+	frame	data/chars/Kyle/0_210-0.gif
+	frame	data/chars/Kyle/0_210-1.gif
+	delay	2
+	attack3 65 98 39 29 12 0 0 0 0 20
+	frame	data/chars/Kyle/0_210-2.gif
+	attack3 62 101 57 26 12 0 0 0 0 20
+	frame	data/chars/Kyle/0_210-3.gif
+	frame	data/chars/Kyle/0_210-4.gif
+	delay	7
+	frame	data/chars/Kyle/0_210-5.gif
+	delay	2
+	move -9
+	attack3 0
+	frame	data/chars/Kyle/0_210-6.gif
+	frame	data/chars/Kyle/0_210-6.gif
+	frame	data/chars/Kyle/0_210-7.gif
+	frame	data/chars/Kyle/0_210-7.gif
+	frame	data/chars/Kyle/0_210-7.gif
+	move 0
+	delay	10
+	frame	data/chars/Kyle/0_211-0.gif
+	delay	2
+	move 10
+	attack3 62 105 54 23 12 0 0 0 0 20
+	frame	data/chars/Kyle/0_211-1.gif
+	frame	data/chars/Kyle/0_211-1.gif
+	frame	data/chars/Kyle/0_211-1.gif
+	attack3 62 101 55 26 12 0 0 0 0 20
+	frame	data/chars/Kyle/0_211-2.gif
+	frame	data/chars/Kyle/0_211-2.gif
+	frame	data/chars/Kyle/0_211-2.gif
+	frame	data/chars/Kyle/0_211-2.gif
+	frame	data/chars/Kyle/0_211-2.gif
+	attack3 0
+	move 0
+	delay	10
+	frame	data/chars/Kyle/0_211-2.gif
+	delay	7
+	frame	data/chars/Kyle/0_220-0.gif
+
+anim	get
+	loop	0
+	delay	9
+	offset	62 128
+	frame	data/chars/Kyle/0_5100-0.gif
+	frame	data/chars/Kyle/0_10-0.gif
+
+anim	idle
+	loop	1
+	delay	10
+	offset	62 128
+	bbox 52 91 19 35
+	frame	data/chars/Kyle/0_0-0.gif
+	frame	data/chars/Kyle/0_0-1.gif
+	frame	data/chars/Kyle/0_0-2.gif
+	frame	data/chars/Kyle/0_0-3.gif
+	frame	data/chars/Kyle/0_0-4.gif
+	frame	data/chars/Kyle/0_0-5.gif
+	frame	data/chars/Kyle/0_0-6.gif
+
+anim	jump
+	loop	0
+	delay	35
+	offset	62 128
+	bbox 54 91 15 38
+	frame	data/chars/Kyle/0_40-0.gif
+	delay	5
+	frame	data/chars/Kyle/0_40-1.gif
+
+anim	jumpland
+	loop	0
+	delay	9
+	offset	62 128
+	frame	data/chars/Kyle/0_5100-0.gif
+	frame	data/chars/Kyle/0_10-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	6
+	offset	62 128
+	bbox 51 88 18 39
+	attack1	0
+	frame	data/chars/Kyle/0_520-0.gif
+	bbox 52 87 14 40
+	frame	data/chars/Kyle/0_520-1.gif
+	delay	2
+	attack3 61 93 37 42 13 0 0 0 0 20
+	bbox 42 103 29 22
+	frame	data/chars/Kyle/0_520-2.gif
+	move 0
+	attack3 63 112 34 23 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_520-3.gif
+	delay	7
+	attack3 58 121 38 13 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_520-4.gif
+
+anim	jumpattack2
+	loop	0
+	delay	6
+	offset	62 128
+	bbox 50 88 22 37
+	attack1	0
+	frame	data/chars/Kyle/0_230-0.gif
+	frame	data/chars/Kyle/0_230-1.gif
+	delay	2
+	attack2 52 64 42 40 9 0 0 0 0 20
+	bbox 52 91 17 36
+	frame	data/chars/Kyle/0_230-2.gif
+	attack2 62 90 31 46 9 0 0 0 0 20
+	frame	data/chars/Kyle/0_230-3.gif
+	attack2 61 113 31 23 9 0 0 0 0 20
+	frame	data/chars/Kyle/0_230-4.gif
+	attack2 58 114 28 22 9 0 0 0 0 20
+	frame	data/chars/Kyle/0_230-5.gif
+
+anim	land
+	loop	0
+	delay	15
+	offset	112 132
+	frame	data/chars/Zero/Rise-6.gif
+	delay	5
+	frame	data/chars/Zero/Rise-7.gif
+	frame	data/chars/Zero/Rise-8.gif
+
+anim	pain
+	loop	0
+	offset	62 128
+	bbox 51 89 22 38
+	delay	5
+	quakeframe	0 3 4
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+
+anim	pain2
+	loop	0
+	offset	62 128
+	bbox 51 89 22 38
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-2
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-1
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+
+anim	pain3
+	loop	0
+	offset	62 128
+	bbox 51 89 22 38
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-4
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-3
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-2
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	-1
+	frame	data/chars/Kyle/0_5000-0.gif
+	delay	100
+	frame	data/chars/Kyle/0_5000-0.gif
+	Move	0
+	delay	2
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+	delay	10
+	frame	data/chars/Kyle/0_5000-0.gif
+	frame	data/chars/Kyle/0_5000-0.gif
+
+anim	rise
+	loop	0
+	offset	62 131
+	delay	12
+	frame	data/chars/Kyle/0_5041-10.gif
+	delay	14
+	offset	62 128
+	frame	data/chars/Kyle/0_5100-0.gif
+	frame	data/chars/Kyle/0_10-0.gif
+
+anim	run
+	loop	1
+	delay	7
+	offset	62 128
+	bbox 55 98 27 28
+	frame	data/chars/Kyle/0_100-0.gif
+	frame	data/chars/Kyle/0_100-1.gif
+	frame	data/chars/Kyle/0_100-2.gif
+	frame	data/chars/Kyle/0_100-3.gif
+	frame	data/chars/Kyle/0_100-4.gif
+	frame	data/chars/Kyle/0_100-5.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	2
+	offset	62 128
+	bbox 52 95 22 31
+	move 5
+	attack3 35 87 26 39 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_251-1.gif
+	frame	data/chars/Kyle/0_251-1.gif
+	frame	data/chars/Kyle/0_251-1.gif
+	attack3 49 73 18 55 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_251-2.gif
+	frame	data/chars/Kyle/0_251-2.gif
+	frame	data/chars/Kyle/0_251-2.gif
+	delay	2
+	move 8
+	attack3 61 76 39 50 13 0 0 0 0 20
+	bbox 56 100 18 27
+	frame	data/chars/Kyle/0_251-3.gif
+	frame	data/chars/Kyle/0_251-3.gif
+	frame	data/chars/Kyle/0_251-3.gif
+	attack3 62 116 38 29 13 0 0 0 0 20
+	bbox 59 104 19 23
+	frame	data/chars/Kyle/0_251-4.gif
+	frame	data/chars/Kyle/0_251-4.gif
+	frame	data/chars/Kyle/0_251-4.gif
+	delay	4
+	move 3
+	attack3 62 121 26 24 13 0 0 0 0 20
+	frame	data/chars/Kyle/0_251-5.gif
+	frame	data/chars/Kyle/0_251-5.gif
+	delay	8
+	move 0
+	attack3 0
+	bbox 55 105 13 24
+	frame	data/chars/Kyle/0_251-6.gif
+	bbox 55 92 14 37
+	frame	data/chars/Kyle/0_251-7.gif
+
+anim	special
+	loop	0
+	delay	7
+	MPcost	50
+	Energycost	50
+	fastattack 1
+	jumpframe 2 7 0
+	landframe 8
+	offset	62 128
+	frame	data/chars/Kyle/0_252-0.gif
+	attack1 62 89 35 36 10 0 0 0 0 20
+	frame	data/chars/Kyle/0_252-1.gif
+	delay	8
+	frame	data/chars/Kyle/0_1300-9.gif
+	frame	data/chars/Kyle/0_1300-9.gif
+	frame	data/chars/Kyle/0_1300-9.gif
+	@cmd	leaper  0 -9 0
+	frame	data/chars/Kyle/0_520-1.gif
+	frame	data/chars/Kyle/0_520-2.gif
+	delay	100
+	frame	data/chars/Kyle/0_520-3.gif
+	delay	7
+	@cmd	shoot "KySPa" 0 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 0 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 0 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 0 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" -60 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	@cmd	shoot "KySPa" 30 0 0
+	frame	data/chars/Kyle/0_520-4.gif
+	delay	20
+	frame	data/chars/Kyle/0_520-4.gif
+	delay	7
+	attack3 0
+	move -5
+	bbox 55 101 18 25
+	frame	data/chars/Kyle/0_1001-2.gif
+
+anim	walk
+	loop	1
+	delay	11
+	offset	62 128
+	bbox 55 90 15 38
+	frame	data/chars/Kyle/0_20-0.gif
+	frame	data/chars/Kyle/0_20-1.gif
+	frame	data/chars/Kyle/0_20-2.gif
+	frame	data/chars/Kyle/0_20-3.gif
+	frame	data/chars/Kyle/0_20-4.gif
+
+
+#|edited by openBor Stats v 0.37
+
+

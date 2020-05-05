@@ -1,0 +1,40 @@
+name MuSP
+type None
+shadow 0
+nolife 1
+candamage player npc
+speed 15
+remove 0
+nomove 1
+
+
+anim	idle
+	loop	1
+	delay	2
+	offset	38 166
+	attack3  197  57  82  79  20  1  0  0  0  25
+        DropV   4 2
+	frame	data/chars/mukai/MuSP0.gif
+	frame	data/chars/mukai/MuSP1.gif
+	frame	data/chars/mukai/MuSP2.gif
+	frame	data/chars/mukai/MuSP3.gif
+	frame	data/chars/mukai/MuSP4.gif
+	frame	data/chars/mukai/MuSP5.gif
+	frame	data/chars/mukai/MuSP6.gif
+	frame	data/chars/mukai/MuSP7.gif
+	frame	data/chars/mukai/MuSP8.gif
+	frame	data/chars/mukai/MuSP9.gif
+	frame	data/chars/mukai/MuSP10.gif
+	frame	data/chars/mukai/MuSP9.gif
+	frame	data/chars/mukai/MuSP8.gif
+	frame	data/chars/mukai/MuSP7.gif
+	frame	data/chars/mukai/MuSP6.gif
+	frame	data/chars/mukai/MuSP5.gif
+	frame	data/chars/mukai/MuSP4.gif
+	frame	data/chars/mukai/MuSP3.gif
+	frame	data/chars/mukai/MuSP2.gif
+	frame	data/chars/mukai/MuSP1.gif
+	frame	data/chars/mukai/MuSP0.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/mukai/MuSP0.gif
+

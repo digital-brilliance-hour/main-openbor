@@ -1,0 +1,177 @@
+name	Quaker_
+health	50
+speed	8
+type	enemy
+gfxshadow 1
+cantgrab 1
+icon	  data/chars/Quaker/icon.gif
+iconpain  data/chars/Quaker/icon.gif
+icondie   data/chars/Quaker/iconD.gif
+diesound  	data/sounds/exp.wav
+nodieblink 2
+candamage Enemy Player
+aggression -20
+
+load	knife
+
+
+anim idle
+	loop	1
+	delay	8
+	offset	64 107
+	bbox	41 48 51 61
+	frame	data/chars/Quaker/stand1.gif
+
+anim walk
+	loop	1
+	delay	12
+	offset	64 107
+	bbox	41 48 51 61
+	frame	data/chars/Quaker/walk1.gif
+	frame	data/chars/Quaker/walk2.gif
+
+anim pain
+	loop	0
+	delay	5
+	offset	64 107
+	bbox	41 48 51 61
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+
+anim	pain2
+	loop	0
+	delay	3
+	offset	64 107
+	bbox	41 48 51 61
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-2
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-1
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	0
+	delay	8
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+
+anim	pain3
+	loop	0
+	delay	2
+	offset	64 107
+	bbox	41 48 51 61
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-4
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-3
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-2
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	-1
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	Move	0
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+	delay	8
+	frame	data/chars/Quaker/stand1.gif
+	frame	data/chars/Quaker/stand1.gif
+
+anim fall
+	loop	0
+	delay	16
+	offset	64 107
+	attack3	41 48 51 61 18 
+           DropV     1 2
+	frame	data/chars/Quaker/stand1.gif
+
+anim rise
+	loop	0
+	delay	8
+	offset	64 107
+	frame	data/chars/Quaker/walk1.gif
+	frame	data/chars/Quaker/stand1.gif
+
+anim attack1
+	range	1 120
+	loop	0
+	delay	4
+	range	80 100
+	offset	64 107
+	bbox	41 48 51 61
+	frame	data/chars/Quaker/act1.gif
+	frame	data/chars/Quaker/act2.gif
+	delay	9
+	frame	data/chars/Quaker/act3.gif
+	delay	4
+	attack	88 70 44 43 16 1
+	frame	data/chars/Quaker/act4.gif
+	attack	86 84 48 29 16 1
+	frame	data/chars/Quaker/act5.gif
+	attack	84 82 52 32 16 1
+	frame	data/chars/Quaker/act6.gif
+	attack	83 81 62 34 16 1
+	frame	data/chars/Quaker/act7.gif
+	attack	83 82 75 30 16 1
+	frame	data/chars/Quaker/act8.gif
+	attack	82 85 90 27 16 1
+	frame	data/chars/Quaker/act9.gif
+	attack	134 81 46 31 16 1
+	frame	data/chars/Quaker/act10.gif
+	attack	148 83 47 28 16 1
+	frame	data/chars/Quaker/act11.gif
+	attack	0
+	frame	data/chars/Quaker/act12.gif
+	frame	data/chars/Quaker/act13.gif
+	frame	data/chars/Quaker/act14.gif
+
+anim attack2
+	range	1 200
+        throwframe 4
+	loop	0
+	delay	4
+	offset	64 107
+	bbox	41 48 51 61
+	frame	data/chars/Quaker/sh1.gif
+	frame	data/chars/Quaker/sh2.gif
+	frame	data/chars/Quaker/sh3.gif
+	frame	data/chars/Quaker/sh4.gif
+	frame	data/chars/Quaker/sh5.gif
+	delay	60
+	frame	data/chars/Quaker/sh4.gif
+
+anim death
+	loop	0
+	delay	5
+	offset	45 65
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif
+
+

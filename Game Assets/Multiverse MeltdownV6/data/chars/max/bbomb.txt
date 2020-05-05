@@ -1,0 +1,44 @@
+name	BBomb
+health	1
+type	NPC
+gfxshadow 1
+speed	10
+candamage enemy obstacle
+jumpheight 3
+
+anim idle
+	loop	1
+	delay	20
+	offset	115 99
+           fastattack 1
+	attack  106  86  17  18  5
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+	frame	data/chars/Max/Bomb.gif
+
+
+
+anim attack1
+	offset	115 99
+           fastattack 1
+        delay   1
+		attack  0
+	frame	data/chars/Max/EX-0.gif
+		delay  7
+		attack1  106  87  16  16  25  1  0  0  0  20
+	frame	data/chars/Max/EX-0.gif
+		attack1  97  79  31  32  25  1  0  0  0  20
+	frame	data/chars/Max/EX-1.gif
+	frame	data/chars/Max/EX-2.gif
+	frame	data/chars/Max/EX-3.gif
+	frame	data/chars/Max/EX-4.gif
+	frame	data/chars/Max/EX-5.gif
+	frame	data/chars/Max/EX-6.gif
+
+
+
+
+
+

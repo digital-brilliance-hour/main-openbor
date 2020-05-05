@@ -1,0 +1,285 @@
+name	Ninja_Hawk
+health	200
+speed   15
+type	enemy
+diesound	data/sounds/alien.wav
+gfxshadow 1
+candamage Enemy Player
+icon	  data/chars/hawk/icon.gif
+iconpain  data/chars/hawk/iconP.gif
+icondie   data/chars/hawk/iconD.gif
+palette       data/chars/hawk/Pal
+alternatepal  data/chars/hawk/FreezeM.gif
+fmap 1
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	10 28
+	bbox    2 2 16 29
+	frame	data/chars/hawk/stance.gif
+
+anim walk
+	loop	1
+	delay	35
+	offset	10 28
+	bbox    2 1 16 28
+	frame	data/chars/hawk/stance.gif
+	offset	9 27
+	bbox    2 1 16 30
+	frame	data/chars/hawk/walk.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	10 29
+	bbox      2 3 17 26
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/hit.gif
+
+anim BPAIN
+	loop	0
+	offset	10 29
+	delay	3
+	bbox      2 3 17 26
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/BurnP.gif
+	frame	data/chars/hawk/hit.gif
+
+anim SPAIN
+	loop	0
+	offset	10 29
+	delay	3
+	bbox      2 3 17 26
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/ShockP.gif
+	frame	data/chars/hawk/hit.gif
+
+anim pain2
+	loop	0
+	offset	10 29
+	delay	3
+	bbox      2 3 17 26
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+	frame	data/chars/hawk/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	10 29
+	delay	3
+	bbox      2 3 17 26
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+	frame	data/chars/hawk/DrainP.gif
+	frame	data/chars/hawk/hit.gif
+
+anim fall
+	loop	0
+	delay	10
+	offset    14 18
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/fall.gif
+
+anim BURN
+	loop	0
+	offset    14 18
+           landframe 19
+	delay	3
+	attack1  3  5  43  36 10  1  0  0  0  20
+	bbox     3  5  43  36
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/BurnF.gif
+	frame	data/chars/hawk/fall.gif
+	delay	100
+	frame	data/chars/hawk/fall.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/hawk/fall.gif
+
+anim Shock
+	loop	0
+	offset    14 18
+           landframe 19
+	delay	3
+	attack1  3  5  43  36 10  1  0  0  0  20
+	bbox     3  5  43  36
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/ShockF.gif
+	frame	data/chars/hawk/fall.gif
+	delay	100
+	frame	data/chars/hawk/fall.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/hawk/fall.gif
+
+anim Fall3
+	loop	0
+	offset    14 18
+           landframe 19
+	delay	3
+	attack1  3  5  43  36 10  1  0  0  0  20
+	bbox     3  5  43  36
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	frame	data/chars/hawk/DrainF.gif
+	frame	data/chars/hawk/fall.gif
+	delay	100
+	frame	data/chars/hawk/fall.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/hawk/fall.gif
+
+anim rise
+	loop	0
+	delay	23
+	offset  11 26
+	frame	data/chars/hawk/a3.gif
+
+anim attack1
+	loop	0
+	offset	12 28
+	delay	10
+	frame	data/chars/hawk/a1.gif
+	offset  12 27
+	attack  11  0  21  30  20
+	frame	data/chars/hawk/a2.gif
+	offset	11 26
+	frame	data/chars/hawk/a3.gif
+
+anim land
+	loop	0
+	offset	11 26
+	bbox    0
+	frame	data/chars/hawk/a3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

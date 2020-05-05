@@ -1,0 +1,161 @@
+name	FERNANDEZA
+type	Panel
+shadow	0
+alpha   0
+remove  0
+speed 10
+setlayer -10
+offscreenkill 5000
+
+palette       data/chars/misc/empty.gif
+
+animationscript data/scripts/script.c
+
+anim idle
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 5){
+      int r = rand()%2;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script
+        loop    1
+		@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	15
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow1
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%2;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	40
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ" 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow2
+      	@script
+    void self = getlocalvar("self");
+    if( frame == 10){
+      int r = rand()%2;
+      if( r < 1){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW1"));
+      } else if( r < 2){
+        changeentityproperty(self, "animation", openborconstant("ANI_FOLLOW2"));
+      } else if( r < 3){
+      }
+    }
+	@end_script
+        loop    1
+	@script
+    void self = getlocalvar("self");
+    int Code = getentityproperty(self,"mp");
+    int Status = getindexedvar(Code);
+     
+    if(Status==1){
+      performattack(self, openborconstant("ANI_FOLLOW11"));
+    }
+@end_script
+	delay	40
+	offset	161 131
+	bbox	139 61 45 71
+	frame	data/chars/misc/empty.gif
+	@cmd	spawn01 "FERNANDEZ" 0 0 0
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim Follow11
+        loop    1
+	delay	1
+	offset	161 131
+	frame	data/chars/misc/empty.gif
+	 offset    123 127
+	 delay     3
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	 frame     data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+
+

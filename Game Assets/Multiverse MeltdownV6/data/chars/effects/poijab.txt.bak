@@ -1,0 +1,21 @@
+name	PoiJab
+type	None
+shadow	0
+nolife  1
+speed	20
+Remove 0
+Nomove 1
+candamage  Enemy
+
+
+anim idle
+	loop	0
+	delay	5
+	offset	112 128
+	attack1    111 102 35 27 18  0  0  0  0  20
+	frame	data/chars/effects/PoiJab-0.gif
+	frame	data/chars/effects/PoiJab-1.gif
+	frame	data/chars/effects/PoiJab-2.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/effects/PoiJab-2.gif
+

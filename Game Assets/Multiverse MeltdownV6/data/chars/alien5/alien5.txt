@@ -1,0 +1,272 @@
+#Alien5 by Kingherb
+
+name	Alien5
+health	40
+speed	10
+type	enemy
+gfxshadow 1
+#diesound 	data/sounds/die1.wav
+icon	  data/chars/Alien5/iconA.gif
+iconpain  data/chars/Alien6/iconB.gif
+icondie   data/chars/Alien6/iconB.gif
+palette       data/chars/Alien5/Pal
+alternatepal  data/chars/Alien5/FreezeM.gif
+fmap 1
+#remap data/chars/Alien5/walk01.gif data/chars/Alien5/ALT1.gif
+#remap data/chars/Alien5/walk08.gif data/chars/Alien5/ALT2.gif
+candamage Player
+jugglepoints 1
+
+anim idle
+	delay	10
+	loop	1
+	offset	245 197
+	bbox.position.x 188
+	bbox.position.y 165
+	bbox.size.x 85
+	bbox.size.y 35
+	frame	data/chars/Alien5/stand00.gif
+	frame	data/chars/Alien5/stand01.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	245 197
+	bbox.position.x 184
+	bbox.position.y 166
+	bbox.size.x 97
+	bbox.size.y 33
+	attack.damage.type 1
+	frame	data/chars/Alien5/walk01.gif
+	frame	data/chars/Alien5/walk02.gif
+	frame	data/chars/Alien5/walk03.gif
+	frame	data/chars/Alien5/walk04.gif
+	frame	data/chars/Alien5/walk05.gif
+	frame	data/chars/Alien5/walk06.gif
+	frame	data/chars/Alien5/walk07.gif
+	frame	data/chars/Alien5/walk08.gif
+
+anim attack1
+	loop	0
+	delay	2
+	range	5 140
+	offset	98 197
+	bbox	61 122 92 78
+                frame	data/chars/Alien5/acid1.gif
+	frame	data/chars/Alien5/acid2.gif
+	frame	data/chars/Alien5/acid3.gif
+	frame	data/chars/Alien5/acid4.gif
+	frame	data/chars/Alien5/acid5.gif
+	bbox	61 121 91 81
+		attack2  149  103  61  50  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid6.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid7.gif
+		attack2  160  91  70  50  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid8.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid9.gif
+		attack2  175  85  77  51  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid10.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid11.gif
+		attack2  156  87  105  53  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid12.gif
+		attack2  160  85  107  53  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid13.gif
+		attack2  166  85  108  51  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid14.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid14.gif
+		attack2  175  83  103  51  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid15.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid16.gif
+		attack2  188  84  104  46  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid17.gif
+		attack2  192  83  104  47  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid18.gif
+		attack2  199  85  99  45  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid19.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid20.gif
+		attack2  203  88  109  54  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid21.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid22.gif
+		attack2  212  85  123  55  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid23.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid23.gif
+		attack2  217  86  119  57  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid24.gif
+	attack1  0 0 0 0 0 0
+	frame	data/chars/Alien5/acid24.gif
+		attack2  220  87  125  61  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid25.gif
+		attack2  220  87  127  64  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid26.gif
+		attack2  224  91  130  64  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid27.gif
+		attack2  227  93  133  67  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid28.gif
+	frame	data/chars/Alien5/acid29.gif
+		attack2  241  104  134  66  10  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/acid30.gif
+	frame	data/chars/Alien5/acid31.gif
+	frame	data/chars/Alien5/acid32.gif
+
+anim attack2
+	loop	0
+	delay	4
+	bbox	70 110 53 89
+	offset	98 197
+	BBOX	64 89 68 115
+	frame	data/chars/Alien5/at1-09.gif
+	frame	data/chars/Alien5/at1-09.gif
+	frame	data/chars/Alien5/at1-10.gif
+		attack2  105  142  69  47  9  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/at1-10.gif
+	frame	data/chars/Alien5/at1-10.gif
+		attack2  105  122  66  43  9  0  0  0  0  20
+           DropV     1 2
+jugglecost 1
+	frame	data/chars/Alien5/at1-10.gif
+	ATTACK1	0 0 0 0 0
+	frame	data/chars/Alien5/at1-11.gif
+	frame	data/chars/Alien5/at1-12.gif
+
+anim pain
+	loop	0
+	sound	data/sounds/alienp1.wav
+	offset	102 197
+	bbox	73 113 46 84
+	delay	10
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain02.gif
+	frame	data/chars/Alien5/pain02.gif
+
+anim pain2
+	loop	0
+	offset	102 197
+	bbox	73 113 46 84
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-2
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-1
+	frame	data/chars/Alien5/pain02.gif
+	frame	data/chars/Alien5/pain02.gif
+	Move	0
+	delay	8
+	frame	data/chars/Alien5/pain02.gif
+	frame	data/chars/Alien5/pain02.gif
+
+anim pain3
+	loop	0
+	offset	102 197
+	bbox	73 113 46 84
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-4
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-3
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-2
+	frame	data/chars/Alien5/pain01.gif
+	frame	data/chars/Alien5/pain01.gif
+	Move	-1
+	frame	data/chars/Alien5/pain02.gif
+	delay	100
+	frame	data/chars/Alien5/pain02.gif
+	Move	0
+	delay	2
+	delay	8
+	frame	data/chars/Alien5/pain02.gif
+	frame	data/chars/Alien5/pain02.gif
+	delay	10
+	frame	data/chars/Alien5/pain02.gif
+	frame	data/chars/Alien5/pain02.gif
+
+anim fall
+	loop	0
+	offset	60 80
+	delay	20
+	bbox	7 36 109 42
+	attack1 7 36 109 42 10 1 0 0 0 20
+	frame	data/chars/Alien5/fall01.gif
+	frame	data/chars/Alien5/fall01.gif
+	frame	data/chars/Alien5/fall01.gif
+	bbox	0 0 0 0
+	attack1 0 0 0 0 0 0 0 0 0 0
+		offset  60 89
+	frame	data/chars/Alien5/fall02.gif
+	offset	60 72
+	frame	data/chars/Alien5/fall01.gif
+		offset  60 89
+	frame	data/chars/Alien5/fall02.gif
+
+anim rise
+	loop	0
+	offset	98 197
+	delay	5
+	frame	data/chars/Alien5/at1-11.gif
+	frame	data/chars/Alien5/at1-11.gif
+	frame	data/chars/Alien5/at1-11.gif
+
+
+

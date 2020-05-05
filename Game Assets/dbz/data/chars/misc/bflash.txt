@@ -1,0 +1,25 @@
+# Hit flash
+
+name	BFlash
+type	none
+shadow	0
+
+lifespan 1
+palette data/chars/misc/GD01.gif
+
+anim idle
+	loop	0
+	delay	3
+	offset	49 51
+
+        sound   data/sounds/block.wav
+	frame	data/chars/misc/GD01.gif
+	frame	data/chars/misc/GD02.gif
+	frame	data/chars/misc/GD03.gif
+	frame	data/chars/misc/GD04.gif
+	frame	data/chars/misc/GD05.gif
+	frame	data/chars/misc/GD06.gif
+	frame	data/chars/misc/GD07.gif
+
+
+

@@ -1,0 +1,46 @@
+name	BiFSP3b
+type	None
+shadow	0
+nolife  1
+remove  0
+#Speed   55
+alpha 4
+Candamage  Player  NPC
+
+palette       data/chars/Bison/FSP3p.gif
+
+
+anim idle
+	loop	0
+	delay	3
+	fastattack 1
+	drawmethod scalex 1.0
+	drawmethod scaley 1.0
+ offset 192 110
+	frame	data/chars/Bison/FSP3x0.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x1.gif
+	attack 166 74 48 70 1 0 0 0 0 30
+	frame	data/chars/Bison/FSP3x2.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x3.gif
+	attack 114 37 158 106 1 0 0 0 0 30
+	frame	data/chars/Bison/FSP3x4.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x5.gif
+	attack 134 49 117 80 1 0 0 0 0 30
+	frame	data/chars/Bison/FSP3x6.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x7.gif
+	attack 114 35 160 107 1 0 0 0 0 30
+	frame	data/chars/Bison/FSP3x8.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x9.gif
+	blast 103 30 183 119 26 0 0 0 30
+	frame	data/chars/Bison/FSP3x10.gif
+	frame	data/chars/Bison/FSP3x11.gif
+	attack 0
+	frame	data/chars/Bison/FSP3x12.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Bison/FSP3x12.gif
+	

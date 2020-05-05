@@ -1,0 +1,17 @@
+name	Poisen_Leaf
+type	None
+shadow	0
+nolife  1
+speed	19
+candamage  Enemy
+Remove 0
+
+
+anim idle
+	loop	1
+	delay	2
+           hitflash   Poisen
+	offset	113 128
+	attack1   117  111  12  20  15  1  0  0  0  20
+	frame	data/chars/effects/PLeaf.gif
+

@@ -1,0 +1,31 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Rocs
+health	1
+nolife        1
+type	obstacle
+shadow	0
+diesound data/bgs/darkway/roc/cwall.wav
+
+#icon	data/chars/misc/gdust.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	18 62
+	bbox	3 2 30 64
+	frame	data/bgs/darkway/roc/roc1.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	18 62
+	frame	data/bgs/darkway/roc/roc2.gif
+
+
+
+
+

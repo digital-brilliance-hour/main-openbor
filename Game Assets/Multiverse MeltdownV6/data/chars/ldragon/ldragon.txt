@@ -1,0 +1,306 @@
+name	LAND_DRAGON
+health	200
+mp 100
+mprate 20
+speed	11
+type	player
+icon data/chars/LDragon/icon.gif
+
+
+running 21 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+palette       data/chars/LDragon/Pal
+alternatepal  data/chars/LDragon/Pal0
+alternatepal  data/chars/LDragon/Pal1
+alternatepal  data/chars/LDragon/Pal2
+alternatepal  data/chars/LDragon/Pal3
+
+animationscript data/scripts/script.c
+
+
+
+com a2 Freespecial1
+jumpmove  3  2
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		move  3
+		delay  2
+		bbox  100  107  31  24
+		attack2  117  108  32  22  14  0  0  0  0  20
+           DropV     1 2
+	frame	data/chars/LDragon/A1-3.GIF
+	frame  data/chars/LDragon/A1-3.GIF
+		move  4
+	frame  data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	attack2
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		move  3
+		delay  2
+		bbox  100  107  31  24
+		attack2  117  108  32  22  14  0  0  0  0  20
+           DropV     1 2
+	frame	data/chars/LDragon/A1-3.GIF
+		move  8
+	frame  data/chars/LDragon/A1-3.GIF
+		move  4
+	frame  data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	attack3
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		move  3
+		delay  2
+		bbox  100  107  31  24
+		attack2  117  108  32  22  14  1  0  0  0  20
+           DropV     1 2
+	frame	data/chars/LDragon/A1-3.GIF
+		move  8
+	frame  data/chars/LDragon/A1-3.GIF
+		move  4
+	frame  data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	DODGE
+	loop	0
+	delay	6
+	offset	113 130
+	frame	data/chars/LDragon/Walk-0.gif
+	frame	data/chars/LDragon/Idle0.GIF
+	frame	data/chars/LDragon/Walk-1.gif
+	frame	data/chars/LDragon/Idle0.GIF
+
+anim	fall
+	loop	0
+	delay	20
+           Landframe 2
+	offset	113 130
+	bbox	104 102 33 27
+	frame	data/chars/LDragon/Pain.gif
+	delay	150
+	frame	data/chars/LDragon/Pain.gif
+	delay	20
+		bbox  0
+	frame	data/chars/LDragon/Fall.gif
+
+anim	Freespecial1
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		delay  5
+		bbox  100  107  31  24
+	@cmd	shoot "LDFire" 0 0 0
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	get
+	loop	0
+	delay	15
+	offset	113 130
+	bbox	0 0 0 0
+	frame	data/chars/LDragon/Wait2.GIF
+
+anim	idle
+	loop	1
+	delay	12
+	offset	113 130
+	bbox	97 99 37 32
+	frame	data/chars/LDragon/Idle0.GIF
+	frame	data/chars/LDragon/Idle0.GIF
+	frame	data/chars/LDragon/Idle1.GIF
+	frame	data/chars/LDragon/Idle2.GIF
+	frame	data/chars/LDragon/Idle2.GIF
+	frame	data/chars/LDragon/Idle1.GIF
+
+anim	jump
+	loop	1
+	delay	9
+	offset	113 130
+	bbox	97 99 37 32
+	frame	data/chars/LDragon/Walk-1.gif
+
+anim	jumpattack
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		delay  2
+		bbox  100  107  31  24
+		attack2  117  108  32  22  14  0  0  0  0  20
+           DropV     1 2
+	frame	data/chars/LDragon/A1-3.GIF
+	frame  data/chars/LDragon/A1-3.GIF
+	frame  data/chars/LDragon/A1-3.GIF
+
+anim	pain
+	loop	0
+	delay	20
+	offset	113 130
+	bbox	104 102 33 27
+	frame	data/chars/LDragon/Pain.gif
+
+anim	pain2
+	loop	0
+	offset	113 130
+	bbox	104 102 33 27
+	delay	2
+	quakeframe	0 3 4
+	Move	-15
+	frame	data/chars/LDragon/Pain.gif
+	frame	data/chars/LDragon/Pain.gif
+	frame	data/chars/LDragon/Pain.gif
+	frame	data/chars/LDragon/Pain.gif
+	frame	data/chars/LDragon/Pain.gif
+	frame	data/chars/LDragon/Pain.gif
+	Move	0
+	delay	15
+	frame	data/chars/LDragon/Pain.gif
+
+anim	rise
+	loop	0
+	delay	1
+	offset	113 130
+	frame	data/chars/LDragon/Idle0.GIF
+
+anim	run
+	loop	1
+	delay	11
+	offset	113 130
+	bbox	97 99 37 32
+	frame	data/chars/LDragon/Walk-0.gif
+	frame	data/chars/LDragon/Idle0.GIF
+	frame	data/chars/LDragon/Walk-1.gif
+	frame	data/chars/LDragon/Idle0.GIF
+
+anim	RUNATTACK
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		move  8
+		delay  2
+		bbox  100  107  31  24
+		attack2  117  108  32  22  14  1  0  0  0  20
+	frame	data/chars/LDragon/A1-3.GIF
+	frame  data/chars/LDragon/A1-3.GIF
+	frame  data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	special
+	loop	0
+	delay	4
+	offset	113 130
+	bbox	104 95 22 35
+	frame	data/chars/LDragon/A1-0.GIF
+	frame	data/chars/LDragon/A1-1.GIF
+	frame	data/chars/LDragon/A1-2.GIF
+		delay  5
+		bbox  100  107  31  24
+	@cmd	shoot "LDFire2" 0 0 0
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+	frame	data/chars/LDragon/A1-3.GIF
+		delay  15
+		bbox  100  103  39  28
+		Attack1  0
+	frame	data/chars/LDragon/A1-4.GIF
+
+anim	waiting
+	loop	1
+	delay	12
+	offset	113 130
+	bbox	0 0 0 0
+	frame	data/chars/LDragon/Wait0.GIF
+	frame	data/chars/LDragon/Wait0.GIF
+	frame	data/chars/LDragon/Wait1.GIF
+	frame	data/chars/LDragon/Wait2.GIF
+	frame	data/chars/LDragon/Wait2.GIF
+	frame	data/chars/LDragon/Wait1.GIF
+
+anim	walk
+	loop	1
+	delay	18
+	offset	113 130
+	bbox	97 99 37 32
+	frame	data/chars/LDragon/Walk-0.gif
+	frame	data/chars/LDragon/Idle0.GIF
+	frame	data/chars/LDragon/Walk-1.gif
+	frame	data/chars/LDragon/Idle0.GIF
+

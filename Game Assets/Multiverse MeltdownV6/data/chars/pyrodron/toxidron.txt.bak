@@ -1,0 +1,155 @@
+name	Toxic_Drone
+health	100
+type	enemy
+icon	data/chars/m/icon.gif 1
+shadow 	3
+#diesound data/sounds/alien.wav
+speed 15
+
+animationscript data/scripts/script.c
+
+palette       data/chars/PyroDron/Pal
+
+alternatepal  data/chars/PyroDron/PalT
+
+anim idle
+	loop	1
+	delay	2
+	offset	155 136
+	bbox	141 87 43 50
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+
+anim fall
+	loop	0
+	delay	15
+        Landframe 2
+	offset	155 136
+		bbox  128  94  48  41
+		attack3  128  94  49  41  10  0  0  0  0  20
+	frame	data/chars/PyroDron/Fall0.gif
+	frame	data/chars/PyroDron/Fall1.gif
+	delay	100
+	frame	data/chars/PyroDron/Fall0.gif
+	delay	25
+		bbox  0
+		Attack1  0
+	frame	data/chars/PyroDron/Fall.gif
+
+anim walk
+	loop	1
+	delay	6
+	offset	155 136
+	bbox	141 87 43 50
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+
+anim rise
+	loop	0
+	offset	155 136
+	delay	15
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+
+
+
+anim attack1
+	loop	0
+	delay	2
+        Range   0 200
+	offset	155 136
+		Attack1  0
+		bbox  131  89  50  48
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+	@cmd	toss "TDToxic" 0 0 0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/Idle1.gif
+
+anim	pain
+	loop	0
+	offset	155 136
+	bbox	135 82 35 54
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+		
+anim	pain2
+	loop	0
+	offset	119 143
+	bbox	101 107 29 38
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	Move	-2
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	Move	-1
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	Move	0
+	delay	3
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+		
+anim	pain3
+	loop	0
+	offset	119 143
+	bbox	101 107 29 38
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	Move	-4
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	Move	-3
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	Move	-2
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	Move	-1
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	Move	0
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	delay	3
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+	frame	data/chars/PyroDron/Idle0.gif
+	frame	data/chars/PyroDron/pain.gif
+

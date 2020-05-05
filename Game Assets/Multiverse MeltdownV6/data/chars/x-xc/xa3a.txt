@@ -1,0 +1,27 @@
+name	XA3a
+health	1
+type	Pshot
+shadow	0
+speed	18
+candamage Enemy
+remove 0
+nomove 1
+
+anim idle
+	loop	1
+	delay	3
+	offset	152 150
+	attack1 151 112 42 37 7 0 0 0 0 20
+	frame	data/chars/X-XC/X_109-0.gif
+	attack1 173 106 26 43 7 0 0 0 0 20
+	frame	data/chars/X-XC/X_109-1.gif
+	attack1 168 102 32 46 7 0 0 0 0 20
+	frame	data/chars/X-XC/X_109-2.gif
+	attack1 165 99 38 49 7 0 0 0 0 20
+	frame	data/chars/X-XC/X_109-3.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/X-XC/X_109-3.gif
+
+
+
+

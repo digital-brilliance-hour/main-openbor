@@ -1,0 +1,443 @@
+name	ROYAL_GUARD
+health	500
+mp 80
+mprate 10
+speed	14
+type	Enemy
+icon     data/chars/RoyalG/Icon.gif 1
+aimove chase
+
+
+
+
+running 24	3.9	2.80	1	1
+#makeinv  4
+#riseinv  1
+gfxshadow 1
+
+
+
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/RoyalG/RG_0-0.gif
+
+
+#alternatepal  data/chars/Venom/Pal.gif
+#alternatepal  data/chars/Venom/Pal3.gif
+#alternatepal  data/chars/Venom/Pal4.gif
+#alternatepal  data/chars/Venom/Pal5.gif
+#alternatepal  data/chars/Venom/Pald.pcx
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+jugglepoints 2
+animationscript data/scripts/script.c
+#animationscript data/scripts/spawnm.c
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+ range 0 125
+	fastattack	1
+	move 5
+	offset	222 156
+	bbox.position.x 178
+	bbox.position.y 80
+	bbox.size.x 124
+	bbox.size.y 77
+jugglecost 1
+ frame data/chars/RoyalG/RG_210-0.gif
+ frame data/chars/RoyalG/RG_210-0.gif
+	attack.damage.force 10
+	attack.damage.type 0
+	attack.position.x 222
+	attack.position.y 87
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 131
+	attack.size.y 70
+	attack.size.z.1 20
+ frame data/chars/RoyalG/RG_210-1.gif
+ frame data/chars/RoyalG/RG_210-1.gif
+	delay	9
+	move 0
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+jugglecost 1
+ frame data/chars/RoyalG/RG_210-2.gif
+ frame data/chars/RoyalG/RG_210-0.gif
+	attack.damage.force 10
+	attack.damage.type 0
+	attack.position.x 219
+	attack.position.y 99
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 117
+	attack.size.y 56
+	attack.size.z.1 20
+ frame data/chars/RoyalG/RG_200-0.gif
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+jugglecost 1
+ frame data/chars/RoyalG/RG_200-1.gif
+ frame data/chars/RoyalG/RG_210-0.gif
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 222
+	attack.position.y 87
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 131
+	attack.size.y 70
+	attack.size.z.1 20
+ frame data/chars/RoyalG/RG_210-1.gif
+ frame data/chars/RoyalG/RG_210-2.gif
+
+anim	fall
+	loop	0
+	delay	12
+	quakeframe	0 3 4
+	Landframe	4
+	bbox.position.x 141
+	bbox.position.y 57
+	bbox.size.x 163
+	bbox.size.y 99
+	offset	222 156
+        frame   data/chars/RoyalG/RG_5030-0.gif
+	delay	5
+	bbox.position.x 142
+	bbox.position.y 53
+	bbox.size.x 114
+	bbox.size.y 57
+	offset	200 146
+        frame   data/chars/RoyalG/RG_5030-10.gif
+	offset	200 136
+        frame   data/chars/RoyalG/RG_5030-10.gif
+	delay	200
+	offset	200 126
+        frame   data/chars/RoyalG/RG_5030-10.gif
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0
+	delay	6
+	Attack1	0
+	offset	200 105
+        frame   data/chars/RoyalG/RG_5030-30.gif
+        frame   data/chars/RoyalG/RG_5030-10.gif
+        frame   data/chars/RoyalG/RG_5030-30.gif
+
+anim	freespecial4
+	loop	0
+	delay	6
+	offset	222 156
+	range 100 166
+	bbox.position.x 190
+	bbox.position.y 63
+	bbox.size.x 84
+	bbox.size.y 92
+jugglecost 1
+	frame	data/chars/RoyalG/RG_211-0.gif
+	bbox.position.x 157
+	bbox.position.y 72
+	bbox.size.x 113
+	bbox.size.y 87
+	frame	data/chars/RoyalG/RG_211-1.gif
+	attack.damage.force 30
+	attack.damage.type 2
+	attack.position.x 217
+	attack.position.y 93
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 166
+	attack.size.y 64
+	attack.size.z.1 20
+	frame	data/chars/RoyalG/RG_211-2.gif
+	frame	data/chars/RoyalG/RG_211-2.gif
+	frame	data/chars/RoyalG/RG_211-1.gif
+	bbox.position.x 190
+	bbox.position.y 63
+	bbox.size.x 84
+	bbox.size.y 92
+	frame	data/chars/RoyalG/RG_211-0.gif
+	frame	data/chars/RoyalG/RG_211-0.gif
+	
+
+anim	freespecial5
+	loop	0
+	delay	10
+	offset	222 156
+	bbox.position.x 187
+	bbox.position.y 56
+	bbox.size.x 71
+	bbox.size.y 100
+	frame	data/chars/RoyalG/RG_69-0.gif
+	@cmd	tosser "ASpit2" -36 94 0 -1 1 0
+	frame	data/chars/RoyalG/RG_69-1.gif
+	@cmd	tosser "ASpit2" -14 105 0 -0.4 1 0.2
+	frame	data/chars/RoyalG/RG_69-2.gif
+	@cmd	tosser "ASpit" 10 105 0 0.4 1 0.2
+	frame	data/chars/RoyalG/RG_69-3.gif
+	@cmd	tosser "ASpit" 35 90 0 1 1 0
+	frame	data/chars/RoyalG/RG_69-4.gif
+#void tosser(void Bomb, float dx, float dy, float dz, float Vx, float Vy, float Vz)
+
+anim	idle
+	loop	1
+	delay	12
+	offset	222 156
+	bbox.position.x 172
+	bbox.position.y 58
+	bbox.size.x 115
+	bbox.size.y 97
+	frame	data/chars/RoyalG/RG_0-0.gif
+	frame	data/chars/RoyalG/RG_0-1.gif
+	frame	data/chars/RoyalG/RG_0-2.gif
+	frame	data/chars/RoyalG/RG_0-3.gif
+	frame	data/chars/RoyalG/RG_0-2.gif
+	frame	data/chars/RoyalG/RG_0-1.gif
+	frame	data/chars/RoyalG/RG_0-4.gif
+
+anim	jump
+	loop	0
+	delay	11
+	bbox.position.x 10
+	bbox.position.y 28
+	bbox.size.x 48
+	bbox.size.y 99
+	offset	222 156
+ frame data/chars/RoyalG/RG_42-0.gif
+ frame data/chars/RoyalG/RG_42-0.gif
+
+anim	jumpattack
+	loop	0
+	delay	6
+	offset	222 156
+	bbox.position.x 172
+	bbox.position.y 70
+	bbox.size.x 119
+	bbox.size.y 59
+ frame data/chars/RoyalG/RG_42-0.gif
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 203
+	attack.position.y 91
+	attack.reaction.fall.force 0
+jugglecost 1
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 87
+	attack.size.y 56
+	attack.size.z.1 20
+	bbox.position.x 197
+	bbox.position.y 74
+	bbox.size.x 78
+	bbox.size.y 65
+ frame data/chars/RoyalG/RG_42-1.gif
+
+anim	jumpland
+	loop	0
+	delay	5
+	offset	222 156
+ frame data/chars/RoyalG/RG_40-0.gif
+ frame data/chars/RoyalG/RG_40-1.gif
+
+anim	pain
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	offset	222 156
+	bbox.position.x 180
+	bbox.position.y 53
+	bbox.size.x 99
+	bbox.size.y 106
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	bbox.position.x 171
+	bbox.position.y 81
+	bbox.size.x 96
+	bbox.size.y 76
+	frame	data/chars/RoyalG/RG_5000-0.gif
+
+anim	pain2
+	loop	0
+	offset	222 156
+	bbox.position.x 180
+	bbox.position.y 53
+	bbox.size.x 99
+	bbox.size.y 106
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-2
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-1
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	bbox.position.x 171
+	bbox.position.y 81
+	bbox.size.x 96
+	bbox.size.y 76
+	frame	data/chars/RoyalG/RG_5000-0.gif
+	Move	0
+	delay	8
+	frame	data/chars/RoyalG/RG_5000-0.gif
+	frame	data/chars/RoyalG/RG_5000-0.gif
+
+anim	pain3
+	loop	0
+	offset	222 156
+	bbox.position.x 180
+	bbox.position.y 53
+	bbox.size.x 99
+	bbox.size.y 106
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-4
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-3
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-2
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	-1
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	frame	data/chars/RoyalG/RG_5000-20.gif
+	Move	0
+	bbox.position.x 171
+	bbox.position.y 81
+	bbox.size.x 96
+	bbox.size.y 76
+	frame	data/chars/RoyalG/RG_5000-0.gif
+	frame	data/chars/RoyalG/RG_5000-0.gif
+	delay	8
+	frame	data/chars/RoyalG/RG_5000-0.gif
+	frame	data/chars/RoyalG/RG_5000-0.gif
+
+anim	rise
+	loop	0
+	delay	13
+	offset	189 156
+        frame   data/chars/RoyalG/RG_5112-1.gif
+	offset	212 160
+        frame   data/chars/RoyalG/RG_5120-0.gif
+
+anim	run
+	loop	1
+ delay 9
+	offset	222 165
+	bbox.position.x 178
+	bbox.position.y 69
+	bbox.size.x 127
+	bbox.size.y 95
+	frame	data/chars/RoyalG/RG_100-0.gif
+	offset	222 163
+	frame	data/chars/RoyalG/RG_100-1.gif
+	offset	222 165
+	frame	data/chars/RoyalG/RG_100-2.gif
+	offset	222 162
+	frame	data/chars/RoyalG/RG_100-3.gif
+	offset	222 162
+	frame	data/chars/RoyalG/RG_100-4.gif
+	offset	222 163
+	frame	data/chars/RoyalG/RG_100-5.gif
+
+anim	runattack
+	loop	0
+	move	8
+	delay	6
+	offset	222 156
+	bbox.position.x 172
+	bbox.position.y 70
+	bbox.size.x 119
+	bbox.size.y 59
+	jumpframe 0 2 3
+	landframe 2
+	range 100 166
+jugglecost 1
+ frame data/chars/RoyalG/RG_42-0.gif
+	delay	50
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 203
+	attack.position.y 91
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 87
+	attack.size.y 56
+	attack.size.z.1 20
+	bbox.position.x 197
+	bbox.position.y 74
+	bbox.size.x 78
+	bbox.size.y 65
+ frame data/chars/RoyalG/RG_42-1.gif
+	delay	5
+	offset	222 156
+	bbox.position.x 170
+	bbox.position.y 104
+	bbox.size.x 79
+	bbox.size.y 50
+ frame data/chars/RoyalG/RG_40-0.gif
+	bbox.position.x 171
+	bbox.position.y 83
+	bbox.size.x 96
+	bbox.size.y 72
+ frame data/chars/RoyalG/RG_40-1.gif
+
+anim	walk
+	loop	1
+ delay 10
+	offset	222 156
+	bbox.position.x 163
+	bbox.position.y 76
+	bbox.size.x 131
+	bbox.size.y 79
+	frame	data/chars/RoyalG/RG_20-0.gif
+	frame	data/chars/RoyalG/RG_20-1.gif
+	frame	data/chars/RoyalG/RG_20-2.gif
+	frame	data/chars/RoyalG/RG_20-3.gif
+	frame	data/chars/RoyalG/RG_20-4.gif
+	frame	data/chars/RoyalG/RG_20-5.gif
+	frame	data/chars/RoyalG/RG_20-6.gif
+	frame	data/chars/RoyalG/RG_20-7.gif
+

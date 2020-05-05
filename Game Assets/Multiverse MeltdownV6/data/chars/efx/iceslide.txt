@@ -1,0 +1,33 @@
+name	IceSlide
+health	1
+type	none
+shadow	0
+nomove 1
+remove 0
+#candamage enemy Obsticle
+
+anim idle
+	delay	2
+	offset	101 93
+	move 10
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+	frame	data/chars/EFX/IceSlide0.gif
+	frame	data/chars/EFX/IceSlide1.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/EFX/IceSlide1.gif
+

@@ -1,0 +1,17 @@
+name	BMSP
+health	1
+type	Pshot
+shadow	0
+speed	20
+candamage Enemy
+remove 0
+
+anim idle
+	loop	1
+	delay	7
+	offset	115 128
+		drawmethod  365  355  0  0  0  -1  -1
+		shock  104  87  97  51  45  1  0  0  0  50
+	frame	data/chars/Beetlem/SPs-0.gif
+	frame	data/chars/Beetlem/SPs-1.gif
+

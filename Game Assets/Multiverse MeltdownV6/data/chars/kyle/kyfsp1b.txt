@@ -1,0 +1,49 @@
+name	KyFSP1b
+health	1
+type	none
+shadow	0
+candamage Enemy
+remove 0
+nomove 1
+
+anim idle
+	loop	0
+	delay	2
+	move 8
+	offset	25 173
+	drawmethod scaley 0.3
+	drawmethod scalex 0.3
+	attack3 49 143 13 28 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-0.gif
+	offset	67 145
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	attack3 85 111 25 33 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-1.gif
+	move 0
+	delay	3
+	offset	83 134
+	drawmethod scalex 0.7
+	drawmethod scaley 0.7
+	attack3 99 92 31 42 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-2.gif
+	offset	93 129
+	drawmethod scalex 0.9
+	drawmethod scaley 0.9
+	attack3 105 83 37 44 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-3.gif
+	offset	97 129
+	drawmethod scalex 1
+	drawmethod scaley 1
+	attack3 107 82 40 47 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-4.gif
+	frame	data/chars/Kyle/SPfx-5.gif
+	attack3 107 82 40 47 10 0 0 0 0 25
+	frame	data/chars/Kyle/SPfx-6.gif
+	frame	data/chars/Kyle/SPfx-7.gif
+	frame	data/chars/Kyle/SPfx-8.gif
+	attack1 0
+	frame	data/chars/Kyle/SPfx-9.gif
+	frame	data/chars/Kyle/SPfx-10.gif
+	frame	data/chars/Kyle/SPfx-11.gif
+	frame	data/chars/Kyle/SPfx-12.gif

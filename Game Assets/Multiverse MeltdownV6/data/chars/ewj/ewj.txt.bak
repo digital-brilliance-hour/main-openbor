@@ -1,0 +1,748 @@
+name	EARTHWORM_JIM
+health	500
+mp 80
+mprate 10
+speed	13
+type	player
+icon     data/chars/Manic/Icon-A.gif 1
+iconget  data/chars/Manic/Icon-B.gif 1
+iconpain data/chars/Manic/Icon-C.gif 1
+icondie  data/chars/Manic/Icon-C.gif 1
+
+
+
+
+running 23	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/ewj/2.gif
+
+
+#alternatepal  data/chars/Manic/Pal0
+#alternatepal  data/chars/Manic/Pal1
+#alternatepal  data/chars/Manic/Pal2
+#alternatepal  data/chars/Manic/Pal3
+#alternatepal  data/chars/Manic/Pal4
+#alternatepal  data/chars/Manic/Pal5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	9
+	cancel	2 5 0 a freespecial
+	offset	38 95
+	bbox	14 23 47 74
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/49.gif
+	offset	26 87
+	move	5
+	attack1	26 5 81 61 9 0 0 0 0 20
+	bbox	17 17 41 70
+	frame	data/chars/ewj/50.gif
+	move	0
+	attack1	0
+	delay	2
+	offset	38 95
+		bbox  14  23  47  74
+	frame	data/chars/ewj/49.gif
+	frame	data/chars/ewj/49.gif
+	frame	data/chars/ewj/49.gif
+	frame	data/chars/ewj/49.gif
+
+anim	dodge
+	loop	0
+	delay	9
+	delay	7
+	offset	36 61
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/79.gif
+	delay	3
+	offset	31 75
+	frame	data/chars/ewj/114.gif
+		offset  31  48
+	frame	data/chars/ewj/113.gif
+		offset  22  67
+	frame	data/chars/ewj/114b.gif
+		offset  48  47
+	frame	data/chars/ewj/113b.gif
+	offset	31 75
+	frame	data/chars/ewj/114.gif
+		offset  31  48
+	frame	data/chars/ewj/113.gif
+		offset  22  67
+	frame	data/chars/ewj/114b.gif
+		offset  48  47
+	frame	data/chars/ewj/113b.gif
+	delay	9
+	offset	36 61
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/79.gif
+
+anim	fall
+	loop	0
+	delay	20
+	quakeframe	0 3 4
+	Landframe	3
+	offset	44 93
+	bbox	14 17 49 75
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/157.gif
+	delay	12
+	offset	68 65
+		bbox  25  11  74  48
+	frame	data/chars/ewj/160.gif
+	delay	500
+	offset	37 92
+		bbox  25  36  49  54
+	frame	data/chars/ewj/161.gif
+	bbox	0
+	delay	6
+	Attack1	0
+	offset	48 42
+	frame	data/chars/ewj/177.gif
+	offset	50 89
+	frame	data/chars/ewj/174.gif
+	offset	39 63
+	frame	data/chars/ewj/175.gif
+	offset	48 42
+	frame	data/chars/ewj/177.gif
+
+anim	freespecial
+	loop	0
+	delay	7
+	cancel	3 6 0 a freespecial2
+	offset	43 96
+	bbox	16 10 45 51
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/125.gif
+	offset	29 92
+	frame	data/chars/ewj/126.gif
+	offset	29 83
+	attack1	29 33 50 40 9 0 0 0 0 20
+		bbox  4  21  48  54
+	frame	data/chars/ewj/128.gif
+	attack1	0
+	delay	2
+	offset	24 92
+		bbox  16  10  45  50
+	frame	data/chars/ewj/127.gif
+	frame	data/chars/ewj/127.gif
+	frame	data/chars/ewj/127.gif
+	frame	data/chars/ewj/127.gif
+
+anim	freespecial2
+	loop	0
+	delay	7
+	cancel	4 7 0 a freespecial3
+	offset	64 67
+	bbox	25 8 46 58
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/54.gif
+	bbox	9 10 46 58
+	offset	45 68
+	frame	data/chars/ewj/55.gif
+	attack1	20 34 78 30 11 0 0 0 0 20
+	offset	46 65
+		bbox  9  11  53  52
+	frame	data/chars/ewj/56.gif
+	offset	74 96
+	Attack1	0
+	offset	74 96
+		bbox  30  27  54  70
+	frame	data/chars/ewj/57.gif
+	offset	45 102
+	delay	2
+	bbox	17 32 47 70
+	frame	data/chars/ewj/58.gif
+	frame	data/chars/ewj/58.gif
+	offset	38 97
+		bbox  15  15  43  82
+	frame	data/chars/ewj/7.gif
+	frame	data/chars/ewj/7.gif
+
+anim	freespecial3
+	loop	0
+	hitflash	Flash2
+	delay	12
+	Fastattack	1
+	offset	41 87
+	bbox	17 17 31 69
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/76.gif
+        Move    15
+	delay	8
+	offset	28 108
+	bbox	6 35 45 61
+	attack3	28 62 35 46 1 0 0 0 0 20
+	frame	data/chars/ewj/51.gif
+        Move    0
+	offset	27 101
+	bbox	9 36 53 65
+		Attack1  0
+	frame	data/chars/ewj/52.gif
+	offset	30 125
+		bbox  10  47  54  80
+	frame	data/chars/ewj/53.gif
+
+anim	freespecial4
+	loop	0
+	delay	5
+	Energycost	15 1
+	offset	59 108
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/59.gif
+	offset	49 103
+	frame	data/chars/ewj/60.gif
+	offset	64 84
+	frame	data/chars/ewj/61.gif
+	offset	36 68
+	frame	data/chars/ewj/62.gif
+	attack3	36 18 136 49 14 1 0 0 0 20
+	frame	data/chars/ewj/63.gif
+	offset	52 90
+		Attack1  0
+	frame	data/chars/ewj/64.gif
+	offset	27 108
+	frame	data/chars/ewj/65.gif
+
+anim	freespecial5
+	loop	0
+	delay	3
+	Energycost	20 1
+	Fastattack	1
+	offset	20 80
+        Move    9
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/102.gif
+	frame	data/chars/ewj/102.gif
+	offset	28 71
+		attack3  28  10  30  56  3  0  0  0  0  25
+        DropV   1 2
+	frame	data/chars/ewj/103.gif
+		Attack1  0
+	frame	data/chars/ewj/103.gif
+	offset	28 87
+		attack3  30  10  41  76  3  0  0  0  0  25
+        DropV   0 2
+	frame	data/chars/ewj/104.gif
+		Attack1  0
+	frame	data/chars/ewj/104.gif
+	offset	28 71
+		attack3  28  10  30  56  3  0  0  0  0  25
+        DropV   1 2
+	frame	data/chars/ewj/103.gif
+		Attack1  0
+	frame	data/chars/ewj/103.gif
+	offset	28 87
+		attack3  30  10  41  76  3  0  0  0  0  25
+        DropV   0 2
+	frame	data/chars/ewj/104.gif
+		Attack1  0
+	frame	data/chars/ewj/104.gif
+	offset	28 71
+		attack3  28  10  30  56  3  0  0  0  0  25
+        DropV   1 2
+	frame	data/chars/ewj/103.gif
+		Attack1  0
+	frame	data/chars/ewj/103.gif
+	offset	28 87
+		attack3  30  10  41  76  3  0  0  0  0  25
+        DropV   0 2
+	frame	data/chars/ewj/104.gif
+		Attack1  0
+	frame	data/chars/ewj/104.gif
+	move	3
+	offset	36 58
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	move	1
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	move	0
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+
+anim	freespecial6
+	loop	0
+	delay	2
+	#followanim	2
+	#followcond	1
+	Energycost	25 1
+	Blast	25 24 50 59 20 0 0 0 25
+	DropV	4 1
+	move	10
+	offset	50 83
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/116.gif
+	frame	data/chars/ewj/116.gif
+	offset	55 98
+	Blast	25  22  60  75  20 0 0 0 25
+	frame	data/chars/ewj/121.gif
+	frame	data/chars/ewj/121.gif
+	offset	50 83
+	Blast	24  15  52  68  20 0 0 0 25
+	frame	data/chars/ewj/116b.gif
+	frame	data/chars/ewj/116b.gif
+	offset	55 98
+	Blast	7  23  72  74  20 0 0 0 25
+	frame	data/chars/ewj/121b.gif
+	frame	data/chars/ewj/121b.gif
+	offset	50 83
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/116.gif
+	frame	data/chars/ewj/116.gif
+	offset	55 98
+	Blast	25  22  60  75  20 0 0 0 25
+	frame	data/chars/ewj/121.gif
+	frame	data/chars/ewj/121.gif
+	offset	50 83
+	Blast	24  15  52  68  20 0 0 0 25
+	frame	data/chars/ewj/116b.gif
+	frame	data/chars/ewj/116b.gif
+	offset	55 98
+	Blast	7  23  72  74  20 0 0 0 25
+	frame	data/chars/ewj/121b.gif
+	frame	data/chars/ewj/121b.gif
+	move	10
+	offset	50 83
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/116.gif
+	frame	data/chars/ewj/116.gif
+	move	7
+	offset	55 98
+	Blast	25  22  60  75  20 0 0 0 25
+	frame	data/chars/ewj/121.gif
+	frame	data/chars/ewj/121.gif
+	move	4
+	offset	50 83
+	Blast	24  15  52  68  20 0 0 0 25
+	frame	data/chars/ewj/116b.gif
+	frame	data/chars/ewj/116b.gif
+	offset	55 98
+	Blast	7  23  72  74  20 0 0 0 25
+	frame	data/chars/ewj/121b.gif
+	frame	data/chars/ewj/121b.gif
+	move	3
+	Blast	0
+	offset	36 58
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	move	1
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	move	0
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+
+anim	get
+	loop	0
+	delay	7
+	offset	36 62
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+	frame	data/chars/ewj/79.gif
+
+anim	idle
+	loop	1
+	offset	37 101
+		drawmethod  226  236  0  0  0  -1  -1
+		delay  9
+		bbox  15  19  43  83
+	frame	data/chars/ewj/2.gif
+	offset	35 108
+		bbox  15  30  43  78
+	frame	data/chars/ewj/3.gif
+	offset	35 113
+		bbox  15  36  43  77
+	frame	data/chars/ewj/4.gif
+	offset	35 88
+		bbox  15  17  43  71
+	frame	data/chars/ewj/5.gif
+	offset	34 83
+		bbox  15  9  43  74
+	frame	data/chars/ewj/6.gif
+	offset	38 97
+		bbox  15  15  43  82
+	frame	data/chars/ewj/7.gif
+
+anim	jump
+	loop	0
+	delay	10
+	offset	38 107
+	bbox	11 20 54 79
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/28.gif
+	frame	data/chars/ewj/28.gif
+	offset	43 89
+		bbox  16  10  57  57
+	frame	data/chars/ewj/29.gif
+	frame	data/chars/ewj/29.gif
+	offset	44 128
+	bbox	19 47 53 81
+	frame	data/chars/ewj/30.gif
+
+anim	jumpattack
+	loop	0
+	delay	9
+	offset	36 100
+	bbox	16 23 40 37
+		attack3  29  36  37  31  13  0  0  0  0  20
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/99.gif
+	offset	34 102
+		bbox  12  20  49  73
+		attack3  34  37  32  64  13  0  0  0  0  20
+	frame	data/chars/ewj/100.gif
+
+anim	jumpattack2
+	loop	0
+	delay	9
+	offset	38 87
+	bbox	11 12 49 50
+	offset	38 100
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/95.gif
+	offset	53 93
+		bbox  24  21  64  54
+		attack2  44  32  53  52  9  0  0  0  0  20
+	frame	data/chars/ewj/96.gif
+
+anim	jumpland
+	loop	0
+	offset	35 61
+	delay	5
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/10.gif
+	offset	26 70
+	frame	data/chars/ewj/12.gif
+	offset	27 87
+	frame	data/chars/ewj/11.gif
+
+anim	pain
+	loop	0
+	offset	37 95
+	delay	7
+	quakeframe	0 3 4
+	bbox	15 19 39 76
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/138.gif
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+
+anim	pain2
+	loop	0
+	offset	37 95
+	bbox	15 19 39 76
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	Move	-2
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	frame	data/chars/ewj/140.gif
+	Move	-1
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	frame	data/chars/ewj/141.gif
+	Move	0
+	delay	3
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+	offset	37 95
+	bbox	15 19 39 76
+	frame	data/chars/ewj/138.gif
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+
+anim	pain3
+	loop	0
+	offset	37 95
+	bbox	15 19 39 76
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	16
+	Move	-5
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	Move	-4
+	frame	data/chars/ewj/140.gif
+	frame	data/chars/ewj/140.gif
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	Move	-3
+	frame	data/chars/ewj/141.gif
+	frame	data/chars/ewj/141.gif
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+	Move	-2
+	frame	data/chars/ewj/142.gif
+	frame	data/chars/ewj/142.gif
+	Move	-1
+	offset	37 95
+	bbox	15 19 39 76
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	frame	data/chars/ewj/138.gif
+	delay	100
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	Move	0
+	delay	2
+	frame	data/chars/ewj/140.gif
+	frame	data/chars/ewj/140.gif
+	delay	2
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	frame	data/chars/ewj/141.gif
+	frame	data/chars/ewj/141.gif
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+	frame	data/chars/ewj/142.gif
+	frame	data/chars/ewj/142.gif
+	delay	2
+	offset	37 95
+	delay	7
+	frame	data/chars/ewj/138.gif
+	offset	69 100
+		bbox  47  22  39  78
+	frame	data/chars/ewj/140.gif
+	offset	32 96
+		bbox  9  36  40  60
+	frame	data/chars/ewj/141.gif
+	offset	71 105
+		bbox  47  40  42  65
+	frame	data/chars/ewj/142.gif
+
+anim	rise
+	loop	0
+	delay	6
+	offset	51 42
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/200.gif
+	offset	50 72
+	frame	data/chars/ewj/201.gif
+	offset	64 59
+	frame	data/chars/ewj/202.gif
+	offset	58 50
+	frame	data/chars/ewj/203.gif
+	offset	37 78
+	frame	data/chars/ewj/204.gif
+	offset	21 117
+	frame	data/chars/ewj/205.gif
+
+anim	run
+	loop	1
+	delay	8
+	offset	35 97
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/13.gif
+	offset	37 115
+	frame	data/chars/ewj/14.gif
+	offset	15 90
+	frame	data/chars/ewj/15.gif
+	offset	32 90
+	frame	data/chars/ewj/16.gif
+	offset	33 101
+	frame	data/chars/ewj/17.gif
+	offset	17 90
+	frame	data/chars/ewj/18.gif
+
+anim	runattack
+	loop	0
+	delay	2
+	offset	31 75
+        Fastattack 1
+	bbox	12 30 28 41
+	move	7
+		drawmethod  226  236  0  0  0  -1  -1
+		Attack1  0
+	frame	data/chars/ewj/114.gif
+	frame	data/chars/ewj/114.gif
+		offset  31  48
+		bbox  12  14  44  33
+		attack2  12  14  44  33 3 0 0 0 0 20
+	frame	data/chars/ewj/113.gif
+	frame	data/chars/ewj/113.gif
+		offset  22  67
+		Attack1  0
+		bbox  7  22  35  43
+	frame	data/chars/ewj/114b.gif
+	frame	data/chars/ewj/114b.gif
+		offset  48  47
+		bbox  19  14  48  33
+		attack3  19  14  48  33 3 0 0 0 0 20
+		drawmethod  216  206  0  0  0  -1  -1
+	frame	data/chars/ewj/113b.gif
+	frame	data/chars/ewj/113b.gif
+	offset	31 75
+	bbox	12 30 28 41
+		Attack1  0
+	frame	data/chars/ewj/114.gif
+	frame	data/chars/ewj/114.gif
+		offset  31  48
+		bbox  12  14  44  33
+		attack2  12  14  44  33 3 0 0 0 0 20
+	frame	data/chars/ewj/113.gif
+	frame	data/chars/ewj/113.gif
+		offset  22  67
+		Attack1  0
+		bbox  7  22  35  43
+	frame	data/chars/ewj/114b.gif
+	frame	data/chars/ewj/114b.gif
+	delay	5
+		Attack1  0
+	move	0
+	offset	6 49
+		bbox  3  16  25  36
+	frame	data/chars/ewj/72.gif
+	offset	4 68
+		bbox  8  19  34  49
+	frame	data/chars/ewj/73.gif
+	offset	4 64
+		attack3  15  14  66  51 14 0 0 0 0 20
+		bbox  8  18  41  48
+	frame	data/chars/ewj/74.gif
+		Attack1  0
+	offset	4 68
+		bbox  8  19  34  49
+	frame	data/chars/ewj/73.gif
+	offset	6 49
+		bbox  3  16  25  36
+	frame	data/chars/ewj/72.gif
+	offset	14 73
+		bbox  10  19  40  40
+	frame	data/chars/ewj/71.gif
+	offset	48 98
+		bbox  16  28  43  69
+	frame	data/chars/ewj/70.gif
+	offset	36 58
+	frame	data/chars/ewj/79.gif
+	offset	34 96
+	frame	data/chars/ewj/105.gif
+
+anim	special
+	loop	0
+	delay	8
+	Energycost	40 0
+	offset	34 96
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/105.gif
+	offset	33 58
+	frame	data/chars/ewj/106.gif
+	offset	42 62
+	delay	9
+	@cmd	shoot "EWJSP" 22 28 0
+	frame	data/chars/ewj/107.gif
+	frame	data/chars/ewj/107.gif
+	delay	8
+	offset	33 58
+	frame	data/chars/ewj/106.gif
+	offset	34 96
+	frame	data/chars/ewj/105.gif
+
+
+anim	walk
+	loop	1
+	delay	11
+	offset	35 97
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/13.gif
+	offset	37 115
+	frame	data/chars/ewj/14.gif
+	offset	15 90
+	frame	data/chars/ewj/15.gif
+	offset	32 90
+	frame	data/chars/ewj/16.gif
+	offset	33 101
+	frame	data/chars/ewj/17.gif
+	offset	17 90
+	frame	data/chars/ewj/18.gif
+
+anim	walkoff
+	loop	0
+	delay	10
+	offset	43 89
+	Landframe	2
+	Jumpreframe	0 0 0
+		bbox  16  10  57  57
+		drawmethod  226  236  0  0  0  -1  -1
+	frame	data/chars/ewj/29.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	offset	44 128
+	bbox	19 47 53 81
+	frame	data/chars/ewj/30.gif
+	delay	5
+	offset	35 60
+	bbox	0
+	frame	data/chars/ewj/10.gif
+	offset	26 68
+	frame	data/chars/ewj/12.gif
+	offset	27 87
+	frame	data/chars/ewj/11.gif
+

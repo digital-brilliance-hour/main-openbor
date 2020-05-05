@@ -1,0 +1,20 @@
+name	LoSP1
+health	1
+type	none
+shadow	0
+candamage Enemy
+remove 0
+nomove 1
+
+anim idle
+	loop	0
+	delay	2
+	offset	98 207
+	drawmethod scaley 1
+	drawmethod scalex 1
+	frame	data/chars/Loni/0_511-0.gif
+	frame	data/chars/Loni/0_511-1.gif
+	frame	data/chars/Loni/0_511-0.gif
+	frame	data/chars/Loni/0_511-1.gif
+		@cmd killentity getlocalvar("self")
+	frame	data/chars/Loni/0_511-0.gif

@@ -1,0 +1,16 @@
+name	Dsting
+type	none
+shadow	0
+nolife  1
+speed	24
+Remove 0
+candamage enemy Obsticle
+
+anim idle
+	loop	1
+        delay   4
+	offset	158 133
+		#sound  Data/CHARS/Omega/hold.wav
+		attack3  201  93  18  34 14  1  0  0  0  20
+	frame	data/chars/EFX/Dsting.gif
+

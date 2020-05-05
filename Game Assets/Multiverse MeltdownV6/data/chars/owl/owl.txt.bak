@@ -1,0 +1,293 @@
+name	Stealth_Owl
+health	400
+mp 100
+mprate 5
+speed	8
+type	player
+icon	   data/chars/Owl/icon.gif
+iconpain   data/chars/Owl/iconP.gif
+icondie    data/chars/Owl/iconD.gif
+diesound   data/chars/Owl/die2.wav
+running 18	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+atchain 1 2
+
+animationscript data/scripts/script.c
+
+Remap 	data/chars/Owl/Idle.gif  data/chars/Owl/Map0.gif
+Remap 	data/chars/Owl/Idle.gif  data/chars/Owl/Map1.gif
+Remap 	data/chars/Owl/Idle.gif  data/chars/Owl/Map2.gif
+Remap 	data/chars/Owl/Idle.gif  data/chars/Owl/Map3.gif
+
+com a2  Freespecial
+com a3  Freespecial2
+com a4  Freespecial3
+jumpmove  3  2
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	Fastattack	1
+	offset	116 128
+	bbox	106 89 20 37
+	attack1	0
+	frame	data/chars/Owl/A-0.gif
+	attack1	108 95 32 22 13 0 0 0 0 20
+	bbox	106 90 22 36
+	frame	data/chars/Owl/A-1.gif
+	frame	data/chars/Owl/A-2.gif
+	Attack1	0
+	frame	data/chars/Owl/A-3.gif
+		
+anim	attack2
+	loop	0
+	delay	6
+	Fastattack	1
+	offset	116 128
+	bbox	108 90 20 37
+	frame	data/chars/Owl/A-3.gif
+	attack1	109 98 34 21 14 1 0 0 0 20
+	frame	data/chars/Owl/A-2.gif
+	frame	data/chars/Owl/A-1.gif
+	attack1	0 0 0 0
+	frame	data/chars/Owl/A-0.gif
+		
+anim	DODGE
+	loop	0
+	delay	4
+	offset	116 128
+	frame	data/chars/Owl/Jump-0.gif
+	offset	116 132
+	frame	data/chars/Owl/Jump-1.gif
+	offset	116 136
+	frame	data/chars/Owl/Jump-2.gif
+	offset	116 140
+	frame	data/chars/Owl/Jump-3.gif
+	offset	116 136
+	frame	data/chars/Owl/Jump-4.gif
+	offset	116 132
+	frame	data/chars/Owl/Jump-5.gif
+	offset	116 128
+	frame	data/chars/Owl/Jump-6.gif
+		
+anim	fall
+	loop	0
+	offset	116 128
+	delay	1
+	Landframe	2
+	attack1	94 95 37 37 10 1 0 0 0 20
+	frame	data/chars/Owl/Fall-0.gif
+	delay	100
+	frame	data/chars/Owl/Fall-0.gif
+	delay	7
+	Attack1	0
+	frame	data/chars/Owl/Fall-1.gif
+	frame	data/chars/Owl/Fall-2.gif
+	frame	data/chars/Owl/Fall-3.gif
+		
+anim	Freespecial
+	delay	3
+	offset	116 128
+	bbox	107 89 22 37
+	mpcost	10
+	mponly	1
+	@cmd	shoot "OwlB" 0 0 0
+	frame	data/chars/Owl/FSP1-0.gif
+	frame	data/chars/Owl/FSP1-1.gif
+	frame	data/chars/Owl/FSP1-2.gif
+	frame	data/chars/Owl/FSP1-3.gif
+	frame	data/chars/Owl/FSP1-4.gif
+	frame	data/chars/Owl/FSP1-5.gif
+	frame	data/chars/Owl/FSP1-6.gif
+	frame	data/chars/Owl/FSP1-7.gif
+		
+anim	Freespecial2
+	delay	3
+	offset	116 128
+	bbox	107 87 17 39
+	mpcost	15
+	mponly	1
+	frame	data/chars/Owl/FSP2-0.gif
+	frame	data/chars/Owl/FSP2-1.gif
+	@cmd	toss "Obomb" 0 0 0
+	frame	data/chars/Owl/FSP2-2.gif
+	frame	data/chars/Owl/FSP2-3.gif
+	frame	data/chars/Owl/FSP2-4.gif
+	frame	data/chars/Owl/FSP2-5.gif
+		
+anim	Freespecial3
+	delay	5
+	offset	116 128
+	bbox	0
+	mpcost	15
+	mponly	1
+	@cmd	shoot "OwlB0" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+	@cmd	shoot "OwlB0" 0 0 0
+	frame	data/chars/Owl/FSP3-2.gif
+	frame	data/chars/Owl/FSP3-3.gif
+	@cmd	shoot "OwlB1" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+		
+anim	get
+	loop	0
+	offset	116 128
+	delay	4
+	frame	data/chars/Owl/Get-0.gif
+	frame	data/chars/Owl/Get-1.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	116 128
+	bbox	107 91 22 35
+	frame	data/chars/Owl/Idle.gif
+		
+anim	jump
+	loop	0
+	delay	8
+	offset	116 128
+	bbox	107 102 20 30
+	frame	data/chars/Owl/Jump-0.gif
+	frame	data/chars/Owl/Jump-1.gif
+	frame	data/chars/Owl/Jump-2.gif
+	frame	data/chars/Owl/Jump-3.gif
+	frame	data/chars/Owl/Jump-4.gif
+	frame	data/chars/Owl/Jump-5.gif
+	frame	data/chars/Owl/Jump-6.gif
+		
+anim	Jumpattack
+	delay	3
+	offset	117 137
+	bbox	102 99 22 33
+	cancel	4 5 0 A freespecial5
+	frame	data/chars/Owl/FSP2-0.gif
+	@cmd	shoot "OwlB" 20 20 0
+	frame	data/chars/Owl/FSP2-1.gif
+	frame	data/chars/Owl/FSP2-2.gif
+	frame	data/chars/Owl/FSP2-3.gif
+	frame	data/chars/Owl/FSP2-4.gif
+	delay	300
+	frame	data/chars/Owl/FSP2-5.gif
+		
+anim	land
+	loop	0
+	offset	116 128
+	delay	4
+	frame	data/chars/Owl/Get-0.gif
+	frame	data/chars/Owl/Get-1.gif
+		
+anim	pain
+	loop	0
+	offset	116 128
+	bbox	102 97 23 32
+	delay	15
+	frame	data/chars/Owl/Pain.gif
+		
+anim	rise
+	loop	0
+	offset	116 128
+	delay	4
+	frame	data/chars/Owl/Get-0.gif
+	frame	data/chars/Owl/Get-1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	offset	116 128
+	bbox	108 100 22 32
+	frame	data/chars/Owl/walk-0.gif
+	frame	data/chars/Owl/walk-1.gif
+	frame	data/chars/Owl/walk-2.gif
+	frame	data/chars/Owl/walk-3.gif
+	frame	data/chars/Owl/walk-4.gif
+	frame	data/chars/Owl/walk-5.gif
+	frame	data/chars/Owl/walk-6.gif
+	frame	data/chars/Owl/walk-7.gif
+		
+anim	RUNATTACK
+	loop	0
+	flipframe	16
+	delay	5
+	offset	116 128
+	bbox	0
+	move	5
+	frame	data/chars/Owl/RunA-0.gif
+	frame	data/chars/Owl/RunA-1.gif
+	frame	data/chars/Owl/RunA-2.gif
+	frame	data/chars/Owl/RunA-3.gif
+	frame	data/chars/Owl/RunA-4.gif
+	frame	data/chars/Owl/RunA-5.gif
+	frame	data/chars/Owl/RunA-6.gif
+	frame	data/chars/Owl/RunA-7.gif
+	frame	data/chars/Owl/RunA-8.gif
+	frame	data/chars/Owl/RunA-9.gif
+	frame	data/chars/Owl/RunA-10.gif
+	frame	data/chars/Owl/RunA-11.gif
+	delay	3
+	frame	data/chars/Owl/RunA-12.gif
+	attack1	131 106 26 29 16 1
+	frame	data/chars/Owl/RunA-13.gif
+	frame	data/chars/Owl/RunA-14.gif
+	delay	5
+	frame	data/chars/Owl/RunA-15.gif
+	delay	4
+	move	0
+	attack1	0 0 0 0
+	frame	data/chars/Owl/Attack-0.gif
+	attack1	120 102 21 27 16 1
+	frame	data/chars/Owl/Attack-1.gif
+	frame	data/chars/Owl/Attack-2.gif
+	frame	data/chars/Owl/Attack-3.gif
+		
+anim	special
+	loop	0
+	delay	5
+	offset	116 128
+	bbox	0
+	mpcost	25
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-2.gif
+	frame	data/chars/Owl/FSP3-3.gif
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-2.gif
+	frame	data/chars/Owl/FSP3-3.gif
+	@cmd	shoot "OwlBS" 0 0 0
+	frame	data/chars/Owl/FSP3-0.gif
+	frame	data/chars/Owl/FSP3-1.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	116 128
+	bbox	108 100 22 32
+	frame	data/chars/Owl/walk-0.gif
+	frame	data/chars/Owl/walk-1.gif
+	frame	data/chars/Owl/walk-2.gif
+	frame	data/chars/Owl/walk-3.gif
+	frame	data/chars/Owl/walk-4.gif
+	frame	data/chars/Owl/walk-5.gif
+	frame	data/chars/Owl/walk-6.gif
+	frame	data/chars/Owl/walk-7.gif
+		
+#|edited by openBor Stats v 0.37
+		

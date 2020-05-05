@@ -1,0 +1,344 @@
+name    	GFish2
+health  	100
+speed   	9
+nomove		1
+type    	enemy
+gfxshadow  	1
+death   	1
+#nopain   	1
+#nodrop   	2
+#cantgrab        1
+icon    	data/chars/GFish/icon.gif
+iconpain        data/chars/GFish/iconP.gif
+icondie         data/chars/GFish/iconD.gif
+diesound  	data/sounds/exp.wav
+nodieblink      2
+candamage       Player
+animationscript data/scripts/escript.c
+load    	Trident
+
+palette		data/chars/GFish/Pal.gif
+alternatepal          data/chars/GFish/FreezeM.gif
+fmap 1
+#alternatepal	data/chars/GFish/map1.gif
+
+
+anim spawn
+	delay	8
+	offset	99 109
+	frame	data/chars/GFish/stand1.gif
+#        @cmd    changemap 1
+	frame	data/chars/GFish/stand1.gif
+
+anim idle
+	loop	1
+	delay	8
+	offset	99 109
+	bbox	80 61 35 49
+	frame	data/chars/GFish/stand1.gif
+        @cmd    clearL
+	frame	data/chars/GFish/stand1.gif
+
+anim walk
+@script
+	void self = getlocalvar("self"); //Get calling entity.
+
+        setidle(self, openborconstant("ANI_IDLE"));
+@end_script
+	loop	1
+	delay	2
+	offset	99 109
+	bbox	80 61 35 49
+	frame	data/chars/GFish/stand1.gif
+
+anim attack2
+	range	200 400
+        rangez  -150 150
+	delay	4
+	offset	99 109
+	bbox	80 61 35 49
+	frame	data/chars/GFish/jp1.gif
+	delay	40
+        @cmd    target 3 1.5 0 0 0
+        @cmd    leap 2
+	frame	data/chars/GFish/jp1.gif
+	delay	8
+	frame	data/chars/GFish/land1.gif
+	frame	data/chars/GFish/land2.gif
+
+anim attack1
+	range	0 200
+        rangez  -75 75
+	delay	30
+	offset	99 109
+	bbox	71 42 45 71
+	frame	data/chars/GFish/land1.gif
+	delay	30
+        @cmd    targetL 2 0 0
+	frame	data/chars/GFish/jump1.gif
+	delay	20
+        @cmd    leap 4
+	frame	data/chars/GFish/jump1.gif
+	delay	4
+           noreflect 1
+	attack	69 47 63 62 15 1
+	frame	data/chars/GFish/jump4.gif
+        @cmd    shootD "Trident" 0 0 -1 0 -3 0
+	frame	data/chars/GFish/jump5.gif
+	frame	data/chars/GFish/jump6.gif
+	frame	data/chars/GFish/jump4.gif
+        @cmd    shootD "Trident" 0 0 -1 0 -3 0
+	frame	data/chars/GFish/jump5.gif
+	frame	data/chars/GFish/jump6.gif
+	frame	data/chars/GFish/jump4.gif
+        @cmd    shootD "Trident" 0 0 -1 0 -3 0
+	frame	data/chars/GFish/jump5.gif
+	frame	data/chars/GFish/jump6.gif
+	frame	data/chars/GFish/jump4.gif
+	delay	20
+	attack	0
+	frame	data/chars/GFish/jump1.gif
+	delay	8
+	frame	data/chars/GFish/land1.gif
+	frame	data/chars/GFish/land2.gif
+
+
+anim pain
+	delay	14
+	offset	99 109
+	bbox	76 68 42 45
+	frame	data/chars/GFish/pain1.gif
+
+anim BPAIN
+	loop	0
+	offset	99 109
+	delay	3
+	bbox	76 68 42 45
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+
+anim SPAIN
+	loop	0
+	offset	99 109
+	delay	3
+	bbox	76 68 42 45
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+
+anim pain2
+	loop	0
+	offset	99 109
+	delay	3
+	bbox	76 68 42 45
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+	frame	data/chars/GFish/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	99 109
+	delay	3
+	bbox	76 68 42 45
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+
+anim fall
+	delay	34
+	offset	99 109
+	attack	80 55 39 47 12 1
+	frame	data/chars/GFish/pain1.gif
+
+anim BURN
+	loop	0
+	offset	99 109
+           landframe 19
+	delay	3
+	attack	80 55 39 47 10 1  0  0  0  20
+	bbox      80 55 39 47
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/BurnP.gif
+	frame	data/chars/GFish/pain1.gif
+	delay	100
+	frame	data/chars/GFish/pain1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/GFish/pain1.gif
+
+anim Shock
+	loop	0
+	offset	99 109
+           landframe 19
+	delay	3
+	attack	80 55 39 47 10 1  0  0  0  20
+	bbox      80 55 39 47
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/ShockP.gif
+	frame	data/chars/GFish/pain1.gif
+	delay	100
+	frame	data/chars/GFish/pain1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/GFish/pain1.gif
+
+anim Fall3
+	loop	0
+	offset	99 109
+           landframe 19
+	delay	3
+	attack	80 55 39 47 10 1  0  0  0  20
+	bbox      80 55 39 47
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	frame	data/chars/GFish/DrainP.gif
+	frame	data/chars/GFish/pain1.gif
+	delay	100
+	frame	data/chars/GFish/pain1.gif
+	bbox	0 0 0 0
+	delay	20
+	Attack1  0
+	frame	data/chars/GFish/pain1.gif
+
+anim rise
+	delay	8
+	offset	99 109
+	frame	data/chars/GFish/land1.gif
+        @cmd    riseattack 100 5 "ANI_FOLLOW1"
+	frame	data/chars/GFish/land2.gif
+
+anim follow1
+	delay	14
+	offset	99 109
+	frame	data/chars/GFish/act1.gif
+	delay	8
+           noreflect 1
+	Attack1	86 70 113 28 18 0 0 0 0 20
+	frame	data/chars/GFish/act2.gif
+	delay	18
+	frame	data/chars/GFish/act3.gif
+
+
+anim death
+	delay	5
+	offset	45 65
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif

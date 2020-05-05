@@ -1,0 +1,272 @@
+#Edited by Christuserloeser@DCEvolution.net
+
+name	Rae
+health	97
+nodieblink 0
+noquake 0
+speed	8
+grabdistance 19
+hostile player npc
+projectilehit obstacle enemy npc
+candamage obstacle player npc
+dust    dust
+throw 3 3
+risetime 130
+type	enemy
+shadow	2
+icon	data/chars/rae/icon.gif
+diesound data/chars/rae/die.wav
+
+score   7 7
+
+Knife Knife
+
+remap	data/chars/rae/idle.gif data/chars/rae/alter1.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter2.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter3.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter4.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter5.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter6.gif
+remap	data/chars/rae/idle.gif data/chars/rae/alter7.gif
+
+anim idle
+	loop	1
+	offset	20 78
+	bbox	12 17 18 65
+	delay	120
+	frame	data/chars/rae/idle.gif
+
+anim walk
+	loop	1
+	offset	20 78
+	bbox	12 17 18 65
+	delay	27
+	frame	data/chars/rae/walk1.gif
+	frame	data/chars/rae/walk2.gif
+	frame	data/chars/rae/walk1.gif
+	frame	data/chars/rae/walk3.gif
+
+anim grabbed
+	loop	0
+	delay	3
+	offset	39 72
+        bbox	19 8 26 67
+	frame	data/chars/rae/pain2.gif
+
+anim pain
+	loop	0
+	offset	31 72
+	bbox	16 10 28 65
+	delay	19
+	frame	data/chars/rae/pain1.gif
+	delay	37
+	offset	39 72
+        bbox	19 8 26 67
+	frame	data/chars/rae/pain2.gif
+
+anim	pain2
+	loop	0
+	offset	21 76
+	bbox	3 0 28 76
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-2
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-1
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	0
+	delay	8
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+
+anim	pain3
+	loop	0
+	offset	21 76
+	bbox	3 0 28 76
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-4
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-3
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-2
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	Move	-1
+	frame	data/chars/rae/pain1.gif
+	delay	100
+	frame	data/chars/rae/pain1.gif
+	Move	0
+	delay	2
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	delay	10
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+
+anim	pain4
+	loop	0
+	delay	6
+           offset	33 20
+	bbox	1 3 75 18
+	frame	data/chars/Goldie/Fall2.gif
+           offset	35 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	33 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	35 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	33 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	35 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	33 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	35 20
+	frame	data/chars/Goldie/Fall2.gif
+           offset	33 20
+	delay	50
+	frame	data/chars/Goldie/Fall2.gif
+	bbox	0
+	offset	29 37
+	delay	20
+	frame	data/chars/Goldie/rise1.gif
+	offset	33 42
+           frame	data/chars/Goldie/rise2.gif
+
+anim	pain5
+	loop	0
+	offset	21 76
+	bbox	3 0 28 76
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/rae/pain1.gif
+	delay	2
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	delay	9
+	frame	data/chars/rae/pain1.gif
+
+anim	pain6
+	loop	0
+	offset	21 76
+	bbox	3 0 28 76
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/rae/pain1.gif
+	delay	2
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	frame	data/chars/rae/pain1.gif
+	delay	9
+	frame	data/chars/rae/pain1.gif
+
+anim fall
+	loop	0
+	delay	39
+	offset	30 74
+	frame	data/chars/rae/fall.gif
+        offset	36 19
+	attack	16 3 59 15 5 1
+	frame	data/chars/rae/die.gif
+
+anim rise
+	loop	0
+	offset	36 38
+	delay	19
+	frame	data/chars/rae/rise1.gif
+	delay	17
+	frame	data/chars/rae/rise2.gif
+	frame	data/chars/rae/rise1.gif
+	offset	48 38
+	delay	31
+	frame	data/chars/rae/rise3.gif
+
+anim special
+        loop	0
+	offset	17 125
+       	delay	6
+        move    -7
+	frame	data/chars/rae/esp1.gif
+	frame	data/chars/rae/esp2.gif
+	frame	data/chars/rae/esp3.gif
+	frame	data/chars/rae/esp4.gif
+	frame	data/chars/rae/esp3.gif
+	frame	data/chars/rae/esp2.gif
+	frame	data/chars/rae/esp1.gif
+
+anim attack1
+ 	range	0 90
+ 	loop	0
+        delay	7
+  	offset	31 94
+  	bbox	21 33 17 65
+          noreflect 1
+        hitflash   Blood
+	frame	data/chars/rae/knife1.gif
+  	bbox	23 32 19 66
+	frame	data/chars/rae/knife2.gif
+        delay	9
+  	bbox	37 42 19 56
+	hitfx   data/sounds/knife.wav
+          noreflect 1
+        attack  56 49 42 8 5
+	frame	data/chars/rae/knife3.gif
+        attack  0
+        delay	7
+  	bbox	23 32 19 66
+	frame	data/chars/rae/knife2.gif
+  	bbox	21 33 17 65
+        sound   data/chars/rae/hit1.wav
+	frame	data/chars/rae/knife1.gif
+  	bbox	23 32 19 66
+	frame	data/chars/rae/knife2.gif
+        delay	13
+  	bbox	37 42 19 56
+	hitfx   data/sounds/knife.wav
+          noreflect 1
+        attack  56 49 42 8 7 0
+	frame	data/chars/rae/knife3.gif
+        attack  0
+        delay	11
+  	bbox	23 32 19 66
+	frame	data/chars/rae/knife2.gif
+
+anim attack2
+ 	range	130 190
+        throwframe 2 59
+ 	loop	0
+        delay	13
+  	offset	31 94
+  	bbox	21 33 17 65
+	frame	data/chars/rae/knife1.gif
+        delay	11
+  	bbox	23 32 19 66
+	frame	data/chars/rae/knife2.gif
+        sound   data/chars/rae/hit2.wav
+        delay	7
+  	bbox	37 42 19 56
+	frame	data/chars/rae/tknife1.gif
+        delay	9
+	frame	data/chars/rae/tknife2.gif
+

@@ -1,0 +1,103 @@
+name	Fly
+health	20
+speed	10
+type	enemy
+shadow	2
+cantgrab 1
+icon		data/chars/Fly/icon.gif
+diesound  	data/sounds/exp.wav
+nodieblink 2
+
+load	FlyShot
+
+anim idle
+	loop	1
+	delay	3
+	offset	64 107
+	bbox	57 53 23 22
+	frame	data/chars/Fly/stand1.gif
+	frame	data/chars/Fly/stand2.gif
+
+anim walk
+	loop	1
+	delay	3
+	offset	64 107
+	bbox	57 53 23 22
+	frame	data/chars/Fly/walk1.gif
+	frame	data/chars/Fly/walk2.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	64 107
+	bbox	57 53 23 22
+	frame	data/chars/Fly/stand1.gif
+	frame	data/chars/Fly/stand2.gif
+
+anim fall
+	loop	0
+	delay	3
+	offset	64 77
+	attack	57 53 23 22 12 1
+	frame	data/chars/Fly/fall.gif
+
+anim rise
+	loop	0
+	delay	2
+	offset	64 77
+	frame	data/chars/Fly/stand1.gif
+	offset	64 80
+	frame	data/chars/Fly/stand1.gif
+	offset	64 83
+	frame	data/chars/Fly/stand1.gif
+	offset	64 86
+	frame	data/chars/Fly/stand1.gif
+	offset	64 89
+	frame	data/chars/Fly/stand1.gif
+	offset	64 92
+	frame	data/chars/Fly/stand1.gif
+	offset	64 95
+	frame	data/chars/Fly/stand1.gif
+	offset	64 98
+	frame	data/chars/Fly/stand1.gif
+	offset	64 101
+	frame	data/chars/Fly/stand1.gif
+	offset	64 104
+	frame	data/chars/Fly/stand1.gif
+	offset	64 107
+	frame	data/chars/Fly/stand1.gif
+
+anim attack1
+	range	0 150
+	shootframe 1
+	loop	0
+	delay	6
+	offset	64 107
+	bbox	57 53 23 22
+	frame	data/chars/Fly/stand1.gif
+	frame	data/chars/Fly/stand2.gif
+	delay	28
+	frame	data/chars/Fly/stand1.gif
+
+anim death
+	loop	0
+	delay	5
+	offset	45 85
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif
+
+
+
+
+

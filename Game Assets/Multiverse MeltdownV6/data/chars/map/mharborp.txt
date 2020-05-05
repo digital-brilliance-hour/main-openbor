@@ -1,0 +1,31 @@
+name	MHarborP
+nomove      1
+type       none
+nolife     1
+score      0 -1
+health	1000
+facing 1
+falldie	 1
+cantgrab 1
+nodieblink 2
+setlayer -1
+Nomove 1 0
+
+
+animationscript data/scripts/script.c
+
+
+anim idle
+	loop	1
+	delay	80
+           followanim 1
+           followcond 1
+	offset	0 59
+           hitfx      data/sounds/silent.wav
+           attack1   0
+	frame	data/chars/Map/MHarbor.gif
+	frame	data/chars/Map/MHarbor.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Map/MHarbor.gif
+
+

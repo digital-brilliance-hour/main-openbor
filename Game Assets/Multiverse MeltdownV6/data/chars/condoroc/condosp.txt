@@ -1,0 +1,29 @@
+name CondoSP
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+Nomove 1
+
+
+anim	idle
+	loop	1
+	delay	5
+	offset	145 127
+		Blast  122  81  47  46  40 0  0  0  40
+	frame	data/chars/Condoroc/SPFX-0.gif
+		blast  111  71  70  68  40  0  0  0  40
+	frame	data/chars/Condoroc/SPFX-1.gif
+		blast  101  61  89  89  40  0  0  0  40
+	frame	data/chars/Condoroc/SPFX-2.gif
+		blast  81  41  129  129  40  0 0  0  40
+	frame	data/chars/Condoroc/SPFX-3.gif
+	frame	data/chars/Condoroc/SPFX-4.gif
+	frame	data/chars/Condoroc/SPFX-5.gif
+	frame	data/chars/Condoroc/SPFX-6.gif
+	frame	data/chars/Condoroc/SPFX-7.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Condoroc/SPFX-7.gif
+

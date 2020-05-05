@@ -1,0 +1,162 @@
+name	robo
+health	100
+speed	30
+type	enemy
+shadow	2
+noquake 0
+makeinv 2 0
+nolife 1
+falldie 1
+bounce 0
+antigravity 80
+load roboL
+knife roboL
+load smoke
+
+load boom
+
+palette data/chars/robo/idle01.gif
+
+animationscript data/scripts/animscript.c
+
+anim	attack1
+	pausetime	0
+	range	200 700
+	loop	0
+	delay	5
+	offset	15 100
+	throwframe	4 80
+	frame	data/chars/robo/A01.gif
+	frame	data/chars/robo/A02.gif
+	frame	data/chars/robo/A03.gif
+	frame	data/chars/robo/A04.gif
+	frame	data/chars/robo/A05.gif
+	delay	10
+	frame	data/chars/robo/idle01.gif
+		
+anim	death
+	loop	0
+	delay	5
+	offset	15 100
+	move	-10
+drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+	move	-10
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+	move	-10
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+	move	-10
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+	@cmd	spawn01 "hittt" 0 60 1
+nodrawmethod
+	frame	data/chars/misc/hit05.gif
+		
+anim	fall
+	loop	0
+	delay	7
+	offset	15 100
+	frame	data/chars/robo/PAIN.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	15 100
+	bbox	1 0 31 49
+	frame	data/chars/robo/idle01.gif
+	offset	15 99
+	frame	data/chars/robo/idle02.gif
+	offset	15 98
+	frame	data/chars/robo/idle03.gif
+	offset	15 97
+	frame	data/chars/robo/idle04.gif
+	offset	15 98
+	frame	data/chars/robo/idle05.gif
+	offset	15 99
+	frame	data/chars/robo/idle06.gif
+	offset	15 100
+	frame	data/chars/robo/idle07.gif
+		
+anim	pain
+	loop	0
+	delay	5
+	offset	15 100
+	move	-10
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+	move	-10
+	frame	data/chars/robo/PAIN.gif
+	move	5
+	frame	data/chars/robo/PAIN2.gif
+
+anim	fall3
+subentity	boom
+	spawnframe	0 0 0 0 1
+	loop	0
+	delay	5
+	offset	15 100
+	move	-10
+movea -10
+drawmethod	tintmode 4
+	drawmethod	tintcolor 200_50_0
+	frame	data/chars/robo/PAIN.gif
+	frame	data/chars/robo/PAIN2.gif
+	frame	data/chars/robo/PAIN.gif
+nodrawmethod
+	move	0
+	frame	data/chars/robo/PAIN2.gif
+
+
+
+
+
+
+		
+anim	rise
+	loop	0
+	delay	7
+	offset	15 100
+	frame	data/chars/robo/pain.gif
+		
+anim	spawn
+subentity	smoke
+	spawnframe	0 1 0 0 0
+	loop	0
+	delay	3
+	offset	15 100
+	bbox	0 0 0 0
+	frame	data/chars/robo/idle01.gif
+frame	data/chars/robo/idle01.gif
+frame	data/chars/robo/idle01.gif
+
+		
+anim	walk
+	loop	1
+	delay	5
+	offset	15 100
+	bbox	1 -1 31 53
+	frame	data/chars/robo/idle01.gif
+	offset	15 99
+	frame	data/chars/robo/idle02.gif
+	offset	15 98
+	frame	data/chars/robo/idle03.gif
+	offset	15 97
+	frame	data/chars/robo/idle04.gif
+	offset	15 98
+	frame	data/chars/robo/idle05.gif
+	offset	15 99
+	frame	data/chars/robo/idle06.gif
+	offset	15 100
+	frame	data/chars/robo/idle07.gif
+		
+#|edited by openBor Stats v 0.67
+		

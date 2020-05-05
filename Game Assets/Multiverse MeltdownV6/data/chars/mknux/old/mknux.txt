@@ -1,0 +1,305 @@
+name	Mecha-Knuckles
+health	500
+speed	10
+running   20 4 2 1 1
+type	enemy
+aggression 140
+gfxshadow 1
+icon	data/chars/MKnux/icon.gif
+iconpain data/chars/MKnux/iconp.gif
+icondie data/chars/MKnux/iconp.gif
+nodieblink 3
+knife  MKLaser
+
+hostile Player NPC
+candamage Player NPC
+aimove chasez
+Escapehits 5
+
+
+
+
+anim	attack1
+	delay	3
+	bbox	100 58 34 55
+	offset	119 114
+	frame	Data/CHARS/MKnux/A4-0.GIF
+	attack3	123 78 28 34 15 0 0 0 0 20
+	DropV	1 3
+	frame	Data/CHARS/MKnux/A4-1.GIF
+	Attack1	0
+	frame	Data/CHARS/MKnux/A4-2.GIF
+	attack3	123 77 43 36 15 0 0 0 0 20
+	DropV	1 3
+	frame	Data/CHARS/MKnux/A4-3.GIF
+	Attack1	0
+	frame	Data/CHARS/MKnux/A4-4.GIF
+	attack3	123 77 66 36 15 0 0 0 0 20
+	DropV	1 3
+	frame	Data/CHARS/MKnux/A4-5.GIF
+	attack	0
+	frame	Data/CHARS/MKnux/A4-4.GIF
+	attack3	121 78 46 35 15 0 0 0 0 20
+	DropV	1 3
+	frame	Data/CHARS/MKnux/A4-3.GIF
+	Attack1	0
+	frame	Data/CHARS/MKnux/A4-2.GIF
+	attack3	121 78 33 35 15 0 0 0 0 20
+	DropV	1 3
+	frame	Data/CHARS/MKnux/A4-1.GIF
+	Attack1	0
+	frame	Data/CHARS/MKnux/A4-0.GIF
+		
+anim	fall
+	loop	0
+	delay	15
+	offset	119 114
+	bbox	100 64 38 49
+	attack	100 64 38 49
+	frame	Data/CHARS/MKnux/Fall0.GIF
+	frame	Data/CHARS/MKnux/Fall1.GIF
+		
+anim	freespecial
+	loop	0
+	Throwframe	2 1
+	range	151 250
+	delay	6
+	offset	119 114
+	bbox	97 58 37 55
+	frame	Data/CHARS/MKnux/A1-0.GIF
+	frame	Data/CHARS/MKnux/A1-1.GIF
+	delay	40
+	frame	Data/CHARS/MKnux/A1-2.GIF
+	delay	8
+	frame	Data/CHARS/MKnux/A1-1.GIF
+	frame	Data/CHARS/MKnux/A1-0.GIF
+		
+anim	freespecial2
+	loop	0
+	custknife	KMissile
+	Throwframe	4 1
+	range	60 150
+	delay	6
+	bbox	92 59 42 54
+	offset	119 114
+	frame	Data/CHARS/MKnux/A2-1.GIF
+	frame	Data/CHARS/MKnux/A2-2.GIF
+	frame	Data/CHARS/MKnux/A2-3.GIF
+	delay	20
+	frame	Data/CHARS/MKnux/A2-4.GIF
+	delay	40
+	frame	Data/CHARS/MKnux/A2-3.GIF
+	delay	8
+	frame	Data/CHARS/MKnux/A2-2.GIF
+	frame	Data/CHARS/MKnux/A2-1.GIF
+		
+anim	freespecial3
+	range	251 400
+	loop	0
+	custknife	MKBall
+	throwframe	9 1
+	delay	7
+	bbox	96 58 38 56
+	offset	119 114
+	custknife	MKBall
+	frame	Data/CHARS/MKnux/A3-2.GIF
+	frame	Data/CHARS/MKnux/A3-3.GIF
+	attack	99 71 35 26
+	sound	Data/SOUNDS/Shock.WAV
+	frame	Data/CHARS/MKnux/A3-4.GIF
+	frame	Data/CHARS/MKnux/A3-5.GIF
+	frame	Data/CHARS/MKnux/A3-6.GIF
+	frame	Data/CHARS/MKnux/A3-5.GIF
+	frame	Data/CHARS/MKnux/A3-4.GIF
+	frame	Data/CHARS/MKnux/A3-5.GIF
+	frame	Data/CHARS/MKnux/A3-6.GIF
+	delay	40
+	attack	0
+	range	20 120
+	sound	Data/SOUNDS/Charges.WAV
+	frame	Data/CHARS/MKnux/A3-3.GIF
+	delay	9
+	frame	Data/CHARS/MKnux/A3-2.GIF
+		
+anim	idle
+	loop	1
+	offset	119 114
+	delay	8
+	bbox	98 59 34 54
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	pain
+	loop	0
+	delay	8
+	offset	119 114
+	bbox	98 59 34 53
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+		
+anim	pain2
+	loop	0
+	offset	119 114
+	bbox	98 59 34 53
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	Attack1	0
+	frame	Data/CHARS/MKnux/Pain.GIF
+	Move	-2
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	Move	-1
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	Move	0
+	delay	8
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	pain3
+	loop	0
+	offset	119 114
+	bbox	98 59 34 53
+	delay	3
+	quakeframe	0 3 4
+	Move	-5
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	Move	-4
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	Move	-3
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	Move	-2
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	Move	-1
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	Move	0
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	delay	8
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	pain4
+	loop	0
+	delay	6
+	offset	119 114
+	bbox	100 64 38 49
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	121 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	119 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	121 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	119 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	121 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	119 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	121 114
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	offset	119 114
+	delay	50
+	frame	Data/CHARS/MKnux/Fall1.GIF
+	bbox	0 0 0 0
+	delay	2
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	pain5
+	loop	0
+	offset	119 114
+	bbox	98 59 34 53
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	Data/CHARS/MKnux/Pain.GIF
+	delay	2
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	delay	9
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	pain6
+	loop	0
+	offset	119 114
+	bbox	98 59 34 53
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	Data/CHARS/MKnux/Pain.GIF
+	delay	2
+	frame	Data/CHARS/MKnux/Idle.GIF
+	frame	Data/CHARS/MKnux/Pain.GIF
+	frame	Data/CHARS/MKnux/Idle.GIF
+	delay	9
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	rise
+	loop	0
+	offset	119 114
+	delay	2
+	frame	Data/CHARS/MKnux/Idle.GIF
+		
+anim	run
+	loop	1
+	delay	3
+	offset	119 114
+	bbox	103 53 39 59
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run1.GIF
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run2.GIF
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run3.GIF
+		
+anim	special2
+	delay	5
+	offset	119 114
+	frame	Data/CHARS/MKnux/A4-0.GIF
+	attack	123 78 28 17 20
+	frame	Data/CHARS/MKnux/A4-1.GIF
+	attack	122 76 39 20 20
+	frame	Data/CHARS/MKnux/A4-2.GIF
+	attack	117 78 49 18 20
+	frame	Data/CHARS/MKnux/A4-3.GIF
+	attack	117 78 58 17 20
+	frame	Data/CHARS/MKnux/A4-4.GIF
+	attack	117 79 71 17 20
+	frame	Data/CHARS/MKnux/A4-5.GIF
+	attack	0
+	frame	Data/CHARS/MKnux/A4-4.GIF
+	frame	Data/CHARS/MKnux/A4-3.GIF
+	frame	Data/CHARS/MKnux/A4-2.GIF
+	frame	Data/CHARS/MKnux/A4-1.GIF
+	frame	Data/CHARS/MKnux/A4-0.GIF
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	119 114
+	bbox	103 53 39 59
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run1.GIF
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run2.GIF
+	frame	Data/CHARS/MKnux/Run0.GIF
+	frame	Data/CHARS/MKnux/Run3.GIF
+		
+#|edited by openBor Stats v 0.53
+		

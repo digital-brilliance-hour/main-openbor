@@ -1,0 +1,648 @@
+name	MANIC
+health	500
+mp 80
+mprate 10
+speed	13
+type	player
+icon     data/chars/Manic/Icon-A.gif 1
+iconget  data/chars/Manic/Icon-B.gif 1
+iconpain data/chars/Manic/Icon-C.gif 1
+icondie  data/chars/Manic/Icon-C.gif 1
+
+
+
+
+running 23	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/Manic/Pal
+
+#alternatepal  data/chars/Manic/Palz
+alternatepal  data/chars/Manic/Pal0
+alternatepal  data/chars/Manic/Pal1
+alternatepal  data/chars/Manic/Pal2
+alternatepal  data/chars/Manic/Pal3
+alternatepal  data/chars/Manic/Pal4
+alternatepal  data/chars/Manic/Pal5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	154 138
+	cancel	2 6 0 a freespecial
+	bbox	147 95 24 43
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/A1-0.gif
+	attack	153 110 32 29 9 0 0 0 0 20
+           DropV     1 2
+	move	3
+	delay	2
+	frame	data/chars/Manic/A1-1.gif
+	frame	data/chars/Manic/A1-1.gif
+	move	0
+	attack1	0
+	delay	2
+	frame	data/chars/Manic/A1-0.gif
+	frame	data/chars/Manic/A1-0.gif
+	frame	data/chars/Manic/A1-0.gif
+	frame	data/chars/Manic/A1-0.gif
+
+anim	DODGE
+	loop	0
+	delay	5
+	offset	154 138
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get0.gif
+		offset  154  114
+	delay	2
+	frame	data/chars/Manic/Jump1.gif
+	frame	data/chars/Manic/Jump2.gif
+	frame	data/chars/Manic/Jump3.gif
+	frame	data/chars/Manic/Jump4.gif
+	frame	data/chars/Manic/Jump5.gif
+	frame	data/chars/Manic/Jump6.gif
+	frame	data/chars/Manic/Jump7.gif
+	frame	data/chars/Manic/Jump8.gif
+		offset  154  138
+	delay	5
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+
+anim	fall
+	loop	0
+	offset	154 138
+	delay	7
+	quakeframe	0 3 4
+	Landframe	4
+	attack3	141 90 27 48 10 0 0 0 0 20
+	Bbox	141 90 27 48
+	#sound	Data/CHARS/Sonic/whoa.wav
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Fall0.gif
+	attack3	133  99  36  40 10 0 0 0 0 20
+	bbox  133  99  36  40
+	frame	data/chars/Manic/Fall1.gif
+		offset  157  131
+	attack3	128  104  43  28 10 0 0 0 0 20
+	bbox  128  104  43  28
+	frame	data/chars/Manic/Fall2.gif
+	delay	500
+		offset  165  126
+	frame	data/chars/Manic/Fall3.gif
+	bbox	0
+	delay	7
+	Attack1	0
+		offset  168  120
+	frame	data/chars/Manic/Fall4.gif
+	frame	data/chars/Manic/Fall5.gif
+	frame	data/chars/Manic/Fall4.gif
+
+anim	freespecial
+	loop	0
+	delay	4
+	offset	154 139
+	cancel	5 9 0 a freespecial2
+	bbox	148 92 21 46
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/A2-0.gif
+	frame	data/chars/Manic/A2-1.gif
+	frame	data/chars/Manic/A2-2.gif
+	attack2	154 110 29 30 9 0 0 0 0 20
+           DropV     1 2
+	move	4
+	delay	3
+	frame	data/chars/Manic/A2-3.gif
+	frame	data/chars/Manic/A2-3.gif
+	delay	5
+	attack1	0
+	frame	data/chars/Manic/A2-4.gif
+	move	0
+		bbox  143  93  21  46
+	frame	data/chars/Manic/A2-5.gif
+	delay	2
+	frame	data/chars/Manic/A2-5.gif
+	frame	data/chars/Manic/A2-5.gif
+	frame	data/chars/Manic/A2-5.gif
+	frame	data/chars/Manic/A2-5.gif
+
+anim	freespecial2
+	loop	0
+	delay	4
+	offset	154 139
+	cancel	5 9 0 a freespecial3
+	bbox	150 95 18 44
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/A3-0.gif
+		bbox  148  92  17  47
+	frame	data/chars/Manic/A3-1.gif
+		bbox  154  95  21  46
+	frame	data/chars/Manic/A3-2.gif
+	attack2	154 102 38 37 9 0 0 0 0 20
+           DropV     1 2
+	move	3
+	delay	4
+	frame	data/chars/Manic/A3-3.gif
+	frame	data/chars/Manic/A3-3.gif
+	delay	7
+	attack1	0
+		bbox  151  93  20  47
+	frame	data/chars/Manic/A3-4.gif
+	move	0
+		offset  154  138
+		bbox  143  91  23  47
+	frame	data/chars/Manic/A3-5.gif
+	delay	2
+	frame	data/chars/Manic/A3-5.gif
+	frame	data/chars/Manic/A3-5.gif
+	frame	data/chars/Manic/A3-5.gif
+	frame	data/chars/Manic/A3-5.gif
+
+anim	freespecial3
+	loop	0
+	delay	5
+	offset	154 138
+	bbox	145 91 22 47
+	hitflash	Flash2
+        Jumpframe 3 1 0
+        Landframe 7
+	#sound	Data/CHARS/Sonic/Yeah.wav
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/A4-0.gif
+	frame	data/chars/Manic/A4-1.gif
+	frame	data/chars/Manic/A4-2.gif
+	move	7
+	attack3	152 101 23 37 11 0 0 0 0 20
+           DropV     1 3
+		bbox  135  91  32  33
+	frame	data/chars/Manic/A4-3.gif
+	delay	3
+	move	4
+	frame	data/chars/Manic/A4-4.gif
+	frame	data/chars/Manic/A4-4.gif
+	delay	6
+	move	0
+		bbox  142  91  22  48
+		Attack1  0
+	frame	data/chars/Manic/A4-5.gif
+	delay	3
+	frame	data/chars/Manic/A4-5.gif
+
+anim	Freespecial4
+	loop	0
+	delay	3
+	offset	154 138
+        Jumpframe 12 2 2
+        Landframe 20
+	Energycost 10 1
+	drawmethod	175 175 0 0 0 0 -1
+		attack3  145  107  25  33  7  0  0  0  0  20
+		move  8
+	frame	data/chars/Manic/FSP1-0.gif
+	frame	data/chars/Manic/FSP1-0.gif
+	frame	data/chars/Manic/FSP1-1.gif
+	frame	data/chars/Manic/FSP1-1.gif
+	frame	data/chars/Manic/FSP1-2.gif
+	frame	data/chars/Manic/FSP1-2.gif
+	frame	data/chars/Manic/FSP1-3.gif
+	frame	data/chars/Manic/FSP1-3.gif
+		Attack1  0
+		move  3
+	frame	data/chars/Manic/FSP1-4.gif
+	frame	data/chars/Manic/FSP1-4.gif
+	frame	data/chars/Manic/FSP1-5.gif
+	frame	data/chars/Manic/FSP1-5.gif
+	delay	6
+		attack3  154  107  33  32  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-6.gif
+		move  0
+		attack3  153  104  31  35  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-7.gif
+		attack3  154  93  32  45  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-8.gif
+		attack3  140  86  44  53  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-9.gif
+		attack3  132  82  37  57  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-10.gif
+		attack3  123  97  32  43  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-11.gif
+		attack3  123  107  33  34  7  0  0  0  0  20
+	frame	data/chars/Manic/FSP1-12.gif
+	delay	100
+		Attack1  0
+	frame	data/chars/Manic/FSP1-13.gif
+	delay	4
+	offset	154 138
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get2.gif
+
+anim	Freespecial5
+	loop	0
+	delay	9
+	offset	154 138
+	Energycost 25 1
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/FSP2-0.gif
+		delay  6
+	frame	data/chars/Manic/FSP2-1.gif
+	frame	data/chars/Manic/FSP2-2.gif
+	@cmd	shoot "M-Wave" 0 0 0
+	frame	data/chars/Manic/FSP2-3.gif
+	frame	data/chars/Manic/FSP2-4.gif
+	frame	data/chars/Manic/FSP2-5.gif
+	frame	data/chars/Manic/FSP2-6.gif
+
+anim	Freespecial6
+	loop	0
+	delay	2
+	offset	154 108
+	Fastattack	1
+	Energycost 25 1
+	#sound	Data/CHARS/Sonic/hya.wav
+		drawmethod  175  175  0  0  0  -1  -1
+	move  8
+		attack3  142  81  30  30  16  1  0  0  0  20
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-1.gif
+	move  4
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-1.gif
+	move  1
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-3.gif
+
+anim	get
+	loop	0
+	delay	7
+	offset	154 138
+	#sound	Data/CHARS/Sonic/Yeah.wav
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get2.gif
+
+anim	idle
+	loop	1
+	delay	7
+	offset	154 138
+	bbox	142 90 25 49
+	drawmethod	180 175 0 0 0 0 -1
+	frame	data/chars/Manic/Idle0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Manic/Idle1.gif
+	frame	data/chars/Manic/Idle2.gif
+	frame	data/chars/Manic/Idle3.gif
+	frame	data/chars/Manic/Idle4.gif
+	frame	data/chars/Manic/Idle3.gif
+	frame	data/chars/Manic/Idle2.gif
+		offset  154  138
+	frame	data/chars/Manic/Idle1.gif
+
+anim	jump
+	loop	0
+	delay	8
+	offset	154 138
+		bbox  145  88  21  49
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Jump0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+		bbox  144  89  23  35
+		delay  6
+	frame	data/chars/Manic/Jump1.gif
+	frame	data/chars/Manic/Jump2.gif
+	frame	data/chars/Manic/Jump3.gif
+	frame	data/chars/Manic/Jump4.gif
+	frame	data/chars/Manic/Jump5.gif
+	frame	data/chars/Manic/Jump6.gif
+	frame	data/chars/Manic/Jump7.gif
+	frame	data/chars/Manic/Jump8.gif
+		bbox  142  90  27  48
+		delay  8
+		drawmethod  175  175  0  0  0  0  -1
+	frame	data/chars/Manic/Jump9.gif
+	frame	data/chars/Manic/Jump10.gif
+
+anim	walkoff
+	loop	0
+	delay	10
+	offset	154 138
+        Landframe 2
+        Jumpreframe 0 0 0
+		bbox  145  88  21  49
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Jump9.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	frame	data/chars/Manic/Jump10.gif
+	delay	7
+	offset	154 138
+		bbox  0
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get2.gif
+
+anim	Jumpland
+	loop	0
+	offset	154 138
+	delay	6
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get2.gif
+
+anim	jumpattack
+	loop	0
+	delay	9
+	offset	154 138
+	#sound	Data/CHARS/Sonic/hya.wav
+	drawmethod	175 175 0 0 0 0 -1
+		bbox  146  90  21  39
+	frame	data/chars/Manic/JA1-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	attack3	150 111 35 25 13 0 0 0 0 20
+           DropV     1 3
+		bbox  145  92  22  36
+	frame	data/chars/Manic/JA1-1.gif
+
+anim	jumpattack2
+	loop	0
+	delay	5
+	offset	154 138
+	#sound	Data/CHARS/Sonic/hya.wav
+	drawmethod	175 175 0 0 0 0 -1
+	attack2	137 83 39 54 13 0 0 0 0 20
+           DropV     1 2
+		bbox  142  89  30  30
+	frame	data/chars/Manic/JA2-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	drawmethod	185 185 0 0 0 0 -1
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+	frame	data/chars/Manic/JA2-0.gif
+	frame	data/chars/Manic/JA2-1.gif
+	frame	data/chars/Manic/JA2-2.gif
+	frame	data/chars/Manic/JA2-3.gif
+
+anim	land
+	loop	0
+	delay	7
+	offset	154 138
+	#sound	Data/CHARS/Sonic/Yeah.wav
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/Get0.gif
+	frame	data/chars/Manic/Get1.gif
+	frame	data/chars/Manic/Get2.gif
+
+anim	pain
+	loop	0
+	offset	154 138
+	delay	9
+	quakeframe	0 3 4
+	bbox	140 95 25 43
+	#sound	Data/CHARS/Sonic/Pain.wav
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain2.gif
+
+anim	pain2
+	loop	0
+	offset	154 138
+	bbox	140 95 25 43
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-2
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-1
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain2.gif
+	Move	0
+	delay	8
+	frame	data/chars/Manic/pain2.gif
+	frame	data/chars/Manic/pain2.gif
+
+anim	pain3
+	loop	0
+	offset	154 138
+	bbox	140 95 25 43
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain0.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-4
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-3
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-2
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain1.gif
+	Move	-1
+	frame	data/chars/Manic/pain1.gif
+	delay	100
+	frame	data/chars/Manic/pain1.gif
+	Move	0
+	delay	2
+	frame	data/chars/Manic/pain1.gif
+	frame	data/chars/Manic/pain2.gif
+	delay	10
+	frame	data/chars/Manic/pain2.gif
+	frame	data/chars/Manic/pain2.gif
+
+anim	rise
+	loop	0
+		offset  167  120
+	delay	10
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/rise0.gif
+		offset  154  138
+	frame	data/chars/Manic/rise1.gif
+
+anim	run
+	loop	1
+	delay	5
+	offset	154 139
+	drawmethod	175 175 0 0 0 0 -1
+		bbox  142  97  34  41
+	frame	data/chars/Manic/Run0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Manic/Run1.gif
+	frame	data/chars/Manic/Run2.gif
+	frame	data/chars/Manic/Run3.gif
+	frame	data/chars/Manic/Run4.gif
+	frame	data/chars/Manic/Run5.gif
+	frame	data/chars/Manic/Run6.gif
+	frame	data/chars/Manic/Run7.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	2
+	offset	157 134
+	bbox	149  97  21  38
+	move	9
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/RunA0.GIF
+	frame	data/chars/Manic/RunA0.GIF
+	frame	data/chars/Manic/RunA1.GIF
+	frame	data/chars/Manic/RunA1.GIF
+		attack3  158  116  37  19  11  0  0  0  0  20
+	frame	data/chars/Manic/RunA2.GIF
+	frame	data/chars/Manic/RunA2.GIF
+	frame	data/chars/Manic/RunA2.GIF
+	frame	data/chars/Manic/RunA2.GIF
+	frame	data/chars/Manic/RunA2.GIF
+	frame	data/chars/Manic/RunA2.GIF
+	move	5
+		attack3  157  120  33  16  11  0  0  0  0  20
+	frame	data/chars/Manic/RunA3.GIF
+	frame	data/chars/Manic/RunA3.GIF
+	frame	data/chars/Manic/RunA3.GIF
+	frame	data/chars/Manic/RunA3.GIF
+	move	2
+		Attack1  0
+	delay	2
+	frame	data/chars/Manic/RunA4.GIF
+	frame	data/chars/Manic/RunA4.GIF
+	frame	data/chars/Manic/RunA4.GIF
+	frame	data/chars/Manic/RunA4.GIF
+
+anim	special
+	loop	0
+	delay	7
+	Energycost 40 0
+	offset	154 138
+	move	3
+	drawmethod	175 175 0 0 0 0 -1
+	frame	data/chars/Manic/FSP1-13.gif
+	frame	data/chars/Manic/FSP1-12.gif
+	frame	data/chars/Manic/FSP1-11.gif
+	delay	2
+	move	7
+	frame	data/chars/Manic/SP-0.gif
+	frame	data/chars/Manic/SP-0.gif
+		Blast  153  106  33  32  30  0  0  0  20
+	frame	data/chars/Manic/SP-1.gif
+	frame	data/chars/Manic/SP-1.gif
+	frame	data/chars/Manic/FSP1-9.gif
+	frame	data/chars/Manic/FSP1-9.gif
+	frame	data/chars/Manic/SP-3.gif
+	frame	data/chars/Manic/SP-3.gif
+	frame	data/chars/Manic/SP-0.gif
+	frame	data/chars/Manic/SP-0.gif
+	frame	data/chars/Manic/SP-1.gif
+	frame	data/chars/Manic/SP-1.gif
+	frame	data/chars/Manic/FSP1-9.gif
+	frame	data/chars/Manic/FSP1-9.gif
+	frame	data/chars/Manic/SP-3.gif
+	frame	data/chars/Manic/SP-3.gif
+	move	4
+	frame	data/chars/Manic/SP-0.gif
+	frame	data/chars/Manic/SP-0.gif
+	frame	data/chars/Manic/SP-1.gif
+	frame	data/chars/Manic/SP-1.gif
+		Attack1  0
+	frame	data/chars/Manic/FSP1-9.gif
+	frame	data/chars/Manic/FSP1-9.gif
+	move	1
+	frame	data/chars/Manic/SP-3.gif
+	frame	data/chars/Manic/SP-3.gif
+	move	0
+	delay	7
+	frame	data/chars/Manic/FSP1-11.gif
+	frame	data/chars/Manic/FSP1-12.gif
+	frame	data/chars/Manic/FSP1-13.gif
+
+anim	walk
+	loop	1
+	delay	9
+	offset	154 139
+	bbox	145 95 24 45
+		drawmethod  175  175  0  0  0  -1  -1
+	frame	data/chars/Manic/Walk0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Manic/Walk1.gif
+	frame	data/chars/Manic/Walk2.gif
+	frame	data/chars/Manic/Walk3.gif
+	frame	data/chars/Manic/Walk4.gif
+	frame	data/chars/Manic/Walk5.gif
+	frame	data/chars/Manic/Walk6.gif
+	frame	data/chars/Manic/Walk7.gif
+

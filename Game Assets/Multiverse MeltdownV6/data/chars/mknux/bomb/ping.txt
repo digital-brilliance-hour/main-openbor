@@ -1,0 +1,54 @@
+name	Ping
+notgrab 1
+health	1
+speed   0
+nomove 1 0
+type	trap
+jumpheight 0
+#hitenemy 1 0
+grabdistance 51
+candamage enemy cpu player obstacle
+shadow	0
+nolife        1
+#icon	data/chars/misc/ping_icon.gif
+#alpha 5
+
+anim idle
+	loop	0
+	delay	9
+	offset	65 55
+        subentity  Fwind2
+        custentity Fwind2
+        summonframe 1 0 0 0 0
+        unsummonframe 12
+        hitfx   data/sounds/hpain.wav
+        quakeframe 2 1 7
+        hitflash   Flashc
+        blast   2 2 122 97 37 1
+#       attack   2 2 122 97 37 1
+        sound   data/chars/adamx/bomb/bomb2.wav
+	delay	7
+	frame   data/chars/adamx/bomb/ping1.gif
+	delay	3
+	frame   data/chars/adamx/bomb/ping2.gif
+	delay	5
+	frame   data/chars/adamx/bomb/ping3.gif
+	frame   data/chars/adamx/bomb/ping4.gif
+	frame   data/chars/adamx/bomb/ping5.gif
+	delay	7
+	frame   data/chars/adamx/bomb/ping6.gif
+	frame   data/chars/adamx/bomb/ping7.gif
+	delay	9
+	frame   data/chars/adamx/bomb/ping8.gif
+	delay   11
+	frame   data/chars/adamx/bomb/ping9.gif
+	delay   13
+	frame   data/chars/adamx/bomb/ping10.gif
+	delay   1
+        attack  0
+	frame   data/chars/adamx/bomb/empty.gif
+	delay   17
+        attack  0
+	frame   data/chars/adamx/bomb/empty.gif
+	delay   1
+	frame   data/chars/adamx/bomb/empty.gif

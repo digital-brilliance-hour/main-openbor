@@ -1,0 +1,21 @@
+name MGShot
+type None
+shadow 0
+nolife 1
+candamage player npc
+speed 25
+remove 0
+#jugglepoints 1
+
+
+anim	idle
+	loop	1
+	delay	3
+	offset	85 308
+	fastattack 1
+	blast 205 229 33 68 20 0 0 0 20
+	frame	data/chars/MetalGear/0_1051-0.gif
+	frame	data/chars/MetalGear/0_1051-1.gif
+	frame	data/chars/MetalGear/0_1051-2.gif
+	frame	data/chars/MetalGear/0_1051-3.gif
+

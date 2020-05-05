@@ -1,0 +1,243 @@
+music		data/music/BRONX.BOR
+
+background	data/bgs/B2/BG.gif
+panel	        data/bgs/B2/Panal.gif
+
+order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+Wall -100 292 -800 -800   100  100 300 300
+Wall  616 292 1 1  800 800  300 300
+
+spawn1  10  0
+spawn2  30  0
+spawn3  50  0
+spawn4  70  0
+
+spawn	B2PL-0
+coords	32 270 68
+at	0
+
+spawn	B2PL-1
+coords	161 270 111
+at	0
+
+spawn	B2PL-2
+coords	214 270 71
+at	0
+
+spawn	B2PL-3
+coords	407 270 111
+at	0
+
+spawn	B2PL-4
+coords	457 270 68
+at	0
+
+group 14 14
+at 0
+
+#--group1-----
+
+spawn	CHARMELEON_B
+alias       CHARMELEON
+spawnscript data/scripts/noscpos.c
+health	200
+coords	185 270 1
+at	0
+
+spawn	CROCONAW_B
+alias       CROCONAW
+spawnscript data/scripts/noscpos.c
+health	200
+coords	107 270 1
+at	0
+
+spawn	GROVYLE_B
+alias       GROVYLE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	428 270 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270 1
+at	0
+
+spawn	URSARING_B
+alias       URSARING
+spawnscript data/scripts/noscpos.c
+health	200
+coords	277 270 1
+at	0
+
+spawn	ZANGOOSE_B
+alias       ZANGOOSE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	185 270 1
+at	0
+
+spawn	TOXICROAK_B
+alias       TOXICROAK
+spawnscript data/scripts/noscpos.c
+health	200
+coords	505 270 1
+at	0
+
+spawn	GABITE_B
+alias       GABITE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	389 270 1
+at	0
+
+spawn	SABLEYE_B
+alias       SABLEYE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	406 270 1
+at	0
+
+spawn	MIGHTYENA_B
+alias       MIGHTYENA
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270 1
+at	0
+
+spawn	KROKOROK_B
+alias       KROKOROK
+spawnscript data/scripts/noscpos.c
+health	200
+coords	505 270 1
+at	0
+
+spawn	HAUNTER_B
+alias       HAUNTER
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270 1
+at	0
+
+spawn	AIPOM_B
+alias       AIPOM
+spawnscript data/scripts/noscpos.c
+health	200
+coords	506 270 1
+at	0
+
+spawn	ABSOL_B
+alias       ABSOL
+spawnscript data/scripts/noscpos.c
+health	200
+coords	289 270 1
+at	0
+
+#--group1-----
+
+spawn	CHARMELEON_B
+alias       CHARMELEON
+spawnscript data/scripts/noscpos.c
+health	200
+coords	185 270
+at	0
+
+spawn	CROCONAW_B
+alias       CROCONAW
+spawnscript data/scripts/noscpos.c
+health	200
+coords	107 270
+at	0
+
+spawn	GROVYLE_B
+alias       GROVYLE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	428 270
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270
+at	0
+
+spawn	URSARING_B
+alias       URSARING
+spawnscript data/scripts/noscpos.c
+health	200
+coords	277 270
+at	0
+
+spawn	ZANGOOSE_B
+alias       ZANGOOSE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	185 270
+at	0
+
+spawn	TOXICROAK_B
+alias       TOXICROAK
+spawnscript data/scripts/noscpos.c
+health	200
+coords	505 270
+at	0
+
+spawn	GABITE_B
+alias       GABITE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	389 270
+at	0
+
+spawn	SABLEYE_B
+alias       SABLEYE
+spawnscript data/scripts/noscpos.c
+health	200
+coords	406 270
+at	0
+
+spawn	MIGHTYENA_B
+alias       MIGHTYENA
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270
+at	0
+
+spawn	KROKOROK_B
+alias       KROKOROK
+spawnscript data/scripts/noscpos.c
+health	200
+coords	505 270
+at	0
+
+spawn	HAUNTER_B
+alias       HAUNTER
+spawnscript data/scripts/noscpos.c
+health	200
+coords	565 270
+at	0
+
+spawn	AIPOM_B
+alias       AIPOM
+spawnscript data/scripts/noscpos.c
+health	200
+coords	506 270
+at	0
+
+spawn	ABSOL_B
+alias       ABSOL
+spawnscript data/scripts/noscpos.c
+health	200
+coords	289 270
+at	0
+

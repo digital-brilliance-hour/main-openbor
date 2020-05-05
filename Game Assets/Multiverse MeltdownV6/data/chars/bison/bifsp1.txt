@@ -1,0 +1,47 @@
+name	BiFSP1
+type	None
+shadow	0
+nolife  1
+remove  0
+Speed   55
+Nomove 1
+#alpha 4
+candamage enemy obstacle
+
+palette       data/chars/Bison/B502.pcx
+
+
+anim idle
+	loop	0
+	delay	2
+	drawmethod scalex 1.0
+	drawmethod scaley 0.8
+ Move 20
+	offset	35 62
+ offset 23 140
+	frame	data/chars/Bison/B502.pcx
+	frame	data/chars/Bison/B502.pcx
+ offset 38 119
+	frame	data/chars/Bison/B503.pcx
+	frame	data/chars/Bison/B503.pcx
+ offset 40 114
+	frame	data/chars/Bison/B504.pcx
+	frame	data/chars/Bison/B504.pcx
+ offset 35 129
+	frame	data/chars/Bison/B505.pcx
+	frame	data/chars/Bison/B505.pcx
+ offset 23 135
+	frame	data/chars/Bison/B506.pcx
+	frame	data/chars/Bison/B506.pcx
+ offset 26 131
+	frame	data/chars/Bison/B507.pcx
+	frame	data/chars/Bison/B507.pcx
+ offset 6 126
+	frame	data/chars/Bison/B508.pcx
+	frame	data/chars/Bison/B508.pcx
+ offset -5 121
+	frame	data/chars/Bison/B509.pcx
+	frame	data/chars/Bison/B509.pcx
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Bison/B509.pcx
+	

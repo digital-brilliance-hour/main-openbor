@@ -1,0 +1,21 @@
+name	TempE
+type	enemy
+shadow	0
+alpha   0
+remove  0
+nomove 1
+Facing 1
+health	20
+
+anim idle
+	delay	100
+	offset	101 87
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+
+

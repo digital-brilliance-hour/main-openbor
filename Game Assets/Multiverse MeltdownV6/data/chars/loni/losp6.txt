@@ -1,0 +1,38 @@
+name	LoSP6
+health	1
+type	none
+shadow	0
+candamage Enemy
+remove 0
+nomove 1
+
+anim idle
+	loop	0
+	delay	4
+	offset	93 207
+	drawmethod scaley 1
+	drawmethod scalex 1
+	blast 72 146 121 60 30 0 0 0 0 35
+	drop 3 5
+	frame	data/chars/Loni/0_3310-0.gif
+	frame	data/chars/Loni/0_3310-1.gif
+	frame	data/chars/Loni/0_3310-2.gif
+	frame	data/chars/Loni/0_3310-3.gif
+	frame	data/chars/Loni/0_3310-0.gif
+	frame	data/chars/Loni/0_3310-1.gif
+	frame	data/chars/Loni/0_3310-2.gif
+	frame	data/chars/Loni/0_3310-3.gif
+	frame	data/chars/Loni/0_3310-0.gif
+	frame	data/chars/Loni/0_3310-1.gif
+	frame	data/chars/Loni/0_3310-2.gif
+	frame	data/chars/Loni/0_3310-3.gif
+	frame	data/chars/Loni/0_3310-0.gif
+	frame	data/chars/Loni/0_3310-1.gif
+	frame	data/chars/Loni/0_3310-2.gif
+	frame	data/chars/Loni/0_3310-3.gif
+	frame	data/chars/Loni/0_3310-0.gif
+	frame	data/chars/Loni/0_3310-1.gif
+	frame	data/chars/Loni/0_3310-2.gif
+	frame	data/chars/Loni/0_3310-3.gif
+		@cmd killentity getlocalvar("self")
+	frame	data/chars/Loni/0_511-0.gif

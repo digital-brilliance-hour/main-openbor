@@ -1,0 +1,169 @@
+name		Stomper
+health		20
+nolife  	1
+speed		10
+type		enemy
+aimove		chase
+gfxshadow     	1
+cantgrab 	1
+nodieblink 	2
+death		1
+nodrop		2
+nopain		1
+icon		data/chars/Stomper/icon.gif
+diesound  	data/sounds/exp.wav
+
+
+anim idle
+	loop	1
+	delay	20
+	offset	126 124
+	bbox	110 16 34 43
+	frame	data/chars/Stomper/stand.gif
+
+anim walk
+	loop	1
+	delay	3
+	offset	126 124
+	bbox	110 16 34 43
+	frame	data/chars/Stomper/walk.gif
+	frame	data/chars/Stomper/stand.gif
+
+
+anim attack1
+	range	0 30
+	delay	3
+	offset	126 124
+	bbox	110 16 34 43
+           noreflect 1
+	attack	107 42 38 22 14 1
+	frame	data/chars/Stomper/act1.gif
+	attack	107 45 38 32 14 1
+	frame	data/chars/Stomper/act2.gif
+	attack	107 44 38 32 14 1
+	frame	data/chars/Stomper/act3.gif
+	attack	107 47 38 32 14 1
+	frame	data/chars/Stomper/act4.gif
+	attack	107 50 38 32 14 1
+	frame	data/chars/Stomper/act5.gif
+	attack	107 54 38 32 14 1
+	frame	data/chars/Stomper/act6.gif
+	attack	107 59 38 32 14 1
+	frame	data/chars/Stomper/act7.gif
+	attack	107 64 38 32 14 1
+	frame	data/chars/Stomper/act8.gif
+	attack	107 68 38 32 14 1
+	frame	data/chars/Stomper/act9.gif
+	attack	107 72 38 32 14 1
+	frame	data/chars/Stomper/act10.gif
+	attack	107 75 38 32 14 1
+	frame	data/chars/Stomper/act11.gif
+	attack	107 80 38 32 14 1
+	frame	data/chars/Stomper/act12.gif
+	attack	107 85 38 32 14 1
+	frame	data/chars/Stomper/act13.gif
+	attack	107 89 38 32 14 1
+	frame	data/chars/Stomper/act14.gif
+	delay	16
+	attack	107 91 38 32 14 1
+	frame	data/chars/Stomper/act15.gif
+	delay	3
+	attack	107 89 38 32 14 1
+	frame	data/chars/Stomper/act14.gif
+	attack	107 85 38 32 14 1
+	frame	data/chars/Stomper/act13.gif
+	attack	107 80 38 32 14 1
+	frame	data/chars/Stomper/act12.gif
+	attack	107 75 38 32 14 1
+	frame	data/chars/Stomper/act11.gif
+	attack	107 72 38 32 14 1
+	frame	data/chars/Stomper/act10.gif
+	attack	107 68 38 32 14 1
+	frame	data/chars/Stomper/act9.gif
+	attack	107 64 38 32 14 1
+	frame	data/chars/Stomper/act8.gif
+	attack	107 59 38 32 14 1
+	frame	data/chars/Stomper/act7.gif
+	attack	107 54 38 32 14 1
+	frame	data/chars/Stomper/act6.gif
+	attack	107 50 38 32 14 1
+	frame	data/chars/Stomper/act5.gif
+	attack	107 47 38 32 14 1
+	frame	data/chars/Stomper/act4.gif
+	attack	107 44 38 32 14 1
+	frame	data/chars/Stomper/act3.gif
+	attack	107 45 38 32 14 1
+	frame	data/chars/Stomper/act2.gif
+	attack	107 42 38 22 14 1
+	frame	data/chars/Stomper/act1.gif
+
+anim pain
+	loop	0
+	delay	4
+	offset	126 124
+	bbox	110 16 34 43
+	frame	data/chars/Stomper/stand.gif
+
+anim fall
+	loop	1
+	delay	4
+	offset	126 62
+	attack	110 16 34 43 14 1
+	frame	data/chars/Stomper/stand.gif
+
+anim rise
+	loop	0
+	delay	2
+	offset	126 62
+	frame	data/chars/Stomper/stand.gif
+	offset	126 66
+	frame	data/chars/Stomper/stand.gif
+	offset	126 70
+	frame	data/chars/Stomper/stand.gif
+	offset	126 74
+	frame	data/chars/Stomper/stand.gif
+	offset	126 78
+	frame	data/chars/Stomper/stand.gif
+	offset	126 82
+	frame	data/chars/Stomper/stand.gif
+	offset	126 86
+	frame	data/chars/Stomper/stand.gif
+	offset	126 90
+	frame	data/chars/Stomper/stand.gif
+	offset	126 94
+	frame	data/chars/Stomper/stand.gif
+	offset	126 98
+	frame	data/chars/Stomper/stand.gif
+	offset	126 106
+	frame	data/chars/Stomper/stand.gif
+	offset	126 110
+	frame	data/chars/Stomper/stand.gif
+	offset	126 114
+	frame	data/chars/Stomper/stand.gif
+	offset	126 118
+	frame	data/chars/Stomper/stand.gif
+	offset	126 122
+	frame	data/chars/Stomper/stand.gif
+	offset	126 124
+	frame	data/chars/Stomper/stand.gif
+
+anim death
+	loop	0
+	delay	5
+	offset	45 125
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif
+
+
+

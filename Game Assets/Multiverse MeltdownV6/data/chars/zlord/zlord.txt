@@ -1,0 +1,409 @@
+name	zlord
+health	500
+speed	6
+type	enemy
+shadow	3
+dust    dust
+cantgrab 1
+aggression 150
+#bflash bflash
+#blockodds 1
+#thold     49
+#nopain 1
+nodrop 1
+#falldie	1
+#nodieblink 3
+aimove chase
+icon	data/chars/zlord/icon.gif
+icondie    data/chars/misc/icond.gif
+#diesound data/sounds/ogdie.wav
+#lifebarstatus 100 5 0 1 0 0 0 0 0 
+#lifeposition 120 200
+#nameposition 130 190 
+#iconposition 100 200
+fmap 1
+jugglepoints 2
+
+#running 22	3.9	2.80	1	1
+gfxshadow 1
+grabdistance 26
+escapehits 5
+
+palette	data/chars/zlord/idle.gif
+
+alternatepal	data/chars/zlord/testpal.gif
+alternatepal	data/chars/zlord/testpal2.gif
+
+
+anim spawn
+	loop	0
+	offset	65 200
+	bbox	47 108 38 100
+	delay	1
+	sound data/sounds/ogdie.wav
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/idle.gif
+
+anim idle
+	loop	1
+	offset	65 200
+	bbox 45 116 41 88
+	delay	1
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/idle.gif
+
+anim walk
+	loop	1
+	offset	65 200
+	bbox 45 119 29 81
+	delay   8
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/walk01.gif
+	frame	data/chars/zlord/walk02.gif
+	frame	data/chars/zlord/walk03.gif
+	frame	data/chars/zlord/walk04.gif
+	frame	data/chars/zlord/walk05.gif
+	frame	data/chars/zlord/walk06.gif
+	frame	data/chars/zlord/walk07.gif
+	frame	data/chars/zlord/walk08.gif
+	frame	data/chars/zlord/walk09.gif
+	frame	data/chars/zlord/walk10.gif
+	frame	data/chars/zlord/walk11.gif
+	frame	data/chars/zlord/walk12.gif
+
+anim pain
+	loop	0
+	delay	3
+	offset	65 200
+	bbox 37 127 46 71
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/pain1.gif
+	offset  67 200
+	frame	data/chars/zlord/pain1.gif
+	offset  65 200
+	frame	data/chars/zlord/pain1.gif
+	offset  67 200
+	frame	data/chars/zlord/pain1.gif
+	offset  65 200
+	delay   18
+	frame	data/chars/zlord/pain1.gif
+
+anim	pain2
+	loop	0
+	offset	65 200
+	bbox 37 127 46 71
+	delay	3
+	quakeframe	0 3 4
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	Move	-3
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-2
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-1
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	0
+	delay	8
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+
+anim	pain3
+	loop	0
+	delay	2
+	offset	65 200
+	bbox 37 127 46 71
+	quakeframe	0 3 4
+	Move	-5
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-4
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-3
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-2
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	-1
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	Move	0
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+	delay	8
+	frame	data/chars/zlord/pain1.gif
+	frame	data/chars/zlord/pain1.gif
+
+anim fall
+	loop	0
+	delay	10
+	offset	60 210
+	Landframe	3
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	bbox 29 128 64 78
+	attack1 29 128 64 78 10 0 0 0 0 20
+	frame	data/chars/zlord/fall1.gif
+	offset	65 214
+	delay	500
+	bbox 15 169 86 39
+	attack1 15 169 86 39 10 0 0 0 0 20
+	frame	data/chars/zlord/fall3.gif
+	bbox 0 0 0 0
+	delay	7
+	Attack1	0
+	offset	65 197
+	frame	data/chars/zlord/fall2.gif
+	offset	65 200
+	frame	data/chars/zlord/fall3.gif
+	offset	65 197
+	frame	data/chars/zlord/fall2.gif
+
+anim rise
+	loop	0
+	offset	65 200
+	delay	35
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/a101.gif
+
+anim attack1
+	range	0 60
+	loop	0
+	bbox 30 134 53 65
+	delay	2
+	offset	65 200
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/a101.gif
+	offset	67 200
+	frame	data/chars/zlord/a101.gif
+	offset	65 200
+	frame	data/chars/zlord/a101.gif
+	offset	67 200
+	frame	data/chars/zlord/a101.gif
+	offset	65 200
+	frame	data/chars/zlord/a101.gif
+	offset	67 200
+	frame	data/chars/zlord/a101.gif
+	offset	65 200
+	frame	data/chars/zlord/a101.gif
+	offset	67 200
+	frame	data/chars/zlord/a101.gif
+	offset	65 200
+	frame	data/chars/zlord/a101.gif
+	offset	67 200
+	frame	data/chars/zlord/a101.gif
+
+	delay	6
+	frame	data/chars/zlord/a102.gif
+	bbox 40 116 46 83
+	frame	data/chars/zlord/a103.gif
+	bbox 57 120 59 80
+	frame	data/chars/zlord/a104.gif
+	attack3 76 157 71 43 15 0 1 0 10 0
+	bbox 68 152 74 50
+	frame	data/chars/zlord/a105.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a106.gif
+	bbox 49 137 46 63
+	frame	data/chars/zlord/a107.gif
+	bbox 43 128 44 69
+	frame	data/chars/zlord/a108.gif
+
+anim attack2
+	range	161 220
+	loop	0
+	offset	65 200
+	bbox 47 119 46 81
+
+	delay	1
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+
+	delay	1
+	move 3
+	attack3 63 120 69 80 25 1 0 0 15 0
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run1.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run2.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run3.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run4.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run5.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	frame	data/chars/zlord/run6.gif
+	delay	6
+	attack1 0
+	bbox 65 163 80 37
+	frame	data/chars/zlord/a106.gif
+	bbox 54 141 44 58
+	frame	data/chars/zlord/a107.gif
+	frame	data/chars/zlord/a108.gif
+
+anim attack3
+	range	121 180
+	loop	0
+	offset	65 200
+	bbox 37 116 55 79
+	delay	5
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/a201.gif
+	frame	data/chars/zlord/a202.gif
+	bbox 55 130 71 72
+	frame	data/chars/zlord/a203.gif
+	bbox 59 132 58 67
+	attack3 73 130 124 69 20 0 0 0 0 20
+	frame	data/chars/zlord/a204.gif
+	attack3 84 132 158 66 20 0 0 0 0 20
+	frame	data/chars/zlord/a205.gif
+	frame	data/chars/zlord/a206.gif
+	frame	data/chars/zlord/a207.gif
+	frame	data/chars/zlord/a208.gif
+	frame	data/chars/zlord/a209.gif
+	frame	data/chars/zlord/a210.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a211.gif
+	bbox 48 118 64 84
+	frame	data/chars/zlord/a212.gif
+	bbox 50 116 50 87
+	frame	data/chars/zlord/a213.gif
+	bbox 49 118 45 83
+	frame	data/chars/zlord/a214.gif
+
+anim	Special2
+	loop	0
+	offset	65 200
+	delay	5
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/zlord/a201.gif
+	frame	data/chars/zlord/a202.gif
+	frame	data/chars/zlord/a203.gif
+	attack3 73 130 124 69 20 0 0 0 0 20
+	frame	data/chars/zlord/a204.gif
+	attack3 84 132 158 66 20 0 0 0 0 20
+	frame	data/chars/zlord/a205.gif
+	frame	data/chars/zlord/a206.gif
+	frame	data/chars/zlord/a207.gif
+	frame	data/chars/zlord/a208.gif
+	frame	data/chars/zlord/a209.gif
+	frame	data/chars/zlord/a210.gif
+	attack1 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a211.gif
+	frame	data/chars/zlord/a212.gif
+	frame	data/chars/zlord/a213.gif
+	frame	data/chars/zlord/a214.gif

@@ -1,0 +1,852 @@
+name	SPAWN
+health	500
+mp 80
+mprate 10
+speed	14
+type	player
+icon     data/chars/Spawn/IconA.gif 1
+iconget  data/chars/Spawn/IconB.gif 1
+iconpain data/chars/Spawn/IconC.gif 1
+icondie  data/chars/Spawn/IconC.gif 1
+
+
+
+
+running 24	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/Spawn/PalG
+
+alternatepal  data/chars/Spawn/Pal1
+alternatepal  data/chars/Spawn/Pal2
+alternatepal  data/chars/Spawn/Pal3
+alternatepal  data/chars/Spawn/Pal4
+alternatepal  data/chars/Spawn/Pal5
+alternatepal  data/chars/Spawn/Pal6
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	cancel	3 6 0 a freespecial
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 63 127
+	bbox 33 11 68 90
+ frame data/chars/Spawn/106.gif
+	move	4
+	attack1 60 20 55 82 11 0 0 0 0 20
+	bbox 33 17 68 83
+ offset 60 127
+ frame data/chars/Spawn/107.gif
+ offset 60 127
+ frame data/chars/Spawn/108.gif
+		Attack1  0
+	move	0
+	delay	2
+ offset 59 120
+	bbox 18 3 66 92
+ frame data/chars/Spawn/109.gif
+ frame data/chars/Spawn/109.gif
+ frame data/chars/Spawn/109.gif
+ frame data/chars/Spawn/109.gif
+
+anim	dodge
+	loop	0
+	delay	9
+ offset 65 81
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/Spawn/23.gif
+ offset 201 155
+	delay	7
+	frame	data/chars/Spawn/Dodge0.gif
+	frame	data/chars/Spawn/Dodge1.gif
+	frame	data/chars/Spawn/Dodge2.gif
+	frame	data/chars/Spawn/Dodge3.gif
+	delay	4
+ offset 65 81
+	frame	data/chars/Spawn/23.gif
+ offset 70 104
+ frame data/chars/Spawn/21.gif
+
+anim	fall
+	loop	0
+	delay	12
+	quakeframe	0 3 4
+	Landframe	3
+	bbox	110 57 101 70
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 110 57 101 70
+ offset 169 174
+        frame   data/chars/Spawn/Fall0.gif
+	bbox 93 75 121 44
+ offset 169 166
+        frame   data/chars/Spawn/Fall1.gif
+ offset 169 155
+	delay	200
+	bbox 101 75 102 44
+        frame   data/chars/Spawn/Fall2.gif
+	bbox	0 0 0 0
+	delay	6
+	Attack1	0
+ offset 169 150
+        frame   data/chars/Spawn/Fall3.gif
+ offset 169 138
+        frame   data/chars/Spawn/Fall1.gif
+ offset 169 150
+        frame   data/chars/Spawn/Fall3.gif
+
+anim	freespecial
+	loop	0
+	delay	6
+	cancel	3 6 0 a freespecial2
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox	13 4 76 91
+ offset 59 120
+ frame data/chars/Spawn/110.gif
+	move	4
+	bbox	23 9 77 88
+	attack1 57 21 67 76 11 0 0 0 0 20
+ offset 66 121
+ frame data/chars/Spawn/111.gif
+	move	0
+ offset 64 120
+ frame data/chars/Spawn/112.gif
+	attack1	0
+	delay	2
+ offset 59 119
+	bbox	13 4 76 91
+ frame data/chars/Spawn/113.gif
+ frame data/chars/Spawn/113.gif
+ frame data/chars/Spawn/113.gif
+ frame data/chars/Spawn/113.gif
+
+anim	freespecial2
+	loop	0
+	delay	5
+	cancel	3 6 0 a freespecial3
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+		bbox  25 4 50 89
+ offset 93 117
+ frame data/chars/Spawn/124.gif
+	attack1 54 28 99 65 11 0 0 0 0 20
+		bbox  25 6 50 91
+ offset 96 123
+ frame data/chars/Spawn/125.gif
+ offset 95 123
+ frame data/chars/Spawn/126.gif
+		Attack1  0
+	delay	2
+		bbox  25 4 50 89
+ offset 96 119
+ frame data/chars/Spawn/127.gif
+ frame data/chars/Spawn/127.gif
+ frame data/chars/Spawn/127.gif
+ frame data/chars/Spawn/127.gif
+
+anim	freespecial3
+	loop	0
+	hitflash	Flash2
+	delay	6
+	fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+		bbox  14 4 67 90
+	offset 57 119
+ frame data/chars/Spawn/114.gif
+		bbox  25 9 72 90
+ offset 59 122
+ frame data/chars/Spawn/115.gif
+		bbox  43 24 63 82
+ offset 67 132
+	attack3 62 2 68 103 13 0 0 0 0 20
+ frame data/chars/Spawn/116.gif
+ offset 75 132
+		bbox  49 24 63 82
+	attack3 70 2 68 103 13 0 0 0 0 20
+ frame data/chars/Spawn/117.gif
+ frame data/chars/Spawn/117.gif
+		Attack1  0
+		bbox  25 9 72 90
+ offset 59 122
+ frame data/chars/Spawn/118.gif
+		bbox  14 4 67 90
+ offset 57 119
+ frame data/chars/Spawn/119.gif
+
+anim	freespecial4
+	loop	0
+	delay	5
+	Fastattack 1
+	Energycost	10 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 200 174
+	frame	data/chars/Spawn/FSP1-0.gif
+	frame	data/chars/Spawn/FSP1-1.gif
+	frame	data/chars/Spawn/FSP1-2.gif
+	Move 8
+	attack 180 59 94 80 2 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-3.gif
+	Move 0
+	attack 0
+	frame	data/chars/Spawn/FSP1-4.gif
+	attack 180 56 94 80 2 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-5.gif
+	attack 0
+	frame	data/chars/Spawn/FSP1-6.gif
+	attack 180 56 94 80 2 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-7.gif
+	attack 0
+	frame	data/chars/Spawn/FSP1-8.gif
+	attack 180 56 94 80 2 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-9.gif
+	attack 0
+	frame	data/chars/Spawn/FSP1-10.gif
+	frame	data/chars/Spawn/FSP1-11.gif
+	frame	data/chars/Spawn/FSP1-12.gif
+	Move 5
+	attack3 82 0 183 139 8 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-13.gif
+	Move 0
+	attack3 82 48 153 89 8 0 0 0 0 20
+	frame	data/chars/Spawn/FSP1-14.gif
+	frame	data/chars/Spawn/FSP1-14.gif
+	attack 0
+	frame	data/chars/Spawn/FSP1-12.gif
+
+anim	freespecial5
+	loop	0
+	delay	5
+	Energycost	1 1
+	Fastattack	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 200 174
+	frame	data/chars/Spawn/FSP2-0.gif
+	frame	data/chars/Spawn/FSP2-1.gif
+	frame	data/chars/Spawn/FSP2-2.gif
+	frame	data/chars/Spawn/FSP2-3.gif
+	frame	data/chars/Spawn/FSP2-4.gif
+	frame	data/chars/Spawn/FSP2-5.gif
+	frame	data/chars/Spawn/FSP2-6.gif
+	frame	data/chars/Spawn/FSP2-7.gif
+	frame	data/chars/Spawn/FSP2-8.gif
+	frame	data/chars/Spawn/FSP2-9.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg0" 0 0 0
+	@cmd	shoot "SpMg2" 0 0 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg1" 0 0 0
+	@cmd	shoot "SpMg2" 0 2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg0" 0 0 0
+	@cmd	shoot "SpMg2" 0 -2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg1" 0 0 0
+	@cmd	shoot "SpMg2" 0 0 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg0" 0 0 0
+	@cmd	shoot "SpMg2" 0 2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg1" 0 0 0
+	@cmd	shoot "SpMg2" 0 -2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg0" 0 0 0
+	@cmd	shoot "SpMg2" 0 0 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg1" 0 0 0
+	@cmd	shoot "SpMg2" 0 2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg0" 0 0 0
+	@cmd	shoot "SpMg2" 0 -2 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	@cmd	shoot "SpMg1" 0 0 0
+	@cmd	shoot "SpMg2b" 0 0 0
+	frame	data/chars/Spawn/FSP2-11.gif
+	frame	data/chars/Spawn/FSP2-10.gif
+	frame	data/chars/Spawn/FSP2-12.gif
+	frame	data/chars/Spawn/FSP2-8.gif
+	frame	data/chars/Spawn/FSP2-6.gif
+	frame	data/chars/Spawn/FSP2-5.gif
+	frame	data/chars/Spawn/FSP2-2.gif
+	frame	data/chars/Spawn/FSP2-12.gif
+	frame	data/chars/Spawn/FSP2-1.gif
+	frame	data/chars/Spawn/FSP2-0.gif
+
+anim	freespecial6
+	loop	0
+	delay	10
+	followanim	1
+	followcond	1
+	Energycost	2 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	fastattack 1
+ offset 70 104
+ frame data/chars/Spawn/21.gif
+	move 10
+ offset 77 129
+	delay	2
+	attack 64 21 38 82 0 0 0 0 0 0
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+ frame data/chars/Spawn/52.gif
+	move 0
+	delay	7
+ offset 65 81
+	frame	data/chars/Spawn/23.gif
+ offset 70 104
+ frame data/chars/Spawn/21.gif
+ 
+ anim	follow1
+	loop	0
+	delay	4
+	fastattack 1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 185 174
+ frame	data/chars/Spawn/FSP3-0.gif
+	attack1 172 58 55 82 1 0 0 0 0 20
+ frame	data/chars/Spawn/FSP3-1.gif
+ offset 63 127
+	attack1 0
+ frame data/chars/Spawn/106.gif
+	attack1 60 20 55 82 1 0 0 0 0 20
+ offset 60 127
+ frame data/chars/Spawn/107.gif
+ offset 60 127
+ frame data/chars/Spawn/108.gif
+		Attack1  0
+ offset 59 120
+ frame data/chars/Spawn/109.gif
+ offset 87 129
+ frame data/chars/Spawn/120.gif
+ offset 90 130
+	attack 66 42 77 68 1 0 0 0 0 20
+ frame data/chars/Spawn/121.gif
+ offset 92 128
+ frame data/chars/Spawn/122.gif
+ offset 80 126
+		Attack1  0
+ frame data/chars/Spawn/123.gif
+ offset 59 120
+ frame data/chars/Spawn/110.gif
+	attack1 57 21 67 76 1 0 0 0 0 20
+ offset 66 121
+ frame data/chars/Spawn/111.gif
+ offset 64 120
+ frame data/chars/Spawn/112.gif
+	attack1	0
+ offset 59 119
+ frame data/chars/Spawn/113.gif
+ offset 63 127
+ frame data/chars/Spawn/106.gif
+	attack1 60 20 55 82 1 0 0 0 0 20
+ offset 60 127
+ frame data/chars/Spawn/107.gif
+ offset 60 127
+ frame data/chars/Spawn/108.gif
+		Attack1  0
+ offset 59 120
+ frame data/chars/Spawn/109.gif
+ offset 59 120
+ frame data/chars/Spawn/110.gif
+	attack1 57 21 67 76 1 0 0 0 0 20
+ offset 66 121
+ frame data/chars/Spawn/111.gif
+ offset 64 120
+ frame data/chars/Spawn/112.gif
+	attack1	0
+ offset 59 119
+ frame data/chars/Spawn/113.gif
+ offset 63 127
+ frame data/chars/Spawn/106.gif
+	attack1 60 20 55 82 1 0 0 0 0 20
+ offset 60 127
+ frame data/chars/Spawn/107.gif
+ offset 60 127
+ frame data/chars/Spawn/108.gif
+		Attack1  0
+ offset 59 120
+ frame data/chars/Spawn/109.gif
+ offset 59 122
+ frame data/chars/Spawn/115.gif
+ offset 67 132
+	attack1 62 2 68 103 1 0 0 0 0 20
+ frame data/chars/Spawn/116.gif
+ offset 75 132
+	attack1 70 2 68 103 1 0 0 0 0 20
+ frame data/chars/Spawn/117.gif
+		Attack1  0
+ offset 59 122
+ frame data/chars/Spawn/118.gif
+ offset 57 119
+ frame data/chars/Spawn/119.gif
+ offset 100 119
+ frame data/chars/Spawn/128.gif
+ offset 99 128
+	attack1 62 10 82 95 1 0 0 0 0 20
+ frame data/chars/Spawn/129.gif
+ offset 100 123
+ frame data/chars/Spawn/130.gif
+		Attack1  0
+ offset 96 125
+ frame data/chars/Spawn/131.gif
+ offset 93 117
+ frame data/chars/Spawn/124.gif
+	attack1 54 28 99 65 1 0 0 0 0 20
+ offset 96 123
+ frame data/chars/Spawn/125.gif
+ offset 95 123
+ frame data/chars/Spawn/126.gif
+		Attack1  0
+ offset 96 119
+ frame data/chars/Spawn/127.gif
+	delay	7
+ offset 63 127
+ frame data/chars/Spawn/106.gif
+	attack1 60 20 55 82 1 0 0 0 0 20
+ offset 60 127
+	@cmd	shoot "SpNPS" -5 0 0
+ frame data/chars/Spawn/107.gif
+ offset 60 127
+ frame data/chars/Spawn/108.gif
+		Attack1  0
+ offset 59 120
+ frame data/chars/Spawn/109.gif
+ offset 59 120
+ frame data/chars/Spawn/110.gif
+	attack1 57 21 67 76 1 0 0 0 0 20
+ offset 66 121
+	@cmd	shoot "SpNPS" -5 0 0
+ frame data/chars/Spawn/111.gif
+ offset 64 120
+ frame data/chars/Spawn/112.gif
+	attack1	0
+ offset 59 119
+ frame data/chars/Spawn/113.gif
+ offset 100 119
+ frame data/chars/Spawn/128.gif
+ offset 99 128
+	@cmd	shoot "SpNPS" -5 0 0
+	attack 62 10 82 95 1 0 0 0 0 20
+ frame data/chars/Spawn/129.gif
+ offset 100 123
+ frame data/chars/Spawn/130.gif
+	attack 0
+ offset 96 125
+ frame data/chars/Spawn/131.gif
+ offset 59 122
+ frame data/chars/Spawn/115.gif
+ offset 67 132
+	attack3 62 2 68 103 15 1 0 0 0 20
+	@cmd	shoot "SpNPS" -5 0 0
+ frame data/chars/Spawn/116.gif
+ offset 75 132
+	attack3 70 2 68 103 15 1 0 0 0 20
+ frame data/chars/Spawn/117.gif
+		Attack1  0
+ offset 59 122
+ frame data/chars/Spawn/118.gif
+ offset 57 119
+ frame data/chars/Spawn/119.gif
+
+anim	get
+	loop	0
+	delay	7
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 65 81
+	frame	data/chars/Spawn/23.gif
+ offset 70 104
+ frame data/chars/Spawn/21.gif
+
+anim	idle
+	loop	1
+	delay	9
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 69 125
+	bbox 20 5 71 95
+ frame data/chars/Spawn/4.gif
+ offset 72 123
+ frame data/chars/Spawn/5.gif
+ offset 70 124
+ frame data/chars/Spawn/6.gif
+ offset 72 128
+ frame data/chars/Spawn/7.gif
+ offset 73 126
+ frame data/chars/Spawn/8.gif
+ offset 68 123
+ frame data/chars/Spawn/9.gif
+ offset 68 128
+ frame data/chars/Spawn/10.gif
+ offset 73 129
+ frame data/chars/Spawn/11.gif
+ offset 70 128
+ frame data/chars/Spawn/12.gif
+ offset 72 130
+ frame data/chars/Spawn/13.gif
+ offset 73 130
+ frame data/chars/Spawn/14.gif
+
+anim	jump
+	loop	0
+	delay	16
+	bbox	10 28 48 99
+	Dropframe 2
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 46 139
+	bbox	15 8 58 99
+ frame data/chars/Spawn/47.gif
+ offset 51 126
+	bbox	19 5 60 49
+	delay	50
+ frame data/chars/Spawn/48.gif
+ offset 56 173
+	bbox	18 32 58 90
+	delay	4
+ frame data/chars/Spawn/51.gif
+	delay	4
+ offset 56 170
+ frame data/chars/Spawn/51.gif
+ offset 56 167
+ frame data/chars/Spawn/51.gif
+ offset 56 164
+ frame data/chars/Spawn/51.gif
+ offset 56 161
+ frame data/chars/Spawn/51.gif
+
+anim	jumpattack
+	loop	0
+	delay	6
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 40 130
+	bbox	13 2 58 72
+ frame data/chars/Spawn/160.gif
+ offset 57 127
+	bbox	33 2 57 72
+	attack3 52 11 79 70 14 0 0 0 0 20
+ frame data/chars/Spawn/161.gif
+ offset 57 127
+ frame data/chars/Spawn/162.gif
+
+anim	jumpattack2
+	loop	0
+	delay	7
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 35 124
+	bbox	15 2 58 55
+	attack2 21 27 72 36 10 0 0 0 0 20
+ frame data/chars/Spawn/143.gif
+ offset 35 121
+ frame data/chars/Spawn/143.gif
+ offset 35 118
+ frame data/chars/Spawn/143.gif
+ offset 35 115
+ frame data/chars/Spawn/143.gif
+ offset 35 112
+ frame data/chars/Spawn/143.gif
+ offset 35 108
+ frame data/chars/Spawn/143.gif
+ offset 35 104
+ frame data/chars/Spawn/143.gif
+ offset 35 100
+ frame data/chars/Spawn/143.gif
+
+anim	jumpland
+	loop	0
+	delay	7
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 65 81
+	frame	data/chars/Spawn/23.gif
+ offset 70 104
+ frame data/chars/Spawn/21.gif
+
+anim	pain
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ offset 200 174
+	bbox 125 45 89 93
+	frame	data/chars/Spawn/Pain1.gif
+	frame	data/chars/Spawn/Pain1.gif
+	bbox 125 50 89 89
+	frame	data/chars/Spawn/Pain2.gif
+
+anim	pain2
+	loop	0
+ offset 200 174
+	bbox 94 54 78 86
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	Move	-2
+	bbox 125 45 89 93
+	frame	data/chars/Spawn/Pain1.gif
+	frame	data/chars/Spawn/Pain1.gif
+	Move	-1
+	frame	data/chars/Spawn/Pain1.gif
+	bbox 125 50 89 89
+	frame	data/chars/Spawn/Pain2.gif
+	Move	0
+	delay	8
+	frame	data/chars/Spawn/Pain2.gif
+	frame	data/chars/Spawn/Pain2.gif
+
+anim	pain3
+	loop	0
+ offset 200 174
+	bbox 94 54 78 86
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	Move	-4
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	frame	data/chars/Spawn/Pain0.gif
+	Move	-3
+	bbox 125 45 89 93
+	frame	data/chars/Spawn/Pain1.gif
+	frame	data/chars/Spawn/Pain1.gif
+	frame	data/chars/Spawn/Pain1.gif
+	Move	-2
+	frame	data/chars/Spawn/Pain1.gif
+	frame	data/chars/Spawn/Pain1.gif
+	Move	-1
+	frame	data/chars/Spawn/Pain1.gif
+	delay	100
+	frame	data/chars/Spawn/Pain1.gif
+	Move	0
+	bbox 125 50 89 89
+	delay	8
+	frame	data/chars/Spawn/Pain2.gif
+	frame	data/chars/Spawn/Pain2.gif
+	delay	10
+	delay	8
+	frame	data/chars/Spawn/Pain2.gif
+	frame	data/chars/Spawn/Pain2.gif
+
+anim	rise
+	loop	0
+	delay	7
+ offset 169 150
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	frame	data/chars/Spawn/Rise0.gif
+	frame	data/chars/Spawn/Rise1.gif
+ offset 175 154
+	frame	data/chars/Spawn/Rise2.gif
+ offset 178 154
+	frame	data/chars/Spawn/Rise3.gif
+
+anim	run
+	loop	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ delay 5
+ offset 54 119
+	bbox 26 8 63 87
+ frame data/chars/Spawn/33.gif
+ offset 66 123
+	bbox 37 11 63 87
+ frame data/chars/Spawn/34.gif
+ offset 54 126
+	bbox 27 11 63 87
+ frame data/chars/Spawn/35.gif
+ offset 58 122
+ frame data/chars/Spawn/36.gif
+ offset 52 117
+	bbox 25 7 63 87
+ frame data/chars/Spawn/27.gif
+ offset 51 118
+ frame data/chars/Spawn/28.gif
+ offset 49 118
+ frame data/chars/Spawn/29.gif
+ offset 42 118
+	bbox 17 6 63 87
+ frame data/chars/Spawn/30.gif
+ offset 50 118
+	bbox 22 6 63 87
+ frame data/chars/Spawn/31.gif
+ offset 54 117
+ frame data/chars/Spawn/32.gif
+
+anim	runattack
+	loop	0
+	delay	7
+	move	4
+	Jumpframe 0 2 3
+	Landframe 3
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	bbox 149 72 75 58
+ offset 200 174
+	attack3 177 74 72 67 0 0 0 0 0 20
+ frame data/chars/Spawn/RunA-0.gif
+	bbox 139 60 74 77
+	attack3 177 69 72 69 0 0 0 0 0 20
+ frame data/chars/Spawn/RunA-1.gif
+	delay	70
+	bbox 133 51 74 80
+	attack3 172 52 91 80 0 0 0 0 0 20
+ frame data/chars/Spawn/RunA-2.gif
+	delay	4
+ offset 65 81
+	bbox 15 6 72 60
+	frame	data/chars/Spawn/23.gif
+ offset 70 104
+	bbox 13 2 69 79
+ frame data/chars/Spawn/21.gif
+
+anim	special
+	loop	0
+	delay	6
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+	Energycost	40 0
+ offset 205 174
+	frame	data/chars/Spawn/SP-2.gif
+	frame	data/chars/Spawn/SP-0.gif
+	frame	data/chars/Spawn/SP-1.gif
+	frame	data/chars/Spawn/SP-3.gif
+	frame	data/chars/Spawn/SP-4.gif
+	frame	data/chars/Spawn/SP-5.gif
+	@cmd	shoot "SpawnSPA" 0 0 0
+	@cmd	shoot "SpawnSPB" 0 0 0
+	frame	data/chars/Spawn/SP-6.gif
+	frame	data/chars/Spawn/SP-7.gif
+	frame	data/chars/Spawn/SP-8.gif
+	frame	data/chars/Spawn/SP-9.gif
+	frame	data/chars/Spawn/SP-10.gif
+	frame	data/chars/Spawn/SP-8.gif
+	frame	data/chars/Spawn/SP-9.gif
+	frame	data/chars/Spawn/SP-10.gif
+	frame	data/chars/Spawn/SP-8.gif
+	frame	data/chars/Spawn/SP-9.gif
+	frame	data/chars/Spawn/SP-10.gif
+	frame	data/chars/Spawn/SP-11.gif
+ offset 205 174
+	frame	data/chars/Spawn/SP-12.gif
+
+anim	walk
+	loop	1
+	drawmethod scalex 0.9
+	drawmethod scaley 0.8
+ delay 9
+ offset 54 119
+	bbox 26 8 63 87
+ frame data/chars/Spawn/33.gif
+ offset 66 123
+	bbox 37 11 63 87
+ frame data/chars/Spawn/34.gif
+ offset 54 126
+	bbox 27 11 63 87
+ frame data/chars/Spawn/35.gif
+ offset 58 122
+ frame data/chars/Spawn/36.gif
+ offset 52 117
+	bbox 25 7 63 87
+ frame data/chars/Spawn/27.gif
+ offset 51 118
+ frame data/chars/Spawn/28.gif
+ offset 49 118
+ frame data/chars/Spawn/29.gif
+ offset 42 118
+	bbox 17 6 63 87
+ frame data/chars/Spawn/30.gif
+ offset 50 118
+	bbox 22 6 63 87
+ frame data/chars/Spawn/31.gif
+ offset 54 117
+ frame data/chars/Spawn/32.gif
+
+anim	walkoff
+	loop	0
+	delay	10
+	offset	23 77
+	Landframe	2
+	Jumpreframe	0 0 0
+	bbox	6 2 40 75
+	frame	data/chars/mike/93.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	offset	26 71
+	bbox	5 0 44 72
+	frame	data/chars/mike/94.gif
+	delay	4
+	offset	24 52
+	bbox	0
+	frame	data/chars/mike/91.gif
+	frame	data/chars/mike/91.gif
+	frame	data/chars/mike/91.gif
+

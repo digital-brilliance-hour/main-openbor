@@ -1,0 +1,21 @@
+name TalSP
+type pshot
+shadow 0
+nolife 1
+offscreenkill 5000
+candamage enemy obstacle shot
+speed  45
+remove 0
+
+
+anim	idle
+	loop	1
+	delay	6
+	offset	263 242
+	Fastattack	1
+	blast   94 92 328 167  40  0  0  0  50
+	frame	data/chars/Talbain/SP0.gif
+	frame	data/chars/Talbain/SP1.gif
+	frame	data/chars/Talbain/SP2.gif
+	frame	data/chars/Talbain/SP3.gif
+

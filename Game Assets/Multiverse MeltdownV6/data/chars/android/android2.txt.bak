@@ -1,0 +1,306 @@
+name	Android
+health	60
+speed	10
+type	enemy
+gfxshadow 1
+falldie 1
+#nodieblink 2
+icon	  data/chars/android/icon.gif
+iconpain  data/chars/android/iconP.gif
+icondie   data/chars/android/iconD.gif
+diesound data/sounds/cure.wav
+candamage Enemy Player
+palette       data/chars/android/Pal
+alternatepal  data/chars/android/FreezeM.gif
+fmap 1
+
+anim idle
+	loop	1
+	delay	15
+	offset	52	100
+	bbox	32	44	35	57
+	frame	data/chars/android/at1.gif
+
+
+
+anim walk
+
+	loop	1
+	delay	15
+	offset	51	101
+	bbox	40	42	24	58
+	frame	data/chars/android/walk1.gif
+	frame	data/chars/android/walk2.gif
+	frame	data/chars/android/walk3.gif
+	frame	data/chars/android/walk4.gif
+	frame	data/chars/android/walk5.gif
+	frame	data/chars/android/walk6.gif
+	frame	data/chars/android/walk7.gif
+	frame	data/chars/android/walk8.gif
+
+anim pain
+	loop	0
+	offset	45	100
+	bbox	24	49	36	51
+	delay	15
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/pain3.gif
+	frame	data/chars/android/pain2.gif
+	frame	data/chars/android/pain1.gif
+
+anim BPAIN
+	loop	0
+	sound	data/sounds/alienp1.wav
+	offset	45	100
+	delay	3
+	bbox	28	52	28	47
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/BurnP.gif
+	frame	data/chars/android/pain4.gif
+
+anim SPAIN
+	loop	0
+	sound	data/sounds/alienp1.wav
+	offset	45	100
+	delay	3
+	bbox	24	49	36	51
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/ShockP.gif
+	frame	data/chars/android/pain4.gif
+
+anim pain2
+	loop	0
+	offset	45	100
+	delay	6
+	bbox	24	49	36	51
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+	frame	data/chars/android/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	45	100
+	delay	3
+	bbox	24	49	36	51
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/DrainP.gif
+	frame	data/chars/android/pain4.gif
+
+anim fall
+	loop	0
+	offset	60 89
+	bbox	44	41	30	48
+        attack1	44	41	30	48	10  1  0  0  0  20
+	delay	20
+	move	2
+	frame	data/chars/android/flip1.gif
+	bbox  41  21  31  66
+        attack1	41  21  31  66 10  1  0  0  0  20
+	frame	data/chars/android/flip2.gif
+	bbox  46  43  37  44
+        attack1	46  43  37  44 10  1  0  0  0  20
+	frame	data/chars/android/flip3.gif
+		offset  55  91
+	bbox  41  40  26  47
+        attack1	41  40  26  47 10  1  0  0  0  20
+	frame	data/chars/android/flip4.gif
+	bbox  25  40  58  32
+        attack1	25  40  58  32 10  1  0  0  0  20
+        frame	data/chars/android/flip5.gif
+		offset  50  92
+	bbox  44  46  33  48
+        attack1	44  46  33  48 10  1  0  0  0  20
+        frame	data/chars/android/flip6.gif
+	delay	10
+	bbox  43  44  26  48
+        attack1	43  44  26  48 10  1  0  0  0  20
+        frame	data/chars/android/flip7.gif
+
+anim BURN
+	loop	0
+	offset	57 94
+	delay	3
+	bbox	29	40	55	35
+	attack1	29 40 55 35 10 1  0  0  0  20
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/BurnF.gif
+	frame	data/chars/android/flip5.gif
+		bbox  0
+		Attack1  0
+	frame	data/chars/android/flip6.gif
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/android/flip7.gif
+
+anim Shock
+	loop	0
+	offset	70 85
+	delay	3
+	bbox	24	49	36	51
+	attack1	32 22 39 41 10 1
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/ShockF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/flip6.gif
+	attack1	19 30 49 32 10 1
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/android/flip7.gif
+
+anim Fall3
+	loop	0
+	offset	70 85
+	delay	3
+	bbox	24	49	36	51
+	attack1	32 22 39 41 10 1
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/DrainF.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/flip6.gif
+	attack1	19 30 49 32 10 1
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/android/flip7.gif
+
+anim death
+	loop	0
+	offset 	139	177
+	delay	8
+	frame	data/chars/android/smoke1.gif
+	frame	data/chars/android/smoke2.gif
+	frame	data/chars/android/smoke3.gif
+	frame	data/chars/android/smoke4.gif
+	frame	data/chars/android/smoke5.gif
+	frame	data/chars/android/smoke6.gif
+
+anim rise
+	loop	0
+	offset	70 85
+	delay	12
+	frame	data/chars/android/pain1.gif
+
+
+anim attack1
+	loop	0
+        range   0	100
+	offset	52	100
+	bbox	38	47	28	52
+	delay	10
+	frame	data/chars/android/at1.gif
+	delay	20
+        attack1	54	68	57	20	12  0  0  0  0  20
+		offset  38  103
+		bbox  27  53  36  48
+	frame	data/chars/android/at3.gif
+        attack1	0
+		offset  52  100
+		bbox  38  47  29  53
+	frame	data/chars/android/at1.gif
+
+
+

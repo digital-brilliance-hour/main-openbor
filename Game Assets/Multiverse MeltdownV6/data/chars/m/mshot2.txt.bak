@@ -1,0 +1,17 @@
+name MShot2
+type none
+shadow 0
+nolife 1
+candamage Player
+speed 24
+remove 0
+
+
+anim idle
+	loop	1
+	delay	4
+	offset	151 141
+		attack2  173  119  9  24  25  0  0  0  0  20
+        DropV   1 2
+	frame	data/chars/m/MShot2.gif
+

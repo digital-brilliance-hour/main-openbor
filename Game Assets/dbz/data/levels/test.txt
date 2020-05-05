@@ -1,0 +1,82 @@
+direction	both
+cameratype 1
+settime 0 
+notime 1
+
+spawn2 150 100 829
+spawn1 1150  400 829
+spawn3 150 300 829
+
+
+
+scrollspeed 50
+bgspeed	 10	Left
+fglayer data/bgs/light1.png 2300 0.5 0 -250 -5 0 0 1 1 1 1 0 0 0 0 0
+background	data/bgs/kkbg.png
+panel		data/bgs/kkpanel.png
+
+
+music		data/music/f.ogg
+
+
+
+#background	data/bgs/2.png
+#panel		data/bgs/dammy.gif	
+
+order	a
+
+#-------1
+
+
+
+
+
+group   1 1
+at      0
+
+spawn  delay
+         health  1
+	coords  320  400  100
+	at  0
+
+
+
+spawn  fight
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+	coords  0 0
+	at  0
+
+spawn  18
+coords 600 605
+at     0
+
+group   1 1
+at      0
+
+
+
+spawn  comp
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+	coords  0 0
+	at  0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0

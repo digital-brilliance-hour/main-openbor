@@ -1,0 +1,433 @@
+name	THUNDAGON_N
+health	1000
+mp 80
+mprate 8
+speed	10
+type	NPC
+hostile Enemy
+AIMove chase
+candamage Enemy Obsticle
+aggression  200
+icon     data/chars/wormwood/icon.gif 1
+iconget  data/chars/Sonic/Icon-B.gif 1
+iconpain data/chars/Sonic/Icon-C.gif 1
+icondie  data/chars/Sonic/Icon-D.gif 1
+
+
+running 20 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+palette       data/chars/wormwood/PalT
+
+#alternatepal  data/chars/Sonic/Map1
+#alternatepal  data/chars/Sonic/Map2
+#alternatepal  data/chars/Sonic/Map3
+#alternatepal  data/chars/Sonic/Map4
+#alternatepal  data/chars/Sonic/Map5
+
+animationscript data/scripts/script.c
+
+
+
+com a2 Freespecial1
+com a3 Freespecial2
+com a4 Freespecial3
+jumpmove  3  2
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+        Range 0 1
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  13  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  13  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	attack2
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+        Range 0 1
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  13  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  13  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	attack3
+	loop	0
+	delay	5
+	offset	113 127
+	bbox	102 101 28 29
+        Range 0 1
+	frame	data/chars/wormwood/A1-0.GIF
+	frame	data/chars/wormwood/A1-1.GIF
+		bbox  102  89  23  40
+	frame	data/chars/wormwood/A1-2.GIF
+	frame	data/chars/wormwood/A1-3.GIF
+	attack2	113 107 31 27 15 0 0 0 0 20
+           DropV     1 2
+		offset  109  127
+		bbox  96  102  36  25
+		move  8
+	frame	data/chars/wormwood/A1-4.GIF
+		attack2  112  108  35  24  13  0  0  0  0  20
+		move  0
+	frame	data/chars/wormwood/A1-5.GIF
+		attack2  112  108  31  24  13  0  0  0  0  20
+	frame	data/chars/wormwood/A1-6.GIF
+
+anim	DODGE
+	loop	0
+	delay	4
+	offset    113  130
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  137
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  142
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  137
+	frame	data/chars/wormwood/SP-0.GIF
+	offset    113  130
+	frame	data/chars/wormwood/SP-0.GIF
+
+anim	fall
+	loop	0
+	delay	8
+	quakeframe	0 3 4
+	Landframe	3
+	offset	113 127
+	attack3	96 87 27 42 10 0 0 0 0 20
+	bbox	96 87 27 42
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	delay	500
+		offset  118  132
+	attack3	98 110 41 26 10 0 0 0 0 20
+	bbox    98 110 41 26
+	frame	data/chars/wormwood/Fall.gif
+	bbox	0
+	Attack1	0
+	delay	8
+	frame	data/chars/wormwood/Fall.gif
+	frame	data/chars/wormwood/Fall.gif
+	frame	data/chars/wormwood/Fall.gif
+
+anim	Freespecial1
+	loop	0
+	delay	5
+	offset	113 127
+	mpcost	10
+           mponly    1
+        hitflash SSlash
+	frame	data/chars/wormwood/A2-0.GIF
+	frame	data/chars/wormwood/A2-1.GIF
+	frame	data/chars/wormwood/A2-2.GIF
+		attack2  110  110  36  21  18  0  0  0  0  20
+		move  15
+	frame	data/chars/wormwood/A2-3.GIF
+		move  0
+	frame	data/chars/wormwood/A2-4.GIF
+
+anim	Freespecial2
+	loop	0
+	delay	20
+	offset	113 127
+	mpcost	15
+	frame	data/chars/wormwood/SP-0.GIF
+	delay	4
+	frame	data/chars/wormwood/SP-1.GIF
+	frame	data/chars/wormwood/SP-2.GIF
+	@cmd	shoot "SBreath" 0 0 0
+	delay	19
+	frame	data/chars/wormwood/SP-3.GIF
+	frame	data/chars/wormwood/SP-3.GIF
+
+anim	Freespecial3
+	loop	0
+	delay	20
+	offset	113 127
+	mpcost	15
+	frame	data/chars/wormwood/SP-0.GIF
+	delay	4
+	frame	data/chars/wormwood/SP-1.GIF
+	frame	data/chars/wormwood/SP-2.GIF
+	@cmd	shoot "DBreath" 0 0 0
+	delay	19
+	frame	data/chars/wormwood/SP-3.GIF
+	frame	data/chars/wormwood/SP-3.GIF
+
+anim	get
+	loop	0
+	delay	25
+	offset	111 127
+	bbox	0 0 0 0
+	frame	data/chars/wormwood/Get.gif
+
+anim	idle
+	loop	1
+	delay	15
+	offset	115 127
+	bbox	101 103 30 26
+	frame	data/chars/wormwood/Idle0.GIF
+	frame	data/chars/wormwood/Idle1.GIF
+	frame	data/chars/wormwood/Idle2.GIF
+	frame	data/chars/wormwood/Idle1.GIF
+		
+anim	spawn
+	delay	6
+	offset	115 127
+	#sound	data/sounds/walk.wav
+	frame	data/chars/wormwood/Idle0.GIF
+	frame	data/chars/empty.gif
+	frame	data/chars/wormwood/Idle0.GIF
+	frame	data/chars/empty.gif
+	frame	data/chars/wormwood/Idle0.GIF
+	frame	data/chars/empty.gif
+	frame	data/chars/wormwood/Idle0.GIF
+
+anim	jump
+	loop	0
+	delay	20
+	offset	113 127
+	frame	data/chars/wormwood/SP-0.GIF
+
+anim	walkoff
+	loop	0
+	loop	0
+	delay	9
+	offset	113 127
+        Landframe 2
+        Jumpreframe 0 0 0
+		bbox  123  100  49  28
+	frame	data/chars/wormwood/SP-0.GIF
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	delay	500
+	frame	data/chars/wormwood/SP-0.GIF
+		bbox  0
+	delay	8
+	frame	data/chars/wormwood/A1-0.gif
+	frame	data/chars/wormwood/A1-0.gif
+
+anim	Jumpland
+	loop	0
+	offset	113 127
+	delay	8
+	frame	data/chars/wormwood/A1-0.gif
+	frame	data/chars/wormwood/A1-0.gif
+
+anim	pain
+	loop	0
+	offset	113 127
+	bbox	96 87 27 42
+	delay	7
+	quakeframe	0 2 4
+	#sound	Data/CHARS/Sonic/Pain.wav
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+
+anim	pain2
+	loop	0
+	offset	113 127
+	bbox	96 87 27 42
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-2
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-1
+	bbox  153  86  28  51
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+
+anim	pain3
+	loop	0
+	offset	113 127
+	bbox	96 87 27 42
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	Move	-5
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-4
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-3
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-2
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	Move	-1
+	frame	data/chars/wormwood/Pain.gif
+	delay	100
+	frame	data/chars/wormwood/Pain.gif
+	Move	0
+	delay	2
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	delay	10
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+
+anim	pain4
+	loop	0
+	delay	6
+	offset  118  132
+	bbox	132 108 50 16
+	#sound	data/chars/Sonic/pain.wav
+		Attack1  0
+	frame	data/chars/wormwood/Fall.gif
+	offset  120  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  118  132
+		bbox  134  111  52  12
+	frame	data/chars/wormwood/Fall.gif
+	offset  120  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  118  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  120  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  118  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  120  132
+	frame	data/chars/wormwood/Fall.gif
+	offset  118  132
+	delay	50
+	frame	data/chars/wormwood/Fall.gif
+	bbox	0 0 0 0
+	delay	12
+	offset	113 127
+	frame	data/chars/wormwood/A2-3.GIF
+	frame	data/chars/wormwood/A2-3.GIF
+
+anim	pain5
+	loop	0
+	offset	113 127
+	bbox	96 87 27 42
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/wormwood/Pain.gif
+	delay	2
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	delay	9
+	frame	data/chars/wormwood/Pain.gif
+
+anim	pain6
+	loop	0
+	offset	113 127
+	bbox	96 87 27 42
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/wormwood/Pain.gif
+	delay	2
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	frame	data/chars/wormwood/Pain.gif
+	delay	9
+	frame	data/chars/wormwood/Pain.gif
+
+anim	rise
+	loop	0
+	delay	12
+	offset	113 127
+	frame	data/chars/wormwood/A2-3.GIF
+	frame	data/chars/wormwood/A2-3.GIF
+
+anim	run
+	loop	1
+	delay	16
+	offset	115 127
+	bbox	104 107 28 22
+	frame	data/chars/wormwood/Walk-0.gif
+		delay  8
+	frame	data/chars/wormwood/Walk-1.gif
+	frame	data/chars/wormwood/Walk-2.gif
+	frame	data/chars/wormwood/Walk-1.gif
+		delay  16
+	frame	data/chars/wormwood/Walk-3.gif
+		delay  8
+	frame	data/chars/wormwood/Walk-5.gif
+	frame	data/chars/wormwood/Walk-4.gif
+	frame	data/chars/wormwood/Walk-5.gif
+
+anim	freespecial4
+	loop	0
+	delay	10
+	offset	113 127
+	frame	data/chars/wormwood/SP-0.GIF
+	delay	4
+	frame	data/chars/wormwood/SP-1.GIF
+	frame	data/chars/wormwood/SP-2.GIF
+	@cmd	shoot "TBlast" 0 0 0
+	delay	12
+	frame	data/chars/wormwood/SP-3.GIF
+	frame	data/chars/wormwood/SP-3.GIF
+
+anim	walk
+	loop	1
+	delay	18
+	offset	115 127
+	bbox	104 107 28 22
+	frame	data/chars/wormwood/Walk-0.gif
+		delay  10
+	frame	data/chars/wormwood/Walk-1.gif
+	frame	data/chars/wormwood/Walk-2.gif
+	frame	data/chars/wormwood/Walk-1.gif
+		delay  18
+	frame	data/chars/wormwood/Walk-3.gif
+		delay  10
+	frame	data/chars/wormwood/Walk-5.gif
+	frame	data/chars/wormwood/Walk-4.gif
+	frame	data/chars/wormwood/Walk-5.gif
+

@@ -1,0 +1,83 @@
+name	ASpit2
+type	enemy
+health	1
+speed   18
+jumpheight 0.6
+shadow	0
+hitenemy 1
+noquake  1
+Candamage  Player  NPC
+palette       data/chars/RoyalG/RG_1005-0.gif
+
+#animationscript       data/scripts/escript.c
+
+anim idle
+	loop	0
+	delay	6
+	offset	222 156
+	drawmethod flipx 1
+	attack.block.penetrate 0
+	attack.damage.force 25
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.position.x 209
+	attack.position.y 146
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 15
+	attack.size.y 15
+	attack.size.z.1 40
+	frame	data/chars/RoyalG/RG_1005-0.gif
+	attack.block.penetrate 0
+	attack.damage.force 25
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.position.x 204
+	attack.position.y 143
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 25
+	attack.size.y 24
+	attack.size.z.1 40
+	frame	data/chars/RoyalG/RG_1005-1.gif
+	attack.block.penetrate 0
+	attack.damage.force 25
+	attack.damage.type 2
+	attack.effect.hit.flash.disable 0
+	attack.position.x 202
+	attack.position.y 140
+	attack.reaction.fall.force 0
+	attack.reaction.pause.time 0
+	attack.size.x 30
+	attack.size.y 26
+	attack.size.z.1 40
+	frame	data/chars/RoyalG/RG_1005-2.gif
+
+anim attack1
+	offset	222 156
+	delay	5
+	DropV	1 2
+	followanim	1
+	followcond	3
+	drawmethod flipx 1
+	frame	data/chars/misc/empty.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+anim	follow1
+	loop	0
+	delay	15
+	offset	222 156
+	move	0
+           fastattack 1
+	frame	data/chars/misc/empty.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+
+anim attack2
+	offset	222 156
+        delay   6
+	frame	data/chars/misc/empty.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+

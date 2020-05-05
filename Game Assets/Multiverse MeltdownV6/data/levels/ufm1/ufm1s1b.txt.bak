@@ -1,0 +1,200 @@
+#ddance
+music           data/music/LetsGo.ogg
+#bossmusic	data/music/MRX.bor
+type 0 0 0
+noreset 0
+settime 0
+# Load images
+background	data/bgs/ground3/light3.gif
+mirror 1
+
+# Front layer
+#frontpanel	data/bgs/ground3/plant.gif
+frontpanel	data/bgs/f.gif		
+spawn1  151 10 300
+spawn2  133 30 300
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+
+panel         data/bgs/ground3/gd3.gif       	
+#panel         data/bgs/ground3/light.gif
+#panel         data/bgs/ground3/light2.gif
+#panel         data/bgs/ground3/light3.gif
+wall -100 220 0 0 200 103 51 1300
+wall 858 244 -156 0 1200 1000 79 1300
+bgspeed 3 0
+
+# a = red sign
+# bcd =window
+# e = light
+# f = door
+# g = light
+# hi = wall left
+# j= blank
+# klm= wall right
+#  no= dark wall
+# pq= door
+# rst= left wall - brick - r wall
+
+order	a
+direction both
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+#z 152 242
+
+group   3 3
+at      163
+
+spawn golem
+Boss 1
+health 700
+coords 540 197 1
+at 163
+
+spawn alien1
+Health 100
+coords 470 152
+at 0
+
+spawn alien2
+Health 100
+coords 470 242
+at 0
+
+spawn alien3
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 445 197
+at 0
+
+spawn alien4
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 145 152
+at 0
+
+spawn alien5
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 645 242
+at 0
+
+spawn alien6
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 345 242
+at 0
+
+spawn alien1
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 245 197
+at 0
+
+spawn alien2
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 545 152
+at 0
+
+spawn alien3
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 445 197
+at 0
+
+spawn alien4
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 145 152
+at 0
+
+spawn alien5
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 645 242
+at 0
+
+spawn alien6
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 345 242
+at 0
+
+spawn alien1
+Health 100
+coords 470 152
+at 0
+
+spawn alien2
+Health 100
+coords 470 242
+at 0
+
+spawn alien3
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 445 197
+at 0
+
+spawn alien4
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 145 152
+at 0
+
+spawn alien5
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 645 242
+at 0
+
+spawn alien6
+spawnscript data/scripts/noscpos.c
+Health 100
+coords 345 242
+at 0

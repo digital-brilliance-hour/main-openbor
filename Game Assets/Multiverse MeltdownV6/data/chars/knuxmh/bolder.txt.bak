@@ -1,0 +1,58 @@
+name	Bolder
+type	None
+health	1
+speed   16
+jumpheight 2.4
+shadow	0
+hitenemy 1
+noquake  1
+candamage enemy Obstacle
+
+anim idle
+	loop	1
+	delay	6
+	offset	232 270
+	blast      261  171  61  56  18 0 0 0 0 20
+	frame	data/chars/Knux/FSP4b-0.gif
+		blast  260  167  56  64  18  0  0  0  20
+	frame	data/chars/Knux/FSP4b-1.gif
+		blast  256  164  61  56  18  0  0  0  20
+	offset	232 265
+	frame	data/chars/Knux/FSP4b-2.gif
+		blast  265  158  55  64  18  0  0  0  20
+	offset	232 260
+	frame	data/chars/Knux/FSP4b-3.gif
+	blast      261  171  61  56  18 0 0 0 0 20
+	offset	232 255
+	frame	data/chars/Knux/FSP4b-0.gif
+		blast  260  167  56  64  18  0  0  0  20
+	offset	232 250
+	frame	data/chars/Knux/FSP4b-1.gif
+		blast  256  164  61  56  18  0  0  0  20
+	offset	232 245
+	frame	data/chars/Knux/FSP4b-2.gif
+		blast  265  158  55  64  18  0  0  0  20
+	offset	232 240
+	frame	data/chars/Knux/FSP4b-3.gif
+	blast      261  171  61  56  18 0 0 0 0 20
+	offset	232 235
+	frame	data/chars/Knux/FSP4b-0.gif
+		blast  260  167  56  64  18  0  0  0  20
+	offset	232 230
+	frame	data/chars/Knux/FSP4b-1.gif
+		blast  256  164  61  56  18  0  0  0  20
+	frame	data/chars/Knux/FSP4b-2.gif
+		blast  265  158  55  64  18  0  0  0  20
+	frame	data/chars/Knux/FSP4b-3.gif
+
+anim attack1
+	offset	232 216
+        delay   6
+	sound	data/chars/Knux/rock.wav
+	frame	data/chars/Knux/b2.gif
+	frame	data/chars/Knux/b3.gif
+	frame	data/chars/Knux/b4.gif
+	frame	data/chars/Knux/b5.gif
+	frame	data/chars/Knux/b6.gif
+	frame	data/chars/Knux/b7.gif
+

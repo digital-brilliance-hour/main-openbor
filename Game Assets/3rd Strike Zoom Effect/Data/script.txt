@@ -1,0 +1,21 @@
+#maxscriptvars {int}
+#define a variable list in each script that can be accessed by index
+#use getscriptvar(index) and setscriptvar(index, value) to use those variables
+maxscriptvars   5
+
+#maxentityvars {int}
+#define a variable list in each entity that can be accessed by index
+#use getentityvar(entity, index) and setentityvar(entity, index, value) to use those variables
+maxentityvars   250
+
+#maxindexedvars {int}
+#define a global variable list that can be accessed by index
+#use getindexedvar(index) and setindexedvar(index, value) to use those variables
+maxindexedvars  1000
+
+#maxglobalvars {int}
+#define a global variable list that can be accessed by name
+#see getglobalvar setglobalvar getlocalvar setlocalvar for details
+#the default value is 2048
+#If there's no script in the game, just set it to 0, or don't change it unless you know how big it should be
+maxglobalvars  2048

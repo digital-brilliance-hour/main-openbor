@@ -1,0 +1,33 @@
+name NFlame
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+nomove 1
+
+
+anim	idle
+	loop	1
+	delay	6
+	offset	157 138
+	attack2  186  128  14  10  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame0.gif
+	attack2  185  118  34  19  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame1.gif
+	attack2  184  116  38  24  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame2.gif
+	attack2  181  106  38  33  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame3.gif
+	attack2  179  101  41  37  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame4.gif
+	frame	data/chars/Neku/NFlame5.gif
+	frame	data/chars/Neku/NFlame7.gif
+	attack2  179  99  42  41  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame8.gif
+	attack2  180  98  30  40  2  0  0  0  0  25
+	frame	data/chars/Neku/NFlame9.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Neku/NFlame9.gif
+

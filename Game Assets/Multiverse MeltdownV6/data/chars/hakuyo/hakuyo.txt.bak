@@ -1,0 +1,214 @@
+name	Hakuyo
+health	120
+speed	8
+grabdistance 19
+type	enemy
+dust    dust
+gfxshadow  1
+risetime 130
+hostile player npc
+candamage obstacle player npc
+throw 3 3
+projectilehit obstacle enemy npc
+nodieblink 0
+noquake 0
+icon	data/chars/hakuyo/icon.gif
+diesound data/sounds/die3.wav
+
+remap	data/chars/hakuyo/walk1.gif data/chars/hakuyo/map1.gif
+remap	data/chars/hakuyo/walk1.gif data/chars/hakuyo/map2.gif
+remap	data/chars/hakuyo/walk1.gif data/chars/hakuyo/map3.gif
+remap	data/chars/hakuyo/walk1.gif data/chars/hakuyo/map4.gif
+
+#score   6 6
+
+anim idle
+	loop	1
+	offset	47 85
+	bbox	30 18 34 65
+	delay	100
+	frame	data/chars/hakuyo/walk1.gif
+
+anim burn
+	loop	1
+        delay   3
+	offset	40 53
+        frame	data/chars/misc/burn/boss/burn1.gif
+        frame	data/chars/misc/burn/boss/burn2.gif
+        frame	data/chars/misc/burn/boss/burn3.gif
+
+anim walk
+	loop	1
+	offset	47 85
+	bbox	31 15 30 70
+	delay	15
+	frame	data/chars/hakuyo/walk1.gif
+	frame	data/chars/hakuyo/walk2.gif
+	frame	data/chars/hakuyo/walk3.gif
+	frame	data/chars/hakuyo/walk2.gif
+
+anim grabbed
+	loop	0
+	offset	47 85
+	bbox	31 15 30 70
+	delay	3
+	frame	data/chars/hakuyo/pain.gif
+
+anim pain
+	loop	0
+	offset	47 85
+	bbox	31 15 30 70
+	delay	3
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   2
+        move    -7
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   18
+        move    -7       
+	frame	data/chars/hakuyo/pain.gif
+
+anim spain
+	loop	0
+	offset	47 85
+	bbox	31 15 30 70
+	delay	3
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   2
+        move    -7
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   18
+        move    -7       
+	frame	data/chars/hakuyo/pain.gif
+
+anim bpain
+	loop	0
+	offset	47 85
+	bbox	31 15 30 70
+	delay	3
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   2
+        move    -7
+	frame	data/chars/hakuyo/pain.gif
+	delay	2
+        move    7
+	frame	data/chars/hakuyo/pain.gif
+        delay   18
+        move    -7       
+	frame	data/chars/hakuyo/pain.gif
+ 
+anim fall
+	loop	0
+	delay	40
+	offset	58 75
+#	attack	29 1 26 61 6 1
+	frame	data/chars/hakuyo/fall1.gif
+        attack	6 55 77 12 5 1
+        offset  47 72
+        delay   30
+	frame	data/chars/hakuyo/fall2.gif
+        attack  0
+
+anim rise
+	loop	0
+	offset	47 72
+	delay	15
+	frame	data/chars/hakuyo/rise1.gif
+       	frame	data/chars/hakuyo/fall2.gif
+       	frame	data/chars/hakuyo/rise1.gif
+        offset	44 67
+        frame	data/chars/hakuyo/rise2.gif
+
+
+anim attack3
+	range	40 80
+	loop	0
+	delay	25
+	offset	45 85
+	bbox	27 13 26 72
+	attack	75 4 28 38 15 1
+	hitfx   data/sounds/poolh.wav
+	frame	data/chars/hakuyo/kick.gif
+
+anim upper
+	range	0 90
+	loop	0
+	delay	17
+	offset	45 85
+#	bbox	27 13 26 72
+	attack	75 4 28 38 9 1
+	hitfx   data/sounds/poolh.wav
+	frame	data/chars/hakuyo/kick.gif
+
+
+anim attack1
+	range	0 50
+	loop	0
+	delay	10
+        offset	47 85
+	bbox	31 15 30 70
+        frame	data/chars/hakuyo/fb1.gif                              	        
+	attack	59 16 39 18 10 0
+	frame	data/chars/hakuyo/slap.gif
+       	attack	0
+      	frame	data/chars/hakuyo/fb1.gif 
+	attack	59 16 39 18 10 0                           	      
+      	frame	data/chars/hakuyo/slap.gif
+
+
+anim attack2
+	range	80 110
+	loop	0
+	delay	8
+	bbox	31 15 30 70
+        offset	47 85
+        frame	data/chars/hakuyo/fb1.gif
+	frame	data/chars/hakuyo/fb2.gif
+        delay	16
+	move 10
+        attack	113 22 28 36 15 1
+	bbox	57 26 27 50  
+	sound	data/sounds/fireball.wav       
+	frame   data/chars/hakuyo/fb3.gif
+	move 0
+        frame	data/chars/hakuyo/fb4.gif
+	
+  	frame	data/chars/hakuyo/fb3.gif
+	
+        attack	0
+        delay	8
+        bbox	31 15 30 70
+  	offset	47 85
+      	frame	data/chars/hakuyo/fb1.gif
+
+	
+anim jumpattack 
+        range	90 140
+	loop	0
+	offset	47 85
+	delay	5
+	bbox	33 34 28 51
+	frame	data/chars/hakuyo/jump1.gif
+        sound	data/chars/hakuyo/yaaaa.wav
+	bbox	35 10 27 71
+	frame	data/chars/hakuyo/jump2.gif
+        frame	data/chars/hakuyo/jump2.gif
+	bbox	32 37 30 44       
+        attack	63 61 47 25 13 1
+	frame	data/chars/hakuyo/jump3.gif
+        frame	data/chars/hakuyo/jump3.gif
+	

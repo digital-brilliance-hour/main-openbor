@@ -1,0 +1,249 @@
+name	Testa
+health	80
+speed	6
+type	enemy
+shadow	5
+icon	data/chars/testa/icon.gif
+#diesound data/chars/testa/testd.WAV
+
+anim idle
+	loop	1
+	delay	15
+	offset	63 166
+	bbox 45 42 27 126
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/std1.gif
+	frame	data/chars/testa/std2.gif
+	bbox 50 59 24 107
+	frame	data/chars/testa/std3.gif
+	frame	data/chars/testa/std2.gif
+
+anim walk
+	loop	1
+	delay	15
+	offset	58 120
+	bbox 34 40 56 80
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/wlk1.gif
+	frame	data/chars/testa/wlk2.gif
+	frame	data/chars/testa/wlk3.gif
+	frame	data/chars/testa/wlk4.gif
+	frame	data/chars/testa/wlk5.gif
+	frame	data/chars/testa/wlk6.gif
+	frame	data/chars/testa/wlk7.gif
+
+anim pain
+	loop	0
+	delay	10
+	offset	71 169
+	bbox 14 91 67 78
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/dmg2.gif
+	bbox 32 69 56 100
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+
+anim	pain2
+	loop	0
+	offset	71 169
+	bbox 14 91 67 78
+	delay	3
+	quakeframe	0 3 4
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	Move	-3
+	frame	data/chars/testa/dmg2.gif
+	frame	data/chars/testa/dmg2.gif
+	frame	data/chars/testa/dmg2.gif
+	Move	-2
+	bbox 32 69 56 100
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	Move	-1
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	Move	0
+	delay	8
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+
+anim	pain3
+	loop	0
+	offset	71 169
+	bbox 14 91 67 78
+	delay	2
+	quakeframe	0 3 4
+	Jumpframe	0 2 0
+	Landframe	14
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	Move	-5
+	frame	data/chars/testa/dmg2.gif
+	frame	data/chars/testa/dmg2.gif
+	frame	data/chars/testa/dmg2.gif
+	frame	data/chars/testa/dmg2.gif
+	Move	-4
+	bbox 32 69 56 100
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	Move	-3
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	Move	-2
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	Move	-1
+	frame	data/chars/testa/dmg1.gif
+	delay	100
+	frame	data/chars/testa/dmg1.gif
+	Move	0
+	delay	2
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+	delay	10
+	frame	data/chars/testa/dmg1.gif
+	frame	data/chars/testa/dmg1.gif
+
+anim fall
+	loop	0
+	delay	10
+	offset	71 169
+	Landframe	3
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	bbox 14 91 67 78
+	attack1 14 91 67 78 15 0 0 0 0 20
+	frame	data/chars/testa/dmg2.gif
+	offset	120 119
+	bbox 85 62 86 45
+	attack1 85 62 86 45 15 0 0 0 0 20
+	frame	data/chars/testa/fall1.gif
+	offset	114 140
+	delay	500
+	bbox 81 71 65 59
+	attack1 81 71 65 59 15 0 0 0 0 20
+	frame	data/chars/testa/fall2.gif
+	bbox 0 0 0 0
+	delay	7
+	Attack1	0
+	offset	96 143
+	frame	data/chars/testa/fall3.gif
+	offset	122 92
+	frame	data/chars/testa/fall1.gif
+	offset	96 143
+	frame	data/chars/testa/fall3.gif
+
+anim rise
+	loop	0
+	offset  101 142
+	delay	12
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/rise1.gif
+	frame	data/chars/testa/rise2.gif
+
+anim attack1 
+	loop	0
+	delay	5
+	offset	59 138
+	bbox 35 53 49 83
+	range	152 300
+	rangea	-1 20
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/atk1.gif
+	attack3 86 76 106 60 15 0 0 0 0 20
+	bbox 29 55 48 82
+	frame	data/chars/testa/atk2.gif
+	frame	data/chars/testa/atk3.gif
+	frame	data/chars/testa/atk4.gif
+	frame	data/chars/testa/atk5.gif
+	frame	data/chars/testa/atk2.gif
+	frame	data/chars/testa/atk3.gif
+	frame	data/chars/testa/atk4.gif
+	frame	data/chars/testa/atk5.gif
+
+anim attack2
+	loop	0
+	delay	8
+	offset	90 125
+	bbox 55 23 45 99
+	range	152 300
+	rangea	-1 20
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	#sound	data/chars/testa/beast.wav
+	frame	data/chars/testa/exa1.gif
+	bbox 49 41 58 83
+	frame	data/chars/testa/exa2.gif
+	bbox 38 59 64 65
+	frame	data/chars/testa/exa3.gif
+	attack1 224 68 88 57 20 1 0 0 0 0
+	bbox 39 63 51 63
+	frame	data/chars/testa/exa4.gif
+	attack1 238 66 81 59 20 1 0 0 0 0
+	frame	data/chars/testa/exa5.gif
+	attack1 223 56 60 68 20 1 0 0 0 0
+	frame	data/chars/testa/exa6.gif
+	attack1 195 54 69 71 20 1 0 0 0 0
+	frame	data/chars/testa/exa7.gif
+	attack1 183 56 65 70 20 1 0 0 0 0
+	frame	data/chars/testa/exa8.gif
+	attack1 158 67 70 60 20 1 0 0 0 0
+	frame	data/chars/testa/exa9.gif
+	attack1 128 74 88 53 20 1 0 0 0 0
+	frame	data/chars/testa/exa10.gif
+	bbox 38 59 64 65
+	frame	data/chars/testa/exa3.gif
+	bbox 49 41 58 83
+	frame	data/chars/testa/exa2.gif
+	bbox 55 23 45 99
+	frame	data/chars/testa/exa1.gif
+
+anim special
+	loop	0
+	delay	3
+	offset	42 303
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	sound	data/chars/testa/haha.wav
+	frame	data/chars/testa/sp1.gif
+	delay	7
+	frame	data/chars/testa/sp2.gif
+	frame	data/chars/testa/sp3.gif
+	frame	data/chars/testa/sp4.gif
+	frame	data/chars/testa/sp5.gif
+	frame	data/chars/testa/sp6.gif
+	frame	data/chars/testa/sp7.gif
+	blast	34 177 88 125 30 0 0 0 0 20
+	delay	23
+	frame	data/chars/testa/sp8.gif
+
+anim upper
+	loop	0
+	delay	6
+	offset	49 186
+	bbox 23 94 54 92
+	attack3 8 44 121 140 15 0 0 0 0 20
+	drawmethod scalex 0.88
+	drawmethod scaley 0.88
+	frame	data/chars/testa/up1.gif
+	attack3 22 38 110 147 15 0 0 0 0 20
+	bbox 25 105 60 80
+	frame	data/chars/testa/up2.gif
+	attack3 28 26 112 159 15 0 0 0 0 20
+	bbox 31 101 65 86
+	frame	data/chars/testa/up3.gif
+	attack3 79 86 56 98 0 0 0 0 0 20
+	frame	data/chars/testa/up4.gif
+	attack1 0
+	frame	data/chars/testa/up5.gif
+
+
+
+

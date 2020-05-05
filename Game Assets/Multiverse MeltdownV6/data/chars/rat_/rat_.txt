@@ -1,0 +1,383 @@
+name rat_
+health 70
+speed 6
+type enemy
+hostile player npc
+candamage obstacle player npc
+gfxshadow 1
+icon data/chars/rat_/icon.gif 1
+grabdistance 40
+palette data/chars/rat_/idle.gif
+alternatepal data/chars/rat_/map1.gif
+alternatepal data/chars/rat_/map2.gif
+alternatepal data/chars/rat_/map3.gif
+alternatepal data/chars/rat_/map4.gif
+dust dust
+
+
+
+
+
+anim	attack1
+	range	10 70
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	70 95 50 90
+	move	3
+	hitflash	pow
+	sound	data/chars/rat_/a2.wav
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	attack	100 100 60 90 6 0 0 0 0 20
+	DropV	1 2
+	frame	data/chars/rat_/a3.gif
+	move	0
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	fastattack	1
+	attack	100 100 60 90 6 0 0 0 0 20
+	DropV	1 2
+	frame	data/chars/rat_/a3.gif
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	attack3	100 100 60 90 10 0 0 0 0 20
+	DropV	1 2
+	fastattack	1
+	frame	data/chars/rat_/a3.gif
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+		
+anim	attack2
+	range	5 60
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	70 95 50 90
+	move	2
+	hitflash	poww
+	frame	data/chars/rat_/a1.gif
+	sound	data/chars/rat_/a1.wav
+	frame	data/chars/rat_/a1.gif
+	move	4
+	frame	data/chars/rat_/a4.gif
+	attack3	96 107 47 84 15 0 0 0 0 20
+	DropV	1 3
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	move	2
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	move	0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+		
+anim	fall
+	loop	0
+	offset	90 192
+	delay	30
+	Landframe	2
+	sound	data/chars/rat_/fall.wav
+	bbox	60 97 78 71
+	attack3	60 98 79 71 10 0 0 0 0 20
+	DropV	1 3
+	frame	data/chars/rat_/fall1.gif
+	delay	100
+	frame	data/chars/rat_/fall1.gif
+	delay	40
+	Attack1	0
+	bbox	0
+	frame	data/chars/rat_/fall4.gif
+		
+anim	grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	70 95 50 90
+	frame	data/chars/rat_/pain.gif
+	offset	87 192
+	frame	data/chars/rat_/pain.gif
+	offset	89 192
+	delay	40
+	frame	data/chars/rat_/pain.gif
+		
+anim	idle
+	loop	1
+	offset	90 192
+	bbox	70 95 50 90
+	delay	15
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle.gif
+	delay	9
+	sound	data/chars/rat_/idle.wav
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle2.gif
+	frame	data/chars/rat_/idle.gif
+		
+anim	jump
+	loop	0
+	range	1 70
+	offset	90 192
+	bbox	70 95 50 90
+	delay	11
+	frame	data/chars/rat_/w1.gif
+	frame	data/chars/rat_/w1.gif
+	frame	data/chars/rat_/w1.gif
+		
+anim	pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	70 95 50 90
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/pain.gif
+	offset	87 192
+	frame	data/chars/rat_/pain.gif
+	offset	89 192
+	move	0
+	delay	40
+	frame	data/chars/rat_/pain.gif
+		
+anim	pain2
+	loop	0
+	offset	90 192
+	bbox	70 95 50 90
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-2
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-1
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	0
+	delay	8
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+		
+anim	pain3
+	loop	0
+	offset	90 192
+	bbox	70 95 50 90
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-4
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-3
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-2
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	-1
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	Move	0
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	delay	8
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+		
+anim	pain4
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	45 165 107 38
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	delay	50
+	frame	data/chars/rat_/fall4.gif
+	bbox	0
+	offset	90 192
+	delay	9
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/rise1.gif
+		
+anim	pain5
+	loop	0
+	offset	90 192
+	bbox	75 105 40 90
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/pain.gif
+	delay	2
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	delay	9
+	frame	data/chars/rat_/pain.gif
+		
+anim	pain6
+	loop	0
+	offset	90 192
+	bbox	75 105 40 90
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/pain.gif
+	delay	2
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	frame	data/chars/rat_/pain.gif
+	delay	9
+	frame	data/chars/rat_/pain.gif
+		
+anim	rise
+	loop	0
+	offset	90 192
+	delay	9
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/rise1.gif
+		
+anim	riseattack
+	range	5 60
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	70 95 50 90
+	move	2
+	hitflash	poww
+	frame	data/chars/rat_/a1.gif
+	sound	data/chars/rat_/a1.wav
+	frame	data/chars/rat_/a1.gif
+	move	4
+	frame	data/chars/rat_/a4.gif
+	attack3	96 107 47 84 15 0 0 0 0 20
+	DropV	1 3
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	move	2
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	frame	data/chars/rat_/a5.gif
+	move	0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+		
+anim	spawn
+	loop	0
+	offset	90 192
+	delay	5
+	sound	data/sounds/spawn.wav
+	frame	data/chars/rat_/idle.gif
+		
+anim	special
+	range	0 30
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	70 95 50 90
+	move	3
+	hitflash	pow
+	sound	data/chars/rat_/a2.wav
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	attack	100 100 60 90 6 0 0 0 0 20
+	DropV	1 2
+	frame	data/chars/rat_/a3.gif
+	move	0
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	fastattack	1
+	attack	100 100 60 90 6 0 0 0 0 20
+	DropV	1 2
+	frame	data/chars/rat_/a3.gif
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a1.gif
+	frame	data/chars/rat_/a2.gif
+	attack3	100 100 60 90 10 0 0 0 0 20
+	DropV	1 2
+	fastattack	1
+	frame	data/chars/rat_/a3.gif
+	frame	data/chars/rat_/a3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/rat_/a1.gif
+		
+anim	walk
+	loop	1
+	offset	90 192
+	bbox	70 95 50 90
+	delay	11
+	frame	data/chars/rat_/w1.gif
+	frame	data/chars/rat_/w2.gif
+	frame	data/chars/rat_/w3.gif
+	frame	data/chars/rat_/idle2.gif
+		
+#|edited by openBor Stats v 0.53
+		

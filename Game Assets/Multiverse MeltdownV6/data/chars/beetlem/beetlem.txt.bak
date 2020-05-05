@@ -1,0 +1,498 @@
+name	BEETLEMON
+health	500
+mp 100
+mprate 5
+speed	7
+type	player
+icon	   data/chars/Zero/icon.gif
+iconpain   data/chars/Zero/iconP.gif
+icondie    data/chars/Zero/iconD.gif
+#diesound   data/chars/Zero/die2.wav
+running 17 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+
+atchain 1 1 1 0
+
+com a2  Freespecial4
+com a3  Freespecial5
+com a4  Freespecial6
+jumpmove  3  2
+
+palette       data/chars/Beetlem/Pal
+#weapons  ZeroB  ZeroS ZeroF ZeroD
+#weaploss 2
+
+#alternatepal  data/chars/Zero/Map0
+#alternatepal  data/chars/Zero/Map1
+#alternatepal  data/chars/Zero/Map2
+#alternatepal  data/chars/Zero/Map3
+
+animationscript data/scripts/script.c
+
+
+anim	attack1
+	loop	0
+	delay	9
+	Fastattack	1
+	cancel	4 7 0 a freespecial
+	offset	115 128
+	bbox	104 89 34 41
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/A1-0.gif
+		bbox  107  88  29  42
+	frame	data/chars/Beetlem/A1-1.gif
+		bbox  108  93  33  39
+		attack1  126  95  42  32  13  0  0  0  0  20
+		move  5
+	frame	data/chars/Beetlem/A1-2.gif
+	attack1	126  92  34  34  13  0  0  0  0  20
+	delay	12
+	frame	data/chars/Beetlem/A1-3.gif
+		move  0
+	delay	2
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+
+anim	freespecial
+	loop	0
+	delay	9
+	Fastattack	1
+	cancel	4 7 0 a freespecial2
+	offset	115 128
+	bbox	104 89 34 41
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/A1-0.gif
+		bbox  107  88  29  42
+	frame	data/chars/Beetlem/A1-1.gif
+		bbox  108  93  33  39
+		attack1  126  95  42  32  13  0  0  0  0  20
+	frame	data/chars/Beetlem/A1-2.gif
+	attack1	126  92  34  34  13  0  0  0  0  20
+	delay	12
+	frame	data/chars/Beetlem/A1-3.gif
+	delay	2
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+	frame	data/chars/Beetlem/A1-3.gif
+
+anim	freespecial2
+	loop	0
+	delay	6
+	cancel	6 9 0 a freespecial3
+	Fastattack	1
+	offset	115 128
+	bbox	97 90 33 40
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/A2-0.gif
+	frame	data/chars/Beetlem/A2-1.gif
+	frame	data/chars/Beetlem/A2-2.gif
+		bbox  103  78  30  53
+		attack1  124  65  30  65  15  0  0  0  0  20
+	delay	12
+	frame	data/chars/Beetlem/A2-3.gif
+		attack1  124  87  27  44  15  0  0  0  0  20
+	delay	8
+	frame	data/chars/Beetlem/A2-4.gif
+		Attack1  0
+		bbox  102  86  37  44
+	frame	data/chars/Beetlem/A2-5.gif
+	delay	2
+	frame	data/chars/Beetlem/A2-5.gif
+	frame	data/chars/Beetlem/A2-5.gif
+	frame	data/chars/Beetlem/A2-5.gif
+	frame	data/chars/Beetlem/A2-5.gif
+
+anim	freespecial3
+	loop	0
+	delay	10
+	Fastattack	1
+	offset	115 128
+	bbox	98 82 31 52
+		drawmethod  365  355  0  0  0  -1  -1
+	hitflash	Flash2
+	frame	data/chars/Beetlem/A3-0.gif
+		delay  5
+	frame	data/chars/Beetlem/A3-1.gif
+	frame	data/chars/Beetlem/A3-2.gif
+	frame	data/chars/Beetlem/A3-3.gif
+		delay  7
+	frame	data/chars/Beetlem/A3-4.gif
+		bbox  109  86  35  45
+		Shock  125  76  41  54  18  1  0  0  0  30
+		move  8
+	frame	data/chars/Beetlem/A3-5.gif
+		Shock  120  98  28  35  18  1  0  0  0  30
+		bbox  109  90  39  43
+	frame	data/chars/Beetlem/A3-6.gif
+	attack1	0
+		move  0
+	frame	data/chars/Beetlem/A3-7.gif
+		bbox  104  92  39  39
+	frame	data/chars/Beetlem/A3-8.gif
+
+anim	DODGE
+	loop	0
+	delay	5
+		drawmethod  365  355  0  0  0  -1  -1
+	offset	115 128
+	frame	data/chars/Beetlem/Jump-0.gif
+	offset	115 130
+	frame	data/chars/Beetlem/Jump-1.gif
+	offset	115 132
+	frame	data/chars/Beetlem/Jump-1.gif
+	offset	115 134
+	frame	data/chars/Beetlem/Jump-2.gif
+	offset	115 132
+	frame	data/chars/Beetlem/Jump-2.gif
+	offset	115 130
+	frame	data/chars/Beetlem/Jump-3.gif
+	offset	115 128
+	frame	data/chars/Beetlem/Jump-3.gif
+
+anim	fall
+	loop	0
+	offset	115 128
+	delay	20
+	Landframe	2
+	attack1	101 85 41 41 10 1 0 0 0 20
+	quakeframe	0 1 4
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Fall-0.gif
+	delay	100
+		attack1  97  87  53  38  10  1  0  0  0  20
+		offset  118  128
+	frame	data/chars/Beetlem/Fall-1.gif
+	delay	10
+		offset  119  126
+		Attack1  0
+	frame	data/chars/Beetlem/Fall-2.gif
+
+anim	Freespecial4
+	loop	0
+	delay	7
+	mpcost	10
+	mponly	1
+	offset	115 128
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/FSP1-0.gif
+	frame	data/chars/Beetlem/FSP1-1.gif
+		drawmethod  365  355  0  0  0  -1  -1
+		shock  135  86  25  41  14  1  0  0  0  20
+	frame	data/chars/Beetlem/FSP1-2.gif
+		shock  139  115  36  14  14  1  0  0  0  20
+	frame	data/chars/Beetlem/FSP1-3.gif
+		shock  141  99  55  32  14  1  0  0  0  20
+	frame	data/chars/Beetlem/FSP1-4.gif
+	@cmd	shoot "BMShock" 0 0 0
+		Attack1  0
+		delay  21
+	frame	data/chars/Beetlem/FSP1-5.gif
+		delay  7
+	frame	data/chars/Beetlem/FSP1-6.gif
+	frame	data/chars/Beetlem/FSP1-7.gif
+
+anim	Freespecial5
+	loop	0
+	delay	15
+	tossframe	8
+	custbomb	BMSB
+	offset	115 128
+	mpcost	10
+	mponly	1
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/FSP2-0.gif
+		delay  7
+	frame	data/chars/Beetlem/FSP2-1.gif
+	frame	data/chars/Beetlem/FSP2-2.gif
+	frame	data/chars/Beetlem/FSP2-3.gif
+	frame	data/chars/Beetlem/FSP2-4.gif
+	frame	data/chars/Beetlem/FSP2-5.gif
+	frame	data/chars/Beetlem/FSP2-6.gif
+	frame	data/chars/Beetlem/FSP2-7.gif
+	frame	data/chars/Beetlem/FSP2-8.gif
+		delay  21
+	frame	data/chars/Beetlem/FSP2-9.gif
+		delay  10
+	frame	data/chars/Beetlem/FSP2-10.gif
+	frame	data/chars/Beetlem/FSP2-11.gif
+
+anim	Freespecial6
+	loop	0
+	delay	9
+	offset	115 128
+	mpcost	25
+	mponly	1
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/FSP3-0.gif
+		delay  7
+	frame	data/chars/Beetlem/FSP3-1.gif
+	frame	data/chars/Beetlem/FSP3-2.gif
+	frame	data/chars/Beetlem/FSP3-3.gif
+	frame	data/chars/Beetlem/FSP3-4.gif
+	frame	data/chars/Beetlem/FSP3-5.gif
+	frame	data/chars/Beetlem/FSP3-6.gif
+	frame	data/chars/Beetlem/FSP3-7.gif
+	frame	data/chars/Beetlem/FSP3-8.gif
+	@cmd	shoot "BMShot" 0 0 0
+	frame	data/chars/Beetlem/FSP3-9.gif
+	frame	data/chars/Beetlem/FSP3-10.gif
+	frame	data/chars/Beetlem/FSP3-11.gif
+	frame	data/chars/Beetlem/FSP3-12.gif
+		delay  9
+	frame	data/chars/Beetlem/FSP3-13.gif
+	frame	data/chars/Beetlem/FSP3-14.gif
+
+anim	get
+	loop	0
+	delay	6
+	offset	115 128
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/FSP1-5.gif
+	frame	data/chars/Beetlem/FSP1-5.gif
+	frame	data/chars/Beetlem/FSP1-5.gif
+
+anim	idle
+	loop	1
+	delay	10
+	offset	115 128
+	bbox	100 85 38 44
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Idle-0.gif
+	frame	data/chars/Beetlem/Idle-1.gif
+	frame	data/chars/Beetlem/Idle-2.gif
+	frame	data/chars/Beetlem/Idle-3.gif
+	frame	data/chars/Beetlem/Idle-4.gif
+	frame	data/chars/Beetlem/Idle-5.gif
+
+anim	jump
+	loop	0
+	delay	10
+	offset	115 128
+	bbox	101 78 38 50
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Jump-0.gif
+	delay	20
+	frame	data/chars/Beetlem/Jump-1.gif
+	delay	8
+		bbox  94  82  52  39
+	frame	data/chars/Beetlem/Jump-2.gif
+	frame	data/chars/Beetlem/Jump-3.gif
+
+anim	jumpattack
+	loop	0
+	delay	10
+	offset	115 128
+	bbox	95 74 44 44
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/JA1-0.gif
+	Attack1	101 89 55 37 14 1 0 0 0 20
+		bbox  103  78  40  39
+	frame	data/chars/Beetlem/JA1-1.gif
+
+anim	jumpattack2
+	loop	0
+	delay	15
+	offset	115 128
+	bbox	100 79 44 38
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/JA2-0.gif
+	Attack1	117 96 27 26 8 0 0 0 0 20
+		delay  6
+	frame	data/chars/Beetlem/JA2-1.gif
+		attack1  117  89  31  35  8  0  0  0  0  20
+	frame	data/chars/Beetlem/JA2-2.gif
+
+anim	jumpattack3
+	loop	0
+	delay	6
+	offset	115 128
+	bbox	103 80 40 41
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/JA3-0.gif
+	frame	data/chars/Beetlem/JA3-1.gif
+		bbox  106  80  31  42
+	frame	data/chars/Beetlem/JA3-2.gif
+	frame	data/chars/Beetlem/JA3-3.gif
+		delay  2
+	frame	data/chars/Beetlem/JA3-4.gif
+	frame	data/chars/Beetlem/JA3-5.gif
+		shock  117  74  29  53  16  1  0  0  0  20
+	frame	data/chars/Beetlem/JA3-6.gif
+
+anim	land
+	loop	0
+	delay	8
+		offset  121  127
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Rise-4.gif
+	frame	data/chars/Beetlem/Rise-5.gif
+	frame	data/chars/Beetlem/Rise-6.gif
+
+anim	pain
+	loop	0
+	offset	115 128
+	bbox	86 87 45 46
+	delay	9
+	quakeframe	0 3 4
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Pain-0.gif
+	frame	data/chars/Beetlem/Pain-0.gif
+		drawmethod  365  355  0  0  0  -1  -1
+		bbox  92  86  46  46
+	frame	data/chars/Beetlem/Pain-1.gif
+
+anim	rise
+	loop	0
+	offset	119 126
+	delay	7
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Rise-0.gif
+	frame	data/chars/Beetlem/Rise-1.gif
+	frame	data/chars/Beetlem/Rise-2.gif
+		move  3
+	frame	data/chars/Beetlem/Rise-3.gif
+		offset  121  127
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Rise-4.gif
+		move  0
+	frame	data/chars/Beetlem/Rise-5.gif
+	frame	data/chars/Beetlem/Rise-6.gif
+
+anim	run
+	loop	1
+	delay	8
+	offset	115 128
+	bbox	111 90 48 41
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Run-0.gif
+	frame	data/chars/Beetlem/Run-1.gif
+	frame	data/chars/Beetlem/Run-0.gif
+	frame	data/chars/Beetlem/Run-1.gif
+	frame	data/chars/Beetlem/Run-0.gif
+	frame	data/chars/Beetlem/Run-1.gif
+
+anim	RUNATTACK
+	loop	0
+	delay	3
+	offset	115 128
+	bbox	107 95 45 36
+           Move      8
+		drawmethod  365  355  0  0  0  -1  -1
+		attack1  126  98  40  32  15  1  0  0  0  25
+	frame	data/chars/Beetlem/RunA-0.gif
+	frame	data/chars/Beetlem/RunA-1.gif
+	frame	data/chars/Beetlem/RunA-2.gif
+	frame	data/chars/Beetlem/RunA-3.gif
+	frame	data/chars/Beetlem/RunA-0.gif
+	frame	data/chars/Beetlem/RunA-1.gif
+	frame	data/chars/Beetlem/RunA-2.gif
+	frame	data/chars/Beetlem/RunA-3.gif
+	frame	data/chars/Beetlem/RunA-0.gif
+	frame	data/chars/Beetlem/RunA-1.gif
+	frame	data/chars/Beetlem/RunA-2.gif
+	frame	data/chars/Beetlem/RunA-3.gif
+           Move      2
+	delay	8
+		Attack1  0
+		drawmethod  365  355  0  0  0  -1  -1
+		bbox  101  86  34  47
+	frame	data/chars/Beetlem/RunA-4.gif
+	frame	data/chars/Beetlem/RunA-4.gif
+	frame	data/chars/Beetlem/RunA-4.gif
+
+anim	special
+	loop	0
+	delay	6
+	offset	115 128
+	mpcost	20
+	hitflash	Flash2
+	drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/SP-0.gif
+	frame	data/chars/Beetlem/SP-1.gif
+	frame	data/chars/Beetlem/SP-2.gif
+	frame	data/chars/Beetlem/SP-3.gif
+		shock  92  101  52  29  35  1  0  0  0  30
+	frame	data/chars/Beetlem/SP-4.gif
+	frame	data/chars/Beetlem/SP-5.gif
+		Attack1  0
+	frame	data/chars/Beetlem/SP-6.gif
+	frame	data/chars/Beetlem/SP-7.gif
+	frame	data/chars/Beetlem/SP-8.gif
+	frame	data/chars/Beetlem/SP-9.gif
+		offset  115  129
+	frame	data/chars/Beetlem/SP-10.gif
+		offset  115  130
+	frame	data/chars/Beetlem/SP-11.gif
+		offset  115  131
+	frame	data/chars/Beetlem/SP-12.gif
+		offset  115  132
+	frame	data/chars/Beetlem/SP-13.gif
+		offset  115  133
+	frame	data/chars/Beetlem/SP-14.gif
+		offset  115  134
+	frame	data/chars/Beetlem/SP-15.gif
+	frame	data/chars/Beetlem/SP-16.gif
+	frame	data/chars/Beetlem/SP-17.gif
+	frame	data/chars/Beetlem/SP-18.gif
+	frame	data/chars/Beetlem/SP-19.gif
+	frame	data/chars/Beetlem/SP-20.gif
+	frame	data/chars/Beetlem/SP-21.gif
+	frame	data/chars/Beetlem/SP-22.gif
+	frame	data/chars/Beetlem/SP-23.gif
+	frame	data/chars/Beetlem/SP-24.gif
+	frame	data/chars/Beetlem/SP-25.gif
+	frame	data/chars/Beetlem/SP-26.gif
+	frame	data/chars/Beetlem/SP-27.gif
+	frame	data/chars/Beetlem/SP-28.gif
+	frame	data/chars/Beetlem/SP-29.gif
+	frame	data/chars/Beetlem/SP-30.gif
+	frame	data/chars/Beetlem/SP-31.gif
+	frame	data/chars/Beetlem/SP-32.gif
+	frame	data/chars/Beetlem/SP-33.gif
+	frame	data/chars/Beetlem/SP-34.gif
+	frame	data/chars/Beetlem/SP-35.gif
+	frame	data/chars/Beetlem/SP-36.gif
+	frame	data/chars/Beetlem/SP-37.gif
+	frame	data/chars/Beetlem/SP-38.gif
+	frame	data/chars/Beetlem/SP-39.gif
+	frame	data/chars/Beetlem/SP-40.gif
+	frame	data/chars/Beetlem/SP-41.gif
+	frame	data/chars/Beetlem/SP-42.gif
+	frame	data/chars/Beetlem/SP-43.gif
+	frame	data/chars/Beetlem/SP-44.gif
+	frame	data/chars/Beetlem/SP-45.gif
+	@cmd	shoot "BMSP" 0 0 0
+	frame	data/chars/Beetlem/SP-45b.gif
+	frame	data/chars/Beetlem/SP-45b.gif
+	frame	data/chars/Beetlem/SP-45b.gif
+	frame	data/chars/Beetlem/SP-45b.gif
+		offset  115  134
+	frame	data/chars/Beetlem/SP-15.gif
+		offset  115  133
+	frame	data/chars/Beetlem/SP-14.gif
+	offset	115 128
+	frame	data/chars/Beetlem/SP-6.gif
+	frame	data/chars/Beetlem/SP-46.gif
+	frame	data/chars/Beetlem/SP-47.gif
+	frame	data/chars/Beetlem/SP-48.gif
+
+anim	walk
+	loop	1
+	delay	10
+	offset	115 128
+	bbox	104 96 25 32
+		drawmethod  365  355  0  0  0  -1  -1
+	frame	data/chars/Beetlem/Walk-0.gif
+	frame	data/chars/Beetlem/Walk-1.gif
+	frame	data/chars/Beetlem/Walk-2.gif
+	frame	data/chars/Beetlem/Walk-3.gif
+	frame	data/chars/Beetlem/Walk-4.gif
+	frame	data/chars/Beetlem/Walk-5.gif
+	frame	data/chars/Beetlem/Walk-6.gif
+	frame	data/chars/Beetlem/Walk-7.gif
+

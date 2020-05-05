@@ -1,0 +1,93 @@
+music		data/music/G-Done.BOR
+
+background	data/bgs/B3/BG.gif
+panel	        data/bgs/B3/Panel.gif
+
+order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+Wall -100 310 -800 -800   100  100 300 300
+Wall  960 310 1 1  800 800  300 300
+
+spawn	B3-P
+coords	199 370 131
+at	0
+
+spawn   B3-P
+coords  761  370  131
+at       0
+
+#spawn1  10  0
+#spawn2  30  0
+#spawn3  50  0
+#spawn4  70  0
+
+group 10 10
+at 0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+spawn	SCYTHER_B
+alias       SCYTHER
+health	200
+coords	565 370 1
+at	0
+
+#--group1-----
+

@@ -1,0 +1,33 @@
+name NAfx2
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+Nomove 1
+
+
+anim	idle
+	loop	1
+	delay	3
+	offset	157 138
+	frame	data/chars/Neku/A2fx-0.gif
+	delay	2
+	move    5
+	frame	data/chars/Neku/A2fx-1.gif
+	delay	3
+	frame	data/chars/Neku/A2fx-1.gif
+	frame	data/chars/Neku/A2fx-2.gif
+	frame	data/chars/Neku/A2fx-2.gif
+	frame	data/chars/Neku/A2fx-3.gif
+	frame	data/chars/Neku/A2fx-3.gif
+	move    2
+	frame	data/chars/Neku/A2fx-4.gif
+	move    0
+	delay	5
+	frame	data/chars/Neku/A2fx-5.gif
+	frame	data/chars/Neku/A2fx-6.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Neku/A2fx-6.gif
+

@@ -1,0 +1,60 @@
+name    fr1
+type	text
+
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	20
+	offset	0 0 
+sound	data/sounds/electric.wav
+	frame	data/scenes/fr1/1.png
+sound	data/sounds/frspawn.wav
+	frame	data/scenes/fr1/2.png
+	frame	data/scenes/fr1/3.png
+	frame	data/scenes/fr1/4.png
+	frame	data/scenes/fr1/5.png
+	frame	data/scenes/fr1/6.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/fr1/7.png
+	frame	data/scenes/fr1/8.png
+	frame	data/scenes/fr1/9.png
+	frame	data/scenes/fr1/10.png
+	frame	data/scenes/fr1/11.png
+	frame	data/scenes/fr1/12.png
+	frame	data/scenes/fr1/13.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/fr1/14.png
+	frame	data/scenes/fr1/15.png
+	frame	data/scenes/fr1/16.png
+	frame	data/scenes/fr1/17.png
+	frame	data/scenes/fr1/18.png
+	frame	data/scenes/fr1/19.png
+	frame	data/scenes/fr1/20.png
+	frame	data/scenes/fr1/21.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/fr1/22.png
+	frame	data/scenes/fr1/23.png
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/fr1/24.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

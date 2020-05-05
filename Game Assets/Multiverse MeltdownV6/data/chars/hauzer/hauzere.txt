@@ -1,0 +1,677 @@
+name	HAUZERe
+health	50
+mp 80
+mprate 10
+speed	14
+type	enemy
+hostile Player npc
+Candamage  Player  NPC
+#aimove chase
+#nodrop	1
+jugglepoints 2
+
+icon     data/chars/Hauzer/Icon.gif 1
+
+
+
+
+running 24	3.9	2.80	1	1
+#makeinv  4
+#riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+#weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/Hauzer/H_0-0.gif
+
+
+#alternatepal  data/chars/Venom/Pal.gif
+#alternatepal  data/chars/Venom/Pal3.gif
+#alternatepal  data/chars/Venom/Pal4.gif
+#alternatepal  data/chars/Venom/Pal5.gif
+#alternatepal  data/chars/Venom/Pald.pcx
+
+
+
+com a2 Freespecial
+com a3 Freespecial2
+com a4 Freespecial3
+jumpmove  3  2
+#atchain 1 1 1 0
+#animationscript data/scripts/script.c
+#animationscript data/scripts/spawnm.c
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	fastattack	1
+	offset	253 430
+	bbox.position.x 216
+	bbox.position.y 372
+	bbox.size.x 57
+	bbox.size.y 56
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	range 50 120
+jugglecost 1
+ frame data/chars/Hauzer/H_220-0.GIF
+	bbox.position.x 233
+	bbox.position.y 381
+	bbox.size.x 58
+	bbox.size.y 47
+ frame data/chars/Hauzer/H_220-1.GIF
+	bbox.position.x 225
+	bbox.position.y 368
+	bbox.size.x 89
+	bbox.size.y 65
+ frame data/chars/Hauzer/H_220-2.GIF
+	attack.damage.force 10
+	attack.damage.type 2
+	attack.position.x 281
+	attack.position.y 389
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 2.0
+	attack.reaction.fall.velocity.y 1.0
+	attack.size.x 69
+	attack.size.y 49
+	attack.size.z.1 20
+	bbox.position.x 245
+	bbox.position.y 364
+	bbox.size.x 84
+	bbox.size.y 64
+ frame data/chars/Hauzer/H_220-3.GIF
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 275
+	attack.position.y 386
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 2.0
+	attack.reaction.fall.velocity.y 1.0
+	attack.size.x 118
+	attack.size.y 43
+	attack.size.z.1 20
+	bbox.position.x 214
+	bbox.position.y 377
+	bbox.size.x 137
+	bbox.size.y 51
+	delay	3
+ frame data/chars/Hauzer/H_220-4.GIF
+ frame data/chars/Hauzer/H_220-5.GIF
+	delay	6
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 258
+	attack.position.y 380
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 2.0
+	attack.reaction.fall.velocity.y 1.0
+	attack.size.x 89
+	attack.size.y 49
+	attack.size.z.1 20
+	bbox.position.x 201
+	bbox.position.y 380
+	bbox.size.x 115
+	bbox.size.y 50
+ frame data/chars/Hauzer/H_220-6.GIF
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	bbox.position.x 227
+	bbox.position.y 374
+	bbox.size.x 68
+	bbox.size.y 55
+ frame data/chars/Hauzer/H_220-7.GIF
+	bbox.position.x 242
+	bbox.position.y 376
+	bbox.size.x 60
+	bbox.size.y 54
+ frame data/chars/Hauzer/H_220-8.GIF
+	bbox.position.x 190
+	bbox.position.y 364
+	bbox.size.x 109
+	bbox.size.y 64
+ frame data/chars/Hauzer/H_220-9.GIF
+	bbox.position.x 194
+	bbox.position.y 356
+	bbox.size.x 93
+	bbox.size.y 72
+ frame data/chars/Hauzer/H_220-10.GIF
+
+anim	fall
+	loop	0
+	delay	10
+	quakeframe	0 3 4
+	Landframe	5
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	offset	253 430
+	bbox.position.x 203
+	bbox.position.y 359
+	bbox.size.x 100
+	bbox.size.y 69
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 220
+	attack.position.y 360
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 81
+	attack.size.y 70
+	attack.size.z.1 20
+	frame	data/chars/Hauzer/H_5010-0.GIF
+	offset	243 438
+	bbox.position.x 208
+	bbox.position.y 366
+	bbox.size.x 83
+	bbox.size.y 74
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 209
+	attack.position.y 367
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 82
+	attack.size.y 70
+	attack.size.z.1 20
+	frame	data/chars/Hauzer/H_5035-1.GIF
+	bbox.position.x 199
+	bbox.position.y 359
+	bbox.size.x 91
+	bbox.size.y 77
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 194
+	attack.position.y 353
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 83
+	attack.size.y 78
+	attack.size.z.1 20
+	frame	data/chars/Hauzer/H_5060-101.GIF
+	bbox.position.x 186
+	bbox.position.y 354
+	bbox.size.x 92
+	bbox.size.y 73
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 181
+	attack.position.y 348
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 100
+	attack.size.y 80
+	attack.size.z.1 20
+	frame	data/chars/Hauzer/H_5030-10.GIF
+	offset	243 438
+	delay	200
+	bbox.position.x 174
+	bbox.position.y 382
+	bbox.size.x 117
+	bbox.size.y 41
+	attack.damage.force 12
+	attack.damage.type 2
+	attack.position.x 172
+	attack.position.y 385
+	attack.reaction.fall.force 0
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 116
+	attack.size.y 41
+	attack.size.z.1 20
+	frame	data/chars/Hauzer/H_5030-30.GIF
+	delay	6
+	Attack1	0
+	offset	253 439
+	bbox.position.x 0
+	bbox.position.y 0
+	bbox.size.x 0
+	bbox.size.y 0
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	frame	data/chars/Hauzer/H_5040-2.GIF
+	offset	261 508
+	frame	data/chars/Hauzer/H_5031-30.GIF
+	offset	253 439
+	frame	data/chars/Hauzer/H_5040-0.GIF
+	frame	data/chars/Hauzer/H_5040-10.GIF
+
+anim	freespecial
+	loop	0
+	delay	3
+	fastattack	1
+	offset	253 430
+	bbox.position.x 202
+	bbox.position.y 359
+	bbox.size.x 98
+	bbox.size.y 71
+	range 20 80
+	Move 11
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+jugglecost 1
+ frame data/chars/Hauzer/H_200-0.GIF
+ frame data/chars/Hauzer/H_200-0.GIF
+	bbox.position.x 202
+	bbox.position.y 379
+	bbox.size.x 102
+	bbox.size.y 50
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.position.x 252
+	attack.position.y 385
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 83
+	attack.size.y 43
+	attack.size.z.1 20
+ frame data/chars/Hauzer/H_200-1.GIF
+ frame data/chars/Hauzer/H_200-1.GIF
+	delay	6
+	Move 0
+	bbox.position.x 201
+	bbox.position.y 353
+	bbox.size.x 106
+	bbox.size.y 75
+	attack.damage.force 10
+	attack.damage.type 1
+	attack.position.x 251
+	attack.position.y 329
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 62
+	attack.size.y 99
+	attack.size.z.1 20
+ frame data/chars/Hauzer/H_200-2.GIF
+ frame data/chars/Hauzer/H_200-3.GIF
+ frame data/chars/Hauzer/H_200-4.GIF
+	bbox.position.x 215
+	bbox.position.y 358
+	bbox.size.x 76
+	bbox.size.y 72
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+ frame data/chars/Hauzer/H_200-5.GIF
+
+anim	freespecial2
+	loop	0
+	delay	5
+	offset	253 430
+	bbox.position.x 209
+	bbox.position.y 367
+	bbox.size.x 64
+	bbox.size.y 60
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+jugglecost 1
+ frame data/chars/Hauzer/H_1300-0.GIF
+ frame data/chars/Hauzer/H_1300-1.GIF
+	offset	302 422
+	bbox.position.x 258
+	bbox.position.y 369
+	bbox.size.x 64
+	bbox.size.y 52
+ frame data/chars/Hauzer/H_1300-2.GIF
+	range 70 90
+	delay	2
+ Move 10
+	attack.damage.force 15
+	attack.damage.type 2
+	attack.position.x 261
+	attack.position.y 403
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 5.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 109
+	attack.size.y 30
+	attack.size.z.1 25
+	bbox.position.x 252
+	bbox.position.y 378
+	bbox.size.x 110
+	bbox.size.y 48
+ frame data/chars/Hauzer/H_1300-3.GIF
+ frame data/chars/Hauzer/H_1300-3.GIF
+	attack.damage.force 15
+	attack.damage.type 2
+	attack.position.x 279
+	attack.position.y 397
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 5.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 109
+	attack.size.y 33
+	attack.size.z.1 25
+	bbox.position.x 262
+	bbox.position.y 394
+	bbox.size.x 106
+	bbox.size.y 39
+ frame data/chars/Hauzer/H_1310-0.GIF
+ frame data/chars/Hauzer/H_1310-0.GIF
+	delay	1
+ frame data/chars/Hauzer/H_1310-1.GIF
+ frame data/chars/Hauzer/H_1310-1.GIF
+ frame data/chars/Hauzer/H_1310-2.GIF
+ frame data/chars/Hauzer/H_1310-2.GIF
+	delay	4
+	offset	253 430
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+	bbox.position.x 215
+	bbox.position.y 389
+	bbox.size.x 70
+	bbox.size.y 48
+ frame data/chars/Hauzer/H_1320-0.GIF
+ frame data/chars/Hauzer/H_1320-0.GIF
+ Move 0
+	delay	7
+	bbox.position.x 217
+	bbox.position.y 365
+	bbox.size.x 79
+	bbox.size.y 64
+ frame data/chars/Hauzer/H_1320-1.GIF
+	bbox.position.x 207
+	bbox.position.y 385
+	bbox.size.x 94
+	bbox.size.y 44
+ frame data/chars/Hauzer/H_1320-2.GIF
+
+anim	idle
+	loop	1
+	delay	8
+	offset	253 430
+	bbox.position.x 203
+	bbox.position.y 355
+	bbox.size.x 96
+	bbox.size.y 74
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	frame	data/chars/Hauzer/H_0-0.GIF
+	frame	data/chars/Hauzer/H_0-1.GIF
+	frame	data/chars/Hauzer/H_0-2.GIF
+	frame	data/chars/Hauzer/H_0-3.GIF
+	frame	data/chars/Hauzer/H_0-4.GIF
+	frame	data/chars/Hauzer/H_0-5.GIF
+	frame	data/chars/Hauzer/H_0-6.GIF
+	frame	data/chars/Hauzer/H_0-7.GIF
+	frame	data/chars/Hauzer/H_0-8.GIF
+	frame	data/chars/Hauzer/H_0-9.GIF
+	frame	data/chars/Hauzer/H_0-10.GIF
+	frame	data/chars/Hauzer/H_0-11.GIF
+
+anim	pain
+	loop	0
+	delay	10
+	quakeframe	0 1 4
+	offset	253 430
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 221
+	bbox.position.y 361
+	bbox.size.x 84
+	bbox.size.y 72
+	frame	data/chars/Hauzer/H_5010-0.GIF
+	frame	data/chars/Hauzer/H_5010-0.GIF
+	frame	data/chars/Hauzer/H_5010-1.GIF
+
+anim	pain2
+	loop	0
+	offset	253 430
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 211
+	bbox.position.y 366
+	bbox.size.x 83
+	bbox.size.y 66
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	Move	-2
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	Move	-1
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	Move	0
+	delay	8
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+
+anim	pain3
+	loop	0
+	offset	253 430
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 211
+	bbox.position.y 366
+	bbox.size.x 83
+	bbox.size.y 66
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	Move	-4
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	Move	-3
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	Move	-2
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	Move	-1
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	Move	0
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+	delay	8
+	frame	data/chars/Hauzer/H_5010-11.GIF
+	frame	data/chars/Hauzer/H_5010-10.GIF
+
+anim	rise
+	loop	0
+	delay	7
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	offset	253 449
+ frame data/chars/Hauzer/H_5040-22.GIF
+	offset	253 429
+ frame data/chars/Hauzer/H_1320-1.GIF
+	offset	253 433
+ frame data/chars/Hauzer/H_1320-2.GIF
+	offset	256 429
+ frame data/chars/Hauzer/H_1220-1.GIF
+	offset	256 430
+ frame data/chars/Hauzer/H_1220-2.GIF
+	offset	256 432
+ frame data/chars/Hauzer/H_1400-0.GIF
+	offset	264 431
+ frame data/chars/Hauzer/H_810-10.GIF
+
+anim	run
+	loop	1
+ delay 4
+	offset	253 430
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 181
+	bbox.position.y 379
+	bbox.size.x 132
+	bbox.size.y 51
+ frame data/chars/Hauzer/H_100-0.GIF
+	offset	259 430
+ frame data/chars/Hauzer/H_100-1.GIF
+	offset	257 430
+ frame data/chars/Hauzer/H_100-2.GIF
+	offset	252 430
+ frame data/chars/Hauzer/H_100-3.GIF
+	offset	247 430
+ frame data/chars/Hauzer/H_100-4.GIF
+	offset	245 430
+ frame data/chars/Hauzer/H_100-5.GIF
+	offset	251 430
+ frame data/chars/Hauzer/H_100-6.GIF
+	offset	257 430
+ frame data/chars/Hauzer/H_100-7.GIF
+	offset	255 430
+ frame data/chars/Hauzer/H_100-8.GIF
+	offset	251 430
+ frame data/chars/Hauzer/H_100-9.GIF
+	offset	247 430
+ frame data/chars/Hauzer/H_100-10.GIF
+	offset	245 430
+ frame data/chars/Hauzer/H_100-11.GIF
+
+anim	runattack
+	loop	0
+	delay	2
+	move	8
+	offset	253 430
+	range 30 116
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 196
+	bbox.position.y 379
+	bbox.size.x 130
+	bbox.size.y 49
+	attack.damage.force 20
+	attack.damage.type 2
+	attack.position.x 252
+	attack.position.y 379
+	attack.reaction.fall.force 1
+	attack.reaction.fall.velocity.x 3.0
+	attack.reaction.fall.velocity.y 2.0
+	attack.size.x 99
+	attack.size.y 51
+	attack.size.z.1 25
+ frame data/chars/Hauzer/H_1110-0.GIF
+ frame data/chars/Hauzer/H_1110-0.GIF
+	offset	246 430
+ frame data/chars/Hauzer/H_1110-1.GIF
+ frame data/chars/Hauzer/H_1110-1.GIF
+	offset	243 430
+ frame data/chars/Hauzer/H_1110-2.GIF
+ frame data/chars/Hauzer/H_1110-2.GIF
+	offset	240 430
+ frame data/chars/Hauzer/H_1110-3.GIF
+ frame data/chars/Hauzer/H_1110-3.GIF
+	offset	245 430
+ frame data/chars/Hauzer/H_1110-4.GIF
+ frame data/chars/Hauzer/H_1110-4.GIF
+	offset	249 430
+ frame data/chars/Hauzer/H_1110-5.GIF
+ frame data/chars/Hauzer/H_1110-5.GIF
+	offset	242 430
+ frame data/chars/Hauzer/H_1110-6.GIF
+ frame data/chars/Hauzer/H_1110-6.GIF
+	offset	240 430
+ frame data/chars/Hauzer/H_1110-7.GIF
+ frame data/chars/Hauzer/H_1110-7.GIF
+	offset	253 430
+	move	0
+	delay	4
+	bbox.position.x 200
+	bbox.position.y 378
+	bbox.size.x 103
+	bbox.size.y 52
+	attack.damage.force 0
+	attack.damage.type 0
+	attack.position.x 0
+	attack.position.y 0
+	attack.size.x 0
+	attack.size.y 0
+	attack.size.z.1 0
+ frame data/chars/Hauzer/H_1120-0.GIF
+ frame data/chars/Hauzer/H_1120-1.GIF
+ frame data/chars/Hauzer/H_1150-0.GIF
+	bbox.position.x 214
+	bbox.position.y 380
+	bbox.size.x 95
+	bbox.size.y 49
+ frame data/chars/Hauzer/H_1200-0.GIF
+	bbox.position.x 221
+	bbox.position.y 351
+	bbox.size.x 66
+	bbox.size.y 79
+ frame data/chars/Hauzer/H_1200-1.GIF
+	delay	15
+ frame data/chars/Hauzer/H_1200-2.GIF
+	delay	8
+ frame data/chars/Hauzer/H_1200-1.GIF
+
+anim	walk
+	loop	1
+ delay 7
+	offset	253 430
+	drawmethod scalex 0.5
+	drawmethod scaley 0.5
+	bbox.position.x 183
+	bbox.position.y 365
+	bbox.size.x 144
+	bbox.size.y 65
+ frame data/chars/Hauzer/H_20-0.GIF
+	offset	259 430
+ frame data/chars/Hauzer/H_20-1.GIF
+	offset	257 430
+ frame data/chars/Hauzer/H_20-2.GIF
+	offset	254 430
+ frame data/chars/Hauzer/H_20-3.GIF
+	offset	251 430
+ frame data/chars/Hauzer/H_20-4.GIF
+	offset	250 430
+ frame data/chars/Hauzer/H_20-5.GIF
+	offset	257 430
+ frame data/chars/Hauzer/H_20-6.GIF
+	offset	263 430
+ frame data/chars/Hauzer/H_20-7.GIF
+	offset	260 430
+ frame data/chars/Hauzer/H_20-8.GIF
+	offset	257 430
+ frame data/chars/Hauzer/H_20-9.GIF
+	offset	253 430
+ frame data/chars/Hauzer/H_20-10.GIF
+	offset	250 430
+ frame data/chars/Hauzer/H_20-11.GIF
+

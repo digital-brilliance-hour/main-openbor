@@ -1,0 +1,49 @@
+name	Fwind2
+notgrab 1
+health	1
+speed   0
+nomove 1 0
+type	trap
+grabdistance 51
+jumpheight 0
+#hitenemy 1 0
+candamage enemy cpu player obstacle
+shadow	0
+nolife        1
+#icon	data/chars/misc/fwind2_icon.gif
+alpha 2
+
+anim idle
+	loop	0
+	delay	9
+	offset	56 139
+        subentity  Gleam
+        custentity Gleam
+        summonframe 1 0 0 0 0
+        unsummonframe 11
+        hitfx   data/chars/bigben/sss.wav
+        hitflash   Blood
+        burn   2 2 104 146 13 1
+        sound   data/chars/adamx/bomb/bomb.wav
+	delay	7
+	frame   data/chars/adamx/bomb/ff1.gif
+	delay	3
+	frame   data/chars/adamx/bomb/ff2.gif
+	delay	5
+	frame   data/chars/adamx/bomb/ff3.gif
+	frame   data/chars/adamx/bomb/ff4.gif
+	frame   data/chars/adamx/bomb/ff5.gif
+	delay	7
+	frame   data/chars/adamx/bomb/ff6.gif
+	frame   data/chars/adamx/bomb/ff7.gif
+	delay	9
+	frame   data/chars/adamx/bomb/ff8.gif
+	delay   11
+	frame   data/chars/adamx/bomb/ff9.gif
+	delay   13
+	frame   data/chars/adamx/bomb/ff10.gif
+	delay   11
+        attack  0
+	frame   data/chars/adamx/bomb/empty2.gif
+	delay   1
+	frame   data/chars/adamx/bomb/empty2.gif

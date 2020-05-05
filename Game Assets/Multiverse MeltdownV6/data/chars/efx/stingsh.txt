@@ -1,0 +1,16 @@
+name	StingSh
+type	none
+shadow	0
+nolife  1
+speed	19
+#Remove 0
+candamage player npc
+
+anim idle
+	loop	1
+        delay   4
+	offset	158 133
+		#sound  Data/CHARS/Omega/hold.wav
+		attack2  193  112  14  21 11  0  0  0  0  20
+	frame	data/chars/EFX/StingSh.gif
+

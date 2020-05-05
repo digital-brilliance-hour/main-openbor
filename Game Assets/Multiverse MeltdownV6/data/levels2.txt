@@ -1,0 +1,226 @@
+# List level filenames here.
+
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+
+Maxplayers 4
+
+#rush 2 4 Hits 2 2 MaxHits 2 2
+#p1rush 1   42 52  42  1   52 52  52
+#p2rush 121 42 182 42  121  52 182 52
+#p3rush 241 42 302 42  241 52 302 52
+#p4rush 361 42 412 42  361 52 412 52
+#{x1} {y1} {x2} {y2} {x3} {y3}
+
+lbarsize  81 6 0 1
+mpbarsize 81 5 0 1
+timeloc   -100 -500 21 20 1
+
+loadingbg  1 10 235 295 160 170 4
+loadingbg2 1 10 235  295 160 170 4
+
+#p1smenu 0 271
+#p2smenu 122 271
+#p3smenu 244 271
+#p4smenu 366 271
+
+p1life      36   17
+p1mp        36   24
+p1namej     22  8  22   0  22   0
+p1icon      0   0
+p1lifen     0   -60
+p1lifex    -62 -100
+p1score     22   0  -22  32  22  8
+
+e1life      36   55
+e1icon      0    32
+e1name      22    47
+
+p2life      156   17
+p2mp        156   24
+p2namej     142   8  142  0  142  0
+p2icon      120   0
+p2lifen     136   -60
+p2lifex    -62  -100
+p2score     142   0  -22  -10  142  8
+
+e2life      156   55
+e2icon      120   32
+e2name      141   32
+
+p3life      276   17
+p3mp        276   24
+p3namej     262   8  262  0  262  0
+p3icon      240   0
+p3lifen     225   -60
+p3lifex    -38  -100
+p3score     262   0  -22  -10  262  8
+
+e3life      276   55
+e3icon      240   32
+e3name      262   47
+
+p4life      396   17
+p4mp        396   24
+p4namej     382   8  382  0  382  0
+p4icon      360   0
+p4lifen     304   -60
+p4lifex    -38  -100
+p4score     382   0  -22  -10  382  8
+
+e4life      396   55
+e4icon      360   32
+e4name      382   47
+
+
+
+set	UniForce_Mode2b
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+z 179 259
+file	data/levels/UFM1/UFM1S2b.txt
+
+set	UniForce_Mode2a
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+z 162 230
+file	data/levels/UFM1/UFM1S2a.txt
+z 179 259
+file	data/levels/UFM1/UFM1S2b.txt
+
+set	UniForce_Mode
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+#z 154 228
+#file	data/levels/UFM1/UFM1S1.txt
+z 152 232
+file	data/levels/UFM1/UFM1S1b.txt
+z 162 230
+file	data/levels/UFM1/UFM1S2a.txt
+z 179 259
+file	data/levels/UFM1/UFM1S2b.txt
+
+set	Demo1
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+Z 249 295
+file	data/levels/MKRoofT.txt
+
+set	Demo2
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+z 193 257
+file	data/levels/Level2-2.txt
+
+set	Demo3
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+z 200 285
+file	data/levels/Volcano.txt
+
+set	DemoX
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+z 142 225
+file	data/levels/MMX.txt
+
+set	Cosmic_Damage
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 1
+z 177 228
+file	data/levels/Level1-1.txt
+z 189 229
+file	data/levels/Level1-2.txt
+
+set	Beast_Mode_Demo
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+skipselect 
+select data/SelBM.txt
+Z 220 292
+file	data/levels/BMS1a.txt
+Z 200 282
+file	data/levels/BMS1b.txt
+
+set	Beast_Mode_Hub
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+skipselect 
+select data/SelBM.txt
+branch HubD
+Z 185 295
+file	data/levels/Hub/HubD.txt
+branch HubE
+Z 178 295
+file	data/levels/Hub/HubE.txt
+branch HubB
+Z 214 278
+file	data/levels/Hub/HubB.txt
+branch HubD
+Z 185 295
+file	data/levels/Hub/HubD.txt
+branch HubA
+Z 219 270
+file	data/levels/Hub/HubA.txt
+branch HubC
+Z 213 273
+file	data/levels/Hub/HubC.txt
+Z 213 273
+file	data/levels/Hub/HubC.txt
+
+set	Gundam_vs_Monsters
+maxplayers 4
+lives 1
+credits 99
+noshare 1
+musicoverlap 1
+typemp 0
+skipselect 
+select data/SelGvM.txt
+Z 291 342
+file	data/levels/GvM.txt
+

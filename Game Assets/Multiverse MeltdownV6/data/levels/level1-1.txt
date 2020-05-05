@@ -1,0 +1,288 @@
+notime 1
+music		data/music/Impresiv.bor
+background	data/bgs/Stage1-1/BG.gif
+panel		data/bgs/Stage1-1/Panal.gif	
+frontpanel	data/bgs/f.gif
+
+direction both
+settime 0
+notime 1
+							
+order	aaa
+
+spawn	ready
+coords	0 240
+flip    1
+at	0
+
+spawn	Txt1
+coords	0 240
+flip    1
+at	50
+
+
+#-------1
+
+
+group   5 5
+at      290
+
+wait 
+at      290
+
+spawn	serg
+health	50
+coords	560 200 1
+at	290
+
+spawn	Robot
+health	60
+coords	560 200 1
+at	290
+
+spawn	hunter
+health	50
+coords	-30 200 1
+at	290
+
+spawn	PIG  
+Item    Hcap
+health	50
+coords	-30 185 1
+at	290
+
+spawn	WRENCHIE
+health	40
+coords	560 185 1
+at	290
+
+spawn	Android
+health	50
+coords	-30 185 1
+at	290
+
+spawn	hunter
+health	50
+coords	560 200 1
+at	290
+
+spawn	RAT 
+health	50
+coords	-30 210 1
+at	290
+
+spawn	SRAT 
+health	50
+coords	560 200 1
+at	290
+
+
+#-------2
+
+
+group   6 6
+at      714
+
+wait 
+at      714
+
+spawn   RATMAN 
+health	80
+map	2
+coords	-30 160 1
+at      714
+
+spawn   Ninja_Hawk
+health	50
+coords	560 160 1
+at      714
+
+spawn   Cyber
+health	50
+coords	560 160 1
+at      714
+
+spawn   PIGMAN 
+health	80
+Item    Bcap
+coords	-30 160 1
+at      714
+
+spawn   goblin
+health	50
+coords	560 180 1
+at      714
+
+spawn   X-Hulk
+health	120
+coords	560 180 1
+at      714
+
+spawn   alien3 
+health	50
+coords	-30 200 1
+at      714
+
+spawn   serg
+health	50
+coords	560 180 1
+at      714
+
+spawn   rex 
+health	80
+Item    Hcap
+coords  -30 170 1
+at      714
+
+
+#-------3
+
+
+group   4 4
+at      1200
+
+wait  
+at      1200
+
+spawn   Cheribu
+health	80
+Item    Bcap
+coords	-40 200 1
+at      1200
+
+spawn   Caprcorn
+health	130
+coords	560 200 1
+at      1200
+
+spawn   alien5
+health	50
+coords	560 200 1
+at      1200
+
+spawn   alien3
+health	50
+coords	-40 170 1
+at      1200
+
+spawn   Elite_Soldier
+health	60	
+coords	560 170 1
+at      1200
+
+spawn   X-Hulk
+health	50
+Item    Hcap
+coords	560 170 1
+at      1200
+
+spawn   monster
+health	60	
+coords	-40 220 1
+at      1200
+
+#-------4
+
+
+group   5 5
+at      1670
+
+wait 
+at      1670
+
+spawn	RAT_
+health	130
+coords	560 170 1
+at      1670
+
+spawn	WRENCHIE
+health	40
+coords	-40 170 1
+at      1670
+
+spawn   henchmen
+health	50
+coords	560 160 1
+at      1670
+
+spawn	Caprcorn
+health	130
+coords	-40 170 1
+at      1670
+
+spawn	alien3
+health	50
+coords	560 170 1
+at      1670
+
+spawn	SRAT
+health	50
+coords  -40 220 1
+at      1670
+
+spawn	SRAT
+health	50
+coords	-40 170 1
+at      1670
+
+spawn   alien6
+health	50
+coords  -40 240 1
+at      1670
+
+spawn   alien4
+health	50
+coords  560 240 1
+at      1670
+
+#-------5
+
+group   5 5
+at      1670
+
+wait 
+at      2045
+
+spawn   guner
+coords  560 220 1
+at      2045
+
+spawn   RAT_ 
+health	130
+coords  -40 240 1
+at      2045
+
+spawn	Ninja_Hawk
+health	50
+coords	560 170 1
+at      2045
+
+spawn   Elite_Soldier
+health	50
+coords  560 240 1
+at      2045
+
+spawn	alien1
+health	50
+coords	560 170 1
+at      2045
+
+spawn   alien5 
+health	50
+coords  -40 240 1
+at      2045
+
+spawn	trooper
+health	50
+coords	560 170 1
+at      2045
+
+spawn   rex
+health	80
+coords  -40 240 1
+at      2045
+
+spawn	goblin
+health	50
+coords	560 170 1
+at      2045

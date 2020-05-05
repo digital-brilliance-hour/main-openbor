@@ -1,0 +1,661 @@
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+lifescore 100000
+colourselect 1
+maxfreespecials 100
+maxfollows   200
+maxattacks 100
+maxattacktypes 100
+nodropen 
+spdirection 1 1 1 1
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+# Players must also be loaded.
+#load	SAND_CYCLOPSP        data/chars/SandCy/SandCy.txt
+#load	MUMMY_COMMANDO        data/chars/MUMMYCOMMANDO/MUMMYC2.txt
+#load	RASH	              data/chars/rash/rash.txt
+#load	Scarlet_Spider        data/chars/MVC2_Spiderman/Scarlet.txt
+#load    Michaelangelo         data/chars/mike/mike.txt
+#load	SONIC                 data/chars/SonicMH/Sonic.txt
+load	KNUCKLES                 data/chars/KnuxMH/Knux.txt
+load    EARTHWORM_JIM         data/chars/ewj/ewj.txt
+load    K'         data/chars/K'/K'.txt
+load    SPAWN         data/chars/Spawn/Spawn.txt
+#load    VENOM         data/chars/venom/venom.txt
+#load    THROTTLE      data/chars/Throttle/Throttle.txt
+load    TALBAIN      data/chars/Talbain/Talbain.txt
+load    HEAVY-D      data/chars/HeavyD/HeavyD.txt
+load    LUKE_CAGE      data/chars/LukeCage/LukeCage.txt
+#load    PREDATOR_HUNTER      data/chars/PredatorH/PredatorH.txt
+load    HANZO      data/chars/Hanzo/Hanzo.txt
+load	G.DONE               data/chars/GDone/GDone.txt
+#load	GUNTER               data/chars/Gunter/Gunter.txt
+load	JOHNNY               data/chars/JohnnyH/JohnnyH.txt
+
+#load    KIBA          data/chars/kiba/kiba.txt
+
+#Cosmic Damage
+#load	Zero		data/chars/Zero/Zero.txt
+#load	ZeroS		data/chars/Zero/Shock/ZeroS.txt
+#load	ZeroB		data/chars/Zero/Burn/ZeroB.txt
+#load	ZeroF		data/chars/Zero/Freeze/ZeroF.txt
+#load	ZeroD		data/chars/Zero/Drain/ZeroD.txt
+#load	Stealth_Owl          data/chars/Owl/Owl.txt
+#load	Stealth_OwlS          data/chars/Owl/Shock/OwlS.txt
+#load	Stealth_OwlB          data/chars/Owl/Burn/OwlB.txt
+#load	Stealth_OwlF          data/chars/Owl/Freeze/OwlF.txt
+#load	Stealth_OwlD          data/chars/Owl/Drain/OwlD.txt
+#load	Mighty		data/chars/Mighty/Mighty.txt
+#load	MightyB		data/chars/Mighty/Burn/MightyB.txt
+#load	MightyD		data/chars/Mighty/Drain/MightyD.txt
+#load	MightyF		data/chars/Mighty/Freeze/MightyF.txt
+#load	MightyS		data/chars/Mighty/Shock/MightyS.txt
+#load	Max		data/chars/Max/Max.txt
+#load	MaxS		data/chars/Max/Shock/MaxS.txt
+#load	MaxB		data/chars/Max/Burn/MaxB.txt
+#load	MaxF		data/chars/Max/Freeze/MaxF.txt
+#load	MaxD		data/chars/Max/Drain/MaxD.txt
+
+#load	Alien_Hominid	data/chars/Alien/Alien.txt
+#load	Impmon	           data/chars/Impmon/Impmon.txt
+#load	BEETLEMON	data/chars/Beetlem/Beetlem.txt
+#load	Hygogg		data/chars/Hygogg/Hygogg.txt
+
+#Beast Mode
+load	arrowAC                          data/chars/Map/arrowAC.txt
+load	arrowAD                          data/chars/Map/arrowAD.txt
+load	arrowBD                          data/chars/Map/arrowBD.txt
+load	arrowBE                          data/chars/Map/arrowBE.txt
+load	arrowCA                          data/chars/Map/arrowCA.txt
+load	arrowCE                          data/chars/Map/arrowCE.txt
+load	arrowDA                          data/chars/Map/arrowDA.txt
+load	arrowDB                          data/chars/Map/arrowDB.txt
+load	arrowEB                          data/chars/Map/arrowEB.txt
+load	arrowEC                          data/chars/Map/arrowEC.txt
+load	empty                            data/chars/Misc/empty.txt
+
+load	ADEG                           data/chars/Guy/Adeg.txt
+#load	NEKU                          data/chars/Neku/Neku.txt
+#load	CONDOROCK                     data/chars/Condoroc/Condoroc.txt
+
+
+#---------------------------------Beasts
+#load	STRIKEWOLF            data/chars/StrkWolf/StrkWolf.txt
+load	STRIKEWOLF_N          data/chars/StrkWolf/StrkWofN.txt
+#load    THUNDAGON            data/chars/wormwood/Thudagon.txt
+load	THUNDAGON_N           data/chars/wormwood/Thudag_N.txt
+#load    DARKHOUND            data/chars/DarkHond/DarkHond.txt
+load    DARKHOUND_E           data/chars/DarkHond/DarkHndE.txt
+#load    DARKION              data/chars/Darkion/Darkion.txt
+load    DARKION_E             data/chars/Darkion/DarkionE.txt
+#load    SHADOWBAT            data/chars/ShadoBat/ShadoBat.txt
+load    SHADOWBAT_E           data/chars/ShadoBat/ShadoBaE.txt
+
+load    DARKHOUND_E_           data/chars/DarkHond/DarkHndE2.txt
+load    DARKION_E_             data/chars/Darkion/DarkionE2.txt
+load    SHADOWBAT_E_           data/chars/ShadoBat/ShadoBaE2.txt
+
+load    SHADOWKRO_E           data/chars/Kro/ShadoKroE.txt
+load    DARKBRITTO_E          data/chars/Britto/DarkBritE.txt
+
+load    SHADOWKRO_E_           data/chars/Kro/ShadoKroE2.txt
+load    DARKBRITTO_E_          data/chars/Britto/DarkBritE2.txt
+
+#---------------------------------Megaman
+#load	X_XC		data/chars/X-XC/X-XC.txt
+load	ZERO_MMX		data/chars/ZeroMMX/ZeroMMX.txt
+load	AXL		data/chars/Axl/Axl.txt
+
+load	XA3a		data/chars/X-XC/XA3a.txt
+load	XA3b		data/chars/X-XC/XA3b.txt
+load	XFSP2		data/chars/X-XC/XFSP2.txt
+load	XSP		    data/chars/X-XC/XSP.txt
+
+load	ZFSP2		data/chars/ZeroMMX/ZFSP2.txt
+load	ZSP 		data/chars/ZeroMMX/ZSP.txt
+
+load	AxAa		data/chars/Axl/AxAa.txt
+load	AxAb		data/chars/Axl/AxAb.txt
+load	AxFSP1		data/chars/Axl/AxFSP1.txt
+load	AxFSP2a		data/chars/Axl/AxFSP2a.txt
+load	AxFSP2b		data/chars/Axl/AxFSP2b.txt
+load	AxSP		data/chars/Axl/AxSP.txt
+
+#---------------------------------Gundam
+load	WING.0		    data/chars/Wing0/Wing0.txt
+load	DEATHSCYTHE		data/chars/Deathscythe/Deathscythe.txt
+
+#---------------------------------Tales
+load	CLESS               data/chars/Cless/Cless.txt
+#load	KYLE               data/chars/Kyle/Kyle.txt
+load	LONI               data/chars/Loni/Loni.txt
+#load	REALA               data/chars/Reala/Reala.txt
+
+#---------------------------------Enemies
+load    REAPER1	        data/chars/Reaper1/Reaper1.txt
+load    KARIYO	        data/chars/Kariyo/Kariyo.txt
+
+load    Karshot0	        data/chars/Kariyo/Karshot0.txt
+load    Karshot1	        data/chars/Kariyo/Karshot1.txt
+load    KarFlame	        data/chars/Kariyo/KarFlame.txt
+load    KarFlameS	        data/chars/Kariyo/KarFlameS.txt
+
+#===============Enemies
+load	ESSK	        data/Chars/Misc3/ESSK.txt
+load	ESSK6	        data/Chars/Misc3/ESSK6.txt
+load	ESSK7	        data/Chars/Misc3/ESSK7.txt
+load	ESK10s	            data/Chars/Misc3/ESK10s.txt
+load	ESK15s	            data/Chars/Misc3/ESK15s.txt
+load	ESK20s	            data/Chars/Misc3/ESK20s.txt
+load	ESK30s	            data/Chars/Misc3/ESK30s.txt
+load	TempE	        data/Chars/Misc3/TempE.txt
+load	TempE2	        data/Chars/Misc3/TempE2.txt
+
+load	MegaBrosESa	        data/Chars/Misc3/MegaBrosESa.txt
+load	MegaBrosESb	        data/Chars/Misc3/MegaBrosESb.txt
+
+load	UniFA	        data/Chars/Misc3/UniFA.txt
+load	UniFB	        data/Chars/Misc3/UniFB.txt
+load	UniFC	        data/Chars/Misc3/UniFC.txt
+load	UniFD	        data/Chars/Misc3/UniFD.txt
+load	TFerS	        data/Chars/Misc3/TFerS.txt
+load	ESK10TF	            data/Chars/Misc3/ESK10TF.txt
+load	FernandezA	        data/Chars/Misc3/FernandezA.txt
+load	FernandezB	        data/Chars/Misc3/FernandezB.txt
+
+load	TaleA	        data/Chars/Misc3/TaleA.txt
+load	TaleB	        data/Chars/Misc3/TaleB.txt
+
+
+know    M.BISON		data/chars/Bison/Bison.txt
+know    DECAPRE		data/chars/Decapre/Decapre.txt
+
+know    alien1          data/chars/alien1/alien1.txt
+know    alien2          data/chars/alien2/alien2.txt
+know    alien3          data/chars/alien3/alien3.txt
+know    alien4          data/chars/alien4/alien4.txt
+know    alien5          data/chars/alien5/alien5.txt
+know    alien6          data/chars/alien6/alien6.txt
+know    ROYAL_GUARD     data/chars/RoyalG/RoyalG.txt
+
+know    HAUZER		data/chars/Hauzer/Hauzer.txt
+know    HAUZERe		data/chars/Hauzer/Hauzere.txt
+
+know    INFECTED_FUNGRA		data/chars/InfectedF/InfectedF.txt
+know    JILLIAN		data/chars/Jillian/Jillian.txt
+know    METAL_GEAR		data/chars/MetalGear/MetalGear.txt
+load    MGShot		data/chars/MetalGear/MGShot.txt
+
+know    Cheribu         data/chars/Cheribu/Cheribu.txt
+know	Beetle		data/chars/Beetle/Beetle.txt
+know	Beetler		data/chars/Beetle/Beetler.txt
+know	GFish		data/chars/GFish/GFish.txt
+know	GFish2		data/chars/GFish/GFish2.txt
+know	Fly		data/chars/Fly/Fly.txt
+know	Quaker		data/chars/Quaker/Quaker.txt
+know	serg		data/chars/serg/serg2.txt
+know	Robot		data/chars/robot/Zero.txt
+know	hunter		data/chars/hunter/hunter2.txt
+know	Cyber		data/chars/Cyber/Cyber.txt
+know	Android		data/chars/Android/Android2.txt
+know    NINJA           data/chars/NINJA/NINJA.txt
+know    PIG             data/chars/pig/pig.txt
+know    PIGMAN          data/chars/pigman/pigman.txt
+know    RAT             data/chars/rat/rat.txt
+know    RATMAN          data/chars/ratman/ratman.txt
+know    SRAT            data/chars/srat/srat.txt
+know    WRENCHIE        data/chars/wrenchie/wrenchie.txt
+know    Brute_Soldier   data/chars/brute/brute.txt
+know    Elite_Soldier   data/chars/elite/elite.txt
+know    ghoul           data/chars/ghoul/ghoul.txt
+know    goblin          data/chars/goblin/goblin.txt
+know    Ninja_Hawk      data/chars/hawk/hawk.txt
+know    rex             data/chars/rex/rex.txt
+know    monster         data/chars/monster/monster.txt
+know    henchmen        data/chars/henchmen/henchmen.txt
+know    knight          data/chars/knight/knight.txt
+know    trooper         data/chars/trooper/trooper.txt
+know	Juggs           data/chars/Juggs/Juggs2.txt
+
+know	soul           data/chars/soul/soul.txt
+know	specter           data/chars/specter/specter.txt
+know	Testa           data/chars/testa/testa.txt
+know	That           data/chars/that/that.txt
+know	zlord           data/chars/zlord/zlord.txt
+#===============
+know	TrushR		data/chars/TrushR/TrushR.txt
+know	TrushS		data/chars/TrushR/TrushS.txt
+know	SpikeB		data/chars/SpikeB/SpikeB.txt
+know	SpikeS		data/chars/SpikeB/SpikeS.txt
+know	Stomper		data/chars/Stomper/Stomper.txt
+
+########################SMB
+know	Beetle_		data/chars/Beetle/Beetle2.txt
+know	Beetler_		data/chars/Beetle/Beetler2.txt
+know	GFish_		data/chars/GFish/GFishB.txt
+know	GFish2_		data/chars/GFish/GFish2B.txt
+know	SpikeB_		data/chars/SpikeB/SpikeB2.txt
+know	SpikeS_		data/chars/SpikeB/SpikeS2.txt
+know	TrushR_		data/chars/TrushR/TrushR2.txt
+know	TrushS_		data/chars/TrushR/TrushS2.txt
+know	Quaker_		data/chars/Quaker/Quaker2.txt
+know	Stomper_		data/chars/Stomper/Stomper2.txt
+know	Fly_		data/chars/Fly/Fly2.txt
+
+know	Grizzy		data/chars/Grizzy/Grizzy.txt
+#load	Kraken		data/chars/Kraken/Kraken.txt
+know	Slash		data/chars/Slash/Slash.txt
+#know	Dynamo		data/chars/Dynamo/Dynamo.txt
+#know	Colonel		data/chars/Colonel/Colonel.txt
+#know	Clone1		data/chars/Sigma/Sigma.txt
+
+load	FlyShot		data/chars/Fly/FlyShot.txt
+########################
+#===============
+#Hard Enemies
+know    RAT_            data/chars/rat_/rat_.txt
+know    Caprcorn        data/chars/Caprcorn/Caprcorn.txt
+know    X-Hulk          data/chars/X-Hulk/X-Hulk.txt
+
+# Bosses
+#1
+know	guner		   data/chars/guner/guner.txt
+know	Roper              data/chars/Roper/Roper.txt
+
+know	ghgob		   data/chars/ghgob/ghgob.txt
+know	goblin_		   data/chars/goblin2/goblin2.txt
+know	kusare		   data/chars/kusare/kusare.txt
+know	sasqua		   data/chars/sasqua/sasqua.txt
+know	JR.BALROG	   data/chars/JrBalrog/JrBalrog.txt
+
+know	Golem		   data/chars/golem/golem.txt
+know	hydra		   data/chars/hydra/hydra.txt
+know	icegol		   data/chars/icegol/icegol.txt
+know	Mukai		   data/chars/mukai/mukai.txt
+know	draga2		   data/chars/draga/draga2.txt
+know	dragaa2		   data/chars/draga/dragaa2.txt
+know	dragab2		   data/chars/draga/dragab2.txt
+
+know	redarm1		   data/chars/redwyrm/redarm1.txt
+know	redarm2		   data/chars/redwyrm/redarm2.txt
+know	redbod		   data/chars/redwyrm/redbod.txt
+know	redhea		   data/chars/redwyrm/redhea.txt
+
+know	FERNANDEZ	   data/chars/Fernandez/Fernandez.txt
+know	FERNANDEZ_	   data/chars/Fernandez/Fernandez2.txt
+know	FERNANDEZ__	   data/chars/Fernandez/Fernandez3.txt
+know	FERNANDEZ___   data/chars/Fernandez/FernandezB.txt
+know	SHIN_FERNANDEZ	   data/chars/Fernandez/FernandezFB.txt
+#===============
+#---------------------------------Enemies
+#===============
+know    Zack	   data/chars/Zack/Zack.txt
+know    Goldie	   data/chars/Goldie/Goldie.txt
+know    donovan    data/chars/donovan/donovan.txt
+know    Galsia	   data/chars/Galsia/Galsia.txt
+know    hakuyo	   data\CHARS\hakuyo/hakuyo.txt
+know    Signal	   data/chars/Signal/Signal.txt
+know    Bigben     data\CHARS\bigben\Bigben.txt
+know    Rae        data/chars/rae/rae.txt
+
+know	Antonio_E	   data/chars/Bruce/AntonioE.txt
+know	Barbon	   data/chars/barbon/barbon.txt
+#===============Enemies
+know    Badnick		data/chars/Badnick/Badnick.txt
+know    Badnick-Hover   data/chars/BadnickH/BadnickH.txt
+know    Eggpawn         data/chars/Eggpawn/Eggpawn.txt
+know    Eggpawn-Gun     data/chars/EggGun/EggGun.txt
+know    Eggpawn-Heavy   data/chars/EggHeavy/EggHeavy.txt
+know    Eggpawn-Knight  data/chars/EgKnight/EgKnight.txt
+know    Eggpawn-Bomb    data/chars/Egg-Bomb/Egg-Bomb.txt
+#Map 1
+know    E-Drill         data/chars/E-Drill/E-Drill.txt
+know    E-Taser         data/chars/E-Taser/E-Taser.txt
+know    Emerl-Cyber     data/chars/Emerl-C/Emerl-C.txt
+know    Emerl-Scrapper  data/chars/Emerl-S/Emerl-S.txt
+know    Bombardier_Blast         data/chars/BBlast/BBlast.txt
+know    Beetle_Rally         data/chars/Beetle/Beetle.txt
+know    HopterCopter         data/chars/HopCop/HopCop.txt
+know    BeetleSaw            data/chars/BSaw/BSaw.txt
+know    Camera_Turret        data/chars/CameraT/CameraT.txt
+know    ClubTank             data/chars/ClubTank/ClubTank.txt
+know    DAMSILTRON           data/chars/DamTron/DamTron.txt
+
+#Load    CamTS              data/chars/CameraT/CamTS.txt
+
+know    Mecha_Sonic     data/chars/m/m.txt
+know    Toxic_Drone     data/chars/PyroDron/ToxiDron.txt
+
+# Mid-Bosses
+#know    Metal-Tails     data/chars/MTails/MTails.txt
+#know    Android-Amy     data/chars/AAmy/AAmy.txt
+
+# Bosses
+know    E-103_Delta     data/chars/E-103/E-103.txt
+know    Mecha-Knuckles_E  data/chars/MKnux/MKnuxE.txt
+know	Metal_Sonic_MK1_E	data/chars/MS-MK1/MS-MK1E.txt
+
+# Efx
+
+# Items and other objects can be loaded when needed.
+know	Apple		data/chars/misc/apple.txt
+know	Meat		data/chars/misc/meat.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+know	Gold		data/chars/misc/gold.txt
+know	Time		data/chars/misc/time.txt
+#
+know	Apple		data/chars/misc/apple.txt
+know	Extra		data/chars/misc/extra.txt
+know	Juice		data/chars/misc/juice.txt
+know	Potion		data/chars/misc/potion.txt
+know	Time		data/chars/misc/time.txt
+know	shot         	data/chars/misc/shot.txt
+know	fir		data/chars/misc/fir.txt
+know	laz		data/chars/misc/laz.txt
+know	hom		data/chars/misc/hom.txt
+know	rap		data/chars/misc/rap.txt
+know	forc		data/chars/misc/forc.txt
+know	fly		data/chars/smash/fly.txt
+
+
+know	Bcap		data/chars/misc/Bcap.txt
+know	Hcap		data/chars/misc/Hcap.txt
+know	gcap		data/chars/misc/Gcap.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+# Obstacles (item containers)
+know	Trash		data/chars/misc/trash.txt
+
+
+
+# Other stuff
+
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+
+
+know	B2PL-0		data/Bgs/B2/B2PL-0.txt
+know	B2PL-1		data/Bgs/B2/B2PL-1.txt
+know	B2PL-2		data/Bgs/B2/B2PL-2.txt
+know	B2PL-3		data/Bgs/B2/B2PL-3.txt
+know	B2PL-4		data/Bgs/B2/B2PL-4.txt
+
+know	B3-P		data/Bgs/B3/B3-P.txt
+
+#Pros
+load	EWJSP     	data/chars/ewj/EWJSP.txt
+load	EWJSPF     	data/chars/ewj/EWJSPF.txt
+load    MTwister        data/chars/mike/MTwister.txt
+load	WebBall         data/chars/MVC2_Spiderman/WebB.txt
+load	S-Wave          data/chars/SonicMH/S-Wave.txt
+load	SWind        	data/chars/Sonic/SWind.txt
+load	K'FSP1a     	data/chars/K'/K'FSP1a.txt
+load	K'FSP1b     	data/chars/K'/K'FSP1b.txt
+load	K'FSP1c     	data/chars/K'/K'FSP1c.txt
+load	K'FSP2a     	data/chars/K'/K'FSP2a.txt
+load	K'FSP2b     	data/chars/K'/K'FSP2b.txt
+load	Kfx3a     	    data/chars/K'/Kfx3a.txt
+load	Kfx3b     	    data/chars/K'/Kfx3b.txt
+load	Kfx3c     	    data/chars/K'/Kfx3c.txt
+load	Kfx3d     	    data/chars/K'/Kfx3d.txt
+load	KSPa     	    data/chars/K'/KSPa.txt
+load	KSPb     	    data/chars/K'/KSPb.txt
+load    SpawnSPA        data/chars/Spawn/SpawnSPA.txt
+load    SpawnSPB        data/chars/Spawn/SpawnSPB.txt
+load    SpNPS           data/chars/Spawn/SpNPS.txt
+load    SpMg0           data/chars/Spawn/SpMg0.txt
+load    SpMg1           data/chars/Spawn/SpMg1.txt
+load    SpMg2           data/chars/Spawn/SpMg2.txt
+load    SpMg2b          data/chars/Spawn/SpMg2b.txt
+load    SpMg3           data/chars/Spawn/SpMg3.txt
+load    VFSP2a         data/chars/venom/VFSP2a.txt
+load    VFSP2b         data/chars/venom/VFSP2b.txt
+load    TFSP2           data/chars/Throttle/TFSP2.txt
+load    TalSP           data/chars/Talbain/TalSP.txt
+load    HDD           data/chars/HeavyD/HDD.txt
+load    HDF           data/chars/HeavyD/HDF.txt
+load    HDSP          data/chars/HeavyD/HDSP.txt
+load    PHFSP2a       data/chars/PredatorH/PHFSP2a.txt
+load    PHFSP2b       data/chars/PredatorH/PHFSP2b.txt
+load    HanFSP1a      data/chars/Hanzo/HanFSP1a.txt
+load    HanFSP1b      data/chars/Hanzo/HanFSP1b.txt
+load    HanFSP1c      data/chars/Hanzo/HanFSP1c.txt
+load    HanSPA      data/chars/Hanzo/HanSPA.txt
+load    HanSPB      data/chars/Hanzo/HanSPB.txt
+load    GDSPA      data/chars/GDone/GDSPA.txt
+load    GDSPB      data/chars/GDone/GDSPB.txt
+load	GuSPA      data/chars/Gunter/GuSPA.txt
+load	GuSPB      data/chars/Gunter/GuSPB.txt
+
+load    ClFSP2      data/chars/Cless/ClFSP2.txt
+load    KyFSP1a      data/chars/Kyle/KyFSP1a.txt
+load    KyFSP1b      data/chars/Kyle/KyFSP1b.txt
+load    KyFSP2      data/chars/Kyle/KyFSP2.txt
+load    KySPa      data/chars/Kyle/KySPa.txt
+
+Load	Zshot           data/chars/Zero/Zshot.txt
+Load	Sheild          data/chars/Zero/Sheild.txt
+Load	ZSshot          data/chars/Zero/Shock/ZSshot.txt
+Load	SSheild          data/chars/Zero/Shock/SSheild.txt
+Load	ZBshot          data/chars/Zero/Burn/ZBshot.txt
+Load	BSheild          data/chars/Zero/Burn/BSheild.txt
+Load	ZFshot          data/chars/Zero/Freeze/ZFshot.txt
+Load	FSheild          data/chars/Zero/Freeze/FSheild.txt
+Load	ZDshot          data/chars/Zero/Drain/ZDshot.txt
+Load	DSheild          data/chars/Zero/Drain/DSheild.txt
+
+Load	OWlB0            data/chars/Owl/OWlB0.txt
+Load	OWlB1            data/chars/Owl/OWlB1.txt
+Load	OWlBS            data/chars/Owl/OWlBS.txt
+Load	OBomb           data/chars/Owl/OBomb.txt
+Load	OWlBu0            data/chars/Owl/Burn/OWlBu0.txt
+Load	OWlBu1            data/chars/Owl/Burn/OWlBu1.txt
+Load	OWlBuS            data/chars/Owl/Burn/OWlBuS.txt
+Load	OBombB            data/chars/Owl/Burn/OBombB.txt
+Load	OWlBD0            data/chars/Owl/Drain/OWlBD0.txt
+Load	OWlBD1            data/chars/Owl/Drain/OWlBD1.txt
+Load	OWlBDS            data/chars/Owl/Drain/OWlBDS.txt
+Load	OBombD            data/chars/Owl/Drain/OBombD.txt
+Load	OWlBF0            data/chars/Owl/Freeze/OWlBF0.txt
+Load	OWlBF1            data/chars/Owl/Freeze/OWlBF1.txt
+Load	OWlBFS            data/chars/Owl/Freeze/OWlBFS.txt
+Load	OBombF            data/chars/Owl/Freeze/OBombF.txt
+Load	OWlBS0            data/chars/Owl/Shock/OWlBS0.txt
+Load	OWlBS1            data/chars/Owl/Shock/OWlBS1.txt
+Load	OWlBSS            data/chars/Owl/Shock/OWlBSS.txt
+Load	OBombS            data/chars/Owl/Shock/OBombS.txt
+
+Load	MBBomb           data/chars/Mighty/MBBomb.txt
+load	MBomb		data/chars/Mighty/MBomb.txt
+load	MKBomb		data/chars/Mighty/MKBomb.txt
+load	MSBomb		data/chars/Mighty/MSBomb.txt
+load	EXsf		data/chars/Mighty/EXsf.txt
+Load	MBombB          data/chars/Mighty/MBombB.txt
+
+load	MBombBu		data/chars/Mighty/Burn/MBombBu.txt
+Load	MKBombB           data/chars/Mighty/Burn/MKBombB.txt
+Load	MBBombB           data/chars/Mighty/Burn/MBBombB.txt
+Load	MSBombB           data/chars/Mighty/Burn/MSBombB.txt
+load	EXsfB		data/chars/Mighty/Burn/EXsfB.txt
+Load	MBombB-          data/chars/Mighty/Burn/MBombB-.txt
+
+load	MBombD		data/chars/Mighty/Drain/MBombD.txt
+Load	MKBombD           data/chars/Mighty/Drain/MKBombD.txt
+Load	MBBombD           data/chars/Mighty/Drain/MBBombD.txt
+Load	MSBombD           data/chars/Mighty/Drain/MSBombD.txt
+load	EXsfD		data/chars/Mighty/Drain/EXsfD.txt
+Load	MBombD-          data/chars/Mighty/Drain/MBombD-.txt
+
+Load	NBomb               data/chars/Max/NBomb.txt
+Load	KBomb               data/chars/Max/KBomb.txt
+load	EXf		data/chars/Max/EXf.txt
+Load	BBomb               data/chars/Max/BBomb.txt
+load	ChaosA2      	data/chars/Max/ChaosA2.txt
+load	ChaosF     	data/chars/Max/ChaosF.txt
+Load	MXBombB           data/chars/Max/MXBombB.txt
+Load	NBombB             data/chars/Max/Burn/NBombB.txt
+Load	KBombB              data/chars/Max/Burn/KBombB.txt
+load	EXfB		data/chars/Max/Burn/EXfB.txt
+Load	BBombB              data/chars/Max/Burn/BBombB.txt
+load	ChaosA2B      	data/chars/Max/Burn/ChaosA2B.txt
+load	ChaosFB     	data/chars/Max/Burn/ChaosFB.txt
+Load	MXBombB-          data/chars/Max/Burn/MXBombB-.txt
+Load	NBombS             data/chars/Max/Shock/NBombS.txt
+Load	KBombS              data/chars/Max/Shock/KBombS.txt
+load	EXfS		data/chars/Max/Shock/EXfS.txt
+Load	BBombS              data/chars/Max/Shock/BBombS.txt
+load	ChaosA2S      	data/chars/Max/Shock/ChaosA2S.txt
+load	ChaosFS     	data/chars/Max/Shock/ChaosFS.txt
+Load	MXBombS           data/chars/Max/Shock/MXBombS.txt
+Load	NBombF             data/chars/Max/Freeze/NBombF.txt
+Load	KBombF              data/chars/Max/Freeze/KBombF.txt
+load	EXfF		data/chars/Max/Freeze/EXfF.txt
+Load	BBombF              data/chars/Max/Freeze/BBombF.txt
+load	ChaosA2F      	data/chars/Max/Freeze/ChaosA2F.txt
+load	ChaosFF     	data/chars/Max/Freeze/ChaosFF.txt
+Load	MXBombF           data/chars/Max/Freeze/MXBombF.txt
+Load	NBombD             data/chars/Max/Drain/NBombD.txt
+Load	KBombD              data/chars/Max/Drain/KBombD.txt
+load	EXfD		data/chars/Max/Drain/EXfD.txt
+Load	BBombD              data/chars/Max/Drain/BBombD.txt
+load	ChaosA2D      	data/chars/Max/Drain/ChaosA2D.txt
+load	ChaosFD     	data/chars/Max/Drain/ChaosFD.txt
+Load	MXBombD           data/chars/Max/Drain/MXBombD.txt
+
+load	AHG	data/chars/Alien/AHG.txt
+load	AHS1	data/chars/Alien/AHS1.txt
+load	AHS2	data/chars/Alien/AHS2.txt
+load	AHS3	data/chars/Alien/AHS3.txt
+
+load	ImpS1	           data/chars/Impmon/ImpS1.txt
+load	ImpS2	           data/chars/Impmon/ImpS2.txt
+load	ImpS3	           data/chars/Impmon/ImpS3.txt
+load	ImpSP	           data/chars/Impmon/ImpSP.txt
+load	ImpSPfx	           data/chars/Impmon/ImpSPfx.txt
+load	ImpJA	           data/chars/Impmon/ImpJA.txt
+
+load	BMShock	           data/chars/Beetlem/BMShock.txt
+load	BMSB	           data/chars/Beetlem/BMSB.txt
+load	BMShot	           data/chars/Beetlem/BMShot.txt
+load	BMSF	           data/chars/Beetlem/BMSF.txt
+load	BMSP	           data/chars/Beetlem/BMSP.txt
+
+Load	H-AX         data/chars/Hygogg/H-AX.txt
+Load	Hshot           data/chars/Hygogg/Hshot.txt
+
+load	DSFSP		data/chars/Deathscythe/DSFSP.txt
+load	DSFSP2		data/chars/Deathscythe/DSFSP2.txt
+
+load	W0FSP		data/chars/Wing0/W0FSP.txt
+load	W0SP		data/chars/Wing0/W0SP.txt
+load	W0SP2		data/chars/Wing0/W0SP2.txt
+load    KyFSP1a      data/chars/Kyle/KyFSP1a.txt
+load    KyFSP1b      data/chars/Kyle/KyFSP1b.txt
+load    KyFSP2      data/chars/Kyle/KyFSP2.txt
+load    KySPa      data/chars/Kyle/KySPa.txt
+load    LoSP1      data/chars/Loni/LoSP1.txt
+load    LoSP2      data/chars/Loni/LoSP2.txt
+load    LoSP3      data/chars/Loni/LoSP3.txt
+load    LoSP4      data/chars/Loni/LoSP4.txt
+load    LoSP5      data/chars/Loni/LoSP5.txt
+load    LoSP6a      data/chars/Loni/LoSP6a.txt
+load    LoSP6b      data/chars/Loni/LoSP6b.txt
+load    ReWind     data/chars/Reala/ReWind.txt
+load    ReShot     data/chars/Reala/ReShot.txt
+load    ReRock     data/chars/Reala/ReRock.txt
+load    ReRockS     data/chars/Reala/ReRockS.txt
+load    ReSP      data/chars/Reala/ReSP.txt
+load    ReSP2     data/chars/Reala/ReSP2.txt
+load    ReSP3     data/chars/Reala/ReSP3.txt
+load    ReSPS     data/chars/Reala/ReSPS.txt
+
+load	KSP                 data/chars/KnuxMH/KSP.txt
+load	Bolder                 data/chars/KnuxMH/Bolder.txt
+load	P2S-0               data/chars/JohnnyH/P2S-0.txt
+load	P2S-1               data/chars/JohnnyH/P2S-1.txt
+
+#Enemy stuff#########################
+load    BiFSP1		data/chars/Bison/BiFSP1.txt
+load    BiFSP3a		data/chars/Bison/BiFSP3a.txt
+load    BiFSP3b		data/chars/Bison/BiFSP3b.txt
+load    HauFire		data/chars/Hauzer/HauFire.txt
+load	JrBAFSP1	data/chars/JrBalrog/JrBAFSP1.txt
+
+load    ASpit     data/chars/RoyalG/ASpit.txt
+load    ASpit2     data/chars/RoyalG/ASpit2.txt
+
+load    bomb1           data/chars/misc/bomb1.txt
+load    R-shot          data/chars/srat/R-shot.txt
+load    C-Ball          data/chars/Cheribu/C-Ball.txt
+load    P-lazer         data/chars/Pirate/P-lazer.txt
+load    trident         data/chars/gfish/trident.txt
+
+load	IGA3		   data/chars/icegol/IGA3.txt
+load	IGA3fx		   data/chars/icegol/IGA3fx.txt
+load	MuSP		   data/chars/mukai/MuSP.txt
+load	MuSPs		   data/chars/mukai/MuSPs.txt
+load	DragaFire		   data/chars/draga/DragaFire.txt
+
+load	knife		data/chars/misc/knife.txt
+
+
+
+# Txt
+know	Warning		data/chars/misc/Warning.txt
+know	Ready		data/chars/misc/ready.txt
+know	Txt1		data/chars/Txt/Txt1.txt
+#Player Pros
+load	GThunder     	data/chars/Guy/GThunder.txt
+load	GTBlast     	data/chars/Guy/GTBlast.txt
+load	CondoFS1     	data/chars/Condoroc/CondoFS1.txt
+load	CondoFS2     	data/chars/Condoroc/CondoFS2.txt
+load	CondoSP     	data/chars/Condoroc/CondoSP.txt
+load	NAfx1A          data/chars/Neku/NAfx1A.txt
+load	NAfx1B          data/chars/Neku/NAfx1B.txt
+load	NAfx2           data/chars/Neku/NAfx2.txt
+load	NFSPs1          data/chars/Neku/NFSPs1.txt
+load	NFlame          data/chars/Neku/NFlame.txt
+load	NFSPs2          data/chars/Neku/NFSPs2.txt
+load	N-Ice           data/chars/Neku/N-Ice.txt
+load	NFSPs3          data/chars/Neku/NFSPs3.txt
+load	NRock           data/chars/Neku/NRock.txt
+load	NSP             data/chars/Neku/NSP.txt
+
+#Beast EFX
+load	QStrike     	data/chars/EFX/QStrike.txt
+load	SRush     	data/chars/EFX/SRush.txt
+load	SSlash     	data/chars/EFX/SSlash.txt
+load	TFang     	data/chars/EFX/TFang.txt
+#load    DragonShot         data/chars/wormwood/DragonS.txt
+load	SBreath     	data/chars/EFX/SBreath.txt
+load	DBreath     	data/chars/EFX/DBreath.txt
+load	TBlast     	data/chars/EFX/TBlast.txt
+load	DarkShot     	data/chars/EFX/DarkSht.txt
+load	Fireshot     	data/chars/EFX/Fireshot.txt
+load	SFang     	data/chars/EFX/SFang.txt
+load	StingSh     	data/chars/EFX/StingSh.txt
+load	Dsting     	data/chars/EFX/Dsting.txt
+load	DarkClaw     	data/chars/EFX/DarkClaw.txt
+load	TerrorCyA     	data/chars/EFX/TerrorCyA.txt
+load	TerrorCyB     	data/chars/EFX/TerrorCyB.txt
+load	ColdClaw     	data/chars/EFX/ColdClaw.txt
+load	IceSlide     	data/chars/EFX/IceSlide.txt
+
+#Enemy stuff
+load    R-AFX         data/chars/Reaper1/R-AFX.txt
+load    RDragon       data/chars/Reaper1/RDragon.txt
+load    RSPFX         data/chars/Reaper1/RSPFX.txt
+
+load	pings	        data/Chars/Misc/pings.txt
+load	Gleam	        data/Chars/Misc/Gleam.txt
+load	EX	        data/chars/misc3/EX.txt

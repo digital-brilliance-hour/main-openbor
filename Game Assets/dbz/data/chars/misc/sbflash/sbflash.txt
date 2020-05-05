@@ -1,0 +1,32 @@
+
+
+name	sbflash
+type   none
+shadow   0
+toflip 1
+lifespan 2
+subject_to_hole 0
+subject_to_obstacle 0
+subject_to_platform 0
+subject_to_gravity 0 
+alpha 5
+
+palette none
+
+anim	idle
+	loop	0
+	delay	4
+	offset	273 146
+	frame	data/chars/misc/sbflash/1.png
+	frame	data/chars/misc/sbflash/2.png
+	frame	data/chars/misc/sbflash/3.png
+	frame	data/chars/misc/sbflash/4.png
+	frame	data/chars/misc/sbflash/5.png
+	frame	data/chars/misc/sbflash/6.png
+	frame	data/chars/misc/sbflash/7.png
+	frame	data/chars/misc/sbflash/8.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,17 @@
+name MShot3
+type none
+shadow 0
+nolife 1
+candamage Player
+speed 24
+remove 0
+
+
+anim idle
+	loop	1
+	delay	5
+	offset	155 136
+		blast  186  91  33  50  35  0  0  0  20
+	frame	data/chars/m/MShot3-0.gif
+	frame	data/chars/m/MShot3-1.gif
+

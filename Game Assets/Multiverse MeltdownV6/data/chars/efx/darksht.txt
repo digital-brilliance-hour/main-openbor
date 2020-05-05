@@ -1,0 +1,19 @@
+name	DarkShot
+type	none
+shadow	0
+nolife  1
+speed	19
+#Remove 0
+candamage Player Npc
+
+anim idle
+	loop	1
+        delay   4
+	offset	167 128
+		#sound  Data/CHARS/Omega/hold.wav
+		attack2  201  93  18  34 13  0  0  0  0  20
+	frame	data/chars/EFX/DarkSht0.gif
+	frame	data/chars/EFX/DarkSht1.gif
+	frame	data/chars/EFX/DarkSht2.gif
+	frame	data/chars/EFX/DarkSht3.gif
+

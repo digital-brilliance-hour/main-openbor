@@ -1,0 +1,830 @@
+name	EARTHWORM_JIM
+health	500
+mp 80
+mprate 10
+speed	13
+type	player
+icon     data/chars/Manic/Icon-A.gif 1
+iconget  data/chars/Manic/Icon-B.gif 1
+iconpain data/chars/Manic/Icon-C.gif 1
+icondie  data/chars/Manic/Icon-C.gif 1
+
+
+
+
+running 23	3.9	2.80	1	1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+
+
+
+weapons    MANIC_ MANIC__ MANIC___
+
+palette       data/chars/mike/1.gif
+
+
+alternatepal  data/chars/Manic/Pal0
+alternatepal  data/chars/Manic/Pal1
+alternatepal  data/chars/Manic/Pal2
+alternatepal  data/chars/Manic/Pal3
+alternatepal  data/chars/Manic/Pal4
+alternatepal  data/chars/Manic/Pal5
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 1 1 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+
+
+
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/ewj/0.gif
+ offset 0 0
+ frame data/chars/ewj/1.gif
+
+anim idle
+ delay 7
+ offset 37 101
+ frame data/chars/ewj/2.gif
+ offset 35 108
+ frame data/chars/ewj/3.gif
+ offset 35 113
+ frame data/chars/ewj/4.gif
+ offset 35 88
+ frame data/chars/ewj/5.gif
+ offset 33 82
+ frame data/chars/ewj/6.gif
+ offset 38 96
+ frame data/chars/ewj/7.gif
+
+anim turn
+ delay 7
+ offset 43 105
+ frame data/chars/ewj/8.gif
+ offset 35 100
+ frame data/chars/ewj/9.gif
+
+anim 0006
+ delay 7
+ offset 35 58
+ frame data/chars/ewj/10.gif
+
+anim 0010
+ delay 7
+ offset 27 89
+ frame data/chars/ewj/11.gif
+ offset 26 68
+ frame data/chars/ewj/12.gif
+
+anim walk
+ delay 7
+ offset 35 97
+ frame data/chars/ewj/13.gif
+ offset 37 115
+ frame data/chars/ewj/14.gif
+ offset 15 90
+ frame data/chars/ewj/15.gif
+ offset 32 90
+ frame data/chars/ewj/16.gif
+ offset 33 101
+ frame data/chars/ewj/17.gif
+ offset 17 90
+ frame data/chars/ewj/18.gif
+
+anim backwalk
+ delay 7
+ offset 44 94
+ frame data/chars/ewj/19.gif
+ offset 44 94
+ frame data/chars/ewj/20.gif
+ offset 50 93
+ frame data/chars/ewj/21.gif
+ offset 52 92
+ frame data/chars/ewj/22.gif
+ offset 54 93
+ frame data/chars/ewj/23.gif
+ offset 48 93
+ frame data/chars/ewj/24.gif
+ offset 44 88
+ frame data/chars/ewj/25.gif
+ offset 51 88
+ frame data/chars/ewj/26.gif
+
+anim 0040
+ delay 7
+ offset 64 71
+ frame data/chars/ewj/27.gif
+ offset 38 107
+ frame data/chars/ewj/28.gif
+ offset 43 89
+ frame data/chars/ewj/29.gif
+ offset 44 128
+ frame data/chars/ewj/30.gif
+
+anim block120
+ delay 7
+ offset 44 105
+ frame data/chars/ewj/31.gif
+ offset 37 90
+ frame data/chars/ewj/32.gif
+ offset 35 75
+ frame data/chars/ewj/33.gif
+
+anim block121
+ delay 7
+ offset 32 62
+ frame data/chars/ewj/34.gif
+ offset 26 85
+ frame data/chars/ewj/35.gif
+
+anim block122
+ delay 7
+ offset 37 127
+ frame data/chars/ewj/36.gif
+
+anim 0180
+ delay 7
+ offset 27 89
+ frame data/chars/ewj/37.gif
+ offset 44 91
+ frame data/chars/ewj/38.gif
+ offset 62 97
+ frame data/chars/ewj/39.gif
+
+anim respawn
+ delay 7
+ offset 31 9
+ frame data/chars/ewj/40.gif
+ offset 20 68
+ frame data/chars/ewj/41.gif
+
+anim select
+ delay 7
+ offset 30 93
+ frame data/chars/ewj/42.gif
+ offset 39 88
+ frame data/chars/ewj/43.gif
+ offset 40 88
+ frame data/chars/ewj/44.gif
+ offset 40 88
+ frame data/chars/ewj/45.gif
+ offset 40 95
+ frame data/chars/ewj/46.gif
+ offset 44 106
+ frame data/chars/ewj/47.gif
+ offset 45 134
+ frame data/chars/ewj/48.gif
+
+anim attack200
+ delay 7
+ offset 38 95
+ frame data/chars/ewj/49.gif
+ offset 26 87
+ frame data/chars/ewj/50.gif
+
+anim attack210
+ delay 7
+ offset 28 108
+ frame data/chars/ewj/51.gif
+ offset 27 101
+ frame data/chars/ewj/52.gif
+ offset 30 125
+ frame data/chars/ewj/53.gif
+
+anim attack215
+ delay 7
+ offset 64 67
+ frame data/chars/ewj/54.gif
+ offset 45 68
+ frame data/chars/ewj/55.gif
+ offset 46 65
+ frame data/chars/ewj/56.gif
+ offset 74 96
+ frame data/chars/ewj/57.gif
+ offset 45 102
+ frame data/chars/ewj/58.gif
+
+anim attack220
+ delay 7
+ offset 59 108
+ frame data/chars/ewj/59.gif
+ offset 49 103
+ frame data/chars/ewj/60.gif
+ offset 64 84
+ frame data/chars/ewj/61.gif
+ offset 36 68
+ frame data/chars/ewj/62.gif
+ offset 36 68
+ frame data/chars/ewj/63.gif
+ offset 52 90
+ frame data/chars/ewj/64.gif
+ offset 27 108
+ frame data/chars/ewj/65.gif
+
+anim attack230
+ delay 7
+ offset 49 94
+ frame data/chars/ewj/66.gif
+ offset 33 94
+ frame data/chars/ewj/67.gif
+ offset 30 81
+ frame data/chars/ewj/68.gif
+
+anim attack250
+ delay 7
+ offset 27 95
+ frame data/chars/ewj/69.gif
+ offset 31 98
+ frame data/chars/ewj/70.gif
+ offset 27 70
+ frame data/chars/ewj/71.gif
+ offset 27 49
+ frame data/chars/ewj/72.gif
+ offset 27 65
+ frame data/chars/ewj/73.gif
+ offset 24 62
+ frame data/chars/ewj/74.gif
+
+anim attack300
+ delay 7
+ offset 45 71
+ frame data/chars/ewj/75.gif
+
+anim attack400
+ delay 7
+ offset 41 87
+ frame data/chars/ewj/76.gif
+ offset 35 75
+ frame data/chars/ewj/77.gif
+ offset 24 89
+ frame data/chars/ewj/78.gif
+ offset 36 58
+ frame data/chars/ewj/79.gif
+
+anim attack420
+ delay 7
+ offset 43 62
+ frame data/chars/ewj/80.gif
+ offset 35 61
+ frame data/chars/ewj/81.gif
+
+anim attack421
+ delay 7
+ offset 28 83
+ frame data/chars/ewj/82.gif
+
+anim attack430
+ delay 7
+ offset 27 73
+ frame data/chars/ewj/83.gif
+
+anim attack431
+ delay 7
+ offset 37 71
+ frame data/chars/ewj/84.gif
+ offset 40 56
+ frame data/chars/ewj/85.gif
+
+anim attack435
+ delay 7
+ offset 31 58
+ frame data/chars/ewj/86.gif
+ offset 18 74
+ frame data/chars/ewj/87.gif
+
+anim attack450
+ delay 7
+ offset 71 67
+ frame data/chars/ewj/88.gif
+
+anim jumpattack610
+ delay 7
+ offset 43 94
+ frame data/chars/ewj/89.gif
+ offset 32 97
+ frame data/chars/ewj/90.gif
+ offset 39 89
+ frame data/chars/ewj/91.gif
+ offset 41 91
+ frame data/chars/ewj/92.gif
+
+anim jumpattack620
+ delay 7
+ offset 35 98
+ frame data/chars/ewj/93.gif
+ offset 36 104
+ frame data/chars/ewj/94.gif
+
+anim jumpattack630
+ delay 7
+ offset 38 100
+ frame data/chars/ewj/95.gif
+ offset 55 108
+ frame data/chars/ewj/96.gif
+
+anim jumpattack640
+ delay 7
+ offset 52 106
+ frame data/chars/ewj/97.gif
+ offset 44 104
+ frame data/chars/ewj/98.gif
+
+anim jumpattack650
+ delay 7
+ offset 36 100
+ frame data/chars/ewj/99.gif
+ offset 34 104
+ frame data/chars/ewj/100.gif
+ offset 36 127
+ frame data/chars/ewj/101.gif
+
+anim jumpattack660
+ delay 7
+ offset 20 100
+ frame data/chars/ewj/102.gif
+ offset 28 91
+ frame data/chars/ewj/103.gif
+ offset 28 107
+ frame data/chars/ewj/104.gif
+
+anim freespecial1000
+ delay 7
+ offset 34 96
+ frame data/chars/ewj/105.gif
+ offset 33 58
+ frame data/chars/ewj/106.gif
+ offset 42 62
+ frame data/chars/ewj/107.gif
+
+anim freespecial1100
+ delay 7
+ offset 30 69
+ frame data/chars/ewj/108.gif
+ offset 28 82
+ frame data/chars/ewj/109.gif
+ offset 29 93
+ frame data/chars/ewj/110.gif
+ offset 29 125
+ frame data/chars/ewj/111.gif
+
+anim freespecial1200
+ delay 7
+ offset 33 99
+ frame data/chars/ewj/112.gif
+ offset 27 81
+ frame data/chars/ewj/113.gif
+ offset 15 97
+ frame data/chars/ewj/114.gif
+ offset 28 100
+ frame data/chars/ewj/115.gif
+
+anim freespecial1300
+ delay 7
+ offset 47 83
+ frame data/chars/ewj/116.gif
+ offset 50 85
+ frame data/chars/ewj/117.gif
+ offset 46 95
+ frame data/chars/ewj/118.gif
+ offset 57 102
+ frame data/chars/ewj/119.gif
+ offset 62 106
+ frame data/chars/ewj/120.gif
+ offset 55 98
+ frame data/chars/ewj/121.gif
+ offset 48 89
+ frame data/chars/ewj/122.gif
+ offset 39 92
+ frame data/chars/ewj/123.gif
+ offset 48 92
+ frame data/chars/ewj/124.gif
+
+anim freespecial1500
+ delay 7
+ offset 43 96
+ frame data/chars/ewj/125.gif
+ offset 29 92
+ frame data/chars/ewj/126.gif
+ offset 24 92
+ frame data/chars/ewj/127.gif
+ offset 29 83
+ frame data/chars/ewj/128.gif
+
+anim pain5000
+ delay 7
+ offset 39 89
+ frame data/chars/ewj/129.gif
+ offset 44 90
+ frame data/chars/ewj/130.gif
+ offset 38 115
+ frame data/chars/ewj/131.gif
+
+anim pain5001
+ delay 7
+ offset 31 61
+ frame data/chars/ewj/132.gif
+ offset 32 59
+ frame data/chars/ewj/133.gif
+ offset 28 80
+ frame data/chars/ewj/134.gif
+
+anim pain5002
+ delay 7
+ offset 18 21
+ frame data/chars/ewj/135.gif
+ offset 40 14
+ frame data/chars/ewj/136.gif
+ offset 28 33
+ frame data/chars/ewj/137.gif
+
+anim pain5010
+ delay 7
+ offset 37 95
+ frame data/chars/ewj/138.gif
+ offset 69 92
+ frame data/chars/ewj/139.gif
+ offset 69 100
+ frame data/chars/ewj/140.gif
+ offset 32 111
+ frame data/chars/ewj/141.gif
+ offset 71 120
+ frame data/chars/ewj/142.gif
+
+anim pain5011
+ delay 7
+ offset 33 43
+ frame data/chars/ewj/143.gif
+ offset 65 52
+ frame data/chars/ewj/144.gif
+ offset 25 75
+ frame data/chars/ewj/145.gif
+ offset 69 78
+ frame data/chars/ewj/146.gif
+
+anim pain5012
+ delay 7
+ offset 29 8
+ frame data/chars/ewj/147.gif
+ offset 59 9
+ frame data/chars/ewj/148.gif
+ offset 36 34
+ frame data/chars/ewj/149.gif
+ offset 60 37
+ frame data/chars/ewj/150.gif
+
+anim pain5020
+ delay 7
+ offset 24 65
+ frame data/chars/ewj/151.gif
+ offset 32 66
+ frame data/chars/ewj/152.gif
+ offset 39 100
+ frame data/chars/ewj/153.gif
+
+anim pain5021
+ delay 7
+ offset 28 80
+ frame data/chars/ewj/154.gif
+
+anim pain5022
+ delay 7
+ offset 28 33
+ frame data/chars/ewj/155.gif
+
+anim fall5030
+ delay 7
+ offset 37 95
+ frame data/chars/ewj/156.gif
+ offset 44 90
+ frame data/chars/ewj/157.gif
+ offset 38 115
+ frame data/chars/ewj/158.gif
+ offset 50 75
+ frame data/chars/ewj/159.gif
+ offset 68 65
+ frame data/chars/ewj/160.gif
+ offset 37 97
+ frame data/chars/ewj/161.gif
+
+anim fall5031
+ delay 7
+ offset 33 43
+ frame data/chars/ewj/162.gif
+ offset 32 59
+ frame data/chars/ewj/163.gif
+ offset 28 80
+ frame data/chars/ewj/164.gif
+ offset 60 36
+ frame data/chars/ewj/165.gif
+ offset 80 31
+ frame data/chars/ewj/166.gif
+ offset 54 82
+ frame data/chars/ewj/167.gif
+
+anim fall5032
+ delay 7
+ offset 29 8
+ frame data/chars/ewj/168.gif
+ offset 40 14
+ frame data/chars/ewj/169.gif
+ offset 28 33
+ frame data/chars/ewj/170.gif
+ offset 14 29
+ frame data/chars/ewj/171.gif
+ offset 30 30
+ frame data/chars/ewj/172.gif
+ offset 13 66
+ frame data/chars/ewj/173.gif
+
+anim fall5040
+ delay 7
+ offset 50 89
+ frame data/chars/ewj/174.gif
+ offset 39 59
+ frame data/chars/ewj/175.gif
+ offset 50 46
+ frame data/chars/ewj/176.gif
+ offset 48 37
+ frame data/chars/ewj/177.gif
+ offset 50 46
+ frame data/chars/ewj/178.gif
+
+anim fall5041
+ delay 7
+ offset 56 75
+ frame data/chars/ewj/179.gif
+ offset 38 32
+ frame data/chars/ewj/180.gif
+ offset 45 40
+ frame data/chars/ewj/181.gif
+
+anim fall5042
+ delay 7
+ offset 18 40
+ frame data/chars/ewj/182.gif
+ offset 29 8
+ frame data/chars/ewj/183.gif
+ offset 31 10
+ frame data/chars/ewj/184.gif
+
+anim fall5060
+ delay 7
+ offset 37 95
+ frame data/chars/ewj/185.gif
+ offset 44 105
+ frame data/chars/ewj/186.gif
+
+anim fall5061
+ delay 7
+ offset 32 42
+ frame data/chars/ewj/187.gif
+ offset 40 55
+ frame data/chars/ewj/188.gif
+
+anim fall5062
+ delay 7
+ offset 27 6
+ frame data/chars/ewj/189.gif
+ offset 45 90
+ frame data/chars/ewj/190.gif
+
+anim fall5070
+ delay 7
+ offset 64 97
+ frame data/chars/ewj/191.gif
+ offset 62 108
+ frame data/chars/ewj/192.gif
+ offset 52 102
+ frame data/chars/ewj/193.gif
+
+anim fall5071
+ delay 7
+ offset 32 42
+ frame data/chars/ewj/194.gif
+ offset 32 59
+ frame data/chars/ewj/195.gif
+ offset 31 27
+ frame data/chars/ewj/196.gif
+
+anim fall5072
+ delay 7
+ offset 27 6
+ frame data/chars/ewj/197.gif
+ offset 40 14
+ frame data/chars/ewj/198.gif
+ offset 83 29
+ frame data/chars/ewj/199.gif
+
+anim rise
+ delay 7
+ offset 51 42
+ frame data/chars/ewj/200.gif
+ offset 50 72
+ frame data/chars/ewj/201.gif
+ offset 64 59
+ frame data/chars/ewj/202.gif
+ offset 58 50
+ frame data/chars/ewj/203.gif
+ offset 37 78
+ frame data/chars/ewj/204.gif
+ offset 24 114
+ frame data/chars/ewj/205.gif
+
+anim faint
+ delay 7
+ offset 33 93
+ frame data/chars/ewj/206.gif
+ offset 39 100
+ frame data/chars/ewj/207.gif
+ offset 30 100
+ frame data/chars/ewj/208.gif
+ offset 27 73
+ frame data/chars/ewj/209.gif
+
+anim 10000
+ delay 7
+ offset 49 9
+ frame data/chars/ewj/210.gif
+
+anim 10500
+ delay 7
+ offset 74 61
+ frame data/chars/ewj/211.gif
+
+anim 11000
+ delay 7
+ offset 9 24
+ frame data/chars/ewj/212.gif
+ offset 13 37
+ frame data/chars/ewj/213.gif
+ offset 17 50
+ frame data/chars/ewj/214.gif
+ offset 20 61
+ frame data/chars/ewj/215.gif
+ offset 25 77
+ frame data/chars/ewj/216.gif
+ offset 27 83
+ frame data/chars/ewj/217.gif
+
+anim 11100
+ delay 7
+ offset 20 20
+ frame data/chars/ewj/218.gif
+ offset 24 23
+ frame data/chars/ewj/219.gif
+ offset 33 56
+ frame data/chars/ewj/220.gif
+ offset 42 52
+ frame data/chars/ewj/221.gif
+ offset 52 59
+ frame data/chars/ewj/222.gif
+ offset 78 84
+ frame data/chars/ewj/223.gif
+ offset 47 46
+ frame data/chars/ewj/224.gif
+ offset 51 51
+ frame data/chars/ewj/225.gif
+ offset 56 55
+ frame data/chars/ewj/226.gif
+
+anim 11200
+ delay 7
+ offset 9 10
+ frame data/chars/ewj/227.gif
+ offset 10 11
+ frame data/chars/ewj/228.gif
+ offset 12 13
+ frame data/chars/ewj/229.gif
+ offset 13 14
+ frame data/chars/ewj/230.gif
+ offset 15 16
+ frame data/chars/ewj/231.gif
+ offset 16 17
+ frame data/chars/ewj/232.gif
+ offset 18 19
+ frame data/chars/ewj/233.gif
+ offset 20 20
+ frame data/chars/ewj/234.gif
+
+anim 12000
+ delay 7
+ offset 300 226
+ frame data/chars/ewj/235.gif
+
+anim 10000
+ delay 7
+ offset 9 2
+ frame data/chars/ewj/236.gif
+ offset 15 3
+ frame data/chars/ewj/237.gif
+ offset 23 4
+ frame data/chars/ewj/238.gif
+ offset 2 3
+ frame data/chars/ewj/239.gif
+
+anim 10001
+ delay 7
+ offset 11 14
+ frame data/chars/ewj/240.gif
+ offset 17 37
+ frame data/chars/ewj/241.gif
+ offset 25 49
+ frame data/chars/ewj/242.gif
+ offset 24 52
+ frame data/chars/ewj/243.gif
+ offset 23 61
+ frame data/chars/ewj/244.gif
+ offset 21 53
+ frame data/chars/ewj/245.gif
+ offset 19 51
+ frame data/chars/ewj/246.gif
+
+anim 11500
+ delay 7
+ offset 74 72
+ frame data/chars/ewj/247.gif
+ offset 151 97
+ frame data/chars/ewj/248.gif
+ offset 151 108
+ frame data/chars/ewj/249.gif
+ offset 151 107
+ frame data/chars/ewj/250.gif
+ offset 151 107
+ frame data/chars/ewj/251.gif
+ offset 151 107
+ frame data/chars/ewj/252.gif
+ offset 148 107
+ frame data/chars/ewj/253.gif
+ offset 136 107
+ frame data/chars/ewj/254.gif
+ offset 124 107
+ frame data/chars/ewj/255.gif
+ offset 111 107
+ frame data/chars/ewj/256.gif
+ offset 99 97
+ frame data/chars/ewj/257.gif
+ offset 86 85
+ frame data/chars/ewj/258.gif
+ offset 60 58
+ frame data/chars/ewj/259.gif
+ offset 49 48
+ frame data/chars/ewj/260.gif
+ offset 36 35
+ frame data/chars/ewj/261.gif
+ offset 23 23
+ frame data/chars/ewj/262.gif
+ offset 13 12
+ frame data/chars/ewj/263.gif
+
+anim 11600
+ delay 7
+ offset 0 0
+ frame data/chars/ewj/264.gif
+
+anim 11900
+ delay 7
+ offset 16 5
+ frame data/chars/ewj/265.gif
+ offset 32 7
+ frame data/chars/ewj/266.gif
+ offset 42 8
+ frame data/chars/ewj/267.gif
+ offset 71 16
+ frame data/chars/ewj/268.gif
+ offset 137 30
+ frame data/chars/ewj/269.gif
+ offset 138 35
+ frame data/chars/ewj/270.gif
+ offset 143 31
+ frame data/chars/ewj/271.gif
+ offset 147 35
+ frame data/chars/ewj/272.gif
+ offset 150 36
+ frame data/chars/ewj/273.gif
+ offset 151 35
+ frame data/chars/ewj/274.gif
+ offset 140 30
+ frame data/chars/ewj/275.gif
+ offset 152 35
+ frame data/chars/ewj/276.gif
+ offset 151 33
+ frame data/chars/ewj/277.gif

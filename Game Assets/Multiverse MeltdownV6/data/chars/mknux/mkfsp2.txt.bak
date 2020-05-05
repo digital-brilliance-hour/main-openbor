@@ -1,0 +1,28 @@
+name	MKFSP2
+type	None
+health	1
+speed   15
+jumpheight 1
+shadow	0
+hitenemy 1
+noquake  1
+candamage enemy Obstacle
+
+anim idle
+	loop	1
+	delay	20
+	offset	141 117
+		Blast  106  120  23  13  10  4  0  0  0  20
+	frame	data/chars/MKnux/FSP2.gif
+
+anim attack1
+	offset	117 129
+	delay	50
+		Blast  106  120  23  13  10  4  0  0  0  20
+	frame	data/chars/MKnux/FSP1-0.gif
+	frame	data/chars/MKnux/FSP1-1.gif
+	frame	data/chars/MKnux/FSP1-2.gif
+	frame	data/chars/MKnux/FSP1-3.gif
+	frame	data/chars/MKnux/FSP1-4.gif
+	frame	data/chars/MKnux/FSP1-5.gif
+

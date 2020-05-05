@@ -1,0 +1,18 @@
+music		data/music/battle.ogg
+
+background	data/bgs/intro.png
+
+panel		data/bgs/dammy.gif none none
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+updatedscript	data/levels/intro/intro.c
+
+spawn	stop
+coords	1 1
+at	0

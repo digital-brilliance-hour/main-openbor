@@ -1,0 +1,62 @@
+
+type	Enemy
+aimove	chase
+hostile Player npc Enemy
+candamage enemy npc Player
+aggression -10
+
+animationscript data/scripts/escript.c
+
+anim	attack1
+	loop	0
+	delay	18
+	offset	113 127
+	bbox	107 107 17 23
+	@cmd	attack1 0 95 50 250 "ANI_Freespecial6"
+	@cmd	attack1 0 95 -250 -20 "ANI_Freespecial5"
+
+anim	upper
+	loop	0
+	delay	18
+	offset	113 127
+	bbox	107 107 17 23
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Croconaw/WDown-0.gif
+	Move	14
+	delay	6
+	attack2	107 111 18 19 13 0 0 0 0 20
+	bbox	105 106 19 23
+	frame	data/chars/Croconaw/Walk-0.gif
+	Move	0
+	delay	18
+	frame	data/chars/Croconaw/WUp-0.gif
+
+(Jump attack to platform)
+
+anim	Freespecial6
+	loop	0
+	delay	18
+	offset	113 127
+	bbox	107 107 17 23
+	Jumpframe	0 4 0.7
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/Croconaw/WDown-0.gif
+	Move	14
+	delay	6
+	attack2	107 111 18 19 13 0 0 0 0 20
+	bbox	105 106 19 23
+	frame	data/chars/Croconaw/Walk-0.gif
+	Move	0
+	delay	18
+	frame	data/chars/Croconaw/WUp-0.gif
+
+(Make FSPs into attacks 2-3-4)
+
+(Make special into Freespecial1)
+-------------------------------
+
+type	NPC
+aimove	chase
+hostile Enemy
+candamage enemy
+aggression 50

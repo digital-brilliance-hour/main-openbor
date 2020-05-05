@@ -1,0 +1,24 @@
+name	XFSP2
+health	1
+type	Pshot
+shadow	0
+speed	20
+candamage Enemy
+#remove 0
+#nomove 1
+
+anim idle
+	loop	1
+	delay	6
+	offset	154 150
+	attack2 162 117 24 31 15 0 0 0 0 20
+	drawmethod scalex 0.6
+	drawmethod scaley 0.6
+	frame	data/chars/X-XC/X_235-6.gif
+	frame	data/chars/X-XC/X_235-7.gif
+	frame	data/chars/X-XC/X_235-8.gif
+	frame	data/chars/X-XC/X_235-9.gif
+
+
+
+

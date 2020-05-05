@@ -1,0 +1,63 @@
+name    nap2
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	20
+	offset	0 0 
+sound	data/sounds/nappa/ripu.wav
+	frame	data/scenes/nap2/1.png
+	frame	data/scenes/nap2/2.png
+	frame	data/scenes/nap2/3.png
+frame	data/scenes/nap2/2.png
+	frame	data/scenes/nap2/3.png
+frame	data/scenes/nap2/2.png
+	frame	data/scenes/nap2/3.png
+	frame	data/scenes/nap2/4.png
+	frame	data/scenes/nap2/5.png
+sound	data/sounds/kyou.wav
+	frame	data/scenes/nap2/6.png
+	frame	data/scenes/nap2/7.png
+	frame	data/scenes/nap2/8.png
+	frame	data/scenes/nap2/9.png
+	frame	data/scenes/nap2/10.png
+	frame	data/scenes/nap2/11.png
+	frame	data/scenes/nap2/12.png
+sound	data/sounds/kyou.wav
+frame	data/scenes/nap2/13.png
+frame	data/scenes/nap2/14.png
+sound	data/sounds/shui.wav
+frame	data/scenes/nap2/15.png
+frame	data/scenes/nap2/16.png
+	frame	data/scenes/nap2/17.png
+	frame	data/scenes/nap2/18.png
+sound	data/sounds/electric.wav
+	frame	data/scenes/nap2/19.png
+frame	data/scenes/nap2/20.png
+frame	data/scenes/nap2/21.png
+sound	data/sounds/kyou.wav
+@cmd	killentity getlocalvar("self")
+	frame	data/scenes/nap2/21.png
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

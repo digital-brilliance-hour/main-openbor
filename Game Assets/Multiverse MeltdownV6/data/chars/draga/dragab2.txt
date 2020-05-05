@@ -1,0 +1,264 @@
+name				dragab2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				0 -1
+health				999999
+speed				0
+nomove				1
+#shadow				6
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+blockodds			1
+thold				49
+#risetime 1000
+nodrop				1
+nodieblink			3
+falldie				1
+escapehits			2
+jugglepoints		15
+facing				2
+subject_to_screen	1
+icon				data/chars/draga/bicon.gif 1
+icondie				data/chars/draga/bicond.gif 1
+nolife				1
+
+palette data/chars/draga/draga.gif #1
+
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter01.gif
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter02.gif
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter03.gif
+
+#-------Moves
+
+anim spawn
+	load		dragaa2
+	subentity	dragaa2
+	summonframe	0 110 180 0 1
+	shadowcoords 180 200
+	 loop       0
+	 offset     241 189
+	jumpframe  0 4 0
+	dropframe  1
+	landframe  2
+	delay	999
+	drawmethod scalex 1.2
+	drawmethod scaley 1.2
+	frame	data/chars/misc/empty.gif
+	delay	999
+	frame	data/chars/draga/body35.gif
+	delay	264
+	sound   data/sounds/fall02.wav
+	frame	data/chars/draga/body31.gif
+
+anim idle
+	quakeframe	4 15 3
+	shadowcoords 180 200
+	loop	1
+	 offset     241 189
+	bbox	0 0 0 0
+	delay	200
+	drawmethod scalex 1.2
+	drawmethod scaley 1.2
+	frame	data/chars/draga/body31.gif
+
+	delay	16
+	frame	data/chars/draga/body32.gif
+	frame	data/chars/draga/body33.gif
+	frame	data/chars/draga/body34.gif
+
+	delay	4
+	sound   data/sounds/fall02.wav
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+	frame	data/chars/draga/body31.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim death
+	unsummonframe	0
+	shadowcoords 180 200
+	jumpframe	36 4 0
+	dropframe	37
+	landframe	38
+	loop	0
+	 offset     241 189
+
+	delay   2
+	offset     244 189
+	drawmethod scalex 1.2
+	drawmethod scaley 1.2
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     244 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	offset     238 189
+	frame	data/chars/draga/body31.gif
+	offset     241 189
+	frame	data/chars/draga/body31.gif
+	
+	delay   999
+	frame	data/chars/draga/body35.gif
+	delay   999
+	frame	data/chars/draga/death30.gif
+
+	sound   data/sounds/fall02.wav
+	delay   4
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+	frame	data/chars/draga/death30.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+
+
+
+

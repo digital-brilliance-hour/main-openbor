@@ -1,0 +1,24 @@
+name	MTwister
+type	pshot
+shadow	0
+nolife  1
+remove  0
+Speed   20
+candamage enemy obstacle
+
+
+anim idle
+	loop	1
+	delay	2
+	offset	24 55
+        Attack3  4  0  41  55  35 1 0 0 0 20
+        DropV 5 1
+	frame	data/chars/mike/145.gif
+	frame	data/chars/mike/145.gif
+	frame	data/chars/misc/empty.gif
+		drawmethod  256  256  1  0  0  -1  -1
+	frame	data/chars/mike/145.gif
+	frame	data/chars/mike/145.gif
+		drawmethod  256  256  0  0  0  -1  -1
+	frame	data/chars/misc/empty.gif
+

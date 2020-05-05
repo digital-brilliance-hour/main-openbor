@@ -1,0 +1,737 @@
+name	Metal_Sonic_MK1
+health	500
+mp 150
+mprate 5
+speed	10
+type	player
+icon      data/chars/Knuckles/Icon-A.gif
+iconget  data/chars/Knuckles/Icon-B.gif
+iconpain data/chars/Knuckles/Icon-C.gif
+icondie  data/chars/Knuckles/Icon-D.gif
+
+diesound data/chars/Knuckles/die2.wav
+running 20 4 2 1 1
+makeinv  4
+riseinv  1
+gfxshadow 1
+grabdistance 26
+
+weapons    KNUCKLES_
+
+palette       data/chars/MS-MK1/Pal
+
+
+
+
+com a2 Freespecial4
+com a3 Freespecial5
+com a4 Freespecial6
+jumpmove  3  2
+atchain 1 0 0 0
+animationscript data/scripts/script.c
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	offset	119 141
+	bbox	112 110 22 32
+	cancel	3 6 0 a freespecial
+	Move	10
+	frame	data/chars/MS-MK1/A1-0.gif
+	Move	0
+	delay	3
+	attack1	119 122 21 20 11 0 0 0 0 20
+	frame	data/chars/MS-MK1/A1-1.gif
+	delay	14
+	frame	data/chars/MS-MK1/A1-2.gif
+	delay	2
+	Attack1	0
+	frame	data/chars/MS-MK1/A1-0.gif
+	frame	data/chars/MS-MK1/A1-0.gif
+	frame	data/chars/MS-MK1/A1-0.gif
+	frame	data/chars/MS-MK1/A1-0.gif
+		
+anim	DODGE
+	loop	0
+	delay	5
+	offset	119 141
+	frame	data/chars/MS-MK1/Walk-0.gif
+	frame	data/chars/MS-MK1/Walk-1.gif
+	frame	data/chars/MS-MK1/Walk-2.gif
+	frame	data/chars/MS-MK1/Walk-1.gif
+	frame	data/chars/MS-MK1/Walk-0.gif
+	frame	data/chars/MS-MK1/Walk-1.gif
+	frame	data/chars/MS-MK1/Walk-2.gif
+	frame	data/chars/MS-MK1/Walk-1.gif
+		
+anim	fall
+	loop	0
+	offset	119 141
+	delay	6
+	quakeframe	0 3 4
+	LandFrame	9
+	attack3	106 107 30 35 10 0 0 0 0 20
+	bbox	106 107 30 35
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MS-MK1/Fall-0.gif
+	frame	data/chars/MS-MK1/Fall-1.gif
+	frame	data/chars/MS-MK1/Fall-2.gif
+	frame	data/chars/MS-MK1/Fall-3.gif
+	frame	data/chars/MS-MK1/Fall-0.gif
+	frame	data/chars/MS-MK1/Fall-1.gif
+	frame	data/chars/MS-MK1/Fall-2.gif
+	frame	data/chars/MS-MK1/Fall-3.gif
+	delay	60
+	offset	122 134
+	attack3	107 114 31 22 10 0 0 0 0 20
+	bbox	107 114 31 22
+	frame	data/chars/MS-MK1/Fall-4.gif
+	delay	5
+	bbox	0
+	Attack1	0
+	frame	data/chars/MS-MK1/Fall-5.gif
+	frame	data/chars/MS-MK1/Fall-6.gif
+	frame	data/chars/MS-MK1/Fall-7.gif
+		
+anim	freespecial
+	loop	0
+	delay	8
+	offset	119 141
+	bbox	113 111 20 30
+	Fastattack	1
+	cancel	7 9 0 a freespecial2
+	Move	4
+	frame	data/chars/MS-MK1/A2-0.gif
+	Move	0
+	attack1	112 110 23 32 3 0 0 0 0 20
+	frame	data/chars/MS-MK1/A2-1.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-2.gif
+	attack1	112 110 23 32 3 0 0 0 0 20
+	frame	data/chars/MS-MK1/A2-3.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-4.gif
+	attack1	112 110 23 32 5 0 0 0 0 20
+	frame	data/chars/MS-MK1/A2-5.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-6.gif
+	delay	2
+	frame	data/chars/MS-MK1/A2-6.gif
+	frame	data/chars/MS-MK1/A2-6.gif
+	frame	data/chars/MS-MK1/A2-6.gif
+		
+anim	freespecial2
+	loop	0
+	delay	6
+	offset	119 141
+	bbox	114 111 18 30
+	Fastattack	1
+	cancel	3 6 0 a freespecial3
+	frame	data/chars/MS-MK1/A1-0.gif
+	delay	3
+	attack1	119 122 21 20 11 0 0 0 0 20
+	frame	data/chars/MS-MK1/A3-1.gif
+	delay	14
+	frame	data/chars/MS-MK1/A3-2.gif
+	delay	2
+	frame	data/chars/MS-MK1/A3-2.gif
+	frame	data/chars/MS-MK1/A3-2.gif
+	frame	data/chars/MS-MK1/A3-2.gif
+	frame	data/chars/MS-MK1/A3-2.gif
+		
+anim	freespecial3
+	loop	0
+	delay	3
+	offset	119 142
+	bbox	111 110 18 35
+	Fastattack	1
+	hitflash	Flash2
+	frame	data/chars/MS-MK1/A4-0.gif
+	frame	data/chars/MS-MK1/A4-1.gif
+	frame	data/chars/MS-MK1/A4-2.gif
+	frame	data/chars/MS-MK1/A4-3.gif
+	frame	data/chars/MS-MK1/A4-4.gif
+	frame	data/chars/MS-MK1/A4-5.gif
+	delay	7
+	attack1	105 114 35 29 5 0 0 0 0 20
+	frame	data/chars/MS-MK1/A4-6.gif
+	attack1	0
+	frame	data/chars/MS-MK1/A4-7.gif
+	attack1	87 111 70 32 5 0 0 0 0 20
+	frame	data/chars/MS-MK1/A4-8.gif
+	attack1	0
+	frame	data/chars/MS-MK1/A4-9.gif
+	attack6	81 110 79 32 5 0 0 0 0 20
+	frame	data/chars/MS-MK1/A4-10.gif
+	attack1	0
+	frame	data/chars/MS-MK1/A4-11.gif
+		
+anim	Freespecial4
+	loop	0
+	delay	6
+	move	3
+	offset	119 141
+	frame	data/chars/MS-MK1/FSP1-0.gif
+	frame	data/chars/MS-MK1/FSP1-1.gif
+	frame	data/chars/MS-MK1/FSP1-2.gif
+	delay	4
+	move	7
+	attack6	94 103 55 37 14 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-3.gif
+	frame	data/chars/MS-MK1/FSP1-4.gif
+	frame	data/chars/MS-MK1/FSP1-5.gif
+	frame	data/chars/MS-MK1/FSP1-6.gif
+	frame	data/chars/MS-MK1/FSP1-7.gif
+	frame	data/chars/MS-MK1/FSP1-8.gif
+	frame	data/chars/MS-MK1/FSP1-9.gif
+	frame	data/chars/MS-MK1/FSP1-3.gif
+	frame	data/chars/MS-MK1/FSP1-4.gif
+	frame	data/chars/MS-MK1/FSP1-5.gif
+	frame	data/chars/MS-MK1/FSP1-6.gif
+	frame	data/chars/MS-MK1/FSP1-7.gif
+	frame	data/chars/MS-MK1/FSP1-8.gif
+	frame	data/chars/MS-MK1/FSP1-9.gif
+	delay	6
+	move	3
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-2.gif
+	frame	data/chars/MS-MK1/FSP1-1.gif
+	frame	data/chars/MS-MK1/FSP1-0.gif
+		
+anim	Freespecial5
+	loop	0
+	delay	8
+	offset	119 141
+	frame	data/chars/MS-MK1/FSP2-0.gif
+	frame	data/chars/MS-MK1/FSP2-1.gif
+	delay	5
+	frame	data/chars/MS-MK1/FSP2-2.gif
+	@cmd	shoot "MK1s1" 0 0 0
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+		
+anim	Freespecial6
+	loop	0
+	delay	8
+	offset	119 141
+	frame	data/chars/MS-MK1/FSP2-0.gif
+	frame	data/chars/MS-MK1/FSP2-1.gif
+	delay	5
+	frame	data/chars/MS-MK1/FSP2-2.gif
+	@cmd	shoot "MK1s2" 0 0 0
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+	frame	data/chars/MS-MK1/FSP2-3.gif
+	frame	data/chars/MS-MK1/FSP2-4.gif
+		
+anim	get
+	loop	0
+	delay	6
+	move	3
+	offset	119 141
+	frame	data/chars/MS-MK1/Get.gif
+		
+anim	grab
+	loop	0
+	delay	100
+	offset	119 141
+	bbox	111 111 24 29
+	frame	data/chars/MS-MK1/Grab.gif
+		
+anim	grabattack
+	loop	0
+	delay	8
+	offset	119 141
+	bbox	112 110 22 32
+	frame	data/chars/MS-MK1/A1-0.gif
+	Move	0
+	delay	3
+	attack1	119 122 21 20 11 0 0 0 0 20
+	frame	data/chars/MS-MK1/A1-1.gif
+	delay	14
+	frame	data/chars/MS-MK1/A1-2.gif
+	delay	6
+	frame	data/chars/MS-MK1/A1-0.gif
+		
+anim	grabattack2
+	loop	0
+	delay	6
+	offset	119 141
+	bbox	111 111 23 31
+	fastattack	1
+	frame	data/chars/MS-MK1/A1-0.gif
+	delay	3
+	attack1	119 122 21 20 11 0 0 0 0 20
+	frame	data/chars/MS-MK1/A3-1.gif
+	attack1	130 109 18 34 4 0 0 0 0 20
+	delay	8
+	frame	data/chars/MS-MK1/GrabA2-0.gif
+	attack1	0
+	frame	data/chars/MS-MK1/GrabA2-1.gif
+	attack1	130 109 18 34 4 0 0 0 0 20
+	frame	data/chars/MS-MK1/GrabA2-2.gif
+	attack1	0
+	frame	data/chars/MS-MK1/GrabA2-3.gif
+	attack1	130 109 18 34 4 3 0 0 0 20
+	frame	data/chars/MS-MK1/GrabA2-4.gif
+		
+anim	grabbackward
+	loop	0
+	delay	6
+	offset	119 141
+	Fastattack	1
+	frame	data/chars/MS-MK1/FSP1-0.gif
+	frame	data/chars/MS-MK1/FSP1-1.gif
+	frame	data/chars/MS-MK1/FSP1-2.gif
+	delay	4
+	attack1	94 103 55 37 2 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-3.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-4.gif
+	attack1	94 103 55 37 2 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-5.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-6.gif
+	attack1	94 103 55 37 2 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-7.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-8.gif
+	attack1	94 103 55 37 2 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-9.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-3.gif
+	attack1	94 103 55 37 2 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-4.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-5.gif
+	attack1	94 103 55 37 3 0 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-6.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-7.gif
+	attack1	94 103 55 37 3 1 0 0 0 20
+	frame	data/chars/MS-MK1/FSP1-8.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/FSP1-9.gif
+	delay	6
+	move	0
+	frame	data/chars/MS-MK1/FSP1-2.gif
+	frame	data/chars/MS-MK1/FSP1-1.gif
+	frame	data/chars/MS-MK1/FSP1-0.gif
+		
+anim	GRABdown
+	loop	0
+	delay	8
+	offset	119 141
+	bbox	113 111 20 30
+	Fastattack	1
+	Move	7
+	frame	data/chars/MS-MK1/A2-0.gif
+	Move	0
+	attack1	112 110 23 32 3 0 0 0 0 20
+	frame	data/chars/MS-MK1/A2-1.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-2.gif
+	attack1	112 110 23 32 3 0 0 0 0 20
+	frame	data/chars/MS-MK1/A2-3.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-4.gif
+	attack1	112 110 23 32 5 1 0 0 0 20
+	frame	data/chars/MS-MK1/A2-5.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/A2-6.gif
+		
+anim	GRABup
+	loop	0
+	delay	8
+	offset	119 141
+	bbox	111 108 24 34
+	attack1	111 108 23 33 4 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-0.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-1.gif
+	attack1	101 109 42 32 4 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-2.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-3.gif
+	attack1	101 109 42 32 4 1 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-4.gif
+	frame	data/chars/MS-MK1/JumpA-5.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-6.gif
+	frame	data/chars/MS-MK1/JumpA-7.gif
+	frame	data/chars/MS-MK1/JumpA-8.gif
+	frame	data/chars/MS-MK1/JumpA-9.gif
+		
+anim	idle
+	@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 10);
+		}
+	@end_script	
+	loop	1
+	delay	15
+	offset	119 141
+	bbox	109 110 22 32
+	frame	data/chars/MS-MK1/Idle0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MS-MK1/Idle1.gif
+	frame	data/chars/MS-MK1/Idle2.gif
+	frame	data/chars/MS-MK1/Idle1.gif
+		
+anim	jump
+	loop	0
+	dropframe	5
+	delay	6
+	offset	119 141
+	bbox	113 108 18 33
+	frame	data/chars/MS-MK1/Jump-0.gif
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-2.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-0.gif
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-2.gif
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-0.gif
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-2.gif
+	frame	data/chars/MS-MK1/Jump-1.gif
+	frame	data/chars/MS-MK1/Jump-0.gif
+		
+anim	jumpattack
+	loop	0
+	delay	6
+	offset	119 141
+	bbox	112 108 21 32
+	attack3	111 108 23 33 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-0.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-1.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-2.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-3.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-4.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-2.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-3.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-4.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-2.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-3.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-4.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-2.gif
+	attack3	101 109 42 32 13 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA-3.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-4.gif
+	attack1	0
+	frame	data/chars/MS-MK1/JumpA-5.gif
+	frame	data/chars/MS-MK1/JumpA-6.gif
+	frame	data/chars/MS-MK1/JumpA-7.gif
+	frame	data/chars/MS-MK1/JumpA-8.gif
+	offset	119 137
+	frame	data/chars/MS-MK1/JumpA-9.gif
+		
+anim	jumpattack2
+	loop	1
+	delay	5
+	offset	119 141
+	bbox	111 106 21 35
+	cancel	5 8 0 a freespecial2
+	frame	data/chars/MS-MK1/JumpA2-0.gif
+	attack2	110 106 24 36 8 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA2-1.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/JumpA2-2.gif
+	attack2	110 106 24 36 8 0 0 0 0 20
+	frame	data/chars/MS-MK1/JumpA2-3.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/JumpA2-4.gif
+		
+anim	land
+	loop	0
+	delay	20
+	offset	119 141
+	frame	data/chars/MS-MK1/Get.gif
+		
+anim	pain
+	loop	0
+	offset	119 141
+	bbox	110 110 22 31
+	delay	12
+	quakeframe	0 2 4
+	frame	data/chars/MS-MK1/pain-0.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-2.gif
+		
+anim	pain2
+	loop	0
+	offset	119 141
+	bbox	109 112 24 27
+	delay	3
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/MS-MK1/pain-0.gif
+	frame	data/chars/MS-MK1/pain-0.gif
+	Attack1	0
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	-2
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	-1
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	0
+	delay	8
+	frame	data/chars/MS-MK1/pain-2.gif
+	frame	data/chars/MS-MK1/pain-2.gif
+		
+anim	pain3
+	loop	0
+	offset	119 141
+	bbox	109 111 23 27
+	delay	2
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/MS-MK1/pain-0.gif
+	frame	data/chars/MS-MK1/pain-0.gif
+	frame	data/chars/MS-MK1/pain-0.gif
+	frame	data/chars/MS-MK1/pain-0.gif
+	Move	-4
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	-3
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	-2
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	-1
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	Move	0
+	frame	data/chars/MS-MK1/pain-2.gif
+	frame	data/chars/MS-MK1/pain-2.gif
+	delay	8
+	frame	data/chars/MS-MK1/pain-2.gif
+	frame	data/chars/MS-MK1/pain-2.gif
+		
+anim	pain4
+	loop	0
+	delay	6
+	offset	122 134
+	jumpframe	11 2.4
+	landframe	18
+	bbox	62 76 35 20
+	frame	data/chars/MS-MK1/Fall-5.gif
+	offset	124 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	122 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	124 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	122 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	124 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	122 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	124 134
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	122 134
+	delay	50
+	bbox	0 0 0 0
+	frame	data/chars/MS-MK1/Fall-7.gif
+	offset	119 141
+	delay	7
+	frame	data/chars/MS-MK1/Rise-0.gif
+	frame	data/chars/MS-MK1/Rise-1.gif
+	frame	data/chars/MS-MK1/Rise-0.gif
+	frame	data/chars/MS-MK1/Rise-1.gif
+	delay	6
+	frame	data/chars/MS-MK1/Rise-3.gif
+	frame	data/chars/MS-MK1/Rise-4.gif
+	frame	data/chars/MS-MK1/Rise-3.gif
+	delay	30
+	frame	data/chars/MS-MK1/Rise-4.gif
+	delay	20
+	frame	data/chars/MS-MK1/Get.gif
+		
+anim	pain5
+	loop	0
+	offset	119 141
+	bbox	110 111 21 29
+	jumpframe	0 3
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MS-MK1/pain-0.gif
+	delay	2
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	delay	9
+	frame	data/chars/MS-MK1/pain-2.gif
+		
+anim	pain6
+	loop	0
+	offset	119 141
+	bbox	109 112 23 27
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MS-MK1/pain-0.gif
+	delay	2
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	frame	data/chars/MS-MK1/pain-1.gif
+	delay	9
+	frame	data/chars/MS-MK1/pain-2.gif
+		
+anim	rise
+	loop	0
+	offset	119 141
+	delay	7
+	jumpframe	1 2.4
+	landframe	8
+	frame	data/chars/MS-MK1/Rise-0.gif
+	frame	data/chars/MS-MK1/Rise-1.gif
+	frame	data/chars/MS-MK1/Rise-0.gif
+	frame	data/chars/MS-MK1/Rise-1.gif
+	delay	6
+	frame	data/chars/MS-MK1/Rise-3.gif
+	frame	data/chars/MS-MK1/Rise-4.gif
+	frame	data/chars/MS-MK1/Rise-3.gif
+	delay	30
+	frame	data/chars/MS-MK1/Rise-4.gif
+	delay	20
+	frame	data/chars/MS-MK1/Get.gif
+		
+anim	run
+	@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 4);
+		}
+	@end_script	
+	loop	1
+	delay	5
+	offset	119 141
+	bbox	115 111 22 29
+	frame	data/chars/MS-MK1/Run-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MS-MK1/Run-1.gif
+	frame	data/chars/MS-MK1/Run-2.gif
+	frame	data/chars/MS-MK1/Run-1.gif
+		
+anim	RUNATTACK
+	loop	0
+	delay	4
+	offset	119 141
+	bbox	113 118 29 17
+	move	12
+	attack1	90 106 60 34 14 1 0 0 0 20
+	frame	data/chars/MS-MK1/RunA-0.gif
+	frame	data/chars/MS-MK1/RunA-1.gif
+	frame	data/chars/MS-MK1/RunA-2.gif
+	frame	data/chars/MS-MK1/RunA-3.gif
+	frame	data/chars/MS-MK1/RunA-4.gif
+	frame	data/chars/MS-MK1/RunA-5.gif
+	frame	data/chars/MS-MK1/RunA-2.gif
+	frame	data/chars/MS-MK1/RunA-3.gif
+	frame	data/chars/MS-MK1/RunA-4.gif
+	frame	data/chars/MS-MK1/RunA-2.gif
+	frame	data/chars/MS-MK1/RunA-3.gif
+	frame	data/chars/MS-MK1/RunA-4.gif
+	frame	data/chars/MS-MK1/RunA-5.gif
+	move	6
+	frame	data/chars/MS-MK1/RunA-5.gif
+	frame	data/chars/MS-MK1/RunA-1.gif
+	frame	data/chars/MS-MK1/RunA-0.gif
+		
+anim	special
+	loop	0
+	delay	5
+	offset	119 141
+	mpcost	25
+	hitflash	Flash2
+	frame	data/chars/MS-MK1/SP-0.gif
+	frame	data/chars/MS-MK1/SP-1.gif
+	frame	data/chars/MS-MK1/SP-0.gif
+	frame	data/chars/MS-MK1/SP-1.gif
+	frame	data/chars/MS-MK1/SP-0.gif
+	frame	data/chars/MS-MK1/SP-1.gif
+	frame	data/chars/MS-MK1/SP-2.gif
+	frame	data/chars/MS-MK1/SP-3.gif
+	frame	data/chars/MS-MK1/SP-2.gif
+	frame	data/chars/MS-MK1/SP-3.gif
+	frame	data/chars/MS-MK1/SP-2.gif
+	frame	data/chars/MS-MK1/SP-3.gif
+	@cmd	shoot "MK1SP" 0 0 0
+	frame	data/chars/MS-MK1/SP-4.gif
+	frame	data/chars/MS-MK1/SP-5.gif
+	frame	data/chars/MS-MK1/SP-4.gif
+	frame	data/chars/MS-MK1/SP-5.gif
+	frame	data/chars/MS-MK1/SP-4.gif
+	frame	data/chars/MS-MK1/SP-5.gif
+	frame	data/chars/MS-MK1/SP-4.gif
+	frame	data/chars/MS-MK1/SP-5.gif
+		
+anim	walk
+	@script
+		void self = getlocalvar("self");
+		int b = getentityproperty(self, "base");
+		int a = getentityproperty(self, "a");
+		if(a > b){
+		performattack(self, openborconstant("ANI_JUMP"), 0);
+		changeentityproperty(self, "animpos", 4);
+		}
+	@end_script	
+	loop	1
+	delay	10
+	offset	119 141
+	bbox	113 110 19 30
+	frame	data/chars/MS-MK1/Walk-0.gif
+	@cmd	changeentityproperty getlocalvar("self") "Subject_to_Platform" 1
+	frame	data/chars/MS-MK1/Walk-1.gif
+	frame	data/chars/MS-MK1/Walk-2.gif
+	frame	data/chars/MS-MK1/Walk-1.gif
+		
+#|edited by openBor Stats v 0.37
+		

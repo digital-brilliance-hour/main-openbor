@@ -1,0 +1,61 @@
+name	PHFSP2b
+type	None
+shadow	0
+nolife  1
+remove  0
+#Speed   16
+candamage enemy obstacle
+
+#palette       data/chars/Venom/Pal2.gif
+
+
+anim idle
+	loop	1
+	delay	2
+	offset	128 140
+	blast 124 133 10 11 25 0 0 0 20
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2101-0.gif
+	blast 116 135 17 8 25 0 0 0 20
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2101-1.gif
+	frame	data/chars/PredatorH/0_2101-2.gif
+	frame	data/chars/PredatorH/0_2101-3.gif
+	blast 117 134 17 8 25 0 0 0 20
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2101-4.gif
+	blast 124 133 10 11 25 0 0 0 20
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2101-5.gif
+	frame	data/chars/PredatorH/0_2101-6.gif
+	frame	data/chars/PredatorH/0_2101-7.gif
+	frame	data/chars/PredatorH/0_2101-8.gif
+	frame	data/chars/PredatorH/0_2101-9.gif
+	frame	data/chars/PredatorH/0_2101-10.gif
+
+anim attack1
+	delay	4
+	offset	128 148
+	blast 109 126 38 22 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-0.gif
+	blast 99 121 56 31 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-1.gif
+	blast 88 110 82 49 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-2.gif
+	blast 82 112 93 50 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-3.gif
+	blast 75 110 107 58 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-4.gif
+	blast 68 107 116 60 25 0 0 0 30
+	DropV	4 3
+	frame	data/chars/PredatorH/0_2250-5.gif
+	attack1 0
+	frame	data/chars/PredatorH/0_2250-6.gif
+	frame	data/chars/PredatorH/0_2250-7.gif
+	frame	data/chars/PredatorH/0_2250-8.gif
+	

@@ -1,0 +1,33 @@
+name NRock
+type None
+shadow 0
+nolife 1
+candamage enemy obstacle shot
+speed 15
+remove 0
+nomove 1
+
+
+anim	idle
+	loop	1
+	delay	70
+	offset	157 138
+        Jumpframe 0 4 2
+        Landframe 2
+	attack3  181  89  44  45  20  1  0  0  0  25
+        DropV   5 1
+	frame	data/chars/Neku/NRock-0.gif
+	frame	data/chars/Neku/NRock-0.gif
+	delay	4
+	attack3  0
+	frame	data/chars/Neku/NRock-1.gif
+	attack3  181  89  44  45  20  1  0  0  0  25
+        DropV   2 4
+	frame	data/chars/Neku/NRock-2.gif
+	frame	data/chars/Neku/NRock-3.gif
+	frame	data/chars/Neku/NRock-4.gif
+	frame	data/chars/Neku/NRock-5.gif
+	frame	data/chars/Neku/NRock-6.gif
+@cmd killentity getlocalvar("self")
+	frame	data/chars/Neku/NRock-6.gif
+

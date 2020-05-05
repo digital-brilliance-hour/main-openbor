@@ -1,0 +1,308 @@
+direction	both
+cameratype 1
+settime 0 
+notime 1
+
+spawn2 150 100 829
+spawn1 50  200 829
+spawn3 150 300 829
+scrollspeed 100
+bgspeed	 10	Left
+
+
+music		data/music/battle.ogg
+
+background	data/bgs/sky.png 0.5 0.8 0  0
+panel		data/bgs/dbg.png	
+
+order	aa
+gravity  -10
+rock 1
+
+fglayer data/bgs/clight2.png 1 -0.3 -0.2 -220 -20 0 0 -1 1 1 1
+
+#-------1
+
+group   1 1
+at      0
+
+spawn story
+alias sa1
+at 0
+
+
+group   1 1
+at      0
+
+spawn  delay
+         health  1
+	coords  320  400  100
+	at  0
+
+group   4 6
+at      0
+
+spawn  fight
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+#coords  320  500  200
+	coords  0 0
+	at  0
+
+spawn  nappa
+coords 650 400
+at     0
+
+
+
+
+spawn  delay
+         health  50
+	coords  320  400  100
+	at  0
+
+spawn  delay
+         health  40
+	coords  320  400  100
+	at  0
+
+spawn  delay
+         health  40
+	coords  320  400  100
+	at  0
+
+spawn  delay
+         health  40
+	coords  320  400  100
+	at  0
+
+spawn  delay
+         health  40
+	coords  320  400  100
+	at  0
+
+spawn  sai1
+coords 450 455
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 750 355
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai1
+coords 500 522
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 700 622
+at     0
+
+spawn  delay
+         health  60
+	coords  320  600  100
+	at  0
+
+spawn  sai1
+coords 400 322
+at     0
+
+spawn  delay
+         health  60
+	coords  320  700  100
+	at  0
+
+spawn  sai2
+item cp
+coords 600 422
+at     0
+
+spawn  delay
+         health  60
+	coords  320  500  100
+	at  0
+
+spawn  sai1
+coords 700 555
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 200 755
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai1
+coords 300 622
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 400 422
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai1
+coords 500 622
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 600 722
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+
+spawn  sai1
+coords 700 355
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai2
+coords 250 555
+at     0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0
+
+spawn  sai1
+coords 200 322
+at     0
+
+spawn  sai2
+coords 300 322
+at     0
+
+spawn  sai1
+coords 400 322
+at     0
+
+spawn  sai2
+item cp
+coords 500 322
+at     0
+
+
+spawn  sai1
+coords 700 155
+at     0
+
+spawn  sai2
+coords 150 355
+at     0
+
+spawn  sai1
+coords 200 322
+at     0
+
+spawn  sai2
+coords 200 322
+at     0
+
+spawn  sai1
+coords 300 322
+at     0
+
+spawn  sai2
+coords 300 322
+at     0
+
+
+spawn  sai1
+coords 300 155
+at     0
+
+spawn  sai2
+coords 400 355
+at     0
+
+spawn  sai1
+coords 400 322
+at     0
+
+spawn  sai2
+coords 500 322
+at     0
+
+spawn  sai1
+coords 500 322
+at     0
+
+spawn  sai2
+coords 700 322
+at     0
+
+
+group   1 1
+at      0
+
+
+
+spawn  comp
+@script
+void main()
+{
+    void self = getlocalvar("self"); //Get calling entity
+    int YPos = openborvariant("ypos");
+
+    changeentityproperty(self, "position", NULL(), YPos+0);
+}
+@end_script
+	coords  0 0
+	at  0
+
+spawn  delay
+         health  60
+	coords  320  400  100
+	at  0

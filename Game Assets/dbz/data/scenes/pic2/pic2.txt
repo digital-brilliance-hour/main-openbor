@@ -1,0 +1,61 @@
+name    pic2
+type	text
+speed 9999
+facing 1
+remove 1
+
+subtype	noskip
+speed      5
+setlayer   5000
+shadow	0
+
+subject_to_screen 1
+lifespan 30
+
+palette       none
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	12
+	offset	0 0 
+sound	data/sounds/electricity1.wav
+frame	data/scenes/pic2/1.png
+frame	data/scenes/pic2/2.png
+frame	data/scenes/pic2/3.png
+frame	data/scenes/pic2/4.png
+frame	data/scenes/pic2/5.png
+frame	data/scenes/pic2/6.png
+frame	data/scenes/pic2/7.png
+frame	data/scenes/pic2/8.png
+frame	data/scenes/pic2/9.png
+delay 25
+frame	data/scenes/pic2/10.png
+frame	data/scenes/pic2/11.png
+frame	data/scenes/pic2/12.png
+frame	data/scenes/pic2/13.png
+delay 22
+sound	data/sounds/pyell.wav
+frame	data/scenes/pic2/14.png
+frame	data/scenes/pic2/15.png
+frame	data/scenes/pic2/16.png
+frame	data/scenes/pic2/17.png
+frame	data/scenes/pic2/18.png
+frame	data/scenes/pic2/19.png
+frame	data/scenes/pic2/20.png
+frame	data/scenes/pic2/21.png
+frame	data/scenes/pic2/22.png
+frame	data/scenes/pic2/23.png
+frame	data/scenes/pic2/24.png
+@cmd	killentity getlocalvar("self")
+frame	data/scenes/pic2/14.png
+
+
+
+
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,54 @@
+name	OBomb
+health	1
+type	None
+shadow	0
+speed	12
+candamage enemy Obsticle
+jumpheight 2
+
+anim idle
+	loop	1
+	delay	4
+          Fastattack 1
+	offset	116 128
+	attack1    128  95  11  14  5
+	frame	data/chars/Owl/OB-0.gif
+	frame	data/chars/Owl/OB-1.gif
+	frame	data/chars/Owl/OB-2.gif
+	frame	data/chars/Owl/OB-3.gif
+	frame	data/chars/Owl/OB-4.gif
+	frame	data/chars/Owl/OB-5.gif
+	frame	data/chars/Owl/OB-6.gif
+	frame	data/chars/Owl/OB-7.gif
+
+anim attack1
+	offset	131 120
+          delay   1
+          Fastattack 1
+	attack1  0
+	frame    data/chars/Owl/OBEX-0.gif
+	delay  6
+		blast  116  80  35  40  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-0.gif
+	frame    data/chars/Owl/OBEX-1.gif
+	frame    data/chars/Owl/OBEX-2.gif
+		blast  113  78  41  42  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-3.gif
+	frame    data/chars/Owl/OBEX-4.gif
+		blast  107  73  52  50  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-5.gif
+	frame    data/chars/Owl/OBEX-6.gif
+		blast  109  69  45  41  22  0  0  0  20
+	frame    data/chars/Owl/OBEX-7.gif
+	frame    data/chars/Owl/OBEX-8.gif
+		Attack1  0
+	frame    data/chars/Owl/OBEX-9.gif
+	frame	data/chars/Owl/OBEX-10.gif
+	frame	data/chars/Owl/OBEX-11.gif
+	frame	data/chars/Owl/OBEX-12.gif
+	frame	data/chars/Owl/OBEX-13.gif
+
+
+
+
+

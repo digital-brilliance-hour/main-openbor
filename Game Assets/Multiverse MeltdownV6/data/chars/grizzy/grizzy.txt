@@ -1,0 +1,117 @@
+name	Grizzy
+health	600
+speed	8
+type	enemy
+gfxshadow  	1
+cantgrab 1
+icon	 data/chars/Colonel/icon.gif
+diesound data/sounds/dieSlash.wav
+
+
+anim idle
+	loop	1
+	delay	14
+	offset	102 159
+	bbox	70 80 67 79
+	frame	data/chars/Grizzy/stand1.gif
+	frame	data/chars/Grizzy/stand2.gif
+	frame	data/chars/Grizzy/stand3.gif
+	frame	data/chars/Grizzy/stand4.gif
+	frame	data/chars/Grizzy/stand5.gif
+	frame	data/chars/Grizzy/stand6.gif
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	102 159
+	bbox	70 80 67 79
+	frame	data/chars/Grizzy/jump1.gif
+	delay	3
+	frame	data/chars/Grizzy/jump2.gif
+	frame	data/chars/Grizzy/jp1.gif
+	frame	data/chars/Grizzy/jp2.gif
+	frame	data/chars/Grizzy/jp3.gif
+	frame	data/chars/Grizzy/jp4.gif
+	frame	data/chars/Grizzy/jp5.gif
+	frame	data/chars/Grizzy/jp6.gif
+	frame	data/chars/Grizzy/jp5.gif
+	frame	data/chars/Grizzy/jp4.gif
+	frame	data/chars/Grizzy/jp3.gif
+	frame	data/chars/Grizzy/jp2.gif
+	frame	data/chars/Grizzy/jp1.gif
+	frame	data/chars/Grizzy/jump2.gif
+	delay	4
+	frame	data/chars/Grizzy/jump1.gif
+	delay	8
+	frame	data/chars/Grizzy/land2.gif
+	frame	data/chars/Grizzy/land1.gif
+
+
+anim attack1
+	range	1 80
+	loop	0
+	delay	8
+	offset	102 159
+	frame	data/chars/Grizzy/act1.gif
+	delay	4
+	bbox	70 80 67 79
+	frame	data/chars/Grizzy/act2.gif
+	frame	data/chars/Grizzy/act3.gif
+	frame	data/chars/Grizzy/act4.gif
+	attack	45 30 138 150 16 1
+	frame	data/chars/Grizzy/act5.gif
+	frame	data/chars/Grizzy/act6.gif
+	frame	data/chars/Grizzy/act7.gif
+	frame	data/chars/Grizzy/act8.gif
+	frame	data/chars/Grizzy/act9.gif
+	delay	18
+	attack	0
+	frame	data/chars/Grizzy/act10.gif
+
+
+anim upper
+	loop	0
+	delay	8
+	offset	102 159
+	frame	data/chars/Grizzy/act1.gif
+	delay	4
+	bbox	70 80 67 79
+	frame	data/chars/Grizzy/act2.gif
+	frame	data/chars/Grizzy/act3.gif
+	frame	data/chars/Grizzy/act4.gif
+	attack	45 30 138 150 16 1
+	frame	data/chars/Grizzy/act5.gif
+	frame	data/chars/Grizzy/act6.gif
+	frame	data/chars/Grizzy/act7.gif
+	frame	data/chars/Grizzy/act8.gif
+	frame	data/chars/Grizzy/act9.gif
+	delay	18
+	attack	0
+	frame	data/chars/Grizzy/act10.gif
+
+
+anim pain
+	loop	0
+	delay	12
+	offset	102 159
+	bbox	70 80 67 79
+	frame	data/chars/Grizzy/pain1.gif
+
+
+anim fall
+	loop	0
+	offset	102 159
+	attack	70 80 67 79 16 1
+	frame	data/chars/Grizzy/pain1.gif
+
+
+anim rise
+	loop	0
+	delay	14
+	offset	102 159
+	frame	data/chars/Grizzy/land2.gif
+	delay	8
+	frame	data/chars/Grizzy/land1.gif
+
+

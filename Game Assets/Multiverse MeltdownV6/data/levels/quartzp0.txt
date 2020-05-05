@@ -1,0 +1,54 @@
+# File modified by Level Editor on 12/29/2009
+# File modified by Level Editor on 12/7/2009
+# File modified by Level Editor on 12/1/2009
+music		data/music/A-Reason.bor
+
+# Load images
+#bglayer {path} {xratio} {zratio} {xposition} {zposition} {xspacing} {zspacing} {xrepeat} {zrepeat} {transparency} {alpha} {watermode} {amplitude} {wavelength} {wavespeed} {bgspeedratio}
+BGSpeed 1
+Background	data/bgs/QuartzP/BG0.gif  0.5 0.4 0 35 0 0 2000000000 1 1 0 0 0 0 0 1
+BGLayer	data/bgs/QuartzP/BG1.gif  0.4 0.3 0 5 0 0 8 1 1 0 0 0 0 0 0
+BGLayer	data/bgs/QuartzP/BG2.gif  0.1 0.1 0 45 0 0 8 1 1 0 0 0 0 0 0
+BGLayer	data/bgs/QuartzP/BG3.gif  0   0   0 50 0 0 1 1 1 0 0 0 0 0 0
+
+panel		data/bgs/QuartzP/Panel.gif
+panel		data/bgs/QuartzP/Panel2.gif
+frontpanel	           data/bgs/Fpanal.gif
+order	aaaab
+
+#Background	data/bgs/CChaos/BG.gif 0.5 0.5 0 -10 0 0 20 1 1
+#panel		data/bgs/CChaos/Panel.gif
+#frontpanel	           data/bgs/Fpanal.gif
+#order	a
+
+direction both
+settime 0
+notime 1
+Cameratype 1
+
+#-----------------
+#1a--------
+
+#group 7 7
+#at 50
+
+spawn DECAPRE
+Health 990
+coords 540 408
+at 50
+
+spawn DECAPRE
+Health 990
+coords 540 433
+at 50
+
+spawn DECAPRE
+Health 990
+coords -40 465
+at 50
+
+spawn DECAPRE
+Health 990
+coords -40 418
+at 50
+

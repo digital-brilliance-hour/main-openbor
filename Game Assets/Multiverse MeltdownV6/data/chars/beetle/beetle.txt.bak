@@ -1,0 +1,358 @@
+name	Beetle
+health	100
+speed	10
+type	enemy
+shadow	2
+cantgrab 1
+icon	  data/chars/Beetle/icon.gif
+iconpain  data/chars/Beetle/iconP.gif
+icondie   data/chars/Beetle/iconD.gif
+diesound  	data/sounds/exp.wav
+nodieblink 2
+candamage Enemy Player
+palette       data/chars/Beetle/Pal
+alternatepal  data/chars/Beetle/FreezeM.gif
+fmap 1
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	82 94
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/stand2.gif
+	frame	data/chars/Beetle/stand3.gif
+
+
+anim walk
+	loop	1
+	delay	6
+	offset	82 94
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/walk1.gif
+	frame	data/chars/Beetle/walk2.gif
+
+
+anim pain
+	loop	0
+	delay	14
+	offset	82 94
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/stand1.gif
+
+anim BPAIN
+	loop	0
+	offset	82 94
+	delay	3
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+
+anim SPAIN
+	loop	0
+	offset	82 94
+	delay	3
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+
+anim pain2
+	loop	0
+	sound	data/sounds/alienp1.wav
+	offset	82 94
+	delay	6
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+	frame	data/chars/Beetle/FreezeP.gif
+
+anim pain3
+	loop	0
+	offset	82 94
+	delay	3
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+
+
+anim fall
+	loop	0
+	delay	1
+	offset	82 62
+	attack	60 30 47 35 10 1 0 0 0 20
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/stand1.gif
+
+anim BURN
+	loop	0
+	offset	82 62
+	delay	3
+	attack	60 30 47 35 10 1 0 0 0 20
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/BurnP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/stand1.gif
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/Beetle/stand1.gif
+
+anim Shock
+	loop	0
+	offset	82 62
+	delay	3
+	attack	60 30 47 35 10 1 0 0 0 20
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/ShockP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/stand1.gif
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/Beetle/stand1.gif
+
+anim Fall3
+	loop	0
+	offset	82 62
+	delay	3
+	attack	60 30 47 35 10 1 0 0 0 20
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/DrainP.gif
+	frame	data/chars/Beetle/stand1.gif
+	frame	data/chars/Beetle/stand1.gif
+	attack	0 0 0 0
+	bbox	0 0 0 0
+	delay	20
+	frame	data/chars/Beetle/stand1.gif
+
+anim rise
+	loop	0
+	delay	2
+	offset	82 62
+	frame	data/chars/Beetle/stand1.gif
+	offset	82 64
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 66
+	frame	data/chars/Beetle/stand3.gif
+	offset	82 68
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 70
+	frame	data/chars/Beetle/stand1.gif
+	offset	82 72
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 74
+	frame	data/chars/Beetle/stand3.gif
+	offset	82 76
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 78
+	frame	data/chars/Beetle/stand1.gif
+	offset	82 80
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 82
+	frame	data/chars/Beetle/stand3.gif
+	offset	82 84
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 86
+	frame	data/chars/Beetle/stand1.gif
+	offset	82 88
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 90
+	frame	data/chars/Beetle/stand3.gif
+	offset	82 92
+	frame	data/chars/Beetle/stand2.gif
+	offset	82 94
+	frame	data/chars/Beetle/stand1.gif
+
+
+anim attack1
+	range	1 120
+	loop	0
+	delay	2
+	move	4
+	offset	82 94
+	bbox	60 30 47 35
+	attack	44 10 73 65 12 1
+	frame	data/chars/Beetle/act1.gif
+	frame	data/chars/Beetle/act1.gif
+	frame	data/chars/Beetle/act2.gif
+	frame	data/chars/Beetle/act2.gif
+	frame	data/chars/Beetle/act3.gif
+	frame	data/chars/Beetle/act3.gif
+	frame	data/chars/Beetle/act4.gif
+	frame	data/chars/Beetle/act4.gif
+	frame	data/chars/Beetle/act5.gif
+	frame	data/chars/Beetle/act5.gif
+	frame	data/chars/Beetle/act6.gif
+	frame	data/chars/Beetle/act6.gif
+	frame	data/chars/Beetle/act7.gif
+	frame	data/chars/Beetle/act7.gif
+	frame	data/chars/Beetle/act8.gif
+	frame	data/chars/Beetle/act1.gif
+	frame	data/chars/Beetle/act1.gif
+	frame	data/chars/Beetle/act2.gif
+	frame	data/chars/Beetle/act2.gif
+	frame	data/chars/Beetle/act3.gif
+	frame	data/chars/Beetle/act3.gif
+	frame	data/chars/Beetle/act4.gif
+	frame	data/chars/Beetle/act4.gif
+	frame	data/chars/Beetle/act5.gif
+	frame	data/chars/Beetle/act5.gif
+	frame	data/chars/Beetle/act6.gif
+	frame	data/chars/Beetle/act6.gif
+	frame	data/chars/Beetle/act7.gif
+	frame	data/chars/Beetle/act7.gif
+	frame	data/chars/Beetle/act8.gif
+	move	0
+	frame	data/chars/Beetle/act8.gif
+
+
+anim upper
+	loop	0
+	delay	6
+	offset	82 94
+	bbox	60 30 47 35
+	frame	data/chars/Beetle/upper1.gif
+	attack	60 11 47 53 8 1
+	frame	data/chars/Beetle/upper2.gif
+	frame	data/chars/Beetle/upper3.gif
+	frame	data/chars/Beetle/upper4.gif
+	frame	data/chars/Beetle/upper3.gif
+	frame	data/chars/Beetle/upper2.gif
+	frame	data/chars/Beetle/upper3.gif
+	frame	data/chars/Beetle/upper4.gif
+	attack	0
+	frame	data/chars/Beetle/upper1.gif
+
+
+anim death
+	loop	0
+	delay	5
+	offset	45 85
+	frame	data/chars/Beetle/exp1.gif
+	frame	data/chars/Beetle/exp2.gif
+	frame	data/chars/Beetle/exp3.gif
+	frame	data/chars/Beetle/exp4.gif
+	frame	data/chars/Beetle/exp5.gif
+	frame	data/chars/Beetle/exp6.gif
+	frame	data/chars/Beetle/exp7.gif
+	frame	data/chars/Beetle/exp8.gif
+	frame	data/chars/Beetle/exp9.gif
+	frame	data/chars/Beetle/exp10.gif
+	frame	data/chars/Beetle/exp11.gif
+	frame	data/chars/Beetle/exp12.gif
+	frame	data/chars/Beetle/exp13.gif
+
+
+

@@ -1,0 +1,24 @@
+name	WebBall
+type	enemy
+shadow	0
+nolife  1
+speed	25
+candamage  enemy  NPC
+
+
+anim idle
+	loop	1
+	delay	4
+	offset	30 7
+		drawmethod  216  216  0  0  0  -1  -1
+	attack3  16 3 71 28 15  0  0  0  0  20
+	frame	data/chars/MVC2_Spiderman/788.gif
+	offset	27 6
+	frame	data/chars/MVC2_Spiderman/789.gif
+	offset	29 5
+	frame	data/chars/MVC2_Spiderman/790.gif
+	offset	24 5
+	frame	data/chars/MVC2_Spiderman/791.gif
+	offset	29 6
+	frame	data/chars/MVC2_Spiderman/792.gif
+
