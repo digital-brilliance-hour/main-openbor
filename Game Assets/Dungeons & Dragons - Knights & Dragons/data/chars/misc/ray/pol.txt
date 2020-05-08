@@ -1,0 +1,210 @@
+name		pol
+health		1
+nolife		1
+type		none
+hostile		player npc obstacle
+candamage	player npc obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+
+anim spawn
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+
+	sound   data/sounds/ray01.wav
+	delay	1
+	attack6  226 106 194 93 20 0 0 0 0 25
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/ray/pol03.gif
+	frame	data/chars/misc/empty.gif
+
+	attack6  0 0 0 0 0 0 0 0 0 0
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+

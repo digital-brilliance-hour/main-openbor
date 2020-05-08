@@ -1,0 +1,137 @@
+name		rock
+health		1
+nolife		1
+type		npc
+hostile		player enemy obstacle
+candamage	player enemy obstacle
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+remove		0
+dust			dust01
+flash			flash01
+bflash			guard01
+
+
+anim idle
+	jumpframe		0 3 3
+#	dropframe		41
+	landframe		42
+	loop	0
+	offset     195 128
+	hitfx   data/sounds/hit01.wav
+	move	6.5
+	delay	2
+	attack2    197 167 63 33 15 1 0 0 25
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	frame	data/chars/misc/rock/00.gif
+	delay	999
+	frame	data/chars/misc/rock/00.gif
+	delay	1
+	frame	data/chars/misc/rock/00.gif
+
+	attack2    0 0 0 0 0 0 0 0 
+	move 0
+	delay	6
+	sound   data/sounds/fall02.wav
+	frame	data/chars/misc/rock/01.gif
+	frame	data/chars/misc/rock/02.gif
+	frame	data/chars/misc/rock/03.gif
+	delay	3
+	frame	data/chars/misc/rock/04.gif
+	frame		data/chars/misc/empty.gif
+	frame	data/chars/misc/rock/05.gif
+	frame		data/chars/misc/empty.gif
+	frame	data/chars/misc/rock/06.gif
+	frame		data/chars/misc/empty.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+

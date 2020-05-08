@@ -1,0 +1,120 @@
+name		merlin
+health		1
+nolife		1
+type		none
+hostile		enemy obstacle
+candamage	player enemy obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+lifespan	5
+
+anim spawn
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	delay	5
+	sound   data/sounds/super02.wav
+	frame	data/chars/misc/merlin/mer13.gif
+	frame	data/chars/misc/merlin/mer12.gif
+	frame	data/chars/misc/merlin/mer11.gif
+	frame	data/chars/misc/merlin/mer10.gif
+	frame	data/chars/misc/merlin/mer09.gif
+	frame	data/chars/misc/merlin/mer08.gif
+	frame	data/chars/misc/merlin/mer07.gif
+	frame	data/chars/misc/merlin/mer06.gif
+	frame	data/chars/misc/merlin/mer05.gif
+	frame	data/chars/misc/merlin/mer04.gif
+	frame	data/chars/misc/merlin/mer03.gif
+	frame	data/chars/misc/merlin/mer01.gif
+
+	delay	100
+	frame	data/chars/misc/merlin/mer02.gif
+	delay	40
+	frame	data/chars/misc/merlin/mer01.gif
+	
+	delay	5
+	frame	data/chars/misc/merlin/mer03.gif
+	frame	data/chars/misc/merlin/mer04.gif
+	frame	data/chars/misc/merlin/mer05.gif
+	frame	data/chars/misc/merlin/mer06.gif
+	frame	data/chars/misc/merlin/mer07.gif
+	frame	data/chars/misc/merlin/mer08.gif
+	frame	data/chars/misc/merlin/mer09.gif
+	frame	data/chars/misc/merlin/mer10.gif
+	frame	data/chars/misc/merlin/mer11.gif
+	frame	data/chars/misc/merlin/mer12.gif
+	frame	data/chars/misc/merlin/mer13.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+

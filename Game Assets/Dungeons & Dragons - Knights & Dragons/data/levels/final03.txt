@@ -1,0 +1,66 @@
+music		data/music/FINAL.ogg
+bossmusic	data/music/FINAL.ogg
+background	data/bgs/FINAL03/back.gif
+bglayer		data/bgs/FINAL03/n01.gif 0 0 0 0 0 0 99999999 999999999 1 0 0 0 0 0 1.8
+fglayer		data/bgs/FINAL03/f01.gif 0 0 0 0 0 0 99999999 999999999 1 1 0 0 0 0 0 4
+panel		data/chars/misc/empty.gif
+#panel	    data/bgs/FINAL03/n01.gif
+#frontpanel	data/bgs/FINAL03/f01.gif
+settime 0
+notime	1
+order	a
+bgspeed	5
+setweap 2
+stagenumber 1
+spawn1  80 10
+spawn2  100 60
+spawn3  90 30
+spawn4  110 90
+#type	2
+#nopause 1
+
+palette data/bgs/FINAL03/FINAL03.gif #1
+
+#------- INTRO TEXT
+
+spawn final3
+health 1
+coords 240 200
+flip 1
+at 0
+
+#------- INTRO TEXT
+
+#------- black
+
+spawn black
+coords 0 220
+flip 1
+at 0
+
+#------- black
+
+#------- enter
+
+spawn go02
+alias go02
+health 1
+coords 460 140
+flip 1
+at 0#3000
+
+#------- enter
+
+
+
+
+
+
+
+
+
+
+
+
+
+

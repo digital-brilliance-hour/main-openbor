@@ -1,0 +1,77 @@
+name			ch03_01
+health			1
+nolife			1
+type			none
+speed			0
+nomove			1
+noquake			1
+falldie			1
+subtype			flydie
+#shadow			1
+facing			1
+remove			0
+setlayer		100
+
+palette data/scenes/chall/03/01.gif #1
+
+anim idle
+	loop		1
+	bbox		0 0 0 0
+	move		0
+	
+	delay		200
+	offset		240 120
+	frame	data/chars/misc/empty.gif
+
+	delay		2
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+	
+	delay		200
+		frame	data/scenes/chall/03/01.gif
+
+	delay		2
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+		frame	data/scenes/chall/03/01.gif
+	frame	data/chars/misc/empty.gif
+
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop		0
+	offset		209 311
+	bbox		0 0 0 0
+	move		0
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+

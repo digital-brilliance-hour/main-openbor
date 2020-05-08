@@ -1,0 +1,2254 @@
+
+# Options
+hiscorebg			1
+completebg			1
+showcomplete		110	50	-9999	-9999	157	50
+showrushbonus		1
+noslowfx			1
+#noslow				1
+maxplayers			4
+#loadingbg			1	306 246	100	330	222	0
+#loadingbg2			1	109 84	100	133	60	0
+loadingbg			1	281 223	100	305	199	0
+loadingbg2			1	281 223	100	305	199	0
+equalairpause		1
+
+#scbonuses {stage bonus} {life bonus} {rush bonus} {bonus type}
+#scbonuses 10000 1 1 1
+
+#-------Rush Placement
+
+#rush	{flag}	{duration}	{text1}	{f1}	{f2}	{text2}		{f3}	{f4}
+rush	1		2			Rush__x	0		0		MAX_Rush	1		1 
+
+#p{#}rush 	{x1} 	{y1} 	{x2} 	{y2} 	{x3} 	{y3} 	{x4} 	{y4}
+p1rush		8		170		57		170		-1000	-1000	-1000	-1000
+p2rush		128 	170 	177 	170 	-1000	-1000	-1000	-1000
+p3rush		248 	170 	297 	170 	-1000	-1000	-1000	-1000
+p4rush		368 	170 	417 	170 	-1000	-1000	-1000	-1000
+
+#-------Lifebars, icons, names, etc.
+
+lbarsize  91 11 1 1 0 -300 -300 300 -300
+mpbarsize 91 11 1 1 0 -300 -300 300 -300
+timeloc   150 8 21 20 1
+timeicon data/chars/misc/ticon.gif -80 0
+
+p1icon      0	0
+p1life      22	228
+p1mp        22	243
+p1lifex     -1000	-1000
+p1lifen     -100	217	0
+p1score     25	217	-1000	-1000	17	259	0
+p1namej     25	217	17	259	25	217	0
+e1life      10	198
+e1icon      0	0
+e1name      27	189	0
+p1smenu		90	195	40	157
+
+p2icon      120   0
+p2life      142	228
+p2mp        142	243
+p2lifex     -1000 -1000
+p2lifen     -100 217	0
+p2score     145	217	-1000	-1000	137	259	0
+p2namej     145	217	137	259	145	217	0
+e2life      130	198
+e2icon      120   0
+e2name      147	189	0
+p2smenu 	210	195	160	157
+
+p3icon      240   0
+p3life      262	228
+p3mp        262	243
+p3lifex     -1000 -1000
+p3lifen     -100	217	0
+p3score     265	217	-1000	-1000	257	259	0
+p3namej     265	217	257	259	265	217	0
+e3life      250	198
+e3icon      240   0
+e3name      267	189	0
+p3smenu 	330	195	280	157
+
+p4icon      360   0
+p4life      382	228
+p4mp        382	243
+p4lifex     -1000 -1000
+p4lifen     -100	217	0
+p4score     385	217	-1000	-1000	377	259	0
+p4namej     385	217	377	259	385	217	0
+e4life      370	198
+e4icon      360   0
+e4name      387	189	0
+p4smenu 	450	195	400	157
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Test -------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#set	The_Endless_Test
+#typemp			0
+#custfade		100
+#musicoverlap	0
+#lives			99
+#credits			1
+#noshare			0
+#cansave			2
+#continuescore	2
+#skipselect		fighter	wizard	cleric	dwarf	elf	thief	paladin	arthur	lancelot	perceval	mordred	knight travel
+#
+#-----------------------------------------------------------------------#
+#
+#select			data/sel01.txt
+#scene	data/scenes/towns/town01.txt
+#scene	data/scenes/complete/01_01.txt
+#z 110 200 160
+#file	data/levels/01_01_1.txt
+#
+#END
+#-----------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Test -------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Quest -----------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+set	The_Endless_Quest
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+#----------------------------# Map
+select			data/sel02.txt
+#z 110 180 160
+z 140 180 160
+file	data/levels/intro01.txt
+scene	data/scenes/intromap/intromap.txt
+z 10 740 160
+file	data/levels/MAP00.txt
+#----------------------------# Map
+
+#----------------------------------------------------------------------------------------------------------------# Easy Quests
+#--------------------------------------------------------# The orc fort
+branch	01_01
+z 110 200 160
+file	data/levels/01_01_1.txt
+scene	data/scenes/complete/01_01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern01
+branch	00_01
+select			data/sel02.txt
+scene	data/scenes/towns/town01.txt
+z 100 210 160
+file	data/levels/tavern01.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern01
+#--------------------------------------------------------# The orc fort
+
+#--------------------------------------------------------# Ruins in the woods
+branch	01_02
+z 140 210 160
+file	data/levels/01_02_1.txt
+z 140 210 160
+file	data/levels/01_02_2.txt
+scene	data/scenes/complete/01_02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern02
+branch	00_02
+scene	data/scenes/towns/town02.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern02.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern02
+#--------------------------------------------------------# Ruins in the woods
+
+#--------------------------------------------------------# Village under siege
+branch	01_03
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+scene	data/scenes/complete/01_03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern03
+branch	00_03
+scene	data/scenes/towns/town03.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern03.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern03
+#--------------------------------------------------------# Village under siege
+
+#--------------------------------------------------------# The abandoned mine
+branch	01_04
+z 155 210 160
+file	data/levels/01_04_1.txt
+z 110 175 160
+file	data/levels/01_04_2.txt
+z 155 210 160
+file	data/levels/01_04_3.txt
+scene	data/scenes/complete/01_04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern04
+branch	00_04
+scene	data/scenes/towns/town04.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern04.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern04
+#--------------------------------------------------------# The abandoned mine
+
+#--------------------------------------------------------# The great escape
+branch	01_05
+z 125 210 160
+file	data/levels/01_05_1.txt
+z 125 210 160
+file	data/levels/01_05_2.txt
+z 120 210 160
+file	data/levels/01_05_3.txt
+scene	data/scenes/complete/01_05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern05
+branch	00_05
+scene	data/scenes/towns/town05.txt
+select			data/sel02.txt
+z 120 210 160
+file	data/levels/tavern05.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern05
+#--------------------------------------------------------# The great escape
+
+#--------------------------------------------------------# Castle Caldwell
+branch	01_06
+z 145 210 160
+file	data/levels/01_06_1.txt
+z 145 210 160
+file	data/levels/01_06_2.txt
+z 145 210 160
+file	data/levels/01_06_3.txt
+scene	data/scenes/complete/01_06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern06
+branch	00_06
+scene	data/scenes/towns/town06.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern06.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern06
+#--------------------------------------------------------# Castle Caldwell
+
+#--------------------------------------------------------# Journey to the Rock
+branch	01_07
+z 145 210 160
+file	data/levels/01_07_1.txt
+z 130 210 160
+file	data/levels/01_07_2.txt
+scene	data/scenes/complete/01_07.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern07
+branch	00_07
+scene	data/scenes/towns/town07.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern07.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern07
+#--------------------------------------------------------# Journey to the Rock
+
+#--------------------------------------------------------# Threat into the swamp
+branch	01_08
+z 120 210 160
+file	data/levels/01_08_1.txt
+scene	data/scenes/complete/01_08.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern08
+branch	00_08
+scene	data/scenes/towns/town08.txt
+select			data/sel02.txt
+z 120 210 160
+file	data/levels/tavern08.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern08
+#--------------------------------------------------------# Threat into the swamp
+
+#--------------------------------------------------------# The hobgoblin king
+branch	01_09
+z 140 200 160
+file	data/levels/01_09_1.txt
+z 135 210 160
+file	data/levels/01_09_2.txt
+scene	data/scenes/complete/01_09.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern09
+branch	00_09
+scene	data/scenes/towns/town09.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern09.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern09
+#--------------------------------------------------------# The hobgoblin king
+
+#--------------------------------------------------------# Adventure at Gray Peak
+branch	01_10
+z 90 210 160
+file	data/levels/01_10_1.txt
+z 125 205 160
+file	data/levels/01_10_2.txt
+z 150 210 160
+file	data/levels/01_10_3.txt
+scene	data/scenes/complete/01_10.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern10
+branch	00_10
+scene	data/scenes/towns/town10.txt
+select			data/sel02.txt
+z 120 210 160
+file	data/levels/tavern10.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern10
+#--------------------------------------------------------# Adventure at Gray Peak
+
+#--------------------------------------------------------# The haunted graveyard
+branch	01_11
+z 145 210 160
+file	data/levels/01_11_1.txt
+z 145 210 160
+file	data/levels/01_11_2.txt
+scene	data/scenes/complete/01_11.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern11
+branch	00_11
+scene	data/scenes/towns/town11.txt
+select			data/sel02.txt
+z 100 210 160
+file	data/levels/tavern11.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern11
+#--------------------------------------------------------# The haunted graveyard
+
+#--------------------------------------------------------# The Tree of Life
+branch	01_12
+z 145 210 160
+file	data/levels/01_12_1.txt
+scene	data/scenes/complete/01_12.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+
+#----------------------------# Tavern12
+branch	00_12
+scene	data/scenes/towns/town12.txt
+select			data/sel02.txt
+z 120 210 160
+file	data/levels/tavern12.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Tavern12
+#--------------------------------------------------------# The Tree of Life
+#----------------------------------------------------------------------------------------------------------------# Easy Quests
+
+#----------------------------------------------------------------------------------------------------------------# UNLOCK01
+#----------------------------# Riverfork Keep
+branch	00_13
+scene	data/scenes/unlock/unlock01.txt
+select			data/sel03.txt
+z 130 210 160
+file	data/levels/purple01.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Riverfork Keep
+#----------------------------------------------------------------------------------------------------------------# UNLOCK01
+
+#----------------------------------------------------------------------------------------------------------------# Normal Quests
+#--------------------------------------------------------# The Merchant's map
+branch	02_01
+z 140 210 160
+file	data/levels/02_01_1.txt
+z 140 210 160
+file	data/levels/02_01_2.txt
+z 60 210 160
+file	data/levels/02_01_3.txt
+z 120 210 160
+file	data/levels/02_01_4.txt
+scene	data/scenes/complete/02_01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Merchant's map
+
+#--------------------------------------------------------# The lost city
+branch	02_02
+z 155 210 160
+file	data/levels/02_02_1.txt
+z 100 210 160
+file	data/levels/02_02_2.txt
+z 100 210 160
+file	data/levels/02_02_3.txt
+scene	data/scenes/complete/02_02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The lost city
+
+#--------------------------------------------------------# The ruins of Krakatos
+branch	02_03
+z 70 210 160
+file	data/levels/02_03_1.txt
+z 95 210 160
+file	data/levels/02_03_2.txt
+z 25 210 160
+file	data/levels/02_03_3.txt
+z 80 185 160
+file	data/levels/02_03_4.txt
+z 80 180 160
+file	data/levels/02_03_5.txt
+scene	data/scenes/complete/02_03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The ruins of Krakatos
+
+#--------------------------------------------------------# Night's dark terror
+branch	02_04
+z 145 210 160
+file	data/levels/02_04_1.txt
+z 145 210 160
+file	data/levels/02_04_2.txt
+z 145 210 160
+file	data/levels/02_04_3.txt
+z 40 210 160
+file	data/levels/02_04_4.txt
+z 115 210 160
+file	data/levels/02_04_5.txt
+z 40 210 160
+file	data/levels/02_04_6.txt
+scene	data/scenes/complete/02_04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Night's dark terror
+
+#--------------------------------------------------------# The Veiled Society
+branch	02_05
+z 150 210 160
+file	data/levels/02_05_1.txt
+z 150 210 160
+file	data/levels/02_05_2.txt
+z 150 210 160
+file	data/levels/02_05_3.txt
+z 150 210 160
+file	data/levels/02_05_4.txt
+z 150 210 160
+file	data/levels/02_05_5.txt
+z 150 210 160
+file	data/levels/02_05_6.txt
+scene	data/scenes/complete/02_05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Veiled Society
+
+#--------------------------------------------------------# Terror from the river
+branch	02_06
+z 70 210 160
+file	data/levels/02_06_1.txt
+z 150 210 160
+file	data/levels/02_06_2.txt
+z 120 210 160
+file	data/levels/02_06_3.txt
+z 120 210 160
+file	data/levels/02_06_4.txt
+scene	data/scenes/complete/02_06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Terror from the river
+
+#--------------------------------------------------------# The undermountain pass
+branch	02_07
+z 130 210 160
+file	data/levels/02_07_1.txt
+z 130 210 160
+file	data/levels/02_07_2.txt
+z 130 210 160
+file	data/levels/02_07_3.txt
+scene	data/scenes/complete/02_07.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The undermountain pass
+
+#--------------------------------------------------------# The King's Festival
+branch	02_08
+z 115 210 160
+file	data/levels/02_08_1.txt
+z 160 210 160
+file	data/levels/02_08_2.txt
+z 160 210 160
+file	data/levels/02_08_3.txt
+z 110 210 160
+file	data/levels/02_08_4.txt
+z 130 210 160
+file	data/levels/02_08_5.txt
+scene	data/scenes/complete/02_08.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The King's Festival
+
+#--------------------------------------------------------# Dwellers of the Forbidden City
+branch	02_09
+z 100 210 160
+file	data/levels/02_09_1.txt
+z 100 210 160
+file	data/levels/02_09_2.txt
+z 100 210 160
+file	data/levels/02_09_3.txt
+scene	data/scenes/complete/02_09.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Dwellers of the Forbidden City
+#----------------------------------------------------------------------------------------------------------------# Normal Quests
+
+#----------------------------------------------------------------------------------------------------------------# UNLOCK02
+#----------------------------# Fort Cruth
+branch	00_14
+scene	data/scenes/unlock/unlock02.txt
+select			data/sel04.txt
+z 130 210 160
+file	data/levels/purple02.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Fort Cruth
+#----------------------------------------------------------------------------------------------------------------# UNLOCK02
+
+#----------------------------------------------------------------------------------------------------------------# Hard Quests
+#--------------------------------------------------------# The Isle of Dread
+branch	03_01
+z 160 210 160
+file	data/levels/03_01_1.txt
+z 140 210 160
+file	data/levels/03_01_2.txt
+z 120 210 160
+file	data/levels/03_01_3.txt
+z 145 210 160
+file	data/levels/03_01_4.txt
+z 140 210 160
+file	data/levels/03_01_5.txt
+z 140 210 160
+file	data/levels/03_01_6.txt
+z 140 210 160
+file	data/levels/03_01_7.txt
+scene	data/scenes/complete/03_01.txt
+scene	data/scenes/cutscene/cut05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Isle of Dread
+
+#--------------------------------------------------------# The Mistery of Koriszegy Keep
+branch	03_02
+z 140 210 160
+file	data/levels/03_02_1.txt
+z 140 210 160
+file	data/levels/03_02_2.txt
+z 90 210 160
+file	data/levels/03_02_3.txt
+z 120 210 160
+file	data/levels/03_02_4.txt
+z 150 210 160
+file	data/levels/03_02_5.txt
+z 130 210 160
+file	data/levels/03_02_6.txt
+scene	data/scenes/complete/03_02.txt
+scene	data/scenes/cutscene/cut03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Mistery of Koriszegy Keep
+
+#--------------------------------------------------------# Eye of the Beholder
+branch	03_03
+z 140 200 160
+file	data/levels/03_03_1.txt
+z 110 210 160
+file	data/levels/03_03_2.txt
+z 110 210 160
+file	data/levels/03_03_3.txt
+z 110 210 160
+file	data/levels/03_03_4.txt
+z 120 210 160
+file	data/levels/03_03_5.txt
+z 110 160 160
+file	data/levels/03_03_6.txt
+scene	data/scenes/complete/03_03.txt
+scene	data/scenes/cutscene/cut06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Eye of the Beholder
+
+#--------------------------------------------------------# The lake of Lost Dreams
+branch	03_04
+z 170 240 160
+file	data/levels/03_04_1.txt
+z 130 210 160
+file	data/levels/03_04_2.txt
+z 120 210 160
+file	data/levels/03_04_3.txt
+z 110 210 160
+file	data/levels/03_04_4.txt
+z 130 210 160
+file	data/levels/03_04_5.txt
+z 130 195 160
+file	data/levels/03_04_6.txt
+scene	data/scenes/complete/03_04.txt
+scene	data/scenes/cutscene/cut01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The lake of Lost Dreams
+
+#--------------------------------------------------------# At the gates of Fort Doom
+branch	03_05
+z 120 210 160
+file	data/levels/03_05_1.txt
+z 120 210 160
+file	data/levels/03_05_2.txt
+z 120 210 160
+file	data/levels/03_05_3.txt
+z 120 210 160
+file	data/levels/03_05_4.txt
+z 130 210 160
+file	data/levels/03_05_5.txt
+z 120 210 160
+file	data/levels/03_05_6.txt
+z 110 210 160
+file	data/levels/03_05_7.txt
+scene	data/scenes/complete/03_05.txt
+scene	data/scenes/cutscene/cut04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# At the gates of Fort Doom
+
+#--------------------------------------------------------# Evil below the mountain
+branch	03_06
+z 150 210 160
+file	data/levels/03_06_1.txt
+z 185 210 160
+file	data/levels/03_06_2.txt
+z 165 210 160
+file	data/levels/03_06_3.txt
+z 100 180 160
+file	data/levels/03_06_4.txt
+z 120 195 160
+file	data/levels/03_06_5.txt
+scene	data/scenes/complete/03_06.txt
+scene	data/scenes/cutscene/cut02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Evil below the mountain
+#----------------------------------------------------------------------------------------------------------------# Hard Quests
+
+#----------------------------------------------------------------------------------------------------------------# UNLOCK03
+#----------------------------# Specularum Revisited
+branch	00_15
+scene	data/scenes/unlock/unlock03.txt
+select			data/sel05.txt
+z 165 210 160
+file	data/levels/purple03.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0X.txt
+#----------------------------# Map
+#----------------------------# Specularum Revisited
+#----------------------------------------------------------------------------------------------------------------# UNLOCK03
+
+#----------------------------------------------------------------------------------------------------------------# Very Hard Quests
+
+#--------------------------------------------------------# The King of Dragons
+branch	04_01
+z 140 180 160
+file	data/levels/final01.txt
+z 110 210 160
+file	data/levels/04_01_1.txt
+z 130 210 160
+file	data/levels/04_01_2.txt
+z 100 210 160
+file	data/levels/04_01_3.txt
+z 130 195 160
+file	data/levels/04_01_4.txt
+#scene	data/scenes/complete/04_01.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END01.txt
+END
+#--------------------------------------------------------# The King of Dragons
+
+#--------------------------------------------------------# The Tower of Doom
+branch	04_02
+z 140 180 160
+file	data/levels/final02.txt
+z 120 210 160
+file	data/levels/04_02_1.txt
+z 130 200 160
+file	data/levels/04_02_2.txt
+z 130 200 160
+file	data/levels/04_02_3.txt
+z 130 200 160
+file	data/levels/04_02_4.txt
+z 130 200 160
+file	data/levels/04_02_5.txt
+z 120 210 160
+file	data/levels/04_02_6.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END02.txt
+END
+#--------------------------------------------------------# The Tower of Doom
+
+#--------------------------------------------------------# Shadow over Karameikos
+branch	04_03
+z 140 180 160
+file	data/levels/final03.txt
+z 170 210 160
+file	data/levels/04_03_1.txt
+z 85 210 160
+file	data/levels/04_03_2.txt
+z 90 210 160
+file	data/levels/04_03_3.txt
+z 40 210 160
+file	data/levels/04_03_4.txt
+z 85 210 160
+file	data/levels/04_03_5.txt
+z 150 210 160
+file	data/levels/04_03_6.txt
+z 130 195 160
+file	data/levels/04_03_7.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END03.txt
+END
+#--------------------------------------------------------# Shadow over Karameikos
+
+#----------------------------------------------------------------------------------------------------------------# Very Hard Quests
+
+
+#--------------------------------------------------------# END
+ 
+branch	99_99
+select			data/sel02.txt
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+#next
+#----------------------------# Map
+select			data/sel01.txt
+z 10 740 160
+file	data/levels/MAP03.txt
+ 
+#--------------------------------------------------------# END
+ 
+#END
+#-----------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Quest -----------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Training Bridge ---------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+set	The_Training_Bridge
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+#-----------------------------------------------------------------------#
+
+select			data/sel02.txt
+z 110 190 160
+file	data/levels/training.txt
+
+END
+#-----------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Training Bridge ---------------------------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Quest - All chars unlocked --------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+set	The_Endless_Quest_(All_Chars_Unlocked)
+ifcomplete		1
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+
+
+#----------------------------# Map
+select			data/sel01.txt
+#z 110 180 160
+z 140 180 160
+file	data/levels/intro01.txt
+scene	data/scenes/intromap/introall.txt
+z 10 740 160
+file	data/levels/MAP00.txt
+#----------------------------# Map
+
+#----------------------------------------------------------------------------------------------------------------# Easy Quests
+#--------------------------------------------------------# The orc fort
+branch	01_01
+z 110 200 160
+file	data/levels/01_01_1.txt
+scene	data/scenes/complete/01_01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern01
+branch	00_01
+scene	data/scenes/towns/town01.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern01.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern01
+#--------------------------------------------------------# The orc fort
+
+#--------------------------------------------------------# Ruins in the woods
+branch	01_02
+z 140 210 160
+file	data/levels/01_02_1.txt
+z 140 210 160
+file	data/levels/01_02_2.txt
+scene	data/scenes/complete/01_02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern02
+branch	00_02
+scene	data/scenes/towns/town02.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern02.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern02
+#--------------------------------------------------------# Ruins in the woods
+
+#--------------------------------------------------------# Village under siege
+branch	01_03
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+scene	data/scenes/complete/01_03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern03
+branch	00_03
+scene	data/scenes/towns/town03.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern03.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern03
+#--------------------------------------------------------# Village under siege
+
+#--------------------------------------------------------# The abandoned mine
+branch	01_04
+z 155 210 160
+file	data/levels/01_04_1.txt
+z 110 175 160
+file	data/levels/01_04_2.txt
+z 155 210 160
+file	data/levels/01_04_3.txt
+scene	data/scenes/complete/01_04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern04
+branch	00_04
+scene	data/scenes/towns/town04.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern04.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern04
+#--------------------------------------------------------# The abandoned mine
+
+#--------------------------------------------------------# The great escape
+branch	01_05
+z 125 210 160
+file	data/levels/01_05_1.txt
+z 125 210 160
+file	data/levels/01_05_2.txt
+z 120 210 160
+file	data/levels/01_05_3.txt
+scene	data/scenes/complete/01_05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern05
+branch	00_05
+scene	data/scenes/towns/town05.txt
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/tavern05.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern05
+#--------------------------------------------------------# The great escape
+
+#--------------------------------------------------------# Castle Caldwell
+branch	01_06
+z 145 210 160
+file	data/levels/01_06_1.txt
+z 145 210 160
+file	data/levels/01_06_2.txt
+z 145 210 160
+file	data/levels/01_06_3.txt
+scene	data/scenes/complete/01_06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern06
+branch	00_06
+scene	data/scenes/towns/town06.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern06.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern06
+#--------------------------------------------------------# Castle Caldwell
+
+#--------------------------------------------------------# Journey to the Rock
+branch	01_07
+z 145 210 160
+file	data/levels/01_07_1.txt
+z 130 210 160
+file	data/levels/01_07_2.txt
+scene	data/scenes/complete/01_07.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern07
+branch	00_07
+scene	data/scenes/towns/town07.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern07.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern07
+#--------------------------------------------------------# Journey to the Rock
+
+#--------------------------------------------------------# Threat into the swamp
+branch	01_08
+z 120 210 160
+file	data/levels/01_08_1.txt
+scene	data/scenes/complete/01_08.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern08
+branch	00_08
+scene	data/scenes/towns/town08.txt
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/tavern08.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern08
+#--------------------------------------------------------# Threat into the swamp
+
+#--------------------------------------------------------# The hobgoblin king
+branch	01_09
+z 140 200 160
+file	data/levels/01_09_1.txt
+z 135 210 160
+file	data/levels/01_09_2.txt
+scene	data/scenes/complete/01_09.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern09
+branch	00_09
+scene	data/scenes/towns/town09.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern09.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern09
+#--------------------------------------------------------# The hobgoblin king
+
+#--------------------------------------------------------# Adventure at Gray Peak
+branch	01_10
+z 90 210 160
+file	data/levels/01_10_1.txt
+z 125 205 160
+file	data/levels/01_10_2.txt
+z 150 210 160
+file	data/levels/01_10_3.txt
+scene	data/scenes/complete/01_10.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern10
+branch	00_10
+scene	data/scenes/towns/town10.txt
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/tavern10.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern10
+#--------------------------------------------------------# Adventure at Gray Peak
+
+#--------------------------------------------------------# The haunted graveyard
+branch	01_11
+z 145 210 160
+file	data/levels/01_11_1.txt
+z 145 210 160
+file	data/levels/01_11_2.txt
+scene	data/scenes/complete/01_11.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern11
+branch	00_11
+scene	data/scenes/towns/town11.txt
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/tavern11.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern11
+#--------------------------------------------------------# The haunted graveyard
+
+#--------------------------------------------------------# The Tree of Life
+branch	01_12
+z 145 210 160
+file	data/levels/01_12_1.txt
+scene	data/scenes/complete/01_12.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+
+#----------------------------# Tavern12
+branch	00_12
+scene	data/scenes/towns/town12.txt
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/tavern12.txt
+#next
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#----------------------------# Tavern12
+#--------------------------------------------------------# The Tree of Life
+#----------------------------------------------------------------------------------------------------------------# Easy Quests
+
+#----------------------------------------------------------------------------------------------------------------# Normal Quests
+#--------------------------------------------------------# The Merchant's map
+branch	02_01
+z 140 210 160
+file	data/levels/02_01_1.txt
+z 140 210 160
+file	data/levels/02_01_2.txt
+z 60 210 160
+file	data/levels/02_01_3.txt
+z 120 210 160
+file	data/levels/02_01_4.txt
+scene	data/scenes/complete/02_01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Merchant's map
+
+#--------------------------------------------------------# The lost city
+branch	02_02
+z 155 210 160
+file	data/levels/02_02_1.txt
+z 100 210 160
+file	data/levels/02_02_2.txt
+z 100 210 160
+file	data/levels/02_02_3.txt
+scene	data/scenes/complete/02_02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The lost city
+
+#--------------------------------------------------------# The ruins of Krakatos
+branch	02_03
+z 70 210 160
+file	data/levels/02_03_1.txt
+z 95 210 160
+file	data/levels/02_03_2.txt
+z 25 210 160
+file	data/levels/02_03_3.txt
+z 80 185 160
+file	data/levels/02_03_4.txt
+z 80 180 160
+file	data/levels/02_03_5.txt
+scene	data/scenes/complete/02_03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The ruins of Krakatos
+
+#--------------------------------------------------------# Night's dark terror
+branch	02_04
+z 145 210 160
+file	data/levels/02_04_1.txt
+z 145 210 160
+file	data/levels/02_04_2.txt
+z 145 210 160
+file	data/levels/02_04_3.txt
+z 40 210 160
+file	data/levels/02_04_4.txt
+z 115 210 160
+file	data/levels/02_04_5.txt
+z 40 210 160
+file	data/levels/02_04_6.txt
+scene	data/scenes/complete/02_04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Night's dark terror
+
+#--------------------------------------------------------# The Veiled Society
+branch	02_05
+z 150 210 160
+file	data/levels/02_05_1.txt
+z 150 210 160
+file	data/levels/02_05_2.txt
+z 150 210 160
+file	data/levels/02_05_3.txt
+z 150 210 160
+file	data/levels/02_05_4.txt
+z 150 210 160
+file	data/levels/02_05_5.txt
+z 150 210 160
+file	data/levels/02_05_6.txt
+scene	data/scenes/complete/02_05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Veiled Society
+
+#--------------------------------------------------------# Terror from the river
+branch	02_06
+z 70 210 160
+file	data/levels/02_06_1.txt
+z 150 210 160
+file	data/levels/02_06_2.txt
+z 120 210 160
+file	data/levels/02_06_3.txt
+z 120 210 160
+file	data/levels/02_06_4.txt
+scene	data/scenes/complete/02_06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Terror from the river
+
+#--------------------------------------------------------# The undermountain pass
+branch	02_07
+z 130 210 160
+file	data/levels/02_07_1.txt
+z 130 210 160
+file	data/levels/02_07_2.txt
+z 130 210 160
+file	data/levels/02_07_3.txt
+scene	data/scenes/complete/02_07.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The undermountain pass
+
+#--------------------------------------------------------# The King's Festival
+branch	02_08
+z 115 210 160
+file	data/levels/02_08_1.txt
+z 160 210 160
+file	data/levels/02_08_2.txt
+z 160 210 160
+file	data/levels/02_08_3.txt
+z 110 210 160
+file	data/levels/02_08_4.txt
+z 130 210 160
+file	data/levels/02_08_5.txt
+scene	data/scenes/complete/02_08.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The King's Festival
+
+#--------------------------------------------------------# Dwellers of the Forbidden City
+branch	02_09
+z 100 210 160
+file	data/levels/02_09_1.txt
+z 100 210 160
+file	data/levels/02_09_2.txt
+z 100 210 160
+file	data/levels/02_09_3.txt
+scene	data/scenes/complete/02_09.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Dwellers of the Forbidden City
+#----------------------------------------------------------------------------------------------------------------# Normal Quests
+
+#----------------------------------------------------------------------------------------------------------------# Hard Quests
+#--------------------------------------------------------# The Isle of Dread
+branch	03_01
+z 160 210 160
+file	data/levels/03_01_1.txt
+z 140 210 160
+file	data/levels/03_01_2.txt
+z 120 210 160
+file	data/levels/03_01_3.txt
+z 145 210 160
+file	data/levels/03_01_4.txt
+z 140 210 160
+file	data/levels/03_01_5.txt
+z 140 210 160
+file	data/levels/03_01_6.txt
+z 140 210 160
+file	data/levels/03_01_7.txt
+scene	data/scenes/complete/03_01.txt
+scene	data/scenes/cutscene/cut05.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Isle of Dread
+
+#--------------------------------------------------------# The Mistery of Koriszegy Keep
+branch	03_02
+z 140 210 160
+file	data/levels/03_02_1.txt
+z 140 210 160
+file	data/levels/03_02_2.txt
+z 90 210 160
+file	data/levels/03_02_3.txt
+z 120 210 160
+file	data/levels/03_02_4.txt
+z 150 210 160
+file	data/levels/03_02_5.txt
+z 130 210 160
+file	data/levels/03_02_6.txt
+scene	data/scenes/complete/03_02.txt
+scene	data/scenes/cutscene/cut03.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The Mistery of Koriszegy Keep
+
+#--------------------------------------------------------# Eye of the Beholder
+branch	03_03
+z 140 200 160
+file	data/levels/03_03_1.txt
+z 110 210 160
+file	data/levels/03_03_2.txt
+z 110 210 160
+file	data/levels/03_03_3.txt
+z 110 210 160
+file	data/levels/03_03_4.txt
+z 120 210 160
+file	data/levels/03_03_5.txt
+z 110 160 160
+file	data/levels/03_03_6.txt
+scene	data/scenes/complete/03_03.txt
+scene	data/scenes/cutscene/cut06.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Eye of the Beholder
+
+#--------------------------------------------------------# The lake of Lost Dreams
+branch	03_04
+z 170 240 160
+file	data/levels/03_04_1.txt
+z 130 210 160
+file	data/levels/03_04_2.txt
+z 120 210 160
+file	data/levels/03_04_3.txt
+z 110 210 160
+file	data/levels/03_04_4.txt
+z 130 210 160
+file	data/levels/03_04_5.txt
+z 130 195 160
+file	data/levels/03_04_6.txt
+scene	data/scenes/complete/03_04.txt
+scene	data/scenes/cutscene/cut01.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# The lake of Lost Dreams
+
+#--------------------------------------------------------# At the gates of Fort Doom
+branch	03_05
+z 120 210 160
+file	data/levels/03_05_1.txt
+z 120 210 160
+file	data/levels/03_05_2.txt
+z 120 210 160
+file	data/levels/03_05_3.txt
+z 120 210 160
+file	data/levels/03_05_4.txt
+z 130 210 160
+file	data/levels/03_05_5.txt
+z 120 210 160
+file	data/levels/03_05_6.txt
+z 110 210 160
+file	data/levels/03_05_7.txt
+scene	data/scenes/complete/03_05.txt
+scene	data/scenes/cutscene/cut04.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# At the gates of Fort Doom
+
+#--------------------------------------------------------# Evil below the mountain
+branch	03_06
+z 150 210 160
+file	data/levels/03_06_1.txt
+z 185 210 160
+file	data/levels/03_06_2.txt
+z 165 210 160
+file	data/levels/03_06_3.txt
+z 100 180 160
+file	data/levels/03_06_4.txt
+z 120 195 160
+file	data/levels/03_06_5.txt
+scene	data/scenes/complete/03_06.txt
+scene	data/scenes/cutscene/cut02.txt
+#----------------------------# Map
+z 10 740 160
+file	data/levels/MAP0Y.txt
+#----------------------------# Map
+#scene	data/scenes/demo/demo.txt
+#END
+#--------------------------------------------------------# Evil below the mountain
+#----------------------------------------------------------------------------------------------------------------# Hard Quests
+
+#----------------------------------------------------------------------------------------------------------------# Very Hard Quests
+
+#--------------------------------------------------------# The King of Dragons
+branch	04_01
+z 140 180 160
+file	data/levels/final01.txt
+z 110 210 160
+file	data/levels/04_01_1.txt
+z 130 210 160
+file	data/levels/04_01_2.txt
+z 100 210 160
+file	data/levels/04_01_3.txt
+z 130 195 160
+file	data/levels/04_01_4.txt
+#scene	data/scenes/complete/04_01.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END01.txt
+END
+#--------------------------------------------------------# The King of Dragons
+
+#--------------------------------------------------------# The Tower of Doom
+branch	04_02
+z 140 180 160
+file	data/levels/final02.txt
+z 120 210 160
+file	data/levels/04_02_1.txt
+z 130 200 160
+file	data/levels/04_02_2.txt
+z 130 200 160
+file	data/levels/04_02_3.txt
+z 130 200 160
+file	data/levels/04_02_4.txt
+z 130 200 160
+file	data/levels/04_02_5.txt
+z 120 210 160
+file	data/levels/04_02_6.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END02.txt
+END
+#--------------------------------------------------------# The Tower of Doom
+
+#--------------------------------------------------------# Shadow over Karameikos
+branch	04_03
+z 140 180 160
+file	data/levels/final03.txt
+z 170 210 160
+file	data/levels/04_03_1.txt
+z 85 210 160
+file	data/levels/04_03_2.txt
+z 90 210 160
+file	data/levels/04_03_3.txt
+z 40 210 160
+file	data/levels/04_03_4.txt
+z 85 210 160
+file	data/levels/04_03_5.txt
+z 150 210 160
+file	data/levels/04_03_6.txt
+z 130 195 160
+file	data/levels/04_03_7.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END03.txt
+END
+#--------------------------------------------------------# Shadow over Karameikos
+
+#----------------------------------------------------------------------------------------------------------------# Very Hard Quests
+
+
+#--------------------------------------------------------# END
+ 
+branch	99_99
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+#next
+#----------------------------# Map
+select			data/sel01.txt
+z 10 740 160
+file	data/levels/MAP03.txt
+ 
+#--------------------------------------------------------# END
+ 
+#END
+#-----------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Endless Quest - All chars unlocked --------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Training Bridge: All chars unlocked -------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+set	The_Training_Bridge_(All_Chars_Unlocked)
+ifcomplete		1
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+#-----------------------------------------------------------------------#
+
+select			data/sel01.txt
+z 110 190 160
+file	data/levels/training2.txt
+
+END
+#-----------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Training Bridge: All chars unlocked -------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: The King of Dragons ---------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+set	The_Arcade_Quest:_The_King_of_Dragons
+#ifcomplete		1
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+select			data/sel01.txt
+
+z 165 210 160
+file	data/levels/intro02.txt
+
+#--------------------------------------------------------# The abandoned mine
+z 155 210 160
+file	data/levels/01_04_1.txt
+z 110 175 160
+file	data/levels/01_04_2.txt
+z 155 210 160
+file	data/levels/01_04_3.txt
+scene	data/scenes/complete/01_04.txt
+
+#--------------------------------------------------------# Journey to the Rock
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_07_1.txt
+z 130 210 160
+file	data/levels/01_07_2.txt
+scene	data/scenes/complete/01_07.txt
+
+#--------------------------------------------------------# The orc fort
+select			data/sel01.txt
+z 110 200 160
+file	data/levels/01_01_1.txt
+scene	data/scenes/complete/01_01.txt
+
+#--------------------------------------------------------# Threat into the swamp
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/01_08_1.txt
+scene	data/scenes/complete/01_08.txt
+
+#--------------------------------------------------------# Adventure at Gray Peak
+select			data/sel01.txt
+z 90 210 160
+file	data/levels/01_10_1.txt
+z 125 205 160
+file	data/levels/01_10_2.txt
+z 150 210 160
+file	data/levels/01_10_3.txt
+scene	data/scenes/complete/01_10.txt
+
+#--------------------------------------------------------# The ruins of Krakatos
+select			data/sel01.txt
+z 70 210 160
+file	data/levels/02_03_1.txt
+z 95 210 160
+file	data/levels/02_03_2.txt
+z 25 210 160
+file	data/levels/02_03_3.txt
+z 80 185 160
+file	data/levels/02_03_4.txt
+z 80 180 160
+file	data/levels/02_03_5.txt
+scene	data/scenes/complete/02_03.txt
+
+#--------------------------------------------------------# Terror from the river
+select			data/sel01.txt
+z 70 210 160
+file	data/levels/02_06_1.txt
+z 150 210 160
+file	data/levels/02_06_2.txt
+z 120 210 160
+file	data/levels/02_06_3.txt
+z 120 210 160
+file	data/levels/02_06_4.txt
+scene	data/scenes/complete/02_06.txt
+
+#--------------------------------------------------------# The undermountain pass
+select			data/sel01.txt
+z 130 210 160
+file	data/levels/02_07_1.txt
+z 130 210 160
+file	data/levels/02_07_2.txt
+z 130 210 160
+file	data/levels/02_07_3.txt
+scene	data/scenes/complete/02_07.txt
+
+#--------------------------------------------------------# Dwellers of the Forbidden City
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/02_09_1.txt
+z 100 210 160
+file	data/levels/02_09_2.txt
+z 100 210 160
+file	data/levels/02_09_3.txt
+scene	data/scenes/complete/02_09.txt
+
+#--------------------------------------------------------# The lake of Lost Dreams
+select			data/sel01.txt
+z 170 240 160
+file	data/levels/03_04_1.txt
+z 130 210 160
+file	data/levels/03_04_2.txt
+z 120 210 160
+file	data/levels/03_04_3.txt
+z 110 210 160
+file	data/levels/03_04_4.txt
+z 130 210 160
+file	data/levels/03_04_5.txt
+z 130 195 160
+file	data/levels/03_04_6.txt
+scene	data/scenes/complete/03_04.txt
+scene	data/scenes/cutscene/cut01.txt
+
+#--------------------------------------------------------# Evil below the mountain
+select			data/sel01.txt
+z 150 210 160
+file	data/levels/03_06_1.txt
+z 185 210 160
+file	data/levels/03_06_2.txt
+z 165 210 160
+file	data/levels/03_06_3.txt
+z 100 180 160
+file	data/levels/03_06_4.txt
+z 120 195 160
+file	data/levels/03_06_5.txt
+scene	data/scenes/complete/03_06.txt
+scene	data/scenes/cutscene/cut02.txt
+
+#--------------------------------------------------------# The King of Dragons
+select			data/sel01.txt
+z 110 210 160
+file	data/levels/04_01_1.txt
+z 130 210 160
+file	data/levels/04_01_2.txt
+z 100 210 160
+file	data/levels/04_01_3.txt
+z 130 195 160
+file	data/levels/04_01_4.txt
+#scene	data/scenes/complete/04_01.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END01.txt
+END
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: The King of Dragons ---------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: The Tower of Doom -----------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+set	The_Arcade_Quest:_The_Tower_of_Doom
+ifcomplete		1
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+select			data/sel01.txt
+
+z 165 210 160
+file	data/levels/intro02.txt
+
+#--------------------------------------------------------# The orc fort
+z 110 200 160
+file	data/levels/01_01_1.txt
+scene	data/scenes/complete/01_01.txt
+
+#--------------------------------------------------------# Ruins in the woods
+select			data/sel01.txt
+z 140 210 160
+file	data/levels/01_02_1.txt
+z 140 210 160
+file	data/levels/01_02_2.txt
+scene	data/scenes/complete/01_02.txt
+
+#--------------------------------------------------------# Village under siege
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+scene	data/scenes/complete/01_03.txt
+
+#--------------------------------------------------------# The great escape
+select			data/sel01.txt
+z 125 210 160
+file	data/levels/01_05_1.txt
+z 125 210 160
+file	data/levels/01_05_2.txt
+z 120 210 160
+file	data/levels/01_05_3.txt
+scene	data/scenes/complete/01_05.txt
+
+#--------------------------------------------------------# Adventure at Gray Peak
+select			data/sel01.txt
+z 90 210 160
+file	data/levels/01_10_1.txt
+z 125 205 160
+file	data/levels/01_10_2.txt
+z 150 210 160
+file	data/levels/01_10_3.txt
+scene	data/scenes/complete/01_10.txt
+
+#--------------------------------------------------------# The haunted graveyard
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_11_1.txt
+z 145 210 160
+file	data/levels/01_11_2.txt
+scene	data/scenes/complete/01_11.txt
+
+#--------------------------------------------------------# The lost city
+select			data/sel01.txt
+z 155 210 160
+file	data/levels/02_02_1.txt
+z 100 210 160
+file	data/levels/02_02_2.txt
+z 100 210 160
+file	data/levels/02_02_3.txt
+scene	data/scenes/complete/02_02.txt
+
+#--------------------------------------------------------# The Veiled Society
+select			data/sel01.txt
+z 150 210 160
+file	data/levels/02_05_1.txt
+z 150 210 160
+file	data/levels/02_05_2.txt
+z 150 210 160
+file	data/levels/02_05_3.txt
+z 150 210 160
+file	data/levels/02_05_4.txt
+z 150 210 160
+file	data/levels/02_05_5.txt
+z 150 210 160
+file	data/levels/02_05_6.txt
+scene	data/scenes/complete/02_05.txt
+
+#--------------------------------------------------------# The King's Festival
+select			data/sel01.txt
+z 115 210 160
+file	data/levels/02_08_1.txt
+z 160 210 160
+file	data/levels/02_08_2.txt
+z 160 210 160
+file	data/levels/02_08_3.txt
+z 110 210 160
+file	data/levels/02_08_4.txt
+z 130 210 160
+file	data/levels/02_08_5.txt
+scene	data/scenes/complete/02_08.txt
+
+#--------------------------------------------------------# Dwellers of the Forbidden City
+select			data/sel01.txt
+z 100 210 160
+file	data/levels/02_09_1.txt
+z 100 210 160
+file	data/levels/02_09_2.txt
+z 100 210 160
+file	data/levels/02_09_3.txt
+scene	data/scenes/complete/02_09.txt
+
+#--------------------------------------------------------# The Mistery of Koriszegy Keep
+select			data/sel01.txt
+z 140 210 160
+file	data/levels/03_02_1.txt
+z 140 210 160
+file	data/levels/03_02_2.txt
+z 90 210 160
+file	data/levels/03_02_3.txt
+z 120 210 160
+file	data/levels/03_02_4.txt
+z 150 210 160
+file	data/levels/03_02_5.txt
+z 130 210 160
+file	data/levels/03_02_6.txt
+scene	data/scenes/complete/03_02.txt
+scene	data/scenes/cutscene/cut03.txt
+
+#--------------------------------------------------------# At the gates of Fort Doom
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/03_05_1.txt
+z 120 210 160
+file	data/levels/03_05_2.txt
+z 120 210 160
+file	data/levels/03_05_3.txt
+z 120 210 160
+file	data/levels/03_05_4.txt
+z 130 210 160
+file	data/levels/03_05_5.txt
+z 120 210 160
+file	data/levels/03_05_6.txt
+z 110 210 160
+file	data/levels/03_05_7.txt
+scene	data/scenes/complete/03_05.txt
+scene	data/scenes/cutscene/cut04.txt
+
+#--------------------------------------------------------# The Tower of Doom
+select			data/sel01.txt
+z 120 210 160
+file	data/levels/04_02_1.txt
+z 130 200 160
+file	data/levels/04_02_2.txt
+z 130 200 160
+file	data/levels/04_02_3.txt
+z 130 200 160
+file	data/levels/04_02_4.txt
+z 130 200 160
+file	data/levels/04_02_5.txt
+z 120 210 160
+file	data/levels/04_02_6.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END02.txt
+END
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: The Tower of Doom -----------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: Shadow over Karameikos ------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+set	The_Arcade_Quest:_Shadow_over_Karameikos
+ifcomplete		1
+typemp			0
+custfade		100
+musicoverlap	0
+lives			1
+credits			1
+noshare			0
+cansave			2
+continuescore	2
+skipselect
+
+select			data/sel01.txt
+
+z 165 210 160
+file	data/levels/intro02.txt
+
+#--------------------------------------------------------# Village under siege
+z 145 210 160
+file	data/levels/01_03_1.txt
+z 115 210 160
+file	data/levels/01_03_2.txt
+scene	data/scenes/complete/01_03.txt
+
+#--------------------------------------------------------# Castle Caldwell
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_06_1.txt
+z 145 210 160
+file	data/levels/01_06_2.txt
+z 145 210 160
+file	data/levels/01_06_3.txt
+scene	data/scenes/complete/01_06.txt
+
+#--------------------------------------------------------# The hobgoblin king
+select			data/sel01.txt
+z 140 200 160
+file	data/levels/01_09_1.txt
+z 135 210 160
+file	data/levels/01_09_2.txt
+scene	data/scenes/complete/01_09.txt
+
+#--------------------------------------------------------# The Tree of Life
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/01_12_1.txt
+scene	data/scenes/complete/01_12.txt
+
+#--------------------------------------------------------# The Merchant's map
+select			data/sel01.txt
+z 140 210 160
+file	data/levels/02_01_1.txt
+z 140 210 160
+file	data/levels/02_01_2.txt
+z 60 210 160
+file	data/levels/02_01_3.txt
+z 120 210 160
+file	data/levels/02_01_4.txt
+scene	data/scenes/complete/02_01.txt
+
+#--------------------------------------------------------# The lost city
+select			data/sel01.txt
+z 155 210 160
+file	data/levels/02_02_1.txt
+z 100 210 160
+file	data/levels/02_02_2.txt
+z 100 210 160
+file	data/levels/02_02_3.txt
+scene	data/scenes/complete/02_02.txt
+
+#--------------------------------------------------------# Night's dark terror
+select			data/sel01.txt
+z 145 210 160
+file	data/levels/02_04_1.txt
+z 145 210 160
+file	data/levels/02_04_2.txt
+z 145 210 160
+file	data/levels/02_04_3.txt
+z 40 210 160
+file	data/levels/02_04_4.txt
+z 115 210 160
+file	data/levels/02_04_5.txt
+z 40 210 160
+file	data/levels/02_04_6.txt
+scene	data/scenes/complete/02_04.txt
+
+#--------------------------------------------------------# The undermountain pass
+select			data/sel01.txt
+z 130 210 160
+file	data/levels/02_07_1.txt
+z 130 210 160
+file	data/levels/02_07_2.txt
+z 130 210 160
+file	data/levels/02_07_3.txt
+scene	data/scenes/complete/02_07.txt
+
+#--------------------------------------------------------# The Isle of Dread
+select			data/sel01.txt
+z 160 210 160
+file	data/levels/03_01_1.txt
+z 140 210 160
+file	data/levels/03_01_2.txt
+z 120 210 160
+file	data/levels/03_01_3.txt
+z 145 210 160
+file	data/levels/03_01_4.txt
+z 140 210 160
+file	data/levels/03_01_5.txt
+z 140 210 160
+file	data/levels/03_01_6.txt
+z 140 210 160
+file	data/levels/03_01_7.txt
+scene	data/scenes/complete/03_01.txt
+scene	data/scenes/cutscene/cut05.txt
+
+#--------------------------------------------------------# Eye of the Beholder
+select			data/sel01.txt
+z 140 200 160
+file	data/levels/03_03_1.txt
+z 110 210 160
+file	data/levels/03_03_2.txt
+z 110 210 160
+file	data/levels/03_03_3.txt
+z 110 210 160
+file	data/levels/03_03_4.txt
+z 120 210 160
+file	data/levels/03_03_5.txt
+z 110 160 160
+file	data/levels/03_03_6.txt
+scene	data/scenes/complete/03_03.txt
+scene	data/scenes/cutscene/cut06.txt
+
+#--------------------------------------------------------# Shadow over Karameikos
+select			data/sel01.txt
+z 170 210 160
+file	data/levels/04_03_1.txt
+z 85 210 160
+file	data/levels/04_03_2.txt
+z 90 210 160
+file	data/levels/04_03_3.txt
+z 40 210 160
+file	data/levels/04_03_4.txt
+z 85 210 160
+file	data/levels/04_03_5.txt
+z 150 210 160
+file	data/levels/04_03_6.txt
+z 130 195 160
+file	data/levels/04_03_7.txt
+#scene	data/scenes/complete/04_02.txt
+#scene	data/scenes/demo/demo.txt
+z 140 180 160
+file	data/levels/END03.txt
+END
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+#-------------------------------------------------------- The Arcade Quest: Shadow over Karameikos ------------------------------------------------------#
+#--------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+
+
+
+
+
+
+

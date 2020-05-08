@@ -1,0 +1,215 @@
+name				mimic
+score				12 -1
+health				1
+speed				0
+nomove				1 0
+type				enemy
+hostile				player npc
+candamage			player npc
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+#nopain				1
+nodrop				1
+aimove				chase
+jumpheight			2
+antigravity			30
+falldie				1
+nodieblink			1
+offscreenkill		100
+#facing				2
+icon				data/chars/mimic/icon.gif 1
+icondie				data/chars/mimic/icond.gif 1
+diesound			data/sounds/mimic02.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette data/chars/mimic/mimic.gif #1
+
+
+remap	data/chars/mimic/idle00.gif   data/chars/mimic/alter01.gif
+remap	data/chars/mimic/idle00.gif   data/chars/mimic/alter02.gif
+remap	data/chars/mimic/idle00.gif   data/chars/mimic/alter03.gif
+
+#-------Moves
+
+
+anim spawn
+	shadowcoords 218 198
+	loop	0
+	offset	225 198
+	bbox    207 170 41 28
+	delay	1
+	frame	data/chars/mimic/idle00.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	offset	225 198
+	bbox    207 170 41 28
+	delay	1
+	frame	data/chars/mimic/idle00.gif
+
+anim attack1
+	shadowcoords 218 198
+	range	0 300
+#	rangez	-50 50
+	loop	0
+	offset	225 198
+	bbox    207 170 41 28
+	jumpframe	13 2.5 2.5
+	dropframe	14
+	landframe	16
+	hitfx   data/sounds/hit01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+	offset     222 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+	offset     228 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+	offset     222 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+	offset     228 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+	offset     222 198
+	frame	data/chars/mimic/idle00.gif
+	offset     225 198
+	frame	data/chars/mimic/idle00.gif
+
+	delay	8
+	frame	data/chars/mimic/a101.gif
+
+	attack2  204 158 46 42 10 0 0 0 12 15
+	delay	99
+	frame	data/chars/mimic/a102.gif
+	delay	8
+	frame	data/chars/mimic/a103.gif
+	delay	99
+	frame	data/chars/mimic/a104.gif
+	
+	
+	delay	6
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/mimic/a105.gif
+	delay	8
+	frame	data/chars/mimic/a101.gif
+
+anim pain1
+	shadowcoords 218 198
+	loop	0
+	delay	3
+	offset	225 198
+	bbox    207 170 41 28
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	delay   23
+	frame	data/chars/mimic/idle00.gif
+
+anim fall1
+	shadowcoords 218 198
+	loop	0
+	delay	3
+	offset	225 198
+	bbox    207 170 41 28
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	delay   23
+	frame	data/chars/mimic/idle00.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	offset	225 198
+	delay	1
+	frame	data/chars/mimic/idle00.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	delay	3
+	offset	225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset	225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset  225 198
+	frame	data/chars/mimic/idle00.gif
+	offset  223 198
+	frame	data/chars/mimic/death00.gif
+	offset	225 198
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/mimic/death01.gif
+	frame	data/chars/mimic/death02.gif
+	frame	data/chars/mimic/death03.gif
+	frame	data/chars/mimic/death04.gif
+	frame	data/chars/mimic/death05.gif
+	frame	data/chars/mimic/death06.gif
+	frame	data/chars/mimic/death07.gif
+	frame	data/chars/mimic/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+
+
+
+
+
+

@@ -1,0 +1,576 @@
+name				scorp
+type				enemy
+hostile				player npc
+candamage			player npc
+score				23 -1
+health				8
+speed				20
+shadow				1
+aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			20
+#risetime 1000
+nodieblink			0
+falldie				2
+jugglepoints		15
+icon				data/chars/scorp/icon.gif 1
+icondie				data/chars/scorp/icond.gif 1
+diesound			data/sounds/scorp01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/scorp/scorp.gif #1
+
+remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter01.gif
+remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter02.gif
+remap	data/chars/scorp/idle00.gif   data/chars/scorp/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 223 199
+	subentity	dust01
+	spawnframe	1 0 0 0 0
+	 loop       0
+	 offset     225 198
+	jumpframe  0 0.1 0
+	landframe  1
+	delay	999
+	frame	data/chars/scorp/spawn00.gif
+	delay	6
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+
+anim idle
+	shadowcoords 223 199
+	loop	1
+	 offset     225 198
+	bbox	213 175 32 24
+	delay	6
+	frame	data/chars/scorp/idle00.gif
+	frame	data/chars/scorp/idle01.gif
+
+anim walk
+	shadowcoords 223 199
+	loop	1
+	offset     225 198
+	bbox	213 175 32 24
+	delay   6
+	frame	data/chars/scorp/wk00.gif
+	frame	data/chars/scorp/wk01.gif
+	frame	data/chars/scorp/wk02.gif
+	frame	data/chars/scorp/wk01.gif
+
+anim attack1
+	shadowcoords 223 199
+	range	0 50
+	loop	0
+	offset     225 198
+	bbox	213 175 32 24
+	hitfx   data/sounds/hit01.wav
+	delay	6
+	frame	data/chars/scorp/a101.gif
+	frame	data/chars/scorp/a102.gif
+	attack1  219 143 73 56 5 0 0 0 0
+	frame	data/chars/scorp/a103.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/scorp/a104.gif
+	frame	data/chars/scorp/idle00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 223 199
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 0 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	213 175 32 24
+	sound   data/sounds/scorp01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-2
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-2
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-1
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-1
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+
+anim fall1
+	shadowcoords 223 199
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 0 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		2
+	landframe		3
+	loop	0
+	 offset     225 198
+	bbox	213 175 32 24
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/scorp/fall00.gif
+	delay   12
+	frame	data/chars/scorp/fall01.gif
+	frame	data/chars/scorp/fall02.gif
+	delay	35
+	frame	data/chars/scorp/fall03.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/scorp/rise00.gif
+
+anim rise1
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/scorp/rise01.gif
+	frame	data/chars/scorp/rise02.gif
+	frame	data/chars/scorp/rise03.gif
+
+anim death1
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/scorp/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 223 199
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 0 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	213 175 32 24
+	sound   data/sounds/scorp01.wav
+	
+	 offset     225 198
+	delay   2
+	move	-3
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-2
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-2
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-1
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	move	-1
+	frame	data/chars/scorp/pain101.gif
+	frame	data/chars/scorp/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+	delay   2
+	frame	data/chars/scorp/pain101.gif
+
+	delay   2
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     228 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+	offset     222 198
+	frame	data/chars/scorp/pain101.gif
+	offset     225 198
+	frame	data/chars/scorp/pain101.gif
+
+anim fall2
+	shadowcoords 223 199
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 0 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		2
+	landframe		3
+	loop	0
+	 offset     225 198
+	bbox	213 175 32 24
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/scorp/fall00.gif
+	delay   12
+	frame	data/chars/scorp/fall01.gif
+	frame	data/chars/scorp/fall02.gif
+	delay	35
+	frame	data/chars/scorp/fall03.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/scorp/rise00.gif
+
+anim rise2
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/scorp/rise01.gif
+	frame	data/chars/scorp/rise02.gif
+	frame	data/chars/scorp/rise03.gif
+
+anim death2
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/scorp/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 223 199
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 223 199
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/scorp/pain101.gif
+
+	delay	65
+	sound   data/sounds/fall01.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/scorp/fall03.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/scorp/rise00.gif
+
+	
+anim rise7
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/scorp/rise01.gif
+	frame	data/chars/scorp/rise02.gif
+	frame	data/chars/scorp/rise03.gif
+
+anim death7
+	shadowcoords 223 199
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/scorp/rise00.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+
+
+
+

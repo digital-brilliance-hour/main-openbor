@@ -1,0 +1,222 @@
+music		data/music/STAGE09.ogg
+bossmusic	data/music/BOSS09.ogg
+background	data/bgs/01_09_1/back.gif
+panel	      data/bgs/01_09_1/n01.gif
+#frontpanel	data/bgs/01_09_1/f01.gif
+order       a
+settime 99
+stagenumber 1
+bgspeed 10 0
+rock 1
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/01_09_1/01_09_1.gif #1
+
+#------- The Quest begins
+
+spawn q01_9
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------Monsters
+
+group   3 3
+at      850
+
+#------- Dialogue
+
+spawn d01_09_1
+coords 240 176
+flip 1
+at 850
+
+#------- Dialogue
+
+wait
+at      900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 590 185
+flip 0
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -90 155
+flip 1
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 570 175
+flip 0
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 0
+map 1
+item gold2
+coords 590 185
+flip 0
+at 900
+
+spawn lizman1
+alias Lizard_Man
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -90 155
+flip 1
+at 900
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   2 2
+at      1500
+
+#------- Dialogue
+
+#spawn d01_09_1
+#coords 240 176
+#flip 1
+#at 850
+
+#------- Dialogue
+
+wait
+at      1500
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1500
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 1500
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 590 185
+flip 0
+at 1500
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords -90 155
+flip 1
+at 1500
+
+#-------Monsters
+
+
+
+
+
+
+
+
+
+

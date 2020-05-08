@@ -1,0 +1,590 @@
+music		data/music/STAGE03.ogg
+bossmusic	data/music/BOSS03.ogg
+background	data/bgs/01_03_2/back.gif
+panel	      data/bgs/01_03_2/n01.gif
+frontpanel	data/bgs/01_03_2/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/01_03_2/01_03_2.gif #1
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	280 490
+at 0
+
+spawn Respawn2
+coords	280 490
+at 0
+
+spawn Respawn3
+coords	280 490
+at 0
+
+spawn Respawn4
+coords	280 490
+at 0
+
+#-------Respawn
+
+
+
+#-------chest
+spawn jar1
+alias Jar
+health 1
+item scroll
+coords 275 120
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn jar1
+alias Jar
+health 1
+item gapple
+coords 350 120
+flip 0
+at 0
+#-------chest
+
+#-------Monsters
+
+group   4 4
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+spawn d01_03_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+spawn minot
+alias Minotaur
+health 128
+2phealth 228
+3phealth 328 
+4phealth 428 
+aggression 0
+map 0
+boss 1
+item missclear
+itemalias VilgSiege
+coords 540 170
+flip 0
+at 0
+
+#-------
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 205
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -60 155
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 550 175
+flip 0
+at 0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 185
+flip 0
+at 0
+
+#-------Monsters
+
+
+
+
+
+

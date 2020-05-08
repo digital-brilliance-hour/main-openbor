@@ -1,0 +1,31 @@
+name	D04_02_1
+type	text
+setlayer 10000
+
+palette data/scenes/dialogue/04_02/04_02.gif #1
+
+anim idle
+	loop	0
+	offset	240 206
+	delay	16
+	frame	data/chars/misc/empty.gif
+	delay	6
+	frame	data/scenes/dialogue/04_02/01.gif
+	frame	data/scenes/dialogue/04_02/02.gif
+	frame	data/scenes/dialogue/04_02/03.gif
+
+	delay	999999
+	frame	data/scenes/dialogue/04_02/04.gif
+	
+	delay	6
+	frame	data/scenes/dialogue/04_02/03.gif
+	frame	data/scenes/dialogue/04_02/02.gif
+	frame	data/scenes/dialogue/04_02/01.gif
+	delay	16
+	frame	data/chars/misc/empty.gif
+
+	
+	
+	
+	
+	

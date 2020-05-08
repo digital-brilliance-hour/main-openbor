@@ -1,0 +1,40 @@
+name	D02_06_2
+type	text
+setlayer 10000
+
+palette data/scenes/dialogue/02_06/02_06.gif #1
+
+anim idle
+	loop	0
+	offset	240 206
+	delay	16
+	frame	data/chars/misc/empty.gif
+	delay	6
+	frame	data/scenes/dialogue/02_06/01.gif
+	frame	data/scenes/dialogue/02_06/02.gif
+	frame	data/scenes/dialogue/02_06/03.gif
+
+	delay	999999
+	frame	data/scenes/dialogue/02_06/06.gif
+	delay	2
+	frame	data/scenes/dialogue/02_06/06.gif
+	frame	data/scenes/dialogue/02_06/06.gif
+	frame	data/scenes/dialogue/02_06/06.gif
+	frame	data/scenes/dialogue/02_06/06.gif
+	frame	data/scenes/dialogue/02_06/06.gif
+
+	delay	999999
+	frame	data/scenes/dialogue/02_06/07.gif
+
+	delay	6
+	frame	data/scenes/dialogue/02_06/03.gif
+	frame	data/scenes/dialogue/02_06/02.gif
+	frame	data/scenes/dialogue/02_06/01.gif
+	delay	16
+	frame	data/chars/misc/empty.gif
+
+	
+	
+	
+	
+	

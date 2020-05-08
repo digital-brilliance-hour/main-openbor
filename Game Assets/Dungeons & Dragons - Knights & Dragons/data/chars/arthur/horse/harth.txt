@@ -1,0 +1,625 @@
+name	    		harth
+weaploss			3
+candamage     enemy obstacle npc
+type	    		none
+health				10
+mpset				40 1 9999 3 3 1
+#mp					100
+speed				10
+shadow				4
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			50
+turndelay			12
+jumpmove			3
+nodieblink			0
+makeinv				1	0
+falldie				1
+riseinv				1	0
+jugglepoints		15
+nolife				1
+atchain				1 1 1 1 1 1 1 1 1 1 1 1 
+facing				1
+animal				1
+modelflag			1
+nodrop				2
+risetime			250
+weapnum				2
+takedamagescript	data/scripts/ndamage.c
+onmodelcopyscript  data/scripts/mcopy.c
+
+icon	    data/chars/arthur/icon.gif 1
+icondie     data/chars/arthur/icond.gif 1
+diesound    data/sounds/die01.wav
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette				data/chars/arthur/arthur.gif #1
+#alternatepal		data/chars/arthur/alter01.gif #1
+
+remap	data/chars/arthur/idle00.gif   data/chars/arthur/alter01.gif
+remap	data/chars/arthur/idle00.gif   data/chars/arthur/alter02.gif
+remap	data/chars/arthur/idle00.gif   data/chars/arthur/alter03.gif
+
+	com  j  freespecial2
+
+
+#-------Select screen!
+
+anim waiting
+	shadowcoords -9999 -9999
+	 loop       1
+	 offset     90 195
+	 delay      1
+         frame      data/chars/arthur/sel00.gif
+
+anim select
+	shadowcoords -9999 -9999
+	 loop       0
+	 offset     90 195
+	 sound   data/sounds/horse01.wav
+	 delay      1
+ 
+         frame      data/chars/arthur/sel01.gif
+         frame      data/chars/arthur/sel02.gif
+         frame      data/chars/arthur/sel01.gif
+         frame      data/chars/arthur/sel02.gif
+         frame      data/chars/arthur/sel01.gif
+         frame      data/chars/arthur/sel02.gif
+         frame      data/chars/arthur/sel01.gif
+         frame      data/chars/arthur/sel02.gif
+
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+         frame      data/chars/arthur/sel03.gif
+         frame      data/chars/arthur/sel04.gif
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+	 delay      8
+	 sound   	data/sounds/horse01.wav
+	 frame	data/chars/arthur/horse/wk00.gif
+	 frame	data/chars/arthur/horse/wk01.gif
+	 frame	data/chars/arthur/horse/wk02.gif
+	 frame	data/chars/arthur/horse/wk03.gif
+	 frame	data/chars/arthur/horse/wk04.gif
+	 frame	data/chars/arthur/horse/wk05.gif
+
+anim idle
+	sync	walk
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	189 129 86 70
+	 delay      8
+	 frame	data/chars/arthur/horse/wk00.gif
+	 frame	data/chars/arthur/horse/wk01.gif
+	 frame	data/chars/arthur/horse/wk02.gif
+	 frame	data/chars/arthur/horse/wk03.gif
+	 frame	data/chars/arthur/horse/wk04.gif
+	 frame	data/chars/arthur/horse/wk05.gif
+
+anim attack1
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	189 129 86 70
+	hitfx   data/sounds/hit01.wav
+	
+	@script
+    void self = getlocalvar("self");
+	int iPIndex = getentityproperty(self,"playerindex"); //Get player index
+	void p1 = playerkeys(iPIndex, 0, "moveleft");
+				
+        if ((p1)&&(frame == 0)&&(getentityproperty(self, "direction")==1)){
+                changeentityproperty(self, "animation", openborconstant("ANI_ATTACK2"));
+		}
+	@end_script	
+	
+	delay	8
+	frame	data/chars/arthur/horse/a101.gif
+	delay	4
+	frame	data/chars/arthur/horse/a102.gif
+	sound   data/sounds/slash01.wav
+	attack1  226 106 105 93 10 0 0 0 0
+	frame	data/chars/arthur/horse/a103.gif
+	frame	data/chars/arthur/horse/a104.gif
+	frame	data/chars/arthur/horse/a105.gif
+
+	delay	8
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arthur/horse/a106.gif
+	frame	data/chars/arthur/horse/a107.gif
+	frame	data/chars/arthur/horse/a108.gif
+
+anim attack2
+	load	dust04
+	subentity	dust04
+	spawnframe	0 0 0 0 0
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	189 129 86 70
+	hitfx   data/sounds/hit01.wav
+	 delay      2
+	 move 3
+	attack1  67 108 160 91 10 0 0 0 0
+	
+	sound   data/sounds/slash01.wav
+	 frame	data/chars/arthur/horse/ju00.gif
+	 frame	data/chars/arthur/horse/ju00.gif
+	 frame	data/chars/arthur/horse/ju00.gif
+	 frame	data/chars/arthur/horse/ju01.gif
+	 frame	data/chars/arthur/horse/ju01.gif
+	 frame	data/chars/arthur/horse/ju01.gif
+	 frame	data/chars/arthur/horse/ju02.gif
+	 frame	data/chars/arthur/horse/ju02.gif
+	 frame	data/chars/arthur/horse/ju02.gif
+	
+	 move 2
+	 frame	data/chars/arthur/horse/wk00.gif
+	 frame	data/chars/arthur/horse/wk00.gif
+	 frame	data/chars/arthur/horse/wk00.gif
+	 frame	data/chars/arthur/horse/wk01.gif
+	 frame	data/chars/arthur/horse/wk01.gif
+	 frame	data/chars/arthur/horse/wk01.gif
+	 frame	data/chars/arthur/horse/wk02.gif
+	 frame	data/chars/arthur/horse/wk02.gif
+	 frame	data/chars/arthur/horse/wk02.gif
+	 frame	data/chars/arthur/horse/wk03.gif
+	 move 1
+	 frame	data/chars/arthur/horse/wk03.gif
+	 frame	data/chars/arthur/horse/wk03.gif
+	 frame	data/chars/arthur/horse/wk04.gif
+	 frame	data/chars/arthur/horse/wk04.gif
+	 frame	data/chars/arthur/horse/wk04.gif
+	 frame	data/chars/arthur/horse/wk05.gif
+	 frame	data/chars/arthur/horse/wk05.gif
+	 frame	data/chars/arthur/horse/wk05.gif
+
+
+anim freespecial2
+	load	dust03h
+	subentity	dust03h
+	spawnframe	14 40 0 0 0
+	jumpframe	12 2 3
+	dropframe	13
+	landframe	14
+	quakeframe	14 16 3
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	189 129 86 70
+	hitfx   data/sounds/hit01.wav
+
+	delay	2
+	move	-5
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+
+	bbox	0 0 0 0
+	sound   data/sounds/slash01.wav
+	attack1  150 108 153 92 10 0 0 0 0
+	delay	999
+	frame	data/chars/arthur/horse/ju01.gif
+	delay	999
+	frame	data/chars/arthur/horse/ju02.gif
+
+	bbox	189 129 86 70
+	sound   data/sounds/fall01.wav
+	delay	2
+	move	-5
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	frame	data/chars/arthur/horse/ju03.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+	frame	data/chars/arthur/horse/ju00.gif
+
+
+	
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+
+	delay   8
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	frame	data/chars/arthur/horse/pain105.gif
+	frame	data/chars/arthur/horse/pain106.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	jumpframe	0 0.1 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+
+	delay   8
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	frame	data/chars/arthur/horse/pain105.gif
+	frame	data/chars/arthur/horse/pain106.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+
+	delay   8
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	frame	data/chars/arthur/horse/pain105.gif
+	frame	data/chars/arthur/horse/pain106.gif
+
+anim death1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	delay   2
+	
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain101.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain102.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain103.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain104.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain105.gif
+	offset     228 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     222 198
+	frame	data/chars/arthur/horse/pain106.gif
+	offset     225 198
+	frame	data/chars/arthur/horse/pain106.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+

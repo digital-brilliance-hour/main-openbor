@@ -1,0 +1,136 @@
+type 		0 1 1
+music		data/music/TAVERN06.ogg
+#bossmusic	data/music/BOSS01.ogg
+background	data/bgs/fort03/back.gif
+panel	      data/bgs/fort03/n01.gif
+frontpanel	data/bgs/fort03/f01.gif
+order       a
+settime 0
+notime	1
+stagenumber 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+setweap 4
+
+palette data/bgs/tavern/tavern.gif #1
+
+wall    325 210 15 165 500 500 150 250
+
+#-------Respawn
+
+spawn Respawn1
+coords	674 418
+at 0
+
+spawn Respawn2
+coords	674 418
+at 0
+
+spawn Respawn3
+coords	674 418
+at 0
+
+spawn Respawn4
+coords	674 418
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn tavern02
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------Leave
+
+spawn leave02
+alias leave02
+health 1
+coords 420 150
+flip 1
+at 0
+
+#-------Leave
+
+#-------chests
+
+spawn barrel
+alias Barrel
+health 1
+item straw
+coords 245 115
+flip 0
+at 0
+
+spawn barrel
+alias Barrel
+health 1
+item banana
+coords 285 125
+flip 0
+at 0
+
+spawn barrel
+alias Barrel
+health 1
+item grapes
+coords 325 115
+flip 0
+at 0
+
+spawn barrel
+alias Barrel
+health 1
+item gapple
+coords 365 125
+flip 0
+at 0
+
+#-------chests
+
+#-------Civilian
+
+spawn guard
+alias		dial38
+health		1
+aggression	0
+map			1
+coords 78 189
+flip 1
+at 0
+
+spawn guard
+alias		dial41
+health		1
+aggression	0
+map			1
+coords 218 147
+at 0
+
+spawn elder
+alias		dial40
+health		1
+aggression	0
+map			1
+coords 277 199
+at 0
+
+spawn guard
+alias		dial39
+health		1
+aggression	0
+map			1
+coords 350 147
+flip 0
+at 0
+
+#-------Civilian
+
+
+

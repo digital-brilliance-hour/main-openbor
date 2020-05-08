@@ -1,0 +1,22 @@
+name	leave
+type	endlevel
+shadow	0
+
+palette DATA/chars/misc/leave/leave.gif #1
+
+
+anim idle
+	loop	1
+	bbox	7 7 49 67
+	delay	100
+	frame	DATA/chars/misc/empty.gif
+	delay	10
+	offset	31 74
+	frame	DATA/chars/misc/leave/01.gif
+	frame	DATA/chars/misc/leave/02.gif
+	frame	DATA/chars/misc/leave/01.gif
+	frame	DATA/chars/misc/leave/02.gif
+	frame	DATA/chars/misc/leave/01.gif
+	frame	DATA/chars/misc/leave/02.gif
+	delay	100
+	frame	DATA/chars/misc/empty.gif

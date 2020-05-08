@@ -1,0 +1,44 @@
+name	dial33
+type	text
+setlayer 999999
+facing 1
+
+palette data/scenes/tavern/tavern.gif #1
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+anim idle
+	flipframe 0
+	loop	0
+	offset	240 182
+	delay	4
+	frame	data/scenes/tavern/00.gif
+	frame	data/scenes/tavern/01.gif
+	frame	data/scenes/tavern/02.gif
+	frame	data/scenes/tavern/03.gif
+	frame	data/scenes/tavern/04.gif
+	frame	data/scenes/tavern/05.gif
+	frame	data/scenes/tavern/06.gif
+	frame	data/scenes/tavern/07.gif
+	
+	delay	999999
+	frame	data/scenes/tavern/dial33/01.gif
+	
+	delay	4
+	frame	data/scenes/tavern/07.gif
+	frame	data/scenes/tavern/06.gif
+	frame	data/scenes/tavern/05.gif
+	frame	data/scenes/tavern/04.gif
+	frame	data/scenes/tavern/03.gif
+	frame	data/scenes/tavern/02.gif
+	frame	data/scenes/tavern/01.gif
+	frame	data/scenes/tavern/00.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+
+	
+	
+	
+	
+	

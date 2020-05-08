@@ -1,0 +1,286 @@
+name			hurr
+health			1
+nolife			1
+type			npc
+hostile			enemy obstacle
+speed			0
+nomove			1
+noquake			1
+dust				dust01
+flash				flash01
+bflash				guard01
+falldie			1
+subtype			flydie
+gfxshadow		1
+shadow			2
+remove			0
+offscreenkill	25
+
+palette data/chars/misc/hurr/hurr.gif #1
+
+anim spawn
+	loop		0
+	jugglecost	5
+	fastattack	1
+	 offset     240 133
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound	data/sounds/tor01.wav
+	delay	2
+	move 1
+	frame	data/chars/misc/hurr/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/02.gif
+	frame	data/chars/misc/empty.gif
+	move 1
+	frame	data/chars/misc/hurr/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/04.gif
+	frame	data/chars/misc/empty.gif
+	move 2
+	frame	data/chars/misc/hurr/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/06.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	2
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		10			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		9			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		8			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		7			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		6			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		6			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		6			1		1		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 0
+	delay	2
+	frame	data/chars/misc/hurr/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/11.gif
+	frame	data/chars/misc/empty.gif
+
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim idle
+	loop		0
+	jugglecost	5
+	fastattack	1
+	 offset     240 133
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	sound	data/sounds/tor01.wav
+	delay	2
+	move 1
+	frame	data/chars/misc/hurr/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/02.gif
+	frame	data/chars/misc/empty.gif
+	move 1
+	frame	data/chars/misc/hurr/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/04.gif
+	frame	data/chars/misc/empty.gif
+	move 2
+	frame	data/chars/misc/hurr/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/06.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	2
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		3		1		0		0		20		15
+	frame	data/chars/misc/hurr/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 0
+	delay	2
+	frame	data/chars/misc/hurr/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/hurr/11.gif
+	frame	data/chars/misc/empty.gif
+
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+

@@ -1,0 +1,2111 @@
+name				wraith2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				280 -1
+health				30
+speed				14
+shadow				2
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+#risetime 1000
+nodieblink			0
+nodrop				1
+falldie				1
+escapehits			2
+jugglepoints		15
+nodieblink			1
+icon				data/chars/wraith/bicon.gif 1
+icondie				data/chars/wraith/bicond.gif 1
+diesound			data/sounds/wraith02.wav
+nolife				1
+takedamagescript	data/scripts/ndamage.c
+
+#-------Boss
+nolife				1
+lifebarstatus		240 5 1 1 0 -300 -300 -300 -300
+lifeposition		119 34 
+nameposition		152 49
+iconposition		0 0
+#-------Boss
+
+palette data/chars/wraith/wraith.gif #1
+
+remap	data/chars/wraith/idle00.gif   data/chars/wraith/alter01.gif
+remap	data/chars/wraith/idle00.gif   data/chars/wraith/alter02.gif
+remap	data/chars/wraith/idle00.gif   data/chars/wraith/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+	jumpframe  0 2 2
+	landframe  56
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/a107.gif
+
+	delay	1
+	frame	data/chars/wraith/idle00.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	16
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle01.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle04.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle01.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay   16
+	frame	data/chars/wraith/wk00.gif
+	frame	data/chars/wraith/wk01.gif
+	frame	data/chars/wraith/wk02.gif
+	frame	data/chars/wraith/wk03.gif
+	frame	data/chars/wraith/wk04.gif
+	frame	data/chars/wraith/wk03.gif
+	frame	data/chars/wraith/wk02.gif
+	frame	data/chars/wraith/wk01.gif
+	frame	data/chars/wraith/wk00.gif
+
+anim attack1
+	shadowcoords 218 198
+	range	0 100
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop		0
+	offset		225 198
+#	jumpframe	8 2 2
+#	landframe	72
+	hitfx   data/sounds/hit01.wav
+
+	bbox	212 143 30 55
+	sound   data/sounds/wraith01.wav
+	delay   8
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+
+	bbox	0 0 0 0
+	sound   data/sounds/slash03.wav
+	attack2  225 132 25 67 5 0 0 0 30
+	delay	2
+	move	1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	4
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	4
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	0
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/wraith/wk00.gif
+
+	attack2  225 132 25 67 5 0 0 0 30
+	sound   data/sounds/slash03.wav
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-4
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-4
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	sound   data/sounds/slash03.wav
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	0
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+
+	attack2  0 0 0 0 0 0 0 0 0 0
+	bbox	212 143 30 55
+	delay   8
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+
+anim attack2
+	shadowcoords 218 198
+	range	101 250
+	load		scythe
+	custknife	scythe
+	throwframe	8
+	loop		0
+	offset		225 198
+	hitfx   data/sounds/hit01.wav
+
+	bbox	212 143 30 55
+	sound   data/sounds/wraith01.wav
+	delay   8
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+
+	bbox	0 0 0 0
+	sound   data/sounds/slash03.wav
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     222 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     228 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     222 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     228 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     222 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-2
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-1
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-1
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	
+	move	0
+	delay	16
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle01.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle04.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle01.gif
+
+anim fall1
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     222 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     228 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     222 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/a101.gif
+	offset     228 198
+	frame	data/chars/wraith/a102.gif
+	offset     225 198
+	frame	data/chars/wraith/a103.gif
+	offset     222 198
+	frame	data/chars/wraith/a104.gif
+	offset     225 198
+	frame	data/chars/wraith/a105.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/wraith/a107.gif
+	move	-2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-1
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/a107.gif
+	
+	move	0
+	delay	16
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle01.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle04.gif
+	frame	data/chars/wraith/idle03.gif
+	frame	data/chars/wraith/idle02.gif
+	frame	data/chars/wraith/idle01.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wraith/idle00.gif
+
+anim death1
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim fall2
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim rise2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wraith/idle00.gif
+
+anim death2
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim fall3
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim rise3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wraith/idle00.gif
+
+anim death3
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim fall4
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim rise4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wraith/idle00.gif
+
+anim death4
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	bbox		0 0 0 0
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle00.gif
+	delay   70
+	frame	data/chars/wraith/idle00.gif
+	delay	10
+	frame	data/chars/wraith/idle00.gif
+	delay	8
+	frame	data/chars/wraith/idle00.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	bbox		0 0 0 0
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle00.gif
+	delay   70
+	frame	data/chars/wraith/idle00.gif
+	delay	10
+	frame	data/chars/wraith/idle00.gif
+	delay	8
+	frame	data/chars/wraith/idle00.gif
+
+	
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/wraith/idle00.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/wraith/idle00.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/wraith/idle00.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/wraith/idle00.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	bbox		0 0 0 0
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle00.gif
+	delay   70
+	frame	data/chars/wraith/idle00.gif
+	delay	10
+	frame	data/chars/wraith/idle00.gif
+	delay	8
+	frame	data/chars/wraith/idle00.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim fall7
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-4
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-4
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-3
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-3
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+	move	-2
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/wraith/a104.gif
+	move	-2
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/wraith/a106.gif
+	move	-1
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/wraith/wk00.gif
+	move	-1
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/wraith/a102.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+	offset     228 198
+	frame	data/chars/wraith/a107.gif
+	offset     225 198
+	frame	data/chars/wraith/wk00.gif
+	offset     222 198
+	frame	data/chars/wraith/a101.gif
+	offset     225 198
+	frame	data/chars/wraith/a102.gif
+	offset     228 198
+	frame	data/chars/wraith/a103.gif
+	offset     225 198
+	frame	data/chars/wraith/a104.gif
+	offset     222 198
+	frame	data/chars/wraith/a105.gif
+	offset     225 198
+	frame	data/chars/wraith/a106.gif
+
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wraith/idle00.gif
+
+anim death7
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+
+	delay   210
+	frame	data/chars/wraith/idle00.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     228 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	frame	data/chars/wraith/idle00.gif
+	offset     222 198
+	frame	data/chars/wraith/idle00.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/wraith/idle00.gif
+	
+	delay   210
+	frame	data/chars/wraith/idle00.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/wraith/idle00.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/wraith/idle00.gif
+	frame	data/chars/wraith/idle00.gif
+	delay   70
+	frame	data/chars/wraith/idle00.gif
+	delay	10
+	frame	data/chars/wraith/idle00.gif
+	delay	8
+	frame	data/chars/wraith/idle00.gif
+
+
+anim death8
+	shadowcoords 218 198
+	jumpframe	0 2 0
+	landframe	56
+	loop	0
+	 offset     225 198
+	delay	2
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a102.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a103.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a104.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a105.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a106.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/wraith/a107.gif
+	frame	data/chars/misc/empty.gif
+
+	delay		5
+	sound   data/sounds/burn01.wav
+	frame	data/chars/wraith/death01.gif
+	frame	data/chars/wraith/death02.gif
+	frame	data/chars/wraith/death03.gif
+	frame	data/chars/wraith/death04.gif
+	frame	data/chars/wraith/death05.gif
+	frame	data/chars/wraith/death06.gif
+	frame	data/chars/wraith/death07.gif
+	frame	data/chars/wraith/death08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

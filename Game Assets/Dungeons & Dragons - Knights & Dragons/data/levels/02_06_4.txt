@@ -1,0 +1,542 @@
+music		data/music/STAGE18.ogg
+bossmusic	data/music/BOSS02.ogg
+background	data/bgs/02_06_4/back.gif
+panel	      data/bgs/02_06_4/n01.gif
+frontpanel	data/bgs/02_06_4/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  30 80
+spawn2  40 90
+spawn3  50 70
+spawn4  60 80
+
+palette data/bgs/02_06_4/02_06_4.gif #1
+
+wall    -300 190 0 0 400 400 70 250
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	532 277
+at 0
+
+spawn Respawn2
+coords	532 277
+at 0
+
+spawn Respawn3
+coords	532 277
+at 0
+
+spawn Respawn4
+coords	532 277
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d02_06_4
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item amet
+coords 260 120
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item topaz
+coords 220 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item amber
+coords 380 210
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item spotion
+coords 480 190
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item diamond
+coords 530 130
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item topaz
+coords 580 140
+flip 0
+at 0
+#-------chests
+
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item scroll
+coords 640 210
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item spotion
+coords 740 210
+flip 0
+at 0
+#-------chests
+
+#-------Monsters
+
+group   1 1
+at      0
+
+wait
+at      0
+
+#-------Civilian
+
+spawn child3
+alias		town04_2
+health		1
+aggression	0
+map			1
+coords 400 150
+flip 0
+at 0
+
+#-------Civilian
+
+#-------Monsters
+
+group   2 2
+at      480
+
+spawn dragy3
+alias Klauthsygax_-_Young_Green_Dragon
+health 220
+2phealth 320
+3phealth 420 
+4phealth 520 
+aggression 100
+map 2
+boss 1
+item missclear
+itemalias TerrRiv
+coords 580 150
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 500 175
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 530 195
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 515 185
+flip 0
+at 480
+
+#-------Monsters
+

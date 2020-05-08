@@ -1,0 +1,196 @@
+name				ecleric3
+type				enemy
+hostile				player npc
+candamage			player npc
+score				400 -1
+health				124
+speed				1
+nomove				1 1
+nopain				1
+nodrop				2
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			1
+falldie				1
+jugglepoints		15
+icon				data/chars/ecleric/icon.gif 1
+icondie				data/chars/ecleric/icond.gif 1
+diesound			data/sounds/sold01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/ecleric/ecleric.gif #1
+
+remap	data/chars/ecleric/idle00.gif   data/chars/ecleric/alter01.gif
+remap	data/chars/ecleric/idle00.gif   data/chars/ecleric/alter02.gif
+remap	data/chars/ecleric/idle00.gif   data/chars/ecleric/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	55 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+	 
+anim idle
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+anim block
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	delay	1
+	sound   data/sounds/block01.wav
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+anim attack1
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+anim fall1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma06.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma07.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma08.gif
+	frame	data/chars/ecleric/ma01.gif
+	frame	data/chars/ecleric/ma09.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     222 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     228 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     222 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     228 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     222 198
+	frame	data/chars/ecleric/pain102.gif
+	offset     225 198
+	frame	data/chars/ecleric/pain102.gif
+	delay   12
+	frame	data/chars/ecleric/fall01.gif
+	frame	data/chars/ecleric/fall02.gif
+	frame	data/chars/ecleric/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+

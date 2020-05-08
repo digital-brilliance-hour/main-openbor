@@ -1,0 +1,41 @@
+name	D03_01_8
+type	text
+setlayer 10000
+
+palette data/scenes/dialogue/03_01/03_01.gif #1
+
+anim idle
+	loop	0
+	offset	240 206
+	delay	16
+	frame	data/chars/misc/empty.gif
+	delay	6
+	frame	data/scenes/dialogue/03_01/01.gif
+	frame	data/scenes/dialogue/03_01/02.gif
+	frame	data/scenes/dialogue/03_01/03.gif
+
+	delay	999999
+	frame	data/scenes/dialogue/03_01/15.gif
+
+	delay	6
+	frame	data/scenes/dialogue/03_01/03.gif
+	frame	data/scenes/dialogue/03_01/02.gif
+	frame	data/scenes/dialogue/03_01/01.gif
+	frame	data/scenes/dialogue/03_01/02.gif
+	frame	data/scenes/dialogue/03_01/03.gif
+
+	delay	999999
+	frame	data/scenes/dialogue/03_01/16.gif
+
+	delay	6
+	frame	data/scenes/dialogue/03_01/03.gif
+	frame	data/scenes/dialogue/03_01/02.gif
+	frame	data/scenes/dialogue/03_01/01.gif
+	delay	16
+	frame	data/chars/misc/empty.gif
+
+	
+	
+	
+	
+	

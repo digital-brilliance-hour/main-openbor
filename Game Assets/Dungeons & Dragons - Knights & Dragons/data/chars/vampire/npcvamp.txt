@@ -1,0 +1,301 @@
+name				npcvamp
+type				enemy
+hostile				player npc
+candamage			player npc
+score				0 -1
+health				1
+speed				1
+shadow				3
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			2
+nodrop				1
+falldie				1
+escapehits			1
+subject_to_screen	1
+jugglepoints		15
+#defense				normal3 0 1 
+#defense				normal4 0 1 
+#defense				normal5 0 1 
+#defense				normal6 0 1 
+#defense				normal7 0 1 
+#defense				normal8 0 1 
+lifespan			4
+
+icon				data/chars/vampire/bicon.gif 1
+icondie				data/chars/vampire/bicond.gif 1
+nolife				1
+
+palette data/chars/vampire/vampire.gif #1
+
+#-------Moves
+
+anim spawn
+	drawmethod	200 200 0 0 0 0 -1
+	shadowcoords 215 200
+	range		0 200
+	rangez		-25 25
+	load		tornado2
+	custknife	tornado2
+	throwframe	28 1
+	loop	0
+	jugglecost	99
+	hitfx   data/sounds/hit01.wav
+
+	offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/vampire/ma02.gif
+	sound   data/sounds/vamp02.wav
+	frame	data/chars/vampire/ma06.gif
+	frame	data/chars/vampire/ma03.gif
+	frame	data/chars/vampire/ma07.gif
+	frame	data/chars/vampire/ma04.gif
+	frame	data/chars/vampire/ma08.gif
+	frame	data/chars/vampire/ma05.gif
+	frame	data/chars/vampire/ma09.gif
+	frame	data/chars/vampire/ma02.gif
+	frame	data/chars/vampire/ma06.gif
+	frame	data/chars/vampire/ma03.gif
+	frame	data/chars/vampire/ma07.gif
+	frame	data/chars/vampire/ma04.gif
+	frame	data/chars/vampire/ma08.gif
+	frame	data/chars/vampire/ma05.gif
+	frame	data/chars/vampire/ma09.gif
+	frame	data/chars/vampire/ma02.gif
+	frame	data/chars/vampire/ma06.gif
+	frame	data/chars/vampire/ma03.gif
+	frame	data/chars/vampire/ma07.gif
+	frame	data/chars/vampire/ma04.gif
+	frame	data/chars/vampire/ma08.gif
+	frame	data/chars/vampire/ma05.gif
+	frame	data/chars/vampire/ma09.gif
+
+	delay	50
+	frame	data/chars/vampire/a201.gif
+	delay	6
+	frame	data/chars/vampire/a202.gif
+
+	delay	8
+	frame	data/chars/vampire/a203.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+
+	delay	4
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	delay	8
+	frame	data/chars/vampire/a204.gif
+
+	delay	4
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	delay	8
+	frame	data/chars/vampire/a204.gif
+
+	delay	4
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a204.gif
+	delay	8
+	frame	data/chars/vampire/a204.gif
+	frame	data/chars/vampire/a203.gif
+	frame	data/chars/vampire/a202.gif
+	delay	50
+	frame	data/chars/vampire/a201.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/vampire/a201.gif
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim walk
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim block
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim attack1
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim fall1
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim rise1
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death1
+	shadowcoords 215 200
+	loop	0	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

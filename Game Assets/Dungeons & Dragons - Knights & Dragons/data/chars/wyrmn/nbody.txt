@@ -1,0 +1,256 @@
+name				nbody
+type				enemy
+hostile				player npc
+candamage			player npc
+score				0 -1
+health				999999
+speed				0
+nomove				1
+shadow				0
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+nopain				1
+nodrop				1
+#risetime 1000
+nodieblink			1
+falldie				1
+jugglepoints		15
+facing				1
+subject_to_screen	1
+icon				data/chars/wyrmn/bicon.gif 1
+icondie				data/chars/wyrmn/bicond.gif 1
+nolife				1
+setlayer			-1000
+
+palette				data/chars/wyrmn/wyrmn.gif #1
+
+#-------Moves
+
+anim spawn
+	load		narmr
+	subentity	narmr
+	summonframe	0 40 155 0 1
+	loop	0
+	jumpframe	0 10 0
+	dropframe	1
+	landframe	2
+	offset     240 408
+	bbox	0 0 0 0
+
+	shadowcoords 9999 9999
+	offset     240 0
+	delay	999
+	frame	data/chars/wyrmn/body01.gif
+	offset     240 408
+	delay	999
+	frame	data/chars/wyrmn/body02.gif
+
+	delay	1
+	frame	data/chars/wyrmn/body02.gif
+
+
+anim idle
+	shadowcoords 9999 9999
+	loop	1
+	 offset     240 408
+	delay	1
+	frame	data/chars/wyrmn/body02.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 9999 9999
+	loop	0
+	 offset     240 408
+	delay   1
+	frame	data/chars/wyrmn/body02.gif
+
+anim fall1
+	shadowcoords 9999 9999
+	loop	0
+	 offset     240 408
+	delay   1
+	frame	data/chars/wyrmn/body02.gif
+
+anim rise1
+	shadowcoords 9999 9999
+	loop	0
+	 offset     240 408
+	delay   1
+	frame	data/chars/wyrmn/body02.gif
+
+anim death1
+	unsummonframe	0
+	shadowcoords 9999 9999
+	loop	0
+	bbox	0 0 0 0
+	jumpframe	60 8 0
+	dropframe	61
+	landframe	62
+
+	delay   2
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+
+	delay   2
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+
+	delay   2
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	
+	offset     243 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     237 408
+	frame	data/chars/wyrmn/body02.gif
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+
+	delay   999
+	offset     240 408
+	frame	data/chars/wyrmn/body02.gif
+
+	shadowcoords 9999 9999
+	offset     240 -175
+	delay   999
+	frame	data/chars/wyrmn/death00.gif
+	delay   1
+	frame	data/chars/wyrmn/death00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+

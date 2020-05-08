@@ -1,0 +1,109 @@
+name		ma3
+health		1
+nolife		1
+type		npc
+hostile		enemy obstacle
+candamage	enemy obstacle
+speed		15
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+remove		0
+
+palette data/chars/misc/magic/magic.gif #1
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset     195 128
+	bbox    	0 0 0 0
+	hitflash	flash01
+	hitfx		data/sounds/hit01.wav
+	delay	1
+	attack1  197 146 36 53 8 0
+	frame	data/chars/misc/magic/ma301.gif
+	frame	data/chars/misc/magic/ma401.gif
+	frame	data/chars/misc/magic/ma302.gif
+	frame	data/chars/misc/magic/ma402.gif
+	frame	data/chars/misc/magic/ma303.gif
+	frame	data/chars/misc/magic/ma403.gif
+	frame	data/chars/misc/magic/ma304.gif
+	frame	data/chars/misc/magic/ma404.gif
+	frame	data/chars/misc/magic/ma305.gif
+	frame	data/chars/misc/magic/ma405.gif
+	frame	data/chars/misc/magic/ma306.gif
+	frame	data/chars/misc/magic/ma406.gif
+	frame	data/chars/misc/magic/ma307.gif
+	frame	data/chars/misc/magic/ma407.gif
+	frame	data/chars/misc/magic/ma308.gif
+	frame	data/chars/misc/magic/ma408.gif
+	frame	data/chars/misc/magic/ma309.gif
+	frame	data/chars/misc/magic/ma409.gif
+	frame	data/chars/misc/magic/ma310.gif
+	frame	data/chars/misc/magic/ma410.gif
+	frame	data/chars/misc/magic/ma311.gif
+	frame	data/chars/misc/magic/ma411.gif
+	frame	data/chars/misc/magic/ma312.gif
+	frame	data/chars/misc/magic/ma412.gif
+	frame	data/chars/misc/magic/ma313.gif
+	frame	data/chars/misc/magic/ma413.gif
+	frame	data/chars/misc/magic/ma314.gif
+	frame	data/chars/misc/magic/ma414.gif
+	frame	data/chars/misc/magic/ma315.gif
+	frame	data/chars/misc/magic/ma415.gif
+	frame	data/chars/misc/magic/ma316.gif
+	frame	data/chars/misc/magic/ma416.gif
+	frame	data/chars/misc/magic/ma317.gif
+	frame	data/chars/misc/magic/ma417.gif
+	attack1  0 0 0 0 0 0
+	bbox    	0 0 0 0
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+

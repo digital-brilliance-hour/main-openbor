@@ -1,0 +1,825 @@
+name				rex2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				3900 -1
+health				344
+speed				8
+shadow				6
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			1
+thold				49
+#risetime 1000
+nodrop				2
+nodieblink			1
+falldie				1
+jugglepoints		15
+defense				normal	1	10
+defense				normal2	1	10
+defense				normal3	1	10
+defense				normal4	1	10
+defense				normal5	1	10
+defense				normal6	1	10
+defense				normal7	1	10
+defense				normal8	1	10
+icon				data/chars/rex/bicon.gif 1
+icondie				data/chars/rex/bicond.gif 1
+diesound			data/sounds/dino01.wav
+nolife				1
+takedamagescript	data/scripts/ndamage.c
+
+#-------Boss
+nolife				1
+lifebarstatus		240 5 1 1 0 -300 -300 -300 -300
+lifeposition		119 34 
+nameposition		152 49
+iconposition		0 0
+#-------Boss
+
+palette				data/chars/rex/rex.gif #1
+
+remap	data/chars/rex/idle00.gif   data/chars/rex/alter01.gif
+remap	data/chars/rex/idle00.gif   data/chars/rex/alter02.gif
+remap	data/chars/rex/idle00.gif   data/chars/rex/alter03.gif
+
+#-------Moves
+
+
+anim spawn
+	shadowcoords 195 203
+	quakeframe	1 20 3
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	delay   18
+	move 20
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+
+	move 0
+	delay   12
+	sound   data/sounds/dino01.wav
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	
+
+anim idle
+	shadowcoords 195 203
+	loop	1
+	 offset     225 198
+	bbox	180 87 94 113
+	delay	1
+	frame	data/chars/rex/idle00.gif
+
+anim walk
+	shadowcoords 195 203
+	quakeframe	1 2 3
+	loop	1
+	offset     225 198
+	bbox	180 87 94 113
+	delay   18
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+
+anim turn
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox	180 87 94 113
+	delay   18
+	frame	data/chars/rex/turn00.gif
+	frame	data/chars/rex/turn01.gif
+
+anim block
+	shadowcoords 195 203
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+
+	delay   2
+@cmd projectile 1 "block" 0 0 0
+	offset     228 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+	offset     222 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+	offset     228 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+	offset     222 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+	offset     228 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+	offset     222 198
+	frame	data/chars/rex/rise01.gif
+	offset     225 198
+	frame	data/chars/rex/rise01.gif
+
+anim attack1
+	shadowcoords 195 203
+	range	0 140
+	loop	0
+	offset     225 198
+	hitfx   data/sounds/hit01.wav
+
+	bbox	180 87 94 113
+	sound   data/sounds/dino01.wav
+	delay   12
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+
+	delay	12
+	frame	data/chars/rex/a101.gif
+	sound   data/sounds/slash01.wav
+	delay	25
+	attack1  190 105 178 94 15 0 0 0 50
+	frame	data/chars/rex/a102.gif
+	delay	12
+	frame	data/chars/rex/a101.gif
+	sound   data/sounds/slash01.wav
+	delay	25
+	attack1  190 105 178 94 15 0 0 0 50
+	frame	data/chars/rex/a102.gif
+	delay	12
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rex/a101.gif
+	sound   data/sounds/slash01.wav
+	delay	50
+	attack1  190 105 178 94 15 1 0 0 50
+	frame	data/chars/rex/a102.gif
+	delay	1
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rex/idle00.gif
+
+
+anim attack2
+	followanim 1
+	followcond 1
+	shadowcoords 195 203
+	range	141 350
+	quakeframe	6 12 3
+	loop	0
+	offset     225 198
+	hitfx   data/sounds/hit01.wav
+
+	bbox	180 87 94 113
+	sound   data/sounds/dino01.wav
+	delay   12
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+
+	delay   9
+	move 20
+	attack1  190 105 178 94 15 0 0 0 50
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+	frame	data/chars/rex/wk00.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk01.gif
+	frame	data/chars/rex/wk02.gif
+	sound   data/sounds/fall01.wav
+	frame	data/chars/rex/wk03.gif
+
+	move 0
+	delay   1
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rex/wk03.gif
+
+	
+anim follow1
+	shadowcoords 195 203
+	loop	0
+	offset     225 198
+	hitfx   data/sounds/hit01.wav
+	delay	2
+	sound   data/sounds/slash01.wav
+	move	6
+	frame	data/chars/rex/a101.gif
+	frame	data/chars/rex/a101.gif
+	move	5
+	frame	data/chars/rex/a101.gif
+	frame	data/chars/rex/a101.gif
+	move	4
+	frame	data/chars/rex/a102.gif
+	frame	data/chars/rex/a102.gif
+	move	3
+	frame	data/chars/rex/a102.gif
+	frame	data/chars/rex/a102.gif
+	move	2
+	frame	data/chars/rex/a102.gif
+	frame	data/chars/rex/a102.gif
+	move	1
+	frame	data/chars/rex/a102.gif
+	frame	data/chars/rex/a102.gif
+	move	0
+	delay	25
+	frame	data/chars/rex/a102.gif
+	delay	12
+	frame	data/chars/rex/a101.gif
+	sound   data/sounds/slash01.wav
+	delay	25
+	attack1  190 105 178 94 15 0 0 0 50
+	frame	data/chars/rex/a102.gif
+	delay	12
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rex/a101.gif
+	sound   data/sounds/slash01.wav
+	delay	50
+	attack1  190 105 178 94 15 1 0 0 50
+	frame	data/chars/rex/a102.gif
+	delay	1
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/rex/idle00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 195 203
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	180 87 94 113
+
+	delay   2
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+
+anim fall1
+	shadowcoords 195 203
+	loop	0
+	 offset     225 198
+	bbox	180 87 94 113
+	delay	1
+	frame	data/chars/rex/idle00.gif
+
+anim rise1
+	shadowcoords 195 203
+	loop	0
+	 offset     225 198
+	bbox	180 87 94 113
+	delay	1
+	frame	data/chars/rex/idle00.gif
+
+anim death1
+	shadowcoords 195 203
+	loop	0
+
+	 offset     225 198
+	delay   2
+	move	-5
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-5
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-4
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-4
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-3
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+
+	move	-3
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-2
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-2
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-1
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-1
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+
+	move	0
+	delay   48
+	frame	data/chars/rex/fall01.gif
+
+	sound   data/sounds/dino01.wav
+	delay   12
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	frame	data/chars/rex/rise00.gif
+	frame	data/chars/rex/rise01.gif
+	
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 195 203
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	180 87 94 113
+
+	 offset     225 198
+	delay   2
+	move	-3
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-2
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-2
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-1
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+	move	-1
+	frame	data/chars/rex/fall01.gif
+	frame	data/chars/rex/fall01.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 195 203
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/rex/burn01.gif
+	frame	data/chars/rex/burn02.gif
+	frame	data/chars/rex/burn03.gif
+	frame	data/chars/rex/burn01.gif
+	frame	data/chars/rex/burn02.gif
+	frame	data/chars/rex/burn03.gif
+	frame	data/chars/rex/burn01.gif
+	frame	data/chars/rex/burn02.gif
+	frame	data/chars/rex/burn03.gif
+	frame	data/chars/rex/burn01.gif
+	frame	data/chars/rex/burn02.gif
+	frame	data/chars/rex/burn03.gif
+	frame	data/chars/rex/burn01.gif
+	frame	data/chars/rex/burn02.gif
+	frame	data/chars/rex/burn03.gif
+	delay   2
+	move	-3
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-2
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-2
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-1
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-1
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	
+	move	0
+	delay   1
+	frame	data/chars/rex/pain101.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 195 203
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/rex/shock01.gif
+	frame	data/chars/rex/shock02.gif
+	frame	data/chars/rex/shock03.gif
+	frame	data/chars/rex/shock01.gif
+	frame	data/chars/rex/shock02.gif
+	frame	data/chars/rex/shock03.gif
+	frame	data/chars/rex/shock01.gif
+	frame	data/chars/rex/shock02.gif
+	frame	data/chars/rex/shock03.gif
+	frame	data/chars/rex/shock01.gif
+	frame	data/chars/rex/shock02.gif
+	frame	data/chars/rex/shock03.gif
+	frame	data/chars/rex/shock01.gif
+	frame	data/chars/rex/shock02.gif
+	frame	data/chars/rex/shock03.gif
+	delay   2
+	move	-3
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-2
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-2
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-1
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	move	-1
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	
+	move	0
+	delay   1
+	frame	data/chars/rex/pain101.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 195 203
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/rex/freeze01.gif
+	delay   5
+	frame	data/chars/rex/pain101.gif
+	delay   2
+	frame	data/chars/rex/freeze01.gif
+	delay   4
+	frame	data/chars/rex/pain101.gif
+	delay   3
+	frame	data/chars/rex/freeze01.gif
+	delay   3
+	frame	data/chars/rex/pain101.gif
+	delay   4
+	frame	data/chars/rex/freeze01.gif
+	delay   2
+	frame	data/chars/rex/pain101.gif
+	delay   5
+	frame	data/chars/rex/freeze01.gif
+	delay   1
+	frame	data/chars/rex/pain101.gif
+
+	delay   50
+	frame	data/chars/rex/freeze01.gif
+
+	delay   5
+	frame	data/chars/rex/freeze01.gif
+	delay   1
+	frame	data/chars/rex/pain101.gif
+	delay   4
+	frame	data/chars/rex/freeze01.gif
+	delay   2
+	frame	data/chars/rex/pain101.gif
+	delay   3
+	frame	data/chars/rex/freeze01.gif
+	delay   3
+	frame	data/chars/rex/pain101.gif
+	delay   2
+	frame	data/chars/rex/freeze01.gif
+	delay   4
+	frame	data/chars/rex/pain101.gif
+	delay   1
+	frame	data/chars/rex/freeze01.gif
+	delay   5
+	frame	data/chars/rex/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/rex/pain101.gif
+	frame	data/chars/rex/pain101.gif
+	delay   70
+	frame	data/chars/rex/pain101.gif
+	delay	10
+	frame	data/chars/rex/pain101.gif
+	delay	8
+	frame	data/chars/rex/pain101.gif
+	
+anim death5
+	shadowcoords 195 203
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/rex/freeze01.gif
+	delay   5
+	frame	data/chars/rex/freeze01.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/rex/freeze01.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/rex/freeze01.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/rex/freeze01.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/rex/freeze01.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 195 203
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/rex/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/rex/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/rex/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/rex/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/rex/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/rex/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/rex/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/rex/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/rex/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/rex/pain101.gif
+
+anim death6
+	shadowcoords 195 203
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 195 203
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/rex/pain101.gif
+	
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 195 203
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     228 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+	offset     222 198
+	frame	data/chars/rex/pain101.gif
+	offset     225 198
+	frame	data/chars/rex/pain101.gif
+
+	delay   210
+	frame	data/chars/rex/pain101.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

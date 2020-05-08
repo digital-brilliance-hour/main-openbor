@@ -1,0 +1,250 @@
+music		data/music/STAGE15.ogg
+bossmusic	data/music/BOSS15.ogg
+background	data/bgs/02_03_1/back.gif
+panel	      data/bgs/02_03_1/n01.gif
+frontpanel	data/bgs/02_03_1/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_03_1/02_03_1.gif #1
+
+wall    -520 205 60 170 600 440 150 1200
+
+wall    -420 310 60 170 440 1100 150 1200
+
+wall    390 120 -550 70 500 440 150 1200
+
+wall    450 270 10 180 600 440 150 1200
+
+
+#------- The Quest begins
+
+spawn q02_3
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------sign
+spawn sign
+alias corpse
+item sign01_1
+health 1
+coords 110 147
+at 0
+#-------sign
+
+#-------sign
+spawn sign
+alias corpse
+item sign01_2
+health 1
+coords 260 200
+at 0
+#-------sign
+
+#-------sign
+spawn sign
+alias corpse
+item sign01_4
+health 1
+coords 390 147
+at 0
+#-------sign
+
+#-------sign
+spawn sign
+alias corpse
+item sign01_3
+health 1
+coords 450 200
+at 0
+#-------sign
+
+#-------Monsters
+
+group   4 4
+at      32
+
+wait
+at      32
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 505 210
+flip 0
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords 500 205
+flip 0
+at 32
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 0 145
+flip 1
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords -5 140
+flip 1
+at 32
+
+
+spawn wolven
+alias Gnoll_Archer
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 505 210
+flip 0
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords 500 205
+flip 0
+at 32
+
+spawn wolven
+alias Gnoll_Archer
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 0 145
+flip 1
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords -5 140
+flip 1
+at 32
+
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 505 210
+flip 0
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords 500 205
+flip 0
+at 32
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+item gold1
+coords 0 145
+flip 1
+at 32
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+item gold1
+coords -5 140
+flip 1
+at 32
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 445 210
+at 33
+
+#------- Go
+
+
+
+

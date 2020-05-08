@@ -1,0 +1,84 @@
+name				woman
+type				enemy
+score				0 -1
+health				100
+speed				0
+nomove				1 1
+hostile      		none
+#gfxshadow   		1
+nodrop      		2
+falldie      		1
+defense      		all 0
+noatflash   		1
+nolife      		1
+nodieblink			3
+animationscript   data/scripts/villager.c
+
+palette data/chars/misc/civilian/civilian.gif #1
+
+
+remap	data/chars/misc/civilian/woman/idle00.gif   data/chars/misc/civilian/woman/alter01.gif
+remap	data/chars/misc/civilian/woman/idle00.gif   data/chars/misc/civilian/woman/alter02.gif
+remap	data/chars/misc/civilian/woman/idle00.gif   data/chars/misc/civilian/woman/alter03.gif
+
+#-------Moves
+
+
+anim spawn
+	loop	0
+	offset	225 198
+	bbox    223 131 6 68
+	delay	1
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+anim idle
+	loop	1
+	offset	225 198
+	bbox    223 131 6 68
+	delay	1
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+anim pain1
+	loop	0
+	offset	225 198
+	bbox    223 131 6 68
+	delay	5
+	@cmd   spawnDial 240 0 198 480
+	frame	data/chars/misc/civilian/woman/idle00.gif
+	delay	10
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+anim fall1
+	loop	0
+	offset	225 198
+	bbox    223 131 6 68
+	delay	1
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+anim rise1
+	loop	0
+	offset	225 198
+	bbox    223 131 6 68
+	delay	1
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+anim death1
+	loop	0
+	offset	225 198
+	bbox    223 131 6 68
+	delay	1
+	frame	data/chars/misc/civilian/woman/idle00.gif
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+
+
+
+
+
+
+
+
+
+

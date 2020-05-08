@@ -1,0 +1,39 @@
+name	1up2
+health	0
+score	200000
+type	item
+subtype touch
+nolife  1
+shadow	1
+aironly	1
+facing 1
+
+
+anim spawn
+	loop	0
+	delay	1
+	 offset     225 198
+	bbox	207 176 34 24
+	frame	data/chars/misc/1up/01.gif
+
+anim idle
+	loop	1
+	delay	30
+	 offset     225 198
+	bbox	207 176 34 24
+	frame	data/chars/misc/1up/01.gif
+
+	delay	4
+	frame	data/chars/misc/1up/02.gif
+	frame	data/chars/misc/1up/01.gif
+	frame	data/chars/misc/1up/02.gif
+	frame	data/chars/misc/1up/01.gif
+	frame	data/chars/misc/1up/02.gif
+	frame	data/chars/misc/1up/01.gif
+
+
+
+
+
+
+

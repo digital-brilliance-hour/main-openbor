@@ -1,0 +1,480 @@
+music		data/music/STAGE29.ogg
+bossmusic	data/music/BOSS29.ogg
+background	data/bgs/04_02_1/back.gif
+panel	      data/bgs/04_02_1/n01.gif
+frontpanel	data/bgs/04_02_1/f01.gif
+order       a
+settime 99
+stagenumber 4
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/04_02_1/04_02_1.gif #1
+
+wall    0 140 0 0 580 280 150 300
+
+wall    390 215 0 0 580 280 150 300
+
+
+#------- The Quest begins
+
+spawn q04_2
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+
+
+#-------Monsters
+
+group   12 12
+at      100
+
+wait
+at      100
+
+#------- Dialogue
+
+#spawn d04_02_1
+#coords 240 176
+#flip 1
+#at 1572
+
+#------- Dialogue
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 340 140
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 300 180
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+coords 200 200
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 240 170
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 280 190
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+item gold2
+coords 310 150
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 330 210
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 230 160
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+coords 180 170
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 160 180
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 130 200
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+item gold2
+coords 120 150
+flip 0
+at 100
+
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 340 140
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 300 180
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+coords 200 200
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 240 170
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 280 190
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+item gold2
+coords 310 150
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 330 210
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 230 160
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+coords 180 170
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+item gold2
+coords 160 180
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 100
+map 2
+coords 130 200
+flip 0
+at 100
+
+spawn skeleton
+alias Skeleton
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 150
+map 3
+item gold2
+coords 120 150
+flip 0
+at 100
+
+#-------Monsters
+
+#-------Monsters
+
+group   12 12
+at      101
+
+wait
+at      101
+
+#------- Dialogue
+
+#spawn d04_02_1
+#coords 240 176
+#flip 1
+#at 1572
+
+#------- Dialogue
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords 340 140 300
+flip 0
+at 101
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item topaz
+coords 300 180 200
+flip 0
+at 101
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords 200 200 250
+flip 0
+at 101
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item amber
+coords 240 170 350
+flip 0
+at 101
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords 280 190 275
+flip 0
+at 101
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item diamond
+coords 310 150 375
+flip 0
+at 101
+
+#------- enter
+
+group   2 2
+at      102
+
+wait
+at      102
+
+#------- Dialogue
+
+spawn d04_02_1
+coords 240 176
+flip 1
+at 480
+
+#------- Dialogue
+
+#-------npc Lich
+spawn npclich1
+alias Lich
+health 15
+aggression 150
+map 0
+coords 300 150
+flip 0
+at 102
+#-------npc Lich
+
+spawn enter02
+alias enter02
+flip 1
+health 1
+coords 370 120
+at 102
+
+#------- enter
+

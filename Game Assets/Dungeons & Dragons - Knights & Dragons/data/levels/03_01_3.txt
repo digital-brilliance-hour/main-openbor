@@ -1,0 +1,101 @@
+#type 		0 1 1
+music		data/music/tavern02.ogg
+#bossmusic	data/music/BOSS01.ogg
+background	data/bgs/03_01_3/back.gif
+panel	      data/bgs/03_01_3/n01.gif
+frontpanel	data/bgs/03_01_3/f01.gif
+order       a
+settime 0
+notime	1
+direction both
+setweap 4
+stagenumber 3
+spawn1  60 120
+spawn2  80 140
+spawn3  70 130
+spawn4  90 150
+
+palette data/bgs/03_01_3/03_01_3.gif #1
+
+wall    330 150 15 125 515 590 50 250
+
+#-------Civilian
+
+spawn elder
+alias		town06_1
+health		1
+aggression	0
+map			1
+coords 400 170
+at 0
+
+#-------Civilian
+
+#-------chests
+spawn amber
+flip 1
+health 1
+coords 200 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn amet
+flip 1
+health 1
+coords 250 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gaunt
+flip 1
+health 1
+coords 300 120
+flip 1
+at 0
+#-------chests
+
+
+
+#-------chests
+spawn diamond
+flip 1
+health 1
+coords 300 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn topaz
+flip 1
+health 1
+coords 350 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gold2
+flip 1
+health 1
+coords 400 210
+flip 1
+at 0
+#-------chests
+
+#-------Leave
+
+spawn leave01
+alias leave01
+health 1
+coords 120 120
+flip 1
+at 0
+
+#-------Leave
+
+

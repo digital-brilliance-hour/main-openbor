@@ -1,0 +1,453 @@
+name				dbeasts
+type				enemy
+hostile				player npc
+candamage			player npc
+score				0 -1
+health				1
+speed				14
+shadow				0
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			5
+thold				49
+#risetime 1000
+nodieblink			0
+falldie				1
+jugglepoints		15
+icon				data/chars/dbeast/bicon.gif 1
+icondie				data/chars/dbeast/bicond.gif 1
+nolife				1
+
+palette				data/chars/dbeast/dbeast.gif #1
+
+remap	data/chars/dbeast/idle00.gif   data/chars/dbeast/alter01.gif
+remap	data/chars/dbeast/idle00.gif   data/chars/dbeast/alter02.gif
+remap	data/chars/dbeast/idle00.gif   data/chars/dbeast/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 193 200
+	subentity	dust01
+	spawnframe	1 0 0 0 0
+	 loop       0
+	 offset     225 198
+	jumpframe	0 2 2
+	landframe	1
+	quakeframe	1 12 3
+	hitfx   data/sounds/hit01.wav
+	delay	999
+	sound   data/sounds/wing01.wav
+	attack2  165 137 163 62 10 1 0 0 50
+	frame	data/chars/dbeast/a303.gif
+
+	bbox	0 0 0 0
+	sound   data/sounds/fall01.wav
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	2
+	move	3
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	2
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	1
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	0
+	delay	16
+	frame	data/chars/dbeast/spawn00.gif
+
+	delay	3
+	sound   data/sounds/manti03.wav
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn01.gif
+	frame	data/chars/dbeast/spawn02.gif
+	frame	data/chars/dbeast/spawn03.gif
+	frame	data/chars/dbeast/spawn03.gif
+
+
+anim idle
+	shadowcoords 193 200
+	loop	1
+	 offset     225 198
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/dbeast/idle00.gif
+	frame	data/chars/dbeast/idle01.gif
+	frame	data/chars/dbeast/idle02.gif
+	frame	data/chars/dbeast/idle03.gif
+	frame	data/chars/dbeast/idle04.gif
+	frame	data/chars/dbeast/idle05.gif
+	frame	data/chars/dbeast/idle06.gif
+	frame	data/chars/dbeast/idle07.gif
+
+anim walk
+	shadowcoords 193 200
+	loop	1
+	bbox	0 0 0 0
+	delay   2
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     235 198
+	frame	data/chars/dbeast/wk01.gif
+	frame	data/chars/misc/empty.gif
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     215 198
+	frame	data/chars/dbeast/wk02.gif
+	frame	data/chars/misc/empty.gif
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     235 198
+	frame	data/chars/dbeast/wk03.gif
+	frame	data/chars/misc/empty.gif
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     215 198
+	frame	data/chars/dbeast/wk01.gif
+	frame	data/chars/misc/empty.gif
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     235 198
+	frame	data/chars/dbeast/wk02.gif
+	frame	data/chars/misc/empty.gif
+	offset     225 198
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/misc/empty.gif
+	offset     215 198
+	frame	data/chars/dbeast/wk03.gif
+	frame	data/chars/misc/empty.gif
+
+#	frame	data/chars/dbeast/wk04.gif
+#	frame	data/chars/dbeast/wk05.gif
+#	frame	data/chars/dbeast/wk06.gif
+#	frame	data/chars/dbeast/wk07.gif
+#	frame	data/chars/dbeast/wk08.gif
+#	frame	data/chars/dbeast/wk09.gif
+#	frame	data/chars/dbeast/wk10.gif
+#	frame	data/chars/dbeast/wk11.gif
+
+anim turn
+	shadowcoords 193 200
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	delay   6
+	frame	data/chars/dbeast/turn00.gif
+	frame	data/chars/dbeast/turn01.gif
+	frame	data/chars/dbeast/turn02.gif
+
+anim block
+	shadowcoords 193 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-6
+	frame	data/chars/dbeast/wk01.gif
+	frame	data/chars/dbeast/wk01.gif
+	move	-5
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-5
+	frame	data/chars/dbeast/wk02.gif
+	frame	data/chars/dbeast/wk02.gif
+	move	-4
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-4
+	frame	data/chars/dbeast/wk03.gif
+	frame	data/chars/dbeast/wk03.gif
+	move	-3
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-3
+	frame	data/chars/dbeast/wk01.gif
+	frame	data/chars/dbeast/wk01.gif
+	move	-2
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-2
+	frame	data/chars/dbeast/wk02.gif
+	frame	data/chars/dbeast/wk02.gif
+	move	-1
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	move	-1
+	frame	data/chars/dbeast/wk03.gif
+	frame	data/chars/dbeast/wk03.gif
+	move	0
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+	frame	data/chars/dbeast/wk00.gif
+
+anim attack1
+	shadowcoords 193 200
+	offset     225 198
+	range	0 280
+	loop	0
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	6
+	frame	data/chars/dbeast/a101.gif
+	frame	data/chars/dbeast/a102.gif
+	frame	data/chars/dbeast/a103.gif
+	sound   data/sounds/slash01.wav
+	frame	data/chars/dbeast/a104.gif
+	attack1  191 137 289 62 10 0 0 0 50
+	shadowcoords 158 200
+	offset     190 198
+	frame	data/chars/dbeast/a105.gif
+	frame	data/chars/dbeast/a106.gif
+	shadowcoords 193 200
+	offset     225 198
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	6
+	frame	data/chars/dbeast/a104.gif
+	frame	data/chars/dbeast/a101.gif
+
+anim attack2
+	shadowcoords 193 200
+	offset     225 198
+	range	0 280
+	loop	0
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	6
+	frame	data/chars/dbeast/a201.gif
+	frame	data/chars/dbeast/a202.gif
+	frame	data/chars/dbeast/a203.gif
+	sound   data/sounds/slash01.wav
+	frame	data/chars/dbeast/a204.gif
+	attack1  191 137 289 62 10 0 0 0 50
+	shadowcoords 158 200
+	offset     190 198
+	frame	data/chars/dbeast/a205.gif
+	frame	data/chars/dbeast/a206.gif
+	shadowcoords 193 200
+	offset     225 198
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	6
+	frame	data/chars/dbeast/a204.gif
+	frame	data/chars/dbeast/a201.gif
+
+anim attack3
+	subentity	dust01
+	spawnframe	4 0 0 0 0
+	jumpframe	3 2 5.5
+	landframe	4
+	shadowcoords 193 200
+	offset     225 198
+	range	0 400
+	loop	0
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	6
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/a301.gif
+	frame	data/chars/dbeast/a302.gif
+
+	bbox	0 0 0 0
+	delay	999
+	sound   data/sounds/wing01.wav
+	attack2  165 137 163 62 10 1 0 0 50
+	frame	data/chars/dbeast/a303.gif
+
+	bbox	0 0 0 0
+	sound   data/sounds/fall01.wav
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	2
+	move	3
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	2
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	1
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	frame	data/chars/dbeast/jdel00.gif
+	move	0
+	delay	16
+	frame	data/chars/dbeast/spawn00.gif
+
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 193 200
+	subentity	dust01
+	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/manti01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     222 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     228 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     222 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     228 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     222 198
+	frame	data/chars/dbeast/pain101.gif
+	offset     225 198
+	frame	data/chars/dbeast/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/dbeast/pain101.gif
+	move	-2
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/dbeast/pain101.gif
+	move	-2
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/dbeast/pain101.gif
+	move	-1
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/dbeast/pain101.gif
+	move	-1
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/dbeast/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/dbeast/pain101.gif
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+
+anim fall1
+	shadowcoords 193 200
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/dbeast/fall01.gif
+	frame	data/chars/dbeast/fall02.gif
+	delay	35
+	sound   data/sounds/fall01.wav
+	frame	data/chars/dbeast/fall02.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/dbeast/rise00.gif
+
+anim rise1
+	shadowcoords 193 200
+	flipframe 4
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dbeast/rise00.gif
+	frame	data/chars/dbeast/rise01.gif
+	frame	data/chars/dbeast/rise02.gif
+	frame	data/chars/dbeast/rise03.gif
+	frame	data/chars/dbeast/wk00.gif
+
+anim death1
+	shadowcoords 193 200
+	loop	0
+	 offset     225 198
+	delay   2
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dbeast/pain101.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+

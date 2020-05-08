@@ -1,0 +1,83 @@
+######################### Video Modes #############################
+#
+# Syntax: video [value]
+#
+# [value]:  0 = 320x240
+#
+#           1 = 480x272
+#
+#           2 = 640x480
+#
+#           3 = 720x480
+#
+#           4 = 800x480
+#
+#           5 = 800x600
+#
+#           6 = 960x540
+#
+###################################################################
+
+video 1
+
+######################### Colour Depth ############################
+#
+# Syntax: colourdepth [value]
+#
+# [value]:  8bit
+#
+#           16bit
+#
+#           32bit
+#
+###################################################################
+
+colourdepth 16bit
+
+############################ Scenes ###############################
+#
+# Syntax: scenes [path]
+#
+# [path]:   data/8_char_limit_and_must_end_with_Slash/
+#
+# Supported Scenes: gameover.txt, logo.txt, intro.txt, howto.txt
+#
+###################################################################
+
+#scenes data/scenes2/
+
+########################## Backgrounds ############################
+#
+# Syntax: backgrounds [path]
+#
+# [path]:   data/8_char_limit_and_must_end_with_Slash/ 
+#
+# Supported Backgrounds: title, titleb, logo, select, unlockbg, hiscore
+#
+###################################################################
+
+#backgrounds data/bgs2/
+
+########################## Level Order ############################
+#
+# Syntax: levels [filename]
+#
+# [filename]:   levels2.txt 
+#
+# Usage: File to load up levelorder instead of default levels.txt
+#
+###################################################################
+
+#levels   levels2.txt
+
+########################## Model List #############################
+#
+# Syntax: models [filename]
+#
+# [filename]:   models2.txt 
+#
+# Usage: File to load up model list instead of default models.txt
+#
+###################################################################
+
+#models   models2.txt

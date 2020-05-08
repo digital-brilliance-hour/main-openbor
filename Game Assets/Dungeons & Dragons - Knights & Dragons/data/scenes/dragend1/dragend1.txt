@@ -1,0 +1,25 @@
+name	dragend1
+type	enemy #text
+nomove 1
+setlayer -10
+facing 1
+antigravity 100
+lifespan    9
+animationscript  data/scripts/2Dscript.c
+
+palette				data/chars/wyrmr/wyrmr.gif #1
+
+anim idle
+	loop	1
+	offset	240 -60
+	bbox	0 0 0 0
+	@cmd	dasher 0 -0.8 0
+	delay	1
+	movea	-1
+	frame	data/chars/wyrmr/death00.gif
+
+	
+	
+	
+	
+	

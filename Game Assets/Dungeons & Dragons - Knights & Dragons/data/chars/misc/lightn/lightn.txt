@@ -1,0 +1,90 @@
+name	lightn
+health		1
+nolife		1
+type		none
+hostile		enemy obstacle
+candamage	enemy obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+remove		0
+
+palette data/chars/misc/lightn/lightn.gif #1
+
+anim spawn
+	load		dust03
+	subentity	dust03
+	spawnframe	0 0 0 0 0
+	quakeframe	0 13 5
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	sound   data/sounds/fall02.wav
+
+	delay	2
+#	move	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4  	151 16 	147 	182 	50 			1 		1 		0 			0			30
+	frame	data/chars/misc/lightn/01.gif
+		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/lightn/02.gif
+		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/lightn/03.gif
+		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/lightn/04.gif
+		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/lightn/01.gif
+		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/lightn/02.gif
+		frame		data/chars/misc/empty.gif
+
+	attack4  0 0 0 	0 0 0 0 0 0	0
+	frame	data/chars/misc/lightn/03.gif
+		frame		data/chars/misc/empty.gif
+
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif

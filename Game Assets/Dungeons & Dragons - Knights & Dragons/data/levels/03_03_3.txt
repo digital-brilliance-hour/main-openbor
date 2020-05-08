@@ -1,0 +1,1291 @@
+music		data/music/STAGE24.ogg
+bossmusic	data/music/BOSS08.ogg
+background	data/bgs/03_03_3/back.gif
+panel	      data/bgs/03_03_3/n01.gif
+frontpanel	data/bgs/03_03_3/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/03_03_3/03_03_3.gif #1
+
+wall    1080 190 200 350 1250 1100 150 250
+
+#------- sewer
+
+spawn sewer2
+coords 0 215
+flip 1
+at 0
+
+#------- sewer
+
+#------- Dialogue
+
+spawn d03_03_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item amber
+coords 280 110
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item gaunt
+coords 380 210
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item amet
+coords 480 110
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item trap1
+coords 580 210
+flip 0
+at 0
+#-------chests
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 1
+
+spawn trap5
+coords 200 130 300
+at 1
+
+spawn trap5
+coords 270 190 250
+at 1
+
+spawn trap5
+coords 350 120 350
+at 1
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 50
+
+spawn trap5
+coords 200 160 300
+at 50
+
+spawn trap5
+coords 270 140 250
+at 50
+
+spawn trap5
+coords 350 200 350
+at 50
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 100
+
+spawn trap5
+coords 200 130 300
+at 100
+
+spawn trap5
+coords 270 190 250
+at 100
+
+spawn trap5
+coords 350 120 350
+at 100
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 150
+
+spawn trap5
+coords 200 160 300
+at 150
+
+spawn trap5
+coords 270 140 250
+at 150
+
+spawn trap5
+coords 350 200 350
+at 150
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 200
+
+spawn trap5
+coords 200 130 300
+at 200
+
+spawn trap5
+coords 270 190 250
+at 200
+
+spawn trap5
+coords 350 120 350
+at 200
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 250
+
+spawn trap5
+coords 200 160 300
+at 250
+
+spawn trap5
+coords 270 140 250
+at 250
+
+spawn trap5
+coords 350 200 350
+at 250
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 300
+
+spawn trap5
+coords 200 130 300
+at 300
+
+spawn trap5
+coords 270 190 250
+at 300
+
+spawn trap5
+coords 350 120 350
+at 300
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 350
+
+spawn trap5
+coords 200 160 300
+at 350
+
+spawn trap5
+coords 270 140 250
+at 350
+
+spawn trap5
+coords 350 200 350
+at 350
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 400
+
+spawn trap5
+coords 200 130 300
+at 400
+
+spawn trap5
+coords 270 190 250
+at 400
+
+spawn trap5
+coords 350 120 350
+at 400
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 450
+
+spawn trap5
+coords 200 160 300
+at 450
+
+spawn trap5
+coords 270 140 250
+at 450
+
+spawn trap5
+coords 350 200 350
+at 450
+
+#------- trap
+
+
+#-------Monsters
+
+Group 4 4
+at 480
+
+wait
+at      480
+
+#------- Dialogue
+
+#spawn d03_03_3
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 540 170
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amet
+coords 580 110
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amber
+coords -140 140
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -180 200
+flip 1
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 480
+
+spawn trap5
+coords 200 130 300
+at 480
+
+spawn trap5
+coords 270 190 250
+at 480
+
+spawn trap5
+coords 350 120 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords 540 170
+flip 0
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 480
+
+spawn trap5
+coords 200 160 300
+at 480
+
+spawn trap5
+coords 270 140 250
+at 480
+
+spawn trap5
+coords 350 200 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amet
+coords 580 110
+flip 0
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 480
+
+spawn trap5
+coords 200 130 300
+at 480
+
+spawn trap5
+coords 270 190 250
+at 480
+
+spawn trap5
+coords 350 120 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amber
+coords -140 140
+flip 1
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 480
+
+spawn trap5
+coords 200 160 300
+at 480
+
+spawn trap5
+coords 270 140 250
+at 480
+
+spawn trap5
+coords 350 200 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -180 200
+flip 1
+at 480
+
+
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 480
+
+spawn trap5
+coords 200 130 300
+at 480
+
+spawn trap5
+coords 270 190 250
+at 480
+
+spawn trap5
+coords 350 120 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords 540 170
+flip 0
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 480
+
+spawn trap5
+coords 200 160 300
+at 480
+
+spawn trap5
+coords 270 140 250
+at 480
+
+spawn trap5
+coords 350 200 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item diamond
+coords 580 110
+flip 0
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 480
+
+spawn trap5
+coords 200 130 300
+at 480
+
+spawn trap5
+coords 270 190 250
+at 480
+
+spawn trap5
+coords 350 120 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item gaunt
+coords -140 140
+flip 1
+at 480
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 480
+
+spawn trap5
+coords 200 160 300
+at 480
+
+spawn trap5
+coords 270 140 250
+at 480
+
+spawn trap5
+coords 350 200 350
+at 480
+
+#------- trap
+
+spawn sahua
+alias Sahuagin
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords -180 200
+flip 1
+at 480
+
+
+#-------
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item amber
+coords 500 110
+flip 0
+at 481
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item gaunt
+coords 600 210
+flip 0
+at 481
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item trap1
+coords 700 110
+flip 0
+at 481
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item trap1
+coords 800 210
+flip 0
+at 481
+#-------chests
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 500
+
+spawn trap5
+coords 200 130 300
+at 510
+
+spawn trap5
+coords 270 190 250
+at 520
+
+spawn trap5
+coords 350 120 350
+at 530
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 550
+
+spawn trap5
+coords 200 160 300
+at 560
+
+spawn trap5
+coords 270 140 250
+at 570
+
+spawn trap5
+coords 350 200 350
+at 580
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 600
+
+spawn trap5
+coords 200 130 300
+at 610
+
+spawn trap5
+coords 270 190 250
+at 630
+
+spawn trap5
+coords 350 120 350
+at 640
+
+#------- trap
+
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 700
+
+spawn trap5
+coords 200 130 300
+at 710
+
+spawn trap5
+coords 270 190 250
+at 720
+
+spawn trap5
+coords 350 120 350
+at 730
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 750
+
+spawn trap5
+coords 200 160 300
+at 760
+
+spawn trap5
+coords 270 140 250
+at 770
+
+spawn trap5
+coords 350 200 350
+at 780
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 800
+
+spawn trap5
+coords 200 130 300
+at 810
+
+spawn trap5
+coords 270 190 250
+at 830
+
+spawn trap5
+coords 350 120 350
+at 840
+
+#------- trap
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 850
+
+spawn trap5
+coords 200 160 300
+at 870
+
+spawn trap5
+coords 270 140 250
+at 880
+
+spawn trap5
+coords 350 200 350
+at 890
+
+#------- trap
+
+
+#-------Monsters
+
+Group 8 8
+at 960
+
+wait
+at      960
+
+#------- Dialogue
+
+#spawn d03_03_3
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amet
+coords -140 170
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gaunt
+coords -180 200
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -160 120
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -200 180
+flip 1
+at 960
+
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amber
+coords -240 170
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item diamond
+coords -280 200
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -260 120
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -300 180
+flip 1
+at 960
+
+
+
+spawn lizman2
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item amet
+coords -140 170
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item gaunt
+coords -180 200
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords -160 120
+flip 1
+at 960
+
+spawn lizman2
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords -200 180
+flip 1
+at 960
+
+
+spawn lizman1
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item gold2
+coords -240 170
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item amet
+coords -280 200
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords -260 120
+flip 1
+at 960
+
+spawn lizman1
+alias Lizard_Man
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+coords -300 180
+flip 1
+at 960
+
+
+
+
+
+
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amet
+coords -140 170
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 960
+
+spawn trap5
+coords 200 130 300
+at 960
+
+spawn trap5
+coords 270 190 250
+at 960
+
+spawn trap5
+coords 350 120 350
+at 960
+
+#------- trap
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gaunt
+coords -180 200
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 960
+
+spawn trap5
+coords 200 160 300
+at 960
+
+spawn trap5
+coords 270 140 250
+at 960
+
+spawn trap5
+coords 350 200 350
+at 960
+
+#------- trap
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -160 120
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 960
+
+spawn trap5
+coords 200 130 300
+at 960
+
+spawn trap5
+coords 270 190 250
+at 960
+
+spawn trap5
+coords 350 120 350
+at 960
+
+#------- trap
+
+spawn lizman2
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -200 180
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 960
+
+spawn trap5
+coords 200 160 300
+at 960
+
+spawn trap5
+coords 270 140 250
+at 960
+
+spawn trap5
+coords 350 200 350
+at 960
+
+#------- trap
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item amber
+coords -240 170
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 960
+
+spawn trap5
+coords 200 130 300
+at 960
+
+spawn trap5
+coords 270 190 250
+at 960
+
+spawn trap5
+coords 350 120 350
+at 960
+
+#------- trap
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item diamond
+coords -280 200
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 960
+
+spawn trap5
+coords 200 160 300
+at 960
+
+spawn trap5
+coords 270 140 250
+at 960
+
+spawn trap5
+coords 350 200 350
+at 960
+
+#------- trap
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -260 120
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 170 200
+at 960
+
+spawn trap5
+coords 200 130 300
+at 960
+
+spawn trap5
+coords 270 190 250
+at 960
+
+spawn trap5
+coords 350 120 350
+at 960
+
+#------- trap
+
+spawn lizman1
+alias Lizard_Man
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -300 180
+flip 1
+at 960
+
+#------- trap
+
+spawn trap5
+coords 135 110 200
+at 960
+
+spawn trap5
+coords 200 160 300
+at 960
+
+spawn trap5
+coords 270 140 250
+at 960
+
+spawn trap5
+coords 350 200 350
+at 960
+
+#------- trap
+
+#------- 
+
+#-------go
+
+spawn enter01
+alias enter01
+flip 1
+health 1
+coords 400 140
+at 960
+
+#-------go
+
+

@@ -1,0 +1,173 @@
+name				ms17
+health				1
+nolife				1
+shadow				3
+type				none
+hostile		enemy obstacle
+candamage	enemy obstacle
+speed				0
+nomove				1
+noquake				1
+falldie				1
+subtype				flydie
+dust				dust01
+flash				flash01
+bflash				guard01
+#setlayer			100
+
+anim idle
+	shadowcoords 225 200
+#	load			ms11
+#	subentity		ms11
+#	spawnframe		50 100 207 225 1
+	jumpframe		0 0.5 0
+	landframe		50
+#	unsummonframe	78
+	
+#	fastattack 1
+	loop	0
+	offset	240 207
+	hitfx data/sounds/burn01.wav
+	bbox    	0 0 0 0
+	quakeframe 50 20 7
+	delay	4
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack3  	210 161	59		50		40			1		1		0			0			25
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	frame	data/chars/misc/ms/105.gif
+	frame	data/chars/misc/ms/101.gif
+	frame	data/chars/misc/ms/102.gif
+	frame	data/chars/misc/ms/103.gif
+	frame	data/chars/misc/ms/104.gif
+	attack3    0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/ms/105.gif
+
+	sound data/sounds/ms01.wav
+	attack3  129 49 202 146 30 1 0 0 0 50
+	frame	data/chars/misc/ms/01.gif
+	frame	data/chars/misc/ms/02.gif
+	frame	data/chars/misc/ms/03.gif
+	frame	data/chars/misc/ms/04.gif
+	frame	data/chars/misc/ms/05.gif
+	frame	data/chars/misc/ms/06.gif
+	frame	data/chars/misc/ms/07.gif
+	frame	data/chars/misc/ms/08.gif
+	frame	data/chars/misc/ms/09.gif
+	frame	data/chars/misc/ms/10.gif
+	frame	data/chars/misc/ms/11.gif
+	frame	data/chars/misc/ms/12.gif
+	frame	data/chars/misc/ms/13.gif
+	frame	data/chars/misc/ms/14.gif
+	attack3    0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/ms/15.gif
+	frame	data/chars/misc/ms/16.gif
+	frame	data/chars/misc/ms/17.gif
+	frame	data/chars/misc/ms/18.gif
+	frame	data/chars/misc/ms/19.gif
+	frame	data/chars/misc/ms/20.gif
+	frame	data/chars/misc/ms/21.gif
+	frame	data/chars/misc/ms/22.gif
+	frame	data/chars/misc/ms/23.gif
+	frame	data/chars/misc/ms/24.gif
+	frame	data/chars/misc/ms/25.gif
+	frame	data/chars/misc/ms/26.gif
+	frame	data/chars/misc/ms/27.gif
+	frame	data/chars/misc/ms/28.gif
+	frame	data/chars/misc/empty.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+

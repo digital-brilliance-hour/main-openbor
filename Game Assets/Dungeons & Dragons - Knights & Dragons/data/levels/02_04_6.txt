@@ -1,0 +1,858 @@
+music		data/music/STAGE16.ogg
+bossmusic	data/music/BOSS16.ogg
+background	data/bgs/02_04_6/back.gif
+panel	      data/bgs/02_04_6/n01.gif
+frontpanel	data/bgs/02_04_6/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_04_6/02_04_6.gif #1
+
+wall    -200 100 10 500 800 800 150 1200
+
+wall    -370 270 10 500 400 800 150 1200
+
+wall    60 160 10 800 870 870 150 1200
+
+wall    90 160 800 800 1400 870 150 1200
+
+wall    200 200 100 200 450 550 50 1200
+
+wall    400 90 800 800 2000 2000 150 1200
+
+wall    990 240 200 10 2000 2000 50 1200
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	500 380
+at 0
+
+spawn Respawn2
+coords	500 380
+at 0
+
+spawn Respawn3
+coords	500 380
+at 0
+
+spawn Respawn4
+coords	500 380
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d02_04_6
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn casket2
+alias corpse
+flip 0
+item diamond
+health 1
+coords 515 210
+at 0
+#-------chests
+
+#-------chests
+spawn casket2
+alias corpse
+flip 0
+item diamond
+health 1
+coords 565 210
+at 0
+#-------chests
+
+#-------chests
+spawn casket2
+alias corpse
+flip 0
+item diamond
+health 1
+coords 615 210
+at 0
+#-------chests
+
+#-------trap2
+spawn trap2
+alias trap2
+flip 1
+health 1
+coords 325 140
+at 0
+#-------trap2
+
+#-------trap2
+spawn trap2
+alias trap2
+flip 1
+health 1
+coords 425 140
+at 0
+#-------trap2
+
+#-------trap2
+spawn trap2
+alias trap2
+flip 1
+health 1
+coords 525 140
+at 0
+#-------trap2
+
+#-------trap2
+spawn trap2
+alias trap2
+flip 1
+health 1
+coords 625 140
+at 0
+#-------trap2
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 425 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 445 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 465 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 485 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 665 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 685 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 705 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 725 210
+at 0
+#-------trap3
+
+#-------Monsters
+
+group   6 6
+at      150
+
+spawn beetle
+alias Beetle
+health 1
+map 0
+coords -70 105
+flip 0
+at 150
+
+spawn beetle
+alias Beetle
+health 1
+map 0
+coords 570 170
+flip 1
+at 300
+
+spawn beetle
+alias Beetle
+health 1
+map 0
+coords -90 130
+flip 0
+at 450
+
+spawn beetle
+alias Beetle
+health 1
+map 0
+coords 570 170
+flip 1
+at 600
+
+spawn beetle
+alias Beetle
+health 1
+map 0
+coords -80 140
+flip 0
+at 750
+
+#-------chests
+spawn casket1
+alias corpse
+flip 0
+item rapple
+health 1
+coords 505 100
+at 750
+#-------chests
+
+#-------chests
+spawn casket1
+alias corpse
+flip 0
+item scroll
+health 1
+coords 555 100
+at 750
+#-------chests
+
+wait
+at      900
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35
+aggression 0
+map 0
+item gold1
+coords 570 155
+flip 0
+at 900
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45
+aggression 50
+map 1
+item gold1
+coords 610 175
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords 630 155
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 650 125
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords 630 155
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 650 125
+flip 0
+at 900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 900
+
+
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72
+aggression 50
+map 1
+coords 570 155
+flip 0
+at 900
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72
+aggression 50
+map 1
+coords 590 125
+flip 0
+at 900
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords 570 155
+flip 0
+at 900
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45
+aggression 100
+map 1
+coords 590 125
+flip 0
+at 900
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72
+aggression 50
+map 1
+item gold1
+coords 610 175
+flip 0
+at 900
+
+#-------Monsters
+
+
+
+
+
+#------- Dialogue
+
+spawn d02_04_7
+coords 240 176
+flip 1
+at 1666
+
+#------- Dialogue
+
+#-------Monsters
+
+group   4 4
+at      1666
+
+wait
+at      1666
+
+spawn oni
+alias Golthar_the_Ogre_Mage
+health 140
+2phealth 240
+3phealth 340 
+4phealth 440
+aggression 300
+map 0
+boss 1
+item missclear
+itemalias DarkTerr
+coords 370 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55
+aggression 100
+map 2
+coords 590 125
+flip 0
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60
+aggression 100
+map 2
+coords -110 175
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 630 155
+flip 0
+at 1666
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65
+aggression 150
+map 3
+coords -150 125
+flip 1
+at 1666
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70
+aggression 150
+map 3
+coords 670 175
+flip 0
+at 1666
+
+#-------Monsters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+name	wave2
+health	1
+nolife  1
+type	    enemy
+hostile player npc
+speed	18
+noquake 1
+falldie 1
+subtype flydie
+remove 0
+shadow	0
+
+anim idle
+	loop	1
+	delay	3
+	offset	225 128
+	bbox    	0 0 0 0
+	attack  210 153 112 46 35 1 1
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave02.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave03.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave04.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+	frame	data/chars/mordred/wave01.gif
+	frame	data/chars/mordred/wave05.gif	
+
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
+

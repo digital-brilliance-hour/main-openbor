@@ -1,0 +1,1846 @@
+music		data/music/STAGE25.ogg
+bossmusic	data/music/BOSS09.ogg
+background	data/bgs/03_04_4/back.gif
+panel	      data/bgs/03_04_4/n01.gif
+frontpanel	data/bgs/03_04_4/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 40
+spawn2  80 60
+spawn3  70 50
+spawn4  90 70
+
+palette data/bgs/03_04_4/03_04_4.gif #1
+
+wall    -560 145 40 300 1275 1100 150 250
+
+wall    885 145 100 300 885 710 150 250
+
+
+wall    1940 145 100 300 1500 1400 150 250
+
+#------- Dialogue
+
+spawn d03_04_6
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item topaz
+health 1
+coords 210 160
+at 0
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item gaunt
+health 1
+coords 250 210
+at 0
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 330 150
+at 0
+#-------chests
+
+#-------trap8
+
+spawn trap8
+alias trap8
+flip 1
+coords 400 210
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 400 190
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 430 170
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 430 150
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 470 210
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 470 190
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 0
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 0
+
+#-------trap8
+
+
+#-------trap8
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 30
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 50
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 70
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 90
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 130
+at 110
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 110
+at 130
+
+#-------trap8
+
+
+
+#-------trap8
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 130
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 150
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 170
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 190
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 130
+at 210
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 110
+at 230
+
+#-------trap8
+
+
+
+#-------trap8
+
+spawn trap8
+alias trap8
+flip 1
+coords 600 210
+at 230
+
+spawn trap8
+alias trap8
+flip 1
+coords 580 190
+at 250
+
+spawn trap8
+alias trap8
+flip 1
+coords 560 170
+at 270
+
+spawn trap8
+alias trap8
+flip 1
+coords 540 150
+at 290
+
+spawn trap8
+alias trap8
+flip 1
+coords 520 130
+at 310
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 110
+at 330
+
+#-------trap8
+
+#-------Monsters
+
+Group 6 6
+at 865
+
+wait
+at      865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 60 190 300
+flip 1
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 120 150 150
+flip 1
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 30 130 225
+flip 1
+at 865
+
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 360 190 250
+flip 0
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 250 160 175
+flip 0
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 210 120 325
+flip 0
+at 865
+
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 60 190 300
+flip 1
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 120 150 150
+flip 1
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 30 130 225
+flip 1
+at 865
+
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 360 190 250
+flip 0
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 250 160 175
+flip 0
+at 865
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 210 120 325
+flip 0
+at 865
+
+#-------Monsters
+
+#-------Monsters
+
+Group 24 24
+at 870
+
+spawn mimic
+alias Mimic
+health 1
+aggression 300
+map 0
+item straw
+coords 500 170
+flip 0
+at 870
+
+spawn mimic
+alias Mimic
+health 1
+aggression 300
+map 0
+item straw
+coords 500 200
+flip 0
+at 970
+
+spawn mimic
+alias Mimic
+health 1
+aggression 300
+map 0
+item scroll
+coords 500 160
+flip 0
+at 1020
+
+spawn mimic
+alias Mimic
+health 1
+aggression 300
+map 0
+item straw
+coords 500 180
+flip 0
+at 1070
+
+
+wait
+at      1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 160 150 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 60 160 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 260 170 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 210 180 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 130 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 400 200 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 350 190 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 370 140 350
+flip 1
+at 1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 120 205 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 250 195 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 130 175 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 230 145 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 125 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 130 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 320 150 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 420 160 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 210 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 180 210 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 310 180 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 375 170 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 75 185 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 150 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 155 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 275 140 350
+flip 1
+at 1600
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 160 150 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 60 160 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 260 170 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 210 180 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 130 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 400 200 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 350 190 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 370 140 350
+flip 1
+at 1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 120 205 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 250 195 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 130 175 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 230 145 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 125 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 130 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 320 150 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 420 160 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 210 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 180 210 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 310 180 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 375 170 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 75 185 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 150 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 155 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 275 140 350
+flip 1
+at 1600
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 160 150 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 60 160 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 260 170 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 210 180 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 130 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 400 200 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 350 190 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 370 140 350
+flip 1
+at 1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 120 205 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 250 195 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 130 175 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 230 145 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 125 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 130 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 320 150 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 420 160 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 210 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 180 210 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 310 180 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 375 170 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 75 185 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 150 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 155 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 275 140 350
+flip 1
+at 1600
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 160 150 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 60 160 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 260 170 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 210 180 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 130 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 400 200 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 350 190 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 370 140 350
+flip 1
+at 1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 120 205 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 250 195 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 130 175 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 230 145 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 125 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 130 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 320 150 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 420 160 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 210 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 180 210 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 310 180 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 375 170 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 75 185 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 150 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 155 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 275 140 350
+flip 1
+at 1600
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 160 150 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 60 160 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 260 170 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 210 180 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 130 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 400 200 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 350 190 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 370 140 350
+flip 1
+at 1600
+
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 120 205 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 250 195 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 130 175 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 230 145 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 125 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 130 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 320 150 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 420 160 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 300 210 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 180 210 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 310 180 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 375 170 350
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 75 185 200
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 100 150 300
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 200 155 250
+flip 1
+at 1600
+
+spawn slime
+alias Slime
+health 1
+aggression 150
+map 3
+coords 275 140 350
+flip 1
+at 1600
+
+#-------Monsters
+
+#-------trap8
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 560 210
+at 1650
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 620 155
+at 1650
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 680 210
+at 1650
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 740 155
+at 1650
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+flip 0
+item diamond
+health 1
+coords 800 210
+at 1650
+#-------chests
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 1650
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1670
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1690
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 1710
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1730
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1750
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 1770
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1790
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1810
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 1830
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1850
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1870
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 1890
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1910
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1930
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 150
+at 1950
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 170
+at 1970
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 190
+at 1990
+
+spawn trap8
+alias trap8
+flip 1
+coords 500 210
+at 2010
+
+#-------trap8
+
+#-------Monsters
+
+Group 6 6
+at 2414
+
+wait
+at 2414
+
+spawn minot2
+alias Minotaur
+health 128
+2phealth 228
+3phealth 328
+4phealth 428
+aggression 100
+map 1
+item diamond
+coords 520 170
+flip 0
+at 2414
+
+spawn minot2
+alias Minotaur
+health 128
+2phealth 228
+3phealth 328
+4phealth 428
+aggression 100
+map 2
+item diamond
+coords 550 150
+flip 0
+at 2414
+
+spawn minot2
+alias Minotaur
+health 128
+2phealth 228
+3phealth 328
+4phealth 428
+aggression 100
+map 3
+item diamond
+coords -150 210
+flip 1
+at 2414
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 60 190 300
+flip 1
+at 2414
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 120 160 150
+flip 1
+at 2414
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 30 170 225
+flip 1
+at 2414
+
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 360 190 250
+flip 0
+at 2414
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 250 160 175
+flip 0
+at 2414
+
+spawn scorp
+alias Scorpion
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+coords 210 200 325
+flip 0
+at 2414
+
+
+#-------go
+
+spawn go02
+alias go02
+flip 1
+health 1
+coords 435 180
+at 2415
+
+#-------go
+

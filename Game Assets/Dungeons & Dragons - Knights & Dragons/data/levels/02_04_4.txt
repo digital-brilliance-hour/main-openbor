@@ -1,0 +1,331 @@
+music		data/music/STAGE16.ogg
+bossmusic	data/music/BOSS16.ogg
+background	data/bgs/02_04_4/back.gif
+panel	      data/bgs/02_04_4/n01.gif
+frontpanel	data/bgs/02_04_4/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_04_4/02_04_4.gif #1
+
+wall    280 180 10 1200 4000 4000 150 1200
+
+#-------chests
+spawn casket3
+alias corpse
+flip 0
+item topaz
+health 1
+coords 515 80
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias corpse
+flip 0
+item amet
+health 1
+coords 615 100
+at 0
+#-------chests
+
+#------- Dialogue
+
+spawn d02_04_4
+coords 240 176
+flip 1
+at 260
+
+#------- Dialogue
+
+#-------Monsters
+
+group   2 2
+at      270
+
+wait
+at      270
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords 590 175
+flip 0
+at 270
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords -120 105
+flip 1
+at 270
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords 500 150
+flip 0
+at 270
+
+#-------Monsters
+
+#-------Monsters
+
+group   4 4
+at      300
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 570 155
+flip 1
+at 300
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 590 185
+flip 1
+at 475
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 560 175
+flip 1
+at 650
+
+wait
+at      700
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords 590 175
+flip 0
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 570 155
+flip 1
+at 700
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords -120 105
+flip 1
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords -90 175
+flip 0
+at 700
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords 600 200
+flip 0
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 570 195
+flip 1
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords -70 145
+flip 0
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords 610 195
+flip 1
+at 700
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords -90 205
+flip 0
+at 700
+
+#-------Monsters
+
+#-------chests
+spawn casket3
+alias corpse
+flip 0
+item gaunt
+health 1
+coords 515 170
+at 701
+#-------chests
+
+#-------chests
+spawn casket3
+alias corpse
+flip 0
+item amber
+health 1
+coords 515 180
+at 801
+#-------chests
+
+#-------Monsters
+
+group   4 4
+at      1120
+
+wait
+at      1120
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+coords 587 190
+at 1120
+
+spawn owlb
+alias Owlbear
+health 60
+2phealth 70
+3phealth 80 
+4phealth 90
+aggression 50
+map 1
+flip 1
+coords -125 180
+at 1120
+
+spawn owlb
+alias Owlbear
+health 70
+2phealth 80
+3phealth 90 
+4phealth 100
+aggression 100
+map 2
+coords 605 195
+at 1120
+
+spawn beetle
+alias Beetle
+flip 1
+map 3
+health 1
+coords 518 205
+at 1120
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords -70 145
+flip 0
+at 1120
+
+spawn beetle
+alias Beetle
+flip 1
+map 3
+health 1
+coords 560 195
+at 1120
+
+spawn beetle
+alias Beetle
+health 1
+map 3
+coords -90 205
+flip 0
+at 1120
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 450 210
+at 1120
+
+#------- Go
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

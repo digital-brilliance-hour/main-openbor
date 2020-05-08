@@ -1,0 +1,114 @@
+# Hit dust
+
+name				trunk
+type				none
+shadow				0
+hostile				enemy player npc
+candamage			player npc
+dust				dust01
+flash				flash01
+bflash				guard01
+#setlayer 1000
+antigravity 100
+nolife				1
+lifespan			5
+
+palette 			data/chars/misc/trunk/trunk.gif
+
+anim spawn
+#	jumpframe	0 1.5 0
+	loop		1
+	offset     218 198
+	move		8
+	delay		2
+	attack1  194 108 60 100 10 0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/01.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/02.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/03.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+	frame		data/chars/misc/trunk/04.gif
+
+anim idle
+	loop		0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+anim death
+	loop		0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+		
+		
+		
+		
+		

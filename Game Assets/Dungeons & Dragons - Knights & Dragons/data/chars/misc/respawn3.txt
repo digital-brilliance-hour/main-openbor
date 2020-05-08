@@ -1,0 +1,25 @@
+name		Respawn3
+type		none
+lifespan	1
+
+
+anim idle
+@script
+    void self = getlocalvar("self");
+
+    if(frame==1){
+      int x = getentityproperty(self,"x");
+      int z = getentityproperty(self,"z");
+
+      setglobalvar("x2", x);
+      setglobalvar("z2", z);
+    }
+    if(frame==2){
+      killentity(self); //Suicide!
+    }
+@end_script
+	delay	5
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif

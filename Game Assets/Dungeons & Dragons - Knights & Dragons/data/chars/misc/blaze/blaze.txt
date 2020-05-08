@@ -1,0 +1,20 @@
+name	blaze
+health	0
+type	item
+shadow	0
+alpha	1
+icon	data/chars/misc/blaze/blaze.gif
+#setlayer 1000
+
+palette data/chars/misc/blaze/blaze.gif #1
+
+anim idle
+	loop	1
+	delay	4
+	 offset     225 198
+	frame	data/chars/misc/blaze/01.gif
+	frame	data/chars/misc/blaze/02.gif
+	frame	data/chars/misc/blaze/03.gif
+	frame	data/chars/misc/blaze/04.gif
+
+

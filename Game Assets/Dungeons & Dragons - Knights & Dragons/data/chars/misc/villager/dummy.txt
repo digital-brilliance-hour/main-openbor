@@ -1,0 +1,19 @@
+# SE
+name Dummy
+type none
+offscreenkill 100 
+lifespawn 1
+
+
+anim spawn
+     loop 0
+     delay 50
+     sound data/sounds/help.wav
+     frame data/chars/misc/empty.gif
+     movea  2000
+     frame data/chars/misc/empty.gif
+
+anim idle
+     loop 0
+     delay 1000
+     frame data/chars/misc/empty.gif

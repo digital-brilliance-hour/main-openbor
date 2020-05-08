@@ -1,0 +1,393 @@
+music		data/music/STAGE28.ogg
+bossmusic	data/music/BOSS28.ogg
+background	data/bgs/04_01_4/back.gif
+panel	      data/bgs/04_01_4/n01.gif
+frontpanel	data/bgs/04_01_4/f01.gif
+order       a
+settime 99
+stagenumber 4
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/04_01_4/04_01_4.gif #1
+
+#------- Dialogue
+
+spawn d04_01_5
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+#-------treasure
+
+spawn amber
+flip 1
+health 1
+coords 398 132
+at 0
+
+spawn diamond
+flip 1
+health 1
+coords 274 194
+at 0
+
+spawn topaz
+flip 1
+health 1
+coords 346 156
+at 0
+
+spawn amet
+flip 1
+health 1
+coords 456 142
+at 0
+
+spawn diamond
+flip 1
+health 1
+coords 396 173
+at 0
+
+spawn amber
+flip 1
+health 1
+coords 493 177
+at 0
+
+#-------treasure
+
+
+#-------treasure
+
+spawn diamond
+flip 1
+health 1
+coords 579 149
+at 101
+
+spawn topaz
+flip 1
+health 1
+coords 527 139
+at 101
+
+spawn amber
+flip 1
+health 1
+coords 565 186
+at 101
+
+spawn diamond
+flip 1
+health 1
+coords 623 199
+at 101
+
+spawn topaz
+flip 1
+health 1
+coords 619 165
+at 101
+
+spawn amet
+flip 1
+health 1
+coords 652 163
+at 101
+
+#-------treasure
+
+#-------treasure
+
+spawn topaz
+flip 1
+health 1
+coords 596 149
+at 250
+
+spawn diamond
+flip 1
+health 1
+coords 541 145
+at 250
+
+spawn amet
+flip 1
+health 1
+coords 569 175
+at 250
+
+spawn diamond
+flip 1
+health 1
+coords 637 161
+at 250
+
+spawn amber
+flip 1
+health 1
+coords 632 189
+at 250
+
+spawn amber
+flip 1
+health 1
+coords 693 185
+at 250
+
+#-------treasure
+
+#-------treasure
+
+spawn amet
+flip 1
+health 1
+coords 615 165
+at 400
+
+spawn amber
+flip 1
+health 1
+coords 575 158
+at 400
+
+spawn topaz
+flip 1
+health 1
+coords 626 196
+at 400
+
+spawn diamond
+flip 1
+health 1
+coords 631 150
+at 400
+
+spawn amet
+flip 1
+health 1
+coords 661 174
+at 400
+
+spawn amber
+flip 1
+health 1
+coords 704 187
+at 400
+
+#-------treasure
+
+#-------treasure
+
+spawn amber
+flip 1
+health 1
+coords 585 156
+at 550
+
+spawn topaz
+flip 1
+health 1
+coords 560 168
+at 550
+
+spawn diamond
+flip 1
+health 1
+coords 603 187
+at 550
+
+spawn amet
+flip 1
+health 1
+coords 632 149
+at 550
+
+spawn amber
+flip 1
+health 1
+coords 641 181
+at 550
+
+spawn topaz
+flip 1
+health 1
+coords 685 196
+at 550
+
+#-------treasure
+
+#-------treasure
+
+spawn diamond
+flip 1
+health 1
+coords 613 191
+at 700
+
+spawn diamond
+flip 1
+health 1
+coords 534 155
+at 700
+
+spawn diamond
+flip 1
+health 1
+coords 570 171
+at 700
+
+spawn diamond
+flip 1
+health 1
+coords 682 193
+at 700
+
+spawn diamond
+flip 1
+health 1
+coords 649 168
+at 700
+
+spawn diamond
+flip 1
+health 1
+coords 716 149
+at 700
+
+#-------treasure
+
+
+#-------treasure
+
+spawn diamond
+flip 1
+health 1
+coords 585 162
+at 850
+
+spawn topaz
+flip 1
+health 1
+coords 517 140
+at 850
+
+spawn amber
+flip 1
+health 1
+coords 565 186
+at 850
+
+spawn diamond
+flip 1
+health 1
+coords 634 191
+at 850
+
+spawn topaz
+flip 1
+health 1
+coords 619 165
+at 850
+
+spawn amet
+flip 1
+health 1
+coords 652 163
+at 850
+
+#-------treasure
+
+#-------treasure
+
+spawn topaz
+flip 1
+health 1
+coords 596 149
+at 1000
+
+spawn diamond
+flip 1
+health 1
+coords 541 145
+at 1000
+
+spawn amet
+flip 1
+health 1
+coords 569 175
+at 1000
+
+spawn diamond
+flip 1
+health 1
+coords 637 161
+at 1000
+
+spawn amber
+flip 1
+health 1
+coords 637 196
+at 1000
+
+spawn amber
+flip 1
+health 1
+coords 680 169
+at 1000
+
+spawn 1up
+flip 1
+health 1
+coords 735 158
+at 1000
+
+#-------treasure
+
+#-------Monsters
+
+group   1 1
+at      1600
+
+wait
+at      1600
+
+#------- Dialogue
+
+spawn d04_01_6
+coords 240 176
+flip 1
+at 1600
+
+#------- Dialogue
+
+
+
+#-------Great_Red_Wyrm
+spawn wyrmr
+alias Bloodbane_-_Ancient_Red_Dragon
+health 750
+2phealth 850
+3phealth 950
+4phealth 1050
+aggression 50
+map 0
+boss 1
+coords  240 160
+flip 0
+at 1600
+#-------Great_Red_Wyrm
+
+#-------Monsters
+
+
+
+
+

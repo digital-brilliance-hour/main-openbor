@@ -1,0 +1,182 @@
+music		data/music/TOWN01.ogg
+bossmusic	data/music/BOSS09.ogg
+background	data/bgs/03_04_6/back.gif
+panel	      data/bgs/03_04_6/n01.gif
+frontpanel	data/bgs/03_04_6/f01.gif
+order       a
+settime 99
+stagenumber 3
+bgspeed -5 0
+rock 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/03_04_6/03_04_6.gif #1
+
+wall    180 165 75 300 1250 1100 150 250
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	642 336
+at 0
+
+spawn Respawn2
+coords	642 336
+at 0
+
+spawn Respawn3
+coords	642 336
+at 0
+
+spawn Respawn4
+coords	642 336
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d03_04_8
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 90 134
+at 0
+#-------trooper
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 400 140
+at 0
+#-------trooper
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 270 210
+at 0
+#-------trooper
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 200 190
+at 0
+#-------trooper
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 450 190
+at 0
+#-------trooper
+
+#-------trooper
+spawn trooper
+alias trooper
+health 1
+map 2
+coords 330 160
+at 0
+#-------trooper
+
+#-------chests
+spawn crate
+alias Crate
+item bpotion
+health 1
+coords 191 134
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+item bpotion
+health 1
+coords 318 198
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+flip 1
+item gapple
+health 1
+coords 153 176
+at 0
+#-------chests
+
+#-------chests
+spawn casket2
+alias casket2
+flip 1
+item 1up
+health 1
+coords 270 170
+at 0
+#-------chests
+
+#-------Monsters
+
+Group 6 6
+at 1500
+
+wait
+at      1500
+
+#------- Dialogue
+
+spawn d03_04_9
+coords 240 176
+flip 1
+at 1500
+
+#------- Dialogue
+
+spawn draga4
+alias Gorgohthrax_-_Adult_Blue_Dragon
+health 340
+2phealth 440
+3phealth 540
+4phealth 640
+aggression 0
+map 1
+boss 1
+item missclear
+itemalias LakeLost
+coords  350 190
+flip 0
+at 1500
+
+
+#-------Monsters
+
+
+
+
+
+

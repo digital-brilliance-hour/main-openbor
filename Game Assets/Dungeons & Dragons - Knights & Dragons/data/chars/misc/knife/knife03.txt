@@ -1,0 +1,118 @@
+name					knife03
+health					1
+nolife  				1
+type					npc
+hostile 				enemy obstacle
+candamage 				enemy obstacle
+speed					15
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+dust					dust01
+flash				flash21
+noatflash			1
+bflash					guard01
+
+anim idle
+	jugglecost	99
+	loop	0
+	delay	1
+	offset     225 128
+	bbox    	256 156 28 43
+	hitflash	flash21
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		226	156	28		43		10			1		0		0			30
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/misc/knife/knife02.gif
+	frame	data/chars/misc/knife/knife03.gif
+	frame	data/chars/misc/knife/knife04.gif
+	frame	data/chars/misc/knife/knife05.gif
+	frame	data/chars/misc/knife/knife06.gif
+	frame	data/chars/misc/knife/knife07.gif
+	frame	data/chars/misc/knife/knife08.gif
+	frame	data/chars/misc/knife/knife09.gif
+	frame	data/chars/misc/knife/knife10.gif
+	frame	data/chars/misc/knife/knife11.gif
+	frame	data/chars/misc/knife/knife12.gif
+	frame	data/chars/misc/knife/knife13.gif
+	frame	data/chars/misc/knife/knife14.gif
+	frame	data/chars/misc/knife/knife15.gif
+	frame	data/chars/misc/knife/knife16.gif
+	delay	45
+	frame	data/chars/misc/knife/knife01.gif
+
+	delay	2
+	frame	data/chars/misc/knife/knife01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/knife/knife01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/knife/knife01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/knife/knife01.gif
+	attack2  0 0 0 0 0 0
+	
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	jumpframe 0 2 0
+	loop	0
+	offset     225 128
+	delay		2
+	frame	data/chars/misc/knife/knife02.gif
+	frame	data/chars/misc/knife/knife03.gif
+	frame	data/chars/misc/knife/knife04.gif
+	frame	data/chars/misc/knife/knife05.gif
+	frame	data/chars/misc/knife/knife06.gif
+	frame	data/chars/misc/knife/knife07.gif
+	frame	data/chars/misc/knife/knife08.gif
+	frame	data/chars/misc/knife/knife09.gif
+	frame	data/chars/misc/knife/knife10.gif
+	frame	data/chars/misc/knife/knife11.gif
+	frame	data/chars/misc/knife/knife12.gif
+	frame	data/chars/misc/knife/knife13.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+

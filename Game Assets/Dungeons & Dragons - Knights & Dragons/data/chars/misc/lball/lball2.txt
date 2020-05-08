@@ -1,0 +1,228 @@
+name			lball2
+health		1
+nolife		1
+type		npc
+hostile		player npc obstacle
+candamage	player npc obstacle
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+remove		0
+dust			dust01
+flash			flash01
+bflash			guard01
+
+anim idle
+	loop	0
+#	offset	-23 148
+	offset     -23 80
+	bbox    	0 0 0 0
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	delay	4
+	sound data/sounds/lbhit.wav
+	frame	data/chars/misc/lball/01.gif
+	frame	data/chars/misc/lball/02.gif
+	frame	data/chars/misc/lball/03.gif
+	delay	2
+
+	frame	data/chars/misc/lball/04.gif
+	frame	data/chars/misc/lball/04.gif
+	frame	data/chars/misc/lball/05.gif
+	frame	data/chars/misc/lball/05.gif
+	frame	data/chars/misc/lball/06.gif
+	frame	data/chars/misc/lball/06.gif
+	frame	data/chars/misc/lball/07.gif
+	frame	data/chars/misc/lball/07.gif
+	frame	data/chars/misc/lball/08.gif
+	frame	data/chars/misc/lball/08.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			0		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/14.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			0		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/14.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			0		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/14.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			0		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/14.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			0		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/14.gif
+
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack4		10	75 	470		91		6			1		0		0			0			25
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/09.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/10.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/11.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/12.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/13.gif
+	frame	data/chars/misc/lball/14.gif
+	frame	data/chars/misc/lball/14.gif
+
+	attack4 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/lball/08.gif
+	frame	data/chars/misc/lball/07.gif
+	frame	data/chars/misc/lball/06.gif
+	frame	data/chars/misc/lball/05.gif
+	frame	data/chars/misc/lball/04.gif
+
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+

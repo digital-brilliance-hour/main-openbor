@@ -1,0 +1,2148 @@
+name				Mordred
+candamage     enemy obstacle npc
+type				player
+health				12
+mpset				35 1 9999 2 4 1
+#mp					100
+speed				12
+blockpain			-1
+blockback			1
+holdblock			1
+guardpoints			1
+guardrate			1
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			45
+turndelay			0
+jumpmove			1
+nodieblink			1
+makeinv				3	0
+falldie				2
+riseinv				1	0
+jugglepoints		15
+nolife				1
+atchain				1 2 3 4
+modelflag			1
+defense 			all		0.6
+animationscript		data/scripts/player.c
+keyscript			data/scripts/key.c
+takedamagescript	data/scripts/ndamage.c
+onmodelcopyscript  data/scripts/mcopy.c
+
+weapons     travel hmord none mord2 travel2
+
+icon	    data/chars/mordred/icon.gif 1
+icondie     data/chars/mordred/icond.gif 1
+diesound    data/sounds/die03.wav
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette 			data/chars/mordred/mordred.gif #1
+#alternatepal		data/chars/mordred/alter01.gif #1
+
+	load		block
+	load		fatigue
+	load		recover
+
+remap	data/chars/mordred/idle00.gif   data/chars/mordred/alter01.gif
+remap	data/chars/mordred/idle00.gif   data/chars/mordred/alter02.gif
+remap	data/chars/mordred/idle00.gif   data/chars/mordred/alter03.gif
+
+	com  a2  	freespecial30
+	com  d f a  freespecial2 # force wave
+	com  d u a  freespecial3 # rolling slash
+	com  d f u a  freespecial3 # rolling slash
+	com  d b u a  freespecial3 # rolling slash
+	com  f f a  freespecial4 # Whirlwind charge
+
+
+#-------Select screen!
+
+anim waiting
+	shadowcoords -9999 -9999
+	 loop       1
+	 offset     90 195
+	 delay      1
+         frame      data/chars/mordred/sel00.gif
+
+anim select
+	shadowcoords -9999 -9999
+	 loop       0
+	 offset     90 195
+	 sound   	data/sounds/att06.wav
+	 delay      1
+ 
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel03.gif
+         frame      data/chars/mordred/sel04.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+         frame      data/chars/mordred/sel01.gif
+         frame      data/chars/mordred/sel02.gif
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+
+	 delay      12
+     @cmd setLevel
+	 frame	data/chars/mordred/jdel00.gif
+	 sound   	data/sounds/att06.wav
+	 delay      10
+	 frame	data/chars/mordred/sp02.gif
+	 delay      12
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 delay      14
+	 frame	data/chars/mordred/sp04.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	delay	8
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/mordred/idle00.gif
+
+anim follow2
+	shadowcoords 218 198
+	loop	0
+	delay	8
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/mordred/idle00.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	delay	10
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/mordred/wk00.gif
+	frame	data/chars/mordred/wk01.gif
+	frame	data/chars/mordred/wk02.gif
+	frame	data/chars/mordred/wk03.gif
+	frame	data/chars/mordred/wk04.gif
+	frame	data/chars/mordred/wk05.gif
+
+anim get
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   20
+	frame	data/chars/mordred/rise02.gif
+
+anim attack1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d u a 				freespecial3
+	cancel 		0 				999 			0 			d f u a 				freespecial3
+	cancel 		0 				999 			0 			d b u a 				freespecial3
+	cancel 		0 				999 			0 			f f a 				freespecial4
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash21
+	delay	7
+	frame	data/chars/mordred/a101.gif
+	sound   data/sounds/slash01.wav
+	attack  228 143 98 56 6 0 0 0 13
+	frame	data/chars/mordred/a102.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	delay	6
+	frame	data/chars/mordred/idle00.gif
+
+anim attack2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d u a 				freespecial3
+	cancel 		0 				999 			0 			d f u a 				freespecial3
+	cancel 		0 				999 			0 			d b u a 				freespecial3
+	cancel 		0 				999 			0 			f f a 				freespecial4
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash21
+	delay	7
+	frame	data/chars/mordred/a101.gif
+	sound   data/sounds/slash01.wav
+	attack  228 143 98 56 7 0 0 0 13
+	frame	data/chars/mordred/a102.gif
+	attack  0 0 0 0 0 0 0 0 0 0
+	delay	6
+	frame	data/chars/mordred/idle00.gif
+
+anim attack3
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d u a 				freespecial3
+	cancel 		0 				999 			0 			d f u a 				freespecial3
+	cancel 		0 				999 			0 			d b u a 				freespecial3
+	cancel 		0 				999 			0 			f f a 				freespecial4
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	delay	7
+	frame	data/chars/mordred/a201.gif
+	sound   data/sounds/slash01.wav
+	attack2  228 143 98 56 10 0 0 0 13
+	frame	data/chars/mordred/a202.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	6
+	frame	data/chars/mordred/a203.gif
+
+anim attack4
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d u a 				freespecial3
+	cancel 		0 				999 			0 			d f u a 				freespecial3
+	cancel 		0 				999 			0 			d b u a 				freespecial3
+	cancel 		0 				999 			0 			f f a 				freespecial4
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/att05.wav
+	delay	7
+	frame	data/chars/mordred/a301.gif
+	frame	data/chars/mordred/a302.gif
+	sound   data/sounds/slash01.wav
+	attack2  228 143 125 56 13 1 0 0 13
+	frame	data/chars/mordred/a303.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	9
+	frame	data/chars/mordred/a304.gif
+	frame	data/chars/mordred/a305.gif
+	frame	data/chars/mordred/a306.gif
+	frame	data/chars/mordred/a307.gif
+	delay	20
+	frame	data/chars/mordred/a101.gif
+
+anim block #attackbackward
+	shadowcoords 218 198
+	loop	0
+	delay	100
+	bbox	212 143 30 55
+	 offset     225 198
+	frame	data/chars/mordred/guard00.gif
+    @cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW1")
+	frame	data/chars/mordred/guard00.gif
+
+anim follow1
+	shadowcoords 218 198
+	loop	0
+	delay	40
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pain01.wav
+@cmd projectile 1 "fatigue" 0 0 0
+	frame	data/chars/mordred/idle01.gif
+	frame	data/chars/mordred/idle02.gif
+	frame	data/chars/mordred/idle01.gif
+	frame	data/chars/mordred/idle02.gif
+
+anim blockpain #follow1
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-6
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-5
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-5
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-4
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-4
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-3
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-3
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-2
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-2
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-1
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	-1
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+	move	0
+	frame	data/chars/mordred/guard00.gif
+	frame	data/chars/mordred/guard00.gif
+#	@cmd makeInv 200 #invincible 1 second
+	frame	data/chars/mordred/guard00.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/mordred/guard00.gif
+
+anim walkoff
+	shadowcoords 218 198
+	loop	0
+	landframe	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay	999
+	frame	data/chars/mordred/ju00.gif
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/mordred/jdel00.gif
+
+anim jumpdelay
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+#	sound   data/sounds/stand.wav
+	delay	6
+	frame	data/chars/mordred/jdel00.gif
+
+anim jump
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	12
+	sound   data/sounds/jump01.wav
+	frame	data/chars/mordred/ju00.gif
+	frame	data/chars/mordred/ju01.gif
+	frame	data/chars/mordred/ju02.gif
+	frame	data/chars/mordred/ju03.gif
+
+
+anim jumpland
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/land01.wav
+	delay	6
+	frame	data/chars/mordred/jdel00.gif
+
+anim jumpattack
+	jugglecost	4
+	cancel		3 99 0 a Freespecial10
+	shadowcoords 218 198
+	loop	0
+	@cmd	storeXvel
+	delay	6
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/att05.wav
+	frame	data/chars/mordred/ja01.gif
+	delay	16
+	attack  228 143 63 56 12 1 0 0 13
+	frame	data/chars/mordred/ja01.gif
+	delay	4
+	attack  0 0 0 0 0 0 0 0
+	frame	data/chars/mordred/ju03.gif
+	delay	999
+	frame	data/chars/mordred/ju03.gif
+
+anim freespecial10
+	jugglecost	4
+	cancel		3 99 0 a Freespecial11
+	shadowcoords 218 198
+	loop	0
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	6
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/att05.wav
+	frame	data/chars/mordred/ja01.gif
+	delay	16
+	attack  228 143 63 56 12 1 0 0 13
+	frame	data/chars/mordred/ja01.gif
+	delay	4
+	attack  0 0 0 0 0 0 0 0
+	frame	data/chars/mordred/ju03.gif
+	delay	999
+	frame	data/chars/mordred/ju03.gif
+	
+anim freespecial11
+	jugglecost	4
+	cancel		3 99 0 a Freespecial10
+	shadowcoords 218 198
+	loop	0
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	6
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/att05.wav
+	frame	data/chars/mordred/ja01.gif
+	delay	16
+	attack  228 143 63 56 12 1 0 0 13
+	frame	data/chars/mordred/ja01.gif
+	delay	4
+	attack  0 0 0 0 0 0 0 0
+	frame	data/chars/mordred/ju03.gif
+	delay	999
+	frame	data/chars/mordred/ju03.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain02.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/mordred/pain102.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/mordred/pain102.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/mordred/pain102.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-4
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-4
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-3
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-3
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-2
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-2
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-1
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	move	-1
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/pain101.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain02.wav
+	frame	data/chars/mordred/fall01.gif
+	delay   72
+	frame	data/chars/mordred/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/mordred/fall02.gif
+
+anim rise1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+@cmd projectile 1 "recover" 0 0 0
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/mordred/rise03.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain02.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/mordred/pain201.gif
+	delay   2
+	frame	data/chars/mordred/pain202.gif
+	delay   2
+	frame	data/chars/mordred/pain201.gif
+	delay   2
+	frame	data/chars/mordred/pain202.gif
+	delay   2
+	frame	data/chars/mordred/pain201.gif
+	delay   2
+	frame	data/chars/mordred/pain202.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+
+anim fall2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain02.wav
+	frame	data/chars/mordred/fall01.gif
+	delay   72
+	frame	data/chars/mordred/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/mordred/fall02.gif
+
+anim rise2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+
+anim fall3
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/mordred/fall01.gif
+	delay   72
+	frame	data/chars/mordred/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/mordred/fall02.gif
+
+anim rise3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-4
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-3
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-2
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	move	-1
+	frame	data/chars/mordred/pain201.gif
+	frame	data/chars/mordred/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     228 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+	offset     222 198
+	frame	data/chars/mordred/pain201.gif
+	offset     225 198
+	frame	data/chars/mordred/pain201.gif
+
+anim fall4
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/mordred/fall01.gif
+	delay   72
+	frame	data/chars/mordred/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/mordred/fall02.gif
+
+anim rise4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/fall01.gif
+	frame	data/chars/mordred/fall02.gif
+	delay   70
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	sound   data/sounds/fall01.wav
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/fall01.gif
+	frame	data/chars/mordred/fall02.gif
+	delay   70
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/mordred/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/mordred/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/mordred/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/mordred/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/fall01.gif
+	frame	data/chars/mordred/fall02.gif
+	delay   70
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/mordred/pain101.gif
+
+	delay   1
+	drawmethod 256 256 0 0 0 0 -1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/mordred/fall02.gif
+	
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/mordred/jdel00.gif
+
+anim death7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+
+	delay   210
+	frame	data/chars/mordred/pain101.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     228 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	frame	data/chars/mordred/pain101.gif
+	offset     222 198
+	frame	data/chars/mordred/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/mordred/pain101.gif
+	delay   210
+	frame	data/chars/mordred/pain101.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/fall01.gif
+	frame	data/chars/mordred/fall02.gif
+	delay   70
+	frame	data/chars/mordred/rise00.gif
+	delay	10
+	frame	data/chars/mordred/rise01.gif
+	delay	8
+	frame	data/chars/mordred/rise02.gif
+	frame	data/chars/mordred/rise03.gif
+
+anim death8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/mordred/pain101.gif
+	delay   5
+	frame	data/chars/mordred/pain101.gif
+	frame	data/chars/mordred/fall01.gif
+	frame	data/chars/mordred/fall02.gif
+	frame	data/chars/mordred/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+anim freespecial30 #special
+	energycost 35
+	mponly  1
+	jugglecost	99
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	quakeframe 38 14 5
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	delay	1
+	sound   data/sounds/super01.wav
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+
+	sound   data/sounds/att06.wav
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp01.gif
+	frame	data/chars/mordred/sp02.gif
+	frame	data/chars/mordred/sp03.gif
+	frame	data/chars/mordred/sp04.gif
+
+	delay	4
+	attack2   144 106 204 93 8 1 1 0 10
+	frame	data/chars/mordred/sp05.gif
+	frame	data/chars/mordred/sp06.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp07.gif
+	frame	data/chars/mordred/sp08.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp09.gif
+	frame	data/chars/mordred/sp10.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp11.gif
+	frame	data/chars/mordred/sp12.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp13.gif
+	frame	data/chars/mordred/sp14.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp15.gif
+	frame	data/chars/mordred/sp16.gif
+	sound   data/sounds/art01.wav
+	frame	data/chars/mordred/sp17.gif
+	frame	data/chars/mordred/sp18.gif
+	sound   data/sounds/spkn.wav
+	frame	data/chars/mordred/sp19.gif
+	attack2   0 0 0 0 0 0 0 0 0 0
+	delay	20
+	frame	data/chars/mordred/jdel00.gif
+
+
+anim freespecial2
+	cancel 		4 				999 			0 			d u a 				freespecial3
+	cancel 		4 				999 			0 			d f u a 				freespecial3
+	cancel 		4 				999 			0 			d b u a 				freespecial3
+	cancel 		4 				999 			0 			f f a 				freespecial4
+	energycost 35
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		wave
+	custknife	wave
+	throwframe	4
+	fastattack 1
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<45000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+35);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	sound   	data/sounds/att06.wav
+	delay	6
+	frame	data/chars/mordred/a301.gif
+	sound   	data/sounds/slash01.wav
+	attack2  228 143 98 56 5 0 1 0 15
+	frame	data/chars/mordred/a302.gif
+	frame	data/chars/mordred/a303.gif
+
+	attack2  0 0 0 0 0 0 0 0 0
+	delay	20
+	frame	data/chars/mordred/a201.gif
+	delay	6
+	sound   	data/sounds/slash01.wav
+	frame	data/chars/mordred/a202.gif
+	delay	60
+	frame	data/chars/mordred/a203.gif
+
+
+
+
+
+anim freespecial3
+	cancel		56 				999 			0 			d f a 				freespecial2
+	cancel 		56 				999 			0 			f f a 				freespecial4
+	energycost 25
+	mponly  1
+	jugglecost	2
+	load		dust02
+	subentity	dust02
+	spawnframe	1 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	jumpframe  2 2 2
+	landframe  35
+	hitfx   data/sounds/hit01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<10000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+25);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	sound   	data/sounds/att06.wav
+	delay   20
+	frame	data/chars/mordred/jdel00.gif
+	delay   1
+	frame	data/chars/mordred/jdel00.gif
+
+	delay   20
+	sound   	data/sounds/jump01.wav
+	frame	data/chars/mordred/ju00.gif
+
+	delay   1
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp101.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp102.gif
+	frame	data/chars/mordred/frsp101.gif
+	frame	data/chars/mordred/frsp103.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp104.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp105.gif
+	frame	data/chars/mordred/frsp104.gif
+	frame	data/chars/mordred/frsp106.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp107.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp108.gif
+	frame	data/chars/mordred/frsp107.gif
+	frame	data/chars/mordred/frsp109.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp110.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp111.gif
+	frame	data/chars/mordred/frsp110.gif
+	frame	data/chars/mordred/frsp112.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp101.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp102.gif
+	frame	data/chars/mordred/frsp101.gif
+	frame	data/chars/mordred/frsp103.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp104.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp105.gif
+	frame	data/chars/mordred/frsp104.gif
+	frame	data/chars/mordred/frsp106.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp107.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp108.gif
+	frame	data/chars/mordred/frsp107.gif
+	frame	data/chars/mordred/frsp109.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp110.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp111.gif
+	frame	data/chars/mordred/frsp110.gif
+	frame	data/chars/mordred/frsp112.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp101.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp102.gif
+	frame	data/chars/mordred/frsp101.gif
+	frame	data/chars/mordred/frsp103.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp104.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp105.gif
+	frame	data/chars/mordred/frsp104.gif
+	frame	data/chars/mordred/frsp106.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp107.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp108.gif
+	frame	data/chars/mordred/frsp107.gif
+	frame	data/chars/mordred/frsp109.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp110.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp111.gif
+	frame	data/chars/mordred/frsp110.gif
+	frame	data/chars/mordred/frsp112.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp101.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp102.gif
+	frame	data/chars/mordred/frsp101.gif
+	frame	data/chars/mordred/frsp103.gif
+
+	attack2   0 0 0 0 0 0 0 0 0
+	sound   	data/sounds/slash03.wav
+	frame	data/chars/mordred/frsp104.gif
+	attack2   192 120 78 78 4 0 1 0 25
+	frame	data/chars/mordred/frsp105.gif
+	frame	data/chars/mordred/frsp104.gif
+	frame	data/chars/mordred/frsp106.gif
+
+	attack   0 0 0 0 0 0 0 0 0
+
+	delay   20
+	sound   	data/sounds/land01.wav
+	frame	data/chars/mordred/jdel00.gif
+
+
+anim freespecial4
+	energycost 55
+	mponly  1
+	followanim 3
+	followcond 1
+	load		dust02
+	subentity	dust02
+	spawnframe	1 0 0 0 0
+	jugglecost	2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash21
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<105000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+55);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	17
+	frame	data/chars/mordred/a101.gif
+	sound   data/sounds/slash01.wav
+	
+	delay	2
+	attack  228 143 98 56 20 0 0 0 75
+	move	8
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	7
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+
+	move	6
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	5
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+
+	move	4
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	3
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+
+	move	2
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	1
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+
+	move	0
+	attack  0 0 0 0 0 0 0 0 0 0
+	delay	15
+	frame	data/chars/mordred/a101.gif
+
+anim follow3
+	cancel		5 				999 			0 			d f a 				freespecial2
+	cancel 		5 				999 			0 			d u a 				freespecial3
+	cancel 		5 				999 			0 			d f u a 				freespecial3
+	cancel 		5 				999 			0 			d b u a 				freespecial3
+#	energycost 55
+#	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		hroll
+	custknife	hroll
+	throwframe	5
+	fastattack 1
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	2
+	move	2
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	1
+	frame	data/chars/mordred/a102.gif
+	frame	data/chars/mordred/a102.gif
+	move	0
+	delay	37
+	frame	data/chars/mordred/a102.gif
+
+	 sound   	data/sounds/att06.wav
+	 delay      10
+	 frame	data/chars/mordred/sp02.gif
+	 delay      12
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 frame	data/chars/mordred/sp04.gif
+	 frame	data/chars/mordred/sp02.gif
+	 delay      14
+	 frame	data/chars/mordred/sp04.gif
+
+
+
+
+
+

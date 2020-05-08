@@ -1,0 +1,913 @@
+music		data/music/STAGE24.ogg
+bossmusic	data/music/BOSS08.ogg
+background	data/bgs/03_03_5/back.gif
+panel	      data/bgs/03_03_5/n01.gif
+frontpanel	data/bgs/03_03_5/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  100 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/03_03_5/03_03_5.gif #1
+
+wall    -1125 220 200 350 1250 1100 150 250
+
+wall    925 220 200 350 1250 1100 150 250
+
+#------- Dialogue
+
+spawn d03_03_6
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 120 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 320 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 520 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 720 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 920 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 1120 210
+flip 1
+at 0
+#-------chests
+
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 180 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 380 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 580 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item bpotion
+coords 780 120
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item scroll
+coords 980 120
+flip 1
+at 0
+#-------chests
+
+
+#-------trap
+
+spawn trap6
+coords 140 120
+flip 1
+at 0
+
+spawn trap6
+coords 140 140
+flip 1
+at 0
+
+spawn trap6
+coords 160 140
+flip 1
+at 0
+
+spawn trap6
+coords 180 140
+flip 1
+at 0
+
+spawn trap6
+coords 200 140
+flip 1
+at 0
+
+spawn trap6
+coords 220 140
+flip 1
+at 0
+
+spawn trap6
+coords 220 120
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 80 210
+flip 1
+at 0
+
+spawn trap6
+coords 80 190
+flip 1
+at 0
+
+spawn trap6
+coords 100 190
+flip 1
+at 0
+
+spawn trap6
+coords 120 190
+flip 1
+at 0
+
+spawn trap6
+coords 140 190
+flip 1
+at 0
+
+spawn trap6
+coords 160 190
+flip 1
+at 0
+
+spawn trap6
+coords 160 210
+flip 1
+at 0
+
+#-------trap
+
+#-------trap
+
+spawn trap6
+coords 340 120
+flip 1
+at 0
+
+spawn trap6
+coords 340 140
+flip 1
+at 0
+
+spawn trap6
+coords 360 140
+flip 1
+at 0
+
+spawn trap6
+coords 380 140
+flip 1
+at 0
+
+spawn trap6
+coords 400 140
+flip 1
+at 0
+
+spawn trap6
+coords 420 140
+flip 1
+at 0
+
+spawn trap6
+coords 420 120
+flip 1
+at 0
+
+#-------trap
+
+#-------trap
+
+spawn trap6
+coords 280 210
+flip 1
+at 0
+
+spawn trap6
+coords 280 190
+flip 1
+at 0
+
+spawn trap6
+coords 300 190
+flip 1
+at 0
+
+spawn trap6
+coords 320 190
+flip 1
+at 0
+
+spawn trap6
+coords 340 190
+flip 1
+at 0
+
+spawn trap6
+coords 360 190
+flip 1
+at 0
+
+spawn trap6
+coords 360 210
+flip 1
+at 0
+
+#-------trap
+
+#-------trap
+
+spawn trap6
+coords 540 120
+flip 1
+at 0
+
+spawn trap6
+coords 540 140
+flip 1
+at 0
+
+spawn trap6
+coords 560 140
+flip 1
+at 0
+
+spawn trap6
+coords 580 140
+flip 1
+at 0
+
+spawn trap6
+coords 600 140
+flip 1
+at 0
+
+spawn trap6
+coords 620 140
+flip 1
+at 0
+
+spawn trap6
+coords 620 120
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 480 210
+flip 1
+at 0
+
+spawn trap6
+coords 480 190
+flip 1
+at 0
+
+spawn trap6
+coords 500 190
+flip 1
+at 0
+
+spawn trap6
+coords 520 190
+flip 1
+at 0
+
+spawn trap6
+coords 540 190
+flip 1
+at 0
+
+spawn trap6
+coords 560 190
+flip 1
+at 0
+
+spawn trap6
+coords 560 210
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 740 120
+flip 1
+at 0
+
+spawn trap6
+coords 740 140
+flip 1
+at 0
+
+spawn trap6
+coords 760 140
+flip 1
+at 0
+
+spawn trap6
+coords 780 140
+flip 1
+at 0
+
+spawn trap6
+coords 800 140
+flip 1
+at 0
+
+spawn trap6
+coords 820 140
+flip 1
+at 0
+
+spawn trap6
+coords 820 120
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 680 210
+flip 1
+at 0
+
+spawn trap6
+coords 680 190
+flip 1
+at 0
+
+spawn trap6
+coords 700 190
+flip 1
+at 0
+
+spawn trap6
+coords 720 190
+flip 1
+at 0
+
+spawn trap6
+coords 740 190
+flip 1
+at 0
+
+spawn trap6
+coords 760 190
+flip 1
+at 0
+
+spawn trap6
+coords 760 210
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 940 120
+flip 1
+at 0
+
+spawn trap6
+coords 940 140
+flip 1
+at 0
+
+spawn trap6
+coords 960 140
+flip 1
+at 0
+
+spawn trap6
+coords 980 140
+flip 1
+at 0
+
+spawn trap6
+coords 1000 140
+flip 1
+at 0
+
+spawn trap6
+coords 1020 140
+flip 1
+at 0
+
+spawn trap6
+coords 1020 120
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 880 210
+flip 1
+at 0
+
+spawn trap6
+coords 880 190
+flip 1
+at 0
+
+spawn trap6
+coords 900 190
+flip 1
+at 0
+
+spawn trap6
+coords 920 190
+flip 1
+at 0
+
+spawn trap6
+coords 940 190
+flip 1
+at 0
+
+spawn trap6
+coords 960 190
+flip 1
+at 0
+
+spawn trap6
+coords 960 210
+flip 1
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap6
+coords 1080 210
+flip 1
+at 0
+
+spawn trap6
+coords 1080 190
+flip 1
+at 0
+
+spawn trap6
+coords 1100 190
+flip 1
+at 0
+
+spawn trap6
+coords 1120 190
+flip 1
+at 0
+
+spawn trap6
+coords 1140 190
+flip 1
+at 0
+
+spawn trap6
+coords 1160 190
+flip 1
+at 0
+
+spawn trap6
+coords 1160 210
+flip 1
+at 0
+
+#-------trap
+
+
+#-------Monsters
+
+Group 6 6
+at 768
+
+wait
+at      768
+
+#------- Dialogue
+
+spawn d03_03_7
+coords 240 176
+flip 1
+at 768
+
+#------- Dialogue
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 420 190
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 400 170
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 380 150
+flip 0
+at 768
+
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 80 170
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 100 150
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 120 130
+flip 1
+at 768
+
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 420 190
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 400 170
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 380 150
+flip 0
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 80 170
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+item diamond
+coords 100 150
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 0
+coords 120 130
+flip 1
+at 768
+
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 420 190
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 400 170
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 380 150
+flip 0
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 80 170
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 100 150
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 120 130
+flip 1
+at 768
+
+
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 420 190
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 400 170
+flip 0
+at 768
+
+spawn delf1
+alias Dark_Elf_Fighter
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 380 150
+flip 0
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 80 170
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+item diamond
+coords 100 150
+flip 1
+at 768
+
+spawn delf2
+alias Dark_Elf_Wizard
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 200
+map 1
+coords 120 130
+flip 1
+at 768
+
+#-------
+
+#-------go
+
+spawn enter01
+alias enter01
+flip 1
+health 1
+coords 420 150
+at 768
+
+#-------go
+
+

@@ -1,0 +1,267 @@
+music		data/music/STAGE17.ogg
+bossmusic	data/music/BOSS01.ogg
+background	data/bgs/02_05_4/back.gif
+panel	      data/bgs/02_05_4/n01.gif
+frontpanel	data/bgs/02_05_4/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_05_4/02_05_4.gif #1
+
+wall    740 250 0 300 2000 2000 160 250
+
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item amber
+coords 350 200
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item amet
+coords 400 200
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item amber
+coords 300 160
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn casket3
+alias casket3
+health 1
+item gaunt
+coords 350 160
+flip 0
+at 0
+#-------chests
+
+
+#-------trap
+
+spawn trap4
+alias trap
+health 1
+coords 300 160
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 300 160
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 350 200
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 400 200
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap4
+alias trap
+health 1
+coords 500 180
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 550 160
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 600 180
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 650 200
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 700 180
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 750 160
+at 0
+
+spawn trap4
+alias trap
+health 1
+coords 800 200
+at 0
+
+#-------trap
+
+
+#-------Monsters
+
+group   3 3
+at      480
+
+wait
+at      480
+
+#------- Dialogue
+
+spawn d02_05_5
+coords 240 176
+flip 1
+at 480
+
+#------- Dialogue
+
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gold2
+coords -160 200
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gold2
+coords -160 165
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -160 200
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -160 165
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gold2
+coords -130 190
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item gold2
+coords -180 200
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -130 190
+flip 1
+at 480
+
+spawn soldier
+alias Radu_Soldier
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+coords -180 200
+flip 1
+at 480
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 310 170
+at 544
+
+#------- Go
+
+
+

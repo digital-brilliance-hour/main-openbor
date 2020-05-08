@@ -1,0 +1,229 @@
+name	    		Barb2
+candamage enemy obstacle
+type	    		player
+health				999
+mp					999
+speed				10
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			50
+turndelay			12
+jumpmove			3
+nodieblink			1
+makeinv				3	0
+falldie				2
+riseinv				1	0
+jugglepoints		15
+nolife				1
+atchain				1 1 1
+modelflag			1
+weaploss			0
+weapnum				4
+onmodelcopyscript  data/scripts/mcopy.c
+
+weapons     travel hbarb speedup barb2
+
+icon	    data/chars/barbar/icon.gif 1
+icondie     data/chars/barbar/icond.gif 1
+diesound    data/sounds/die01.wav
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette				data/chars/barbar/barbar.gif #1
+#alternatepal		data/chars/barbar/alter01.gif #1
+
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter01.gif
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter02.gif
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter03.gif
+
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+	 delay      12
+	 frame	data/chars/barbar/idle00.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/barbar/idle01.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	delay	10
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/barbar/wk00.gif
+	frame	data/chars/barbar/wk01.gif
+	frame	data/chars/barbar/wk02.gif
+	frame	data/chars/barbar/wk03.gif
+	frame	data/chars/barbar/wk04.gif
+	frame	data/chars/barbar/wk05.gif
+	frame	data/chars/barbar/wk06.gif
+	frame	data/chars/barbar/wk07.gif
+
+anim get
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   20
+	frame	data/chars/barbar/rise02.gif
+
+anim attack1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/beep2.wav
+	attack1  225 136 50 63 10 0 0 0 0
+	delay	1
+	frame	data/chars/barbar/idle00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-4
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-4
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-3
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-3
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-2
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-2
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-1
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-1
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain01.wav
+	frame	data/chars/barbar/fall01.gif
+	delay   72
+	frame	data/chars/barbar/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+

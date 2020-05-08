@@ -1,0 +1,271 @@
+name		light1
+health		1
+nolife		1
+type		none
+hostile		player npc obstacle
+candamage	player npc obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	10
+shadow		0
+
+anim spawn
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/freeze01.wav
+
+	sound   data/sounds/lbhit.wav
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	delay	2
+#	attack4  226 187 189 139 15 1 0 0 0 25
+	frame	data/chars/misc/breath/light01.gif
+	frame	data/chars/misc/breath/light02.gif
+	frame	data/chars/misc/breath/light03.gif
+	frame	data/chars/misc/breath/light04.gif
+	frame	data/chars/misc/breath/light05.gif
+	frame	data/chars/misc/breath/light06.gif
+	frame	data/chars/misc/breath/light07.gif
+#	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/breath/light08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+

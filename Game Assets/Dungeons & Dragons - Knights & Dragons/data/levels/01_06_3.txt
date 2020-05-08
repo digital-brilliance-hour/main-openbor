@@ -1,0 +1,146 @@
+music		data/music/STAGE06.ogg
+bossmusic	data/music/BOSS06.ogg
+background	data/bgs/01_06_3/back.gif
+panel	      data/bgs/01_06_3/n01.gif
+frontpanel	data/bgs/01_06_3/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/01_06_3/01_06_3.gif #1
+
+wall    -15  150 40 70 450 420 150 520
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	450 220
+at 0
+
+spawn Respawn2
+coords	450 220
+at 0
+
+spawn Respawn3
+coords	450 220
+at 0
+
+spawn Respawn4
+coords	450 220
+at 0
+
+#-------Respawn
+
+
+
+
+#-------casket
+spawn casket3
+alias Casket
+flip 0
+item straw
+health 1
+coords 25 145
+at 0
+#-------casket
+
+#-------casket
+spawn casket3
+alias Casket
+item grapes
+health 1
+coords 231 161
+at 0
+#-------casket
+
+#-------casket
+spawn casket3
+alias Casket
+flip 0
+item scroll
+health 1
+coords 445 150
+at 0
+#-------casket
+
+#-------Monsters
+
+group   4 4
+at      0
+
+#------- Dialogue
+
+spawn d01_06_3
+coords 240 176
+flip 1
+at 466
+
+#------- Dialogue
+
+spawn worg
+alias Worg
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 150
+map 0
+item gaunt
+coords -70 175
+flip 1
+at 0
+
+spawn worg
+alias Worg
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 150
+map 0
+item amet
+coords 540 175
+flip 0
+at 0
+
+spawn worg
+alias Worg
+health 32
+2phealth 42
+3phealth 52 
+4phealth 62 
+aggression 150
+map 0
+item gold2
+coords 570 200
+flip 0
+at 0
+
+spawn worg2
+alias Worg
+health 62
+2phealth 72
+3phealth 82 
+4phealth 92 
+aggression 150
+map 3
+boss 1
+item missclear
+itemalias CastleCad
+coords -90 200
+flip 1
+at 0
+
+
+#-------Monsters
+
+
+
+
+

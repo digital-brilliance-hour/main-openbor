@@ -1,0 +1,27 @@
+name	1spawn
+type	none
+antigravity 100
+
+anim idle
+@script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self,"x"); //Get character's x coordinate
+    int z = getentityproperty(self,"z"); //Get character's z coordinate
+    int a = getentityproperty(self,"a"); //Get character's a coordinate
+    int dir = getentityproperty(self,"direction"); //Get character's facing direction
+    int P1 = getplayerproperty(0, "entity");
+
+    changeentityproperty(P1, "position", x, z, a);
+    changeentityproperty(P1, "direction", dir);
+
+    killentity(self); //Suicide!
+@end_script
+	loop	1
+	delay	5
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+
+   
+   
+   
+   

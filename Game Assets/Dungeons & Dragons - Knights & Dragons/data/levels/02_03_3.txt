@@ -1,0 +1,487 @@
+music		data/music/STAGE15.ogg
+bossmusic	data/music/BOSS15.ogg
+background	data/bgs/02_03_3/back.gif
+panel	      data/bgs/02_03_3/n01.gif
+frontpanel	data/bgs/02_03_3/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_03_3/02_03_3.gif #1
+
+wall    -360 170 10 190 630 440 150 1200
+
+wall    -130 325 580 270 1620 1620 150 1200
+
+wall    -90 115 270 580 1620 1620 150 1200
+
+
+#------- Dialogue
+
+spawn d02_03_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------sign
+spawn casket1
+alias corpse
+item amet
+health 1
+coords 320 70
+at 0
+#-------sign
+
+#-------sign
+spawn casket1
+alias corpse
+item diamond
+health 1
+coords 380 100
+at 0
+#-------sign
+
+
+#-------Monsters
+
+group   3 3
+at      0
+
+wait
+at      0
+
+spawn orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85
+aggression 100
+map 2
+coords 505 150
+flip 0
+at 0
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82
+aggression 100
+map 2
+coords 520 130
+flip 0
+at 0
+
+spawn orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85
+aggression 100
+map 2
+coords 510 165
+flip 0
+at 0
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82
+aggression 100
+map 2
+coords 505 150
+flip 0
+at 0
+
+spawn orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85
+aggression 100
+map 2
+coords 520 130
+flip 0
+at 0
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82
+aggression 100
+map 2
+coords 510 165
+flip 0
+at 0
+
+#-------Monsters
+
+
+
+
+#-------trap
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 340 80 150
+at 1
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 400 110 200
+at 2
+
+#-------trap
+
+
+#-------trap
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 254 147 350
+at 360
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 117 155 250
+at 380
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 361 141 150
+at 400
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 517 156 500
+at 420
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 120 350
+flip 0
+at 440
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 46 140 250
+flip 0
+at 460
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 375 128 150
+at 480
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 150 550
+flip 0
+at 500
+
+#-------trap
+
+#-------Monsters
+
+group   4 4
+at      624
+
+wait
+at      624
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+coords 505 150
+flip 0
+at 624
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+coords 520 140
+flip 0
+at 624
+
+spawn wolven
+alias Gnoll_Archer
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+coords -55 150
+flip 1
+at 624
+
+spawn wolven
+alias Gnoll_Archer
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58
+aggression 100
+map 2
+coords -70 140
+flip 1
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 196 129 200
+at 624
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 160 300
+flip 0
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 402 126 400
+at 624
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+coords 505 150
+flip 0
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 552 162 500
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 85 130 350
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 152 133 250
+at 624
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68
+aggression 150
+map 3
+coords 520 140
+flip 0
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 428 143 150
+at 624
+
+spawn trap1
+alias trap
+item scroll
+health 1
+coords 298 137 550
+at 624
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 150 200
+flip 0
+at 624
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82
+aggression 100
+map 2
+coords -55 150
+flip 1
+at 624
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 120 300
+flip 0
+at 624
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 160 400
+flip 0
+at 624
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 583 132 500
+at 624
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82
+aggression 100
+map 2
+coords -70 140
+flip 1
+at 624
+
+#-------Monsters
+
+#-------trap
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 254 147 350
+at 660
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 117 155 250
+at 680
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 361 141 150
+at 700
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 517 156 500
+at 720
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 120 350
+flip 0
+at 740
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 46 140 250
+flip 0
+at 760
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 375 128 150
+at 780
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 150 550
+flip 0
+at 800
+
+#-------trap
+
+#------- Go
+
+spawn go02
+flip 1
+coords 450 170
+at 832
+
+#------- Go
+
+
+
+

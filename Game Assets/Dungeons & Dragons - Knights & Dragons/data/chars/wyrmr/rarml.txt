@@ -1,0 +1,479 @@
+name				rarml
+type				enemy
+hostile				player npc
+candamage			player npc
+score				0 -1
+health				999999
+speed				0
+nomove				1
+shadow				4
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+blockodds			1
+thold				49
+nopain				1
+nodrop				1
+#risetime 1000
+nodieblink			1
+falldie				1
+jugglepoints		15
+facing				2
+subject_to_screen	1
+aggression			300
+#aimove				avoid
+icon				data/chars/wyrmr/bicon.gif 1
+icondie				data/chars/wyrmr/bicond.gif 1
+nolife				1
+animationscript  data/scripts/2Dscript.c
+
+palette				data/chars/wyrmr/wyrmr.gif #1
+
+#-------Moves
+
+anim spawn
+	loop	0
+	jumpframe	1 4 0
+	dropframe	2
+	landframe	3
+	quakeframe	3 25 5
+	offset     240 198
+	bbox	0 0 0 0
+
+	shadowcoords 9999 9999
+	delay	350
+	frame	data/chars/misc/empty.gif
+	delay	999
+	frame	data/chars/misc/empty.gif	
+	shadowcoords 215 200
+	delay	999
+	frame	data/chars/wyrmr/armr04.gif
+
+	delay	240
+	frame	data/chars/wyrmr/armr01.gif
+
+anim idle
+	shadowcoords 215 200
+	loop	1
+	 offset     240 198
+	bbox	212 117 30 81
+	delay	40
+	@cmd	dasher 0.1 0 0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher 0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	delay	40
+	@cmd	dasher 0.1 0 0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher 0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	delay	40
+	@cmd	dasher 0.1 0 -0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher 0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	40
+	@cmd	dasher 0.1 0 -0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher 0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	delay	40
+	@cmd	dasher -0.1 0 -0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	40
+	@cmd	dasher -0.1 0 -0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	40
+	@cmd	dasher -0.1 0 0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	delay	40
+	@cmd	dasher -0.1 0 0.5
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay	20
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr01.gif
+
+anim block
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     240 198
+
+	delay   2
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+anim attack1
+	shadowcoords 215 200
+	range	0 100
+#	rangez	-200 200
+	jumpframe	0 2 0
+	dropframe	1
+	landframe	2
+	quakeframe	2 5 5
+	loop	0
+	offset     240 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	
+	bbox	0 0 0 0
+	delay	999
+	frame	data/chars/wyrmr/armr04.gif
+
+	delay	999
+	frame	data/chars/wyrmr/armr04.gif
+	
+	attack1  211 2 138 221 25 1 0 0 50 25
+	delay	8
+	sound   data/sounds/fall02.wav
+	frame	data/chars/wyrmr/armr02.gif
+	frame	data/chars/wyrmr/armr02.gif
+	frame	data/chars/wyrmr/armr02.gif
+	frame	data/chars/wyrmr/armr02.gif
+	frame	data/chars/wyrmr/armr02.gif
+
+	bbox	212 117 30 81
+	delay	20
+	@cmd	dasher -0.1 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	@cmd	dasher -0.3 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	delay	80
+	@cmd	dasher -0.4 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	delay	20
+	@cmd	dasher -0.3 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	@cmd	dasher -0.2 0 0
+	frame	data/chars/wyrmr/armr05.gif
+	@cmd	dasher -0.1 0 0
+	frame	data/chars/wyrmr/armr05.gif
+
+anim attack2
+	shadowcoords 215 200
+	range	101 150
+	loop	0
+	offset     240 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	
+	bbox	0 0 0 0
+	delay	12
+	@cmd	dasher 0.1 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	@cmd	dasher 0.3 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	@cmd	dasher 0.5 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	@cmd	dasher 0.7 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	@cmd	dasher 0.9 0 0
+	frame	data/chars/wyrmr/armr01.gif
+	
+	attack1  240 2 69 221 25 1 0 0 50 25
+	@cmd	dasher 1.1 0 0
+	frame	data/chars/wyrmr/armr03.gif
+		
+	@cmd	dasher 0.9 0 0
+	frame	data/chars/wyrmr/armr03.gif
+		
+	@cmd	dasher 0.7 0 0
+	frame	data/chars/wyrmr/armr03.gif
+		
+	@cmd	dasher 0.5 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher 0.3 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher 0.1 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.3 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.5 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.7 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.9 0 0
+	frame	data/chars/wyrmr/armr03.gif
+		
+	delay	40
+	@cmd	dasher -1.1 0 0
+	frame	data/chars/wyrmr/armr03.gif
+
+	delay	12
+	@cmd	dasher -0.9 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.7 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.5 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.3 0 0
+	frame	data/chars/wyrmr/armr03.gif
+	
+	@cmd	dasher -0.1 0 0
+	frame	data/chars/wyrmr/armr03.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 215 200
+	loop	0
+	bbox	0 0 0 0
+
+	delay   2
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+anim fall1
+	shadowcoords 215 200
+	loop	0
+	 offset     240 198
+	delay   1
+	frame	data/chars/wyrmr/armr01.gif
+
+anim rise1
+	shadowcoords 215 200
+	loop	0
+	 offset     240 198
+	delay   1
+	frame	data/chars/wyrmr/armr01.gif
+
+anim death1
+	shadowcoords 215 200
+	loop	0
+	bbox	0 0 0 0
+	jumpframe	40 4 0
+	dropframe	41
+	landframe	42
+
+	delay   2
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay   2
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	
+	offset     243 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     237 198
+	frame	data/chars/wyrmr/armr01.gif
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	delay   999
+	offset     240 198
+	frame	data/chars/wyrmr/armr01.gif
+
+	shadowcoords 9999 9999
+	delay   999
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+

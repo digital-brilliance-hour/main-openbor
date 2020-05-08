@@ -1,0 +1,51 @@
+# Hit Blood
+
+name	Blood21
+type	none
+shadow	0
+toflip 1
+
+palette data/chars/misc/Blood01/Blood01.gif #1
+
+anim spawn
+	loop	0
+	offset     225 198
+	delay	2
+	frame	data/chars/misc/Blood01/21.gif
+	delay	4
+	frame	data/chars/misc/Blood01/22.gif
+	frame	data/chars/misc/Blood01/23.gif
+	frame	data/chars/misc/Blood01/24.gif
+	frame	data/chars/misc/Blood01/25.gif
+	frame	data/chars/misc/Blood01/26.gif
+
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif

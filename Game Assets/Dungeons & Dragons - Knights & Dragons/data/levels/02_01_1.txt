@@ -1,0 +1,446 @@
+music		data/music/STAGE13.ogg
+bossmusic	data/music/BOSS13.ogg
+background	data/bgs/02_01_1/back.gif
+panel	      data/bgs/02_01_1/n01.gif
+frontpanel	data/bgs/02_01_1/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_01_1/02_01_1.gif #1
+
+#wall    1055 140 15 55 100 140 50 250
+
+#wall    1850 190 -95 70 1440 1440 150 20
+
+#------- The Quest begins
+
+spawn q02_1
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item gold1
+coords 540 150
+flip 0
+at 0
+#-------chests
+
+#-------Monsters
+
+group   3 3
+at      270
+
+wait
+at      270
+
+#------- Dialogue
+
+#spawn d02_01_1
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item gold1
+coords 540 150
+flip 0
+at 270
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -50 190
+flip 1
+at 270
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords 540 180
+flip 0
+at 270
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item gold1
+coords -60 160
+flip 1
+at 270
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+coords 540 150
+flip 0
+at 270
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+item gold2
+coords -50 190
+flip 1
+at 270
+
+#-------Monsters
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item gold2
+coords 540 200
+flip 0
+at 271
+#-------chests
+
+#-------Monsters
+
+group   4 4
+at      300
+
+wait
+at      500
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 300
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+coords 560 192
+flip 0
+at 400
+
+#------- Dialogue
+
+#spawn d02_01_1
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn bugbear
+alias Bugbear
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 100
+map 2
+item gold2
+coords 540 150
+flip 0
+at 500
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 2
+coords -50 190
+flip 1
+at 500
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+coords 540 150
+flip 0
+at 500
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+item gold2
+coords -50 190
+flip 1
+at 500
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 150
+map 3
+coords 540 180
+flip 0
+at 500
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item gold1
+coords -60 160
+flip 1
+at 500
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords 540 150
+flip 0
+at 500
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 150
+map 3
+item gold2
+coords -50 190
+flip 1
+at 500
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 540 180
+flip 0
+at 500
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+coords 540 150
+flip 0
+at 500
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+item gold2
+coords -50 190
+flip 1
+at 500
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords -60 160
+flip 1
+at 500
+
+#-------Monsters
+
+#-------Monsters
+
+group   5 5
+at      900
+
+wait
+at      900
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 150
+map 3
+item gold2
+coords 540 165
+flip 0
+at 900
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords -60 160
+flip 1
+at 900
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 900
+
+spawn bugbear
+alias Bugbear
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 100
+map 2
+item gold2
+coords -50 200
+flip 1
+at 900
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+coords 540 150
+flip 0
+at 900
+
+spawn goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 100
+map 2
+item gold2
+coords -50 190
+flip 1
+at 900
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+item gold1
+coords 510 195
+flip 0
+at 900
+
+#-------Monsters
+
+#------- Go
+
+spawn go01
+flip 1
+coords 445 140
+at 900
+
+#------- Go
+
+
+
+
+
+

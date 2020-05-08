@@ -1,0 +1,56 @@
+name	black
+health	1
+nolife  1
+type	none
+#type	text
+#subtype noskip
+setlayer 129
+hostile enemy obstacle
+speed	0
+nomove 1 1
+noquake 1
+falldie 1
+shadow	0
+remove 0
+alpha 6
+
+anim idle
+	flipframe 0
+	loop	1
+	bbox    	0 0 0 0
+	offset     480 272
+
+	delay	999999
+	frame	data/scenes/black/black.gif
+
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

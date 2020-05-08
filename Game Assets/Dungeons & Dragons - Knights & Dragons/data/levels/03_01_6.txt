@@ -1,0 +1,857 @@
+music		data/music/STAGE22.ogg
+bossmusic	data/music/BOSS06.ogg
+background	data/bgs/03_01_6/back.gif
+panel	      data/bgs/03_01_6/n01.gif
+frontpanel	data/bgs/03_01_6/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  160 10
+spawn2  180 30
+spawn3  170 20
+spawn4  190 40
+
+palette data/bgs/03_01_6/03_01_6.gif #1
+
+wall    -580  220  -80 70 615 615 150 520
+
+
+#------- Dialogue
+
+spawn d03_01_7
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chest
+spawn crate
+alias crate
+item amet
+health 1
+coords 300 140
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item banana
+health 1
+coords 350 140
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item amber
+health 1
+coords 400 140
+flip 0
+at 0
+#-------chest
+
+#-------trap
+
+spawn trap5
+alias trap5
+health 1
+coords 200 170 200
+flip 0
+at 1
+
+spawn trap5
+alias trap5
+health 1
+coords 350 190 300
+flip 0
+at 1
+
+spawn trap5
+alias trap5
+health 1
+coords 100 155 250
+flip 0
+at 51
+
+spawn trap5
+alias trap5
+health 1
+coords 300 200 350
+flip 0
+at 51
+
+spawn trap5
+alias trap5
+health 1
+coords 150 210 400
+flip 0
+at 101
+
+spawn trap5
+alias trap5
+health 1
+coords 450 150 200
+flip 0
+at 101
+
+spawn trap5
+alias trap5
+health 1
+coords 250 180 300
+flip 0
+at 151
+
+spawn trap5
+alias trap5
+health 1
+coords 400 180 250
+flip 0
+at 151
+
+spawn trap5
+alias trap5
+health 1 
+coords 125 185 350
+flip 0
+at 201
+
+spawn trap5
+alias trap5
+health 1
+coords 325 165 400
+flip 0
+at 201
+
+spawn trap5
+alias trap5
+health 1
+coords 75 200 200
+flip 0
+at 251
+
+spawn trap5
+alias trap5
+health 1
+coords 425 200 300 
+flip 0
+at 251
+
+
+spawn trap5
+alias trap5
+health 1
+coords 200 170 250
+flip 0
+at 301
+
+spawn trap5
+alias trap5
+health 1
+coords 350 190 350
+flip 0
+at 301
+
+spawn trap5
+alias trap5
+health 1
+coords 100 155 400
+flip 0
+at 351
+
+spawn trap5
+alias trap5
+health 1 
+coords 300 200 200
+flip 0
+at 351
+
+spawn trap5
+alias trap5
+health 1
+coords 150 210 300
+flip 0
+at 401
+
+spawn trap5
+alias trap5
+health 1
+coords 450 150 250
+flip 0
+at 401
+
+spawn trap5
+alias trap5
+health 1
+coords 250 180 350
+flip 0
+at 451
+
+spawn trap5
+alias trap5
+health 1
+coords 400 180 400
+flip 0
+at 451
+
+#-------trap
+
+#-------Monsters
+
+group   3 3
+at      480
+
+wait
+at      480
+
+#------- Dialogue
+
+#spawn d03_01_6
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+spawn raptor
+alias Velociraptor
+health 82
+2phealth 92
+3phealth 102 
+4phealth 112 
+aggression 200
+map 1
+coords 540 140
+flip 0
+at 480
+
+spawn raptor
+alias Velociraptor
+health 82
+2phealth 92
+3phealth 102 
+4phealth 112 
+aggression 200
+map 1
+coords 580 180
+flip 0
+at 480
+
+spawn raptor
+alias Velociraptor
+health 82
+2phealth 92
+3phealth 102 
+4phealth 112 
+aggression 200
+map 1
+coords 560 210
+flip 0
+at 480
+
+
+spawn ptero
+alias Pterosaur
+health 58
+2phealth 68
+3phealth 78 
+4phealth 88 
+aggression 200
+map 1
+coords 580 140
+flip 0
+at 480
+
+spawn ptero
+alias Pterosaur
+health 58
+2phealth 68
+3phealth 78 
+4phealth 88 
+aggression 200
+map 1
+coords 620 180
+flip 0
+at 480
+
+spawn ptero
+alias Pterosaur
+health 58
+2phealth 68
+3phealth 78 
+4phealth 88 
+aggression 200
+map 1
+coords 600 210
+flip 0
+at 480
+
+
+spawn raptor
+alias Velociraptor
+health 82
+2phealth 92
+3phealth 102 
+4phealth 112 
+aggression 200
+map 1
+coords 540 140
+flip 0
+at 480
+
+spawn raptor
+alias Velociraptor
+health 82
+2phealth 92
+3phealth 102 
+4phealth 112 
+aggression 200
+map 1
+coords 580 180
+flip 0
+at 480
+
+spawn tricer
+alias Triceratops 
+health 138
+2phealth 148
+3phealth 158 
+4phealth 168 
+aggression 200
+map 1
+coords 650 210
+flip 0
+at 480
+
+#-------Monsters
+
+#-------trap
+
+#-------chest
+spawn crate
+alias crate
+item amet
+health 1
+coords 580 140
+flip 0
+at 481
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item gaunt
+health 1
+coords 670 160
+flip 0
+at 481
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item gaunt
+health 1
+coords 970 180
+flip 0
+at 481
+#-------chest
+
+spawn trap5
+alias trap5
+health 1
+coords 125 185 200
+flip 0
+at 501
+
+spawn trap5
+alias trap5
+health 1
+coords 325 165 300
+flip 0
+at 501
+
+spawn trap5
+alias trap5
+health 1
+coords 75 200 250
+flip 0
+at 551
+
+spawn trap5
+alias trap5
+health 1
+coords 425 200 350
+flip 0
+at 551
+
+
+spawn trap5
+alias trap5
+health 1
+coords 200 170 200
+flip 0
+at 601
+
+spawn trap5
+alias trap5
+health 1
+coords 350 190 300
+flip 0
+at 601
+
+spawn trap5
+alias trap5
+health 1
+coords 100 155 250
+flip 0
+at 651
+
+spawn trap5
+alias trap5
+health 1
+coords 300 200 350
+flip 0
+at 651
+
+spawn trap4
+alias trap4
+health 1
+coords 150 175
+at 701
+
+spawn trap5
+alias trap5
+health 1
+coords 450 150 200
+flip 0
+at 701
+
+spawn trap5
+alias trap5
+health 1
+coords 250 180 300
+flip 0
+at 751
+
+spawn trap5
+alias trap5
+health 1
+coords 400 180 250
+flip 0
+at 751
+
+spawn trap5
+alias trap5
+health 1 
+coords 125 185 350
+flip 0
+at 801
+
+spawn trap4
+alias trap4
+health 1
+coords 325 165
+flip 0
+at 801
+
+spawn trap5
+alias trap5
+health 1
+coords 75 200 200
+flip 0
+at 851
+
+spawn trap5
+alias trap5
+health 1
+coords 425 200 300 
+flip 0
+at 851
+
+
+spawn trap5
+alias trap5
+health 1
+coords 200 170 250
+flip 0
+at 901
+
+spawn trap5
+alias trap5
+health 1
+coords 350 190 350
+flip 0
+at 901
+
+spawn trap4
+alias trap4
+health 1
+coords 100 155
+flip 0
+at 951
+
+spawn trap5
+alias trap5
+health 1 
+coords 300 200 200
+flip 0
+at 951
+
+spawn trap5
+alias trap5
+health 1
+coords 150 210 300
+flip 0
+at 1001
+
+spawn trap5
+alias trap5
+health 1
+coords 450 150 250
+flip 0
+at 1001
+
+spawn trap5
+alias trap5
+health 1
+coords 250 180 350
+flip 0
+at 1051
+
+spawn trap4
+alias trap4
+health 1
+coords 400 180
+flip 0
+at 1051
+
+#-------trap
+
+#-------Monsters
+
+group   3 3
+at      1100
+
+wait
+at      1100
+
+#------- Dialogue
+
+#spawn d03_01_6
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 1100
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 1100
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 1100
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 160
+flip 0
+at 1100
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 170
+flip 1
+at 1100
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 190
+flip 0
+at 1100
+
+
+
+spawn tricer
+alias Triceratops 
+health 148
+2phealth 158
+3phealth 168 
+4phealth 178 
+aggression 300
+map 2
+coords 640 160
+flip 0
+at 1100
+
+spawn tricer
+alias Triceratops 
+health 148
+2phealth 158
+3phealth 168 
+4phealth 178 
+aggression 300
+map 2
+coords -180 170
+flip 1
+at 1100
+
+#-------Monsters
+
+#-------chest
+spawn crate
+alias crate
+item amet
+health 1
+coords 580 140
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item gaunt
+health 1
+coords 630 140
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item bpotion
+health 1
+coords 680 140
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item gaunt
+health 1
+coords 1100 140
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item gold2
+health 1
+coords 1100 210
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item topaz
+health 1
+coords 1000 140
+flip 0
+at 1101
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+item diamond
+health 1
+coords 1000 210
+flip 0
+at 1101
+#-------chest
+
+spawn trap4
+alias trap4
+health 1
+coords 650 170
+at 1101
+
+spawn trap4
+alias trap4
+health 1
+coords 750 170
+at 1101
+
+spawn trap4
+alias trap4
+health 1
+coords 850 170
+at 1101
+
+spawn trap4
+alias trap4
+health 1
+coords 1050 170
+at 1101
+
+spawn trap4
+alias trap4
+health 1
+coords 1150 170
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 750 140
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 750 210
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 850 140
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 850 210
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 950 210
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 1050 140
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 1050 210
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 1150 140
+at 1101
+
+spawn trap2
+alias trap2
+health 1
+coords 1150 210
+at 1101
+
+#------- Dialogue
+
+#spawn d03_01_6
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+#-------Monsters
+
+group   3 3
+at      1808
+
+wait
+at      1808
+
+#------- Dialogue
+
+spawn d03_01_8
+coords 240 176
+flip 1
+at 1808
+
+#------- Dialogue
+
+#-------npc Sorcerer
+spawn npcsorc1
+alias Sorcerer
+health 15
+aggression 150
+map 0
+coords 380 180
+flip 0
+at 1808
+#-------npc Sorcerer
+
+#-------go
+
+spawn enter02
+alias enter02
+flip 1
+health 1
+coords 255 140
+at 1808
+
+#-------go
+
+
+
+

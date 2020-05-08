@@ -1,0 +1,106 @@
+# Hit dust
+
+name				trap3
+type				none
+shadow				0
+hostile				enemy player npc
+candamage			enemy player npc
+dust				dust01
+flash				flash01
+bflash				guard01
+#setlayer 1000
+antigravity 100
+nolife				1
+
+palette 			data/chars/misc/trap3/trap3.gif
+
+anim spawn
+	loop		1
+	offset     218 198
+	hitfx   data/sounds/burn01.wav
+	delay		100
+	frame		data/chars/misc/trap3/00.gif
+	delay		6
+	attack5  207 87 23 115 10 1 0 0 0
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	delay		3
+	attack5  0 0 0 0 0 0 0 0 0 0
+	frame		data/chars/misc/trap3/04.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/05.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/06.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/07.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/08.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/09.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/10.gif
+	frame		data/chars/misc/trap3/00.gif
+
+anim idle
+	loop		1
+	offset     218 198
+	hitfx   data/sounds/burn01.wav
+	delay		100
+	frame		data/chars/misc/trap3/00.gif
+	delay		6
+	attack5  207 87 23 115 10 1 0 0 0
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	frame		data/chars/misc/trap3/01.gif
+	frame		data/chars/misc/trap3/02.gif
+	frame		data/chars/misc/trap3/03.gif
+	delay		3
+	attack5  0 0 0 0 0 0 0 0 0 0
+	frame		data/chars/misc/trap3/04.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/05.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/06.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/07.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/08.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/09.gif
+	frame		data/chars/misc/trap3/00.gif
+	frame		data/chars/misc/trap3/10.gif
+	frame		data/chars/misc/trap3/00.gif
+
+
+anim death
+	loop		0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+		
+		
+		
+		
+		

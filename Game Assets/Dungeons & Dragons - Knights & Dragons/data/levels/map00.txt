@@ -1,0 +1,111 @@
+music		data/music/MAP01.OGG
+#bossmusic	data/music/BOSS02.BOR
+background	data/bgs/MAP/back.gif
+panel		data/bgs/MAP/n01.gif
+frontpanel	data/bgs/MAP/f01.gif
+order       a
+settime 0
+spawn1  1 1
+spawn2  1 1
+spawn3  1 1
+spawn4  1 1
+direction	both
+#scrollspeed	200
+cameratype		0
+setweap 1
+type 2
+nopause	1
+allowselect	travel travel travel travel
+levelscript	data/scripts/reset.c
+
+palette data/bgs/MAP/MAP.gif #1
+
+#-------player spawn
+
+spawn1 431 730
+spawn2 431 730
+spawn3 431 730
+spawn4 431 730
+
+#-------player spawn
+
+
+#----------------------------# Orc fort
+spawn	01_01
+coords	150 320
+at	0
+#----------------------------# Orc fort
+
+#----------------------------# Ruins in the woods
+spawn	01_02
+coords	355 360
+at	0
+#----------------------------# Ruins in the woods
+
+#----------------------------# Village under siege
+spawn	01_03
+coords	280 490
+at	0
+#----------------------------# Village under siege
+
+#----------------------------# The abandoned mine
+spawn	01_04
+coords	350 241
+at	0
+#----------------------------# The abandoned mine
+
+#----------------------------# The great escape
+spawn	01_05
+coords	200 430
+at	0
+#----------------------------# The great escape
+
+#----------------------------# Castle Caldwell
+spawn	01_06
+coords	450 220
+at	0
+#----------------------------# Castle Caldwell
+
+#----------------------------# Journey to the Rock
+spawn	01_07
+coords	475 515
+at	0
+#----------------------------# Journey to the Rock
+
+#----------------------------# Threat into the swamp
+spawn	01_08
+coords	72 343
+at	0
+#----------------------------# Threat into the swamp
+
+#----------------------------# The hobgoblin king
+spawn	01_09
+coords	495 312
+at	0
+#----------------------------# The hobgoblin king
+
+#----------------------------# Adventure at Gray Peak
+spawn	01_10
+coords	585 67
+at	0
+#----------------------------# Adventure at Gray Peak
+
+#----------------------------# The haunted graveyard
+spawn	01_11
+coords	402 562
+at	0
+#----------------------------# The haunted graveyard
+
+#----------------------------# The Tree of Life
+spawn	01_12
+coords	724 330
+at	0
+#----------------------------# The Tree of Life
+
+spawn dust01
+alias dummy
+@script #import "data/scripts/spawn/travel.c"
+void main() {adj();} @end_script
+coords 999999 0 
+at 0
+

@@ -1,0 +1,393 @@
+music		data/music/STAGE25.ogg
+bossmusic	data/music/BOSS09.ogg
+background	data/bgs/03_04_2/back.gif
+panel	      data/bgs/03_04_2/n01.gif
+frontpanel	data/bgs/03_04_2/f01.gif
+order       a
+settime 99
+stagenumber 3
+bgspeed 5 0
+rock 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/03_04_2/03_04_2.gif #1
+
+wall    180 165 75 300 1250 1100 150 250
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item banana
+coords 350 160
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item gold2
+coords 400 140
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item gapple
+coords 150 150
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias Crate
+health 1
+item scroll
+coords 50 135
+flip 1
+at 0
+#-------chests
+
+#-------Monsters
+
+Group 6 6
+at 480
+
+#------- Dialogue
+
+spawn d03_04_4
+coords 240 176
+flip 1
+at 480
+
+#------- Dialogue
+
+wait
+at      480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item gaunt
+coords 580 175 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords 560 200 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item amet
+coords 540 185 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords -180 155 100
+flip 1
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords -160 180 100
+flip 1
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item topaz
+coords -140 165 100
+flip 1
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item amber
+coords 580 175 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords 560 200 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item amet
+coords 540 185 100
+flip 0
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords -180 155 100
+flip 1
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+coords -160 180 100
+flip 1
+at 480
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44
+4phealth 54
+aggression 100
+map 0
+item diamond
+coords -140 165 100
+flip 1
+at 480
+
+#-------Monsters
+
+#-------Monsters
+
+Group 6 6
+at 481
+
+wait
+at      481
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item gaunt
+coords 580 175 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords 560 200 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item amet
+coords 540 185 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords -180 155 100
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords -160 180 100
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item topaz
+coords -140 165 100
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item amber
+coords 580 175 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords 560 200 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item amet
+coords 540 185 100
+flip 0
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords -180 155 100
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+coords -160 180 100
+flip 1
+at 480
+
+spawn sahua
+alias Sahuagin
+health 32
+2phealth 42
+3phealth 52
+4phealth 62
+aggression 100
+map 2
+item diamond
+coords -140 165 100
+flip 1
+at 480
+
+#-------Monsters
+
+
+
+
+
+

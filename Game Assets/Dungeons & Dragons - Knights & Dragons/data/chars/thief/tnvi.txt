@@ -1,0 +1,2118 @@
+name	    		tnvi
+candamage     enemy obstacle npc
+type	    		player
+health				8
+mpset				35 1 9999 2 4 1
+#mp					100
+speed				14
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			55
+turndelay			0
+jumpmove			1
+nodieblink			1
+makeinv				1	0
+falldie				2
+riseinv				1	1
+jugglepoints		15
+nolife				1
+atchain				1 1 1
+modelflag			1
+#combostyle 			1
+#shootnum			3
+typeshot 			0
+stealth				1
+weapnum				3
+defense 			all		0.8
+keyscript			data/scripts/key.c
+onmodelcopyscript  data/scripts/mcopy.c
+
+
+icon	    data/chars/thief/icon.gif 1
+icondie     data/chars/thief/icond.gif 1
+diesound    data/sounds/die01.wav
+
+palette				data/chars/thief/thief.gif #1
+#alternatepal		data/chars/thief/alter01.gif #1
+
+remap	data/chars/thief/idle00.gif   data/chars/thief/alter01.gif
+remap	data/chars/thief/idle00.gif   data/chars/thief/alter02.gif
+remap	data/chars/thief/idle00.gif   data/chars/thief/alter03.gif
+
+	com  a2  	freespecial30
+	com  d f a  freespecial3
+	com  d d a  freespecial4
+
+#-------Select screen!
+
+anim waiting
+	shadowcoords -9999 -9999
+	 loop       1
+	 offset     90 195
+	 delay      1
+         frame      data/chars/thief/sel00.gif
+
+anim select
+	shadowcoords -9999 -9999
+	 loop       0
+	 offset     90 195
+	 sound   data/sounds/att02.wav
+	 delay      1
+ 
+         frame      data/chars/thief/sel01.gif
+         frame      data/chars/thief/sel02.gif
+         frame      data/chars/thief/sel01.gif
+         frame      data/chars/thief/sel02.gif
+         frame      data/chars/thief/sel01.gif
+         frame      data/chars/thief/sel02.gif
+         frame      data/chars/thief/sel01.gif
+         frame      data/chars/thief/sel02.gif
+
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+         frame      data/chars/thief/sel03.gif
+         frame      data/chars/thief/sel04.gif
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	loop	0
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/thief/idle00.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/thief/idle00.gif
+	frame	data/chars/misc/empty.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/thief/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk00.gif
+	frame	data/chars/misc/empty.gif
+	
+	frame	data/chars/thief/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk01.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/thief/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk02.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/thief/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/wk03.gif
+	frame	data/chars/misc/empty.gif
+
+anim get
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   20
+	frame	data/chars/thief/rise02.gif
+
+anim attack1
+	jugglecost	1
+	weaponframe 22 0
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	delay	2
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	4
+	frame	data/chars/thief/frsp301.gif
+	delay	16
+	sound   data/sounds/slash03.wav
+	attack2  210 163 70 36 8 1 1 0 50
+	frame	data/chars/thief/frsp302.gif
+	delay	7
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+anim walkoff
+	shadowcoords 218 198
+	loop	0
+	landframe	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay	999
+	frame	data/chars/thief/ju00.gif
+	sound   data/sounds/land01.wav
+	delay	1
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+
+anim jumpdelay
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+#	sound   data/sounds/stand.wav
+	delay	1
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+
+anim jump
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/jump01.wav
+	delay	1
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju01.gif
+	frame	data/chars/misc/empty.gif
+	
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/ju00.gif
+
+
+anim jumpland
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/land01.wav
+	delay	1
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/jdel00.gif
+	frame	data/chars/misc/empty.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain03.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/thief/pain102.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/thief/pain102.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/thief/pain102.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-4
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-4
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-3
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-3
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-2
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-2
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-1
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	move	-1
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/pain101.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain03.wav
+	frame	data/chars/thief/fall01.gif
+	delay   72
+	frame	data/chars/thief/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/thief/fall02.gif
+
+anim rise1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+	delay	1
+	frame	data/chars/thief/rise03.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain03.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/thief/pain201.gif
+	delay   2
+	frame	data/chars/thief/pain202.gif
+	delay   2
+	frame	data/chars/thief/pain201.gif
+	delay   2
+	frame	data/chars/thief/pain202.gif
+	delay   2
+	frame	data/chars/thief/pain201.gif
+	delay   2
+	frame	data/chars/thief/pain202.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+
+anim fall2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain03.wav
+	frame	data/chars/thief/fall01.gif
+	delay   72
+	frame	data/chars/thief/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/thief/fall02.gif
+
+anim rise2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+
+anim fall3
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/thief/fall01.gif
+	delay   72
+	frame	data/chars/thief/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/thief/fall02.gif
+
+anim rise3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-4
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-3
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-2
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	move	-1
+	frame	data/chars/thief/pain201.gif
+	frame	data/chars/thief/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     228 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+	offset     222 198
+	frame	data/chars/thief/pain201.gif
+	offset     225 198
+	frame	data/chars/thief/pain201.gif
+
+anim fall4
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/thief/fall01.gif
+	delay   72
+	frame	data/chars/thief/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/thief/fall02.gif
+
+anim rise4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/fall01.gif
+	frame	data/chars/thief/fall02.gif
+	delay   70
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	sound   data/sounds/fall01.wav
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/fall01.gif
+	frame	data/chars/thief/fall02.gif
+	delay   70
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/thief/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/thief/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/thief/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/thief/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/fall01.gif
+	frame	data/chars/thief/fall02.gif
+	delay   70
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/thief/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/thief/pain101.gif
+
+	delay   1
+	drawmethod 256 256 0 0 0 0 -1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/thief/fall02.gif
+	
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/thief/jdel00.gif
+
+anim death7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+
+	delay   210
+	frame	data/chars/thief/pain101.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     228 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	frame	data/chars/thief/pain101.gif
+	offset     222 198
+	frame	data/chars/thief/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/thief/pain101.gif
+	delay   210
+	frame	data/chars/thief/pain101.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/fall01.gif
+	frame	data/chars/thief/fall02.gif
+	delay   70
+	frame	data/chars/thief/rise00.gif
+	delay	10
+	frame	data/chars/thief/rise01.gif
+	delay	8
+	frame	data/chars/thief/rise02.gif
+	frame	data/chars/thief/rise03.gif
+
+anim death8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/thief/pain101.gif
+	delay   5
+	frame	data/chars/thief/pain101.gif
+	frame	data/chars/thief/fall01.gif
+	frame	data/chars/thief/fall02.gif
+	frame	data/chars/thief/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+anim freespecial30 #special
+	energycost 35
+	mponly  1
+	jugglecost	99
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	sound   data/sounds/super01.wav
+	quakeframe 44 20 5
+	delay	1
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+
+	 sound   data/sounds/laugh01.wav
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp03.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp01.gif
+	frame	data/chars/thief/sp02.gif
+
+
+	delay	4
+	frame	data/chars/thief/sp05.gif
+	frame	data/chars/thief/sp06.gif
+	frame	data/chars/thief/sp07.gif
+	frame	data/chars/thief/sp08.gif
+
+	delay	6
+	attack4  160 36 142 176 8 1 1 0 5
+	sound   data/sounds/fall02.wav
+	frame	data/chars/thief/sp09.gif
+	frame	data/chars/thief/sp10.gif
+	frame	data/chars/thief/sp11.gif
+	frame	data/chars/thief/sp12.gif
+	frame	data/chars/thief/sp13.gif
+	frame	data/chars/thief/sp14.gif
+	frame	data/chars/thief/sp15.gif
+	frame	data/chars/thief/sp16.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/sp17.gif
+	attack4  160 36 142 176 8 1 1 0 5
+	sound   data/sounds/fall02.wav
+	frame	data/chars/thief/sp09.gif
+	frame	data/chars/thief/sp10.gif
+	frame	data/chars/thief/sp11.gif
+	frame	data/chars/thief/sp12.gif
+	frame	data/chars/thief/sp13.gif
+	frame	data/chars/thief/sp14.gif
+	frame	data/chars/thief/sp15.gif
+	frame	data/chars/thief/sp16.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/sp17.gif
+	attack4  160 36 142 176 8 1 1 0 5
+	sound   data/sounds/fall02.wav
+	frame	data/chars/thief/sp09.gif
+	frame	data/chars/thief/sp10.gif
+	frame	data/chars/thief/sp11.gif
+	frame	data/chars/thief/sp12.gif
+	frame	data/chars/thief/sp13.gif
+	frame	data/chars/thief/sp14.gif
+	frame	data/chars/thief/sp15.gif
+	frame	data/chars/thief/sp16.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/sp17.gif
+	delay	7
+	frame	data/chars/thief/sp04.gif
+
+anim freespecial2
+	energycost 25
+	mponly  1
+	shadowcoords 218 198
+	load		bag01
+	custpbomb	bag01
+	pbombframe	4
+	loop	0
+	offset     225 198
+	bbox	212 159 26 40
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<1000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+25);
+        performattack(self, openborconstant ("ANI_FOLLOW2"));
+		}
+@end_script
+
+	delay	10
+	sound   data/sounds/att08.wav
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp04.gif
+	delay	3
+	frame	data/chars/thief/sp02.gif
+	delay	30
+	frame	data/chars/thief/a102.gif
+
+anim freespecial3
+	energycost 35
+	mponly  1
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<15000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+35);
+        performattack(self, openborconstant ("ANI_FOLLOW2"));
+		}
+@end_script
+
+	delay	10
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	sound   data/sounds/att08.wav
+	frame	data/chars/thief/sp02.gif
+	frame	data/chars/thief/sp04.gif
+	frame	data/chars/thief/sp02.gif
+	delay	8
+	sound   data/sounds/fall02.wav
+	attack4  188 128 95 72 25 0 1 0 10 50
+	frame	data/chars/thief/frsp201.gif
+	frame	data/chars/thief/frsp202.gif
+	frame	data/chars/thief/frsp203.gif
+	frame	data/chars/thief/frsp204.gif
+	frame	data/chars/thief/frsp205.gif
+	frame	data/chars/thief/frsp206.gif
+	frame	data/chars/thief/frsp207.gif
+	frame	data/chars/thief/frsp208.gif
+	frame	data/chars/thief/frsp209.gif
+	frame	data/chars/thief/frsp210.gif
+	frame	data/chars/thief/frsp211.gif
+	attack4  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp212.gif
+
+	move    100
+	frame	data/chars/misc/empty.gif
+
+	move    2
+	delay	2
+	sound   data/sounds/laugh01.wav
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/thief/frsp213.gif
+	frame	data/chars/thief/frsp213.gif
+
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/thief/frsp214.gif
+	frame	data/chars/thief/frsp214.gif
+
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/thief/frsp215.gif
+	frame	data/chars/thief/frsp215.gif
+
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/thief/frsp216.gif
+	frame	data/chars/thief/frsp216.gif
+
+anim freespecial4
+	energycost 45
+	mponly  1
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	1 0 0 0 0
+	followanim 3
+	followcond 1
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit02.wav
+	hitflash	flash21
+	sound   data/sounds/att07.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<45000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+45);
+        performattack(self, openborconstant ("ANI_FOLLOW2"));
+		}
+@end_script
+
+	delay	14
+	frame	data/chars/thief/frsp301.gif
+	delay	2
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 5 0 1 0 50
+	move	4
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	move	3
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	move	2
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	move	1
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/thief/frsp302.gif
+	move	0
+	delay	8
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+anim follow3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		11 				99 			0 			f f a 				freespecial3
+	jugglecost	1
+	shadowcoords 218 198
+	fastattack 1
+	flipframe 10	
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit02.wav
+	hitflash	flash21
+	delay	25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp302.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	5
+	move	100
+	sound   data/sounds/laugh01.wav
+	frame	data/chars/misc/empty.gif
+
+	move	0
+	delay	2
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/thief/frsp301.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	3
+	frame	data/chars/thief/frsp301.gif
+	delay	8
+	sound   data/sounds/slash03.wav
+	attack1  210 163 70 36 8 0 1 0 25
+	frame	data/chars/thief/frsp302.gif
+	delay	2
+	attack1  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+	delay	4
+	frame	data/chars/thief/frsp301.gif
+	delay	16
+	sound   data/sounds/slash03.wav
+	attack2  210 163 70 36 8 1 1 0 50
+	frame	data/chars/thief/frsp302.gif
+	delay	7
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/thief/frsp301.gif
+
+
+
+
+
+

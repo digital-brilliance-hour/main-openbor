@@ -1,0 +1,40 @@
+#escaped version
+name female
+type none
+speed 12
+shadow 1
+nolife 1
+offscreenkill 100 
+lifespawn 5
+#setlayer 85
+
+palette				data/chars/misc/villager/villager.gif #1
+
+remap	data/chars/misc/villager/female/01.gif	data/chars/misc/villager/female/alter01.gif
+remap	data/chars/misc/villager/female/01.gif	data/chars/misc/villager/female/alter02.gif
+remap	data/chars/misc/villager/female/01.gif	data/chars/misc/villager/female/alter03.gif
+         
+anim spawn
+@script
+void self = getlocalvar("self");
+changeentityproperty(self, "base", getentityproperty(self, "a"));
+@end_script
+	shadowcoords 218 198
+    loop 0
+	 offset     225 198
+    delay 1
+    #move 6
+	frame   data/chars/misc/villager/female/01.gif
+	
+anim walk
+	shadowcoords 218 198
+    loop 1
+	 offset     225 198
+    delay 9
+    #move 6
+	frame   data/chars/misc/villager/female/01.gif
+	frame   data/chars/misc/villager/female/02.gif
+	frame   data/chars/misc/villager/female/03.gif
+	frame   data/chars/misc/villager/female/04.gif
+	frame   data/chars/misc/villager/female/05.gif
+	frame   data/chars/misc/villager/female/06.gif

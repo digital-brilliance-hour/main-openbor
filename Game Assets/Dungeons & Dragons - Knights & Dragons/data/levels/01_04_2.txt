@@ -1,0 +1,292 @@
+music		data/music/STAGE04.ogg
+bossmusic	data/music/BOSS04.ogg
+background	data/bgs/01_04_2/back.gif
+panel	      data/bgs/01_04_2/n01.gif
+frontpanel	data/bgs/01_04_2/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  40 40
+spawn2  60 60
+spawn3  50 50
+spawn4  65 65
+
+palette data/bgs/01_04_2/01_04_2.gif #1
+
+wall    60 130 -500 0 130 130 150 520
+
+wall    230 160 -500 50 650 50 150 520
+
+wall    320 145 0 0 1230 1230 150 520
+
+wall    620 280 -40 0 1440 1440 150 520
+
+
+#------- Dialogue
+
+spawn d01_04_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item banana
+coords 540 150
+flip 1
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item amet
+coords 310 160
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item topaz
+coords 200 150
+flip 1
+at 0
+#-------chest
+
+#-------trap
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 250 160 200
+flip 0
+at 1
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 150 160 200
+flip 0
+at 25
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 250 170 200
+flip 0
+at 51
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 200 170 200
+flip 0
+at 151
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 250 155 200
+flip 0
+at 201
+
+#-------trap
+
+
+#-------Monsters
+
+group   3 3
+at      242
+
+wait
+at      242
+
+#------- Dialogue
+
+spawn d01_04_3
+coords 240 176
+flip 1
+at 242
+
+#------- Dialogue
+
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -60 170
+flip 1
+at 242
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+coords -80 165
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -75 160
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+item gold1
+coords -80 165
+flip 1
+at 242
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+coords -80 165
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 2
+item gold2
+coords -50 170
+flip 1
+at 242
+
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+coords -60 170
+flip 1
+at 242
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+coords -80 165
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 2
+coords -75 160
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+item gold1
+coords -80 165
+flip 1
+at 242
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+coords -80 165
+flip 1
+at 242
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 150
+map 3
+item gaunt
+coords -50 170
+flip 1
+at 242
+
+#-------Monsters
+
+#-------go
+
+spawn go01
+alias go01
+health 1
+coords 311 150
+flip 1
+at 242
+
+#-------go
+
+
+
+
+
+
+

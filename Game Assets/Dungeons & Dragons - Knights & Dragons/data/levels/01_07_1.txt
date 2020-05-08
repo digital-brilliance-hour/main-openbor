@@ -1,0 +1,520 @@
+music		data/music/STAGE07.ogg
+bossmusic	data/music/BOSS07.ogg
+background	data/bgs/01_07_1/back.gif
+bglayer		data/bgs/01_07_1/n01.gif 0 0 0 0 0 0 99999999 999999999 1 0 0 0 0 0 0.8
+fglayer		data/bgs/01_07_1/f01.gif 1 0 0 500 0 5000 0 6 1 1 0 0 0 0 0 2
+panel		data/chars/misc/empty.gif
+#panel	    data/bgs/01_07_1/n01.gif
+#frontpanel	data/bgs/01_07_1/f01.gif
+settime 99
+order	a
+bgspeed	10
+setweap 2
+stagenumber 1
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/01_07_1/01_07_1.gif #1
+
+#------- The Quest begins
+
+spawn q01_7
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------Monsters
+
+group   3 3
+at      0
+
+wait
+at      0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -85 190
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 200
+flip 0
+at 0
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -85 190
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -70 200
+flip 0
+at 0
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -85 190
+flip 0
+at 0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 200
+flip 0
+at 0
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   4 4
+at      500
+
+wait
+at      0
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -85 190
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 200
+flip 0
+at 500
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -85 190
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -70 200
+flip 0
+at 500
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -85 190
+flip 0
+at 500
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 200
+flip 0
+at 500
+
+#-------Monsters
+
+
+
+#-------Monsters
+
+group   3 3
+at      1000
+
+wait
+at      0
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -85 190
+flip 0
+at 1000
+
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -70 200
+flip 1
+at 1000
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 1000
+
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -85 190
+flip 1
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -70 200
+flip 0
+at 1000
+
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 205
+flip 0
+at 1000
+
+spawn worc
+alias Worgrider_Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -85 190
+flip 0
+at 1000
+
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -70 200
+flip 1
+at 1000
+
+#-------Monsters
+
+#------- Dialogue
+
+#spawn d01_07_1
+#coords 240 176
+#flip 1
+#at 466
+
+#------- Dialogue
+
+
+
+
+
+
+
+
+

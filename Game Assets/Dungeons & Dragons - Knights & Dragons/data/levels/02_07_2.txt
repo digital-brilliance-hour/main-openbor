@@ -1,0 +1,976 @@
+music		data/music/STAGE19.ogg
+bossmusic	data/music/BOSS03.ogg
+background	data/bgs/02_07_2/back.gif
+panel	      data/bgs/02_07_2/n01.gif
+frontpanel	data/bgs/02_07_2/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_07_2/02_07_2.gif #1
+
+#-------Monsters
+
+group   3 3
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+spawn d02_07_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+spawn bugbear
+alias Bugbear
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 100
+map 2
+item topaz
+coords 540 150
+flip 0
+at 0
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords -50 190
+flip 1
+at 0
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords 540 180
+flip 0
+at 0
+
+spawn bugbear
+alias Bugbear
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 100
+map 2
+item topaz
+coords -60 160
+flip 1
+at 0
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+item amet
+coords 540 170
+flip 0
+at 0
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords -50 150
+flip 1
+at 0
+
+#-------Monsters
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item diamond
+coords 540 130
+flip 0
+at 1
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item amber
+coords 640 210
+flip 0
+at 1
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+item amber
+health 1
+coords 740 200
+at 1
+#-------chests
+
+group   8 8
+at      1
+
+#-------trap
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 1
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 20
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 374 147 400
+at 40
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 565 156 500
+at 60
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 199 171 350
+at 80
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 46 140 250
+at 100
+
+#---------------- mimic
+spawn mimic
+alias Mimic
+health 1
+aggression 150
+map 0
+item diamond
+coords 540 150
+flip 0
+at 100
+#---------------- mimic
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 371 144 150
+at 120
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 200 550
+flip 0
+at 140
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 160
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 180
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 164 400
+flip 0
+at 200
+
+#---------------- mimic
+spawn mimic
+alias Mimic
+health 1
+aggression 150
+map 0
+item diamond
+coords 540 130
+flip 0
+at 200
+#---------------- mimic
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 564 181 500
+at 220
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 185 350
+flip 0
+at 240
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 48 130 250
+at 260
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 398 130 150
+at 280
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 200 550
+flip 0
+at 300
+
+#---------------- mimic
+spawn mimic
+alias Mimic
+health 1
+aggression 150
+map 0
+item amber
+coords 540 170
+flip 0
+at 300
+#---------------- mimic
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 320
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 340
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 335 168 400
+at 360
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 170 500
+flip 0
+at 380
+
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 400
+
+#---------------- beetle
+spawn beetle
+alias Beetle
+health 8
+#aggression 0
+map 3
+coords 540 150
+flip 0
+at 410
+#---------------- beetle
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 420
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 374 147 400
+at 440
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 565 156 500
+at 460
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 199 171 350
+at 480
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 46 140 250
+at 500
+
+#---------------- mimic
+spawn mimic
+alias Mimic
+health 1
+aggression 150
+map 0
+item diamond
+coords 540 155
+flip 0
+at 500
+#---------------- mimic
+
+#---------------- mimic
+spawn mimic
+alias Mimic
+health 1
+aggression 150
+map 0
+item gapple
+coords 580 190
+flip 0
+at 500
+#---------------- mimic
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 371 144 150
+at 520
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 200 550
+flip 0
+at 540
+
+
+#---------------- beetle
+spawn beetle
+alias Beetle
+health 8
+#aggression 0
+map 3
+coords 540 200
+flip 0
+at 550
+#---------------- beetle
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 560
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 580
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 164 400
+flip 0
+at 600
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 564 181 500
+at 620
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 185 350
+flip 0
+at 640
+
+#---------------- beetle
+spawn beetle
+alias Beetle
+health 8
+#aggression 0
+map 3
+coords -140 140
+flip 1
+at 650
+#---------------- beetle
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 48 130 250
+at 660
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 398 130 150
+at 680
+
+spawn trap1
+alias trap
+health 1
+item scroll
+coords 285 200 550
+flip 0
+at 700
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 720
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 202 300
+flip 0
+at 740
+
+spawn trap5
+alias trap
+item scroll
+health 1
+coords 335 168 400
+at 760
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 170 500
+flip 0
+at 780
+
+
+wait
+at      780
+
+#-------trap
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item straw
+coords 540 130
+flip 0
+at 781
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+health 1
+item scroll
+coords 640 210
+flip 0
+at 781
+#-------chests
+
+#-------chests
+spawn casket1
+alias casket1
+item amber
+health 1
+coords 740 200
+at 781
+#-------chests
+
+#-------Monsters
+
+group   10 10
+at      880
+
+#------- Dialogue
+
+#spawn d02_07_2
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item topaz
+coords 540 150
+flip 0
+at 880
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -50 190
+flip 1
+at 1080
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+coords 540 180
+flip 0
+at 1280
+
+wait
+at      1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 340 160 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 40 170 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 240 180 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 140 190 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item topaz
+coords -60 160
+flip 1
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 400 130 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 100 140 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 300 150 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 200 160 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+item amet
+coords 540 170
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 0
+coords 340 160 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 40 170 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 240 180 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 140 190 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -50 150
+flip 1
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 400 130 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 100 140 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 300 150 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 200 160 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 100
+map 2
+coords 540 180
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 340 160 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 40 170 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 240 180 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 140 190 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+item topaz
+coords -60 160
+flip 1
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 400 130 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 100 140 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 300 150 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 200 160 350
+flip 0
+at 1480
+
+spawn bugbear
+alias Bugbear
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 50
+map 1
+item amet
+coords 540 170
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 340 160 200
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 40 170 250
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 2
+coords 240 180 300
+flip 0
+at 1480
+
+spawn slime
+alias Slime
+health 1
+aggression 50
+map 2
+coords 140 190 350
+flip 0
+at 1480
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 450 170
+at 1568
+
+#------- Go
+
+
+
+
+
+

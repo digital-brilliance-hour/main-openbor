@@ -1,0 +1,383 @@
+name			holy
+health		1
+nolife		1
+type		none
+hostile		enemy obstacle
+candamage	enemy obstacle
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+remove		0
+dust			dust01
+flash			flash01
+bflash			guard01
+
+palette data/chars/misc/holy/holy.gif #1
+
+anim spawn
+	quakeframe		0 24 3
+	loop	0
+	offset     238 272
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	sound   data/sounds/hwhit.wav
+#	sound   data/sounds/lbhit2.wav
+	
+	delay	1
+	attack4  173 8 130 264 10 1 1 0 5
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/04.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/08.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/holy/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/holy/10.gif
+	frame	data/chars/misc/empty.gif
+
+	attack4   0 0 0 0 0 0 0 0 0 0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+

@@ -1,0 +1,40 @@
+#escaped version
+name male
+type none
+speed 14
+shadow 1
+nolife 1
+offscreenkill 100 
+lifespawn 5
+#setlayer 85
+
+palette				data/chars/misc/villager/villager.gif #1
+
+remap	data/chars/misc/villager/male/01.gif	data/chars/misc/villager/male/alter01.gif
+remap	data/chars/misc/villager/male/01.gif	data/chars/misc/villager/male/alter02.gif
+remap	data/chars/misc/villager/male/01.gif	data/chars/misc/villager/male/alter03.gif
+
+anim spawn
+@script
+void self = getlocalvar("self");
+changeentityproperty(self, "base", getentityproperty(self, "a"));
+@end_script
+	shadowcoords 218 198
+    loop 0
+	 offset     225 198
+    delay 1
+    #move 6
+	frame   data/chars/misc/villager/male/01.gif
+ 
+anim walk
+	shadowcoords 218 198
+    loop 1
+	 offset     225 198
+    delay 8
+    #move 6
+	frame   data/chars/misc/villager/male/01.gif
+	frame   data/chars/misc/villager/male/02.gif
+	frame   data/chars/misc/villager/male/03.gif
+	frame   data/chars/misc/villager/male/04.gif
+	frame   data/chars/misc/villager/male/05.gif
+	frame   data/chars/misc/villager/male/06.gif

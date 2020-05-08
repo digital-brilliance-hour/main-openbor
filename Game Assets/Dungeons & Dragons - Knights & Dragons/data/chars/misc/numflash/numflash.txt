@@ -1,0 +1,34 @@
+name numflash
+type none
+shadow 0
+toflip 1
+facing 1
+antigravity 100
+setlayer 99999999
+lifespan   1
+animationscript    data/scripts/dasher.c
+
+palette data/chars/misc/numflash/numflash.gif #1
+
+anim spawn
+loop   0      
+offset     225 251
+delay      -1
+@script
+{
+dasher(0,0.3,0);
+}
+@end_script
+   frame   data/chars/misc/numflash/0.gif
+   frame   data/chars/misc/numflash/1.gif
+   frame   data/chars/misc/numflash/2.gif
+   frame   data/chars/misc/numflash/3.gif
+   frame   data/chars/misc/numflash/4.gif
+   frame   data/chars/misc/numflash/5.gif
+   frame   data/chars/misc/numflash/6.gif
+   frame   data/chars/misc/numflash/7.gif
+   frame   data/chars/misc/numflash/8.gif
+   frame   data/chars/misc/numflash/9.gif
+   frame   data/chars/misc/numflash/minus.gif
+
+anim idle

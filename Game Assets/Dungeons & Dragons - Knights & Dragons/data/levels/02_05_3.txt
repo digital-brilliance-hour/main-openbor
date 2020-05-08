@@ -1,0 +1,577 @@
+music		data/music/STAGE17.ogg
+bossmusic	data/music/BOSS01.ogg
+background	data/bgs/02_05_3/back.gif
+panel	      data/bgs/02_05_3/n01.gif
+frontpanel	data/bgs/02_05_3/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_05_3/02_05_3.gif #1
+
+wall    1270 250 0 300 2000 2000 150 250
+
+
+#------- Dialogue
+
+spawn d02_05_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item amber
+coords 550 210
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item amet
+coords 600 210
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item gaunt
+coords 700 150
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item gaunt
+coords 850 150
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item banana
+coords 900 150
+flip 0
+at 0
+#-------chests
+
+
+#-------trap
+
+spawn trap1
+alias trap
+health 1
+coords 550 150
+at 0
+
+spawn trap1
+alias trap
+health 1
+coords 565 160
+flip 0
+at 0
+
+spawn trap1
+alias trap
+health 1
+coords 580 170
+at 0
+
+
+spawn trap1
+alias trap
+health 1
+coords 595 180
+at 0
+
+spawn trap1
+alias trap
+health 1
+coords 610 190
+flip 0
+at 0
+
+spawn trap1
+alias trap
+health 1
+coords 625 200
+at 0
+
+spawn trap1
+alias trap
+health 1
+coords 640 210
+at 0
+
+#-------trap
+
+
+#-------trap
+
+spawn trap1
+alias trap
+health 1
+coords 550 150
+at 50
+
+spawn trap1
+alias trap
+health 1
+coords 565 160
+flip 0
+at 50
+
+spawn trap1
+alias trap
+health 1
+coords 580 170
+at 50
+
+
+spawn trap1
+alias trap
+health 1
+coords 595 180
+at 50
+
+spawn trap1
+alias trap
+health 1
+coords 610 190
+flip 0
+at 50
+
+spawn trap1
+alias trap
+health 1
+coords 625 200
+at 50
+
+spawn trap1
+alias trap
+health 1
+coords 640 210
+at 50
+
+#-------trap
+
+
+#-------trap
+
+spawn trap1
+alias trap
+health 1
+coords 550 150
+at 200
+
+spawn trap1
+alias trap
+health 1
+coords 565 160
+flip 0
+at 200
+
+spawn trap1
+alias trap
+health 1
+coords 580 170
+at 200
+
+
+spawn trap1
+alias trap
+health 1
+coords 595 180
+at 200
+
+spawn trap1
+alias trap
+health 1
+coords 610 190
+flip 0
+at 200
+
+spawn trap1
+alias trap
+health 1
+coords 625 200
+at 200
+
+spawn trap1
+alias trap
+health 1
+coords 640 210
+at 200
+
+#-------trap
+
+
+#-------trap
+
+spawn trap1
+alias trap
+health 1
+coords 550 150
+at 250
+
+spawn trap1
+alias trap
+health 1
+coords 565 160
+flip 0
+at 250
+
+spawn trap1
+alias trap
+health 1
+coords 580 170
+at 250
+
+
+spawn trap1
+alias trap
+health 1
+coords 595 180
+at 250
+
+spawn trap1
+alias trap
+health 1
+coords 610 190
+flip 0
+at 250
+
+spawn trap1
+alias trap
+health 1
+coords 625 200
+at 250
+
+spawn trap1
+alias trap
+health 1
+coords 640 210
+at 250
+
+#-------trap
+
+
+#-------Monsters
+
+group   3 3
+at      780
+
+wait
+at      780
+
+#------- Dialogue
+
+spawn d02_05_4
+coords 240 176
+flip 1
+at 780
+
+#------- Dialogue
+
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+coords 550 210
+item gold2
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+coords 530 165
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+coords 580 190
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+coords 550 210
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+item gold2
+coords 530 165
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+item gold2
+coords 580 190
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+item gold2
+coords 550 210
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+coords 530 165
+flip 0
+at 780
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+coords 580 190
+flip 0
+at 780
+
+#-------Monsters
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item diamond
+coords 540 150
+flip 0
+at 781
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item diamond
+coords 680 210
+flip 0
+at 781
+#-------chests
+
+
+#-------Monsters
+
+group   4 4
+at      1056
+
+wait
+at      1056
+
+#------- Dialogue
+
+#spawn d01_01_1
+#coords 240 176
+#flip 1
+#at 1056
+
+#------- Dialogue
+
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+coords -150 210
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+item gold2
+coords -130 165
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+item gold2
+coords -180 190
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+item gold2
+coords -160 210
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+coords -150 165
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+coords -130 190
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 52
+2phealth 62
+3phealth 72 
+4phealth 82 
+aggression 100
+map 2
+coords -180 210
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+item gold2
+coords -160 165
+flip 1
+at 1056
+
+spawn worg
+alias Worg
+health 42
+2phealth 52
+3phealth 62 
+4phealth 72 
+aggression 50
+map 1
+item gold2
+coords -150 190
+flip 1
+at 1056
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 390 190
+at 1056
+
+#------- Go
+
+
+
+

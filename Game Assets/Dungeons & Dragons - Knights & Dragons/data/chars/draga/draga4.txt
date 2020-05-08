@@ -1,0 +1,944 @@
+name				draga4
+type				enemy
+hostile				player npc
+candamage			player npc
+score				3640 -1
+health				340
+speed				11
+shadow				6
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			1
+nodrop				1
+falldie				1
+escapehits			2
+jugglepoints		15
+facing				2
+subject_to_screen	1
+icon				data/chars/draga/bicon.gif 1
+icondie				data/chars/draga/bicond.gif 1
+diesound			data/sounds/drags02.wav
+nolife				1
+takedamagescript	data/scripts/ndamage.c
+
+#-------Boss
+nolife				1
+lifebarstatus		240 5 1 1 0 -300 -300 -300 -300
+lifeposition		119 34 
+nameposition		152 49
+iconposition		0 0
+#-------Boss
+
+palette data/chars/draga/draga.gif #1
+
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter01.gif
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter02.gif
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter03.gif
+remap	data/chars/draga/idle00.gif   data/chars/draga/alter04.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 180 200
+	load		dragab4
+	subentity	dragab4
+	summonframe	0 240 100 0 1
+	 loop       0
+	 offset     225 198
+	jumpframe  0 4 0
+	dropframe  1
+	landframe  2
+	quakeframe	2 60 5
+	delay	999
+	frame	data/chars/misc/empty.gif
+	delay	999
+	frame	data/chars/draga/idle00.gif
+	delay	4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+
+	sound   data/sounds/drags03.wav
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+
+anim idle
+	shadowcoords 180 200
+	loop	1
+	 offset     225 198
+	bbox	217 95 71 103
+	delay	1
+	frame	data/chars/draga/idle00.gif
+
+anim walk
+	shadowcoords 180 200
+	loop	1
+	offset     225 198
+	bbox	217 95 71 103
+	delay	1
+	frame	data/chars/draga/idle00.gif
+
+anim block
+	shadowcoords 180 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-6
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-5
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-5
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-3
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-3
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-2
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-2
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-1
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	-1
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	0
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+
+anim attack1
+	shadowcoords 180 200
+	range	-65 65
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	8
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a103.gif
+	sound   data/sounds/slash02.wav
+	attack1  170 68 146 131 15 0 0 0 0
+	frame	data/chars/draga/a102.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	25
+	frame	data/chars/draga/a101.gif
+
+anim attack2
+	loop	0
+	range	66 200
+	shadowcoords 180 200
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	2
+	move	1
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	2
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	3
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	move	4
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+
+	move	5
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	move	6
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	sound   data/sounds/slash02.wav
+	attack1  170 68 146 131 15 1 0 0 0
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	move	5
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+
+	move	5
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	move	6
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	sound   data/sounds/slash02.wav
+	attack1  170 68 146 131 15 1 0 0 0
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	move	5
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+
+	move	5
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	move	6
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	sound   data/sounds/slash02.wav
+	attack1  170 68 146 131 15 1 0 0 0
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	move	5
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a102.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	4
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+
+	move	3
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	2
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+	move	1
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a101.gif
+
+
+anim attack3
+	load		light1
+	subentity	light1
+	spawnframe	2 40 45 0 0
+	range	0 300
+	rangez	-30 30
+	loop		0
+	shadowcoords 180 200
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/shock01.wav
+
+	delay	8
+	sound   data/sounds/slash02.wav
+	frame	data/chars/draga/a101.gif
+	frame	data/chars/draga/a102.gif
+
+	sound   data/sounds/drags03.wav
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	4
+	attack4  226 80 250 119 25 1 0 0 0 30
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	frame	data/chars/draga/a103.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/draga/a103.gif
+
+	delay	8
+	frame	data/chars/draga/a102.gif
+	frame	data/chars/draga/a101.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 180 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -35 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	bbox	217 95 71 103
+	sound   data/sounds/drags01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+
+anim fall1
+	shadowcoords 180 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -35 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	 offset     225 198
+	bbox	217 95 71 103
+	delay	1
+	frame	data/chars/draga/pain101.gif
+
+anim rise1
+	shadowcoords 180 200
+	loop	0
+	 offset     225 198
+	bbox	217 95 71 103
+	delay	1
+	frame	data/chars/draga/pain101.gif
+
+anim death1
+	unsummonframe	0
+	shadowcoords 180 200
+	jumpframe	36 4 0
+	dropframe	37
+	landframe	38
+	quakeframe	38 60 10
+	loop	0
+	 offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	
+	delay   999
+	frame	data/chars/draga/pain101.gif
+	shadowcoords 9999 9999
+	delay   999
+	frame	data/chars/misc/empty.gif
+
+	sound   data/sounds/fall02.wav
+	delay   4
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 180 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -35 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	bbox	217 95 71 103
+	sound   data/sounds/drags01.wav
+
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-4
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-4
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-3
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-3
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     228 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+	offset     222 198
+	frame	data/chars/draga/pain101.gif
+	offset     225 198
+	frame	data/chars/draga/pain101.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 180 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	bbox	217 95 71 103
+	delay   3
+	frame	data/chars/draga/burn01.gif
+	frame	data/chars/draga/burn02.gif
+	frame	data/chars/draga/burn03.gif
+	frame	data/chars/draga/burn01.gif
+	frame	data/chars/draga/burn02.gif
+	frame	data/chars/draga/burn03.gif
+	frame	data/chars/draga/burn01.gif
+	frame	data/chars/draga/burn02.gif
+	frame	data/chars/draga/burn03.gif
+	frame	data/chars/draga/burn01.gif
+	frame	data/chars/draga/burn02.gif
+	frame	data/chars/draga/burn03.gif
+	frame	data/chars/draga/burn01.gif
+	frame	data/chars/draga/burn02.gif
+	frame	data/chars/draga/burn03.gif
+	delay   2
+	move	-3
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 180 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+#	bbox	217 95 71 103
+	delay   3
+	frame	data/chars/draga/shock01.gif
+	frame	data/chars/draga/shock02.gif
+	frame	data/chars/draga/shock03.gif
+	frame	data/chars/draga/shock01.gif
+	frame	data/chars/draga/shock02.gif
+	frame	data/chars/draga/shock03.gif
+	frame	data/chars/draga/shock01.gif
+	frame	data/chars/draga/shock02.gif
+	frame	data/chars/draga/shock03.gif
+	frame	data/chars/draga/shock01.gif
+	frame	data/chars/draga/shock02.gif
+	frame	data/chars/draga/shock03.gif
+	frame	data/chars/draga/shock01.gif
+	frame	data/chars/draga/shock02.gif
+	frame	data/chars/draga/shock03.gif
+	delay   2
+	move	-3
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-2
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	move	-1
+	frame	data/chars/draga/pain101.gif
+	frame	data/chars/draga/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 180 200
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+#	bbox	217 95 71 103
+	delay   1
+	frame	data/chars/draga/freeze01.gif
+	delay   5
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/freeze01.gif
+	delay   4
+	frame	data/chars/draga/pain101.gif
+	delay   3
+	frame	data/chars/draga/freeze01.gif
+	delay   3
+	frame	data/chars/draga/pain101.gif
+	delay   4
+	frame	data/chars/draga/freeze01.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   5
+	frame	data/chars/draga/freeze01.gif
+	delay   1
+	frame	data/chars/draga/pain101.gif
+
+	delay   50
+	frame	data/chars/draga/freeze01.gif
+
+	delay   5
+	frame	data/chars/draga/freeze01.gif
+	delay   1
+	frame	data/chars/draga/pain101.gif
+	delay   4
+	frame	data/chars/draga/freeze01.gif
+	delay   2
+	frame	data/chars/draga/pain101.gif
+	delay   3
+	frame	data/chars/draga/freeze01.gif
+	delay   3
+	frame	data/chars/draga/pain101.gif
+	delay   2
+	frame	data/chars/draga/freeze01.gif
+	delay   4
+	frame	data/chars/draga/pain101.gif
+	delay   1
+	frame	data/chars/draga/freeze01.gif
+	delay   5
+	frame	data/chars/draga/pain101.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+
+
+
+
+

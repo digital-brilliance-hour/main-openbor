@@ -1,0 +1,403 @@
+music		data/music/STAGE05.ogg
+bossmusic	data/music/BOSS05.ogg
+background	data/bgs/01_05_3/back.gif
+panel	      data/bgs/01_05_3/n01.gif
+frontpanel	data/bgs/01_05_3/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  160 10
+spawn2  180 30
+spawn3  170 20
+spawn4  190 40
+
+palette data/bgs/01_05_3/01_05_3.gif #1
+
+wall    -1370  320 -90 70 1440 1590 150 520
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	200 430
+at 0
+
+spawn Respawn2
+coords	200 430
+at 0
+
+spawn Respawn3
+coords	200 430
+at 0
+
+spawn Respawn4
+coords	200 430
+at 0
+
+#-------Respawn
+
+
+
+
+#-------casket
+spawn jar1
+alias Casket
+flip 1
+item scroll
+health 1
+coords 220 210
+at 0
+#-------casket
+
+#-------casket
+spawn jar1
+alias Casket
+flip 1
+item grapes
+health 1
+coords 258 190
+at 0
+#-------casket
+
+#-------Monsters
+
+group   4 4
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+spawn d01_05_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 0
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 0
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 0
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 0
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 0
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 0
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 0
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 0
+
+#-------Monsters
+
+group   4 4
+at      1
+
+wait
+at      1
+
+#------- Dialogue
+
+spawn d01_05_3
+coords 240 176
+flip 1
+at 1
+
+#------- Dialogue
+
+spawn hound2
+alias Hell_Hound
+health 94
+2phealth 104
+3phealth 124 
+4phealth 134 
+boss 1
+item missclear
+itemalias GreatEsc
+aggression 150
+map 3
+coords 570 175
+flip 0
+at 1
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+item gaunt
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 1
+
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 1
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 1
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 1
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 1
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 1
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 1
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 1
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 530 145
+flip 0
+at 1
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 580 195
+flip 0
+at 1
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 1
+
+
+#-------Monsters
+
+
+
+
+
+
+

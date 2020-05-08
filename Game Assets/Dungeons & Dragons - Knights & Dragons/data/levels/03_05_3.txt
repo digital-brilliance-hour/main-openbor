@@ -1,0 +1,434 @@
+music		data/music/STAGE26.ogg
+bossmusic	data/music/BOSS10.ogg
+background	data/bgs/03_05_3/back.gif
+panel	      data/bgs/03_05_3/n01.gif
+frontpanel	data/bgs/03_05_3/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 10 55
+spawn2  80 30 55
+spawn3  70 20 55
+spawn4  90 40 55
+
+palette data/bgs/03_05_3/03_05_3.gif #1
+
+#------- The Quest begins
+
+#spawn q03_4
+#coords 240 206
+#flip 1
+#at 0
+
+#------- The Quest begins
+
+#-------barrel
+spawn barrel
+item amber
+health 1
+coords 160 120
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item amber
+health 1
+coords 220 130
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item gaunt
+health 1
+coords 200 210
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item diamond
+health 1
+coords 350 200
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item topaz
+health 1
+coords 550 120
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item amet
+health 1
+coords 650 130
+flip 1
+at 0
+#-------barrel
+
+#-------barrel
+spawn barrel
+item scroll
+health 1
+coords 700 210
+flip 1
+at 0
+#-------barrel
+
+#-------Monsters
+
+Group 12 12
+at 480
+
+wait
+at 480
+
+#------- Dialogue
+
+spawn d03_05_2
+coords 240 176
+flip 1
+at 480
+
+#------- Dialogue
+
+spawn thug
+alias Iron_Ring_Thug
+health 15
+2phealth 25
+3phealth 35
+4phealth 45
+aggression 0
+map 0
+item gold2
+coords 540 185
+flip 0
+at 480
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords 560 120
+flip 0
+at 480
+
+spawn thug
+alias Iron_Ring_Thug
+health 15
+2phealth 25
+3phealth 35
+4phealth 45
+aggression 0
+map 0
+coords 580 210
+flip 0
+at 480
+
+spawn thug
+alias Iron_Ring_Thug
+health 15
+2phealth 25
+3phealth 35
+4phealth 45
+aggression 0
+map 0
+item gold2
+coords 600 150
+flip 0
+at 480
+
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords -40 185
+flip 1
+at 480
+
+spawn thug
+alias Iron_Ring_Thug
+health 25
+2phealth 35
+3phealth 45
+4phealth 55
+aggression 50
+map 1
+item gold2
+coords -60 120
+flip 1
+at 480
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords -80 210
+flip 1
+at 480
+
+spawn thug
+alias Iron_Ring_Thug
+health 25
+2phealth 35
+3phealth 45
+4phealth 55
+aggression 50
+map 1
+coords -100 150
+flip 1
+at 480
+
+
+spawn thug
+alias Iron_Ring_Thug
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 100
+map 2
+item gold2
+coords 640 175
+flip 0
+at 480
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords 660 130
+flip 0
+at 480
+
+spawn thug
+alias Iron_Ring_Thug
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 100
+map 2
+item gold2
+coords 680 200
+flip 0
+at 480
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords 700 140
+flip 0
+at 480
+
+#-------Monsters
+
+
+
+
+#-------Monsters
+
+Group 6 6
+at 481
+
+wait
+at 481
+
+spawn hound
+alias Hell_Hound
+health 84
+2phealth 94
+3phealth 104
+4phealth 114
+aggression 100
+map 2
+item diamond
+coords 540 185
+flip 0
+at 481
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 16
+2phealth 26
+3phealth 36
+4phealth 46
+aggression 0
+map 0
+coords 560 120
+flip 0
+at 481
+
+spawn thug
+alias Iron_Ring_Thug
+health 15
+2phealth 25
+3phealth 35
+4phealth 45
+aggression 0
+map 0
+coords 580 210
+flip 0
+at 481
+
+spawn thug
+alias Iron_Ring_Thug
+health 25
+2phealth 35
+3phealth 45
+4phealth 55
+aggression 50
+map 1
+item gold2
+coords 600 150
+flip 0
+at 481
+
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 36
+2phealth 46
+3phealth 56
+4phealth 66
+aggression 100
+map 2
+coords -40 185
+flip 1
+at 481
+
+spawn hound
+alias Hell_Hound
+health 84
+2phealth 94
+3phealth 104
+4phealth 114
+aggression 100
+map 2
+item diamond
+coords -60 120
+flip 1
+at 481
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 26
+2phealth 36
+3phealth 46
+4phealth 56
+aggression 50
+map 1
+coords -80 210
+flip 1
+at 481
+
+spawn thug
+alias Iron_Ring_Thug
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 100
+map 2
+coords -100 150
+flip 1
+at 481
+
+
+spawn thug
+alias Iron_Ring_Thug
+health 15
+2phealth 25
+3phealth 35
+4phealth 45
+aggression 0
+map 0
+item gold2
+coords 640 175
+flip 0
+at 481
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 16
+2phealth 26
+3phealth 36
+4phealth 46
+aggression 0
+map 0
+coords 660 130
+flip 0
+at 481
+
+spawn hound
+alias Hell_Hound
+health 84
+2phealth 94
+3phealth 104
+4phealth 114
+aggression 100
+map 2
+item diamond
+coords 680 200
+flip 0
+at 481
+
+spawn soldier
+alias Iron_Ring_Soldier
+health 25
+2phealth 36
+3phealth 46
+4phealth 56
+aggression 50
+map 1
+coords 700 140
+flip 0
+at 481
+
+#-------Monsters
+
+
+
+#-------go
+
+spawn go01
+alias go01
+flip 1
+health 1
+coords 260 120
+at 500
+
+#-------go
+

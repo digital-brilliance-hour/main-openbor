@@ -1,0 +1,92 @@
+# Hit dust
+
+name				trap6
+type				none
+shadow				0
+hostile				enemy player npc
+candamage			player npc
+dust				dust01
+flash				flash01
+bflash				guard01
+#setlayer 1000
+antigravity 100
+nolife				1
+
+palette 			data/chars/misc/trap1/trap1.gif
+
+anim spawn
+	loop		1
+	offset     218 198
+	delay		150
+	frame		data/chars/misc/trap1/00.gif
+	hitfx   data/sounds/hit01.wav
+	delay		2
+	attack1  213 134 11 65 10 1 0 0 0
+	frame		data/chars/misc/trap1/01.gif
+	frame		data/chars/misc/trap1/02.gif
+	frame		data/chars/misc/trap1/03.gif
+	frame		data/chars/misc/trap1/04.gif
+	frame		data/chars/misc/trap1/05.gif
+	frame		data/chars/misc/trap1/06.gif
+	frame		data/chars/misc/trap1/07.gif
+	delay		50
+	frame		data/chars/misc/trap1/08.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay		2
+	frame		data/chars/misc/trap1/07.gif
+	frame		data/chars/misc/trap1/06.gif
+	frame		data/chars/misc/trap1/05.gif
+	frame		data/chars/misc/trap1/04.gif
+	frame		data/chars/misc/trap1/03.gif
+	frame		data/chars/misc/trap1/02.gif
+	frame		data/chars/misc/trap1/01.gif
+
+anim idle
+	loop		1
+	offset     218 198
+	delay		50
+	frame		data/chars/misc/trap1/00.gif
+	sound   data/sounds/slash03.wav
+	delay		2
+	attack1  213 134 11 65 10 1 0 0 0
+	frame		data/chars/misc/trap1/01.gif
+	frame		data/chars/misc/trap1/02.gif
+	frame		data/chars/misc/trap1/03.gif
+	frame		data/chars/misc/trap1/04.gif
+	frame		data/chars/misc/trap1/05.gif
+	frame		data/chars/misc/trap1/06.gif
+	frame		data/chars/misc/trap1/07.gif
+	delay		50
+	frame		data/chars/misc/trap1/08.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay		2
+	frame		data/chars/misc/trap1/07.gif
+	frame		data/chars/misc/trap1/06.gif
+	frame		data/chars/misc/trap1/05.gif
+	frame		data/chars/misc/trap1/04.gif
+	frame		data/chars/misc/trap1/03.gif
+	frame		data/chars/misc/trap1/02.gif
+	frame		data/chars/misc/trap1/01.gif
+
+
+anim death
+	loop		0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+		
+		
+		
+		
+		

@@ -1,0 +1,137 @@
+music		data/music/STAGE17.ogg
+bossmusic	data/music/BOSS01.ogg
+background	data/bgs/02_05_2/back.gif
+panel	      data/bgs/02_05_2/n01.gif
+frontpanel	data/bgs/02_05_2/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_05_2/02_05_2.gif #1
+
+wall    770 250 0 300 2000 2000 150 250
+
+#------- Dialogue
+
+spawn d02_05_1
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn crate
+alias crate
+health 1
+item gaunt
+coords 460 150
+flip 0
+at 0
+#-------chests
+
+#-------chests
+spawn crate
+alias crate
+health 1
+item gold2
+coords 520 150
+flip 0
+at 0
+#-------chests
+
+#-------Monsters
+
+#group   1 1
+#at      0
+
+#wait
+#at      0
+
+spawn elder2
+alias		town03_1
+health		1
+aggression	0
+map			1
+coords 200 185
+flip 0
+at 0
+
+#-------Civilian
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   3 3
+at      480
+
+wait
+at      480
+
+
+#------- Dialogue
+
+spawn d02_05_2
+coords 240 176
+flip 1
+at 480
+
+#------- Dialogue
+
+spawn thug
+alias Thug
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 100
+map 2
+coords 495 210
+flip 0
+at 480
+
+spawn thug
+alias Thug
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 50
+map 1
+coords -100 165
+flip 1
+at 480
+
+spawn thug
+alias Thug
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 100
+map 2
+coords -80 210
+flip 1
+at 480
+
+#-------Monsters
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 390 190
+at 544
+
+#------- Go
+
+
+
+

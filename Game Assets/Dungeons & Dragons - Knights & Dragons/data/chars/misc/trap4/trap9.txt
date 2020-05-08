@@ -1,0 +1,594 @@
+# Hit dust
+
+name				trap9
+type				none
+shadow				3
+hostile				player npc
+candamage			player npc
+dust				dust01
+flash				flash01
+bflash				guard01
+jumpheight			2
+antigravity			30
+#setlayer 1000
+antigravity 100
+nolife				1
+
+palette 			data/chars/misc/trap4/trap4.gif
+
+anim spawn
+	loop		1
+	hitfx   data/sounds/hit01.wav
+
+	
+	delay		150
+	shadowcoords 9999 9999
+	offset     218 356
+	frame		data/chars/misc/trap4/00.gif
+	
+	delay		1
+	attack1  187 154 63 45 10 1 0 0 0
+	shadowcoords 208 356
+	offset     218 356
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 354
+	offset     218 354
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 352
+	offset     218 352
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 350
+	offset     218 350
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 348
+	offset     218 348
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 346
+	offset     218 346
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 344
+	offset     218 344
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 342
+	offset     218 342
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 340
+	offset     218 340
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 338
+	offset     218 338
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 336
+	offset     218 336
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 334
+	offset     218 334
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 332
+	offset     218 332
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 330
+	offset     218 330
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 328
+	offset     218 328
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 326
+	offset     218 326
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 324
+	offset     218 324
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 322
+	offset     218 322
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 320
+	offset     218 320
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 318
+	offset     218 318
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 316
+	offset     218 316
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 314
+	offset     218 314
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 312
+	offset     218 312
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 310
+	offset     218 310
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 308
+	offset     218 308
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 306
+	offset     218 306
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 304
+	offset     218 304
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 302
+	offset     218 302
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 300
+	offset     218 300
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 298
+	offset     218 298
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 296
+	offset     218 296
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 294
+	offset     218 294
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 292
+	offset     218 292
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 290
+	offset     218 290
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 288
+	offset     218 288
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 286
+	offset     218 286
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 284
+	offset     218 284
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 282
+	offset     218 282
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 280
+	offset     218 280
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 278
+	offset     218 278
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 276
+	offset     218 276
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 274
+	offset     218 274
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 272
+	offset     218 272
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 270
+	offset     218 270
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 268
+	offset     218 268
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 266
+	offset     218 266
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 264
+	offset     218 264
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 262
+	offset     218 262
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 260
+	offset     218 260
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 258
+	offset     218 258
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 256
+	offset     218 256
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 254
+	offset     218 254
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 252
+	offset     218 252
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 250
+	offset     218 250
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 248
+	offset     218 248
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 246
+	offset     218 246
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 244
+	offset     218 244
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 242
+	offset     218 242
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 240
+	offset     218 240
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 238
+	offset     218 238
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 236
+	offset     218 236
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 234
+	offset     218 234
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 232
+	offset     218 232
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 230
+	offset     218 230
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 228
+	offset     218 228
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 226
+	offset     218 226
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 224
+	offset     218 224
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 222
+	offset     218 222
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 220
+	offset     218 220
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 218
+	offset     218 218
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 216
+	offset     218 216
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 214
+	offset     218 214
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 212
+	offset     218 212
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 210
+	offset     218 210
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 208
+	offset     218 208
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 206
+	offset     218 206
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 204
+	offset     218 204
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 202
+	offset     218 202
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 200
+	offset     218 200
+	frame		data/chars/misc/trap4/00.gif
+
+	
+
+	
+	delay		100
+	shadowcoords 208 198
+	offset     218 198
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame		data/chars/misc/trap4/00.gif
+
+	
+	
+	
+	
+	delay		1
+	
+	shadowcoords 208 199
+	offset     218 199
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 200
+	offset     218 200
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 202
+	offset     218 202
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 204
+	offset     218 204
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 206
+	offset     218 206
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 208
+	offset     218 208
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 210
+	offset     218 210
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 212
+	offset     218 212
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 214
+	offset     218 214
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 216
+	offset     218 216
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 218
+	offset     218 218
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 220
+	offset     218 220
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 222
+	offset     218 222
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 224
+	offset     218 224
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 226
+	offset     218 226
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 228
+	offset     218 228
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 230
+	offset     218 230
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 232
+	offset     218 232
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 234
+	offset     218 234
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 236
+	offset     218 236
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 238
+	offset     218 238
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 240
+	offset     218 240
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 242
+	offset     218 242
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 244
+	offset     218 244
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 246
+	offset     218 246
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 248
+	offset     218 248
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 250
+	offset     218 250
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 252
+	offset     218 252
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 254
+	offset     218 254
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 256
+	offset     218 256
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 258
+	offset     218 258
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 260
+	offset     218 260
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 262
+	offset     218 262
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 264
+	offset     218 264
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 266
+	offset     218 266
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 268
+	offset     218 268
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 270
+	offset     218 270
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 272
+	offset     218 272
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 274
+	offset     218 274
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 276
+	offset     218 276
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 278
+	offset     218 278
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 280
+	offset     218 280
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 282
+	offset     218 282
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 284
+	offset     218 284
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 286
+	offset     218 286
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 288
+	offset     218 288
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 290
+	offset     218 290
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 292
+	offset     218 292
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 294
+	offset     218 294
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 296
+	offset     218 296
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 298
+	offset     218 298
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 300
+	offset     218 300
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 302
+	offset     218 302
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 304
+	offset     218 304
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 306
+	offset     218 306
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 308
+	offset     218 308
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 310
+	offset     218 310
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 312
+	offset     218 312
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 314
+	offset     218 314
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 316
+	offset     218 316
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 318
+	offset     218 318
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 320
+	offset     218 320
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 322
+	offset     218 322
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 324
+	offset     218 324
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 326
+	offset     218 326
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 320
+	offset     218 320
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 330
+	offset     218 330
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 332
+	offset     218 332
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 334
+	offset     218 334
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 336
+	offset     218 336
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 338
+	offset     218 338
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 340
+	offset     218 340
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 342
+	offset     218 342
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 344
+	offset     218 344
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 346
+	offset     218 346
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 348
+	offset     218 348
+	frame		data/chars/misc/trap4/00.gif
+	
+	shadowcoords 208 350
+	offset     218 350
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 352
+	offset     218 352
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 354
+	offset     218 354
+	frame		data/chars/misc/trap4/00.gif
+	shadowcoords 208 356
+	offset     218 356
+	frame		data/chars/misc/trap4/00.gif
+	
+	delay		100
+	shadowcoords 9999 9999
+	offset     218 358
+	frame		data/chars/misc/trap4/00.gif
+
+	
+
+	
+
+anim idle
+	loop		1
+	offset     218 198
+	hitfx   data/sounds/hit01.wav
+
+	delay		1
+	frame		data/chars/misc/trap4/00.gif
+
+
+anim death
+	loop		0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+		
+		
+		
+		
+		

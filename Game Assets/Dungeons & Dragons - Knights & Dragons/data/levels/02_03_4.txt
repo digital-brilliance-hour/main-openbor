@@ -1,0 +1,451 @@
+music		data/music/STAGE15.ogg
+bossmusic	data/music/BOSS15.ogg
+background	data/bgs/02_03_4/back.gif
+panel	      data/bgs/02_03_4/n01.gif
+frontpanel	data/bgs/02_03_4/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_03_4/02_03_4.gif #1
+
+wall    -490 220 10 190 610 440 150 1200
+
+wall    -310 110 10 190 1000 440 150 1200
+
+wall    510 110 -350 200 1000 1000 150 1200
+
+
+wall    -320 305 580 0 850 1620 150 1200
+
+
+#------- Dialogue
+
+spawn d02_03_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------jar
+spawn jar1
+item spotion
+health 1
+coords 360 80
+at 0
+#-------jar
+
+#-------jar
+spawn jar1
+item diamond
+health 1
+coords 420 80
+at 0
+#-------jar
+
+#-------jar
+spawn jar1
+item diamond
+health 1
+coords 480 80
+at 0
+#-------jar
+
+#-------jar
+spawn jar1
+item amet
+health 1
+coords 280 150
+at 0
+#-------jar
+
+#-------jar
+spawn jar1
+item scroll
+health 1
+coords 340 150
+at 0
+#-------jar
+
+#-------jar
+spawn jar1
+item gaunt
+health 1
+coords 400 150
+at 0
+#-------jar
+
+#-------trap4
+spawn trap4
+health 1
+coords 330 110
+at 0
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 410 120
+at 0
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 500 140
+at 0
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 470 110
+at 0
+#-------trap4
+
+
+#-------Monsters
+
+group   5 5
+at      176
+
+wait
+at      176
+
+#------- Dialogue
+
+spawn d02_03_4
+coords 240 176
+flip 1
+at 176
+
+#------- Dialogue
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords 510 165
+flip 0
+at 176
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 490 120
+flip 0
+at 176
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords -50 165
+flip 1
+at 176
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -90 130
+flip 1
+at 176
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -110 150
+flip 1
+at 176
+
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 510 165
+flip 0
+at 176
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 490 120
+flip 0
+at 176
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -50 165
+flip 1
+at 176
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords -90 130
+flip 1
+at 176
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -110 150
+flip 1
+at 176
+
+#-------Monsters
+
+#-------jar
+spawn jar1
+item banana
+health 1
+coords 780 120
+at 177
+#-------jar
+
+#-------jar
+spawn jar1
+item scroll
+health 1
+coords 830 120
+at 177
+#-------jar
+
+#-------jar
+spawn jar1
+item amber
+health 1
+coords 880 120
+at 177
+#-------jar
+
+#-------trap4
+spawn trap4
+health 1
+coords 480 145
+at 177
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 450 175
+at 277
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 390 130
+at 377
+#-------trap4
+
+#-------trap4
+spawn trap4
+health 1
+coords 350 155
+at 477
+#-------trap4
+
+#-------Monsters
+
+group   5 5
+at      276
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords 510 165
+flip 0
+at 276
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 490 120
+flip 0
+at 376
+
+spawn harpy
+alias Harpy
+flip 1
+health 24
+coords -53 100
+at 476
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -90 130
+flip 1
+at 576
+
+wait
+at      736
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -110 150
+flip 1
+at 736
+
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 510 165
+flip 0
+at 736
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords 490 120
+flip 0
+at 736
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -50 165
+flip 1
+at 736
+
+spawn harpy
+alias Harpy
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54
+aggression 100
+map 0
+coords -90 130
+flip 1
+at 736
+
+spawn harpy
+alias Harpy
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64
+aggression 150
+map 1
+item gold2
+coords -110 150
+flip 1
+at 736
+
+#-------Monsters
+
+#------- Go
+
+spawn go02
+flip 1
+coords 450 150
+at 736
+
+#------- Go
+
+
+
+

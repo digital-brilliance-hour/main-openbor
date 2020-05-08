@@ -1,0 +1,309 @@
+name				slime
+score				2 -1
+health				1
+speed				5
+type				enemy
+hostile				player npc
+candamage			player npc
+shadow				1
+aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+aggression			8
+nopain				1
+nodrop				1
+aimove				chase
+antigravity			90
+falldie				1
+nodieblink			1
+icon				data/chars/slime/icon.gif 1
+icondie				data/chars/slime/icond.gif 1
+diesound			data/sounds/slime02.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette data/chars/slime/slime.gif #1
+
+
+remap	data/chars/slime/idle1.gif   data/chars/slime/alter01.gif
+remap	data/chars/slime/idle1.gif   data/chars/slime/alter02.gif
+remap	data/chars/slime/idle1.gif   data/chars/slime/alter03.gif
+
+#-------Moves
+
+
+anim spawn
+	shadowcoords 223 198
+	loop	0
+	offset	225 198
+	bbox	202 172 48 27
+	jumpframe	0 0.1 0
+	landframe	48
+	delay	16
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	
+	delay	6
+	frame	data/chars/slime/ju1.gif
+	delay	8
+	frame	data/chars/slime/ju2.gif
+	delay	12
+	frame	data/chars/slime/ju1.gif
+	delay	10
+	frame	data/chars/slime/ju3.gif
+
+anim idle
+	shadowcoords 223 198
+	loop	1
+	offset	225 198
+	bbox	202 172 48 27
+	delay	16
+	frame	data/chars/slime/idle1.gif
+	frame	data/chars/slime/idle2.gif
+	frame	data/chars/slime/idle3.gif
+	frame	data/chars/slime/idle2.gif
+
+anim walk
+	shadowcoords 223 198
+	loop	1
+	offset	225 198
+	bbox	202 172 48 27
+	delay   16
+	frame	data/chars/slime/walk1.gif
+	frame	data/chars/slime/walk2.gif
+	frame	data/chars/slime/walk3.gif
+	frame	data/chars/slime/walk4.gif
+	frame	data/chars/slime/walk3.gif
+	frame	data/chars/slime/walk2.gif
+
+anim attack1
+	shadowcoords 223 198
+	range	0 40
+	loop	0
+	offset	225 198
+	bbox	202 172 48 27
+	delay	8
+	hitfx   data/sounds/hit01.wav
+	sound data/sounds/slime01.wav
+	frame	data/chars/slime/a101.gif
+	attack  203 125 75 75 10 0 0 0 12
+	frame	data/chars/slime/a102.gif
+	frame	data/chars/slime/a103.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a105.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a103.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a105.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a103.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a105.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a103.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a105.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a103.gif
+	frame	data/chars/slime/a104.gif
+	frame	data/chars/slime/a105.gif
+	frame	data/chars/slime/a104.gif
+
+anim attack2
+	shadowcoords 223 198
+	range	41 80
+	loop	0
+	offset	225 198
+	bbox	202 172 48 27
+	jumpframe	4 1 1
+	landframe	52
+	delay	6
+	hitfx   data/sounds/hit01.wav
+	sound data/sounds/slime01.wav
+	frame	data/chars/slime/ju1.gif
+	delay	8
+	frame	data/chars/slime/ju2.gif
+	delay	12
+	frame	data/chars/slime/ju1.gif
+	delay	10
+	frame	data/chars/slime/ju3.gif
+
+	delay	16
+	attack2  210 167 31 26 5 0 0 0 12
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+	frame	data/chars/slime/ju4.gif
+	frame	data/chars/slime/ju5.gif
+
+	delay	6
+	sound data/sounds/slime01.wav
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/slime/ju1.gif
+	delay	8
+	frame	data/chars/slime/ju2.gif
+	delay	12
+	frame	data/chars/slime/ju1.gif
+	delay	10
+	frame	data/chars/slime/ju3.gif
+
+anim pain1
+	shadowcoords 223 198
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	delay	3
+	offset	225 198
+	bbox	202 172 48 27
+	frame	data/chars/slime/fall1.gif
+	offset  223 198
+	frame	data/chars/slime/fall1.gif
+	offset  225 198
+	frame	data/chars/slime/fall1.gif
+	offset  223 198
+	frame	data/chars/slime/fall1.gif
+	offset  225 198
+	delay   23
+	frame	data/chars/slime/fall1.gif
+
+anim fall1
+	shadowcoords 223 198
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	delay	60
+	offset	225 198
+	frame	data/chars/slime/fall1.gif
+	delay	18
+	frame	data/chars/slime/fall2.gif
+	frame	data/chars/slime/fall3.gif
+	frame	data/chars/slime/fall4.gif
+	frame	data/chars/slime/fall5.gif
+
+anim rise1
+	shadowcoords 223 198
+	loop	0
+	offset	225 198
+	delay	35
+	frame	data/chars/slime/fall1.gif
+
+anim death1
+	shadowcoords 223 198
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	delay	18
+	offset	225 198
+	frame	data/chars/slime/fall1.gif
+	frame	data/chars/slime/fall2.gif
+	frame	data/chars/slime/fall3.gif
+	frame	data/chars/slime/fall4.gif
+	frame	data/chars/slime/fall5.gif
+
+
+
+
+
+

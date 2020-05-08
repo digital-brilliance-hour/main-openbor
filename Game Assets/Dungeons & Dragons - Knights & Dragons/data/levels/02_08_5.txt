@@ -1,0 +1,1252 @@
+music		data/music/STAGE20.ogg
+bossmusic	data/music/BOSS04.ogg
+background	data/bgs/02_08_5/back.gif
+panel	      data/bgs/02_08_5/n01.gif
+frontpanel	data/bgs/02_08_5/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_08_5/02_08_5.gif #1
+
+wall    1710  315  240 70 730 900 150 520
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	513 189
+at 0
+
+spawn Respawn2
+coords	513 189
+at 0
+
+spawn Respawn3
+coords	513 189
+at 0
+
+spawn Respawn4
+coords	513 189
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d02_08_4
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item gaunt
+coords 240 160
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item topaz
+coords 440 130
+flip 1
+at 0
+#-------chest
+
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item amet
+coords 640 210
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item amber
+coords 840 140
+flip 1
+at 0
+#-------chest
+
+#-------trap
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 170 200
+flip 0
+at 1
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 200 300
+flip 0
+at 21
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 135 400
+flip 0
+at 41
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 180 500
+flip 0
+at 61
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 170 350
+flip 0
+at 81
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 190 200
+flip 0
+at 101
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 130 300
+flip 0
+at 121
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 170 400
+flip 0
+at 141
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 160 500
+flip 0
+at 161
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 160 350
+flip 0
+at 181
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 180 200
+flip 0
+at 201
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 140 300
+flip 0
+at 221
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 190 400
+flip 0
+at 241
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 150 500
+flip 0
+at 261
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 210 350
+flip 0
+at 281
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 170 200
+flip 0
+at 301
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 200 300
+flip 0
+at 321
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 135 400
+flip 0
+at 341
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 180 500
+flip 0
+at 361
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 170 350
+flip 0
+at 381
+
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 219 190 200
+flip 0
+at 401
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 340 130 300
+flip 0
+at 421
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 390 170 400
+flip 0
+at 441
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 560 160 500
+flip 0
+at 461
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 268 160 350
+flip 0
+at 479
+
+
+#-------Monsters
+
+Group 4 4
+at 480
+
+wait
+at      480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 540 160
+flip 0
+at 480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 580 190
+flip 0
+at 480
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+item gold2
+coords -80 180
+flip 1
+at 480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords -40 150
+flip 1
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 350 160 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 280 130 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 220 180 350
+flip 0
+at 480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 540 160
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 250 160 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 380 130 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 420 180 350
+flip 0
+at 480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 580 190
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 350 160 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 280 130 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 220 180 350
+flip 0
+at 480
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+item gold2
+coords -80 180
+flip 1
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 250 160 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 380 130 500
+flip 0
+at 480
+
+spawn trap5
+alias trap
+health 1
+item scroll
+coords 420 180 350
+flip 0
+at 480
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords -40 150
+flip 1
+at 480
+
+spawn Orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 100
+map 2
+item gold2
+coords 540 160
+flip 0
+at 480
+
+spawn Worg
+alias Worg
+health 68
+2phealth 72
+3phealth 82 
+4phealth 92 
+aggression 150
+map 3
+item gold2
+coords 580 190
+flip 0
+at 480
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+item gold2
+coords -80 180
+flip 1
+at 480
+
+
+spawn Orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 100
+map 2
+coords -40 150
+flip 1
+at 480
+
+#-------Monsters
+
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item scroll
+coords 730 170
+flip 1
+at 481
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item spotion
+coords 800 210
+flip 0
+at 481
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item diamond
+coords 850 130
+flip 1
+at 481
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item diamond
+coords 950 130
+flip 1
+at 481
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+health 1
+item amber
+coords 1000 210
+flip 1
+at 481
+#-------chest
+
+#-------trap
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 519 130 
+flip 0
+at 481
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 519 150 
+flip 0
+at 501
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 519 170 
+flip 0
+at 521
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 519 190 
+flip 0
+at 541
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 519 210 
+flip 0
+at 561
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 170 
+flip 0
+at 581
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 150 
+flip 0
+at 601
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 190 
+flip 0
+at 621
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 130 
+flip 0
+at 641
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 210 
+flip 0
+at 661
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 550 190 
+flip 0
+at 661
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 590 190 
+flip 0
+at 661
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 640 190 
+flip 0
+at 661
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 640 210 
+flip 0
+at 661
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 700 210 
+flip 0
+at 681
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 700 190 
+flip 0
+at 701
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 700 170 
+flip 0
+at 721
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 700 150 
+flip 0
+at 741
+
+spawn trap2
+alias trap
+health 1
+item scroll
+coords 700 130 
+flip 0
+at 761
+
+#-------Monsters
+
+Group 4 4
+at 1440
+
+wait
+at      1440
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 540 150
+flip 0
+at 1440
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+item gold2
+coords 580 140
+flip 0
+at 1440
+
+spawn Orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 560 130
+flip 0
+at 1440
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item gold2
+coords 600 130
+flip 0
+at 1440
+
+spawn Goblin
+alias Goblin
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 540 150
+flip 0
+at 1440
+
+spawn Orc
+alias Orc
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+item gold2
+coords 580 140
+flip 0
+at 1440
+
+spawn Goblin
+alias Goblin
+health 38
+2phealth 48
+3phealth 58 
+4phealth 68 
+aggression 150
+map 3
+item gold2
+coords 560 130
+flip 0
+at 1440
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item gold2
+coords 600 150
+flip 0
+at 1440
+
+#-------Monsters
+
+#------- Dialogue
+
+spawn d02_08_5
+coords 240 176
+flip 1
+at 1920
+
+#------- Dialogue
+
+#-------Monsters
+
+Group 4 4
+at 1920
+
+wait
+at      1920
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item amet
+coords 540 150
+flip 0
+at 1920
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item amet
+coords 560 130
+flip 0
+at 1920
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item amet
+coords -40 150
+flip 1
+at 1920
+
+spawn wraith
+alias Wraith
+health 40
+2phealth 50
+3phealth 60 
+4phealth 70 
+aggression 100
+map 1
+item amet
+coords -60 130
+flip 1
+at 1920
+
+#-------Monsters
+
+#------- Dialogue
+
+spawn d02_08_6
+coords 240 176
+flip 1
+at 2400
+
+#------- Dialogue
+
+#-------Monsters
+
+Group 3 3
+at 2400
+
+wait
+at      2400
+
+spawn ecleric
+alias Aralic
+health 100
+2phealth 200
+3phealth 300 
+4phealth 400 
+aggression 150
+map 3
+boss 1
+item missclear
+itemalias KingFest
+coords 260 130
+flip 0
+at 2400
+
+spawn dbeast
+alias Displacer_Beast
+health 100
+2phealth 200
+3phealth 300 
+4phealth 400 
+aggression 0
+map 0
+boss 1
+item missclear
+itemalias KingFest
+coords 520 170
+flip 0
+at 2400
+
+#-------
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 160 180
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 260 200
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 380 150
+flip 0
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 400 190
+flip 0
+at 2400
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 160 180
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 260 200
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 380 150
+flip 0
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 400 190
+flip 0
+at 2400
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 160 180
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 260 200
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 380 150
+flip 0
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 400 190
+flip 0
+at 2400
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 160 180
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 260 200
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 380 150
+flip 0
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 400 190
+flip 0
+at 2400
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 160 180
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 260 200
+flip 1
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 380 150
+flip 0
+at 2400
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 400 190
+flip 0
+at 2400
+
+
+#-------
+
+#-------Monsters
+
+
+
+
+
+
+
+

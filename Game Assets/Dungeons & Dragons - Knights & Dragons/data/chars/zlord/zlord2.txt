@@ -1,0 +1,1492 @@
+name				zlord2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				810 -1
+health				180
+speed				4
+shadow				4
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash01
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			5
+thold				49
+#risetime 1000
+nodieblink			0
+falldie				2
+jugglepoints		15
+icon				data/chars/zlord/icon.gif 1
+icondie				data/chars/zlord/icond.gif 1
+diesound			data/sounds/ogre01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/zlord/zlord.gif #1
+
+remap	data/chars/zlord/idle00.gif   data/chars/zlord/alter01.gif
+remap	data/chars/zlord/idle00.gif   data/chars/zlord/alter02.gif
+remap	data/chars/zlord/idle00.gif   data/chars/zlord/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+
+	delay      1
+	move 1
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk05.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk01.gif
+
+ 	move 0
+	 delay      24
+	 frame	data/chars/zlord/idle00.gif
+
+anim idle
+	shadowcoords 210 200
+	loop	1
+	 offset     225 198
+	bbox	212 117 30 81
+	delay	24
+	frame	data/chars/zlord/idle00.gif
+
+anim walk
+	shadowcoords 210 200
+	loop	1
+	offset     225 198
+	bbox	212 117 30 81
+	delay   12
+	frame	data/chars/zlord/wk00.gif
+	frame	data/chars/zlord/wk01.gif
+	frame	data/chars/zlord/wk02.gif
+	frame	data/chars/zlord/wk03.gif
+	frame	data/chars/zlord/wk04.gif
+	frame	data/chars/zlord/wk05.gif
+
+anim block
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	move	-6
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	move	-5
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	move	-5
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	move	-4
+	frame	data/chars/zlord/a201.gif
+	frame	data/chars/zlord/a201.gif
+	move	-4
+	frame	data/chars/zlord/a201.gif
+	frame	data/chars/zlord/a201.gif
+	move	-3
+	frame	data/chars/zlord/a202.gif
+	frame	data/chars/zlord/a202.gif
+	move	-3
+	frame	data/chars/zlord/a202.gif
+	frame	data/chars/zlord/a202.gif
+	move	-2
+	frame	data/chars/zlord/a202.gif
+	frame	data/chars/zlord/a202.gif
+	move	-2
+	frame	data/chars/zlord/a202.gif
+	frame	data/chars/zlord/a202.gif
+	move	-1
+	frame	data/chars/zlord/a201.gif
+	frame	data/chars/zlord/a201.gif
+	move	-1
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	move	0
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a203.gif
+
+anim attack1
+	shadowcoords 210 200
+	range	0 100
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/ogre02.wav
+	delay	7
+	frame	data/chars/zlord/a101.gif
+	sound   data/sounds/slash02.wav
+	frame	data/chars/zlord/a102.gif
+	attack1  226 118 104 81 10 0 0 0 0
+	frame	data/chars/zlord/a103.gif
+	delay	43
+	frame	data/chars/zlord/a104.gif
+	delay	7
+	frame	data/chars/zlord/a103.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a102.gif
+
+anim attack2
+	shadowcoords 210 200
+	range	101 150
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/ogre02.wav
+	delay	7
+	frame	data/chars/zlord/a203.gif
+	frame	data/chars/zlord/a201.gif
+	delay	20
+	frame	data/chars/zlord/a202.gif
+
+	delay	7
+	frame	data/chars/zlord/a203.gif
+
+	delay	2
+	move	6
+	frame	data/chars/zlord/a204.gif
+	frame	data/chars/zlord/a204.gif
+	move	5
+	frame	data/chars/zlord/a204.gif
+	frame	data/chars/zlord/a204.gif
+	move	4
+	attack1  226 118 104 81 10 1 0 0 50
+	frame	data/chars/zlord/a205.gif
+	frame	data/chars/zlord/a205.gif
+	move	3
+	frame	data/chars/zlord/a205.gif
+	frame	data/chars/zlord/a205.gif
+	move	2
+	frame	data/chars/zlord/a206.gif
+	frame	data/chars/zlord/a206.gif
+	move	1
+	frame	data/chars/zlord/a206.gif
+	frame	data/chars/zlord/a206.gif
+
+	move	0
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/zlord/a207.gif
+	frame	data/chars/zlord/a208.gif
+
+anim attack3
+	shadowcoords 210 200
+	range	151 200
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/ogre02.wav
+	delay	6
+	frame	data/chars/zlord/a301.gif
+	frame	data/chars/zlord/a302.gif
+	frame	data/chars/zlord/a303.gif
+	frame	data/chars/zlord/a304.gif
+	frame	data/chars/zlord/a305.gif
+
+	delay	4
+	attack2  226 109 204 90 10 1 0 0 50
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+
+	delay	8
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a309.gif
+	frame	data/chars/zlord/a310.gif
+	frame	data/chars/zlord/a311.gif
+	frame	data/chars/zlord/a312.gif
+	
+
+anim riseattack
+	shadowcoords 210 200
+	range	0 200
+	loop	0
+	offset     225 198
+	hitfx   data/sounds/hit01.wav
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+	sound   data/sounds/ogre02.wav
+	delay	6
+	frame	data/chars/zlord/a301.gif
+	frame	data/chars/zlord/a302.gif
+	frame	data/chars/zlord/a303.gif
+	frame	data/chars/zlord/a304.gif
+	frame	data/chars/zlord/a305.gif
+
+	delay	4
+	attack2  226 109 204 90 10 1 0 0 50
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a306.gif
+	frame	data/chars/zlord/a307.gif
+	frame	data/chars/zlord/a308.gif
+	frame	data/chars/zlord/a307.gif
+
+	delay	8
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zlord/a309.gif
+	frame	data/chars/zlord/a310.gif
+	frame	data/chars/zlord/a311.gif
+	frame	data/chars/zlord/a312.gif
+	
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 210 200
+	load		blood21
+	subentity	blood21
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+
+	delay   2
+	offset     228 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	offset     222 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	offset     228 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	offset     222 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	offset     228 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	offset     222 198
+	frame	data/chars/zlord/pain102.gif
+	offset     225 198
+	frame	data/chars/zlord/pain102.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/zlord/pain102.gif
+	frame	data/chars/zlord/pain102.gif
+	move	-2
+	frame	data/chars/zlord/pain102.gif
+	frame	data/chars/zlord/pain102.gif
+	move	-2
+	frame	data/chars/zlord/pain102.gif
+	frame	data/chars/zlord/pain102.gif
+	move	-1
+	frame	data/chars/zlord/pain102.gif
+	frame	data/chars/zlord/pain102.gif
+	move	-1
+	frame	data/chars/zlord/pain102.gif
+	frame	data/chars/zlord/pain102.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/zlord/pain102.gif
+	delay   2
+	frame	data/chars/zlord/pain102.gif
+	delay   2
+	frame	data/chars/zlord/pain102.gif
+	delay   2
+	frame	data/chars/zlord/pain102.gif
+	delay   2
+	frame	data/chars/zlord/pain102.gif
+	delay   2
+	frame	data/chars/zlord/pain102.gif
+
+anim fall1
+	shadowcoords 210 200
+	load		blood21
+	subentity	blood21
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/zlord/fall01.gif
+	delay	40
+	frame	data/chars/zlord/rise00.gif
+
+anim rise1
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+
+anim death1
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 210 200
+	jumpframe	0 1.2 -1.7
+	landframe	13
+	load		blood21
+	subentity	blood21
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+
+	delay   2
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	
+	delay	12
+	frame	data/chars/zlord/rise03.gif
+
+anim fall2
+	shadowcoords 210 200
+	load		blood21
+	subentity	blood21
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/zlord/fall01.gif
+	delay	40
+	frame	data/chars/zlord/rise00.gif
+
+anim rise2
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+
+anim death2
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	delay   2
+	move	-3
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-2
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-2
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-1
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-1
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+
+anim fall3
+	shadowcoords 210 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/zlord/fall01.gif
+	delay	40
+	frame	data/chars/zlord/rise00.gif
+
+anim rise3
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+
+anim death3
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	delay   2
+	move	-3
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-2
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-2
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-1
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	move	-1
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+
+anim fall4
+	shadowcoords 210 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/zlord/fall01.gif
+	delay	40
+	frame	data/chars/zlord/rise00.gif
+
+anim rise4
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+
+anim death4
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay   70
+	frame	data/chars/zlord/rise00.gif
+	delay	10
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	delay	8
+	frame	data/chars/zlord/rise03.gif
+
+anim fall5
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+
+anim rise5
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay   70
+	frame	data/chars/zlord/rise00.gif
+	delay	10
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	delay	8
+	frame	data/chars/zlord/rise03.gif
+
+	
+anim death5
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+
+anim fall6
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/zlord/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/zlord/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/zlord/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/zlord/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay   70
+	frame	data/chars/zlord/rise00.gif
+	delay	10
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	delay	8
+	frame	data/chars/zlord/rise03.gif
+
+anim death6
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 210 200
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/zlord/pain101.gif
+
+	delay	65
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/zlord/fall01.gif
+	delay	40
+	frame	data/chars/zlord/rise00.gif
+
+	
+anim rise7
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	frame	data/chars/zlord/rise03.gif
+
+anim death7
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 210 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+
+	delay   210
+	frame	data/chars/zlord/pain101.gif
+
+anim fall8
+	shadowcoords 210 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     228 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	frame	data/chars/zlord/pain101.gif
+	offset     222 198
+	frame	data/chars/zlord/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/zlord/pain101.gif
+	
+	delay   210
+	frame	data/chars/zlord/pain101.gif
+
+anim rise8
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/zlord/pain101.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	delay   70
+	frame	data/chars/zlord/rise00.gif
+	delay	10
+	frame	data/chars/zlord/rise01.gif
+	frame	data/chars/zlord/rise02.gif
+	delay	8
+	frame	data/chars/zlord/rise03.gif
+
+
+anim death8
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	delay   260
+	frame	data/chars/zlord/pain101.gif
+	delay   5
+	frame	data/chars/zlord/pain101.gif
+	frame	data/chars/zlord/fall01.gif
+	frame	data/chars/zlord/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

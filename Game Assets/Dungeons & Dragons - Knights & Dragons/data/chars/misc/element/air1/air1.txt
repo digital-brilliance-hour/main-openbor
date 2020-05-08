@@ -1,0 +1,274 @@
+name				air1
+type				npc
+hostile				enemy
+candamage			enemy
+health				1000
+speed				15
+shadow				3
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+nopain				1
+nodrop				2
+nodieblink			2
+falldie				1
+nolife				1
+lifespan			15
+subject_to_screen	1
+#aimove				chase
+aggression			300
+
+palette				data/chars/misc/element/element.gif #1
+
+#-------Moves
+
+anim spawn
+	load		ele_01
+	subentity	ele_01
+	spawnframe	24 240 176 0 1
+	shadowcoords 218 198
+	loop       0
+	offset     225 198
+	delay	2
+	frame	data/chars/misc/element/air1/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/01.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/02.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/03.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/04.gif
+	frame	data/chars/misc/empty.gif
+
+	sound   data/sounds/super02.wav
+	delay	1
+	frame	data/chars/misc/element/air1/05.gif
+
+anim idle
+	sync	walk
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+
+anim attack1
+	range	0 200
+	load		air2
+	subentity	air2
+	spawnframe	0 0 0 0 0
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+
+anim fall1
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	bbox	0 0 0 0
+
+	delay	2
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/05.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/air1/06.gif
+	frame	data/chars/misc/empty.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+
+	sound   data/sounds/super02.wav
+	delay	2
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/05.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/05.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/05.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/06.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/06.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/06.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/04.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/04.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/04.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/03.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/03.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/03.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/02.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/02.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/02.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/01.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/01.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 198
+	frame	data/chars/misc/element/air1/01.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+

@@ -1,0 +1,620 @@
+music		data/music/STAGE26.ogg
+bossmusic	data/music/BOSS10.ogg
+background	data/bgs/03_05_2/back.gif
+bglayer		data/bgs/03_05_2/n01.gif 0 0 0 0 0 0 99999999 999999999 1 0 0 0 0 0 0.8
+fglayer		data/bgs/03_05_2/f01.gif 0 0 0 0 0 0 99999999 999999999 1 1 0 0 0 0 0 2
+panel		data/chars/misc/empty.gif
+#panel	    data/bgs/03_05_2/n01.gif
+#frontpanel	data/bgs/03_05_2/f01.gif
+settime 99
+order	a
+bgspeed	10
+setweap 2
+stagenumber 3
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/03_05_2/03_05_2.gif #1
+
+#------- Dialogue
+
+spawn d03_05_1
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------Monsters
+
+group   6 6
+at      500
+
+wait
+at      500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 100
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 100
+map 0
+coords 600 210
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords 585 150
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -170 175
+flip 1
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -200 210
+flip 1
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -175 150
+flip 1
+at 500
+
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 100
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 100
+map 0
+coords 600 210
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords 585 150
+flip 0
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -170 175
+flip 1
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -200 210
+flip 1
+at 500
+
+spawn wbug
+alias Iron_Ring_Rider
+health 24
+2phealth 34
+3phealth 44 
+4phealth 54 
+aggression 0
+map 0
+coords -175 150
+flip 1
+at 500
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   6 6
+at      1000
+
+wait
+at      1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 570 175
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 600 210
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 585 150
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -170 175
+flip 1
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -200 210
+flip 1
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -175 150
+flip 1
+at 1000
+
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 570 175
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 600 210
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords 585 150
+flip 0
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -170 175
+flip 1
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -200 210
+flip 1
+at 1000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 34
+2phealth 44
+3phealth 54 
+4phealth 64 
+aggression 200
+map 1
+coords -175 150
+flip 1
+at 1000
+
+#-------Monsters
+
+#-------trunk
+
+spawn trunk
+alias trunk
+health 1
+coords 570 150
+flip 0
+at 1500
+
+spawn trunk
+alias trunk
+health 1
+coords 570 210
+flip 0
+at 2000
+
+spawn trunk
+alias trunk
+health 1
+coords 570 190
+flip 0
+at 2500
+
+
+spawn trunk
+alias trunk
+health 1
+coords 570 160
+flip 0
+at 3000
+
+spawn trunk
+alias trunk
+health 1
+coords 770 200
+flip 0
+at 3000
+
+spawn trunk
+alias trunk
+health 1
+coords 570 210
+flip 0
+at 3500
+
+spawn trunk
+alias trunk
+health 1
+coords 570 140
+flip 0
+at 3500
+
+
+spawn trunk
+alias trunk
+health 1
+coords 570 150
+flip 0
+at 4000
+
+spawn trunk
+alias trunk
+health 1
+coords 570 210
+flip 0
+at 4250
+
+spawn trunk
+alias trunk
+health 1
+coords 570 190
+flip 0
+at 4500
+
+spawn trunk
+alias trunk
+health 1
+coords 570 160
+flip 0
+at 4750
+
+spawn trunk
+alias trunk
+health 1
+coords 770 200
+flip 0
+at 5000
+
+spawn trunk
+alias trunk
+health 1
+coords 570 210
+flip 0
+at 5250
+
+spawn trunk
+alias trunk
+health 1
+coords 570 140
+flip 0
+at 5500
+
+#-------trunk
+
+#-------Monsters
+
+group   6 6
+at      6000
+
+wait
+at      6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords 570 175
+flip 0
+at 6000
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords 570 175
+flip 0
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords 600 210
+flip 0
+at 6000
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords 585 150
+flip 0
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords -170 175
+flip 1
+at 6000
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords -200 210
+flip 1
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords -175 150
+flip 1
+at 6000
+
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords 570 175
+flip 0
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords 600 210
+flip 0
+at 6000
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords 585 150
+flip 0
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords -170 175
+flip 1
+at 6000
+
+spawn harpy
+alias Harpy
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 200
+map 2
+coords -200 210
+flip 1
+at 6000
+
+spawn wbug
+alias Iron_Ring_Rider
+health 44
+2phealth 54
+3phealth 64 
+4phealth 74 
+aggression 300
+map 2
+coords -175 150
+flip 1
+at 6000
+
+
+#-------Monsters
+
+
+
+
+
+
+
+
+

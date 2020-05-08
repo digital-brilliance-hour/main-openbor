@@ -1,0 +1,1237 @@
+music		data/music/STAGE27.ogg
+bossmusic	data/music/BOSS11.ogg
+background	data/bgs/03_06_3/back.gif
+panel	      data/bgs/03_06_3/n01.gif
+frontpanel	data/bgs/03_06_3/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 10 200
+spawn2  80 30 200
+spawn3  70 20 200
+spawn4  90 40 200
+
+palette data/bgs/03_06_3/03_06_3.gif #1
+
+wall    2660 230 100 200 935 900 150 100
+
+#------- Dialogue
+
+spawn d03_06_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item gold2
+coords 230 165
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item gold2
+coords 350 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item gold2
+coords 400 185
+flip 0
+at 0
+#-------chests
+
+#-------Monsters
+
+Group 6 6
+at 480
+
+wait
+at      480
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold2
+coords 540 165
+flip 0
+at 480
+
+spawn orog
+alias Orog
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 0
+map 0
+coords 580 210
+flip 0
+at 480
+
+spawn Goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 620 185
+flip 0
+at 480
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+item gold2
+coords -40 165
+flip 1
+at 480
+
+spawn orog
+alias Orog
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 0
+map 0
+coords -80 210
+flip 1
+at 480
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold2
+coords -120 185
+flip 1
+at 480
+
+
+
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 640 165
+flip 0
+at 480
+
+spawn orog
+alias Orog
+health 45
+2phealth 55
+3phealth 65 
+4phealth 75 
+aggression 50
+map 1
+coords 680 210
+flip 0
+at 480
+
+spawn Goblin
+alias Goblin
+health 15
+2phealth 25
+3phealth 35 
+4phealth 45 
+aggression 50
+map 1
+item gold2
+coords 720 185
+flip 0
+at 480
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+coords -140 165
+flip 1
+at 480
+
+spawn orog
+alias Orog
+health 45
+2phealth 55
+3phealth 65 
+4phealth 75 
+aggression 50
+map 1
+item gold2
+coords -180 210
+flip 1
+at 480
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -220 185
+flip 1
+at 480
+
+
+spawn drags5
+alias Arauththrax_-_Small_Red_Dragon
+health 160
+2phealth 260
+3phealth 360 
+4phealth 460 
+aggression 100
+map 0
+item diamond
+coords 600 180
+flip 0
+at 480
+
+#-------Monsters
+
+
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item amber
+coords 700 180
+flip 1
+at 500
+#-------chests
+
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item bpotion
+coords 800 200
+flip 1
+at 500
+#-------chests
+
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item scroll
+coords 1000 170
+flip 1
+at 500
+#-------chests
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 500
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 500
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 550
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 550
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 600
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 600
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 600
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 650
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 650
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 650
+
+#-------trap5
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 700
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 700
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 750
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 750
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 800
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 800
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 800
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 850
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 850
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 850
+
+#-------trap5
+
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 900
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 900
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 950
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 950
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 1000
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 1000
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 1000
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 1050
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 1050
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 1050
+
+#-------trap5
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 1100
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 1100
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 1150
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 1150
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 1200
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 1200
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 1200
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 1250
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 1250
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 1250
+
+#-------trap5
+
+
+#-------Monsters
+
+Group 4 4
+at 1300
+
+wait
+at 1300
+
+#------- Dialogue
+
+#spawn d03_06_3
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item amet
+coords 640 165
+flip 0
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item topaz
+coords 680 210
+flip 0
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item amber
+coords 720 185
+flip 0
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item diamond
+coords -140 165
+flip 1
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item amet
+coords -180 210
+flip 1
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item topaz
+coords -220 185
+flip 1
+at 1300
+
+
+spawn drags5
+alias Aurakdalagh_-_Small_Red_Dragon
+health 160
+2phealth 260
+3phealth 360 
+4phealth 460 
+aggression 100
+map 0
+item diamond
+coords 600 180
+flip 0
+at 1300
+
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item amber
+coords 640 165
+flip 0
+at 1300
+
+spawn hound
+alias Hell_Hound
+health 64
+2phealth 74
+3phealth 84 
+4phealth 94 
+aggression 0
+map 0
+item diamond
+coords 680 210
+flip 0
+at 1300
+
+#-------Monsters
+
+
+
+#-------trap7
+
+spawn trap7
+alias trap7
+health 1
+coords 600 170
+flip 1
+at 1301
+
+spawn trap7
+alias trap7
+health 1
+coords 610 180
+flip 1
+at 1301
+
+spawn trap7
+alias trap7
+health 1
+coords 590 190
+flip 1
+at 1301
+
+spawn trap7
+alias trap7
+health 1
+coords 700 210
+flip 1
+at 1301
+
+spawn trap7
+alias trap7
+health 1
+coords 690 200
+flip 1
+at 1301
+
+spawn trap7
+alias trap7
+health 1
+coords 710 190
+flip 1
+at 1301
+
+#-------trap7
+
+
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 1301
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 1301
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 1350
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 1350
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 1400
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 1400
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 1400
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 1450
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 1450
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 1450
+
+#-------trap5
+
+
+#-------trap7
+
+spawn trap7
+alias trap7
+health 1
+coords 600 170
+flip 1
+at 1500
+
+spawn trap7
+alias trap7
+health 1
+coords 610 180
+flip 1
+at 1500
+
+spawn trap7
+alias trap7
+health 1
+coords 590 190
+flip 1
+at 1500
+
+spawn trap7
+alias trap7
+health 1
+coords 700 210
+flip 1
+at 1500
+
+spawn trap7
+alias trap7
+health 1
+coords 690 200
+flip 1
+at 1500
+
+spawn trap7
+alias trap7
+health 1
+coords 710 190
+flip 1
+at 1500
+
+#-------trap7
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 1500
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 1500
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 1550
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 1550
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 1600
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 1600
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 1600
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 1650
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 1650
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 1650
+
+#-------trap5
+
+
+#-------trap7
+
+spawn trap7
+alias trap7
+health 1
+coords 600 170
+flip 1
+at 1700
+
+spawn trap7
+alias trap7
+health 1
+coords 610 180
+flip 1
+at 1700
+
+spawn trap7
+alias trap7
+health 1
+coords 590 190
+flip 1
+at 1700
+
+spawn trap7
+alias trap7
+health 1
+coords 700 210
+flip 1
+at 1700
+
+spawn trap7
+alias trap7
+health 1
+coords 690 200
+flip 1
+at 1700
+
+spawn trap7
+alias trap7
+health 1
+coords 710 190
+flip 1
+at 1700
+
+#-------trap7
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 1700
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 1700
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 1750
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 1750
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 1800
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 1800
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 1800
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 1850
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 1850
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 1850
+
+#-------trap5
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 350 170 200
+flip 1
+at 1900
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 300
+flip 1
+at 1900
+
+spawn trap5
+alias trap5
+health 1
+coords 250 190 250
+flip 1
+at 1950
+
+spawn trap5
+alias trap5
+health 1
+coords 325 200 350
+flip 1
+at 1950
+
+spawn trap5
+alias trap5
+health 1
+coords 300 210 200
+flip 1
+at 2000
+
+spawn trap5
+alias trap5
+health 1
+coords 325 180 300
+flip 1
+at 2000
+
+spawn trap5
+alias trap5
+health 1
+coords 150 180 250
+flip 1
+at 2000
+
+spawn trap5
+alias trap5
+health 1
+coords 200 200 200
+flip 1
+at 2050
+
+spawn trap5
+alias trap5
+health 1
+coords 350 180 300
+flip 1
+at 2050
+
+spawn trap5
+alias trap5
+health 1
+coords 150 165 250
+flip 1
+at 2050
+
+#-------trap5
+
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item water
+coords 750 210
+flip 1
+at 2050
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item bpotion
+coords 600 165
+flip 1
+at 2050
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item diamond
+coords 550 210
+flip 0
+at 2050
+#-------chests
+
+#-------Monsters
+
+Group 6 6
+at 2400
+
+wait
+at      2400
+
+#------- Dialogue
+
+spawn d03_06_4
+coords 240 176
+flip 1
+at 2400
+
+#------- Dialogue
+
+
+spawn drags5
+alias Balasygax_&_Balathranax_-_Small_Red_Dragons
+health 250
+2phealth 350
+3phealth 450 
+4phealth 550 
+aggression 100
+map 0
+item diamond
+coords -100 170
+flip 1
+at 2400
+
+spawn drags5
+alias Balasygax_&_Balathranax_-_Small_Red_Dragons
+health 250
+2phealth 350
+3phealth 450 
+4phealth 550 
+aggression 100
+map 0
+item diamond
+coords -150 200
+flip 1
+at 2400
+
+#-------Monsters
+
+
+#-------enter
+
+spawn enter01
+alias enter01
+flip 1
+health 1
+coords 414 180
+at 2401
+
+#-------enter
+
+

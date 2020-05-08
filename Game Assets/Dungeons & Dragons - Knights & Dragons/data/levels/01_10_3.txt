@@ -1,0 +1,514 @@
+music		data/music/STAGE10.ogg
+bossmusic	data/music/BOSS10.ogg
+background	data/bgs/01_10_3/back.gif
+panel	      data/bgs/01_10_3/n01.gif
+frontpanel	data/bgs/01_10_3/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/01_10_3/01_10_3.gif #1
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	585 67
+at 0
+
+spawn Respawn2
+coords	585 67
+at 0
+
+spawn Respawn3
+coords	585 67
+at 0
+
+spawn Respawn4
+coords	585 67
+at 0
+
+#-------Respawn
+
+
+
+#-------chests
+spawn jar2
+alias Barrel
+health 1
+item bpotion
+coords 400 150
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias Barrel
+health 1
+item scroll
+coords 225 150
+at 0
+#-------chests
+
+#-------chests
+spawn jar2
+alias Barrel
+item scroll
+health 1
+coords 50 150
+at 0
+#-------chests
+
+#-------Monsters
+
+Group 3 3
+at 0
+
+wait
+at      0
+
+#------- Dialogue
+
+spawn d01_10_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+spawn ecleric2
+alias The_Rahib
+health 124
+2phealth 224
+3phealth 324 
+4phealth 424 
+aggression 100
+map 0
+boss 1
+item missclear
+itemalias GrayPeak
+coords 225 175
+flip 0
+at 0
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+
+#-------
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 500 160
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -90 190
+flip 1
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 520 170
+flip 0
+at 0
+
+spawn orc
+alias orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -110 200
+flip 1
+at 0
+
+#-------Monsters
+
+
+
+
+
+
+
+

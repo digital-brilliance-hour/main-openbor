@@ -1,0 +1,2606 @@
+name				Wizard
+candamage     enemy obstacle npc
+type	    		player
+health				8
+mpset				50 1 9999 5 1 1
+#mp					10
+speed				9
+blockpain			-1
+blockback			1
+holdblock			1
+guardpoints			1
+guardrate			1
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			55
+turndelay			0
+jumpmove			1
+nodieblink			1
+makeinv				3	0
+falldie				2
+riseinv				1	0
+jugglepoints		15
+nolife				1
+atchain				1 2 3
+modelflag			1
+defense 			all		0.8
+animationscript		data/scripts/player.c
+keyscript			data/scripts/key.c
+takedamagescript	data/scripts/ndamage.c
+onmodelcopyscript  data/scripts/mcopy.c
+
+weapons     travel hwiza none wiza2 travel2
+
+icon		data/chars/wizard/icon.gif 1
+icondie		data/chars/wizard/icond.gif 1
+diesound    data/sounds/die01.wav
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette				data/chars/wizard/wizard.gif #1
+#alternatepal		data/chars/wizard/alter01.gif #1
+
+	load		block
+	load		fatigue
+	load		recover
+
+remap	data/chars/wizard/idle00.gif   data/chars/wizard/alter01.gif
+remap	data/chars/wizard/idle00.gif   data/chars/wizard/alter02.gif
+remap	data/chars/wizard/idle00.gif   data/chars/wizard/alter03.gif
+
+	com  a2			freespecial30
+	com  f f a		freespecial2 # fireball
+	com  d f a		freespecial3 # lightning bolt
+	com  d u a		freespecial4 # reverse gravity tornado
+	com  d f u a		freespecial4 # reverse gravity tornado
+	com  d b u a		freespecial4 # reverse gravity tornado
+	com  u u a		freespecial5 # ice storm
+	com  d f d f a	freespecial6 # meteor storm
+	com  d f b d b a	freespecial6 # meteor storm
+	com  b d b d f a	freespecial6 # meteor storm
+	com  b d b b d b a	freespecial6 # meteor storm
+
+
+#-------Select screen!
+
+anim waiting
+	shadowcoords -9999 -9999
+	 loop       1
+	 offset     90 195
+	 delay      1
+         frame      data/chars/wizard/sel00.gif
+
+anim select
+	shadowcoords -9999 -9999
+	 loop       0
+	 offset     90 195
+	 sound   data/sounds/att02.wav
+	 delay      1
+ 
+         frame      data/chars/wizard/sel01.gif
+         frame      data/chars/wizard/sel02.gif
+         frame      data/chars/wizard/sel01.gif
+         frame      data/chars/wizard/sel02.gif
+         frame      data/chars/wizard/sel01.gif
+         frame      data/chars/wizard/sel02.gif
+         frame      data/chars/wizard/sel01.gif
+         frame      data/chars/wizard/sel02.gif
+
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+         frame      data/chars/wizard/sel03.gif
+         frame      data/chars/wizard/sel04.gif
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+
+	 delay      12
+@cmd setLevel
+	 frame	data/chars/wizard/idle00.gif
+	 sound   	data/sounds/att02.wav
+	 delay      10
+	 frame	data/chars/wizard/sp02.gif
+	 delay      86
+	 frame	data/chars/wizard/sp04.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/wizard/idle00.gif
+
+anim follow2
+	shadowcoords 218 198
+	loop	0
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/wizard/idle00.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	delay	12
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/wizard/wk00.gif
+	frame	data/chars/wizard/wk01.gif
+	frame	data/chars/wizard/wk02.gif
+	frame	data/chars/wizard/wk03.gif
+	frame	data/chars/wizard/wk04.gif
+	frame	data/chars/wizard/wk05.gif
+	frame	data/chars/wizard/wk06.gif
+	frame	data/chars/wizard/wk07.gif
+
+anim get
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   20
+	frame	data/chars/wizard/rise02.gif
+
+anim attack1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			f f a 				freespecial2
+	cancel 		0 				999 			0 			d f a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			u u a 				freespecial5
+	cancel 		0 				999 			0 			d f d f a 		freespecial6
+	cancel 		0 				999 			0 			d f b d f a 		freespecial6
+	jugglecost	1
+	shadowcoords 218 198
+	load		ma1
+	custknife	ma1
+	throwframe	1
+	loop	0
+	delay	9
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+	bbox	212 143 30 55
+	frame	data/chars/wizard/a101.gif
+	delay	24
+	attack1  198 147 57 52 7 0 0 0 0
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/a102.gif
+	delay	7
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/wizard/a103.gif
+
+anim attack2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			f f a 				freespecial2
+	cancel 		0 				999 			0 			d f a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			u u a 				freespecial5
+	cancel 		0 				999 			0 			d f d f a 		freespecial6
+	cancel 		0 				999 			0 			d f b d f a 		freespecial6
+	jugglecost	1
+	shadowcoords 218 198
+	range	0 100
+	load		ma3
+	custknife	ma3
+	throwframe	1
+	loop	0
+	delay	9
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+	bbox	212 143 30 55
+	frame	data/chars/wizard/a101.gif
+	delay	24
+	sound   data/sounds/slash03.wav
+	attack1  198 147 57 52 7 0 0 0 0
+	frame	data/chars/wizard/a102.gif
+	delay	7
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/wizard/a103.gif
+
+anim attack3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			f f a 				freespecial2
+	cancel 		0 				999 			0 			d f a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			u u a 				freespecial5
+	cancel 		0 				999 			0 			d f d f a 		freespecial6
+	cancel 		0 				999 			0 			d f b d f a 		freespecial6
+	jugglecost	1
+	shadowcoords 218 198
+	range	0 100
+	load		ma6
+	custknife	ma6
+	throwframe	1
+	loop	0
+	delay	9
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/att01.wav
+	bbox	212 143 30 55
+	frame	data/chars/wizard/a101.gif
+	delay	32
+	sound   data/sounds/slash03.wav
+	attack1  198 147 57 52 7 1 0 0 0
+	frame	data/chars/wizard/a102.gif
+	delay	7
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/wizard/a103.gif
+
+anim block #attackbackward
+	shadowcoords 218 198
+	loop	0
+	delay	90
+	bbox	212 143 30 55
+	 offset     225 198
+	frame	data/chars/wizard/guard20.gif
+    @cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW1")
+	frame	data/chars/wizard/guard20.gif
+
+anim follow1
+	shadowcoords 218 198
+	loop	0
+	delay	40
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pain01.wav
+@cmd projectile 1 "fatigue" 0 0 0
+	frame	data/chars/wizard/idle01.gif
+	frame	data/chars/wizard/idle02.gif
+	frame	data/chars/wizard/idle01.gif
+	frame	data/chars/wizard/idle02.gif
+
+anim blockpain
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	delay	2
+	bbox	0 0 0 0
+	offset     225 198
+	sound   data/sounds/block01.wav
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard04.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard05.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard06.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard07.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard08.gif
+	frame	data/chars/wizard/guard10.gif
+	delay	2
+	move -8
+	frame	data/chars/wizard/a101.gif
+	frame	data/chars/wizard/a101.gif
+	frame	data/chars/wizard/a101.gif
+#	@cmd makeInv 190 #invincible 1 second
+	frame	data/chars/wizard/a101.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/wizard/a101.gif
+
+anim walkoff
+	shadowcoords 218 198
+	loop	0
+	landframe	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay	999
+	frame	data/chars/wizard/ju00.gif
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/wizard/jdel00.gif
+
+anim jumpdelay
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+#	sound   data/sounds/stand.wav
+	delay	8
+	frame	data/chars/wizard/jdel00.gif
+
+anim jump
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/jump01.wav
+	delay	20
+	frame	data/chars/wizard/ju00.gif
+	delay	34
+	frame	data/chars/wizard/ju01.gif
+	delay	100
+	frame	data/chars/wizard/ju02.gif
+
+
+anim jumpland
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/wizard/jdel00.gif
+
+anim jumpattack
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		16 99 0 a Freespecial10
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/shock01.wav
+	bbox	212 143 30 55
+	@cmd	storeXvel
+	delay	9
+	frame	data/chars/wizard/ja01.gif
+	delay	2
+	hitflash	flash01
+	attack4  245 125 60 56 8 1 0 0 0
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/ja02.gif
+	frame	data/chars/wizard/ja03.gif
+	frame	data/chars/wizard/ja04.gif
+	frame	data/chars/wizard/ja05.gif
+	frame	data/chars/wizard/ja06.gif
+	frame	data/chars/wizard/ja07.gif
+	frame	data/chars/wizard/ja08.gif
+	hitflash	flash01
+	attack4  245 125 158 56 8 1 0 0 0
+	frame	data/chars/wizard/ja09.gif
+	frame	data/chars/wizard/ja10.gif
+	frame	data/chars/wizard/ja11.gif
+	frame	data/chars/wizard/ja12.gif
+	frame	data/chars/wizard/ja13.gif
+	frame	data/chars/wizard/ja14.gif
+	frame	data/chars/wizard/ja15.gif
+	frame	data/chars/wizard/ja16.gif
+	attack4  0 0 0 0 0 0 0 0 0 0
+	delay	7
+	frame	data/chars/wizard/ja17.gif
+	frame	data/chars/wizard/ju02.gif
+
+anim freespecial10
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		16 17 0 a Freespecial11
+	landframe	18
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/shock01.wav
+	bbox	212 143 30 55
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	9
+	frame	data/chars/wizard/ja01.gif
+	delay	2
+	hitflash	flash01
+	attack4  245 125 60 56 8 1 0 0 0
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/ja02.gif
+	frame	data/chars/wizard/ja03.gif
+	frame	data/chars/wizard/ja04.gif
+	frame	data/chars/wizard/ja05.gif
+	frame	data/chars/wizard/ja06.gif
+	frame	data/chars/wizard/ja07.gif
+	frame	data/chars/wizard/ja08.gif
+	hitflash	flash01
+	attack4  245 125 158 56 8 1 0 0 0
+	frame	data/chars/wizard/ja09.gif
+	frame	data/chars/wizard/ja10.gif
+	frame	data/chars/wizard/ja11.gif
+	frame	data/chars/wizard/ja12.gif
+	frame	data/chars/wizard/ja13.gif
+	frame	data/chars/wizard/ja14.gif
+	frame	data/chars/wizard/ja15.gif
+	frame	data/chars/wizard/ja16.gif
+	attack4 0 0 0 0 0 0 0 0 0 0
+	delay	7
+	frame	data/chars/wizard/ja17.gif
+	frame	data/chars/wizard/ju02.gif
+	sound   data/sounds/stand.wav
+	delay	12
+	frame	data/chars/wizard/jdel00.gif
+
+anim Freespecial11
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		16 17 0 a Freespecial10
+	landframe	18
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/shock01.wav
+	bbox	212 143 30 55
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	9
+	frame	data/chars/wizard/ja01.gif
+	delay	2
+	hitflash	flash01
+	attack4  245 125 60 56 8 1 0 0 0
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/ja02.gif
+	frame	data/chars/wizard/ja03.gif
+	frame	data/chars/wizard/ja04.gif
+	frame	data/chars/wizard/ja05.gif
+	frame	data/chars/wizard/ja06.gif
+	frame	data/chars/wizard/ja07.gif
+	frame	data/chars/wizard/ja08.gif
+	hitflash	flash01
+	attack4  245 125 158 56 8 1 0 0 0
+	frame	data/chars/wizard/ja09.gif
+	frame	data/chars/wizard/ja10.gif
+	frame	data/chars/wizard/ja11.gif
+	frame	data/chars/wizard/ja12.gif
+	frame	data/chars/wizard/ja13.gif
+	frame	data/chars/wizard/ja14.gif
+	frame	data/chars/wizard/ja15.gif
+	frame	data/chars/wizard/ja16.gif
+	attack4 0 0 0 0 0 0 0 0 0 0
+	delay	7
+	frame	data/chars/wizard/ja17.gif
+	frame	data/chars/wizard/ju02.gif
+	sound   data/sounds/stand.wav
+	delay	12
+	frame	data/chars/wizard/jdel00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/wizard/pain102.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/wizard/pain102.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/wizard/pain102.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-4
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-4
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-3
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-3
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-2
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-2
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-1
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	move	-1
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/pain101.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain01.wav
+	frame	data/chars/wizard/fall01.gif
+	delay   72
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/wizard/fall02.gif
+
+anim rise1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+@cmd projectile 1 "recover" 0 0 0
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/wizard/rise03.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/wizard/pain201.gif
+	delay   2
+	frame	data/chars/wizard/pain202.gif
+	delay   2
+	frame	data/chars/wizard/pain201.gif
+	delay   2
+	frame	data/chars/wizard/pain202.gif
+	delay   2
+	frame	data/chars/wizard/pain201.gif
+	delay   2
+	frame	data/chars/wizard/pain202.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+
+anim fall2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain01.wav
+	frame	data/chars/wizard/fall01.gif
+	delay   72
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/wizard/fall02.gif
+
+anim rise2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+
+anim fall3
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/wizard/fall01.gif
+	delay   72
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/wizard/fall02.gif
+
+anim rise3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-4
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-3
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-2
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	move	-1
+	frame	data/chars/wizard/pain201.gif
+	frame	data/chars/wizard/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     228 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+	offset     222 198
+	frame	data/chars/wizard/pain201.gif
+	offset     225 198
+	frame	data/chars/wizard/pain201.gif
+
+anim fall4
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/wizard/fall01.gif
+	delay   72
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/wizard/fall02.gif
+
+anim rise4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   70
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	sound   data/sounds/fall01.wav
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   70
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   70
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/wizard/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/wizard/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/wizard/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/wizard/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/wizard/pain101.gif
+
+	delay   1
+	drawmethod 256 256 0 0 0 0 -1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/wizard/fall02.gif
+	
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/wizard/jdel00.gif
+
+anim death7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+
+	delay   210
+	frame	data/chars/wizard/pain101.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     228 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	frame	data/chars/wizard/pain101.gif
+	offset     222 198
+	frame	data/chars/wizard/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/wizard/pain101.gif
+	delay   210
+	frame	data/chars/wizard/pain101.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	delay   70
+	frame	data/chars/wizard/rise00.gif
+	delay	10
+	frame	data/chars/wizard/rise01.gif
+	delay	8
+	frame	data/chars/wizard/rise02.gif
+	frame	data/chars/wizard/rise03.gif
+
+anim death8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/wizard/pain101.gif
+	delay   5
+	frame	data/chars/wizard/pain101.gif
+	frame	data/chars/wizard/fall01.gif
+	frame	data/chars/wizard/fall02.gif
+	frame	data/chars/wizard/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+anim freespecial30 #special
+	energycost 50
+	mponly  1
+	jugglecost	99
+	shadowcoords 218 198
+	load		ibarr1
+#	load		istorm
+#	subentity	istorm
+#	spawnframe	34 255 198 0 1
+
+	loop	0
+	offset     225 198
+	sound   data/sounds/super01.wav
+#	quakeframe 34 30 3
+	delay	1
+	frame	data/chars/wizard/sp01.gif
+	frame	data/chars/wizard/sp02.gif
+	frame	data/chars/wizard/sp01.gif
+	frame	data/chars/wizard/sp02.gif
+
+	sound   data/sounds/att02.wav
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	frame	data/chars/wizard/sp03.gif
+	frame	data/chars/wizard/sp04.gif
+	delay	100
+@cmd projectile 1 "ibarr1" 0 0 0
+	frame	data/chars/wizard/sp04.gif
+
+
+anim freespecial2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		25 				999 			0 			d f a 				freespecial3
+	cancel 		25 				999 			0 			d u a 				freespecial4
+	cancel 		25 				999 			0 			d f u a 				freespecial4
+	cancel 		25 				999 			0 			d b u a 				freespecial4
+	cancel 		25 				999 			0 			u u a 				freespecial5
+	cancel 		25				999 			0 			d f d f a 		freespecial6
+	cancel 		25 				999 			0 			d f b d f a 		freespecial6
+	energycost 40
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		fball
+	custknife	fball
+	throwframe	25
+#	load		fball
+#	subentity	fball
+#	spawnframe	25 0 0 0 0
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/burn01.wav
+	quakeframe 67 8 8
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<3000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+40);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/wizard/guard00.gif
+	sound   data/sounds/fb.wav
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/wizard/a101.gif
+	delay	32
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/a102.gif
+	delay	57
+	frame	data/chars/wizard/a103.gif
+
+
+anim freespecial3
+	cancel		25 				999 			0 			f f a 				freespecial2
+	cancel 		25 				999 			0 			d u a 				freespecial4
+	cancel 		25 				999 			0 			d f u a 				freespecial4
+	cancel 		25 				999 			0 			d b u a 				freespecial4
+	cancel 		25 				999 			0 			u u a 				freespecial5
+	cancel 		25				999 			0 			d f d f a 		freespecial6
+	cancel 		25 				999 			0 			d f b d f a 		freespecial6
+	energycost 50
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		lbolt
+	custknife	lbolt
+	throwframe	25
+#	load		lbolt
+#	subentity	lbolt
+#	spawnframe	25 0 0 0 0
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/shock01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<15000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+50);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/wizard/guard00.gif
+	sound   data/sounds/lb.wav
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/wizard/a101.gif
+	delay	123
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/a102.gif
+	delay	37
+	frame	data/chars/wizard/a103.gif
+
+
+anim freespecial4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		25 				999 			0 			f f a 				freespecial2
+	cancel 		25 				999 			0 			d f a 				freespecial3
+	cancel 		25 				999 			0 			u u a 				freespecial5
+	cancel 		25 				999 			0 			d f d f a 		freespecial6
+	cancel 		25 				999 			0 			d f b d f a 		freespecial6
+	energycost 60
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		tornado
+	custknife	tornado
+	throwframe	25 1
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	quakeframe 67 8 8
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<45000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+60);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/wizard/guard00.gif
+	sound   data/sounds/rg.wav
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/wizard/a101.gif
+	delay	32
+	sound   data/sounds/slash03.wav
+	frame	data/chars/wizard/a102.gif
+	delay	57
+	frame	data/chars/wizard/a103.gif
+
+
+anim freespecial5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		26 				999 			0 			f f a 				freespecial2
+	cancel 		26 				999 			0 			d f a 				freespecial3
+	cancel 		26 				999 			0 			d u a 				freespecial4
+	cancel 		26 				999 			0 			d f u a 				freespecial4
+	cancel 		26 				999 			0 			d b u a 				freespecial4
+	cancel 		26				999 			0 			d f d f a 		freespecial6
+	cancel 		26				999 			0 			d f b d f a 		freespecial6
+	energycost 75
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		istorm
+	subentity	istorm
+	spawnframe	25 255 198 0 1
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<91000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+70);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/wizard/guard00.gif
+	sound   data/sounds/is.wav
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/wizard/sp02.gif
+
+	delay	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack5		1	1	1439	719		30			0		1		0			0			300
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	attack5  0 0 0 0 0 0 0 0 0
+	delay	7
+	frame	data/chars/wizard/sp04.gif
+
+
+anim freespecial6
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		25 				999 			0 			f f a 				freespecial2
+	cancel 		25				999 			0 			d f a 				freespecial3
+	cancel 		25 				999 			0 			d u a 				freespecial4
+	cancel 		25 				999 			0 			d f u a 				freespecial4
+	cancel 		25				999 			0 			d b u a 				freespecial4
+	cancel 		25 				999 			0 			u u a 				freespecial5
+	energycost 90
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	load		ms11
+	subentity	ms11
+	summonframe	25 250 160 225 1
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<153000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+90);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	sound   data/sounds/super02.wav
+	frame	data/chars/wizard/guard00.gif
+#	sound   data/sounds/is.wav
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+	frame	data/chars/wizard/guard00.gif
+	frame	data/chars/wizard/guard10.gif
+	frame	data/chars/wizard/guard01.gif
+	frame	data/chars/wizard/guard11.gif
+	frame	data/chars/wizard/guard02.gif
+	frame	data/chars/wizard/guard12.gif
+	frame	data/chars/wizard/guard03.gif
+	frame	data/chars/wizard/guard13.gif
+
+	bbox	0 0 0 0
+	delay	8
+	frame	data/chars/wizard/sp02.gif
+
+	delay	2
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	frame	data/chars/wizard/sp05.gif
+	frame	data/chars/wizard/sp06.gif
+	frame	data/chars/wizard/sp07.gif
+	frame	data/chars/wizard/sp08.gif
+	frame	data/chars/wizard/sp09.gif
+	frame	data/chars/wizard/sp10.gif
+	frame	data/chars/wizard/sp11.gif
+	frame	data/chars/wizard/sp12.gif
+	frame	data/chars/wizard/sp13.gif
+	frame	data/chars/wizard/sp14.gif
+	frame	data/chars/wizard/sp15.gif
+
+	delay	7
+	frame	data/chars/wizard/sp04.gif
+
+
+
+
+
+
+
+

@@ -1,0 +1,461 @@
+music		data/music/STAGE23.ogg
+bossmusic	data/music/BOSS07.ogg
+background	data/bgs/03_02_6/back.gif
+panel	      data/bgs/03_02_6/n01.gif
+frontpanel	data/bgs/03_02_6/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  160 10
+spawn2  180 30
+spawn3  170 20
+spawn4  190 40
+
+palette data/bgs/03_02_6/03_02_6.gif #1
+
+wall    480  220  100 165 630 630 120 520
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	217 354
+at 0
+
+spawn Respawn2
+coords	217 354
+at 0
+
+spawn Respawn3
+coords	217 354
+at 0
+
+spawn Respawn4
+coords	217 354
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d03_02_9
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1320 195
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1840 145
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1820 195
+at 0
+#-------fog
+
+
+
+#-------chest
+spawn corpse
+alias corpse
+item gaunt
+health 1
+coords 200 130
+flip 1
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+item gold2
+health 1
+coords 250 210
+flip 1
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias corpse
+item gold2
+health 1
+coords 350 140
+flip 1
+at 0
+#-------chest
+
+#-------Monsters
+
+group   1 1
+at      1
+
+wait
+at      1
+
+#-------npc Sorcerer
+spawn npclich1
+alias Lich
+health 15
+aggression 150
+map 0
+coords 380 175
+flip 0
+at 1
+#-------npc Sorcerer
+
+#-------Monsters
+
+
+#-------rain
+spawn rain
+coords 160 194
+at 161
+#-------rain
+
+#-------Monsters
+
+group   5 5
+at      161
+
+spawn vampire
+alias Koriszegy,_the_Vampire_Lord
+health 250
+2phealth 350
+3phealth 450 
+4phealth 550 
+aggression 150
+map 0
+boss 1
+item missclear
+itemalias MistKeep
+coords 380 160
+flip 0
+at 161
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+
+
+
+spawn skeleton
+alias Skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 280 180
+flip 0
+at 161
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+coords -80 180
+flip 1
+at 161
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords -100 210
+flip 1
+at 161
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 400 200
+flip 0
+at 161
+
+#-------Monsters
+
+
+

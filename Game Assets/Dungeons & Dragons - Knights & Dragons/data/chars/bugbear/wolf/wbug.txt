@@ -1,0 +1,480 @@
+name				wbug
+type				enemy
+hostile				player npc
+candamage			player npc
+score				6 -1
+health				8
+speed				8
+shadow				3
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+#risetime 1000
+nodieblink			0
+nodrop				2
+falldie				1
+facing				1
+jugglepoints		15
+icon				data/chars/bugbear/icon.gif 1
+icondie				data/chars/bugbear/icond.gif 1
+diesound			data/sounds/orc01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/bugbear/bugbear.gif #1
+
+remap	data/chars/bugbear/idle00.gif   data/chars/bugbear/alter01.gif
+remap	data/chars/bugbear/idle00.gif   data/chars/bugbear/alter02.gif
+remap	data/chars/bugbear/idle00.gif   data/chars/bugbear/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 210 200
+	 loop       0
+	 offset     225 198
+	bbox	174 147 84 52
+	delay	8
+	frame	data/chars/bugbear/wolf/01.gif
+	frame	data/chars/bugbear/wolf/02.gif
+	frame	data/chars/bugbear/wolf/03.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/05.gif
+
+	
+anim idle
+	sync	walk
+	loop	1
+	shadowcoords 210 200
+	 offset     225 198
+	bbox	174 147 84 52
+	delay	8
+	frame	data/chars/bugbear/wolf/01.gif
+	frame	data/chars/bugbear/wolf/02.gif
+	frame	data/chars/bugbear/wolf/03.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/05.gif
+
+anim attack1
+	jumpframe	25 3 2
+	landframe	26
+	range	-250 50
+	loop	0
+	shadowcoords 210 200
+	 offset     225 198
+	bbox	174 147 84 52
+	hitfx   data/sounds/hit01.wav
+
+	delay	2
+	move	-4
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+	frame	data/chars/bugbear/wolf/04.gif
+
+	delay	8
+	frame	data/chars/bugbear/wolf/05.gif
+
+	delay	999
+	sound   data/sounds/slash01.wav
+	attack1  174 147 84 52 5 0 0 0 0
+	frame	data/chars/bugbear/wolf/06.gif
+
+	delay	1
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/bugbear/wolf/01.gif
+
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 210 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	174 147 84 52
+	sound   data/sounds/orc01.wav
+
+	delay	2
+	move	-4
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+anim fall1
+	shadowcoords 210 200
+	loop	0
+	bbox	174 147 84 52
+	sound   data/sounds/orc01.wav
+
+	delay	2
+	move	-4
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+anim rise1
+	shadowcoords 210 200
+	loop	0
+	bbox	174 147 84 52
+	sound   data/sounds/orc01.wav
+
+	delay	2
+	move	-4
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+anim death1
+	shadowcoords 210 200
+	loop	0
+	bbox	174 147 84 52
+	sound   data/sounds/orc01.wav
+
+	delay	2
+	move	-8
+	
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+	offset     228 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     222 198
+	frame	data/chars/bugbear/wolf/pain.gif
+	offset     225 198
+	frame	data/chars/bugbear/wolf/pain.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+

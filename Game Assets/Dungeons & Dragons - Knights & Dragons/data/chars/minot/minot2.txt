@@ -1,0 +1,1478 @@
+name				minot2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				390 -1
+health				128
+speed				8
+shadow				3
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			40
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			0
+falldie				2
+jugglepoints		15
+icon				data/chars/minot/icon.gif 1
+icondie				data/chars/minot/icond.gif 1
+diesound			data/sounds/minot01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/minot/minot.gif #1
+
+remap	data/chars/minot/idle00.gif   data/chars/minot/alter01.gif
+remap	data/chars/minot/idle00.gif   data/chars/minot/alter02.gif
+remap	data/chars/minot/idle00.gif   data/chars/minot/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	3 0 0 0 0
+	quakeframe	3 5 5
+	loop	0
+	delay	6
+	offset     225 198
+	bbox	0 0 0 0
+	jumpframe  1 3 3
+	landframe  3
+	quakeframe 3 5 5
+
+	delay	12
+	frame	data/chars/minot/jdel00.gif
+	delay	8
+	frame	data/chars/minot/ju00.gif
+	delay	99
+	frame	data/chars/minot/ju01.gif
+	sound   data/sounds/fall02.wav
+	delay	4
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	delay	6
+	frame	data/chars/minot/jdel00.gif
+
+anim idle
+	shadowcoords 215 200
+	loop	1
+	 offset     225 198
+	bbox	212 117 30 81
+	delay	8
+	frame	data/chars/minot/idle00.gif
+
+anim walk
+	shadowcoords 215 200
+	loop	1
+	offset     225 198
+	bbox	212 117 30 81
+	delay   12
+	frame	data/chars/minot/wk00.gif
+	frame	data/chars/minot/wk01.gif
+	frame	data/chars/minot/wk02.gif
+	frame	data/chars/minot/wk03.gif
+	frame	data/chars/minot/wk04.gif
+	frame	data/chars/minot/wk05.gif
+
+anim block
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-6
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-5
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-5
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-4
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-4
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-3
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-3
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-2
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-2
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-1
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	-1
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	move	0
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+	frame	data/chars/minot/guard00.gif
+
+anim attack1
+	shadowcoords 215 200
+	range	0 85
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+
+	delay	24
+	frame	data/chars/minot/a101.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	attack1  157 81 150 85 10 0 0 0 0
+	frame	data/chars/minot/a102.gif
+	frame	data/chars/minot/a103.gif
+	frame	data/chars/minot/a104.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	24
+	frame	data/chars/minot/a105.gif
+
+anim attack2
+	shadowcoords 215 200
+	range	0 85
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+
+	delay	24
+	frame	data/chars/minot/a201.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	attack1  157 81 150 85 10 0 0 0 0
+	frame	data/chars/minot/a202.gif
+	frame	data/chars/minot/a203.gif
+	frame	data/chars/minot/a204.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	24
+	frame	data/chars/minot/a205.gif
+
+anim attack3
+	shadowcoords 215 200
+	load		slash2
+	custknife	slash2
+	throwframe	5
+	range	86 150
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+
+	delay	24
+	frame	data/chars/minot/a101.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	attack1  157 81 150 85 10 0 0 0 0
+	frame	data/chars/minot/a102.gif
+	frame	data/chars/minot/a103.gif
+	frame	data/chars/minot/a104.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	24
+	frame	data/chars/minot/a201.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	attack1  157 81 150 85 10 0 0 0 0
+	frame	data/chars/minot/a202.gif
+	frame	data/chars/minot/a203.gif
+	frame	data/chars/minot/a204.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	24
+	frame	data/chars/minot/a205.gif
+
+anim attack4
+	shadowcoords 215 200
+	subentity	dust02
+	spawnframe	2 0 0 0 0
+	quakeframe	2 30 5
+	range	151 300
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+
+	delay	8
+	sound   data/sounds/minot02.wav
+	frame	data/chars/minot/a301.gif
+	delay	64
+	frame	data/chars/minot/a302.gif
+
+	bbox	0 0 0 0
+	delay	2
+	move	6
+	attack2  226 126 74 73 10 1 0 0 0 15
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+
+	delay	2
+	move	6
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+
+	delay	2
+	move	6
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+	frame	data/chars/minot/a303.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+	frame	data/chars/minot/a304.gif
+
+	delay	2
+	move	6
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+	frame	data/chars/minot/a305.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+	frame	data/chars/minot/a306.gif
+
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/minot/a307.gif
+	delay	32
+	frame	data/chars/minot/a308.gif
+
+anim attack5
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	3 0 0 0 0
+	range	301 350
+	loop	0
+	delay	6
+	offset     225 198
+	bbox	212 117 30 81
+	jumpframe  1 3 3
+	landframe  3
+	quakeframe 3 5 5
+
+	sound   data/sounds/jump01.wav
+	delay	12
+	frame	data/chars/minot/jdel00.gif
+	delay	8
+	frame	data/chars/minot/ju00.gif
+	delay	99
+	frame	data/chars/minot/ju00.gif
+	sound   data/sounds/fall02.wav
+	delay	4
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	frame	data/chars/minot/jdel00.gif
+	delay	6
+	frame	data/chars/minot/jdel00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+	sound   data/sounds/minot01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	offset     222 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	offset     228 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	offset     222 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	offset     228 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	offset     222 198
+	frame	data/chars/minot/pain102.gif
+	offset     225 198
+	frame	data/chars/minot/pain102.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/minot/pain102.gif
+	frame	data/chars/minot/pain102.gif
+	move	-2
+	frame	data/chars/minot/pain102.gif
+	frame	data/chars/minot/pain102.gif
+	move	-2
+	frame	data/chars/minot/pain102.gif
+	frame	data/chars/minot/pain102.gif
+	move	-1
+	frame	data/chars/minot/pain102.gif
+	frame	data/chars/minot/pain102.gif
+	move	-1
+	frame	data/chars/minot/pain102.gif
+	frame	data/chars/minot/pain102.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/minot/pain102.gif
+	delay   2
+	frame	data/chars/minot/pain102.gif
+	delay   2
+	frame	data/chars/minot/pain102.gif
+	delay   2
+	frame	data/chars/minot/pain102.gif
+	delay   2
+	frame	data/chars/minot/pain102.gif
+	delay   2
+	frame	data/chars/minot/pain102.gif
+
+anim fall1
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/fall02.gif
+	delay	40
+	frame	data/chars/minot/rise00.gif
+
+anim rise1
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	delay	12
+	frame	data/chars/minot/rise01.gif
+	frame	data/chars/minot/rise02.gif
+
+anim death1
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 215 200
+	jumpframe	0 1.2 -1.7
+	landframe	13
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+	sound   data/sounds/minot01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	
+	delay	12
+	frame	data/chars/minot/jdel00.gif
+
+anim fall2
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/fall02.gif
+	delay	40
+	frame	data/chars/minot/rise00.gif
+
+anim rise2
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	delay	12
+	frame	data/chars/minot/rise01.gif
+	frame	data/chars/minot/rise02.gif
+
+anim death2
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	delay   2
+	move	-3
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-2
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-2
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-1
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-1
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+
+anim fall3
+	shadowcoords 215 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	frame	data/chars/misc/burn/201.gif
+	frame	data/chars/misc/burn/202.gif
+	frame	data/chars/misc/burn/203.gif
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/fall02.gif
+	delay	40
+	frame	data/chars/minot/rise00.gif
+
+anim rise3
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	delay	12
+	frame	data/chars/minot/rise01.gif
+	frame	data/chars/minot/rise02.gif
+
+anim death3
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	delay   2
+	move	-3
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-2
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-2
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-1
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	move	-1
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+
+anim fall4
+	shadowcoords 215 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	frame	data/chars/misc/shock/201.gif
+	frame	data/chars/misc/shock/202.gif
+	frame	data/chars/misc/shock/203.gif
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	frame	data/chars/minot/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/minot/fall02.gif
+	delay	40
+	frame	data/chars/minot/rise00.gif
+
+anim rise4
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	frame	data/chars/minot/rise03.gif
+	frame	data/chars/minot/rise04.gif
+	delay	12
+	frame	data/chars/minot/rise01.gif
+	frame	data/chars/minot/rise02.gif
+
+anim death4
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/102.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/102.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/102.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/102.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/102.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/102.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/102.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/minot/fall01.gif
+	frame	data/chars/minot/fall02.gif
+	delay   70
+	frame	data/chars/minot/rise00.gif
+	delay	10
+	frame	data/chars/minot/rise01.gif
+	delay	8
+	frame	data/chars/minot/jdel00.gif
+
+anim fall5
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/102.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/102.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/102.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+
+anim rise5
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/102.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/102.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/102.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/minot/fall01.gif
+	frame	data/chars/minot/fall02.gif
+	delay   70
+	frame	data/chars/minot/rise00.gif
+	delay	10
+	frame	data/chars/minot/rise01.gif
+	delay	8
+	frame	data/chars/minot/jdel00.gif
+
+	
+anim death5
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/misc/freeze/102.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/102.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/102.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/102.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/102.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+
+anim fall6
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/minot/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/minot/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/minot/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/minot/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/minot/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/minot/fall01.gif
+	frame	data/chars/minot/fall02.gif
+	delay   70
+	frame	data/chars/minot/rise00.gif
+	delay	10
+	frame	data/chars/minot/rise01.gif
+	delay	8
+	frame	data/chars/minot/jdel00.gif
+
+anim death6
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 215 200
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/minot/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/minot/pain101.gif
+
+	delay	65
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/minot/fall02.gif
+	delay	40
+	frame	data/chars/minot/rise00.gif
+
+	
+anim rise7
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/minot/rise01.gif
+	frame	data/chars/minot/rise02.gif
+
+anim death7
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 215 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+
+	delay   210
+	frame	data/chars/minot/pain101.gif
+
+anim fall8
+	shadowcoords 215 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     228 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	frame	data/chars/minot/pain101.gif
+	offset     222 198
+	frame	data/chars/minot/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/minot/pain101.gif
+	
+	delay   210
+	frame	data/chars/minot/pain101.gif
+
+anim rise8
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/minot/pain101.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/minot/fall01.gif
+	frame	data/chars/minot/fall02.gif
+	delay   70
+	frame	data/chars/minot/rise00.gif
+	delay	10
+	frame	data/chars/minot/rise01.gif
+	delay	8
+	frame	data/chars/minot/jdel00.gif
+
+
+anim death8
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	delay   260
+	frame	data/chars/minot/pain101.gif
+	delay   5
+	frame	data/chars/minot/fall01.gif
+	frame	data/chars/minot/fall02.gif
+	frame	data/chars/minot/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

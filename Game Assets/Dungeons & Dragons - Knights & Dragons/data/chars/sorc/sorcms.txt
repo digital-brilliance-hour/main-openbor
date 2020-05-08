@@ -1,0 +1,263 @@
+name				sorcms
+type				enemy
+hostile				player npc
+candamage			player npc
+health				100
+speed				0
+nomove				1
+shadow				3
+#aironly				1
+noquake				1
+dust				dust01
+flash				flash31
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			60
+blockodds			1
+thold				49
+#risetime 1000
+nodrop				1
+nodieblink			1
+falldie				1
+escapehits			2
+jugglepoints		15
+facing				2
+subject_to_screen	1
+icon				data/chars/sorc/bicon.gif 1
+icondie				data/chars/sorc/bicond.gif 1
+nolife				1
+
+palette data/chars/sorc/sorc.gif #1
+
+#-------Moves
+
+anim spawn
+	load		eshake
+	load		elight
+	load		efire
+	shadowcoords 215 200
+	 loop       1 11 13
+	 offset     225 198
+
+	delay	4
+	sound   data/sounds/super02.wav
+	frame	data/chars/sorc/spawn00.gif
+	frame	data/chars/sorc/spawn01.gif
+	frame	data/chars/sorc/spawn02.gif
+
+	sound   data/sounds/super01.wav
+	frame	data/chars/sorc/ma06.gif
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/ma07.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/ma08.gif
+	frame	data/chars/sorc/spawn05.gif
+	frame	data/chars/sorc/ma09.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 0 0
+@cmd projectile 1 "eshake" -180 0 0
+@cmd projectile 1 "elight" 120 0 0
+@cmd projectile 1 "elight" -120 0 0
+@cmd projectile 1 "efire" 60 0 0
+@cmd projectile 1 "efire" -60 0 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 10 0
+@cmd projectile 1 "eshake" -180 10 0
+@cmd projectile 1 "elight" 120 10 0
+@cmd projectile 1 "elight" -120 10 0
+@cmd projectile 1 "efire" 60 10 0
+@cmd projectile 1 "efire" -60 10 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -10 0
+@cmd projectile 1 "eshake" -180 -10 0
+@cmd projectile 1 "elight" 120 -10 0
+@cmd projectile 1 "elight" -120 -10 0
+@cmd projectile 1 "efire" 60 -10 0
+@cmd projectile 1 "efire" -60 -10 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 20 0
+@cmd projectile 1 "eshake" -180 20 0
+@cmd projectile 1 "elight" 120 20 0
+@cmd projectile 1 "elight" -120 20 0
+@cmd projectile 1 "efire" 60 20 0
+@cmd projectile 1 "efire" -60 20 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -20 0
+@cmd projectile 1 "eshake" -180 -20 0
+@cmd projectile 1 "elight" 120 -20 0
+@cmd projectile 1 "elight" -120 -20 0
+@cmd projectile 1 "efire" 60 -20 0
+@cmd projectile 1 "efire" -60 -20 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 30 0
+@cmd projectile 1 "eshake" -180 30 0
+@cmd projectile 1 "elight" 120 30 0
+@cmd projectile 1 "elight" -120 30 0
+@cmd projectile 1 "efire" 60 30 0
+@cmd projectile 1 "efire" -60 30 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -30 0
+@cmd projectile 1 "eshake" -180 -30 0
+@cmd projectile 1 "elight" 120 -30 0
+@cmd projectile 1 "elight" -120 -30 0
+@cmd projectile 1 "efire" 60 -30 0
+@cmd projectile 1 "efire" -60 -30 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+anim idle
+	load		eshake
+	load		elight
+	load		efire
+	shadowcoords 215 200
+	 loop       1 11 13
+	 offset     225 198
+
+	delay	4
+	sound   data/sounds/super02.wav
+	frame	data/chars/sorc/spawn00.gif
+	frame	data/chars/sorc/spawn01.gif
+	frame	data/chars/sorc/spawn02.gif
+
+	sound   data/sounds/super01.wav
+	frame	data/chars/sorc/ma06.gif
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/ma07.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/ma08.gif
+	frame	data/chars/sorc/spawn05.gif
+	frame	data/chars/sorc/ma09.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 0 0
+@cmd projectile 1 "eshake" -180 0 0
+@cmd projectile 1 "elight" 120 0 0
+@cmd projectile 1 "elight" -120 0 0
+@cmd projectile 1 "efire" 60 0 0
+@cmd projectile 1 "efire" -60 0 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 10 0
+@cmd projectile 1 "eshake" -180 10 0
+@cmd projectile 1 "elight" 120 10 0
+@cmd projectile 1 "elight" -120 10 0
+@cmd projectile 1 "efire" 60 10 0
+@cmd projectile 1 "efire" -60 10 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -10 0
+@cmd projectile 1 "eshake" -180 -10 0
+@cmd projectile 1 "elight" 120 -10 0
+@cmd projectile 1 "elight" -120 -10 0
+@cmd projectile 1 "efire" 60 -10 0
+@cmd projectile 1 "efire" -60 -10 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 20 0
+@cmd projectile 1 "eshake" -180 20 0
+@cmd projectile 1 "elight" 120 20 0
+@cmd projectile 1 "elight" -120 20 0
+@cmd projectile 1 "efire" 60 20 0
+@cmd projectile 1 "efire" -60 20 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -20 0
+@cmd projectile 1 "eshake" -180 -20 0
+@cmd projectile 1 "elight" 120 -20 0
+@cmd projectile 1 "elight" -120 -20 0
+@cmd projectile 1 "efire" 60 -20 0
+@cmd projectile 1 "efire" -60 -20 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 30 0
+@cmd projectile 1 "eshake" -180 30 0
+@cmd projectile 1 "elight" 120 30 0
+@cmd projectile 1 "elight" -120 30 0
+@cmd projectile 1 "efire" 60 30 0
+@cmd projectile 1 "efire" -60 30 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+	delay	8
+@cmd projectile 1 "eshake" 180 -30 0
+@cmd projectile 1 "eshake" -180 -30 0
+@cmd projectile 1 "elight" 120 -30 0
+@cmd projectile 1 "elight" -120 -30 0
+@cmd projectile 1 "efire" 60 -30 0
+@cmd projectile 1 "efire" -60 -30 0
+	frame	data/chars/sorc/spawn03.gif
+	frame	data/chars/sorc/spawn04.gif
+	frame	data/chars/sorc/spawn05.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim death
+	shadowcoords 215 200
+	 loop       0
+	 offset     225 198
+
+	delay	4
+	sound   data/sounds/super02.wav
+	frame	data/chars/sorc/spawn02.gif
+	frame	data/chars/sorc/spawn01.gif
+	frame	data/chars/sorc/spawn00.gif
+	delay	1
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1579 @@
+music		data/music/STAGE23.ogg
+bossmusic	data/music/BOSS07.ogg
+background	data/bgs/03_02_3/back.gif
+panel	      data/bgs/03_02_3/n01.gif
+frontpanel	data/bgs/03_02_3/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/03_02_3/03_02_3.gif #1
+
+wall    1020  220  420 100 630 630 100 520
+
+wall    -300  119  100 400 1800 1450 100 520
+
+#------- Dialogue
+
+spawn d03_02_6
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 820 145
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1320 195
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1840 145
+at 0
+#-------fog
+
+#-------chest
+spawn casket1
+alias corpse
+item diamond
+health 1
+coords 190 120
+at 0
+#-------chest
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 150 120
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 150 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 170 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 190 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 210 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 230 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 230 120
+at 0
+#-------trap3
+
+
+
+
+#-------chest
+spawn casket1
+alias corpse
+item scroll
+health 1
+coords 290 210
+at 0
+#-------chest
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 250 210
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 250 190
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 270 190
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 290 190
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 310 190
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 330 190
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 330 210
+at 0
+#-------trap3
+
+
+
+
+#-------chest
+spawn casket1
+alias corpse
+item spotion
+health 1
+coords 390 120
+at 0
+#-------chest
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 350 120
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 350 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 370 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 390 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 410 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 430 140
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 430 120
+at 0
+#-------trap3
+
+
+#-------Monsters
+
+group   12 12
+at      100
+
+wait
+at      100
+
+#------- Dialogue
+
+#spawn d03_01_3
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item gold2
+coords 250 170 200
+flip 0
+at 100
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item amber
+coords 70 170 200
+flip 1
+at 100
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item amet
+coords 300 200 200
+flip 0
+at 100
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item amet
+coords 100 200 200
+flip 1
+at 100
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 150 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 170 130 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 270 190 300
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 180 200
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 160 250
+flip 0
+at 100
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 320 210 300
+flip 0
+at 100
+
+#-------Monsters
+
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 820 145
+at 101
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1320 195
+at 101
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1840 145
+at 101
+#-------fog
+
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 500 120
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 530 140
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 510 160
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 540 180
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 520 200
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 210
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 580 190
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 170
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 600 150
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 140
+at 101
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 120
+at 101
+#-------trap3
+
+
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 500 120
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 530 140
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 510 160
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 540 180
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 520 200
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 210
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 580 190
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 170
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 600 150
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 140
+at 250
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 120
+at 250
+#-------trap3
+
+
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 500 120
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 530 140
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 510 160
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 540 180
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 520 200
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 210
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 580 190
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 170
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 600 150
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 570 140
+at 400
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 120
+at 400
+#-------trap3
+
+
+#-------Monsters
+
+group   4 4
+at      800
+
+wait
+at      800
+
+#------- Dialogue
+
+#spawn d03_01_3
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+
+spawn mummy
+alias Mummy
+health 84
+2phealth 94
+3phealth 104 
+4phealth 114 
+aggression 50
+map 1
+item gaunt
+coords 250 170 200
+flip 0
+at 800
+
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 500 140 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords 480 120 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 520 100 200
+flip 0
+at 800
+
+
+
+spawn mummy
+alias Mummy
+health 84
+2phealth 94
+3phealth 104 
+4phealth 114 
+aggression 50
+map 1
+item topaz
+coords 320 150 200
+flip 0
+at 800
+
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 500 140 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords 480 120 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 520 100 200
+flip 0
+at 800
+
+
+
+
+
+spawn mummy
+alias Mummy
+health 94
+2phealth 104
+3phealth 114 
+4phealth 124 
+aggression 100
+map 2
+item diamond
+coords 300 190 200
+flip 0
+at 800
+
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 500 140 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+coords 480 120 200
+flip 0
+at 800
+
+spawn wight
+alias Wight
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 0
+map 0
+item gold2
+coords 520 100 200
+flip 0
+at 800
+
+#-------Monsters
+
+
+#-------chest
+spawn casket1
+alias corpse
+item rapple
+health 1
+coords 550 90
+at 801
+#-------chest
+
+#-------chest
+spawn jar2
+alias jar2
+item fire4
+health 1
+coords 570 110
+at 801
+#-------chest
+
+#-------Monsters
+
+group   4 4
+at      960
+
+wait
+at      960
+
+music data/music/BOSS07.ogg
+at      960
+
+#------- Dialogue
+
+spawn d03_02_7
+coords 240 176
+flip 1
+at 960
+
+#------- Dialogue
+
+#-------npc Sorcerer
+spawn npcvamp
+alias Vampire
+health 15
+aggression 150
+map 0
+coords 50 170
+flip 1
+at 960
+#-------npc Sorcerer
+
+
+spawn zlord
+alias Zombie_Lord
+health 180
+2phealth 280
+3phealth 380 
+4phealth 480 
+aggression 100
+map 2
+item diamond
+coords -50 170 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 120 160
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 80 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+item gold2
+coords 100 140
+flip 1
+at 960
+
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 120 160
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 80 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+item gold2
+coords 100 140
+flip 1
+at 960
+
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 120 160
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 80 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+item gold2
+coords 100 140
+flip 1
+at 960
+
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 120 160
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 80 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+item gold2
+coords 100 140
+flip 1
+at 960
+
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 120 160
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+coords 80 200
+flip 1
+at 960
+
+spawn skeleton
+alias skeleton
+health 12
+2phealth 22
+3phealth 32 
+4phealth 42 
+aggression 0
+map 0
+item gold2
+coords 100 140
+flip 1
+at 960
+
+#-------go
+
+music data/music/STAGE23.ogg
+at      961
+
+spawn enter02
+alias enter02
+flip 1
+health 1
+coords 310 90
+at 961
+
+#-------go
+
+
+

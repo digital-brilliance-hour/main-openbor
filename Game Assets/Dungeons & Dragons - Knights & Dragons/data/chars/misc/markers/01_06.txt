@@ -1,0 +1,32 @@
+name	01_06
+type	endlevel
+branch	01_06
+shadow	0
+
+anim idle
+	load			ch01_06
+	subentity		ch01_06
+	summonframe		0 0 0 0 0
+	loop	1
+	 offset     4 4
+	bbox	4 4 1 1
+	delay	80
+	frame	data/chars/misc/markers/01.gif
+	delay	4
+	frame	data/chars/misc/markers/05.gif
+	frame	data/chars/misc/markers/01.gif
+	frame	data/chars/misc/markers/05.gif
+	frame	data/chars/misc/markers/01.gif
+	frame	data/chars/misc/markers/05.gif
+	frame	data/chars/misc/markers/01.gif
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

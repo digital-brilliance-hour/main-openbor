@@ -1,0 +1,1029 @@
+music		data/music/STAGE23.ogg
+bossmusic	data/music/BOSS07.ogg
+background	data/bgs/03_02_5/back.gif
+panel	      data/bgs/03_02_5/n01.gif
+frontpanel	data/bgs/03_02_5/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/03_02_5/03_02_5.gif #1
+
+wall    -780  220  100 100 900 800 100 520
+
+#------- Dialogue
+
+spawn d03_02_8
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 820 155
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1320 205
+at 0
+#-------fog
+
+#-------fog
+spawn fog
+alias fog
+health 1
+coords 1840 155
+at 0
+#-------fog
+
+
+
+
+#-------chest
+spawn casket1
+alias corpse
+item diamond
+health 1
+coords 240 150
+at 0
+#-------chest
+
+
+#-------chest
+spawn casket1
+alias corpse
+item scroll
+health 1
+coords 360 150
+at 0
+#-------chest
+
+
+#-------chest
+spawn casket1
+alias corpse
+item diamond
+health 1
+coords 490 150
+at 0
+#-------chest
+
+
+#-------chest
+spawn casket1
+alias corpse
+item diamond
+health 1
+coords 620 150
+at 0
+#-------chest
+
+
+
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 100 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 150 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 200 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 250 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 300 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 350 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 400 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 450 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 500 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 600 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 650 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 700 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 750 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 800 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 850 200
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 900 200
+at 0
+#-------trap3
+
+
+
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 150 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 200 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 300 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 400 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 450 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 550 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 600 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 700 150
+at 0
+#-------trap3
+
+#-------trap3
+spawn trap3
+alias trap3
+flip 1
+health 1
+coords 800 150
+at 0
+#-------trap3
+
+
+
+#-------Monsters
+
+group   6 6
+at      224
+
+wait
+at      224
+
+#------- Dialogue
+
+#spawn d03_01_3
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 140 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 440 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 280 175 250
+flip 0
+at 224
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords -40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 80 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 540 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 380 175 250
+flip 0
+at 224
+
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 140 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 440 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 280 175 250
+flip 0
+at 224
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords -40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 80 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 540 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 380 175 250
+flip 0
+at 224
+
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 140 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 440 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 280 175 250
+flip 0
+at 224
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords -40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 80 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 540 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 380 175 250
+flip 0
+at 224
+
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 340 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 180 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 140 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 440 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 280 175 250
+flip 0
+at 224
+
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+item gold2
+coords 500 175
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords -40 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 80 175 250
+flip 0
+at 224
+
+spawn wraith
+alias Wraith
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 0
+coords -100 175
+flip 1
+at 224
+
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 240 175 300
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 540 175 200
+flip 0
+at 224
+
+spawn slime
+alias Slime
+health 1
+aggression 0
+map 3
+coords 380 175 250
+flip 0
+at 224
+
+
+#-------Monsters
+
+#-------chest
+spawn casket1
+alias corpse
+item bpotion
+health 1
+coords 620 175
+at 225
+#-------chest
+
+
+
+
+#-------go
+
+spawn go01
+alias go01
+flip 1
+health 1
+coords 295 150
+at 448
+
+#-------go
+
+
+

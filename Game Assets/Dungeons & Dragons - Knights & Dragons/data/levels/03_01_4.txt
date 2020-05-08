@@ -1,0 +1,288 @@
+music		data/music/STAGE22.ogg
+bossmusic	data/music/BOSS06.ogg
+background	data/bgs/03_01_4/back.gif
+bglayer		data/bgs/03_01_4/n01.gif 0 0 0 0 0 0 99999999 999999999 1 0 0 0 0 0 0.8
+fglayer		data/bgs/03_01_4/f01.gif 0 0 0 0 0 0 99999999 999999999 1 1 0 0 0 0 0 2
+panel		data/chars/misc/empty.gif
+#panel	    data/bgs/03_01_4/n01.gif
+#frontpanel	data/bgs/03_01_4/f01.gif
+settime 99
+order	a
+bgspeed	10
+setweap 2
+stagenumber 3
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/03_01_4/03_01_4.gif #1
+
+#-------Monsters
+
+group   3 3
+at      500
+
+wait
+at      500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 570 175
+flip 0
+at 500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 600 210
+flip 0
+at 500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 585 150
+flip 0
+at 500
+
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -170 175
+flip 1
+at 500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -200 210
+flip 1
+at 500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -175 150
+flip 1
+at 500
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   4 4
+at      1000
+
+wait
+at      1000
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 570 175
+flip 0
+at 1000
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 600 210
+flip 0
+at 1000
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 585 150
+flip 0
+at 1000
+
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -170 175
+flip 1
+at 1000
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -200 210
+flip 1
+at 1000
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -175 150
+flip 1
+at 1000
+
+#-------Monsters
+
+
+#-------Monsters
+
+group   5 5
+at      1500
+
+wait
+at      1500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 570 175
+flip 0
+at 1500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 600 210
+flip 0
+at 1500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords 585 150
+flip 0
+at 1500
+
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -170 175
+flip 1
+at 1500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -200 210
+flip 1
+at 1500
+
+spawn ptero
+alias Pterosaur
+health 48
+2phealth 58
+3phealth 68 
+4phealth 78 
+aggression 100
+map 0
+coords -175 150
+flip 1
+at 1500
+
+#-------Monsters
+
+#------- Dialogue
+
+#spawn d03_01_4
+#coords 240 176
+#flip 1
+#at 466
+
+#------- Dialogue
+
+
+
+
+
+
+
+
+

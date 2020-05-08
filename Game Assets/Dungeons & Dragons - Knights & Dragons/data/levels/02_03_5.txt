@@ -1,0 +1,606 @@
+music		data/music/STAGE15.ogg
+bossmusic	data/music/BOSS15.ogg
+background	data/bgs/02_03_5/back.gif
+panel	      data/bgs/02_03_5/n01.gif
+frontpanel	data/bgs/02_03_5/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_03_5/02_03_5.gif #1
+
+wall    -40 125 10 190 1000 1000 150 1200
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	417 441
+at 0
+
+spawn Respawn2
+coords	417 441
+at 0
+
+spawn Respawn3
+coords	417 441
+at 0
+
+spawn Respawn4
+coords	417 441
+at 0
+
+#-------Respawn
+
+#------- Dialogue
+
+spawn d02_03_5
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+#-------Monsters
+
+group   4 4
+at      224
+
+wait
+at      224
+
+spawn hydra2
+alias Hydra
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+map 0
+boss 1
+item missclear
+itemalias RuinKrak
+coords 340 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 410 165
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 390 180
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 310 150
+flip 0
+at 224
+
+spawn hydra1
+alias Hydra's_Head
+health 96
+2phealth 196
+3phealth 296 
+4phealth 396
+aggression 0
+item straw
+map 0
+coords 350 170
+flip 0
+at 224
+
+#-------Monsters
+
+
+
+

@@ -1,0 +1,1597 @@
+name				dknight
+type				enemy
+hostile				player npc
+candamage			player npc
+score				1120 -1
+health				160
+speed				15
+shadow				3
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			0
+falldie				2
+jugglepoints		15
+icon				data/chars/dknight/bicon.gif 1
+icondie				data/chars/dknight/bicond.gif 1
+diesound			data/sounds/delf01.wav
+nolife				1
+takedamagescript	data/scripts/ndamage.c
+
+#-------Boss
+nolife				1
+lifebarstatus		240 5 1 1 0 -300 -300 -300 -300
+lifeposition		119 34 
+nameposition		152 49
+iconposition		0 0
+#-------Boss
+
+palette				data/chars/dknight/dknight.gif #1
+
+remap	data/chars/dknight/idle00.gif   data/chars/dknight/alter01.gif
+remap	data/chars/dknight/idle00.gif   data/chars/dknight/alter02.gif
+remap	data/chars/dknight/idle00.gif   data/chars/dknight/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 215 200
+	 loop       0
+	 offset     225 198
+	sound   data/sounds/super01.wav
+	delay	1
+	frame	data/chars/dknight/spawn00.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn01.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn02.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn03.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn04.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn05.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn06.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/dknight/spawn07.gif
+	delay	5
+	frame	data/chars/misc/empty.gif
+
+	delay	2
+	frame	data/chars/dknight/spawn00.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn01.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn02.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn03.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn04.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn05.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn06.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	delay	2
+	frame	data/chars/dknight/spawn07.gif
+	delay	4
+	frame	data/chars/misc/empty.gif
+	
+	delay	3
+	frame	data/chars/dknight/spawn00.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn01.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn02.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn03.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn04.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn05.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn06.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+	delay	3
+	frame	data/chars/dknight/spawn07.gif
+	delay	3
+	frame	data/chars/misc/empty.gif
+
+	delay	4
+	frame	data/chars/dknight/spawn00.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn01.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn02.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn03.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn04.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn05.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn06.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	delay	4
+	frame	data/chars/dknight/spawn07.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+
+	delay	5
+	frame	data/chars/dknight/spawn00.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn01.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn02.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn03.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn04.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn05.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn06.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+	delay	5
+	frame	data/chars/dknight/spawn07.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+
+	delay	50
+	frame	data/chars/dknight/idle00.gif
+
+anim idle
+	shadowcoords 215 200
+	loop	1
+	 offset     225 198
+	bbox	212 143 30 55
+	delay	1
+	frame	data/chars/dknight/idle00.gif
+
+anim walk
+	shadowcoords 215 200
+	loop	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay   12
+	frame	data/chars/dknight/wk00.gif
+	frame	data/chars/dknight/wk01.gif
+	frame	data/chars/dknight/wk02.gif
+	frame	data/chars/dknight/wk03.gif
+	frame	data/chars/dknight/wk04.gif
+	frame	data/chars/dknight/wk05.gif
+
+anim block
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-6
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-5
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-5
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-4
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-4
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-3
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-3
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-2
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-2
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-1
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	-1
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	move	0
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+	frame	data/chars/dknight/guard00.gif
+
+anim attack1
+	shadowcoords 215 200
+	range		0 25
+	subentity	dust01
+	spawnframe	6 0 0 0 0
+	jumpframe	1 2 -2
+	landframe	6
+	loop	0
+	delay	6
+	offset     225 198
+	bbox	212 143 30 55
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+	delay	8
+	sound   data/sounds/jump01.wav
+	frame	data/chars/dknight/ju04.gif
+	frame	data/chars/dknight/ju03.gif
+	frame	data/chars/dknight/ju02.gif
+	frame	data/chars/dknight/ju01.gif
+	delay	99
+	frame	data/chars/dknight/ju00.gif
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/dknight/ju05.gif
+
+anim attack2
+	shadowcoords 215 200
+	range	26 100
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	delay	11
+	frame	data/chars/dknight/a101.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	frame	data/chars/dknight/a102.gif
+	attack1  225 144 103 55 10 0 0 0 0
+	frame	data/chars/dknight/a103.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	25
+	frame	data/chars/dknight/a104.gif
+
+
+anim attack3
+	shadowcoords 215 200
+	range		101 200
+	subentity	dust01
+	spawnframe	9 0 0 0 0
+	jumpframe	1 3 4
+	landframe	9
+	loop	0
+	delay	6
+	offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	delay	24
+	frame	data/chars/dknight/jdel00.gif
+	bbox	0 0 0 0
+	delay	8
+	sound   data/sounds/jump01.wav
+	frame	data/chars/dknight/ju00.gif
+	frame	data/chars/dknight/ju01.gif
+	delay	16
+	frame	data/chars/dknight/ju02.gif
+
+	delay	8
+	sound   data/sounds/slash01.wav
+	attack1  176 157 104 56 16 1 0 0 30
+	frame	data/chars/dknight/a201.gif
+	frame	data/chars/dknight/a202.gif
+	delay	16
+	frame	data/chars/dknight/a203.gif
+
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/dknight/ju03.gif
+	delay	99
+	frame	data/chars/dknight/ju04.gif
+	bbox	212 143 30 55
+	sound   data/sounds/land01.wav
+	delay	24
+	frame	data/chars/dknight/ju05.gif
+
+anim attack4
+	shadowcoords 215 200
+	load		scythe
+	custknife	scythe
+	throwframe	2
+	range	201 300
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	delay	11
+	frame	data/chars/dknight/a301.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	frame	data/chars/dknight/a302.gif
+	frame	data/chars/dknight/a303.gif
+	delay	25
+	frame	data/chars/dknight/a304.gif
+
+
+anim attack5
+	shadowcoords 215 200
+	range	301 375
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/super01.wav
+	delay	2
+	frame	data/chars/dknight/spawn00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn06.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	1
+	move	250
+	frame	data/chars/misc/empty.gif
+
+	move	0
+	delay	2
+	frame	data/chars/dknight/spawn06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dknight/spawn00.gif
+	frame	data/chars/misc/empty.gif
+
+	delay	11
+	frame	data/chars/dknight/a101.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	frame	data/chars/dknight/a102.gif
+	attack1  225 144 103 55 16 0 0 0 0
+	frame	data/chars/dknight/a103.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	25
+	frame	data/chars/dknight/a104.gif
+
+
+anim riseattack
+	shadowcoords 215 200
+	range		0 200
+	subentity	dust01
+	spawnframe	9 0 0 0 0
+	jumpframe	1 3 4
+	landframe	9
+	loop	0
+	delay	6
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	24
+	frame	data/chars/dknight/jdel00.gif
+	delay	8
+	sound   data/sounds/jump01.wav
+	frame	data/chars/dknight/ju00.gif
+	frame	data/chars/dknight/ju01.gif
+	delay	16
+	frame	data/chars/dknight/ju02.gif
+
+	delay	8
+	sound   data/sounds/slash01.wav
+	attack1  176 157 104 56 16 1 0 0 30
+	frame	data/chars/dknight/a201.gif
+	frame	data/chars/dknight/a202.gif
+	delay	16
+	frame	data/chars/dknight/a203.gif
+
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/dknight/ju03.gif
+	delay	99
+	frame	data/chars/dknight/ju04.gif
+	sound   data/sounds/land01.wav
+	delay	24
+	frame	data/chars/dknight/ju05.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	sound   data/sounds/delf01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+
+anim fall1
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/dknight/fall01.gif
+	frame	data/chars/dknight/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/dknight/fall01.gif
+	delay	40
+	frame	data/chars/dknight/rise01.gif
+
+anim rise1
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim death1
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 215 200
+	jumpframe	0 1.2 -1.7
+	landframe	13
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	sound   data/sounds/delf01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	offset     222 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	offset     228 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	offset     222 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	offset     228 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	offset     222 198
+	frame	data/chars/dknight/fall01.gif
+	offset     225 198
+	frame	data/chars/dknight/fall01.gif
+	
+	delay   999
+	frame	data/chars/dknight/fall01.gif
+	
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim fall2
+	shadowcoords 215 200
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/dknight/fall01.gif
+	frame	data/chars/dknight/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/dknight/fall01.gif
+	delay	40
+	frame	data/chars/dknight/rise01.gif
+
+anim rise2
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim death2
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-3
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+
+anim fall3
+	shadowcoords 215 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/dknight/fall01.gif
+	frame	data/chars/dknight/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/dknight/fall01.gif
+	delay	40
+	frame	data/chars/dknight/rise01.gif
+
+anim rise3
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim death3
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-3
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-2
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	move	-1
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+
+anim fall4
+	shadowcoords 215 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/dknight/fall01.gif
+	frame	data/chars/dknight/fall01.gif
+	delay	35
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	frame	data/chars/dknight/fall01.gif
+	delay	40
+	frame	data/chars/dknight/rise01.gif
+
+anim rise4
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim death4
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/fall01.gif
+	delay   70
+	frame	data/chars/dknight/rise00.gif
+	delay	10
+	frame	data/chars/dknight/rise01.gif
+	delay	8
+	frame	data/chars/dknight/jdel00.gif
+
+anim fall5
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/fall01.gif
+	delay   70
+	frame	data/chars/dknight/rise00.gif
+	delay	10
+	frame	data/chars/dknight/rise01.gif
+	delay	8
+	frame	data/chars/dknight/jdel00.gif
+
+	
+anim death5
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+
+anim fall6
+	shadowcoords 215 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/dknight/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/dknight/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/dknight/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/dknight/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/fall01.gif
+	delay   70
+	frame	data/chars/dknight/rise00.gif
+	delay	10
+	frame	data/chars/dknight/rise01.gif
+	delay	8
+	frame	data/chars/dknight/jdel00.gif
+
+anim death6
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 215 200
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/dknight/pain101.gif
+
+	delay	65
+	bbox		0 0 0 0
+	sound   data/sounds/fall01.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/dknight/fall01.gif
+	delay	40
+	frame	data/chars/dknight/rise01.gif
+
+	
+anim rise7
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/dknight/jdel00.gif
+
+anim death7
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 215 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+
+	delay   210
+	frame	data/chars/dknight/pain101.gif
+
+anim fall8
+	shadowcoords 215 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     228 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	frame	data/chars/dknight/pain101.gif
+	offset     222 198
+	frame	data/chars/dknight/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/dknight/pain101.gif
+	
+	delay   210
+	frame	data/chars/dknight/pain101.gif
+
+anim rise8
+	shadowcoords 215 200
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/dknight/pain101.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/fall01.gif
+	delay   70
+	frame	data/chars/dknight/rise00.gif
+	delay	10
+	frame	data/chars/dknight/rise01.gif
+	delay	8
+	frame	data/chars/dknight/jdel00.gif
+
+
+anim death8
+	shadowcoords 215 200
+	loop	0
+	offset     225 198
+	delay   260
+	frame	data/chars/dknight/pain101.gif
+	delay   5
+	frame	data/chars/dknight/pain101.gif
+	frame	data/chars/dknight/fall01.gif
+	delay   8
+	frame	data/chars/dknight/rise02.gif
+	frame	data/chars/dknight/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

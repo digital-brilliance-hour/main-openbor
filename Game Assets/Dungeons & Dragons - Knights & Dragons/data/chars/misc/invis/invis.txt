@@ -1,0 +1,165 @@
+name	invis
+type	none
+shadow	0
+toflip 1
+facing 1
+setlayer	9999999
+lifespan	1
+antigravity 100
+
+palette data/chars/misc/invis/invis.gif #1
+
+anim spawn
+#	flipframe 1
+	loop	0
+#	delay	100
+
+
+	delay	2
+#@script
+#if(frame==1){
+#void self = getlocalvar("self");
+#changeentityproperty(self, "direction", 0);
+#}
+#@end_script
+	
+	offset     225 201
+	frame	data/chars/misc/invis/01.gif
+	offset     225 202
+	frame	data/chars/misc/invis/01.gif
+	offset     225 203
+	frame	data/chars/misc/invis/01.gif
+	offset     225 204
+	frame	data/chars/misc/invis/01.gif
+	offset     225 205
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 206
+	frame	data/chars/misc/invis/01.gif
+	offset     225 207
+	frame	data/chars/misc/invis/01.gif
+	offset     225 208
+	frame	data/chars/misc/invis/01.gif
+	offset     225 209
+	frame	data/chars/misc/invis/01.gif
+	offset     225 210
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 211
+	frame	data/chars/misc/invis/01.gif
+	offset     225 212
+	frame	data/chars/misc/invis/01.gif
+	offset     225 213
+	frame	data/chars/misc/invis/01.gif
+	offset     225 214
+	frame	data/chars/misc/invis/01.gif
+	offset     225 215
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 216
+	frame	data/chars/misc/invis/01.gif
+	offset     225 217
+	frame	data/chars/misc/invis/01.gif
+	offset     225 218
+	frame	data/chars/misc/invis/01.gif
+	offset     225 219
+	frame	data/chars/misc/invis/01.gif
+	offset     225 220
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 221
+	frame	data/chars/misc/invis/01.gif
+	offset     225 222
+	frame	data/chars/misc/invis/01.gif
+	offset     225 223
+	frame	data/chars/misc/invis/01.gif
+	offset     225 224
+	frame	data/chars/misc/invis/01.gif
+	offset     225 225
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 226
+	frame	data/chars/misc/invis/01.gif
+	offset     225 227
+	frame	data/chars/misc/invis/01.gif
+	offset     225 228
+	frame	data/chars/misc/invis/01.gif
+	offset     225 229
+	frame	data/chars/misc/invis/01.gif
+	offset     225 230
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 231
+	frame	data/chars/misc/invis/01.gif
+	offset     225 232
+	frame	data/chars/misc/invis/01.gif
+	offset     225 233
+	frame	data/chars/misc/invis/01.gif
+	offset     225 234
+	frame	data/chars/misc/invis/01.gif
+	offset     225 235
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 236
+	frame	data/chars/misc/invis/01.gif
+	offset     225 237
+	frame	data/chars/misc/invis/01.gif
+	offset     225 238
+	frame	data/chars/misc/invis/01.gif
+	offset     225 239
+	frame	data/chars/misc/invis/01.gif
+	offset     225 240
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 241
+	frame	data/chars/misc/invis/01.gif
+	offset     225 242
+	frame	data/chars/misc/invis/01.gif
+	offset     225 243
+	frame	data/chars/misc/invis/01.gif
+	offset     225 244
+	frame	data/chars/misc/invis/01.gif
+	offset     225 245
+	frame	data/chars/misc/invis/01.gif
+	
+	offset     225 246
+	frame	data/chars/misc/invis/01.gif
+	offset     225 247
+	frame	data/chars/misc/invis/01.gif
+	offset     225 248
+	frame	data/chars/misc/invis/01.gif
+	offset     225 249
+	frame	data/chars/misc/invis/01.gif
+	offset     225 250
+	frame	data/chars/misc/invis/01.gif
+
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif

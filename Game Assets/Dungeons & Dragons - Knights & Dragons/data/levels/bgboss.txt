@@ -1,0 +1,255 @@
+music		data/music/REMIX.BOR
+bossmusic	data/music/BOSS02.BOR
+background	data/bgs/BGBOSS/back.gif
+panel	      data/bgs/BGBOSS/n01.gif
+frontpanel	data/bgs/BGBOSS/f01.gif
+order       a
+settime 0
+spawn1  -1240 20
+spawn2  -1255 25
+spawn3  -1270 30
+spawn4  -1285 35
+
+palette data/bgs/BGBOSS/BGBOSS.gif #1
+
+
+#-------orcking
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   orcking
+alias   Orc_King
+health  250
+item    straw
+coords  550 135
+at      0
+
+#-------hellhou2
+
+group   2 2
+at      0
+
+wait
+at      0
+
+spawn   hellhou2
+alias   Hell_Hounds
+item    straw
+health  125
+coords  -90 120
+flip 1
+at      0 
+
+spawn   hellhou2
+alias   Hell_Hounds
+item    straw
+health  125
+coords  550 135
+at      0 
+
+#-------minot3
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   minot3
+alias   Minotaur
+health  250
+item    straw
+coords  550 135
+at      0
+
+#-------troll
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   troll
+alias   Troll
+health  250
+item    straw
+coords  550 120
+at      0
+
+#-------disbeast
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   disbeast
+alias   Displacer_Beast
+health  250
+item    straw
+coords  550 130
+at      0
+
+#-------ogre
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   ogre
+alias   Ogre
+health  350
+item    straw
+coords  550 130
+at      0
+
+#-------Wyvern2
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   Wyvern
+alias   Wyvern
+health  400
+item    straw
+coords  650 135
+at      0
+
+#-------chimera
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   chimera
+alias   Chimera
+health  500
+item    straw
+coords  350 135
+at      0
+
+#-------mantico
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   mantico
+alias   Manticore
+health 500
+item    straw
+coords  550 135
+at      0
+
+#-------zlord
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   zlord
+alias   Zombie_Lord
+health 500
+item    straw
+coords  550 135
+at      0
+
+#-------behold
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   behold
+alias   Beholder
+health  500
+item    straw
+coords  550 135
+at      0
+
+#-------youngbl
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   youngbl
+alias   Young_Black_Dragon
+health  425
+item    straw
+coords  650 130
+at      0
+
+#-------younggr
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   younggr
+alias   Young_Green_Dragon
+health  635
+item    straw
+coords  650 135
+at      0
+
+#-------cyclops
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   cyclops
+alias   Cyclops
+health  640
+item    straw
+coords  550 135
+at      0
+
+#-------arlon
+
+group   1 1
+at      0
+
+wait
+at      0
+
+spawn   arlon
+alias   Ludwig_von_Hendriks
+boss 1
+health  850
+coords  600 135
+at      0
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+type 		0 1 1
+music		data/music/tavern02.ogg
+bossmusic	data/music/BOSS16.ogg
+background	data/bgs/02_04_3/back.gif
+panel	      data/bgs/02_04_3/n01.gif
+frontpanel	data/bgs/02_04_3/f01.gif
+order       a
+settime 0
+notime	1
+direction both
+setweap 4
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_04_3/02_04_3.gif #1
+
+#------- Dialogue
+
+spawn d02_04_3
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------chests
+spawn gold2
+flip 1
+health 1
+coords 220 145
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gaunt
+flip 1
+health 1
+coords 340 145
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn amet
+flip 1
+health 1
+coords 640 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn topaz
+flip 1
+health 1
+coords 740 145
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn amber
+flip 1
+health 1
+coords 820 145
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gold2
+flip 1
+health 1
+coords 760 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gold1
+flip 1
+health 1
+coords 840 210
+flip 1
+at 0
+#-------chests
+
+
+
+#-------Civilian
+
+spawn woman
+alias		town01_1
+health		1
+aggression	0
+map			1
+coords 124 145
+at 0
+
+#-------Civilian
+
+#-------Civilian
+
+spawn woman
+alias		town01_2
+health		1
+aggression	0
+map			2
+coords 174 205
+at 0
+
+#-------Civilian
+
+#-------Civilian
+
+spawn man
+alias		town01_3
+health		1
+aggression	0
+map			0
+coords 372 195
+flip 0
+at 0
+
+#-------Civilian
+
+#-------Civilian
+
+spawn man
+alias		town01_4
+health		1
+aggression	0
+map			1
+coords 429 145
+at 0
+
+#-------Civilian
+
+#-------Civilian
+
+spawn innkeep
+alias		town01_5
+health		1
+aggression	0
+map			3
+coords 550 200
+at 0
+
+#-------Civilian
+
+#-------Civilian
+
+spawn elder
+alias		town01_6
+health		1
+aggression	0
+map			0
+coords 750 175
+at 0
+
+#-------Civilian
+
+
+#------- Go
+
+spawn go02
+flip 1
+coords 450 185
+at 480
+
+#------- Go
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

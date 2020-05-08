@@ -1,0 +1,86 @@
+name	fpill
+health		1
+nolife		1
+type		none
+hostile		enemy obstacle
+candamage	enemy obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+remove		0
+
+palette data/chars/misc/fpill/fpill.gif #1
+
+anim spawn
+	load		dust03
+	subentity	dust03
+	spawnframe	0 0 0 0 0
+	quakeframe	0 13 5
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/burn01.wav
+	hitflash	flash01
+	sound   data/sounds/fall02.wav
+
+	delay	3
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack3  	171 30 	109 	169 	45 			1 		1 		0 			0			30
+	frame	data/chars/misc/fpill/01.gif
+	frame	data/chars/misc/fpill/02.gif
+	
+	frame	data/chars/misc/fpill/03.gif
+	frame	data/chars/misc/fpill/04.gif
+	
+	frame	data/chars/misc/fpill/05.gif
+	frame	data/chars/misc/fpill/06.gif
+	
+	frame	data/chars/misc/fpill/07.gif
+	frame	data/chars/misc/fpill/08.gif
+	
+	frame	data/chars/misc/fpill/09.gif
+	frame	data/chars/misc/fpill/10.gif
+	
+	attack3  0 0 0 	0 0 0 0 0 0	0
+	frame	data/chars/misc/fpill/11.gif
+	frame	data/chars/misc/fpill/12.gif
+
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif

@@ -1,0 +1,1490 @@
+name				delf2
+type				enemy
+hostile				player npc
+candamage			player npc
+score				84 -1
+health				25
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			30
+blockodds			5
+thold				49
+#nopain				1
+nodrop				2
+aggression			100
+#risetime 1000
+nodieblink			1
+falldie				1
+jugglepoints		15
+icon				data/chars/delf2/icon.gif 1
+icondie				data/chars/delf2/icond.gif 1
+diesound			data/sounds/delf01.wav
+takedamagescript	data/scripts/ndamage.c
+
+palette				data/chars/delf2/delf2.gif #1
+
+remap	data/chars/delf2/idle00.gif   data/chars/delf2/alter01.gif
+remap	data/chars/delf2/idle00.gif   data/chars/delf2/alter02.gif
+remap	data/chars/delf2/idle00.gif   data/chars/delf2/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+	delay	2
+#	sound   data/sounds/super01.wav
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	delay	30
+	bbox	212 143 30 55
+	frame	data/chars/DELF2/idle00.gif
+	delay	2
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	 offset     225 198
+	delay	2
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	delay	999
+	bbox	212 143 30 55
+	frame	data/chars/DELF2/idle00.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay   2
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk04.gif
+	delay	999
+	frame	data/chars/misc/empty.gif
+
+anim block
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/DELF2/guard00.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/DELF2/guard01.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/DELF2/guard02.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/DELF2/guard03.gif
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/DELF2/guard00.gif
+
+	move	-100
+	delay	20
+	frame	data/chars/misc/empty.gif
+
+
+	delay	1
+	move	0
+	frame	data/chars/delf2/wk04.gif
+
+anim attack1
+	shadowcoords 218 198
+	range		0 100
+	load		ma11
+	custknife	ma11
+	throwframe	14
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+
+	delay	2
+	sound   data/sounds/super01.wav
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	delay	35
+	bbox	212 143 30 55
+	frame	data/chars/DELF2/idle00.gif
+	delay	8
+	frame	data/chars/delf2/a101.gif
+	frame	data/chars/delf2/a102.gif
+	frame	data/chars/delf2/a103.gif
+
+	delay	32
+	sound   data/sounds/slash03.wav
+	frame	data/chars/delf2/a104.gif
+	delay	7
+	frame	data/chars/delf2/a103.gif
+	delay	2
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+
+anim attack2
+	shadowcoords 218 198
+	range		101 150
+	load		ma41
+	custknife	ma41
+	throwframe	14
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+
+	delay	2
+	sound   data/sounds/super01.wav
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	delay	35
+	bbox	212 143 30 55
+	frame	data/chars/DELF2/idle00.gif
+	delay	8
+	frame	data/chars/delf2/a101.gif
+	frame	data/chars/delf2/a102.gif
+	frame	data/chars/delf2/a103.gif
+
+	delay	32
+	sound   data/sounds/slash03.wav
+	frame	data/chars/delf2/a104.gif
+	delay	7
+	frame	data/chars/delf2/a103.gif
+	delay	2
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+
+anim attack3
+	shadowcoords 218 198
+	range		151 200
+	load		ma51
+	custknife	ma51
+	throwframe	14
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+
+	delay	2
+	sound   data/sounds/super01.wav
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	delay	35
+	bbox	212 143 30 55
+	frame	data/chars/DELF2/idle00.gif
+	delay	8
+	frame	data/chars/delf2/a101.gif
+	frame	data/chars/delf2/a102.gif
+	frame	data/chars/delf2/a103.gif
+
+	delay	32
+	sound   data/sounds/slash03.wav
+	frame	data/chars/delf2/a104.gif
+	delay	7
+	frame	data/chars/delf2/a103.gif
+	delay	2
+	frame	data/chars/delf2/wk00.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/wk04.gif
+	frame	data/chars/misc/empty.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	sound   data/sounds/orc01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	delay	35
+	sound   data/sounds/pain101.wav
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/delf2/pain101.gif
+
+anim rise1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	1
+	frame	data/chars/delf2/pain101.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 143 30 55
+	sound   data/sounds/delf01.wav
+
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-4
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-4
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-3
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-3
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+
+anim fall2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	delay	35
+	sound   data/sounds/pain101.wav
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/delf2/pain101.gif
+
+anim rise2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	1
+	frame	data/chars/delf2/pain101.gif
+
+anim death2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-3
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+
+anim fall3
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	delay	35
+	sound   data/sounds/pain101.wav
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/delf2/pain101.gif
+
+anim rise3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	1
+	frame	data/chars/delf2/pain101.gif
+
+anim death3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-3
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-2
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	move	-1
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+
+anim fall4
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	delay	35
+	sound   data/sounds/pain101.wav
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/delf2/pain101.gif
+
+anim rise4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	1
+	frame	data/chars/delf2/pain101.gif
+
+anim death4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/delf2/pain101.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/delf2/pain101.gif
+
+	
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/delf2/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/delf2/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/delf2/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/delf2/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	19
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+
+	delay	65
+	sound   data/sounds/pain101.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/delf2/pain101.gif
+
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	1
+	frame	data/chars/delf2/pain101.gif
+
+anim death7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+
+	delay   210
+	frame	data/chars/delf2/pain101.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     228 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	frame	data/chars/delf2/pain101.gif
+	offset     222 198
+	frame	data/chars/delf2/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/delf2/pain101.gif
+	
+	delay   210
+	frame	data/chars/delf2/pain101.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/delf2/pain101.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/delf2/pain101.gif
+	frame	data/chars/delf2/pain101.gif
+	delay   70
+	frame	data/chars/delf2/pain101.gif
+	delay	10
+	frame	data/chars/delf2/pain101.gif
+	delay	8
+	frame	data/chars/delf2/pain101.gif
+
+
+anim death8
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	delay   260
+	frame	data/chars/delf2/pain101.gif
+	delay   35
+	frame	data/chars/delf2/death01.gif
+	delay   4
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/delf2/death02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/delf2/death03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/delf2/death04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/delf2/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/delf2/death06.gif
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

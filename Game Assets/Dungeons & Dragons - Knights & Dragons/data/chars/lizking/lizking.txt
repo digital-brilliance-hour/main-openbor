@@ -1,0 +1,2299 @@
+name				lizking
+type				enemy
+hostile				player npc
+candamage			player npc
+score				1200 -1
+health				180
+speed				11
+shadow				4
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			50
+blockodds			1
+thold				49
+#risetime 1000
+nodieblink			1
+nodrop				1
+falldie				1
+escapehits			2
+jugglepoints		15
+icon				data/chars/lizking/bicon.gif 1
+icondie				data/chars/lizking/bicond.gif 1
+diesound			data/sounds/liz01.wav
+nolife				1
+takedamagescript	data/scripts/ndamage.c
+
+#-------Boss
+nolife				1
+lifebarstatus		240 5 1 1 0 -300 -300 -300 -300
+lifeposition		119 34 
+nameposition		152 49
+iconposition		0 0
+#-------Boss
+
+
+palette data/chars/lizking/lizking.gif #1
+
+remap	data/chars/lizking/idle00.gif   data/chars/lizking/alter01.gif
+remap	data/chars/lizking/idle00.gif   data/chars/lizking/alter02.gif
+remap	data/chars/lizking/idle00.gif   data/chars/lizking/alter03.gif
+
+#-------Moves
+
+anim spawn
+	shadowcoords 210 200
+	 loop       0
+	subentity	dust01
+	spawnframe	30 0 0 0 0
+	 offset     225 198
+	jumpframe	0 3 2
+	landframe	30
+	quakeframe	30 8 8
+	delay	12
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	delay	2
+	sound   data/sounds/fall02.wav
+	fshadow		5 
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	frame	data/chars/lizking/idle00.gif
+	delay	16
+	frame	data/chars/lizking/idle00.gif
+
+anim idle
+	shadowcoords 210 200
+	loop	1
+	 offset     225 198
+	bbox	212 117 30 81
+	delay	1
+	frame	data/chars/lizking/idle00.gif
+
+anim walk
+	shadowcoords 210 200
+	loop	1
+	offset     225 198
+	bbox	212 117 30 81
+	delay   16
+	frame	data/chars/lizking/wk00.gif
+	frame	data/chars/lizking/wk01.gif
+	frame	data/chars/lizking/wk02.gif
+	frame	data/chars/lizking/wk03.gif
+	frame	data/chars/lizking/wk04.gif
+	frame	data/chars/lizking/wk05.gif
+
+anim block
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-6
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-5
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-5
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-4
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-4
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-3
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-3
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-2
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-2
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-1
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	-1
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	move	0
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+	frame	data/chars/lizking/guard00.gif
+
+anim attack1
+	shadowcoords 210 200
+	range	0 50
+	jumpframe	0 2 -2
+	landframe	30
+	subentity	dust02
+	spawnframe	31 0 0 0 0
+	quakeframe	31 30 5
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+
+	delay	12
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+	sound   data/sounds/wing01.wav
+	frame	data/chars/lizking/ju00.gif
+	frame	data/chars/lizking/ju01.gif
+	frame	data/chars/lizking/ju02.gif
+	frame	data/chars/lizking/ju03.gif
+	frame	data/chars/lizking/ju04.gif
+
+	sound   data/sounds/minot02.wav
+	delay	18
+	frame	data/chars/lizking/a301.gif
+
+	delay	2
+	move	6
+	attack2  226 126 74 73 18 1 0 0 0 15
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+
+	delay	2
+	move	6
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+
+	move	0
+	delay	8
+	frame	data/chars/lizking/a306.gif
+	delay	32
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/lizking/a307.gif
+
+anim attack2
+	shadowcoords 210 200
+	range	51 145
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	delay	11
+	frame	data/chars/lizking/a101.gif
+	delay	6
+	sound   data/sounds/slash01.wav
+	frame	data/chars/lizking/a102.gif
+	frame	data/chars/lizking/a103.gif
+	attack1  225 163 147 35 14 0 0 0 30
+	frame	data/chars/lizking/a104.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	delay	25
+	frame	data/chars/lizking/a104.gif
+	delay	17
+	frame	data/chars/lizking/idle00.gif
+
+anim attack3
+	shadowcoords 210 200
+	range	146 300
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	delay	11
+	frame	data/chars/lizking/a201.gif
+	delay	4
+	frame	data/chars/lizking/a202.gif
+	frame	data/chars/lizking/a203.gif
+	frame	data/chars/lizking/a204.gif
+	frame	data/chars/lizking/a205.gif
+	frame	data/chars/lizking/a206.gif
+	frame	data/chars/lizking/a207.gif
+	frame	data/chars/lizking/a208.gif
+	frame	data/chars/lizking/a209.gif
+	frame	data/chars/lizking/a210.gif
+	frame	data/chars/lizking/a211.gif
+	frame	data/chars/lizking/a212.gif
+	frame	data/chars/lizking/a213.gif
+	frame	data/chars/lizking/a214.gif
+	frame	data/chars/lizking/a215.gif
+	frame	data/chars/lizking/a216.gif
+	frame	data/chars/lizking/a217.gif
+	sound   data/sounds/slash01.wav
+	delay	2
+	attack1  225 163 205 35 18 0 0 0 30
+	frame	data/chars/lizking/a218.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/lizking/a218.gif
+	offset     155 198
+	shadowcoords 140 200
+	attack1  225 163 205 35 18 0 0 0 30
+	frame	data/chars/lizking/a219.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/lizking/a219.gif
+	offset     225 198
+	shadowcoords 210 200
+	attack1  155 163 320 35 18 0 0 0 30
+	frame	data/chars/lizking/a218.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/lizking/a218.gif
+	delay	4
+	frame	data/chars/lizking/a220.gif
+	frame	data/chars/lizking/a221.gif
+	delay	25
+	frame	data/chars/lizking/a104.gif
+	delay	17
+	frame	data/chars/lizking/idle00.gif
+
+anim attack4
+	shadowcoords 210 200
+	subentity	dust02
+	spawnframe	1 0 0 0 0
+	quakeframe	1 30 5
+	range	301 350
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+
+	sound   data/sounds/minot02.wav
+	delay	64
+	frame	data/chars/lizking/a301.gif
+
+	delay	2
+	move	6
+	attack2  226 126 74 73 18 1 0 0 0 15
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+
+	delay	2
+	move	6
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+
+	move	6
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+
+	delay	2
+	move	6
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+
+	move	6
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+	frame	data/chars/lizking/a302.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+	frame	data/chars/lizking/a303.gif
+
+	delay	2
+	move	6
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+	frame	data/chars/lizking/a304.gif
+
+	delay	2
+	move	6
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+	frame	data/chars/lizking/a305.gif
+
+	move	0
+	attack2  0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/lizking/a306.gif
+	delay	32
+	frame	data/chars/lizking/a307.gif
+
+
+
+anim special2
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 117 30 81
+	hitfx   data/sounds/hit01.wav
+	delay   2
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay	22
+	frame	data/chars/lizking/a101.gif
+	delay	6
+	frame	data/chars/lizking/a102.gif
+	frame	data/chars/lizking/a103.gif
+
+	delay	1
+	sound   data/sounds/slash01.wav
+	attack2  225 160 68 39 15 0 0 0 0
+	move 5
+	frame	data/chars/lizking/a104.gif
+	move 4
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	move 3
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	move 2
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	move 1
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+	frame	data/chars/lizking/a104.gif
+
+	attack2  0 0 0 0 0 0 0 0 0 0
+	move 0
+	delay	25
+	frame	data/chars/lizking/a104.gif
+
+	delay	17
+	frame	data/chars/lizking/idle00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 210 200
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+	sound   data/sounds/liz01.wav
+
+	delay   2
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	
+	delay   2
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+
+anim fall1
+	shadowcoords 210 200
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay	35
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/lizking/pain101.gif
+
+anim rise1
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/lizking/pain101.gif
+
+anim death1
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+	shadowcoords 210 200
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	212 117 30 81
+	sound   data/sounds/liz01.wav
+
+	
+	offset     225 198
+	
+	delay   2
+	move	-5
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-4
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-4
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+
+anim fall2
+	shadowcoords 210 200
+	load		blood11
+	subentity	blood11
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe		1
+	landframe		2
+	loop	0
+	 offset     225 198
+	bbox	212 117 30 81
+	sound   data/sounds/pdie1.wav
+	delay   999
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay	35
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/lizking/pain101.gif
+
+anim rise2
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/lizking/pain101.gif
+
+anim death2
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	delay   2
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+
+anim fall3
+	shadowcoords 210 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	frame	data/chars/misc/burn/301.gif
+	frame	data/chars/misc/burn/302.gif
+	frame	data/chars/misc/burn/303.gif
+	delay   999
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay	35
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/lizking/pain101.gif
+
+anim rise3
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/lizking/pain101.gif
+
+anim death3
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	delay   2
+	move	-3
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-2
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	move	-1
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	
+	move	0
+	delay   6
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+
+anim fall4
+	shadowcoords 210 200
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   3
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	frame	data/chars/misc/shock/301.gif
+	frame	data/chars/misc/shock/302.gif
+	frame	data/chars/misc/shock/303.gif
+	delay   999
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay	35
+	sound   data/sounds/fall01.wav
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/lizking/pain101.gif
+
+anim rise4
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/lizking/pain101.gif
+
+anim death4
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay   70
+	frame	data/chars/lizking/pain101.gif
+	delay	10
+	frame	data/chars/lizking/pain101.gif
+	delay	8
+	frame	data/chars/lizking/pain101.gif
+
+anim fall5
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+
+anim rise5
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay   70
+	frame	data/chars/lizking/pain101.gif
+	delay	10
+	frame	data/chars/lizking/pain101.gif
+	delay	8
+	frame	data/chars/lizking/pain101.gif
+
+	
+anim death5
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/freeze/103.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/103.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/103.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/103.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/103.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+
+anim fall6
+	shadowcoords 210 200
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	bbox		212 143 30 55
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/lizking/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/lizking/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/lizking/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/lizking/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay   70
+	frame	data/chars/lizking/pain101.gif
+	delay	10
+	frame	data/chars/lizking/pain101.gif
+	delay	8
+	frame	data/chars/lizking/pain101.gif
+
+anim death6
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+
+	delay   200
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 210 200
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 210 200
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+
+	delay	65
+	sound   data/sounds/fall01.wav
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay	40
+	frame	data/chars/lizking/pain101.gif
+
+	
+anim rise7
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/lizking/pain101.gif
+
+anim death7
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+	shadowcoords 210 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+	delay   2
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+
+	delay   210
+	frame	data/chars/lizking/pain101.gif
+
+anim fall8
+	shadowcoords 210 200
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+	bbox		212 143 30 55
+
+
+	delay   2
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     228 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	frame	data/chars/lizking/pain101.gif
+	offset     222 198
+	frame	data/chars/lizking/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/lizking/pain101.gif
+	
+	delay   210
+	frame	data/chars/lizking/pain101.gif
+
+anim rise8
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	bbox		212 143 30 55
+	delay   260
+	frame	data/chars/lizking/pain101.gif
+	bbox		0 0 0 0
+	delay   5
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/pain101.gif
+	delay   70
+	frame	data/chars/lizking/pain101.gif
+	delay	10
+	frame	data/chars/lizking/pain101.gif
+	delay	8
+	frame	data/chars/lizking/pain101.gif
+
+
+anim death8
+	shadowcoords 210 200
+	loop	0
+	 offset     225 198
+	delay   48
+	frame	data/chars/lizking/pain101.gif
+	frame	data/chars/lizking/death00.gif
+	delay   4
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death01.gif
+	frame	data/chars/lizking/death02.gif
+	delay   48
+	frame	data/chars/lizking/death02.gif
+	delay   4
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death02.gif
+	frame	data/chars/lizking/death03.gif
+	delay   48
+	frame	data/chars/lizking/death03.gif
+	frame	data/chars/lizking/death04.gif
+	delay   4
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/lizking/death07.gif
+
+	delay   2
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/lizking/death07.gif
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+
+
+
+
+

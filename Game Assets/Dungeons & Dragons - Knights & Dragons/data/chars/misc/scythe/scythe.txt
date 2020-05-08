@@ -1,0 +1,143 @@
+name		scythe
+health		1
+nolife		1
+type		npc
+hostile		player npc obstacle
+candamage	player npc obstacle
+speed		15
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+flash				flash01
+noatflash			1
+
+palette data/chars/misc/scythe/scythe.gif #1
+
+anim idle
+	loop	0
+	 offset     225 128
+	bbox    	209 138	32 61
+	hitflash Flash01
+	hitfx   data/sounds/hit01.wav
+	delay	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		209 138	32		61		5			1		0		0			30			
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/08.gif
+	attack2  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	jumpframe 0 2 0
+	loop	0
+	offset     225 128
+	delay		2
+	frame	data/chars/misc/scythe/01.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/scythe/03.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/scythe/05.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/scythe/07.gif
+	frame	data/chars/misc/scythe/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/scythe/08.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
+

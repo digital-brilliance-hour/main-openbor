@@ -1,0 +1,108 @@
+name		ibarr2
+health		1
+nolife		1
+type		none
+hostile		enemy obstacle
+candamage	enemy obstacle
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+remove		0
+#setlayer	200
+
+palette data/chars/misc/ibarr/ibarr.gif #1
+
+anim spawn
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/hit02.wav
+	hitflash	flash01
+
+	delay	4
+	frame	data/chars/misc/ibarr/201.gif
+	frame	data/chars/misc/ibarr/202.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/203.gif
+	frame	data/chars/misc/ibarr/204.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/205.gif
+	frame	data/chars/misc/ibarr/206.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/207.gif
+	frame	data/chars/misc/ibarr/208.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/209.gif
+	frame	data/chars/misc/ibarr/210.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/211.gif
+	frame	data/chars/misc/ibarr/212.gif
+#		frame		data/chars/misc/empty.gif
+
+	frame	data/chars/misc/ibarr/213.gif
+	frame	data/chars/misc/ibarr/214.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/215.gif
+	frame	data/chars/misc/ibarr/216.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/217.gif
+	frame	data/chars/misc/ibarr/218.gif
+#		frame		data/chars/misc/empty.gif
+	
+	frame	data/chars/misc/ibarr/219.gif
+	frame	data/chars/misc/ibarr/220.gif
+#		frame		data/chars/misc/empty.gif
+	
+
+	delay	4
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+		
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif

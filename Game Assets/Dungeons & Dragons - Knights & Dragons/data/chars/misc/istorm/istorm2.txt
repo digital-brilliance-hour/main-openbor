@@ -1,0 +1,139 @@
+name		istorm2
+health		1
+nolife		1
+type		none
+hostile		player npc obstacle
+candamage	player npc obstacle
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+shadow		0
+setlayer	10
+#lifespan	190
+
+palette data/chars/misc/istorm/istorm.gif #1
+
+anim spawn
+	loop	0
+	delay	4
+	offset     225 198
+	hitflash	flash01
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack5		1	1	479		239		15			0		0		0			0			150
+	sound   data/sounds/ishit.wav
+	frame	data/chars/misc/istorm/01.gif
+	frame	data/chars/misc/istorm/02.gif
+	frame	data/chars/misc/istorm/03.gif
+	frame	data/chars/misc/istorm/04.gif
+	frame	data/chars/misc/istorm/05.gif
+	frame	data/chars/misc/istorm/06.gif
+	frame	data/chars/misc/istorm/07.gif
+	frame	data/chars/misc/istorm/08.gif
+	frame	data/chars/misc/istorm/09.gif
+	frame	data/chars/misc/istorm/10.gif
+	frame	data/chars/misc/istorm/11.gif
+	frame	data/chars/misc/istorm/12.gif
+	frame	data/chars/misc/istorm/13.gif
+	frame	data/chars/misc/istorm/14.gif
+	frame	data/chars/misc/istorm/15.gif
+	
+	frame	data/chars/misc/istorm/01.gif
+	frame	data/chars/misc/istorm/02.gif
+	frame	data/chars/misc/istorm/03.gif
+	frame	data/chars/misc/istorm/04.gif
+	frame	data/chars/misc/istorm/05.gif
+	frame	data/chars/misc/istorm/06.gif
+	frame	data/chars/misc/istorm/07.gif
+	frame	data/chars/misc/istorm/08.gif
+	frame	data/chars/misc/istorm/09.gif
+	frame	data/chars/misc/istorm/10.gif
+	frame	data/chars/misc/istorm/11.gif
+	frame	data/chars/misc/istorm/12.gif
+	frame	data/chars/misc/istorm/13.gif
+	frame	data/chars/misc/istorm/14.gif
+	frame	data/chars/misc/istorm/15.gif
+
+	frame	data/chars/misc/istorm/01.gif
+	frame	data/chars/misc/istorm/02.gif
+	frame	data/chars/misc/istorm/03.gif
+	frame	data/chars/misc/istorm/04.gif
+	frame	data/chars/misc/istorm/05.gif
+	frame	data/chars/misc/istorm/06.gif
+	frame	data/chars/misc/istorm/07.gif
+	frame	data/chars/misc/istorm/08.gif
+	frame	data/chars/misc/istorm/09.gif
+	frame	data/chars/misc/istorm/10.gif
+	frame	data/chars/misc/istorm/11.gif
+	frame	data/chars/misc/istorm/12.gif
+	frame	data/chars/misc/istorm/13.gif
+	frame	data/chars/misc/istorm/14.gif
+	frame	data/chars/misc/istorm/15.gif
+	
+	attack5  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+

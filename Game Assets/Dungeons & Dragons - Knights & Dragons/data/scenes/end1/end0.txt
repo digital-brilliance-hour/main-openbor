@@ -1,0 +1,57 @@
+name	end0
+type	enemy
+nomove 1
+setlayer 999999
+facing 1
+antigravity 100
+nodieblink 3
+lifespan    8
+subject_to_wall 0
+
+palette data/scenes/end1/end1.gif #1
+
+anim idle
+	loop	0
+	 offset     0 215
+	bbox	0 0 0 0
+	delay	4
+	frame	data/scenes/end1/01.gif
+	frame	data/scenes/end1/02.gif
+	frame	data/scenes/end1/03.gif
+	frame	data/scenes/end1/04.gif
+	frame	data/scenes/end1/05.gif
+	frame	data/scenes/end1/06.gif
+	frame	data/scenes/end1/07.gif
+	frame	data/scenes/end1/08.gif
+	frame	data/scenes/end1/09.gif
+	frame	data/scenes/end1/10.gif
+	frame	data/scenes/end1/11.gif
+	frame	data/scenes/end1/12.gif
+	delay	500
+	frame	data/scenes/end1/13.gif
+
+anim death
+	loop	0
+	 offset     0 215
+	bbox	0 0 0 0
+	delay	4
+	frame	data/scenes/end1/12.gif
+	frame	data/scenes/end1/11.gif
+	frame	data/scenes/end1/10.gif
+	frame	data/scenes/end1/09.gif
+	frame	data/scenes/end1/08.gif
+	frame	data/scenes/end1/07.gif
+	frame	data/scenes/end1/06.gif
+	frame	data/scenes/end1/05.gif
+	frame	data/scenes/end1/04.gif
+	frame	data/scenes/end1/03.gif
+	frame	data/scenes/end1/02.gif
+	frame	data/scenes/end1/01.gif
+	delay	999
+	frame	data/scenes/end1/01.gif
+
+	
+	
+	
+	
+	

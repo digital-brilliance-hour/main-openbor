@@ -1,0 +1,80 @@
+name	casket3
+health  5
+type    obstacle
+shadow	0
+nolife  1
+falldie 1
+nodieblink 1
+diesound  data/sounds/guard.wav
+flash				flash01
+noatflash			1
+
+palette data/chars/misc/chests/chests.gif #1
+
+anim idle
+	loop	0
+	delay	5
+	 offset     225 198
+	bbox    207 170 41 28
+	frame	data/chars/misc/chests/cask301.gif
+	
+anim fall
+	loop	0
+	delay	8
+	 offset     225 198
+	frame	data/chars/misc/chests/cask302.gif
+	frame	data/chars/misc/chests/cask303.gif
+	delay	34
+	frame	data/chars/misc/chests/cask304.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+
+anim death
+	loop	0
+	delay	8
+	 offset     225 198
+	frame	data/chars/misc/chests/cask302.gif
+	frame	data/chars/misc/chests/cask303.gif
+	delay	34
+	frame	data/chars/misc/chests/cask304.gif
+	delay	2
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/chests/cask304.gif
+	

@@ -1,0 +1,334 @@
+music		data/music/STAGE22.ogg
+bossmusic	data/music/BOSS06.ogg
+background	data/bgs/03_01_7/back.gif
+panel	      data/bgs/03_01_7/n01.gif
+frontpanel	data/bgs/03_01_7/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+palette data/bgs/03_01_7/03_01_7.gif #1
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	569 545
+at 0
+
+spawn Respawn2
+coords	569 545
+at 0
+
+spawn Respawn3
+coords	569 545
+at 0
+
+spawn Respawn4
+coords	569 545
+at 0
+
+#-------Respawn
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 80 139
+flip 0
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 400 210
+flip 1
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 500 140
+flip 1
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 0 170
+flip 0
+at 0
+#-------blaze
+
+#-------Monsters
+
+group   4 4
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+#spawn d01_03_3
+#coords 240 176
+#flip 1
+#at 0
+
+#------- Dialogue
+
+spawn chimera
+alias Chimera
+health 350
+2phealth 450
+3phealth 550 
+4phealth 650 
+aggression 300
+map 0
+boss 1
+item missclear
+itemalias IsleDread
+coords 580 170
+flip 0
+at 0
+
+#-------
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 540 140
+flip 0
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords -80 180
+flip 1
+at 0
+
+spawn raptor
+alias Velociraptor
+health 92
+2phealth 102
+3phealth 112 
+4phealth 122 
+aggression 300
+map 2
+coords 560 210
+flip 0
+at 0
+
+#-------Monsters
+
+
+
+
+
+

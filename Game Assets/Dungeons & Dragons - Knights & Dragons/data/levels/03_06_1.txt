@@ -1,0 +1,157 @@
+type 		0 1 1
+music		data/music/STAGE27.ogg
+bossmusic	data/music/BOSS11.ogg
+background	data/bgs/03_06_1/back.gif
+panel	      data/bgs/03_06_1/n01.gif
+frontpanel	data/bgs/03_06_1/f01.gif
+order       a
+settime 0
+notime	1
+direction both
+setweap 4
+stagenumber 3
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/03_06_1/03_06_1.gif #1
+
+wall    200  220  600 670 2100 2100 150 520
+
+#------- The Quest begins
+
+spawn q03_6
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------chests
+spawn gold2
+flip 1
+health 1
+coords 230 150
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn gaunt
+flip 1
+health 1
+coords 455 150
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn amet
+flip 1
+health 1
+coords 615 150
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn topaz
+flip 1
+health 1
+coords 745 150
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn amber
+flip 1
+health 1
+coords 550 210
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn diamond
+flip 1
+health 1
+coords 700 210
+flip 1
+at 0
+#-------chests
+
+#-------Dwarf Civilian
+
+spawn dmerch
+alias		town08_1
+health		1
+aggression	0
+map			3
+coords 226 192
+flip 0
+at 0
+
+spawn dmerch
+alias		town08_2
+health		1
+aggression	0
+map			1
+coords 325 180
+flip 0
+at 0
+
+spawn dmerch
+alias		town08_3
+health		1
+aggression	0
+map			2
+coords 400 150
+flip 0
+at 0
+
+spawn dmerch
+alias		town08_4
+health		1
+aggression	0
+map			3
+coords 500 200
+flip 0
+at 0
+
+spawn dmerch
+alias		town08_5
+health		1
+aggression	0
+map			1
+coords 680 170
+flip 0
+at 0
+
+spawn dmerch
+alias		town08_6
+health		1
+aggression	0
+map			2
+coords 775 190
+flip 0
+at 0
+
+#-------Dwarf Civilian
+
+
+#-------enter
+
+spawn enter01
+alias enter01
+flip 1
+health 1
+coords 835 165
+at 0
+
+#-------enter
+
+
+
+

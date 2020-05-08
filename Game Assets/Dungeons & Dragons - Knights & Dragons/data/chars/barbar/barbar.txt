@@ -1,0 +1,2347 @@
+name	    		Barbarian
+candamage     enemy obstacle npc
+type	    		player
+health				14
+mpset				35 1 9999 2 4 1
+#mp					100
+speed				12
+blockpain			-1
+blockback			1
+holdblock			1
+guardpoints			1
+guardrate			1
+shadow				2
+aironly				1
+noquake				1
+dust				dust01
+flash				flash11
+#noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+jumpheight			2
+antigravity			50
+turndelay			0
+jumpmove			1
+nodieblink			1
+makeinv				3	0
+falldie				2
+riseinv				1	0
+jugglepoints		15
+nolife				1
+atchain				1 2 3 4 5
+modelflag			1
+defense 			all		1.0
+animationscript		data/scripts/player.c
+keyscript			data/scripts/key.c
+takedamagescript	data/scripts/ndamage.c
+onmodelcopyscript  data/scripts/mcopy.c
+
+weapons     travel hbarb speedup barb2 travel2
+
+icon	    data/chars/barbar/icon.gif 1
+icondie     data/chars/barbar/icond.gif 1
+diesound    data/sounds/die01.wav
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette				data/chars/barbar/barbar.gif #1
+#alternatepal		data/chars/barbar/alter01.gif #1
+
+	load		spdup
+	load		normal
+	load		block
+	load		fatigue
+	load		recover
+
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter01.gif
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter02.gif
+remap	data/chars/barbar/idle00.gif   data/chars/barbar/alter03.gif
+
+	com  a2  	freespecial30
+	com  d f a  freespecial2 # whirlwind slash
+	com  d d a  freespecial3 # barbaric smash
+	com  d u a  freespecial4 # berserker rage
+	com  d f u a  freespecial4 # berserker rage
+	com  d b u a  freespecial4 # berserker rage
+	com  f f a  freespecial5 # Spirit of the beast
+
+
+#-------Select screen!
+
+anim waiting
+	shadowcoords -9999 -9999
+	 loop       1
+	 offset     90 195
+	 delay      1
+         frame      data/chars/barbar/sel00.gif
+
+anim select
+	shadowcoords -9999 -9999
+	 loop       0
+	 offset     90 195
+	 sound   data/sounds/att02.wav
+	 delay      1
+ 
+         frame      data/chars/barbar/sel01.gif
+         frame      data/chars/barbar/sel02.gif
+         frame      data/chars/barbar/sel01.gif
+         frame      data/chars/barbar/sel02.gif
+         frame      data/chars/barbar/sel01.gif
+         frame      data/chars/barbar/sel02.gif
+         frame      data/chars/barbar/sel01.gif
+         frame      data/chars/barbar/sel02.gif
+
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+         frame      data/chars/barbar/sel03.gif
+         frame      data/chars/barbar/sel04.gif
+
+
+#-------Moves
+
+anim spawn
+	shadowcoords 218 198
+	 loop       0
+	 offset     225 198
+
+	 delay      12
+     @cmd setLevel
+	 frame	data/chars/barbar/idle01.gif
+	 sound   	data/sounds/att02.wav
+	 delay      10
+	 frame	data/chars/barbar/sp02.gif
+	 delay      86
+	 frame	data/chars/barbar/sp04.gif
+
+anim idle
+	shadowcoords 218 198
+	loop	1
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/barbar/idle01.gif
+
+anim follow2
+	shadowcoords 218 198
+	loop	0
+	delay	1
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/barbar/idle01.gif
+
+anim walk
+	shadowcoords 218 198
+	loop	1
+	delay	10
+	 offset     225 198
+	bbox	212 143 30 55
+	frame	data/chars/barbar/wk00.gif
+	frame	data/chars/barbar/wk01.gif
+	frame	data/chars/barbar/wk02.gif
+	frame	data/chars/barbar/wk03.gif
+	frame	data/chars/barbar/wk04.gif
+	frame	data/chars/barbar/wk05.gif
+	frame	data/chars/barbar/wk06.gif
+	frame	data/chars/barbar/wk07.gif
+
+anim get
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   20
+	frame	data/chars/barbar/rise02.gif
+
+anim attack1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d d a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			f f a 				freespecial5
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	delay	7
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/a101.gif
+	delay	2
+	frame	data/chars/barbar/a102.gif
+	sound   data/sounds/slash01.wav
+	attack1  225 136 104 63 6 0 0 0 0
+	frame	data/chars/barbar/a103.gif
+	frame	data/chars/barbar/a104.gif
+	frame	data/chars/barbar/a105.gif
+	frame	data/chars/barbar/a106.gif
+	frame	data/chars/barbar/a107.gif
+	frame	data/chars/barbar/a108.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/a109.gif
+	frame	data/chars/barbar/a110.gif
+	frame	data/chars/barbar/a111.gif
+	delay	7
+	frame	data/chars/barbar/a112.gif
+
+anim attack2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d d a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			f f a 				freespecial5
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	delay	7
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/a201.gif
+	delay	2
+	frame	data/chars/barbar/a202.gif
+	sound   data/sounds/slash01.wav
+	attack1  225 136 104 63 7 0 0 0 0
+	frame	data/chars/barbar/a203.gif
+	frame	data/chars/barbar/a204.gif
+	frame	data/chars/barbar/a205.gif
+	frame	data/chars/barbar/a206.gif
+	frame	data/chars/barbar/a207.gif
+	frame	data/chars/barbar/a208.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/a209.gif
+	frame	data/chars/barbar/a210.gif
+	frame	data/chars/barbar/a211.gif
+	delay	7
+	frame	data/chars/barbar/a212.gif
+
+anim attack3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d d a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			f f a 				freespecial5
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	delay	7
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/a301.gif
+	delay	2
+	frame	data/chars/barbar/a302.gif
+	sound   data/sounds/slash01.wav
+	attack1  225 136 104 63 8 0 0 0 0
+	frame	data/chars/barbar/a303.gif
+	frame	data/chars/barbar/a304.gif
+	frame	data/chars/barbar/a305.gif
+	frame	data/chars/barbar/a306.gif
+	frame	data/chars/barbar/a307.gif
+	frame	data/chars/barbar/a308.gif
+	attack1  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/a309.gif
+	frame	data/chars/barbar/a310.gif
+	frame	data/chars/barbar/a311.gif
+	delay	7
+	frame	data/chars/barbar/a312.gif
+
+anim attack4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d d a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			f f a 				freespecial5
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	delay	7
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/a401.gif
+	delay	2
+	frame	data/chars/barbar/a402.gif
+	sound   data/sounds/slash01.wav
+	attack2  225 136 104 63 9 0 0 0 0
+	frame	data/chars/barbar/a403.gif
+	frame	data/chars/barbar/a404.gif
+	frame	data/chars/barbar/a405.gif
+	frame	data/chars/barbar/a406.gif
+	frame	data/chars/barbar/a407.gif
+	frame	data/chars/barbar/a408.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/a409.gif
+	frame	data/chars/barbar/a410.gif
+	frame	data/chars/barbar/a411.gif
+	delay	7
+	frame	data/chars/barbar/a412.gif
+
+anim attack5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				999 			0 			d f a 				freespecial2
+	cancel 		0 				999 			0 			d d a 				freespecial3
+	cancel 		0 				999 			0 			d u a 				freespecial4
+	cancel 		0 				999 			0 			d f u a 				freespecial4
+	cancel 		0 				999 			0 			d b u a 				freespecial4
+	cancel 		0 				999 			0 			f f a 				freespecial5
+	jugglecost	1
+	shadowcoords 218 198
+	loop	0
+	delay	7
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/att01.wav
+	frame	data/chars/barbar/a501.gif
+	move	3
+	delay	2
+	frame	data/chars/barbar/a502.gif
+	sound   data/sounds/slash01.wav
+	attack2  225 136 104 63 10 1 0 0 0
+	frame	data/chars/barbar/a503.gif
+	move	4
+	frame	data/chars/barbar/a504.gif
+	frame	data/chars/barbar/a505.gif
+	move	3
+	frame	data/chars/barbar/a506.gif
+	frame	data/chars/barbar/a507.gif
+	move	2
+	frame	data/chars/barbar/a508.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/a509.gif
+	move	1
+	frame	data/chars/barbar/a510.gif
+	frame	data/chars/barbar/a511.gif
+	move	0
+	delay	14
+	frame	data/chars/barbar/a512.gif
+
+anim block #attackbackward
+	shadowcoords 218 198
+	loop	0
+	delay	80
+	bbox	212 143 30 55
+	 offset     225 198
+	frame	data/chars/barbar/guard00.gif
+    @cmd performattack getlocalvar("self") openborconstant("ANI_FOLLOW1")
+	frame	data/chars/barbar/guard00.gif
+
+anim follow1
+	shadowcoords 218 198
+	loop	0
+	delay	40
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/pain01.wav
+@cmd projectile 1 "fatigue" 0 0 0
+	frame	data/chars/barbar/idle01.gif
+	frame	data/chars/barbar/idle02.gif
+	frame	data/chars/barbar/idle01.gif
+	frame	data/chars/barbar/idle02.gif
+
+anim blockpain #follow1
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	0 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/block01.wav
+	offset     225 198
+	delay	2
+	move	-6
+@cmd projectile 1 "block" 0 0 0
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-6
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-5
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-5
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-4
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-4
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-3
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-3
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-2
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-2
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-1
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	-1
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+	move	0
+	frame	data/chars/barbar/guard00.gif
+	frame	data/chars/barbar/guard00.gif
+#	@cmd makeInv 180 #invincible 1 second
+	frame	data/chars/barbar/guard00.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/barbar/guard00.gif
+
+anim walkoff
+	shadowcoords 218 198
+	loop	0
+	landframe	1
+	offset     225 198
+	bbox	212 143 30 55
+	delay	999
+	frame	data/chars/barbar/ju00.gif
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+anim jumpdelay
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+#	sound   data/sounds/stand.wav
+	delay	8
+	frame	data/chars/barbar/jdel00.gif
+
+anim jump
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/jump01.wav
+	delay	12
+	frame	data/chars/barbar/ju00.gif
+	delay	32
+	frame	data/chars/barbar/ju01.gif
+	delay	100
+	frame	data/chars/barbar/ju00.gif
+
+
+anim jumpland
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	212 143 30 55
+	sound   data/sounds/land01.wav
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+anim jumpattack
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		9 99 0 a Freespecial10
+	loop	0
+	@cmd	storeXvel
+	delay	8
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/ja101.gif
+	delay	2
+	frame	data/chars/barbar/ja102.gif
+	sound   data/sounds/slash01.wav
+	attack2  225 136 104 63 14 1 0 0 0
+	frame	data/chars/barbar/ja103.gif
+	frame	data/chars/barbar/ja104.gif
+	frame	data/chars/barbar/ja105.gif
+	frame	data/chars/barbar/ja106.gif
+	frame	data/chars/barbar/ja107.gif
+	frame	data/chars/barbar/ja108.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/ja109.gif
+	frame	data/chars/barbar/ja110.gif
+	frame	data/chars/barbar/ja111.gif
+	delay	7
+	frame	data/chars/barbar/ja112.gif
+	delay	999
+	frame	data/chars/barbar/ju00.gif
+
+anim Freespecial10
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		9 12 0 a Freespecial11
+#	cancel		9 99 0 d d a Freespecial12
+	landframe	13
+	loop	0
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	8
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/att01.wav
+	frame	data/chars/barbar/ja201.gif
+	delay	2
+	frame	data/chars/barbar/ja202.gif
+	sound   data/sounds/slash01.wav
+	attack2  225 136 104 63 14 1 0 0 0
+	frame	data/chars/barbar/ja203.gif
+	frame	data/chars/barbar/ja204.gif
+	frame	data/chars/barbar/ja205.gif
+	frame	data/chars/barbar/ja206.gif
+	frame	data/chars/barbar/ja207.gif
+	frame	data/chars/barbar/ja208.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/ja209.gif
+	frame	data/chars/barbar/ja210.gif
+	frame	data/chars/barbar/ja211.gif
+	delay	7
+	frame	data/chars/barbar/ja212.gif
+	delay	999
+	frame	data/chars/barbar/ju00.gif
+	sound   data/sounds/stand.wav
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+anim Freespecial11
+	jugglecost	4
+	shadowcoords 218 198
+	cancel		9 12 0 a Freespecial10
+#	cancel		9 99 0 d d a Freespecial12
+	landframe	13
+	loop	0
+	@cmd	velSet retrieveXvel() NULL() NULL()
+	delay	8
+	 offset     225 198
+	bbox	212 143 30 55
+	hitfx   data/sounds/hit01.wav
+	frame	data/chars/barbar/ja101.gif
+	delay	2
+	frame	data/chars/barbar/ja102.gif
+	sound   data/sounds/slash01.wav
+	attack2  225 136 104 63 14 1 0 0 0
+	frame	data/chars/barbar/ja103.gif
+	frame	data/chars/barbar/ja104.gif
+	frame	data/chars/barbar/ja105.gif
+	frame	data/chars/barbar/ja106.gif
+	frame	data/chars/barbar/ja107.gif
+	frame	data/chars/barbar/ja108.gif
+	attack2  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/ja109.gif
+	frame	data/chars/barbar/ja110.gif
+	frame	data/chars/barbar/ja111.gif
+	delay	7
+	frame	data/chars/barbar/ja112.gif
+	delay	999
+	frame	data/chars/barbar/ju00.gif
+	sound   data/sounds/stand.wav
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/barbar/pain102.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-4
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-4
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-3
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-3
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-2
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-2
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-1
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	move	-1
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/pain101.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+
+anim fall1
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain01.wav
+	frame	data/chars/barbar/fall01.gif
+	delay   72
+	frame	data/chars/barbar/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+
+anim rise1
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+@cmd projectile 1 "recover" 0 0 0
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+	delay	1
+	@cmd pblock		
+	frame	data/chars/barbar/rise03.gif
+
+anim death1
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+anim pain2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	loop	0
+	bbox	0 0 0 0
+	sound   data/sounds/pain01.wav
+
+	offset     225 198
+	delay   6
+	frame	data/chars/barbar/pain201.gif
+	delay   2
+	frame	data/chars/barbar/pain202.gif
+	delay   2
+	frame	data/chars/barbar/pain201.gif
+	delay   2
+	frame	data/chars/barbar/pain202.gif
+	delay   2
+	frame	data/chars/barbar/pain201.gif
+	delay   2
+	frame	data/chars/barbar/pain202.gif
+	
+	delay   2
+	move	-5
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+
+anim fall2
+	shadowcoords 218 198
+	load		blood01
+	subentity	blood01
+	spawnframe	0 0 -15 0 0
+#	subentity	dust01
+#	spawnframe	12 0 0 0 0
+	dropframe	1
+	landframe	2
+	loop	0
+	 offset     225 198
+	delay   999
+	sound   data/sounds/pain01.wav
+	frame	data/chars/barbar/fall01.gif
+	delay   72
+	frame	data/chars/barbar/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+
+anim rise2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------ATTACK 2----------------------------------------;
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+anim pain3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+
+anim fall3
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	frame	data/chars/misc/burn/101.gif
+	frame	data/chars/misc/burn/102.gif
+	frame	data/chars/misc/burn/103.gif
+	delay   999
+	frame	data/chars/barbar/fall01.gif
+	delay   72
+	frame	data/chars/barbar/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+
+anim rise3
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death3
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------BURN ATTACK----------------------------------------;
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+anim pain4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	15 0 0 0 0
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   2
+	move	-5
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-4
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-3
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-2
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	move	-1
+	frame	data/chars/barbar/pain201.gif
+	frame	data/chars/barbar/pain201.gif
+	
+	move	0
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     228 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+	offset     222 198
+	frame	data/chars/barbar/pain201.gif
+	offset     225 198
+	frame	data/chars/barbar/pain201.gif
+
+anim fall4
+	shadowcoords 218 198
+	dropframe	16
+	landframe	17
+	loop	0
+	offset     225 198
+	delay   3
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	frame	data/chars/misc/shock/101.gif
+	frame	data/chars/misc/shock/102.gif
+	frame	data/chars/misc/shock/103.gif
+	delay   999
+	frame	data/chars/barbar/fall01.gif
+	delay   72
+	frame	data/chars/barbar/fall02.gif
+	delay   1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+
+anim rise4
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			j j j					freespecial21
+	cancel		0 				99 			0 			f b j					freespecial21
+	cancel		0 				99 			0 			b f j					freespecial21
+	cancel		0 				99 			0 			d u j					freespecial21
+	cancel		0 				99 			0 			u d j					freespecial21
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   140
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death4
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------SHOCK ATTACK----------------------------------------;
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+anim pain5
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/fall01.gif
+	frame	data/chars/barbar/fall02.gif
+	delay   70
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim fall5
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/freeze/101.gif
+	sound   data/sounds/fall01.wav
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+
+anim rise5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/fall01.gif
+	frame	data/chars/barbar/fall02.gif
+	delay   70
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death5
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   50
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/freeze/101.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/freeze/101.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/freeze/101.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/freeze/101.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/freeze/101.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------FREEZE ATTACK----------------------------------------;
+
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+anim pain6
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   1
+	frame	data/chars/misc/poly/frog01.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog01.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog01.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog01.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog01.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+
+	delay   8
+	frame	data/chars/misc/poly/frog01.gif
+	frame	data/chars/misc/poly/frog02.gif
+	frame	data/chars/misc/poly/frog03.gif
+	frame	data/chars/misc/poly/frog04.gif
+	frame	data/chars/misc/poly/frog05.gif
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+
+anim fall6
+	shadowcoords 218 198
+	subentity	dust01
+	spawnframe	11 0 0 0 0
+	jumpframe	0 1 -1
+	landframe	11
+	loop	0
+	offset     225 198
+	delay   1
+	frame	data/chars/misc/poly/frog05.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog05.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog05.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog05.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/misc/poly/frog05.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+
+	delay   999
+	frame	data/chars/misc/poly/frog05.gif
+	delay   8
+	frame	data/chars/misc/poly/frog06.gif
+	frame	data/chars/misc/poly/frog07.gif
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+
+anim rise6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/barbar/pain101.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/barbar/pain101.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/barbar/pain101.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/barbar/pain101.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/fall01.gif
+	frame	data/chars/barbar/fall02.gif
+	delay   70
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death6
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+
+	delay   100
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/poly/frog08.gif
+	delay   1
+	frame	data/chars/misc/empty.gif
+	delay   4
+	frame	data/chars/misc/poly/frog08.gif
+	delay   2
+	frame	data/chars/misc/empty.gif
+	delay   3
+	frame	data/chars/misc/poly/frog08.gif
+	delay   3
+	frame	data/chars/misc/empty.gif
+	delay   2
+	frame	data/chars/misc/poly/frog08.gif
+	delay   4
+	frame	data/chars/misc/empty.gif
+	delay   1
+	frame	data/chars/misc/poly/frog08.gif
+	delay   5
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------POLYMORPH ATTACK----------------------------------------;
+
+
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+anim pain7
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	
+	
+
+anim fall7
+	shadowcoords 218 198
+	jumpframe	0 6 0
+	landframe	80
+
+	loop	0
+	offset     225 198
+	bbox		0 0 0 0
+	
+	delay   6
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 0 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+
+
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 0 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+	drawmethod 256 256 1 1 0 0 -1
+	frame	data/chars/barbar/pain101.gif
+
+	delay   1
+	drawmethod 256 256 0 0 0 0 -1
+	sound   data/sounds/fall01.wav
+	frame	data/chars/barbar/fall02.gif
+	
+anim rise7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+anim death7
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   1
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------TORNADO ATTACK----------------------------------------;
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+anim pain8
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel		0 				99 			0 			a2 						freespecial30
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	loop	0
+	offset     225 198
+	bbox	212 143 30 55
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+
+	delay   210
+	frame	data/chars/barbar/pain101.gif
+
+anim fall8
+	shadowcoords 218 198
+	load		hold
+	subentity	hold
+	spawnframe	0 0 0 0 0
+	jumpframe	0 0.5 0
+	landframe	12
+	loop	0
+	offset     225 198
+
+	delay   2
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     228 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	frame	data/chars/barbar/pain101.gif
+	offset     222 198
+	frame	data/chars/barbar/pain101.gif
+	offset     225 198
+	delay   999
+	frame	data/chars/barbar/pain101.gif
+	delay   210
+	frame	data/chars/barbar/pain101.gif
+
+anim rise8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/fall01.gif
+	frame	data/chars/barbar/fall02.gif
+	delay   70
+	frame	data/chars/barbar/rise00.gif
+	delay	10
+	frame	data/chars/barbar/rise01.gif
+	delay	8
+	frame	data/chars/barbar/rise02.gif
+	frame	data/chars/barbar/rise03.gif
+
+anim death8
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	delay   260
+	frame	data/chars/barbar/pain101.gif
+	delay   5
+	frame	data/chars/barbar/pain101.gif
+	frame	data/chars/barbar/fall01.gif
+	frame	data/chars/barbar/fall02.gif
+	frame	data/chars/barbar/rise00.gif
+
+#----------------------------------------HOLD PERSON ATTACK----------------------------------------;
+
+
+anim freespecial30 #special
+	load		tornado3
+#	custknife	tornado3
+#	throwframe	47 1
+	energycost 35
+	mponly  1
+	jugglecost	99
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/super01.wav
+	quakeframe 47 10 5
+	delay	1
+	frame	data/chars/barbar/sp01.gif
+	frame	data/chars/barbar/sp02.gif
+	frame	data/chars/barbar/sp01.gif
+	frame	data/chars/barbar/sp02.gif
+
+	sound   data/sounds/att02.wav
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+	frame	data/chars/barbar/sp03.gif
+	frame	data/chars/barbar/sp04.gif
+
+	delay	2
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     224 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     226 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     224 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     226 198
+	frame	data/chars/barbar/frsp301.gif
+
+	 offset     225 198
+	delay	3
+@cmd projectile 1 "tornado3" 0 0 0
+	frame	data/chars/barbar/frsp302.gif
+#	sound   data/sounds/tor01.wav
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack7		164	72	130		136		8			1		1		0			20			25
+	delay	80
+	frame	data/chars/barbar/frsp303.gif
+	attack7		0	0	0		0		0			0		0		0			0			0
+	delay	16
+	frame	data/chars/barbar/frsp303.gif
+
+anim freespecial2
+#	cancel		{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		2 				999 			0 			d d a 				freespecial3
+	cancel 		2 				999 			0 			d u a 				freespecial4
+	cancel 		2 				999 			0 			d f u a 				freespecial4
+	cancel 		2 				999 			0 			d b u a 				freespecial4
+	cancel 		2 				999 			0 			f f a 				freespecial5
+	energycost 25
+	mponly  1
+	jugglecost	2
+	load		hurr
+	custknife	hurr
+	throwframe	2
+	shadowcoords 218 198
+	loop	0
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<3000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+25);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	8
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	sound   data/sounds/att01.wav
+	frame	data/chars/barbar/frsp101.gif
+	move	3
+	delay	2
+	frame	data/chars/barbar/frsp102.gif
+	sound   data/sounds/slash01.wav
+	delay	120
+	frame	data/chars/barbar/frsp103.gif
+
+anim freespecial3
+	cancel		7 				999 			0 			d f a 				freespecial2
+	cancel 		7 				999 			0 			d u a 				freespecial4
+	cancel 		7 				999 			0 			d f u a 				freespecial4
+	cancel 		7 				999 			0 			d b u a 				freespecial4
+	cancel 		7 				999 			0 			f f a 				freespecial5
+	energycost 35
+	mponly  1
+	jumpframe	4 1.5 1.5
+	dropframe	5
+	landframe	6
+	quakeframe	6 10 10
+	jugglecost	2
+	shadowcoords 218 198
+	loop	0
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/att01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<15000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+35);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     224 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     226 198
+	frame	data/chars/barbar/frsp301.gif
+
+	delay	999
+	 offset     225 198
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		207	152	43		43		12			0		1		0			30			25
+	frame	data/chars/barbar/frsp212.gif
+	delay	999
+	frame	data/chars/barbar/frsp212.gif
+
+	delay	3
+	sound   data/sounds/fall02.wav
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/barbar/frsp203.gif
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		218	117	108		92		24			1		1		0			30			25
+	frame	data/chars/barbar/frsp204.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp205.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp206.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp207.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp208.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp209.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp210.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp211.gif
+
+	delay	12
+	attack7		0	0	0		0		0			0		0		0			0			0
+	frame	data/chars/barbar/frsp203.gif
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+
+anim Freespecial4
+	energycost 45
+	mponly  1
+	weaponframe 48 3
+	shadowcoords 218 198
+	loop	0
+	offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<45000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+45);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	2
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     224 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     226 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     224 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     225 198
+	frame	data/chars/barbar/frsp301.gif
+	 offset     226 198
+	frame	data/chars/barbar/frsp301.gif
+
+@cmd projectile 1 "spdup" 0 0 0
+	 offset     225 198
+	sound   data/sounds/att02.wav
+	delay	3
+	frame	data/chars/barbar/frsp302.gif
+	delay	2
+	frame	data/chars/barbar/sp05.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp05.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp06.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp06.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp07.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp07.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp08.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp08.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp09.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp09.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp10.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp10.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp11.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp11.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp12.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp12.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp13.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp13.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp14.gif
+	frame	data/chars/barbar/frsp303.gif
+	frame	data/chars/barbar/sp14.gif
+	frame	data/chars/barbar/frsp303.gif
+
+
+anim Freespecial12
+	energycost 25
+	mponly  1
+	jugglecost	99
+	shadowcoords 218 198
+	landframe	2
+	quakeframe	2 10 10
+	loop	0
+	 offset     225 198
+	hitfx   data/sounds/hit01.wav
+	hitflash	flash01
+	sound   data/sounds/att01.wav
+	delay	8
+	frame	data/chars/barbar/frsp201.gif
+	delay	999
+	frame	data/chars/barbar/frsp202.gif
+
+	delay	3
+	sound   data/sounds/fall02.wav
+	frame	data/chars/barbar/frsp203.gif
+	attack{#}	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		218	117	108		92		10			1		1		0			30			25
+	frame	data/chars/barbar/frsp204.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp205.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp206.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp207.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp208.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp209.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp210.gif
+	frame	data/chars/barbar/frsp203.gif
+	frame	data/chars/barbar/frsp211.gif
+
+	delay	12
+	attack7		0	0	0		0		0			0		0		0			0			0
+	frame	data/chars/barbar/frsp203.gif
+	delay	12
+	frame	data/chars/barbar/jdel00.gif
+
+
+anim freespecial5
+	cancel		27 				999 			0 			d f a 				freespecial2
+	cancel 		27 				999 			0 			d d a 				freespecial3
+	cancel 		27 				999 			0 			d u a 				freespecial4
+	cancel 		27 				999 			0 			d f u a 				freespecial4
+	cancel 		27 				999 			0 			d b u a 				freespecial4
+	load		dust02
+	subentity	dust02
+	spawnframe	21 0 0 0 0
+	energycost 55
+	mponly  1
+	jugglecost	2
+	shadowcoords 218 198
+	fastattack 1
+	loop	0
+	delay	4
+	 offset     225 198
+	bbox	0 0 0 0
+	hitfx   data/sounds/hit01.wav
+	delay	1
+	frame	data/chars/barbar/a301.gif
+	
+@script
+     int iHP=0;
+     int i;
+     void ip;
+     int rng;
+     void self = getlocalvar("self");
+     int mp;
+     int castx;
+	int PIndex = getentityproperty(self,"playerindex"); // Get player's index
+    int score = getplayerproperty(PIndex,"score");
+
+		if(frame==0 && score<91000)
+		{
+        mp = getentityproperty(self, "mp");
+        changeentityproperty(self, "mp", mp+55);
+        performattack(self, openborconstant ("ANI_ATTACK1"));
+		}
+@end_script
+
+	delay	1
+	frame	data/chars/barbar/a301.gif
+	delay	2
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+	 offset     225 198
+	frame	data/chars/barbar/a301.gif
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+	 offset     225 198
+	frame	data/chars/barbar/a301.gif
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+	 offset     225 198
+	frame	data/chars/barbar/a301.gif
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+	 offset     225 198
+	frame	data/chars/barbar/a301.gif
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+	 offset     225 198
+	frame	data/chars/barbar/a301.gif
+	 offset     227 198
+	frame	data/chars/barbar/a301.gif
+
+	 offset     225 198
+	delay	2
+	sound   data/sounds/att01.wav
+	move 1
+	frame	data/chars/barbar/a501.gif
+	frame	data/chars/barbar/a501.gif
+	move 2
+	frame	data/chars/barbar/a501.gif
+	frame	data/chars/barbar/a501.gif
+	move 3
+	frame	data/chars/barbar/a502.gif
+	frame	data/chars/barbar/a502.gif
+	move 4
+	frame	data/chars/barbar/a502.gif
+	frame	data/chars/barbar/a502.gif
+
+#	hitfx   none
+	sound   data/sounds/burn01.wav
+	hitflash	flash01
+	move 16
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1  	166 122 128 	77 		15 			1 		1 		0 			30			30
+		dropv	1 3
+	frame	data/chars/barbar/frsp401.gif
+	move 14
+	attack1  0 0 0 	0 0 0 0 0 0	0
+	frame	data/chars/barbar/a512.gif
+
+#	hitfx   data/sounds/burn01.wav
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1  	166 122 128 	77 		10 			1 		1 		0 			30			30
+		dropv	1 3
+	move 12
+	frame	data/chars/barbar/frsp402.gif
+	attack1  0 0 0 	0 0 0 0 0 0	0
+	move 10
+	frame	data/chars/barbar/a512.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1  	166 122 128 	77 		10 			1 		1 		0 			30			30
+		dropv	1 3
+	move 8
+	frame	data/chars/barbar/frsp403.gif
+	attack1  0 0 0 	0 0 0 0 0 0	0
+	move 6
+	frame	data/chars/barbar/a512.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1  	166 122 128 	77 		10 			1 		1 		0 			30			30
+		dropv	1 3
+	move 5
+	frame	data/chars/barbar/frsp404.gif
+	attack1  0 0 0 	0 0 0 0 0 0	0
+	move 4
+	frame	data/chars/barbar/a512.gif
+
+	move 3
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack3  	166 122 128 	77 		10 			1 		1 		0 			30			30
+		dropv	1 3
+	frame	data/chars/barbar/frsp405.gif
+	frame	data/chars/barbar/a512.gif
+
+	move 2
+	frame	data/chars/barbar/frsp405.gif
+	frame	data/chars/barbar/a512.gif
+
+	move 1
+	frame	data/chars/barbar/frsp405.gif
+	frame	data/chars/barbar/a512.gif
+
+	move 0
+	frame	data/chars/barbar/frsp405.gif
+	frame	data/chars/barbar/a512.gif
+
+	attack3  0 0 0 	0 0 0 0 0 0	0
+	move 0
+	delay	40
+	frame	data/chars/barbar/a512.gif
+
+
+
+
+
+
+

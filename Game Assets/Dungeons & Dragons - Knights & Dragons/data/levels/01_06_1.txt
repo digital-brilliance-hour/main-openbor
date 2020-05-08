@@ -1,0 +1,184 @@
+music		data/music/STAGE06.ogg
+bossmusic	data/music/BOSS06.ogg
+background	data/bgs/01_06_1/back.gif
+panel	      data/bgs/01_06_1/n01.gif
+frontpanel	data/bgs/01_06_1/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  80 10
+spawn2  100 30
+spawn3  90 20
+spawn4  110 40
+
+palette data/bgs/01_06_1/01_06_1.gif #1
+
+#------- The Quest begins
+
+spawn q01_6
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------casket
+spawn barrel
+alias Casket
+flip 1
+item gold1
+health 1
+coords 600 145
+at 0
+#-------casket
+
+#-------casket
+spawn barrel
+alias Casket
+flip 1
+item gold1
+health 1
+coords 650 145
+at 0
+#-------casket
+
+#-------casket
+spawn barrel
+alias Casket
+flip 1
+item gold1
+health 1
+coords 920 145
+at 0
+#-------casket
+
+#-------Monsters
+
+group   4 4
+at      0
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 175
+flip 0
+at 100
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold1
+coords 540 165
+flip 0
+at 200
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 550 185
+flip 0
+at 400
+
+wait
+at      400
+
+#-------Monsters
+
+group   4 4
+at      466
+
+wait
+at      466
+
+#------- Dialogue
+
+spawn d01_06_1
+coords 240 176
+flip 1
+at 466
+
+#------- Dialogue
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold1
+coords 570 175
+flip 0
+at 466
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 540 165
+flip 0
+at 466
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 550 185
+flip 0
+at 466
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+item gold2
+coords 570 185
+flip 0
+at 466
+
+#-------Monsters
+
+#------- Enter
+
+spawn go01
+flip 1
+coords 325 145
+at 466
+
+#------- Enter
+
+
+
+
+
+
+
+

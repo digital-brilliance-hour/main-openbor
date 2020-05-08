@@ -1,0 +1,371 @@
+name			Etornado
+health		1
+nolife		1
+type			npc
+subtype		chase
+hostile		player obstacle
+candamage		player
+speed			1
+noquake		1
+falldie		1
+gfxshadow		1
+shadow		2
+remove		0
+offscreenkill	25
+
+palette data/chars/misc/tornado/tornado.gif #1
+
+anim idle
+	loop		0
+	jugglecost	5
+	fastattack	1
+	 offset     240 133
+	bbox	0 0 0 0
+	hitflash	flash2
+	sound		data/sounds/hurr1.wav
+	hitfx   	data/sounds/hit1.wav
+
+	delay	2
+	move 1
+	frame	data/chars/misc/tornado/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/02.gif
+	frame	data/chars/misc/empty.gif
+	move 1
+	frame	data/chars/misc/tornado/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/04.gif
+	frame	data/chars/misc/empty.gif
+	move 2
+	frame	data/chars/misc/tornado/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/06.gif
+	frame	data/chars/misc/empty.gif
+
+
+	delay	2
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 0
+	delay	2
+	frame	data/chars/misc/tornado/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/11.gif
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim walk
+	loop		0
+	jugglecost	5
+	fastattack	1
+	 offset     240 133
+	bbox	0 0 0 0
+	hitflash	flash2
+	sound		data/sounds/hurr1.wav
+	hitfx   	data/sounds/hit1.wav
+
+	delay	2
+	move 1
+	frame	data/chars/misc/tornado/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/02.gif
+	frame	data/chars/misc/empty.gif
+	move 1
+	frame	data/chars/misc/tornado/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/04.gif
+	frame	data/chars/misc/empty.gif
+	move 2
+	frame	data/chars/misc/tornado/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/06.gif
+	frame	data/chars/misc/empty.gif
+
+
+	delay	2
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 1
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/07.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/08.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2	240	138	43		66		15		1		0		0		20		15
+	frame	data/chars/misc/tornado/09.gif
+	attack2  0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	move 0
+	delay	2
+	frame	data/chars/misc/tornado/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/tornado/11.gif
+	frame	data/chars/misc/empty.gif
+
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+

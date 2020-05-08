@@ -1,0 +1,444 @@
+music		data/music/STAGE30.ogg
+bossmusic	data/music/BOSS30.ogg
+background	data/bgs/04_03_1/back.gif
+panel	      data/bgs/04_03_1/n01.gif
+frontpanel	data/bgs/04_03_1/f01.gif
+order       a
+settime 99
+stagenumber 4
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/04_03_1/04_03_1.gif #1
+
+
+#------- The Quest begins
+
+spawn q04_3
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------npc Knights
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 200 200
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 170 180
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 270 190
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 325 210
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 250 205
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 300 170
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 225 185
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 175 195
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 325 170
+item diamond
+flip 1
+at 0
+
+spawn npckni
+alias Knight
+health 5
+aggression 150
+map 0
+coords 300 195
+item diamond
+flip 1
+at 0
+
+#-------npc Knights
+
+#-------Monsters
+
+Group 1 1
+at 1
+
+wait
+at      1
+
+#------- Dialogue
+
+spawn d04_03_1
+coords 240 176
+flip 1
+at 1
+
+#------- Dialogue
+
+#-------npc Sorcerer
+spawn npcsorc1
+alias Sorcerer
+health 15
+aggression 150
+map 0
+coords 400 190
+flip 0
+at 1
+#-------npc Sorcerer
+
+#-------Monsters
+
+#-------Monsters
+
+Group 10 10
+at 2
+
+wait
+at      2
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 520 170
+flip 0
+at 2
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 560 180
+flip 0
+at 2
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 540 190
+flip 0
+at 2
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 600 200
+flip 0
+at 2
+
+spawn orc
+alias Orc
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 580 210
+flip 0
+at 2
+
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords -120 170
+flip 1
+at 2
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords -160 180
+flip 1
+at 2
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords -140 190
+flip 1
+at 2
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords -200 200
+flip 1
+at 2
+
+spawn Goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55
+4phealth 65
+aggression 150
+map 3
+item gold2
+coords -180 210
+flip 1
+at 2
+
+
+spawn wolven
+alias Wolven_Archer
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 520 170
+flip 0
+at 2
+
+spawn wolven
+alias Wolven_Archer
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 560 180
+flip 0
+at 2
+
+spawn wolven
+alias Wolven_Archer
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 540 190
+flip 0
+at 2
+
+spawn wolven
+alias Wolven_Archer
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 600 200
+flip 0
+at 2
+
+spawn wolven
+alias Wolven_Archer
+health 38
+2phealth 48
+3phealth 58
+4phealth 68
+aggression 150
+map 3
+item gold2
+coords 580 210
+flip 0
+at 2
+
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords -120 170
+flip 1
+at 2
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords -160 180
+flip 1
+at 2
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords -140 190
+flip 1
+at 2
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords -200 200
+flip 1
+at 2
+
+spawn hob
+alias Hobgoblin
+health 40
+2phealth 50
+3phealth 60
+4phealth 70
+aggression 150
+map 3
+item gold2
+coords -180 210
+flip 1
+at 2
+
+
+
+#-------Monsters
+
+#------- enter
+
+spawn enter02
+alias enter02
+flip 1
+health 1
+coords 240 170
+at 3
+
+#------- enter
+

@@ -1,0 +1,389 @@
+music		data/music/STAGE14.ogg
+bossmusic	data/music/BOSS14.ogg
+background	data/bgs/02_02_2/back.gif
+panel	      data/bgs/02_02_2/n01.gif
+frontpanel	data/bgs/02_02_2/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_02_2/02_02_2.gif #1
+
+wall    910 180 70 70 1440 1440 150 1200
+
+
+#-------Monsters
+
+group   3 3
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+spawn d02_02_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+spawn thug
+alias Cynidicean_Thug 
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 570 125
+flip 0
+at 0
+
+spawn soldier
+alias Cynidicean_Soldier
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 610 155
+flip 0
+at 0
+
+spawn soldier
+alias Cynidicean_Soldier
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 590 185
+flip 0
+at 0
+
+spawn thug
+alias Cynidicean_Thug
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 570 125
+flip 0
+at 0
+
+spawn soldier
+alias Cynidicean_Soldier
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 610 155
+flip 0
+at 0
+
+spawn thug
+alias Cynidicean_Thug
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 50
+map 3
+item gold1
+coords 590 185
+flip 0
+at 0
+
+
+#-------Monsters
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item spotion
+coords 540 100
+flip 0
+at 1
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item diamond
+coords 590 100
+flip 0
+at 1
+#-------chests
+
+#-------chests
+spawn jar2
+alias jar2
+health 1
+item gaunt
+coords 640 100
+flip 0
+at 1
+#-------chests
+
+#-------trap
+spawn trap1
+health 1
+coords 520 200
+flip 0
+at 56
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 610 190
+flip 0
+at 101
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 650 160
+flip 0
+at 126
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 680 120
+flip 0
+at 151
+#-------trap
+
+
+
+#-------trap
+spawn trap1
+health 1
+coords 520 110
+flip 0
+at 176
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 610 170
+flip 0
+at 201
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 650 180
+flip 0
+at 226
+#-------trap
+
+#-------trap
+spawn trap1
+health 1
+coords 680 130
+flip 0
+at 251
+#-------trap
+
+#-------Monsters
+
+group   4 4
+at      427
+
+#------- Dialogue
+
+spawn d02_02_3
+coords 240 176
+flip 1
+at 427
+
+#------- Dialogue
+
+spawn ecleric
+alias Priest_Of_Zargon
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 50
+map 2
+item gold1
+coords 170 125
+flip 1
+at 427
+
+spawn soldier
+alias Cynidicean_Soldier
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 50
+map 3
+item gold1
+coords -110 155
+flip 1
+at 477
+
+spawn thug
+alias Cynidicean_Thug
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 50
+map 3
+item gold1
+coords -90 185
+flip 1
+at 527
+
+wait
+at      577
+
+spawn soldier
+alias Cynidicean_Soldier
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item gold1
+coords 570 205
+flip 0
+at 577
+
+spawn thug
+alias Cynidicean_Thug
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 3
+item gold1
+coords 610 195
+flip 0
+at 577
+
+spawn ecleric
+alias Priest_Of_Zargon
+health 46
+2phealth 56
+3phealth 66 
+4phealth 76 
+aggression 150
+map 2
+item gold1
+coords 390 200
+flip 0
+at 577
+
+
+#-------Monsters
+
+#-------Monsters
+
+group   2 2
+at      1055
+
+wait
+at      1055
+
+#------- Dialogue
+
+#spawn d02_02_2
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn mummy
+alias Mummy
+health 74
+2phealth 84
+3phealth 94 
+4phealth 104 
+aggression 0
+map 0
+item amet
+coords 450 205 300
+flip 0
+at 1055
+
+#-------Monsters
+
+#-------Monsters
+
+group   2 2
+at      1172
+
+wait
+at      1172
+
+#------- Dialogue
+
+spawn d02_02_4
+coords 240 176
+flip 1
+at 1172
+
+#------- Dialogue
+
+spawn mummy
+alias Mummy
+health 84
+2phealth 94
+3phealth 104 
+4phealth 114 
+aggression 50
+map 1
+item diamond
+coords 40 205 300
+flip 1
+at 1172
+
+#-------Monsters
+
+
+#------- Go
+
+spawn enter02
+flip 1
+coords 455 190
+at 1172
+
+#------- Go
+
+
+
+
+
+

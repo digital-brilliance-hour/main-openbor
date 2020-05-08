@@ -1,0 +1,735 @@
+music		data/music/STAGE09.ogg
+bossmusic	data/music/BOSS09.ogg
+background	data/bgs/01_09_2/back.gif
+panel	      data/bgs/01_09_2/n01.gif
+frontpanel	data/bgs/01_09_2/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  180 110
+spawn2  200 130
+spawn3  190 120
+spawn4  210 140
+
+palette data/bgs/01_09_2/01_09_2.gif #1
+
+wall    -1440  220  -90 70 1740 1440 150 520
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	495 312
+at 0
+
+spawn Respawn2
+coords	495 312
+at 0
+
+spawn Respawn3
+coords	495 312
+at 0
+
+spawn Respawn4
+coords	495 312
+at 0
+
+#-------Respawn
+
+
+
+#------- Dialogue
+
+spawn d01_09_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------casket
+spawn jar1
+alias Casket
+flip 0
+item gold2
+health 1
+coords 250 135
+at 0
+#-------casket
+
+#-------casket
+spawn jar1
+alias Casket
+flip 0
+item gold1
+health 1
+coords 550 135
+at 0
+#-------casket
+
+#-------casket
+spawn jar1
+alias Casket
+flip 0
+item gold1
+health 1
+coords 600 135
+at 0
+#-------casket
+
+#-------villagers
+
+spawn dummy
+alias dummy
+health 1
+#aggression 0
+map 0
+coords 150 150
+flip 0
+at 199
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 3
+coords 540 150
+flip 0
+at 199
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 2
+coords 560 175
+flip 0
+at 199
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 1
+coords 520 190
+flip 0
+at 199
+
+spawn female
+alias villager
+health 1
+#aggression 0
+map 0
+coords 530 200
+flip 0
+at 199
+
+#-------villagers
+
+#-------Monsters
+
+group   3 3
+at      200
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 200
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+item gold1
+coords -70 205
+flip 1
+at 300
+
+wait
+at      350
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 350
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+item gold2
+coords 590 185
+flip 0
+at 350
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 350
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 580 145
+flip 0
+at 350
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 350
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+item gold1
+coords -90 165
+flip 1
+at 350
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+coords -80 205
+flip 1
+at 350
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords 590 185
+flip 0
+at 350
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 350
+
+
+#-------Monsters
+
+#-------villagers
+
+spawn dummy
+alias dummy
+health 1
+#aggression 0
+map 0
+coords 150 150
+flip 0
+at 351
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 0
+coords 540 150
+flip 0
+at 351
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 1
+coords 560 175
+flip 0
+at 351
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 2
+coords 520 190
+flip 0
+at 351
+
+spawn female
+alias villager
+health 1
+#aggression 0
+map 3
+coords 530 200
+flip 0
+at 351
+
+#-------villagers
+
+#-------casket
+spawn jar1
+alias Casket
+flip 0
+item gaunt
+health 1
+coords 600 135
+at 351
+#-------casket
+
+#-------casket
+spawn jar1
+alias rapple
+flip 0
+item scroll
+health 1
+coords 550 135
+at 351
+#-------casket
+
+#-------Monsters
+
+group   3 3
+at      400
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+coords -70 175
+flip 1
+at 400
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+item gold1
+coords 570 205
+flip 0
+at 500
+
+wait
+at      650
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 650
+
+spawn hob
+alias Hobgoblin
+health 20
+2phealth 30
+3phealth 40 
+4phealth 50 
+aggression 50
+map 1
+item gold2
+coords 590 185
+flip 0
+at 650
+
+spawn hob
+alias Hobgoblin
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 100
+map 2
+coords -70 165
+flip 1
+at 650
+
+#-------Monsters
+
+group   2 2
+at      651
+
+wait
+at      651
+
+spawn owlb
+alias Owlbear
+health 50
+2phealth 60
+3phealth 70 
+4phealth 80 
+aggression 0
+map 0
+item gold2
+coords -70 165
+flip 1
+at 651
+
+spawn owlb
+alias Owlbear
+health 50
+2phealth 60
+3phealth 70 
+4phealth 80 
+aggression 0
+map 0
+item gold2
+coords 590 185
+flip 0
+at 651
+
+#-------Monsters
+
+#-------villagers
+
+spawn dummy
+alias dummy
+health 1
+#aggression 0
+map 0
+coords 150 150
+flip 0
+at 700
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 0
+coords 540 150
+flip 0
+at 700
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 2
+coords 520 190
+flip 0
+at 700
+
+spawn female
+alias villager
+health 1
+#aggression 0
+map 3
+coords 530 200
+flip 0
+at 700
+
+#-------villagers
+
+#-------casket
+spawn jar1
+alias Casket
+flip 0
+item scroll
+health 1
+coords 600 135
+at 700
+#-------casket
+
+#-------casket
+spawn jar1
+alias rapple
+flip 0
+item rapple
+health 1
+coords 650 135
+at 700
+#-------casket
+
+
+
+#-------Monsters
+
+group   3 3
+at      1065
+
+wait
+at      1065
+
+#------- Dialogue
+
+spawn d01_09_3
+coords 240 176
+flip 1
+at 1065
+
+#------- Dialogue
+
+spawn orcking
+alias Hobgoblin_King
+health 108
+2phealth 208
+3phealth 308 
+4phealth 408 
+aggression 50
+map 1
+boss 1
+item missclear
+itemalias HobKing
+coords 590 170
+flip 0
+at 1065
+
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 205
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 205
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 205
+flip 1
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 205
+flip 1
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 1065
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -70 175
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords -70 205
+flip 1
+at 1065
+
+spawn hob
+alias Hobgoblin
+health 10
+2phealth 20
+3phealth 30 
+4phealth 40 
+aggression 0
+map 0
+coords 570 155
+flip 0
+at 1065
+
+#-------Monsters
+
+
+
+
+
+
+

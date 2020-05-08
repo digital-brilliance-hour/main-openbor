@@ -1,0 +1,867 @@
+music		data/music/STAGE27.ogg
+bossmusic	data/music/BOSS11.ogg
+background	data/bgs/03_06_2/back.gif
+panel	      data/bgs/03_06_2/n01.gif
+frontpanel	data/bgs/03_06_2/f01.gif
+order       a
+settime 99
+stagenumber 3
+spawn1  60 10 200
+spawn2  80 30 200
+spawn3  70 20 200
+spawn4  90 40 200
+
+palette data/bgs/03_06_2/03_06_2.gif #1
+
+wall    -340 230 155 115 935 900 50 100
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item gold2
+coords 230 185 51
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item gold2
+coords 330 210 51
+flip 1
+at 0
+#-------chests
+
+#-------chests
+spawn barrel
+alias Barrel
+health 1
+item gold2
+coords 350 190 51
+flip 1
+at 0
+#-------chests
+
+#-------Monsters
+
+Group 6 6
+at 600
+
+wait
+at      600
+
+#------- Dialogue
+
+spawn d03_06_1
+coords 240 176
+flip 1
+at 600
+
+#------- Dialogue
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 540 185
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 620 195
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 580 210
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold1
+coords -40 185 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -120 195 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -80 210 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold1
+coords 640 185
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 720 195
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 680 210
+flip 0
+at 600
+
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 540 185
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 620 195
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 580 210
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold1
+coords -40 185 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -120 195 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -80 210 100
+flip 1
+at 600
+
+spawn soldier
+alias Bandit
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold1
+coords 640 185
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 720 195
+flip 0
+at 600
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 680 210
+flip 0
+at 600
+
+#-------
+
+#-------trap1
+
+spawn trap1
+alias trap1
+health 1
+coords 600 188
+flip 1
+at 601
+
+spawn trap1
+alias trap1
+health 1
+coords 610 198
+flip 1
+at 601
+
+spawn trap1
+alias trap1
+health 1
+coords 620 208
+flip 1
+at 601
+
+#-------trap1
+
+spawn trap1
+#-------trap1
+
+spawn trap1
+alias trap1
+health 1
+coords 600 188
+flip 1
+at 700
+
+spawn trap1
+alias trap1
+health 1
+coords 610 198
+flip 1
+at 700
+
+spawn trap1
+alias trap1
+health 1
+coords 620 208
+flip 1
+at 700
+
+#-------trap1
+
+
+
+#-------trap1
+
+spawn trap1
+alias trap1
+health 1
+coords 600 188
+flip 1
+at 800
+
+spawn trap1
+alias trap1
+health 1
+coords 600 198
+flip 1
+at 800
+
+spawn trap1
+alias trap1
+health 1
+coords 600 208
+flip 1
+at 800
+
+#-------trap1
+
+
+
+#-------trap1
+
+spawn trap1
+alias trap1
+health 1
+coords 620 188
+flip 1
+at 900
+
+spawn trap1
+alias trap1
+health 1
+coords 610 198
+flip 1
+at 900
+
+spawn trap1
+alias trap1
+health 1
+coords 600 208
+flip 1
+at 900
+
+#-------trap1
+
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 300 195 200
+flip 1
+at 950
+
+#-------trap5
+
+
+
+#-------trap1
+
+spawn trap1
+alias trap1
+health 1
+coords 620 188
+flip 1
+at 1000
+
+spawn trap1
+alias trap1
+health 1
+coords 610 198
+flip 1
+at 1000
+
+spawn trap1
+alias trap1
+health 1
+coords 600 208
+flip 1
+at 1000
+
+#-------trap1
+
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 300 195 200
+flip 1
+at 1050
+
+#-------trap5
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 200 210 300
+flip 1
+at 1150
+
+spawn trap5
+alias trap5
+health 1
+coords 300 190 200
+flip 1
+at 1150
+
+#-------trap5
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 300 200 200
+flip 1
+at 1250
+
+#-------trap5
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 300 185 200
+flip 1
+at 1350
+
+spawn trap5
+alias trap5
+health 1
+coords 350 210 300
+flip 1
+at 1350
+
+#-------trap5
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 300 200 200
+flip 1
+at 1450
+
+spawn trap5
+alias trap5
+health 1
+coords 350 190 300
+flip 1
+at 1450
+
+#-------trap5
+
+
+#-------trap5
+
+spawn trap5
+alias trap5
+health 1
+coords 200 210 200
+flip 1
+at 1550
+
+spawn trap5
+alias trap5
+health 1
+coords 300 200 300
+flip 1
+at 1550
+
+spawn trap5
+alias trap5
+health 1
+coords 100 210 300
+flip 1
+at 1550
+
+#-------trap5
+
+#-------Monsters
+
+Group 6 6
+at 1550
+
+#-------Dwarf Civilian
+
+spawn dmerch2
+alias Dwarf
+flip 0
+item spotion
+map 0
+health 1
+coords 609 200
+at 1550
+
+#-------Dwarf Civilian
+
+
+wait
+at      1728
+
+#------- Dialogue
+
+spawn d03_06_2
+coords 240 176
+flip 1
+at 1728
+
+#------- Dialogue
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 500 185 100
+flip 0
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 580 195 100
+flip 0
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 540 210 100
+flip 0
+at 1728
+
+spawn thug
+alias Thug
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 50
+map 1
+item gold1
+coords -40 185
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -120 195
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -80 210
+flip 1
+at 1728
+
+spawn thug
+alias Thug
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 50
+map 1
+item gold1
+coords -140 185
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -220 195
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -180 210
+flip 1
+at 1728
+
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 500 185 100
+flip 0
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 580 195 100
+flip 0
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords 540 210 100
+flip 0
+at 1728
+
+spawn thug
+alias Thug
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 50
+map 1
+item gold1
+coords -40 185
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -120 195
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -80 210
+flip 1
+at 1728
+
+spawn thug
+alias Thug
+health 30
+2phealth 40
+3phealth 50 
+4phealth 60 
+aggression 50
+map 1
+item gold1
+coords -140 185
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -220 195
+flip 1
+at 1728
+
+spawn soldier
+alias Bandit
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold1
+coords -180 210
+flip 1
+at 1728
+
+spawn soldier
+alias Redface
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 100
+map 2
+item diamond
+coords 500 210
+flip 0
+at 1728
+
+#-------
+
+#-------enter
+
+spawn enter02
+alias enter02
+flip 1
+health 1
+coords 289 185
+at 1729
+
+#-------enter
+
+#-------Monsters
+
+#Group 1 1
+#at 1729
+
+#wait
+#at      1729
+
+#-------Dwarf Civilian
+
+spawn dmerch
+alias		town09_1
+health		1
+aggression	0
+map			0
+coords 431 200
+flip 0
+at 1729
+
+#-------Dwarf Civilian
+
+

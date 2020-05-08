@@ -1,0 +1,1393 @@
+music		data/music/STAGE28.ogg
+bossmusic	data/music/BOSS28.ogg
+background	data/bgs/04_01_2/back.gif
+panel	      data/bgs/04_01_2/n01.gif
+frontpanel	data/bgs/04_01_2/f01.gif
+order       a
+settime 99
+stagenumber 4
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/04_01_2/04_01_2.gif #1
+
+
+#------- Dialogue
+
+spawn d04_01_2
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item amber
+coords 380 130
+flip 0
+at 0
+#-------corpse
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item amet
+coords 500 210
+flip 1
+at 0
+#-------corpse
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item topaz
+coords 600 190
+flip 1
+at 0
+#-------corpse
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item topaz
+coords 650 140
+flip 1
+at 0
+#-------corpse
+
+#-------trap5
+
+spawn trap5
+flip 1
+coords 293 141 200
+at 1
+
+spawn trap5
+flip 1
+coords 363 168 300
+at 1
+
+spawn trap5
+flip 1
+coords 216 135 250
+at 1
+
+spawn trap5
+flip 1
+coords 298 179 350
+at 25
+
+spawn trap5
+flip 1
+coords 372 198 200
+at 25
+
+spawn trap5
+flip 1
+coords 223 160 300
+at 25
+
+spawn trap5
+flip 1
+coords 210 194 250
+at 50
+
+spawn trap5
+flip 1
+coords 283 151 350
+at 50
+
+spawn trap5
+flip 1
+coords 159 169 200
+at 50
+
+
+spawn trap5
+flip 1
+coords 286 147 300
+at 75
+
+spawn trap5
+flip 1
+coords 359 162 250
+at 75
+
+spawn trap5
+flip 1
+coords 194 132 350
+at 75
+
+spawn trap5
+flip 1
+coords 278 185 200
+at 100
+
+spawn trap5
+flip 1
+coords 372 198 300
+at 100
+
+spawn trap5
+flip 1
+coords 210 160 250
+at 100
+
+spawn trap5
+flip 1
+coords 210 194 350
+at 125
+
+spawn trap5
+flip 1
+coords 287 150 200
+at 125
+
+spawn trap5
+flip 1
+coords 162 185 300
+at 125
+
+
+
+spawn trap5
+flip 1
+coords 307 136 250
+at 150
+
+spawn trap5
+flip 1
+coords 370 159 350
+at 150
+
+spawn trap5
+flip 1
+coords 188 129 200
+at 150
+
+spawn trap5
+flip 1
+coords 298 179 300
+at 175
+
+spawn trap5
+flip 1
+coords 357 188 250
+at 175
+
+spawn trap5
+flip 1
+coords 212 158 350
+at 175
+
+spawn trap5
+flip 1
+coords 213 184 200
+at 200
+
+spawn trap5
+flip 1
+coords 287 150 250
+at 200
+
+spawn trap5
+flip 1
+coords 149 181 300
+at 200
+
+
+
+spawn trap5
+flip 1
+coords 288 125 350
+at 225
+
+spawn trap5
+flip 1
+coords 367 150 200
+at 225
+
+spawn trap5
+flip 1
+coords 201 137 300
+at 225
+
+spawn trap5
+flip 1
+coords 313 170 250
+at 250
+
+spawn trap5
+flip 1
+coords 372 198 350
+at 250
+
+spawn trap5
+flip 1
+coords 212 157 200
+at 250
+
+spawn trap5
+flip 1
+coords 221 187 300
+at 275
+
+spawn trap5
+flip 1
+coords 286 135 250
+at 275
+
+spawn trap5
+flip 1
+coords 158 189 350
+at 275
+
+
+spawn trap5
+flip 1
+coords 293 141 200
+at 300
+
+spawn trap5
+flip 1
+coords 363 168 300
+at 300
+
+spawn trap5
+flip 1 
+coords 216 135 250
+at 300
+
+spawn trap5
+flip 1
+coords 298 179 350
+at 325
+
+spawn trap5
+flip 1
+coords 372 198 200
+at 325
+
+spawn trap5
+flip 1
+coords 223 160 300
+at 325
+
+spawn trap5
+flip 1
+coords 210 194 250
+at 350
+
+spawn trap5
+flip 1
+coords 283 151 350
+at 350
+
+spawn trap5
+flip 1
+coords 159 169 200
+at 350
+
+
+spawn trap5
+flip 1
+coords 286 147 300
+at 375
+
+spawn trap5
+flip 1
+coords 359 162 250
+at 375
+
+spawn trap5
+flip 1
+coords 194 132 350
+at 375
+
+spawn trap5
+flip 1
+coords 278 185 200
+at 400
+
+spawn trap5
+flip 1
+coords 372 198 300
+at 400
+
+spawn trap5
+flip 1
+coords 210 160 250
+at 400
+
+spawn trap5
+flip 1
+coords 210 194 350
+at 425 
+
+spawn trap5
+flip 1
+coords 287 150 200
+at 425
+
+spawn trap5
+flip 1
+coords 162 185 300
+at 425
+
+
+
+spawn trap5
+flip 1
+coords 307 136 250
+at 450
+
+spawn trap5
+flip 1
+coords 370 159 350
+at 450
+
+spawn trap5
+flip 1
+coords 188 129 200
+at 450
+
+spawn trap5
+flip 1
+coords 298 179 300
+at 475
+
+spawn trap5
+flip 1
+coords 357 188 250
+at 475
+
+spawn trap5
+flip 1
+coords 212 158 350
+at 475
+
+#-------trap5
+
+#-------Monsters
+
+group   12 12
+at      480
+
+wait
+at      480
+
+#------- Dialogue
+
+#spawn d04_01_2
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+
+spawn wyvern2
+alias Wyvern
+health 100
+2phealth 200
+3phealth 300 
+4phealth 400 
+aggression 50
+map 1
+item diamond
+coords -140 150
+flip 1
+at 480
+
+spawn wyvern2
+alias Wyvern
+health 100
+2phealth 200
+3phealth 300 
+4phealth 400 
+aggression 50
+map 1
+item diamond
+coords 580 200
+flip 0
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 540 150
+flip 0
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -140 140
+flip 1
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 580 190
+flip 0
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -180 180
+flip 1
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 560 160
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -160 150
+flip 1
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 640 150
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -240 140
+flip 1
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 680 190
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -280 180
+flip 1
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 660 160
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -260 150
+flip 1
+at 480
+
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 540 150
+flip 0
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -140 140
+flip 1
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 580 190
+flip 0
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -180 180
+flip 1
+at 480
+
+spawn lizman1
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 560 160
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -160 150
+flip 1
+at 480
+
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 640 150
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -240 140
+flip 1
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords 680 190
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -280 180
+flip 1
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 660 160
+flip 0
+at 480
+
+spawn lizman2
+alias Lizard_Man
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+coords -260 150
+flip 1
+at 480
+
+#-------Monsters
+
+#-------trap5
+
+spawn trap5
+flip 1
+coords 293 141 200
+at 500
+
+spawn trap5
+flip 1
+coords 363 168 300
+at 500
+
+spawn trap5
+flip 1
+coords 216 135 250
+at 500
+
+spawn trap5
+flip 1
+coords 298 179 350
+at 525
+
+spawn trap5
+flip 1
+coords 372 198 200
+at 525
+
+spawn trap5
+flip 1
+coords 223 160 300
+at 525
+
+spawn trap5
+flip 1
+coords 210 194 250
+at 550
+
+spawn trap5
+flip 1
+coords 283 151 350
+at 550
+
+spawn trap5
+flip 1
+coords 159 169 200
+at 550
+
+
+spawn trap5
+flip 1
+coords 286 147 300
+at 575
+
+spawn trap5
+flip 1
+coords 359 162 250
+at 575
+
+spawn trap5
+flip 1
+coords 194 132 350
+at 575
+
+spawn trap5
+flip 1
+coords 278 185 200
+at 600
+
+spawn trap5
+flip 1
+coords 372 198 300
+at 600
+
+spawn trap5
+flip 1
+coords 210 160 250
+at 600
+
+spawn trap5
+flip 1
+coords 210 194 350
+at 625
+
+spawn trap5
+flip 1
+coords 287 150 200
+at 625
+
+spawn trap5
+flip 1
+coords 162 185 300
+at 625
+
+
+
+spawn trap5
+flip 1
+coords 307 136 250
+at 650
+
+spawn trap5
+flip 1
+coords 370 159 350
+at 650
+
+spawn trap5
+flip 1
+coords 188 129 200
+at 650
+
+spawn trap5
+flip 1
+coords 298 179 300
+at 675
+
+spawn trap5
+flip 1
+coords 357 188 250
+at 675
+
+spawn trap5
+flip 1
+coords 212 158 350
+at 675
+
+spawn trap5
+flip 1
+coords 213 184 200
+at 700
+
+spawn trap5
+flip 1
+coords 287 150 250
+at 700
+
+spawn trap5
+flip 1
+coords 149 181 300
+at 700
+
+
+
+spawn trap5
+flip 1
+coords 288 125 350
+at 725
+
+spawn trap5
+flip 1
+coords 367 150 200
+at 725
+
+spawn trap5
+flip 1
+coords 201 137 300
+at 725
+
+spawn trap5
+flip 1
+coords 313 170 250
+at 750
+
+spawn trap5
+flip 1
+coords 372 198 350
+at 750
+
+spawn trap5
+flip 1
+coords 212 157 200
+at 750
+
+spawn trap5
+flip 1
+coords 221 187 300
+at 775
+
+spawn trap5
+flip 1
+coords 286 135 250
+at 775
+
+spawn trap5
+flip 1
+coords 158 189 350
+at 775
+
+
+spawn trap5
+flip 1
+coords 293 141 200
+at 800
+
+spawn trap5
+flip 1
+coords 363 168 300
+at 800
+
+spawn trap5
+flip 1 
+coords 216 135 250
+at 800
+
+spawn trap5
+flip 1
+coords 298 179 350
+at 825
+
+spawn trap5
+flip 1
+coords 372 198 200
+at 825
+
+spawn trap5
+flip 1
+coords 223 160 300
+at 825
+
+spawn trap5
+flip 1
+coords 210 194 250
+at 850
+
+spawn trap5
+flip 1
+coords 283 151 350
+at 850
+
+spawn trap5
+flip 1
+coords 159 169 200
+at 850
+
+
+spawn trap5
+flip 1
+coords 286 147 300
+at 875
+
+spawn trap5
+flip 1
+coords 359 162 250
+at 875
+
+spawn trap5
+flip 1
+coords 194 132 350
+at 875
+
+spawn trap5
+flip 1
+coords 278 185 200
+at 900
+
+spawn trap5
+flip 1
+coords 372 198 300
+at 900
+
+spawn trap5
+flip 1
+coords 210 160 250
+at 900
+
+spawn trap5
+flip 1
+coords 210 194 350
+at 925 
+
+spawn trap5
+flip 1
+coords 287 150 200
+at 925
+
+spawn trap5
+flip 1
+coords 162 185 300
+at 925
+
+
+
+spawn trap5
+flip 1
+coords 307 136 250
+at 950
+
+spawn trap5
+flip 1
+coords 370 159 350
+at 950
+
+spawn trap5
+flip 1
+coords 188 129 200
+at 950
+
+spawn trap5
+flip 1
+coords 298 179 300
+at 975
+
+spawn trap5
+flip 1
+coords 357 188 250
+at 975
+
+spawn trap5
+flip 1
+coords 212 158 350
+at 975
+
+#-------trap5
+
+
+#-------Monsters
+
+group   8 8
+at      1000
+
+wait
+at      1000
+
+#------- Dialogue
+
+#spawn d04_01_2
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+
+spawn wyvern2
+alias Wyvern
+health 110
+2phealth 210
+3phealth 310 
+4phealth 410 
+aggression 100
+map 2
+item diamond
+coords -140 150
+flip 1
+at 1000
+
+spawn wyvern2
+alias Wyvern
+health 110
+2phealth 210
+3phealth 310 
+4phealth 410 
+aggression 100
+map 2
+item diamond
+coords 540 160
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords -140 210
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords -220 180
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords -180 150
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords -140 140
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords 540 210
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords 620 180
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords 580 150
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 16
+2phealth 26
+3phealth 36 
+4phealth 46 
+aggression 0
+map 0
+item gold2
+coords 540 140
+flip 0
+at 1000
+
+
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -140 210
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -220 180
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -180 150
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords -140 140
+flip 1
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 540 210
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 620 180
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 580 150
+flip 0
+at 1000
+
+spawn sahua
+alias Sahuagin
+health 26
+2phealth 36
+3phealth 46 
+4phealth 56 
+aggression 50
+map 1
+item gold2
+coords 540 140
+flip 0
+at 1000
+
+#-------Monsters
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item bpotion
+coords 620 130
+flip 1
+at 1000
+#-------corpse
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item rapple
+coords 700 150
+flip 1
+at 1000
+#-------corpse
+
+#-------corpse
+spawn corpse
+alias Corpse
+health 1
+item fire4
+coords 800 140
+flip 0
+at 1000
+#-------corpse
+
+
+#-------Monsters
+
+group   8 8
+at      1571
+
+wait
+at      1571
+
+#------- Dialogue
+
+#spawn d04_01_2
+#coords 240 176
+#flip 1
+#at 480
+
+#------- Dialogue
+
+
+spawn wyvern2
+alias Wyvern
+health 120
+2phealth 220
+3phealth 320 
+4phealth 420 
+aggression 150
+map 3
+item diamond
+coords -140 150
+flip 1
+at 1571
+
+spawn wyvern2
+alias Wyvern
+health 120
+2phealth 220
+3phealth 320 
+4phealth 420 
+aggression 150
+map 3
+item diamond
+coords 580 200
+flip 0
+at 1571
+
+spawn wyvern2
+alias Wyvern
+health 120
+2phealth 220
+3phealth 320 
+4phealth 420 
+aggression 150
+map 3
+item diamond
+coords 560 140
+flip 0
+at 1571
+
+#------- enter
+
+spawn go02
+alias go02
+flip 1
+health 1
+coords 449 160
+at 1572
+
+#------- enter

@@ -1,0 +1,730 @@
+name				djinn1
+type				npc
+hostile				enemy
+candamage			enemy
+health				1000
+speed				15
+shadow				3
+noquake				1
+dust				dust01
+flash				flash01
+noatflash			1
+bflash				guard01
+cantgrab			1
+notgrab				1
+nopain				1
+nodrop				2
+nodieblink			2
+falldie				1
+nolife				1
+lifespan			15
+subject_to_screen	1
+#aimove				chase
+aggression			300
+
+palette				data/chars/misc/element/element.gif #1
+
+#-------Moves
+
+anim spawn
+	load		ele_05
+	subentity	ele_05
+	spawnframe	48 240 176 0 1
+	shadowcoords 218 168
+	loop       0
+	offset     225 168
+	delay	2
+	frame	data/chars/misc/element/djinn1/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/03.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/04.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/06.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/09.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/10.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/11.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/12.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/13.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/14.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/15.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/16.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/17.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/18.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/19.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/20.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/21.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/element/djinn1/22.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/23.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/element/djinn1/24.gif
+	frame	data/chars/misc/empty.gif
+
+	sound   data/sounds/super02.wav
+	delay	1
+	frame	data/chars/misc/element/djinn1/25.gif
+
+anim idle
+	sync	walk
+	shadowcoords 218 168
+	loop	1
+	 offset     225 168
+	bbox	0 0 0 0
+
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 178
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 158
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+
+anim attack1
+	range	0 200
+	shadowcoords 218 168
+	loop	0
+	 offset     225 168
+	bbox	0 0 0 0
+
+	hitfx   data/sounds/frog01.wav
+	hitflash	flash01
+	sound   data/sounds/pohit.wav
+	delay	4
+	attack6  73 11 308 214 30 0 1 0 15
+	frame	data/chars/misc/element/djinn1/01.gif
+	frame	data/chars/misc/element/djinn1/02.gif
+	frame	data/chars/misc/element/djinn1/03.gif
+	frame	data/chars/misc/element/djinn1/04.gif
+	frame	data/chars/misc/element/djinn1/05.gif
+	frame	data/chars/misc/element/djinn1/06.gif
+	frame	data/chars/misc/element/djinn1/07.gif
+	frame	data/chars/misc/element/djinn1/08.gif
+
+	delay	4
+	frame	data/chars/misc/element/djinn1/09.gif
+	frame	data/chars/misc/element/djinn1/10.gif
+	frame	data/chars/misc/element/djinn1/11.gif
+	frame	data/chars/misc/element/djinn1/12.gif
+	frame	data/chars/misc/element/djinn1/13.gif
+	frame	data/chars/misc/element/djinn1/14.gif
+	frame	data/chars/misc/element/djinn1/15.gif
+	frame	data/chars/misc/element/djinn1/16.gif
+
+	delay	4
+	frame	data/chars/misc/element/djinn1/17.gif
+	frame	data/chars/misc/element/djinn1/18.gif
+	frame	data/chars/misc/element/djinn1/19.gif
+	frame	data/chars/misc/element/djinn1/20.gif
+	frame	data/chars/misc/element/djinn1/21.gif
+	frame	data/chars/misc/element/djinn1/22.gif
+	frame	data/chars/misc/element/djinn1/23.gif
+	attack6  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/element/djinn1/24.gif
+
+
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 178
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 158
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+anim pain1
+	shadowcoords 218 168
+	loop	1
+	 offset     225 168
+	bbox	0 0 0 0
+
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 178
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 158
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+
+anim fall1
+	shadowcoords 218 168
+	loop	1
+	 offset     225 168
+	bbox	0 0 0 0
+
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 178
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 158
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+
+anim rise1
+	shadowcoords 218 168
+	loop	1
+	 offset     225 168
+	bbox	0 0 0 0
+
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 178
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 177
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 176
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 175
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 174
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 173
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 172
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 171
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 170
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 169
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	6
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	4
+	offset     225 158
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 159
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 160
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 161
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 162
+	frame	data/chars/misc/element/djinn1/25.gif
+	delay	2
+	offset     225 163
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 164
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 165
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 166
+	frame	data/chars/misc/element/djinn1/25.gif
+	offset     225 167
+	frame	data/chars/misc/element/djinn1/25.gif
+
+anim death1
+	shadowcoords 218 168
+	loop	0
+	 offset     225 168
+	bbox	0 0 0 0
+
+	sound   data/sounds/super02.wav
+	delay	2
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+	shadowcoords 218 168
+	frame	data/chars/misc/element/djinn1/25.gif
+	shadowcoords 9999 9999
+	frame	data/chars/misc/empty.gif
+
+#----------------------------------------ATTACK 1----------------------------------------;
+
+
+
+
+
+

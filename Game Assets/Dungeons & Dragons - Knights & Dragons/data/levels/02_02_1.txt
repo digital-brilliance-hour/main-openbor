@@ -1,0 +1,648 @@
+music		data/music/STAGE14.ogg
+bossmusic	data/music/BOSS14.ogg
+background	data/bgs/02_02_1/back.gif
+panel	      data/bgs/02_02_1/n01.gif
+frontpanel	data/bgs/02_02_1/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_02_1/02_02_1.gif #1
+
+wall    2660 190 60 70 1440 1440 150 1200
+
+wall    2740 340 60 170 1440 1440 150 1200
+
+#------- The Quest begins
+
+spawn q02_2
+coords 240 206
+flip 1
+at 0
+
+#------- The Quest begins
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item gold1
+coords 540 155
+flip 0
+at 0
+#-------chests
+
+#-------Monsters
+
+group   6 6
+at      270
+
+wait
+at      270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords 570 155
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 590 185
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords -90 205
+flip 1
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 560 175
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords 570 155
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 590 185
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords -90 205
+flip 1
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 560 175
+flip 0
+at 270
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 270
+
+#-------Monsters
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item gold1
+coords 640 210
+flip 1
+at 271
+#-------chests
+
+
+#-------Monsters
+
+group   6 6
+at      500
+
+spawn scorp
+alias Scorpion
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+item gold1
+coords 570 155
+flip 0
+at 500
+
+spawn scorp
+alias Scorpion
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -70 165
+flip 1
+at 700
+
+spawn scorp
+alias Scorpion
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+coords 590 185
+flip 0
+at 900
+
+spawn scorp
+alias Scorpion
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+item gold1
+coords -90 205
+flip 1
+at 1100
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 560 175
+flip 0
+at 1300
+
+wait
+at      1400
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 50
+map 2
+item gold2
+coords 370 155
+flip 0
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 590 185
+flip 0
+at 1400
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 50
+map 2
+item gold2
+coords 90 205
+flip 1
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 560 175
+flip 0
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 1400
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+item gold2
+coords 270 155
+flip 0
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1400
+
+spawn scorp
+alias Scorpion
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+coords 590 185
+flip 0
+at 1400
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+item gold2
+coords 190 205
+flip 1
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+coords 560 175
+flip 0
+at 1400
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 195
+flip 1
+at 1400
+
+#-------Monsters
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item spotion
+coords 640 210
+flip 1
+at 1401
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item scroll
+coords 740 200
+flip 1
+at 1401
+#-------chests
+
+#-------chests
+spawn corpse
+alias corpse
+health 1
+item topaz
+coords 940 160
+flip 0
+at 1401
+#-------chests
+
+#-------Monsters
+
+group   4 4
+at      2237
+
+wait
+at      2237
+
+#------- Dialogue
+
+#spawn d02_02_1
+#coords 240 176
+#flip 1
+#at 400
+
+#------- Dialogue
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords 530 205
+flip 0
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 70 165
+flip 1
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 390 185
+flip 0
+at 2237
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords -90 205
+flip 1
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 360 175
+flip 0
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 90 195
+flip 1
+at 2237
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords 530 195
+flip 0
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 170 175
+flip 1
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 310 205
+flip 0
+at 2237
+
+spawn scorp
+alias Scorpion
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38
+aggression 0
+map 0
+item gold1
+coords -90 205
+flip 1
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 340 155
+flip 0
+at 2237
+
+spawn skeleton
+alias Skeleton
+health 36
+2phealth 46
+3phealth 56 
+4phealth 66 
+aggression 0
+map 2
+coords 170 195
+flip 1
+at 2237
+
+#-------Monsters
+
+
+#------- Dialogue
+
+spawn d02_02_1
+coords 240 176
+flip 1
+at 2400
+
+#------- Dialogue
+
+#------- Go
+
+spawn enter01
+flip 1
+coords 400 210
+at 2400
+
+#------- Go
+
+
+
+
+
+

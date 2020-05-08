@@ -1,0 +1,151 @@
+music		data/music/STAGE04.ogg
+bossmusic	data/music/BOSS04.ogg
+background	data/bgs/01_04_3/back.gif
+panel	      data/bgs/01_04_3/n01.gif
+frontpanel	data/bgs/01_04_3/f01.gif
+order       a
+settime 99
+stagenumber 1
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/01_04_3/01_04_3.gif #1
+
+
+
+#-------Respawn
+
+spawn Respawn1
+coords	350 241
+at 0
+
+spawn Respawn2
+coords	350 241
+at 0
+
+spawn Respawn3
+coords	350 241
+at 0
+
+spawn Respawn4
+coords	350 241
+at 0
+
+#-------Respawn
+
+
+
+#------- Dialogue
+
+spawn d01_04_4
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item diamond
+coords 220 160
+flip 1
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item spotion
+coords 320 200
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn corpse
+alias Corpse
+health 1
+item scroll
+coords 450 170
+flip 1
+at 0
+#-------chest
+
+#-------chest
+spawn casket3
+alias Casket
+health 1
+item amber
+coords 650 160
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn casket3
+alias Casket
+health 1
+item gold2
+coords 660 200
+flip 0
+at 0
+#-------chest
+
+
+#-------chest
+spawn casket3
+alias Casket
+health 1
+item amet
+coords 610 210
+flip 0
+at 0
+#-------chest
+
+#-------Monsters
+
+group   1 1
+at      247
+
+wait
+at      247
+
+#------- Dialogue
+
+spawn d01_04_5
+coords 240 176
+flip 1
+at 247
+
+#------- Dialogue
+
+
+spawn drags1
+alias Skadvoarix_-_Small_White_Dragon
+health 200
+2phealth 300
+3phealth 400 
+4phealth 500 
+aggression 50
+map 4
+boss 1
+item missclear
+itemalias AbandMine
+coords 580 175
+flip 0
+at 247
+
+
+#-------Monsters
+
+
+
+
+
+

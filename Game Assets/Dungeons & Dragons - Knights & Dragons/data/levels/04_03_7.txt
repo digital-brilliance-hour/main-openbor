@@ -1,0 +1,84 @@
+music		data/music/STAGE30.ogg
+bossmusic	data/music/BOSS30.ogg
+background	data/bgs/04_03_7/back.gif
+panel	      data/bgs/04_03_7/n00.gif
+frontpanel	data/bgs/04_03_7/f00.gif
+order       a
+settime 99
+stagenumber 4
+spawn1  60 50
+spawn2  80 70
+spawn3  70 60
+spawn4  90 80
+
+palette data/bgs/04_03_7/04_03_7.gif #1
+
+#------- ritual
+
+spawn ritual1
+coords 0 215
+flip 1
+at 0
+
+spawn ritual2
+coords 0 215
+flip 1
+at 0
+
+#------- ritual
+
+#------- Dialogue
+
+spawn d04_03_6
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------Monsters
+
+group   1 1
+at      0
+
+wait
+at      0
+
+#------- Dialogue
+
+#spawn d04_01_6
+#coords 240 176
+#flip 1
+#at 0
+
+#------- Dialogue
+
+spawn npcsorc2
+alias Darazhur
+health 1
+map 0
+coords  240 160
+flip 0
+at 0
+
+#-------Great_Red_Wyrm
+spawn wyrmn
+alias Darazhur_True_Form_-_Night_Dragon
+health 750
+2phealth 850
+3phealth 950
+4phealth 1050
+aggression 50
+map 0
+boss 1
+coords  240 160
+flip 0
+at 0
+#-------Great_Red_Wyrm
+
+#-------Monsters
+
+
+
+
+

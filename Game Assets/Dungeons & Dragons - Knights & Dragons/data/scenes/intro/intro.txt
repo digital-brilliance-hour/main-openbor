@@ -1,0 +1,28 @@
+name	intro
+type	enemy #text
+nomove 1
+setlayer 130
+facing 1
+antigravity 100
+lifespan    122
+animationscript  data/scripts/2Dscript.c
+
+palette data/scenes/intro/intro.gif #1
+
+anim idle
+	loop	0
+	offset	240 -60
+	bbox	0 0 0 0
+	@cmd	dasher 0 0.15 0
+	delay	6850
+	frame	data/scenes/intro/01.gif
+	@cmd	dasher 0 0 0
+	delay	500
+	bbox	10000 1000 10000 10000 -10000
+	frame	data/scenes/intro/01.gif
+
+	
+	
+	
+	
+	

@@ -1,0 +1,1108 @@
+music		data/music/STAGE20.ogg
+bossmusic	data/music/BOSS04.ogg
+background	data/bgs/02_08_2/back.gif
+panel	      data/bgs/02_08_2/n01.gif
+frontpanel	data/bgs/02_08_2/f01.gif
+order       a
+settime 99
+stagenumber 2
+spawn1  60 10
+spawn2  80 30
+spawn3  70 20
+spawn4  90 40
+
+palette data/bgs/02_08_2/02_08_2.gif #1
+
+#------- Dialogue
+
+spawn d02_08_1
+coords 240 176
+flip 1
+at 0
+
+#------- Dialogue
+
+#-------villagers
+
+spawn dummy
+alias dummy
+health 1
+#aggression 0
+map 0
+coords 150 150
+flip 0
+at 0
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 1
+coords 540 150
+flip 0
+at 0
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 2
+coords 560 175
+flip 0
+at 0
+
+spawn male
+alias villager
+health 1
+#aggression 0
+map 3
+coords 520 190
+flip 0
+at 0
+
+spawn female
+alias villager
+health 1
+#aggression 0
+map 0
+coords 530 200
+flip 0
+at 0
+
+#-------villagers
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gold2
+coords 240 160
+flip 0
+at 0
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gaunt
+coords 365 185
+flip 0
+at 0
+#-------chest
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 80 135
+flip 0
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 280 210
+flip 0
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 550 160
+flip 1
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 780 210
+flip 0
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 880 160
+flip 1
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 1070 135
+flip 0
+at 0
+#-------blaze
+
+#-------blaze
+spawn blaze
+alias blaze
+health 1
+coords 1270 210
+flip 1
+at 0
+#-------blaze
+
+#-------Monsters
+
+Group 10 10
+at 1
+
+wait
+at      1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 540 160
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 560 210
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 580 190
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 170
+flip 0
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords -40 160
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -60 210
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -80 190
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -100 170
+flip 1
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 540 160
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 560 210
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold1
+coords 570 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 580 190
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 170
+flip 0
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -40 160
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -60 210
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -80 190
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+item gold1
+coords -100 170
+flip 1
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 540 160
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 560 210
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 580 190
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 170
+flip 0
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -40 160
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords -60 210
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -80 190
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -100 170
+flip 1
+at 1
+
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 540 160
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 560 210
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords 580 190
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 170
+flip 0
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -40 160
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -60 210
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -80 190
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -100 170
+flip 1
+at 1
+
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords 540 160
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 560 210
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 570 165
+flip 0
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords 580 190
+flip 0
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords 600 170
+flip 0
+at 1
+
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -40 160
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+coords -60 210
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -70 165
+flip 1
+at 1
+
+spawn goblin
+alias Goblin
+health 5
+2phealth 15
+3phealth 25 
+4phealth 35 
+aggression 0
+map 0
+item gold1
+coords -80 190
+flip 1
+at 1
+
+spawn orc
+alias Orc
+health 8
+2phealth 18
+3phealth 28 
+4phealth 38 
+aggression 0
+map 0
+coords -100 170
+flip 1
+at 1
+
+#-------Monsters
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gold2
+coords 640 160
+flip 0
+at 2
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gold2
+coords 665 210
+flip 0
+at 2
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gaunt
+coords 840 160
+flip 0
+at 2
+#-------chest
+
+#-------chest
+spawn crate
+alias crate
+health 1
+item gold2
+coords 965 160
+flip 0
+at 2
+#-------chest
+
+#-------Monsters
+
+Group 6 6
+at 100
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 2
+item gold2
+coords -60 210
+flip 1
+at 100
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+coords 570 165
+flip 0
+at 250
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 540 160
+flip 0
+at 400
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 2
+coords 560 210
+flip 0
+at 550
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 2
+item gold2
+coords -60 210
+flip 1
+at 700
+
+wait
+at      874
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 540 160
+flip 0
+at 874
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 2
+coords 560 210
+flip 0
+at 874
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+item gold2
+coords 570 165
+flip 0
+at 874
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+coords 580 190
+flip 0
+at 874
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords 600 170
+flip 0
+at 874
+
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+item gold2
+coords -40 160
+flip 1
+at 874
+
+spawn goblin
+alias Goblin
+health 25
+2phealth 35
+3phealth 45 
+4phealth 55 
+aggression 100
+map 2
+coords -60 210
+flip 1
+at 874
+
+spawn goblin
+alias Goblin
+health 35
+2phealth 45
+3phealth 55 
+4phealth 65 
+aggression 150
+map 3
+coords -70 165
+flip 1
+at 874
+
+spawn orc
+alias Orc
+health 28
+2phealth 38
+3phealth 48 
+4phealth 58 
+aggression 100
+map 2
+coords -80 190
+flip 1
+at 874
+
+spawn orc
+alias Orc
+health 18
+2phealth 28
+3phealth 38 
+4phealth 48 
+aggression 50
+map 1
+coords -100 170
+flip 1
+at 874
+
+
+#-------Monsters
+
+#-------Monsters
+
+Group 4 4
+at 875
+
+
+wait
+at      875
+
+spawn orog
+alias Orog
+health 65
+2phealth 75
+3phealth 85 
+4phealth 95 
+aggression 150
+map 3
+coords 540 160
+flip 0
+at 874
+
+spawn orog
+alias Orog
+health 65
+2phealth 75
+3phealth 85 
+4phealth 95 
+aggression 150
+map 3
+coords 560 210
+flip 0
+at 874
+
+spawn orog
+alias Orog
+health 55
+2phealth 65
+3phealth 75 
+4phealth 85 
+aggression 100
+map 2
+item gold2
+coords 570 165
+flip 0
+at 874
+
+spawn orog
+alias Orog
+health 65
+2phealth 75
+3phealth 85 
+4phealth 95 
+aggression 150
+map 3
+coords 580 190
+flip 0
+at 874
+
+spawn orog
+alias Orog
+health 65
+2phealth 75
+3phealth 85 
+4phealth 95 
+aggression 150
+map 3
+coords 600 170
+flip 0
+at 874
+
+
+
+#-------Monsters
+
+#-------go
+
+#spawn go01
+#alias go01
+#health 1
+#coords 256 145
+#flip 1
+#at 0
+
+#-------go
+
+
+
+

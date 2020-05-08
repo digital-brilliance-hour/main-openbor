@@ -1,0 +1,57 @@
+music		data/music/INTRO.ogg
+bossmusic	data/music/INTRO.ogg
+background	data/bgs/INTRO01/back.gif
+bglayer		data/bgs/INTRO01/n01.gif 0 0 0 0 0 0 99999999 999999999 1 0 0 0 0 0 1.8
+fglayer		data/bgs/INTRO01/f01.gif 0 0 0 0 0 0 99999999 999999999 1 1 0 0 0 0 0 4
+panel		data/chars/misc/empty.gif
+#panel	    data/bgs/INTRO01/n01.gif
+#frontpanel	data/bgs/INTRO01/f01.gif
+settime 0
+notime	1
+order	a
+bgspeed	5
+setweap 2
+#type	2
+#nopause 1
+stagenumber 1
+spawn1  80 10
+spawn2  100 60
+spawn3  90 30
+spawn4  110 90
+
+palette data/bgs/INTRO01/INTRO01.gif #1
+
+#------- INTRO TEXT
+
+spawn intro
+health 1
+coords 240 200
+flip 1
+at 0
+
+#------- INTRO TEXT
+
+#------- enter
+
+spawn go02
+alias go02
+health 1
+coords 460 140
+flip 1
+at 0#5500
+
+#------- enter
+
+
+
+
+
+
+
+
+
+
+
+
+
+

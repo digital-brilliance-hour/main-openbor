@@ -1,0 +1,138 @@
+name		air2
+health		1
+nolife		1
+type		none
+hostile		enemy
+candamage	enemy
+dust		dust01
+flash		flash01
+bflash		guard01
+speed		0
+nomove		1
+noquake		1
+falldie		1
+subtype		flydie
+#setlayer	100
+shadow		0
+
+anim spawn
+	jugglecost	99
+#	fastattack	1
+	loop	0
+	 offset     225 198
+	bbox    	0 0 0 0
+	hitfx   data/sounds/shock01.wav
+	hitflash	flash01
+	sound   data/sounds/lbhit2.wav
+
+	delay	2
+	move	6
+	frame	data/chars/misc/element/air2/01.gif
+	frame	data/chars/misc/element/air2/01.gif
+	frame	data/chars/misc/element/air2/01.gif
+	
+	move	5
+	attack4  154 51 188 148 30 1 1 0 15
+	frame	data/chars/misc/element/air2/02.gif
+	frame	data/chars/misc/element/air2/02.gif
+	frame	data/chars/misc/element/air2/02.gif
+	
+	move	4
+	frame	data/chars/misc/element/air2/03.gif
+	frame	data/chars/misc/element/air2/03.gif
+	frame	data/chars/misc/element/air2/03.gif
+	
+	move	3
+	frame	data/chars/misc/element/air2/04.gif
+	frame	data/chars/misc/element/air2/04.gif
+	frame	data/chars/misc/element/air2/04.gif
+	
+	move	2
+	frame	data/chars/misc/element/air2/05.gif
+	frame	data/chars/misc/element/air2/05.gif
+	frame	data/chars/misc/element/air2/05.gif
+	
+	move	1
+	frame	data/chars/misc/element/air2/06.gif
+	frame	data/chars/misc/element/air2/06.gif
+	frame	data/chars/misc/element/air2/06.gif
+	
+	move	0
+	attack4  0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/element/air2/07.gif
+	frame	data/chars/misc/element/air2/07.gif
+	frame	data/chars/misc/element/air2/07.gif
+	
+	frame	data/chars/misc/element/air2/08.gif
+	frame	data/chars/misc/element/air2/08.gif
+	frame	data/chars/misc/element/air2/08.gif
+	
+	frame	data/chars/misc/element/air2/09.gif
+	frame	data/chars/misc/element/air2/09.gif
+	frame	data/chars/misc/element/air2/09.gif
+
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+
+anim idle
+#	fastattack 1
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset	30 30
+	delay		5
+	move		1000
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+		frame		data/chars/misc/empty.gif
+
+
