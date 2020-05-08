@@ -11,6 +11,9 @@ diesound data/sounds/eek.wav
 icon	data/chars/mary/icon.gif
 
 
+mprate 2
+mp 100
+
 # To create an alternate colour version, enter the path to
 # an image in the original, and one in the alternative colourset.
 remap	data/chars/mary/stand1.gif data/chars/mary/alt1
@@ -38,6 +41,21 @@ remap	data/chars/mary/stand1.gif data/chars/mary/alt1
 # The maximum number of frames per animation is 32.
 # You may use GIF, PCX or BMP files.
 
+anim spawn
+	@script
+	  if(frame==1){
+	    void self = getlocalvar("self");
+
+	    changeentityproperty(self, "mp", 0);
+	  }
+	@end_script
+	frame	data/chars/mary/stand1.gif
+	frame	data/chars/mary/stand2.gif
+	frame	data/chars/mary/stand3.gif
+	frame	data/chars/mary/stand4.gif
+	frame	data/chars/mary/stand5.gif
+	frame	data/chars/mary/stand6.gif
+	frame	data/chars/mary/stand7.gif
 
 anim idle
 	loop	1
