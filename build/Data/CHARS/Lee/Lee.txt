@@ -1,0 +1,2925 @@
+name	Rock Lee
+health	100
+speed	9
+type	player
+shadow	3
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/Lee/0.gif
+ offset 0 0
+ frame data/chars/Lee/1.gif
+ offset 0 0
+ frame data/chars/Lee/2.gif
+
+anim idle
+ delay 7
+ offset 16 45
+ frame data/chars/Lee/3.gif
+ offset 16 44
+ frame data/chars/Lee/4.gif
+ offset 16 43
+ frame data/chars/Lee/5.gif
+ offset 16 44
+ frame data/chars/Lee/6.gif
+
+anim 0004
+ delay 7
+ offset 22 30
+ frame data/chars/Lee/7.gif
+ offset 13 34
+ frame data/chars/Lee/8.gif
+ offset 17 24
+ frame data/chars/Lee/9.gif
+
+anim 0006
+ delay 7
+ offset 13 34
+ frame data/chars/Lee/10.gif
+
+anim walk
+ delay 7
+ offset 17 39
+ frame data/chars/Lee/11.gif
+ offset 18 40
+ frame data/chars/Lee/12.gif
+ offset 10 40
+ frame data/chars/Lee/13.gif
+ offset 16 39
+ frame data/chars/Lee/14.gif
+ offset 15 41
+ frame data/chars/Lee/15.gif
+ offset 8 41
+ frame data/chars/Lee/16.gif
+
+anim jump
+ delay 7
+ offset 14 36
+ frame data/chars/Lee/17.gif
+ offset 12 49
+ frame data/chars/Lee/18.gif
+ offset 12 49
+ frame data/chars/Lee/19.gif
+ offset 12 48
+ frame data/chars/Lee/20.gif
+ offset 18 36
+ frame data/chars/Lee/21.gif
+ offset 18 36
+ frame data/chars/Lee/22.gif
+
+anim 0043
+ delay 7
+ offset 15 38
+ frame data/chars/Lee/23.gif
+ offset 17 41
+ frame data/chars/Lee/24.gif
+
+anim block120
+ delay 7
+ offset 15 43
+ frame data/chars/Lee/25.gif
+ offset 13 41
+ frame data/chars/Lee/26.gif
+ offset 15 43
+ frame data/chars/Lee/27.gif
+
+anim block121
+ delay 7
+ offset 14 35
+ frame data/chars/Lee/28.gif
+ offset 14 35
+ frame data/chars/Lee/29.gif
+
+anim block122
+ delay 7
+ offset 9 45
+ frame data/chars/Lee/30.gif
+ offset 9 45
+ frame data/chars/Lee/31.gif
+ offset 9 45
+ frame data/chars/Lee/32.gif
+
+anim respawn
+ delay 7
+ offset 16 21
+ frame data/chars/Lee/33.gif
+ offset 28 31
+ frame data/chars/Lee/34.gif
+
+anim attack200
+ delay 7
+ offset 13 44
+ frame data/chars/Lee/35.gif
+ offset 13 41
+ frame data/chars/Lee/36.gif
+ offset 13 40
+ frame data/chars/Lee/37.gif
+ offset 13 43
+ frame data/chars/Lee/38.gif
+ offset 16 39
+ frame data/chars/Lee/39.gif
+ offset 19 40
+ frame data/chars/Lee/40.gif
+ offset 17 38
+ frame data/chars/Lee/41.gif
+ offset 18 31
+ frame data/chars/Lee/42.gif
+ offset 18 29
+ frame data/chars/Lee/43.gif
+
+anim attack300
+ delay 7
+ offset 23 45
+ frame data/chars/Lee/44.gif
+ offset 13 44
+ frame data/chars/Lee/45.gif
+ offset 14 58
+ frame data/chars/Lee/46.gif
+ offset 11 55
+ frame data/chars/Lee/47.gif
+ offset 8 45
+ frame data/chars/Lee/48.gif
+ offset 5 45
+ frame data/chars/Lee/49.gif
+ offset 13 44
+ frame data/chars/Lee/50.gif
+ offset 24 32
+ frame data/chars/Lee/51.gif
+ offset 30 37
+ frame data/chars/Lee/52.gif
+ offset 30 37
+ frame data/chars/Lee/53.gif
+
+anim attack400
+ delay 7
+ offset 15 35
+ frame data/chars/Lee/54.gif
+ offset 17 44
+ frame data/chars/Lee/55.gif
+ offset 17 44
+ frame data/chars/Lee/56.gif
+ offset 12 45
+ frame data/chars/Lee/57.gif
+ offset 9 45
+ frame data/chars/Lee/58.gif
+ offset 17 35
+ frame data/chars/Lee/59.gif
+ offset 12 48
+ frame data/chars/Lee/60.gif
+ offset 12 48
+ frame data/chars/Lee/61.gif
+ offset 24 32
+ frame data/chars/Lee/62.gif
+ offset 14 38
+ frame data/chars/Lee/63.gif
+ offset 12 42
+ frame data/chars/Lee/64.gif
+ offset 15 59
+ frame data/chars/Lee/65.gif
+ offset 17 54
+ frame data/chars/Lee/66.gif
+ offset 29 48
+ frame data/chars/Lee/67.gif
+ offset 15 42
+ frame data/chars/Lee/68.gif
+ offset 8 45
+ frame data/chars/Lee/69.gif
+ offset 30 54
+ frame data/chars/Lee/70.gif
+ offset 31 54
+ frame data/chars/Lee/71.gif
+ offset 31 52
+ frame data/chars/Lee/72.gif
+
+anim attack410
+ delay 7
+ offset 9 35
+ frame data/chars/Lee/73.gif
+ offset -2 35
+ frame data/chars/Lee/74.gif
+ offset -5 38
+ frame data/chars/Lee/75.gif
+ offset -2 41
+ frame data/chars/Lee/76.gif
+ offset -7 43
+ frame data/chars/Lee/77.gif
+ offset 15 39
+ frame data/chars/Lee/78.gif
+ offset 16 37
+ frame data/chars/Lee/79.gif
+ offset 15 40
+ frame data/chars/Lee/80.gif
+ offset 9 36
+ frame data/chars/Lee/81.gif
+
+anim attack500
+ delay 7
+ offset 12 44
+ frame data/chars/Lee/82.gif
+ offset 12 44
+ frame data/chars/Lee/83.gif
+
+anim jumpattack600
+ delay 7
+ offset 23 35
+ frame data/chars/Lee/84.gif
+ offset 12 37
+ frame data/chars/Lee/85.gif
+ offset 11 39
+ frame data/chars/Lee/86.gif
+ offset 10 39
+ frame data/chars/Lee/87.gif
+ offset 3 45
+ frame data/chars/Lee/88.gif
+ offset 18 41
+ frame data/chars/Lee/89.gif
+ offset 16 41
+ frame data/chars/Lee/90.gif
+ offset 20 50
+ frame data/chars/Lee/91.gif
+ offset 22 25
+ frame data/chars/Lee/92.gif
+ offset 24 41
+ frame data/chars/Lee/93.gif
+ offset 19 38
+ frame data/chars/Lee/94.gif
+
+anim freespecial1300
+ delay 7
+ offset 11 48
+ frame data/chars/Lee/95.gif
+ offset 11 47
+ frame data/chars/Lee/96.gif
+ offset 14 51
+ frame data/chars/Lee/97.gif
+ offset 13 52
+ frame data/chars/Lee/98.gif
+
+anim freespecial1400
+ delay 7
+ offset 19 40
+ frame data/chars/Lee/99.gif
+ offset -15 24
+ frame data/chars/Lee/100.gif
+ offset 12 30
+ frame data/chars/Lee/101.gif
+ offset 14 50
+ frame data/chars/Lee/102.gif
+ offset 14 50
+ frame data/chars/Lee/103.gif
+ offset 31 48
+ frame data/chars/Lee/104.gif
+ offset 26 52
+ frame data/chars/Lee/105.gif
+ offset 23 36
+ frame data/chars/Lee/106.gif
+ offset 24 55
+ frame data/chars/Lee/107.gif
+ offset 23 57
+ frame data/chars/Lee/108.gif
+ offset 15 57
+ frame data/chars/Lee/109.gif
+ offset 14 55
+ frame data/chars/Lee/110.gif
+ offset 23 36
+ frame data/chars/Lee/111.gif
+
+anim freespecial1500
+ delay 7
+ offset -15 51
+ frame data/chars/Lee/112.gif
+
+anim freespecial3200
+ delay 7
+ offset 9 48
+ frame data/chars/Lee/113.gif
+ offset 9 48
+ frame data/chars/Lee/114.gif
+ offset 12 53
+ frame data/chars/Lee/115.gif
+ offset 12 53
+ frame data/chars/Lee/116.gif
+
+anim freespecial3300
+ delay 7
+ offset 12 42
+ frame data/chars/Lee/117.gif
+ offset 13 42
+ frame data/chars/Lee/118.gif
+ offset 12 41
+ frame data/chars/Lee/119.gif
+ offset 14 43
+ frame data/chars/Lee/120.gif
+
+anim pain5000
+ delay 7
+ offset 12 43
+ frame data/chars/Lee/121.gif
+ offset 12 43
+ frame data/chars/Lee/122.gif
+ offset 18 37
+ frame data/chars/Lee/123.gif
+ offset 18 37
+ frame data/chars/Lee/124.gif
+ offset 18 37
+ frame data/chars/Lee/125.gif
+
+anim pain5010
+ delay 7
+ offset 18 37
+ frame data/chars/Lee/126.gif
+ offset 18 37
+ frame data/chars/Lee/127.gif
+ offset 18 37
+ frame data/chars/Lee/128.gif
+ offset 13 45
+ frame data/chars/Lee/129.gif
+
+anim pain5020
+ delay 7
+ offset 13 45
+ frame data/chars/Lee/130.gif
+ offset 12 37
+ frame data/chars/Lee/131.gif
+ offset 12 37
+ frame data/chars/Lee/132.gif
+
+anim fall5030
+ delay 7
+ offset 12 37
+ frame data/chars/Lee/133.gif
+ offset 30 35
+ frame data/chars/Lee/134.gif
+ offset 19 24
+ frame data/chars/Lee/135.gif
+ offset 19 24
+ frame data/chars/Lee/136.gif
+ offset 19 24
+ frame data/chars/Lee/137.gif
+ offset 12 37
+ frame data/chars/Lee/138.gif
+
+anim fall5031
+ delay 7
+ offset 30 35
+ frame data/chars/Lee/139.gif
+
+anim fall5040
+ delay 7
+ offset 19 24
+ frame data/chars/Lee/140.gif
+ offset 19 24
+ frame data/chars/Lee/141.gif
+ offset 30 13
+ frame data/chars/Lee/142.gif
+ offset 13 34
+ frame data/chars/Lee/143.gif
+ offset 26 53
+ frame data/chars/Lee/144.gif
+ offset 19 24
+ frame data/chars/Lee/145.gif
+
+anim fall5060
+ delay 7
+ offset 13 45
+ frame data/chars/Lee/146.gif
+ offset 13 45
+ frame data/chars/Lee/147.gif
+ offset 17 46
+ frame data/chars/Lee/148.gif
+
+anim faint
+ delay 7
+ offset 13 32
+ frame data/chars/Lee/149.gif
+
+anim 15000
+ delay 7
+ offset 13 52
+ frame data/chars/Lee/150.gif
+ offset 13 51
+ frame data/chars/Lee/151.gif
+ offset 13 51
+ frame data/chars/Lee/152.gif
+ offset 13 52
+ frame data/chars/Lee/153.gif
+
+anim 15006
+ delay 7
+ offset 12 29
+ frame data/chars/Lee/154.gif
+
+anim 15020
+ delay 7
+ offset 17 39
+ frame data/chars/Lee/155.gif
+ offset 18 40
+ frame data/chars/Lee/156.gif
+ offset 10 40
+ frame data/chars/Lee/157.gif
+ offset 16 39
+ frame data/chars/Lee/158.gif
+ offset 15 41
+ frame data/chars/Lee/159.gif
+ offset 8 41
+ frame data/chars/Lee/160.gif
+
+anim 15041
+ delay 7
+ offset 12 44
+ frame data/chars/Lee/161.gif
+ offset 12 43
+ frame data/chars/Lee/162.gif
+ offset 18 35
+ frame data/chars/Lee/163.gif
+
+anim 15043
+ delay 7
+ offset 13 41
+ frame data/chars/Lee/164.gif
+ offset 20 36
+ frame data/chars/Lee/165.gif
+
+anim 15120
+ delay 7
+ offset 10 43
+ frame data/chars/Lee/166.gif
+ offset 10 43
+ frame data/chars/Lee/167.gif
+ offset 10 43
+ frame data/chars/Lee/168.gif
+
+anim 15121
+ delay 7
+ offset 10 43
+ frame data/chars/Lee/169.gif
+ offset 10 43
+ frame data/chars/Lee/170.gif
+
+anim 15122
+ delay 7
+ offset 9 44
+ frame data/chars/Lee/171.gif
+ offset 9 44
+ frame data/chars/Lee/172.gif
+ offset 9 44
+ frame data/chars/Lee/173.gif
+
+anim 15200
+ delay 7
+ offset 12 42
+ frame data/chars/Lee/174.gif
+ offset 12 42
+ frame data/chars/Lee/175.gif
+ offset 13 39
+ frame data/chars/Lee/176.gif
+ offset 12 41
+ frame data/chars/Lee/177.gif
+ offset 25 42
+ frame data/chars/Lee/178.gif
+ offset 21 50
+ frame data/chars/Lee/179.gif
+ offset 24 41
+ frame data/chars/Lee/180.gif
+ offset 11 32
+ frame data/chars/Lee/181.gif
+ offset 11 29
+ frame data/chars/Lee/182.gif
+
+anim 15210
+ delay 7
+ offset 32 40
+ frame data/chars/Lee/183.gif
+ offset 24 41
+ frame data/chars/Lee/184.gif
+ offset 28 42
+ frame data/chars/Lee/185.gif
+
+anim 15220
+ delay 7
+ offset 28 34
+ frame data/chars/Lee/186.gif
+ offset 31 42
+ frame data/chars/Lee/187.gif
+ offset 32 39
+ frame data/chars/Lee/188.gif
+
+anim 15230
+ delay 7
+ offset 12 37
+ frame data/chars/Lee/189.gif
+ offset -15 51
+ frame data/chars/Lee/190.gif
+ offset 11 33
+ frame data/chars/Lee/191.gif
+ offset -15 65
+ frame data/chars/Lee/192.gif
+ offset 14 51
+ frame data/chars/Lee/193.gif
+ offset 19 39
+ frame data/chars/Lee/194.gif
+ offset 13 41
+ frame data/chars/Lee/195.gif
+ offset 13 41
+ frame data/chars/Lee/196.gif
+ offset 14 24
+ frame data/chars/Lee/197.gif
+ offset 9 22
+ frame data/chars/Lee/198.gif
+
+anim 15300
+ delay 7
+ offset 28 36
+ frame data/chars/Lee/199.gif
+ offset 24 40
+ frame data/chars/Lee/200.gif
+ offset 26 53
+ frame data/chars/Lee/201.gif
+ offset 26 45
+ frame data/chars/Lee/202.gif
+ offset 25 42
+ frame data/chars/Lee/203.gif
+ offset 23 40
+ frame data/chars/Lee/204.gif
+ offset 25 42
+ frame data/chars/Lee/205.gif
+ offset 26 45
+ frame data/chars/Lee/206.gif
+
+anim 15400
+ delay 7
+ offset 15 25
+ frame data/chars/Lee/207.gif
+ offset 26 41
+ frame data/chars/Lee/208.gif
+ offset 25 44
+ frame data/chars/Lee/209.gif
+ offset 12 41
+ frame data/chars/Lee/210.gif
+ offset 9 44
+ frame data/chars/Lee/211.gif
+ offset 15 66
+ frame data/chars/Lee/212.gif
+ offset 15 52
+ frame data/chars/Lee/213.gif
+ offset 9 43
+ frame data/chars/Lee/214.gif
+ offset 9 46
+ frame data/chars/Lee/215.gif
+ offset 14 45
+ frame data/chars/Lee/216.gif
+ offset 22 56
+ frame data/chars/Lee/217.gif
+ offset 28 53
+ frame data/chars/Lee/218.gif
+ offset 29 51
+ frame data/chars/Lee/219.gif
+ offset 26 43
+ frame data/chars/Lee/220.gif
+ offset 18 43
+ frame data/chars/Lee/221.gif
+ offset 28 36
+ frame data/chars/Lee/222.gif
+ offset 12 42
+ frame data/chars/Lee/223.gif
+ offset 12 42
+ frame data/chars/Lee/224.gif
+ offset 13 42
+ frame data/chars/Lee/225.gif
+ offset 13 42
+ frame data/chars/Lee/226.gif
+
+anim 15500
+ delay 7
+ offset 13 52
+ frame data/chars/Lee/227.gif
+ offset 13 51
+ frame data/chars/Lee/228.gif
+
+anim 15600
+ delay 7
+ offset 18 36
+ frame data/chars/Lee/229.gif
+ offset 23 41
+ frame data/chars/Lee/230.gif
+ offset 23 44
+ frame data/chars/Lee/231.gif
+ offset 18 41
+ frame data/chars/Lee/232.gif
+ offset 16 41
+ frame data/chars/Lee/233.gif
+ offset 21 51
+ frame data/chars/Lee/234.gif
+ offset 32 56
+ frame data/chars/Lee/235.gif
+ offset 31 56
+ frame data/chars/Lee/236.gif
+ offset 24 53
+ frame data/chars/Lee/237.gif
+
+anim 16000
+ delay 7
+ offset 23 36
+ frame data/chars/Lee/238.gif
+ offset 23 36
+ frame data/chars/Lee/239.gif
+ offset 14 41
+ frame data/chars/Lee/240.gif
+ offset 14 41
+ frame data/chars/Lee/241.gif
+ offset 14 41
+ frame data/chars/Lee/242.gif
+
+anim 16001
+ delay 7
+ offset 7 17
+ frame data/chars/Lee/243.gif
+
+anim 16010
+ delay 7
+ offset 23 36
+ frame data/chars/Lee/244.gif
+ offset 23 36
+ frame data/chars/Lee/245.gif
+ offset 23 36
+ frame data/chars/Lee/246.gif
+ offset 13 46
+ frame data/chars/Lee/247.gif
+
+anim 16020
+ delay 7
+ offset 13 46
+ frame data/chars/Lee/248.gif
+ offset 13 37
+ frame data/chars/Lee/249.gif
+ offset 13 37
+ frame data/chars/Lee/250.gif
+
+anim 16030
+ delay 7
+ offset 13 37
+ frame data/chars/Lee/251.gif
+ offset 30 35
+ frame data/chars/Lee/252.gif
+ offset 18 24
+ frame data/chars/Lee/253.gif
+ offset 18 24
+ frame data/chars/Lee/254.gif
+ offset 13 37
+ frame data/chars/Lee/255.gif
+
+anim 16031
+ delay 7
+ offset 30 35
+ frame data/chars/Lee/256.gif
+
+anim 16040
+ delay 7
+ offset 18 24
+ frame data/chars/Lee/257.gif
+ offset 27 11
+ frame data/chars/Lee/258.gif
+ offset 30 35
+ frame data/chars/Lee/259.gif
+
+anim 16060
+ delay 7
+ offset 13 46
+ frame data/chars/Lee/260.gif
+ offset 13 46
+ frame data/chars/Lee/261.gif
+ offset 18 46
+ frame data/chars/Lee/262.gif
+
+anim 16300
+ delay 7
+ offset 13 32
+ frame data/chars/Lee/263.gif
+
+anim attack365
+ delay 7
+ offset 328 50
+ frame data/chars/Lee/264.gif
+ offset 388 51
+ frame data/chars/Lee/265.gif
+ offset 411 50
+ frame data/chars/Lee/266.gif
+ offset 266 52
+ frame data/chars/Lee/267.gif
+ offset 226 54
+ frame data/chars/Lee/268.gif
+ offset 237 54
+ frame data/chars/Lee/269.gif
+ offset 446 45
+ frame data/chars/Lee/270.gif
+ offset 319 31
+ frame data/chars/Lee/271.gif
+ offset 252 53
+ frame data/chars/Lee/272.gif
+ offset 298 48
+ frame data/chars/Lee/273.gif
+ offset 431 49
+ frame data/chars/Lee/274.gif
+
+anim 9004
+ delay 7
+ offset 65 67
+ frame data/chars/Lee/275.gif
+ offset 70 82
+ frame data/chars/Lee/276.gif
+ offset 85 92
+ frame data/chars/Lee/277.gif
+ offset 99 111
+ frame data/chars/Lee/278.gif
+ offset 120 133
+ frame data/chars/Lee/279.gif
+ offset 128 139
+ frame data/chars/Lee/280.gif
+ offset 131 142
+ frame data/chars/Lee/281.gif
+ offset 132 145
+ frame data/chars/Lee/282.gif
+ offset 132 144
+ frame data/chars/Lee/283.gif
+ offset 141 74
+ frame data/chars/Lee/284.gif
+ offset 125 58
+ frame data/chars/Lee/285.gif
+
+anim attack365
+ delay 7
+ offset 404 51
+ frame data/chars/Lee/286.gif
+ offset 313 49
+ frame data/chars/Lee/287.gif
+
+anim attack350
+ delay 7
+ offset 76 191
+ frame data/chars/Lee/288.gif
+ offset 76 192
+ frame data/chars/Lee/289.gif
+
+anim attack365
+ delay 7
+ offset 373 51
+ frame data/chars/Lee/290.gif
+
+anim 9007
+ delay 7
+ offset 124 16
+ frame data/chars/Lee/291.gif
+ offset 124 16
+ frame data/chars/Lee/292.gif
+
+anim attack350
+ delay 7
+ offset 76 188
+ frame data/chars/Lee/293.gif
+ offset 89 224
+ frame data/chars/Lee/294.gif
+ offset 39 128
+ frame data/chars/Lee/295.gif
+
+anim 9019
+ delay 7
+ offset 77 93
+ frame data/chars/Lee/296.gif
+
+anim attack360
+ delay 7
+ offset 198 30
+ frame data/chars/Lee/297.gif
+ offset 198 30
+ frame data/chars/Lee/298.gif
+ offset 198 30
+ frame data/chars/Lee/299.gif
+ offset 198 30
+ frame data/chars/Lee/300.gif
+ offset 198 30
+ frame data/chars/Lee/301.gif
+ offset 198 30
+ frame data/chars/Lee/302.gif
+ offset 198 30
+ frame data/chars/Lee/303.gif
+ offset 198 30
+ frame data/chars/Lee/304.gif
+ offset 198 30
+ frame data/chars/Lee/305.gif
+ offset 198 30
+ frame data/chars/Lee/306.gif
+ offset 198 30
+ frame data/chars/Lee/307.gif
+ offset 198 30
+ frame data/chars/Lee/308.gif
+ offset 198 30
+ frame data/chars/Lee/309.gif
+ offset 197 29
+ frame data/chars/Lee/310.gif
+ offset 198 29
+ frame data/chars/Lee/311.gif
+ offset 197 29
+ frame data/chars/Lee/312.gif
+ offset 198 30
+ frame data/chars/Lee/313.gif
+ offset 198 30
+ frame data/chars/Lee/314.gif
+ offset 198 30
+ frame data/chars/Lee/315.gif
+ offset 198 30
+ frame data/chars/Lee/316.gif
+
+anim 9016
+ delay 7
+ offset 41 40
+ frame data/chars/Lee/317.gif
+ offset 76 75
+ frame data/chars/Lee/318.gif
+ offset 77 75
+ frame data/chars/Lee/319.gif
+ offset 75 73
+ frame data/chars/Lee/320.gif
+ offset 65 64
+ frame data/chars/Lee/321.gif
+ offset 48 47
+ frame data/chars/Lee/322.gif
+
+anim attack350
+ delay 7
+ offset 76 191
+ frame data/chars/Lee/323.gif
+ offset 100 196
+ frame data/chars/Lee/324.gif
+ offset 98 178
+ frame data/chars/Lee/325.gif
+
+anim 9019
+ delay 7
+ offset 44 56
+ frame data/chars/Lee/326.gif
+
+anim attack350
+ delay 7
+ offset 97 232
+ frame data/chars/Lee/327.gif
+ offset 90 231
+ frame data/chars/Lee/328.gif
+ offset 100 232
+ frame data/chars/Lee/329.gif
+ offset 98 219
+ frame data/chars/Lee/330.gif
+
+anim attack365
+ delay 7
+ offset 389 -73
+ frame data/chars/Lee/331.gif
+
+anim attack350
+ delay 7
+ offset 99 149
+ frame data/chars/Lee/332.gif
+
+anim attack365
+ delay 7
+ offset 91 20
+ frame data/chars/Lee/333.gif
+
+anim attack350
+ delay 7
+ offset 98 229
+ frame data/chars/Lee/334.gif
+
+anim attack365
+ delay 7
+ offset 195 50
+ frame data/chars/Lee/335.gif
+
+anim attack350
+ delay 7
+ offset 94 222
+ frame data/chars/Lee/336.gif
+
+anim attack365
+ delay 7
+ offset 456 42
+ frame data/chars/Lee/337.gif
+ offset 174 45
+ frame data/chars/Lee/338.gif
+ offset 468 40
+ frame data/chars/Lee/339.gif
+ offset 392 36
+ frame data/chars/Lee/340.gif
+ offset 150 38
+ frame data/chars/Lee/341.gif
+
+anim attack350
+ delay 7
+ offset 88 224
+ frame data/chars/Lee/342.gif
+
+anim attack365
+ delay 7
+ offset 345 34
+ frame data/chars/Lee/343.gif
+ offset 359 51
+ frame data/chars/Lee/344.gif
+ offset 327 27
+ frame data/chars/Lee/345.gif
+ offset 446 48
+ frame data/chars/Lee/346.gif
+
+anim attack350
+ delay 7
+ offset 97 228
+ frame data/chars/Lee/347.gif
+
+anim attack365
+ delay 7
+ offset 284 50
+ frame data/chars/Lee/348.gif
+ offset 482 38
+ frame data/chars/Lee/349.gif
+
+anim attack350
+ delay 7
+ offset 97 223
+ frame data/chars/Lee/350.gif
+
+anim attack365
+ delay 7
+ offset 245 54
+ frame data/chars/Lee/351.gif
+ offset 122 29
+ frame data/chars/Lee/352.gif
+
+anim attack350
+ delay 7
+ offset 74 186
+ frame data/chars/Lee/353.gif
+
+anim attack365
+ delay 7
+ offset 57 10
+ frame data/chars/Lee/354.gif
+
+anim attack350
+ delay 7
+ offset 93 195
+ frame data/chars/Lee/355.gif
+ offset 55 157
+ frame data/chars/Lee/356.gif
+
+anim attack365
+ delay 7
+ offset 212 53
+ frame data/chars/Lee/357.gif
+
+anim attack350
+ delay 7
+ offset 96 230
+ frame data/chars/Lee/358.gif
+ offset 67 168
+ frame data/chars/Lee/359.gif
+
+anim attack365
+ delay 7
+ offset 421 50
+ frame data/chars/Lee/360.gif
+ offset 462 47
+ frame data/chars/Lee/361.gif
+
+anim attack350
+ delay 7
+ offset 90 194
+ frame data/chars/Lee/362.gif
+ offset 91 194
+ frame data/chars/Lee/363.gif
+ offset 76 187
+ frame data/chars/Lee/364.gif
+
+anim attack365
+ delay 7
+ offset 418 51
+ frame data/chars/Lee/365.gif
+ offset 298 -92
+ frame data/chars/Lee/366.gif
+ offset 299 -100
+ frame data/chars/Lee/367.gif
+ offset 438 -127
+ frame data/chars/Lee/368.gif
+ offset 348 12
+ frame data/chars/Lee/369.gif
+ offset 344 -164
+ frame data/chars/Lee/370.gif
+ offset 409 -102
+ frame data/chars/Lee/371.gif
+
+anim attack350
+ delay 7
+ offset 101 234
+ frame data/chars/Lee/372.gif
+ offset 103 235
+ frame data/chars/Lee/373.gif
+ offset 96 232
+ frame data/chars/Lee/374.gif
+
+anim attack365
+ delay 7
+ offset 453 -148
+ frame data/chars/Lee/375.gif
+ offset 433 -132
+ frame data/chars/Lee/376.gif
+
+anim attack350
+ delay 7
+ offset 98 233
+ frame data/chars/Lee/377.gif
+
+anim attack365
+ delay 7
+ offset 343 13
+ frame data/chars/Lee/378.gif
+ offset 351 -187
+ frame data/chars/Lee/379.gif
+
+anim attack350
+ delay 7
+ offset 103 240
+ frame data/chars/Lee/380.gif
+ offset 99 233
+ frame data/chars/Lee/381.gif
+
+anim attack365
+ delay 7
+ offset 399 -85
+ frame data/chars/Lee/382.gif
+
+anim attack350
+ delay 7
+ offset 105 221
+ frame data/chars/Lee/383.gif
+ offset 98 226
+ frame data/chars/Lee/384.gif
+ offset 105 217
+ frame data/chars/Lee/385.gif
+ offset 105 217
+ frame data/chars/Lee/386.gif
+ offset 93 232
+ frame data/chars/Lee/387.gif
+
+anim attack365
+ delay 7
+ offset 308 -111
+ frame data/chars/Lee/388.gif
+ offset 365 -182
+ frame data/chars/Lee/389.gif
+
+anim attack350
+ delay 7
+ offset 106 224
+ frame data/chars/Lee/390.gif
+
+anim attack365
+ delay 7
+ offset 370 -116
+ frame data/chars/Lee/391.gif
+
+anim idle
+ delay 7
+ offset 24 71
+ frame data/chars/Lee/392.gif
+ offset 26 70
+ frame data/chars/Lee/393.gif
+ offset 25 67
+ frame data/chars/Lee/394.gif
+ offset 25 67
+ frame data/chars/Lee/395.gif
+
+anim 0004
+ delay 7
+ offset 27 68
+ frame data/chars/Lee/396.gif
+ offset 25 67
+ frame data/chars/Lee/397.gif
+ offset 25 66
+ frame data/chars/Lee/398.gif
+ offset 24 66
+ frame data/chars/Lee/399.gif
+
+anim jump
+ delay 7
+ offset 20 48
+ frame data/chars/Lee/400.gif
+
+anim attack300
+ delay 7
+ offset 33 74
+ frame data/chars/Lee/401.gif
+ offset 15 77
+ frame data/chars/Lee/402.gif
+ offset 15 77
+ frame data/chars/Lee/403.gif
+
+anim attack365
+ delay 7
+ offset 342 -126
+ frame data/chars/Lee/404.gif
+ offset 346 -14
+ frame data/chars/Lee/405.gif
+
+anim attack350
+ delay 7
+ offset 90 232
+ frame data/chars/Lee/406.gif
+
+anim attack365
+ delay 7
+ offset 359 -200
+ frame data/chars/Lee/407.gif
+
+anim attack350
+ delay 7
+ offset 97 232
+ frame data/chars/Lee/408.gif
+ offset 101 234
+ frame data/chars/Lee/409.gif
+
+anim attack365
+ delay 7
+ offset 365 -197
+ frame data/chars/Lee/410.gif
+
+anim attack350
+ delay 7
+ offset 96 233
+ frame data/chars/Lee/411.gif
+ offset 95 232
+ frame data/chars/Lee/412.gif
+ offset 98 227
+ frame data/chars/Lee/413.gif
+
+anim freespecial1400
+ delay 7
+ offset 19 15
+ frame data/chars/Lee/414.gif
+
+anim 15041
+ delay 7
+ offset 19 78
+ frame data/chars/Lee/415.gif
+ offset 26 51
+ frame data/chars/Lee/416.gif
+
+anim 15230
+ delay 7
+ offset 33 63
+ frame data/chars/Lee/417.gif
+ offset 28 77
+ frame data/chars/Lee/418.gif
+ offset 16 87
+ frame data/chars/Lee/419.gif
+
+anim 15300
+ delay 7
+ offset 20 79
+ frame data/chars/Lee/420.gif
+
+anim 16001
+ delay 7
+ offset 22 34
+ frame data/chars/Lee/421.gif
+ offset 21 31
+ frame data/chars/Lee/422.gif
+
+anim 16002
+ delay 7
+ offset 27 7
+ frame data/chars/Lee/423.gif
+ offset 18 7
+ frame data/chars/Lee/424.gif
+ offset 27 7
+ frame data/chars/Lee/425.gif
+
+anim 16011
+ delay 7
+ offset 20 33
+ frame data/chars/Lee/426.gif
+ offset 20 33
+ frame data/chars/Lee/427.gif
+ offset 20 33
+ frame data/chars/Lee/428.gif
+
+anim 16012
+ delay 7
+ offset 17 7
+ frame data/chars/Lee/429.gif
+ offset 17 7
+ frame data/chars/Lee/430.gif
+ offset 17 7
+ frame data/chars/Lee/431.gif
+
+anim attack350
+ delay 7
+ offset 90 227
+ frame data/chars/Lee/432.gif
+
+anim attack410
+ delay 7
+ offset 29 80
+ frame data/chars/Lee/433.gif
+
+anim pain5001
+ delay 7
+ offset 21 28
+ frame data/chars/Lee/434.gif
+ offset 28 31
+ frame data/chars/Lee/435.gif
+ offset 21 28
+ frame data/chars/Lee/436.gif
+
+anim pain5002
+ delay 7
+ offset 27 4
+ frame data/chars/Lee/437.gif
+ offset 24 4
+ frame data/chars/Lee/438.gif
+ offset 27 4
+ frame data/chars/Lee/439.gif
+
+anim pain5011
+ delay 7
+ offset 26 30
+ frame data/chars/Lee/440.gif
+ offset 26 30
+ frame data/chars/Lee/441.gif
+ offset 26 30
+ frame data/chars/Lee/442.gif
+
+anim pain5012
+ delay 7
+ offset 23 4
+ frame data/chars/Lee/443.gif
+ offset 23 4
+ frame data/chars/Lee/444.gif
+ offset 23 4
+ frame data/chars/Lee/445.gif
+
+anim fall5030
+ delay 7
+ offset 34 58
+ frame data/chars/Lee/446.gif
+
+anim fall5031
+ delay 7
+ offset 20 27
+ frame data/chars/Lee/447.gif
+ offset 26 28
+ frame data/chars/Lee/448.gif
+ offset 26 28
+ frame data/chars/Lee/449.gif
+ offset 33 44
+ frame data/chars/Lee/450.gif
+ offset 33 44
+ frame data/chars/Lee/451.gif
+
+anim fall5032
+ delay 7
+ offset 22 7
+ frame data/chars/Lee/452.gif
+ offset 39 12
+ frame data/chars/Lee/453.gif
+ offset 26 7
+ frame data/chars/Lee/454.gif
+ offset 26 7
+ frame data/chars/Lee/455.gif
+ offset 34 14
+ frame data/chars/Lee/456.gif
+ offset 34 14
+ frame data/chars/Lee/457.gif
+
+anim fall5040
+ delay 7
+ offset 47 57
+ frame data/chars/Lee/458.gif
+
+anim fall5041
+ delay 7
+ offset 25 34
+ frame data/chars/Lee/459.gif
+ offset 43 19
+ frame data/chars/Lee/460.gif
+ offset 32 40
+ frame data/chars/Lee/461.gif
+
+anim fall5042
+ delay 7
+ offset 29 8
+ frame data/chars/Lee/462.gif
+ offset 43 9
+ frame data/chars/Lee/463.gif
+ offset 35 10
+ frame data/chars/Lee/464.gif
+
+anim fall5060
+ delay 7
+ offset 19 70
+ frame data/chars/Lee/465.gif
+ offset 19 70
+ frame data/chars/Lee/466.gif
+
+anim fall5061
+ delay 7
+ offset 25 34
+ frame data/chars/Lee/467.gif
+ offset 25 36
+ frame data/chars/Lee/468.gif
+
+anim fall5062
+ delay 7
+ offset 15 5
+ frame data/chars/Lee/469.gif
+ offset 22 3
+ frame data/chars/Lee/470.gif
+
+anim fall5070
+ delay 7
+ offset 19 69
+ frame data/chars/Lee/471.gif
+ offset 21 26
+ frame data/chars/Lee/472.gif
+ offset 20 27
+ frame data/chars/Lee/473.gif
+ offset 59 27
+ frame data/chars/Lee/474.gif
+
+anim fall5071
+ delay 7
+ offset 27 36
+ frame data/chars/Lee/475.gif
+ offset 18 22
+ frame data/chars/Lee/476.gif
+ offset 55 16
+ frame data/chars/Lee/477.gif
+ offset 55 16
+ frame data/chars/Lee/478.gif
+
+anim fall5072
+ delay 7
+ offset 16 6
+ frame data/chars/Lee/479.gif
+ offset 19 9
+ frame data/chars/Lee/480.gif
+ offset 55 6
+ frame data/chars/Lee/481.gif
+
+anim 7052
+ delay 7
+ offset 225 59
+ frame data/chars/Lee/482.gif
+
+anim attack350
+ delay 7
+ offset 106 219
+ frame data/chars/Lee/483.gif
+ offset 89 226
+ frame data/chars/Lee/484.gif
+
+anim 16030
+ delay 7
+ offset 30 43
+ frame data/chars/Lee/485.gif
+ offset 29 53
+ frame data/chars/Lee/486.gif
+
+anim 16031
+ delay 7
+ offset 23 26
+ frame data/chars/Lee/487.gif
+ offset 29 31
+ frame data/chars/Lee/488.gif
+ offset 29 31
+ frame data/chars/Lee/489.gif
+ offset 28 39
+ frame data/chars/Lee/490.gif
+ offset 28 39
+ frame data/chars/Lee/491.gif
+
+anim 16032
+ delay 7
+ offset 25 6
+ frame data/chars/Lee/492.gif
+ offset 29 10
+ frame data/chars/Lee/493.gif
+ offset 29 10
+ frame data/chars/Lee/494.gif
+ offset 29 9
+ frame data/chars/Lee/495.gif
+ offset 29 9
+ frame data/chars/Lee/496.gif
+
+anim 16040
+ delay 7
+ offset 26 43
+ frame data/chars/Lee/497.gif
+ offset 26 43
+ frame data/chars/Lee/498.gif
+
+anim 16041
+ delay 7
+ offset 28 37
+ frame data/chars/Lee/499.gif
+ offset 27 35
+ frame data/chars/Lee/500.gif
+
+anim 16042
+ delay 7
+ offset 32 11
+ frame data/chars/Lee/501.gif
+ offset 30 5
+ frame data/chars/Lee/502.gif
+
+anim attack200
+ delay 7
+ offset 25 64
+ frame data/chars/Lee/503.gif
+ offset 25 62
+ frame data/chars/Lee/504.gif
+ offset 21 62
+ frame data/chars/Lee/505.gif
+
+anim attack300
+ delay 7
+ offset 28 75
+ frame data/chars/Lee/506.gif
+ offset 25 77
+ frame data/chars/Lee/507.gif
+ offset 16 74
+ frame data/chars/Lee/508.gif
+
+anim 10023
+ delay 7
+ offset 32 32
+ frame data/chars/Lee/509.gif
+ offset 37 30
+ frame data/chars/Lee/510.gif
+ offset 39 32
+ frame data/chars/Lee/511.gif
+ offset 34 36
+ frame data/chars/Lee/512.gif
+ offset 34 32
+ frame data/chars/Lee/513.gif
+
+anim freespecial1400
+ delay 7
+ offset 19 14
+ frame data/chars/Lee/514.gif
+
+anim freespecial3040
+ delay 7
+ offset 83 18
+ frame data/chars/Lee/515.gif
+
+anim attack365
+ delay 7
+ offset 443 44
+ frame data/chars/Lee/516.gif
+
+anim 16061
+ delay 7
+ offset 26 38
+ frame data/chars/Lee/517.gif
+ offset 24 36
+ frame data/chars/Lee/518.gif
+
+anim 16062
+ delay 7
+ offset 16 9
+ frame data/chars/Lee/519.gif
+ offset 21 3
+ frame data/chars/Lee/520.gif
+
+anim 16070
+ delay 7
+ offset 20 73
+ frame data/chars/Lee/521.gif
+ offset 21 25
+ frame data/chars/Lee/522.gif
+ offset 20 26
+ frame data/chars/Lee/523.gif
+ offset 63 28
+ frame data/chars/Lee/524.gif
+
+anim 16071
+ delay 7
+ offset 28 40
+ frame data/chars/Lee/525.gif
+ offset 18 21
+ frame data/chars/Lee/526.gif
+ offset 59 17
+ frame data/chars/Lee/527.gif
+ offset 59 17
+ frame data/chars/Lee/528.gif
+
+anim 16072
+ delay 7
+ offset 17 10
+ frame data/chars/Lee/529.gif
+ offset 19 8
+ frame data/chars/Lee/530.gif
+ offset 59 7
+ frame data/chars/Lee/531.gif
+
+anim freespecial1400
+ delay 7
+ offset 28 89
+ frame data/chars/Lee/532.gif
+
+anim attack365
+ delay 7
+ offset 343 50
+ frame data/chars/Lee/533.gif
+
+anim 7052
+ delay 7
+ offset 178 43
+ frame data/chars/Lee/534.gif
+
+anim 16041
+ delay 7
+ offset 47 25
+ frame data/chars/Lee/535.gif
+
+anim 16042
+ delay 7
+ offset 47 15
+ frame data/chars/Lee/536.gif
+
+anim 16032
+ delay 7
+ offset 39 14
+ frame data/chars/Lee/537.gif
+
+anim 7000
+ delay 7
+ offset 24 24
+ frame data/chars/Lee/538.gif
+ offset 19 19
+ frame data/chars/Lee/539.gif
+ offset 14 15
+ frame data/chars/Lee/540.gif
+ offset 9 16
+ frame data/chars/Lee/541.gif
+ offset 11 19
+ frame data/chars/Lee/542.gif
+ offset 12 22
+ frame data/chars/Lee/543.gif
+ offset 7 25
+ frame data/chars/Lee/544.gif
+ offset 11 23
+ frame data/chars/Lee/545.gif
+ offset 12 23
+ frame data/chars/Lee/546.gif
+ offset 12 24
+ frame data/chars/Lee/547.gif
+ offset 13 31
+ frame data/chars/Lee/548.gif
+ offset 13 32
+ frame data/chars/Lee/549.gif
+ offset 13 33
+ frame data/chars/Lee/550.gif
+ offset 13 35
+ frame data/chars/Lee/551.gif
+ offset 13 36
+ frame data/chars/Lee/552.gif
+ offset 13 36
+ frame data/chars/Lee/553.gif
+ offset 11 37
+ frame data/chars/Lee/554.gif
+ offset 10 38
+ frame data/chars/Lee/555.gif
+ offset 7 40
+ frame data/chars/Lee/556.gif
+ offset 8 41
+ frame data/chars/Lee/557.gif
+ offset 2 43
+ frame data/chars/Lee/558.gif
+
+anim 7051
+ delay 7
+ offset 63 209
+ frame data/chars/Lee/559.gif
+
+anim 7052
+ delay 7
+ offset 209 63
+ frame data/chars/Lee/560.gif
+
+anim 7400
+ delay 7
+ offset 38 52
+ frame data/chars/Lee/561.gif
+ offset 42 50
+ frame data/chars/Lee/562.gif
+ offset 41 46
+ frame data/chars/Lee/563.gif
+ offset 47 58
+ frame data/chars/Lee/564.gif
+ offset 43 52
+ frame data/chars/Lee/565.gif
+ offset 38 43
+ frame data/chars/Lee/566.gif
+ offset 35 35
+ frame data/chars/Lee/567.gif
+ offset 29 26
+ frame data/chars/Lee/568.gif
+ offset 22 25
+ frame data/chars/Lee/569.gif
+ offset 16 25
+ frame data/chars/Lee/570.gif
+ offset 45 46
+ frame data/chars/Lee/571.gif
+ offset 45 46
+ frame data/chars/Lee/572.gif
+ offset 59 60
+ frame data/chars/Lee/573.gif
+ offset 59 60
+ frame data/chars/Lee/574.gif
+ offset 68 70
+ frame data/chars/Lee/575.gif
+ offset 68 70
+ frame data/chars/Lee/576.gif
+ offset 76 77
+ frame data/chars/Lee/577.gif
+ offset 76 77
+ frame data/chars/Lee/578.gif
+ offset 80 81
+ frame data/chars/Lee/579.gif
+ offset 80 81
+ frame data/chars/Lee/580.gif
+ offset 84 85
+ frame data/chars/Lee/581.gif
+ offset 84 85
+ frame data/chars/Lee/582.gif
+ offset 87 88
+ frame data/chars/Lee/583.gif
+ offset 87 88
+ frame data/chars/Lee/584.gif
+ offset 88 89
+ frame data/chars/Lee/585.gif
+ offset 45 57
+ frame data/chars/Lee/586.gif
+ offset 43 58
+ frame data/chars/Lee/587.gif
+ offset 89 90
+ frame data/chars/Lee/588.gif
+
+anim freespecial1050
+ delay 7
+ offset 69 76
+ frame data/chars/Lee/589.gif
+
+anim 7052
+ delay 7
+ offset 219 45
+ frame data/chars/Lee/590.gif
+
+anim 9007
+ delay 7
+ offset 111 14
+ frame data/chars/Lee/591.gif
+ offset 111 14
+ frame data/chars/Lee/592.gif
+
+anim freespecial1250
+ delay 7
+ offset 72 -70
+ frame data/chars/Lee/593.gif
+ offset 71 -54
+ frame data/chars/Lee/594.gif
+ offset 73 -30
+ frame data/chars/Lee/595.gif
+ offset 63 -5
+ frame data/chars/Lee/596.gif
+ offset 49 16
+ frame data/chars/Lee/597.gif
+ offset 48 -34
+ frame data/chars/Lee/598.gif
+ offset 43 -49
+ frame data/chars/Lee/599.gif
+ offset 32 -70
+ frame data/chars/Lee/600.gif
+ offset 32 -52
+ frame data/chars/Lee/601.gif
+ offset 31 -34
+ frame data/chars/Lee/602.gif
+ offset 6 -53
+ frame data/chars/Lee/603.gif
+ offset 6 -35
+ frame data/chars/Lee/604.gif
+ offset 7 -26
+ frame data/chars/Lee/605.gif
+
+anim 9007
+ delay 7
+ offset 75 10
+ frame data/chars/Lee/606.gif
+ offset 75 10
+ frame data/chars/Lee/607.gif
+ offset 269 33
+ frame data/chars/Lee/608.gif
+ offset 269 33
+ frame data/chars/Lee/609.gif
+ offset 285 37
+ frame data/chars/Lee/610.gif
+ offset 285 37
+ frame data/chars/Lee/611.gif
+ offset 256 42
+ frame data/chars/Lee/612.gif
+ offset 256 42
+ frame data/chars/Lee/613.gif
+
+anim 7051
+ delay 7
+ offset 60 226
+ frame data/chars/Lee/614.gif
+
+anim 7052
+ delay 7
+ offset 226 60
+ frame data/chars/Lee/615.gif
+ offset 179 41
+ frame data/chars/Lee/616.gif
+
+anim 9007
+ delay 7
+ offset 93 12
+ frame data/chars/Lee/617.gif
+ offset 93 12
+ frame data/chars/Lee/618.gif
+
+anim 7051
+ delay 7
+ offset 62 222
+ frame data/chars/Lee/619.gif
+
+anim 7052
+ delay 7
+ offset 222 62
+ frame data/chars/Lee/620.gif
+
+anim 7051
+ delay 7
+ offset 63 219
+ frame data/chars/Lee/621.gif
+
+anim 7052
+ delay 7
+ offset 219 63
+ frame data/chars/Lee/622.gif
+
+anim 7051
+ delay 7
+ offset 59 223
+ frame data/chars/Lee/623.gif
+
+anim 7052
+ delay 7
+ offset 223 59
+ frame data/chars/Lee/624.gif
+
+anim attack350
+ delay 7
+ offset 98 229
+ frame data/chars/Lee/625.gif
+ offset 98 210
+ frame data/chars/Lee/626.gif
+
+anim 9011
+ delay 7
+ offset 208 343
+ frame data/chars/Lee/627.gif
+ offset 207 359
+ frame data/chars/Lee/628.gif
+ offset 206 310
+ frame data/chars/Lee/629.gif
+ offset 207 304
+ frame data/chars/Lee/630.gif
+ offset 208 329
+ frame data/chars/Lee/631.gif
+ offset 208 371
+ frame data/chars/Lee/632.gif
+ offset 208 390
+ frame data/chars/Lee/633.gif
+ offset 210 406
+ frame data/chars/Lee/634.gif
+ offset 190 436
+ frame data/chars/Lee/635.gif
+
+anim 9007
+ delay 7
+ offset 122 16
+ frame data/chars/Lee/636.gif
+ offset 122 16
+ frame data/chars/Lee/637.gif
+ offset 238 47
+ frame data/chars/Lee/638.gif
+ offset 238 47
+ frame data/chars/Lee/639.gif
+
+anim 8200
+ delay 7
+ offset 108 237
+ frame data/chars/Lee/640.gif
+ offset 114 256
+ frame data/chars/Lee/641.gif
+ offset 121 276
+ frame data/chars/Lee/642.gif
+ offset 128 193
+ frame data/chars/Lee/643.gif
+ offset 135 198
+ frame data/chars/Lee/644.gif
+ offset 126 199
+ frame data/chars/Lee/645.gif
+ offset 125 186
+ frame data/chars/Lee/646.gif
+ offset 127 180
+ frame data/chars/Lee/647.gif
+ offset 124 124
+ frame data/chars/Lee/648.gif
+ offset 115 109
+ frame data/chars/Lee/649.gif
+
+anim 9019
+ delay 7
+ offset 81 105
+ frame data/chars/Lee/650.gif
+
+anim attack350
+ delay 7
+ offset 88 224
+ frame data/chars/Lee/651.gif
+
+anim 9007
+ delay 7
+ offset 293 39
+ frame data/chars/Lee/652.gif
+ offset 293 39
+ frame data/chars/Lee/653.gif
+ offset 86 87
+ frame data/chars/Lee/654.gif
+ offset 124 124
+ frame data/chars/Lee/655.gif
+ offset 149 165
+ frame data/chars/Lee/656.gif
+
+anim attack350
+ delay 7
+ offset 97 226
+ frame data/chars/Lee/657.gif
+ offset 99 234
+ frame data/chars/Lee/658.gif
+ offset 101 236
+ frame data/chars/Lee/659.gif
+
+anim attack365
+ delay 7
+ offset 322 29
+ frame data/chars/Lee/660.gif
+
+anim attack350
+ delay 7
+ offset 100 222
+ frame data/chars/Lee/661.gif
+ offset 100 203
+ frame data/chars/Lee/662.gif
+ offset 68 31
+ frame data/chars/Lee/663.gif
+ offset 83 92
+ frame data/chars/Lee/664.gif
+
+anim 9011
+ delay 7
+ offset 54 129
+ frame data/chars/Lee/665.gif
+ offset 44 133
+ frame data/chars/Lee/666.gif
+ offset 55 129
+ frame data/chars/Lee/667.gif
+ offset 72 129
+ frame data/chars/Lee/668.gif
+ offset 81 127
+ frame data/chars/Lee/669.gif
+
+anim attack502
+ delay 7
+ offset 136 78
+ frame data/chars/Lee/670.gif
+ offset 145 126
+ frame data/chars/Lee/671.gif
+ offset 94 107
+ frame data/chars/Lee/672.gif
+ offset 210 110
+ frame data/chars/Lee/673.gif
+ offset 153 155
+ frame data/chars/Lee/674.gif
+ offset 133 122
+ frame data/chars/Lee/675.gif
+ offset 115 212
+ frame data/chars/Lee/676.gif
+ offset 48 100
+ frame data/chars/Lee/677.gif
+ offset 58 127
+ frame data/chars/Lee/678.gif
+ offset 150 92
+ frame data/chars/Lee/679.gif
+ offset 280 239
+ frame data/chars/Lee/680.gif
+ offset 117 111
+ frame data/chars/Lee/681.gif
+ offset 243 218
+ frame data/chars/Lee/682.gif
+ offset 58 127
+ frame data/chars/Lee/683.gif
+
+anim attack501
+ delay 7
+ offset 19 847
+ frame data/chars/Lee/684.gif
+
+anim attack502
+ delay 7
+ offset 196 106
+ frame data/chars/Lee/685.gif
+ offset 146 83
+ frame data/chars/Lee/686.gif
+ offset 56 121
+ frame data/chars/Lee/687.gif
+ offset 56 126
+ frame data/chars/Lee/688.gif
+ offset 57 125
+ frame data/chars/Lee/689.gif
+ offset 55 117
+ frame data/chars/Lee/690.gif
+ offset 317 634
+ frame data/chars/Lee/691.gif
+ offset 317 634
+ frame data/chars/Lee/692.gif
+ offset 191 91
+ frame data/chars/Lee/693.gif
+ offset 316 288
+ frame data/chars/Lee/694.gif
+
+anim attack501
+ delay 7
+ offset 27 846
+ frame data/chars/Lee/695.gif
+
+anim attack502
+ delay 7
+ offset 221 624
+ frame data/chars/Lee/696.gif
+ offset 312 624
+ frame data/chars/Lee/697.gif
+ offset 263 232
+ frame data/chars/Lee/698.gif
+ offset 165 93
+ frame data/chars/Lee/699.gif
+ offset 172 134
+ frame data/chars/Lee/700.gif
+ offset 225 176
+ frame data/chars/Lee/701.gif
+ offset 320 264
+ frame data/chars/Lee/702.gif
+ offset 124 137
+ frame data/chars/Lee/703.gif
+ offset 97 102
+ frame data/chars/Lee/704.gif
+ offset 209 108
+ frame data/chars/Lee/705.gif
+ offset 124 137
+ frame data/chars/Lee/706.gif
+ offset 117 -5
+ frame data/chars/Lee/707.gif
+ offset 115 261
+ frame data/chars/Lee/708.gif
+ offset 125 108
+ frame data/chars/Lee/709.gif
+ offset 114 116
+ frame data/chars/Lee/710.gif
+ offset 127 158
+ frame data/chars/Lee/711.gif
+ offset 327 280
+ frame data/chars/Lee/712.gif
+ offset 122 97
+ frame data/chars/Lee/713.gif
+ offset 145 160
+ frame data/chars/Lee/714.gif
+ offset 124 137
+ frame data/chars/Lee/715.gif
+ offset 116 164
+ frame data/chars/Lee/716.gif
+ offset 113 96
+ frame data/chars/Lee/717.gif
+ offset 110 104
+ frame data/chars/Lee/718.gif
+ offset 145 180
+ frame data/chars/Lee/719.gif
+ offset 222 113
+ frame data/chars/Lee/720.gif
+ offset 115 261
+ frame data/chars/Lee/721.gif
+ offset 125 105
+ frame data/chars/Lee/722.gif
+ offset 219 564
+ frame data/chars/Lee/723.gif
+ offset 282 564
+ frame data/chars/Lee/724.gif
+ offset 102 110
+ frame data/chars/Lee/725.gif
+ offset 115 97
+ frame data/chars/Lee/726.gif
+ offset 226 115
+ frame data/chars/Lee/727.gif
+ offset 113 102
+ frame data/chars/Lee/728.gif
+ offset 115 97
+ frame data/chars/Lee/729.gif
+ offset 118 99
+ frame data/chars/Lee/730.gif
+ offset 315 268
+ frame data/chars/Lee/731.gif
+ offset 115 99
+ frame data/chars/Lee/732.gif
+ offset 329 271
+ frame data/chars/Lee/733.gif
+ offset 124 137
+ frame data/chars/Lee/734.gif
+ offset 145 160
+ frame data/chars/Lee/735.gif
+ offset 145 198
+ frame data/chars/Lee/736.gif
+ offset 103 104
+ frame data/chars/Lee/737.gif
+ offset 145 180
+ frame data/chars/Lee/738.gif
+ offset 145 174
+ frame data/chars/Lee/739.gif
+ offset 145 160
+ frame data/chars/Lee/740.gif
+ offset 145 231
+ frame data/chars/Lee/741.gif
+ offset 145 231
+ frame data/chars/Lee/742.gif
+ offset 123 173
+ frame data/chars/Lee/743.gif
+ offset 145 180
+ frame data/chars/Lee/744.gif
+ offset 128 196
+ frame data/chars/Lee/745.gif
+ offset 124 137
+ frame data/chars/Lee/746.gif
+ offset 145 160
+ frame data/chars/Lee/747.gif
+ offset 145 160
+ frame data/chars/Lee/748.gif
+ offset 145 160
+ frame data/chars/Lee/749.gif
+ offset 145 255
+ frame data/chars/Lee/750.gif
+ offset 145 231
+ frame data/chars/Lee/751.gif
+ offset 145 174
+ frame data/chars/Lee/752.gif
+ offset 145 160
+ frame data/chars/Lee/753.gif
+ offset 124 137
+ frame data/chars/Lee/754.gif
+ offset 145 174
+ frame data/chars/Lee/755.gif
+ offset 139 325
+ frame data/chars/Lee/756.gif
+ offset 145 157
+ frame data/chars/Lee/757.gif
+ offset 130 112
+ frame data/chars/Lee/758.gif
+ offset 124 137
+ frame data/chars/Lee/759.gif
+ offset 145 180
+ frame data/chars/Lee/760.gif
+ offset 145 160
+ frame data/chars/Lee/761.gif
+ offset 124 137
+ frame data/chars/Lee/762.gif
+ offset 145 160
+ frame data/chars/Lee/763.gif
+ offset 145 160
+ frame data/chars/Lee/764.gif
+ offset 145 160
+ frame data/chars/Lee/765.gif
+ offset 124 137
+ frame data/chars/Lee/766.gif
+ offset 145 231
+ frame data/chars/Lee/767.gif
+ offset 139 325
+ frame data/chars/Lee/768.gif
+ offset 145 231
+ frame data/chars/Lee/769.gif
+ offset 145 160
+ frame data/chars/Lee/770.gif
+ offset 145 231
+ frame data/chars/Lee/771.gif
+ offset 139 325
+ frame data/chars/Lee/772.gif
+ offset 145 180
+ frame data/chars/Lee/773.gif
+ offset 145 174
+ frame data/chars/Lee/774.gif
+ offset 145 231
+ frame data/chars/Lee/775.gif
+ offset 139 269
+ frame data/chars/Lee/776.gif
+ offset 145 231
+ frame data/chars/Lee/777.gif
+ offset 145 231
+ frame data/chars/Lee/778.gif
+
+anim attack485
+ delay 7
+ offset 10 6
+ frame data/chars/Lee/779.gif
+ offset 10 62
+ frame data/chars/Lee/780.gif
+
+anim attack502
+ delay 7
+ offset 145 264
+ frame data/chars/Lee/781.gif
+ offset 145 180
+ frame data/chars/Lee/782.gif
+ offset 145 231
+ frame data/chars/Lee/783.gif
+ offset 145 231
+ frame data/chars/Lee/784.gif
+ offset 145 231
+ frame data/chars/Lee/785.gif
+ offset 145 255
+ frame data/chars/Lee/786.gif
+ offset 145 255
+ frame data/chars/Lee/787.gif
+
+anim 9030
+ delay 7
+ offset 97 273
+ frame data/chars/Lee/788.gif
+
+anim attack502
+ delay 7
+ offset 145 180
+ frame data/chars/Lee/789.gif
+
+anim jumpforward
+ delay 7
+ offset 118 14
+ frame data/chars/Lee/790.gif
+
+anim attack502
+ delay 7
+ offset 145 259
+ frame data/chars/Lee/791.gif
+ offset 139 325
+ frame data/chars/Lee/792.gif
+ offset 139 325
+ frame data/chars/Lee/793.gif
+ offset 145 231
+ frame data/chars/Lee/794.gif
+ offset 145 231
+ frame data/chars/Lee/795.gif
+ offset 145 255
+ frame data/chars/Lee/796.gif
+ offset 145 255
+ frame data/chars/Lee/797.gif
+ offset 145 244
+ frame data/chars/Lee/798.gif
+
+anim jumpforward
+ delay 7
+ offset 75 10
+ frame data/chars/Lee/799.gif
+
+anim attack502
+ delay 7
+ offset 139 325
+ frame data/chars/Lee/800.gif
+
+anim 9025
+ delay 7
+ offset 58 108
+ frame data/chars/Lee/801.gif
+ offset 32 14
+ frame data/chars/Lee/802.gif
+
+anim attack502
+ delay 7
+ offset 139 301
+ frame data/chars/Lee/803.gif
+
+anim 9025
+ delay 7
+ offset 47 136
+ frame data/chars/Lee/804.gif
+
+anim attack502
+ delay 7
+ offset 139 325
+ frame data/chars/Lee/805.gif
+
+anim 9025
+ delay 7
+ offset 46 48
+ frame data/chars/Lee/806.gif
+
+anim 9030
+ delay 7
+ offset 101 277
+ frame data/chars/Lee/807.gif
+
+anim jumpforward
+ delay 7
+ offset 51 55
+ frame data/chars/Lee/808.gif
+ offset 56 61
+ frame data/chars/Lee/809.gif
+ offset 63 69
+ frame data/chars/Lee/810.gif
+ offset 70 76
+ frame data/chars/Lee/811.gif
+ offset 80 88
+ frame data/chars/Lee/812.gif
+ offset 85 91
+ frame data/chars/Lee/813.gif
+ offset 83 11
+ frame data/chars/Lee/814.gif
+
+anim freespecial3302
+ delay 7
+ offset 45 75
+ frame data/chars/Lee/815.gif
+ offset 45 75
+ frame data/chars/Lee/816.gif
+ offset 45 75
+ frame data/chars/Lee/817.gif
+ offset 59 75
+ frame data/chars/Lee/818.gif
+
+anim 0923
+ delay 7
+ offset 121 185
+ frame data/chars/Lee/819.gif
+ offset 121 185
+ frame data/chars/Lee/820.gif
+ offset 121 185
+ frame data/chars/Lee/821.gif
+ offset 121 185
+ frame data/chars/Lee/822.gif
+ offset 121 185
+ frame data/chars/Lee/823.gif
+
+anim 9025
+ delay 7
+ offset 62 141
+ frame data/chars/Lee/824.gif
+
+anim 7057
+ delay 7
+ offset 58 79
+ frame data/chars/Lee/825.gif
+
+anim freespecial3300
+ delay 7
+ offset 24 74
+ frame data/chars/Lee/826.gif
+
+anim attack502
+ delay 7
+ offset 145 244
+ frame data/chars/Lee/827.gif
+ offset 145 231
+ frame data/chars/Lee/828.gif
+
+anim 9030
+ delay 7
+ offset 94 265
+ frame data/chars/Lee/829.gif
+
+anim jumpforward
+ delay 7
+ offset 122 13
+ frame data/chars/Lee/830.gif
+
+anim 7057
+ delay 7
+ offset 89 120
+ frame data/chars/Lee/831.gif
+
+anim attack502
+ delay 7
+ offset 139 325
+ frame data/chars/Lee/832.gif
+ offset 145 231
+ frame data/chars/Lee/833.gif
+ offset 139 221
+ frame data/chars/Lee/834.gif
+
+anim 9030
+ delay 7
+ offset 91 208
+ frame data/chars/Lee/835.gif
+
+anim jumpforward
+ delay 7
+ offset 102 13
+ frame data/chars/Lee/836.gif
+
+anim 9030
+ delay 7
+ offset 112 282
+ frame data/chars/Lee/837.gif
+
+anim 9025
+ delay 7
+ offset 56 111
+ frame data/chars/Lee/838.gif
+
+anim 9030
+ delay 7
+ offset 75 105
+ frame data/chars/Lee/839.gif
+
+anim 7057
+ delay 7
+ offset 88 92
+ frame data/chars/Lee/840.gif
+ offset 88 119
+ frame data/chars/Lee/841.gif
+ offset 88 118
+ frame data/chars/Lee/842.gif
+ offset 108 120
+ frame data/chars/Lee/843.gif
+ offset 74 99
+ frame data/chars/Lee/844.gif
+
+anim 9030
+ delay 7
+ offset 103 277
+ frame data/chars/Lee/845.gif
+ offset 106 279
+ frame data/chars/Lee/846.gif
+ offset 114 284
+ frame data/chars/Lee/847.gif
+
+anim 7057
+ delay 7
+ offset 24 43
+ frame data/chars/Lee/848.gif
+ offset 91 118
+ frame data/chars/Lee/849.gif
+
+anim 9025
+ delay 7
+ offset 49 150
+ frame data/chars/Lee/850.gif
+ offset 53 154
+ frame data/chars/Lee/851.gif
+
+anim 9030
+ delay 7
+ offset 108 280
+ frame data/chars/Lee/852.gif
+
+anim 9025
+ delay 7
+ offset 45 53
+ frame data/chars/Lee/853.gif
+ offset 62 125
+ frame data/chars/Lee/854.gif
+ offset 56 153
+ frame data/chars/Lee/855.gif
+
+anim 9030
+ delay 7
+ offset 113 292
+ frame data/chars/Lee/856.gif
+
+anim jumpforward
+ delay 7
+ offset 93 12
+ frame data/chars/Lee/857.gif
+ offset 10 75
+ frame data/chars/Lee/858.gif
+ offset 11 83
+ frame data/chars/Lee/859.gif
+ offset 12 93
+ frame data/chars/Lee/860.gif
+ offset 14 102
+ frame data/chars/Lee/861.gif
+ offset 16 118
+ frame data/chars/Lee/862.gif
+ offset 17 122
+ frame data/chars/Lee/863.gif
+
+anim 7057
+ delay 7
+ offset 52 92
+ frame data/chars/Lee/864.gif
+
+anim 9030
+ delay 7
+ offset 111 280
+ frame data/chars/Lee/865.gif
+
+anim 7057
+ delay 7
+ offset 84 112
+ frame data/chars/Lee/866.gif
+ offset 109 120
+ frame data/chars/Lee/867.gif
+
+anim 9025
+ delay 7
+ offset 58 92
+ frame data/chars/Lee/868.gif
+
+anim 7057
+ delay 7
+ offset 104 119
+ frame data/chars/Lee/869.gif
+ offset 51 92
+ frame data/chars/Lee/870.gif
+
+anim 9025
+ delay 7
+ offset 59 148
+ frame data/chars/Lee/871.gif
+
+anim 7057
+ delay 7
+ offset 88 92
+ frame data/chars/Lee/872.gif
+ offset 51 92
+ frame data/chars/Lee/873.gif
+ offset 88 92
+ frame data/chars/Lee/874.gif
+ offset 85 108
+ frame data/chars/Lee/875.gif
+ offset 84 120
+ frame data/chars/Lee/876.gif
+ offset 86 119
+ frame data/chars/Lee/877.gif
+ offset 41 91
+ frame data/chars/Lee/878.gif
+
+anim 0002
+ delay 7
+ offset 320 480
+ frame data/chars/Lee/879.gif
+ offset 320 480
+ frame data/chars/Lee/880.gif
+ offset 320 480
+ frame data/chars/Lee/881.gif
+ offset 320 480
+ frame data/chars/Lee/882.gif
+ offset 320 480
+ frame data/chars/Lee/883.gif
+ offset 320 480
+ frame data/chars/Lee/884.gif
+ offset 320 480
+ frame data/chars/Lee/885.gif
+ offset 320 480
+ frame data/chars/Lee/886.gif
+ offset 320 480
+ frame data/chars/Lee/887.gif
+ offset 320 480
+ frame data/chars/Lee/888.gif
+ offset 320 480
+ frame data/chars/Lee/889.gif
+ offset 320 480
+ frame data/chars/Lee/890.gif
+ offset 320 480
+ frame data/chars/Lee/891.gif
+ offset 320 480
+ frame data/chars/Lee/892.gif
+ offset 320 480
+ frame data/chars/Lee/893.gif
+ offset 320 480
+ frame data/chars/Lee/894.gif
+ offset 320 480
+ frame data/chars/Lee/895.gif
+ offset 320 480
+ frame data/chars/Lee/896.gif
+ offset 320 480
+ frame data/chars/Lee/897.gif
+ offset 320 480
+ frame data/chars/Lee/898.gif
+ offset 320 480
+ frame data/chars/Lee/899.gif
+ offset 320 480
+ frame data/chars/Lee/900.gif
+ offset 320 480
+ frame data/chars/Lee/901.gif
+ offset 320 480
+ frame data/chars/Lee/902.gif
+ offset 320 480
+ frame data/chars/Lee/903.gif
+ offset 320 480
+ frame data/chars/Lee/904.gif
+ offset 320 480
+ frame data/chars/Lee/905.gif
+ offset 320 480
+ frame data/chars/Lee/906.gif
+ offset 320 480
+ frame data/chars/Lee/907.gif
+ offset 320 480
+ frame data/chars/Lee/908.gif
+
+anim attack322
+ delay 7
+ offset 53 115
+ frame data/chars/Lee/909.gif
+
+anim 7001
+ delay 7
+ offset 72 81
+ frame data/chars/Lee/910.gif
+ offset 88 98
+ frame data/chars/Lee/911.gif
+ offset 104 107
+ frame data/chars/Lee/912.gif
+ offset 108 114
+ frame data/chars/Lee/913.gif
+ offset 95 118
+ frame data/chars/Lee/914.gif
+
+anim 9025
+ delay 7
+ offset 43 168
+ frame data/chars/Lee/915.gif
+
+anim 7057
+ delay 7
+ offset 88 109
+ frame data/chars/Lee/916.gif
+ offset 52 92
+ frame data/chars/Lee/917.gif
+
+anim freespecial1090
+ delay 7
+ offset 258 27
+ frame data/chars/Lee/918.gif
+
+anim 9025
+ delay 7
+ offset 52 148
+ frame data/chars/Lee/919.gif
+
+anim attack365
+ delay 7
+ offset 458 -148
+ frame data/chars/Lee/920.gif
+
+anim 9005
+ delay 7
+ offset 12 14
+ frame data/chars/Lee/921.gif
+ offset 47 25
+ frame data/chars/Lee/922.gif
+ offset 201 100
+ frame data/chars/Lee/923.gif
+ offset 201 100
+ frame data/chars/Lee/924.gif
+ offset 201 100
+ frame data/chars/Lee/925.gif
+ offset 201 100
+ frame data/chars/Lee/926.gif
+ offset 201 100
+ frame data/chars/Lee/927.gif
+ offset 201 100
+ frame data/chars/Lee/928.gif
+ offset 198 100
+ frame data/chars/Lee/929.gif
+ offset 201 100
+ frame data/chars/Lee/930.gif
+
+anim attack322
+ delay 7
+ offset 61 138
+ frame data/chars/Lee/931.gif
+
+anim 9008
+ delay 7
+ offset 88 130
+ frame data/chars/Lee/932.gif
+ offset 93 218
+ frame data/chars/Lee/933.gif
+ offset 80 250
+ frame data/chars/Lee/934.gif
+ offset 63 249
+ frame data/chars/Lee/935.gif
+ offset 55 248
+ frame data/chars/Lee/936.gif
+ offset 58 242
+ frame data/chars/Lee/937.gif
+ offset 53 250
+ frame data/chars/Lee/938.gif
+ offset 62 259
+ frame data/chars/Lee/939.gif
+ offset 64 258
+ frame data/chars/Lee/940.gif
+ offset 66 258
+ frame data/chars/Lee/941.gif
+ offset 34 257
+ frame data/chars/Lee/942.gif
+ offset 21 258
+ frame data/chars/Lee/943.gif
+ offset 36 255
+ frame data/chars/Lee/944.gif
+ offset 36 250
+ frame data/chars/Lee/945.gif
+ offset 34 246
+ frame data/chars/Lee/946.gif
+ offset -92 226
+ frame data/chars/Lee/947.gif
+
+anim attack365
+ delay 7
+ offset 336 20
+ frame data/chars/Lee/948.gif
+
+anim attack322
+ delay 7
+ offset 46 82
+ frame data/chars/Lee/949.gif
+ offset 48 96
+ frame data/chars/Lee/950.gif
+
+anim attack365
+ delay 7
+ offset 345 -169
+ frame data/chars/Lee/951.gif
+ offset 339 20
+ frame data/chars/Lee/952.gif
+
+anim attack322
+ delay 7
+ offset 54 115
+ frame data/chars/Lee/953.gif
+
+anim freespecial3150
+ delay 7
+ offset 32 8
+ frame data/chars/Lee/954.gif
+ offset 32 5
+ frame data/chars/Lee/955.gif
+ offset 32 5
+ frame data/chars/Lee/956.gif
+
+anim 20000
+ delay 7
+ offset 32 19
+ frame data/chars/Lee/957.gif
+ offset 32 19
+ frame data/chars/Lee/958.gif
+ offset 32 19
+ frame data/chars/Lee/959.gif
+ offset 32 19
+ frame data/chars/Lee/960.gif
+ offset 32 19
+ frame data/chars/Lee/961.gif
+ offset 32 19
+ frame data/chars/Lee/962.gif
+ offset 32 19
+ frame data/chars/Lee/963.gif
+ offset 32 19
+ frame data/chars/Lee/964.gif
+ offset 32 19
+ frame data/chars/Lee/965.gif
+ offset 32 19
+ frame data/chars/Lee/966.gif
+ offset 32 19
+ frame data/chars/Lee/967.gif
+
+anim attack322
+ delay 7
+ offset 41 52
+ frame data/chars/Lee/968.gif
+
+anim 7054
+ delay 7
+ offset 225 94
+ frame data/chars/Lee/969.gif
+
+anim freespecial1026
+ delay 7
+ offset 6 16
+ frame data/chars/Lee/970.gif
+ offset 8 15
+ frame data/chars/Lee/971.gif
+ offset 8 16
+ frame data/chars/Lee/972.gif
+ offset 8 16
+ frame data/chars/Lee/973.gif
+ offset 8 18
+ frame data/chars/Lee/974.gif
+ offset 5 19
+ frame data/chars/Lee/975.gif
+ offset 5 19
+ frame data/chars/Lee/976.gif
+ offset 5 18
+ frame data/chars/Lee/977.gif
+ offset 6 10
+ frame data/chars/Lee/978.gif
+ offset 8 14
+ frame data/chars/Lee/979.gif
+ offset 6 11
+ frame data/chars/Lee/980.gif
+ offset 8 13
+ frame data/chars/Lee/981.gif
+ offset 6 13
+ frame data/chars/Lee/982.gif
+ offset 8 17
+ frame data/chars/Lee/983.gif
+ offset 9 16
+ frame data/chars/Lee/984.gif
+
+anim attack365
+ delay 7
+ offset 351 -184
+ frame data/chars/Lee/985.gif
+
+anim freespecial3155
+ delay 7
+ offset 9 0
+ frame data/chars/Lee/986.gif
+
+anim 7054
+ delay 7
+ offset 81 83
+ frame data/chars/Lee/987.gif
+ offset 127 87
+ frame data/chars/Lee/988.gif
+ offset 239 81
+ frame data/chars/Lee/989.gif
+ offset 240 81
+ frame data/chars/Lee/990.gif
+ offset 232 94
+ frame data/chars/Lee/991.gif
+
+anim attack365
+ delay 7
+ offset 448 -155
+ frame data/chars/Lee/992.gif
+ offset 443 -135
+ frame data/chars/Lee/993.gif
+
+anim 7054
+ delay 7
+ offset 239 81
+ frame data/chars/Lee/994.gif
+ offset 237 91
+ frame data/chars/Lee/995.gif
+
+anim attack365
+ delay 7
+ offset 414 -116
+ frame data/chars/Lee/996.gif
+
+anim 7054
+ delay 7
+ offset 239 81
+ frame data/chars/Lee/997.gif
+ offset 24 77
+ frame data/chars/Lee/998.gif
+ offset 240 81
+ frame data/chars/Lee/999.gif
+ offset 217 94
+ frame data/chars/Lee/1000.gif
+ offset 32 79
+ frame data/chars/Lee/1001.gif
+
+anim attack365
+ delay 7
+ offset 339 -150
+ frame data/chars/Lee/1002.gif
+
+anim 7054
+ delay 7
+ offset 235 91
+ frame data/chars/Lee/1003.gif
+ offset 202 93
+ frame data/chars/Lee/1004.gif
+ offset 229 94
+ frame data/chars/Lee/1005.gif
+ offset 62 81
+ frame data/chars/Lee/1006.gif
+ offset 236 91
+ frame data/chars/Lee/1007.gif
+
+anim 9007
+ delay 7
+ offset 27 27
+ frame data/chars/Lee/1008.gif
+ offset 41 45
+ frame data/chars/Lee/1009.gif
+ offset 75 72
+ frame data/chars/Lee/1010.gif
+ offset 84 82
+ frame data/chars/Lee/1011.gif
+ offset 76 79
+ frame data/chars/Lee/1012.gif
+ offset 74 80
+ frame data/chars/Lee/1013.gif
+ offset 71 71
+ frame data/chars/Lee/1014.gif
+ offset 70 73
+ frame data/chars/Lee/1015.gif
+ offset 40 43
+ frame data/chars/Lee/1016.gif
+
+anim 9021
+ delay 7
+ offset 320 240
+ frame data/chars/Lee/1017.gif
+
+anim attack433
+ delay 7
+ offset 89 166
+ frame data/chars/Lee/1018.gif
+
+anim 8007
+ delay 7
+ offset 15 54
+ frame data/chars/Lee/1019.gif
+ offset 15 54
+ frame data/chars/Lee/1020.gif
+ offset 15 54
+ frame data/chars/Lee/1021.gif
+ offset 15 54
+ frame data/chars/Lee/1022.gif
+ offset 15 54
+ frame data/chars/Lee/1023.gif
+ offset 15 54
+ frame data/chars/Lee/1024.gif
+ offset 15 54
+ frame data/chars/Lee/1025.gif
+ offset 15 54
+ frame data/chars/Lee/1026.gif
+ offset 15 54
+ frame data/chars/Lee/1027.gif
+ offset 15 54
+ frame data/chars/Lee/1028.gif
+ offset 15 54
+ frame data/chars/Lee/1029.gif
+ offset 15 54
+ frame data/chars/Lee/1030.gif
+ offset 15 54
+ frame data/chars/Lee/1031.gif
+ offset 15 54
+ frame data/chars/Lee/1032.gif
+ offset 15 54
+ frame data/chars/Lee/1033.gif
+ offset 15 54
+ frame data/chars/Lee/1034.gif
+ offset 15 54
+ frame data/chars/Lee/1035.gif
+ offset 15 54
+ frame data/chars/Lee/1036.gif
+ offset 15 54
+ frame data/chars/Lee/1037.gif
+ offset 15 54
+ frame data/chars/Lee/1038.gif
+ offset 15 54
+ frame data/chars/Lee/1039.gif
+ offset 15 54
+ frame data/chars/Lee/1040.gif
+ offset 15 54
+ frame data/chars/Lee/1041.gif
+ offset 15 54
+ frame data/chars/Lee/1042.gif
+ offset 15 54
+ frame data/chars/Lee/1043.gif
+
+anim attack433
+ delay 7
+ offset 89 166
+ frame data/chars/Lee/1044.gif
+
+anim 8007
+ delay 7
+ offset 15 54
+ frame data/chars/Lee/1045.gif
+
+anim idle
+ delay 7
+ offset 0 0
+ frame data/chars/Lee/1046.gif

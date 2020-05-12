@@ -1,0 +1,581 @@
+name	Dende
+health	100
+speed	9
+type	player
+shadow	3 
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/dende/0.gif
+ offset 0 0
+ frame data/chars/dende/1.gif
+
+anim idle
+ delay 7
+ offset 16 46
+ frame data/chars/dende/2.gif
+ offset 16 46
+ frame data/chars/dende/3.gif
+
+anim turn
+ delay 7
+ offset 11 50
+ frame data/chars/dende/4.gif
+
+anim 0006
+ delay 7
+ offset 13 36
+ frame data/chars/dende/5.gif
+
+anim 0011
+ delay 7
+ offset 11 50
+ frame data/chars/dende/6.gif
+
+anim walk
+ delay 7
+ offset 11 50
+ frame data/chars/dende/7.gif
+ offset 10 51
+ frame data/chars/dende/8.gif
+
+anim jump
+ delay 7
+ offset 15 52
+ frame data/chars/dende/9.gif
+
+anim jumpforward
+ delay 7
+ offset 16 48
+ frame data/chars/dende/10.gif
+ offset 13 45
+ frame data/chars/dende/11.gif
+ offset 23 31
+ frame data/chars/dende/12.gif
+ offset 13 56
+ frame data/chars/dende/13.gif
+ offset 16 46
+ frame data/chars/dende/14.gif
+ offset 14 54
+ frame data/chars/dende/15.gif
+
+anim 0043
+ delay 7
+ offset 21 55
+ frame data/chars/dende/16.gif
+
+anim run
+ delay 7
+ offset 14 45
+ frame data/chars/dende/17.gif
+
+anim dodge
+ delay 7
+ offset 31 38
+ frame data/chars/dende/18.gif
+
+anim 0181
+ delay 7
+ offset 14 46
+ frame data/chars/dende/19.gif
+
+anim block120
+ delay 7
+ offset 15 46
+ frame data/chars/dende/20.gif
+
+anim block121
+ delay 7
+ offset 13 36
+ frame data/chars/dende/21.gif
+
+anim block122
+ delay 7
+ offset 16 58
+ frame data/chars/dende/22.gif
+
+anim pain5000
+ delay 7
+ offset 20 52
+ frame data/chars/dende/23.gif
+
+anim pain5001
+ delay 7
+ offset 18 32
+ frame data/chars/dende/24.gif
+
+anim pain5002
+ delay 7
+ offset 15 17
+ frame data/chars/dende/25.gif
+
+anim pain5000
+ delay 7
+ offset 20 52
+ frame data/chars/dende/26.gif
+
+anim pain5001
+ delay 7
+ offset 18 32
+ frame data/chars/dende/27.gif
+
+anim pain5002
+ delay 7
+ offset 15 17
+ frame data/chars/dende/28.gif
+
+anim pain5000
+ delay 7
+ offset 20 52
+ frame data/chars/dende/29.gif
+ offset 20 52
+ frame data/chars/dende/30.gif
+
+anim pain5001
+ delay 7
+ offset 18 32
+ frame data/chars/dende/31.gif
+
+anim pain5002
+ delay 7
+ offset 15 17
+ frame data/chars/dende/32.gif
+
+anim pain5000
+ delay 7
+ offset 20 52
+ frame data/chars/dende/33.gif
+
+anim pain5010
+ delay 7
+ offset 20 52
+ frame data/chars/dende/34.gif
+
+anim pain5011
+ delay 7
+ offset 18 32
+ frame data/chars/dende/35.gif
+
+anim pain5012
+ delay 7
+ offset 15 17
+ frame data/chars/dende/36.gif
+
+anim pain5010
+ delay 7
+ offset 20 52
+ frame data/chars/dende/37.gif
+
+anim pain5011
+ delay 7
+ offset 18 32
+ frame data/chars/dende/38.gif
+
+anim pain5012
+ delay 7
+ offset 15 17
+ frame data/chars/dende/39.gif
+
+anim pain5010
+ delay 7
+ offset 20 52
+ frame data/chars/dende/40.gif
+
+anim pain5011
+ delay 7
+ offset 18 32
+ frame data/chars/dende/41.gif
+
+anim pain5012
+ delay 7
+ offset 15 17
+ frame data/chars/dende/42.gif
+
+anim pain5010
+ delay 7
+ offset 20 52
+ frame data/chars/dende/43.gif
+
+anim pain5020
+ delay 7
+ offset 24 36
+ frame data/chars/dende/44.gif
+
+anim fall5030
+ delay 7
+ offset 26 51
+ frame data/chars/dende/45.gif
+
+anim fall5031
+ delay 7
+ offset 27 26
+ frame data/chars/dende/46.gif
+
+anim fall5032
+ delay 7
+ offset 11 19
+ frame data/chars/dende/47.gif
+
+anim fall5030
+ delay 7
+ offset 26 51
+ frame data/chars/dende/48.gif
+
+anim fall5031
+ delay 7
+ offset 27 26
+ frame data/chars/dende/49.gif
+
+anim fall5032
+ delay 7
+ offset 11 19
+ frame data/chars/dende/50.gif
+
+anim fall5030
+ delay 7
+ offset 27 32
+ frame data/chars/dende/51.gif
+
+anim fall5031
+ delay 7
+ offset 29 16
+ frame data/chars/dende/52.gif
+
+anim fall5032
+ delay 7
+ offset 15 12
+ frame data/chars/dende/53.gif
+
+anim fall5030
+ delay 7
+ offset 27 32
+ frame data/chars/dende/54.gif
+
+anim fall5031
+ delay 7
+ offset 29 16
+ frame data/chars/dende/55.gif
+
+anim fall5032
+ delay 7
+ offset 15 12
+ frame data/chars/dende/56.gif
+
+anim fall5040
+ delay 7
+ offset 25 34
+ frame data/chars/dende/57.gif
+
+anim fall5041
+ delay 7
+ offset 26 21
+ frame data/chars/dende/58.gif
+
+anim fall5042
+ delay 7
+ offset 11 16
+ frame data/chars/dende/59.gif
+
+anim fall5040
+ delay 7
+ offset 25 29
+ frame data/chars/dende/60.gif
+ offset 32 18
+ frame data/chars/dende/61.gif
+
+anim fall5041
+ delay 7
+ offset 31 13
+ frame data/chars/dende/62.gif
+
+anim fall5042
+ delay 7
+ offset 15 13
+ frame data/chars/dende/63.gif
+
+anim fall5040
+ delay 7
+ offset 33 28
+ frame data/chars/dende/64.gif
+ offset 12 28
+ frame data/chars/dende/65.gif
+
+anim fall5041
+ delay 7
+ offset 15 51
+ frame data/chars/dende/66.gif
+
+anim fall5042
+ delay 7
+ offset 14 46
+ frame data/chars/dende/67.gif
+
+anim attack200
+ delay 7
+ offset 11 50
+ frame data/chars/dende/68.gif
+ offset 14 46
+ frame data/chars/dende/69.gif
+
+anim attack210
+ delay 7
+ offset 22 53
+ frame data/chars/dende/70.gif
+ offset 15 48
+ frame data/chars/dende/71.gif
+
+anim attack230
+ delay 7
+ offset 18 48
+ frame data/chars/dende/72.gif
+ offset 17 46
+ frame data/chars/dende/73.gif
+
+anim attack240
+ delay 7
+ offset 18 48
+ frame data/chars/dende/74.gif
+ offset 17 46
+ frame data/chars/dende/75.gif
+
+anim attack400
+ delay 7
+ offset 23 37
+ frame data/chars/dende/76.gif
+ offset 14 38
+ frame data/chars/dende/77.gif
+
+anim attack430
+ delay 7
+ offset 20 40
+ frame data/chars/dende/78.gif
+ offset 22 33
+ frame data/chars/dende/79.gif
+
+anim jumpattack600
+ delay 7
+ offset 21 43
+ frame data/chars/dende/80.gif
+ offset 14 34
+ frame data/chars/dende/81.gif
+
+anim jumpattack630
+ delay 7
+ offset 22 43
+ frame data/chars/dende/82.gif
+ offset 31 42
+ frame data/chars/dende/83.gif
+
+anim 30005
+ delay 7
+ offset 8 44
+ frame data/chars/dende/84.gif
+
+anim 6870
+ delay 7
+ offset 9 35
+ frame data/chars/dende/85.gif
+
+anim attack306
+ delay 7
+ offset 46 7
+ frame data/chars/dende/86.gif
+ offset 99 30
+ frame data/chars/dende/87.gif
+ offset 88 22
+ frame data/chars/dende/88.gif
+ offset 91 19
+ frame data/chars/dende/89.gif
+ offset 106 17
+ frame data/chars/dende/90.gif
+ offset 114 8
+ frame data/chars/dende/91.gif
+ offset 134 7
+ frame data/chars/dende/92.gif
+ offset 131 3
+ frame data/chars/dende/93.gif
+ offset 149 3
+ frame data/chars/dende/94.gif
+ offset 109 2
+ frame data/chars/dende/95.gif
+
+anim freespecial2700
+ delay 7
+ offset 10 44
+ frame data/chars/dende/96.gif
+
+anim freespecial2705
+ delay 7
+ offset 0 11
+ frame data/chars/dende/97.gif
+
+anim 12705
+ delay 7
+ offset 0 16
+ frame data/chars/dende/98.gif
+
+anim 9450
+ delay 7
+ offset 76 34
+ frame data/chars/dende/99.gif
+
+anim attack360
+ delay 7
+ offset 10 44
+ frame data/chars/dende/100.gif
+ offset 10 44
+ frame data/chars/dende/101.gif
+ offset 8 44
+ frame data/chars/dende/102.gif
+ offset 8 44
+ frame data/chars/dende/103.gif
+ offset 8 44
+ frame data/chars/dende/104.gif
+ offset 8 44
+ frame data/chars/dende/105.gif
+ offset 8 44
+ frame data/chars/dende/106.gif
+ offset 8 44
+ frame data/chars/dende/107.gif
+ offset 8 44
+ frame data/chars/dende/108.gif
+ offset 10 49
+ frame data/chars/dende/109.gif
+ offset 576 194
+ frame data/chars/dende/110.gif
+
+anim 10000
+ delay 7
+ offset 19 57
+ frame data/chars/dende/111.gif
+ offset 21 62
+ frame data/chars/dende/112.gif
+ offset 19 51
+ frame data/chars/dende/113.gif
+ offset 19 50
+ frame data/chars/dende/114.gif
+ offset 23 46
+ frame data/chars/dende/115.gif
+ offset 33 41
+ frame data/chars/dende/116.gif
+ offset 33 21
+ frame data/chars/dende/117.gif
+ offset 20 46
+ frame data/chars/dende/118.gif
+ offset 35 39
+ frame data/chars/dende/119.gif
+ offset 11 43
+ frame data/chars/dende/120.gif
+ offset 12 64
+ frame data/chars/dende/121.gif
+
+anim 7000
+ delay 7
+ offset 13 46
+ frame data/chars/dende/122.gif
+ offset 13 47
+ frame data/chars/dende/123.gif
+ offset 16 47
+ frame data/chars/dende/124.gif
+ offset 17 45
+ frame data/chars/dende/125.gif
+ offset 16 51
+ frame data/chars/dende/126.gif
+ offset 24 50
+ frame data/chars/dende/127.gif
+ offset 30 34
+ frame data/chars/dende/128.gif
+ offset 25 42
+ frame data/chars/dende/129.gif
+ offset 27 18
+ frame data/chars/dende/130.gif
+ offset 21 24
+ frame data/chars/dende/131.gif
+ offset 13 33
+ frame data/chars/dende/132.gif
+ offset 12 44
+ frame data/chars/dende/133.gif
+ offset 15 51
+ frame data/chars/dende/134.gif
+ offset 14 49
+ frame data/chars/dende/135.gif
+
+anim 8000
+ delay 7
+ offset 24 63
+ frame data/chars/dende/136.gif
+ offset 16 64
+ frame data/chars/dende/137.gif
+ offset 28 68
+ frame data/chars/dende/138.gif
+ offset 14 70
+ frame data/chars/dende/139.gif
+ offset 30 45
+ frame data/chars/dende/140.gif
+ offset 31 26
+ frame data/chars/dende/141.gif
+ offset 25 50
+ frame data/chars/dende/142.gif
+ offset 26 37
+ frame data/chars/dende/143.gif
+ offset 19 60
+ frame data/chars/dende/144.gif
+ offset 21 63
+ frame data/chars/dende/145.gif
+
+anim 8005
+ delay 7
+ offset 26 22
+ frame data/chars/dende/146.gif
+
+anim 6000
+ delay 7
+ offset 39 63
+ frame data/chars/dende/147.gif
+ offset 30 81
+ frame data/chars/dende/148.gif
+ offset 33 72
+ frame data/chars/dende/149.gif
+ offset 33 72
+ frame data/chars/dende/150.gif
+ offset 28 63
+ frame data/chars/dende/151.gif
+ offset 35 42
+ frame data/chars/dende/152.gif
+ offset 35 39
+ frame data/chars/dende/153.gif
+ offset 21 40
+ frame data/chars/dende/154.gif
+ offset 32 61
+ frame data/chars/dende/155.gif
+ offset 33 68
+ frame data/chars/dende/156.gif
+ offset 28 77
+ frame data/chars/dende/157.gif
+ offset 16 86
+ frame data/chars/dende/158.gif
+ offset 29 88
+ frame data/chars/dende/159.gif
+ offset 27 88
+ frame data/chars/dende/160.gif
+ offset 31 81
+ frame data/chars/dende/161.gif
+
+anim 6015
+ delay 7
+ offset 0 0
+ frame data/chars/dende/162.gif
+ offset 0 0
+ frame data/chars/dende/163.gif
+ offset 0 0
+ frame data/chars/dende/164.gif
+ offset 0 0
+ frame data/chars/dende/165.gif
+ offset 0 0
+ frame data/chars/dende/166.gif
+ offset 0 0
+ frame data/chars/dende/167.gif
+ offset 0 0
+ frame data/chars/dende/168.gif

@@ -1,0 +1,1084 @@
+name	Madara
+health	100
+speed	9
+type	player
+shadow	3 
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/Madara/0.gif
+ offset 0 0
+ frame data/chars/Madara/1.gif
+ offset 320 100
+ frame data/chars/Madara/2.gif
+ offset 320 100
+ frame data/chars/Madara/3.gif
+ offset 320 100
+ frame data/chars/Madara/4.gif
+ offset 320 100
+ frame data/chars/Madara/5.gif
+
+anim idle
+ delay 7
+ offset 20 75
+ frame data/chars/Madara/6.gif
+ offset 25 75
+ frame data/chars/Madara/7.gif
+ offset 31 75
+ frame data/chars/Madara/8.gif
+ offset 36 75
+ frame data/chars/Madara/9.gif
+ offset 20 75
+ frame data/chars/Madara/10.gif
+ offset 25 75
+ frame data/chars/Madara/11.gif
+ offset 31 75
+ frame data/chars/Madara/12.gif
+ offset 36 75
+ frame data/chars/Madara/13.gif
+ offset 20 75
+ frame data/chars/Madara/14.gif
+ offset 25 75
+ frame data/chars/Madara/15.gif
+ offset 31 75
+ frame data/chars/Madara/16.gif
+ offset 36 75
+ frame data/chars/Madara/17.gif
+
+anim turn
+ delay 7
+ offset 20 76
+ frame data/chars/Madara/18.gif
+
+anim 0006
+ delay 7
+ offset 24 67
+ frame data/chars/Madara/19.gif
+ offset 24 59
+ frame data/chars/Madara/20.gif
+ offset 24 49
+ frame data/chars/Madara/21.gif
+
+anim walk
+ delay 7
+ offset 21 74
+ frame data/chars/Madara/22.gif
+ offset 17 75
+ frame data/chars/Madara/23.gif
+ offset 18 75
+ frame data/chars/Madara/24.gif
+ offset 20 74
+ frame data/chars/Madara/25.gif
+ offset 19 75
+ frame data/chars/Madara/26.gif
+ offset 12 74
+ frame data/chars/Madara/27.gif
+
+anim 0040
+ delay 7
+ offset 19 41
+ frame data/chars/Madara/28.gif
+ offset 22 80
+ frame data/chars/Madara/29.gif
+ offset 25 78
+ frame data/chars/Madara/30.gif
+ offset 20 89
+ frame data/chars/Madara/31.gif
+ offset 23 92
+ frame data/chars/Madara/32.gif
+ offset 24 59
+ frame data/chars/Madara/33.gif
+ offset 24 49
+ frame data/chars/Madara/34.gif
+ offset 26 62
+ frame data/chars/Madara/35.gif
+ offset 22 68
+ frame data/chars/Madara/36.gif
+
+anim run
+ delay 7
+ offset 27 57
+ frame data/chars/Madara/37.gif
+ offset 28 60
+ frame data/chars/Madara/38.gif
+ offset 27 58
+ frame data/chars/Madara/39.gif
+ offset 31 57
+ frame data/chars/Madara/40.gif
+ offset 28 59
+ frame data/chars/Madara/41.gif
+ offset 29 60
+ frame data/chars/Madara/42.gif
+ offset 41 61
+ frame data/chars/Madara/43.gif
+
+anim dodge
+ delay 7
+ offset 28 68
+ frame data/chars/Madara/44.gif
+ offset 36 53
+ frame data/chars/Madara/45.gif
+ offset 30 88
+ frame data/chars/Madara/46.gif
+ offset 23 94
+ frame data/chars/Madara/47.gif
+ offset 37 66
+ frame data/chars/Madara/48.gif
+ offset 31 58
+ frame data/chars/Madara/49.gif
+ offset 27 61
+ frame data/chars/Madara/50.gif
+
+anim block120
+ delay 7
+ offset 20 75
+ frame data/chars/Madara/51.gif
+ offset 24 69
+ frame data/chars/Madara/52.gif
+
+anim pain5000
+ delay 7
+ offset 22 74
+ frame data/chars/Madara/53.gif
+ offset 21 71
+ frame data/chars/Madara/54.gif
+ offset 28 63
+ frame data/chars/Madara/55.gif
+ offset 17 60
+ frame data/chars/Madara/56.gif
+ offset 30 51
+ frame data/chars/Madara/57.gif
+ offset 31 35
+ frame data/chars/Madara/58.gif
+ offset 26 70
+ frame data/chars/Madara/59.gif
+ offset 16 64
+ frame data/chars/Madara/60.gif
+ offset 32 39
+ frame data/chars/Madara/61.gif
+ offset 34 18
+ frame data/chars/Madara/62.gif
+ offset 24 41
+ frame data/chars/Madara/63.gif
+ offset 19 41
+ frame data/chars/Madara/64.gif
+ offset 35 19
+ frame data/chars/Madara/65.gif
+ offset 24 58
+ frame data/chars/Madara/66.gif
+ offset 14 58
+ frame data/chars/Madara/67.gif
+ offset 28 45
+ frame data/chars/Madara/68.gif
+ offset 21 60
+ frame data/chars/Madara/69.gif
+ offset 21 61
+ frame data/chars/Madara/70.gif
+ offset 21 62
+ frame data/chars/Madara/71.gif
+
+anim attack200
+ delay 7
+ offset 20 75
+ frame data/chars/Madara/72.gif
+ offset 27 68
+ frame data/chars/Madara/73.gif
+ offset 27 68
+ frame data/chars/Madara/74.gif
+ offset 23 69
+ frame data/chars/Madara/75.gif
+ offset 21 69
+ frame data/chars/Madara/76.gif
+ offset 20 75
+ frame data/chars/Madara/77.gif
+ offset 20 73
+ frame data/chars/Madara/78.gif
+ offset 19 73
+ frame data/chars/Madara/79.gif
+ offset 16 74
+ frame data/chars/Madara/80.gif
+ offset 20 75
+ frame data/chars/Madara/81.gif
+ offset 26 66
+ frame data/chars/Madara/82.gif
+ offset 26 66
+ frame data/chars/Madara/83.gif
+ offset 22 67
+ frame data/chars/Madara/84.gif
+ offset 22 72
+ frame data/chars/Madara/85.gif
+ offset 16 73
+ frame data/chars/Madara/86.gif
+ offset 19 75
+ frame data/chars/Madara/87.gif
+ offset 27 71
+ frame data/chars/Madara/88.gif
+ offset 24 71
+ frame data/chars/Madara/89.gif
+ offset 19 75
+ frame data/chars/Madara/90.gif
+ offset 22 72
+ frame data/chars/Madara/91.gif
+ offset 17 73
+ frame data/chars/Madara/92.gif
+ offset 19 77
+ frame data/chars/Madara/93.gif
+ offset 27 59
+ frame data/chars/Madara/94.gif
+ offset 27 59
+ frame data/chars/Madara/95.gif
+ offset 26 56
+ frame data/chars/Madara/96.gif
+ offset 19 71
+ frame data/chars/Madara/97.gif
+ offset 26 70
+ frame data/chars/Madara/98.gif
+ offset 32 68
+ frame data/chars/Madara/99.gif
+ offset 32 68
+ frame data/chars/Madara/100.gif
+ offset 26 68
+ frame data/chars/Madara/101.gif
+ offset 22 69
+ frame data/chars/Madara/102.gif
+ offset 20 75
+ frame data/chars/Madara/103.gif
+ offset 17 72
+ frame data/chars/Madara/104.gif
+ offset 22 74
+ frame data/chars/Madara/105.gif
+ offset 22 73
+ frame data/chars/Madara/106.gif
+ offset 17 72
+ frame data/chars/Madara/107.gif
+ offset 17 71
+ frame data/chars/Madara/108.gif
+ offset 27 63
+ frame data/chars/Madara/109.gif
+ offset 20 60
+ frame data/chars/Madara/110.gif
+ offset 30 77
+ frame data/chars/Madara/111.gif
+ offset 34 91
+ frame data/chars/Madara/112.gif
+ offset 39 81
+ frame data/chars/Madara/113.gif
+ offset 23 83
+ frame data/chars/Madara/114.gif
+ offset 23 83
+ frame data/chars/Madara/115.gif
+ offset 24 67
+ frame data/chars/Madara/116.gif
+ offset 31 73
+ frame data/chars/Madara/117.gif
+ offset 18 75
+ frame data/chars/Madara/118.gif
+ offset 18 75
+ frame data/chars/Madara/119.gif
+ offset 26 70
+ frame data/chars/Madara/120.gif
+ offset 26 70
+ frame data/chars/Madara/121.gif
+ offset 19 71
+ frame data/chars/Madara/122.gif
+ offset 16 73
+ frame data/chars/Madara/123.gif
+ offset 18 78
+ frame data/chars/Madara/124.gif
+ offset 14 69
+ frame data/chars/Madara/125.gif
+ offset 14 69
+ frame data/chars/Madara/126.gif
+ offset 17 73
+ frame data/chars/Madara/127.gif
+ offset 17 73
+ frame data/chars/Madara/128.gif
+ offset 13 76
+ frame data/chars/Madara/129.gif
+ offset 24 76
+ frame data/chars/Madara/130.gif
+ offset 30 72
+ frame data/chars/Madara/131.gif
+ offset 30 68
+ frame data/chars/Madara/132.gif
+ offset 24 76
+ frame data/chars/Madara/133.gif
+ offset 14 76
+ frame data/chars/Madara/134.gif
+ offset 23 65
+ frame data/chars/Madara/135.gif
+ offset 29 60
+ frame data/chars/Madara/136.gif
+ offset 24 68
+ frame data/chars/Madara/137.gif
+ offset 24 68
+ frame data/chars/Madara/138.gif
+ offset 24 68
+ frame data/chars/Madara/139.gif
+ offset 39 74
+ frame data/chars/Madara/140.gif
+ offset 30 74
+ frame data/chars/Madara/141.gif
+ offset 35 70
+ frame data/chars/Madara/142.gif
+ offset 25 74
+ frame data/chars/Madara/143.gif
+ offset 24 74
+ frame data/chars/Madara/144.gif
+ offset 38 73
+ frame data/chars/Madara/145.gif
+ offset 34 79
+ frame data/chars/Madara/146.gif
+ offset 37 67
+ frame data/chars/Madara/147.gif
+ offset 44 76
+ frame data/chars/Madara/148.gif
+ offset 25 78
+ frame data/chars/Madara/149.gif
+ offset 28 77
+ frame data/chars/Madara/150.gif
+ offset 28 63
+ frame data/chars/Madara/151.gif
+ offset 30 80
+ frame data/chars/Madara/152.gif
+ offset 29 80
+ frame data/chars/Madara/153.gif
+ offset 34 77
+ frame data/chars/Madara/154.gif
+ offset 27 78
+ frame data/chars/Madara/155.gif
+ offset 28 78
+ frame data/chars/Madara/156.gif
+ offset 28 73
+ frame data/chars/Madara/157.gif
+ offset 28 55
+ frame data/chars/Madara/158.gif
+ offset 28 55
+ frame data/chars/Madara/159.gif
+ offset 24 67
+ frame data/chars/Madara/160.gif
+ offset 29 56
+ frame data/chars/Madara/161.gif
+ offset 32 53
+ frame data/chars/Madara/162.gif
+ offset 36 61
+ frame data/chars/Madara/163.gif
+ offset 30 51
+ frame data/chars/Madara/164.gif
+ offset 24 41
+ frame data/chars/Madara/165.gif
+ offset 19 41
+ frame data/chars/Madara/166.gif
+ offset 33 38
+ frame data/chars/Madara/167.gif
+ offset 25 51
+ frame data/chars/Madara/168.gif
+ offset 29 71
+ frame data/chars/Madara/169.gif
+ offset 32 68
+ frame data/chars/Madara/170.gif
+ offset 21 50
+ frame data/chars/Madara/171.gif
+ offset 32 73
+ frame data/chars/Madara/172.gif
+ offset 23 75
+ frame data/chars/Madara/173.gif
+ offset 23 75
+ frame data/chars/Madara/174.gif
+ offset 27 76
+ frame data/chars/Madara/175.gif
+ offset 14 76
+ frame data/chars/Madara/176.gif
+ offset 30 71
+ frame data/chars/Madara/177.gif
+ offset 14 76
+ frame data/chars/Madara/178.gif
+ offset 25 78
+ frame data/chars/Madara/179.gif
+ offset 28 92
+ frame data/chars/Madara/180.gif
+ offset 31 95
+ frame data/chars/Madara/181.gif
+ offset 31 73
+ frame data/chars/Madara/182.gif
+ offset 24 75
+ frame data/chars/Madara/183.gif
+ offset 24 75
+ frame data/chars/Madara/184.gif
+ offset 25 75
+ frame data/chars/Madara/185.gif
+ offset 28 75
+ frame data/chars/Madara/186.gif
+ offset 25 78
+ frame data/chars/Madara/187.gif
+ offset 28 77
+ frame data/chars/Madara/188.gif
+ offset 28 63
+ frame data/chars/Madara/189.gif
+ offset 28 63
+ frame data/chars/Madara/190.gif
+ offset 28 63
+ frame data/chars/Madara/191.gif
+ offset 27 65
+ frame data/chars/Madara/192.gif
+ offset 35 65
+ frame data/chars/Madara/193.gif
+ offset 34 65
+ frame data/chars/Madara/194.gif
+ offset 29 60
+ frame data/chars/Madara/195.gif
+ offset 24 68
+ frame data/chars/Madara/196.gif
+ offset 24 68
+ frame data/chars/Madara/197.gif
+ offset 24 68
+ frame data/chars/Madara/198.gif
+ offset 24 68
+ frame data/chars/Madara/199.gif
+ offset 24 68
+ frame data/chars/Madara/200.gif
+ offset 24 68
+ frame data/chars/Madara/201.gif
+ offset 76 72
+ frame data/chars/Madara/202.gif
+ offset 65 85
+ frame data/chars/Madara/203.gif
+ offset 31 110
+ frame data/chars/Madara/204.gif
+ offset 29 60
+ frame data/chars/Madara/205.gif
+ offset 16 73
+ frame data/chars/Madara/206.gif
+ offset 45 78
+ frame data/chars/Madara/207.gif
+ offset 14 108
+ frame data/chars/Madara/208.gif
+ offset 14 83
+ frame data/chars/Madara/209.gif
+ offset 17 73
+ frame data/chars/Madara/210.gif
+ offset 17 73
+ frame data/chars/Madara/211.gif
+ offset 21 77
+ frame data/chars/Madara/212.gif
+ offset 27 93
+ frame data/chars/Madara/213.gif
+ offset 58 62
+ frame data/chars/Madara/214.gif
+ offset 31 128
+ frame data/chars/Madara/215.gif
+ offset 35 139
+ frame data/chars/Madara/216.gif
+ offset 33 75
+ frame data/chars/Madara/217.gif
+ offset 26 65
+ frame data/chars/Madara/218.gif
+ offset 26 65
+ frame data/chars/Madara/219.gif
+ offset 26 65
+ frame data/chars/Madara/220.gif
+ offset 23 81
+ frame data/chars/Madara/221.gif
+ offset 67 98
+ frame data/chars/Madara/222.gif
+ offset 92 99
+ frame data/chars/Madara/223.gif
+ offset 90 38
+ frame data/chars/Madara/224.gif
+ offset 26 81
+ frame data/chars/Madara/225.gif
+ offset 74 89
+ frame data/chars/Madara/226.gif
+ offset 76 89
+ frame data/chars/Madara/227.gif
+ offset 26 65
+ frame data/chars/Madara/228.gif
+ offset 26 65
+ frame data/chars/Madara/229.gif
+ offset 26 65
+ frame data/chars/Madara/230.gif
+ offset 26 65
+ frame data/chars/Madara/231.gif
+ offset 119 30
+ frame data/chars/Madara/232.gif
+ offset 70 31
+ frame data/chars/Madara/233.gif
+ offset -37 54
+ frame data/chars/Madara/234.gif
+ offset -47 57
+ frame data/chars/Madara/235.gif
+ offset 26 65
+ frame data/chars/Madara/236.gif
+ offset 0 2
+ frame data/chars/Madara/237.gif
+ offset 26 65
+ frame data/chars/Madara/238.gif
+ offset 26 78
+ frame data/chars/Madara/239.gif
+ offset 26 83
+ frame data/chars/Madara/240.gif
+ offset 34 80
+ frame data/chars/Madara/241.gif
+ offset 29 63
+ frame data/chars/Madara/242.gif
+ offset -2 73
+ frame data/chars/Madara/243.gif
+ offset -2 35
+ frame data/chars/Madara/244.gif
+ offset 30 63
+ frame data/chars/Madara/245.gif
+ offset 27 73
+ frame data/chars/Madara/246.gif
+ offset 28 72
+ frame data/chars/Madara/247.gif
+ offset 43 94
+ frame data/chars/Madara/248.gif
+ offset 34 106
+ frame data/chars/Madara/249.gif
+ offset 37 67
+ frame data/chars/Madara/250.gif
+ offset 37 67
+ frame data/chars/Madara/251.gif
+ offset 44 76
+ frame data/chars/Madara/252.gif
+ offset 1 82
+ frame data/chars/Madara/253.gif
+ offset 26 36
+ frame data/chars/Madara/254.gif
+ offset 24 72
+ frame data/chars/Madara/255.gif
+ offset 27 93
+ frame data/chars/Madara/256.gif
+ offset 26 65
+ frame data/chars/Madara/257.gif
+ offset 58 62
+ frame data/chars/Madara/258.gif
+ offset 29 73
+ frame data/chars/Madara/259.gif
+ offset 29 73
+ frame data/chars/Madara/260.gif
+ offset 22 75
+ frame data/chars/Madara/261.gif
+ offset 20 75
+ frame data/chars/Madara/262.gif
+ offset 20 75
+ frame data/chars/Madara/263.gif
+ offset 20 75
+ frame data/chars/Madara/264.gif
+ offset 25 75
+ frame data/chars/Madara/265.gif
+ offset 31 75
+ frame data/chars/Madara/266.gif
+ offset 36 75
+ frame data/chars/Madara/267.gif
+ offset 15 76
+ frame data/chars/Madara/268.gif
+ offset 19 71
+ frame data/chars/Madara/269.gif
+ offset 15 73
+ frame data/chars/Madara/270.gif
+ offset 15 74
+ frame data/chars/Madara/271.gif
+ offset 31 74
+ frame data/chars/Madara/272.gif
+ offset 29 75
+ frame data/chars/Madara/273.gif
+ offset 29 75
+ frame data/chars/Madara/274.gif
+ offset 25 67
+ frame data/chars/Madara/275.gif
+ offset 25 71
+ frame data/chars/Madara/276.gif
+ offset 18 74
+ frame data/chars/Madara/277.gif
+ offset 29 72
+ frame data/chars/Madara/278.gif
+ offset 31 72
+ frame data/chars/Madara/279.gif
+ offset 26 72
+ frame data/chars/Madara/280.gif
+ offset 38 70
+ frame data/chars/Madara/281.gif
+ offset 30 87
+ frame data/chars/Madara/282.gif
+ offset 30 90
+ frame data/chars/Madara/283.gif
+ offset 25 67
+ frame data/chars/Madara/284.gif
+ offset 20 75
+ frame data/chars/Madara/285.gif
+ offset 20 75
+ frame data/chars/Madara/286.gif
+ offset 26 65
+ frame data/chars/Madara/287.gif
+ offset 28 65
+ frame data/chars/Madara/288.gif
+ offset 36 65
+ frame data/chars/Madara/289.gif
+ offset 44 65
+ frame data/chars/Madara/290.gif
+ offset 30 65
+ frame data/chars/Madara/291.gif
+ offset 17 74
+ frame data/chars/Madara/292.gif
+ offset 23 65
+ frame data/chars/Madara/293.gif
+ offset 36 61
+ frame data/chars/Madara/294.gif
+ offset 23 67
+ frame data/chars/Madara/295.gif
+ offset 23 66
+ frame data/chars/Madara/296.gif
+ offset 23 65
+ frame data/chars/Madara/297.gif
+ offset 24 69
+ frame data/chars/Madara/298.gif
+ offset 23 71
+ frame data/chars/Madara/299.gif
+ offset 33 70
+ frame data/chars/Madara/300.gif
+ offset 38 70
+ frame data/chars/Madara/301.gif
+ offset 22 75
+ frame data/chars/Madara/302.gif
+ offset 20 75
+ frame data/chars/Madara/303.gif
+ offset 20 75
+ frame data/chars/Madara/304.gif
+ offset 20 75
+ frame data/chars/Madara/305.gif
+ offset 20 75
+ frame data/chars/Madara/306.gif
+ offset 20 75
+ frame data/chars/Madara/307.gif
+ offset 29 66
+ frame data/chars/Madara/308.gif
+ offset 29 67
+ frame data/chars/Madara/309.gif
+ offset 22 57
+ frame data/chars/Madara/310.gif
+ offset 22 57
+ frame data/chars/Madara/311.gif
+ offset 29 57
+ frame data/chars/Madara/312.gif
+ offset 29 57
+ frame data/chars/Madara/313.gif
+ offset 25 68
+ frame data/chars/Madara/314.gif
+ offset 25 68
+ frame data/chars/Madara/315.gif
+ offset 25 68
+ frame data/chars/Madara/316.gif
+ offset 27 80
+ frame data/chars/Madara/317.gif
+ offset 26 80
+ frame data/chars/Madara/318.gif
+ offset 26 80
+ frame data/chars/Madara/319.gif
+ offset 26 80
+ frame data/chars/Madara/320.gif
+ offset 26 80
+ frame data/chars/Madara/321.gif
+ offset 28 79
+ frame data/chars/Madara/322.gif
+ offset 25 67
+ frame data/chars/Madara/323.gif
+ offset 25 67
+ frame data/chars/Madara/324.gif
+ offset 20 89
+ frame data/chars/Madara/325.gif
+ offset 23 92
+ frame data/chars/Madara/326.gif
+ offset 27 72
+ frame data/chars/Madara/327.gif
+ offset 23 63
+ frame data/chars/Madara/328.gif
+ offset 24 59
+ frame data/chars/Madara/329.gif
+ offset 24 49
+ frame data/chars/Madara/330.gif
+ offset 17 74
+ frame data/chars/Madara/331.gif
+ offset 21 76
+ frame data/chars/Madara/332.gif
+ offset 32 76
+ frame data/chars/Madara/333.gif
+ offset 28 76
+ frame data/chars/Madara/334.gif
+ offset 21 76
+ frame data/chars/Madara/335.gif
+ offset 17 74
+ frame data/chars/Madara/336.gif
+ offset 21 76
+ frame data/chars/Madara/337.gif
+ offset 32 76
+ frame data/chars/Madara/338.gif
+ offset 28 76
+ frame data/chars/Madara/339.gif
+ offset 21 76
+ frame data/chars/Madara/340.gif
+ offset 24 73
+ frame data/chars/Madara/341.gif
+ offset 26 57
+ frame data/chars/Madara/342.gif
+ offset 26 57
+ frame data/chars/Madara/343.gif
+ offset 17 74
+ frame data/chars/Madara/344.gif
+ offset 23 73
+ frame data/chars/Madara/345.gif
+ offset 33 68
+ frame data/chars/Madara/346.gif
+ offset 33 68
+ frame data/chars/Madara/347.gif
+ offset 25 75
+ frame data/chars/Madara/348.gif
+ offset 33 75
+ frame data/chars/Madara/349.gif
+ offset 31 75
+ frame data/chars/Madara/350.gif
+ offset 31 75
+ frame data/chars/Madara/351.gif
+ offset 31 75
+ frame data/chars/Madara/352.gif
+ offset 31 75
+ frame data/chars/Madara/353.gif
+ offset 38 75
+ frame data/chars/Madara/354.gif
+ offset 22 75
+ frame data/chars/Madara/355.gif
+ offset 20 75
+ frame data/chars/Madara/356.gif
+ offset 20 75
+ frame data/chars/Madara/357.gif
+ offset 24 75
+ frame data/chars/Madara/358.gif
+ offset 30 75
+ frame data/chars/Madara/359.gif
+ offset 38 75
+ frame data/chars/Madara/360.gif
+ offset 23 96
+ frame data/chars/Madara/361.gif
+ offset 26 99
+ frame data/chars/Madara/362.gif
+ offset 22 75
+ frame data/chars/Madara/363.gif
+ offset 25 75
+ frame data/chars/Madara/364.gif
+ offset 31 75
+ frame data/chars/Madara/365.gif
+ offset 36 75
+ frame data/chars/Madara/366.gif
+ offset 31 75
+ frame data/chars/Madara/367.gif
+ offset 25 75
+ frame data/chars/Madara/368.gif
+ offset 20 75
+ frame data/chars/Madara/369.gif
+ offset 25 75
+ frame data/chars/Madara/370.gif
+ offset 25 75
+ frame data/chars/Madara/371.gif
+ offset 31 75
+ frame data/chars/Madara/372.gif
+ offset 36 75
+ frame data/chars/Madara/373.gif
+ offset 31 75
+ frame data/chars/Madara/374.gif
+ offset 25 75
+ frame data/chars/Madara/375.gif
+ offset 20 75
+ frame data/chars/Madara/376.gif
+ offset 26 65
+ frame data/chars/Madara/377.gif
+ offset 24 65
+ frame data/chars/Madara/378.gif
+ offset 27 64
+ frame data/chars/Madara/379.gif
+ offset 27 64
+ frame data/chars/Madara/380.gif
+ offset 15 14
+ frame data/chars/Madara/381.gif
+ offset 21 27
+ frame data/chars/Madara/382.gif
+ offset 24 47
+ frame data/chars/Madara/383.gif
+ offset 23 62
+ frame data/chars/Madara/384.gif
+ offset 23 75
+ frame data/chars/Madara/385.gif
+ offset 20 75
+ frame data/chars/Madara/386.gif
+ offset 20 75
+ frame data/chars/Madara/387.gif
+ offset 20 75
+ frame data/chars/Madara/388.gif
+ offset 20 75
+ frame data/chars/Madara/389.gif
+ offset 22 74
+ frame data/chars/Madara/390.gif
+ offset 22 74
+ frame data/chars/Madara/391.gif
+ offset 22 74
+ frame data/chars/Madara/392.gif
+ offset 22 74
+ frame data/chars/Madara/393.gif
+
+anim 0001
+ delay 7
+ offset 32 84
+ frame data/chars/Madara/394.gif
+ offset 32 84
+ frame data/chars/Madara/395.gif
+ offset 32 84
+ frame data/chars/Madara/396.gif
+
+anim turn
+ delay 7
+ offset 32 84
+ frame data/chars/Madara/397.gif
+
+anim 0007
+ delay 7
+ offset 20 60
+ frame data/chars/Madara/398.gif
+ offset 29 48
+ frame data/chars/Madara/399.gif
+ offset 27 45
+ frame data/chars/Madara/400.gif
+
+anim backwalk
+ delay 7
+ offset 16 63
+ frame data/chars/Madara/401.gif
+ offset 29 60
+ frame data/chars/Madara/402.gif
+
+anim jump
+ delay 7
+ offset 21 74
+ frame data/chars/Madara/403.gif
+ offset 25 69
+ frame data/chars/Madara/404.gif
+
+anim freespecial2200
+ delay 7
+ offset 32 84
+ frame data/chars/Madara/405.gif
+ offset 32 84
+ frame data/chars/Madara/406.gif
+ offset 24 70
+ frame data/chars/Madara/407.gif
+ offset 23 65
+ frame data/chars/Madara/408.gif
+ offset 23 65
+ frame data/chars/Madara/409.gif
+ offset 23 65
+ frame data/chars/Madara/410.gif
+ offset 24 70
+ frame data/chars/Madara/411.gif
+ offset 25 69
+ frame data/chars/Madara/412.gif
+ offset 25 69
+ frame data/chars/Madara/413.gif
+ offset 26 63
+ frame data/chars/Madara/414.gif
+ offset 24 67
+ frame data/chars/Madara/415.gif
+ offset 24 67
+ frame data/chars/Madara/416.gif
+ offset 20 60
+ frame data/chars/Madara/417.gif
+ offset 31 69
+ frame data/chars/Madara/418.gif
+ offset 31 69
+ frame data/chars/Madara/419.gif
+ offset 22 74
+ frame data/chars/Madara/420.gif
+ offset 23 67
+ frame data/chars/Madara/421.gif
+ offset 23 67
+ frame data/chars/Madara/422.gif
+ offset 27 70
+ frame data/chars/Madara/423.gif
+ offset 37 60
+ frame data/chars/Madara/424.gif
+ offset 37 60
+ frame data/chars/Madara/425.gif
+ offset 32 84
+ frame data/chars/Madara/426.gif
+ offset 32 84
+ frame data/chars/Madara/427.gif
+ offset 35 81
+ frame data/chars/Madara/428.gif
+ offset 33 65
+ frame data/chars/Madara/429.gif
+ offset 33 65
+ frame data/chars/Madara/430.gif
+ offset 25 69
+ frame data/chars/Madara/431.gif
+ offset 25 69
+ frame data/chars/Madara/432.gif
+ offset 32 84
+ frame data/chars/Madara/433.gif
+ offset 32 84
+ frame data/chars/Madara/434.gif
+ offset 32 84
+ frame data/chars/Madara/435.gif
+ offset 33 84
+ frame data/chars/Madara/436.gif
+ offset 30 84
+ frame data/chars/Madara/437.gif
+ offset 27 93
+ frame data/chars/Madara/438.gif
+ offset 32 84
+ frame data/chars/Madara/439.gif
+ offset 32 84
+ frame data/chars/Madara/440.gif
+ offset 33 84
+ frame data/chars/Madara/441.gif
+ offset 33 84
+ frame data/chars/Madara/442.gif
+ offset 32 84
+ frame data/chars/Madara/443.gif
+ offset 32 84
+ frame data/chars/Madara/444.gif
+ offset 32 84
+ frame data/chars/Madara/445.gif
+ offset 32 84
+ frame data/chars/Madara/446.gif
+ offset 3 3
+ frame data/chars/Madara/447.gif
+ offset 25 94
+ frame data/chars/Madara/448.gif
+ offset 32 81
+ frame data/chars/Madara/449.gif
+ offset 32 81
+ frame data/chars/Madara/450.gif
+ offset 32 33
+ frame data/chars/Madara/451.gif
+
+anim fall5100
+ delay 7
+ offset 22 65
+ frame data/chars/Madara/452.gif
+ offset 43 69
+ frame data/chars/Madara/453.gif
+ offset 29 63
+ frame data/chars/Madara/454.gif
+ offset 29 63
+ frame data/chars/Madara/455.gif
+ offset 37 44
+ frame data/chars/Madara/456.gif
+ offset 41 47
+ frame data/chars/Madara/457.gif
+ offset 14 68
+ frame data/chars/Madara/458.gif
+ offset 29 63
+ frame data/chars/Madara/459.gif
+ offset 37 44
+ frame data/chars/Madara/460.gif
+ offset 41 23
+ frame data/chars/Madara/461.gif
+ offset 28 52
+ frame data/chars/Madara/462.gif
+ offset 52 19
+ frame data/chars/Madara/463.gif
+ offset 22 62
+ frame data/chars/Madara/464.gif
+ offset 14 68
+ frame data/chars/Madara/465.gif
+ offset 23 18
+ frame data/chars/Madara/466.gif
+ offset 43 69
+ frame data/chars/Madara/467.gif
+
+anim 7000
+ delay 7
+ offset 72 81
+ frame data/chars/Madara/468.gif
+ offset 88 98
+ frame data/chars/Madara/469.gif
+ offset 104 107
+ frame data/chars/Madara/470.gif
+ offset 108 114
+ frame data/chars/Madara/471.gif
+ offset 95 118
+ frame data/chars/Madara/472.gif
+
+anim 7020
+ delay 7
+ offset 82 20
+ frame data/chars/Madara/473.gif
+ offset 86 20
+ frame data/chars/Madara/474.gif
+ offset 79 15
+ frame data/chars/Madara/475.gif
+ offset 79 15
+ frame data/chars/Madara/476.gif
+ offset 78 15
+ frame data/chars/Madara/477.gif
+ offset 79 15
+ frame data/chars/Madara/478.gif
+ offset 78 15
+ frame data/chars/Madara/479.gif
+ offset 79 15
+ frame data/chars/Madara/480.gif
+ offset 77 15
+ frame data/chars/Madara/481.gif
+ offset 77 14
+ frame data/chars/Madara/482.gif
+
+anim 7030
+ delay 7
+ offset 41 37
+ frame data/chars/Madara/483.gif
+
+anim 7100
+ delay 7
+ offset -1 100
+ frame data/chars/Madara/484.gif
+ offset 46 138
+ frame data/chars/Madara/485.gif
+ offset 106 178
+ frame data/chars/Madara/486.gif
+ offset 112 189
+ frame data/chars/Madara/487.gif
+ offset 116 197
+ frame data/chars/Madara/488.gif
+ offset 113 201
+ frame data/chars/Madara/489.gif
+ offset 112 204
+ frame data/chars/Madara/490.gif
+ offset 116 205
+ frame data/chars/Madara/491.gif
+ offset 114 199
+ frame data/chars/Madara/492.gif
+ offset 114 103
+ frame data/chars/Madara/493.gif
+ offset 113 79
+ frame data/chars/Madara/494.gif
+ offset 114 80
+ frame data/chars/Madara/495.gif
+ offset 112 79
+ frame data/chars/Madara/496.gif
+ offset 106 71
+ frame data/chars/Madara/497.gif
+ offset 82 44
+ frame data/chars/Madara/498.gif
+
+anim 7110
+ delay 7
+ offset 339 504
+ frame data/chars/Madara/499.gif
+ offset 363 531
+ frame data/chars/Madara/500.gif
+ offset 374 479
+ frame data/chars/Madara/501.gif
+
+anim idle
+ delay 7
+ offset 0 0
+ frame data/chars/Madara/502.gif
