@@ -1,0 +1,691 @@
+name	Broly
+diesound data/sounds/eek.wav
+health	60
+speed	9
+type	Player
+shadow	3
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/Broly/0.gif
+ offset 0 0
+ frame data/chars/Broly/1.gif
+
+anim pain5000
+ delay 7
+ offset 20 87
+ frame data/chars/Broly/2.gif
+ offset 20 87
+ frame data/chars/Broly/3.gif
+ offset 20 87
+ frame data/chars/Broly/4.gif
+
+anim pain5010
+ delay 7
+ offset 20 87
+ frame data/chars/Broly/5.gif
+ offset 20 87
+ frame data/chars/Broly/6.gif
+ offset 20 87
+ frame data/chars/Broly/7.gif
+
+anim pain5020
+ delay 7
+ offset 20 87
+ frame data/chars/Broly/8.gif
+ offset 20 87
+ frame data/chars/Broly/9.gif
+ offset 20 87
+ frame data/chars/Broly/10.gif
+
+anim fall5030
+ delay 7
+ offset 20 87
+ frame data/chars/Broly/11.gif
+ offset 20 87
+ frame data/chars/Broly/12.gif
+ offset 20 87
+ frame data/chars/Broly/13.gif
+ offset 20 87
+ frame data/chars/Broly/14.gif
+ offset 20 87
+ frame data/chars/Broly/15.gif
+ offset 20 87
+ frame data/chars/Broly/16.gif
+
+anim fall5040
+ delay 7
+ offset 20 87
+ frame data/chars/Broly/17.gif
+ offset 20 87
+ frame data/chars/Broly/18.gif
+ offset 20 87
+ frame data/chars/Broly/19.gif
+
+anim pain5001
+ delay 7
+ offset 18 38
+ frame data/chars/Broly/20.gif
+ offset 18 38
+ frame data/chars/Broly/21.gif
+ offset 18 38
+ frame data/chars/Broly/22.gif
+
+anim pain5011
+ delay 7
+ offset 18 38
+ frame data/chars/Broly/23.gif
+ offset 18 38
+ frame data/chars/Broly/24.gif
+ offset 18 38
+ frame data/chars/Broly/25.gif
+
+anim fall5031
+ delay 7
+ offset 18 38
+ frame data/chars/Broly/26.gif
+ offset 18 38
+ frame data/chars/Broly/27.gif
+ offset 18 38
+ frame data/chars/Broly/28.gif
+ offset 18 38
+ frame data/chars/Broly/29.gif
+ offset 18 38
+ frame data/chars/Broly/30.gif
+ offset 18 38
+ frame data/chars/Broly/31.gif
+
+anim fall5041
+ delay 7
+ offset 18 38
+ frame data/chars/Broly/32.gif
+ offset 18 38
+ frame data/chars/Broly/33.gif
+ offset 18 38
+ frame data/chars/Broly/34.gif
+
+anim pain5002
+ delay 7
+ offset 26 14
+ frame data/chars/Broly/35.gif
+ offset 26 14
+ frame data/chars/Broly/36.gif
+ offset 26 14
+ frame data/chars/Broly/37.gif
+
+anim pain5012
+ delay 7
+ offset 26 14
+ frame data/chars/Broly/38.gif
+ offset 26 14
+ frame data/chars/Broly/39.gif
+ offset 26 14
+ frame data/chars/Broly/40.gif
+
+anim fall5032
+ delay 7
+ offset 26 14
+ frame data/chars/Broly/41.gif
+ offset 26 14
+ frame data/chars/Broly/42.gif
+ offset 26 14
+ frame data/chars/Broly/43.gif
+ offset 26 14
+ frame data/chars/Broly/44.gif
+ offset 26 14
+ frame data/chars/Broly/45.gif
+ offset 26 14
+ frame data/chars/Broly/46.gif
+
+anim fall5042
+ delay 7
+ offset 26 14
+ frame data/chars/Broly/47.gif
+ offset 26 14
+ frame data/chars/Broly/48.gif
+ offset 26 14
+ frame data/chars/Broly/49.gif
+
+anim fall5060
+ delay 7
+ offset 40 83
+ frame data/chars/Broly/50.gif
+ offset 40 83
+ frame data/chars/Broly/51.gif
+
+anim fall5070
+ delay 7
+ offset 40 83
+ frame data/chars/Broly/52.gif
+ offset 40 83
+ frame data/chars/Broly/53.gif
+ offset 40 83
+ frame data/chars/Broly/54.gif
+
+anim fall5061
+ delay 7
+ offset 30 24
+ frame data/chars/Broly/55.gif
+ offset 30 24
+ frame data/chars/Broly/56.gif
+
+anim fall5071
+ delay 7
+ offset 30 24
+ frame data/chars/Broly/57.gif
+ offset 30 24
+ frame data/chars/Broly/58.gif
+ offset 30 24
+ frame data/chars/Broly/59.gif
+
+anim fall5062
+ delay 7
+ offset 14 12
+ frame data/chars/Broly/60.gif
+ offset 14 12
+ frame data/chars/Broly/61.gif
+
+anim fall5072
+ delay 7
+ offset 14 12
+ frame data/chars/Broly/62.gif
+ offset 14 12
+ frame data/chars/Broly/63.gif
+ offset 14 12
+ frame data/chars/Broly/64.gif
+
+anim idle
+ delay 7
+ offset 20 95
+ frame data/chars/Broly/65.gif
+ offset 24 68
+ frame data/chars/Broly/66.gif
+ offset 24 54
+ frame data/chars/Broly/67.gif
+ offset 28 70
+ frame data/chars/Broly/68.gif
+ offset 32 84
+ frame data/chars/Broly/69.gif
+ offset 20 96
+ frame data/chars/Broly/70.gif
+ offset 28 72
+ frame data/chars/Broly/71.gif
+ offset 20 92
+ frame data/chars/Broly/72.gif
+ offset 22 57
+ frame data/chars/Broly/73.gif
+ offset 20 97
+ frame data/chars/Broly/74.gif
+ offset 20 87
+ frame data/chars/Broly/75.gif
+ offset 23 53
+ frame data/chars/Broly/76.gif
+ offset 40 83
+ frame data/chars/Broly/77.gif
+ offset 42 49
+ frame data/chars/Broly/78.gif
+ offset 42 25
+ frame data/chars/Broly/79.gif
+ offset 25 91
+ frame data/chars/Broly/80.gif
+ offset 22 95
+ frame data/chars/Broly/81.gif
+ offset 22 95
+ frame data/chars/Broly/82.gif
+ offset 22 93
+ frame data/chars/Broly/83.gif
+ offset 26 94
+ frame data/chars/Broly/84.gif
+ offset 24 94
+ frame data/chars/Broly/85.gif
+ offset 18 94
+ frame data/chars/Broly/86.gif
+ offset 22 88
+ frame data/chars/Broly/87.gif
+ offset 24 93
+ frame data/chars/Broly/88.gif
+ offset 24 93
+ frame data/chars/Broly/89.gif
+ offset 24 94
+ frame data/chars/Broly/90.gif
+ offset 26 94
+ frame data/chars/Broly/91.gif
+ offset 22 93
+ frame data/chars/Broly/92.gif
+ offset 18 94
+ frame data/chars/Broly/93.gif
+ offset 22 84
+ frame data/chars/Broly/94.gif
+ offset 18 94
+ frame data/chars/Broly/95.gif
+ offset 24 95
+ frame data/chars/Broly/96.gif
+ offset 26 56
+ frame data/chars/Broly/97.gif
+ offset 26 57
+ frame data/chars/Broly/98.gif
+ offset 25 91
+ frame data/chars/Broly/99.gif
+ offset 22 95
+ frame data/chars/Broly/100.gif
+ offset 26 56
+ frame data/chars/Broly/101.gif
+ offset 28 58
+ frame data/chars/Broly/102.gif
+ offset 18 98
+ frame data/chars/Broly/103.gif
+ offset 18 98
+ frame data/chars/Broly/104.gif
+ offset 26 89
+ frame data/chars/Broly/105.gif
+ offset 22 88
+ frame data/chars/Broly/106.gif
+ offset 26 89
+ frame data/chars/Broly/107.gif
+ offset 24 61
+ frame data/chars/Broly/108.gif
+ offset 15 97
+ frame data/chars/Broly/109.gif
+ offset 15 97
+ frame data/chars/Broly/110.gif
+ offset 15 97
+ frame data/chars/Broly/111.gif
+
+anim 0001
+ delay 7
+ offset 20 103
+ frame data/chars/Broly/112.gif
+ offset 24 76
+ frame data/chars/Broly/113.gif
+ offset 24 62
+ frame data/chars/Broly/114.gif
+ offset 28 78
+ frame data/chars/Broly/115.gif
+ offset 32 92
+ frame data/chars/Broly/116.gif
+ offset 20 104
+ frame data/chars/Broly/117.gif
+ offset 28 80
+ frame data/chars/Broly/118.gif
+ offset 20 99
+ frame data/chars/Broly/119.gif
+ offset 22 65
+ frame data/chars/Broly/120.gif
+ offset 20 105
+ frame data/chars/Broly/121.gif
+ offset 20 95
+ frame data/chars/Broly/122.gif
+ offset 23 61
+ frame data/chars/Broly/123.gif
+ offset 48 91
+ frame data/chars/Broly/124.gif
+ offset 50 49
+ frame data/chars/Broly/125.gif
+ offset 50 25
+ frame data/chars/Broly/126.gif
+ offset 25 99
+ frame data/chars/Broly/127.gif
+ offset 22 103
+ frame data/chars/Broly/128.gif
+ offset 22 103
+ frame data/chars/Broly/129.gif
+ offset 22 101
+ frame data/chars/Broly/130.gif
+ offset 26 102
+ frame data/chars/Broly/131.gif
+ offset 24 102
+ frame data/chars/Broly/132.gif
+ offset 26 102
+ frame data/chars/Broly/133.gif
+ offset 22 101
+ frame data/chars/Broly/134.gif
+ offset 18 102
+ frame data/chars/Broly/135.gif
+ offset 26 92
+ frame data/chars/Broly/136.gif
+ offset 18 102
+ frame data/chars/Broly/137.gif
+ offset 28 96
+ frame data/chars/Broly/138.gif
+ offset 24 101
+ frame data/chars/Broly/139.gif
+ offset 24 101
+ frame data/chars/Broly/140.gif
+ offset 24 103
+ frame data/chars/Broly/141.gif
+ offset 18 102
+ frame data/chars/Broly/142.gif
+ offset 24 103
+ frame data/chars/Broly/143.gif
+ offset 26 64
+ frame data/chars/Broly/144.gif
+ offset 28 66
+ frame data/chars/Broly/145.gif
+ offset 26 97
+ frame data/chars/Broly/146.gif
+ offset 22 96
+ frame data/chars/Broly/147.gif
+ offset 18 106
+ frame data/chars/Broly/148.gif
+ offset 18 106
+ frame data/chars/Broly/149.gif
+ offset 26 97
+ frame data/chars/Broly/150.gif
+ offset 24 70
+ frame data/chars/Broly/151.gif
+ offset 15 105
+ frame data/chars/Broly/152.gif
+ offset 15 105
+ frame data/chars/Broly/153.gif
+ offset 15 105
+ frame data/chars/Broly/154.gif
+
+anim 0002
+ delay 7
+ offset 26 113
+ frame data/chars/Broly/155.gif
+ offset 32 83
+ frame data/chars/Broly/156.gif
+ offset 32 65
+ frame data/chars/Broly/157.gif
+ offset 30 85
+ frame data/chars/Broly/158.gif
+ offset 40 99
+ frame data/chars/Broly/159.gif
+ offset 30 114
+ frame data/chars/Broly/160.gif
+ offset 38 85
+ frame data/chars/Broly/161.gif
+ offset 26 106
+ frame data/chars/Broly/162.gif
+ offset 28 67
+ frame data/chars/Broly/163.gif
+ offset 22 116
+ frame data/chars/Broly/164.gif
+ offset 28 106
+ frame data/chars/Broly/165.gif
+ offset 26 68
+ frame data/chars/Broly/166.gif
+ offset 50 105
+ frame data/chars/Broly/167.gif
+ offset 56 63
+ frame data/chars/Broly/168.gif
+ offset 56 28
+ frame data/chars/Broly/169.gif
+ offset 37 109
+ frame data/chars/Broly/170.gif
+ offset 34 117
+ frame data/chars/Broly/171.gif
+ offset 34 117
+ frame data/chars/Broly/172.gif
+ offset 33 114
+ frame data/chars/Broly/173.gif
+ offset 36 114
+ frame data/chars/Broly/174.gif
+ offset 36 114
+ frame data/chars/Broly/175.gif
+ offset 36 118
+ frame data/chars/Broly/176.gif
+ offset 36 114
+ frame data/chars/Broly/177.gif
+ offset 30 112
+ frame data/chars/Broly/178.gif
+ offset 34 101
+ frame data/chars/Broly/179.gif
+ offset 32 83
+ frame data/chars/Broly/180.gif
+ offset 34 120
+ frame data/chars/Broly/181.gif
+ offset 30 112
+ frame data/chars/Broly/182.gif
+ offset 34 97
+ frame data/chars/Broly/183.gif
+ offset 34 111
+ frame data/chars/Broly/184.gif
+ offset 32 86
+ frame data/chars/Broly/185.gif
+ offset 40 66
+ frame data/chars/Broly/186.gif
+ offset 45 64
+ frame data/chars/Broly/187.gif
+ offset 34 111
+ frame data/chars/Broly/188.gif
+ offset 40 117
+ frame data/chars/Broly/189.gif
+ offset 40 114
+ frame data/chars/Broly/190.gif
+ offset 32 106
+ frame data/chars/Broly/191.gif
+ offset 32 106
+ frame data/chars/Broly/192.gif
+ offset 38 115
+ frame data/chars/Broly/193.gif
+ offset 38 113
+ frame data/chars/Broly/194.gif
+ offset 22 116
+ frame data/chars/Broly/195.gif
+ offset 22 116
+ frame data/chars/Broly/196.gif
+ offset 40 90
+ frame data/chars/Broly/197.gif
+ offset 40 90
+ frame data/chars/Broly/198.gif
+ offset 30 112
+ frame data/chars/Broly/199.gif
+ offset 38 110
+ frame data/chars/Broly/200.gif
+ offset 40 114
+ frame data/chars/Broly/201.gif
+ offset 42 114
+ frame data/chars/Broly/202.gif
+ offset 23 116
+ frame data/chars/Broly/203.gif
+ offset 23 116
+ frame data/chars/Broly/204.gif
+ offset 23 116
+ frame data/chars/Broly/205.gif
+
+anim turn
+ delay 7
+ offset 75 10
+ frame data/chars/Broly/206.gif
+ offset 93 12
+ frame data/chars/Broly/207.gif
+ offset 111 14
+ frame data/chars/Broly/208.gif
+ offset 124 16
+ frame data/chars/Broly/209.gif
+ offset 122 16
+ frame data/chars/Broly/210.gif
+ offset 24 48
+ frame data/chars/Broly/211.gif
+ offset 36 55
+ frame data/chars/Broly/212.gif
+ offset 44 61
+ frame data/chars/Broly/213.gif
+ offset 57 67
+ frame data/chars/Broly/214.gif
+ offset 64 68
+ frame data/chars/Broly/215.gif
+ offset 50 100
+ frame data/chars/Broly/216.gif
+ offset 96 138
+ frame data/chars/Broly/217.gif
+ offset 156 178
+ frame data/chars/Broly/218.gif
+ offset 166 197
+ frame data/chars/Broly/219.gif
+ offset 163 201
+ frame data/chars/Broly/220.gif
+ offset 162 204
+ frame data/chars/Broly/221.gif
+ offset 166 205
+ frame data/chars/Broly/222.gif
+ offset 164 199
+ frame data/chars/Broly/223.gif
+ offset 164 103
+ frame data/chars/Broly/224.gif
+ offset 164 80
+ frame data/chars/Broly/225.gif
+ offset 62 222
+ frame data/chars/Broly/226.gif
+ offset 59 223
+ frame data/chars/Broly/227.gif
+ offset 60 226
+ frame data/chars/Broly/228.gif
+ offset 63 219
+ frame data/chars/Broly/229.gif
+ offset 63 209
+ frame data/chars/Broly/230.gif
+ offset 92 166
+ frame data/chars/Broly/231.gif
+ offset 83 170
+ frame data/chars/Broly/232.gif
+ offset 85 173
+ frame data/chars/Broly/233.gif
+ offset 92 166
+ frame data/chars/Broly/234.gif
+ offset 83 170
+ frame data/chars/Broly/235.gif
+ offset 84 185
+ frame data/chars/Broly/236.gif
+ offset 92 166
+ frame data/chars/Broly/237.gif
+ offset 84 170
+ frame data/chars/Broly/238.gif
+ offset 86 173
+ frame data/chars/Broly/239.gif
+ offset 42 26
+ frame data/chars/Broly/240.gif
+ offset 79 51
+ frame data/chars/Broly/241.gif
+ offset 98 56
+ frame data/chars/Broly/242.gif
+ offset 114 76
+ frame data/chars/Broly/243.gif
+ offset 119 88
+ frame data/chars/Broly/244.gif
+ offset 120 79
+ frame data/chars/Broly/245.gif
+ offset 122 78
+ frame data/chars/Broly/246.gif
+ offset 124 80
+ frame data/chars/Broly/247.gif
+ offset 124 68
+ frame data/chars/Broly/248.gif
+ offset 117 49
+ frame data/chars/Broly/249.gif
+ offset 72 73
+ frame data/chars/Broly/250.gif
+ offset 71 72
+ frame data/chars/Broly/251.gif
+ offset 64 64
+ frame data/chars/Broly/252.gif
+ offset 64 64
+ frame data/chars/Broly/253.gif
+ offset 64 64
+ frame data/chars/Broly/254.gif
+ offset 14 32
+ frame data/chars/Broly/255.gif
+ offset 17 39
+ frame data/chars/Broly/256.gif
+ offset 21 47
+ frame data/chars/Broly/257.gif
+ offset 23 54
+ frame data/chars/Broly/258.gif
+ offset 24 57
+ frame data/chars/Broly/259.gif
+ offset 74 88
+ frame data/chars/Broly/260.gif
+ offset 89 104
+ frame data/chars/Broly/261.gif
+ offset 105 114
+ frame data/chars/Broly/262.gif
+ offset 109 122
+ frame data/chars/Broly/263.gif
+ offset 93 117
+ frame data/chars/Broly/264.gif
+ offset 86 90
+ frame data/chars/Broly/265.gif
+ offset 121 124
+ frame data/chars/Broly/266.gif
+ offset 146 167
+ frame data/chars/Broly/267.gif
+ offset 67 67
+ frame data/chars/Broly/268.gif
+ offset 76 71
+ frame data/chars/Broly/269.gif
+ offset 67 70
+ frame data/chars/Broly/270.gif
+ offset 67 71
+ frame data/chars/Broly/271.gif
+ offset 67 72
+ frame data/chars/Broly/272.gif
+ offset 47 48
+ frame data/chars/Broly/273.gif
+ offset 23 48
+ frame data/chars/Broly/274.gif
+ offset 27 68
+ frame data/chars/Broly/275.gif
+ offset 30 92
+ frame data/chars/Broly/276.gif
+ offset 32 106
+ frame data/chars/Broly/277.gif
+ offset 32 127
+ frame data/chars/Broly/278.gif
+ offset 280 92
+ frame data/chars/Broly/279.gif
+ offset 282 195
+ frame data/chars/Broly/280.gif
+ offset 274 180
+ frame data/chars/Broly/281.gif
+ offset 163 162
+ frame data/chars/Broly/282.gif
+ offset 123 130
+ frame data/chars/Broly/283.gif
+ offset 83 83
+ frame data/chars/Broly/284.gif
+ offset 81 81
+ frame data/chars/Broly/285.gif
+ offset 83 83
+ frame data/chars/Broly/286.gif
+ offset 94 94
+ frame data/chars/Broly/287.gif
+ offset 92 92
+ frame data/chars/Broly/288.gif
+ offset 64 80
+ frame data/chars/Broly/289.gif
+ offset 71 84
+ frame data/chars/Broly/290.gif
+ offset 23 83
+ frame data/chars/Broly/291.gif
+ offset 191 815
+ frame data/chars/Broly/292.gif
+ offset 191 793
+ frame data/chars/Broly/293.gif
+ offset 186 811
+ frame data/chars/Broly/294.gif
+ offset 42 45
+ frame data/chars/Broly/295.gif
+ offset 46 45
+ frame data/chars/Broly/296.gif
+ offset 49 48
+ frame data/chars/Broly/297.gif
+ offset 46 45
+ frame data/chars/Broly/298.gif
+ offset 40 35
+ frame data/chars/Broly/299.gif
+ offset 74 74
+ frame data/chars/Broly/300.gif
+ offset 160 158
+ frame data/chars/Broly/301.gif
+ offset 160 158
+ frame data/chars/Broly/302.gif
+ offset 160 158
+ frame data/chars/Broly/303.gif
+ offset 160 158
+ frame data/chars/Broly/304.gif
+ offset 160 158
+ frame data/chars/Broly/305.gif

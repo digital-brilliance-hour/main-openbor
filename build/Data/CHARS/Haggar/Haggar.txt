@@ -1,0 +1,73 @@
+name Haggar
+type player
+health  100
+gfxshadow	1
+speed   10
+
+
+
+
+anim	attack1
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/haggar/attack1-01.png
+	frame	data/chars/haggar/attack1-02.png
+	frame	data/chars/haggar/attack1-03.png
+	frame	data/chars/haggar/attack1-04.png
+	frame	data/chars/haggar/attack1-05.png
+		
+anim	fall
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	Data/CHARS/Haggar/00.png
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	36 98
+	bbox	42 14 24 85
+	frame	data/chars/haggar/idle-01.png
+		
+anim	pain
+	delay	18
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/haggar/tba-01.png
+		
+anim	rise
+	delay	7
+	offset	52 98
+	bbox	42 14 24 85
+	frame	data/chars/haggar/tba-05.png
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	36 98
+	bbox	42 14 24 85
+	frame	data/chars/haggar/walk-01.png
+	offset	36 98
+	frame	data/chars/haggar/walk-02.png
+	offset	36 98
+	frame	data/chars/haggar/walk-03.png
+	offset	37 98
+	frame	data/chars/haggar/walk-04.png
+	offset	40 98
+	frame	data/chars/haggar/walk-05.png
+	offset	36 98
+	frame	data/chars/haggar/walk-06.png
+	offset	36 98
+	frame	data/chars/haggar/walk-07.png
+	offset	36 98
+	frame	data/chars/haggar/walk-08.png
+	offset	37 98
+	frame	data/chars/haggar/walk-09.png
+	offset	37 98
+	frame	data/chars/haggar/walk-10.png
+	offset	36 98
+	frame	data/chars/haggar/walk-11.png
+		
+#|edited by openBor Stats v 0.67
+		

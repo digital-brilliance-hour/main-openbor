@@ -1,0 +1,2211 @@
+name	Broly
+health	100
+speed	9
+type	player
+shadow	3
+
+
+
+anim 9000
+ delay 7
+ offset 0 0
+ frame data/chars/Broly_SSB/0.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/1.gif
+ offset 320 100
+ frame data/chars/Broly_SSB/2.gif
+
+anim idle
+ delay 7
+ offset 24 88
+ frame data/chars/Broly_SSB/3.gif
+ offset 25 89
+ frame data/chars/Broly_SSB/4.gif
+ offset 27 89
+ frame data/chars/Broly_SSB/5.gif
+ offset 29 88
+ frame data/chars/Broly_SSB/6.gif
+ offset 29 89
+ frame data/chars/Broly_SSB/7.gif
+ offset 29 90
+ frame data/chars/Broly_SSB/8.gif
+ offset 29 89
+ frame data/chars/Broly_SSB/9.gif
+
+anim turn
+ delay 7
+ offset 27 89
+ frame data/chars/Broly_SSB/10.gif
+
+anim 0006
+ delay 7
+ offset 26 64
+ frame data/chars/Broly_SSB/11.gif
+
+anim 0011
+ delay 7
+ offset 26 64
+ frame data/chars/Broly_SSB/12.gif
+ offset 26 64
+ frame data/chars/Broly_SSB/13.gif
+
+anim walk
+ delay 7
+ offset 20 90
+ frame data/chars/Broly_SSB/14.gif
+ offset 15 92
+ frame data/chars/Broly_SSB/15.gif
+ offset 18 92
+ frame data/chars/Broly_SSB/16.gif
+ offset 21 90
+ frame data/chars/Broly_SSB/17.gif
+ offset 15 92
+ frame data/chars/Broly_SSB/18.gif
+ offset 14 91
+ frame data/chars/Broly_SSB/19.gif
+
+anim 0040
+ delay 7
+ offset 26 65
+ frame data/chars/Broly_SSB/20.gif
+ offset 24 85
+ frame data/chars/Broly_SSB/21.gif
+ offset 31 82
+ frame data/chars/Broly_SSB/22.gif
+ offset 30 83
+ frame data/chars/Broly_SSB/23.gif
+ offset 28 71
+ frame data/chars/Broly_SSB/24.gif
+
+anim run
+ delay 7
+ offset 23 79
+ frame data/chars/Broly_SSB/25.gif
+ offset 44 69
+ frame data/chars/Broly_SSB/26.gif
+
+anim block120
+ delay 7
+ offset 29 85
+ frame data/chars/Broly_SSB/27.gif
+ offset 29 85
+ frame data/chars/Broly_SSB/28.gif
+ offset 29 85
+ frame data/chars/Broly_SSB/29.gif
+
+anim block121
+ delay 7
+ offset 29 85
+ frame data/chars/Broly_SSB/30.gif
+ offset 29 85
+ frame data/chars/Broly_SSB/31.gif
+ offset 29 85
+ frame data/chars/Broly_SSB/32.gif
+
+anim block122
+ delay 7
+ offset 31 88
+ frame data/chars/Broly_SSB/33.gif
+ offset 31 88
+ frame data/chars/Broly_SSB/34.gif
+ offset 31 88
+ frame data/chars/Broly_SSB/35.gif
+
+anim 0180
+ delay 7
+ offset 14 70
+ frame data/chars/Broly_SSB/36.gif
+ offset 15 71
+ frame data/chars/Broly_SSB/37.gif
+ offset 22 76
+ frame data/chars/Broly_SSB/38.gif
+ offset 26 76
+ frame data/chars/Broly_SSB/39.gif
+ offset 22 76
+ frame data/chars/Broly_SSB/40.gif
+ offset 20 77
+ frame data/chars/Broly_SSB/41.gif
+ offset 19 75
+ frame data/chars/Broly_SSB/42.gif
+ offset 28 70
+ frame data/chars/Broly_SSB/43.gif
+ offset 26 70
+ frame data/chars/Broly_SSB/44.gif
+ offset 28 71
+ frame data/chars/Broly_SSB/45.gif
+ offset 23 87
+ frame data/chars/Broly_SSB/46.gif
+ offset 21 87
+ frame data/chars/Broly_SSB/47.gif
+ offset 25 88
+ frame data/chars/Broly_SSB/48.gif
+ offset 25 89
+ frame data/chars/Broly_SSB/49.gif
+ offset 25 89
+ frame data/chars/Broly_SSB/50.gif
+ offset 32 89
+ frame data/chars/Broly_SSB/51.gif
+ offset 27 85
+ frame data/chars/Broly_SSB/52.gif
+ offset 29 84
+ frame data/chars/Broly_SSB/53.gif
+ offset 29 89
+ frame data/chars/Broly_SSB/54.gif
+ offset 27 89
+ frame data/chars/Broly_SSB/55.gif
+ offset 27 90
+ frame data/chars/Broly_SSB/56.gif
+
+anim attack200
+ delay 7
+ offset 25 85
+ frame data/chars/Broly_SSB/57.gif
+ offset 28 76
+ frame data/chars/Broly_SSB/58.gif
+ offset 33 67
+ frame data/chars/Broly_SSB/59.gif
+ offset 28 77
+ frame data/chars/Broly_SSB/60.gif
+ offset 23 78
+ frame data/chars/Broly_SSB/61.gif
+ offset 28 68
+ frame data/chars/Broly_SSB/62.gif
+ offset 34 84
+ frame data/chars/Broly_SSB/63.gif
+ offset 29 75
+ frame data/chars/Broly_SSB/64.gif
+ offset 22 78
+ frame data/chars/Broly_SSB/65.gif
+ offset 31 84
+ frame data/chars/Broly_SSB/66.gif
+ offset 42 63
+ frame data/chars/Broly_SSB/67.gif
+ offset 30 55
+ frame data/chars/Broly_SSB/68.gif
+ offset 26 56
+ frame data/chars/Broly_SSB/69.gif
+ offset 22 68
+ frame data/chars/Broly_SSB/70.gif
+ offset 22 82
+ frame data/chars/Broly_SSB/71.gif
+ offset 22 72
+ frame data/chars/Broly_SSB/72.gif
+ offset 23 67
+ frame data/chars/Broly_SSB/73.gif
+ offset 3 64
+ frame data/chars/Broly_SSB/74.gif
+ offset 23 86
+ frame data/chars/Broly_SSB/75.gif
+ offset 25 82
+ frame data/chars/Broly_SSB/76.gif
+ offset 24 80
+ frame data/chars/Broly_SSB/77.gif
+ offset 28 82
+ frame data/chars/Broly_SSB/78.gif
+ offset 23 79
+ frame data/chars/Broly_SSB/79.gif
+ offset 25 76
+ frame data/chars/Broly_SSB/80.gif
+ offset 28 84
+ frame data/chars/Broly_SSB/81.gif
+ offset 26 86
+ frame data/chars/Broly_SSB/82.gif
+ offset 26 86
+ frame data/chars/Broly_SSB/83.gif
+ offset 37 63
+ frame data/chars/Broly_SSB/84.gif
+ offset 30 87
+ frame data/chars/Broly_SSB/85.gif
+ offset 23 83
+ frame data/chars/Broly_SSB/86.gif
+ offset 25 78
+ frame data/chars/Broly_SSB/87.gif
+ offset 45 74
+ frame data/chars/Broly_SSB/88.gif
+ offset 27 74
+ frame data/chars/Broly_SSB/89.gif
+ offset 22 79
+ frame data/chars/Broly_SSB/90.gif
+ offset 25 77
+ frame data/chars/Broly_SSB/91.gif
+ offset 26 103
+ frame data/chars/Broly_SSB/92.gif
+ offset 26 87
+ frame data/chars/Broly_SSB/93.gif
+ offset 26 87
+ frame data/chars/Broly_SSB/94.gif
+ offset 25 87
+ frame data/chars/Broly_SSB/95.gif
+ offset 29 72
+ frame data/chars/Broly_SSB/96.gif
+ offset 36 109
+ frame data/chars/Broly_SSB/97.gif
+ offset 33 100
+ frame data/chars/Broly_SSB/98.gif
+ offset 37 58
+ frame data/chars/Broly_SSB/99.gif
+ offset 33 59
+ frame data/chars/Broly_SSB/100.gif
+ offset 28 73
+ frame data/chars/Broly_SSB/101.gif
+ offset 21 101
+ frame data/chars/Broly_SSB/102.gif
+ offset 31 89
+ frame data/chars/Broly_SSB/103.gif
+ offset 26 68
+ frame data/chars/Broly_SSB/104.gif
+ offset 25 73
+ frame data/chars/Broly_SSB/105.gif
+ offset 23 82
+ frame data/chars/Broly_SSB/106.gif
+ offset 24 73
+ frame data/chars/Broly_SSB/107.gif
+ offset 44 111
+ frame data/chars/Broly_SSB/108.gif
+ offset 43 99
+ frame data/chars/Broly_SSB/109.gif
+ offset 44 97
+ frame data/chars/Broly_SSB/110.gif
+ offset 35 53
+ frame data/chars/Broly_SSB/111.gif
+ offset 35 57
+ frame data/chars/Broly_SSB/112.gif
+ offset 40 83
+ frame data/chars/Broly_SSB/113.gif
+ offset 33 80
+ frame data/chars/Broly_SSB/114.gif
+ offset 32 68
+ frame data/chars/Broly_SSB/115.gif
+ offset 29 68
+ frame data/chars/Broly_SSB/116.gif
+ offset 29 73
+ frame data/chars/Broly_SSB/117.gif
+ offset 37 58
+ frame data/chars/Broly_SSB/118.gif
+ offset 47 58
+ frame data/chars/Broly_SSB/119.gif
+ offset 55 83
+ frame data/chars/Broly_SSB/120.gif
+ offset 37 78
+ frame data/chars/Broly_SSB/121.gif
+ offset 40 78
+ frame data/chars/Broly_SSB/122.gif
+ offset 31 84
+ frame data/chars/Broly_SSB/123.gif
+ offset 35 84
+ frame data/chars/Broly_SSB/124.gif
+ offset 35 84
+ frame data/chars/Broly_SSB/125.gif
+ offset 32 85
+ frame data/chars/Broly_SSB/126.gif
+ offset 26 84
+ frame data/chars/Broly_SSB/127.gif
+ offset 32 85
+ frame data/chars/Broly_SSB/128.gif
+ offset 37 88
+ frame data/chars/Broly_SSB/129.gif
+ offset 37 58
+ frame data/chars/Broly_SSB/130.gif
+ offset 33 59
+ frame data/chars/Broly_SSB/131.gif
+ offset 28 73
+ frame data/chars/Broly_SSB/132.gif
+ offset 38 87
+ frame data/chars/Broly_SSB/133.gif
+ offset 38 87
+ frame data/chars/Broly_SSB/134.gif
+ offset 26 56
+ frame data/chars/Broly_SSB/135.gif
+ offset 49 69
+ frame data/chars/Broly_SSB/136.gif
+
+anim freespecial1000
+ delay 7
+ offset 23 87
+ frame data/chars/Broly_SSB/137.gif
+ offset 21 87
+ frame data/chars/Broly_SSB/138.gif
+ offset 38 74
+ frame data/chars/Broly_SSB/139.gif
+ offset 37 57
+ frame data/chars/Broly_SSB/140.gif
+ offset 41 81
+ frame data/chars/Broly_SSB/141.gif
+ offset 24 84
+ frame data/chars/Broly_SSB/142.gif
+ offset 31 86
+ frame data/chars/Broly_SSB/143.gif
+ offset 30 86
+ frame data/chars/Broly_SSB/144.gif
+ offset 31 86
+ frame data/chars/Broly_SSB/145.gif
+ offset 28 76
+ frame data/chars/Broly_SSB/146.gif
+ offset 32 72
+ frame data/chars/Broly_SSB/147.gif
+ offset 35 61
+ frame data/chars/Broly_SSB/148.gif
+ offset 23 78
+ frame data/chars/Broly_SSB/149.gif
+ offset 24 74
+ frame data/chars/Broly_SSB/150.gif
+ offset 28 77
+ frame data/chars/Broly_SSB/151.gif
+ offset 32 75
+ frame data/chars/Broly_SSB/152.gif
+ offset 28 68
+ frame data/chars/Broly_SSB/153.gif
+ offset 25 83
+ frame data/chars/Broly_SSB/154.gif
+ offset 26 84
+ frame data/chars/Broly_SSB/155.gif
+ offset 32 85
+ frame data/chars/Broly_SSB/156.gif
+ offset 42 70
+ frame data/chars/Broly_SSB/157.gif
+ offset 31 69
+ frame data/chars/Broly_SSB/158.gif
+ offset 29 49
+ frame data/chars/Broly_SSB/159.gif
+ offset 30 56
+ frame data/chars/Broly_SSB/160.gif
+ offset 23 79
+ frame data/chars/Broly_SSB/161.gif
+ offset 27 80
+ frame data/chars/Broly_SSB/162.gif
+ offset 27 83
+ frame data/chars/Broly_SSB/163.gif
+ offset 34 85
+ frame data/chars/Broly_SSB/164.gif
+ offset 27 85
+ frame data/chars/Broly_SSB/165.gif
+ offset 39 81
+ frame data/chars/Broly_SSB/166.gif
+ offset 33 76
+ frame data/chars/Broly_SSB/167.gif
+ offset 38 71
+ frame data/chars/Broly_SSB/168.gif
+ offset 26 73
+ frame data/chars/Broly_SSB/169.gif
+ offset 20 78
+ frame data/chars/Broly_SSB/170.gif
+ offset 21 74
+ frame data/chars/Broly_SSB/171.gif
+ offset 38 86
+ frame data/chars/Broly_SSB/172.gif
+ offset 22 87
+ frame data/chars/Broly_SSB/173.gif
+ offset 26 88
+ frame data/chars/Broly_SSB/174.gif
+ offset 35 85
+ frame data/chars/Broly_SSB/175.gif
+ offset 39 86
+ frame data/chars/Broly_SSB/176.gif
+ offset 35 87
+ frame data/chars/Broly_SSB/177.gif
+ offset 47 83
+ frame data/chars/Broly_SSB/178.gif
+ offset 45 75
+ frame data/chars/Broly_SSB/179.gif
+ offset 26 87
+ frame data/chars/Broly_SSB/180.gif
+ offset 26 87
+ frame data/chars/Broly_SSB/181.gif
+ offset 28 88
+ frame data/chars/Broly_SSB/182.gif
+ offset 25 89
+ frame data/chars/Broly_SSB/183.gif
+ offset 25 89
+ frame data/chars/Broly_SSB/184.gif
+ offset 25 90
+ frame data/chars/Broly_SSB/185.gif
+ offset 46 77
+ frame data/chars/Broly_SSB/186.gif
+ offset 26 73
+ frame data/chars/Broly_SSB/187.gif
+ offset 22 86
+ frame data/chars/Broly_SSB/188.gif
+ offset 30 86
+ frame data/chars/Broly_SSB/189.gif
+ offset 31 86
+ frame data/chars/Broly_SSB/190.gif
+ offset -32 56
+ frame data/chars/Broly_SSB/191.gif
+ offset 6 65
+ frame data/chars/Broly_SSB/192.gif
+
+anim freespecial1010
+ delay 7
+ offset -31 48
+ frame data/chars/Broly_SSB/193.gif
+ offset -29 55
+ frame data/chars/Broly_SSB/194.gif
+ offset 28 82
+ frame data/chars/Broly_SSB/195.gif
+ offset 27 77
+ frame data/chars/Broly_SSB/196.gif
+ offset 27 78
+ frame data/chars/Broly_SSB/197.gif
+ offset 29 86
+ frame data/chars/Broly_SSB/198.gif
+ offset 32 72
+ frame data/chars/Broly_SSB/199.gif
+ offset 30 70
+ frame data/chars/Broly_SSB/200.gif
+ offset 33 80
+ frame data/chars/Broly_SSB/201.gif
+ offset 30 72
+ frame data/chars/Broly_SSB/202.gif
+ offset 30 72
+ frame data/chars/Broly_SSB/203.gif
+ offset 30 72
+ frame data/chars/Broly_SSB/204.gif
+ offset 30 71
+ frame data/chars/Broly_SSB/205.gif
+ offset 21 74
+ frame data/chars/Broly_SSB/206.gif
+ offset 21 85
+ frame data/chars/Broly_SSB/207.gif
+ offset 42 63
+ frame data/chars/Broly_SSB/208.gif
+ offset 29 73
+ frame data/chars/Broly_SSB/209.gif
+ offset 25 87
+ frame data/chars/Broly_SSB/210.gif
+ offset 32 80
+ frame data/chars/Broly_SSB/211.gif
+ offset 28 71
+ frame data/chars/Broly_SSB/212.gif
+ offset 31 68
+ frame data/chars/Broly_SSB/213.gif
+ offset 38 63
+ frame data/chars/Broly_SSB/214.gif
+ offset 30 75
+ frame data/chars/Broly_SSB/215.gif
+
+anim pain5000
+ delay 7
+ offset 27 77
+ frame data/chars/Broly_SSB/216.gif
+ offset 26 84
+ frame data/chars/Broly_SSB/217.gif
+ offset 26 84
+ frame data/chars/Broly_SSB/218.gif
+
+anim pain5001
+ delay 7
+ offset 27 42
+ frame data/chars/Broly_SSB/219.gif
+ offset 27 46
+ frame data/chars/Broly_SSB/220.gif
+ offset 27 46
+ frame data/chars/Broly_SSB/221.gif
+
+anim pain5002
+ delay 7
+ offset 33 18
+ frame data/chars/Broly_SSB/222.gif
+ offset 16 19
+ frame data/chars/Broly_SSB/223.gif
+ offset 16 19
+ frame data/chars/Broly_SSB/224.gif
+
+anim pain5010
+ delay 7
+ offset 27 77
+ frame data/chars/Broly_SSB/225.gif
+ offset 27 77
+ frame data/chars/Broly_SSB/226.gif
+ offset 27 77
+ frame data/chars/Broly_SSB/227.gif
+
+anim pain5011
+ delay 7
+ offset 27 42
+ frame data/chars/Broly_SSB/228.gif
+ offset 27 42
+ frame data/chars/Broly_SSB/229.gif
+ offset 27 42
+ frame data/chars/Broly_SSB/230.gif
+
+anim pain5012
+ delay 7
+ offset 33 18
+ frame data/chars/Broly_SSB/231.gif
+ offset 33 18
+ frame data/chars/Broly_SSB/232.gif
+ offset 33 18
+ frame data/chars/Broly_SSB/233.gif
+
+anim pain5020
+ delay 7
+ offset 27 77
+ frame data/chars/Broly_SSB/234.gif
+ offset 27 77
+ frame data/chars/Broly_SSB/235.gif
+ offset 27 77
+ frame data/chars/Broly_SSB/236.gif
+
+anim fall5030
+ delay 7
+ offset 27 77
+ frame data/chars/Broly_SSB/237.gif
+ offset 43 70
+ frame data/chars/Broly_SSB/238.gif
+ offset 43 51
+ frame data/chars/Broly_SSB/239.gif
+ offset 43 51
+ frame data/chars/Broly_SSB/240.gif
+ offset 33 77
+ frame data/chars/Broly_SSB/241.gif
+ offset 33 77
+ frame data/chars/Broly_SSB/242.gif
+
+anim fall5031
+ delay 7
+ offset 27 42
+ frame data/chars/Broly_SSB/243.gif
+ offset 33 31
+ frame data/chars/Broly_SSB/244.gif
+ offset 38 15
+ frame data/chars/Broly_SSB/245.gif
+ offset 37 14
+ frame data/chars/Broly_SSB/246.gif
+ offset 26 53
+ frame data/chars/Broly_SSB/247.gif
+ offset 27 52
+ frame data/chars/Broly_SSB/248.gif
+
+anim fall5032
+ delay 7
+ offset 33 18
+ frame data/chars/Broly_SSB/249.gif
+ offset 15 10
+ frame data/chars/Broly_SSB/250.gif
+ offset 11 9
+ frame data/chars/Broly_SSB/251.gif
+ offset 12 8
+ frame data/chars/Broly_SSB/252.gif
+ offset 26 53
+ frame data/chars/Broly_SSB/253.gif
+ offset 12 39
+ frame data/chars/Broly_SSB/254.gif
+
+anim fall5040
+ delay 7
+ offset 30 37
+ frame data/chars/Broly_SSB/255.gif
+ offset 36 23
+ frame data/chars/Broly_SSB/256.gif
+ offset 30 37
+ frame data/chars/Broly_SSB/257.gif
+
+anim fall5041
+ delay 7
+ offset 36 15
+ frame data/chars/Broly_SSB/258.gif
+ offset 42 12
+ frame data/chars/Broly_SSB/259.gif
+ offset 37 14
+ frame data/chars/Broly_SSB/260.gif
+
+anim fall5042
+ delay 7
+ offset 12 8
+ frame data/chars/Broly_SSB/261.gif
+ offset 11 20
+ frame data/chars/Broly_SSB/262.gif
+ offset 12 8
+ frame data/chars/Broly_SSB/263.gif
+
+anim fall5060
+ delay 7
+ offset 19 82
+ frame data/chars/Broly_SSB/264.gif
+ offset 26 79
+ frame data/chars/Broly_SSB/265.gif
+
+anim fall5061
+ delay 7
+ offset 14 48
+ frame data/chars/Broly_SSB/266.gif
+ offset 36 36
+ frame data/chars/Broly_SSB/267.gif
+
+anim fall5062
+ delay 7
+ offset 41 12
+ frame data/chars/Broly_SSB/268.gif
+ offset 8 73
+ frame data/chars/Broly_SSB/269.gif
+
+anim fall5070
+ delay 7
+ offset 44 68
+ frame data/chars/Broly_SSB/270.gif
+ offset 35 49
+ frame data/chars/Broly_SSB/271.gif
+ offset 51 58
+ frame data/chars/Broly_SSB/272.gif
+
+anim fall5071
+ delay 7
+ offset 45 33
+ frame data/chars/Broly_SSB/273.gif
+ offset 32 16
+ frame data/chars/Broly_SSB/274.gif
+ offset 49 35
+ frame data/chars/Broly_SSB/275.gif
+
+anim fall5072
+ delay 7
+ offset 45 33
+ frame data/chars/Broly_SSB/276.gif
+ offset 48 29
+ frame data/chars/Broly_SSB/277.gif
+ offset 74 43
+ frame data/chars/Broly_SSB/278.gif
+
+anim rise
+ delay 7
+ offset 34 51
+ frame data/chars/Broly_SSB/279.gif
+ offset 34 55
+ frame data/chars/Broly_SSB/280.gif
+
+anim faint
+ delay 7
+ offset 27 77
+ frame data/chars/Broly_SSB/281.gif
+
+anim 6001
+ delay 7
+ offset 24 43
+ frame data/chars/Broly_SSB/282.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/283.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/284.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/285.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/286.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/287.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/288.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/289.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/290.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/291.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/292.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/293.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/294.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/295.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/296.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/297.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/298.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/299.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/300.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/301.gif
+ offset 24 43
+ frame data/chars/Broly_SSB/302.gif
+
+anim 6030
+ delay 7
+ offset 233 281
+ frame data/chars/Broly_SSB/303.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/304.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/305.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/306.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/307.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/308.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/309.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/310.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/311.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/312.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/313.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/314.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/315.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/316.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/317.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/318.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/319.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/320.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/321.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/322.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/323.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/324.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/325.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/326.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/327.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/328.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/329.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/330.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/331.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/332.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/333.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/334.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/335.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/336.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/337.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/338.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/339.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/340.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/341.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/342.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/343.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/344.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/345.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/346.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/347.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/348.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/349.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/350.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/351.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/352.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/353.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/354.gif
+ offset 233 281
+ frame data/chars/Broly_SSB/355.gif
+
+anim 6031
+ delay 7
+ offset 86 20
+ frame data/chars/Broly_SSB/356.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/357.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/358.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/359.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/360.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/361.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/362.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/363.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/364.gif
+ offset 86 20
+ frame data/chars/Broly_SSB/365.gif
+
+anim 6032
+ delay 7
+ offset 124 16
+ frame data/chars/Broly_SSB/366.gif
+ offset 124 16
+ frame data/chars/Broly_SSB/367.gif
+ offset 124 16
+ frame data/chars/Broly_SSB/368.gif
+ offset 124 16
+ frame data/chars/Broly_SSB/369.gif
+ offset 124 16
+ frame data/chars/Broly_SSB/370.gif
+
+anim 6034
+ delay 7
+ offset 226 63
+ frame data/chars/Broly_SSB/371.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/372.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/373.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/374.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/375.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/376.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/377.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/378.gif
+ offset 226 63
+ frame data/chars/Broly_SSB/379.gif
+
+anim 6035
+ delay 7
+ offset 110 8
+ frame data/chars/Broly_SSB/380.gif
+
+anim 7000
+ delay 7
+ offset 10 69
+ frame data/chars/Broly_SSB/381.gif
+ offset 10 69
+ frame data/chars/Broly_SSB/382.gif
+ offset 10 69
+ frame data/chars/Broly_SSB/383.gif
+ offset 10 69
+ frame data/chars/Broly_SSB/384.gif
+ offset 10 69
+ frame data/chars/Broly_SSB/385.gif
+
+anim 7002
+ delay 7
+ offset 219 209
+ frame data/chars/Broly_SSB/386.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/387.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/388.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/389.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/390.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/391.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/392.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/393.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/394.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/395.gif
+ offset 219 209
+ frame data/chars/Broly_SSB/396.gif
+
+anim 7003
+ delay 7
+ offset 48 48
+ frame data/chars/Broly_SSB/397.gif
+ offset 48 48
+ frame data/chars/Broly_SSB/398.gif
+ offset 48 48
+ frame data/chars/Broly_SSB/399.gif
+ offset 48 48
+ frame data/chars/Broly_SSB/400.gif
+ offset 48 48
+ frame data/chars/Broly_SSB/401.gif
+
+anim 7005
+ delay 7
+ offset 275 158
+ frame data/chars/Broly_SSB/402.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/403.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/404.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/405.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/406.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/407.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/408.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/409.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/410.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/411.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/412.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/413.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/414.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/415.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/416.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/417.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/418.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/419.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/420.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/421.gif
+ offset 275 158
+ frame data/chars/Broly_SSB/422.gif
+
+anim 7006
+ delay 7
+ offset 237 223
+ frame data/chars/Broly_SSB/423.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/424.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/425.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/426.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/427.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/428.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/429.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/430.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/431.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/432.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/433.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/434.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/435.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/436.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/437.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/438.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/439.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/440.gif
+ offset 237 223
+ frame data/chars/Broly_SSB/441.gif
+
+anim 8000
+ delay 7
+ offset 280 195
+ frame data/chars/Broly_SSB/442.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/443.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/444.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/445.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/446.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/447.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/448.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/449.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/450.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/451.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/452.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/453.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/454.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/455.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/456.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/457.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/458.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/459.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/460.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/461.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/462.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/463.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/464.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/465.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/466.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/467.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/468.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/469.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/470.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/471.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/472.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/473.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/474.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/475.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/476.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/477.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/478.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/479.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/480.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/481.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/482.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/483.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/484.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/485.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/486.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/487.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/488.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/489.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/490.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/491.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/492.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/493.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/494.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/495.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/496.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/497.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/498.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/499.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/500.gif
+ offset 280 195
+ frame data/chars/Broly_SSB/501.gif
+
+anim 9020
+ delay 7
+ offset 320 240
+ frame data/chars/Broly_SSB/502.gif
+
+anim 9021
+ delay 7
+ offset 0 0
+ frame data/chars/Broly_SSB/503.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/504.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/505.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/506.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/507.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/508.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/509.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/510.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/511.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/512.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/513.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/514.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/515.gif
+ offset 0 0
+ frame data/chars/Broly_SSB/516.gif
+
+anim freespecial1019
+ delay 7
+ offset 144 44
+ frame data/chars/Broly_SSB/517.gif
+ offset 194 49
+ frame data/chars/Broly_SSB/518.gif
+ offset 246 57
+ frame data/chars/Broly_SSB/519.gif
+ offset 296 69
+ frame data/chars/Broly_SSB/520.gif
+ offset 307 71
+ frame data/chars/Broly_SSB/521.gif
+ offset 318 75
+ frame data/chars/Broly_SSB/522.gif
+ offset 326 77
+ frame data/chars/Broly_SSB/523.gif
+ offset 214 81
+ frame data/chars/Broly_SSB/524.gif
+ offset 216 83
+ frame data/chars/Broly_SSB/525.gif
+ offset 216 83
+ frame data/chars/Broly_SSB/526.gif
+ offset 218 85
+ frame data/chars/Broly_SSB/527.gif
+ offset 218 85
+ frame data/chars/Broly_SSB/528.gif
+ offset 218 85
+ frame data/chars/Broly_SSB/529.gif
+ offset 220 87
+ frame data/chars/Broly_SSB/530.gif
+
+anim 6110
+ delay 7
+ offset 223 584
+ frame data/chars/Broly_SSB/531.gif
+ offset 211 610
+ frame data/chars/Broly_SSB/532.gif
+ offset 194 638
+ frame data/chars/Broly_SSB/533.gif
+ offset 236 601
+ frame data/chars/Broly_SSB/534.gif
+ offset 228 612
+ frame data/chars/Broly_SSB/535.gif
+ offset 220 535
+ frame data/chars/Broly_SSB/536.gif
+ offset 213 548
+ frame data/chars/Broly_SSB/537.gif
+ offset 205 577
+ frame data/chars/Broly_SSB/538.gif
+ offset 314 595
+ frame data/chars/Broly_SSB/539.gif
+ offset 303 621
+ frame data/chars/Broly_SSB/540.gif
+ offset 293 596
+ frame data/chars/Broly_SSB/541.gif
+ offset 284 625
+ frame data/chars/Broly_SSB/542.gif
+ offset 276 495
+ frame data/chars/Broly_SSB/543.gif
+ offset 267 638
+ frame data/chars/Broly_SSB/544.gif
+ offset 269 503
+ frame data/chars/Broly_SSB/545.gif
+ offset 277 502
+ frame data/chars/Broly_SSB/546.gif
+ offset 211 532
+ frame data/chars/Broly_SSB/547.gif
+ offset 201 561
+ frame data/chars/Broly_SSB/548.gif
+ offset 206 591
+ frame data/chars/Broly_SSB/549.gif
+ offset 218 622
+ frame data/chars/Broly_SSB/550.gif
+ offset 231 629
+ frame data/chars/Broly_SSB/551.gif
+ offset 225 625
+ frame data/chars/Broly_SSB/552.gif
+ offset 227 632
+ frame data/chars/Broly_SSB/553.gif
+ offset 225 588
+ frame data/chars/Broly_SSB/554.gif
+ offset 224 616
+ frame data/chars/Broly_SSB/555.gif
+ offset 222 625
+ frame data/chars/Broly_SSB/556.gif
+ offset 240 566
+ frame data/chars/Broly_SSB/557.gif
+ offset 233 592
+ frame data/chars/Broly_SSB/558.gif
+ offset 219 616
+ frame data/chars/Broly_SSB/559.gif
+ offset 251 626
+ frame data/chars/Broly_SSB/560.gif
+ offset 241 638
+ frame data/chars/Broly_SSB/561.gif
+ offset 232 627
+ frame data/chars/Broly_SSB/562.gif
+ offset 223 508
+ frame data/chars/Broly_SSB/563.gif
+ offset 219 510
+ frame data/chars/Broly_SSB/564.gif
+ offset 217 537
+ frame data/chars/Broly_SSB/565.gif
+
+anim freespecial2550
+ delay 7
+ offset 55 136
+ frame data/chars/Broly_SSB/566.gif
+ offset 56 138
+ frame data/chars/Broly_SSB/567.gif
+ offset 55 145
+ frame data/chars/Broly_SSB/568.gif
+ offset 56 137
+ frame data/chars/Broly_SSB/569.gif
+
+anim 7009
+ delay 7
+ offset 128 98
+ frame data/chars/Broly_SSB/570.gif
+ offset 125 107
+ frame data/chars/Broly_SSB/571.gif
+ offset 114 116
+ frame data/chars/Broly_SSB/572.gif
+ offset 104 112
+ frame data/chars/Broly_SSB/573.gif
+
+anim freespecial1076
+ delay 7
+ offset 246 328
+ frame data/chars/Broly_SSB/574.gif
+ offset 233 382
+ frame data/chars/Broly_SSB/575.gif
+ offset 221 473
+ frame data/chars/Broly_SSB/576.gif
+ offset 240 629
+ frame data/chars/Broly_SSB/577.gif
+ offset 209 652
+ frame data/chars/Broly_SSB/578.gif
+ offset 219 652
+ frame data/chars/Broly_SSB/579.gif
+ offset 272 652
+ frame data/chars/Broly_SSB/580.gif
+ offset 219 652
+ frame data/chars/Broly_SSB/581.gif
+ offset 219 652
+ frame data/chars/Broly_SSB/582.gif
+ offset 222 652
+ frame data/chars/Broly_SSB/583.gif
+ offset 226 652
+ frame data/chars/Broly_SSB/584.gif
+ offset 227 652
+ frame data/chars/Broly_SSB/585.gif
+ offset 227 652
+ frame data/chars/Broly_SSB/586.gif
+ offset 224 652
+ frame data/chars/Broly_SSB/587.gif
+ offset 223 652
+ frame data/chars/Broly_SSB/588.gif
+ offset 213 652
+ frame data/chars/Broly_SSB/589.gif
+ offset 210 596
+ frame data/chars/Broly_SSB/590.gif
+ offset 206 643
+ frame data/chars/Broly_SSB/591.gif
+ offset 194 117
+ frame data/chars/Broly_SSB/592.gif
+ offset 192 119
+ frame data/chars/Broly_SSB/593.gif
+ offset 189 111
+ frame data/chars/Broly_SSB/594.gif
+
+anim 11101
+ delay 7
+ offset 45 19
+ frame data/chars/Broly_SSB/595.gif
+ offset 81 25
+ frame data/chars/Broly_SSB/596.gif
+ offset 91 26
+ frame data/chars/Broly_SSB/597.gif
+ offset 93 26
+ frame data/chars/Broly_SSB/598.gif
+ offset 93 26
+ frame data/chars/Broly_SSB/599.gif
+ offset 91 60
+ frame data/chars/Broly_SSB/600.gif
+ offset 89 68
+ frame data/chars/Broly_SSB/601.gif
+ offset 88 75
+ frame data/chars/Broly_SSB/602.gif
+ offset 87 84
+ frame data/chars/Broly_SSB/603.gif
+ offset 86 92
+ frame data/chars/Broly_SSB/604.gif
+ offset 86 99
+ frame data/chars/Broly_SSB/605.gif
+ offset 87 110
+ frame data/chars/Broly_SSB/606.gif
+ offset 88 127
+ frame data/chars/Broly_SSB/607.gif
+ offset 71 99
+ frame data/chars/Broly_SSB/608.gif
+ offset 71 80
+ frame data/chars/Broly_SSB/609.gif
+ offset 71 88
+ frame data/chars/Broly_SSB/610.gif
+ offset 71 94
+ frame data/chars/Broly_SSB/611.gif
+ offset 72 116
+ frame data/chars/Broly_SSB/612.gif
+ offset 75 136
+ frame data/chars/Broly_SSB/613.gif
+ offset 74 153
+ frame data/chars/Broly_SSB/614.gif
+ offset -15 126
+ frame data/chars/Broly_SSB/615.gif
+ offset -13 133
+ frame data/chars/Broly_SSB/616.gif
+ offset -13 136
+ frame data/chars/Broly_SSB/617.gif
+ offset -13 142
+ frame data/chars/Broly_SSB/618.gif
+
+anim freespecial1012
+ delay 7
+ offset 94 170
+ frame data/chars/Broly_SSB/619.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/620.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/621.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/622.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/623.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/624.gif
+ offset 99 170
+ frame data/chars/Broly_SSB/625.gif
+ offset 102 170
+ frame data/chars/Broly_SSB/626.gif
+
+anim freespecial1013
+ delay 7
+ offset 153 129
+ frame data/chars/Broly_SSB/627.gif
+ offset 250 187
+ frame data/chars/Broly_SSB/628.gif
+ offset 259 266
+ frame data/chars/Broly_SSB/629.gif
+ offset 246 319
+ frame data/chars/Broly_SSB/630.gif
+
+anim 9022
+ delay 7
+ offset 88 130
+ frame data/chars/Broly_SSB/631.gif
+ offset 93 218
+ frame data/chars/Broly_SSB/632.gif
+ offset 80 250
+ frame data/chars/Broly_SSB/633.gif
+ offset 63 249
+ frame data/chars/Broly_SSB/634.gif
+ offset 55 248
+ frame data/chars/Broly_SSB/635.gif
+ offset 58 242
+ frame data/chars/Broly_SSB/636.gif
+ offset 53 250
+ frame data/chars/Broly_SSB/637.gif
+ offset 62 259
+ frame data/chars/Broly_SSB/638.gif
+ offset 64 258
+ frame data/chars/Broly_SSB/639.gif
+ offset 66 258
+ frame data/chars/Broly_SSB/640.gif
+ offset 34 257
+ frame data/chars/Broly_SSB/641.gif
+ offset 21 258
+ frame data/chars/Broly_SSB/642.gif
+ offset 36 255
+ frame data/chars/Broly_SSB/643.gif
+ offset 36 250
+ frame data/chars/Broly_SSB/644.gif
+ offset 34 246
+ frame data/chars/Broly_SSB/645.gif
+ offset -92 226
+ frame data/chars/Broly_SSB/646.gif
+
+anim 8250
+ delay 7
+ offset 57 10
+ frame data/chars/Broly_SSB/647.gif
+ offset 91 20
+ frame data/chars/Broly_SSB/648.gif
+ offset 122 29
+ frame data/chars/Broly_SSB/649.gif
+ offset 150 38
+ frame data/chars/Broly_SSB/650.gif
+ offset 174 45
+ frame data/chars/Broly_SSB/651.gif
+ offset 195 50
+ frame data/chars/Broly_SSB/652.gif
+ offset 212 53
+ frame data/chars/Broly_SSB/653.gif
+ offset 226 54
+ frame data/chars/Broly_SSB/654.gif
+ offset 237 54
+ frame data/chars/Broly_SSB/655.gif
+ offset 245 54
+ frame data/chars/Broly_SSB/656.gif
+ offset 252 53
+ frame data/chars/Broly_SSB/657.gif
+ offset 266 52
+ frame data/chars/Broly_SSB/658.gif
+ offset 284 50
+ frame data/chars/Broly_SSB/659.gif
+ offset 298 48
+ frame data/chars/Broly_SSB/660.gif
+ offset 313 49
+ frame data/chars/Broly_SSB/661.gif
+ offset 328 50
+ frame data/chars/Broly_SSB/662.gif
+ offset 343 50
+ frame data/chars/Broly_SSB/663.gif
+ offset 359 51
+ frame data/chars/Broly_SSB/664.gif
+ offset 373 51
+ frame data/chars/Broly_SSB/665.gif
+ offset 388 51
+ frame data/chars/Broly_SSB/666.gif
+ offset 404 51
+ frame data/chars/Broly_SSB/667.gif
+ offset 418 51
+ frame data/chars/Broly_SSB/668.gif
+ offset 411 50
+ frame data/chars/Broly_SSB/669.gif
+ offset 421 50
+ frame data/chars/Broly_SSB/670.gif
+ offset 431 49
+ frame data/chars/Broly_SSB/671.gif
+ offset 446 48
+ frame data/chars/Broly_SSB/672.gif
+ offset 462 47
+ frame data/chars/Broly_SSB/673.gif
+ offset 446 45
+ frame data/chars/Broly_SSB/674.gif
+ offset 443 44
+ frame data/chars/Broly_SSB/675.gif
+ offset 456 42
+ frame data/chars/Broly_SSB/676.gif
+ offset 468 40
+ frame data/chars/Broly_SSB/677.gif
+ offset 482 38
+ frame data/chars/Broly_SSB/678.gif
+ offset 392 36
+ frame data/chars/Broly_SSB/679.gif
+ offset 345 34
+ frame data/chars/Broly_SSB/680.gif
+ offset 319 31
+ frame data/chars/Broly_SSB/681.gif
+ offset 322 29
+ frame data/chars/Broly_SSB/682.gif
+ offset 327 27
+ frame data/chars/Broly_SSB/683.gif
+ offset 336 20
+ frame data/chars/Broly_SSB/684.gif
+ offset 339 20
+ frame data/chars/Broly_SSB/685.gif
+ offset 343 13
+ frame data/chars/Broly_SSB/686.gif
+ offset 348 12
+ frame data/chars/Broly_SSB/687.gif
+ offset 346 -14
+ frame data/chars/Broly_SSB/688.gif
+ offset 389 -73
+ frame data/chars/Broly_SSB/689.gif
+ offset 298 -92
+ frame data/chars/Broly_SSB/690.gif
+ offset 399 -85
+ frame data/chars/Broly_SSB/691.gif
+ offset 299 -100
+ frame data/chars/Broly_SSB/692.gif
+ offset 409 -102
+ frame data/chars/Broly_SSB/693.gif
+ offset 414 -116
+ frame data/chars/Broly_SSB/694.gif
+ offset 308 -111
+ frame data/chars/Broly_SSB/695.gif
+ offset 342 -126
+ frame data/chars/Broly_SSB/696.gif
+ offset 370 -116
+ frame data/chars/Broly_SSB/697.gif
+ offset 433 -132
+ frame data/chars/Broly_SSB/698.gif
+ offset 438 -127
+ frame data/chars/Broly_SSB/699.gif
+ offset 443 -135
+ frame data/chars/Broly_SSB/700.gif
+ offset 448 -155
+ frame data/chars/Broly_SSB/701.gif
+ offset 453 -148
+ frame data/chars/Broly_SSB/702.gif
+ offset 458 -148
+ frame data/chars/Broly_SSB/703.gif
+ offset 339 -150
+ frame data/chars/Broly_SSB/704.gif
+ offset 344 -164
+ frame data/chars/Broly_SSB/705.gif
+ offset 345 -169
+ frame data/chars/Broly_SSB/706.gif
+ offset 351 -187
+ frame data/chars/Broly_SSB/707.gif
+ offset 351 -184
+ frame data/chars/Broly_SSB/708.gif
+ offset 365 -182
+ frame data/chars/Broly_SSB/709.gif
+ offset 359 -200
+ frame data/chars/Broly_SSB/710.gif
+ offset 365 -197
+ frame data/chars/Broly_SSB/711.gif
+
+anim freespecial1057
+ delay 7
+ offset 130 117
+ frame data/chars/Broly_SSB/712.gif
+ offset 104 139
+ frame data/chars/Broly_SSB/713.gif
+ offset 52 157
+ frame data/chars/Broly_SSB/714.gif
+ offset 50 153
+ frame data/chars/Broly_SSB/715.gif
+ offset 82 113
+ frame data/chars/Broly_SSB/716.gif
+ offset 88 55
+ frame data/chars/Broly_SSB/717.gif
+ offset 88 -33
+ frame data/chars/Broly_SSB/718.gif
+ offset 80 -88
+ frame data/chars/Broly_SSB/719.gif
+
+anim 0198
+ delay 7
+ offset 56 27
+ frame data/chars/Broly_SSB/720.gif
+ offset 67 32
+ frame data/chars/Broly_SSB/721.gif
+ offset 79 38
+ frame data/chars/Broly_SSB/722.gif
+ offset 91 46
+ frame data/chars/Broly_SSB/723.gif
+ offset 108 52
+ frame data/chars/Broly_SSB/724.gif
+ offset 119 56
+ frame data/chars/Broly_SSB/725.gif
+ offset 126 59
+ frame data/chars/Broly_SSB/726.gif
+ offset 130 61
+ frame data/chars/Broly_SSB/727.gif
+ offset 130 63
+ frame data/chars/Broly_SSB/728.gif
+ offset 130 62
+ frame data/chars/Broly_SSB/729.gif
+
+anim freespecial1054
+ delay 7
+ offset 47 46
+ frame data/chars/Broly_SSB/730.gif
+ offset 45 45
+ frame data/chars/Broly_SSB/731.gif
+ offset 45 45
+ frame data/chars/Broly_SSB/732.gif
+ offset 47 48
+ frame data/chars/Broly_SSB/733.gif
+ offset 47 47
+ frame data/chars/Broly_SSB/734.gif
+
+anim freespecial1015
+ delay 7
+ offset 128 128
+ frame data/chars/Broly_SSB/735.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/736.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/737.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/738.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/739.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/740.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/741.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/742.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/743.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/744.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/745.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/746.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/747.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/748.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/749.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/750.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/751.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/752.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/753.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/754.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/755.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/756.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/757.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/758.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/759.gif
+ offset 128 128
+ frame data/chars/Broly_SSB/760.gif
+
+anim freespecial1036
+ delay 7
+ offset 250 230
+ frame data/chars/Broly_SSB/761.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/762.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/763.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/764.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/765.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/766.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/767.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/768.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/769.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/770.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/771.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/772.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/773.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/774.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/775.gif
+ offset 250 230
+ frame data/chars/Broly_SSB/776.gif
+
+anim 7001
+ delay 7
+ offset 127 215
+ frame data/chars/Broly_SSB/777.gif
+ offset 170 417
+ frame data/chars/Broly_SSB/778.gif
+ offset 175 468
+ frame data/chars/Broly_SSB/779.gif
+ offset 172 496
+ frame data/chars/Broly_SSB/780.gif
+ offset 163 487
+ frame data/chars/Broly_SSB/781.gif
+ offset 155 474
+ frame data/chars/Broly_SSB/782.gif
+ offset 122 435
+ frame data/chars/Broly_SSB/783.gif
+
+anim freespecial1055
+ delay 7
+ offset 194 11
+ frame data/chars/Broly_SSB/784.gif
+ offset 202 97
+ frame data/chars/Broly_SSB/785.gif
+ offset 189 130
+ frame data/chars/Broly_SSB/786.gif
+ offset 171 130
+ frame data/chars/Broly_SSB/787.gif
+ offset 163 129
+ frame data/chars/Broly_SSB/788.gif
+ offset 167 123
+ frame data/chars/Broly_SSB/789.gif
+ offset 162 130
+ frame data/chars/Broly_SSB/790.gif
+ offset 172 137
+ frame data/chars/Broly_SSB/791.gif
+ offset 172 134
+ frame data/chars/Broly_SSB/792.gif
+ offset 175 139
+ frame data/chars/Broly_SSB/793.gif
+ offset 140 138
+ frame data/chars/Broly_SSB/794.gif
+ offset 127 139
+ frame data/chars/Broly_SSB/795.gif
+ offset 140 134
+ frame data/chars/Broly_SSB/796.gif
+ offset 145 128
+ frame data/chars/Broly_SSB/797.gif
+ offset 139 126
+ frame data/chars/Broly_SSB/798.gif
+
+anim freespecial1021
+ delay 7
+ offset 264 136
+ frame data/chars/Broly_SSB/799.gif
+ offset 279 140
+ frame data/chars/Broly_SSB/800.gif
+ offset 289 135
+ frame data/chars/Broly_SSB/801.gif
+ offset 287 131
+ frame data/chars/Broly_SSB/802.gif
+ offset 283 129
+ frame data/chars/Broly_SSB/803.gif
+ offset 248 128
+ frame data/chars/Broly_SSB/804.gif
+ offset 235 128
+ frame data/chars/Broly_SSB/805.gif
+ offset 235 134
+ frame data/chars/Broly_SSB/806.gif
+ offset 244 134
+ frame data/chars/Broly_SSB/807.gif
+ offset 261 139
+ frame data/chars/Broly_SSB/808.gif
+ offset 278 141
+ frame data/chars/Broly_SSB/809.gif
+ offset 284 142
+ frame data/chars/Broly_SSB/810.gif
+ offset 265 142
+ frame data/chars/Broly_SSB/811.gif
+ offset 258 144
+ frame data/chars/Broly_SSB/812.gif
+ offset 253 145
+ frame data/chars/Broly_SSB/813.gif
+ offset 259 134
+ frame data/chars/Broly_SSB/814.gif
+
+anim freespecial1075
+ delay 7
+ offset 18 24
+ frame data/chars/Broly_SSB/815.gif
+ offset 25 36
+ frame data/chars/Broly_SSB/816.gif
+ offset 13 20
+ frame data/chars/Broly_SSB/817.gif
+ offset 14 16
+ frame data/chars/Broly_SSB/818.gif
+
+anim freespecial1011
+ delay 7
+ offset 94 170
+ frame data/chars/Broly_SSB/819.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/820.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/821.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/822.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/823.gif
+ offset 94 170
+ frame data/chars/Broly_SSB/824.gif
+ offset 99 170
+ frame data/chars/Broly_SSB/825.gif
+ offset 102 170
+ frame data/chars/Broly_SSB/826.gif
+
+anim 6452
+ delay 7
+ offset 75 75
+ frame data/chars/Broly_SSB/827.gif
+
+anim freespecial1033
+ delay 7
+ offset 112 91
+ frame data/chars/Broly_SSB/828.gif
+ offset 117 89
+ frame data/chars/Broly_SSB/829.gif
+ offset 167 148
+ frame data/chars/Broly_SSB/830.gif
+ offset 166 148
+ frame data/chars/Broly_SSB/831.gif
+ offset 162 161
+ frame data/chars/Broly_SSB/832.gif
+ offset 162 160
+ frame data/chars/Broly_SSB/833.gif
+ offset 157 161
+ frame data/chars/Broly_SSB/834.gif
+ offset 153 164
+ frame data/chars/Broly_SSB/835.gif
+
+anim freespecial1058
+ delay 7
+ offset 75 -30
+ frame data/chars/Broly_SSB/836.gif
+ offset 128 59
+ frame data/chars/Broly_SSB/837.gif
+ offset 138 71
+ frame data/chars/Broly_SSB/838.gif
+ offset 149 80
+ frame data/chars/Broly_SSB/839.gif
+ offset 166 89
+ frame data/chars/Broly_SSB/840.gif
+ offset 177 94
+ frame data/chars/Broly_SSB/841.gif
+ offset 186 99
+ frame data/chars/Broly_SSB/842.gif
+ offset 184 102
+ frame data/chars/Broly_SSB/843.gif
+ offset 183 105
+ frame data/chars/Broly_SSB/844.gif
+ offset 181 107
+ frame data/chars/Broly_SSB/845.gif
+ offset 184 108
+ frame data/chars/Broly_SSB/846.gif
+ offset 173 109
+ frame data/chars/Broly_SSB/847.gif
+ offset 189 115
+ frame data/chars/Broly_SSB/848.gif
+ offset 175 123
+ frame data/chars/Broly_SSB/849.gif
+ offset 178 130
+ frame data/chars/Broly_SSB/850.gif
+ offset 180 136
+ frame data/chars/Broly_SSB/851.gif
+ offset 183 140
+ frame data/chars/Broly_SSB/852.gif
+ offset 186 144
+ frame data/chars/Broly_SSB/853.gif
+ offset 190 149
+ frame data/chars/Broly_SSB/854.gif
+ offset 192 153
+ frame data/chars/Broly_SSB/855.gif
+ offset 193 156
+ frame data/chars/Broly_SSB/856.gif
+ offset 191 78
+ frame data/chars/Broly_SSB/857.gif
+ offset 77 51
+ frame data/chars/Broly_SSB/858.gif
+ offset 28 56
+ frame data/chars/Broly_SSB/859.gif
+ offset -16 4
+ frame data/chars/Broly_SSB/860.gif
+
+anim 7010
+ delay 7
+ offset 126 126
+ frame data/chars/Broly_SSB/861.gif
+
+anim freespecial1072
+ delay 7
+ offset 127 33
+ frame data/chars/Broly_SSB/862.gif
+ offset 152 36
+ frame data/chars/Broly_SSB/863.gif
+ offset 186 84
+ frame data/chars/Broly_SSB/864.gif
+ offset 208 105
+ frame data/chars/Broly_SSB/865.gif
+ offset 207 100
+ frame data/chars/Broly_SSB/866.gif
+ offset 210 112
+ frame data/chars/Broly_SSB/867.gif
+ offset 214 113
+ frame data/chars/Broly_SSB/868.gif
+ offset 217 115
+ frame data/chars/Broly_SSB/869.gif
+ offset 217 114
+ frame data/chars/Broly_SSB/870.gif
+ offset 217 115
+ frame data/chars/Broly_SSB/871.gif
+ offset 204 86
+ frame data/chars/Broly_SSB/872.gif
+ offset 204 84
+ frame data/chars/Broly_SSB/873.gif
+ offset 204 81
+ frame data/chars/Broly_SSB/874.gif
+
+anim freespecial1095
+ delay 7
+ offset 369 360
+ frame data/chars/Broly_SSB/875.gif
+
+anim freespecial1060
+ delay 7
+ offset 230 182
+ frame data/chars/Broly_SSB/876.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/877.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/878.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/879.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/880.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/881.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/882.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/883.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/884.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/885.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/886.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/887.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/888.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/889.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/890.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/891.gif
+ offset 230 182
+ frame data/chars/Broly_SSB/892.gif
+
+anim freespecial1042
+ delay 7
+ offset 133 126
+ frame data/chars/Broly_SSB/893.gif
+ offset 134 135
+ frame data/chars/Broly_SSB/894.gif
+ offset 135 133
+ frame data/chars/Broly_SSB/895.gif
+ offset 133 124
+ frame data/chars/Broly_SSB/896.gif
+
+anim freespecial3039
+ delay 7
+ offset 559 540
+ frame data/chars/Broly_SSB/897.gif
+
+anim freespecial1062
+ delay 7
+ offset 65 66
+ frame data/chars/Broly_SSB/898.gif
+ offset 137 134
+ frame data/chars/Broly_SSB/899.gif
+ offset 173 174
+ frame data/chars/Broly_SSB/900.gif
+ offset 237 241
+ frame data/chars/Broly_SSB/901.gif
+ offset 277 249
+ frame data/chars/Broly_SSB/902.gif
+ offset 297 249
+ frame data/chars/Broly_SSB/903.gif
+ offset 305 249
+ frame data/chars/Broly_SSB/904.gif
+ offset 337 249
+ frame data/chars/Broly_SSB/905.gif
+ offset 337 249
+ frame data/chars/Broly_SSB/906.gif
+ offset 341 249
+ frame data/chars/Broly_SSB/907.gif
+ offset 255 249
+ frame data/chars/Broly_SSB/908.gif
+ offset 280 249
+ frame data/chars/Broly_SSB/909.gif
+ offset 309 250
+ frame data/chars/Broly_SSB/910.gif
+ offset 341 249
+ frame data/chars/Broly_SSB/911.gif
+ offset 372 250
+ frame data/chars/Broly_SSB/912.gif
+ offset 406 249
+ frame data/chars/Broly_SSB/913.gif
+ offset 441 249
+ frame data/chars/Broly_SSB/914.gif
+ offset 438 250
+ frame data/chars/Broly_SSB/915.gif
+ offset 444 249
+ frame data/chars/Broly_SSB/916.gif
+ offset 444 249
+ frame data/chars/Broly_SSB/917.gif
+ offset 444 250
+ frame data/chars/Broly_SSB/918.gif
+ offset 444 250
+ frame data/chars/Broly_SSB/919.gif
+
+anim freespecial1053
+ delay 7
+ offset 116 -101
+ frame data/chars/Broly_SSB/920.gif
+ offset 122 133
+ frame data/chars/Broly_SSB/921.gif
+ offset 117 249
+ frame data/chars/Broly_SSB/922.gif
+ offset 116 245
+ frame data/chars/Broly_SSB/923.gif
+ offset 115 250
+ frame data/chars/Broly_SSB/924.gif
+ offset 114 241
+ frame data/chars/Broly_SSB/925.gif
+ offset 99 230
+ frame data/chars/Broly_SSB/926.gif
+ offset 104 230
+ frame data/chars/Broly_SSB/927.gif
+ offset 118 233
+ frame data/chars/Broly_SSB/928.gif
+ offset 122 239
+ frame data/chars/Broly_SSB/929.gif
+ offset 61 61
+ frame data/chars/Broly_SSB/930.gif
+ offset 59 -149
+ frame data/chars/Broly_SSB/931.gif
+ offset 344 532
+ frame data/chars/Broly_SSB/932.gif
+
+anim attack551
+ delay 7
+ offset 160 170
+ frame data/chars/Broly_SSB/933.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/934.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/935.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/936.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/937.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/938.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/939.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/940.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/941.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/942.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/943.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/944.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/945.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/946.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/947.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/948.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/949.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/950.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/951.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/952.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/953.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/954.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/955.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/956.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/957.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/958.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/959.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/960.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/961.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/962.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/963.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/964.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/965.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/966.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/967.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/968.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/969.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/970.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/971.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/972.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/973.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/974.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/975.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/976.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/977.gif
+ offset 160 170
+ frame data/chars/Broly_SSB/978.gif
