@@ -1,0 +1,44 @@
+name	levelup
+type	text
+subtype	noskip
+lifespan	2
+setlayer	999999999
+
+palette data/chars/misc/levelup/levelup.gif #1
+
+anim	idle
+	loop	0
+	delay	4
+	 offset     225 130
+	sound   data/sounds/lvlup.wav
+	frame	data/chars/misc/levelup/01.gif
+	frame	data/chars/misc/levelup/02.gif
+	frame	data/chars/misc/levelup/03.gif
+	frame	data/chars/misc/levelup/04.gif
+	frame	data/chars/misc/levelup/05.gif
+	frame	data/chars/misc/levelup/06.gif
+	frame	data/chars/misc/levelup/07.gif
+	frame	data/chars/misc/levelup/08.gif
+	frame	data/chars/misc/levelup/09.gif
+	frame	data/chars/misc/levelup/10.gif
+	
+	delay	4
+	frame	data/chars/misc/levelup/11.gif
+	frame	data/chars/misc/levelup/12.gif
+	frame	data/chars/misc/levelup/11.gif
+	frame	data/chars/misc/levelup/12.gif
+	frame	data/chars/misc/levelup/11.gif
+	frame	data/chars/misc/levelup/12.gif
+	frame	data/chars/misc/levelup/11.gif
+	frame	data/chars/misc/levelup/12.gif
+	
+	frame	data/chars/misc/levelup/13.gif
+	frame	data/chars/misc/levelup/14.gif
+	frame	data/chars/misc/levelup/13.gif
+	frame	data/chars/misc/levelup/14.gif
+	frame	data/chars/misc/levelup/13.gif
+	frame	data/chars/misc/levelup/14.gif
+	frame	data/chars/misc/levelup/13.gif
+	frame	data/chars/misc/levelup/14.gif
+	delay	999
+	frame	data/chars/misc/levelup/14.gif
