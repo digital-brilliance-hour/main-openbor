@@ -1,0 +1,146 @@
+name		Roll
+health	1
+type		obstacle
+hostile	player
+candamage	player
+shadow	0
+noquake  	1
+nolife  	1
+flash		empty
+noatflash	1
+#falldie	0
+nodieblink	2
+offscreenkill 200
+diesound 	data/sounds/klunk.wav
+
+anim idle
+	loop 1 24
+	jumpframe 0 2 0
+	delay	2
+	offset     238 177
+	bbox	218 121 40 57
+#	platform 35 41 9 54 15 15
+	 hitfx   	data/sounds/klunk.wav
+	 hitflash 	flash
+	move 3
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	218 	121 	40 		57 		5 		1 		0 		0 		15
+	frame	data/chars/misc/items/roll08.gif
+	frame	data/chars/misc/items/roll08.gif
+	frame	data/chars/misc/items/roll08.gif
+
+	frame	data/chars/misc/items/roll07.gif
+	frame	data/chars/misc/items/roll07.gif
+	frame	data/chars/misc/items/roll07.gif
+
+	frame	data/chars/misc/items/roll06.gif
+	frame	data/chars/misc/items/roll06.gif
+	frame	data/chars/misc/items/roll06.gif
+
+	frame	data/chars/misc/items/roll05.gif
+	frame	data/chars/misc/items/roll05.gif
+	frame	data/chars/misc/items/roll05.gif
+
+	frame	data/chars/misc/items/roll04.gif
+	frame	data/chars/misc/items/roll04.gif
+	frame	data/chars/misc/items/roll04.gif
+
+	frame	data/chars/misc/items/roll03.gif
+	frame	data/chars/misc/items/roll03.gif
+	frame	data/chars/misc/items/roll03.gif
+
+	frame	data/chars/misc/items/roll02.gif
+	frame	data/chars/misc/items/roll02.gif
+	frame	data/chars/misc/items/roll02.gif
+
+	frame	data/chars/misc/items/roll01.gif
+	frame	data/chars/misc/items/roll01.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	frame	data/chars/misc/items/roll01.gif
+
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	218 	121 	40 		57 		5 		1 		0 		0 		15
+	frame	data/chars/misc/items/roll08.gif
+	frame	data/chars/misc/items/roll08.gif
+	frame	data/chars/misc/items/roll08.gif
+
+	frame	data/chars/misc/items/roll07.gif
+	frame	data/chars/misc/items/roll07.gif
+	frame	data/chars/misc/items/roll07.gif
+
+	frame	data/chars/misc/items/roll06.gif
+	frame	data/chars/misc/items/roll06.gif
+	frame	data/chars/misc/items/roll06.gif
+
+	frame	data/chars/misc/items/roll05.gif
+	frame	data/chars/misc/items/roll05.gif
+	frame	data/chars/misc/items/roll05.gif
+
+	frame	data/chars/misc/items/roll04.gif
+	frame	data/chars/misc/items/roll04.gif
+	frame	data/chars/misc/items/roll04.gif
+
+	frame	data/chars/misc/items/roll03.gif
+	frame	data/chars/misc/items/roll03.gif
+	frame	data/chars/misc/items/roll03.gif
+
+	frame	data/chars/misc/items/roll02.gif
+	frame	data/chars/misc/items/roll02.gif
+	frame	data/chars/misc/items/roll02.gif
+
+	frame	data/chars/misc/items/roll01.gif
+	frame	data/chars/misc/items/roll01.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	frame	data/chars/misc/items/roll01.gif
+
+
+anim death
+	jumpframe 0 3.3 -0.5
+	loop 0
+	delay	2
+	offset     238 177
+
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/drum02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
+
+

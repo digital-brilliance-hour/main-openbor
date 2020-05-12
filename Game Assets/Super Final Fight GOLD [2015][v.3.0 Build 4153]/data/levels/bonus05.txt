@@ -1,0 +1,69 @@
+music			data/music/select.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/bonus05/n01.gif
+background 		data/bgs/bonus05/back.gif
+frontpanel		data/bgs/bonus05/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\BONUS05\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type            	1 0 1
+settime		40
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+wall    145 225 30 0 160 190 40 250
+
+#-------1
+
+#----------------
+
+spawn	bonus
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+spawn   wall01
+alias   wall
+health  400
+2phealth 600
+3phealth 800
+flip    1
+coords  238 220
+at      0
+
+spawn   wall02
+alias   wall
+health  450
+2phealth 650
+3phealth 750
+flip    1
+coords  238 220
+at      0
+
+spawn   wall03
+alias   wall
+health  500
+2phealth 700
+3phealth 900
+flip    1
+coords  238 220
+at      0
+
+
+
+
+
+
+
+
+

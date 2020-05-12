@@ -1,0 +1,116 @@
+name					wave
+health					1
+nolife					1
+type					npc
+hostile					player enemy npc obstacle
+candamage				player enemy npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust
+subject_to_wall 0
+
+palette data/chars/dean/wave/wave.gif #1
+
+anim idle
+	jugglecost 	2
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack13	181	89	103		93		15			1		1		0			25			15
+
+	move	5
+	delay	4
+	frame	data/chars/dean/wave/02.gif
+
+	move	5
+	delay	2
+	frame	data/chars/dean/wave/02.gif
+	frame	data/chars/dean/wave/02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/03.gif
+	frame	data/chars/dean/wave/03.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/04.gif
+	frame	data/chars/dean/wave/04.gif
+	frame	data/chars/misc/empty.gif
+
+	move	4
+	frame	data/chars/dean/wave/01.gif
+	frame	data/chars/dean/wave/01.gif
+	frame	data/chars/misc/empty.gif
+
+	move	3
+	frame	data/chars/dean/wave/02.gif
+	frame	data/chars/dean/wave/02.gif
+	frame	data/chars/misc/empty.gif
+
+	move	2
+	frame	data/chars/dean/wave/03.gif
+	frame	data/chars/dean/wave/03.gif
+	frame	data/chars/misc/empty.gif
+
+	move	1
+	frame	data/chars/dean/wave/04.gif
+	frame	data/chars/dean/wave/04.gif
+	frame	data/chars/misc/empty.gif
+
+	attack13		0	0	0		0		0		0		0		0			0			0
+	move	0
+	frame	data/chars/dean/wave/05.gif
+	frame	data/chars/dean/wave/05.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/06.gif
+	frame	data/chars/dean/wave/06.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/07.gif
+	frame	data/chars/dean/wave/07.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/08.gif
+	frame	data/chars/dean/wave/08.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/dean/wave/09.gif
+	frame	data/chars/dean/wave/09.gif
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

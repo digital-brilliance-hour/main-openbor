@@ -1,0 +1,175 @@
+music			data/music/select.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/bonus02/n01.gif
+background 		data/bgs/bonus02/back.gif
+frontpanel		data/bgs/bonus02/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\BONUS02\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type            	1 0 1
+settime		15
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	bonus
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+spawn   glass
+health  1
+flip    1
+coords  200 225
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  250 225
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  300 225
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  400 200
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  400 200
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  450 200
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  500 200
+at      0
+
+spawn   glass
+health  1
+flip    1
+coords  550 200
+at      0
+
+spawn   glass
+health  5
+flip    1
+coords  600 225
+at      0
+
+spawn   glass
+health  5
+flip    1
+coords  630 225
+at      0
+
+spawn   glass
+health  5
+flip    1
+coords  660 225
+at      0
+
+spawn   glass
+health  5
+flip    1
+coords  800 210
+at      0
+
+spawn   glass
+health  5
+flip    1
+coords  830 210
+at      0
+
+spawn   glass
+health  10
+flip    1
+coords  860 225
+at      0
+
+spawn   glass
+health  10
+flip    1
+coords  930 225
+at      0
+
+spawn   glass
+health  10
+flip    1
+coords  980 225
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1200 215
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1230 215
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1260 215
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1290 215
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1320 215
+at      0
+
+spawn   glass
+health  15
+flip    1
+coords  1350 215
+at      0
+
+spawn   glass
+health  30
+flip    1
+coords  1400 200
+at      0
+
+
+
+
+

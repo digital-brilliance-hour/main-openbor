@@ -1,0 +1,189 @@
+music			data/music/music02.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST02_5/n01.gif
+background 		data/bgs/ST02_5/back.gif
+frontpanel		data/bgs/ST02_5/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST02_5\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		2
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage02
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+group   4 4
+at      0
+
+
+spawn   phone
+item	  banana
+coords  352 240
+at      0
+
+spawn   phone
+item	  bag
+coords  452 240
+at      0
+
+spawn   phone
+coords  552 240
+at      0
+
+spawn   phone
+coords  752 240
+at      0
+
+spawn   phone
+item	  pasta
+coords  852 240
+at      0
+
+spawn   axl
+coords  500 200
+at      50
+
+spawn   dug
+coords  500 200
+at      100
+
+spawn   leon
+coords  550 230
+at      150
+
+#-------1
+
+wait
+at      200
+
+spawn   poison
+coords  500 200
+at      200
+
+spawn   elic
+coords  500 200
+at      200
+
+spawn   wong
+coords  -100 240
+at      200
+
+spawn   bull
+coords  500 200
+at      200
+
+
+2pspawn   poison
+coords  500 200
+at      200
+
+2pspawn   elic
+coords  500 200
+at      200
+
+2pspawn   wong
+coords  -100 240
+at      200
+
+2pspawn   bull
+coords  500 200
+at      200
+
+
+3pspawn   poison
+coords  500 200
+at      200
+
+3pspawn   elic
+coords  500 200
+at      200
+
+3pspawn   wong
+coords  -100 240
+at      200
+
+3pspawn   bull
+coords  500 200
+at      200
+
+#-------1
+
+group   6 6
+at      428
+
+wait
+at      428
+
+spawn   wood
+coords  500 200
+at      428
+
+spawn   wood
+coords  -100 240
+at      428
+
+spawn   wood
+coords  600 230
+at      428
+
+spawn   wood
+coords  -200 220
+at      428
+
+spawn   wood
+coords  550 210
+at      428
+
+spawn   wood
+coords  -150 200
+at      428
+
+spawn   wood
+coords  500 200
+at      428
+
+spawn   wood
+coords  -100 240
+at      428
+
+spawn   wood
+coords  600 230
+at      428
+
+spawn   wood
+coords  -200 220
+at      428
+
+spawn   wood
+coords  550 210
+at      428
+
+spawn   wood
+coords  -150 200
+at      428
+
+#-------1
+
+
+
+
+

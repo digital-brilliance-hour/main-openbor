@@ -1,0 +1,1062 @@
+name	    		Abigail
+type	    		enemy
+#hostile		player
+#candamage		player enemy npc
+health	    	55
+mp          	100
+speed	    		8
+jumpspeed	    	10
+jumpheight   	3
+jumpmove 		3
+turndelay 		12
+mprate		5
+#grabdistance	40
+#grabfinish		0
+#paingrab		1
+grabback		1
+antigravity 	10
+bounce		1
+noquake     	1
+shadow	    	4
+diesound    	data/sounds/die02.wav
+flash 		flash
+bflash 		guard
+dust    		dust2
+toflip		1
+riseinv		1 1
+riseattacktype	0
+escapehits 		2
+jugglepoints	15
+blockodds 		1
+thold     		49
+
+aggression		0
+nodieblink		1
+falldie 		2
+#risetime 		250
+nolife  1
+
+lifebarstatus 423 7 1 1 0 -300 -300 -300 -300
+lifeposition 37 218 
+nameposition 37 229
+iconposition 0 0
+
+icon	      data/chars/abigail/bicon.gif
+icondie     data/chars/abigail/bicond.gif
+
+palette data/chars/abigail/abigail.gif #1
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/abigail/idle01.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/abigail/idle01.gif
+
+#-------Moves
+
+anim spawn
+	summonframe 65 0 0 0 1
+	subentity	dial06
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay	2
+	 move 	4
+       sound      data/sounds/abi.wav
+       frame      data/chars/abigail/a204.gif
+ 	 sound   	data/sounds/run.wav
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+ 	 move 	3
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+
+	 move 	2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	94 	47 		25 		30 		1 		0 		0 		30
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a209.gif
+
+	 move 	1
+       frame      data/chars/abigail/a209.gif
+       frame      data/chars/abigail/a210.gif
+       frame      data/chars/abigail/a210.gif
+
+ 	 move 	0
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a212.gif
+       frame      data/chars/abigail/a212.gif
+
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      15
+       frame      data/chars/abigail/a213.gif
+       frame      data/chars/abigail/a214.gif
+ 	 delay      35
+       frame      data/chars/abigail/a102.gif
+ 	 delay      8
+       frame      data/chars/abigail/a101.gif
+	 delay      1
+       frame      data/chars/abigail/idle01.gif
+
+
+anim idle
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      8
+       frame      data/chars/abigail/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      15
+       frame      data/chars/abigail/walk01.gif
+       frame      data/chars/abigail/walk02.gif
+       frame      data/chars/abigail/walk01.gif
+       frame      data/chars/abigail/idle01.gif
+
+anim block
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      3
+	 move		-5
+       frame      data/chars/abigail/guard01.gif
+	 move		-4
+       frame      data/chars/abigail/guard01.gif
+	 move		-3
+       frame      data/chars/abigail/guard01.gif
+	 move		-2
+       frame      data/chars/abigail/guard01.gif
+	 move		-1
+       frame      data/chars/abigail/guard01.gif
+	 move		0
+	 delay      25
+       frame      data/chars/abigail/guard01.gif
+
+anim attack1
+	range 0 47
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat2.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      4
+       frame      data/chars/abigail/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 delay      25
+	 attack  	240 	94 	47 		25 		15 		0 		0 		0 		30
+       frame      data/chars/abigail/a102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/abigail/a101.gif
+
+anim attack2
+	range 0 47
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      4
+       frame      data/chars/abigail/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 delay      25
+	 blast  	240 	94 	47 		25 		30 		1 		0 		0 		30
+       frame      data/chars/abigail/a102.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/abigail/a101.gif
+
+anim attack3
+	 followanim	1
+	 followcond	1
+	range 100 240
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/empty.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+       sound   data/sounds/abi.wav
+	 delay      20
+       frame      data/chars/abigail/a201.gif
+       frame      data/chars/abigail/a202.gif
+       frame      data/chars/abigail/a203.gif
+
+	 bbox		0 0 0 0
+ 	 sound   	data/sounds/run.wav
+	 delay	2
+	 move 	4
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	230 	112 	22 		66 		15 		0 		0 		1 		1
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+       frame      data/chars/abigail/a204.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+       frame      data/chars/abigail/a206.gif
+
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+       frame      data/chars/abigail/a205.gif
+
+	 bbox		230 112 22 66
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+ 	 move 	3
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+
+	 move 	2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+#	 blast  	224 	119 	59 		56 		30 		1 		0 		0 		30
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a209.gif
+
+	 move 	1
+       frame      data/chars/abigail/a209.gif
+       frame      data/chars/abigail/a210.gif
+       frame      data/chars/abigail/a210.gif
+
+ 	 move 	0
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a212.gif
+       frame      data/chars/abigail/a212.gif
+
+	 bbox		230 112 22 66
+	 delay      15
+       frame      data/chars/abigail/a213.gif
+       frame      data/chars/abigail/a214.gif
+ 	 delay      35
+       frame      data/chars/abigail/a102.gif
+ 	 delay      8
+       frame      data/chars/abigail/a101.gif
+
+anim follow1
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      4
+       frame      data/chars/abigail/a204.gif
+
+	 delay	2
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+ 	 move 	3
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+       frame      data/chars/abigail/a207.gif
+
+	 move 	2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	94 	47 		25 		30 		1 		0 		0 		24
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a208.gif
+       frame      data/chars/abigail/a209.gif
+
+	 move 	1
+       frame      data/chars/abigail/a209.gif
+       frame      data/chars/abigail/a210.gif
+       frame      data/chars/abigail/a210.gif
+
+ 	 move 	0
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a211.gif
+       frame      data/chars/abigail/a212.gif
+       frame      data/chars/abigail/a212.gif
+
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 bbox		230 112 22 66
+	 delay      15
+       frame      data/chars/abigail/a213.gif
+
+anim riseattack1
+	range 0 75
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      4
+       frame      data/chars/abigail/a101.gif
+
+	 delay	2
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+ 	 move 	3
+       frame      data/chars/abigail/a101.gif
+       frame      data/chars/abigail/a101.gif
+       frame      data/chars/abigail/a101.gif
+
+	 move 	2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	94 	47 		25 		30 		1 		0 		0 		24
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+	 move 	1
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+ 	 move 	0
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      15
+       frame      data/chars/abigail/a102.gif
+	 delay      8
+       frame      data/chars/abigail/a101.gif
+
+anim special2
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+#	cancel 	0 			2 		1 		d f a 			freespecial2
+#	cancel 	0 			2 		1 		d u a 			freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      24
+       frame      data/chars/abigail/guard01.gif
+
+	 delay	2
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+ 	 move 	3
+       frame      data/chars/abigail/a101.gif
+       frame      data/chars/abigail/a101.gif
+       frame      data/chars/abigail/a101.gif
+
+	 move 	2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	94 	47 		25 		30 		1 		0 		0 		24
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+	 move 	1
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+ 	 move 	0
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+       frame      data/chars/abigail/a102.gif
+
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      15
+       frame      data/chars/abigail/a102.gif
+	 delay      8
+       frame      data/chars/abigail/a101.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/abigail/pain01.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     239 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/abigail/pain01.gif
+
+anim fall
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/abigail/pain02.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     239 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/abigail/pain02.gif
+
+anim fall2
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/abigail/pain01.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     239 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/abigail/pain01.gif
+
+anim fall3
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/abigail/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/abigail/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/abigail/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/abigail/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/abigail/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/abigail/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/abigail/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/abigail/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/abigail/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/abigail/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/abigail/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/abigail/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/abigail/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/abigail/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/abigail/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/abigail/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/abigail/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/abigail/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/abigail/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/abigail/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/abigail/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/abigail/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/abigail/pain01.gif
+
+anim fall11
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+	 delay      999
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/abigail/pain01.gif
+
+anim fall12
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+	 delay      999
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/abigail/pain01.gif
+
+anim fall13
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/abigail/fall01.gif
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/abigail/fall02.gif
+	 delay      8
+       frame      data/chars/abigail/rise01.gif
+
+	 delay      16
+       frame      data/chars/abigail/pain02.gif
+
+anim death
+	jumpframe 26 1.5 0
+	landframe  27
+	quakeframe 27 5 3
+	 loop       0
+	 offset     238 177
+	 delay      15
+       frame      data/chars/abigail/fall02.gif
+	 delay      8
+       frame      data/chars/abigail/rise01.gif
+
+
+	 delay      4
+
+	 offset     237 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     239 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     237 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     237 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     239 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     237 177
+       frame      data/chars/abigail/rise01.gif
+	 offset     238 177
+       frame      data/chars/abigail/rise01.gif
+
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     239 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     239 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     237 177
+       frame      data/chars/abigail/pain02.gif
+	 offset     238 177
+       frame      data/chars/abigail/pain02.gif
+
+	 delay      999
+       frame      data/chars/abigail/fall01.gif
+       sound   	data/sounds/fall.wav
+	 delay      8
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+       frame      data/chars/abigail/fall02.gif
+
+
+
+

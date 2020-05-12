@@ -1,0 +1,118 @@
+name					maxo2
+health					1
+nolife					1
+type					npc
+hostile					enemy player npc obstacle
+candamage				enemy player npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+smaxow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		1.5
+subject_to_wall 0
+
+palette data/chars/deejay/maxo/maxo.gif #1
+
+anim idle
+	followanim	1
+	followcond	1
+	jugglecost 	2
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	1 4 15
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		240	109	56		46		10			1		1		0			25			15
+	move	1
+	frame	data/chars/deejay/maxo/11.gif
+	move	2
+	frame	data/chars/misc/empty.gif
+	move	3
+	frame	data/chars/deejay/maxo/12.gif
+	move	4
+	frame	data/chars/misc/empty.gif
+
+	delay	2
+	move	5
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		240	109	56		46		10			0		1		0			25			15
+	frame	data/chars/deejay/maxo/13.gif
+	frame	data/chars/deejay/maxo/13.gif
+	frame	data/chars/deejay/maxo/14.gif
+	frame	data/chars/deejay/maxo/14.gif
+	frame	data/chars/deejay/maxo/15.gif
+	frame	data/chars/deejay/maxo/15.gif
+	frame	data/chars/deejay/maxo/16.gif
+	frame	data/chars/deejay/maxo/16.gif
+	frame	data/chars/deejay/maxo/17.gif
+	frame	data/chars/deejay/maxo/17.gif
+	frame	data/chars/deejay/maxo/18.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/deejay/maxo/18.gif
+
+anim follow1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/deejay/maxo/19.gif
+	frame	data/chars/deejay/maxo/20.gif
+	frame	data/chars/deejay/maxo/21.gif
+	frame	data/chars/deejay/maxo/22.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/deejay/maxo/19.gif
+	frame	data/chars/deejay/maxo/20.gif
+	frame	data/chars/deejay/maxo/21.gif
+	frame	data/chars/deejay/maxo/22.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

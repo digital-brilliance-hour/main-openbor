@@ -1,0 +1,134 @@
+music			data/music/music02.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST02_1/n01.gif
+background 		data/bgs/ST02_1/back.gif
+frontpanel		data/bgs/ST02_1/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST02_1\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		2
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	stage02
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+group   4 4
+at      0
+
+spawn   drum
+coords  282 204
+at      0
+
+spawn   drum
+item	  dollar
+coords  333 237
+at      0
+
+spawn   drum
+coords  452 220
+at      0
+
+spawn   drum
+item	  glas
+coords  742 204
+at      0
+
+spawn   jony
+coords  500 200
+at      50
+
+spawn   schot
+coords  500 200
+at      100
+
+spawn   elijah
+coords  550 230
+at      200
+
+#-------1
+
+wait
+at      300
+
+spawn   jack
+coords  500 200
+at      300
+
+spawn   mic
+coords  500 200
+at      300
+
+spawn   elias
+coords  -100 240
+at      300
+
+spawn   eliot
+coords  500 200
+at      300
+
+
+2pspawn   jack
+coords  500 200
+at      300
+
+2pspawn   mic
+coords  500 200
+at      300
+
+2pspawn   elias
+coords  -100 240
+at      300
+
+2pspawn   eliot
+coords  500 200
+at      300
+
+#-------1
+
+group   2 2
+at      536
+
+wait
+at      536
+
+spawn   Andore
+Alias	  Andore_Jr.
+health 150
+2phealth 150
+3phealth 200
+coords  -100 200
+at      536
+
+spawn   Andore
+map	  1
+health 150
+2phealth 150
+3phealth 200
+coords  550 230
+at      536
+
+#-------1
+
+
+
+
+

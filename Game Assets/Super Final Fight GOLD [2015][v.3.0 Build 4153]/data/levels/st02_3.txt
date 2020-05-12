@@ -1,0 +1,657 @@
+music			data/music/music02.ogg
+bossmusic		data/music/boss01.ogg
+panel   		data/bgs/ST02_3/n01.gif
+background 		data/bgs/ST02_3/back.gif
+frontpanel		data/bgs/ST02_3/f01.gif 
+bgspeed 25 0
+rock 3
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST02_3\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		2
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage02
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+#-------1
+
+group   5 5
+at      200
+
+wait
+at      200
+
+spawn   bill
+coords  -100 220
+at      200
+
+spawn   two_p
+coords  550 200
+at      200
+
+spawn   atlus
+coords  -100 220
+at      200
+
+spawn   schot
+coords  600 200
+at      200
+
+spawn   leon
+coords  550 200
+at      200
+
+spawn   andore
+alias	  Andore_Jr
+coords  -100 220
+at      200
+
+spawn   eliot
+coords  600 200
+at      200
+
+spawn   jake
+coords  -100 220
+at      200
+
+
+
+2pspawn   bill
+coords  -100 220
+at      200
+
+2pspawn   two_p
+coords  550 200
+at      200
+
+2pspawn   atlus
+coords  -100 220
+at      200
+
+2pspawn   schot
+coords  600 200
+at      200
+
+2pspawn   leon
+coords  550 200
+at      200
+
+2pspawn   andore
+alias	  Andore_Jr
+coords  -100 220
+at      200
+
+2pspawn   eliot
+coords  600 200
+at      200
+
+2pspawn   jake
+coords  -100 220
+at      200
+
+
+
+3pspawn   bill
+coords  -100 220
+at      200
+
+3pspawn   two_p
+coords  550 200
+at      200
+
+3pspawn   atlus
+coords  -100 220
+at      200
+
+3pspawn   schot
+coords  600 200
+at      200
+
+3pspawn   leon
+coords  550 200
+at      200
+
+3pspawn   andore
+alias	  Andore_Jr
+coords  -100 220
+at      200
+
+3pspawn   eliot
+coords  600 200
+at      200
+
+3pspawn   jake
+coords  -100 220
+at      200
+
+#-------1
+
+group   4 4
+at      450
+
+spawn   wood
+coords  -100 220
+at      450
+
+spawn   wood
+coords  550 200
+at      550
+
+#-------1
+
+wait
+at      650
+
+spawn   elic
+coords  600 200
+at      650
+
+spawn   axl
+coords  -100 220
+at      650
+
+spawn   wood
+coords  -100 220
+at      650
+
+spawn   slash
+coords  550 200
+at      650
+
+spawn   jay
+coords  600 200
+at      650
+
+spawn   wood
+coords  -100 220
+at      650
+
+spawn   mark
+coords  -100 220
+at      650
+
+spawn   mic
+coords  550 200
+at      650
+
+spawn   wood
+coords  -100 220
+at      650
+
+
+
+2pspawn   elic
+coords  600 200
+at      650
+
+2pspawn   axl
+coords  -100 220
+at      650
+
+2pspawn   wood
+coords  -100 220
+at      650
+
+2pspawn   slash
+coords  550 200
+at      650
+
+2pspawn   jay
+coords  600 200
+at      650
+
+2pspawn   wood
+coords  -100 220
+at      650
+
+2pspawn   mark
+coords  -100 220
+at      650
+
+2pspawn   mic
+coords  550 200
+at      650
+
+2pspawn   wood
+coords  -100 220
+at      650
+
+
+
+3pspawn   elic
+coords  600 200
+at      650
+
+3pspawn   axl
+coords  -100 220
+at      650
+
+3pspawn   wood
+coords  -100 220
+at      650
+
+3pspawn   slash
+coords  550 200
+at      650
+
+3pspawn   jay
+coords  600 200
+at      410
+
+3pspawn   wood
+coords  -100 220
+at      410
+
+3pspawn   mark
+coords  -100 220
+at      410
+
+3pspawn   mic
+coords  550 200
+at      410
+
+3pspawn   wood
+coords  -100 220
+at      410
+
+#-------1
+
+group   3 3
+at      1058
+
+wait
+at      1058
+
+spawn   Bratken
+boss 1
+health  250
+2phealth  350
+3phealth  450
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+spawn   jony
+coords  -100 220
+at      1058
+
+spawn   atlus
+coords  550 200
+at      1058
+
+spawn   jack
+coords  -100 220
+at      1058
+
+spawn   andore
+alias	  Andore_Jr
+coords  550 200
+at      1058
+
+spawn   simons
+coords  -100 220
+at      1058
+
+spawn   dug
+coords  550 200
+at      1058
+
+spawn   holly
+coords  -100 220
+at      1058
+
+spawn   andore
+map 1
+coords  550 200
+at      1058
+
+
+
+
+
+

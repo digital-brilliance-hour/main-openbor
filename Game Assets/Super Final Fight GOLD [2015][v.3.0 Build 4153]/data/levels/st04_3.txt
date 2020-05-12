@@ -1,0 +1,515 @@
+music			data/music/music04.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST04_3/n01.gif
+background 		data/bgs/ST04_3/back.gif
+frontpanel		data/bgs/ST04_3/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST04_3\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		4
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage04
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+
+#-------1
+
+group   4 4
+at      0
+
+wait
+at      0
+
+spawn   wong
+coords  500 200
+at      0
+
+spawn   wood
+coords  510 210
+at      0
+
+spawn   elic
+coords  510 220
+at      0
+
+spawn   poison
+map 1
+alias	  roxy
+coords  530 210
+at      0
+
+spawn   wood
+coords  510 210
+at      0
+
+spawn   elias
+coords  500 200
+at      0
+
+spawn   wood
+coords  510 210
+at      0
+
+spawn   eliot
+coords  510 220
+at      0
+
+spawn   leon
+map 1
+alias	  robert
+coords  530 210
+at      0
+
+
+2pspawn   wong
+coords  500 200
+at      0
+
+2pspawn   wood
+coords  510 210
+at      0
+
+2pspawn   elic
+coords  510 220
+at      0
+
+2pspawn   poison
+map 1
+alias	  roxy
+coords  530 210
+at      0
+
+3pspawn   elias
+coords  500 200
+at      0
+
+3pspawn   wood
+coords  510 210
+at      0
+
+3pspawn   eliot
+coords  510 220
+at      0
+
+3pspawn   leon
+map 1
+alias	  robert
+coords  530 210
+at      0
+
+#-------1
+
+
+spawn   box
+item	  ring
+coords  650 232
+at      1
+
+spawn   box
+item	  gold
+coords  760 200
+at      1
+
+
+#-------1
+
+spawn   roll
+item	  coin
+coords  500 200
+at      500
+
+spawn   roll
+coords  510 210
+at      500
+
+spawn   roll
+item	  hammer
+coords  520 220
+at      500
+
+spawn   roll
+2pitem	  meat
+coords  530 230
+at      500
+
+spawn   roll
+item	  glas
+coords  540 240
+at      500
+
+
+spawn   roll
+flip 1
+coords  -100 200
+at      500
+
+spawn   roll
+item	  ring
+flip 1
+coords  -110 210
+at      500
+
+spawn   roll
+flip 1
+coords  -120 220
+at      500
+
+spawn   roll
+item	  meat
+flip 1
+coords  -130 230
+at      500
+
+spawn   roll
+item	  1up
+flip 1
+coords  -140 240
+at      500
+
+
+#-------1
+
+
+group   5 5
+at      650
+
+wait
+at      650
+
+spawn   elgado
+coords  500 200
+at      650
+
+spawn   holly
+coords  -100 200
+at      650
+
+spawn   andore
+alias	  Andore_Jr.
+coords  510 220
+at      650
+
+spawn   andore
+health  150
+map 	  1
+coords  -110 220
+at      650
+
+spawn   andore
+health  200
+map 	  2
+alias	  F._Andore
+coords  530 210
+at      650
+
+spawn   andore
+health  250
+map 	  3
+alias	  G._Andore
+coords  -130 210
+at      650
+
+spawn   elgado
+coords  520 240
+at      650
+
+spawn   holly
+coords  -120 240
+at      650
+
+
+2pspawn   elgado
+coords  500 200
+at      650
+
+2pspawn   holly
+coords  -100 200
+at      650
+
+2pspawn   andore
+alias	  Andore_Jr.
+coords  510 220
+at      650
+
+2pspawn   andore
+health  150
+map 	  1
+coords  -110 220
+at      650
+
+3pspawn   andore
+map 	  2
+health  200
+alias	  F._Andore
+coords  530 210
+at      650
+
+3pspawn   andore
+map 	  3
+health  250
+alias	  G._Andore
+coords  -130 210
+at      650
+
+3pspawn   elgado
+coords  520 240
+at      650
+
+3pspawn   holly
+coords  -120 240
+at      650
+
+#-------1
+
+
+spawn   box
+2pitem  apple
+coords  590 232
+at      651
+
+spawn   box
+item	  banana
+coords  610 200
+at      651
+
+#-------1
+
+
+group   4 4
+at      1188
+
+wait
+at      1188
+
+spawn   wonwon
+alias	  Won_Won
+boss 	  1
+health  300
+2phealth  400
+3phealth  500
+coords  500 200
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+spawn   wong
+coords  520 220
+at      1188
+
+spawn   gory
+coords  -100 230
+at      1188
+
+spawn   bill
+coords  540 220
+at      1188
+
+spawn   wong
+coords  -100 220
+at      1188
+
+spawn   gory
+coords  520 230
+at      1188
+
+spawn   bill
+coords  -140 220
+at      1188
+
+
+
+

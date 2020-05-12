@@ -1,0 +1,104 @@
+music			data/music/music01.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST01_1/n01.gif
+background 		data/bgs/ST01_1/back.gif
+frontpanel		data/bgs/ST01_1/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST01_1\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		1
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	stage01
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+
+group   2 2
+at      0
+
+wait
+at      0
+
+spawn   trash
+item	  coin
+coords  331 204
+at      0
+
+spawn   trash
+item	  hammer
+coords  382 204
+at      0
+
+spawn   bret
+coords  500 200
+at      0
+
+spawn   jay
+coords  500 200
+at      0
+
+spawn   jake
+coords  550 230
+at      0
+
+spawn   dug
+coords  -100 200
+at      0
+
+#-------1
+
+
+spawn   tires
+coords  513 230
+at      184
+
+spawn   tires
+item	  gum
+coords  574 203
+at      184
+
+#-------1
+
+group   3 3
+at      312
+
+wait
+at      312
+
+spawn   jay
+coords  500 200
+at      312
+
+spawn   bret
+coords  550 230
+at      312
+
+spawn   axl
+coords  -100 200
+at      312
+
+#-------1
+
+
+
+
+

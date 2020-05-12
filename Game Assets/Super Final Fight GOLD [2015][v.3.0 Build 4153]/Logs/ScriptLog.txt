@@ -1,0 +1,8040 @@
+
+####animationscript function main#####
+# data/chars/cody/cody.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==13)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==30)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==31)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==32)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==33)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==53)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==54)
+    {
+        if(frame==4)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "tornado", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==55)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==56)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==57)
+    {
+        if(frame==0)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==1)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "ruffian", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==58)
+    {
+        if(frame==1)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==59)
+    {
+        if(frame==43)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/guy/guy.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==71)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==89)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==90)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==91)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==92)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==112)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==113)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "gokusa", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==114)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==1)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==23)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==25)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==27)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==29)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==31)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==33)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==35)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==116)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==117)
+    {
+        if(frame==0)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==0)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==118)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==119)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==120)
+    {
+        if(frame==3)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==23)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==25)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==27)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==29)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==31)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==33)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        if(frame==35)
+        {
+            projectile(1, "izuna", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==121)
+    {
+        if(frame==2)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==6)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==8)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==10)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==12)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==14)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==16)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==18)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==20)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==22)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==24)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==26)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==28)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==30)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==32)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==34)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==36)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==38)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==40)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==42)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==44)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==46)
+        {
+            projectile(1, "hassou", 0, 0, -10);
+        }
+        if(frame==48)
+        {
+            projectile(1, "hassou", 0, 0, 10);
+        }
+        if(frame==50)
+        {
+            projectile(1, "hassou", 0, 0, 0);
+        }
+        if(frame==54)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==54)
+        {
+            projectile(1, "gokusa", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/haggar/haggar.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==130)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==146)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(3, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(4, 1, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(5, -60, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", -60, 1, 10);
+        }
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            depost(0);
+        }
+        if(frame==5)
+        {
+            throw(14, 1, -1.5, 2, 0, 1);
+        }
+        if(frame==5)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==147)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 10, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 20, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(7, 25, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 90, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(14, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==148)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(8, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(9, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(10, 10, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==5)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            depost(0);
+        }
+        if(frame==6)
+        {
+            throw(14, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==6)
+        {
+            clearL();
+        }
+        if(frame==7)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+    if(animhandle==149)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(8, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(9, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(10, 10, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==5)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            depost(0);
+        }
+        if(frame==6)
+        {
+            throw(14, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==6)
+        {
+            clearL();
+        }
+        if(frame==7)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+    if(animhandle==169)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==170)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "axe", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==171)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==23)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==172)
+    {
+        if(frame==0)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==0)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==173)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(8, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(9, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(10, 10, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(13, 30, 1, 1, 1);
+        }
+        if(frame==6)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(13, 30, 1, 1, 1);
+        }
+        if(frame==10)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==11)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==12)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(13, 30, 1, 1, 1);
+        }
+        if(frame==14)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==16)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==16)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==16)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==16)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==17)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==19)
+        {
+            depost(0);
+        }
+        if(frame==19)
+        {
+            throw(26, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==19)
+        {
+            clearL();
+        }
+        if(frame==20)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+    if(animhandle==174)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(8, 11, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(9, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(10, 10, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==11)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==17)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==19)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==21)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==23)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==25)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==27)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==29)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==31)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==33)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==35)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==37)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==39)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==41)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==43)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==45)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==47)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==49)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==51)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==52)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==52)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==52)
+        {
+            projectile(1, "driver", 0, 0, 0);
+        }
+        if(frame==55)
+        {
+            depost(0);
+        }
+        if(frame==55)
+        {
+            finish(10, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==55)
+        {
+            clearL();
+        }
+        if(frame==56)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+    if(animhandle==175)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==25)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==176)
+    {
+        if(frame==0)
+        {
+            spawn01("guard", 33, 0, -73);
+        }
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(8, 11, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(9, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(10, 10, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==11)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==17)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==19)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==21)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==23)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==25)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==27)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==29)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==31)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==33)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==35)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==37)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==39)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==41)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==43)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==45)
+        {
+            position(14, 30, 1, 0, 1);
+        }
+        if(frame==47)
+        {
+            position(13, 30, 1, 0, 1);
+        }
+        if(frame==49)
+        {
+            position(11, 30, 1, 0, 1);
+        }
+        if(frame==51)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==52)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==52)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==52)
+        {
+            projectile(1, "driver", 0, 0, 0);
+        }
+        if(frame==55)
+        {
+            depost(0);
+        }
+        if(frame==55)
+        {
+            finish(10, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==55)
+        {
+            clearL();
+        }
+        if(frame==56)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/carlos/carlos.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==196)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==213)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 15, -20, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==214)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 15, -20, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==215)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 15, -20, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==216)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 15, -20, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==236)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==237)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==239)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==240)
+    {
+        if(frame==3)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "slice01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==241)
+    {
+        if(frame==3)
+        {
+            projectile(1, "slice02", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "slice12", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "slice02", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            projectile(1, "slice12", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "slice02", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "slice12", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "slice02", 0, 0, 0);
+        }
+        if(frame==24)
+        {
+            projectile(1, "slice12", 0, 0, 0);
+        }
+        if(frame==26)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==26)
+        {
+            projectile(1, "slice03", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/maki/maki.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==260)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==278)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==279)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==280)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==281)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==301)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==302)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==1)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==303)
+    {
+        if(frame==1)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==23)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==25)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==27)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        if(frame==29)
+        {
+            projectile(1, "izuma1", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==304)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "reppu", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==305)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "tengu", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==306)
+    {
+        if(frame==0)
+        {
+            projectile(1, "tengu", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==8)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        if(frame==10)
+        {
+            projectile(1, "izuma2", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==307)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "daoshi", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/lucia/lucia.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==310)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==328)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==329)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==330)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -31, -21, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 11, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(7, 6, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 60, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(8, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==331)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -31, -21, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 11, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(7, 6, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 60, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(8, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==351)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==352)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==353)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==354)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==355)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/dean/dean.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==362)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==379)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(15, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(16, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(16, -50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -3.5, -1.5, 0, 0);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==380)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(15, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(16, 1, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(16, -50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -3.5, -1.5, 0, 0);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==381)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(17, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(18, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -10, 0, -10);
+        }
+        if(frame==2)
+        {
+            position(19, 1, -11, 1, 1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(12, 3, 1.5, 2.5, 0, 0);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==382)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(17, 1, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(18, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -10, 0, -10);
+        }
+        if(frame==2)
+        {
+            position(19, 1, -11, 1, 1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(12, 3, 1.5, 2.5, 0, 0);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==402)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==403)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==404)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "wave", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==405)
+    {
+        if(frame==26)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==34)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==38)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==42)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/ryu/ryu.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==418)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==435)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==436)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==437)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -11, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==438)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -11, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==458)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==459)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado2", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==460)
+    {
+        if(frame==5)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==461)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==22)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==38)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==38)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==46)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==54)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==60)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==462)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado3", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/ken/ken.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==469)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==487)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==488)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==489)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -11, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -11, -31, 0, -1);
+        }
+        if(frame==7)
+        {
+            position(5, -1, -1, 0, -1);
+        }
+        if(frame==13)
+        {
+            position(0, -5, -38, 0, -1);
+        }
+        if(frame==19)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==25)
+        {
+            position(1, -11, -31, 0, -1);
+        }
+        if(frame==30)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==31)
+        {
+            depost(0);
+        }
+        if(frame==31)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==31)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==490)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -11, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -11, -31, 0, -1);
+        }
+        if(frame==7)
+        {
+            position(5, -1, -1, 0, -1);
+        }
+        if(frame==13)
+        {
+            position(0, -5, -38, 0, -1);
+        }
+        if(frame==19)
+        {
+            position(0, -11, 1, 0, -1);
+        }
+        if(frame==25)
+        {
+            position(1, -11, -31, 0, -1);
+        }
+        if(frame==30)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==31)
+        {
+            depost(0);
+        }
+        if(frame==31)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==31)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==510)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==511)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "hado1", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==512)
+    {
+        if(frame==5)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==513)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==24)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==36)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==42)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==48)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==514)
+    {
+        if(frame==6)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/honda/honda.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==517)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==533)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==2)
+        {
+            slamstart();
+        }
+        if(frame==2)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==3)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==5)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==5)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==6)
+        {
+            slamstart();
+        }
+        if(frame==6)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(19, 1, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            depost(0);
+        }
+        if(frame==8)
+        {
+            throw(12, 1, -2.5, 2.5, 0, -1);
+        }
+        if(frame==8)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==534)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==2)
+        {
+            slamstart();
+        }
+        if(frame==2)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==3)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==5)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==5)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==6)
+        {
+            slamstart();
+        }
+        if(frame==6)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(19, 1, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            depost(0);
+        }
+        if(frame==8)
+        {
+            throw(12, 1, -2.5, 2.5, 0, -1);
+        }
+        if(frame==8)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==535)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==2)
+        {
+            slamstart();
+        }
+        if(frame==2)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==3)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==5)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==5)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==6)
+        {
+            slamstart();
+        }
+        if(frame==6)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(19, 1, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            depost(0);
+        }
+        if(frame==8)
+        {
+            throw(12, 1, -2.5, 2.5, 0, -1);
+        }
+        if(frame==8)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==536)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==2)
+        {
+            slamstart();
+        }
+        if(frame==2)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==3)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==5)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==5)
+        {
+            position(15, -15, 11, 0, 1);
+        }
+        if(frame==6)
+        {
+            slamstart();
+        }
+        if(frame==6)
+        {
+            position(0, 25, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(19, 1, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            depost(0);
+        }
+        if(frame==8)
+        {
+            throw(12, 1, -2.5, 2.5, 0, -1);
+        }
+        if(frame==8)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==556)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==557)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==558)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==560)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==561)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/chunli/chunli.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==571)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==589)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 11, 11, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, -10, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, 3.5, 1.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==590)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 11, 11, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, -10, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, 3.5, 1.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==591)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 11, 11, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, -10, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, 3.5, 1.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==592)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 11, 11, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, -10, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 50, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(6, 1, 3.5, 1.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==612)
+    {
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==0)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==613)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "kiko", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==614)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==615)
+    {
+        if(frame==5)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==19)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==25)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==31)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==37)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==43)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        if(frame==49)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==616)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "sho", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/blanka/blanka.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==619)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==636)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -11, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==637)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -11, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==638)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -11, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==639)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 20, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -11, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==659)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==660)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==661)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==664)
+    {
+        if(frame==5)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/zang/zang.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==667)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==683)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(3, 21, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(4, 21, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(5, -40, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", -60, 1, 10);
+        }
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            depost(0);
+        }
+        if(frame==5)
+        {
+            throw(14, 1, -1.5, 2, 0, 1);
+        }
+        if(frame==5)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==684)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(14, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        if(frame==5)
+        {
+            anichange("ANI_FOLLOW5");
+        }
+        return;
+    }
+    if(animhandle==685)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, -15, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(6, 25, -10, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(7, 15, 5, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            position(7, 90, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            depost(0);
+        }
+        if(frame==5)
+        {
+            throw(14, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==5)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==686)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 1, 11, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 75, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(14, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==706)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==707)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==708)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(2, 1, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(6, 1, 10, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(7, 20, 40, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(12, 40, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 40, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==8)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==8)
+        {
+            depost(0);
+        }
+        if(frame==8)
+        {
+            throw(26, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==8)
+        {
+            clearL();
+        }
+        if(frame==9)
+        {
+            anichange("ANI_FOLLOW5");
+        }
+        return;
+    }
+    if(animhandle==710)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, -30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(0, -15, 15, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(6, 25, -10, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(7, 15, 5, 0, 1);
+        }
+        if(frame==6)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==8)
+        {
+            position(7, 25, 15, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(5, -11, 1, 0, -1);
+        }
+        if(frame==10)
+        {
+            position(7, -50, 15, 0, 1);
+        }
+        if(frame==11)
+        {
+            position(0, -30, 1, 0, 1);
+        }
+        if(frame==12)
+        {
+            position(6, 25, 5, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(7, 20, 50, 0, 1);
+        }
+        if(frame==14)
+        {
+            position(7, 1, 15, 0, 1);
+        }
+        if(frame==14)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust03", 40, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==16)
+        {
+            position(7, 90, 1, 0, 1);
+        }
+        if(frame==16)
+        {
+            depost(0);
+        }
+        if(frame==16)
+        {
+            throw(26, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==16)
+        {
+            clearL();
+        }
+        if(frame==17)
+        {
+            anichange("ANI_FOLLOW6");
+        }
+        return;
+    }
+    if(animhandle==712)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==7)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==9)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==11)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==15)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==17)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==19)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==21)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==23)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==25)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==27)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==29)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==31)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==33)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==35)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==37)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==39)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==41)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==43)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==45)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==47)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==49)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==50)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==50)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==50)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==50)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==50)
+        {
+            projectile(1, "dust03", 40, 0, 0);
+        }
+        if(frame==52)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==53)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==53)
+        {
+            depost(0);
+        }
+        if(frame==53)
+        {
+            throw(26, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==53)
+        {
+            clearL();
+        }
+        if(frame==54)
+        {
+            anichange("ANI_FOLLOW5");
+        }
+        return;
+    }
+    if(animhandle==713)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==714)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, -30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(0, -15, 15, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(6, 25, -10, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(7, 15, 5, 0, 1);
+        }
+        if(frame==6)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==8)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            position(7, 25, 15, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(5, -11, 1, 0, -1);
+        }
+        if(frame==11)
+        {
+            position(7, -50, 15, 0, 1);
+        }
+        if(frame==12)
+        {
+            position(0, -30, 1, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(0, -15, 15, 0, 1);
+        }
+        if(frame==14)
+        {
+            position(6, 25, -10, 0, 1);
+        }
+        if(frame==15)
+        {
+            position(7, 15, 5, 0, 1);
+        }
+        if(frame==15)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==17)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            position(7, 25, 15, 0, 1);
+        }
+        if(frame==19)
+        {
+            position(5, -11, 1, 0, -1);
+        }
+        if(frame==20)
+        {
+            position(7, -50, 15, 0, 1);
+        }
+        if(frame==21)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==22)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==24)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==26)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==28)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==30)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==32)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==34)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==36)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==38)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==40)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==42)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==44)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==46)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==48)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==50)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==52)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==54)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==56)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==58)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==60)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==62)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==64)
+        {
+            position(11, 15, -15, 0, 1);
+        }
+        if(frame==66)
+        {
+            position(13, 1, -15, 1, 1);
+        }
+        if(frame==68)
+        {
+            position(13, 20, -15, 1, 1);
+        }
+        if(frame==70)
+        {
+            position(11, 35, -15, 0, 1);
+        }
+        if(frame==71)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==71)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==71)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==71)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==71)
+        {
+            projectile(1, "dust03", 40, 0, 0);
+        }
+        if(frame==74)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==75)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==76)
+        {
+            position(7, 91, 1, 0, 1);
+        }
+        if(frame==76)
+        {
+            depost(0);
+        }
+        if(frame==76)
+        {
+            throw(85, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==76)
+        {
+            clearL();
+        }
+        if(frame==77)
+        {
+            anichange("ANI_FOLLOW5");
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/guile/bazoo/bazoo.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==721)
+    {
+        if(frame==0)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/guile/sonic/sonic.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==724)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust03", 50, 10, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "dust03", 70, 10, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust03", 50, 10, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 70, 10, 0);
+        }
+        if(frame==8)
+        {
+            projectile(1, "dust03", 50, 10, 0);
+        }
+        if(frame==10)
+        {
+            projectile(1, "dust03", 70, 10, 0);
+        }
+        if(frame==12)
+        {
+            projectile(1, "dust03", 50, 10, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust03", 70, 10, 0);
+        }
+        if(frame==16)
+        {
+            projectile(1, "dust03", 50, 10, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/guile/guile.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==729)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==746)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==747)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==748)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 30, -15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(7, 30, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 50, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==749)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 30, -15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(7, 30, 1, 0, 1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", 50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, 50, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==769)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==770)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==0)
+        {
+            projectile(1, "boom", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==771)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==773)
+    {
+        if(frame==0)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==774)
+    {
+        if(frame==4)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==775)
+    {
+        if(frame==1)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==776)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "bazoo", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==777)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "sonic", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/dhal/dhal.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==790)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==809)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==4)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==7)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 55, 1, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(1, -20, 1, 0, -1);
+        }
+        if(frame==11)
+        {
+            depost(0);
+        }
+        if(frame==11)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==11)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==810)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==4)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==7)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 55, 1, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(1, -20, 1, 0, -1);
+        }
+        if(frame==11)
+        {
+            depost(0);
+        }
+        if(frame==11)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==11)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==811)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==4)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==7)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 55, 1, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(1, -20, 1, 0, -1);
+        }
+        if(frame==11)
+        {
+            depost(0);
+        }
+        if(frame==11)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==11)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==812)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==1)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==4)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==4)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            spawn01("flash", 20, 1, -45);
+        }
+        if(frame==7)
+        {
+            position(0, 30, -5, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 55, 1, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(1, -20, 1, 0, -1);
+        }
+        if(frame==11)
+        {
+            depost(0);
+        }
+        if(frame==11)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==11)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==832)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==833)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "yoga1", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==834)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "yoga2", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==835)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==836)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==837)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "yoga3", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/thawk/thawk.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==843)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==860)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 25, 1, -50);
+        }
+        if(frame==1)
+        {
+            position(2, 25, -30, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 25, 1, -50);
+        }
+        if(frame==3)
+        {
+            position(2, 25, -30, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(19, -45, 50, 0, -1);
+        }
+        if(frame==6)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(0, 40, 50, 0, 1);
+        }
+        if(frame==7)
+        {
+            depost(0);
+        }
+        if(frame==7)
+        {
+            throw(12, 1, -3, 1.5, 0, 1);
+        }
+        if(frame==7)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==861)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            spawn01("flash", 25, 1, -50);
+        }
+        if(frame==1)
+        {
+            position(2, 25, -30, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 30, 1, 0, 1);
+        }
+        if(frame==3)
+        {
+            spawn01("flash", 25, 1, -50);
+        }
+        if(frame==3)
+        {
+            position(2, 25, -30, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(19, -45, 50, 0, -1);
+        }
+        if(frame==6)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(0, 40, 50, 0, 1);
+        }
+        if(frame==7)
+        {
+            depost(0);
+        }
+        if(frame==7)
+        {
+            throw(12, 1, -3, 1.5, 0, 1);
+        }
+        if(frame==7)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==862)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 40, 15, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(0, 40, 15, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(6, 1, 25, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(6, 50, 25, 0, 1);
+        }
+        if(frame==9)
+        {
+            depost(0);
+        }
+        if(frame==9)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==9)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==863)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 40, 15, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(2, 0, 15, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(2, 10, 25, 0, 1);
+        }
+        if(frame==7)
+        {
+            position(0, 40, 15, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(6, 1, 25, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(6, 50, 25, 0, 1);
+        }
+        if(frame==9)
+        {
+            depost(0);
+        }
+        if(frame==9)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==9)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==883)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==884)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==885)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==887)
+    {
+        if(frame==3)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==888)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 30, -10, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==3)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==4)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==6)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==7)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==8)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==10)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==11)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==12)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==13)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==14)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==15)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==16)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==17)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==18)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==19)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==20)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==21)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==22)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==23)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==24)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==25)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==26)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==27)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==28)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==29)
+        {
+            position(6, 25, -20, 0, -1);
+        }
+        if(frame==30)
+        {
+            position(6, -15, -20, 0, -1);
+        }
+        if(frame==31)
+        {
+            position(6, -35, 35, 0, 1);
+        }
+        if(frame==32)
+        {
+            position(6, 15, 35, 0, 1);
+        }
+        if(frame==33)
+        {
+            position(12, 30, 1, 0, 1);
+        }
+        if(frame==33)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==33)
+        {
+            projectile(1, "mex", 20, 0, 0);
+        }
+        if(frame==33)
+        {
+            spawn01("flash", 25, 1, 10);
+        }
+        if(frame==33)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==33)
+        {
+            projectile(1, "dust03", 40, 0, 0);
+        }
+        if(frame==36)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==37)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==38)
+        {
+            depost(0);
+        }
+        if(frame==38)
+        {
+            finish(10, 1, 1.5, 2, 0, 1);
+        }
+        if(frame==38)
+        {
+            clearL();
+        }
+        if(frame==39)
+        {
+            anichange("ANI_FOLLOW3");
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/fei/fei.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==892)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==910)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 20, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==911)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 20, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==912)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -25, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, -20, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==913)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -25, 1, 0, 0);
+        }
+        if(frame==1)
+        {
+            position(1, -20, -11, 0, 0);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==933)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==934)
+    {
+        if(frame==4)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==20)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==935)
+    {
+        if(frame==3)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==57)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==936)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==937)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==938)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==939)
+    {
+        if(frame==3)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/deejay/deejay.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==950)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==968)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==969)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 1, -11, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==970)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -21, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -26, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -15, -21, 0, -1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==971)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, -21, -31, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -26, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -15, -21, 0, -1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(10, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==991)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==992)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==0)
+        {
+            projectile(1, "maxo1", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "maxo2", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==993)
+    {
+        if(frame==6)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==994)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==995)
+    {
+        if(frame==6)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==10)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==22)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==26)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==34)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==36)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==73)
+        {
+            projectile(1, "maxo1", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/cammy/cammy.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==998)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==1015)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 11, -21, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1016)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 20, 1, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, 11, -21, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1017)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -10, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -10, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -25, -5, 0, -1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1018)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -10, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(0, -10, 1, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(1, -25, -5, 0, -1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -11, 0, -1);
+        }
+        if(frame==3)
+        {
+            depost(0);
+        }
+        if(frame==3)
+        {
+            throw(8, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==3)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1038)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        return;
+    }
+    if(animhandle==1039)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1040)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1041)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1042)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/balrog/pbalrog.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==1048)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==1066)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==3)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==7)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==8)
+        {
+            slamstart();
+        }
+        if(frame==8)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==11)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==11)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==12)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            position(2, 21, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            depost(0);
+        }
+        if(frame==15)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==15)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1067)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==3)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==7)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==8)
+        {
+            slamstart();
+        }
+        if(frame==8)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==11)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==11)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==12)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            position(2, 21, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            depost(0);
+        }
+        if(frame==15)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==15)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1068)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==3)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==7)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==8)
+        {
+            slamstart();
+        }
+        if(frame==8)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==11)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==11)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==12)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            position(2, 21, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            depost(0);
+        }
+        if(frame==15)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==15)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1069)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==3)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==4)
+        {
+            slamstart();
+        }
+        if(frame==4)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==5)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==6)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==7)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==7)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==7)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==8)
+        {
+            slamstart();
+        }
+        if(frame==8)
+        {
+            position(0, 35, 23, 0, 1);
+        }
+        if(frame==9)
+        {
+            position(0, 33, 23, 0, 1);
+        }
+        if(frame==10)
+        {
+            position(0, 31, 20, 0, 1);
+        }
+        if(frame==11)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "flash", 25, 0, 55);
+        }
+        if(frame==11)
+        {
+            position(2, 6, -15, 0, 1);
+        }
+        if(frame==12)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            position(2, 21, 1, 0, 1);
+        }
+        if(frame==15)
+        {
+            depost(0);
+        }
+        if(frame==15)
+        {
+            throw(12, 1, 2.5, 2.5, 0, 1);
+        }
+        if(frame==15)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1070)
+    {
+        if(frame==4)
+        {
+            projectile(1, "elbow", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1088)
+    {
+        if(frame==2)
+        {
+            projectile(1, "elbow", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1089)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "elbow", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1090)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            anichange("ANI_FOLLOW2");
+        }
+        return;
+    }
+    if(animhandle==1093)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            anichange("ANI_FOLLOW4");
+        }
+        return;
+    }
+    if(animhandle==1096)
+    {
+        if(frame==4)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1097)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==1)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==13)
+        {
+            anichange("ANI_FOLLOW6");
+        }
+        if(frame==15)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==24)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==27)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==30)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==33)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==36)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==39)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1098)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==3)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==9)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==15)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==21)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==24)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1099)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==8)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==11)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==14)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==17)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==20)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==23)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==26)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/vega/pvega.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==1105)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==1122)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, -10, -5, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(7, -25, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, -40, 1, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1123)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, -10, -5, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(7, -25, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, -40, 1, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1124)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, -10, -5, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(7, -25, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, -40, 1, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1125)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(2, 15, -30, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(6, -10, -5, 0, -1);
+        }
+        if(frame==2)
+        {
+            position(7, -25, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            spawn01("flash", -50, 1, 10);
+        }
+        if(frame==3)
+        {
+            projectile(1, "quake", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            position(7, -40, 1, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(10, 3, 1.5, 2, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1126)
+    {
+        if(frame==4)
+        {
+            projectile(1, "claw", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1144)
+    {
+        if(frame==2)
+        {
+            projectile(1, "claw", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1145)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "claw", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1146)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1147)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1148)
+    {
+        if(frame==24)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1151)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==8)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==10)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==12)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==18)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==20)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==22)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==24)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==26)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==32)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==34)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==36)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==38)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==40)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==46)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==48)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==50)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==52)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==54)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==60)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==62)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==64)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==66)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==68)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/sagat/psagat.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==1165)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==1182)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 35, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -5, 10, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1183)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, 25, 35, 0, 1);
+        }
+        if(frame==1)
+        {
+            position(1, -5, 10, 0, 1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1184)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -25, 35, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(1, 5, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1185)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -25, 35, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(1, 5, 10, 0, -1);
+        }
+        if(frame==2)
+        {
+            depost(0);
+        }
+        if(frame==2)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==2)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1186)
+    {
+        if(frame==4)
+        {
+            projectile(1, "shad", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1204)
+    {
+        if(frame==2)
+        {
+            projectile(1, "shad", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1205)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "shad", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1206)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger1", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1207)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger1", 0, 0, -34);
+        }
+        return;
+    }
+    if(animhandle==1208)
+    {
+        if(frame==5)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1209)
+    {
+        if(frame==3)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1210)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "tiger2", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/bison/psycho/psycho.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==1212)
+    {
+        if(frame==0)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==2)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==4)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        if(frame==6)
+        {
+            projectile(1, "dust03", 0, 0, 0);
+        }
+        return;
+    }
+
+}
+
+####animationscript function main#####
+# data/chars/bison/pbison.txt
+########################################
+void main()
+{
+    int frame = getlocalvar("frame");
+    int animhandle = getlocalvar("animhandle");
+    if(animhandle==1220)
+    {
+        if(frame==0)
+        {
+            setLevel();
+        }
+        return;
+    }
+    if(animhandle==1237)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -21, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(6, 1, -8, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(6, -5, -4, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -8, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1238)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -21, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(6, 1, -8, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(6, -5, -4, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -8, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1239)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -21, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(6, 1, -8, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(6, -5, -4, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -8, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1240)
+    {
+        if(frame==0)
+        {
+            slamstart();
+        }
+        if(frame==0)
+        {
+            position(0, -21, 1, 0, -1);
+        }
+        if(frame==1)
+        {
+            position(6, 1, -8, 0, 1);
+        }
+        if(frame==2)
+        {
+            position(6, -5, -4, 0, 1);
+        }
+        if(frame==3)
+        {
+            position(1, 1, -8, 0, -1);
+        }
+        if(frame==4)
+        {
+            depost(0);
+        }
+        if(frame==4)
+        {
+            throw(12, 1, -2.5, 2.5, 0, 1);
+        }
+        if(frame==4)
+        {
+            clearL();
+        }
+        return;
+    }
+    if(animhandle==1241)
+    {
+        if(frame==4)
+        {
+            projectile(1, "crush", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1259)
+    {
+        if(frame==2)
+        {
+            projectile(1, "crush", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1260)
+    {
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "drop", 0);
+        }
+        if(frame==3)
+        {
+            changeentityproperty(getlocalvar("self"), "aiflag", "falling", 0);
+        }
+        if(frame==5)
+        {
+            projectile(1, "crush", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1261)
+    {
+        if(frame==8)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==68)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1262)
+    {
+        if(frame==1)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1263)
+    {
+        if(frame==2)
+        {
+            projectile(1, "dust02", 0, 0, 0);
+        }
+        if(frame==63)
+        {
+            projectile(1, "dust01", 0, 0, 0);
+        }
+        return;
+    }
+    if(animhandle==1266)
+    {
+        if(frame==22)
+        {
+            projectile(1, "psycho", -580, 0, 0);
+        }
+        return;
+    }
+
+}

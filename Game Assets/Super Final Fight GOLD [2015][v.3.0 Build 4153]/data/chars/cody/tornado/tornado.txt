@@ -1,0 +1,131 @@
+name					tornado
+health					1
+nolife					1
+type					npc
+hostile					player npc enemy obstacle
+candamage				player npc enemy obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust
+subject_to_wall 0
+
+palette data/chars/cody/tornado/tornado.gif #1
+
+anim idle
+	jugglecost 	2
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+
+	sound   	data/sounds/hurr01.wav
+	delay	4
+	frame	data/chars/cody/tornado/01.gif
+	frame	data/chars/cody/tornado/02.gif
+	frame	data/chars/cody/tornado/03.gif
+
+
+	delay	2
+	move	3
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack		240	93	67		86		3			0		1		0			15			15
+	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/04.gif
+	frame	data/chars/cody/tornado/04.gif
+	attack		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/05.gif
+	frame	data/chars/cody/tornado/05.gif
+
+	move	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	93	67		86		3			0		1		0			15			15
+	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/06.gif
+	frame	data/chars/cody/tornado/06.gif
+	attack2		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/07.gif
+	frame	data/chars/cody/tornado/07.gif
+
+	move	1
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack		240	93	67		86		3			0		1		0			15			15
+	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/04.gif
+	frame	data/chars/cody/tornado/04.gif
+	attack		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/05.gif
+	frame	data/chars/cody/tornado/05.gif
+
+	move	0
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	93	67		86		3			0		1		0			15			15
+	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/06.gif
+	frame	data/chars/cody/tornado/06.gif
+	attack2		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/07.gif
+	frame	data/chars/cody/tornado/07.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack		240	93	67		86		3			0		1		0			15			15
+	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/04.gif
+	frame	data/chars/cody/tornado/04.gif
+	attack		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/05.gif
+	frame	data/chars/cody/tornado/05.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	93	67		86		3			1		1		0			15			15
+#	dropv	0.5 0.5
+	frame	data/chars/cody/tornado/06.gif
+	frame	data/chars/cody/tornado/06.gif
+	attack2		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/cody/tornado/07.gif
+	frame	data/chars/cody/tornado/07.gif
+
+	delay	4
+	frame	data/chars/cody/tornado/08.gif
+	frame	data/chars/cody/tornado/09.gif
+	frame	data/chars/cody/tornado/10.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

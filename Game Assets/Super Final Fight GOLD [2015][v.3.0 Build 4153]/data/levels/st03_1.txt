@@ -1,0 +1,391 @@
+music			data/music/music03.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST03_1/n01.gif
+background 		data/bgs/ST03_1/back.gif
+frontpanel		data/bgs/ST03_1/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST03_1\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	stage03
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+
+#-------1
+
+
+spawn   trash
+coords  460 210
+at      0
+
+spawn   trash
+item	  bag
+coords  570 210
+at      0
+
+#-------1
+
+group   6 6
+at      350
+
+wait
+at      350
+
+spawn   schot
+coords  500 200
+at      350
+
+spawn   mark
+coords  550 230
+at      350
+
+spawn   eliot
+coords  -100 200
+at      350
+
+spawn   two_p
+coords  500 200
+at      350
+
+spawn   dug
+coords  550 230
+at      350
+
+spawn   bret
+coords  -100 200
+at      350
+
+spawn   mic
+coords  500 200
+at      350
+
+spawn   bull
+coords  550 230
+at      350
+
+spawn   elias
+coords  -100 200
+at      350
+
+spawn   jake
+coords  500 200
+at      350
+
+spawn   simons
+coords  550 230
+at      350
+
+spawn   jay
+coords  -100 200
+at      350
+
+
+
+2pspawn   schot
+coords  500 200
+at      350
+
+2pspawn   mark
+coords  550 230
+at      350
+
+2pspawn   eliot
+coords  -100 200
+at      350
+
+2pspawn   two_p
+coords  500 200
+at      350
+
+2pspawn   dug
+coords  550 230
+at      350
+
+2pspawn   bret
+coords  -100 200
+at      350
+
+3pspawn   mic
+coords  500 200
+at      350
+
+3pspawn   bull
+coords  550 230
+at      350
+
+3pspawn   elias
+coords  -100 200
+at      350
+
+3pspawn   jake
+coords  500 200
+at      350
+
+3pspawn   simons
+coords  550 230
+at      350
+
+3pspawn   jay
+coords  -100 200
+at      350
+
+#-------1
+
+
+group   4 4
+at      500
+
+spawn   poison
+coords  500 200
+at      500
+
+spawn   poison
+alias   roxy
+map	  1
+coords  -100 200
+at      650
+
+spawn   phone
+item	  glas
+coords  555 210
+at      700
+
+#-------1
+
+
+wait
+at      880
+
+spawn   poison
+coords  500 200
+at      880
+
+spawn   poison
+alias   roxy
+map	  1
+coords  550 220
+at      880
+
+spawn   poison
+coords  -100 200
+at      880
+
+spawn   poison
+alias   roxy
+map	  1
+coords  520 210
+at      880
+
+spawn   leon
+coords  500 200
+at      880
+
+spawn   poison
+alias   roxy
+map	  1
+coords  550 220
+at      880
+
+spawn   poison
+coords  -100 200
+at      880
+
+spawn   slash
+coords  520 210
+at      880
+
+
+
+2pspawn   poison
+coords  500 200
+at      880
+
+2pspawn   poison
+alias   roxy
+map	  1
+coords  550 220
+at      880
+
+2pspawn   poison
+coords  -100 200
+at      880
+
+2pspawn   poison
+alias   roxy
+map	  1
+coords  520 210
+at      880
+
+3pspawn   leon
+coords  500 200
+at      880
+
+3pspawn   poison
+alias   roxy
+map	  1
+coords  550 220
+at      880
+
+3pspawn   poison
+coords  -100 200
+at      880
+
+3pspawn   leon
+alias   robert
+map	  1
+coords  520 210
+at      880
+
+#-------1
+
+group   5 5
+at      1000
+
+spawn   roll
+item	  coke
+coords  500 210
+at      1000
+
+spawn   roll
+coords  510 230
+at      1000
+
+spawn   roll
+flip	  1
+coords  -100 220
+at      1100
+
+spawn   roll
+item	  gum
+flip	  1
+coords  -110 240
+at      1300
+
+spawn   roll
+coords  500 210
+at      1400
+
+spawn   roll
+item	  pizza
+flip	  1
+coords  -100 220
+at      1500
+
+spawn   drum
+item	  meat
+coords  520 205
+at      1500
+
+spawn   drum
+2pitem	  meat
+coords  580 205
+at      1500
+
+spawn   roll
+item	  grape
+coords  500 230
+at      1600
+
+spawn   roll
+flip	  1
+coords  -100 240
+at      1600
+
+#-------1
+
+wait
+at      1757
+
+spawn   elgado
+coords  -100 200
+at      1757
+
+spawn   holly
+coords  -110 220
+at      1757
+
+spawn   andore
+alias	  Andore_Jr.
+coords  -120 230
+at      1757
+
+spawn   elic
+coords  -100 200
+at      1757
+
+spawn   atlus
+coords  -110 220
+at      1757
+
+
+
+2pspawn   elgado
+coords  -100 200
+at      1757
+
+2pspawn   holly
+coords  -110 220
+at      1757
+
+2pspawn   andore
+alias	  Andore_Jr.
+coords  -120 230
+at      1757
+
+2pspawn   elic
+coords  -100 200
+at      1757
+
+2pspawn   atlus
+coords  -110 220
+at      1757
+
+
+3pspawn   elgado
+coords  -100 200
+at      1757
+
+3pspawn   holly
+coords  -110 220
+at      1757
+
+3pspawn   andore
+alias	  Andore_Jr.
+coords  -120 230
+at      1757
+
+3pspawn   elic
+coords  -100 200
+at      1757
+
+3pspawn   atlus
+coords  -110 220
+at      1757
+
+
+
+
+
+
+

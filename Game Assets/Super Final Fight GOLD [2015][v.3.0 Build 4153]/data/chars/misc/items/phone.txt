@@ -1,0 +1,68 @@
+name		phone
+health	1
+type		obstacle
+shadow	0
+noquake  	1
+nolife  	1
+flash		empty
+noatflash	1
+#falldie	0
+nodieblink	2
+diesound 	data/sounds/phone.wav
+
+anim idle
+	loop 1
+	delay	1000
+	offset     238 177
+	bbox	211 54 56 124
+#	platform 35 41 9 54 15 15
+	frame	data/chars/misc/items/phone01.gif
+
+anim death
+	jumpframe 0 3.3 -0.5
+	loop 0
+	delay	2
+	offset     238 177
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/items/phone02.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
+
+

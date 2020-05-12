@@ -1,0 +1,48 @@
+name	wall03
+health	1
+nolife  1
+type	obstacle
+shadow	0
+noquake 1
+falldie 0
+score 6000 5
+subject_to_wall 0
+noatflash 1
+flash	flash
+diesound data/sounds/puff.wav
+setlayer -1
+
+anim idle
+	loop 0
+	delay	1000
+	offset	238 220
+	bbox	208 164 88 57
+	frame	data/chars/misc/wall/21.gif
+
+anim pain
+	loop 0
+	delay	1
+	offset	238 220
+	bbox	208 164 88 57
+	frame	data/chars/misc/wall/21.gif
+
+anim death
+	quakeframe	0 10 5
+	loop 0
+	delay	4
+	offset	238 220
+	frame	data/chars/misc/wall/22.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/wall/23.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/wall/24.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/wall/25.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/wall/26.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/wall/27.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+
+

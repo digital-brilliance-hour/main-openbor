@@ -1,0 +1,122 @@
+music			data/music/select.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/bonus04/n01.gif
+background 		data/bgs/bonus04/back.gif
+frontpanel		data/bgs/bonus04/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\BONUS04\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type            	1 0 1
+settime		30
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	bonus
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    0
+coords  160 230
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    1
+coords  190 210
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    0
+coords  220 220
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    1
+coords  250 210
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    0
+coords  280 230
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    1
+coords  310 220
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    0
+coords  340 210
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    1
+coords  370 220
+at      0
+
+spawn   fdrum
+alias   Flaming_drum
+health  100
+2phealth 300
+3phealth 500
+flip    0
+coords  400 230
+at      0
+
+
+
+
+
+
+
+
+

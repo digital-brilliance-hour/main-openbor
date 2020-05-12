@@ -1,0 +1,38 @@
+# Hit flash
+
+name	Dust2
+type	none
+shadow	0
+setlayer 1000
+
+palette data/chars/misc/dust/dust.gif #1
+
+anim idle
+	loop	0
+	delay	4
+	 offset     238 177
+	frame	data/chars/misc/dust/dust201.gif
+	frame	data/chars/misc/dust/dust202.gif
+	frame	data/chars/misc/dust/dust203.gif
+
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/dust/dust204.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/dust/dust205.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/dust/dust206.gif
+	frame	data/chars/misc/empty.gif
+
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+

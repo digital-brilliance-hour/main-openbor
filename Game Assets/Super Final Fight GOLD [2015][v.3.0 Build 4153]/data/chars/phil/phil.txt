@@ -1,0 +1,916 @@
+name	    		Phil
+type	    		enemy
+#hostile		player
+#candamage		player enemy npc
+health	    	55
+mp          	100
+speed	    		15
+jumpspeed	    	10
+jumpheight   	3
+jumpmove 		3
+turndelay 		12
+mprate		5
+#grabdistance	40
+#grabfinish		0
+#paingrab		1
+grabback		1
+antigravity 	10
+bounce		1
+noquake     	1
+shadow	    	4
+diesound    	data/sounds/die02.wav
+flash 		flash
+bflash 		guard
+dust    		dust2
+toflip		1
+riseinv		1 1
+riseattacktype	0
+escapehits 		2
+jugglepoints	15
+
+aggression		50
+nodieblink		1
+falldie 		2
+#risetime 		250
+nolife  1
+
+lifebarstatus 423 7 1 1 0 -300 -300 -300 -300
+lifeposition 37 218 
+nameposition 37 229
+iconposition 0 0
+
+icon	      data/chars/phil/bicon.gif
+icondie     data/chars/phil/bicond.gif
+
+palette data/chars/phil/phil.gif #1
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/phil/idle01.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/phil/idle01.gif
+
+#-------Moves
+
+anim spawn
+	summonframe 36 0 0 0 1
+	subentity	dial02
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat2.wav
+
+	loop       0
+	offset     238 177
+	bbox		0 0 0 0
+
+        sound   data/sounds/puff.wav
+	 delay	2
+#	 attack  	183 	57 	118 		123 		15 		1 		0 		0 		25
+       frame      data/chars/phil/a302.gif
+       frame      data/chars/phil/a303.gif
+       frame      data/chars/phil/a304.gif
+       frame      data/chars/phil/a305.gif
+       frame      data/chars/phil/a306.gif
+       frame      data/chars/phil/a307.gif
+       frame      data/chars/phil/a308.gif
+       frame      data/chars/phil/a309.gif
+       frame      data/chars/phil/a310.gif
+       frame      data/chars/phil/a311.gif
+       frame      data/chars/phil/a312.gif
+       frame      data/chars/phil/a313.gif
+       frame      data/chars/phil/a314.gif
+       frame      data/chars/phil/a315.gif
+       frame      data/chars/phil/a316.gif
+       frame      data/chars/phil/a317.gif
+       frame      data/chars/phil/a318.gif
+       frame      data/chars/phil/a319.gif
+       frame      data/chars/phil/a320.gif
+       frame      data/chars/phil/a321.gif
+
+        sound   data/sounds/laugh2.wav
+       frame      data/chars/phil/a306.gif
+       frame      data/chars/phil/a307.gif
+       frame      data/chars/phil/a308.gif
+       frame      data/chars/phil/a309.gif
+       frame      data/chars/phil/a310.gif
+       frame      data/chars/phil/a311.gif
+       frame      data/chars/phil/a312.gif
+       frame      data/chars/phil/a313.gif
+       frame      data/chars/phil/a314.gif
+       frame      data/chars/phil/a315.gif
+       frame      data/chars/phil/a316.gif
+       frame      data/chars/phil/a317.gif
+       frame      data/chars/phil/a328.gif
+       frame      data/chars/phil/a329.gif
+       frame      data/chars/phil/a330.gif
+       frame      data/chars/phil/a331.gif
+
+#	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       delay   	1
+       frame   	data/chars/phil/a301.gif
+
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      8
+       frame      data/chars/phil/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      8
+       frame      data/chars/phil/walk01.gif
+       frame      data/chars/phil/walk02.gif
+       frame      data/chars/phil/walk03.gif
+       frame      data/chars/phil/walk02.gif
+
+anim attack1
+	range 0 100
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		230 112 22 66
+	 delay      8
+       frame      data/chars/phil/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	69 	106 		108 		15 		1 		0 		0 		25
+       frame      data/chars/phil/a102.gif
+	 delay      16
+       frame      data/chars/phil/a103.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/phil/idle01.gif
+
+anim attack2
+	 summonframe 2 0 0 0 0
+	 subentity	dust
+	 unsummonframe 30
+	range 101 300
+	jumpframe 1 2.5 2
+	landframe  2
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat2.wav
+
+	loop       0
+	offset     238 177
+	bbox		230 112 22 66
+
+	 delay	15
+       frame      data/chars/phil/a301.gif
+
+ 	 sound   	data/sounds/jump.wav
+	 delay	4
+	 delay	999
+       frame      data/chars/phil/a201.gif
+
+        sound   data/sounds/laugh2.wav
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	211 	140 	96 		44 		25 		1 		0 		0 		25
+	 delay	2
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 4
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 3
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 2
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 1
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+ 	 move 0
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       delay   	50
+       frame   	data/chars/phil/idle01.gif
+
+anim riseattack1
+	 summonframe 0 0 0 0 0
+	 subentity	dust
+	 unsummonframe 28
+	range 0 200
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat2.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	211 	140 	96 		44 		25 		1 		0 		0 		25
+	 delay	2
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+	 move 5
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 4
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 3
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 2
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+	 move 1
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+       frame      data/chars/phil/a202.gif
+
+        sound   data/sounds/laugh2.wav
+ 	 move 0
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       delay   	50
+       frame   	data/chars/phil/idle01.gif
+
+
+anim special2
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat2.wav
+
+	loop       0
+	offset     238 177
+	bbox		230 112 22 66
+       delay   	32
+       frame   	data/chars/phil/a301.gif
+
+        sound   data/sounds/puff.wav
+	bbox		0 0 0 0
+	 delay	2
+       frame      data/chars/phil/a302.gif
+       frame      data/chars/phil/a303.gif
+       frame      data/chars/phil/a304.gif
+       frame      data/chars/phil/a305.gif
+       frame      data/chars/phil/a306.gif
+       frame      data/chars/phil/a307.gif
+       frame      data/chars/phil/a308.gif
+       frame      data/chars/phil/a309.gif
+       frame      data/chars/phil/a310.gif
+       frame      data/chars/phil/a311.gif
+       frame      data/chars/phil/a312.gif
+       frame      data/chars/phil/a313.gif
+       frame      data/chars/phil/a314.gif
+       frame      data/chars/phil/a315.gif
+       frame      data/chars/phil/a316.gif
+       frame      data/chars/phil/a317.gif
+       frame      data/chars/phil/a318.gif
+       frame      data/chars/phil/a319.gif
+       frame      data/chars/phil/a320.gif
+       frame      data/chars/phil/a321.gif
+
+        sound   data/sounds/laugh2.wav
+	 attack  	183 	57 	118 		123 		15 		1 		0 		0 		25
+	 move 100
+       frame      data/chars/misc/empty.gif
+
+        sound   data/sounds/puff.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 move 0
+       frame      data/chars/phil/a302.gif
+       frame      data/chars/phil/a303.gif
+       frame      data/chars/phil/a304.gif
+       frame      data/chars/phil/a305.gif
+       frame      data/chars/phil/a306.gif
+       frame      data/chars/phil/a307.gif
+       frame      data/chars/phil/a308.gif
+       frame      data/chars/phil/a309.gif
+       frame      data/chars/phil/a310.gif
+       frame      data/chars/phil/a311.gif
+       frame      data/chars/phil/a312.gif
+       frame      data/chars/phil/a313.gif
+       frame      data/chars/phil/a314.gif
+       frame      data/chars/phil/a315.gif
+       frame      data/chars/phil/a316.gif
+       frame      data/chars/phil/a317.gif
+       frame      data/chars/phil/a328.gif
+       frame      data/chars/phil/a329.gif
+       frame      data/chars/phil/a330.gif
+       frame      data/chars/phil/a331.gif
+
+       delay   	50
+       frame   	data/chars/phil/a301.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/phil/pain01.gif
+	 offset     237 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+       frame      data/chars/phil/pain01.gif
+	 offset     239 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+       frame      data/chars/phil/pain01.gif
+	 offset     237 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/phil/pain01.gif
+
+anim fall
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/phil/pain02.gif
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     239 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/phil/pain02.gif
+
+anim fall2
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/phil/pain01.gif
+	 offset     237 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+       frame      data/chars/phil/pain01.gif
+	 offset     239 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+       frame      data/chars/phil/pain01.gif
+	 offset     237 177
+       frame      data/chars/phil/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/phil/pain01.gif
+
+anim fall3
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/phil/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/phil/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/phil/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/phil/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/phil/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/phil/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/phil/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/phil/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/phil/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/phil/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/phil/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/phil/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/phil/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/phil/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/phil/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/phil/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/phil/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/phil/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/phil/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/phil/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/phil/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/phil/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/phil/pain01.gif
+
+anim fall11
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+	 delay      999
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/phil/pain01.gif
+
+anim fall12
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+	 delay      999
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/phil/pain01.gif
+
+anim fall13
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/phil/fall01.gif
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/phil/fall02.gif
+
+	 delay      16
+       frame      data/chars/phil/rise01.gif
+	 delay      8
+       frame      data/chars/phil/pain02.gif
+
+anim death
+	jumpframe 26 1.5 0
+	landframe  27
+	quakeframe 27 5 3
+	 loop       0
+	 offset     238 177
+	 delay      15
+       frame      data/chars/phil/fall02.gif
+	 delay      8
+       frame      data/chars/phil/rise01.gif
+
+
+	 delay      4
+
+	 offset     237 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+	 offset     239 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+	 offset     237 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+	 offset     237 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+	 offset     239 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+	 offset     237 177
+       frame      data/chars/phil/rise01.gif
+	 offset     238 177
+       frame      data/chars/phil/rise01.gif
+
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     239 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     239 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+	 offset     237 177
+       frame      data/chars/phil/pain02.gif
+	 offset     238 177
+       frame      data/chars/phil/pain02.gif
+
+	 delay      999
+       frame      data/chars/phil/fall01.gif
+       sound   	data/sounds/fall.wav
+	 delay      8
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+       frame      data/chars/phil/fall02.gif
+
+
+

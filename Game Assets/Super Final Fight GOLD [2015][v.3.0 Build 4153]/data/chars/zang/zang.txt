@@ -1,0 +1,1995 @@
+name	    		Zangief
+type	    		player
+health	    		110
+mp          		100
+nolife				1
+hostile				enemy
+candamage			enemy player obstacle
+speed	    		7
+jumpspeed	    	10
+jumpheight   		3.3
+#jumpmove 			3
+turndelay 			12
+mprate				2
+grabdistance		40
+grabfinish			1
+grabback			0
+antigravity 		10
+bounce				1
+noquake     		1
+shadow	    		4
+diesound    		data/chars/zang/zang05.wav
+flash 				flash
+bflash 				guard
+dust    			dust01
+toflip				1
+nodieblink			1
+makeinv     		5 0 
+falldie 			2
+riseinv 			1 1
+atchain     		1 1 2
+jugglepoints		15
+animationscript		data/scripts/player.c
+
+load				quake
+load				driver
+
+com  d f a  		freespecial2
+com  f f a  		freespecial3
+com  d u a  		freespecial4
+com  d f d f a  	freespecial5
+
+
+icon	      		data/chars/zang/icon.gif 1
+icondie     		data/chars/zang/icond.gif 1
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette 			data/chars/zang/pal/pal01.gif #1
+alternatepal		data/chars/zang/pal/pal02.gif #2
+alternatepal		data/chars/zang/pal/pal03.gif #3
+alternatepal		data/chars/zang/pal/pal04.gif #4
+alternatepal		data/chars/zang/pal/pal05.gif #5
+alternatepal		data/chars/zang/pal/pal06.gif #6
+alternatepal		data/chars/zang/pal/pal07.gif #7
+alternatepal		data/chars/zang/pal/pal08.gif #8
+alternatepal		data/chars/zang/pal/pal09.gif #9
+alternatepal		data/chars/zang/pal/pal10.gif #10
+
+#	weapons     	fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     1 1
+	 delay      4
+       frame      data/chars/zang/sel01.gif
+       frame      data/chars/zang/sel02.gif
+
+anim select
+	 loop       0
+	 offset     1 1
+
+	 sound   	data/sounds/choose.wav
+	 delay      4
+       frame      data/chars/zang/sel03.gif
+       frame      data/chars/zang/sel04.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/zang/sel05.gif
+       frame      data/chars/zang/sel04.gif
+	 delay      6
+       frame      data/chars/zang/sel03.gif
+
+	 delay      4
+       frame      data/chars/zang/sel04.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/zang/sel05.gif
+       frame      data/chars/zang/sel04.gif
+	 delay      6
+       frame      data/chars/zang/sel03.gif
+
+	 delay      5
+       frame      data/chars/zang/sel12.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/zang/sel13.gif
+       frame      data/chars/zang/sel14.gif
+	 sound   	data/chars/zang/zang01.wav
+	 delay      100
+       frame      data/chars/zang/sel15.gif
+
+
+#-------Moves
+
+anim spawn
+	loop       0
+	 offset     238 177
+	delay   3
+     @cmd setLevel
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+	frame	data/chars/zang/idle01.gif
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/zang/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      16
+       frame      data/chars/zang/walk01.gif
+       frame      data/chars/zang/walk02.gif
+       frame      data/chars/zang/walk03.gif
+       frame      data/chars/zang/walk04.gif
+
+anim get
+	 loop       0
+	 offset     238 177
+	 delay      30
+       frame      data/chars/zang/get01.gif
+
+anim attack1
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				4 			1 			d f a 					freespecial2
+	cancel 		0 				4 			1 			f f a 					freespecial3
+	cancel 		0 				4 			1 			d u a 					freespecial4
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/zang/a101.gif
+       frame      data/chars/zang/a102.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 102 51 		76 		7 			0 		0 		0 			30			15
+       frame      data/chars/zang/a103.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/zang/a102.gif
+	 delay      6
+       frame      data/chars/zang/a101.gif
+
+anim attack2
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				3 			1 			d f a 					freespecial2
+	cancel 		0 				3 			1 			f f a 					freespecial3
+	cancel 		0 				3 			1 			d u a 					freespecial4
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/zang/zang02.wav
+	 delay      6
+       frame      data/chars/zang/a201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 76 	61 		102 	10 			0 		0 		0 			35			15
+	 delay      5
+       frame      data/chars/zang/a202.gif
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      1
+       frame      data/chars/zang/a202.gif
+	 delay      6
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 76 	61 		102 	4 			1 		0 		0 			35			15
+	 delay      10
+       frame      data/chars/zang/a203.gif
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/zang/a204.gif
+	 delay      14
+       frame      data/chars/zang/a205.gif
+	 delay      7
+       frame      data/chars/zang/land01.gif
+
+anim jumpdelay
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/zang/land01.gif
+
+anim jump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/zang/jump01.gif
+	 delay      15
+       frame      data/chars/zang/jump02.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+
+anim forwardjump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/zang/jump01.gif
+	 delay      15
+       frame      data/chars/zang/jump02.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+
+
+anim jumpland
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/zang/land01.gif
+
+anim jumpattack
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/zang/zang02.wav
+	 delay      5
+       frame      data/chars/zang/jump02.gif
+
+	 delay      10
+       frame      data/chars/zang/ja101.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 110 70 		68 		14 			1 		0 		0 			35			15
+	 delay      30
+	 frame	data/chars/zang/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame      data/chars/zang/ja103.gif
+	 delay      5
+       frame      data/chars/zang/ja104.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+
+anim jumpforward
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/zang/zang02.wav
+	 delay      5
+       frame      data/chars/zang/jump02.gif
+
+	 delay      10
+       frame      data/chars/zang/ja101.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 110 70 		68 		14 			1 		0 		0 			35			15
+	 delay      40
+	 frame	data/chars/zang/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame      data/chars/zang/ja103.gif
+	 delay      5
+       frame      data/chars/zang/ja104.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+
+anim jumpattack2
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/zang/zang03.wav
+	 delay      5
+	frame	data/chars/zang/ja201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 112 107 	77 		14 			1 		0 		0 			35			15
+	 delay      999
+	frame	data/chars/zang/ja202.gif
+
+
+anim grab
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				99 			0 			f f a 				freespecial3
+	cancel 		0 				99 			0 			d u a 				freespecial4
+	cancel 		0 				99 			0 			d f d f a 			freespecial5
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/zang/grab01.gif
+
+anim grabattack
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 104 45 		24 		7 			0 		0 		0 			30			0
+       frame      data/chars/zang/th101.gif
+
+anim grabattack2
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 104 45 		24 		14 			1 		0 		0 			35			0
+       frame      data/chars/zang/th101.gif
+
+anim grabbackward
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/zang/zang03.wav
+
+	 delay      18
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+       frame      data/chars/zang/th201.gif
+
+	@cmd position 3 21 1 0 1
+	 delay      35
+       frame      data/chars/zang/th202.gif
+	   
+	@cmd position 4 21 1 0 1
+	 delay      18
+       frame      data/chars/zang/th203.gif
+	   
+	@cmd position 5 -40 1 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" -60 1 10
+#@cmd projectile 1 "friver" -100 0 0
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th204.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th204.gif
+
+	@cmd depost 0
+	@cmd throw 14 1 -1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/th204.gif
+
+	 delay      9
+       frame      data/chars/zang/rise02.gif
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+
+anim grabdown
+	 jumpframe 	1 2.5 -1
+	 landframe  2
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/zang/zang03.wav
+	 
+	 delay      18
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+       frame      data/chars/zang/th401.gif
+
+	@cmd position 11 35 -15 0 1
+	 delay      999
+       frame      data/chars/zang/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+	 delay      20
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th403.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 14 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW5"
+	 delay      18
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+
+anim grabforward
+	flipframe	6
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/zang/zang03.wav
+
+	@cmd slamstart
+	@cmd position 0 -30 1 0 1
+	 delay      35
+       frame      data/chars/zang/th301.gif
+
+	@cmd position 0 -15 15 0 1
+	 delay      15
+       frame      data/chars/zang/th302.gif
+
+	@cmd position 6 25 -10 0 1
+	 delay      15
+       frame      data/chars/zang/th303.gif
+	   
+	 hitfx   	data/sounds/punch.wav
+
+	@cmd position 7 15 5 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+#@cmd projectile 1 "friver" 55 0 0
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th304.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th304.gif
+	   
+	@cmd position 7 90 1 0 1
+	@cmd depost 0
+	@cmd throw 14 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/th304.gif
+
+	 delay      9
+       frame      data/chars/zang/rise02.gif
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+
+anim grabup
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/zang/zang03.wav
+
+	 delay      18
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+       frame      data/chars/zang/th201.gif
+
+	@cmd position 6 1 11 0 1
+	 delay      35
+       frame      data/chars/zang/th501.gif
+
+	@cmd position 0 75 1 0 1
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 14 1 2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      75
+       frame      data/chars/zang/th502.gif
+	 delay      1
+       frame      data/chars/zang/idle01.gif
+
+anim riseattack1
+	 jugglecost 100
+#	 jumpframe 0 3.3
+#	 landframe  8
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 delay      10
+       frame      data/chars/zang/rise01.gif
+       frame      data/chars/zang/rise02.gif
+       frame      data/chars/zang/rise03.gif
+       frame      data/chars/zang/rise04.gif
+
+	 sound   	data/chars/zang/zang03.wav
+	 delay      14
+       frame      data/chars/zang/sp01.gif
+
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		15
+	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/zang/sp01.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/zang/pain01.gif
+	 offset     237 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+       frame      data/chars/zang/pain01.gif
+	 offset     239 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+       frame      data/chars/zang/pain01.gif
+	 offset     237 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/zang/pain01.gif
+
+anim fall
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/zang/pain02.gif
+	 offset     237 177
+       frame      data/chars/zang/pain02.gif
+	 offset     238 177
+       frame      data/chars/zang/pain02.gif
+	 offset     239 177
+       frame      data/chars/zang/pain02.gif
+	 offset     238 177
+       frame      data/chars/zang/pain02.gif
+	 offset     237 177
+       frame      data/chars/zang/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/zang/pain02.gif
+
+anim fall2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/zang/pain01.gif
+	 offset     237 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+       frame      data/chars/zang/pain01.gif
+	 offset     239 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+       frame      data/chars/zang/pain01.gif
+	 offset     237 177
+       frame      data/chars/zang/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/zang/pain01.gif
+
+anim fall3
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/zang/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/zang/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------zang
+	 delay      999
+       frame      data/chars/zang/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/zang/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/zang/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/zang/hagg04.gif	# 5
+#-------------------------------------------zang
+	 delay      999
+       frame      data/chars/zang/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/zang/hagg06.gif	# 7
+#-------------------------------------------zang
+	 delay      999
+       frame      data/chars/zang/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/zang/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/zang/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/zang/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/zang/hagg11.gif	# 12
+#-------------------------------------------zang
+	 delay      999
+       frame      data/chars/zang/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/zang/hagg13.gif	# 14
+#-------------------------------------------zang
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/zang/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/zang/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/zang/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/zang/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/zang/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/zang/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/zang/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/zang/pain01.gif
+
+anim fall11
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+	 delay      999
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/zang/pain01.gif
+
+anim fall12
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+	 delay      999
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/zang/pain01.gif
+
+anim fall13
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/zang/fall01.gif
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      55
+       frame      data/chars/zang/fall02.gif
+	 delay      20
+       frame      data/chars/zang/rise01.gif
+	 delay      10
+       frame      data/chars/zang/rise02.gif
+       frame      data/chars/zang/rise03.gif
+       frame      data/chars/zang/rise04.gif
+
+anim death
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/zang/fall02.gif
+
+anim special
+	 jugglecost 100
+#	 jumpframe 0 3.3
+#	 landframe  8
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/zang/zang03.wav
+
+	 delay      14
+       frame      data/chars/zang/sp01.gif
+
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		0
+	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/zang/sp01.gif
+
+
+anim	freespecial10	# Cancel jump release attack
+	 jugglecost 100
+	 jumpframe	0 0 -1
+	 landframe	2
+#	 energycost	5
+#	 mponly  	2
+#	subentity		counter
+#	summonframe		0 0 0 0 0
+#	unsummonframe	999
+	loop		0
+	offset		209 233
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	 delay		16
+		frame		data/chars/zang/jump02.gif
+	delay		999
+		frame		data/chars/zang/jump01.gif
+	delay		6
+		frame		data/chars/zang/land01.gif
+
+@cmd changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+@cmd changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+
+	 sound   	data/chars/zang/zang03.wav
+
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/zang/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/zang/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/zang/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		15
+	 delay      12
+       frame      data/chars/zang/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/zang/sp01.gif
+
+		
+anim freespecial2
+	followanim	1
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+	 bbox		226 102 23 76
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/zang/zang02.wav
+
+	 delay      28
+       frame      data/chars/zang/frsp101.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	75	50		101		0			0		1		1			50			15
+	delay      2
+
+	move	7
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	move	6
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	move	5
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	move	4
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	move	3
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+	move	2
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+	move	1
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+
+	move	0
+	delay      6
+	attack2		0	0	0		0		0		0		0		0			0			0
+	 bbox		226 102 23 76
+	frame      data/chars/zang/frsp105.gif
+	frame      data/chars/zang/grab01.gif
+	 delay      60
+	frame      data/chars/zang/th201.gif
+
+
+anim follow1
+	 jumpframe 	4 4 1
+	 dropframe	5
+	 landframe  6
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 
+	 delay      6
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/frsp105.gif
+	 
+	 delay      6
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/grab01.gif
+	 
+	 delay      35
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/th401.gif
+	 
+	 sound   	data/chars/zang/zang04.wav
+	 delay      18
+	@cmd position 2 1 1 0 1
+	frame      data/chars/zang/frsp106.gif
+	 
+	 delay      999
+	@cmd position 6 1 10 0 1
+	frame      data/chars/zang/frsp108.gif
+
+	@cmd position 7 20 40 0 1
+	 delay      999
+	frame      data/chars/zang/frsp109.gif
+
+	@cmd position 12 40 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "dust03" 40 0 0
+	 delay      20
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/frsp110.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/frsp110.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 26 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/frsp110.gif
+
+
+      @cmd    anichange "ANI_FOLLOW5"
+	 delay      18
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+		
+anim freespecial3
+	followanim	2
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/zang/zang02.wav
+
+	delay      12
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	75	75		101		0			0		1		1			50			15
+	frame      data/chars/zang/frsp101.gif
+	delay      6
+	attack2		0	0	0		0		0		0		0		0			0			0
+	bbox		226 102 23 76
+	frame      data/chars/zang/grab01.gif
+	delay      60
+	frame      data/chars/zang/th201.gif
+
+anim follow2
+	flipframe	18
+	 jumpframe 	12 3.5 0.5
+	 dropframe	13
+	 landframe  14
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 
+	 delay      6
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/frsp105.gif
+	 
+	 delay      6
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/grab01.gif
+	 
+	 delay      35
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/th401.gif
+	
+	 sound   	data/chars/zang/zang06.wav
+	@cmd position 0 -30 1 0 1
+	 delay      35
+       frame      data/chars/zang/th301.gif
+
+	@cmd position 0 -15 15 0 1
+	 delay      15
+       frame      data/chars/zang/th302.gif
+
+	@cmd position 6 25 -10 0 1
+	 delay      15
+       frame      data/chars/zang/th303.gif
+	   
+	 hitfx   	data/sounds/punch.wav
+
+	@cmd position 7 15 5 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+#@cmd projectile 1 "friver" 55 0 0
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th304.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th304.gif
+
+	 delay      7
+	 move	20
+	@cmd position 7 25 15 0 1
+       frame      data/chars/zang/frsp201.gif
+	 delay      7
+	 move	20
+	@cmd position 5 -11 1 0 -1
+       frame      data/chars/zang/frsp202.gif
+	 delay      7
+	 move	20
+	@cmd position 7 -50 15 0 1
+       frame      data/chars/zang/frsp203.gif
+	
+	 move	20
+	@cmd position 0 -30 1 0 1
+	 delay      35
+       frame      data/chars/zang/frsp204.gif
+
+
+	 move	0
+	@cmd position 6 25 5 0 1
+	 delay      999
+       frame      data/chars/zang/frsp205.gif
+
+	@cmd position 7 20 50 0 1
+	 delay      999
+       frame      data/chars/zang/frsp206.gif
+
+	   
+	@cmd position 7 1 15 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "dust03" 40 0 0
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/frsp207.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/frsp207.gif
+	   
+	@cmd position 7 90 1 0 1
+	@cmd depost 0
+	@cmd throw 26 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/frsp207.gif
+
+      @cmd    anichange "ANI_FOLLOW6"
+	 delay      14
+       frame      data/chars/zang/frsp203.gif
+	 delay      18
+       frame      data/chars/zang/rise03.gif
+	 delay      8
+       frame      data/chars/zang/rise04.gif
+
+anim freespecial4
+	followanim	3
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/zang/zang07.wav
+
+	delay      12
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	75	75		101		0			0		1		1			50			15
+	frame      data/chars/zang/frsp101.gif
+	delay      6
+	attack2		0	0	0		0		0		0		0		0			0			0
+	bbox		226 102 23 76
+	frame      data/chars/zang/grab01.gif
+	delay      60
+	frame      data/chars/zang/th201.gif
+
+anim follow3
+	 jumpframe 	1 4 0
+	 landframe  50
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 
+	 delay      35
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+       frame      data/chars/zang/th401.gif
+
+	   
+
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+#	 sound   	data/chars/zang/zang08.wav
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp301.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp302.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp303.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp304.gif
+       frame      data/chars/zang/frsp304.gif
+	   
+	@cmd position 11 35 -15 0 1
+	 delay      999
+       frame      data/chars/zang/frsp301.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "dust03" 40 0 0
+	 delay      1
+       frame      data/chars/zang/th403.gif
+	 delay      19
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th403.gif
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th403.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 26 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/th403.gif
+
+      @cmd    anichange "ANI_FOLLOW5"
+	 delay      18
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+	   
+	   
+
+
+anim freespecial5
+	followanim	4
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 summonframe 0 -225 -195 0 0
+	 subentity	super
+	 energycost	100
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+	 bbox		226 102 23 76
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/zang/zang08.wav
+
+	 delay      1
+       frame      data/chars/zang/frsp101.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	75	50		101		0			0		1		1			50			15
+	delay      2
+
+	move	7
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	frame      data/chars/zang/frsp102.gif
+	move	6
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp103.gif
+	move	5
+	frame      data/chars/zang/frsp103.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	move	4
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	frame      data/chars/zang/frsp104.gif
+	move	3
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+	move	2
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+	move	1
+	frame      data/chars/zang/frsp101.gif
+	frame      data/chars/zang/frsp101.gif
+
+	move	0
+	delay      6
+	attack2		0	0	0		0		0		0		0		0			0			0
+	frame      data/chars/zang/frsp105.gif
+	frame      data/chars/zang/grab01.gif
+	 delay      60
+	frame      data/chars/zang/th201.gif
+
+
+anim follow4
+	 jumpframe 	22 6 0
+	 landframe  71
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 
+	 delay      6
+	@cmd slamstart
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/frsp105.gif
+	 
+	 delay      6
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/grab01.gif
+	 
+	 delay      35
+	@cmd position 0 35 1 0 1
+	frame      data/chars/zang/th401.gif
+	
+	 sound   	data/chars/zang/zang09.wav
+	@cmd position 0 -30 1 0 1
+	 delay      35
+       frame      data/chars/zang/th301.gif
+
+	@cmd position 0 -15 15 0 1
+	 delay      15
+       frame      data/chars/zang/th302.gif
+
+	@cmd position 6 25 -10 0 1
+	 delay      15
+       frame      data/chars/zang/th303.gif
+	   
+	 hitfx   	data/sounds/punch.wav
+
+	@cmd position 7 15 5 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+#@cmd projectile 1 "friver" 55 0 0
+	 delay      1
+       frame      data/chars/zang/th304.gif
+	 delay      19
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th304.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th304.gif
+
+	 sound   	data/chars/zang/zang10.wav
+	 delay      7
+	 move	20
+	@cmd position 7 25 15 0 1
+       frame      data/chars/zang/frsp201.gif
+	 delay      7
+	 move	20
+	@cmd position 5 -11 1 0 -1
+       frame      data/chars/zang/frsp202.gif
+	 delay      7
+	 move	20
+	@cmd position 7 -50 15 0 1
+       frame      data/chars/zang/frsp203.gif
+	
+	 move	20
+	@cmd position 0 -30 1 0 1
+	 delay      35
+       frame      data/chars/zang/th301.gif
+
+	 move	0
+	@cmd position 0 -15 15 0 1
+	 delay      15
+       frame      data/chars/zang/th302.gif
+
+	@cmd position 6 25 -10 0 1
+	 delay      15
+       frame      data/chars/zang/th303.gif
+	   
+	 hitfx   	data/sounds/punch.wav
+
+	@cmd position 7 15 5 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+	 delay      1
+       frame      data/chars/zang/th304.gif
+	 delay      19
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th304.gif
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th304.gif
+
+	 delay      7
+	 move	20
+	@cmd position 7 25 15 0 1
+       frame      data/chars/zang/frsp201.gif
+	 delay      7
+	 move	20
+	@cmd position 5 -11 1 0 -1
+       frame      data/chars/zang/frsp202.gif
+	 delay      7
+	 move	20
+	@cmd position 7 -50 15 0 1
+       frame      data/chars/zang/frsp203.gif
+	   
+
+	 
+	 sound   	data/chars/zang/zang11.wav
+	 delay      35
+	@cmd position 0 35 1 0 1
+       frame      data/chars/zang/th401.gif
+
+	 move	0
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif #21
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 11 35 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp401.gif
+       frame      data/chars/zang/frsp301.gif
+	@cmd position 11 15 -15 0 1
+	 delay      4
+       frame      data/chars/zang/frsp402.gif
+       frame      data/chars/zang/frsp302.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 1 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp403.gif
+       frame      data/chars/zang/frsp303.gif
+	@cmd position 13 20 -15 1 1
+	 delay      4
+       frame      data/chars/zang/frsp404.gif
+       frame      data/chars/zang/frsp304.gif
+	   
+	@cmd position 11 35 -15 0 1
+	 delay      999
+       frame      data/chars/zang/frsp301.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "dust03" 40 0 0
+	 delay      1
+       frame      data/chars/zang/th403.gif
+	 delay      19
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/zang/th403.gif
+	 delay      20
+       frame      data/chars/zang/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/zang/th403.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 85 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/zang/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW5"
+	 delay      18
+       frame      data/chars/zang/rise03.gif
+	 delay      22
+       frame      data/chars/zang/rise04.gif
+
+	   
+
+anim follow5
+	jumpframe	0 2.5 -1
+	dropframe	1
+	landframe	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      999
+       frame      data/chars/zang/jump02.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/zang/land01.gif
+	   
+
+anim follow6
+	flipframe	0
+	jumpframe	0 3 -1
+	dropframe	3
+	landframe	4
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 
+	 delay      14
+       frame      data/chars/zang/frsp208.gif
+       frame      data/chars/zang/frsp209.gif
+	 
+	 delay      999
+       frame      data/chars/zang/jump02.gif
+	 delay      999
+       frame      data/chars/zang/jump01.gif
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/zang/land01.gif
+
+
+
+	   
+
+
+

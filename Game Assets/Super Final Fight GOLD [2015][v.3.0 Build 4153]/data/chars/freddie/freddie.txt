@@ -1,0 +1,887 @@
+name	    		Freddie
+type	    		enemy
+#hostile		player
+#candamage		player enemy npc
+health	    	55
+mp          	100
+speed	    		5
+jumpspeed	    	10
+jumpheight   	3
+jumpmove 		3
+turndelay 		12
+mprate		5
+#grabdistance	40
+#grabfinish		0
+#paingrab		1
+grabback		1
+antigravity 	10
+bounce		1
+noquake     	1
+shadow	    	4
+diesound    	data/sounds/die01.wav
+flash 		flash
+bflash 		guard
+dust    		dust2
+toflip		1
+riseinv		1 1
+riseattacktype	0
+jugglepoints	15
+blockodds 		1
+thold     		49
+
+aggression		0
+nodieblink		1
+falldie 		2
+#risetime 		250
+nolife  1
+
+lifebarstatus 423 7 1 1 0 -300 -300 -300 -300
+lifeposition 37 218 
+nameposition 37 229
+iconposition 0 0
+
+icon	      data/chars/freddie/bicon.gif
+icondie     data/chars/freddie/bicond.gif
+
+palette data/chars/freddie/freddie.gif #1
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/freddie/idle01.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/freddie/idle01.gif
+
+#-------Moves
+
+anim spawn
+	summonframe 71 0 0 0 1
+	subentity	dial07
+	 loop       0
+	 offset     238 177
+
+ 	 move 2
+	 delay      2
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk01.gif
+
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk02.gif
+
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk03.gif
+
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+       frame      data/chars/freddie/walk04.gif
+
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/freddie/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      15
+       frame      data/chars/freddie/walk01.gif
+       frame      data/chars/freddie/walk02.gif
+       frame      data/chars/freddie/walk03.gif
+       frame      data/chars/freddie/walk04.gif
+
+anim block
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      3
+	 move		-5
+       frame      data/chars/freddie/guard01.gif
+	 move		-4
+       frame      data/chars/freddie/guard01.gif
+	 move		-3
+       frame      data/chars/freddie/guard01.gif
+	 move		-2
+       frame      data/chars/freddie/guard01.gif
+	 move		-1
+       frame      data/chars/freddie/guard01.gif
+	 move		0
+	 delay      25
+       frame      data/chars/freddie/guard01.gif
+
+anim attack1
+	range 0 85
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	95 	85 		41 		15 		0 		0 		0 		25
+	 delay      16
+       frame      data/chars/freddie/a102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+
+anim attack2
+#	quakeframe 1 8 3
+	range 0 85
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack11  	240 	95 	85 		41 		25 		1 		0 		0 		25
+	 delay      4
+       sound   	data/sounds/gre.wav
+       frame      data/chars/freddie/a102.gif
+       frame      data/chars/freddie/a103.gif
+       frame      data/chars/freddie/a104.gif
+       frame      data/chars/freddie/a105.gif
+       frame      data/chars/freddie/a106.gif
+       frame      data/chars/freddie/a107.gif
+       frame      data/chars/freddie/a108.gif
+       frame      data/chars/freddie/a109.gif
+       frame      data/chars/freddie/a110.gif
+       frame      data/chars/freddie/a111.gif
+	 delay      35
+       frame      data/chars/freddie/a102.gif
+	 attack11  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+
+anim attack3
+#	quakeframe 7 8 3
+	jumpframe 1 3.3 2
+	landframe  4
+	range 100 150
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+
+	 delay	15
+       frame      data/chars/freddie/rise02.gif
+
+ 	 sound   	data/sounds/jump.wav
+	 bbox		0 0 0 0
+	 delay	40
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	200 	107 	78 		55 		15 		1 		0 		0 		25
+       frame      data/chars/freddie/a201.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay	1
+       frame      data/chars/freddie/a201.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	200 	107 	78 		55 		25 		1 		0 		0 		25
+	 delay	999
+       frame      data/chars/freddie/a202.gif
+
+	 delay	8
+ 	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/freddie/rise01.gif
+	 delay      16
+       frame      data/chars/freddie/rise02.gif
+       delay   	50
+       frame   	data/chars/freddie/idle01.gif
+
+anim riseattack1
+#	quakeframe 1 8 3
+	range 0 85
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack11  	240 	95 	85 		41 		15 		1 		0 		0 		25
+	 delay      4
+       sound   	data/sounds/gre.wav
+       frame      data/chars/freddie/a102.gif
+       frame      data/chars/freddie/a103.gif
+       frame      data/chars/freddie/a104.gif
+       frame      data/chars/freddie/a105.gif
+       frame      data/chars/freddie/a106.gif
+       frame      data/chars/freddie/a107.gif
+       frame      data/chars/freddie/a108.gif
+       frame      data/chars/freddie/a109.gif
+       frame      data/chars/freddie/a110.gif
+       frame      data/chars/freddie/a111.gif
+	 delay      35
+       frame      data/chars/freddie/a102.gif
+	 attack11  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/freddie/a101.gif
+
+anim upper
+	range 0 95
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      16
+       frame      data/chars/freddie/a301.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	238 	74 	54 		62 		25 		0 		0 		0 		25
+       frame      data/chars/freddie/a302.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      50
+       frame      data/chars/freddie/a303.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/freddie/pain01.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     239 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/freddie/pain01.gif
+
+anim fall
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/freddie/pain02.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     239 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/freddie/pain02.gif
+
+anim fall2
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/freddie/pain01.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     239 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/freddie/pain01.gif
+
+anim fall3
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/freddie/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/freddie/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/freddie/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/freddie/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/freddie/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/freddie/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/freddie/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/freddie/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/freddie/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/freddie/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/freddie/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/freddie/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/freddie/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/freddie/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/freddie/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/freddie/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/freddie/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/freddie/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/freddie/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/freddie/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/freddie/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/freddie/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/freddie/pain01.gif
+
+anim fall11
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+	 delay      999
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/freddie/pain01.gif
+
+anim fall12
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+	 delay      999
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/freddie/pain01.gif
+
+anim fall13
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/freddie/fall01.gif
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/freddie/fall02.gif
+	 delay      8
+       frame      data/chars/freddie/rise01.gif
+
+	 delay      16
+       frame      data/chars/freddie/rise02.gif
+
+anim death
+	jumpframe 26 1.5 0
+	landframe  27
+	quakeframe 27 5 3
+	 loop       0
+	 offset     238 177
+	 delay      15
+       frame      data/chars/freddie/fall02.gif
+	 delay      8
+       frame      data/chars/freddie/rise01.gif
+
+
+	 delay      4
+
+	 offset     237 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     239 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     237 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     237 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     239 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     237 177
+       frame      data/chars/freddie/rise01.gif
+	 offset     238 177
+       frame      data/chars/freddie/rise01.gif
+
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     239 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     239 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     237 177
+       frame      data/chars/freddie/pain02.gif
+	 offset     238 177
+       frame      data/chars/freddie/pain02.gif
+
+	 delay      999
+       frame      data/chars/freddie/fall01.gif
+       sound   	data/sounds/fall.wav
+	 delay      8
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+       frame      data/chars/freddie/fall02.gif
+
+
+

@@ -1,0 +1,123 @@
+name					eshad
+health					1
+nolife					1
+type					npc
+hostile					player obstacle
+candamage				player obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		2
+subject_to_wall			0
+
+palette data/chars/sagat/shad/shad.gif #1
+
+anim idle
+	 jugglecost 100
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		161	102	77		34		17			1		1		0			15			15
+	offset     238 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     248 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     258 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     268 177
+	frame	data/chars/sagat/shad/01.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/misc/empty.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		238	102	77		34		10			1		1		0			15			15
+	offset     238 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     228 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     218 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     208 177
+	frame	data/chars/sagat/shad/02.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/misc/empty.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		161	102	77		34		10			1		1		0			15			15
+	offset     238 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     248 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     258 177
+	frame	data/chars/sagat/shad/01.gif
+	frame	data/chars/misc/empty.gif
+	offset     268 177
+	frame	data/chars/sagat/shad/01.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/misc/empty.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		238	102	77		34		10			1		1		0			15			15
+	offset     238 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     228 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     218 177
+	frame	data/chars/sagat/shad/02.gif
+	frame	data/chars/misc/empty.gif
+	offset     208 177
+	frame	data/chars/sagat/shad/02.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

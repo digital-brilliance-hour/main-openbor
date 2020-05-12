@@ -1,0 +1,471 @@
+music			data/music/music04.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST04_1/n01.gif
+background 		data/bgs/ST04_1/back.gif
+frontpanel		data/bgs/ST04_1/f01.gif 
+bgspeed 15 0
+rock 3
+blocked 1
+order	a b c
+loadingbg DATA\BGS\ST04_1\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		4
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	stage04
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+group   6 6
+at      0
+
+spawn   jony
+coords  500 200
+at      50
+
+spawn   jay
+coords  500 200
+at      100
+
+spawn   elijah
+coords  550 230
+at      200
+
+#-------1
+
+wait
+at      300
+
+spawn   dug
+coords  500 200
+at      300
+
+spawn   mic
+coords  500 200
+at      300
+
+spawn   bill
+coords  -100 240
+at      300
+
+spawn   eliot
+coords  500 200
+at      300
+
+spawn   mark
+coords  500 200
+at      300
+
+spawn   bret
+coords  500 200
+at      300
+
+spawn   elias
+coords  -100 240
+at      300
+
+spawn   elic
+coords  500 200
+at      300
+
+
+2pspawn   dug
+coords  500 200
+at      300
+
+2pspawn   bret
+coords  500 200
+at      300
+
+2pspawn   bill
+coords  -100 240
+at      300
+
+2pspawn   gory
+coords  500 200
+at      300
+
+
+3pspawn   dug
+coords  500 200
+at      300
+
+3pspawn   bret
+coords  500 200
+at      300
+
+3pspawn   bill
+coords  -100 240
+at      300
+
+3pspawn   gory
+coords  500 200
+at      300
+
+#-------1
+
+#----------------
+
+group   7 7
+at      400
+
+spawn   atlus
+coords  500 200
+at      400
+
+spawn   andore
+map	  1
+coords  500 200
+at      500
+
+spawn   leon
+coords  550 230
+at      600
+
+#-------1
+
+wait
+at      700
+
+spawn   bull
+coords  500 200
+at      700
+
+spawn   elijah
+coords  500 200
+at      700
+
+spawn   leon
+coords  -100 240
+at      700
+
+spawn   jony
+coords  500 200
+at      700
+
+spawn   mark
+coords  500 200
+at      700
+
+spawn   mic
+coords  500 200
+at      700
+
+spawn   jake
+coords  500 200
+at      700
+
+spawn   simons
+coords  500 200
+at      700
+
+spawn   holly
+coords  -100 240
+at      700
+
+spawn   axl
+coords  500 200
+at      700
+
+spawn   dug
+coords  500 200
+at      700
+
+spawn   bret
+coords  500 200
+at      700
+
+
+
+2pspawn   jake
+coords  500 200
+at      700
+
+2pspawn   simons
+coords  500 200
+at      700
+
+2pspawn   holly
+coords  -100 240
+at      700
+
+2pspawn   axl
+coords  500 200
+at      700
+
+2pspawn   dug
+coords  500 200
+at      700
+
+2pspawn   bret
+coords  500 200
+at      700
+
+
+
+3pspawn   jake
+coords  500 200
+at      700
+
+3pspawn   simons
+coords  500 200
+at      700
+
+3pspawn   holly
+coords  -100 240
+at      700
+
+3pspawn   axl
+coords  500 200
+at      700
+
+3pspawn   dug
+coords  500 200
+at      700
+
+3pspawn   bret
+coords  500 200
+at      700
+
+#----------------
+
+group   8 8
+at      1000
+
+spawn   wood
+coords  500 200
+at      1000
+
+spawn   wood
+coords  -100 200
+at      1150
+
+
+wait
+at      1300
+
+spawn   wood
+coords  500 200
+at      1300
+
+spawn   wood
+coords  520 210
+at      1300
+
+spawn   wood
+coords  -100 240
+at      1300
+
+spawn   wood
+coords  530 220
+at      1300
+
+spawn   wood
+coords  540 230
+at      1300
+
+spawn   wood
+coords  550 240
+at      1300
+
+spawn   elic
+coords  -110 210
+at      1300
+
+spawn   wood
+coords  500 200
+at      1300
+
+spawn   wood
+coords  -120 240
+at      1300
+
+spawn   wood
+coords  540 215
+at      1300
+
+spawn   wood
+coords  520 240
+at      1300
+
+spawn   wood
+coords  550 225
+at      1300
+
+spawn   elic
+coords  -120 235
+at      1300
+
+#----------------
+
+group   7 7
+at      1962
+
+wait
+at      1692
+
+spawn   elgado
+coords  -100 200
+at      1692
+
+spawn   holly
+coords  -100 240
+at      1692
+
+spawn   atlus
+coords  -100 200
+at      1692
+
+spawn   leon
+coords  -100 240
+at      1692
+
+spawn   wong
+coords  -100 200
+at      1692
+
+spawn   jony
+coords  -100 240
+at      1692
+
+spawn   mic
+coords  -100 200
+at      1692
+
+spawn   wood
+coords  -100 240
+at      1692
+
+spawn   wood
+coords  -100 240
+at      1692
+
+spawn   elgado
+coords  -100 200
+at      1692
+
+spawn   holly
+coords  -100 240
+at      1692
+
+spawn   atlus
+coords  -100 200
+at      1692
+
+spawn   leon
+coords  -100 240
+at      1692
+
+spawn   wong
+coords  -100 200
+at      1692
+
+spawn   jony
+coords  -100 240
+at      1692
+
+spawn   mic
+coords  -100 200
+at      1692
+
+spawn   wood
+coords  -100 240
+at      1692
+
+spawn   wood
+coords  -100 240
+at      1692
+
+2pspawn   elgado
+coords  -100 200
+at      1692
+
+2pspawn   holly
+coords  -100 240
+at      1692
+
+2pspawn   slash
+coords  -100 200
+at      1692
+
+2pspawn   wood
+coords  -100 240
+at      1692
+
+2pspawn   wong
+coords  -100 200
+at      1692
+
+2pspawn   axl
+coords  -100 240
+at      1692
+
+2pspawn   bret
+coords  -100 200
+at      1692
+
+2pspawn   wood
+coords  -100 240
+at      1692
+
+2pspawn   wood
+coords  -100 240
+at      1692
+
+
+
+3pspawn   elgado
+coords  -100 200
+at      1692
+
+3pspawn   holly
+coords  -100 240
+at      1692
+
+3pspawn   slash
+coords  -100 200
+at      1692
+
+3pspawn   wood
+coords  -100 240
+at      1692
+
+3pspawn   wong
+coords  -100 200
+at      1692
+
+3pspawn   axl
+coords  -100 240
+at      1692
+
+3pspawn   bret
+coords  -100 200
+at      1692
+
+3pspawn   wood
+coords  -100 240
+at      1692
+
+3pspawn   wood
+coords  -100 240
+at      1692
+
+
+

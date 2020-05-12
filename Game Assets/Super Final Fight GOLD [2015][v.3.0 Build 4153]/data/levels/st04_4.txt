@@ -1,0 +1,359 @@
+music			data/music/music04.ogg
+bossmusic		data/music/boss01.ogg
+panel   		data/bgs/ST04_4/n01.gif
+background 		data/bgs/ST04_4/back.gif
+frontpanel		data/bgs/ST04_4/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST04_4\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		4
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+wall    -25 245 5 5 140 40 158 358
+
+
+#-------1
+
+#----------------
+
+#spawn	stage04
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+#-------1
+
+
+spawn   box
+item	  pizza
+coords  140 210
+at      0
+
+spawn   box
+2pitem	  pizza
+coords  350 232
+at      0
+
+spawn   box
+3pitem	  pizza
+coords  460 200
+at      0
+
+#-------1
+
+
+group   3 3
+at      300
+
+wait
+at      300
+
+spawn   retu
+boss 	  1
+health  400
+2phealth  450
+3phealth  500
+coords  500 210
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+spawn   elias
+coords  520 220
+at      300
+
+spawn   eliot
+coords  -100 230
+at      300
+
+
+
+
+

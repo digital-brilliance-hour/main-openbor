@@ -1,0 +1,119 @@
+music			data/music/music03.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST03_3/n01.gif
+background 		data/bgs/ST03_3/back.gif
+frontpanel		data/bgs/ST03_3/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST03_3\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+wall    -25 245 5 5 140 40 158 358
+
+
+#-------1
+
+#----------------
+
+#spawn	stage03
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+
+#-------1
+
+
+spawn   box
+coords  225 240
+at      0
+
+spawn   barrel
+item	  banana
+coords  400 200
+at      0
+
+spawn   box
+item	  hammer
+coords  455 240
+at      0
+
+#-------1
+
+group   7 7
+at      0
+
+wait
+at      0
+
+spawn   poison
+coords  500 200
+at      0
+
+spawn   poison
+alias	  Roxy
+map	1
+coords  550 230
+at      0
+
+spawn   axl
+coords  570 215
+at      0
+
+spawn   slash
+coords  515 210
+at      0
+
+spawn   elic
+coords  565 240
+at      0
+
+spawn   elias
+coords  585 225
+at      0
+
+spawn   eliot
+coords  500 200
+at      0
+
+
+spawn   andore
+alias	  Andore_Jr.
+2phealth 125
+3phealth 150
+coords  570 215
+at      0
+
+spawn   andore
+map 1
+health  150
+2phealth 175
+3phealth 200
+coords  515 210
+at      0
+
+spawn   andore
+alias	  F._Andore
+map 2
+health  200
+2phealth 225
+3phealth 250
+coords  565 240
+at      0
+
+
+
+
+

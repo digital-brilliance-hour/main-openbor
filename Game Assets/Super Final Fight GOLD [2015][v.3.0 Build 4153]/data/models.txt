@@ -1,0 +1,290 @@
+
+# Options
+nolost 			0
+versusdamage 		1
+spdirection  		1 1 1
+autoland  			2
+colourselect 		1
+ajspecial 			1
+maxattacks			50
+maxattacktypes		50
+maxfreespecials		50
+maxfollows			50
+
+# LEVEL UP
+Load	Levelup			data/chars/Misc/levelup/levelup.txt
+
+
+# Flash
+load	Flash			data/chars/misc/flash/flash.txt
+load	Blood			data/chars/misc/flash/blood.txt
+load	Guard			data/chars/misc/flash/guard.txt
+
+
+# Players
+
+load	Cody		data/chars/cody/cody.txt
+know	tornado		data/chars/cody/tornado/tornado.txt
+know	ruffian		data/chars/cody/ruffian/ruffian.txt
+
+load	Guy			data/chars/guy/guy.txt
+know	gokusa		data/chars/guy/gokusa/gokusa.txt
+know	izuna		data/chars/guy/izuna/izuna.txt
+know	hassou		data/chars/guy/hassou/hassou.txt
+
+load	Haggar		data/chars/haggar/haggar.txt
+know	axe			data/chars/haggar/axe/axe.txt
+know	driver		data/chars/haggar/driver/driver.txt
+
+load	Carlos		data/chars/carlos/carlos.txt
+know	slice01		data/chars/carlos/slice01/slice01.txt
+know	slice02		data/chars/carlos/slice02/slice02.txt
+know	slice12		data/chars/carlos/slice02/slice12.txt
+know	slice03		data/chars/carlos/slice03/slice03.txt
+
+load	Maki		data/chars/maki/maki.txt
+know	reppu		data/chars/maki/reppu/reppu.txt
+know	daoshi		data/chars/maki/daoshi/daoshi.txt
+know	tengu		data/chars/maki/tengu/tengu.txt
+know	izuma1		data/chars/maki/izuma/izuma1.txt
+know	izuma2		data/chars/maki/izuma/izuma2.txt
+
+load	Lucia		data/chars/lucia/lucia.txt
+
+load	Dean		data/chars/dean/dean.txt
+know	wave		data/chars/dean/wave/wave.txt
+
+load	Ryu			data/chars/ryu/ryu.txt
+know	hado2		data/chars/ryu/hado2/hado2.txt
+know	hado3		data/chars/ryu/hado3/hado3.txt
+
+load	Ken			data/chars/ken/ken.txt
+know	hado1		data/chars/ken/hado1/hado1.txt
+
+load	honda			data/chars/honda/honda.txt
+
+load	chunli			data/chars/chunli/chunli.txt
+know	kiko			data/chars/chunli/kiko/kiko.txt
+know	sho				data/chars/chunli/sho/sho.txt
+
+load	Blanka		data/chars/blanka/blanka.txt
+
+load	Zang			data/chars/zang/zang.txt
+
+load	Guile		data/chars/guile/guile.txt
+know	boom		data/chars/guile/boom/boom.txt
+know	bazoo		data/chars/guile/bazoo/bazoo.txt
+know	sonic		data/chars/guile/sonic/sonic.txt
+
+load	Dhal		data/chars/dhal/dhal.txt
+know	yoga1		data/chars/dhal/yoga/yoga1.txt
+know	yoga2		data/chars/dhal/yoga/yoga2.txt
+know	yoga3		data/chars/dhal/yoga/yoga3.txt
+
+load	Thawk			data/chars/thawk/thawk.txt
+know	mex				data/chars/thawk/mex/mex.txt
+
+load	Fei			data/chars/fei/fei.txt
+
+load	Deejay		data/chars/deejay/deejay.txt
+know	maxo1		data/chars/deejay/maxo/maxo1.txt
+know	maxo2		data/chars/deejay/maxo/maxo2.txt
+
+load	Cammy		data/chars/cammy/cammy.txt
+
+load	pbalrog		data/chars/balrog/pbalrog.txt
+know	elbow		data/chars/balrog/elbow/elbow.txt
+
+load	pvega		data/chars/vega/pvega.txt
+know	claw		data/chars/vega/claw/claw.txt
+
+load	psagat		data/chars/sagat/psagat.txt
+know	shad		data/chars/sagat/shad/shad.txt
+know	tiger1		data/chars/sagat/tiger1/tiger1.txt
+know	tiger2		data/chars/sagat/tiger2/tiger2.txt
+
+load	pbison		data/chars/bison/pbison.txt
+know	crush		data/chars/bison/crush/crush.txt
+know	psycho		data/chars/bison/psycho/psycho.txt
+
+# quake
+load	quake			data/chars/misc/quake.txt
+
+# Dust
+load	Dust01			data/chars/misc/dust01/dust01.txt
+load	Dust02			data/chars/misc/dust02/dust02.txt
+load	Dust03			data/chars/misc/dust03/dust03.txt
+load	Dust			data/chars/misc/dust/dust.txt
+load	Dust2			data/chars/misc/dust/dust2.txt
+
+
+# Enemies
+know	Bret			data/chars/bret/bret.txt
+know	Dug			data/chars/dug/dug.txt
+know	Jake			data/chars/jake/jake.txt
+know	Simons		data/chars/simons/simons.txt
+know	Jay			data/chars/jay/jay.txt
+know	Two_p			data/chars/two_p/two_p.txt
+know	Axl			data/chars/axl/axl.txt
+know	Slash			data/chars/slash/slash.txt
+know	Poison		data/chars/poison/poison.txt
+know	Gory			data/chars/gory/gory.txt
+know	Wong			data/chars/wong/wong.txt
+know	Bill			data/chars/bill/bill.txt
+know	Holly			data/chars/holly/holly.txt
+know	hknife		data/chars/holly/hknife.txt
+know	Elgado		data/chars/elgado/elgado.txt
+know	Wood			data/chars/wood/wood.txt
+know	Wmolo			data/chars/wood/wmolo.txt
+know	Andore		data/chars/andore/andore.txt
+know	Elic			data/chars/elic/elic.txt
+know	Elias			data/chars/elias/elias.txt
+know	Eliot			data/chars/eliot/eliot.txt
+know	Leon			data/chars/leon/leon.txt
+know	Mic			data/chars/mic/mic.txt
+know	Mark			data/chars/mark/mark.txt
+know	Bull			data/chars/bull/bull.txt
+know	Elijah		data/chars/elijah/elijah.txt
+know	Schot			data/chars/schot/schot.txt
+know	Jack			data/chars/jack/jack.txt
+know	Jony			data/chars/jony/jony.txt
+know	Atlus			data/chars/atlus/atlus.txt
+know	Damnd2		data/chars/damnd/damnd2.txt
+
+know	Bret2			data/chars/bret/bret2.txt # sparring partner
+
+# Enemies Bosses
+know	Damnd			data/chars/damnd/damnd.txt
+know	Sodom			data/chars/sodom/sodom.txt
+know	Sodpr			data/chars/sodom/sodpr.txt
+load	Sodprh		data/chars/sodom/sodprh.txt
+know	Edi			data/chars/edi/edi.txt
+know	Abigail		data/chars/abigail/abigail.txt
+know	Rolent		data/chars/rolent/rolent.txt
+know	Rgran			data/chars/rolent/rgran.txt
+know	Wonwon		data/chars/wonwon/wonwon.txt
+know	Freddie		data/chars/freddie/freddie.txt
+know	Bratken		data/chars/bratken/bratken.txt
+know	Phil			data/chars/phil/phil.txt
+know	Retu			data/chars/retu/retu.txt
+
+know	ebalrog		data/chars/balrog/ebalrog.txt
+know	eelbow		data/chars/balrog/elbow/eelbow.txt
+
+know	evega		data/chars/vega/evega.txt
+know	eclaw		data/chars/vega/claw/eclaw.txt
+
+know	esagat		data/chars/sagat/esagat.txt
+know	eshad		data/chars/sagat/shad/eshad.txt
+know	etiger1		data/chars/sagat/tiger1/etiger1.txt
+know	etiger2		data/chars/sagat/tiger2/etiger2.txt
+
+know	eBison		data/chars/bison/ebison.txt
+know	mantle		data/chars/bison/mantle/mantle.txt
+know	ecrush		data/chars/bison/crush/ecrush.txt
+know	epsycho		data/chars/bison/psycho/epsycho.txt
+
+
+#items
+know	Barrel		data/chars/misc/items/barrel.txt
+know	Drum			data/chars/misc/items/drum.txt
+know	Box			data/chars/misc/items/box.txt
+know	Phone			data/chars/misc/items/phone.txt
+know	Surf			data/chars/misc/items/surf.txt
+know	Tires			data/chars/misc/items/tires.txt
+know	Trash			data/chars/misc/items/trash.txt
+know	Roll			data/chars/misc/items/roll.txt
+
+
+#Money
+know	Coin			data/chars/misc/money/coin.txt
+know	Hammer		data/chars/misc/money/hammer.txt
+know	glas			data/chars/misc/money/glas.txt
+know	radio			data/chars/misc/money/radio.txt
+know	dollar		data/chars/misc/money/dollar.txt
+know	ring			data/chars/misc/money/ring.txt
+know	jewel			data/chars/misc/money/jewel.txt
+know	bag			data/chars/misc/money/bag.txt
+know	gold			data/chars/misc/money/gold.txt
+
+
+#Food
+know	Gum			data/chars/misc/food/gum.txt
+know	Coke			data/chars/misc/food/coke.txt
+know	Apple			data/chars/misc/food/apple.txt
+know	Grape			data/chars/misc/food/grape.txt
+know	Banana		data/chars/misc/food/banana.txt
+know	Hamb			data/chars/misc/food/hamb.txt
+know	Pasta			data/chars/misc/food/pasta.txt
+know	Pizza			data/chars/misc/food/pizza.txt
+know	Meat			data/chars/misc/food/meat.txt
+
+
+#traps
+know	ftrap			data/chars/misc/ftrap/ftrap.txt
+
+#1UP
+know	1up			data/chars/misc/1up/1up.txt
+
+#SUPER
+load	super			data/chars/misc/super/super.txt
+
+
+#text
+know	stage01		data/scenes/intro/stage01/stage01.txt
+know	stage02		data/scenes/intro/stage02/stage02.txt
+know	stage03		data/scenes/intro/stage03/stage03.txt
+know	stage04		data/scenes/intro/stage04/stage04.txt
+know	stage05		data/scenes/intro/stage05/stage05.txt
+know	bonus			data/scenes/intro/bonus/bonus.txt
+
+
+#dialogue
+load	dial01		data/scenes/dial/dial01.txt
+load	dial02		data/scenes/dial/dial02.txt
+load	dial03		data/scenes/dial/dial03.txt
+load	dial04		data/scenes/dial/dial04.txt
+load	dial05		data/scenes/dial/dial05.txt
+load	dial06		data/scenes/dial/dial06.txt
+load	dial07		data/scenes/dial/dial07.txt
+load	dial08		data/scenes/dial/dial08.txt
+load	dial09		data/scenes/dial/dial09.txt
+load	dial10		data/scenes/dial/dial10.txt
+load	dial11		data/scenes/dial/dial11.txt
+load	dial12		data/scenes/dial/dial12.txt
+load	dial13		data/scenes/dial/dial13.txt
+load	dial14		data/scenes/dial/dial14.txt
+
+
+#branches
+know	go01			data/chars/misc/go/go01.txt
+know	go02			data/chars/misc/go/go02.txt
+know	go03			data/chars/misc/go/go03.txt
+know	go03_2		data/chars/misc/go/go03_2.txt
+know	go04			data/chars/misc/go/go04.txt
+know	go05			data/chars/misc/go/go05.txt
+know	go05_2		data/chars/misc/go/go05_2.txt
+
+
+#bonus
+know	car01			data/chars/misc/car/car01.txt
+know	car02			data/chars/misc/car/car02.txt
+know	car03			data/chars/misc/car/car03.txt
+know	glass			data/chars/misc/glass/glass.txt
+know	car201			data/chars/misc/car2/car201.txt
+know	car202			data/chars/misc/car2/car202.txt
+know	car203			data/chars/misc/car2/car203.txt
+know	fdrum			data/chars/misc/fdrum/fdrum.txt
+know	wall01			data/chars/misc/wall/wall01.txt
+know	wall02			data/chars/misc/wall/wall02.txt
+know	wall03			data/chars/misc/wall/wall03.txt
+know	barr			data/chars/misc/barr/barr.txt
+
+#rain
+know	rain			data/chars/misc/rain/rain.txt
+
+
+
+
+
+

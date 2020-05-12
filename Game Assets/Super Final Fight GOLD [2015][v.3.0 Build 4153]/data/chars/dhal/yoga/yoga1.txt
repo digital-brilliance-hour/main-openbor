@@ -1,0 +1,102 @@
+name					yoga1
+health					1
+nolife					1
+type					npc
+hostile					enemy player npc obstacle
+candamage				enemy player npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		1.5
+subject_to_wall 0
+
+palette data/chars/dhal/yoga/yoga.gif #1
+
+anim idle
+	followanim	1
+	followcond	1
+	jugglecost 	0
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	1
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+	move	4
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack11	284	127	28		59		10			0		0		0			20			25
+	frame	data/chars/dhal/yoga/01.gif
+	frame	data/chars/dhal/yoga/01.gif
+	frame	data/chars/dhal/yoga/02.gif
+	frame	data/chars/dhal/yoga/02.gif
+	frame	data/chars/dhal/yoga/03.gif
+	attack11	0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/dhal/yoga/03.gif
+
+
+
+anim follow1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/dhal/yoga/04.gif
+	frame	data/chars/dhal/yoga/05.gif
+	frame	data/chars/dhal/yoga/06.gif
+	frame	data/chars/dhal/yoga/07.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/dhal/yoga/04.gif
+	frame	data/chars/dhal/yoga/05.gif
+	frame	data/chars/dhal/yoga/06.gif
+	frame	data/chars/dhal/yoga/07.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

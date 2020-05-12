@@ -1,0 +1,172 @@
+music			data/music/music02.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST02_2/n01.gif
+background 		data/bgs/ST02_2/back.gif
+frontpanel		data/bgs/ST02_2/f01.gif 
+blocked 1
+order	a b c
+loadingbg DATA\BGS\ST02_2\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		2
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage02
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+group   3 3
+at      0
+
+wait
+at      0
+
+spawn   mark
+coords  500 200
+at      0
+
+spawn   wong
+coords  500 200
+at      0
+
+spawn   bull
+coords  550 230
+at      0
+
+2pspawn   mark
+coords  500 200
+at      0
+
+2pspawn   wong
+coords  500 200
+at      0
+
+2pspawn   bull
+coords  550 230
+at      0
+
+3pspawn   mark
+coords  500 200
+at      0
+
+3pspawn   wong
+coords  500 200
+at      0
+
+3pspawn   bull
+coords  550 230
+at      0
+
+#-------1
+
+group   4 4
+at      300
+
+wait
+at      300
+
+spawn   elic
+coords  -100 220
+at      300
+
+spawn   holly
+coords  -100 200
+at      300
+
+spawn   jony
+coords  -100 220
+at      300
+
+spawn   slash
+coords  -100 200
+at      300
+
+spawn   poison
+coords  -100 220
+at      300
+
+spawn   elgado
+coords  -100 200
+at      300
+
+
+2pspawn   elic
+coords  -100 220
+at      300
+
+2pspawn   holly
+coords  -100 200
+at      300
+
+2pspawn   jony
+coords  -100 220
+at      300
+
+2pspawn   slash
+coords  -100 200
+at      300
+
+2pspawn   poison
+coords  -100 220
+at      300
+
+2pspawn   elgado
+coords  -100 200
+at      300
+
+
+3pspawn   elic
+coords  -100 220
+at      300
+
+3pspawn   holly
+coords  -100 200
+at      300
+
+3pspawn   jony
+coords  -100 220
+at      300
+
+3pspawn   slash
+coords  -100 200
+at      300
+
+3pspawn   poison
+coords  -100 220
+at      300
+
+3pspawn   elgado
+coords  -100 200
+at      300
+
+
+spawn   phil
+boss 	  1
+health  150
+2phealth  240
+3phealth  350
+coords  200 200
+at      300
+
+#-------1
+
+
+
+
+

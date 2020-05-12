@@ -1,0 +1,102 @@
+name					kiko
+health					1
+nolife					1
+type					npc
+hostile					enemy player npc obstacle
+candamage				enemy player npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+lifespan        		1
+subject_to_wall 0
+
+palette data/chars/chunli/kiko/kiko.gif #1
+
+anim idle
+	followanim	1
+	followcond	1
+	jugglecost 	2
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	1
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+	move	4
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		242	117	41		28		7			1		1		0			15			15
+	frame	data/chars/chunli/kiko/01.gif
+	frame	data/chars/chunli/kiko/02.gif
+	frame	data/chars/chunli/kiko/03.gif
+	frame	data/chars/chunli/kiko/04.gif
+	frame	data/chars/chunli/kiko/05.gif
+	frame	data/chars/chunli/kiko/06.gif
+	frame	data/chars/chunli/kiko/07.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/kiko/08.gif
+
+anim follow1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/chunli/kiko/09.gif
+	frame	data/chars/chunli/kiko/10.gif
+	frame	data/chars/chunli/kiko/11.gif
+	frame	data/chars/chunli/kiko/12.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/chunli/kiko/09.gif
+	frame	data/chars/chunli/kiko/10.gif
+	frame	data/chars/chunli/kiko/11.gif
+	frame	data/chars/chunli/kiko/12.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

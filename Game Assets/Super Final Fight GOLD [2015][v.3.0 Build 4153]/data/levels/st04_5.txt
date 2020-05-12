@@ -1,0 +1,394 @@
+music			data/music/music04.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST04_5/n01.gif
+background 		data/bgs/ST04_5/back.gif
+frontpanel		data/bgs/ST04_5/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST04_5\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		4
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+spawn	stage04
+coords  0 0
+flip    1
+at      0
+
+#----------------
+
+#-------1
+
+spawn   drum
+coords  170 200
+at      0
+
+spawn   drum
+item	  gold
+coords  190 225
+at      0
+
+spawn   drum
+coords  210 240
+at      0
+
+
+spawn   drum
+item	  hammer
+coords  860 200
+at      0
+
+spawn   drum
+item	  apple
+coords  880 225
+at      0
+
+spawn   drum
+coords  900 240
+at      0
+
+#-------1
+
+spawn   ftrap
+coords  335 200
+at      1
+
+spawn   ftrap
+coords  315 225
+at      50
+
+spawn   ftrap
+coords  320 215
+at      100
+
+spawn   ftrap
+coords  300 240
+at      150
+
+spawn   ftrap
+coords  270 200
+at      200
+
+spawn   ftrap
+coords  370 230
+at      200
+
+spawn   ftrap
+coords  325 200
+at      300
+
+spawn   ftrap
+coords  295 230
+at      350
+
+spawn   ftrap
+coords  380 210
+at      400
+
+#-------1
+
+
+group   4 4
+at      480
+
+wait
+at      480
+
+spawn   bret
+coords  500 200
+at      480
+
+spawn   dug
+coords  510 210
+at      480
+
+spawn   jake
+coords  520 220
+at      480
+
+spawn   simons
+coords  530 230
+at      480
+
+spawn   mic
+coords  500 200
+at      480
+
+spawn   mark
+coords  510 210
+at      480
+
+spawn   bull
+coords  520 220
+at      480
+
+spawn   elijah
+coords  530 230
+at      480
+
+spawn   schot
+coords  500 200
+at      480
+
+spawn   jack
+coords  510 210
+at      480
+
+#-------1
+
+spawn   drum
+item	  meat
+coords  930 200
+at      481
+
+spawn   drum
+2pitem	  meat
+coords  950 225
+at      481
+
+spawn   drum
+3pitem	  meat
+coords  970 240
+at      481
+
+#-------1
+
+
+
+spawn   ftrap
+coords  370 220
+at      600
+
+spawn   ftrap
+coords  375 200
+at      650
+
+spawn   ftrap
+coords  405 230
+at      650
+
+spawn   ftrap
+coords  395 205
+at      700
+
+spawn   ftrap
+coords  385 225
+at      725
+
+spawn   ftrap
+coords  380 240
+at      750
+
+spawn   ftrap
+coords  375 210
+at      800
+
+spawn   ftrap
+coords  410 215
+at      900
+
+spawn   ftrap
+coords  340 235
+at      1000
+
+
+
+
+
+
+
+
+#-------1
+
+
+group   4 4
+at      1024
+
+wait
+at      1024
+
+spawn   axl
+coords  500 200
+at      1024
+
+spawn   slash
+coords  510 210
+at      1024
+
+spawn   jony
+coords  520 220
+at      1024
+
+spawn   atlus
+coords  530 230
+at      1024
+
+spawn   gory
+coords  500 200
+at      1024
+
+spawn   bill
+coords  510 210
+at      1024
+
+spawn   wong
+coords  500 200
+at      1024
+
+spawn   elic
+coords  510 210
+at      1024
+
+spawn   poison
+coords  520 220
+at      1024
+
+spawn   poison
+alias	  roxy
+map	  1
+coords  530 230
+at      1024
+
+#-------1
+
+spawn   ftrap
+coords  445 200
+at      1050
+
+spawn   ftrap
+coords  465 225
+at      1050
+
+spawn   ftrap
+coords  485 240
+at      1050
+
+
+spawn   ftrap
+coords  470 200
+at      1100
+
+spawn   ftrap
+coords  490 240
+at      1100
+
+
+spawn   ftrap
+coords  490 200
+at      1150
+
+spawn   ftrap
+coords  510 225
+at      1150
+
+spawn   ftrap
+coords  530 240
+at      1150
+
+
+spawn   ftrap
+coords  535 225
+at      1200
+
+spawn   ftrap
+coords  555 240
+at      1200
+
+
+spawn   ftrap
+coords  535 200
+at      1250
+
+spawn   ftrap
+coords  555 225
+at      1250
+
+spawn   ftrap
+coords  575 240
+at      1250
+
+
+spawn   ftrap
+coords  555 200
+at      1300
+
+spawn   ftrap
+coords  525 225
+at      1350
+
+
+spawn   ftrap
+coords  530 200
+at      1400
+
+spawn   ftrap
+coords  520 225
+at      1450
+
+
+spawn   ftrap
+coords  520 240
+at      1500
+
+
+
+
+#-------1
+
+
+group   2 2
+at      1661
+
+wait
+at      1661
+
+spawn   andore
+alias	  Andore_Jr.
+coords  500 200
+at      1661
+
+spawn   andore
+map	  1
+health  150
+coords  510 210
+at      1661
+
+spawn   andore
+alias	  F._Andore
+map	  2
+health  200
+coords  520 220
+at      1661
+
+spawn   andore
+alias	  G._Andore
+map	  3
+health  250
+coords  530 230
+at      1661
+
+#-------1
+
+
+
+
+
+
+
+
+
+

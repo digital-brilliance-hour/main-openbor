@@ -1,0 +1,1817 @@
+name	    		EBison
+type	    		enemy
+health	    		100
+mp          		100
+nolife				1
+speed	    		11
+jumpspeed	    	10
+jumpheight   		3.3
+#jumpmove 			3
+turndelay 			12
+mprate				3
+grabdistance		20
+grabfinish			1
+grabback			0
+antigravity 		10
+bounce				1
+noquake     		1
+shadow	    		4
+diesound    		data/chars/bison/bison05.wav
+flash 				flash
+bflash 				guard
+dust    			dust01
+toflip				1
+nodieblink			1
+makeinv     		5 0 
+falldie 			2
+riseinv 			1 1
+atchain     		1 1 2 3
+blockodds 			1
+thold     			49
+escapehits 			2
+jugglepoints		15
+aimove 				chase
+
+
+lifebarstatus 423 7 1 1 0 -300 -300 -300 -300
+lifeposition 37 218 
+nameposition 37 229
+iconposition 0 0
+
+
+load				epsycho
+load				ecrush
+load				mantle
+
+
+com  f f a  		freespecial2
+com  d f a  		freespecial3
+com  d u a  		freespecial4
+com  d f d f a  	freespecial5
+com  d d  			freespecial6
+com  u u  			freespecial7
+
+icon	      		data/chars/bison/bicon.gif 1
+icondie     		data/chars/bison/bicond.gif 1
+
+palette 			data/chars/bison/pal/pal01.gif #1
+alternatepal		data/chars/bison/pal/pal02.gif #2
+alternatepal		data/chars/bison/pal/pal03.gif #3
+alternatepal		data/chars/bison/pal/pal04.gif #4
+alternatepal		data/chars/bison/pal/pal05.gif #5
+alternatepal		data/chars/bison/pal/pal06.gif #6
+alternatepal		data/chars/bison/pal/pal07.gif #7
+alternatepal		data/chars/bison/pal/pal08.gif #8
+alternatepal		data/chars/bison/pal/pal09.gif #9
+alternatepal		data/chars/bison/pal/pal10.gif #10
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     1 -51
+	 delay      8
+       frame      data/chars/bison/sel01.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       0
+	 offset     1 -51
+
+	 delay      2
+       frame      data/chars/bison/sel02.gif
+       frame      data/chars/bison/sel03.gif
+	 sound   	data/sounds/punch.wav
+	 delay      2
+       frame      data/chars/bison/sel04.gif
+       frame      data/chars/bison/sel05.gif
+       frame      data/chars/bison/sel04.gif
+       frame      data/chars/bison/sel05.gif
+	 delay      2
+       frame      data/chars/bison/sel02.gif
+       frame      data/chars/bison/sel03.gif
+	 sound   	data/sounds/punch.wav
+	 delay      2
+       frame      data/chars/bison/sel04.gif
+       frame      data/chars/bison/sel05.gif
+       frame      data/chars/bison/sel04.gif
+       frame      data/chars/bison/sel05.gif
+	 delay      2
+       frame      data/chars/bison/sel02.gif
+       frame      data/chars/bison/sel03.gif
+	   
+	 delay      2
+       frame      data/chars/bison/sel06.gif
+       frame      data/chars/bison/sel07.gif
+       frame      data/chars/bison/sel08.gif
+       frame      data/chars/bison/sel09.gif
+	 sound   	data/sounds/punch.wav
+	 delay      2
+       frame      data/chars/bison/sel10.gif
+       frame      data/chars/bison/sel11.gif
+       frame      data/chars/bison/sel10.gif
+       frame      data/chars/bison/sel11.gif
+	 delay      2
+       frame      data/chars/bison/sel06.gif
+       frame      data/chars/bison/sel07.gif
+       frame      data/chars/bison/sel08.gif
+       frame      data/chars/bison/sel09.gif
+
+	 delay      4
+       frame      data/chars/bison/sel12.gif
+	 delay      4
+       frame      data/chars/bison/sel13.gif
+	 delay      4
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/bison/sel14.gif
+	 delay      10
+	 sound   	data/sounds/choose.wav
+       frame      data/chars/bison/sel14.gif
+
+
+#-------Moves
+
+anim spawn
+	summonframe 52 0 0 0 1
+	subentity	dial14
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      2
+ 	 sound   	data/sounds/blast02.wav
+       frame      data/chars/bison/spawn01.gif
+       frame      data/chars/bison/spawn02.gif
+       frame      data/chars/bison/spawn01.gif
+       frame      data/chars/bison/spawn03.gif
+       frame      data/chars/bison/spawn02.gif
+       frame      data/chars/bison/spawn04.gif
+       frame      data/chars/bison/spawn03.gif
+       frame      data/chars/bison/spawn05.gif
+       frame      data/chars/bison/spawn04.gif
+       frame      data/chars/bison/spawn06.gif
+       frame      data/chars/bison/spawn05.gif
+       frame      data/chars/bison/spawn07.gif
+       frame      data/chars/bison/spawn06.gif
+       frame      data/chars/bison/spawn08.gif
+       frame      data/chars/bison/spawn07.gif
+       frame      data/chars/bison/spawn09.gif
+       frame      data/chars/bison/spawn08.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn09.gif
+       frame      data/chars/bison/spawn10.gif
+
+	 sound   	data/chars/bison/bison01.wav
+	 delay      12
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+       frame      data/chars/bison/spawn11.gif
+       frame      data/chars/bison/spawn10.gif
+
+	 delay      24
+       frame      data/chars/bison/spawn12.gif
+	 delay      75
+	@cmd projectile 1 "mantle" 0 0 70
+       frame      data/chars/bison/spawn13.gif
+	 delay      8
+       frame      data/chars/bison/idle01.gif
+
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/bison/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/bison/walk01.gif
+       frame      data/chars/bison/walk02.gif
+       frame      data/chars/bison/walk03.gif
+       frame      data/chars/bison/walk04.gif
+
+anim get
+	 loop       0
+	 offset     238 177
+	 delay      30
+       frame      data/chars/bison/get01.gif
+
+anim block
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      3
+	 move		-5
+       frame      data/chars/bison/guard01.gif
+	 move		-4
+       frame      data/chars/bison/guard01.gif
+	 move		-3
+       frame      data/chars/bison/guard01.gif
+	 move		-2
+       frame      data/chars/bison/guard01.gif
+	 move		-1
+       frame      data/chars/bison/guard01.gif
+	 move		0
+	 delay      25
+       frame      data/chars/bison/guard01.gif
+
+	 sound   	data/chars/bison/bison10.wav
+
+	 delay	8
+	   frame      data/chars/bison/frsp401.gif
+	   frame      data/chars/bison/frsp402.gif
+
+	 sound   	data/sounds/blast02.wav
+	 delay	2
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+
+	 move	-200
+	 delay	16
+	   frame      data/chars/misc/empty.gif
+
+	 sound   	data/sounds/blast02.wav
+	 move	0
+	 delay	2
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+
+	   delay	8
+	   frame      data/chars/bison/frsp402.gif
+	   frame      data/chars/bison/frsp401.gif
+
+anim attack1
+	range	0 40
+	jugglecost 	2
+	fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      2
+       frame      data/chars/bison/a101.gif
+       frame      data/chars/bison/a102.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack12  	238 104 40 		73 		6 			0 		0 		0 			20			15
+	 delay      2
+       frame      data/chars/bison/a103.gif
+       frame      data/chars/bison/a104.gif
+       frame      data/chars/bison/a103.gif
+       frame      data/chars/bison/a104.gif
+	 attack12  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      2
+       frame      data/chars/bison/a101.gif
+       frame      data/chars/bison/a102.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack12  	238 104 40 		73 		6 			0 		0 		0 			20			15
+	 delay      2
+       frame      data/chars/bison/a103.gif
+       frame      data/chars/bison/a104.gif
+       frame      data/chars/bison/a103.gif
+       frame      data/chars/bison/a104.gif
+	 attack12  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      2
+       frame      data/chars/bison/a101.gif
+       frame      data/chars/bison/a102.gif
+
+	   delay      2
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a203.gif
+       frame      data/chars/bison/a204.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack12  	238 125 50 		53 		6 			0 		0 		0 			24			15
+	 delay      2
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+	 attack12  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      2
+       frame      data/chars/bison/a203.gif
+       frame      data/chars/bison/a204.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+
+	   hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/bison/bison02.wav
+	 delay      4
+       frame      data/chars/bison/a301.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	212 136 51 		41 		12 			1 		0 		0 			24			15
+	 delay      2
+	 move	10
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	9
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	8
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	7
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	6
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	5
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	4
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	3
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	2
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+	 move	1
+       frame      data/chars/bison/a302.gif
+       frame      data/chars/bison/a302.gif
+
+	 move	0
+	   attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame      data/chars/bison/a303.gif
+	 delay      8
+       frame      data/chars/bison/land01.gif
+
+anim jumpdelay
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/bison/land01.gif
+
+anim jump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      20
+       frame      data/chars/bison/jump01.gif
+	 delay      20
+       frame      data/chars/bison/jump02.gif
+	 delay      999
+       frame      data/chars/bison/jump01.gif
+
+anim forwardjump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      20
+       frame      data/chars/bison/jump01.gif
+	 delay      20
+       frame      data/chars/bison/jump02.gif
+	 delay      999
+       frame      data/chars/bison/jump01.gif
+
+
+anim jumpland
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/bison/land01.gif
+
+anim jumpattack
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/bison/bison02.wav
+	 delay      5
+       frame	data/chars/bison/jump02.gif
+	 delay      7
+       frame	data/chars/bison/ja101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	238 133 61 		27 		12 			1 		0 		0 			24			15
+	 delay      35
+	 frame		data/chars/bison/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+       frame	data/chars/bison/ja101.gif
+	 delay      5
+       frame      data/chars/bison/jump02.gif
+	 delay      999
+       frame      data/chars/bison/jump01.gif
+
+anim jumpforward
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/bison/bison02.wav
+	 delay      5
+       frame	data/chars/bison/ja201.gif
+	 delay      7
+       frame	data/chars/bison/ja202.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	238 132 54 		29 		12 			1 		0 		0 			24			15
+	 delay      35
+	 frame		data/chars/bison/ja203.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame	data/chars/bison/jump02.gif
+	 delay      999
+       frame      data/chars/bison/jump01.gif
+
+anim jumpattack2
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	238 129 25 		35		14 			0 		0 		0 			20			15
+	 delay      999
+	 frame	data/chars/bison/ja301.gif
+
+anim riseattack1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	 delay      10
+       frame      data/chars/bison/get01.gif
+       frame      data/chars/bison/land01.gif
+
+	   sound   	data/chars/bison/bison10.wav
+	 delay      8
+       frame      data/chars/bison/sp01.gif
+       frame      data/chars/bison/sp02.gif
+
+@cmd projectile 1 "ecrush" 0 0 0
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+#	 attack2  	199 73 	78 		104 	5 			1 		0 		0 			30			30
+	 delay      6
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp02.gif
+       frame      data/chars/bison/sp01.gif
+
+#	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      9
+       frame      data/chars/bison/th206.gif
+
+anim special2
+#	range 0 80
+	jugglecost 	2
+	 fastattack 1
+	 hitflash	flash
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	   sound   	data/chars/bison/bison03.wav
+	 delay      2
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+       frame      data/chars/bison/a203.gif
+       frame      data/chars/bison/a204.gif
+       frame      data/chars/bison/a203.gif
+       frame      data/chars/bison/a204.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	110 	82 		26 		25 		1 		0 		0 		25
+	 delay      2
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+       frame      data/chars/bison/a205.gif
+       frame      data/chars/bison/a206.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      2
+       frame      data/chars/bison/a203.gif
+       frame      data/chars/bison/a204.gif
+       frame      data/chars/bison/a201.gif
+       frame      data/chars/bison/a202.gif
+
+anim upper
+#	flipframe	0
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	10
+	 mponly  	1
+
+	 loop       0
+	 offset     238 177
+
+	 sound   	data/chars/bison/bison10.wav
+
+	bbox		0 0 0 0
+	 delay	8
+	   frame      data/chars/bison/frsp401.gif
+	   frame      data/chars/bison/frsp402.gif
+
+	 sound   	data/sounds/blast02.wav
+	 delay	2
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+
+	 move	-200
+	 delay	16
+	   frame      data/chars/misc/empty.gif
+
+	 sound   	data/sounds/blast02.wav
+	 move	0
+	 delay	2
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+
+	   delay	8
+	   frame      data/chars/bison/frsp402.gif
+	   frame      data/chars/bison/frsp401.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bison/pain01.gif
+	 offset     237 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+       frame      data/chars/bison/pain01.gif
+	 offset     239 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+       frame      data/chars/bison/pain01.gif
+	 offset     237 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bison/pain01.gif
+
+anim fall
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bison/pain02.gif
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     239 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bison/pain02.gif
+
+anim fall2
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bison/pain01.gif
+	 offset     237 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+       frame      data/chars/bison/pain01.gif
+	 offset     239 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+       frame      data/chars/bison/pain01.gif
+	 offset     237 177
+       frame      data/chars/bison/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bison/pain01.gif
+
+anim fall3
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/bison/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/bison/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bison/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/bison/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/bison/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/bison/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bison/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/bison/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bison/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/bison/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/bison/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/bison/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/bison/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bison/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/bison/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/bison/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/bison/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/bison/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/bison/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/bison/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/bison/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/bison/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bison/pain01.gif
+
+anim fall11
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+	 delay      999
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bison/pain01.gif
+
+anim fall12
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+	 delay      999
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/bison/pain01.gif
+
+anim fall13
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/bison/fall01.gif
+	 delay      1
+       frame      data/chars/bison/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      55
+       frame      data/chars/bison/fall02.gif
+	 delay      10
+       frame      data/chars/bison/rise01.gif
+       frame      data/chars/bison/rise02.gif
+       frame      data/chars/bison/rise03.gif
+       frame      data/chars/bison/rise03.gif
+       frame      data/chars/bison/land01.gif
+
+anim death
+	jumpframe 26 1.5 0
+	landframe  27
+	quakeframe 27 5 3
+	 loop       0
+	 offset     238 177
+	 delay      15
+       frame      data/chars/bison/fall02.gif
+	 delay      8
+       frame      data/chars/bison/rise01.gif
+
+
+	 delay      4
+
+	 offset     237 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+	 offset     239 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+	 offset     237 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+	 offset     237 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+	 offset     239 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+	 offset     237 177
+       frame      data/chars/bison/rise02.gif
+	 offset     238 177
+       frame      data/chars/bison/rise02.gif
+
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     239 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     239 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+	 offset     237 177
+       frame      data/chars/bison/pain02.gif
+	 offset     238 177
+       frame      data/chars/bison/pain02.gif
+
+	 delay      999
+       frame      data/chars/bison/fall01.gif
+       sound   	data/sounds/fall.wav
+	 delay      8
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+       frame      data/chars/bison/fall02.gif
+
+
+anim special
+	 jugglecost 100
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	   sound   	data/chars/bison/bison10.wav
+	 delay      8
+       frame      data/chars/bison/sp01.gif
+       frame      data/chars/bison/sp02.gif
+
+@cmd projectile 1 "ecrush" 0 0 0
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+#	 attack2  	199 73 	78 		104 	5 			1 		0 		0 			30			30
+	 delay      6
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp04.gif
+       frame      data/chars/bison/sp03.gif
+       frame      data/chars/bison/sp02.gif
+       frame      data/chars/bison/sp01.gif
+
+#	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      9
+       frame      data/chars/bison/th206.gif
+
+
+anim freespecial2
+	range	101 350
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	hitflash	flash
+	hitfx		data/sounds/beat3.wav
+	
+	sound   	data/chars/bison/bison04.wav
+	 loop       0
+	 offset     238 177
+	 delay      2
+       frame      data/chars/bison/frsp101.gif
+       frame      data/chars/bison/frsp102.gif
+       frame      data/chars/bison/frsp101.gif
+       frame      data/chars/bison/frsp102.gif
+       frame      data/chars/bison/frsp103.gif
+       frame      data/chars/bison/frsp104.gif
+       frame      data/chars/bison/frsp103.gif
+       frame      data/chars/bison/frsp104.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+ 	 sound   	data/sounds/blast01.wav
+ 	 delay      2
+	 move 6
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+	   
+	 move 6
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack12  	189 116 98 		61 		23 			1 		0 		0 			40			15
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+       frame      data/chars/bison/frsp107.gif
+       frame      data/chars/bison/frsp108.gif
+       frame      data/chars/bison/frsp109.gif
+       frame      data/chars/bison/frsp110.gif
+
+       frame      data/chars/bison/frsp111.gif
+       frame      data/chars/bison/frsp112.gif
+       frame      data/chars/bison/frsp113.gif
+       frame      data/chars/bison/frsp114.gif
+
+	 attack12  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 move 4
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+	 move 3
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+
+	 move 2
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+	 move 1
+       frame      data/chars/bison/frsp105.gif
+       frame      data/chars/bison/frsp106.gif
+
+@cmd projectile 1 "dust01" 0 0 0
+	 delay      8
+	 move 0
+       frame      data/chars/bison/get01.gif
+       frame      data/chars/bison/land01.gif
+
+anim freespecial3
+	range	41 100
+	 jumpframe 1 1.5 2
+	 landframe 21 dust01
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	hitflash	flash
+	hitfx		data/sounds/beat3.wav
+
+	sound   	data/chars/bison/bison06.wav
+	 delay      8
+       frame      data/chars/bison/land01.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+	 delay      2
+	move 2
+     	frame	data/chars/bison/frsp201.gif
+     	frame	data/chars/bison/frsp201.gif
+     	frame	data/chars/bison/frsp201.gif
+     	frame	data/chars/bison/frsp201.gif
+     	frame	data/chars/bison/frsp201.gif
+
+     	frame	data/chars/bison/frsp202.gif
+     	frame	data/chars/bison/frsp202.gif
+     	frame	data/chars/bison/frsp202.gif
+     	frame	data/chars/bison/frsp202.gif
+     	frame	data/chars/bison/frsp202.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	208 96	85 		81  	13 			0 		1 		0 			25			15
+     	frame	data/chars/bison/frsp203.gif
+     	frame	data/chars/bison/frsp203.gif
+     	frame	data/chars/bison/frsp203.gif
+     	frame	data/chars/bison/frsp203.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+     	frame	data/chars/bison/frsp203.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	208 96	85 		81  	10  		1 		1 		0 			25 			15
+     	frame	data/chars/bison/frsp204.gif
+     	frame	data/chars/bison/frsp204.gif
+     	frame	data/chars/bison/frsp204.gif
+     	frame	data/chars/bison/frsp204.gif
+	 delay      999
+     	frame	data/chars/bison/frsp204.gif
+
+	delay      1
+	move 3
+     	frame	data/chars/bison/a302.gif
+     	frame	data/chars/bison/a302.gif
+	move 2
+     	frame	data/chars/bison/a302.gif
+     	frame	data/chars/bison/a302.gif
+	move 1
+     	frame	data/chars/bison/a302.gif
+     	frame	data/chars/bison/a302.gif
+
+	 bbox		226 102 23 76
+	delay      16
+	move 0
+ 	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+    	frame	data/chars/bison/a303.gif
+
+	 delay      8
+       frame      data/chars/bison/land01.gif
+
+anim freespecial4
+	range	41 100
+	jumpframe 2 4 0
+	dropframe 23
+	landframe 63
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+
+	hitflash	flash
+	hitfx		data/sounds/beat3.wav
+
+	 sound   	data/chars/bison/bison07.wav
+
+	 delay	8
+       frame      data/chars/bison/get01.gif
+       frame      data/chars/bison/land01.gif
+
+	 bbox		0 0 0 0
+@cmd projectile 1 "dust02" 0 0 0
+	 delay	2
+	move	10
+       frame      data/chars/bison/jump01.gif
+       frame      data/chars/bison/jump01.gif
+
+	move	9
+       frame      data/chars/bison/jump01.gif
+       frame      data/chars/bison/jump01.gif
+
+	move	8
+       frame      data/chars/bison/jump01.gif
+       frame      data/chars/bison/jump01.gif
+
+	move	7
+       frame      data/chars/bison/jump01.gif
+       frame      data/chars/bison/jump01.gif
+
+	move	6
+       frame      data/chars/bison/jump01.gif
+       frame      data/chars/bison/jump01.gif
+
+	move	5
+       frame      data/chars/bison/jump02.gif
+       frame      data/chars/bison/jump02.gif
+
+	move	4
+       frame      data/chars/bison/jump02.gif
+       frame      data/chars/bison/jump02.gif
+
+	move	3
+       frame      data/chars/bison/jump02.gif
+       frame      data/chars/bison/jump02.gif
+
+	move	2
+       frame      data/chars/bison/jump02.gif
+       frame      data/chars/bison/jump02.gif
+
+	move	1
+       frame      data/chars/bison/jump02.gif
+       frame      data/chars/bison/jump02.gif
+	   
+	move	0
+	 delay	999
+       frame      data/chars/bison/jump02.gif
+
+	   
+	 delay	2
+	move	-1
+       frame      data/chars/bison/frsp301.gif
+       frame      data/chars/bison/frsp302.gif
+	move	-2
+       frame      data/chars/bison/frsp301.gif
+       frame      data/chars/bison/frsp302.gif
+	move	-3
+       frame      data/chars/bison/frsp303.gif
+       frame      data/chars/bison/frsp304.gif
+	move	-4
+       frame      data/chars/bison/frsp303.gif
+       frame      data/chars/bison/frsp304.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack12  	205 102	71 		78  	23 			1 		1 		0 			40			15
+	move	-5
+       frame      data/chars/bison/frsp305.gif
+       frame      data/chars/bison/frsp306.gif
+	move	-6
+       frame      data/chars/bison/frsp305.gif
+       frame      data/chars/bison/frsp306.gif
+	move	-7
+       frame      data/chars/bison/frsp305.gif
+       frame      data/chars/bison/frsp306.gif
+	move	-8
+       frame      data/chars/bison/frsp305.gif
+       frame      data/chars/bison/frsp306.gif
+	   
+	move	-9
+       frame      data/chars/bison/frsp305.gif
+       frame      data/chars/bison/frsp306.gif
+	move	-10
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+       frame      data/chars/bison/frsp306.gif
+
+	 bbox		226 102 23 76
+ 	 attack12  	0 	0 	0 		0 		0 		0 		0 		0 		0
+@cmd projectile 1 "dust01" 0 0 0
+	move	0
+	 delay	8
+       frame      data/chars/bison/get01.gif
+       frame      data/chars/bison/land01.gif
+
+anim freespecial6
+	range	41 100
+#	flipframe	0
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	10
+	 mponly  	1
+
+	 loop       0
+	 offset     238 177
+
+	 sound   	data/chars/bison/bison10.wav
+
+	bbox		0 0 0 0
+	 delay	8
+	   frame      data/chars/bison/frsp401.gif
+	   frame      data/chars/bison/frsp402.gif
+
+	 sound   	data/sounds/blast02.wav
+	 delay	2
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+
+	 move	-200
+	 delay	16
+	   frame      data/chars/misc/empty.gif
+
+	 sound   	data/sounds/blast02.wav
+	 move	0
+	 delay	2
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+
+	   delay	8
+	   frame      data/chars/bison/frsp402.gif
+	   frame      data/chars/bison/frsp401.gif
+
+anim freespecial7
+	range	41 100
+#	flipframe	0
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	10
+	 mponly  	1
+
+	 loop       0
+	 offset     238 177
+
+	 sound   	data/chars/bison/bison10.wav
+
+	bbox		0 0 0 0
+	 delay	8
+	   frame      data/chars/bison/frsp401.gif
+	   frame      data/chars/bison/frsp402.gif
+
+	 sound   	data/sounds/blast02.wav
+	 delay	2
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+
+	 move	200
+	 delay	16
+	   frame      data/chars/misc/empty.gif
+
+	 sound   	data/sounds/blast02.wav
+	 move	0
+	 delay	2
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+
+	   delay	8
+	   frame      data/chars/bison/frsp402.gif
+	   frame      data/chars/bison/frsp401.gif
+	   
+	   
+
+anim freespecial5
+	range	101 350
+	 summonframe 1 -240 -210 0 0
+	 subentity	super
+	 unsummonframe 2
+	 jugglecost 	0
+	 fastattack 1
+	 energycost	100
+	 mponly  	1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	hitflash	flash
+	hitfx		data/sounds/beat3.wav
+
+	sound   	data/chars/bison/bison08.wav
+
+	bbox		0 0 0 0
+	 delay	8
+	   frame      data/chars/bison/frsp401.gif
+	   frame      data/chars/bison/frsp402.gif
+
+	 sound   	data/sounds/blast02.wav
+	 delay	2
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+
+	 sound   	data/chars/bison/bison09.wav
+@cmd projectile 1 "epsycho" -580 0 0
+	shadowcoords 9999 9999
+	 delay	450
+	   frame      data/chars/misc/empty.gif
+
+
+	 sound   	data/sounds/blast02.wav
+	shadowcoords 238 177
+	 delay	2
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp412.gif
+	   frame      data/chars/bison/frsp411.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp410.gif
+	   frame      data/chars/bison/frsp409.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp408.gif
+	   frame      data/chars/bison/frsp407.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp406.gif
+	   frame      data/chars/bison/frsp405.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+	   frame      data/chars/bison/frsp404.gif
+	   frame      data/chars/bison/frsp403.gif
+
+	   delay	8
+	   frame      data/chars/bison/frsp402.gif
+	   frame      data/chars/bison/frsp401.gif
+

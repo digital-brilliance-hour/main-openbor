@@ -1,0 +1,45 @@
+name	car02
+health	1
+nolife  1
+type	obstacle
+shadow	0
+noquake 1
+falldie 0
+score 3000 5
+subject_to_wall 0
+noatflash 1
+flash	flash
+diesound data/sounds/phone.wav
+
+anim idle
+	loop 0
+	delay	1000
+	offset	238 220
+	bbox	259 136 36 40
+	frame	data/chars/misc/car/11.gif
+
+anim pain
+	loop 0
+	delay	1
+	offset	238 220
+	bbox	259 136 36 40
+	frame	data/chars/misc/car/11.gif
+
+anim death
+	loop 0
+	delay	4
+	offset	238 220
+	frame	data/chars/misc/car/12.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/car/13.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/car/14.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/car/15.gif
+	delay	200
+	frame	data/chars/misc/empty.gif
+
+

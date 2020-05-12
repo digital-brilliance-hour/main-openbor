@@ -1,0 +1,1802 @@
+name	    		Dhalsim
+type	    		player
+health	    		100
+mp          		100
+nolife				1
+hostile				enemy
+candamage			enemy player obstacle
+speed	    		7
+jumpspeed	    	10
+jumpheight   		3.3
+#jumpmove 			3
+turndelay 			12
+mprate				5
+grabdistance		20
+grabfinish			1
+grabback			0
+antigravity 		10
+bounce				1
+noquake     		1
+shadow	    		3
+diesound    		data/chars/dhal/dhal05.wav
+flash 				flash
+bflash 				guard
+dust    			dust01
+toflip				1
+nodieblink			1
+makeinv     		5 0 
+falldie 			2
+riseinv 			1 1
+atchain     		1 1 2 3 4
+jugglepoints		15
+animationscript		data/scripts/player.c
+
+load				yoga1
+load				yoga2
+load				yoga3
+
+com  d f a  		freespecial2
+com  f f a  		freespecial3
+com  d d a  		freespecial4
+com  u u a  		freespecial6
+com  d f d f a  	freespecial5
+
+icon	      		data/chars/dhal/icon.gif 1
+icondie     		data/chars/dhal/icond.gif 1
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette 			data/chars/dhal/pal/pal01.gif #1
+alternatepal		data/chars/dhal/pal/pal02.gif #2
+alternatepal		data/chars/dhal/pal/pal03.gif #3
+alternatepal		data/chars/dhal/pal/pal04.gif #4
+alternatepal		data/chars/dhal/pal/pal05.gif #5
+alternatepal		data/chars/dhal/pal/pal06.gif #6
+alternatepal		data/chars/dhal/pal/pal07.gif #7
+alternatepal		data/chars/dhal/pal/pal08.gif #8
+alternatepal		data/chars/dhal/pal/pal09.gif #9
+alternatepal		data/chars/dhal/pal/pal10.gif #10
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     1 1
+	 delay      4
+       frame      data/chars/dhal/sel01.gif
+       frame      data/chars/dhal/sel02.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       0
+	 offset     1 1
+
+	 sound   	data/sounds/choose.wav
+	 delay      2
+       frame      data/chars/dhal/sel03.gif
+	 sound   	data/sounds/punch.wav
+	 delay      8
+       frame      data/chars/dhal/sel04.gif
+	 delay      4
+       frame      data/chars/dhal/sel03.gif
+
+	 sound   	data/sounds/punch.wav
+	 delay      8
+       frame      data/chars/dhal/sel04.gif
+	 delay      4
+       frame      data/chars/dhal/sel03.gif
+
+       frame      data/chars/dhal/sel05.gif
+	 sound   	data/sounds/punch.wav
+	 delay      10
+       frame      data/chars/dhal/sel06.gif
+	 delay      4
+       frame      data/chars/dhal/sel05.gif
+
+       frame      data/chars/dhal/sel07.gif
+       frame      data/chars/dhal/sel08.gif
+	 sound   	data/sounds/punch.wav
+	 delay      10
+       frame      data/chars/dhal/sel09.gif
+       frame      data/chars/dhal/sel10.gif
+	 delay      4
+       frame      data/chars/dhal/sel09.gif
+       frame      data/chars/dhal/sel08.gif
+
+	 delay      6
+       frame      data/chars/dhal/sel11.gif
+       frame      data/chars/dhal/sel12.gif
+       frame      data/chars/dhal/sel13.gif
+	 sound   	data/chars/dhal/dhal01.wav
+	 delay      100
+       frame      data/chars/dhal/sel14.gif
+
+
+#-------Moves
+
+anim spawn
+	loop       0
+	 offset     238 177
+	delay   3
+     @cmd setLevel
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+	frame	data/chars/dhal/idle01.gif
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/dhal/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/dhal/walk01.gif
+       frame      data/chars/dhal/walk02.gif
+       frame      data/chars/dhal/walk03.gif
+       frame      data/chars/dhal/walk04.gif
+       frame      data/chars/dhal/walk05.gif
+       frame      data/chars/dhal/walk04.gif
+       frame      data/chars/dhal/walk03.gif
+       frame      data/chars/dhal/walk02.gif
+
+anim get
+	 loop       0
+	 offset     238 177
+	 delay      30
+       frame      data/chars/dhal/get01.gif
+
+anim attack1
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			2 		1 		d f a 			freespecial2
+	cancel 	0 			2 		1 		f f a 			freespecial3
+	cancel 	0 			2 		1 		d d a 			freespecial4
+	cancel 	0 			2 		1 		u u a 			freespecial6
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      2
+       frame      data/chars/dhal/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 136 48 		50 		5 			0 		0 		0 			20			15
+	 delay      8
+       frame      data/chars/dhal/a102.gif
+	 attack2 	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/dhal/a101.gif
+
+anim attack2
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			2 		1 		d f a 			freespecial2
+	cancel 	0 			2 		1 		f f a 			freespecial3
+	cancel 	0 			2 		1 		d d a 			freespecial4
+	cancel 	0 			2 		1 		u u a 			freespecial6
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      2
+       frame      data/chars/dhal/a201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 65 	48 		121 	5 			0 		0 		0 			20			15
+	 delay      8
+       frame      data/chars/dhal/a202.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/dhal/a201.gif
+
+anim attack3
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			2 		1 		d f a 			freespecial2
+	cancel 	0 			2 		1 		f f a 			freespecial3
+	cancel 	0 			2 		1 		d d a 			freespecial4
+	cancel 	0 			2 		1 		u u a 			freespecial6
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/dhal/a301.gif
+       frame      data/chars/dhal/a302.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 117 48 		70 		3 			0 		0 		0 			20		15
+	 delay      9
+       frame      data/chars/dhal/a303.gif
+	 delay      1
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/dhal/a303.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 132 48 		54 		2 			0 		0 		0 			20		15
+	 delay      10
+       frame      data/chars/dhal/a304.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/dhal/a303.gif
+       frame      data/chars/dhal/a302.gif
+
+anim attack4
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			6 		1 		d f a 			freespecial2
+	cancel 	0 			6 		1 		f f a 			freespecial3
+	cancel 	0 			6 		1 		d d a 			freespecial4
+	cancel 	0 			6 		1 		u u a 			freespecial6
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/dhal/dhal02.wav
+	 delay      3
+       frame      data/chars/dhal/get01.gif
+       frame      data/chars/dhal/a401.gif
+	 delay      5
+       frame      data/chars/dhal/a402.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 95 	48 		91 		10 			1 		0 		0 			25			15
+	 delay      10
+       frame      data/chars/dhal/a403.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/dhal/a402.gif
+       frame      data/chars/dhal/a401.gif
+       frame      data/chars/dhal/get01.gif
+
+anim jumpdelay
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/dhal/land01.gif
+
+anim jump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/dhal/jump01.gif
+	 delay      15
+       frame      data/chars/dhal/jump02.gif
+	 delay      999
+       frame      data/chars/dhal/jump01.gif
+
+anim forwardjump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/dhal/jump01.gif
+	 delay      15
+       frame      data/chars/dhal/jump02.gif
+	 delay      999
+       frame      data/chars/dhal/jump01.gif
+
+
+anim jumpland
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/dhal/land01.gif
+
+anim jumpattack
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/dhal/dhal02.wav
+	 delay      7
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 106 51 		30 		10 			1 		0 		0 			25			15
+	frame		data/chars/dhal/ja101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 106 87 		58 		10 			1 		0 		0 			25			15
+	 delay      35
+	frame		data/chars/dhal/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+	frame		data/chars/dhal/ja101.gif
+	 delay      5
+frame		data/chars/dhal/jump02.gif
+	 delay      999
+frame		data/chars/dhal/jump01.gif
+
+anim jumpforward
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/dhal/dhal02.wav
+	 delay      7
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 123 57 		23 		10 			1 		0 		0 			25			15
+	frame		data/chars/dhal/ja201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 123 96 		37 		10 			1 		0 		0 			25			15
+	 delay      35
+	frame		data/chars/dhal/ja202.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+	frame		data/chars/dhal/ja201.gif
+	 delay      5
+frame		data/chars/dhal/jump02.gif
+	 delay      999
+frame		data/chars/dhal/jump01.gif
+
+anim jumpattack2
+	dropframe	1
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      999
+	 frame	data/chars/dhal/jump02.gif
+	 
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	212 108 74 		75 		10 			0 		0 		0 			25			15
+	 delay      2
+	 move	3
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja401.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja402.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja403.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+	 frame	data/chars/dhal/ja404.gif
+
+anim jumpattack3
+	dropframe	1
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      999
+	 frame	data/chars/dhal/jump02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	190 118 89 		38 		10 			0 		0 		0 			25			15
+	 delay      2
+	 move	3
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja301.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja302.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja303.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+	 frame	data/chars/dhal/ja304.gif
+
+
+anim grab
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/dhal/grab01.gif
+
+anim grabattack
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 104 65 		36 		5 			0 		0 		0 			20			0
+       frame      data/chars/dhal/th101.gif
+
+anim grabattack2
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 104 65 		36 		10 			1 		0 		0 			25			0
+       frame      data/chars/dhal/th101.gif
+
+anim grabbackward
+	flipframe	10
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/dhal/dhal03.wav
+	attackone	0
+	
+	 delay      20
+	@cmd slamstart
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      35
+	@cmd position 0 55 1 0 1
+	frame		data/chars/dhal/grab01.gif
+	
+	 delay      30
+	@cmd position 1 -20 1 0 -1
+	frame		data/chars/dhal/th203.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      75
+       frame      data/chars/dhal/th204.gif
+
+	 delay      1
+       frame      data/chars/dhal/idle01.gif
+
+anim grabdown
+	flipframe	10
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/dhal/dhal03.wav
+	attackone	0
+	
+	 delay      20
+	@cmd slamstart
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      35
+	@cmd position 0 55 1 0 1
+	frame		data/chars/dhal/grab01.gif
+	
+	 delay      30
+	@cmd position 1 -20 1 0 -1
+	frame		data/chars/dhal/th203.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      75
+       frame      data/chars/dhal/th204.gif
+
+	 delay      1
+       frame      data/chars/dhal/idle01.gif
+
+
+anim grabforward
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/dhal/dhal03.wav
+	attackone	0
+	
+	 delay      20
+	@cmd slamstart
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      35
+	@cmd position 0 55 1 0 1
+	frame		data/chars/dhal/grab01.gif
+	
+	 delay      30
+	@cmd position 1 -20 1 0 -1
+	frame		data/chars/dhal/th203.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      75
+       frame      data/chars/dhal/th204.gif
+
+	 delay      1
+       frame      data/chars/dhal/idle01.gif
+
+
+anim grabup
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/dhal/dhal03.wav
+	attackone	0
+	
+	 delay      20
+	@cmd slamstart
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th201.gif
+	
+	 delay      10
+	sound   	data/sounds/beat2.wav
+	@cmd spawn01 "flash" 20 1 -45
+	@cmd position 0 30 -5 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      20
+	@cmd position 0 30 1 0 1
+	frame		data/chars/dhal/th202.gif
+	
+	 delay      35
+	@cmd position 0 55 1 0 1
+	frame		data/chars/dhal/grab01.gif
+	
+	 delay      30
+	@cmd position 1 -20 1 0 -1
+	frame		data/chars/dhal/th203.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      75
+       frame      data/chars/dhal/th204.gif
+
+	 delay      1
+       frame      data/chars/dhal/idle01.gif
+
+anim riseattack1
+	 jugglecost 100
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	 delay      10
+       frame      data/chars/dhal/get01.gif
+       frame      data/chars/dhal/land01.gif
+
+
+	   sound   	data/chars/dhal/dhal10.wav
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	192 88 	100 	98 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      24
+       frame      data/chars/dhal/sp04.gif
+	   
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/dhal/pain01.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     239 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/dhal/pain01.gif
+
+anim fall
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/dhal/pain02.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain02.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain02.gif
+	 offset     239 177
+       frame      data/chars/dhal/pain02.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain02.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/dhal/pain02.gif
+
+anim fall2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/dhal/pain01.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     239 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     237 177
+       frame      data/chars/dhal/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/dhal/pain01.gif
+
+anim fall3
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/dhal/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/dhal/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/dhal/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/dhal/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/dhal/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/dhal/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/dhal/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/dhal/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/dhal/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/dhal/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/dhal/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/dhal/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/dhal/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/dhal/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/dhal/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/dhal/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/dhal/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/dhal/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/dhal/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/dhal/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/dhal/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/dhal/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/dhal/pain01.gif
+
+anim fall11
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+	 delay      999
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/dhal/pain01.gif
+
+anim fall12
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+	 delay      999
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/dhal/pain01.gif
+
+anim fall13
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/dhal/fall01.gif
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      55
+       frame      data/chars/dhal/fall02.gif
+	 delay      12
+       frame      data/chars/dhal/rise01.gif
+       frame      data/chars/dhal/rise02.gif
+       frame      data/chars/dhal/get01.gif
+       frame      data/chars/dhal/land01.gif
+
+anim death
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/dhal/fall02.gif
+
+
+anim special
+	 jugglecost 100
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+	   sound   	data/chars/dhal/dhal10.wav
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	192 88 	100 	98 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      24
+       frame      data/chars/dhal/sp04.gif
+
+
+anim	freespecial10	# Cancel jump release attack
+	 jugglecost 100
+	 jumpframe	0 0 -1
+	 landframe	2
+#	 energycost	5
+#	 mponly  	2
+#	subentity		counter
+#	summonframe		0 0 0 0 0
+#	unsummonframe	999
+	loop		0
+	offset		209 233
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	 delay		16
+		frame		data/chars/dhal/jump02.gif
+	delay		999
+		frame		data/chars/dhal/jump01.gif
+	delay		6
+		frame		data/chars/dhal/land01.gif
+
+@cmd changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+@cmd changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+
+
+		
+	   sound   	data/chars/dhal/dhal10.wav
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	192 88 	100 	98 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+
+	   delay      12
+       frame      data/chars/dhal/sp08.gif
+	   
+	 delay      8
+       frame      data/chars/dhal/sp07.gif
+	 delay      4
+       frame      data/chars/dhal/sp06.gif
+	 delay      8
+       frame      data/chars/dhal/sp05.gif
+	 delay      4
+       frame      data/chars/dhal/sp04.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      12
+       frame      data/chars/dhal/sp01.gif
+
+	 delay      4
+       frame      data/chars/dhal/sp02.gif
+	 delay      8
+       frame      data/chars/dhal/sp03.gif
+	 delay      24
+       frame      data/chars/dhal/sp04.gif
+
+
+anim freespecial2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/dhal/dhal04.wav
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+	 delay      12
+       frame      data/chars/dhal/frsp102.gif
+@cmd projectile 1 "dust02" 0 0 0
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+       frame      data/chars/dhal/frsp103.gif
+	 bbox		0 0 0 0
+@cmd projectile 1 "yoga1" 0 0 0
+	 delay      70
+       frame      data/chars/dhal/frsp104.gif
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/dhal/frsp103.gif
+       frame      data/chars/dhal/frsp101.gif
+
+
+anim freespecial3
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/dhal/dhal06.wav
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+	 delay      24
+       frame      data/chars/dhal/frsp102.gif
+@cmd projectile 1 "dust02" 0 0 0
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+       frame      data/chars/dhal/frsp103.gif
+	 bbox		0 0 0 0
+@cmd projectile 1 "yoga2" 0 0 0
+	 delay      90
+       frame      data/chars/dhal/frsp104.gif
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/dhal/frsp103.gif
+       frame      data/chars/dhal/frsp101.gif
+
+
+anim freespecial4
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 sound   	data/chars/dhal/dhal07.wav
+	 
+	 delay      8
+	 
+@cmd projectile 1 "dust02" 0 0 0
+     frame      data/chars/dhal/frsp201.gif
+     frame      data/chars/dhal/frsp202.gif
+     frame      data/chars/dhal/frsp203.gif
+     frame      data/chars/dhal/frsp204.gif
+
+	 sound   	data/sounds/blast01.wav
+	 delay      2
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+
+	 delay      2
+	 move	-200
+     frame      data/chars/misc/empty.gif
+
+	 move	0
+	 delay      2
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+
+	 delay      8
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/dhal/frsp203.gif
+     frame      data/chars/dhal/frsp202.gif
+     frame      data/chars/dhal/frsp201.gif
+	 
+
+	 delay      4
+     frame      data/chars/dhal/frsp205.gif
+     frame      data/chars/dhal/frsp206.gif
+	 
+	   sound   	data/chars/dhal/dhal03.wav
+	 #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  		240 136 77 		50 		20 			1 			1 	0 			25			15
+     frame      data/chars/dhal/frsp207.gif
+	 
+	 delay      12
+	 #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  		240 136 129 	50 		20 			1 			1 	0 			25			15
+     frame      data/chars/dhal/frsp208.gif
+
+	 delay      4
+	 attack  		0 0 0 		0 		0 			0 			0 	0 			0			15
+     frame      data/chars/dhal/frsp207.gif
+     frame      data/chars/dhal/frsp206.gif
+     frame      data/chars/dhal/frsp205.gif
+
+
+anim freespecial6
+	flipframe	15
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 sound   	data/chars/dhal/dhal07.wav
+	 
+	 delay      8
+	 
+@cmd projectile 1 "dust02" 0 0 0
+     frame      data/chars/dhal/frsp201.gif
+     frame      data/chars/dhal/frsp202.gif
+     frame      data/chars/dhal/frsp203.gif
+     frame      data/chars/dhal/frsp204.gif
+
+	 delay      2
+	 sound   	data/sounds/blast01.wav
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+
+	 delay      2
+	 move	200
+     frame      data/chars/misc/empty.gif
+
+	 move	0
+	 delay      2
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/misc/empty.gif
+
+	 delay      8
+     frame      data/chars/dhal/frsp204.gif
+     frame      data/chars/dhal/frsp203.gif
+     frame      data/chars/dhal/frsp202.gif
+     frame      data/chars/dhal/frsp201.gif
+	 
+
+	 delay      4
+     frame      data/chars/dhal/frsp209.gif
+     frame      data/chars/dhal/frsp210.gif
+	 
+	   sound   	data/chars/dhal/dhal03.wav
+	 #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  		240 86	77 		50 		20 			1 			1 	0 			25			15
+     frame      data/chars/dhal/frsp211.gif
+	 
+	 delay      12
+	 #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  		240 86	129 	50 		20 			1 			1 	0 			25			15
+     frame      data/chars/dhal/frsp212.gif
+
+	 delay      4
+	 attack  		0 0 0 		0 		0 			0 			0 	0 			0			15
+     frame      data/chars/dhal/frsp211.gif
+     frame      data/chars/dhal/frsp210.gif
+     frame      data/chars/dhal/frsp209.gif
+
+anim freespecial5
+	 summonframe 1 -240 -200 0 0
+	 subentity	super
+	 unsummonframe 2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	100
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+	 offset     238 177
+	 bbox		0 0 0 0
+
+
+	 loop       0
+	 offset     238 177
+	   sound   	data/chars/dhal/dhal08.wav
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+	 delay      36
+       frame      data/chars/dhal/frsp102.gif
+@cmd projectile 1 "dust02" 0 0 0
+	 delay      6
+       frame      data/chars/dhal/frsp101.gif
+       frame      data/chars/dhal/frsp103.gif
+	 bbox		0 0 0 0
+	 sound   	data/chars/dhal/dhal09.wav
+@cmd projectile 1 "yoga3" 0 0 0
+	 delay      200
+       frame      data/chars/dhal/frsp104.gif
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/dhal/frsp103.gif
+       frame      data/chars/dhal/frsp101.gif
+
+
+
+
+

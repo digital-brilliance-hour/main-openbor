@@ -1,0 +1,303 @@
+music			data/music/music04.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST04_2/n01.gif
+background 		data/bgs/ST04_2/back.gif
+frontpanel		data/bgs/ST04_2/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST04_2\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		4
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage04
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+
+#-------1
+
+
+spawn   phone
+item	  dollar
+coords  150 200
+at      0
+
+spawn   phone
+item	  pasta
+coords  260 200
+at      0
+
+spawn   phone
+2pitem	  pasta
+coords  370 200
+at      0
+
+#-------1
+
+group   8 8
+at      350
+
+wait
+at      350
+
+spawn   jay
+coords  500 200
+at      350
+
+spawn   dug
+coords  550 230
+at      350
+
+spawn   bill
+coords  530 200
+at      350
+
+spawn   jack
+coords  500 200
+at      350
+
+spawn   mark
+coords  550 230
+at      350
+
+spawn   mic
+coords  530 200
+at      350
+
+spawn   bret
+coords  500 200
+at      350
+
+spawn   eliot
+coords  550 230
+at      350
+
+spawn   gory
+coords  530 200
+at      350
+
+spawn   bull
+coords  500 200
+at      350
+
+spawn   elijah
+coords  550 230
+at      350
+
+spawn   schot
+coords  530 200
+at      350
+
+
+
+2pspawn   schot
+coords  500 200
+at      350
+
+2pspawn   mark
+coords  550 230
+at      350
+
+2pspawn   eliot
+coords  530 200
+at      350
+
+2pspawn   two_p
+coords  500 200
+at      350
+
+2pspawn   dug
+coords  550 230
+at      350
+
+2pspawn   bret
+coords  530 200
+at      350
+
+3pspawn   mic
+coords  500 200
+at      350
+
+3pspawn   bull
+coords  550 230
+at      350
+
+3pspawn   elias
+coords  530 200
+at      350
+
+3pspawn   jake
+coords  500 200
+at      350
+
+3pspawn   simons
+coords  550 230
+at      350
+
+3pspawn   jay
+coords  530 200
+at      350
+
+#-------1
+
+spawn   roll
+item	  coke
+coords  500 210
+at      1000
+
+spawn   roll
+coords  510 230
+at      1000
+
+spawn   roll
+flip	  1
+coords  -100 220
+at      1100
+
+spawn   roll
+item	  gum
+flip	  1
+coords  -110 240
+at      1300
+
+spawn   roll
+coords  500 210
+at      1400
+
+spawn   roll
+item	  pizza
+flip	  1
+coords  -100 220
+at      1500
+
+spawn   roll
+item	  grape
+coords  500 230
+at      1600
+
+spawn   roll
+flip	  1
+coords  -100 240
+at      1600
+
+#-------1
+
+
+group   4 4
+at      1700
+
+wait
+at      1700
+
+spawn   leon
+coords  500 200
+at      1700
+
+spawn   leon
+alias   robert
+map	  1
+coords  -100 200
+at      1700
+
+spawn   leon
+coords  500 200
+at      1700
+
+spawn   leon
+alias   roxy
+map	  1
+coords  550 220
+at      1700
+
+spawn   leon
+coords  -100 200
+at      1700
+
+spawn   leon
+alias   robert
+map	  1
+coords  520 210
+at      1700
+
+spawn   leon
+coords  500 200
+at      1700
+
+spawn   leon
+alias   robert
+map	  1
+coords  550 220
+at      1700
+
+spawn   leon
+coords  -100 200
+at      1700
+
+spawn   leon
+coords  520 210
+at      1700
+
+
+
+2pspawn   leon
+coords  500 200
+at      1700
+
+2pspawn   leon
+alias   robert
+map	  1
+coords  550 220
+at      1700
+
+2pspawn   leon
+coords  -100 200
+at      1700
+
+2pspawn   leon
+alias   robert
+map	  1
+coords  520 210
+at      1700
+
+3pspawn   leon
+coords  500 200
+at      1700
+
+3pspawn   leon
+alias   robert
+map	  1
+coords  550 220
+at      1700
+
+3pspawn   leon
+coords  -100 200
+at      1700
+
+3pspawn   leon
+alias   robert
+map	  1
+coords  520 210
+at      1700
+
+
+
+
+

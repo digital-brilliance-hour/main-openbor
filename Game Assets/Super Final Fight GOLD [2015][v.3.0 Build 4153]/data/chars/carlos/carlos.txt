@@ -1,0 +1,1524 @@
+name	    		Carlos
+type	    		player
+health	    		90
+mp          		100
+nolife				1
+hostile				enemy
+candamage			enemy player obstacle
+speed	    		11
+jumpspeed	    	10
+jumpheight   		3.3
+#jumpmove 			3
+turndelay 			12
+mprate				4
+grabdistance		20
+grabfinish			1
+grabback			0
+antigravity 		10
+bounce				1
+noquake     		1
+shadow	    		3
+diesound    		data/chars/carlos/carlos05.wav
+flash 				flash
+bflash 				guard
+dust    			dust01
+toflip				1
+nodieblink			1
+makeinv     		5 0 
+falldie 			2
+riseinv 			1 1
+atchain     		1 1 2 3
+jugglepoints		15
+animationscript		data/scripts/player.c
+
+load				slice01
+load				slice02
+load				slice12
+load				slice03
+
+com  f f a  		freespecial2
+com  d u a  		freespecial3
+com  d f a  		freespecial4
+com  d f d f a  	freespecial5
+
+
+icon	      		data/chars/carlos/icon.gif 1
+icondie     		data/chars/carlos/icond.gif 1
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette 			data/chars/carlos/pal/pal01.gif #1
+alternatepal		data/chars/carlos/pal/pal02.gif #2
+alternatepal		data/chars/carlos/pal/pal03.gif #3
+alternatepal		data/chars/carlos/pal/pal04.gif #4
+alternatepal		data/chars/carlos/pal/pal05.gif #5
+alternatepal		data/chars/carlos/pal/pal06.gif #6
+alternatepal		data/chars/carlos/pal/pal07.gif #7
+alternatepal		data/chars/carlos/pal/pal08.gif #8
+alternatepal		data/chars/carlos/pal/pal09.gif #9
+alternatepal		data/chars/carlos/pal/pal10.gif #10
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     1 1
+	 delay      4
+       frame      data/chars/carlos/sel01.gif
+       frame      data/chars/carlos/sel02.gif
+
+anim select
+	 loop       0
+	 offset     1 1
+
+   	 sound   	data/sounds/choose.wav
+	 delay      2
+       frame      data/chars/carlos/sel03.gif
+	 delay      8
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/carlos/sel04.gif
+	 delay      4
+       frame      data/chars/carlos/sel03.gif
+
+	 sound   	data/sounds/punch.wav
+	 delay      8
+       frame      data/chars/carlos/sel04.gif
+	 delay      4
+       frame      data/chars/carlos/sel03.gif
+
+       frame      data/chars/carlos/sel05.gif
+       frame      data/chars/carlos/sel06.gif
+	 sound   	data/sounds/punch.wav
+	 delay      15
+       frame      data/chars/carlos/sel07.gif
+
+	 delay      8
+       frame      data/chars/carlos/sel08.gif
+       frame      data/chars/carlos/sel09.gif
+       frame      data/chars/carlos/sel10.gif
+       frame      data/chars/carlos/sel11.gif
+	 sound   	data/sounds/sword01.wav
+	 delay      4
+       frame      data/chars/carlos/sel12.gif
+       frame      data/chars/carlos/sel13.gif
+       frame      data/chars/carlos/sel14.gif
+       frame      data/chars/carlos/sel15.gif
+	 delay      100
+	 sound   	data/chars/carlos/carlos01.wav
+       frame      data/chars/carlos/sel16.gif
+
+
+#-------Moves
+
+anim spawn
+	loop       0
+	 offset     238 177
+	delay   3
+     @cmd setLevel
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+	frame	data/chars/carlos/idle01.gif
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/carlos/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/carlos/walk01.gif
+       frame      data/chars/carlos/walk02.gif
+       frame      data/chars/carlos/walk03.gif
+       frame      data/chars/carlos/walk04.gif
+       frame      data/chars/carlos/walk05.gif
+       frame      data/chars/carlos/walk06.gif
+
+anim get
+	 loop       0
+	 offset     238 177
+	 delay      30
+       frame      data/chars/carlos/get01.gif
+
+anim attack1
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			2 		1 		f f a 			freespecial2
+	cancel 	0 			2 		1 		d u a 			freespecial3
+	cancel 	0 			2 		1 		d f a 			freespecial4
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      2
+       frame      data/chars/carlos/a101.gif
+	 delay      8
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 100 47 		78 		5 			0 		0 		0 			20			15
+       frame      data/chars/carlos/a102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/carlos/a101.gif
+
+
+
+anim attack2
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			2 		1 		f f a 			freespecial2
+	cancel 	0 			2 		1 		d u a 			freespecial3
+	cancel 	0 			2 		1 		d f a 			freespecial4
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/carlos/a201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 100 63 		78 		5 			0 		0 		0 			20			15
+	 delay      10
+       frame      data/chars/carlos/a202.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/carlos/a203.gif
+
+anim attack3
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 	0 			4 		1 		f f a 			freespecial2
+	cancel 	0 			4 		1 		d u a 			freespecial3
+	cancel 	0 			4 		1 		d f a 			freespecial4
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/carlos/carlos02.wav
+	 delay      6
+       frame      data/chars/carlos/a301.gif
+	 delay      10
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 100 63 		78 		10 			1 		0 		0 			25			15
+       frame      data/chars/carlos/a302.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/a303.gif
+       frame      data/chars/carlos/a304.gif
+	 delay      12
+       frame      data/chars/carlos/land01.gif
+
+anim jumpdelay
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim jump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/carlos/jump01.gif
+	 delay      15
+       frame      data/chars/carlos/jump02.gif
+	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+anim forwardjump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/carlos/jump01.gif
+	 delay      24
+       frame      data/chars/carlos/jump02.gif
+	 delay      7
+       frame      data/chars/carlos/fjump01.gif
+       frame      data/chars/carlos/fjump02.gif
+       frame      data/chars/carlos/fjump03.gif
+       frame      data/chars/carlos/jump02.gif
+	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+
+anim jumpland
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim jumpattack
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/carlos/carlos02.wav
+	 delay      5
+       frame      data/chars/carlos/jump02.gif
+	 delay      7
+       frame      data/chars/carlos/ja101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 87 	41 		91 		10 			1 		0 		0 			25			15
+	 delay      35
+	 frame	data/chars/carlos/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+       frame      data/chars/carlos/ja101.gif
+	 delay      5
+       frame      data/chars/carlos/jump02.gif
+	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+anim jumpforward
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/carlos/carlos02.wav
+	 delay      5
+       frame      data/chars/carlos/jump02.gif
+	 delay      7
+       frame      data/chars/carlos/ja201.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 115 54 		63 		10 			1 		0 		0 			25			15
+	 delay      35
+	 frame	data/chars/carlos/ja202.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+       frame      data/chars/carlos/ja201.gif
+	 delay      5
+       frame      data/chars/carlos/jump02.gif
+	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+anim jumpattack2
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat1.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 89 	17 		89 		5 			0 		0 		0 			20			15
+	 delay      999
+	 frame	data/chars/carlos/ja301.gif
+
+
+anim grab
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/carlos/grab01.gif
+
+anim grabattack
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 113 32 		65 		5 			0 		0 		0 			20			0
+       frame      data/chars/carlos/th101.gif
+
+anim grabattack2
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 113 32 		65 		10 			1 		0 		0 			25			0
+       frame      data/chars/carlos/th101.gif
+
+anim grabbackward
+	 jumpframe 4 2 0.5
+	 landframe  8
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/carlos/carlos03.wav
+	attackone	0
+	
+	 delay      35
+	@cmd slamstart
+	@cmd position 0 1 1 0 1
+       frame      data/chars/carlos/th201.gif
+	 delay      30
+	@cmd position 1 15 -20 0 1
+      frame      data/chars/carlos/th202.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      55
+       frame      data/chars/carlos/th203.gif
+	 delay      12
+       frame      data/chars/carlos/th204.gif
+
+	 delay      6
+       frame      data/chars/carlos/th205.gif
+ 	 delay      8
+       frame      data/chars/carlos/th206.gif
+       frame      data/chars/carlos/jump01.gif
+ 	 delay      999
+       frame      data/chars/carlos/jump02.gif
+ 	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim grabdown
+	 jumpframe 4 2 0.5
+	 landframe  8
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/carlos/carlos03.wav
+	attackone	0
+	
+	 delay      35
+	@cmd slamstart
+	@cmd position 0 1 1 0 1
+       frame      data/chars/carlos/th201.gif
+	 delay      30
+	@cmd position 1 15 -20 0 1
+      frame      data/chars/carlos/th202.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      55
+       frame      data/chars/carlos/th203.gif
+	 delay      12
+       frame      data/chars/carlos/th204.gif
+
+	 delay      6
+       frame      data/chars/carlos/th205.gif
+ 	 delay      8
+       frame      data/chars/carlos/th206.gif
+       frame      data/chars/carlos/jump01.gif
+ 	 delay      999
+       frame      data/chars/carlos/jump02.gif
+ 	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+
+anim grabforward
+	flipframe	0
+	 jumpframe 4 2 0.5
+	 landframe  8
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/carlos/carlos03.wav
+	attackone	0
+	
+	 delay      35
+	@cmd slamstart
+	@cmd position 0 1 1 0 1
+       frame      data/chars/carlos/th201.gif
+	 delay      30
+	@cmd position 1 15 -20 0 1
+      frame      data/chars/carlos/th202.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      55
+       frame      data/chars/carlos/th203.gif
+	 delay      12
+       frame      data/chars/carlos/th204.gif
+
+	 delay      6
+       frame      data/chars/carlos/th205.gif
+ 	 delay      8
+       frame      data/chars/carlos/th206.gif
+       frame      data/chars/carlos/jump01.gif
+ 	 delay      999
+       frame      data/chars/carlos/jump02.gif
+ 	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim grabup
+	flipframe	0
+	 jumpframe 4 2 0.5
+	 landframe  8
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/carlos/carlos03.wav
+	attackone	0
+	
+	 delay      35
+	@cmd slamstart
+	@cmd position 0 1 1 0 1
+       frame      data/chars/carlos/th201.gif
+	 delay      30
+	@cmd position 1 15 -20 0 1
+      frame      data/chars/carlos/th202.gif
+
+	  hitfx   	data/sounds/punch.wav
+	@cmd depost 0
+	@cmd throw 10 1 -2.5 2.5 0 1
+	@cmd clearL
+	damageonlanding 2 1
+	 delay      55
+       frame      data/chars/carlos/th203.gif
+	 delay      12
+       frame      data/chars/carlos/th204.gif
+
+	 delay      6
+       frame      data/chars/carlos/th205.gif
+ 	 delay      8
+       frame      data/chars/carlos/th206.gif
+       frame      data/chars/carlos/jump01.gif
+ 	 delay      999
+       frame      data/chars/carlos/jump02.gif
+ 	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim riseattack1
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   data/sounds/slash1.wav
+	 hitflash 	Blood
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 delay      10
+       frame      data/chars/carlos/rise01.gif
+       frame      data/chars/carlos/get01.gif
+
+	 sound   	data/chars/carlos/carlos03.wav
+
+	 delay      14
+       frame      data/chars/carlos/sp01.gif
+
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/carlos/sp01.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/carlos/pain01.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     239 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/carlos/pain01.gif
+
+anim fall
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/carlos/pain02.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain02.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain02.gif
+	 offset     239 177
+       frame      data/chars/carlos/pain02.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain02.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/carlos/pain02.gif
+
+anim fall2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/carlos/pain01.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     239 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     237 177
+       frame      data/chars/carlos/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/carlos/pain01.gif
+
+anim fall3
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/carlos/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/carlos/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/carlos/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/carlos/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/carlos/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/carlos/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/carlos/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/carlos/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/carlos/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/carlos/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/carlos/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/carlos/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/carlos/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/carlos/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/carlos/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/carlos/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/carlos/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/carlos/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/carlos/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/carlos/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/carlos/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/carlos/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/carlos/pain01.gif
+
+anim fall11
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+	 delay      999
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/carlos/pain01.gif
+
+anim fall12
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+	 delay      999
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/carlos/pain01.gif
+
+anim fall13
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/carlos/fall01.gif
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      55
+       frame      data/chars/carlos/fall02.gif
+	 delay      20
+       frame      data/chars/carlos/rise01.gif
+	 delay      14
+       frame      data/chars/carlos/fall02.gif
+	 delay      10
+       frame      data/chars/carlos/rise01.gif
+       frame      data/chars/carlos/get01.gif
+
+anim death
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/carlos/fall02.gif
+
+anim special
+	 jugglecost 100
+#	 jumpframe 0 3.3
+#	 landframe  8
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   data/sounds/slash1.wav
+	 hitflash 	Blood
+	 sound   	data/chars/carlos/carlos03.wav
+
+	 delay      14
+       frame      data/chars/carlos/sp01.gif
+
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/carlos/sp01.gif
+
+
+anim	freespecial10	# Cancel jump release attack
+	 jugglecost 100
+	 jumpframe	0 0 -1
+	 landframe	2
+#	 energycost	5
+#	 mponly  	2
+#	subentity		counter
+#	summonframe		0 0 0 0 0
+#	unsummonframe	999
+	loop		0
+	offset		209 233
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   data/sounds/slash1.wav
+	 hitflash 	Blood
+
+	 delay		16
+		frame		data/chars/carlos/jump02.gif
+	delay		999
+		frame		data/chars/carlos/jump01.gif
+	delay		6
+		frame		data/chars/carlos/land01.gif
+
+@cmd changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+@cmd changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+
+	 sound   	data/chars/carlos/carlos03.wav
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/carlos/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	185 85 	55 		93 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/carlos/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	232 85 	55 		93 		10 			1 		1 		0 			25			15
+	 delay      12
+       frame      data/chars/carlos/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/carlos/sp01.gif
+
+anim freespecial2
+	 followanim	1
+	 followcond	1
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/beat2.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/carlos/carlos02.wav
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+	 sound   	data/sounds/jump.wav
+	 bbox		0 0 0 0
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 127 39 		51 		0 			0 		1 		0 			25			15
+	 dropv	1 0
+	 delay      2
+	 move 6
+@cmd projectile 1 "dust02" 0 0 0
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+	 move 6
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+	 move 6
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+	 move 5
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+
+	 move 4
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+	 move 3
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+
+	 move 2
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+	 move 1
+       frame      data/chars/carlos/frsp130.gif
+       frame      data/chars/carlos/frsp130.gif
+
+	 bbox		226 102 23 76
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 move 0
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim follow1
+	 unsummonframe 27
+	 jugglecost 	2
+	 fastattack 1
+	 hitfx   data/sounds/slash1.wav
+	 hitflash 	Blood
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      24
+       frame      data/chars/carlos/frsp130.gif
+	 sound   	data/chars/carlos/carlos04.wav
+	 delay      6
+       frame      data/chars/carlos/frsp101.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/carlos/frsp102.gif
+       frame      data/chars/carlos/frsp103.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 89 	49 		89 		5 			0 		1 		0 			20			15
+	 dropv	0.5 0
+       frame      data/chars/carlos/frsp104.gif
+
+	 sound   	data/sounds/sword01.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/carlos/frsp106.gif
+       frame      data/chars/carlos/frsp107.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 99 	56 		79 		5 			0 		1 		0 			20			15
+	 dropv	0.5 0
+       frame      data/chars/carlos/frsp108.gif
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/carlos/frsp109.gif
+
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp110.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 94 	76 		84 		10 			1 		1 		0 			25			15
+       frame      data/chars/carlos/frsp111.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/carlos/frsp112.gif
+       frame      data/chars/carlos/frsp113.gif
+
+  	 delay      4
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp114.gif
+       frame      data/chars/carlos/frsp115.gif
+       frame      data/chars/carlos/frsp116.gif
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp117.gif
+       frame      data/chars/carlos/frsp118.gif
+       frame      data/chars/carlos/frsp119.gif
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp120.gif
+       frame      data/chars/carlos/frsp121.gif
+       frame      data/chars/carlos/frsp122.gif
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp123.gif
+       frame      data/chars/carlos/frsp124.gif
+       frame      data/chars/carlos/frsp125.gif
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp126.gif
+       frame      data/chars/carlos/frsp127.gif
+       frame      data/chars/carlos/frsp128.gif
+  	 delay      16
+       frame      data/chars/carlos/frsp129.gif
+
+
+anim freespecial3
+	 summonframe 1 0 0 0 0
+	 subentity	dust
+	 unsummonframe 14
+	 jumpframe 	2 3.3 1.5
+	 landframe	13
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/carlos/carlos06.wav
+	 delay      6
+       frame      data/chars/carlos/land01.gif
+       frame      data/chars/carlos/frsp130.gif
+
+	 bbox		0 0 0 0
+@cmd projectile 1 "dust02" 0 0 0
+	 sound   	data/sounds/punch.wav
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 79 	45 		99 		10 			1 		1 		0 			24			15
+	 delay      12
+       frame      data/chars/carlos/frsp201.gif
+
+	 sound   	data/sounds/punch.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/carlos/ja101.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 79 	45 		99 		3 			1 		1 		0 			24			15
+	 delay      8
+       frame      data/chars/carlos/ja102.gif
+
+	 sound   	data/sounds/punch.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/carlos/ja201.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 79 	45 		99 		3 			1 		1 		0 			24			15
+	 delay      8
+       frame      data/chars/carlos/frsp202.gif
+
+
+	 sound   	data/sounds/punch.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/carlos/frsp203.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 79 	45 		99 		4 			1 		1 		0 			24			15
+       frame      data/chars/carlos/frsp204.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/carlos/fjump02.gif
+       frame      data/chars/carlos/fjump01.gif
+	 delay      10
+       frame      data/chars/carlos/jump02.gif
+
+ 	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+ 	 bbox		226 102 23 76
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+anim freespecial4
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	20
+	 mponly  	1
+	 hitfx   	data/sounds/beat2.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/carlos/carlos07.wav
+	 delay      10
+       frame      data/chars/carlos/frsp101.gif
+
+
+
+		delay      6
+       frame      data/chars/carlos/frsp106.gif
+       frame      data/chars/carlos/frsp107.gif
+@cmd projectile 1 "dust02" 0 0 0
+@cmd projectile 1 "slice01" 0 0 0
+       frame      data/chars/carlos/frsp108.gif
+      frame      data/chars/carlos/frsp109.gif
+	    delay      50
+	 sound   	data/sounds/blast01.wav
+       frame      data/chars/carlos/frsp301.gif
+
+	 bbox		226 102 23 76
+  	 delay      4
+	 sound   	data/sounds/sword01.wav
+       frame      data/chars/carlos/frsp103.gif
+       frame      data/chars/carlos/frsp102.gif
+       frame      data/chars/carlos/frsp101.gif
+
+
+anim freespecial5
+	 summonframe 0 -245 -220 0 0
+	 subentity	super
+	 energycost	100
+	 mponly  	1
+	jumpframe 26 3.5 -0.5
+	dropframe 30
+	landframe 35 dust01
+	 fastattack 1
+	 hitfx   data/sounds/slash1.wav
+	 hitflash 	Blood
+	 loop       0
+
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/carlos/carlos08.wav
+	 delay      10
+     frame      data/chars/carlos/frsp102.gif
+
+	 
+	 delay      6
+     frame      data/chars/carlos/frsp103.gif
+     frame      data/chars/carlos/frsp104.gif
+@cmd projectile 1 "slice02" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp105.gif
+
+	 delay      6
+     frame      data/chars/carlos/frsp110.gif
+     frame      data/chars/carlos/frsp111.gif
+@cmd projectile 1 "slice12" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp112.gif
+	 
+	 delay      6
+     frame      data/chars/carlos/frsp103.gif
+     frame      data/chars/carlos/frsp104.gif
+@cmd projectile 1 "slice02" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp105.gif
+
+	 delay      6
+     frame      data/chars/carlos/frsp110.gif
+     frame      data/chars/carlos/frsp111.gif
+@cmd projectile 1 "slice12" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp112.gif
+	 
+	 delay      6
+     frame      data/chars/carlos/frsp103.gif
+     frame      data/chars/carlos/frsp104.gif
+@cmd projectile 1 "slice02" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp105.gif
+
+	 delay      6
+     frame      data/chars/carlos/frsp110.gif
+     frame      data/chars/carlos/frsp111.gif
+@cmd projectile 1 "slice12" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp112.gif
+	 
+	 delay      6
+     frame      data/chars/carlos/frsp103.gif
+     frame      data/chars/carlos/frsp104.gif
+@cmd projectile 1 "slice02" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp105.gif
+
+	 delay      6
+     frame      data/chars/carlos/frsp110.gif
+     frame      data/chars/carlos/frsp111.gif
+@cmd projectile 1 "slice12" 0 0 0
+	 delay      15
+	 sound   	data/sounds/punch.wav
+     frame      data/chars/carlos/frsp112.gif
+
+	 sound   	data/chars/carlos/carlos03.wav
+	 delay      10
+     frame      data/chars/carlos/land01.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+@cmd projectile 1 "slice03" 0 0 0
+	 delay      6
+	 sound   	data/sounds/blast01.wav
+     frame      data/chars/carlos/frsp402.gif
+     frame      data/chars/carlos/frsp403.gif
+     frame      data/chars/carlos/frsp404.gif
+	 delay      999
+     frame      data/chars/carlos/frsp405.gif
+
+	 delay      7
+       frame      data/chars/carlos/fjump03.gif
+       frame      data/chars/carlos/fjump02.gif
+       frame      data/chars/carlos/fjump01.gif
+       frame      data/chars/carlos/jump02.gif
+	 delay      999
+       frame      data/chars/carlos/jump01.gif
+
+	 delay      30
+       frame      data/chars/carlos/get01.gif
+	 delay      10
+       frame      data/chars/carlos/land01.gif
+
+	 
+	 
+	 
+	 
+	 

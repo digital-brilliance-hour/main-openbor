@@ -1,0 +1,101 @@
+name					slice01
+health					1
+nolife					1
+type					npc
+hostile					player enemy npc obstacle
+candamage				player enemy npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					blood
+bflash 					guard
+dust					dust
+subject_to_wall 0
+
+palette data/chars/carlos/slice01/slice01.gif #1
+
+anim idle
+	followanim	1
+	followcond	1
+	jugglecost 	2
+	hitflash	blood
+	hitfx   data/sounds/slash1.wav
+	fastattack 1
+	loop	1
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+	move	6
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack		232	111	60		50		10			1		1		0			15			15
+	frame	data/chars/carlos/slice01/01.gif
+	frame	data/chars/carlos/slice01/01.gif
+	frame	data/chars/carlos/slice01/02.gif
+	frame	data/chars/carlos/slice01/02.gif
+	frame	data/chars/carlos/slice01/03.gif
+	frame	data/chars/carlos/slice01/03.gif
+	frame	data/chars/carlos/slice01/02.gif
+	attack		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/carlos/slice01/02.gif
+
+anim follow1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/carlos/slice01/04.gif
+	frame	data/chars/carlos/slice01/05.gif
+	frame	data/chars/carlos/slice01/06.gif
+	frame	data/chars/carlos/slice01/07.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/carlos/slice01/04.gif
+	frame	data/chars/carlos/slice01/05.gif
+	frame	data/chars/carlos/slice01/06.gif
+	frame	data/chars/carlos/slice01/07.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

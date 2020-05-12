@@ -1,0 +1,104 @@
+name	fdrum
+health	1
+nolife  1
+type	obstacle
+candamage	player
+shadow	0
+noquake 1
+falldie 0
+score 3000 5
+subject_to_wall 0
+noatflash 1
+flash	flash
+diesound 	data/sounds/klunk.wav
+
+anim idle
+	loop 1
+	offset     238 177
+	bbox	222 117 32 61
+	delay	200
+	frame	data/chars/misc/fdrum/01.gif
+
+	delay	6
+	frame	data/chars/misc/fdrum/02.gif
+	frame	data/chars/misc/fdrum/03.gif
+	
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack11  	209	57 62 		122 	0 			1 		0 		0 			40			15
+	frame	data/chars/misc/fdrum/04.gif
+	frame	data/chars/misc/fdrum/05.gif
+	frame	data/chars/misc/fdrum/06.gif
+	frame	data/chars/misc/fdrum/07.gif
+	frame	data/chars/misc/fdrum/08.gif
+	
+	frame	data/chars/misc/fdrum/04.gif
+	frame	data/chars/misc/fdrum/05.gif
+	frame	data/chars/misc/fdrum/06.gif
+	frame	data/chars/misc/fdrum/07.gif
+	frame	data/chars/misc/fdrum/08.gif
+	
+	frame	data/chars/misc/fdrum/04.gif
+	frame	data/chars/misc/fdrum/05.gif
+	frame	data/chars/misc/fdrum/06.gif
+	frame	data/chars/misc/fdrum/07.gif
+	frame	data/chars/misc/fdrum/08.gif
+
+	 attack11  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	frame	data/chars/misc/fdrum/03.gif
+	frame	data/chars/misc/fdrum/02.gif
+
+anim pain
+	loop 0
+	delay	1
+	offset	238 220
+	bbox	181 136 34 41
+	frame	data/chars/misc/fdrum/01.gif
+
+anim death
+	jumpframe 0 3.3 -0.5
+	loop 0
+	delay	2
+	offset     238 177
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/fdrum/09.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
+
+

@@ -1,0 +1,93 @@
+name					bazoo
+health					1
+nolife					1
+type					npc
+hostile					enemy player npc obstacle
+candamage				enemy player npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+subject_to_wall 0
+
+load					quake
+
+palette data/chars/guile/bazoo/bazoo.gif #1
+
+anim idle
+	jugglecost 	2
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+
+	sound 	data/sounds/gre.wav
+@cmd projectile 1 "quake" 0 0 0
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+#	attack11	240	120	39		16		8			0		1		0			15			15
+	delay	4
+	frame	data/chars/guile/bazoo/01.gif
+	frame	data/chars/guile/bazoo/02.gif
+	frame	data/chars/guile/bazoo/03.gif
+	frame	data/chars/guile/bazoo/04.gif
+	frame	data/chars/guile/bazoo/05.gif
+	frame	data/chars/guile/bazoo/06.gif
+	frame	data/chars/guile/bazoo/07.gif
+	frame	data/chars/guile/bazoo/08.gif
+	frame	data/chars/guile/bazoo/09.gif
+	frame	data/chars/guile/bazoo/10.gif
+	frame	data/chars/guile/bazoo/11.gif
+	frame	data/chars/guile/bazoo/12.gif
+	frame	data/chars/guile/bazoo/13.gif
+	frame	data/chars/guile/bazoo/14.gif
+	frame	data/chars/guile/bazoo/15.gif
+	frame	data/chars/guile/bazoo/16.gif
+
+	attack1		0	0	0		0		0		0		0		0			0			0
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+

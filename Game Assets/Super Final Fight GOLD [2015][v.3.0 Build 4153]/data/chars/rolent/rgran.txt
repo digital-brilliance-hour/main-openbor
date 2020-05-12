@@ -1,0 +1,143 @@
+name	rgran
+health	1
+nolife  1
+type	npc
+hostile player
+candamage player
+speed	0
+nomove 1 1
+noquake 1
+falldie 1
+#subtype flydie
+shadow	0
+remove 0
+
+anim idle
+	quakeframe 82 5 5
+	loop	0
+	offset     238 100
+	bbox    0 0 0 0
+	jumpframe 0 3.3 3 0
+	landframe 81
+	hitfx   data/sounds/beat3.wav
+	delay	1
+	move 3
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran03.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran04.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran05.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran06.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran01.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	frame	data/chars/rolent/gran02.gif
+	delay	99
+	frame	data/chars/rolent/gran01.gif
+
+	bbox    0 0 0 0
+	move 0
+	delay	1
+	frame	data/chars/rolent/gran01.gif
+
+	sound 	data/sounds/gre.wav
+	attack11  200 101 72 86 45 1 #15
+	delay	4
+	frame	data/chars/rolent/expl101.gif
+	frame	data/chars/rolent/expl102.gif
+	frame	data/chars/rolent/expl103.gif
+	frame	data/chars/rolent/expl104.gif
+	frame	data/chars/rolent/expl105.gif
+	frame	data/chars/rolent/expl106.gif
+
+	attack11  0 0 0 0 0 0
+	frame	data/chars/misc/empty.gif
+
+	
+anim fall
+	loop	0
+	offset     238 100
+	bbox    0 0 0 0
+	delay	1
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 100
+	bbox    0 0 0 0
+	delay	1
+	frame	data/chars/misc/empty.gif
+
+
+
+

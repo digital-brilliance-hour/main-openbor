@@ -1,0 +1,480 @@
+music			data/music/music05.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST05_2/n01.gif
+background 		data/bgs/ST05_2/back.gif
+frontpanel		data/bgs/ST05_2/f01.gif 
+bgspeed 5 0
+rock 1
+blocked 1
+order	a b c
+loadingbg DATA\BGS\ST05_2\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		5
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+
+
+#-------1
+
+#----------------
+
+#spawn	stage05
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+group   8 8
+at      0
+
+spawn   barrel
+coords  742 204
+at      0
+
+spawn   barrel
+item	  jewel
+coords  722 224
+at      0
+
+spawn   axl
+coords  500 200
+at      50
+
+spawn   jay
+coords  500 200
+at      100
+
+spawn   simons
+coords  550 230
+at      200
+
+#-------1
+
+wait
+at      300
+
+spawn   dug
+coords  500 200
+at      300
+
+spawn   bret
+coords  500 200
+at      300
+
+spawn   bill
+coords  -100 240
+at      300
+
+spawn   gory
+coords  500 200
+at      300
+
+spawn   mark
+coords  510 210
+at      300
+
+spawn   mic
+coords  510 210
+at      300
+
+spawn   elias
+coords  -130 220
+at      300
+
+spawn   eliot
+coords  520 230
+at      300
+
+
+spawn   leon
+coords  500 200
+at      300
+
+spawn   atlus
+coords  500 200
+at      300
+
+spawn   jony
+coords  -100 240
+at      300
+
+spawn   leon
+map	1
+alias	  Robert
+coords  500 200
+at      300
+
+
+2pspawn   dug
+coords  500 200
+at      300
+
+2pspawn   bret
+coords  500 200
+at      300
+
+2pspawn   bill
+coords  -100 240
+at      300
+
+2pspawn   gory
+coords  500 200
+at      300
+
+
+3pspawn   dug
+coords  500 200
+at      300
+
+3pspawn   bret
+coords  500 200
+at      300
+
+3pspawn   bill
+coords  -100 240
+at      300
+
+3pspawn   gory
+coords  500 200
+at      300
+
+#-------1
+
+spawn   barrel
+item	  gold
+coords  742 204
+at      301
+
+spawn   barrel
+item	  ring
+coords  722 224
+at      301
+
+#----------------
+
+group   7 7
+at      400
+
+spawn   slash
+coords  500 200
+at      400
+
+spawn   andore
+map	  1
+health  150
+coords  500 200
+at      500
+
+spawn   poison
+coords  550 230
+at      600
+
+#-------1
+
+wait
+at      700
+
+spawn   jake
+coords  500 200
+at      700
+
+spawn   simons
+coords  500 200
+at      700
+
+spawn   holly
+coords  -100 240
+at      700
+
+spawn   axl
+coords  500 200
+at      700
+
+spawn   dug
+coords  500 200
+at      700
+
+spawn   bret
+coords  500 200
+at      700
+
+spawn   poison
+map	  1
+alias	  Roxy
+coords  550 230
+at      700
+
+spawn   poison
+coords  -100 240
+at      700
+
+spawn   poison
+map	  1
+alias	  Roxy
+coords  550 230
+at      700
+
+spawn   poison
+coords  -100 240
+at      700
+
+
+
+2pspawn   jake
+coords  500 200
+at      700
+
+2pspawn   simons
+coords  500 200
+at      700
+
+2pspawn   holly
+coords  -100 240
+at      700
+
+2pspawn   axl
+coords  500 200
+at      700
+
+2pspawn   dug
+coords  500 200
+at      700
+
+2pspawn   bret
+coords  500 200
+at      700
+
+
+
+3pspawn   jake
+coords  500 200
+at      700
+
+3pspawn   simons
+coords  500 200
+at      700
+
+3pspawn   holly
+coords  -100 240
+at      700
+
+3pspawn   axl
+coords  500 200
+at      700
+
+3pspawn   dug
+coords  500 200
+at      700
+
+3pspawn   bret
+coords  500 200
+at      700
+
+#----------------
+
+spawn   barrel
+item	  meat
+coords  642 204
+at      701
+
+spawn   barrel
+2pitem	  meat
+coords  622 224
+at      701
+
+spawn   barrel
+3pitem	  meat
+coords  642 240
+at      701
+
+#----------------
+
+group   4 4
+at      1020
+
+wait
+at      1020
+
+spawn   evega
+alias	Vega
+boss	  1
+flip	  1
+health  400
+health  500
+health  600
+coords  -100 200
+at      1020
+
+spawn   holly
+coords  -100 240
+at      1020
+
+spawn   slash
+coords  -100 200
+at      1020
+
+spawn   elic
+coords  -100 240
+at      1020
+
+spawn   wong
+coords  -100 200
+at      1020
+
+spawn   axl
+coords  -100 240
+at      1020
+
+spawn   bret
+coords  -100 200
+at      1020
+
+spawn   elijah
+coords  -100 240
+at      1020
+
+spawn   bull
+coords  -100 240
+at      1020
+
+spawn   holly
+coords  -100 240
+at      1020
+
+spawn   slash
+coords  -100 200
+at      1020
+
+spawn   elic
+coords  -100 240
+at      1020
+
+spawn   wong
+coords  -100 200
+at      1020
+
+spawn   axl
+coords  -100 240
+at      1020
+
+spawn   bret
+coords  -100 200
+at      1020
+
+spawn   elijah
+coords  -100 240
+at      1020
+
+spawn   bull
+coords  -100 240
+at      1020
+
+spawn   holly
+coords  -100 240
+at      1020
+
+spawn   slash
+coords  -100 200
+at      1020
+
+spawn   elic
+coords  -100 240
+at      1020
+
+spawn   wong
+coords  -100 200
+at      1020
+
+spawn   axl
+coords  -100 240
+at      1020
+
+spawn   bret
+coords  -100 200
+at      1020
+
+spawn   elijah
+coords  -100 240
+at      1020
+
+spawn   bull
+coords  -100 240
+at      1020
+
+spawn   holly
+coords  -100 240
+at      1020
+
+spawn   slash
+coords  -100 200
+at      1020
+
+spawn   elic
+coords  -100 240
+at      1020
+
+spawn   wong
+coords  -100 200
+at      1020
+
+spawn   axl
+coords  -100 240
+at      1020
+
+spawn   bret
+coords  -100 200
+at      1020
+
+spawn   elijah
+coords  -100 240
+at      1020
+
+spawn   bull
+coords  -100 240
+at      1020
+
+spawn   holly
+coords  -100 240
+at      1020
+
+spawn   slash
+coords  -100 200
+at      1020
+
+spawn   elic
+coords  -100 240
+at      1020
+
+spawn   wong
+coords  -100 200
+at      1020
+
+spawn   axl
+coords  -100 240
+at      1020
+
+spawn   bret
+coords  -100 200
+at      1020
+
+spawn   elijah
+coords  -100 240
+at      1020
+
+spawn   bull
+coords  -100 240
+at      1020
+
+
+
+
+

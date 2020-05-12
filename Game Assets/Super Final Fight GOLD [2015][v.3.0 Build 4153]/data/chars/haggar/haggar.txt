@@ -1,0 +1,1812 @@
+name	    		Haggar
+type	    		player
+health	    		110
+mp          		100
+nolife				1
+hostile				enemy
+candamage			enemy player obstacle
+speed	    		7
+jumpspeed	    	10
+jumpheight   		3.3
+#jumpmove 			3
+turndelay 			12
+mprate				2
+grabdistance		30
+grabfinish			1
+grabback			0
+antigravity 		10
+bounce				1
+noquake     		1
+shadow	    		3
+diesound    		data/chars/haggar/hagg05.wav
+flash 				flash
+bflash 				guard
+dust    			dust01
+toflip				1
+nodieblink			1
+makeinv     		5 0 
+falldie 			2
+riseinv 			1 1
+atchain     		1 1 2
+jugglepoints		15
+animationscript		data/scripts/player.c
+
+load				quake
+load				axe
+load				driver
+
+com  d f a  		freespecial2
+com  f f a  		freespecial3
+com  d f d f a  	freespecial6
+
+
+icon	      		data/chars/haggar/icon.gif 1
+icondie     		data/chars/haggar/icond.gif 1
+
+parrow		data/chars/misc/parrow/01.gif -215 -185
+parrow2		data/chars/misc/parrow/02.gif -215 -185
+parrow3		data/chars/misc/parrow/03.gif -215 -185
+parrow4		data/chars/misc/parrow/04.gif -215 -185
+
+palette 			data/chars/haggar/pal/pal01.gif #1
+alternatepal		data/chars/haggar/pal/pal02.gif #2
+alternatepal		data/chars/haggar/pal/pal03.gif #3
+alternatepal		data/chars/haggar/pal/pal04.gif #4
+alternatepal		data/chars/haggar/pal/pal05.gif #5
+alternatepal		data/chars/haggar/pal/pal06.gif #6
+alternatepal		data/chars/haggar/pal/pal07.gif #7
+alternatepal		data/chars/haggar/pal/pal08.gif #8
+alternatepal		data/chars/haggar/pal/pal09.gif #9
+alternatepal		data/chars/haggar/pal/pal10.gif #10
+
+#	weapons     	fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     1 1
+	 delay      4
+       frame      data/chars/haggar/sel01.gif
+       frame      data/chars/haggar/sel02.gif
+
+anim select
+	 loop       0
+	 offset     1 1
+
+	 sound   	data/sounds/choose.wav
+	 delay      4
+       frame      data/chars/haggar/sel03.gif
+       frame      data/chars/haggar/sel04.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/haggar/sel05.gif
+       frame      data/chars/haggar/sel04.gif
+	 delay      6
+       frame      data/chars/haggar/sel03.gif
+
+	 delay      4
+       frame      data/chars/haggar/sel04.gif
+       frame      data/chars/haggar/sel05.gif
+       frame      data/chars/haggar/sel04.gif
+	 delay      6
+       frame      data/chars/haggar/sel03.gif
+
+	 delay      5
+       frame      data/chars/haggar/sel06.gif
+	 sound   	data/sounds/punch.wav
+       frame      data/chars/haggar/sel07.gif
+       frame      data/chars/haggar/sel08.gif
+	 delay      100
+	 sound   	data/chars/haggar/hagg01.wav
+       frame      data/chars/haggar/sel09.gif
+
+
+#-------Moves
+
+anim spawn
+	loop       0
+	 offset     238 177
+	delay   3
+     @cmd setLevel
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+	frame	data/chars/haggar/idle01.gif
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      8
+       frame      data/chars/haggar/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/haggar/walk01.gif
+       frame      data/chars/haggar/walk02.gif
+       frame      data/chars/haggar/walk03.gif
+       frame      data/chars/haggar/walk04.gif
+       frame      data/chars/haggar/walk05.gif
+       frame      data/chars/haggar/walk06.gif
+
+anim get
+	 loop       0
+	 offset     238 177
+	 delay      30
+       frame      data/chars/haggar/get01.gif
+
+anim attack1
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				4 			1 			d f a 					freespecial2
+	cancel 		0 				4 			1 			f f a 					freespecial3
+	 fastattack 1
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/haggar/a101.gif
+       frame      data/chars/haggar/a102.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 	112 	64 		68 		7 		0 		0 		0 		30		15
+       frame      data/chars/haggar/a103.gif
+	 attack2  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/haggar/a102.gif
+	 delay      6
+       frame      data/chars/haggar/a101.gif
+
+anim attack2
+	jugglecost 	2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				3 			1 			d f a 					freespecial2
+	cancel 		0 				3 			1 			f f a 					freespecial3
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg02.wav
+	 delay      5
+       frame      data/chars/haggar/a201.gif
+       frame      data/chars/haggar/a202.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	112 	64 		68 		21 		1 		0 		0 		35		15
+       frame      data/chars/haggar/a203.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      7
+       frame      data/chars/haggar/a204.gif
+
+anim jumpdelay
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/haggar/land01.gif
+
+anim jump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/haggar/jump01.gif
+	 delay      15
+       frame      data/chars/haggar/jump02.gif
+	 delay      999
+       frame      data/chars/haggar/jump01.gif
+
+anim forwardjump
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      35
+       frame      data/chars/haggar/jump01.gif
+	 delay      15
+       frame      data/chars/haggar/jump02.gif
+	 delay      999
+       frame      data/chars/haggar/jump01.gif
+
+
+anim jumpland
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/haggar/land01.gif
+
+anim jumpattack
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg02.wav
+	 delay      5
+       frame      data/chars/haggar/jump02.gif
+
+	 delay      10
+       frame      data/chars/haggar/ja101.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	112 	64 		68 		14 		1 		0 		0 		30		15
+	 delay      40
+	 frame	data/chars/haggar/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame      data/chars/haggar/ja101.gif
+	 delay      5
+       frame      data/chars/haggar/jump02.gif
+	 delay      999
+       frame      data/chars/haggar/jump01.gif
+
+anim jumpforward
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg02.wav
+	 delay      5
+       frame      data/chars/haggar/jump02.gif
+
+	 delay      10
+       frame      data/chars/haggar/ja101.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	112 	64 		68 		14 		1 		0 		0 		35		15
+	 delay      40
+	 frame	data/chars/haggar/ja102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      12
+       frame      data/chars/haggar/ja101.gif
+	 delay      5
+       frame      data/chars/haggar/jump02.gif
+	 delay      999
+       frame      data/chars/haggar/jump01.gif
+
+anim jumpattack2
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg03.wav
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 	112 	90 		68 		14 		1 		0 		0 		35		15
+	 delay      999
+	 frame	data/chars/haggar/ja201.gif
+
+
+anim grab
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				99 			0 			d u a 				freespecial4
+	cancel 		0 				99 			0 			d f d f a 			freespecial5
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/haggar/grab01.gif
+
+anim grabattack
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 	87 	35 		29 		7 		0 		0 		0 		30		0
+       frame      data/chars/haggar/th101.gif
+
+anim grabattack2
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 hitfx   	data/sounds/beat2.wav
+	 delay      16
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack2  	240 	87 	35 		29 		14 		1 		0 		0 		35		0
+       frame      data/chars/haggar/th101.gif
+
+anim grabbackward
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/haggar/hagg03.wav
+
+	 delay      18
+	@cmd slamstart
+	@cmd position 2 1 1 0 1
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 3 1 1 0 1
+	 delay      35
+       frame      data/chars/haggar/th202.gif
+	   
+	@cmd position 4 1 1 0 1
+	 delay      18
+       frame      data/chars/haggar/th203.gif
+	   
+	@cmd position 5 -60 1 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" -60 1 10
+#@cmd projectile 1 "friver" -100 0 0
+#	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th204.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th204.gif
+
+	@cmd depost 0
+	@cmd throw 14 1 -1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th204.gif
+
+	 attack5  	0 	0 	0 		0 		0 		0 		0 		0 		0		0
+	 delay      18
+       frame      data/chars/haggar/th205.gif
+	 delay      22
+       frame      data/chars/haggar/get01.gif
+
+anim grabforward
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/haggar/hagg03.wav
+
+	@cmd slamstart
+	@cmd position 2 10 1 0 1
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 6 20 1 0 1
+	 delay      35
+       frame      data/chars/haggar/th301.gif
+	 hitfx   	data/sounds/punch.wav
+
+	@cmd position 7 25 15 0 1
+	 delay      20
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 50 1 10
+#@cmd projectile 1 "friver" 55 0 0
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th302.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th302.gif
+	   
+	@cmd position 7 90 1 0 1
+	@cmd depost 0
+	@cmd throw 14 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th302.gif
+
+	   delay      18
+       frame      data/chars/haggar/th303.gif
+	 delay      22
+       frame      data/chars/haggar/th304.gif
+
+anim grabdown
+	 jumpframe 	1 3.3 -1
+	 landframe  4
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/haggar/hagg03.wav
+	 
+	@cmd slamstart
+	@cmd position 8 1 1 0 1
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 9 1 1 0 1
+	 delay      12
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 10 10 1 0 1
+	 delay      16
+       frame      data/chars/haggar/jump02.gif
+
+	@cmd position 11 30 1 0 1
+	 delay      999
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+#@cmd projectile 1 "friver" 0 0 0
+	 delay      20
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th403.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 14 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW3"
+	 delay      22
+       frame      data/chars/haggar/get01.gif
+
+anim grabup
+	 jumpframe 	1 3.3 1
+	 landframe  4
+	 attackone	0
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+	 sound   	data/chars/haggar/hagg03.wav
+
+	@cmd slamstart
+	@cmd position 8 1 1 0 1
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 9 1 1 0 1
+	 delay      12
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 10 10 1 0 1
+	 delay      16
+       frame      data/chars/haggar/jump02.gif
+
+	@cmd position 11 30 1 0 1
+	 delay      999
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+#@cmd projectile 1 "friver" 0 0 0
+	 delay      20
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th403.gif
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 14 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW3"
+	 delay      22
+       frame      data/chars/haggar/get01.gif
+
+anim riseattack1
+	 jugglecost 100
+#	 jumpframe 0 3.3
+#	 landframe  8
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 delay      10
+       frame      data/chars/haggar/rise01.gif
+       frame      data/chars/haggar/get01.gif
+
+	 sound   	data/chars/haggar/hagg03.wav
+	 delay      14
+       frame      data/chars/haggar/sp01.gif
+
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		15
+	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/haggar/a204.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/haggar/pain01.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     239 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/haggar/pain01.gif
+
+anim fall
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/haggar/pain02.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain02.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain02.gif
+	 offset     239 177
+       frame      data/chars/haggar/pain02.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain02.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/haggar/pain02.gif
+
+anim fall2
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/haggar/pain01.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     239 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     237 177
+       frame      data/chars/haggar/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/haggar/pain01.gif
+
+anim fall3
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				0 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/haggar/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/haggar/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/haggar/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/haggar/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/haggar/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/haggar/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/haggar/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/haggar/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/haggar/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/haggar/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/haggar/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/haggar/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/haggar/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/haggar/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/haggar/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/haggar/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/haggar/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/haggar/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/haggar/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/haggar/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/haggar/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/haggar/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn102.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn103.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn104.gif
+       frame      data/chars/misc/burn1/burn101.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/haggar/pain01.gif
+
+anim fall11
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn114.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn112.gif
+       frame      data/chars/misc/burn1/burn111.gif
+       frame      data/chars/misc/burn1/burn113.gif
+       frame      data/chars/misc/burn1/burn111.gif
+	 delay      999
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn202.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn203.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn204.gif
+       frame      data/chars/misc/burn2/burn201.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/haggar/pain01.gif
+
+anim fall12
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn214.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn212.gif
+       frame      data/chars/misc/burn2/burn211.gif
+       frame      data/chars/misc/burn2/burn213.gif
+       frame      data/chars/misc/burn2/burn211.gif
+	 delay      999
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/haggar/pain01.gif
+
+anim fall13
+#	cancel{#}	{start frame} 	{end frame} {didhit?} 	{sequence of inputs} 	{freespecial#}
+	cancel 		0 				36 			0 			u a						freespecial10	# cancel jump release attack
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+       frame      data/chars/misc/shock/shock02.gif
+       frame      data/chars/misc/shock/shock01.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/haggar/fall01.gif
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      55
+       frame      data/chars/haggar/fall02.gif
+	 delay      20
+       frame      data/chars/haggar/rise01.gif
+	 delay      14
+       frame      data/chars/haggar/fall02.gif
+	 delay      10
+       frame      data/chars/haggar/rise01.gif
+       frame      data/chars/haggar/get01.gif
+
+anim death
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/haggar/fall02.gif
+
+anim special
+	 jugglecost 100
+#	 jumpframe 0 3.3
+#	 landframe  8
+	 energycost	5
+	 mponly  	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 sound   	data/chars/haggar/hagg03.wav
+
+	 delay      14
+       frame      data/chars/haggar/sp01.gif
+
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		15
+	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/haggar/a204.gif
+
+
+anim	freespecial10	# Cancel jump release attack
+	 jugglecost 100
+	 jumpframe	0 0 -1
+	 landframe	2
+#	 energycost	5
+#	 mponly  	2
+#	subentity		counter
+#	summonframe		0 0 0 0 0
+#	unsummonframe	999
+	loop		0
+	offset		209 233
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat2.wav
+
+	 delay		16
+		frame		data/chars/haggar/jump02.gif
+	delay		999
+		frame		data/chars/haggar/jump01.gif
+	delay		6
+		frame		data/chars/haggar/land01.gif
+
+@cmd changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+@cmd changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+
+	 sound   	data/chars/haggar/hagg03.wav
+
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      6
+       frame      data/chars/haggar/sp02.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	240 	91 	47 		89 		14 		1 		1 		0 		35		15
+#	 delay      12
+       frame      data/chars/haggar/sp03.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/haggar/sp04.gif
+
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack3  	193 	91 	47 		89  		14 		1 		1 		0 		35		15
+	 delay      12
+       frame      data/chars/haggar/sp05.gif
+
+	 attack3  	0 	0 	0 		0 		0 		0 		0 		0 		0 		0
+	 delay      25
+       frame      data/chars/haggar/a204.gif
+
+		
+anim freespecial2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	25
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		226 102 23 76
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg04.wav
+
+	 delay      14
+       frame      data/chars/haggar/frsp101.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+	 delay      8
+       frame      data/chars/haggar/frsp102.gif
+	 delay      6
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	105	96		76		15			0		1		0			50			15
+       frame      data/chars/haggar/frsp103.gif
+	attack2		0	0	0		0		0		0		0		0			0			0
+@cmd projectile 1 "axe" 0 0 0
+       frame      data/chars/haggar/frsp104.gif
+	 delay      130
+       frame      data/chars/haggar/frsp105.gif
+
+	 bbox		226 102 23 76
+	 delay      6
+       frame      data/chars/haggar/a204.gif
+
+anim freespecial3
+	followanim	1
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 energycost	25
+	 mponly  	1
+	 hitfx   	data/sounds/beat3.wav
+	 bbox		226 102 23 76
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg06.wav
+
+	 delay      28
+       frame      data/chars/haggar/frsp201.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	111	30		29		10			1		1		0			50			15
+	dropv	3.5 0.5
+	 delay      2
+	 move		8
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		7
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		6
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		5
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		4
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		3
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		2
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 move		1
+       frame      data/chars/haggar/frsp202.gif
+       frame      data/chars/haggar/frsp202.gif
+
+	 bbox		226 102 23 76
+	   attack2		0	0	0		0		0		0		0		0			0			0
+@cmd projectile 1 "dust03" 0 0 0
+	 move		0
+	 delay      20
+       frame      data/chars/haggar/frsp203.gif
+
+	 delay      30
+       frame      data/chars/haggar/frsp203.gif
+
+	 bbox		226 102 23 76
+	 delay      9
+       frame      data/chars/haggar/land01.gif
+
+anim follow1
+	 jumpframe 	3 2 2
+	 dropframe	5
+	 landframe  6
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/beat3.wav
+
+	 delay      50
+@cmd projectile 1 "quake" 0 0 0
+@cmd projectile 1 "dust03" 0 0 0
+       frame      data/chars/haggar/frsp202.gif
+
+	 sound   	data/chars/haggar/hagg07.wav
+	 delay      6
+       frame      data/chars/haggar/land01.gif
+	 delay      12
+       frame      data/chars/haggar/get01.gif
+
+	 delay      8
+       frame      data/chars/haggar/jump01.gif
+	 delay      99
+       frame      data/chars/haggar/jump02.gif
+
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack		208	102	103		37		16			1		1		0			50			15
+	dropv	1 3
+ 	 delay      999
+       frame      data/chars/haggar/frsp204.gif
+
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0		0
+
+@cmd projectile 1 "quake" 0 0 0
+	 sound   	data/sounds/fall.wav
+	 delay      55
+       frame      data/chars/haggar/fall02.gif
+	 delay      10
+       frame      data/chars/haggar/rise01.gif
+       frame      data/chars/haggar/get01.gif
+
+anim freespecial4
+	 energycost	25
+	 mponly  	1
+	 attackone	0
+	 jumpframe 	1 5 0
+	 landframe  16
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+#	 grabin 2 20
+	 sound   	data/chars/haggar/hagg08.wav
+
+	@cmd slamstart
+	@cmd position 8 1 1 0 1
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 9 1 1 0 1
+	delay      12
+       frame      data/chars/haggar/th201.gif
+
+
+	@cmd position 10 10 1 0 1
+	 delay      16
+       frame      data/chars/haggar/jump02.gif
+
+	 delay      8
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th601.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th602.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 1 1
+       frame      data/chars/haggar/th603.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th402.gif
+
+	   sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th601.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th602.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 1 1
+       frame      data/chars/haggar/th603.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th402.gif
+	   
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th601.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th602.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 1 1
+       frame      data/chars/haggar/th603.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+	 sound   	data/sounds/punch.wav
+ 	 delay      999
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "quake" 0 0 0
+@cmd spawn01 "flash" 25 1 10
+#@cmd projectile 1 "sriver" 0 0 0
+	 delay      20
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th403.gif
+@cmd projectile 1 "quake" 0 0 0
+       frame      data/chars/haggar/th403.gif
+
+
+	@cmd position 7 91 1 0 1
+	@cmd depost 0
+	@cmd throw 26 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW3"
+	 delay      22
+       frame      data/chars/haggar/get01.gif
+
+anim freespecial5
+	 summonframe 0 -205 -225 0 0
+	 subentity	super
+	 energycost	100
+	 mponly  	1
+	 attackone	0
+	 jumpframe 	1 7 0
+	 landframe  52
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+
+	 sound   	data/chars/haggar/hagg09.wav
+	@cmd slamstart
+	@cmd position 8 11 1 0 0
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 9 1 1 0 1
+	 delay      2
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 10 10 1 0 1
+	 sound   	data/sounds/hurr01.wav
+	 delay      2
+       frame      data/chars/haggar/jump02.gif
+
+	 delay      4
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	@cmd position 12 30 1 0 1
+ 	 delay      999
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "driver" 0 0 0
+	 delay      15
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th403.gif
+	 sound   	data/chars/haggar/hagg10.wav
+	 delay      20
+       frame      data/chars/haggar/th403.gif
+       frame      data/chars/haggar/th403.gif
+
+	@cmd depost 0
+	@cmd finish 10 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th403.gif
+
+
+      @cmd    anichange "ANI_FOLLOW3"
+	 delay      45
+       frame      data/chars/haggar/get01.gif
+	 delay      15
+       frame      data/chars/haggar/land01.gif
+	   
+
+
+anim freespecial6
+	followanim	2
+	followcond	2
+	 jugglecost 	2
+	 fastattack 1
+	 summonframe 0 -225 -195 0 0
+	 subentity	super
+	 energycost	100
+	 mponly  	1
+	 hitfx   	data/sounds/empty.wav
+	 bbox		226 102 23 76
+
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/chars/haggar/hagg09.wav
+
+	 delay      28
+       frame      data/chars/haggar/frsp307.gif
+
+@cmd projectile 1 "dust02" 0 0 0
+	 bbox		0 0 0 0
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack2		240	111	30		29		0			0		1		1			0			25
+	dropv	0.5 0.5
+	 delay      2
+	 move		8
+       frame      data/chars/haggar/frsp301.gif
+       frame      data/chars/haggar/frsp301.gif
+       frame      data/chars/haggar/frsp301.gif
+       frame      data/chars/haggar/frsp301.gif
+
+	 move		5
+       frame      data/chars/haggar/frsp302.gif
+       frame      data/chars/haggar/frsp302.gif
+       frame      data/chars/haggar/frsp302.gif
+       frame      data/chars/haggar/frsp302.gif
+
+	 move		4
+       frame      data/chars/haggar/frsp303.gif
+       frame      data/chars/haggar/frsp303.gif
+       frame      data/chars/haggar/frsp303.gif
+       frame      data/chars/haggar/frsp303.gif
+
+	 move		3
+       frame      data/chars/haggar/frsp304.gif
+       frame      data/chars/haggar/frsp304.gif
+       frame      data/chars/haggar/frsp304.gif
+       frame      data/chars/haggar/frsp304.gif
+
+	 move		2
+       frame      data/chars/haggar/frsp305.gif
+       frame      data/chars/haggar/frsp305.gif
+       frame      data/chars/haggar/frsp305.gif
+       frame      data/chars/haggar/frsp305.gif
+
+	 move		1
+       frame      data/chars/haggar/frsp306.gif
+       frame      data/chars/haggar/frsp306.gif
+       frame      data/chars/haggar/frsp306.gif
+       frame      data/chars/haggar/frsp306.gif
+
+	 move		0
+	 bbox		226 102 23 76
+	   attack2		0	0	0		0		0		0		0		0			0			0
+@cmd projectile 1 "dust03" 0 0 0
+	 move		0
+	 delay      20
+       frame      data/chars/haggar/frsp203.gif
+
+	 delay      30
+       frame      data/chars/haggar/frsp203.gif
+
+	 bbox		226 102 23 76
+	 delay      9
+       frame      data/chars/haggar/land01.gif
+
+
+anim follow2
+	 attackone	0
+	 jumpframe 	1 7 0
+	 landframe  52
+	 fastattack 1
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 hitfx   	data/sounds/empty.wav
+
+	sound   	data/sounds/block.wav
+	@cmd spawn01 "guard" 33 0 -73
+
+	@cmd slamstart
+	@cmd position 8 11 1 0 0
+	 delay      18
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 9 1 1 0 1
+	 delay      2
+       frame      data/chars/haggar/th201.gif
+
+	@cmd position 10 10 1 0 1
+	 sound   	data/sounds/hurr01.wav
+	 delay      2
+       frame      data/chars/haggar/jump02.gif
+
+	 delay      4
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	 sound   	data/sounds/punch.wav
+	 @cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th501.gif
+       frame      data/chars/haggar/th502.gif
+	@cmd position 14 30 1 0 1
+       frame      data/chars/haggar/th503.gif
+       frame      data/chars/haggar/th504.gif
+	 sound   	data/sounds/punch.wav
+	@cmd position 13 30 1 0 1
+       frame      data/chars/haggar/th505.gif
+       frame      data/chars/haggar/th506.gif
+	@cmd position 11 30 1 0 1
+       frame      data/chars/haggar/th507.gif
+       frame      data/chars/haggar/th508.gif
+
+	@cmd position 12 30 1 0 1
+ 	 delay      999
+       frame      data/chars/haggar/th402.gif
+
+	@cmd position 12 30 1 0 1
+@cmd projectile 1 "dust03" 0 0 0
+@cmd projectile 1 "driver" 0 0 0
+	 delay      15
+	 sound   	data/sounds/fall.wav
+       frame      data/chars/haggar/th403.gif
+	 sound   	data/chars/haggar/hagg10.wav
+	 delay      20
+       frame      data/chars/haggar/th403.gif
+       frame      data/chars/haggar/th403.gif
+
+	@cmd depost 0
+	@cmd finish 10 1 1.5 2 0 1
+	@cmd clearL
+       frame      data/chars/haggar/th403.gif
+
+      @cmd    anichange "ANI_FOLLOW3"
+	 delay      45
+       frame      data/chars/haggar/get01.gif
+	 delay      15
+       frame      data/chars/haggar/land01.gif
+	   
+	   
+
+anim follow3
+	jumpframe	0 2.5 -1
+	dropframe	1
+	landframe	2
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      999
+       frame      data/chars/haggar/jump02.gif
+	 delay      999
+       frame      data/chars/haggar/jump01.gif
+	 bbox		226 102 23 76
+	 delay      12
+       frame      data/chars/haggar/land01.gif
+
+
+

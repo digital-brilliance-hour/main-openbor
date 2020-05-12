@@ -1,0 +1,299 @@
+music			data/music/music03.ogg
+#bossmusic		data/music/BOSS01.BOR
+panel   		data/bgs/ST03_2/n01.gif
+background 		data/bgs/ST03_2/back.gif
+frontpanel		data/bgs/ST03_2/f01.gif 
+#blocked 1
+order	a b c
+loadingbg DATA\BGS\ST03_2\LOADING.GIF 1 113 205 91 2000 2000 0
+
+type			0
+settime		99
+notime		0
+#noslow		1
+stagenumber		3
+
+spawn1  50 20 200
+spawn2  40 30 200
+spawn3  60 40 200
+
+#direction		both
+wall    -25 245 5 5 140 40 158 358
+
+#-------1
+
+#----------------
+
+#spawn	stage03
+#coords  0 0
+#flip    1
+#at      0
+
+#----------------
+
+
+#-------1
+
+
+spawn   barrel
+coords  430 240
+at      0
+
+spawn   barrel
+item	  jewel
+coords  630 240
+at      0
+
+spawn   barrel
+coords  830 240
+at      0
+
+spawn   barrel
+item	  hamb
+coords  890 240
+at      0
+
+#-------1
+
+group   5 5
+at      0
+
+wait
+at      0
+
+spawn   jony
+coords  500 200
+at      0
+
+spawn   gory
+coords  550 230
+at      0
+
+spawn   bill
+coords  570 215
+at      0
+
+spawn   axl
+coords  515 210
+at      0
+
+spawn   slash
+coords  565 240
+at      0
+
+spawn   jack
+coords  585 225
+at      0
+
+spawn   leon
+coords  500 200
+at      0
+
+spawn   gory
+coords  550 230
+at      0
+
+spawn   bill
+coords  570 215
+at      0
+
+spawn   jay
+coords  515 210
+at      0
+
+spawn   elijah
+coords  565 240
+at      0
+
+spawn   jake
+coords  585 225
+at      0
+
+
+
+2pspawn   jony
+coords  500 200
+at      0
+
+2pspawn   gory
+coords  550 230
+at      0
+
+2pspawn   bill
+coords  570 215
+at      0
+
+2pspawn   axl
+coords  515 210
+at      0
+
+2pspawn   slash
+coords  565 240
+at      0
+
+2pspawn   jack
+coords  585 225
+at      0
+
+3pspawn   leon
+coords  500 200
+at      0
+
+3pspawn   gory
+coords  550 230
+at      0
+
+3pspawn   bill
+coords  570 215
+at      0
+
+3pspawn   jay
+coords  515 210
+at      0
+
+3pspawn   elijah
+coords  565 240
+at      0
+
+3pspawn   jake
+coords  585 225
+at      0
+
+
+
+#-------1
+
+
+group   4 4
+at      100
+
+spawn   wood
+coords  570 215
+at      100
+
+spawn   wood
+coords  -100 210
+at      200
+
+wait
+at      455
+
+spawn   edi
+boss	  1
+health  250
+2phealth  350
+3phealth  450
+coords  550 200
+at      455
+
+
+spawn   wood
+coords  550 230
+at      455
+
+spawn   elgado
+coords  500 200
+at      455
+
+spawn   holly
+coords  550 230
+at      455
+
+spawn   wood
+coords  570 215
+at      455
+
+spawn   wood
+coords  515 210
+at      455
+
+spawn   elgado
+coords  500 200
+at      455
+
+spawn   holly
+coords  550 230
+at      455
+
+spawn   wood
+coords  570 215
+at      455
+
+spawn   wood
+coords  515 210
+at      455
+
+
+
+2pspawn   elgado
+coords  500 200
+at      455
+
+2pspawn   holly
+coords  550 230
+at      455
+
+2pspawn   wood
+coords  570 215
+at      455
+
+2pspawn   wood
+coords  515 210
+at      455
+
+2pspawn   elgado
+coords  500 200
+at      455
+
+2pspawn   holly
+coords  550 230
+at      455
+
+2pspawn   wood
+coords  570 215
+at      455
+
+2pspawn   wood
+coords  515 210
+at      455
+
+
+
+3pspawn   elgado
+coords  500 200
+at      455
+
+3pspawn   holly
+coords  550 230
+at      455
+
+3pspawn   wood
+coords  570 215
+at      455
+
+3pspawn   wood
+coords  515 210
+at      455
+
+3pspawn   elgado
+coords  500 200
+at      455
+
+3pspawn   holly
+coords  550 230
+at      455
+
+3pspawn   wood
+coords  570 215
+at      455
+
+3pspawn   wood
+coords  515 210
+at      455
+
+
+
+
+
+
+

@@ -1,0 +1,907 @@
+name	    		Bratken
+type	    		enemy
+#hostile		player
+#candamage		player enemy npc
+health	    	55
+mp          	100
+speed	    		5
+jumpspeed	    	10
+jumpheight   	3
+jumpmove 		3
+turndelay 		12
+mprate		5
+#grabdistance	40
+#grabfinish		0
+#paingrab		1
+grabback		1
+antigravity 	10
+bounce		1
+noquake     	1
+shadow	    	4
+diesound    	data/sounds/die01.wav
+flash 		flash
+bflash 		guard
+dust    		dust2
+toflip		1
+riseinv		1 1
+riseattacktype	0
+escapehits 		2
+jugglepoints	15
+
+aggression		0
+nodieblink		1
+falldie 		2
+#risetime 		250
+nolife  1
+
+lifebarstatus 423 7 1 1 0 -300 -300 -300 -300
+lifeposition 37 218 
+nameposition 37 229
+iconposition 0 0
+
+icon	      data/chars/bratken/bicon.gif
+icondie     data/chars/bratken/bicond.gif
+
+palette data/chars/bratken/bratken.gif #1
+
+#	weapons     fighter1 fighter2 fighter3
+
+#-------Select screen!
+
+anim waiting
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/bratken/idle01.gif
+
+anim select
+#	 summonframe 3 -500 110 0 0
+#	 subentity	super01
+#	 unsummonframe 11
+	 loop       1
+	 offset     238 177
+	 delay      8
+       frame      data/chars/bratken/idle01.gif
+
+#-------Moves
+
+anim spawn
+	summonframe 12 0 0 0 1
+	subentity	dial03
+	quakeframe 4 8 3
+	jumpframe 1 2.5 3
+	landframe  4
+	range 101 150
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+	 delay	15
+       frame      data/chars/bratken/a301.gif
+
+ 	 sound   	data/sounds/jump.wav
+	 bbox		0 0 0 0
+	 delay	40
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	198 	61 	62 		116 		15 		1 		0 		0 		25
+       frame      data/chars/bratken/a302.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay	1
+       frame      data/chars/bratken/a302.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	198 	61 	62 		116 		25 		1 		0 		0 		25
+	 delay	999
+       frame      data/chars/bratken/a303.gif
+
+ 	 sound   	data/sounds/fall.wav
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      4
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+       frame      data/chars/bratken/a301.gif
+	 delay      1
+       frame      data/chars/bratken/a301.gif
+
+
+anim idle
+	 loop       1
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/bratken/idle01.gif
+
+anim walk
+	 loop       1
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      15
+       frame      data/chars/bratken/walk01.gif
+       frame      data/chars/bratken/walk02.gif
+       frame      data/chars/bratken/walk01.gif
+       frame      data/chars/bratken/idle01.gif
+
+anim attack1
+	range 0 70
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat2.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	127 	72 		50 		15 		1 		0 		0 		25
+	 delay      16
+       frame      data/chars/bratken/a102.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+
+anim attack2
+#	quakeframe 7 8 3
+	jumpframe 1 2.5 2
+	landframe  4
+	range 71 100
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+
+	 delay	15
+       frame      data/chars/bratken/a301.gif
+
+ 	 sound   	data/sounds/jump.wav
+	 bbox		0 0 0 0
+	 delay	40
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	198 	61 	62 		116 		15 		1 		0 		0 		25
+       frame      data/chars/bratken/a302.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay	1
+       frame      data/chars/bratken/a302.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	198 	61 	62 		116 		25 		1 		0 		0 		25
+	 delay	999
+       frame      data/chars/bratken/a303.gif
+
+	 delay	1
+ 	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/bratken/a301.gif
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	127 	72 		50 		25 		1 		0 		0 		25
+	 delay      40
+       frame      data/chars/bratken/a102.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+
+anim attack3
+	 summonframe 1 5 0 0 0
+	 subentity	dust
+	 unsummonframe 33
+	 followanim	1
+	 followcond	1
+	range 101 200
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      8
+       frame      data/chars/bratken/a201.gif
+
+	move 1
+	 delay      1
+ 	 sound   	data/sounds/brat.wav
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	80 	34 		97 		25 		1 		0 		0 		25
+
+ 	move 2
+    	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+	move 3
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+ 	move 4
+    	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+	move 4
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+	move 4
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+	move 3
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+     	frame	data/chars/bratken/a202.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+     	frame	data/chars/bratken/a202.gif
+	move 2
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	240 	97 	89 		80 		25 		1 		0 		0 		25
+     	frame	data/chars/bratken/a203.gif
+     	frame	data/chars/bratken/a203.gif
+     	frame	data/chars/bratken/a203.gif
+     	frame	data/chars/bratken/a203.gif
+	move 1
+    	frame	data/chars/bratken/a203.gif
+    	frame	data/chars/bratken/a203.gif
+    	frame	data/chars/bratken/a203.gif
+    	frame	data/chars/bratken/a203.gif
+
+	move 0
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      27
+       frame      data/chars/bratken/a204.gif
+	 delay      8
+       frame      data/chars/bratken/idle01.gif
+
+anim follow1
+	 unsummonframe 2
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      27
+    	 frame	data/chars/bratken/a203.gif
+	 delay      27
+       frame      data/chars/bratken/a204.gif
+	 delay      8
+       frame      data/chars/bratken/idle01.gif
+
+anim riseattack1
+	range 0 60
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	127 	72 		50 		25 		1 		0 		0 		25
+	 delay      40
+       frame      data/chars/bratken/a102.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+
+anim special2
+#	range 0 60
+	jugglecost 	2
+	 fastattack 1
+	 hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+	 delay      32
+       frame      data/chars/bratken/a101.gif
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 blast  	240 	127 	72 		50 		25 		1 		0 		0 		25
+	 delay      40
+       frame      data/chars/bratken/a102.gif
+	 blast  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay      8
+       frame      data/chars/bratken/a101.gif
+
+anim upper
+#	quakeframe 7 8 3
+	jumpframe 1 3.3 0
+	landframe  4
+	range 0 80
+	jugglecost 	2
+	fastattack 1
+	hitfx   	data/sounds/beat3.wav
+
+	 loop       0
+	 offset     238 177
+	 bbox		224 88 34 89
+
+ 	 sound   	data/sounds/brat.wav
+	 delay	15
+       frame      data/chars/bratken/a301.gif
+
+ 	 sound   	data/sounds/jump.wav
+	 bbox		0 0 0 0
+	 delay	40
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	200 	107 	78 		55 		15 		1 		0 		0 		25
+       frame      data/chars/bratken/a302.gif
+	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+	 delay	1
+       frame      data/chars/bratken/a302.gif
+ #	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	200 	107 	78 		55 		25 		1 		0 		0 		25
+	 delay	999
+       frame      data/chars/bratken/a303.gif
+
+	 delay	15
+ 	 attack  	0 	0 	0 		0 		0 		0 		0 		0 		0
+       frame      data/chars/bratken/a301.gif
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+anim pain
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bratken/pain01.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     239 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bratken/pain01.gif
+
+anim fall
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+
+#-----------------NORMAL PUNCH 01-----------------#
+
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+anim pain2
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bratken/pain02.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     239 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bratken/pain02.gif
+
+anim fall2
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		226 102 23 76
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------NORMAL PUNCH 02-----------------#
+
+
+#-----------------SPECIAL ATTACK-----------------#
+
+anim pain3
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 delay      4
+       frame      data/chars/bratken/pain01.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     239 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain01.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bratken/pain01.gif
+
+anim fall3
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+	 bbox		0 0 0 0
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------SPECIAL ATTACK-----------------#
+
+#-----------------THROW LAUNCH-----------------#
+
+anim fall4
+#	 jumpframe 	2 2.5 -2
+#	 landframe	5
+	 flipframe	0 
+	 loop       0
+	 offset     238 177
+	 bbox		0 0 0 0
+
+#-------------------------------------------cody
+	 delay      999
+       frame      data/chars/bratken/cody01.gif	# 0
+	 delay      999
+       frame      data/chars/bratken/cody02.gif	# 1
+#-------------------------------------------cody
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bratken/hagg01.gif	# 2
+	 delay      999
+       frame      data/chars/bratken/hagg02.gif	# 3
+ 	 delay      999
+       frame      data/chars/bratken/hagg03.gif	# 4
+	 delay      999
+       frame      data/chars/bratken/hagg04.gif	# 5
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bratken/hagg05.gif	# 6
+	 delay      999
+       frame      data/chars/bratken/hagg06.gif	# 7
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bratken/hagg07.gif	# 8
+	 delay      999
+       frame      data/chars/bratken/hagg08.gif	# 9
+	 delay      999
+       frame      data/chars/bratken/hagg09.gif	# 10
+	 delay      999
+       frame      data/chars/bratken/hagg10.gif	# 11
+	 delay      999
+       frame      data/chars/bratken/hagg11.gif	# 12
+#-------------------------------------------Haggar
+	 delay      999
+       frame      data/chars/bratken/hagg12.gif	# 13
+	 delay      999
+       frame      data/chars/bratken/hagg13.gif	# 14
+#-------------------------------------------Haggar
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/bratken/dean01.gif	# 15
+	 delay      999
+       frame      data/chars/bratken/dean02.gif	# 16
+#-------------------------------------------Dean
+	 delay      999
+       frame      data/chars/bratken/dean03.gif	# 17
+
+	 delay      999
+       frame      data/chars/bratken/dean04.gif	# 18
+
+	 delay      999
+       frame      data/chars/bratken/dean05.gif	# 19
+#-------------------------------------------Dean
+	   
+
+#-----------------THROW LAUNCH-----------------#
+
+#-----------------THROW FALL-----------------#
+
+anim fall5
+	shadowcoords 238 177
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     198 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/bratken/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 offset     238 177
+	shadowcoords 238 177
+	move	50
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------THROW FALL-----------------#
+
+#-----------------THROW FALL 2-----------------#
+
+anim fall6
+	fastattack	1
+	 landframe  1
+	 loop       0
+	 offset     238 177
+	 delay      999
+#	 attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	 attack  	205 110 85 		55 		5 			1 		0 		0 			25			15
+	 bbox		226 102 23 76
+       frame      data/chars/bratken/fall01.gif
+	 attack  	0 0 0 		0 		0 			0 		0 		0 			0			0
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------THROW FALL 2-----------------#
+
+
+#-----------------BURN1-----------------#
+
+anim pain11
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     239 177
+       frame      data/chars/misc/burn1/burn122.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+       frame      data/chars/misc/burn1/burn123.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     237 177
+       frame      data/chars/misc/burn1/burn124.gif
+       frame      data/chars/misc/burn1/burn121.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bratken/pain01.gif
+
+anim fall11
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn134.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn132.gif
+       frame      data/chars/misc/burn1/burn131.gif
+       frame      data/chars/misc/burn1/burn133.gif
+       frame      data/chars/misc/burn1/burn131.gif
+	 delay      999
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------BURN1-----------------#
+
+#-----------------BURN2-----------------#
+
+anim pain12
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn101.wav
+	 delay      2
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     239 177
+       frame      data/chars/misc/burn2/burn222.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+       frame      data/chars/misc/burn2/burn223.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     237 177
+       frame      data/chars/misc/burn2/burn224.gif
+       frame      data/chars/misc/burn2/burn221.gif
+	 offset     238 177
+	 delay      12
+       frame      data/chars/bratken/pain01.gif
+
+anim fall12
+	 landframe  37
+	 loop       0
+	 offset     238 177
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn234.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn232.gif
+       frame      data/chars/misc/burn2/burn231.gif
+       frame      data/chars/misc/burn2/burn233.gif
+       frame      data/chars/misc/burn2/burn231.gif
+	 delay      999
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------BURN2-----------------#
+
+#-----------------SHOCK-----------------#
+
+anim pain13
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/shock01.wav
+	 delay      2
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     239 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+	 offset     238 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     237 167
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 167
+	 delay      12
+       frame      data/chars/bratken/pain01.gif
+
+anim fall13
+	 landframe  37
+	 loop       0
+	 offset     238 167
+	 bbox		226 102 23 76
+	 sound   	data/sounds/burn111.wav
+
+	 delay      2
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 sound   	data/sounds/shock01.wav
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+       frame      data/chars/misc/shock/shock12.gif
+       frame      data/chars/misc/shock/shock11.gif
+	 offset     238 177
+	 delay      999
+       frame      data/chars/bratken/fall01.gif
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+
+#-----------------SHOCK-----------------#
+
+anim rise
+	 loop       0
+	 offset     238 177
+	 delay      1
+       frame      data/chars/bratken/fall02.gif
+	 delay      8
+       frame      data/chars/bratken/rise01.gif
+
+	 delay      16
+       frame      data/chars/bratken/rise02.gif
+
+anim death
+	jumpframe 26 1.5 0
+	landframe  27
+	quakeframe 27 5 3
+	 loop       0
+	 offset     238 177
+	 delay      15
+       frame      data/chars/bratken/fall02.gif
+	 delay      8
+       frame      data/chars/bratken/rise01.gif
+
+
+	 delay      4
+
+	 offset     237 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     239 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     237 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     237 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     239 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     237 177
+       frame      data/chars/bratken/rise02.gif
+	 offset     238 177
+       frame      data/chars/bratken/rise02.gif
+
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     239 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     239 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     237 177
+       frame      data/chars/bratken/pain02.gif
+	 offset     238 177
+       frame      data/chars/bratken/pain02.gif
+
+	 delay      999
+       frame      data/chars/bratken/fall01.gif
+       sound   	data/sounds/fall.wav
+	 delay      8
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+       frame      data/chars/bratken/fall02.gif
+
+
+

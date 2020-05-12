@@ -1,0 +1,182 @@
+name					sho
+health					1
+nolife					1
+type					npc
+hostile					enemy player npc obstacle
+candamage				enemy player npc obstacle
+speed					0
+nomove					1
+noquake					1
+falldie					1
+subtype					flydie
+shadow					0
+remove					0
+flash 					flash
+bflash 					guard
+dust					dust01
+#lifespan        		3
+subject_to_wall 0
+
+palette data/chars/chunli/sho/sho.gif #1
+
+anim idle
+	jugglecost 	0
+	hitflash	flash
+	hitfx   	data/sounds/beat3.wav
+	fastattack 1
+	loop	1
+	offset     238 177
+	bbox    	0 0 0 0
+
+	delay	2
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		4			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/02.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		4			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/03.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		4			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/04.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		4			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/05.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		4			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/06.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+	
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		3			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/02.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		3			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/03.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		3			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/04.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		3			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/05.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		3			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/06.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+	
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		2			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/02.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		2			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/03.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		2			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/04.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		2			1		1		0			15			30
+	dropv	0.5 0
+	frame	data/chars/chunli/sho/05.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+#	attack{#} 	{x}	{y}	{right}	{down}	{damage}	{power}	{block}	{noflash}	{pausetime}	{z}
+	attack1		175	102	128		80		2			1		1		0			15			30
+	frame	data/chars/chunli/sho/06.gif
+	attack1		0	0	0		0		0		0		0		0			0			0
+	frame	data/chars/chunli/sho/01.gif
+	
+	delay	4
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	
+anim fall
+	loop	0
+	delay   2
+	offset	30 30
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+anim death
+	loop	0
+	offset     238 177
+	bbox    	0 0 0 0
+	delay	4
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/chunli/sho/01.gif
+	frame	data/chars/misc/empty.gif
+	
+	delay   5
+	move 1000
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+
+
+
