@@ -2,4 +2,5 @@
 void main()
 {
 	clearStory();
+	setglobalvar("zoomentity", NULL());
 }
