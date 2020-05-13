@@ -168,11 +168,13 @@ anim attack3
 anim special
 	loop	0
 	offset	107 203
-	delay   60
+	delay   40
 	@cmd spawnbind "zoomin" 0 0 0
+	@cmd changeopenborvariant "slowmotion"  1
 	frame	data/chars/mary/super01.gif
 	@cmd    changeentityproperty getlocalvar("self") "mp" 0
 	@cmd spawnbind "zoomout" 0 0 0
+	@cmd changeopenborvariant "slowmotion"  0
 	delay	5
 	blast	69 95 80 110 20 1
 	frame	data/chars/mary/super02.gif
