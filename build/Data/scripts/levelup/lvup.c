@@ -36,6 +36,7 @@ void setAbi2(void plIndex, void ent, int delta)
 	changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+10*delta);
 	changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
 	changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
+	changeentityproperty(ent,"offense",openborconstant("ATK_NORMAL"),1.0*delta);
 //	changeplayerproperty(plIndex, "spawnhealth", getentityproperty(ent,"maxhealth"));
 //	changeplayerproperty(plIndex, "spawnmp", getentityproperty(ent,"maxmp"));
 }
