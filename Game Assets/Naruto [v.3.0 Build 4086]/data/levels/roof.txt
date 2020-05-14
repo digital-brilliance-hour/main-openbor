@@ -1,0 +1,237 @@
+music		data/music/roof.bor
+bossmusic	data/music/boss1.bor
+
+background	data/bgs/roof/back.gif
+panel		data/bgs/roof/level.gif
+#frontpanel      data/bgs/roof/f00.gif
+
+order a
+
+hole 498 180 1 2 55 56
+hole 1647 180 1 2 55 50
+hole 1742 180 1 2 55 51
+hole 1829 180 1 2 55 50
+
+wall 1438 150 0 0 32 25 32 55
+
+
+spawn	Pillar
+flip    1
+coords	2398 250
+at	0
+
+spawn	Pillar
+coords	2682 250
+at	0
+
+
+
+#--group1-----
+
+spawn	Claw
+coords	350 160
+at	10
+
+spawn	Ninja
+coords	350 220
+at	15
+
+
+#---group2----------
+
+spawn	Ninja_
+coords	355 190
+at	200
+
+spawn	Ninja_
+coords	-30 160
+at	220
+
+wait
+at	320
+
+#--group3-----------
+
+spawn	Ninja
+coords	350 200
+at	450
+
+spawn	Ninja_
+coords	350 165
+at	470
+
+
+
+#------------
+
+spawn	Claw
+map	1
+coords	-30 210
+at	700
+
+spawn	Ninja_
+coords	350 165
+at	710
+
+spawn	Claw
+coords	350 220
+at	710
+
+wait
+at	720
+
+#--------------
+
+group	1 2
+at	950
+
+wait
+at	960
+
+spawn	Ninja
+coords	350 220
+at	960
+
+spawn	Ninja
+coords	-30 170
+at	960
+
+spawn	Ninja
+coords	350 170
+at	960
+
+spawn	Ninja_
+coords	350 170
+at	960
+
+spawn	Ninja
+health	30
+coords	-30 170
+at	960
+
+spawn	Claw
+coords	-30 200
+at	960
+
+
+group	100 100
+at	1000
+
+#---------
+
+
+spawn	Ninja
+coords	-30 170
+at	1150
+
+spawn	Ninja
+coords	-30 220
+at	1150
+
+spawn	Ninja
+map	2
+coords	350 200
+at	1150
+
+wait
+at	1200
+
+#---------
+
+spawn	Ninja_
+coords	350 165
+at	1750
+
+spawn	Ninja
+coords	350 220
+at	1750
+
+wait
+at	1800
+
+
+spawn	Ninja
+coords	-30 165
+at	1930
+
+spawn	Claw
+coords	350 165
+at	1950
+
+spawn	Ninja
+coords	350 165
+at	1950
+
+
+group	4 4
+at	2300
+
+spawn	Ninja__
+boss    1
+health  400
+coords	350 200
+at	2300
+
+spawn	Ninja
+coords	-30 165
+at	2300
+
+spawn	Ninja_
+coords	350 165
+at	2300
+
+spawn	Claw
+coords	-35 165
+at	2300
+
+spawn	Ninja
+coords	-30 165
+at	2300
+
+spawn	Ninja_
+coords	350 165
+at	2300
+
+spawn	Claw
+coords	-35 165
+at	2300
+
+spawn	Ninja
+coords	-30 165
+at	2300
+
+spawn	Ninja_
+coords	350 165
+at	2300
+
+spawn	Claw
+coords	-35 165
+at	2300
+
+spawn	Ninja
+coords	-30 165
+at	2300
+
+spawn	Ninja_
+coords	350 165
+at	2300
+
+spawn	Claw
+coords	-35 165
+at	2300
+
+spawn	Ninja
+coords	-30 165
+at	2300
+
+spawn	Ninja_
+coords	350 165
+at	2300
+
+spawn	Claw
+coords	-35 165
+at	2300
+
+
+
+
