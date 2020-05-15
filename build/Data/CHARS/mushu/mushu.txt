@@ -1,0 +1,140 @@
+
+name	Musshuru
+health	2000
+speed	20
+type	enemy
+shadow	2
+aironly 1
+icon	data/chars/Mushu/icon.gif
+subtype chase
+cantgrab 1
+blockodds 1
+riseinv 2 0
+candamage player npc
+diesound data/chars/Mushu/down.wav
+
+anim spawn
+	loop	0
+	delay	20
+	offset	45 83
+	bbox	46 31 12 39
+  	sound	data/chars/mushu/kaba.wav	
+	delay	7
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/talk03.gif
+  	frame	data/chars/mushu/talk02.gif
+  	frame	data/chars/mushu/idle01.gif
+
+anim idle
+	loop	1
+	delay	20
+	offset	45 83
+	bbox	43 39 25 28 	
+	
+  	frame	data/chars/mushu/idle01.gif
+  	frame	data/chars/mushu/idle02.gif
+  	frame	data/chars/mushu/idle03.gif
+  	frame	data/chars/mushu/idle04.gif
+
+anim walk
+	loop	1
+	delay	5
+	offset	43 77
+	bbox	43 39 25 28
+	
+	frame	data/chars/Cabaji/run01.gif
+	frame	data/chars/Cabaji/run02.gif
+	frame	data/chars/Cabaji/run03.gif
+
+anim attack1
+	loop	0
+	delay	10
+	bbox	43 39 25 28 
+	offset  45 83
+  	sound	data/chars/mushu/drill.wav
+	frame	data/chars/mushu/dril01.gif
+	frame	data/chars/mushu/dril02.gif
+        blast	64 37 35 28 30 1
+	frame	data/chars/mushu/dril03.gif
+        blast	64 37 35 28 30 1
+	frame	data/chars/mushu/dril04.gif
+        blast	64 37 35 28 30 1
+	frame	data/chars/mushu/dril05.gif
+        blast	64 37 35 28 30 1
+	frame	data/chars/mushu/dril06.gif
+
+anim attack2
+	loop    0
+	delay	5
+	offset	45 83	
+	sound	data/chars/mushu/ido.wav
+  	frame	data/chars/mushu/disa01.gif
+  	frame	data/chars/mushu/disa02.gif
+  	frame	data/chars/mushu/disa03.gif
+  	frame	data/chars/mushu/disa04.gif
+        move    100
+  	frame	data/chars/mushu/disa04.gif
+
+anim block
+	loop    0
+	delay	5
+	offset	45 83	
+	sound	data/chars/mushu/ido.wav
+  	frame	data/chars/mushu/disa01.gif
+  	frame	data/chars/mushu/disa02.gif
+  	frame	data/chars/mushu/disa03.gif
+  	frame	data/chars/mushu/disa04.gif
+        move    100
+  	frame	data/chars/mushu/disa04.gif
+
+anim pain
+	loop	0
+	offset	50 78
+	bbox	46 31 12 39	
+	delay	20
+        sound   data/chars/Mushu/pain.wav
+	frame   data/chars/mushu/pain.gif
+
+
+anim fall
+	loop	0
+	offset	50 78
+	delay	20
+	bbox	46 31 12 39
+	attack	41 36 24 22 10 1	
+        sound   data/chars/Mushu/down.wav
+	frame   data/chars/mushu/fall.gif
+
+
+anim rise
+	loop	0
+	offset	43 77
+	delay	5
+        frame   data/chars/Cabaji/idle01.gif
+
+

@@ -1,0 +1,141 @@
+name	Blood_H
+health	60
+speed	13
+type	enemy
+shadow	0
+#icon	data/chars/hand/icon.gif
+diesound data/sounds/shaah.wav
+nodrop	1
+#nopain	1
+noquake	1
+nodieblink	2
+cantgrab	1
+noatflash	1
+flash	nothing
+death	1
+candamage	npc player
+
+remap data/chars/hand/att3.gif data/chars/hand/map1.gif
+
+
+anim idle
+	loop 	1
+	delay 	7
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+
+anim walk
+	loop 	1
+	delay 	14
+	bbox	0 0 61 16
+	offset 	53 13
+	frame 	data/chars/hand/walk0.gif
+	offset 	54 13
+	frame 	data/chars/hand/walk1.gif
+	offset 	56 13
+	frame 	data/chars/hand/walk2.gif
+
+anim attack1
+	range 	70 150
+	loop	0
+	bbox	163 0 30 126
+	delay	10
+	offset 	45 95
+	frame 	data/chars/hand/warning.gif
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+	offset 	45 95
+	frame 	data/chars/hand/warning.gif
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+	offset 	45 95
+	frame 	data/chars/hand/warning.gif
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+	delay 	10
+	offset 	60 13
+	frame 	data/chars/hand/att0.gif
+	offset 	54 42
+	frame 	data/chars/hand/att1.gif
+	attack	52 0 53 85 20 1 1
+	offset 	44 93
+	frame 	data/chars/hand/att2.gif
+	attack	57 1 98 121 20 1 1
+	offset 	33 123
+	frame 	data/chars/hand/att3.gif
+	offset 	16 75
+	frame 	data/chars/hand/att4.gif
+	attack	75 1 66 82 10 1 1
+	offset 	15 65
+	frame 	data/chars/hand/att5.gif
+	attack	0 0 0 0 0 0
+	offset 	-33 36
+	frame 	data/chars/hand/att6.gif
+	offset 	-66 36
+	frame 	data/chars/hand/att7.gif
+	offset 	-96 28
+	frame 	data/chars/hand/att8.gif
+
+anim pain 
+	loop 	0
+	delay 	10
+	seta	60
+	offset 	60 59
+	frame 	data/chars/hand/death0.gif
+	offset 	75 66
+	frame 	data/chars/hand/death1.gif
+	offset 	93 69
+	frame 	data/chars/hand/death2.gif
+	offset 	100 72
+	frame 	data/chars/hand/death3.gif
+	offset 	105 71
+	frame 	data/chars/hand/death4.gif
+	offset 	108 71
+	frame 	data/chars/hand/death5.gif
+	offset 	90 32
+	frame 	data/chars/hand/death6.gif
+	offset	73 27
+	frame 	data/chars/hand/death7.gif
+	seta	0
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+
+anim fall
+	loop	0
+	delay 	50
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+
+anim rise
+	loop	0
+	delay 	50
+	offset 	27 103
+	frame 	data/chars/seiya/empty.gif
+
+anim death
+	seta	60
+	move	50
+	loop 	0
+	delay 	10
+	offset 	60 59
+	frame 	data/chars/hand/death0.gif
+	move	0
+	offset 	75 66
+	frame 	data/chars/hand/death1.gif
+	offset 	93 69
+	frame 	data/chars/hand/death2.gif
+	offset 	100 72
+	frame 	data/chars/hand/death3.gif
+	offset 	105 71
+	frame 	data/chars/hand/death4.gif
+	offset 	108 71
+	frame 	data/chars/hand/death5.gif
+	offset 	90 32
+	frame 	data/chars/hand/death6.gif
+	offset	73 27
+	frame 	data/chars/hand/death7.gif
+
+
+	
+
+

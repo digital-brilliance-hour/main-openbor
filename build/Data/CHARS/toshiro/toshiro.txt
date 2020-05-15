@@ -1,0 +1,215 @@
+name	Toshiro
+health	100
+mp	100
+speed	15
+type	player
+shadow	0
+cantgrab 1
+
+anim select
+	loop	1
+	delay	10
+	offset	120 160
+	frame	data/chars/Toshiro/Select.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	58 116
+        bbox    40 70 36 46
+	frame	data/chars/Toshiro/Idle1.gif
+	frame	data/chars/Toshiro/Idle2.gif
+	frame	data/chars/Toshiro/Idle3.gif
+	frame	data/chars/Toshiro/Idle2.gif
+
+anim walk
+        loop    1
+        delay   7
+	offset	58 116
+        bbox    40 70 36 46
+	frame	data/chars/Toshiro/walk1.gif
+	frame	data/chars/Toshiro/walk2.gif
+	frame	data/chars/Toshiro/walk3.gif
+	frame	data/chars/Toshiro/walk4.gif
+	frame	data/chars/Toshiro/walk5.gif
+	frame	data/chars/Toshiro/walk6.gif
+	frame	data/chars/Toshiro/walk7.gif
+	frame	data/chars/Toshiro/walk8.gif
+
+anim get
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim duck
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim attack1
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/Att1.gif
+	frame	data/chars/Toshiro/Att2.gif
+	frame	data/chars/Toshiro/Att3.gif
+        attack  70 46 40 70 5
+	frame	data/chars/Toshiro/Att4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/Att5.gif
+
+anim attack2
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/2Att1.gif
+	frame	data/chars/Toshiro/2Att2.gif
+	frame	data/chars/Toshiro/2Att3.gif
+        attack  70 46 40 70 10
+	frame	data/chars/Toshiro/2Att4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/2Att5.gif
+
+anim attack3
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/3Att1.gif
+	frame	data/chars/Toshiro/3Att2.gif
+	frame	data/chars/Toshiro/3Att3.gif
+        attack  70 46 40 70 20 1
+	frame	data/chars/Toshiro/3Att4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/3Att5.gif
+
+anim special
+	energycost 100
+	mponly     1
+	loop	0
+	delay	5
+	offset	58 116
+	frame	data/chars/Toshiro/Spec1.gif
+	frame	data/chars/Toshiro/Spec2.gif
+	frame	data/chars/Toshiro/Spec3.gif
+	frame	data/chars/Toshiro/Spec2.gif
+	frame	data/chars/Toshiro/Spec3.gif
+	frame	data/chars/Toshiro/Spec2.gif
+	frame	data/chars/Toshiro/Spec3.gif
+        move	30
+        attack  0 55 112 61 50 1
+	frame	data/chars/Toshiro/Spec4.gif
+	frame	data/chars/Toshiro/Spec5.gif
+	frame	data/chars/Toshiro/Spec6.gif
+	frame	data/chars/Toshiro/Spec7.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/Duck1.gif
+	frame	data/chars/Toshiro/Duck1.gif
+	frame	data/chars/Toshiro/Duck1.gif
+	frame	data/chars/Toshiro/Duck1.gif
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim freespecial
+	energycost 50
+	mponly     1
+	loop	0
+	delay	7
+	offset	58 116
+	frame	data/chars/Toshiro/Free1.gif
+	frame	data/chars/Toshiro/Free2.gif
+	frame	data/chars/Toshiro/Free3.gif
+	frame	data/chars/Toshiro/Free4.gif
+        attack  82 70 270 46 30 1
+	frame	data/chars/Toshiro/Free5.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim jump
+	loop	0
+	offset	58 116
+	delay	25
+        bbox    40 70 36 46
+	frame	data/chars/Toshiro/jump1.gif
+	frame	data/chars/Toshiro/jump2.gif
+
+anim jumpattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/Att2.gif
+	frame	data/chars/Toshiro/Att3.gif
+	frame	data/chars/Toshiro/Att4.gif
+        attack  69 32 50 86 10 1
+	frame	data/chars/Toshiro/Att5.gif
+
+anim pain
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Toshiro/Free1.gif
+
+anim grab
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim grabattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/Att2.gif
+	frame	data/chars/Toshiro/Att3.gif
+	frame	data/chars/Toshiro/Att4.gif
+	frame	data/chars/Toshiro/Att5.gif
+
+anim grabattack2
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    40 70 36 46
+	sound	data/sounds/Att.wav
+	frame	data/chars/Toshiro/3Att1.gif
+	frame	data/chars/Toshiro/3Att2.gif
+	frame	data/chars/Toshiro/3Att3.gif
+        attack  70 46 40 70 20
+	frame	data/chars/Toshiro/3Att4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Toshiro/3Att5.gif
+
+anim throw
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Throw1.gif
+	frame	data/chars/Toshiro/Throw2.gif
+	frame	data/chars/Toshiro/Throw3.gif
+
+anim rise
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim land
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Toshiro/Duck1.gif
+
+anim fall
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Toshiro/Fall1.gif

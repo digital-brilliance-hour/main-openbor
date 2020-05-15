@@ -1,0 +1,360 @@
+name	Sasuke
+health	100
+speed	7
+running	15	3	2	1
+com  d  f  a  freespecial
+type	player
+shadow	2
+grabdistance 23
+diesound data/chars/Sasuke/die.wav
+icon	data/chars/Sasuke/icon.gif
+bflash  bflash
+dust	 dust
+jumpheight 3
+
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	60 116
+        bbox    41 64 34 52	
+	frame	data/chars/Sasuke/idle00.gif
+  	frame	data/chars/Sasuke/idle01.gif
+	frame	data/chars/Sasuke/idle02.gif
+        frame	data/chars/Sasuke/idle03.gif
+  	frame	data/chars/Sasuke/idle04.gif
+        frame	data/chars/Sasuke/idle03.gif
+	frame	data/chars/Sasuke/idle02.gif
+	frame	data/chars/Sasuke/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	15
+        offset  60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/walk00.gif
+	frame	data/chars/Sasuke/walk01.gif
+	frame	data/chars/Sasuke/walk02.gif
+	frame	data/chars/Sasuke/walk03.gif
+	frame	data/chars/Sasuke/walk04.gif
+	frame	data/chars/Sasuke/walk05.gif
+
+
+anim run
+        loop    1
+        delay   7
+        offset  60 116
+        bbox    41 64 34 52
+        frame   data/chars/Sasuke/run00.gif
+        frame   data/chars/Sasuke/run01.gif
+        frame   data/chars/Sasuke/run02.gif
+        frame   data/chars/Sasuke/run03.gif
+        frame   data/chars/Sasuke/run04.gif
+        frame   data/chars/Sasuke/run05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	60 116
+	frame	data/chars/Sasuke/get00.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get02.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get00.gif
+
+
+anim duck
+	loop	0
+	delay	10
+	offset	60 116
+        bbox    41 99 31 17
+	frame	data/chars/Sasuke/get00.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get02.gif
+
+
+
+anim runattack
+	loop	0
+        delay   2  
+	offset	60 116
+        bbox    41 64 34 52
+        move    3
+        frame	data/chars/Sasuke/rush00.gif	
+        frame	data/chars/Sasuke/rush00.gif
+        frame	data/chars/Sasuke/rush00.gif
+        frame	data/chars/Sasuke/rush01.gif
+        frame	data/chars/Sasuke/rush01.gif
+        frame	data/chars/Sasuke/rush01.gif
+        blast   55 89 33 7 14 1             
+        frame	data/chars/Sasuke/rush02.gif
+        frame	data/chars/Sasuke/rush02.gif
+        frame	data/chars/Sasuke/rush02.gif
+        blast   0
+        move    0
+        delay   30
+        frame	data/chars/Sasuke/rush02.gif
+        delay   7
+        frame	data/chars/Sasuke/rush03.gif
+
+
+anim attack1
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+        sound   data/chars/Sasuke/ha.wav
+        frame	data/chars/Sasuke/jab00.gif
+        attack  52 79 42 11 8
+        frame	data/chars/Sasuke/jab01.gif
+        frame	data/chars/Sasuke/jab02.gif
+        frame	data/chars/Sasuke/upper00.gif
+
+
+anim attack2
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/kick00.gif
+        attack	32 79 52 31 14
+	frame	data/chars/Sasuke/kick01.gif
+        frame	data/chars/Sasuke/kick02.gif
+	frame	data/chars/Sasuke/kick03.gif
+
+
+
+anim attack3
+	loop	0
+        delay   7  
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/punch00.gif
+	frame	data/chars/Sasuke/punch01.gif
+        attack	57 82 42 9 18 1
+	frame	data/chars/Sasuke/punch02.gif
+	frame	data/chars/Sasuke/punch03.gif
+	frame	data/chars/Sasuke/punch04.gif
+
+        
+anim freespecial
+	loop	0
+	delay	7
+	offset	60 116
+        sound   data/chars/Sasuke/katon.wav
+        frame   data/chars/Sasuke/katon00.gif
+        burn    86 77 84 23 20 1 
+        frame   data/chars/Sasuke/katon01.gif
+        burn    86 71 150 35 20 1
+        frame   data/chars/Sasuke/katon02.gif
+        burn    86 53 187 58 20 1
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon06.gif
+        burn    0
+        frame   data/chars/Sasuke/katon07.gif
+        delay   30
+        frame   data/chars/Sasuke/katon00.gif
+
+
+anim special
+	loop	0
+	delay	10
+	offset	60 116
+        frame   data/chars/Sasuke/chdri00.gif
+        frame   data/chars/Sasuke/chdri01.gif
+        frame   data/chars/Sasuke/chdri02.gif
+        frame   data/chars/Sasuke/chdri03.gif
+	delay	7
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri03.gif
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri03.gif
+        frame	data/chars/Sasuke/chdri04.gif
+        frame	data/chars/Sasuke/chdri05.gif
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri07.gif
+        frame	data/chars/Sasuke/chdri08.gif
+        blast   37 82 52 41 30 1
+        frame	data/chars/Sasuke/chdri09.gif
+        frame	data/chars/Sasuke/chdri10.gif
+        frame	data/chars/Sasuke/chdri11.gif
+        frame	data/chars/Sasuke/chdri12.gif
+        frame	data/chars/Sasuke/chdri13.gif
+        frame	data/chars/Sasuke/chdri14.gif
+        blast   0
+        frame	data/chars/Sasuke/chdri15.gif
+        move    3
+        blast   9 82 66 35 30 1
+        frame	data/chars/Sasuke/chdri16.gif
+        frame	data/chars/Sasuke/chdri17.gif
+        delay   3
+        move    20
+        blast   31 69 79 37 30 1
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        move    3
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        delay   7
+        move    0
+        frame	data/chars/Sasuke/chdri20.gif
+        frame	data/chars/Sasuke/chdri21.gif
+        frame	data/chars/Sasuke/chdri22.gif
+        blast   0
+        delay   30
+        frame	data/chars/Sasuke/chdri23.gif
+
+
+
+
+anim jump
+	loop	0
+	offset	60 116
+	delay	20
+        bbox    49 68 26 29
+	frame	data/chars/Sasuke/jump00.gif
+	frame	data/chars/Sasuke/jump01.gif
+
+
+anim jumpattack
+	loop	0
+	offset	60 116
+	delay	10
+        bbox    49 68 26 29
+        sound   data/chars/Sasuke/ha2.wav
+	frame	data/chars/Sasuke/jatk00.gif
+        attack  40 80 48 26 14 1
+	frame	data/chars/Sasuke/jatk01.gif
+	frame	data/chars/Sasuke/jatk02.gif
+
+
+anim jumpattack2
+	loop	0
+	offset	60 116
+	delay	10
+        bbox    49 68 26 29
+        sound   data/chars/Sasuke/ha2.wav
+	frame	data/chars/Sasuke/jatk00.gif
+        attack  52 63 29 53 14 1
+	frame	data/chars/Sasuke/jatk01.gif
+	frame	data/chars/Sasuke/jatk02.gif
+
+
+
+anim grab
+	loop	0
+        offset  56 116
+	delay	1000
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/jab02.gif
+
+
+
+anim grabattack
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/kick00.gif
+        attack	32 79 52 31 14
+	frame	data/chars/Sasuke/kick01.gif
+        frame	data/chars/Sasuke/kick02.gif
+	frame	data/chars/Sasuke/kick03.gif
+
+
+anim grabattack2
+	loop	0
+        offset  56 116
+	delay	7
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/upper00.gif
+        frame	data/chars/Sasuke/upper01.gif
+        attack  55 65 38 35 14 1
+	frame	data/chars/Sasuke/upper02.gif
+	delay	30
+        frame	data/chars/Sasuke/upper03.gif
+	delay	7
+	frame	data/chars/Sasuke/upper00.gif
+
+
+anim throw
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Sasuke/throw00.gif
+        frame   data/chars/Sasuke/throw01.gif
+        delay   30
+        frame   data/chars/Sasuke/throw02.gif
+
+
+anim pain
+	loop	0
+        offset  60 116
+	delay	30
+        bbox    41 64 34 52
+        sound   data/chars/Sasuke/ugh.wav
+	frame   data/chars/Sasuke/pain.gif
+
+
+anim fall
+	loop	0
+        offset  60 110
+	delay	30
+        attack	47 69 18 34 4 1
+        sound   data/chars/Sasuke/ugh.wav
+	frame   data/chars/Sasuke/fall00.gif
+	delay	20        
+	frame   data/chars/Sasuke/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	60 116
+	delay	10
+        frame   data/chars/Sasuke/get01.gif
+        frame   data/chars/Sasuke/rise.gif
+
+
+anim land
+	loop	0
+	delay	10
+	offset	60 116
+	frame	data/chars/Sasuke/get02.gif
+
+
+
+anim block
+        loop	0
+	delay	30
+	offset	60 116
+        bbox    48 54 19 63
+	frame	data/chars/Sasuke/block.gif
+
+
+anim burn
+	loop	1
+	offset	60 116	
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+
+

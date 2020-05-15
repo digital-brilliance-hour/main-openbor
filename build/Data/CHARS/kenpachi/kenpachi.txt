@@ -1,0 +1,221 @@
+name	Kenpachi
+health	100
+mp	100
+speed	15
+type	player
+shadow	0
+cantgrab 1
+
+
+anim select
+	loop	1
+	offset	117 224
+	frame	data/chars/Kenpachi/Select.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Kenpachi/Idle1.gif
+
+anim walk
+        loop    1
+        delay   7
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Kenpachi/walk1.gif
+	frame	data/chars/Kenpachi/walk2.gif
+	frame	data/chars/Kenpachi/walk3.gif
+	frame	data/chars/Kenpachi/walk4.gif
+	frame	data/chars/Kenpachi/walk5.gif
+	frame	data/chars/Kenpachi/walk6.gif
+	frame	data/chars/Kenpachi/walk7.gif
+	frame	data/chars/Kenpachi/walk8.gif
+
+anim get
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Duck1.gif
+
+anim duck
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Duck1.gif
+
+anim attack1
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/Att1.gif
+	frame	data/chars/Kenpachi/Att2.gif
+        attack  69 32 50 86 5
+	frame	data/chars/Kenpachi/Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/Att4.gif
+
+anim attack2
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/2Att1.gif
+	frame	data/chars/Kenpachi/2Att2.gif
+        attack  69 32 50 86 10
+	frame	data/chars/Kenpachi/2Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/2Att4.gif
+
+anim attack3
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/3Att1.gif
+	frame	data/chars/Kenpachi/3Att2.gif
+        attack  69 32 50 86 20 1
+	frame	data/chars/Kenpachi/3Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/3Att4.gif
+
+anim special
+	energycost 100
+	mponly     1
+	loop	0
+	delay	15
+	offset	117 224
+        attack  61 0 111 223 20 1
+	frame	data/chars/Kenpachi/Select.gif
+        attack  0 0 0 0 0 0
+	delay	15
+        attack  61 0 111 223 20
+	frame	data/chars/Kenpachi/Select.gif
+        attack  0 0 0 0 0 0
+	delay	15
+        attack  61 0 111 223 20
+	frame	data/chars/Kenpachi/Select.gif
+        attack  0 0 0 0 0 0
+	delay	15
+        attack  61 0 111 223 20
+	frame	data/chars/Kenpachi/Select.gif
+        attack  0 0 0 0 0 0
+	delay	15
+        attack  61 0 111 223 20 1
+	frame	data/chars/Kenpachi/Select.gif
+
+anim freespecial
+	energycost 50
+	mponly     1
+	loop	0
+	delay	15
+	offset	58 116
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/3Att1.gif
+	frame	data/chars/Kenpachi/3Att2.gif
+        attack  69 32 50 86 10
+	frame	data/chars/Kenpachi/3Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/3Att4.gif
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/2Att1.gif
+	frame	data/chars/Kenpachi/2Att2.gif
+        attack  69 32 50 86 10
+	frame	data/chars/Kenpachi/2Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/2Att4.gif
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/Att1.gif
+	frame	data/chars/Kenpachi/Att2.gif
+        attack  69 32 50 86 20 1
+	frame	data/chars/Kenpachi/Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/Att4.gif
+
+anim jump
+	loop	1
+	offset	58 116
+	delay	20
+        bbox    50 65 20 40
+	frame	data/chars/Kenpachi/jump1.gif
+	frame	data/chars/Kenpachi/jump2.gif
+
+anim jumpattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+        attack  69 32 50 86 10 1
+	frame	data/chars/Kenpachi/Att1.gif
+	frame	data/chars/Kenpachi/Att2.gif
+	frame	data/chars/Kenpachi/Att2J.gif
+
+anim pain
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Kenpachi/Free1.gif
+
+anim grab
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Duck1.gif
+
+anim grabattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/Att1.gif
+	frame	data/chars/Kenpachi/Att2.gif
+        attack  69 32 50 86 5
+	frame	data/chars/Kenpachi/Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/Att4.gif
+
+anim grabattack2
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Kenpachi/3Att1.gif
+	frame	data/chars/Kenpachi/3Att2.gif
+        attack  69 32 50 86 20 1
+	frame	data/chars/Kenpachi/3Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Kenpachi/3Att4.gif
+
+anim throw
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Throw1.gif
+	frame	data/chars/Kenpachi/Throw2.gif
+	frame	data/chars/Kenpachi/Throw3.gif
+
+anim rise
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Duck1.gif
+
+anim land
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Kenpachi/Duck1.gif
+
+anim fall
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Kenpachi/Fall1.gif

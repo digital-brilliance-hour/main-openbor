@@ -1,0 +1,186 @@
+name	BEE
+health	20
+speed	18
+type	enemy
+shadow  2
+nolife   1
+falldie  1 
+dust   dust
+
+anim respawn
+	loop	0
+	offset	90 164
+	delay	3
+	offset	90 170
+	frame	data/chars/bee/idle2.gif
+	offset	90 175
+	frame	data/chars/bee/idle2.gif
+	offset	90 180
+	frame	data/chars/bee/idle.gif
+	offset	90 185
+	frame	data/chars/bee/idle.gif
+	offset	90 190
+	frame	data/chars/bee/idle2.gif
+	offset	90 192
+	frame	data/chars/bee/idle2.gif
+
+
+anim idle
+	loop	1
+	offset	90 192
+	bbox	75 130 25 70
+	delay	4
+	frame	data/chars/bee/idle.gif
+	frame	data/chars/bee/idle2.gif
+
+
+
+
+anim walk
+	loop	1
+	offset	90 192
+	bbox	75 130 25 70
+	delay	4
+	frame	data/chars/bee/idle.gif
+	frame	data/chars/bee/idle2.gif
+
+
+
+anim pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/robo/fall.wav
+        move    -2
+	frame	data/chars/bee/pain.gif
+	offset  87 192
+        move    -2
+	frame	data/chars/bee/pain.gif
+	offset  89 192
+        move    0
+	delay   40
+	frame	data/chars/bee/pain.gif
+
+anim spain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/robo/fall.wav
+	frame	data/chars/bee/pain.gif
+	offset  87 192
+	frame	data/chars/bee/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/bee/pain.gif
+
+anim grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/bee/pain.gif
+	offset  87 192
+	frame	data/chars/bee/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/bee/pain.gif
+
+anim bpain
+	loop	0
+	delay	6
+	offset	90 192
+        sound   data/chars/robo/fall.wav
+	bbox	65 102 46 76
+	frame	data/chars/bee/fall4.gif
+	offset  87 192
+	frame	data/chars/bee/fall4.gif
+	offset  89 192
+	frame	data/chars/bee/fall4.gif
+	offset  87 192
+	frame	data/chars/bee/fall4.gif
+	offset  89 192
+	frame	data/chars/bee/fall4.gif
+	offset  87 192
+	frame	data/chars/bee/fall4.gif
+	offset  89 192
+	frame	data/chars/bee/fall4.gif
+	offset  87 192
+	frame	data/chars/bee/fall4.gif
+	offset  89 192
+	delay   50
+	frame	data/chars/bee/fall4.gif
+
+anim fall
+	loop	0
+	offset	90 192
+	delay   30
+        move    -5
+        sound   data/chars/robo/fall.wav
+	frame	data/chars/bee/fall1.gif
+	attack  85 125 10 50 5 1 
+	frame	data/chars/bee/fall1.gif
+	attack  0 0 0 0 0 0 0 0 0
+	delay   40
+	frame	data/chars/bee/fall4.gif
+
+anim rise
+	loop	0
+	offset	90 164
+	delay	3
+	frame	data/chars/bee/fall1.gif
+	offset	90 170
+	frame	data/chars/bee/idle2.gif
+	offset	90 175
+	frame	data/chars/bee/idle2.gif
+	offset	90 180
+	frame	data/chars/bee/idle.gif
+	offset	90 185
+	frame	data/chars/bee/idle.gif
+	offset	90 190
+	frame	data/chars/bee/idle2.gif
+	offset	90 192
+	frame	data/chars/bee/idle2.gif
+	
+
+anim attack1
+	range	10 110
+	loop	0
+	delay	3
+	offset	90 192
+	bbox	75 130 25 70
+        move    8
+	frame	data/chars/bee/a1.gif
+	attack  92 140 30 25 5 1
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+	frame	data/chars/bee/a2.gif
+        move    0
+	attack  0 0 0 0 0 0
+	frame	data/chars/bee/a1.gif
+	frame	data/chars/bee/a1.gif
+
+anim death
+	loop	0
+	delay	11
+	offset	74  70
+        nodieblink  2 
+	sound	data/sounds/boom.wav
+	frame	data/chars/misc/b2.gif
+	frame	data/chars/misc/b3.gif
+	frame	data/chars/misc/b4.gif
+	frame	data/chars/misc/b5.gif
+	frame	data/chars/misc/b6.gif
+	frame	data/chars/misc/b7.gif
+	frame	data/chars/misc/b8.gif
+	frame	data/chars/misc/b9.gif
+	frame	data/chars/misc/b91.gif
+	frame	data/chars/misc/b92.gif
+

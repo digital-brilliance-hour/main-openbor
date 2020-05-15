@@ -1,0 +1,111 @@
+
+name	Pirate
+health	50
+speed	10
+type	enemy
+shadow	0
+icon	data/chars/Pirate/icon.gif
+load nife
+knife nife
+candamage player npc obstacle
+hostile npc player
+remap	data/chars/Pirate/idle01.gif data/chars/Pirate/map1.gif
+subject_to_screen 1
+
+anim spawn
+	loop	0
+	delay	7
+	offset	46 78
+	bbox	39 47 16 23
+  	frame	data/chars/Pirate/come01.gif
+  	frame	data/chars/Pirate/come02.gif  	
+  	frame	data/chars/Pirate/come03.gif
+        frame	data/chars/Pirate/come04.gif
+  	frame	data/chars/Pirate/come05.gif 
+
+anim idle
+	loop	1
+	delay	15
+	offset	46 78
+	bbox	39 47 16 23		
+  	frame	data/chars/Pirate/idle01.gif
+  	frame	data/chars/Pirate/idle02.gif  	
+  	frame	data/chars/Pirate/idle03.gif
+  	frame	data/chars/Pirate/idle02.gif 
+
+anim walk
+	loop	1
+	delay	10
+	offset	46 78
+	bbox	39 47 16 23	
+	frame	data/chars/Pirate/walk01.gif
+	frame	data/chars/Pirate/walk02.gif
+	frame	data/chars/Pirate/walk03.gif
+	frame	data/chars/Pirate/walk04.gif
+	frame	data/chars/Pirate/walk05.gif	
+	frame	data/chars/Pirate/walk06.gif	
+
+anim attack1
+	loop	0
+	delay	5
+	offset	46 78
+	bbox	39 47 16 23
+	frame	data/chars/Pirate/punch01.gif
+	frame	data/chars/Pirate/punch02.gif
+	sound   data/chars/Marine/sword.wav
+        attack  57 60 17 13 10
+	frame	data/chars/Pirate/punch03.gif
+        attack  62 51 33 17 10
+	frame	data/chars/Pirate/punch04.gif
+        attack  63 55 28 12 10
+        frame	data/chars/Pirate/punch05.gif
+        attack  63 55 28 12 10
+        frame	data/chars/Pirate/punch06.gif
+        frame	data/chars/Pirate/punch07.gif
+        frame	data/chars/Pirate/punch08.gif
+
+anim attack2
+	loop	0
+	delay	7
+	offset	46 78
+	bbox	39 47 16 23
+	frame	data/chars/Pirate/cut01.gif
+	offset	46 108
+	frame	data/chars/Pirate/cut02.gif
+	offset	46 118
+	frame	data/chars/Pirate/cut03.gif
+	sound   data/chars/Marine/sword.wav
+        attack  59 38 20 42 20
+	offset	46 98
+        move    10
+	frame	data/chars/Pirate/cut04.gif
+        attack  59 38 20 42 20
+	offset	46 78
+	frame	data/chars/Pirate/cut04.gif
+	frame	data/chars/Pirate/cut05.gif
+anim pain
+	loop	0
+	offset	46 78
+	bbox	39 47 16 23
+	delay	7
+	frame   data/chars/Pirate/pain01.gif
+	frame   data/chars/Pirate/pain02.gif
+
+anim fall
+	loop	0
+	offset	46 78
+	delay	10
+	frame   data/chars/Pirate/fall01.gif
+	frame   data/chars/Pirate/fall01.gif
+	offset	42 77
+	delay	20
+	frame   data/chars/Pirate/fall02.gif
+
+
+anim rise
+	loop	0
+	offset	46 78	
+	delay	5
+	frame	data/chars/Pirate/punch03.gif
+	frame	data/chars/Pirate/punch02.gif
+

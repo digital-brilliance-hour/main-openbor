@@ -1,0 +1,124 @@
+
+name	Sogeking
+health	40
+speed	30
+type	enemy
+shadow	3
+cantgrab 1
+icon	data/chars/Soge/icon.gif
+subtype chase
+load bird
+knife bird
+
+candamage player npc
+
+anim spawn
+	loop	0
+        delay   8
+
+        sound   data/chars/Soge/intro.wav
+        offset	80 190	
+        frame   data/chars/Soge/walk03.gif
+        offset	75 170	
+        frame   data/chars/Soge/walk03.gif
+        offset	70 160	
+        frame   data/chars/Soge/walk03.gif
+        offset	65 150	
+        frame   data/chars/Soge/walk03.gif
+        offset	60 140	
+        frame   data/chars/Soge/walk03.gif
+        offset	55 130	
+        frame   data/chars/Soge/walk03.gif
+        offset	50 110	
+        frame   data/chars/Soge/walk03.gif
+        offset	45 90	
+        frame   data/chars/Soge/walk03.gif
+	offset	38 77
+        sound   data/chars/Soge/land.wav
+        frame   data/chars/Soge/walk03.gif
+        frame   data/chars/Soge/walk03.gif	
+        delay   10
+	frame	data/chars/Soge/win01.gif
+  	frame	data/chars/Soge/win02.gif
+	frame	data/chars/Soge/win03.gif
+  	frame	data/chars/Soge/win04.gif
+	frame	data/chars/Soge/win01.gif
+  	frame	data/chars/Soge/win02.gif
+	frame	data/chars/Soge/win03.gif
+  	frame	data/chars/Soge/win04.gif
+	frame	data/chars/Soge/win01.gif
+  	frame	data/chars/Soge/win02.gif
+	frame	data/chars/Soge/win03.gif
+  	frame	data/chars/Soge/win04.gif
+	frame	data/chars/Soge/win01.gif
+  	frame	data/chars/Soge/win02.gif
+	frame	data/chars/Soge/win03.gif
+  	frame	data/chars/Soge/win04.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	38 27 19 40	
+	frame	data/chars/Soge/idle01.gif
+  	frame	data/chars/Soge/idle02.gif
+	frame	data/chars/Soge/idle03.gif
+
+
+anim walk
+	loop	1
+	delay	5
+	offset	38 78
+	bbox	37 49 11 17
+	frame	data/chars/Soge/walk01.gif
+  	frame	data/chars/Soge/walk02.gif
+	frame	data/chars/Soge/walk03.gif
+  	frame	data/chars/Soge/walk04.gif
+	frame	data/chars/Soge/walk05.gif
+  	frame	data/chars/Soge/walk06.gif
+	frame	data/chars/Soge/walk07.gif
+  	frame	data/chars/Soge/walk08.gif
+
+anim attack1
+	loop	0
+	delay	10   
+	offset	52 78
+        bbox	46 46 12 21
+	frame	data/chars/Soge/fire01.gif
+	sound   data/chars/Soge/boom.wav
+	frame	data/chars/Soge/fire02.gif
+	frame	data/chars/Soge/fire03.gif
+	frame	data/chars/Soge/fire04.gif
+        throwframe 1 28
+	frame	data/chars/Soge/fire05.gif
+	frame	data/chars/Soge/fire06.gif
+
+anim pain
+
+	loop	0
+	offset	38 77
+	bbox	38 27 19 40
+	delay	10
+	sound   data/chars/Soge/pain.wav
+        frame   data/chars/Soge/pain.gif
+
+anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	11 46 29 12 1
+	frame   data/chars/Soge/fall01.gif
+	frame   data/chars/Soge/fall02.gif
+
+
+
+anim rise
+	loop	0
+	offset	38 77
+	delay	5
+        frame   data/chars/Soge/rise01.gif
+	frame   data/chars/Soge/rise02.gif
+	frame   data/chars/Soge/rise03.gif
+
+
+
