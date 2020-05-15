@@ -1,0 +1,30 @@
+name	lift3
+type	none
+health 100
+load zombiel
+load zombie2l
+facing 1
+setlayer 1
+lifespan 75
+falldie 1
+nodieblink 3
+anim spawn
+	delay	50
+	offset	53 146
+        bbox    0 0 0 0
+        delay  300
+        frame	data/bgs/lv2/lift07
+        delay 10
+        frame	data/bgs/lv2/lift08
+        frame	data/bgs/lv2/lift09
+        frame	data/bgs/lv2/lift11
+        delay   10
+        frame	data/bgs/lv2/lift01
+anim idle
+        loop 1
+	delay	50
+	offset	53 146
+        bbox    0 0 0 0
+        delay   10
+        frame	data/bgs/lv2/lift01        
+

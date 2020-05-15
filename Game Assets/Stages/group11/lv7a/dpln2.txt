@@ -1,0 +1,50 @@
+name	dpln2
+type	none
+setlayer 200
+load expl1
+animationscript data/scripts/shoot.c
+anim idle
+        offset  250 111
+        delay   5
+        platform 1 1 1 1 1 1
+        seta 1
+        frame	data/chars/misc/empty
+        delay 15
+        drawmethod 1024 1024 0 0 0 5 
+        frame	data/chars/bosf/b1
+        drawmethod 1024 1024 0 0 0 6 
+        frame	data/chars/bosf/b1
+        drawmethod 1024 1024 0 0 0 1 
+        frame	data/chars/bosf/b1
+        offset 0 0
+        delay 20
+        drawmethod 256 256
+        @cmd shoot "expl1" 0 150 1
+        @cmd shoot "expl1" 30 120 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 60 130 1
+        @cmd shoot "expl1" 0 100 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 0 85 1
+        @cmd shoot "expl1" 30 80 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 0 75 1
+        @cmd shoot "expl1" 60 60 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 0 50 1
+        @cmd shoot "expl1" 30 30 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 60 50 1
+        @cmd shoot "expl1" 0 40 1
+        frame	data/chars/misc/empty
+        @cmd shoot "expl1" 0 25 1
+        @cmd shoot "expl1" 60 0 1
+        frame	data/chars/misc/empty
+	@cmd shoot "expl1" 0 25 1
+        @cmd shoot "expl1" 61 0 1
+        frame	data/chars/misc/empty
+        frame	data/chars/misc/empty
+
+        
+        
+        

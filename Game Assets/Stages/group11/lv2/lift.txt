@@ -1,0 +1,95 @@
+name	lift
+type	none
+health 100
+load zombiel
+load zombie2l
+facing 1
+setlayer 1
+lifespan 75
+falldie 1
+nodieblink 3
+animationscript data/scripts/spawn.c
+palette data/bgs/lv2/lift01
+anim idle
+        loop 1
+	delay	50
+	offset	53 146
+        bbox    0 0 0 0
+        frame	data/bgs/lv2/lift0106
+    	frame	data/bgs/lv2/lift01
+        delay 10
+        frame	data/bgs/lv2/lift02
+        frame	data/bgs/lv2/lift03
+        frame	data/bgs/lv2/lift04
+        frame	data/bgs/lv2/lift05
+        delay  30
+        frame	data/bgs/lv2/lift06
+        delay 300
+        @cmd spawn01 "zombiel" 0 0 2
+        frame	data/bgs/lv2/lift07
+        delay 10
+        frame	data/bgs/lv2/lift08
+        frame	data/bgs/lv2/lift09
+        frame	data/bgs/lv2/lift10
+        frame	data/bgs/lv2/lift11
+        delay 50
+        frame	data/bgs/lv2/lift01
+        frame	data/bgs/lv2/lift0107
+        frame	data/bgs/lv2/lift0108
+        frame	data/bgs/lv2/lift0109
+        frame	data/bgs/lv2/lift0110
+        frame	data/bgs/lv2/lift0111
+        frame	data/bgs/lv2/lift0112
+        delay  700
+        frame	data/bgs/lv2/lift01
+        delay 50
+        frame	data/bgs/lv2/lift0101
+        frame	data/bgs/lv2/lift0102
+        frame	data/bgs/lv2/lift0103
+        frame	data/bgs/lv2/lift0104
+        frame	data/bgs/lv2/lift0105
+        frame	data/bgs/lv2/lift0106
+    	frame	data/bgs/lv2/lift01
+        delay 10
+        frame	data/bgs/lv2/lift02
+        frame	data/bgs/lv2/liftb1
+        frame	data/bgs/lv2/liftb2
+        frame	data/bgs/lv2/liftb3
+        delay  30
+        frame	data/bgs/lv2/liftb4
+        delay 300
+        @cmd spawn01 "zombiel" 0 0 2
+        @cmd spawn01 "zombie2l" 28 0 2
+        frame	data/bgs/lv2/lift07
+        delay 10
+        frame	data/bgs/lv2/lift08
+        frame	data/bgs/lv2/lift09
+        frame	data/bgs/lv2/lift10
+        frame	data/bgs/lv2/lift11
+        delay 50
+        frame	data/bgs/lv2/lift01
+        frame	data/bgs/lv2/lift0107
+        frame	data/bgs/lv2/lift0108
+        frame	data/bgs/lv2/lift0109
+        frame	data/bgs/lv2/lift0110
+        frame	data/bgs/lv2/lift0111
+        frame	data/bgs/lv2/lift0112
+        delay  700
+        frame	data/bgs/lv2/lift01
+        delay 50
+        frame	data/bgs/lv2/lift0101
+        frame	data/bgs/lv2/lift0102
+        frame	data/bgs/lv2/lift0103
+        frame	data/bgs/lv2/lift0104
+        frame	data/bgs/lv2/lift0105
+anim death
+        offset	53 146
+        bbox    0 0 0 0
+        delay 10
+        frame	data/bgs/lv2/lift01
+        frame	data/bgs/lv2/lift11
+        frame	data/bgs/lv2/lift10
+        frame	data/bgs/lv2/lift09
+        frame	data/bgs/lv2/lift08
+        frame	data/bgs/lv2/lift07
+        

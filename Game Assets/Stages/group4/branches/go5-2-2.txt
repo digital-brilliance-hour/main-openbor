@@ -1,0 +1,40 @@
+name	 GO5-2-2
+type	none
+
+
+
+
+onspawnscript data/bgs/branches/end5-2-1.c
+animationscript data/scripts/obstacle.c 
+
+
+
+anim idle
+	delay	10
+	offset	1 1
+	frame	data/chars/misc/empty.png
+        @cmd    anichange "ANI_FREESPECIAL1" 0
+	frame	data/chars/misc/empty.png
+
+
+
+anim freespecial1
+	delay	2
+	offset	1 1
+@script
+ 
+      changeopenborvariant("slowmotion", 0);
+@end_script
+	frame	data/chars/misc/empty.png
+@script
+
+  jumptobranch("Stage5-2-2", 1);
+@end_script
+	frame	data/chars/misc/empty.png
+
+
+
+
+
+
+

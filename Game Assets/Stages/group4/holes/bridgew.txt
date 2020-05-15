@@ -1,0 +1,838 @@
+#West Bridge
+music		data/music/saviour.bor
+bossmusic	data/music/2boss.bor
+settime         70
+
+background	data/bgs/bridge/back.gif
+panel		data/bgs/bridge/bridge.gif
+
+direction       leftright
+order	        aaaaaaaaaa
+spawn1          30 15 300
+spawn2          30 55 300
+
+hole	        800 200 1 45 299 255 45
+hole	        1150 240 44 1 255 299 45
+hole	        1500 200 1 45 299 255 45
+
+#---------------------
+
+light   -64 64
+at      0
+
+wait
+at      0
+
+spawn	Caine
+alias   Jeger
+health	150
+map     3
+aggression 15
+item    grape
+coords	-60 200
+at	0
+
+spawn	Mary
+alias   Kuroni
+health	150
+map     4
+aggression 15
+2pitem  burger
+coords	-60 220
+at	0
+
+spawn	MayLee
+alias   Betty
+health	150
+map     1
+aggression 15
+item    emerald
+coords	-60 160
+at	0
+
+spawn	Joe
+alias   Garuda
+health	150
+map     0
+aggression 15
+2pitem  emerald
+coords	-60 180
+at	0
+
+spawn	Thug
+map     1
+coords	-60 220
+at	200
+
+spawn	Thug
+map     0
+coords	-60 160
+at	200
+
+spawn	Rider
+map     6
+flip    0
+coords	-100 225
+at	200
+
+spawn	BikerL
+alias   Flash
+map     6
+flip    1
+coords	460 175
+at	200
+
+spawn	ThugU
+map     5
+coords	360 215
+at	400
+
+spawn	ThugU
+map     2
+coords	360 175
+at	400
+
+blockade 550
+at      550
+
+wait
+at	550
+
+group   3 3
+at      550
+
+spawn	Storm
+health  10
+map     5
+flip    1
+item    topaz
+coords	-100 170
+at	550
+
+spawn	Rider
+health  100
+map     8
+flip    1
+coords	460 190
+at	550
+
+spawn	Storm
+health  10
+map     5
+flip    1
+item    topaz
+coords	-100 220
+at	550
+
+spawn	Thug
+health  70
+map     0
+coords	-60 195
+at	550
+
+spawn	BikerT
+alias   Mach
+map     5
+coords	-100 215
+at	550
+
+spawn	Thug
+health  70
+map     2
+coords	-60 195
+at	550
+
+spawn	BikerL
+alias   Flash
+map     0
+flip    1
+coords	460 170
+at	550
+
+group   100 100
+at      600
+
+blockade 700
+at      700
+
+wait
+at	700
+
+group   1 3
+at      700
+
+spawn	TopanS
+alias   Topan
+flip    0
+map     5
+item	cake
+coords	360 165
+at      700
+
+spawn	TopanS
+alias   Topan
+flip    1
+map     5
+coords	-60 195
+at      700
+
+spawn	TopanS
+alias   Topan
+flip    0
+map     5
+item	cake
+coords	360 225
+at      700
+
+group   100 100
+at      700
+
+spawn	Mary
+health  100
+map     1
+coords	360 210
+at	700
+
+spawn	Angela
+health  100
+flip    1
+map     2
+coords	-100 170
+at	700
+
+spawn	Mary
+health  100
+map     0
+coords	400 180
+at	700
+
+spawn	Angela
+health  100
+flip    1
+map     5
+coords	-100 220
+at	700
+
+spawn	Fence
+health  20
+flip	0
+item    apple
+coords	-110 170
+at	750
+
+spawn	Fence
+health  20
+flip	0
+2pitem  donut
+coords	-110 220
+at	800
+
+spawn	HoleUp2
+flip    1
+coords	-380 155
+at	800
+
+spawn	PatchB1
+flip    1
+coords	-330 200
+at	800
+
+spawn	Thug
+map     3
+coords	360 210
+at	900
+
+spawn   Vanessa
+health  80
+map     0
+coords	360 180
+at	900
+
+spawn	Robert
+map     4
+coords	-60 220
+at	1000
+
+spawn	Fence
+health  50
+flip    0
+coords	-120 220
+at      1000
+
+spawn	Thug
+map     0
+coords	360 210
+at	1000
+
+spawn	HoleLow2
+flip    1
+coords	-380 155
+at	1150
+
+blockade 1200
+at      1200
+
+wait
+at	1200
+
+group   4 4
+at      1200
+
+spawn	Caine
+map     0
+2pitem	1up
+coords	-60 180
+at	1200
+
+spawn	Angel
+health  70
+map     1
+coords	360 230
+at	1200
+
+spawn	Thug
+map     3
+coords	360 220
+at	1200
+
+group   100 100
+at      1300
+
+spawn	Fence
+health  50
+flip    0
+coords	-120 170
+at	1300
+
+spawn   Joe
+alias   Crow
+map     4
+item    gold
+coords	-60 165
+at	1300
+
+spawn	Thug
+map     1
+coords	360 225
+at	1300
+
+spawn	HoleUp2
+flip    1
+coords	-380 155
+at	1500
+
+spawn	PatchB2
+flip    1
+coords	-330 201
+at	1500
+
+spawn	Garcia
+alias   Surger
+map     4
+aggression 15
+coords	360 225
+at	1500
+
+spawn	Mary
+map     3
+coords	-150 210
+at	1500
+
+spawn	Donna
+alias   Martina
+health	70
+map     2
+aggression 15
+coords	-60 165
+at	1500
+
+blockade 1700
+at      1700
+
+wait
+at	1700
+
+group   1 1
+at      1700
+
+group   1 2
+at      1700
+
+spawn	TopanS
+alias   Topan
+flip    0
+map     5
+2pitem	intan
+coords	360 165
+at      1700
+
+spawn	TopanS
+alias   Topan
+flip    1
+map     5
+item	intan
+coords	-60 220
+at      1700
+
+spawn	Caine
+map     3
+item	1up
+coords	400 165
+at	1700
+
+spawn	Rini
+health  70
+map     2
+aggression 15
+coords	-60 220
+at	1700
+
+spawn	Vanessa
+alias   Gloria
+map     2
+coords	-60 230
+at	1700
+
+spawn	Vanessa
+alias   Cery
+map     2
+2pitem	gold
+coords	360 175
+at	1700
+
+group   100 100
+at      1800
+
+spawn	Fence
+health  20
+2pitem  coker
+flip	0
+coords	-100 220
+at	1850
+
+spawn	Joe
+alias   Mallard
+map     3
+coords	360 165
+at	1850
+
+spawn	Thug
+map     6
+coords	-60 215
+at	1850
+
+spawn	Fence
+health  20
+item    coker
+flip	0
+coords	-100 170
+at	1850
+
+spawn	Robert
+map     2
+coords	-160 220
+at	2000
+
+spawn	Joe
+alias   Owl
+map     1
+coords	-60 180
+at	2000
+
+blockade 2100
+at      2100
+
+wait
+at	2100
+
+group   1 1
+at      2100
+
+group   100 100
+at      2100
+
+spawn	Caine
+health  80
+map     1
+aggression 10
+coords	-60 210
+at	2100
+
+spawn	Caine
+health  80
+map     4
+aggression 10
+coords	-60 170
+at	2100
+
+spawn   Mary
+alias   Andini
+map     1
+aggression 10
+item    ring
+coords	360 220
+at	2100
+
+spawn   Mary
+alias   Adinda
+map     2
+aggression 10
+2pitem  ring
+coords	-60 195
+at	2100
+
+blockade 2300
+at      2300
+
+spawn   MayLee
+alias   Dini
+map     0
+aggression 10
+coords	400 195
+at	2300
+
+spawn	Gale
+alias   Rain
+map     2
+flip    1
+coords	-100 170
+at	2300
+
+spawn	Storm
+health  10
+map     1
+flip    1
+item    burger
+coords	-100 195
+at	2300
+
+spawn	Gale
+alias   Hujan
+map     1
+flip    1
+coords	-100 220
+at	2300
+
+blockade 2450
+at      2450
+
+spawn	BikerT
+map     4
+flip    0
+alias   Badai
+coords	400 195
+at	2450
+
+wait
+at	2450
+
+group   1 1
+at      2450
+
+group   1 3
+at      2450
+
+spawn	Rider
+map     6
+coords	460 170
+at	2450
+
+spawn	Rider
+map     6
+coords	460 195
+at	2450
+
+spawn	Rider
+map     6
+coords	460 220
+at	2450
+
+spawn	BikerL
+alias   Lightning
+map     8
+flip    1
+coords	-100 170
+at	2450
+
+spawn	BikerL1
+alias   Lightning
+map     3
+flip    1
+coords	-100 195
+at	2450
+
+spawn	BikerL
+alias   Lightning
+map     8
+flip    1
+coords	-100 215
+at	2450
+
+spawn	Rider
+map     5
+health  80
+coords	460 175
+at	2450
+
+spawn	Rider2
+alias   Rider
+map     5
+health  80
+coords	-100 195
+at	2450
+
+spawn	Rider
+map     5
+health  80
+coords	460 220
+at	2450
+
+group   100 100
+at      2500
+
+spawn	Fence
+health  20
+2pitem	turkey
+coords	-60 220
+at	2500
+
+spawn	Fence
+health  20
+item	turkey
+coords	-60 170
+at	2500
+
+blockade 2580
+at      2680
+
+group	1 1
+at	2680
+
+group	3 3
+at	2680
+
+spawn	Brian
+spawnscript data/scripts/lifebar.c
+alias	Bruno
+health	500
+boss	1
+flip    1
+aggression 15
+coords	-100 195
+at	2680
+
+spawn	Joe
+alias   Kasuari
+map     0
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Cucak_Rawa
+map     1
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Rangkong
+map     2
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Elang
+map     3
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Magpie
+map     4
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Robin
+map     5
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Eagle
+map     0
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Hawk
+map     1
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Camar
+map     2
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Ayam
+map     3
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Bebek
+map     4
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Angsa
+map     5
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Chicken
+map     0
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Rooster
+map     1
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Hen
+map     2
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Chick
+map     3
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Itik
+map     4
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Gagak
+map     5
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Kakaktua
+map     0
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Nuri
+map     1
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Wren
+map     2
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Canary
+map     3
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Heron
+map     4
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Raven
+map     5
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Betet
+map     0
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Tekukur
+map     1
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Rajawali
+map     2
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Dadali
+map     3
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Condor
+map     4
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Buzzard
+map     5
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Ibis
+map     0
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Sparrow
+map     1
+coords	-30 230
+at	0
+
+spawn	Joe
+alias   Merpati
+map     2
+coords	-30 160
+at	0
+
+spawn	Joe
+alias   Nasar
+map     3
+coords	360 230
+at	0
+
+spawn	Joe
+alias   Perkutut
+map     4
+coords	360 160
+at	0
+
+spawn	Joe
+alias   Belibis
+map     5
+coords	-30 230
+at	0

@@ -1,1 +1,0 @@
-i_view32.exe H:\Del\5\Data\00.gif /import_pal=H:\Del\5\Data\Rayne6.pal /convert=H:\Del\5\Data\02gg.gif

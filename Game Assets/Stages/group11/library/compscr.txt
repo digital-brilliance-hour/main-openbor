@@ -1,0 +1,42 @@
+name compscr
+type enemy
+health 10
+setlayer -5
+nomove 1 1 
+palette data/bgs/library/back3
+anim spawn 
+	loop 1
+	delay 1000
+	offset 98 161
+	bbox 0 0 0 0
+	frame data/chars/misc/empty
+	delay 5
+	frame data/bgs/library/back3
+	frame data/chars/misc/empty
+	delay 10
+	frame data/bgs/library/back3
+	frame data/chars/misc/empty
+	delay 15
+	frame data/bgs/library/back3
+	frame data/chars/misc/empty
+	delay 3000
+	frame data/bgs/library/back3
+	delay 15
+	frame data/chars/misc/empty
+	frame data/bgs/library/back3
+	delay 10
+	frame data/chars/misc/empty
+	frame data/bgs/library/back3
+	delay 5
+	frame data/chars/misc/empty
+	frame data/bgs/library/back3
+anim fall
+	delay 1 
+	offset 0 158
+	bbox 0 0 0 0
+	frame data/chars/misc/empty
+anim death
+	delay 1
+	offset 0 158
+	bbox 0 0 0 0
+	frame data/chars/misc/empty

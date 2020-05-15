@@ -1,0 +1,31 @@
+name	bgthunder
+type	none
+alpha 1
+speed 0
+setlayer 2
+
+
+
+anim idle
+	loop 1          
+	offset  320 240
+	delay   5
+	drawmethod	scale 0.4 0.4
+	frame	data/bgs/thunders/00.png
+	frame	data/bgs/thunders/01.png
+	frame	data/bgs/thunders/02.png
+	frame	data/bgs/thunders/03.png
+	frame	data/bgs/thunders/04.png
+	frame	data/bgs/thunders/05.png
+	frame	data/bgs/thunders/06.png
+	frame	data/bgs/thunders/07.png
+	frame	data/bgs/thunders/08.png
+	frame	data/bgs/thunders/09.png
+	delay   200
+	frame	data/bgs/thunders/00.png
+	delay   5
+	frame	data/bgs/thunders/10.png
+	frame	data/bgs/thunders/11.png
+	frame	data/bgs/thunders/12.png
+	delay   200
+	frame	data/bgs/thunders/00.png

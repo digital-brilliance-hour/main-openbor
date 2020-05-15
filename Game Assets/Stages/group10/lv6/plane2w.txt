@@ -1,0 +1,83 @@
+name	plane2w
+type enemy
+speed 5
+health 200
+aimove chase
+aimove wander
+nodrop 1
+nolife 1
+nopain 1
+cantgrab 1
+setlayer 1
+animationscript data/scripts/flash.c
+lifespan 100
+falldie 1
+nodieblink 3
+nomove 0 1
+load jason2
+load were2
+subject_to_screen 1
+palette data/bgs/lv6/b2
+anim spawn
+        delay  500
+	offset	513@@ 297
+        bbox 0 0 0 0
+	jumpframe 0 0 0.5 0.2
+	frame	data/bgs/lv6/b2a
+anim idle
+        loop 1
+        delay  50
+	offset	513@@ 297
+        bbox 0 0 0 0
+        summonframe 1 -266 0 120 0
+     	frame	data/bgs/lv6/b2a
+        frame	data/bgs/lv6/b2a
+anim walk
+        loop 1
+        delay  50
+	offset	513@@ 297
+        bbox 0 0 0 0
+        summonframe 1 -266 0 120 0
+	frame	data/bgs/lv6/b2a
+        frame	data/bgs/lv6/b2a
+anim attack1
+        range -10 10
+        delay  100
+	offset	513@@ 297
+        bbox 0 0 0 0
+        @cmd velo001 0.2 0.1 0
+        spawnframe 1 -266 0 120 0
+	frame	data/bgs/lv6/b2a
+        delay 1
+        frame	data/bgs/lv6/b2a
+anim attack2
+        range -10 10
+        delay  100
+	offset	513@@ 297
+        bbox 0 0 0 0
+        spawnframe 1 -266 0 120 0
+        @cmd velo001 0.1 0.1 0
+	frame	data/bgs/lv6/b2a
+        delay 1
+        frame	data/bgs/lv6/b2a
+anim pain
+        delay  10
+	offset	513@@ 297
+        bbox 0 0 0 0
+	frame	data/bgs/lv6/b2a               
+anim rise
+        delay  10
+	offset	513@@ 297
+        bbox 0 0 0 0
+	frame	data/bgs/lv6/b2a
+anim fall
+        delay  10
+	offset	513@@ 297
+        bbox 0 0 0 0
+	frame	data/bgs/lv6/b2a
+anim death
+        delay  300
+	offset	513@@ 297
+        bbox 0 0 0 0
+        @cmd velo001 0.2 0.1 0
+	frame	data/bgs/lv6/b2a

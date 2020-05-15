@@ -1,0 +1,11 @@
+name	planebg
+type	text
+subtype noskip
+setlayer 800
+animationscript data/scripts/flash.c
+anim idle
+        delay  1000
+        @cmd velo001 -1 0 0
+	offset	0 237
+	frame	data/bgs/lv6/back4
+        frame	data/chars/misc/empty

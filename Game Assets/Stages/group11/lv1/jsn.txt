@@ -1,0 +1,35 @@
+name	jsn
+type	none
+setlayer 300
+animationscript data/scripts/spawn.c
+load jason2
+palette data/chars/jason/01
+alternatepal data/chars/jason/alt1a
+alternatepal data/chars/jason/alt2a
+alternatepal data/chars/jason/alt3a
+alternatepal data/chars/jason/alt4a
+alternatepal data/chars/jason/alt5a
+alternatepal data/chars/jason/alt6a
+alternatepal data/chars/jason/alt7a
+anim idle
+        @script
+        if(frame == 0){
+        void self = getlocalvar("self");
+        int map = rand()%7;
+        if(map < 0)
+        {
+        -map == map;
+        }
+        changeentityproperty(self, "map", map);
+        }
+        @end_script
+        delay	200
+        offset  90 257
+        bbox    0 0 0 0
+        frame	data/chars/jason/19
+        delay 10
+        frame	data/chars/jason/18
+        frame	data/chars/jason/11
+        @cmd spawn02 "jason2" 0  95 0
+        frame	data/chars/misc/empty
+       

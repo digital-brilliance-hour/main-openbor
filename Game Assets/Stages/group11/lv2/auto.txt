@@ -1,0 +1,82 @@
+name	auto
+type	none
+candamage enemy npc
+nolife 1
+animationscript data/scripts/were.c
+load dust
+palette data/bgs/lv2/auto3
+anim spawn
+	offset	200 147
+	bbox    0 0 0 0
+	delay 1
+	hitflash bblod
+	hitfx data/sounds/empty.wav
+	delay 5
+	jumpframe 1 0 2 0
+	attack5  1 85 274 61 100 0 1 0 5 1000 
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	sound data/sounds/n/autoride.wav
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	sound data/sounds/n/autobrk.wav
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	delay   3
+	frame	data/bgs/lv2/auto2
+anim idle
+	delay	50
+	offset	200 147
+	bbox    0 0 0 0
+	jumpframe 5 0 -1 0
+	@cmd velo001 0 0 0
+	@cmd shoot "dust" -219 0 21
+	@cmd shoot "dust" -44 0 21
+	sound data/sounds/n/autodr.wav
+	frame	data/bgs/lv2/auto1
+	delay 11
+	sound data/sounds/n/autodr.wav
+	frame	data/bgs/lv2/auto1
+	delay 3
+	sound data/sounds/n/autobrk.wav
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	delay 5
+	sound data/sounds/n/autoride.wav
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	frame	data/bgs/lv2/auto3
+	frame	data/bgs/lv2/auto2
+	frame	data/bgs/lv2/auto1
+	@cmd killentity getlocalvar("self")
+	frame	data/bgs/lv2/auto3

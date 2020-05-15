@@ -1,0 +1,19 @@
+name	plane
+type	text
+subtype noskip
+setlayer 900
+animationscript data/scripts/flash.c
+palette data/bgs/lv6/a1b
+anim idle
+        delay  1194
+        @cmd velo001 1 0 0
+	offset	619 237
+	frame	data/bgs/lv6/a1b
+        delay  15
+        @cmd velo001 0 0 0
+        frame	data/bgs/lv6/a1b
+        drawmethod 256 256 0 0 0 6 0 0 0 0
+        frame	data/bgs/lv6/a1b
+        drawmethod 256 256 0 0 0 1 0 0 0 0
+        frame	data/bgs/lv6/a1b
+        frame	data/chars/misc/empty

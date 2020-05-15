@@ -1,0 +1,14 @@
+name	diody
+type	none
+setlayer 1
+remap data/bgs/library/b1a  data/bgs/library/b1b   
+alpha 5  
+anim idle
+        loop 1
+	delay	50
+	offset	160 240
+        bbox    0 0 0 0
+        frame	data/chars/misc/empty  
+        frame	data/bgs/library/b1a  
+        frame	data/chars/misc/empty        
+        frame	data/bgs/library/b1c  

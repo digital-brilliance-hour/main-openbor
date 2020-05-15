@@ -1,0 +1,74 @@
+#music		data/music/stage4-1.ogg
+
+panel    	data/bgs/stage4-1/panel.png
+order           a
+
+
+
+spawn1 0 30 135
+spawn2 0 35 135
+spawn3 0 40 135
+
+light	-32 -96 
+at 0
+
+shadowcolor -2
+at 0
+
+shadowalpha 6
+at 0
+
+
+#z 215 270
+
+
+type		0
+settime		99
+notime		0
+stagenumber	4
+
+
+#######################################
+
+spawn  story
+alias   stage_04
+at  0
+
+
+
+spawn	bgthunder
+@script
+void main()
+{
+  int SFX = loadsample("data/sounds/rain2.wav");
+  playsample(SFX, 0, 180, 180, 100, 1);
+}
+@end_script
+coords	150  50
+at	0
+
+spawn	bgthunder
+coords	670  50
+at	0
+
+
+spawn	rainf
+coords	0  272
+at	0
+
+spawn	raind
+coords	0  265
+at	0
+
+spawn	bgthunder
+coords	1020  50
+at	0
+
+spawn	bgthunder
+coords	1520  50
+at	0
+
+spawn	bgthunder
+coords	2200  10
+at	0
+

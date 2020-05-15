@@ -1,0 +1,25 @@
+void main(){
+	loadmodel("auto");
+	loadmodel("brama");
+	loadmodel("piorun4");
+	loadmodel("fir");
+	loadmodel("crows");
+	loadmodel("door");
+	loadmodel("lift");
+	loadmodel("ex1");
+	loadmodel("zomb2bk");
+	loadmodel("zomb2bw");
+	loadmodel("bagzb");
+	loadmodel("bagzb2");
+	loadmodel("doctor");
+	loadmodel("light");
+	loadmodel("tlk1");
+	loadmodel("docsht");
+	loadmodel("docgr1");
+	loadmodel("docgr2");
+	loadmodel("docgr3");
+	loadmodel("Zombiedr");
+	loadmodel("zombiel");
+	loadmodel("zombie2l");
+	loadmodel("zombie3l");
+}

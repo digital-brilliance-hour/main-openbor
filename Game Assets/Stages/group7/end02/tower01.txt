@@ -1,0 +1,35 @@
+name	tower01
+type	enemy #text
+nomove 1
+setlayer -10
+facing 1
+antigravity 100
+lifespan    13
+animationscript  data/scripts/2Dscript.c
+
+palette data/bgs/END02/END02.gif #1
+
+anim idle
+	loop	1 3 4
+	bbox	0 0 0 0
+	@cmd	dasher 0 -0.4 0
+	delay	1
+	movea	-1
+	offset	240 -60
+	 sound   data/sounds/tower01.wav
+	frame	data/bgs/end02/tower01.gif
+	offset	238 -60
+	frame	data/bgs/end02/tower01.gif
+
+	delay	1
+	movea	-1
+	offset	240 -60
+	frame	data/bgs/end02/tower01.gif
+	offset	238 -60
+	frame	data/bgs/end02/tower01.gif
+
+	
+	
+	
+	
+	

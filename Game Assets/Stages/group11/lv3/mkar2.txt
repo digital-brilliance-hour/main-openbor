@@ -1,0 +1,28 @@
+name	Mkar2
+type	enemy
+load mtlk3a
+anim spawn
+        offset  39 82
+        bbox    0 0 0 0
+
+        delay 200
+        spawnframe 14 160 220 0 1
+        subentity Mtlk3a
+        frame	data/chars/Migor/00
+        frame	data/chars/migor/00
+anim idle
+	delay	280
+        offset	24 169
+        bbox    0 0 0 0
+        jumpframe 2 0 1 0
+	frame	data/bgs/lv3/kar1a
+        delay 20
+ @script
+        if(frame == 2){
+        void self = getlocalvar("self");
+        killentity(self);
+        }
+        @end_script
+        frame	data/bgs/lv3/kar1
+
+
