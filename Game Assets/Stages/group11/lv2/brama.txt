@@ -1,0 +1,40 @@
+name	brama
+health 1
+type	npc
+candamage enemy
+nolife 1
+nomove 1 1
+noatflash 1
+flash bflash 
+falldie 1
+nodieblink 1
+nopain 1
+diesound data/sounds/drum.wav
+lifespan 10
+anim spawn
+        offset	0 101
+        bbox    21 73 21 73
+        delay 5
+        frame	data/bgs/lv2/brama1
+anim idle
+        loop 1
+	offset	0 101
+        bbox    21 73 21 73
+        delay 5
+        frame	data/bgs/lv2/brama1
+anim fall
+        loop 1
+	offset	0 101
+        bbox    0 0 0 0
+        delay 5
+        frame	data/bgs/lv2/brama2
+anim death
+        loop 1
+	offset	0 101
+        bbox    0 0 1000000 10000000
+        delay 1000
+        jumpframe 0 2 4
+        landframe  1
+        frame	data/bgs/lv2/brama2
+        delay 10
+        frame	data/bgs/lv2/brama2

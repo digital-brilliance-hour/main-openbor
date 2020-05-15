@@ -1,0 +1,29 @@
+name	dpln
+type	none
+setlayer 1
+animationscript data/scripts/flash.c
+anim idle
+	delay	100
+	offset	398 179
+        bbox    0 0 0 0
+        jumpframe 1 4 2 0
+        dropframe 2
+        landframe 3
+        quakeframe 3 6 -2
+    	frame	data/bgs/lv7a/a2
+        delay 1000
+	frame	data/bgs/lv7a/a2
+	frame	data/bgs/lv7a/a2
+        delay  10
+        @cmd velo001 1.5 0 0
+        frame	data/bgs/lv7a/a2
+        @cmd velo001 1.2 0 0.5
+        frame	data/bgs/lv7a/a2
+        @cmd velo001 0.9 0 0
+        frame	data/bgs/lv7a/a2
+        @cmd velo001 0.6 0 0.5
+        frame	data/bgs/lv7a/a2
+        @cmd velo001 0.3 0 0
+        frame	data/bgs/lv7a/a2
+        @cmd velo001 0 0 0
+        frame	data/bgs/lv7a/a2

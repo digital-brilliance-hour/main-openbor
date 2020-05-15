@@ -1,0 +1,22 @@
+music		data/music/stonehenge.ogg
+fglayer data/bgs/stage1-1/frontp.png 4 -0.1 -0.1 0 130 0 0 -1 1 0 1 1 0 0 0 -0.5
+background	data/bgs/stage1-1/backgr.png
+panel    	data/bgs/stage1-1/backgr.png
+order           a
+bgspeed 1
+
+
+Wall  0  234  0  0  233  0  22  280
+Wall  1136  234  -232  0  19  19  22  280
+Wall  514  230  -282  0  391  118  18  280
+
+
+updatescript data/scripts/traileru.c
+
+spawn1 205 30 10
+spawn2 205 35 10
+spawn3 205 40 10
+
+
+
+

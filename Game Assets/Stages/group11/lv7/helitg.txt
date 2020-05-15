@@ -1,0 +1,266 @@
+name	helitg
+health	150
+speed	5
+shadow 0
+type	enemy
+aimove chase
+noquake 1
+score	1000 5
+nopain 1
+cantgrab 1
+nodrop 1
+jumpheight 0
+running  5 4 2 1 0
+hostile player npc
+candamage player enemy npc obstacle
+load expl2
+nolife 1
+animationscript data/scripts/were.c
+palette data/bgs/lv7/a1b
+anim spawn
+	delay	400
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim respawn
+	delay	400
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim idle
+	loop	1
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+anim walk
+	loop	1
+	delay	1
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+anim run
+	loop	1
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim attack1
+        @script
+        void Heli = getglobalvar("Heli");
+        if (frame == 16){
+        changeentityproperty(Heli, "animation", openborconstant("ANI_FREESPECIAL2"));
+        }
+        @end_script
+        range -30 30
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" -30 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 30 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        delay 30
+        frame	data/bgs/lv7/a1b
+        move 400
+        frame	data/chars/misc/empty
+anim attack2
+        @script
+        void Heli = getglobalvar("Heli");
+        if (frame == 12){
+        changeentityproperty(Heli, "animation", openborconstant("ANI_FREESPECIAL2"));
+        }
+        @end_script
+        range  120 130
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd velo001 2 0 0
+        @cmd shoot "expl2" 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        delay 30
+        frame	data/bgs/lv7/a1b
+anim attack3
+        @script
+        void Heli = getglobalvar("Heli");
+        if (frame == 12){
+        changeentityproperty(Heli, "animation", openborconstant("ANI_FREESPECIAL2"));
+        }
+        @end_script
+        rangez 10 30
+        range  120 130
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd velo001 2 0.3 0
+        @cmd shoot "expl2" 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        delay 30
+        frame	data/bgs/lv7/a1b
+anim attack4
+        @script
+        void Heli = getglobalvar("Heli");
+        if (frame == 12){
+        changeentityproperty(Heli, "animation", openborconstant("ANI_FREESPECIAL2"));
+        }
+        @end_script
+        rangez -30 10
+        range  120 130
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd velo001 2 -0.3 0
+        @cmd shoot "expl2" 0 0 0
+	frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        @cmd shoot "expl2" 0 0 0
+        frame	data/bgs/lv7/a1b2
+        frame	data/bgs/lv7/a1b
+        frame	data/bgs/lv7/a1b2
+        delay 30
+        frame	data/bgs/lv7/a1b
+anim pain
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim fall
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim rise
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+anim death
+	delay	5
+        offset  16 16
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty

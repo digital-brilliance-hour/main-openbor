@@ -1,0 +1,49 @@
+name	Bdra
+type enemy
+nopain 1
+cantgrab 1
+nodrop 1
+health 10
+speed 5
+nomove 1 1
+load mtlk3a
+palette data/chars/Bdracula/03
+anim spawn
+        offset  67 213
+        bbox    0 0 0 0
+        delay 20
+        spawnframe 14 160 220 0 1
+        subentity mtlk3a
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+anim idle
+        offset  67 213
+        bbox    0 0 0 0
+        delay 100
+         @script
+        if(frame == 2){
+        void self = getlocalvar("self");
+        killentity(self);
+        }
+        @end_script
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03
+        frame	data/chars/Bdracula/03

@@ -1,0 +1,17 @@
+name blb
+type none
+setlayer 1
+palette data/bgs/lv7c/a22
+alpha 6
+anim idle 
+       loop 1
+       delay 25
+       offset 0 240
+       bbox 0 0 0 0
+       frame data/bgs/lv7c/a2
+       delay 50
+       frame data/bgs/lv7c/a21
+       delay 25
+       frame data/bgs/lv7c/a2
+       delay 50
+       frame data/bgs/lv7c/a22

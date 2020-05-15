@@ -1,0 +1,19 @@
+name	Dust2
+health	1
+type	obstacle
+shadow	0
+#icon	data/chars/misc/drumicon.gif
+diesound data/sounds/klunk.wav
+
+
+anim idle
+	delay	100
+	offset	22 77
+	bbox	0 -25 43 92
+	frame	data/bgs/2-2/dust1.gif
+
+
+anim fall
+	delay	1000
+	offset	23 77
+	frame	data/bgs/2-2/dust2.gif

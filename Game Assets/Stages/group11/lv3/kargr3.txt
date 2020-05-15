@@ -1,0 +1,53 @@
+name kargr3
+type pshot
+speed 8
+noatflash 1
+flash bflash
+jumpheight 3
+facing 2
+candamage player enemy obstacle
+subject_to_wall 1
+shadow 1
+anim idle 
+       loop 1
+       offset 53 61
+       bbox 0 0 0 0
+       delay 2
+       movez -1
+       frame data/chars/doc/b2
+anim attack1
+	offset 76 105
+	bbox 0 0 0 0
+	delay 5
+	quakeframe 0 4 1
+	otg 1
+	move 5
+	sound data/sounds/granat.wav
+	frame data/chars/doc/d01
+	frame data/chars/doc/d02
+	burn 12 30 124 91 10 1 0 0 0 10
+	frame data/chars/doc/d03
+	burn 0 0 0 0
+	frame data/chars/doc/d04
+	frame data/chars/doc/d05
+	frame data/chars/doc/d06
+	frame data/chars/doc/d07
+	frame data/chars/doc/d08
+	frame data/chars/doc/d09
+	frame data/chars/doc/d10
+	frame data/chars/doc/d11
+	frame data/chars/doc/d12
+anim attack2
+	offset 76 105
+	bbox 0 0 0 0
+	delay 5
+	move 5
+	frame data/chars/doc/d04
+	frame data/chars/doc/d05
+	frame data/chars/doc/d06
+	frame data/chars/doc/d07
+	frame data/chars/doc/d08
+	frame data/chars/doc/d09
+	frame data/chars/doc/d10
+	frame data/chars/doc/d11
+	frame data/chars/doc/d12

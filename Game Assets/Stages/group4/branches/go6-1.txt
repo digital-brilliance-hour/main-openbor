@@ -1,0 +1,93 @@
+name	 GO6-1
+type	 none
+shadow   0
+nolife   1
+
+animationscript data/scripts/atkallp.c 
+
+load Endcoin
+
+anim idle
+        followanim 1
+        followcond 1
+	loop	1 4
+	delay	6
+	offset	19 35
+        jumpframe 0 0.1 0
+        landframe 2
+	frame	data/chars/misc/endcoin01.png
+	delay	999
+	frame	data/chars/misc/endcoin01.png
+	delay	20
+        sound   data/sounds/victory.wav
+	frame	data/chars/misc/endcoin01.png
+	delay	8
+        hitfx   data/sounds/empty.wav
+        noreflect 1
+	attack	20 20 1 1 0 0 1 1 0
+	frame	data/chars/misc/endcoin01.png
+	frame	data/chars/misc/endcoin02.png
+	frame	data/chars/misc/endcoin03.png
+	frame	data/chars/misc/endcoin04.png
+	frame	data/chars/misc/endcoin05.png
+	frame	data/chars/misc/endcoin06.png
+	frame	data/chars/misc/endcoin07.png
+	frame	data/chars/misc/endcoin08.png
+	frame	data/chars/misc/endcoin09.png
+	frame	data/chars/misc/endcoin10.png
+	frame	data/chars/misc/endcoin11.png
+	frame	data/chars/misc/endcoin12.png
+	frame	data/chars/misc/endcoin13.png
+	frame	data/chars/misc/endcoin14.png
+	frame	data/chars/misc/endcoin15.png
+	frame	data/chars/misc/endcoin16.png
+	frame	data/chars/misc/endcoin17.png
+	frame	data/chars/misc/endcoin18.png
+	frame	data/chars/misc/endcoin19.png
+
+
+
+
+
+
+anim follow1
+	delay	60
+	offset	1 1
+        @cmd    spawn01 "Endcoin" 0 0 0
+	frame	data/chars/misc/empty.png
+        @cmd  damage_all_players 0 0 -100 "ATK_NORMAL52"
+	frame	data/chars/misc/empty.png
+        @cmd    anichange "ANI_FOLLOW2" 0
+	frame	data/chars/misc/empty.png
+
+
+
+
+anim follow2
+	delay	110
+	offset	1 1
+	frame	data/chars/misc/empty.png
+	load		complete
+	subentity	complete
+	spawnframe	2 0 -4 0 1
+	frame	data/chars/misc/empty.png
+	delay	550
+	frame	data/chars/misc/empty.png
+        @cmd    anichange "ANI_FREESPECIAL1" 0
+	frame	data/chars/misc/empty.png
+
+
+
+
+
+anim freespecial1
+	delay	2
+	offset	1 1
+	frame	data/chars/misc/empty.png
+@script
+
+  jumptobranch("Stage5_end", 1);
+@end_script
+	frame	data/chars/misc/empty.png
+
+

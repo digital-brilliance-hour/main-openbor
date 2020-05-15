@@ -1,0 +1,347 @@
+name	karX
+health	2000
+speed	5
+type	enemy
+aimove chase
+aimove wander
+noquake 1
+score	1000	5
+falldie 1
+nodieblink 1
+throwdamage	20
+nopain 1
+cantgrab 1
+noatflash 1
+flash dflash
+nodrop 1
+jumpheight 0
+nomove 0 1
+facing 1
+load werern
+load kargr1
+load kargr2
+load kargr3
+hostile player npc
+candamage player enemy npc obstacle
+projectilehit   enemy obstacle
+animationscript data/scripts/were.c
+icon data/chars/doc/icon
+subject_to_screen 1
+lifespan 160
+summonkill 0
+nolife 1
+aggression 50
+palette data/bgs/lv3/kara00
+anim spawn
+	delay	2
+        offset  -257 253
+        bbox    0 0 0 0
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+anim idle
+	loop	1
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        attack   63 109 128 125 100 1 0 
+        hitfx data/sounds/empty.wav
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+anim walk
+	loop	1
+	delay	5
+        offset  -257 253
+#        summonframe 1 -350 0 0 1
+#        subentity werern
+        hitfx data/sounds/empty.wav
+        bbox    63 109 128 125
+        attack2   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+anim backwalk
+	loop	1
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        attack3   63 109 128 125 100 1 0 
+        hitfx data/sounds/empty.wav
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+anim attack4
+        range   -170 -10
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara10
+	sound data/sounds/n2/igorha.wav
+        frame	data/bgs/lv3/kara11
+        frame	data/bgs/lv3/kara12
+        delay   2
+        frame	data/bgs/lv3/kara13
+        delay 1
+        @cmd toss "kargr1" 255 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 240 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 205 213 0
+        frame	data/bgs/lv3/kara13
+        
+        delay 1
+        @cmd toss "kargr1" 55 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 15 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 37 213 0
+        frame	data/bgs/lv3/kara13
+
+        delay 5
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+anim attack1
+        range   -170 -10
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara10
+        frame	data/bgs/lv3/kara11
+        frame	data/bgs/lv3/kara12
+        delay 5
+        @cmd toss "kargr1" 150 213 0
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+
+        delay 1
+        @cmd toss "kargr1" 255 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 400 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 205 213 0
+        frame	data/bgs/lv3/kara13
+
+anim attack2
+        range   -170 -10
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara10
+        frame	data/bgs/lv3/kara11
+        frame	data/bgs/lv3/kara12
+        delay 5
+        @cmd toss "kargr2" 90 213 0
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+
+        delay 2
+        @cmd toss "kargr1" 270 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 300 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 350 213 0
+        frame	data/bgs/lv3/kara13
+
+anim attack3
+        range   -170 -10
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara10
+        frame	data/bgs/lv3/kara11
+        frame	data/bgs/lv3/kara12
+        
+        delay 1
+        @cmd toss "kargr1" 265 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 254 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 270 213 0
+        frame	data/bgs/lv3/kara13
+
+        delay 3
+        @cmd toss "kargr3" 260 213 0
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+        frame	data/bgs/lv3/kara13
+        frame	data/bgs/lv3/kara14
+        frame	data/bgs/lv3/kara15
+        delay 1
+        @cmd toss "kargr1" 327 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr2" 17 213 0
+        frame	data/bgs/lv3/kara13
+        @cmd toss "kargr3" 410 213 0
+        frame	data/bgs/lv3/kara13
+anim pain
+        delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+anim death
+        delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+	@cmd velo001 -0.5 0.1 0
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+	@cmd velo001 1 0 0
+	frame	data/bgs/lv3/kara01
+	@cmd velo001 1 0 0
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+	@cmd velo001 1 0 0
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+        frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+	delay 100
+	@cmd fademusic 0.40 "data/music/07_BlackBlood.ogg" 1 0
+	frame	data/bgs/lv3/kara09
+anim fall
+	delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+anim rise
+       delay	5
+        offset  -257 253
+        bbox    63 109 128 125
+        blast   63 109 128 125 100 1 0 
+        platform 22 267 -10 20 300 300 30 1000
+	frame	data/bgs/lv3/kara01
+        frame	data/bgs/lv3/kara02
+        frame	data/bgs/lv3/kara03
+        frame	data/bgs/lv3/kara04
+        frame	data/bgs/lv3/kara05
+        frame	data/bgs/lv3/kara06
+        frame	data/bgs/lv3/kara07
+        frame	data/bgs/lv3/kara08
+        frame	data/bgs/lv3/kara09
+

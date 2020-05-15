@@ -1,0 +1,15 @@
+name	auto2
+type	panel
+candamage enemy npc
+palette data/bgs/bonus/auto1bb
+setlayer 1
+anim idle
+	loop 1
+	delay	5
+	offset	-70 166
+	attack 0 74 280 73 100 1
+	frame	data/bgs/bonus/auto1bb
+	attack2 0 74 280 73 100 1
+	frame	data/bgs/bonus/auto2bb
+	attack5 0 74 280 73 100 1
+	frame	data/bgs/bonus/auto3bb

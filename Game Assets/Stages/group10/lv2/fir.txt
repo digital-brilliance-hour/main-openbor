@@ -1,0 +1,17 @@
+name	fir
+type	panel
+anim idle
+	@script
+	void self = getlocalvar("self");
+	int x = getentityproperty(self,"x"); 
+	if(x <= -100 && frame == 0){
+		killentity(self);
+	}
+	@end_script
+        loop 1
+	delay	15
+	offset	108 191
+        bbox    0 0 0 0
+    	frame	data/bgs/lv2/fir1
+	frame	data/bgs/lv2/fir2
+        frame	data/bgs/lv2/fir3

@@ -1,0 +1,55 @@
+name	igr
+type	enemy
+nopain 1
+cantgrab 1
+nodrop 1
+health 10
+speed 5
+nomove 1 1
+load tlk3a
+palette data/chars/igor/00
+anim spawn
+        offset  62 108
+        bbox    0 0 0 0
+        jumpframe 15 5 -2 -0.5
+        dropframe 16
+        landframe 18
+        delay 20
+        spawnframe 14 160 220 0 1
+        subentity tlk3a
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+        frame	data/chars/igor/04
+        frame	data/chars/igor/05
+	sound data/sounds/n2/igorha.wav
+        frame	data/chars/igor/06
+        delay   1000
+        frame	data/chars/igor/07
+        frame	data/chars/igor/08
+        delay 30
+        bbox    40 33 38 51
+        frame	data/chars/igor/17
+anim idle
+        offset  62 108
+        bbox    0 0 0 0
+        delay 100
+         @script
+        if(frame == 2){
+        void self = getlocalvar("self");
+        killentity(self);
+        }
+        @end_script
+       frame data/chars/misc/empty
+       frame data/chars/misc/empty
+       frame data/chars/misc/empty

@@ -1,0 +1,28 @@
+name	stfat5_2
+type	trap
+speed 0
+candamage    enemy
+#setlayer -1
+antigravity 100
+
+anim idle
+	loop	1
+	offset  619 56
+        delay   5
+        hitfx   data/sounds/empty.wav
+        #attackone 1
+        forcedirection 99
+        attack48  0 0 1238 56 100 1 1 1 0 10	
+	frame	data/bgs/fase-6/stfat.png
+        attack  0 0 0 0
+	frame	data/bgs/fase-6/stfat.png
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+name	heli
+health	150
+speed	5
+shadow 0
+type	enemy
+noquake 1
+score	1000	5
+falldie 1
+nodieblink 1
+throwdamage	20
+nopain 1
+cantgrab 1
+grabdistance 54
+noatflash 1
+flash dflash
+nodrop 1
+jumpheight 0
+nomove 0 1
+load jason3
+load jashead
+load zombie4
+load chsawm
+load helitg
+hostile player npc
+candamage player enemy npc obstacle
+projectilehit   enemy obstacle
+icon data/chars/doc/icon
+subject_to_screen 1
+summonkill 2
+animationscript data/scripts/spawn.c
+palette data/bgs/lv7/a1a2
+anim spawn
+	delay	5
+        offset  478 210
+        bbox    0 0 0 0
+        @cmd velo001 1 0 0
+        spawnframe 58 -60 150 0 0
+        subentity helitg
+        frame	data/chars/misc/empty
+	frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        @cmd velo001 0 0 0
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        frame	data/bgs/lv7/a1a2
+        frame	data/bgs/lv7/a1a3
+        frame	data/bgs/lv7/a1a4
+        @cmd spawn01 "chsawm" -420 95 1
+        frame	data/bgs/lv7/a1a
+        delay 100
+        frame	data/bgs/lv7/a1a
+anim idle
+        @script
+        void self = getlocalvar("self");
+        setglobalvar("Heli", self);
+        @end_script
+	loop	1
+	delay	5
+        offset  478 210
+        bbox    0 61 222 63
+	frame	data/bgs/lv7/a1a
+anim freespecial2
+        delay	5
+        offset  478 210
+        bbox    0 61 222 63
+        sound   data/sounds/MSHGUN.wav
+	frame	data/bgs/lv7/a1c1
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c2
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c1
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c2
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c1
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c2
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c1
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c2
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c1
+	frame	data/bgs/lv7/a1a
+	frame	data/bgs/lv7/a1c2
+anim walk
+	loop	1
+	delay	100
+        offset  478 210
+        bbox    0 61 222 63
+        summonframe 1 -420 1 100 0
+        subentity jason3
+	frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+anim backwalk
+	loop	1
+	delay	5
+        offset  478 210
+        bbox    0 61 222 63
+	frame	data/bgs/lv7/a1a
+anim pain
+	delay	5
+        offset  478 210
+        bbox    0 61 222 63
+	frame	data/bgs/lv7/a1a
+anim fall
+	delay	5
+        offset  478 210
+        bbox    0 61 222 63
+	frame	data/bgs/lv7/a1a
+anim rise
+	delay	5
+        offset  478 210
+        bbox    0 61 222 63
+	frame	data/bgs/lv7/a1a
+anim death 
+        delay	20
+        offset  478 210
+        bbox    0 61 222 63
+        quakeframe 0 20 -1
+        @cmd changeentityproperty getlocalvar("self") "velocity" 1 0 0
+	frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+        frame	data/bgs/lv7/a1a
+

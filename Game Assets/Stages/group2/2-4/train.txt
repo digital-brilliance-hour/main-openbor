@@ -1,0 +1,35 @@
+name	 	train
+health		1
+type		enemy
+speedf          3
+noquake         1
+nolife          1
+subtype	        arrow
+shadow          0
+
+anim idle
+	loop    1
+	delay	50
+	offset	0 178
+	#offset	1480 190
+        bbox	0 0 0 0
+	movez   0
+	sound   data/bgs/2-4/train.wav
+	quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif
+        quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif
+        quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif
+        quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif
+        quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif
+        quakeframe 1 3 3
+        frame	data/bgs/2-4/train0.gif
+	frame	data/bgs/2-4/train0.gif

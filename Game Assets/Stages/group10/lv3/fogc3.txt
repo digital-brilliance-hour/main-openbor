@@ -1,0 +1,20 @@
+name	fogc3
+type	none
+alpha 6
+load fogc1
+facing 1
+palette data/bgs/lv3/fogc1
+summonkill 0
+anim spawn 
+	offset  0 32
+        delay   1
+        frame	data/chars/misc/empty
+anim idle
+        loop 1
+        offset  0 32
+        delay   1500
+	summonframe 1 320 195 0 1
+	subentity fogc1
+	jumpframe 0 0 -0.1 0
+        frame	data/bgs/lv3/fogc1
+        frame	data/bgs/lv3/fogc1

@@ -1,1 +1,0 @@
-Act2Pal -> A program made by me (Nobun) that converts palettes from ACT format to PAL format.

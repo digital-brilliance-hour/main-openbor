@@ -1,0 +1,16 @@
+name	raind
+type	none
+alpha 1
+speed 0
+setlayer 2
+
+
+
+anim idle
+	loop 1          
+	offset  2400 230
+	delay   5
+	drawmethod	scale 0.6 0.6
+	frame	data/bgs/rains/001.png
+	frame	data/bgs/rains/002.png
+	frame	data/bgs/rains/003.png

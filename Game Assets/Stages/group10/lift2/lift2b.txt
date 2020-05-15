@@ -1,0 +1,20 @@
+name	lift2b
+type	none
+setlayer 500
+palette data/bgs/lift2/f1
+anim idle
+	delay	500
+	offset	10 10
+        bbox    0 0 0 0
+	drawmethod 10000 10000 0 0 0 2
+        frame	data/bgs/lift2/f1
+        frame	data/bgs/lift2/f2
+	frame	data/bgs/lift2/f3
+        frame	data/bgs/lift2/f4
+	frame	data/bgs/lift2/f5
+        frame	data/bgs/lift2/f6
+	frame	data/bgs/lift2/f7
+	frame	data/bgs/lift2/f8
+	frame	data/bgs/lift2/f9
+	@cmd killentity getlocalvar("self")
+        frame	data/chars/misc/empty
