@@ -1,0 +1,178 @@
+name	fclown
+health	45
+speed	10
+type	enemy
+gfxshadow	1
+icon    data/chars/fclown/icon.gif
+diesound data/chars/fclown/fall.wav
+
+alternatepal  data/chars/fclown/walk01.gif data/chars/fclown/alt01.gif
+
+aimove	chase
+aimove	wander
+subject_to_screen 1
+aggression	45
+subtype	notgrab
+#nodieblink 3
+projectilehit enemy
+
+anim idle
+	loop	1
+	offset	29 83
+	bbox	14 0 27 103
+	delay	300
+	frame	data/chars/fclown/walk01.gif
+
+anim walk
+	loop	1
+	delay	12
+	offset	29 83
+	bbox	14 0 27 103
+	frame	data/chars/fclown/walk01.gif
+	offset  24 87
+	frame	data/chars/fclown/walk02.gif
+	offset  31 88
+	frame	data/chars/fclown/walk03.gif
+	offset  23 90
+	frame	data/chars/fclown/walk04.gif
+
+anim attack1
+	loop	0
+	delay	12
+	offset	36 80
+	attack	56 8 36 21 7 0
+	frame	data/chars/fclown/slide01.gif
+	move    20
+	offset  37 49
+	sound   data/chars/fclown/laugh.wav
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	36 80
+	attack	56 8 36 21 7 0
+	frame	data/chars/fclown/slide01.gif
+	move    20
+	offset  37 49
+	sound   data/chars/fclown/laugh.wav
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+
+anim attack3
+	loop	0
+	delay	12
+	offset	36 80
+	attack	56 8 36 21 7 0
+	frame	data/chars/fclown/slide01.gif
+	move    20
+	offset  37 49
+	sound   data/chars/fclown/laugh.wav
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+	move    20
+	offset  37 49
+	frame   data/chars/fclown/slide02.gif
+
+anim grabbed
+	loop	0
+	offset	41 89
+	bbox	14 0 27 103
+	delay	14
+	frame	data/chars/fclown/hurt.gif
+
+anim pain
+	loop	0
+	offset	41 89
+	bbox	14 0 27 103
+	delay	10
+	sound   data/chars/fclown/hurt.wav
+	frame	data/chars/fclown/hurt.gif
+	move    -3
+	frame	data/chars/fclown/hurt.gif
+	move    3
+	frame	data/chars/fclown/hurt.gif
+
+anim bpain
+	loop	0
+	delay	10
+	offset	37 80
+	frame	data/chars/misc/burn01.gif
+	frame	data/chars/misc/burn02.gif
+	frame	data/chars/misc/burn03.gif
+	offset  48 34
+	frame 	data/chars/misc/burn04.gif
+
+anim burn
+	loop	0
+	delay	10
+	offset	37 80
+	frame	data/chars/misc/burn01.gif
+	frame	data/chars/misc/burn02.gif
+	frame	data/chars/misc/burn03.gif
+	offset  48 34
+	frame 	data/chars/misc/burn04.gif
+
+anim shock
+	loop	0
+	delay	10
+	offset	41 77
+	frame	data/chars/misc/spain01.gif
+	frame	data/chars/misc/spain02.gif
+	frame	data/chars/misc/spain03.gif
+	offset  48 34
+	frame 	data/chars/misc/burn04.gif
+
+anim spain
+	loop	0
+	delay	10
+	offset	41 77
+	frame	data/chars/misc/freeze.gif
+	
+anim fall
+	loop	0
+	offset	41 89
+	delay	20
+	frame   data/chars/fclown/hurt.gif
+	offset  44 80
+	frame   data/chars/fclown/fall01.gif
+	offset  48 41
+	frame   data/chars/fclown/fall02.gif
+	
+anim rise
+	loop	0
+	offset	25 59
+	delay	14
+	frame	data/chars/fclown/rise01.gif
+	offset  23 79
+	frame   data/chars/fclown/rise02.gif
+
+anim land
+	loop	0
+	offset	28 105
+	delay	25
+	bbox	14 0 27 103
+	frame	data/chars/fclown/rise01.gif
+

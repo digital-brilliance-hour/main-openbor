@@ -1,0 +1,273 @@
+name	Facce
+health	50
+speed	14
+running	25 4 2 1 1
+type	enemy
+aimove	chasez
+shadow	5
+icon	data/chars/facce/icon.gif
+#iconpain	data/chars/facce/iconp.gif
+diesound data/sounds/die2.wav
+#score 1 1
+nodieblink 2
+death	1
+fmap	1
+height	71
+noatflash	1
+cantgrab	1
+flash	nothing
+dust	dust
+aggression 30
+candamage	npc player
+hostile		npc player
+
+remap data/chars/facce/stand1.gif data/chars/facce/fmap.gif
+
+
+anim idle
+	loop	1
+	offset	148 156
+	bbox	128 88 48 68
+	delay	6
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	frame	data/chars/facce/stand8.gif
+
+anim walk
+	loop	1
+	offset	148 156
+	bbox	128 88 48 68
+	delay	9	
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	frame	data/chars/facce/spin3.gif
+	frame	data/chars/facce/spin4.gif
+	frame	data/chars/facce/spin5.gif
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+
+anim run
+	loop	1
+	offset	148 156
+	bbox	128 88 48 68
+	delay	4	
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	frame	data/chars/facce/spin3.gif
+	frame	data/chars/facce/spin4.gif
+	frame	data/chars/facce/spin5.gif
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+
+anim pain
+	loop	0
+	offset	148 156
+	bbox	128 88 48 68
+	delay	20
+	frame	data/chars/facce/pain1.gif
+	frame	data/chars/facce/pain2.gif
+
+anim pain8
+	loop	0
+	offset	148 156
+	bbox	128 88 48 68
+	delay	166
+	frame	data/chars/facce/fmap.gif
+
+anim fall
+	loop	0
+	offset	148 156
+	bbox	113 92 23 63 
+	delay	30	
+	move 	20
+	attack	105 59 80 99 7 1 1
+	frame	data/chars/facce/alt1.gif
+
+anim rise
+	loop	0
+	offset	148 156
+	bbox	116 84 74 24
+	delay	3	
+	attack	29 109 244 49
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	frame	data/chars/facce/spin3.gif
+	frame	data/chars/facce/spin4.gif
+	frame	data/chars/facce/spin5.gif
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+#	frame	data/chars/facce/spin1.gif
+#	frame	data/chars/facce/spin2.gif
+#	frame	data/chars/facce/spin3.gif
+#	frame	data/chars/facce/spin4.gif
+#	frame	data/chars/facce/spin5.gif
+#	frame	data/chars/facce/spin6.gif
+#	frame	data/chars/facce/spin7.gif
+
+anim attack1
+	range	1 70
+	loop	0
+	offset	148 156
+	bbox	116 84 74 24
+	delay	4	
+	attack	100 109 114 47 10 1
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	frame	data/chars/facce/spin3.gif
+	frame	data/chars/facce/spin4.gif
+	frame	data/chars/facce/spin5.gif
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+#	frame	data/chars/facce/spin1.gif
+#	frame	data/chars/facce/spin2.gif
+#	frame	data/chars/facce/spin3.gif
+#	frame	data/chars/facce/spin4.gif
+#	frame	data/chars/facce/spin5.gif
+#	frame	data/chars/facce/spin6.gif
+#	frame	data/chars/facce/spin7.gif
+
+anim attack2
+	range	190 210
+	followanim	1
+	followcond	2
+	jumpframe	0 8
+	loop	0
+	offset	148 156
+	bbox	128 88 48 68
+	delay	6
+	attack4	119 130 64 28 10 0 0
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	frame	data/chars/facce/stand8.gif
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	frame	data/chars/facce/stand8.gif
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	frame	data/chars/facce/stand8.gif
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	attack4	0 0 0 0 0 0
+	frame	data/chars/facce/stand8.gif
+
+anim follow1
+	fastattack	1
+	jumpframe	27 5
+	loop	0
+#	dive	0 0
+	offset	148 156
+	bbox	116 84 74 24
+	delay	3	
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin3.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin4.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin5.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin6.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin7.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin1.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin2.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin3.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin4.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin5.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin6.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin7.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin1.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin2.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin3.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin4.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin5.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin1.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin2.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin3.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin4.gif
+	attack4	111 98 100 100 10 0 0
+	frame	data/chars/facce/spin5.gif
+	attack4	0 0 0 0 0 0 
+	frame	data/chars/facce/spin6.gif
+	attack	111 98 100 100 10 1 1
+	frame	data/chars/facce/spin7.gif
+	delay	8
+	attack	0 0 0 0 0 0 
+	frame	data/chars/facce/spin1.gif
+	frame	data/chars/facce/spin2.gif
+	frame	data/chars/facce/spin3.gif
+	frame	data/chars/facce/spin4.gif
+	frame	data/chars/facce/spin5.gif
+	frame	data/chars/facce/spin6.gif
+	frame	data/chars/facce/spin7.gif
+	frame	data/chars/facce/stand1.gif
+	frame	data/chars/facce/stand2.gif
+	frame	data/chars/facce/stand3.gif
+	frame	data/chars/facce/stand4.gif
+	frame	data/chars/facce/stand5.gif
+	frame	data/chars/facce/stand6.gif
+	frame	data/chars/facce/stand7.gif
+	frame	data/chars/facce/stand8.gif
+
+anim death
+	loop	0
+	delay	6
+	offset	148 156
+	frame	data/chars/facce/d0.gif
+	frame	data/chars/facce/d1.gif
+	frame	data/chars/facce/d2.gif
+	frame	data/chars/facce/d3.gif
+	frame	data/chars/facce/d4.gif
+	frame	data/chars/facce/d5.gif
+	frame	data/chars/facce/d6.gif
+	frame	data/chars/misc/nothing/nothing.gif
+
+
+
+
+

@@ -1,0 +1,126 @@
+
+name	Cabaji
+health	200
+speed	20
+type	enemy
+shadow	2
+aironly 1
+icon	data/chars/Cabaji/icon.gif
+subtype chase
+cantgrab 1
+blockodds 1
+riseinv 2 0
+subject_to_screen 1
+candamage player npc
+load koma
+
+
+anim spawn
+	loop	0
+	delay	15
+	offset	50 78
+	bbox	46 31 12 39
+	
+  	frame	data/chars/Cabaji/idle01.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	43 77
+	bbox	46 31 12 39	
+	
+  	frame	data/chars/Cabaji/idle01.gif
+
+anim walk
+	loop	1
+	delay	5
+	offset	43 77
+	bbox	43 39 25 28
+	
+	frame	data/chars/Cabaji/run01.gif
+	frame	data/chars/Cabaji/run02.gif
+	frame	data/chars/Cabaji/run03.gif
+
+anim attack1
+	loop	0
+	delay	10
+	bbox	43 39 25 28 
+	offset  50 78
+        move    20
+	frame	data/chars/Cabaji/ratk01.gif
+        attack	87 17 25 54 10 1
+        move    20
+	frame	data/chars/Cabaji/ratk03.gif
+        attack	87 17 25 54 10 1
+        move    20
+	frame	data/chars/Cabaji/ratk03.gif
+
+anim attack2
+	loop	0
+	delay	5
+	bbox	46 31 12 39 
+	offset  50 88
+	frame	data/chars/Cabaji/atk01.gif
+	loop	0
+	delay	7
+	bbox	46 31 12 39  
+	offset  50 108	
+        move    20
+	frame	data/chars/Cabaji/atk01.gif
+	loop	0
+	bbox	46 31 12 39 
+	offset  50 128	
+	frame	data/chars/Cabaji/atk02.gif
+	delay	5
+	bbox	46 31 12 39 
+	offset  50 108	
+        attack	57 23 21 58 40 1
+	sound   data/chars/Marine/sword.wav
+	frame	data/chars/Cabaji/atk03.gif
+	bbox	46 31 12 39
+	offset  50 88	
+        attack	57 23 21 58 40 1
+	frame	data/chars/Cabaji/atk03.gif
+	delay	20
+	bbox	46 31 12 39 
+	offset  50 78	
+	frame	data/chars/Cabaji/atk04.gif
+
+anim block
+	loop	0
+	delay	8
+	offset	43 77	
+	spawnframe 6 10 0 0 0
+        subentity koma
+  	frame	data/chars/Cabaji/koma01.gif
+  	frame	data/chars/Cabaji/koma02.gif
+  	frame	data/chars/Cabaji/koma01.gif
+  	frame	data/chars/Cabaji/koma02.gif
+  	frame	data/chars/Cabaji/koma01.gif
+  	frame	data/chars/Cabaji/koma02.gif
+  	frame	data/chars/Cabaji/koma03.gif
+  	frame	data/chars/Cabaji/koma04.gif
+
+anim pain
+	loop	0
+	offset	50 78
+	bbox	46 31 12 39	
+	delay	20
+	frame   data/chars/Cabaji/pain01.gif
+
+
+anim fall
+	loop	0
+	offset	50 78
+	delay	20
+	bbox	46 31 12 39	
+	frame   data/chars/Cabaji/fall01.gif
+
+
+anim rise
+	loop	0
+	offset	43 77
+	delay	5
+        frame   data/chars/Cabaji/idle01.gif
+
+

@@ -1,0 +1,178 @@
+
+name	Mihawk
+health	1000
+speed	10
+type	enemy
+shadow	0
+icon	data/chars/Mihawk/icon.gif
+blockodds 1
+cantgrab  1
+candamage player npc obstacle shot
+hostile player npc
+escapehits 1
+riseinv 2 0
+load slash
+load toln
+load break
+flash break
+subject_to_screen 1
+
+anim spawn	
+	loop	0
+	offset	40 78
+	delay	15	
+	frame	data/chars/Mihawk/idle01.gif
+  	frame	data/chars/Mihawk/idle02.gif
+	frame	data/chars/Mihawk/idle03.gif
+  	frame	data/chars/Mihawk/idle04.gif
+	frame	data/chars/Mihawk/idle05.gif
+	frame	data/chars/Mihawk/idle06.gif
+  	frame	data/chars/Mihawk/idle07.gif	
+
+anim idle
+	loop	1
+	delay	15
+	offset	40 78
+	bbox	38 27 19 40	
+	frame	data/chars/Mihawk/idle01.gif
+  	frame	data/chars/Mihawk/idle02.gif
+	frame	data/chars/Mihawk/idle03.gif
+  	frame	data/chars/Mihawk/idle04.gif
+	frame	data/chars/Mihawk/idle05.gif
+	frame	data/chars/Mihawk/idle06.gif
+  	frame	data/chars/Mihawk/idle07.gif	
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	40 78
+	bbox	35 30 12 42
+	frame	data/chars/Mihawk/walk01.gif
+	frame	data/chars/Mihawk/walk02.gif
+	frame	data/chars/Mihawk/walk03.gif
+	frame	data/chars/Mihawk/walk04.gif
+	frame	data/chars/Mihawk/walk05.gif
+	frame	data/chars/Mihawk/walk06.gif
+
+anim attack1
+	loop	0
+	delay	10   
+	offset	40 78
+	sound   data/chars/Mihawk/attack.wav
+        frame	data/chars/Mihawk/cut01.gif
+	sound   data/chars/Mihawk/cut.wav
+	frame	data/chars/Mihawk/cut02.gif
+        attack	50 0 126 80 50
+	quakeframe 3 1 10
+        frame	data/chars/Mihawk/cut03.gif
+	attack	50 0 126 80 50
+        frame	data/chars/Mihawk/cut04.gif
+	attack 	50 0 126 80 50
+	frame	data/chars/Mihawk/cut05.gif
+	frame	data/chars/Mihawk/cut06.gif
+
+anim attack2
+	loop	0
+	delay	8   
+	offset	40 78
+        range   0 300
+        throwframe 1 28
+        custknife slash
+	quakeframe 3 1 10
+	sound   data/chars/Mihawk/chi.wav
+        frame	data/chars/Mihawk/zan00.gif
+	sound   data/chars/Mihawk/geki.wav
+	frame	data/chars/Mihawk/zan01.gif
+        frame	data/chars/Mihawk/zan02.gif
+
+anim attack3
+	loop	0
+	delay	8   
+	offset	62 77
+        range   0 300
+        throwframe 3 28
+        custknife toln
+	quakeframe 3 1 10
+	sound   data/chars/Mihawk/zan.wav
+	frame	data/chars/Mihawk/tol01.gif
+	frame	data/chars/Mihawk/tol01.gif
+	frame	data/chars/Mihawk/tol01.gif
+        frame	data/chars/Mihawk/tol02.gif
+	sound   data/chars/Mihawk/tol.wav
+	frame	data/chars/Mihawk/tol03.gif
+        frame	data/chars/Mihawk/tol04.gif
+        frame	data/chars/Mihawk/tol05.gif
+        frame	data/chars/Mihawk/tol05.gif
+        frame	data/chars/Mihawk/tol05.gif
+
+
+anim special2
+	loop	0
+	delay	8   
+	offset	62 77
+        range   0 300
+        throwframe 3 28
+        custknife toln
+	quakeframe 3 1 10
+	sound   data/chars/Mihawk/zan.wav
+	frame	data/chars/Mihawk/tol01.gif
+	frame	data/chars/Mihawk/tol01.gif
+	frame	data/chars/Mihawk/tol01.gif
+        frame	data/chars/Mihawk/tol02.gif
+	sound   data/chars/Mihawk/tol.wav
+	frame	data/chars/Mihawk/tol03.gif
+        frame	data/chars/Mihawk/tol04.gif
+        frame	data/chars/Mihawk/tol05.gif
+        frame	data/chars/Mihawk/tol05.gif
+        frame	data/chars/Mihawk/tol05.gif
+	delay	8   
+	offset	40 78
+        throwframe 1 28
+        custknife slash
+	quakeframe 3 1 10
+	sound   data/chars/Mihawk/chi.wav
+        frame	data/chars/Mihawk/zan00.gif
+	sound   data/chars/Mihawk/geki.wav
+	frame	data/chars/Mihawk/zan01.gif
+        frame	data/chars/Mihawk/zan02.gif
+
+anim block
+	loop	0
+	offset	40 78
+	delay	2
+        sound   data/chars/mihawk/go.wav
+        frame   data/chars/Mihawk/go01.gif
+        frame   data/chars/Mihawk/go02.gif
+        frame   data/chars/Mihawk/go03.gif
+        move    30
+	offset	40 78
+        frame   data/chars/Mihawk/go03.gif
+        frame   data/chars/Mihawk/go03.gif
+        frame   data/chars/Mihawk/go02.gif
+        frame   data/chars/Mihawk/go01.gif
+
+anim pain
+	loop	0
+	offset	38 77
+	bbox	38 27 19 40
+	delay	10
+        sound   data/chars/Mihawk/pain.wav
+        frame   data/chars/Mihawk/pain.gif
+
+anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	11 46 29 12 10 1
+	frame   data/chars/Mihawk/fall01.gif
+	frame   data/chars/Mihawk/fall01.gif
+	frame   data/chars/Mihawk/fall02.gif
+
+
+
+anim rise
+	loop	0
+	offset	40 78
+	delay	5
+        frame   data/chars/Mihawk/rise.gif

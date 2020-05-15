@@ -1,0 +1,153 @@
+
+name	Dugongs
+health	100
+speed	10
+type	npc
+shadow	0
+icon	data/chars/Dugongs/icon.gif
+subtype chase
+hostile enemy odstacle
+candamage enemy obstacle
+riseinv 2 0
+makeinv 2 0
+subject_to_screen 1
+
+anim spawn
+	loop	0
+	delay	10
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/come01.gif
+	frame	data/chars/Dugongs/come02.gif
+  	frame	data/chars/Dugongs/come03.gif
+	frame	data/chars/Dugongs/come04.gif
+	frame	data/chars/Dugongs/come05.gif
+	frame	data/chars/Dugongs/pose01.gif
+	frame	data/chars/Dugongs/get01.gif
+	frame	data/chars/Dugongs/get02.gif
+  	frame	data/chars/Dugongs/get03.gif
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/idle01.gif
+	frame	data/chars/Dugongs/idle02.gif
+  	frame	data/chars/Dugongs/idle03.gif
+	frame	data/chars/Dugongs/idle04.gif
+	frame	data/chars/Dugongs/idle03.gif
+	frame	data/chars/Dugongs/idle02.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/walk01.gif
+	frame	data/chars/Dugongs/walk02.gif
+	frame	data/chars/Dugongs/walk03.gif
+	frame	data/chars/Dugongs/walk02.gif
+
+
+
+anim attack1
+	loop	0
+	delay	4   
+	offset	43 78
+	bbox	38 51 19 29
+        attack	57 47 25 27 10
+	frame	data/chars/Dugongs/atk01.gif     
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk02.gif
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk03.gif
+        attack	57 47 25 27 10
+	frame	data/chars/Dugongs/atk01.gif     
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk02.gif
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk03.gif
+        attack	57 47 25 27 10
+	frame	data/chars/Dugongs/atk01.gif     
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk02.gif
+        attack	57 47 25 27 10
+        frame	data/chars/Dugongs/atk03.gif
+	frame	data/chars/Dugongs/atk04.gif
+       
+anim attack2
+	loop	0
+	delay	7   
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/dive01.gif     
+        frame	data/chars/Dugongs/dive02.gif
+        frame	data/chars/Dugongs/dive03.gif	
+        move 10
+        attack	56 44 14 36 20
+	offset	43 88
+        frame	data/chars/Dugongs/dive04.gif
+        attack	56 44 14 36 20
+	offset	43 88
+        frame	data/chars/Dugongs/dive05.gif
+        attack	56 44 14 36 20
+	offset	43 78
+        frame	data/chars/Dugongs/dive06.gif
+        delay   10
+	frame	data/chars/Dugongs/dive07.gif     
+        frame	data/chars/Dugongs/dive08.gif
+        frame	data/chars/Dugongs/dive09.gif
+	frame	data/chars/Dugongs/dive10.gif     
+        frame	data/chars/Dugongs/dive11.gif
+
+anim jump
+	loop	0
+	delay	15
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/jump01.gif
+	frame	data/chars/Dugongs/jump02.gif
+  	frame	data/chars/Dugongs/jump03.gif
+	frame	data/chars/Dugongs/jump04.gif
+	frame	data/chars/Dugongs/jump05.gif
+
+anim get
+	loop	0
+	delay	10
+	offset	43 78
+	bbox	38 51 19 29
+	frame	data/chars/Dugongs/get01.gif
+	frame	data/chars/Dugongs/get02.gif
+  	frame	data/chars/Dugongs/get03.gif
+
+anim pain
+	loop	0
+	offset	43 78
+	bbox	38 51 19 29	
+	delay	10
+	frame   data/chars/Dugongs/pain01.gif
+	frame   data/chars/Dugongs/pain02.gif
+	frame   data/chars/Dugongs/pain03.gif
+	frame   data/chars/Dugongs/pain04.gif
+
+anim fall
+	loop	0
+	offset	43 78
+	delay	20
+	frame   data/chars/Dugongs/fall01.gif
+	frame   data/chars/Dugongs/fall02.gif
+	frame   data/chars/Dugongs/fall03.gif
+	frame   data/chars/Dugongs/fall04.gif
+	frame   data/chars/Dugongs/fall05.gif
+
+anim rise
+	loop	0
+	offset	43 78
+	delay	5
+	frame   data/chars/Dugongs/pain03.gif
+	frame   data/chars/Dugongs/pain04.gif
+
+

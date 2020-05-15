@@ -1,0 +1,92 @@
+
+name	Theif
+health	100
+speed	25
+type	enemy
+shadow	3
+icon	data/chars/Theif/icon.gif
+
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	50 70 63 63	
+	frame	data/chars/Theif/idle00.gif
+  	frame	data/chars/Theif/idle01.gif
+	frame	data/chars/Theif/idle02.gif
+  	frame	data/chars/Theif/idle03.gif
+	frame	data/chars/Theif/idle02.gif
+	frame	data/chars/Theif/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	50 70 63 63
+	frame	data/chars/Theif/walk00.gif
+	frame	data/chars/Theif/walk01.gif
+	frame	data/chars/Theif/walk02.gif
+	frame	data/chars/Theif/walk03.gif
+	frame	data/chars/Theif/walk04.gif
+	frame	data/chars/Theif/idle03.gif
+
+
+
+anim attack1
+	loop	0
+	delay	10   
+	offset	38 77
+	frame	data/chars/Theif/slash00.gif
+	frame	data/chars/Theif/slash01.gif
+	attack	89 89 82 47 15 1
+        frame	data/chars/Theif/slash02.gif
+
+
+
+anim attack2
+	loop	0
+	delay	10   
+	offset	38 77
+	frame	data/chars/Theif/power00.gif
+	frame	data/chars/Theif/power01.gif
+	frame	data/chars/Theif/power02.gif
+	frame	data/chars/Theif/power03.gif
+	frame	data/chars/Theif/power04.gif
+	frame	data/chars/Theif/power05.gif
+	blast	99 114 48 24 30 1
+	frame	data/chars/Theif/power06.gif
+	frame	data/chars/Theif/power07.gif
+	frame	data/chars/Theif/power08.gif
+	frame	data/chars/Theif/power09.gif
+
+
+
+anim pain
+	loop	0
+	offset	38 77
+	bbox	50 70 63 63
+	delay	1
+	frame   data/chars/Theif/pain.gif
+
+
+anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	50 45 54 36 4 1
+	frame   data/chars/Theif/fall00.gif
+	frame   data/chars/Theif/fall00.gif
+	frame   data/chars/Theif/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	38 77
+	delay	5
+        frame   data/chars/Theif/pain.gif
+
+

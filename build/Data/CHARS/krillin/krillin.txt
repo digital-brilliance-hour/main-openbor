@@ -1,0 +1,353 @@
+
+
+name	Krillin
+health	100
+speed	10
+type	player
+shadow	2
+diesound data/chars/Krillin/die.wav
+icon	data/chars/Krillin/icon.gif
+running	24 4.1 2 1
+
+remap	data/chars/Krillin/stand00.gif data/chars/Krillin/map1.gif
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Krillin/stand00.GIF
+	frame	data/chars/Krillin/stand01.GIF
+	frame	data/chars/Krillin/stand02.GIF
+	frame	data/chars/Krillin/stand03.GIF
+	frame	data/chars/Krillin/stand04.GIF
+	frame	data/chars/Krillin/stand05.GIF
+        frame	data/chars/Krillin/stand06.GIF
+	frame	data/chars/Krillin/stand07.GIF
+
+anim walk
+
+	loop	1
+	delay	7
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Krillin/walk00.gif
+	frame	data/chars/Krillin/walk01.gif
+	frame	data/chars/Krillin/walk02.gif
+	frame	data/chars/Krillin/walk03.gif
+	frame	data/chars/Krillin/walk04.gif
+	frame	data/chars/Krillin/walk05.gif
+	frame	data/chars/Krillin/walk06.gif
+	frame	data/chars/Krillin/walk07.gif
+
+
+anim run
+
+	loop	1
+	delay	3
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Krillin/walk00.gif
+	frame	data/chars/Krillin/walk01.gif
+	frame	data/chars/Krillin/walk02.gif
+	frame	data/chars/Krillin/walk03.gif
+	frame	data/chars/Krillin/walk04.gif
+	frame	data/chars/Krillin/walk05.gif
+	frame	data/chars/Krillin/walk06.gif
+	frame	data/chars/Krillin/walk07.gif
+
+
+
+anim get
+	loop	0
+	delay	7
+	offset	38 77
+	frame	data/chars/Krillin/rise05.gif
+        frame	data/chars/Krillin/rise06.gif
+
+
+
+anim attack1
+	loop	0
+	delay	7
+	bbox	35 55 17 20
+	offset	38 77
+	frame	data/chars/Krillin/punch00.gif
+        attack	51 58 15 6 8
+        frame	data/chars/Krillin/punch01.gif
+        frame	data/chars/Krillin/punch02.gif 
+
+
+
+anim attack2
+	loop	0
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	7
+	frame	data/chars/Krillin/punch03.gif
+	frame	data/chars/Krillin/punch04.gif
+	frame	data/chars/Krillin/punch05.gif
+        attack	54 56 20 9 8
+	frame	data/chars/Krillin/punch06.gif
+        attack	0
+	frame	data/chars/Krillin/punch07.gif
+	delay	5
+	frame	data/chars/Krillin/jab00.gif
+	frame	data/chars/Krillin/jab01.gif
+	frame	data/chars/Krillin/jab02.gif
+        attack	54 56 20 9 8
+	frame	data/chars/Krillin/jab03.gif
+        attack	0
+	frame	data/chars/Krillin/jab04.gif
+	frame	data/chars/Krillin/jab05.gif
+
+anim attack3
+	loop	0
+	delay	7
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Krillin/kick00.gif
+	frame	data/chars/Krillin/kick01.gif
+        attack	60 52 20 13 10 1
+	frame	data/chars/Krillin/kick02.gif
+	frame	data/chars/Krillin/kick03.gif
+	frame	data/chars/Krillin/kick04.gif
+	frame	data/chars/Krillin/kick05.gif
+	frame	data/chars/Krillin/kick06.gif
+	frame	data/chars/Krillin/punch07.gif
+
+
+anim special
+	loop	0
+	delay	4
+	offset	38 77
+	bbox	0 0 0 0
+	frame	data/chars/Krillin/solar00.gif
+	frame	data/chars/Krillin/solar01.gif
+	frame	data/chars/Krillin/solar02.gif
+	frame	data/chars/Krillin/solar03.gif
+	frame	data/chars/Krillin/solar04.gif
+        frame	data/chars/Krillin/solar05.gif
+        attack	26 45 39 39 20 0
+	frame	data/chars/Krillin/solar06.gif
+        attack	0
+	frame	data/chars/Krillin/solar07.gif
+        attack	24 39 45 45 20 0
+	frame	data/chars/Krillin/solar08.gif
+        attack	0
+ 	frame	data/chars/Krillin/solar04.gif
+        attack	24 39 45 45 20 0
+	frame	data/chars/Krillin/solar08.gif
+        attack	0
+	frame	data/chars/Krillin/solar04.gif
+        attack	24 39 45 45 20 1
+dropv 7 1 0
+	frame	data/chars/Krillin/solar08.gif
+        attack	0
+	frame	data/chars/Krillin/solar04.gif
+	frame	data/chars/Krillin/solar08.gif
+        attack	0
+	frame	data/chars/Krillin/solar07.gif
+	frame	data/chars/Krillin/solar06.gif
+	frame	data/chars/Krillin/solar05.gif
+	frame	data/chars/Krillin/solar04.gif
+	frame	data/chars/Krillin/solar03.gif
+	frame	data/chars/Krillin/solar02.gif
+	frame	data/chars/Krillin/solar01.gif
+	frame	data/chars/Krillin/solar00.gif
+
+	
+anim runattack
+	loop	0
+	delay	10
+	offset	38 77
+	bbox	0 0 0 0
+        frame	data/chars/Krillin/kame00.gif
+	frame	data/chars/Krillin/kame01.gif
+	frame	data/chars/Krillin/kame02.gif
+	frame	data/chars/Krillin/kame03.gif
+	frame	data/chars/Krillin/kame04.gif
+	frame	data/chars/Krillin/kame03.gif
+	frame	data/chars/Krillin/kame05.gif
+	frame	data/chars/Krillin/kame03.gif
+	frame	data/chars/Krillin/kame04.gif
+	frame	data/chars/Krillin/kame03.gif
+	frame	data/chars/Krillin/kame05.gif
+        sound   data/chars/Krillin/wave.wav
+        attack	60 42 47 40 15 1
+	frame	data/chars/Krillin/kame06.gif
+        attack	0 0 0 0 0 0
+	delay	5
+        attack	60 42 112 40 15 1
+	frame	data/chars/Krillin/kame07.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 192 40 15 1
+	frame	data/chars/Krillin/kame08.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 286 40 15 1
+	frame	data/chars/Krillin/kame09.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 383 40 15 1
+	frame	data/chars/Krillin/kame10.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 480 40 15 1
+	frame	data/chars/Krillin/kame11.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 522 41 15 1
+	frame	data/chars/Krillin/kame12.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 522 41 15 1
+	frame	data/chars/Krillin/kame13.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 522 41 15 1
+	frame	data/chars/Krillin/kame14.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 522 41 15 1
+        frame	data/chars/Krillin/kame15.gif
+        attack	0 0 0 0 0 0
+        attack	60 42 522 41 15 1
+	frame	data/chars/Krillin/kame16.gif
+        attack	0 0 0 0 0 0
+       	frame	data/chars/Krillin/kame00.gif
+
+
+anim jump
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Krillin/jump00.gif
+	frame	data/chars/Krillin/jump01.gif
+	frame	data/chars/Krillin/jump02.gif
+	frame	data/chars/Krillin/jump03.gif
+	frame	data/chars/Krillin/jump04.gif
+	frame	data/chars/Krillin/jump05.gif
+
+
+anim jumpattack
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Krillin/jatk00.gif
+	frame	data/chars/Krillin/jatk01.gif
+        attack	48 48 20 10 8 1
+	frame	data/chars/Krillin/jatk02.gif
+	frame	data/chars/Krillin/jatk03.gif
+	frame	data/chars/Krillin/jatk04.gif
+	frame	data/chars/Krillin/jatk05.gif
+	
+	
+
+anim jumpattack2
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Krillin/jatk00.gif
+	frame	data/chars/Krillin/jatk01.gif
+        attack	48 48 20 10 8 1
+	frame	data/chars/Krillin/jatk02.gif
+	frame	data/chars/Krillin/jatk03.gif
+	frame	data/chars/Krillin/jatk04.gif
+	frame	data/chars/Krillin/jatk05.gif
+
+
+
+anim grab
+	loop	0
+	offset	38 77
+	delay	8
+	bbox	35 55 17 20
+	delay	8
+	frame	data/chars/Krillin/grab.gif
+	
+
+
+
+anim grabattack
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20	
+	delay	5
+	frame	data/chars/Krillin/jab00.gif
+	frame	data/chars/Krillin/jab01.gif
+	frame	data/chars/Krillin/jab02.gif
+        attack	54 56 20 9 8
+	frame	data/chars/Krillin/jab03.gif
+        attack	0
+	frame	data/chars/Krillin/jab04.gif
+	frame	data/chars/Krillin/jab05.gif
+
+anim grabattack2
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	7
+	frame	data/chars/Krillin/jatk00.gif
+	frame	data/chars/Krillin/jatk01.gif
+        blast	48 48 20 10 8 1
+	frame	data/chars/Krillin/jatk02.gif
+	frame	data/chars/Krillin/jatk03.gif
+	frame	data/chars/Krillin/jatk04.gif
+	frame	data/chars/Krillin/jatk05.gif
+
+
+
+
+anim throw
+	loop	0
+	offset	38 77
+	delay	6
+	frame	data/chars/Krillin/throw00.gif
+	frame	data/chars/Krillin/throw01.gif
+	frame	data/chars/Krillin/throw02.gif
+	frame	data/chars/Krillin/throw03.gif
+	frame	data/chars/Krillin/throw04.gif
+	frame	data/chars/Krillin/throw05.gif
+
+
+anim pain
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	20
+	frame	data/chars/Krillin/pain.gif
+
+
+anim fall
+	anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	36 50 21 16 4 1
+	frame	data/chars/Krillin/fall00.gif
+        move    -4	
+	frame	data/chars/Krillin/fall01.gif
+        frame	data/chars/Krillin/fall02.gif
+        frame	data/chars/Krillin/fall03.gif
+        frame	data/chars/Krillin/fall04.gif
+
+
+
+anim rise
+	loop	0
+	offset	38 77
+	delay	10
+        frame	data/chars/Krillin/rise00.gif
+        frame	data/chars/Krillin/rise01.gif
+        frame	data/chars/Krillin/rise02.gif
+        frame	data/chars/Krillin/rise03.gif
+        frame	data/chars/Krillin/rise04.gif
+        frame	data/chars/Krillin/rise05.gif
+        frame	data/chars/Krillin/rise06.gif
+
+
+anim land
+	loop	0
+	offset	38 77
+	delay	25
+        frame	data/chars/Krillin/rise05.gif
+        frame	data/chars/Krillin/rise06.gif

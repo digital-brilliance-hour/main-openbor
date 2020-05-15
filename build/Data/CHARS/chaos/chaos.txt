@@ -1,0 +1,327 @@
+name	Chaos
+health	100
+speed	10
+type	enemy
+shadow	0
+icon    data/chars/chaos/icon.gif
+diesound data/sounds/die1.wav
+
+nomove      1	1
+cantgrab    1
+
+aggression	100
+
+subtype	notgrab
+cantgrab 1
+subject_to_screen 1
+projectilehit enemy
+
+blockodds	1
+bflash		block
+escapehits	4
+
+lifebarstatus 80 5 1 0 0 -300 -300 -300 -300
+lifeposition 213 224
+nameposition 213 214
+iconposition 194 215
+
+nodieblink 3
+
+anim spawn
+	loop 	0
+	offset	65 270
+	bbox	0 0 105 172
+	delay	14
+	frame	data/chars/chaos/larmat1.gif
+
+
+anim idle
+	loop	1
+	offset	65 270
+	bbox	0 0 105 172
+	delay	14
+	frame	data/chars/chaos/larmat1.gif
+
+anim attack1
+	range	0	340
+	rangez	-100 100
+	loop	0
+	delay	50
+	offset	65 270
+	bbox    0 0 105 172
+	frame	data/chars/chaos/larmat1.gif
+	delay	10
+	frame   data/chars/chaos/larmat2.gif
+	frame   data/chars/chaos/larmat3.gif
+	frame	data/chars/chaos/larmat4.gif
+	frame   data/chars/chaos/larmat5.gif
+	delay	20
+	delay   5
+	frame   data/chars/chaos/larmat6.gif
+	frame	data/chars/chaos/larmat7.gif
+	attack  109  0  310  31  25  1 0 0 0 200
+	attackz 200
+	frame   data/chars/chaos/larmat8.gif
+	attackz 200
+	attack  147  5  306  264  25  1  0  0  0  200
+		delay  20
+		offset  65  270
+		bbox  0  0  105  172
+	frame   data/chars/chaos/larmat9.gif
+	quakeframe 9 3 5
+	frame	data/chars/chaos/larmat10.gif
+	frame   data/chars/chaos/larmat11.gif
+	frame   data/chars/chaos/larmat12.gif
+	attack  0
+	frame	data/chars/chaos/larmat13.gif
+	frame   data/chars/chaos/larmat14.gif
+	frame   data/chars/chaos/larmat15.gif
+	frame	data/chars/chaos/larmat16.gif
+	frame   data/chars/chaos/larmat17.gif
+	frame   data/chars/chaos/larmat18.gif
+	frame	data/chars/chaos/larmat19.gif
+	frame   data/chars/chaos/larmat20.gif
+	frame   data/chars/chaos/larmat21.gif
+	frame	data/chars/chaos/larmat22.gif
+	frame   data/chars/chaos/larmat23.gif
+	frame   data/chars/chaos/larmat24.gif
+	frame	data/chars/chaos/larmat25.gif
+	frame   data/chars/chaos/larmat26.gif
+	frame   data/chars/chaos/larmat27.gif
+	frame	data/chars/chaos/larmat28.gif
+
+
+anim attack3
+	range	0	375
+	rangez	-100 100
+	loop	0
+	delay	50
+	offset	65 270
+	bbox    0 0 105 172
+	frame	data/chars/chaos/rarmat1.gif
+	delay	10
+	frame   data/chars/chaos/rarmat2.gif
+	frame   data/chars/chaos/rarmat3.gif
+	frame	data/chars/chaos/rarmat4.gif
+	frame   data/chars/chaos/rarmat5.gif
+	delay	20
+	delay   5
+	frame   data/chars/chaos/rarmat6.gif
+	frame	data/chars/chaos/rarmat7.gif
+	frame   data/chars/chaos/rarmat8.gif
+		attack  209  24  159  282  25  1  0  0  0  200
+	attackz 200
+	frame   data/chars/chaos/rarmat9.gif
+		attack  300  27  157  278  25  1  0  0  0  200
+	attackz 200
+	frame	data/chars/chaos/rarmat10.gif
+	attack  340  82  120  147  25  1  0  0  0  200
+	attackz 200
+	frame   data/chars/chaos/rarmat11.gif
+	attack  357  105  122  118  25  1  0  0  0  200
+	attackz 200
+	frame   data/chars/chaos/rarmat12.gif
+	frame	data/chars/chaos/rarmat13.gif
+		attack  0
+	frame   data/chars/chaos/rarmat14.gif
+	frame   data/chars/chaos/rarmat15.gif
+	frame	data/chars/chaos/rarmat16.gif
+	frame   data/chars/chaos/rarmat17.gif
+	frame   data/chars/chaos/rarmat18.gif
+	frame	data/chars/chaos/rarmat19.gif
+	frame   data/chars/chaos/rarmat20.gif
+	frame   data/chars/chaos/rarmat21.gif
+	frame	data/chars/chaos/rarmat22.gif
+	frame   data/chars/chaos/rarmat23.gif
+	frame   data/chars/chaos/rarmat24.gif
+	frame	data/chars/chaos/rarmat25.gif
+	frame   data/chars/chaos/rarmat26.gif
+	frame   data/chars/chaos/rarmat27.gif
+	frame	data/chars/chaos/rarmat28.gif
+	frame   data/chars/chaos/rarmat29.gif
+	frame	data/chars/chaos/rarmat30.gif
+	frame   data/chars/chaos/rarmat31.gif
+	frame   data/chars/chaos/rarmat32.gif
+
+anim attack2
+	range	0	480
+	rangez  -20	20
+	loop	0
+	delay	14
+	offset	65 270
+	bbox    0 0 105 172
+	frame	data/chars/chaos/rarmat1.gif
+	delay	10
+	frame   data/chars/chaos/rarmat2.gif
+	frame   data/chars/chaos/rarmat3.gif
+	frame	data/chars/chaos/rarmat4.gif
+	frame   data/chars/chaos/rarmat5.gif
+	delay   5
+	frame   data/chars/chaos/rarmat6.gif
+	frame	data/chars/chaos/rarmat7.gif
+	frame   data/chars/chaos/rarmat8.gif
+	delay	1
+	frame	data/chars/chaos/01.gif
+	frame   data/chars/chaos/02.gif
+	frame   data/chars/chaos/03.gif
+	frame	data/chars/chaos/04.gif
+	frame   data/chars/chaos/05.gif
+	frame   data/chars/chaos/06.gif
+	frame   data/chars/chaos/07.gif
+	frame   data/chars/chaos/08.gif
+	frame   data/chars/chaos/09.gif
+	frame   data/chars/chaos/10.gif
+	frame	data/chars/chaos/11.gif
+	frame   data/chars/chaos/12.gif
+	frame   data/chars/chaos/13.gif
+	frame	data/chars/chaos/14.gif
+	frame   data/chars/chaos/15.gif
+	delay   30
+	attack  221  16  284  244  35  1  0  0  0  200
+	attackz 200
+	frame   data/chars/chaos/16.gif
+	delay   15
+	frame   data/chars/chaos/17.gif
+
+
+anim upper
+	range	0	400
+	rangez  -20	20
+	loop	0
+	delay	50
+	offset	65 270
+	bbox    0 0 105 172
+	frame	data/chars/chaos/larmat1.gif
+	delay	10
+	frame   data/chars/chaos/larmat2.gif
+	frame   data/chars/chaos/larmat3.gif
+	frame	data/chars/chaos/larmat4.gif
+	frame   data/chars/chaos/larmat5.gif
+	delay   5
+	frame   data/chars/chaos/larmat6.gif
+	frame	data/chars/chaos/larmat7.gif
+	attack  104  0  327  75  25  1 0 0 0 200
+	attackz 200
+	frame   data/chars/chaos/larmat8.gif
+	attack  144  6  319  264  25  1  0  0  0  200
+	attackz 200
+	frame   data/chars/chaos/larmat9.gif
+	quakeframe 9 5 10
+	frame	data/chars/chaos/larmat10.gif
+	frame   data/chars/chaos/larmat11.gif
+	frame   data/chars/chaos/larmat12.gif
+	attack  0
+	frame	data/chars/chaos/larmat13.gif
+	frame   data/chars/chaos/larmat14.gif
+	frame   data/chars/chaos/larmat15.gif
+	frame	data/chars/chaos/larmat16.gif
+	frame   data/chars/chaos/larmat17.gif
+	frame   data/chars/chaos/larmat18.gif
+	frame	data/chars/chaos/larmat19.gif
+	frame   data/chars/chaos/larmat20.gif
+	frame   data/chars/chaos/larmat21.gif
+	frame	data/chars/chaos/larmat22.gif
+	frame   data/chars/chaos/larmat23.gif
+	frame   data/chars/chaos/larmat24.gif
+	frame	data/chars/chaos/larmat25.gif
+	frame   data/chars/chaos/larmat26.gif
+	frame   data/chars/chaos/larmat27.gif
+	frame	data/chars/chaos/larmat28.gif
+
+anim special2
+	#range	0	340
+	#rangez	-100 100
+	loop	0
+	delay	10
+	offset	65 270
+	bbox    0 0 105 172
+	frame	data/chars/chaos/larmat1.gif
+	frame   data/chars/chaos/larmat2.gif
+	frame   data/chars/chaos/larmat3.gif
+	frame	data/chars/chaos/larmat4.gif
+	frame   data/chars/chaos/larmat5.gif
+	delay	20
+	delay   5
+	frame   data/chars/chaos/larmat6.gif
+	frame	data/chars/chaos/larmat7.gif
+	attack  109  0  310  31  25  1 0 0 0 200
+	attackz 200
+	frame   data/chars/chaos/larmat8.gif
+	attackz 200
+	attack  147  5  306  264  25  1  0  0  0  200
+		delay  20
+		offset  65  270
+		bbox  0  0  105  172
+	frame   data/chars/chaos/larmat9.gif
+	quakeframe 9 3 5
+	frame	data/chars/chaos/larmat10.gif
+	frame   data/chars/chaos/larmat11.gif
+	frame   data/chars/chaos/larmat12.gif
+	attack  0
+	frame	data/chars/chaos/larmat13.gif
+	frame   data/chars/chaos/larmat14.gif
+	frame   data/chars/chaos/larmat15.gif
+	frame	data/chars/chaos/larmat16.gif
+	frame   data/chars/chaos/larmat17.gif
+	frame   data/chars/chaos/larmat18.gif
+	frame	data/chars/chaos/larmat19.gif
+	frame   data/chars/chaos/larmat20.gif
+	frame   data/chars/chaos/larmat21.gif
+	frame	data/chars/chaos/larmat22.gif
+	frame   data/chars/chaos/larmat23.gif
+	frame   data/chars/chaos/larmat24.gif
+	frame	data/chars/chaos/larmat25.gif
+	frame   data/chars/chaos/larmat26.gif
+	frame   data/chars/chaos/larmat27.gif
+	frame	data/chars/chaos/larmat28.gif
+
+anim pain
+	loop	0
+	offset	65 270
+	delay	4
+	frame	data/chars/chaos/hurt.gif
+	frame	data/chars/chaos/hurt.gif
+
+anim death
+	loop	0
+	offset	65 270
+	delay	25
+	frame	data/chars/chaos/hurt.gif
+
+anim block
+	loop	0
+	offset	65 270
+	delay   6
+	frame	data/chars/chaos/bar1.gif
+	frame   data/chars/chaos/bar2.gif
+	frame   data/chars/chaos/bar3.gif
+	frame	data/chars/chaos/bar4.gif
+	frame   data/chars/chaos/bar5.gif
+	delay   5
+	bbox    228 39 102 220
+	frame   data/chars/chaos/bar6.gif
+	frame	data/chars/chaos/bar7.gif
+	frame   data/chars/chaos/bar8.gif
+	frame   data/chars/chaos/bar9.gif
+	frame	data/chars/chaos/bar10.gif
+	frame   data/chars/chaos/bar11.gif
+	delay   6
+	frame   data/chars/chaos/bar12.gif
+	frame	data/chars/chaos/bar13.gif
+	frame   data/chars/chaos/bar14.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

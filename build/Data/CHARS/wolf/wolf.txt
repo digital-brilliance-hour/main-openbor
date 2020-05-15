@@ -1,0 +1,83 @@
+
+name	Wolf
+health	30
+speed	10
+type	enemy
+shadow	3
+icon	data/chars/Wolf/icon.gif
+
+
+remap	data/chars/Wolf/idle00.gif data/chars/Wolf/map1.gif
+remap	data/chars/Wolf/idle00.gif data/chars/Wolf/map2.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	38 56 44 29
+	frame	data/chars/Wolf/idle00.gif
+  	frame	data/chars/Wolf/idle01.gif
+	frame	data/chars/Wolf/idle02.gif
+  	frame	data/chars/Wolf/idle03.gif
+	frame	data/chars/Wolf/idle02.gif
+  	frame	data/chars/Wolf/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	38 56 44 29
+	frame	data/chars/Wolf/walk00.gif
+	frame	data/chars/Wolf/walk01.gif
+	frame	data/chars/Wolf/walk02.gif
+	frame	data/chars/Wolf/walk03.gif
+	frame	data/chars/Wolf/walk04.gif
+	frame	data/chars/Wolf/walk05.gif
+
+
+anim attack1
+	loop	0
+	delay	7   
+	offset	38 77
+	frame	data/chars/Wolf/atk00.gif
+	frame	data/chars/Wolf/atk01.gif
+	frame	data/chars/Wolf/atk00.gif
+        move    20
+        attack  54 45 32 25 9 1
+	frame	data/chars/Wolf/atk02.gif
+        attack  60 35 29 25 9 1
+	frame	data/chars/Wolf/atk03.gif
+	frame	data/chars/Wolf/atk04.gif
+        attack  58 40 25 29 9 1
+	frame	data/chars/Wolf/atk05.gif
+        attack  58 50 25 28 9 1
+	frame	data/chars/Wolf/atk06.gif
+
+
+anim pain
+	loop	0
+	offset	38 77
+	bbox	38 56 44 29	
+	delay	20
+	frame   data/chars/Wolf/pain.gif
+
+
+anim fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	41 36 24 22 4 1
+	frame   data/chars/Wolf/fall00.gif
+	frame   data/chars/Wolf/fall00.gif
+	frame   data/chars/Wolf/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	38 77
+	delay	5
+        frame   data/chars/Wolf/rise.gif
+
+

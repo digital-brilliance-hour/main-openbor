@@ -1,0 +1,265 @@
+name Trunks
+type Player
+health 999
+speed 15
+icon data/chars/trunks/icon.gif
+
+
+anim idle
+
+       loop 1
+       delay 50
+       offset 11 44
+       bbox 4 7 16 38
+       frame data/chars/trunks/stance.gif
+
+anim walk
+
+       loop 1
+       delay 20
+       offset 11 44
+       bbox 3 6 14 39
+       frame data/chars/trunks/walk1.gif
+       bbox 2 3 20 48
+       frame data/chars/trunks/walk2.gif
+
+anim get
+
+       delay 16
+       offset 13 26
+       frame data/chars/trunks/get.gif
+
+anim jump
+
+       delay 40
+       offset 12 37
+       bbox 2 2 22 33
+       frame data/chars/trunks/jump1.gif
+       delay 260
+       offset 16 34
+       bbox 3 2 17 27
+       frame data/chars/trunks/jump2.gif
+
+anim jumpattack
+
+       delay 12
+       offset 29 36
+       sound data/chars/trunks/ahh.wav
+       attack 3 3 23 28 12 1 0 0 0
+       frame data/chars/trunks/ja1.gif
+       offset 14 32
+       attack 6 0 40 41 12 1 0 0 0
+       frame data/chars/trunks/ja2.gif
+
+anim jumpattack2
+
+       delay 12
+       offset 22 32
+       sound data/chars/trunks/ahh.wav
+       attack 3 0 47 42 33 1 0 0 0
+       frame data/chars/trunks/jd.gif
+       attack 3 3 46 38 33 1 0 0 0
+       frame data/chars/trunks/jd.gif
+
+anim attack1
+
+       delay 9
+       offset 14 43
+       sound data/chars/samjack/strider.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/a1.gif
+       offset 26 35
+       frame data/chars/trunks/a2.gif
+       offset 24 60
+       attack 13 1 70 59 30 0 0 0 0
+       frame data/chars/trunks/a3.gif
+       offset 16 60
+       attack 7 2 22 59 30 0 0 0 0
+       frame data/chars/trunks/a4.gif
+
+anim attack2
+
+       delay 9
+       offset 26 64
+       sound data/chars/samjack/strider.wav
+       attack 14 1 71 64 12 0 0 0 0
+       frame data/chars/trunks/a5.gif
+       offset 42 38
+       attack 5 0 121 39 12 0 0 0 0
+       frame data/chars/trunks/a6.gif
+       offset 43 37
+       attack 6 1 54 41 30 0 0 0 0
+       frame data/chars/trunks/a7.gif
+
+anim attack3
+
+       delay 9
+       offset 14 43
+       sound data/chars/samjack/strider.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/a1.gif
+       offset 34 47
+       attack 2 2 93 44 25 1 0 0 0
+       frame data/chars/trunks/a8.gif
+       offset 12 40
+       attack 12 0 60 46 30 1 0 0 0
+       frame data/chars/trunks/a9.gif
+       offset 14 24
+       attack 6 0 52 26 30 1 0 0 0
+       frame data/chars/trunks/a10.gif
+
+anim grab
+
+       delay 100
+       offset 30 35
+       bbox 30 35 14 30
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/grab.gif
+
+anim throw
+
+       delay 8
+       offset 14 41
+       frame data/chars/trunks/ga1.gif
+       offset 15 27
+       frame data/chars/trunks/throw.gif
+       offset 13 26
+       frame data/chars/trunks/get.gif
+
+anim pain
+
+       delay 12
+       offset 15 44
+       bbox 6 0 17 40
+       frame data/chars/trunks/hit1.gif
+       bbox 2 3 18 37
+       frame data/chars/trunks/hit2.gif
+
+anim fall
+
+       delay 30
+       offset 18 27
+       attack 18 29 37 31 17 1 0 0 0
+       frame data/chars/trunks/fall1.gif
+       offset 17 28
+       frame data/chars/trunks/fall2.gif
+       offset 26 6
+       frame data/chars/trunks/lie.gif
+
+anim rise
+
+       delay 10
+       offset 16 10
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/rise1.gif
+       offset 12 25
+       frame data/chars/trunks/get.gif
+       offset 10 36
+       frame data/chars/trunks/rise2.gif
+
+anim special
+
+       delay 8
+       offset 12 45
+       sound data/chars/trunks/bas.wav
+       frame data/chars/trunks/burn1.gif
+       frame data/chars/trunks/burn2.gif
+       frame data/chars/trunks/burn3.gif
+       frame data/chars/trunks/burn4.gif
+       frame data/chars/trunks/burn3.gif
+       frame data/chars/trunks/burn2.gif
+       frame data/chars/trunks/burn1.gif
+       frame data/chars/trunks/burn2.gif
+       frame data/chars/trunks/burn3.gif
+       frame data/chars/trunks/burn1.gif
+       frame data/chars/trunks/burn2.gif
+       frame data/chars/trunks/burn3.gif
+       frame data/chars/trunks/burn4.gif
+       frame data/chars/trunks/burn3.gif
+       delay 260
+       frame data/chars/trunks/burn4.gif
+       delay 15
+       offset 22 45
+       attack 25 3 104 39 55 1 0 0 0
+       frame data/chars/trunks/1.gif
+       offset 20 69
+       attack 13 0 139 73 55 1 0 0 0
+       frame data/chars/trunks/2.gif
+       offset 19 96
+       attack 26 16 342 101 70 1 0 0 0
+       frame data/chars/trunks/3.gif
+       attack 19 8 352 103 270 1 0 0 0
+       frame data/chars/trunks/4.gif
+       attack 20 5 351 118 270 1 0 0 0
+       frame data/chars/trunks/5.gif
+       attack 7 0 363 135 270 1 0 0 0
+       frame data/chars/trunks/6.gif
+       attack 3 1 367 133 270 1 0 0 0
+       frame data/chars/trunks/7.gif
+       offset 56 102
+       attack 9 1 366 119 270 1 0 0 0
+       frame data/chars/trunks/8.gif
+       attack 35 7 343 111 277 1 0 0 0
+       frame data/chars/trunks/9.gif
+       attack 67 50 306 48 277 1 0 0 0
+       frame data/chars/trunks/10.gif
+       attack 69 62 304 25 177 1 0 0 0
+       frame data/chars/trunks/11.gif
+
+anim freespecial
+
+       delay 8
+       offset 26 33
+       sound data/chars/trunks/tele.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/dash1.gif
+       frame data/chars/trunks/tele1.gif
+       frame data/chars/trunks/tele2.gif
+       move 20
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele2.gif
+       frame data/chars/trunks/tele3.gif
+       offset 25 22
+       frame data/chars/trunks/dash2.gif
+
+anim grabattack
+
+       delay 8
+       offset 14 41
+       frame data/chars/trunks/ga1.gif
+       offset 11 41
+       sound data/chars/trunks/mack.wav
+       attack 8 3 39 37 23 0 0 0 0
+       frame data/chars/trunks/ga2.gif
+       offset 10 39
+       attack 1 1 25 42 30 1 0 0 0
+       frame data/chars/trunks/ga3.gif
+
+anim grabattack2
+
+       delay 8
+       offset 14 41
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/grab.gif
+       offset 11 41
+       frame data/chars/trunks/ga3.gif
+       delay 30
+       offset 14 41
+       sound data/chars/trunks/mock.wav
+       attack 4 2 33 40 40 1 0 0 0
+       frame data/chars/trunks/ga4.gif
+       delay 8
+       attack 8 7 25 31 40 1 0 0 0
+       frame data/chars/trunks/grab.gif
+
+anim land
+
+       delay 25
+       offset 12 25
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/trunks/get.gif
+       frame data/chars/trunks/get.gif

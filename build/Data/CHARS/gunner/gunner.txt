@@ -1,0 +1,85 @@
+
+name	Gunner
+health	150
+speed	10
+type	enemy
+shadow	2
+icon	data/chars/Gunner/icon.gif
+hostile player npc
+load gun
+knife gun
+subject_to_screen 1
+candamage player npc obstacle
+
+anim spawn
+	loop	0
+	delay	15
+	offset	43 77
+	bbox	37 35 19 35	
+	
+  	frame	data/chars/Gunner/idle01.gif
+	frame	data/chars/Gunner/idle02.gif
+  	frame	data/chars/Gunner/idle03.gif
+	frame	data/chars/Gunner/idle04.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	43 77
+	bbox	37 35 19 35	
+	
+  	frame	data/chars/Gunner/idle01.gif
+	frame	data/chars/Gunner/idle02.gif
+  	frame	data/chars/Gunner/idle03.gif
+	frame	data/chars/Gunner/idle04.gif
+
+anim walk
+	loop	1
+	delay	10
+	offset	43 77
+	bbox	37 35 19 35
+	
+	frame	data/chars/Gunner/walk01.gif
+	frame	data/chars/Gunner/walk02.gif
+	frame	data/chars/Gunner/walk03.gif
+	frame	data/chars/Gunner/walk04.gif
+	frame	data/chars/Gunner/walk05.gif
+	frame	data/chars/Gunner/walk06.gif
+
+anim attack1
+        
+	loop	0
+	delay	10
+	bbox	37 35 19 35   
+	offset	43 77
+	frame	data/chars/Gunner/shot01.gif
+        frame	data/chars/Gunner/shot02.gif
+	sound   data/chars/Gunner/shot.wav
+        throwframe 1 28
+	frame	data/chars/Gunner/shot03.gif
+	frame	data/chars/Gunner/shot04.gif
+
+anim pain
+	loop	0
+	offset	43 77
+	bbox	37 35 19 35	
+	delay	20
+	frame   data/chars/Gunner/pain.gif
+
+
+anim fall
+	loop	0
+	offset	43 77
+	delay	20
+	frame   data/chars/Gunner/fall01.gif
+	frame   data/chars/Gunner/fall02.gif
+
+
+
+anim rise
+	loop	0
+	offset	43 77
+	delay	5
+        frame   data/chars/Gunner/idle01.gif
+
+

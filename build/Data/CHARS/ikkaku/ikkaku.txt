@@ -1,0 +1,221 @@
+name	Ikkaku
+health	100
+mp	100
+speed	15
+type	player
+shadow	0
+cantgrab 1
+
+
+anim select
+	loop	0
+	delay	7
+	offset	117 224
+	frame	data/chars/Ikkaku/Select1.gif
+	frame	data/chars/Ikkaku/Select2.gif
+	frame	data/chars/Ikkaku/Select3.gif
+	frame	data/chars/Ikkaku/Select4.gif
+	frame	data/chars/Ikkaku/Select5.gif
+	frame	data/chars/Ikkaku/Select6.gif
+	frame	data/chars/Ikkaku/Select7.gif
+	frame	data/chars/Ikkaku/Select7.gif
+	frame	data/chars/Ikkaku/Select8.gif
+	frame	data/chars/Ikkaku/Select9.gif
+	frame	data/chars/Ikkaku/Select10.gif
+	frame	data/chars/Ikkaku/Select11.gif
+	frame	data/chars/Ikkaku/Select12.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Ikkaku/Idle1.gif
+	frame	data/chars/Ikkaku/Idle2.gif
+	frame	data/chars/Ikkaku/Idle3.gif
+	frame	data/chars/Ikkaku/Idle2.gif
+
+anim walk
+        loop    1
+        delay   7
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Ikkaku/walk1.gif
+	frame	data/chars/Ikkaku/walk2.gif
+	frame	data/chars/Ikkaku/walk3.gif
+	frame	data/chars/Ikkaku/walk4.gif
+	frame	data/chars/Ikkaku/walk5.gif
+	frame	data/chars/Ikkaku/walk6.gif
+	frame	data/chars/Ikkaku/walk7.gif
+	frame	data/chars/Ikkaku/walk8.gif
+
+anim get
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+
+anim duck
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+
+anim attack1
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/Att1.gif
+	frame	data/chars/Ikkaku/Att2.gif
+        attack  69 32 50 86 5
+	frame	data/chars/Ikkaku/Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Att4.gif
+
+anim attack2
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/2Att1.gif
+	frame	data/chars/Ikkaku/2Att2.gif
+        attack  69 32 50 86 10
+	frame	data/chars/Ikkaku/2Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/2Att4.gif
+
+anim attack3
+	loop	0
+        delay   10   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/3Att1.gif
+	frame	data/chars/Ikkaku/3Att2.gif
+        attack  69 32 50 86 20 1
+	frame	data/chars/Ikkaku/3Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/3Att4.gif
+	frame	data/chars/Ikkaku/3Att5.gif
+
+anim special
+	energycost 100
+	mponly     1
+	loop	0
+	delay	5
+	offset	58 116
+	frame	data/chars/Ikkaku/Special1.gif
+	frame	data/chars/Ikkaku/Special2.gif
+	frame	data/chars/Ikkaku/Special3.gif
+	frame	data/chars/Ikkaku/Special4.gif
+        attack  60 70 115 46 50 1
+	frame	data/chars/Ikkaku/Special5.gif
+	frame	data/chars/Ikkaku/Special6.gif
+	frame	data/chars/Ikkaku/Special7.gif
+	frame	data/chars/Ikkaku/Special8.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Special9.gif
+	frame	data/chars/Ikkaku/Special9.gif
+	frame	data/chars/Ikkaku/Special9.gif
+
+anim freespecial
+	energycost 50
+	mponly     1
+	loop	0
+	delay	10
+	offset	58 116
+	frame	data/chars/Ikkaku/Free1.gif
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/Free2.gif
+        attack  80 40 85 75 25 1
+	frame	data/chars/Ikkaku/Free3.gif
+	frame	data/chars/Ikkaku/Free4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Free5.gif
+	frame	data/chars/Ikkaku/Free6.gif
+
+anim jump
+	loop	1
+	offset	58 116
+	delay	20
+        bbox    50 65 20 40
+	frame	data/chars/Ikkaku/jump1.gif
+	frame	data/chars/Ikkaku/jump2.gif
+
+anim jumpattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+        attack  69 32 50 86 10 1
+	frame	data/chars/Ikkaku/Free3.gif
+	frame	data/chars/Ikkaku/Free4.gif
+
+anim pain
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Ikkaku/Free1.gif
+
+anim grab
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+
+anim grabattack
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/Att1.gif
+	frame	data/chars/Ikkaku/Att2.gif
+        attack  69 32 50 86 5
+	frame	data/chars/Ikkaku/Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Att4.gif
+
+anim grabattack2
+	loop	0
+        delay   7   
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/3Att1.gif
+	frame	data/chars/Ikkaku/3Att2.gif
+        attack  69 32 50 86 20 1
+	frame	data/chars/Ikkaku/3Att3.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Ikkaku/3Att4.gif
+	frame	data/chars/Ikkaku/3Att5.gif
+
+anim throw
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Throw1.gif
+	frame	data/chars/Ikkaku/Throw2.gif
+	frame	data/chars/Ikkaku/Throw3.gif
+
+anim rise
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+
+anim land
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+
+anim fall
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Ikkaku/Fall1.gif

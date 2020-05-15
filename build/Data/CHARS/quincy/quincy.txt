@@ -1,0 +1,70 @@
+name	Quincy
+health	50
+speed	17
+type	enemy
+shadow	0
+cantgrab 1
+
+
+anim idle
+	loop	1
+	delay	15
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Quincy/Idle1.gif
+
+anim walk
+        loop    1
+        delay   7
+	offset	58 116
+        bbox    50 65 20 40
+	frame	data/chars/Quincy/walk1.gif
+	frame	data/chars/Quincy/walk2.gif
+	frame	data/chars/Quincy/walk3.gif
+	frame	data/chars/Quincy/walk4.gif
+	frame	data/chars/Quincy/walk5.gif
+	frame	data/chars/Quincy/walk6.gif
+	frame	data/chars/Quincy/walk7.gif
+	frame	data/chars/Quincy/walk8.gif
+
+anim attack1
+	loop	0
+        delay   5
+	offset	58 116
+        bbox    50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Quincy/Att1.gif
+	frame	data/chars/Quincy/Att2.gif
+	frame	data/chars/Quincy/Att3.gif
+        attack  40 35 259 81 50 1
+	frame	data/chars/Quincy/Att4.gif
+	frame	data/chars/Quincy/Att5.gif
+	frame	data/chars/Quincy/Att6.gif
+	frame	data/chars/Quincy/Att7.gif
+        attack  0 0 0 0 0 0
+        delay   30
+	frame	data/chars/Quincy/Idle1.gif
+
+anim pain
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Quincy/Hurt1.gif
+
+anim rise
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Quincy/Duck1.gif
+
+anim land
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Quincy/Duck1.gif
+
+anim fall
+	loop	0
+        offset  58 116
+	delay	30
+	frame	data/chars/Quincy/Fall1.gif

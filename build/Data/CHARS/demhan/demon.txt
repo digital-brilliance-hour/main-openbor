@@ -1,0 +1,139 @@
+name 	Demon_H
+health	150
+type 	enemy
+subtype chase
+aimove	chasez
+diesound data/sounds/shaah.wav
+shadow 	4
+#hitenemy 1 0
+nodrop	1
+death	1
+noquake	1
+noatflash	1
+flash	flash
+nodieblink	2
+cantgrab	1
+candamage	npc player
+
+
+
+anim idle
+	seta	220
+	loop 	1
+	bbox 	10 17 59 36
+	delay 	100
+	offset 	37 6
+	frame 	data/chars/demhan/idle.gif
+
+anim walk
+	seta	220
+	loop 	1
+	bbox 	10 17 59 36
+	delay 	100
+	offset 	37 6
+	frame 	data/chars/demhan/idle.gif
+
+anim attack1
+	range	1 60
+	bbox	5 48 43 45
+	seta	220
+	loop	0
+	delay	10
+	offset	37 6
+	frame 	data/chars/demhan/a.gif	
+	frame 	data/chars/demhan/idle.gif
+	frame 	data/chars/demhan/a.gif	
+	frame 	data/chars/demhan/idle.gif
+	frame 	data/chars/demhan/a.gif	
+	frame 	data/chars/demhan/idle.gif
+	delay	5
+	offset	56 8
+	frame 	data/chars/demhan/a0.gif
+	offset	63 12
+	frame 	data/chars/demhan/a1.gif
+	offset	85 6
+	frame 	data/chars/demhan/a2.gif
+	attack	37 18 68 118 20 1 0
+	offset	84 5
+	frame 	data/chars/demhan/a3.gif
+	offset	48 5
+	frame 	data/chars/demhan/a4.gif
+	attack	9 11 85 139 30 1 0
+	delay	3
+	offset	39 5
+	frame 	data/chars/demhan/a5.gif
+	offset	30 5
+	frame 	data/chars/demhan/a6.gif
+	attack	0 5 84 137 30 1 0
+	offset	28 7
+	frame 	data/chars/demhan/a7.gif
+	offset	29 11
+	frame 	data/chars/demhan/a8.gif
+	attack	0 0 0 0 0 0 
+	delay	15
+	offset	48 5
+	frame 	data/chars/demhan/a4.gif
+	offset	84 5
+	frame 	data/chars/demhan/a3.gif
+	offset	85 6
+	frame 	data/chars/demhan/a2.gif
+	offset	63 12
+	frame 	data/chars/demhan/a1.gif
+	offset	56 8
+	frame 	data/chars/demhan/a0.gif
+
+anim pain
+	seta	220
+	loop	0
+	delay	4
+	offset	48 5
+	frame 	data/chars/demhan/a4.gif
+	offset	84 5
+	frame 	data/chars/demhan/a3.gif
+	offset	85 6
+	frame 	data/chars/demhan/a2.gif
+	offset	63 12
+	frame 	data/chars/demhan/a1.gif
+	offset	56 8
+	frame 	data/chars/demhan/a0.gif
+
+anim pain8
+	seta	220
+	loop	0
+	delay	150
+	offset	48 5
+	frame 	data/chars/demhan/fmap.gif
+	
+anim rise
+	seta	220
+	loop 	0
+	delay 	10
+	offset 	37 6
+	frame 	data/chars/demhan/idle.gif
+	
+
+anim death
+	seta	220
+	loop	0
+	delay	7
+	offset	84 5
+	frame 	data/chars/demhan/d0.gif
+	frame 	data/chars/demhan/d1.gif
+	frame 	data/chars/demhan/d2.gif
+	frame 	data/chars/demhan/d3.gif
+	frame 	data/chars/demhan/d4.gif
+	frame 	data/chars/demhan/d5.gif
+
+anim death8
+	seta	220
+	loop	0
+	delay	150
+	offset	48 5
+	frame 	data/chars/demhan/fmap.gif
+
+
+	
+	
+
+
+

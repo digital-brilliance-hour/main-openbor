@@ -1,0 +1,205 @@
+name	Android
+health	100
+speed	9
+type	enemy
+shadow  3
+remap 	data/chars/man/idle.gif  data/chars/man/map1.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map2.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map3.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map4.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map5.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map6.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map7.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map8.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map9.gif
+remap 	data/chars/man/idle.gif  data/chars/man/map10.gif
+nolife   1
+dust   dust
+
+
+anim  respawn
+	loop	0
+	offset	90 192
+	delay	5
+	frame	data/chars/man/idle.gif
+
+
+anim idle
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay	9
+	frame	data/chars/man/idle.gif
+
+
+anim walk
+	loop	1
+	offset	90 192
+	bbox	75 130 35 70
+	delay   13
+	frame	data/chars/man/w1.gif
+	frame	data/chars/man/idle.gif
+	frame	data/chars/man/w2.gif
+	frame	data/chars/man/idle.gif
+
+
+
+anim pain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/man/fall.wav
+        move    -2
+	frame	data/chars/man/pain.gif
+	offset  87 192
+        move    -2
+	frame	data/chars/man/pain.gif
+	offset  89 192
+        move    0
+	delay   40
+	frame	data/chars/man/pain.gif
+
+anim spain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+        sound   data/chars/man/fall.wav
+	frame	data/chars/man/pain.gif
+	offset  87 192
+	frame	data/chars/man/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/man/pain.gif
+
+anim grabbed
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	75 130 35 70
+	frame	data/chars/man/pain.gif
+	offset  87 192
+	frame	data/chars/man/pain.gif
+	offset  89 192
+	delay   40
+	frame	data/chars/man/pain.gif
+
+anim bpain
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	65 102 46 76
+        sound   data/chars/man/fall.wav
+	frame	data/chars/man/fall4.gif
+	offset  87 192
+	frame	data/chars/man/fall4.gif
+	offset  89 192
+	frame	data/chars/man/fall4.gif
+	offset  87 192
+	frame	data/chars/man/fall4.gif
+	offset  89 192
+	frame	data/chars/man/fall4.gif
+	offset  87 192
+	frame	data/chars/man/fall4.gif
+	offset  89 192
+	frame	data/chars/man/fall4.gif
+	offset  87 192
+	frame	data/chars/man/fall4.gif
+	offset  89 192
+	delay   50
+	frame	data/chars/man/fall4.gif
+
+anim fall
+	loop	0
+	offset	90 192
+	delay   30
+        sound   data/chars/man/fall.wav
+	frame	data/chars/man/fall1.gif
+	attack  85 125 10 50 5 1 
+	frame	data/chars/man/fall1.gif
+	attack  0 0 0 0 0 0 0 0 0
+	delay   40
+	frame	data/chars/man/fall4.gif
+
+anim rise
+	loop	0
+	offset	90 192
+	delay	10
+	frame	data/chars/man/rise1.gif
+	frame	data/chars/man/rise2.gif
+	frame	data/chars/man/rise1.gif
+	frame	data/chars/man/rise2.gif
+	frame	data/chars/man/rise1.gif
+	frame	data/chars/man/rise2.gif
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	5
+	offset	90 192
+	bbox	75 130 35 70
+        move    3
+	frame	data/chars/man/idle.gif
+        sound   data/chars/man/a1.wav
+	frame	data/chars/man/idle.gif
+	frame	data/chars/man/idle.gif
+	attack  92 140 35 25 5
+	frame	data/chars/man/a1.gif
+        move    0
+	frame	data/chars/man/a1.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/idle.gif
+	frame	data/chars/man/idle.gif
+        fastattack	1
+	attack  92 140 35 25 5
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/a1.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/a2.gif
+	frame	data/chars/man/a2.gif
+	attack  92 140 35 25 5 1
+        fastattack	1
+	frame	data/chars/man/a3.gif
+	frame	data/chars/man/a3.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a3.gif
+
+
+
+anim  riseattack
+	range	0 60
+	loop	0
+	delay	5
+	offset	90 192
+        move    3
+	frame	data/chars/man/idle.gif
+        sound   data/chars/man/a1.wav
+	frame	data/chars/man/idle.gif
+	frame	data/chars/man/idle.gif
+	attack  92 140 35 25 5
+	frame	data/chars/man/a1.gif
+	bbox	75 130 35 70
+        move    0
+	frame	data/chars/man/a1.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/idle.gif
+	frame	data/chars/man/idle.gif
+        fastattack	1
+	attack  92 140 35 25 5
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/a1.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a1.gif
+	frame	data/chars/man/a2.gif
+	frame	data/chars/man/a2.gif
+	attack  92 140 35 25 5 1
+        fastattack	1
+	frame	data/chars/man/a3.gif
+	frame	data/chars/man/a3.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/man/a3.gif
+

@@ -1,0 +1,89 @@
+
+name	Marine
+health	150
+speed	10
+type	enemy
+shadow	2
+icon	data/chars/Marine/icon.gif
+subtype chase
+hostile player npc
+subject_to_screen 1
+candamage player npc
+
+remap	data/chars/Marine/idle01.gif data/chars/Marine/map1.gif
+
+anim spawn
+	loop	0
+	delay	15
+	offset	43 77
+	bbox	39 34 21 37	
+	
+  	frame	data/chars/Marine/idle01.gif
+	frame	data/chars/Marine/idle02.gif
+
+anim idle
+	loop	1
+	delay	15
+	offset	43 77
+	bbox	39 34 21 37	
+	
+  	frame	data/chars/Marine/idle01.gif
+	frame	data/chars/Marine/idle02.gif
+  	
+
+anim walk
+	loop	1
+	delay	10
+	offset	43 77
+	bbox	39 34 21 37
+	
+	frame	data/chars/Marine/walk01.gif
+	frame	data/chars/Marine/walk02.gif
+	frame	data/chars/Marine/walk03.gif
+	frame	data/chars/Marine/walk04.gif
+	
+
+
+anim attack1
+	loop	0
+	delay	10
+	bbox	39 34 23 37  
+	offset  43 77
+	
+	frame	data/chars/Marine/punch01.gif
+	frame	data/chars/Marine/punch02.gif
+	sound   data/chars/Marine/sword.wav
+        attack	61 31 25 43 10 1
+	frame	data/chars/Marine/punch03.gif
+	frame	data/chars/Marine/punch04.gif
+        frame	data/chars/Marine/punch05.gif
+	frame	data/chars/Marine/punch06.gif
+	
+
+
+
+
+anim pain
+	loop	0
+	offset	43 77
+	bbox	39 34 21 37	
+	delay	30
+	frame   data/chars/Marine/pain.gif
+
+
+anim fall
+	loop	0
+	offset	43 77
+	delay	20	
+	frame   data/chars/Marine/fall01.gif
+	frame   data/chars/Marine/fall01.gif
+	frame   data/chars/Marine/fall02.gif
+
+
+anim rise
+	loop	0
+	offset	43 77
+	delay	5
+        frame   data/chars/Marine/idle01.gif
+
+
