@@ -1,1831 +1,305 @@
-name	King Piccolo
+name	KPiccolo
 health	100
 speed	9
 type	player
 shadow	3
 
 
-anim 9000
- delay 7
- offset 0 0
- frame data/chars/King_Piccolo/0.gif
- offset 0 0
- frame data/chars/King_Piccolo/1.gif
- offset 5 30
- frame data/chars/King_Piccolo/2.gif
- offset 320 100
- frame data/chars/King_Piccolo/3.gif
- offset 320 100
- frame data/chars/King_Piccolo/4.gif
 
-anim idle
- delay 7
- offset 23 63
- frame data/chars/King_Piccolo/5.gif
- offset 23 63
- frame data/chars/King_Piccolo/6.gif
- offset 23 63
- frame data/chars/King_Piccolo/7.gif
- offset 23 63
- frame data/chars/King_Piccolo/8.gif
- offset 23 47
- frame data/chars/King_Piccolo/9.gif
- offset 23 46
- frame data/chars/King_Piccolo/10.gif
- offset 23 47
- frame data/chars/King_Piccolo/11.gif
- offset 23 48
- frame data/chars/King_Piccolo/12.gif
 
-anim turn
- delay 7
- offset 23 63
- frame data/chars/King_Piccolo/13.gif
 
-anim 0006
- delay 7
- offset 22 40
- frame data/chars/King_Piccolo/14.gif
- offset 22 43
- frame data/chars/King_Piccolo/15.gif
 
-anim walk
- delay 7
- offset 28 38
- frame data/chars/King_Piccolo/16.gif
- offset 28 38
- frame data/chars/King_Piccolo/17.gif
- offset 28 37
- frame data/chars/King_Piccolo/18.gif
- offset 28 37
- frame data/chars/King_Piccolo/19.gif
 
-anim 0040
- delay 7
- offset 19 56
- frame data/chars/King_Piccolo/20.gif
- offset 19 56
- frame data/chars/King_Piccolo/21.gif
- offset 12 63
- frame data/chars/King_Piccolo/22.gif
- offset 18 19
- frame data/chars/King_Piccolo/23.gif
 
-anim run
- delay 7
- offset 26 47
- frame data/chars/King_Piccolo/24.gif
- offset 25 47
- frame data/chars/King_Piccolo/25.gif
 
-anim block120
- delay 7
- offset 23 63
- frame data/chars/King_Piccolo/26.gif
-
-anim block122
- delay 7
- offset 17 56
- frame data/chars/King_Piccolo/27.gif
-
-anim attack200
- delay 7
- offset 23 62
- frame data/chars/King_Piccolo/28.gif
- offset 21 39
- frame data/chars/King_Piccolo/29.gif
- offset 23 45
- frame data/chars/King_Piccolo/30.gif
- offset 19 42
- frame data/chars/King_Piccolo/31.gif
- offset 20 39
- frame data/chars/King_Piccolo/32.gif
- offset 20 37
- frame data/chars/King_Piccolo/33.gif
- offset 20 35
- frame data/chars/King_Piccolo/34.gif
- offset 23 63
- frame data/chars/King_Piccolo/35.gif
- offset 23 63
- frame data/chars/King_Piccolo/36.gif
- offset 23 63
- frame data/chars/King_Piccolo/37.gif
- offset 13 61
- frame data/chars/King_Piccolo/38.gif
- offset 33 62
- frame data/chars/King_Piccolo/39.gif
- offset 20 63
- frame data/chars/King_Piccolo/40.gif
- offset 20 63
- frame data/chars/King_Piccolo/41.gif
- offset 20 63
- frame data/chars/King_Piccolo/42.gif
- offset 20 63
- frame data/chars/King_Piccolo/43.gif
- offset 25 52
- frame data/chars/King_Piccolo/44.gif
- offset 24 50
- frame data/chars/King_Piccolo/45.gif
- offset 24 50
- frame data/chars/King_Piccolo/46.gif
- offset 24 47
- frame data/chars/King_Piccolo/47.gif
- offset 24 45
- frame data/chars/King_Piccolo/48.gif
- offset 21 41
- frame data/chars/King_Piccolo/49.gif
- offset 25 49
- frame data/chars/King_Piccolo/50.gif
- offset 28 58
- frame data/chars/King_Piccolo/51.gif
- offset 25 58
- frame data/chars/King_Piccolo/52.gif
- offset 29 58
- frame data/chars/King_Piccolo/53.gif
- offset 23 58
- frame data/chars/King_Piccolo/54.gif
- offset 32 60
- frame data/chars/King_Piccolo/55.gif
- offset 23 47
- frame data/chars/King_Piccolo/56.gif
- offset 34 51
- frame data/chars/King_Piccolo/57.gif
- offset 40 53
- frame data/chars/King_Piccolo/58.gif
- offset 42 53
- frame data/chars/King_Piccolo/59.gif
- offset 23 45
- frame data/chars/King_Piccolo/60.gif
- offset 23 45
- frame data/chars/King_Piccolo/61.gif
- offset 23 46
- frame data/chars/King_Piccolo/62.gif
- offset 23 44
- frame data/chars/King_Piccolo/63.gif
- offset 23 47
- frame data/chars/King_Piccolo/64.gif
- offset 23 45
- frame data/chars/King_Piccolo/65.gif
- offset 24 46
- frame data/chars/King_Piccolo/66.gif
- offset 28 51
- frame data/chars/King_Piccolo/67.gif
- offset 28 45
- frame data/chars/King_Piccolo/68.gif
- offset 28 47
- frame data/chars/King_Piccolo/69.gif
- offset 28 47
- frame data/chars/King_Piccolo/70.gif
- offset 25 46
- frame data/chars/King_Piccolo/71.gif
- offset 13 58
- frame data/chars/King_Piccolo/72.gif
- offset 12 67
- frame data/chars/King_Piccolo/73.gif
- offset 25 67
- frame data/chars/King_Piccolo/74.gif
- offset 27 48
- frame data/chars/King_Piccolo/75.gif
- offset 25 48
- frame data/chars/King_Piccolo/76.gif
- offset 17 56
- frame data/chars/King_Piccolo/77.gif
- offset 14 55
- frame data/chars/King_Piccolo/78.gif
- offset 16 54
- frame data/chars/King_Piccolo/79.gif
- offset 16 54
- frame data/chars/King_Piccolo/80.gif
- offset 23 53
- frame data/chars/King_Piccolo/81.gif
- offset 23 46
- frame data/chars/King_Piccolo/82.gif
- offset 23 46
- frame data/chars/King_Piccolo/83.gif
- offset 23 46
- frame data/chars/King_Piccolo/84.gif
- offset 24 52
- frame data/chars/King_Piccolo/85.gif
- offset 30 45
- frame data/chars/King_Piccolo/86.gif
- offset 28 52
- frame data/chars/King_Piccolo/87.gif
- offset 26 52
- frame data/chars/King_Piccolo/88.gif
- offset 25 47
- frame data/chars/King_Piccolo/89.gif
- offset 24 49
- frame data/chars/King_Piccolo/90.gif
- offset 28 53
- frame data/chars/King_Piccolo/91.gif
- offset 23 46
- frame data/chars/King_Piccolo/92.gif
- offset 23 46
- frame data/chars/King_Piccolo/93.gif
- offset 23 46
- frame data/chars/King_Piccolo/94.gif
- offset 23 46
- frame data/chars/King_Piccolo/95.gif
- offset 23 46
- frame data/chars/King_Piccolo/96.gif
- offset 24 51
- frame data/chars/King_Piccolo/97.gif
- offset 30 45
- frame data/chars/King_Piccolo/98.gif
- offset 30 45
- frame data/chars/King_Piccolo/99.gif
- offset 23 49
- frame data/chars/King_Piccolo/100.gif
- offset 23 40
- frame data/chars/King_Piccolo/101.gif
- offset 23 40
- frame data/chars/King_Piccolo/102.gif
- offset 24 42
- frame data/chars/King_Piccolo/103.gif
- offset 28 47
- frame data/chars/King_Piccolo/104.gif
- offset 28 44
- frame data/chars/King_Piccolo/105.gif
- offset 23 47
- frame data/chars/King_Piccolo/106.gif
- offset 23 48
- frame data/chars/King_Piccolo/107.gif
- offset 23 47
- frame data/chars/King_Piccolo/108.gif
- offset 24 46
- frame data/chars/King_Piccolo/109.gif
- offset 24 46
- frame data/chars/King_Piccolo/110.gif
- offset 23 47
- frame data/chars/King_Piccolo/111.gif
- offset 23 47
- frame data/chars/King_Piccolo/112.gif
- offset 23 47
- frame data/chars/King_Piccolo/113.gif
- offset 23 46
- frame data/chars/King_Piccolo/114.gif
- offset 26 46
- frame data/chars/King_Piccolo/115.gif
- offset 26 54
- frame data/chars/King_Piccolo/116.gif
- offset 26 47
- frame data/chars/King_Piccolo/117.gif
- offset 26 52
- frame data/chars/King_Piccolo/118.gif
- offset 26 46
- frame data/chars/King_Piccolo/119.gif
- offset 26 45
- frame data/chars/King_Piccolo/120.gif
- offset 26 46
- frame data/chars/King_Piccolo/121.gif
- offset 27 46
- frame data/chars/King_Piccolo/122.gif
- offset 31 69
- frame data/chars/King_Piccolo/123.gif
- offset 32 68
- frame data/chars/King_Piccolo/124.gif
- offset 32 68
- frame data/chars/King_Piccolo/125.gif
- offset 32 68
- frame data/chars/King_Piccolo/126.gif
- offset 26 69
- frame data/chars/King_Piccolo/127.gif
-
-anim pain5000
- delay 7
- offset 23 39
- frame data/chars/King_Piccolo/128.gif
- offset 29 47
- frame data/chars/King_Piccolo/129.gif
- offset 29 47
- frame data/chars/King_Piccolo/130.gif
- offset 27 60
- frame data/chars/King_Piccolo/131.gif
- offset 38 48
- frame data/chars/King_Piccolo/132.gif
-
-anim attack202
- delay 7
- offset 30 47
- frame data/chars/King_Piccolo/133.gif
- offset 30 50
- frame data/chars/King_Piccolo/134.gif
- offset 29 50
- frame data/chars/King_Piccolo/135.gif
- offset 28 45
- frame data/chars/King_Piccolo/136.gif
- offset 23 48
- frame data/chars/King_Piccolo/137.gif
-
-anim attack203
- delay 7
- offset 23 48
- frame data/chars/King_Piccolo/138.gif
- offset 23 49
- frame data/chars/King_Piccolo/139.gif
- offset 22 49
- frame data/chars/King_Piccolo/140.gif
- offset 23 46
- frame data/chars/King_Piccolo/141.gif
- offset 22 49
- frame data/chars/King_Piccolo/142.gif
-
-anim attack204
- delay 7
- offset 24 44
- frame data/chars/King_Piccolo/143.gif
- offset 26 51
- frame data/chars/King_Piccolo/144.gif
- offset 28 67
- frame data/chars/King_Piccolo/145.gif
- offset 26 64
- frame data/chars/King_Piccolo/146.gif
- offset 34 63
- frame data/chars/King_Piccolo/147.gif
-
-anim attack205
- delay 7
- offset 23 47
- frame data/chars/King_Piccolo/148.gif
- offset 23 47
- frame data/chars/King_Piccolo/149.gif
- offset 23 47
- frame data/chars/King_Piccolo/150.gif
- offset 23 47
- frame data/chars/King_Piccolo/151.gif
- offset 23 47
- frame data/chars/King_Piccolo/152.gif
- offset 23 47
- frame data/chars/King_Piccolo/153.gif
-
-anim attack206
- delay 7
- offset 23 51
- frame data/chars/King_Piccolo/154.gif
- offset 27 54
- frame data/chars/King_Piccolo/155.gif
- offset 23 47
- frame data/chars/King_Piccolo/156.gif
- offset 23 47
- frame data/chars/King_Piccolo/157.gif
- offset 23 47
- frame data/chars/King_Piccolo/158.gif
- offset 23 47
- frame data/chars/King_Piccolo/159.gif
- offset 23 47
- frame data/chars/King_Piccolo/160.gif
- offset 22 48
- frame data/chars/King_Piccolo/161.gif
-
-anim attack207
- delay 7
- offset 22 47
- frame data/chars/King_Piccolo/162.gif
- offset 22 47
- frame data/chars/King_Piccolo/163.gif
- offset 22 60
- frame data/chars/King_Piccolo/164.gif
- offset 22 60
- frame data/chars/King_Piccolo/165.gif
- offset 22 51
- frame data/chars/King_Piccolo/166.gif
- offset 22 48
- frame data/chars/King_Piccolo/167.gif
- offset 22 50
- frame data/chars/King_Piccolo/168.gif
-
-anim attack208
- delay 7
- offset 21 68
- frame data/chars/King_Piccolo/169.gif
- offset 21 70
- frame data/chars/King_Piccolo/170.gif
- offset 22 64
- frame data/chars/King_Piccolo/171.gif
- offset 22 64
- frame data/chars/King_Piccolo/172.gif
-
-anim attack209
- delay 7
- offset 23 51
- frame data/chars/King_Piccolo/173.gif
- offset 27 54
- frame data/chars/King_Piccolo/174.gif
- offset 22 64
- frame data/chars/King_Piccolo/175.gif
- offset 22 64
- frame data/chars/King_Piccolo/176.gif
- offset 22 64
- frame data/chars/King_Piccolo/177.gif
- offset 22 64
- frame data/chars/King_Piccolo/178.gif
- offset 22 55
- frame data/chars/King_Piccolo/179.gif
- offset 22 48
- frame data/chars/King_Piccolo/180.gif
-
-anim attack210
- delay 7
- offset 25 50
- frame data/chars/King_Piccolo/181.gif
- offset 27 50
- frame data/chars/King_Piccolo/182.gif
- offset 21 70
- frame data/chars/King_Piccolo/183.gif
- offset 21 62
- frame data/chars/King_Piccolo/184.gif
- offset 21 72
- frame data/chars/King_Piccolo/185.gif
-
-anim attack211
- delay 7
- offset 21 64
- frame data/chars/King_Piccolo/186.gif
- offset 21 64
- frame data/chars/King_Piccolo/187.gif
- offset 21 64
- frame data/chars/King_Piccolo/188.gif
-
-anim attack212
- delay 7
- offset 22 47
- frame data/chars/King_Piccolo/189.gif
- offset 22 52
- frame data/chars/King_Piccolo/190.gif
- offset 22 48
- frame data/chars/King_Piccolo/191.gif
- offset 22 48
- frame data/chars/King_Piccolo/192.gif
- offset 22 48
- frame data/chars/King_Piccolo/193.gif
- offset 22 47
- frame data/chars/King_Piccolo/194.gif
-
-anim attack213
- delay 7
- offset 22 47
- frame data/chars/King_Piccolo/195.gif
- offset 22 45
- frame data/chars/King_Piccolo/196.gif
-
-anim attack214
- delay 7
- offset 23 52
- frame data/chars/King_Piccolo/197.gif
- offset 21 50
- frame data/chars/King_Piccolo/198.gif
- offset 21 50
- frame data/chars/King_Piccolo/199.gif
- offset 21 48
- frame data/chars/King_Piccolo/200.gif
- offset 21 47
- frame data/chars/King_Piccolo/201.gif
-
-anim attack215
- delay 7
- offset 23 43
- frame data/chars/King_Piccolo/202.gif
- offset 29 51
- frame data/chars/King_Piccolo/203.gif
- offset 12 61
- frame data/chars/King_Piccolo/204.gif
- offset 8 60
- frame data/chars/King_Piccolo/205.gif
- offset 11 61
- frame data/chars/King_Piccolo/206.gif
- offset 5 60
- frame data/chars/King_Piccolo/207.gif
- offset 21 47
- frame data/chars/King_Piccolo/208.gif
-
-anim attack216
- delay 7
- offset 22 47
- frame data/chars/King_Piccolo/209.gif
- offset 22 52
- frame data/chars/King_Piccolo/210.gif
- offset 22 54
- frame data/chars/King_Piccolo/211.gif
- offset 31 63
- frame data/chars/King_Piccolo/212.gif
- offset 29 47
- frame data/chars/King_Piccolo/213.gif
-
-anim attack217
- delay 7
- offset 22 40
- frame data/chars/King_Piccolo/214.gif
- offset 23 45
- frame data/chars/King_Piccolo/215.gif
- offset 22 46
- frame data/chars/King_Piccolo/216.gif
- offset 24 69
- frame data/chars/King_Piccolo/217.gif
- offset 23 92
- frame data/chars/King_Piccolo/218.gif
- offset 23 83
- frame data/chars/King_Piccolo/219.gif
- offset 22 97
- frame data/chars/King_Piccolo/220.gif
-
-anim attack218
- delay 7
- offset 24 107
- frame data/chars/King_Piccolo/221.gif
- offset 21 102
- frame data/chars/King_Piccolo/222.gif
- offset 21 103
- frame data/chars/King_Piccolo/223.gif
- offset 21 98
- frame data/chars/King_Piccolo/224.gif
-
-anim attack219
- delay 7
- offset 24 89
- frame data/chars/King_Piccolo/225.gif
- offset 32 104
- frame data/chars/King_Piccolo/226.gif
- offset 36 136
- frame data/chars/King_Piccolo/227.gif
- offset 37 130
- frame data/chars/King_Piccolo/228.gif
- offset 21 98
- frame data/chars/King_Piccolo/229.gif
-
-anim attack220
- delay 7
- offset 24 105
- frame data/chars/King_Piccolo/230.gif
- offset 32 111
- frame data/chars/King_Piccolo/231.gif
- offset 22 113
- frame data/chars/King_Piccolo/232.gif
- offset 21 99
- frame data/chars/King_Piccolo/233.gif
-
-anim attack221
- delay 7
- offset 23 76
- frame data/chars/King_Piccolo/234.gif
- offset 23 76
- frame data/chars/King_Piccolo/235.gif
-
-anim attack222
- delay 7
- offset 22 97
- frame data/chars/King_Piccolo/236.gif
-
-anim attack223
- delay 7
- offset 22 97
- frame data/chars/King_Piccolo/237.gif
- offset 22 97
- frame data/chars/King_Piccolo/238.gif
- offset 21 73
- frame data/chars/King_Piccolo/239.gif
- offset 21 48
- frame data/chars/King_Piccolo/240.gif
- offset 22 48
- frame data/chars/King_Piccolo/241.gif
-
-anim attack224
- delay 7
- offset 2 62
- frame data/chars/King_Piccolo/242.gif
- offset 13 62
- frame data/chars/King_Piccolo/243.gif
- offset 24 63
- frame data/chars/King_Piccolo/244.gif
- offset 23 66
- frame data/chars/King_Piccolo/245.gif
- offset 23 75
- frame data/chars/King_Piccolo/246.gif
- offset 30 74
- frame data/chars/King_Piccolo/247.gif
- offset 22 64
- frame data/chars/King_Piccolo/248.gif
-
-anim pain5000
- delay 7
- offset 24 35
- frame data/chars/King_Piccolo/249.gif
- offset 33 50
- frame data/chars/King_Piccolo/250.gif
- offset 24 49
- frame data/chars/King_Piccolo/251.gif
- offset 24 35
- frame data/chars/King_Piccolo/252.gif
- offset 36 13
- frame data/chars/King_Piccolo/253.gif
- offset 25 40
- frame data/chars/King_Piccolo/254.gif
- offset 30 31
- frame data/chars/King_Piccolo/255.gif
- offset 30 59
- frame data/chars/King_Piccolo/256.gif
- offset 21 43
- frame data/chars/King_Piccolo/257.gif
- offset 53 35
- frame data/chars/King_Piccolo/258.gif
- offset 29 57
- frame data/chars/King_Piccolo/259.gif
- offset 20 62
- frame data/chars/King_Piccolo/260.gif
- offset 13 48
- frame data/chars/King_Piccolo/261.gif
- offset 27 60
- frame data/chars/King_Piccolo/262.gif
-
-anim 0950
- delay 7
- offset 158 341
- frame data/chars/King_Piccolo/263.gif
- offset 214 399
- frame data/chars/King_Piccolo/264.gif
-
-anim 8250
- delay 7
- offset 313 49
- frame data/chars/King_Piccolo/265.gif
- offset 322 29
- frame data/chars/King_Piccolo/266.gif
-
-anim 7053
- delay 7
- offset 0 0
- frame data/chars/King_Piccolo/267.gif
-
-anim 0950
- delay 7
- offset 183 365
- frame data/chars/King_Piccolo/268.gif
- offset 233 391
- frame data/chars/King_Piccolo/269.gif
-
-anim 0161
- delay 7
- offset 24 57
- frame data/chars/King_Piccolo/270.gif
-
-anim 7052
- delay 7
- offset 219 63
- frame data/chars/King_Piccolo/271.gif
- offset 223 59
- frame data/chars/King_Piccolo/272.gif
-
-anim 7053
- delay 7
- offset 0 -3
- frame data/chars/King_Piccolo/273.gif
-
-anim 7052
- delay 7
- offset 226 60
- frame data/chars/King_Piccolo/274.gif
-
-anim 7053
- delay 7
- offset 0 -3
- frame data/chars/King_Piccolo/275.gif
- offset 0 -92
- frame data/chars/King_Piccolo/276.gif
- offset 0 0
- frame data/chars/King_Piccolo/277.gif
- offset 0 -3
- frame data/chars/King_Piccolo/278.gif
-
-anim 0161
- delay 7
- offset 2 92
- frame data/chars/King_Piccolo/279.gif
-
-anim 7053
- delay 7
- offset 0 0
- frame data/chars/King_Piccolo/280.gif
- offset 0 -1
- frame data/chars/King_Piccolo/281.gif
- offset 0 0
- frame data/chars/King_Piccolo/282.gif
- offset 0 -6
- frame data/chars/King_Piccolo/283.gif
- offset 0 -3
- frame data/chars/King_Piccolo/284.gif
-
-anim 0161
- delay 7
- offset 24 20
- frame data/chars/King_Piccolo/285.gif
-
-anim 7053
- delay 7
- offset 0 -8
- frame data/chars/King_Piccolo/286.gif
-
-anim 0161
- delay 7
- offset -11 87
- frame data/chars/King_Piccolo/287.gif
-
-anim 0950
- delay 7
- offset 300 290
- frame data/chars/King_Piccolo/288.gif
-
-anim 0161
- delay 7
- offset 23 96
- frame data/chars/King_Piccolo/289.gif
- offset 23 96
- frame data/chars/King_Piccolo/290.gif
-
-anim 0950
- delay 7
- offset 300 296
- frame data/chars/King_Piccolo/291.gif
- offset 67 323
- frame data/chars/King_Piccolo/292.gif
-
-anim 0161
- delay 7
- offset 3 88
- frame data/chars/King_Piccolo/293.gif
-
-anim 0950
- delay 7
- offset 300 288
- frame data/chars/King_Piccolo/294.gif
- offset 105 294
- frame data/chars/King_Piccolo/295.gif
- offset 300 400
- frame data/chars/King_Piccolo/296.gif
-
-anim 8230
- delay 7
- offset 67 168
- frame data/chars/King_Piccolo/297.gif
-
-anim 0950
- delay 7
- offset 300 325
- frame data/chars/King_Piccolo/298.gif
- offset 300 400
- frame data/chars/King_Piccolo/299.gif
- offset 300 354
- frame data/chars/King_Piccolo/300.gif
- offset 300 382
- frame data/chars/King_Piccolo/301.gif
- offset 293 384
- frame data/chars/King_Piccolo/302.gif
- offset 151 338
- frame data/chars/King_Piccolo/303.gif
-
-anim 8230
- delay 7
- offset 76 191
- frame data/chars/King_Piccolo/304.gif
-
-anim 0950
- delay 7
- offset 147 338
- frame data/chars/King_Piccolo/305.gif
- offset 300 384
- frame data/chars/King_Piccolo/306.gif
- offset 136 332
- frame data/chars/King_Piccolo/307.gif
- offset 148 337
- frame data/chars/King_Piccolo/308.gif
- offset 142 333
- frame data/chars/King_Piccolo/309.gif
- offset 132 331
- frame data/chars/King_Piccolo/310.gif
- offset 134 332
- frame data/chars/King_Piccolo/311.gif
- offset 62 314
- frame data/chars/King_Piccolo/312.gif
- offset 100 292
- frame data/chars/King_Piccolo/313.gif
-
-anim 8250
- delay 7
- offset 212 53
- frame data/chars/King_Piccolo/314.gif
-
-anim 0950
- delay 7
- offset 273 287
- frame data/chars/King_Piccolo/315.gif
-
-anim freespecial1460
- delay 7
- offset 211 169
- frame data/chars/King_Piccolo/316.gif
- offset 212 173
- frame data/chars/King_Piccolo/317.gif
- offset 211 174
- frame data/chars/King_Piccolo/318.gif
- offset 211 173
- frame data/chars/King_Piccolo/319.gif
- offset 213 167
- frame data/chars/King_Piccolo/320.gif
- offset 215 169
- frame data/chars/King_Piccolo/321.gif
- offset 215 169
- frame data/chars/King_Piccolo/322.gif
- offset 215 166
- frame data/chars/King_Piccolo/323.gif
- offset 218 167
- frame data/chars/King_Piccolo/324.gif
- offset 216 165
- frame data/chars/King_Piccolo/325.gif
- offset 216 164
- frame data/chars/King_Piccolo/326.gif
- offset 216 164
- frame data/chars/King_Piccolo/327.gif
- offset 216 165
- frame data/chars/King_Piccolo/328.gif
- offset 217 165
- frame data/chars/King_Piccolo/329.gif
- offset 216 167
- frame data/chars/King_Piccolo/330.gif
-
-anim 0950
- delay 7
- offset 146 336
- frame data/chars/King_Piccolo/331.gif
- offset 273 295
- frame data/chars/King_Piccolo/332.gif
-
-anim freespecial1590
- delay 7
- offset 14 3
- frame data/chars/King_Piccolo/333.gif
-
-anim 0950
- delay 7
- offset 273 324
- frame data/chars/King_Piccolo/334.gif
- offset 273 382
- frame data/chars/King_Piccolo/335.gif
- offset 110 328
- frame data/chars/King_Piccolo/336.gif
- offset 55 287
- frame data/chars/King_Piccolo/337.gif
- offset 273 353
- frame data/chars/King_Piccolo/338.gif
- offset 273 396
- frame data/chars/King_Piccolo/339.gif
- offset 273 289
- frame data/chars/King_Piccolo/340.gif
- offset 273 384
- frame data/chars/King_Piccolo/341.gif
-
-anim 8230
- delay 7
- offset 76 187
- frame data/chars/King_Piccolo/342.gif
-
-anim 0950
- delay 7
- offset 182 365
- frame data/chars/King_Piccolo/343.gif
- offset 208 390
- frame data/chars/King_Piccolo/344.gif
- offset 273 396
- frame data/chars/King_Piccolo/345.gif
- offset 125 330
- frame data/chars/King_Piccolo/346.gif
- offset 273 396
- frame data/chars/King_Piccolo/347.gif
- offset 214 396
- frame data/chars/King_Piccolo/348.gif
- offset 137 330
- frame data/chars/King_Piccolo/349.gif
- offset 157 340
- frame data/chars/King_Piccolo/350.gif
- offset 129 327
- frame data/chars/King_Piccolo/351.gif
- offset 137 332
- frame data/chars/King_Piccolo/352.gif
- offset 141 331
- frame data/chars/King_Piccolo/353.gif
- offset 133 329
- frame data/chars/King_Piccolo/354.gif
- offset 236 390
- frame data/chars/King_Piccolo/355.gif
- offset 122 323
- frame data/chars/King_Piccolo/356.gif
-
-anim 8230
- delay 7
- offset 101 234
- frame data/chars/King_Piccolo/357.gif
-
-anim 8250
- delay 7
- offset 339 -150
- frame data/chars/King_Piccolo/358.gif
-
-anim attack201
- delay 7
- offset 28 37
- frame data/chars/King_Piccolo/359.gif
- offset 27 40
- frame data/chars/King_Piccolo/360.gif
- offset 25 32
- frame data/chars/King_Piccolo/361.gif
- offset 25 8
- frame data/chars/King_Piccolo/362.gif
-
-anim 8230
- delay 7
- offset 100 232
- frame data/chars/King_Piccolo/363.gif
-
-anim 8250
- delay 7
- offset 348 12
- frame data/chars/King_Piccolo/364.gif
-
-anim 7005
- delay 7
- offset 72 81
- frame data/chars/King_Piccolo/365.gif
- offset 88 98
- frame data/chars/King_Piccolo/366.gif
- offset 104 107
- frame data/chars/King_Piccolo/367.gif
- offset 108 114
- frame data/chars/King_Piccolo/368.gif
- offset 95 118
- frame data/chars/King_Piccolo/369.gif
-
-anim 8230
- delay 7
- offset 90 231
- frame data/chars/King_Piccolo/370.gif
- offset 83 92
- frame data/chars/King_Piccolo/371.gif
- offset 96 233
- frame data/chars/King_Piccolo/372.gif
- offset 99 149
- frame data/chars/King_Piccolo/373.gif
- offset 93 232
- frame data/chars/King_Piccolo/374.gif
- offset 105 217
- frame data/chars/King_Piccolo/375.gif
-
-anim 8250
- delay 7
- offset 346 -14
- frame data/chars/King_Piccolo/376.gif
-
-anim 8230
- delay 7
- offset 76 191
- frame data/chars/King_Piccolo/377.gif
-
-anim 8250
- delay 7
- offset 399 -85
- frame data/chars/King_Piccolo/378.gif
-
-anim 8230
- delay 7
- offset 98 226
- frame data/chars/King_Piccolo/379.gif
-
-anim 8250
- delay 7
- offset 298 -92
- frame data/chars/King_Piccolo/380.gif
- offset 343 50
- frame data/chars/King_Piccolo/381.gif
- offset 389 -73
- frame data/chars/King_Piccolo/382.gif
- offset 351 -187
- frame data/chars/King_Piccolo/383.gif
- offset 299 -100
- frame data/chars/King_Piccolo/384.gif
- offset 409 -102
- frame data/chars/King_Piccolo/385.gif
- offset 414 -116
- frame data/chars/King_Piccolo/386.gif
- offset 328 50
- frame data/chars/King_Piccolo/387.gif
-
-anim 8230
- delay 7
- offset 97 223
- frame data/chars/King_Piccolo/388.gif
-
-anim 8250
- delay 7
- offset 411 50
- frame data/chars/King_Piccolo/389.gif
- offset 245 54
- frame data/chars/King_Piccolo/390.gif
- offset 319 31
- frame data/chars/King_Piccolo/391.gif
- offset 150 38
- frame data/chars/King_Piccolo/392.gif
- offset 392 36
- frame data/chars/King_Piccolo/393.gif
- offset 345 34
- frame data/chars/King_Piccolo/394.gif
-
-anim 8230
- delay 7
- offset 97 232
- frame data/chars/King_Piccolo/395.gif
-
-anim 8250
- delay 7
- offset 468 40
- frame data/chars/King_Piccolo/396.gif
- offset 237 54
- frame data/chars/King_Piccolo/397.gif
- offset 91 20
- frame data/chars/King_Piccolo/398.gif
-
-anim 8230
- delay 7
- offset 39 128
- frame data/chars/King_Piccolo/399.gif
-
-anim 8250
- delay 7
- offset 359 51
- frame data/chars/King_Piccolo/400.gif
-
-anim 8230
- delay 7
- offset 76 188
- frame data/chars/King_Piccolo/401.gif
-
-anim 8250
- delay 7
- offset 252 53
- frame data/chars/King_Piccolo/402.gif
- offset 482 38
- frame data/chars/King_Piccolo/403.gif
- offset 456 42
- frame data/chars/King_Piccolo/404.gif
- offset 370 -116
- frame data/chars/King_Piccolo/405.gif
- offset 344 -164
- frame data/chars/King_Piccolo/406.gif
- offset 342 -126
- frame data/chars/King_Piccolo/407.gif
- offset 343 13
- frame data/chars/King_Piccolo/408.gif
- offset 438 -127
- frame data/chars/King_Piccolo/409.gif
-
-anim 8230
- delay 7
- offset 89 226
- frame data/chars/King_Piccolo/410.gif
-
-anim 8250
- delay 7
- offset 351 -184
- frame data/chars/King_Piccolo/411.gif
- offset 359 -200
- frame data/chars/King_Piccolo/412.gif
- offset 365 -182
- frame data/chars/King_Piccolo/413.gif
- offset 458 -148
- frame data/chars/King_Piccolo/414.gif
- offset 448 -155
- frame data/chars/King_Piccolo/415.gif
- offset 308 -111
- frame data/chars/King_Piccolo/416.gif
- offset 443 -135
- frame data/chars/King_Piccolo/417.gif
- offset 453 -148
- frame data/chars/King_Piccolo/418.gif
- offset 433 -132
- frame data/chars/King_Piccolo/419.gif
- offset 195 50
- frame data/chars/King_Piccolo/420.gif
-
-anim 9021
- delay 7
- offset 320 240
- frame data/chars/King_Piccolo/421.gif
-
-anim 0950
- delay 7
- offset 273 383
- frame data/chars/King_Piccolo/422.gif
-
-anim freespecial1450
- delay 7
- offset 89 89
- frame data/chars/King_Piccolo/423.gif
- offset 89 89
- frame data/chars/King_Piccolo/424.gif
- offset 87 89
- frame data/chars/King_Piccolo/425.gif
- offset 89 87
- frame data/chars/King_Piccolo/426.gif
-
-anim 0950
- delay 7
- offset 133 327
- frame data/chars/King_Piccolo/427.gif
-
-anim 8230
- delay 7
- offset 101 234
- frame data/chars/King_Piccolo/428.gif
-
-anim freespecial1150
- delay 7
- offset 87 148
- frame data/chars/King_Piccolo/429.gif
- offset 94 148
- frame data/chars/King_Piccolo/430.gif
- offset 101 146
- frame data/chars/King_Piccolo/431.gif
- offset 107 141
- frame data/chars/King_Piccolo/432.gif
- offset 113 136
- frame data/chars/King_Piccolo/433.gif
- offset 118 129
- frame data/chars/King_Piccolo/434.gif
- offset 110 120
- frame data/chars/King_Piccolo/435.gif
- offset 126 114
- frame data/chars/King_Piccolo/436.gif
-
-anim freespecial1560
- delay 7
- offset 145 61
- frame data/chars/King_Piccolo/437.gif
- offset 136 62
- frame data/chars/King_Piccolo/438.gif
- offset 145 58
- frame data/chars/King_Piccolo/439.gif
- offset 149 55
- frame data/chars/King_Piccolo/440.gif
- offset 149 52
- frame data/chars/King_Piccolo/441.gif
- offset 150 57
- frame data/chars/King_Piccolo/442.gif
-
-anim 8230
- delay 7
- offset 97 226
- frame data/chars/King_Piccolo/443.gif
-
-anim 0950
- delay 7
- offset 300 400
- frame data/chars/King_Piccolo/444.gif
-
-anim 8230
- delay 7
- offset 55 157
- frame data/chars/King_Piccolo/445.gif
- offset 105 217
- frame data/chars/King_Piccolo/446.gif
- offset 100 196
- frame data/chars/King_Piccolo/447.gif
- offset 103 235
- frame data/chars/King_Piccolo/448.gif
- offset 100 222
- frame data/chars/King_Piccolo/449.gif
- offset 90 232
- frame data/chars/King_Piccolo/450.gif
-
-anim attack310
- delay 7
- offset 57 56
- frame data/chars/King_Piccolo/451.gif
- offset 59 57
- frame data/chars/King_Piccolo/452.gif
- offset 59 59
- frame data/chars/King_Piccolo/453.gif
- offset 58 59
- frame data/chars/King_Piccolo/454.gif
- offset 49 57
- frame data/chars/King_Piccolo/455.gif
-
-anim 8230
- delay 7
- offset 91 194
- frame data/chars/King_Piccolo/456.gif
- offset 98 233
- frame data/chars/King_Piccolo/457.gif
- offset 95 232
- frame data/chars/King_Piccolo/458.gif
-
-anim freespecial1670
- delay 7
- offset 25 29
- frame data/chars/King_Piccolo/459.gif
- offset 54 56
- frame data/chars/King_Piccolo/460.gif
- offset 78 78
- frame data/chars/King_Piccolo/461.gif
- offset 95 88
- frame data/chars/King_Piccolo/462.gif
- offset 94 99
- frame data/chars/King_Piccolo/463.gif
- offset 108 100
- frame data/chars/King_Piccolo/464.gif
- offset 109 108
- frame data/chars/King_Piccolo/465.gif
- offset 106 106
- frame data/chars/King_Piccolo/466.gif
- offset 117 108
- frame data/chars/King_Piccolo/467.gif
-
-anim 8230
- delay 7
- offset 96 230
- frame data/chars/King_Piccolo/468.gif
- offset 98 229
- frame data/chars/King_Piccolo/469.gif
- offset 89 224
- frame data/chars/King_Piccolo/470.gif
- offset 98 219
- frame data/chars/King_Piccolo/471.gif
- offset 88 224
- frame data/chars/King_Piccolo/472.gif
- offset 100 203
- frame data/chars/King_Piccolo/473.gif
-
-anim attack300
- delay 7
- offset 47 46
- frame data/chars/King_Piccolo/474.gif
- offset 45 45
- frame data/chars/King_Piccolo/475.gif
- offset 45 45
- frame data/chars/King_Piccolo/476.gif
- offset 47 48
- frame data/chars/King_Piccolo/477.gif
- offset 48 47
- frame data/chars/King_Piccolo/478.gif
-
-anim 8230
- delay 7
- offset 98 229
- frame data/chars/King_Piccolo/479.gif
-
-anim attack320
- delay 7
- offset 77 69
- frame data/chars/King_Piccolo/480.gif
- offset 72 67
- frame data/chars/King_Piccolo/481.gif
- offset 70 60
- frame data/chars/King_Piccolo/482.gif
- offset 56 37
- frame data/chars/King_Piccolo/483.gif
- offset 34 7
- frame data/chars/King_Piccolo/484.gif
-
-anim 8230
- delay 7
- offset 97 232
- frame data/chars/King_Piccolo/485.gif
- offset 99 234
- frame data/chars/King_Piccolo/486.gif
- offset 99 233
- frame data/chars/King_Piccolo/487.gif
- offset 97 228
- frame data/chars/King_Piccolo/488.gif
- offset 88 224
- frame data/chars/King_Piccolo/489.gif
- offset 94 222
- frame data/chars/King_Piccolo/490.gif
- offset 90 194
- frame data/chars/King_Piccolo/491.gif
- offset 101 236
- frame data/chars/King_Piccolo/492.gif
- offset 93 195
- frame data/chars/King_Piccolo/493.gif
- offset 105 221
- frame data/chars/King_Piccolo/494.gif
- offset 106 219
- frame data/chars/King_Piccolo/495.gif
- offset 96 232
- frame data/chars/King_Piccolo/496.gif
- offset 98 227
- frame data/chars/King_Piccolo/497.gif
-
-anim 0950
- delay 7
- offset 118 320
- frame data/chars/King_Piccolo/498.gif
-
-anim 8230
- delay 7
- offset 76 192
- frame data/chars/King_Piccolo/499.gif
- offset 103 240
- frame data/chars/King_Piccolo/500.gif
- offset 98 178
- frame data/chars/King_Piccolo/501.gif
- offset 98 210
- frame data/chars/King_Piccolo/502.gif
- offset 68 31
- frame data/chars/King_Piccolo/503.gif
- offset 90 227
- frame data/chars/King_Piccolo/504.gif
- offset 106 224
- frame data/chars/King_Piccolo/505.gif
-
-anim freespecial1580
- delay 7
- offset 586 125
- frame data/chars/King_Piccolo/506.gif
- offset 588 133
- frame data/chars/King_Piccolo/507.gif
- offset 587 136
- frame data/chars/King_Piccolo/508.gif
- offset 591 136
- frame data/chars/King_Piccolo/509.gif
- offset 591 134
- frame data/chars/King_Piccolo/510.gif
- offset 595 142
- frame data/chars/King_Piccolo/511.gif
- offset 589 140
- frame data/chars/King_Piccolo/512.gif
- offset 598 142
- frame data/chars/King_Piccolo/513.gif
- offset 590 142
- frame data/chars/King_Piccolo/514.gif
- offset 591 144
- frame data/chars/King_Piccolo/515.gif
- offset 591 141
- frame data/chars/King_Piccolo/516.gif
- offset 591 142
- frame data/chars/King_Piccolo/517.gif
- offset 594 142
- frame data/chars/King_Piccolo/518.gif
- offset 590 142
- frame data/chars/King_Piccolo/519.gif
- offset 590 139
- frame data/chars/King_Piccolo/520.gif
- offset 596 142
- frame data/chars/King_Piccolo/521.gif
- offset 593 142
- frame data/chars/King_Piccolo/522.gif
- offset 596 144
- frame data/chars/King_Piccolo/523.gif
- offset 591 141
- frame data/chars/King_Piccolo/524.gif
- offset 590 142
- frame data/chars/King_Piccolo/525.gif
- offset 598 142
- frame data/chars/King_Piccolo/526.gif
- offset 594 140
- frame data/chars/King_Piccolo/527.gif
- offset 592 141
- frame data/chars/King_Piccolo/528.gif
- offset 594 139
- frame data/chars/King_Piccolo/529.gif
- offset 591 138
- frame data/chars/King_Piccolo/530.gif
- offset 593 143
- frame data/chars/King_Piccolo/531.gif
- offset 596 141
- frame data/chars/King_Piccolo/532.gif
- offset 594 142
- frame data/chars/King_Piccolo/533.gif
- offset 596 145
- frame data/chars/King_Piccolo/534.gif
- offset 597 142
- frame data/chars/King_Piccolo/535.gif
- offset 595 141
- frame data/chars/King_Piccolo/536.gif
- offset 591 142
- frame data/chars/King_Piccolo/537.gif
- offset 598 141
- frame data/chars/King_Piccolo/538.gif
- offset 591 142
- frame data/chars/King_Piccolo/539.gif
- offset 590 142
- frame data/chars/King_Piccolo/540.gif
- offset 596 145
- frame data/chars/King_Piccolo/541.gif
- offset 592 140
- frame data/chars/King_Piccolo/542.gif
- offset 596 141
- frame data/chars/King_Piccolo/543.gif
- offset 591 139
- frame data/chars/King_Piccolo/544.gif
- offset 597 141
- frame data/chars/King_Piccolo/545.gif
- offset 597 140
- frame data/chars/King_Piccolo/546.gif
- offset 590 144
- frame data/chars/King_Piccolo/547.gif
- offset 589 139
- frame data/chars/King_Piccolo/548.gif
- offset 588 136
- frame data/chars/King_Piccolo/549.gif
- offset 584 106
- frame data/chars/King_Piccolo/550.gif
- offset 573 71
- frame data/chars/King_Piccolo/551.gif
-
-anim freespecial1660
- delay 7
- offset 133 53
- frame data/chars/King_Piccolo/552.gif
- offset 132 47
- frame data/chars/King_Piccolo/553.gif
- offset 133 52
- frame data/chars/King_Piccolo/554.gif
- offset 131 54
- frame data/chars/King_Piccolo/555.gif
- offset 135 53
- frame data/chars/King_Piccolo/556.gif
- offset 129 55
- frame data/chars/King_Piccolo/557.gif
-
-anim 0950
- delay 7
- offset 71 314
- frame data/chars/King_Piccolo/558.gif
-
-anim freespecial1570
- delay 7
- offset 194 164
- frame data/chars/King_Piccolo/559.gif
- offset 194 170
- frame data/chars/King_Piccolo/560.gif
- offset 190 155
- frame data/chars/King_Piccolo/561.gif
-
-anim 0950
- delay 7
- offset 128 324
- frame data/chars/King_Piccolo/562.gif
- offset 106 319
- frame data/chars/King_Piccolo/563.gif
- offset 208 391
- frame data/chars/King_Piccolo/564.gif
-
-anim 7000
- delay 7
- offset 24 24
- frame data/chars/King_Piccolo/565.gif
- offset 19 19
- frame data/chars/King_Piccolo/566.gif
- offset 14 15
- frame data/chars/King_Piccolo/567.gif
- offset 9 16
- frame data/chars/King_Piccolo/568.gif
- offset 11 19
- frame data/chars/King_Piccolo/569.gif
- offset 12 22
- frame data/chars/King_Piccolo/570.gif
- offset 7 25
- frame data/chars/King_Piccolo/571.gif
- offset 11 23
- frame data/chars/King_Piccolo/572.gif
- offset 12 23
- frame data/chars/King_Piccolo/573.gif
- offset 12 24
- frame data/chars/King_Piccolo/574.gif
- offset 13 31
- frame data/chars/King_Piccolo/575.gif
- offset 13 32
- frame data/chars/King_Piccolo/576.gif
- offset 13 33
- frame data/chars/King_Piccolo/577.gif
- offset 13 35
- frame data/chars/King_Piccolo/578.gif
- offset 13 36
- frame data/chars/King_Piccolo/579.gif
-
-anim 9026
- delay 7
- offset 22 29
- frame data/chars/King_Piccolo/580.gif
- offset 25 39
- frame data/chars/King_Piccolo/581.gif
- offset 27 35
- frame data/chars/King_Piccolo/582.gif
- offset 23 40
- frame data/chars/King_Piccolo/583.gif
- offset 20 44
- frame data/chars/King_Piccolo/584.gif
- offset 20 37
- frame data/chars/King_Piccolo/585.gif
- offset 22 29
- frame data/chars/King_Piccolo/586.gif
- offset 20 19
- frame data/chars/King_Piccolo/587.gif
- offset 19 14
- frame data/chars/King_Piccolo/588.gif
- offset 20 11
- frame data/chars/King_Piccolo/589.gif
- offset 26 15
- frame data/chars/King_Piccolo/590.gif
- offset 43 14
- frame data/chars/King_Piccolo/591.gif
- offset 49 19
- frame data/chars/King_Piccolo/592.gif
- offset 40 20
- frame data/chars/King_Piccolo/593.gif
- offset 34 16
- frame data/chars/King_Piccolo/594.gif
- offset 25 19
- frame data/chars/King_Piccolo/595.gif
- offset 32 30
- frame data/chars/King_Piccolo/596.gif
- offset 32 39
- frame data/chars/King_Piccolo/597.gif
- offset 50 35
- frame data/chars/King_Piccolo/598.gif
- offset 48 34
- frame data/chars/King_Piccolo/599.gif
- offset 38 34
- frame data/chars/King_Piccolo/600.gif
- offset 42 26
- frame data/chars/King_Piccolo/601.gif
- offset 23 19
- frame data/chars/King_Piccolo/602.gif
-
-anim 7000
- delay 7
- offset 13 36
- frame data/chars/King_Piccolo/603.gif
- offset 11 37
- frame data/chars/King_Piccolo/604.gif
- offset 10 38
- frame data/chars/King_Piccolo/605.gif
- offset 7 40
- frame data/chars/King_Piccolo/606.gif
- offset 8 41
- frame data/chars/King_Piccolo/607.gif
- offset 2 43
- frame data/chars/King_Piccolo/608.gif
-
-anim 9007
- delay 7
- offset 75 10
- frame data/chars/King_Piccolo/609.gif
-
-anim freespecial1550
- delay 7
- offset 47 48
- frame data/chars/King_Piccolo/610.gif
-
-anim freespecial1470
- delay 7
- offset 151 149
- frame data/chars/King_Piccolo/611.gif
- offset 173 174
- frame data/chars/King_Piccolo/612.gif
- offset 156 157
- frame data/chars/King_Piccolo/613.gif
- offset 143 141
- frame data/chars/King_Piccolo/614.gif
- offset 136 136
- frame data/chars/King_Piccolo/615.gif
- offset 137 135
- frame data/chars/King_Piccolo/616.gif
- offset 137 135
- frame data/chars/King_Piccolo/617.gif
- offset 139 135
- frame data/chars/King_Piccolo/618.gif
- offset 139 136
- frame data/chars/King_Piccolo/619.gif
- offset 140 136
- frame data/chars/King_Piccolo/620.gif
- offset 144 140
- frame data/chars/King_Piccolo/621.gif
- offset 155 152
- frame data/chars/King_Piccolo/622.gif
- offset 166 165
- frame data/chars/King_Piccolo/623.gif
- offset 180 177
- frame data/chars/King_Piccolo/624.gif
- offset 188 185
- frame data/chars/King_Piccolo/625.gif
- offset 197 194
- frame data/chars/King_Piccolo/626.gif
- offset 207 206
- frame data/chars/King_Piccolo/627.gif
- offset 130 126
- frame data/chars/King_Piccolo/628.gif
- offset 128 127
- frame data/chars/King_Piccolo/629.gif
- offset 126 124
- frame data/chars/King_Piccolo/630.gif
- offset 126 123
- frame data/chars/King_Piccolo/631.gif
- offset 126 135
- frame data/chars/King_Piccolo/632.gif
- offset 128 128
- frame data/chars/King_Piccolo/633.gif
- offset 134 131
- frame data/chars/King_Piccolo/634.gif
- offset 136 133
- frame data/chars/King_Piccolo/635.gif
- offset 138 144
- frame data/chars/King_Piccolo/636.gif
- offset 140 146
- frame data/chars/King_Piccolo/637.gif
- offset 142 148
- frame data/chars/King_Piccolo/638.gif
- offset 144 150
- frame data/chars/King_Piccolo/639.gif
- offset 145 152
- frame data/chars/King_Piccolo/640.gif
- offset 147 153
- frame data/chars/King_Piccolo/641.gif
- offset 148 155
- frame data/chars/King_Piccolo/642.gif
- offset 150 156
- frame data/chars/King_Piccolo/643.gif
- offset 151 158
- frame data/chars/King_Piccolo/644.gif
- offset 153 160
- frame data/chars/King_Piccolo/645.gif
- offset 154 161
- frame data/chars/King_Piccolo/646.gif
- offset 155 156
- frame data/chars/King_Piccolo/647.gif
- offset 157 164
- frame data/chars/King_Piccolo/648.gif
- offset 158 165
- frame data/chars/King_Piccolo/649.gif
- offset 159 166
- frame data/chars/King_Piccolo/650.gif
- offset 160 162
- frame data/chars/King_Piccolo/651.gif
- offset 161 162
- frame data/chars/King_Piccolo/652.gif
- offset 162 164
- frame data/chars/King_Piccolo/653.gif
- offset 164 171
- frame data/chars/King_Piccolo/654.gif
- offset 165 172
- frame data/chars/King_Piccolo/655.gif
- offset 166 168
- frame data/chars/King_Piccolo/656.gif
- offset 152 169
- frame data/chars/King_Piccolo/657.gif
- offset 151 165
- frame data/chars/King_Piccolo/658.gif
- offset 151 166
- frame data/chars/King_Piccolo/659.gif
- offset 147 160
- frame data/chars/King_Piccolo/660.gif
-
-anim 8250
- delay 7
- offset 446 45
- frame data/chars/King_Piccolo/661.gif
-
-anim 0950
- delay 7
- offset 145 332
- frame data/chars/King_Piccolo/662.gif
-
-anim 8250
- delay 7
- offset 404 51
- frame data/chars/King_Piccolo/663.gif
-
-anim 0950
- delay 7
- offset 59 305
- frame data/chars/King_Piccolo/664.gif
-
-anim 8250
- delay 7
- offset 373 51
- frame data/chars/King_Piccolo/665.gif
- offset 284 50
- frame data/chars/King_Piccolo/666.gif
- offset 388 51
- frame data/chars/King_Piccolo/667.gif
- offset 421 50
- frame data/chars/King_Piccolo/668.gif
- offset 446 48
- frame data/chars/King_Piccolo/669.gif
- offset 266 52
- frame data/chars/King_Piccolo/670.gif
- offset 443 44
- frame data/chars/King_Piccolo/671.gif
- offset 431 49
- frame data/chars/King_Piccolo/672.gif
- offset 327 27
- frame data/chars/King_Piccolo/673.gif
- offset 418 51
- frame data/chars/King_Piccolo/674.gif
- offset 462 47
- frame data/chars/King_Piccolo/675.gif
- offset 174 45
- frame data/chars/King_Piccolo/676.gif
- offset 57 10
- frame data/chars/King_Piccolo/677.gif
-
-anim 8240
- delay 7
- offset 198 30
- frame data/chars/King_Piccolo/678.gif
- offset 198 30
- frame data/chars/King_Piccolo/679.gif
- offset 198 30
- frame data/chars/King_Piccolo/680.gif
- offset 198 30
- frame data/chars/King_Piccolo/681.gif
- offset 198 30
- frame data/chars/King_Piccolo/682.gif
- offset 198 30
- frame data/chars/King_Piccolo/683.gif
- offset 198 30
- frame data/chars/King_Piccolo/684.gif
- offset 198 30
- frame data/chars/King_Piccolo/685.gif
- offset 198 30
- frame data/chars/King_Piccolo/686.gif
- offset 198 30
- frame data/chars/King_Piccolo/687.gif
- offset 198 30
- frame data/chars/King_Piccolo/688.gif
- offset 198 30
- frame data/chars/King_Piccolo/689.gif
- offset 198 30
- frame data/chars/King_Piccolo/690.gif
- offset 197 29
- frame data/chars/King_Piccolo/691.gif
- offset 198 29
- frame data/chars/King_Piccolo/692.gif
- offset 197 29
- frame data/chars/King_Piccolo/693.gif
- offset 198 30
- frame data/chars/King_Piccolo/694.gif
- offset 198 30
- frame data/chars/King_Piccolo/695.gif
- offset 198 30
- frame data/chars/King_Piccolo/696.gif
- offset 198 30
- frame data/chars/King_Piccolo/697.gif
-
-anim 8250
- delay 7
- offset 226 54
- frame data/chars/King_Piccolo/698.gif
-
-anim 8230
- delay 7
- offset 74 186
- frame data/chars/King_Piccolo/699.gif
-
-anim 8250
- delay 7
- offset 298 48
- frame data/chars/King_Piccolo/700.gif
- offset 122 29
- frame data/chars/King_Piccolo/701.gif
- offset 339 20
- frame data/chars/King_Piccolo/702.gif
-
-anim attack470
- delay 7
- offset 88 89
- frame data/chars/King_Piccolo/703.gif
- offset 87 88
- frame data/chars/King_Piccolo/704.gif
- offset 83 85
- frame data/chars/King_Piccolo/705.gif
- offset 81 81
- frame data/chars/King_Piccolo/706.gif
- offset 82 83
- frame data/chars/King_Piccolo/707.gif
- offset 82 82
- frame data/chars/King_Piccolo/708.gif
- offset 83 84
- frame data/chars/King_Piccolo/709.gif
- offset 82 83
- frame data/chars/King_Piccolo/710.gif
- offset 83 84
- frame data/chars/King_Piccolo/711.gif
- offset 86 87
- frame data/chars/King_Piccolo/712.gif
-
-anim 8250
- delay 7
- offset 365 -197
- frame data/chars/King_Piccolo/713.gif
- offset 336 20
- frame data/chars/King_Piccolo/714.gif
-
-anim attack560
- delay 7
- offset 27 47
- frame data/chars/King_Piccolo/715.gif
+anim	attack1
+	delay	7
+	offset	30 47
+	frame	data/chars/King_Piccolo/133.gif
+	offset	30 50
+	frame	data/chars/King_Piccolo/134.gif
+	offset	29 50
+	frame	data/chars/King_Piccolo/135.gif
+		
+anim	attack2
+	delay	7
+	offset	23 48
+	frame	data/chars/King_Piccolo/138.gif
+	offset	23 49
+	frame	data/chars/King_Piccolo/139.gif
+	offset	22 49
+	frame	data/chars/King_Piccolo/140.gif
+		
+anim	attack3
+	delay	7
+	offset	24 44
+	frame	data/chars/King_Piccolo/143.gif
+	offset	26 51
+	frame	data/chars/King_Piccolo/144.gif
+	offset	28 67
+	frame	data/chars/King_Piccolo/145.gif
+	offset	26 64
+	frame	data/chars/King_Piccolo/146.gif
+	offset	34 63
+	frame	data/chars/King_Piccolo/147.gif
+		
+anim	attack4
+	delay	7
+	offset	24 107
+	frame	data/chars/King_Piccolo/221.gif
+	offset	21 102
+	frame	data/chars/King_Piccolo/222.gif
+	offset	21 103
+	frame	data/chars/King_Piccolo/223.gif
+	offset	21 98
+	frame	data/chars/King_Piccolo/224.gif
+		
+anim	attack5
+	delay	7
+	offset	24 89
+	frame	data/chars/King_Piccolo/225.gif
+	offset	32 104
+	frame	data/chars/King_Piccolo/226.gif
+	offset	36 136
+	frame	data/chars/King_Piccolo/227.gif
+	offset	37 130
+	frame	data/chars/King_Piccolo/228.gif
+	offset	21 98
+	frame	data/chars/King_Piccolo/229.gif
+		
+anim	attack6
+	delay	7
+	offset	23 52
+	frame	data/chars/King_Piccolo/197.gif
+	offset	21 50
+	frame	data/chars/King_Piccolo/198.gif
+	offset	21 50
+	frame	data/chars/King_Piccolo/199.gif
+	offset	21 48
+	frame	data/chars/King_Piccolo/200.gif
+	offset	21 47
+	frame	data/chars/King_Piccolo/201.gif
+		
+anim	chargeattack
+	delay	7
+	offset	23 43
+	frame	data/chars/King_Piccolo/202.gif
+	offset	29 51
+	frame	data/chars/King_Piccolo/203.gif
+	offset	12 61
+	frame	data/chars/King_Piccolo/204.gif
+	offset	8 60
+	frame	data/chars/King_Piccolo/205.gif
+	offset	11 61
+	frame	data/chars/King_Piccolo/206.gif
+	offset	5 60
+	frame	data/chars/King_Piccolo/207.gif
+	offset	21 47
+	frame	data/chars/King_Piccolo/208.gif
+		
+anim	fall
+	delay	7
+	offset	38 48
+	frame	data/chars/King_Piccolo/132.gif
+		
+anim	follow1
+	delay	7
+	offset	22 40
+	frame	data/chars/King_Piccolo/214.gif
+	offset	23 45
+	frame	data/chars/King_Piccolo/215.gif
+	offset	22 46
+	frame	data/chars/King_Piccolo/216.gif
+	offset	24 69
+	frame	data/chars/King_Piccolo/217.gif
+	offset	23 92
+	frame	data/chars/King_Piccolo/218.gif
+	offset	23 83
+	frame	data/chars/King_Piccolo/219.gif
+	offset	22 97
+	frame	data/chars/King_Piccolo/220.gif
+		
+anim	freespecial
+	delay	7
+	offset	22 47
+	frame	data/chars/King_Piccolo/189.gif
+	offset	22 52
+	frame	data/chars/King_Piccolo/190.gif
+	offset	22 48
+	frame	data/chars/King_Piccolo/191.gif
+	offset	22 48
+	frame	data/chars/King_Piccolo/192.gif
+	offset	22 48
+	frame	data/chars/King_Piccolo/193.gif
+	offset	22 47
+	frame	data/chars/King_Piccolo/194.gif
+		
+anim	freespecial2
+	delay	7
+	offset	23 51
+	frame	data/chars/King_Piccolo/154.gif
+	offset	27 54
+	frame	data/chars/King_Piccolo/155.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/156.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/157.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/158.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/159.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/160.gif
+	offset	22 48
+	frame	data/chars/King_Piccolo/161.gif
+		
+anim	freespecial3
+	delay	7
+	offset	24 105
+	frame	data/chars/King_Piccolo/230.gif
+	offset	32 111
+	frame	data/chars/King_Piccolo/231.gif
+	offset	22 113
+	frame	data/chars/King_Piccolo/232.gif
+	offset	21 99
+	frame	data/chars/King_Piccolo/233.gif
+		
+anim	freespecial4
+	delay	7
+	offset	22 47
+	frame	data/chars/King_Piccolo/162.gif
+	offset	22 47
+	frame	data/chars/King_Piccolo/163.gif
+	offset	22 60
+	frame	data/chars/King_Piccolo/164.gif
+	offset	22 51
+	frame	data/chars/King_Piccolo/166.gif
+	offset	22 50
+	frame	data/chars/King_Piccolo/168.gif
+	offset	22 60
+	frame	data/chars/King_Piccolo/165.gif
+		
+anim	get
+	delay	7
+	offset	19 42
+	frame	data/chars/King_Piccolo/31.gif
+	offset	20 39
+	frame	data/chars/King_Piccolo/32.gif
+	offset	20 37
+	frame	data/chars/King_Piccolo/33.gif
+	offset	20 35
+	frame	data/chars/King_Piccolo/34.gif
+		
+anim	idle
+	delay	7
+	loop	1
+	offset	23 47
+	frame	data/chars/King_Piccolo/9.gif
+	offset	23 46
+	frame	data/chars/King_Piccolo/10.gif
+	offset	23 47
+	frame	data/chars/King_Piccolo/11.gif
+	offset	23 48
+	frame	data/chars/King_Piccolo/12.gif
+		
+anim	jump
+	delay	7
+	offset	19 56
+	frame	data/chars/King_Piccolo/20.gif
+	offset	19 56
+	frame	data/chars/King_Piccolo/21.gif
+	offset	12 63
+	frame	data/chars/King_Piccolo/22.gif
+		
+anim	jumpattack
+	delay	7
+	offset	21 70
+	frame	data/chars/King_Piccolo/183.gif
+	offset	21 62
+	frame	data/chars/King_Piccolo/184.gif
+	offset	21 72
+	frame	data/chars/King_Piccolo/185.gif
+	offset	27 50
+	frame	data/chars/King_Piccolo/182.gif
+	offset	25 50
+	frame	data/chars/King_Piccolo/181.gif
+		
+anim	pain
+	delay	7
+	offset	23 39
+	frame	data/chars/King_Piccolo/128.gif
+	offset	29 47
+	frame	data/chars/King_Piccolo/129.gif
+	offset	29 47
+	frame	data/chars/King_Piccolo/130.gif
+	offset	27 60
+	frame	data/chars/King_Piccolo/131.gif
+		
+anim	run
+	delay	7
+	offset	26 47
+	frame	data/chars/King_Piccolo/24.gif
+	offset	25 47
+	frame	data/chars/King_Piccolo/25.gif
+		
+anim	select
+	delay	7
+	loop	1 1
+	offset	23 63
+	frame	data/chars/King_Piccolo/5.gif
+	offset	23 63
+	frame	data/chars/King_Piccolo/6.gif
+	offset	23 63
+	frame	data/chars/King_Piccolo/7.gif
+	offset	23 63
+	frame	data/chars/King_Piccolo/8.gif
+		
+anim	spawn
+	delay	7
+	offset	2 62
+	frame	data/chars/King_Piccolo/242.gif
+	offset	13 62
+	frame	data/chars/King_Piccolo/243.gif
+	offset	24 63
+	frame	data/chars/King_Piccolo/244.gif
+	offset	23 66
+	frame	data/chars/King_Piccolo/245.gif
+	offset	23 75
+	frame	data/chars/King_Piccolo/246.gif
+	offset	30 74
+	frame	data/chars/King_Piccolo/247.gif
+	offset	22 64
+	frame	data/chars/King_Piccolo/248.gif
+		
+anim	special
+	delay	7
+	offset	23 51
+	frame	data/chars/King_Piccolo/173.gif
+	offset	27 54
+	frame	data/chars/King_Piccolo/174.gif
+	offset	22 64
+	frame	data/chars/King_Piccolo/175.gif
+	offset	22 64
+	frame	data/chars/King_Piccolo/176.gif
+	offset	22 64
+	frame	data/chars/King_Piccolo/177.gif
+	offset	22 64
+	frame	data/chars/King_Piccolo/178.gif
+	offset	22 55
+	frame	data/chars/King_Piccolo/179.gif
+	offset	22 48
+	frame	data/chars/King_Piccolo/180.gif
+		
+anim	walk
+	delay	7
+	offset	28 38
+	frame	data/chars/King_Piccolo/16.gif
+	offset	28 38
+	frame	data/chars/King_Piccolo/17.gif
+	offset	28 37
+	frame	data/chars/King_Piccolo/18.gif
+	offset	28 37
+	frame	data/chars/King_Piccolo/19.gif
+		
+#|edited by openBor Stats v 0.67
+		

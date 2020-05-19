@@ -5,1163 +5,306 @@ type	player
 shadow	3 
 
 
-anim 9000
- delay 7
- offset -1 0
- frame data/chars/Gon/0.gif
- offset 0 0
- frame data/chars/Gon/1.gif
 
-anim idle
- delay 7
- offset 14 41
- frame data/chars/Gon/2.gif
- offset 14 42
- frame data/chars/Gon/3.gif
- offset 14 41
- frame data/chars/Gon/4.gif
- offset 14 40
- frame data/chars/Gon/5.gif
 
-anim turn
- delay 7
- offset 15 41
- frame data/chars/Gon/6.gif
 
-anim 0006
- delay 7
- offset 16 36
- frame data/chars/Gon/7.gif
- offset 16 32
- frame data/chars/Gon/8.gif
- offset 11 33
- frame data/chars/Gon/9.gif
 
-anim walk
- delay 7
- offset 13 37
- frame data/chars/Gon/10.gif
- offset 17 39
- frame data/chars/Gon/11.gif
- offset 14 38
- frame data/chars/Gon/12.gif
- offset 5 37
- frame data/chars/Gon/13.gif
- offset 13 37
- frame data/chars/Gon/14.gif
- offset 16 38
- frame data/chars/Gon/15.gif
- offset 14 38
- frame data/chars/Gon/16.gif
- offset 5 36
- frame data/chars/Gon/17.gif
 
-anim 0040
- delay 7
- offset 15 42
- frame data/chars/Gon/18.gif
- offset 15 42
- frame data/chars/Gon/19.gif
- offset 15 42
- frame data/chars/Gon/20.gif
- offset 13 40
- frame data/chars/Gon/21.gif
- offset 13 41
- frame data/chars/Gon/22.gif
- offset 13 17
- frame data/chars/Gon/23.gif
 
-anim block120
- delay 7
- offset 16 40
- frame data/chars/Gon/24.gif
- offset 16 40
- frame data/chars/Gon/25.gif
- offset 16 40
- frame data/chars/Gon/26.gif
 
-anim block121
- delay 7
- offset 16 40
- frame data/chars/Gon/27.gif
- offset 16 40
- frame data/chars/Gon/28.gif
 
-anim block122
- delay 7
- offset 15 46
- frame data/chars/Gon/29.gif
- offset 15 46
- frame data/chars/Gon/30.gif
- offset 15 46
- frame data/chars/Gon/31.gif
-
-anim pain5000
- delay 7
- offset 13 38
- frame data/chars/Gon/32.gif
- offset 13 38
- frame data/chars/Gon/33.gif
- offset 17 41
- frame data/chars/Gon/34.gif
- offset 17 41
- frame data/chars/Gon/35.gif
- offset 17 41
- frame data/chars/Gon/36.gif
-
-anim pain5001
- delay 7
- offset 17 22
- frame data/chars/Gon/37.gif
- offset 13 20
- frame data/chars/Gon/38.gif
- offset 17 22
- frame data/chars/Gon/39.gif
-
-anim pain5002
- delay 7
- offset 17 0
- frame data/chars/Gon/40.gif
- offset 13 0
- frame data/chars/Gon/41.gif
- offset 17 0
- frame data/chars/Gon/42.gif
-
-anim pain5010
- delay 7
- offset 13 38
- frame data/chars/Gon/43.gif
- offset 13 38
- frame data/chars/Gon/44.gif
- offset 13 38
- frame data/chars/Gon/45.gif
- offset 9 44
- frame data/chars/Gon/46.gif
-
-anim pain5011
- delay 7
- offset 13 20
- frame data/chars/Gon/47.gif
- offset 13 20
- frame data/chars/Gon/48.gif
- offset 13 20
- frame data/chars/Gon/49.gif
-
-anim pain5012
- delay 7
- offset 13 0
- frame data/chars/Gon/50.gif
- offset 13 0
- frame data/chars/Gon/51.gif
- offset 13 0
- frame data/chars/Gon/52.gif
-
-anim pain5020
- delay 7
- offset 9 44
- frame data/chars/Gon/53.gif
- offset 15 35
- frame data/chars/Gon/54.gif
- offset 15 35
- frame data/chars/Gon/55.gif
-
-anim fall5030
- delay 7
- offset 23 40
- frame data/chars/Gon/56.gif
- offset 34 22
- frame data/chars/Gon/57.gif
- offset 23 27
- frame data/chars/Gon/58.gif
- offset 23 27
- frame data/chars/Gon/59.gif
- offset 23 27
- frame data/chars/Gon/60.gif
- offset 25 25
- frame data/chars/Gon/61.gif
- offset 25 25
- frame data/chars/Gon/62.gif
-
-anim fall5031
- delay 7
- offset 23 21
- frame data/chars/Gon/63.gif
- offset 34 13
- frame data/chars/Gon/64.gif
- offset 23 15
- frame data/chars/Gon/65.gif
- offset 23 15
- frame data/chars/Gon/66.gif
- offset 25 19
- frame data/chars/Gon/67.gif
- offset 25 19
- frame data/chars/Gon/68.gif
-
-anim fall5032
- delay 7
- offset 23 0
- frame data/chars/Gon/69.gif
- offset 34 0
- frame data/chars/Gon/70.gif
- offset 23 0
- frame data/chars/Gon/71.gif
- offset 23 0
- frame data/chars/Gon/72.gif
- offset 25 0
- frame data/chars/Gon/73.gif
- offset 25 0
- frame data/chars/Gon/74.gif
-
-anim fall5040
- delay 7
- offset 23 27
- frame data/chars/Gon/75.gif
- offset 23 27
- frame data/chars/Gon/76.gif
- offset 25 12
- frame data/chars/Gon/77.gif
- offset 21 27
- frame data/chars/Gon/78.gif
- offset 16 30
- frame data/chars/Gon/79.gif
- offset 17 33
- frame data/chars/Gon/80.gif
- offset 13 42
- frame data/chars/Gon/81.gif
- offset 34 22
- frame data/chars/Gon/82.gif
-
-anim fall5041
- delay 7
- offset 23 15
- frame data/chars/Gon/83.gif
- offset 25 8
- frame data/chars/Gon/84.gif
- offset 25 19
- frame data/chars/Gon/85.gif
-
-anim fall5042
- delay 7
- offset 23 0
- frame data/chars/Gon/86.gif
- offset 25 0
- frame data/chars/Gon/87.gif
- offset 25 0
- frame data/chars/Gon/88.gif
-
-anim fall5060
- delay 7
- offset 9 44
- frame data/chars/Gon/89.gif
- offset 9 44
- frame data/chars/Gon/90.gif
- offset 12 37
- frame data/chars/Gon/91.gif
-
-anim fall5061
- delay 7
- offset 9 23
- frame data/chars/Gon/92.gif
- offset 12 23
- frame data/chars/Gon/93.gif
-
-anim fall5062
- delay 7
- offset 9 0
- frame data/chars/Gon/94.gif
- offset 12 0
- frame data/chars/Gon/95.gif
-
-anim fall5070
- delay 7
- offset 9 44
- frame data/chars/Gon/96.gif
- offset 9 22
- frame data/chars/Gon/97.gif
- offset 39 20
- frame data/chars/Gon/98.gif
- offset 9 22
- frame data/chars/Gon/99.gif
-
-anim fall5071
- delay 7
- offset 9 23
- frame data/chars/Gon/100.gif
- offset 9 13
- frame data/chars/Gon/101.gif
- offset 39 13
- frame data/chars/Gon/102.gif
- offset 39 13
- frame data/chars/Gon/103.gif
-
-anim fall5072
- delay 7
- offset 9 0
- frame data/chars/Gon/104.gif
- offset 9 0
- frame data/chars/Gon/105.gif
- offset 39 0
- frame data/chars/Gon/106.gif
-
-anim faint
- delay 7
- offset 20 43
- frame data/chars/Gon/107.gif
- offset 20 43
- frame data/chars/Gon/108.gif
-
-anim attack200
- delay 7
- offset 14 42
- frame data/chars/Gon/109.gif
- offset 14 44
- frame data/chars/Gon/110.gif
- offset 12 40
- frame data/chars/Gon/111.gif
- offset 12 40
- frame data/chars/Gon/112.gif
- offset 19 46
- frame data/chars/Gon/113.gif
- offset 19 47
- frame data/chars/Gon/114.gif
- offset 10 47
- frame data/chars/Gon/115.gif
- offset 11 47
- frame data/chars/Gon/116.gif
- offset 19 37
- frame data/chars/Gon/117.gif
- offset 19 31
- frame data/chars/Gon/118.gif
- offset 19 32
- frame data/chars/Gon/119.gif
- offset 18 32
- frame data/chars/Gon/120.gif
- offset 19 32
- frame data/chars/Gon/121.gif
- offset 13 44
- frame data/chars/Gon/122.gif
- offset 12 47
- frame data/chars/Gon/123.gif
- offset 12 44
- frame data/chars/Gon/124.gif
- offset 18 42
- frame data/chars/Gon/125.gif
- offset 19 42
- frame data/chars/Gon/126.gif
- offset 17 44
- frame data/chars/Gon/127.gif
- offset 15 39
- frame data/chars/Gon/128.gif
- offset 15 39
- frame data/chars/Gon/129.gif
- offset 15 38
- frame data/chars/Gon/130.gif
- offset 14 40
- frame data/chars/Gon/131.gif
- offset 20 40
- frame data/chars/Gon/132.gif
- offset 14 39
- frame data/chars/Gon/133.gif
- offset 14 40
- frame data/chars/Gon/134.gif
- offset 13 43
- frame data/chars/Gon/135.gif
- offset 17 37
- frame data/chars/Gon/136.gif
- offset 8 36
- frame data/chars/Gon/137.gif
- offset 18 25
- frame data/chars/Gon/138.gif
- offset 19 24
- frame data/chars/Gon/139.gif
- offset 20 23
- frame data/chars/Gon/140.gif
- offset 14 28
- frame data/chars/Gon/141.gif
- offset 20 40
- frame data/chars/Gon/142.gif
- offset 10 41
- frame data/chars/Gon/143.gif
- offset 18 43
- frame data/chars/Gon/144.gif
- offset 21 42
- frame data/chars/Gon/145.gif
- offset 20 54
- frame data/chars/Gon/146.gif
- offset 19 53
- frame data/chars/Gon/147.gif
- offset 32 52
- frame data/chars/Gon/148.gif
- offset 16 40
- frame data/chars/Gon/149.gif
- offset 57 56
- frame data/chars/Gon/150.gif
- offset 58 46
- frame data/chars/Gon/151.gif
- offset 26 57
- frame data/chars/Gon/152.gif
- offset 15 32
- frame data/chars/Gon/153.gif
- offset 13 38
- frame data/chars/Gon/154.gif
- offset 13 37
- frame data/chars/Gon/155.gif
- offset 13 38
- frame data/chars/Gon/156.gif
- offset 13 37
- frame data/chars/Gon/157.gif
- offset 21 40
- frame data/chars/Gon/158.gif
- offset 18 35
- frame data/chars/Gon/159.gif
- offset 18 38
- frame data/chars/Gon/160.gif
- offset 22 41
- frame data/chars/Gon/161.gif
- offset 13 43
- frame data/chars/Gon/162.gif
- offset 16 43
- frame data/chars/Gon/163.gif
- offset 17 45
- frame data/chars/Gon/164.gif
- offset 16 45
- frame data/chars/Gon/165.gif
- offset 13 43
- frame data/chars/Gon/166.gif
- offset 19 41
- frame data/chars/Gon/167.gif
- offset 18 41
- frame data/chars/Gon/168.gif
- offset 18 41
- frame data/chars/Gon/169.gif
- offset 22 42
- frame data/chars/Gon/170.gif
- offset 22 50
- frame data/chars/Gon/171.gif
- offset 34 56
- frame data/chars/Gon/172.gif
- offset 41 51
- frame data/chars/Gon/173.gif
- offset 44 61
- frame data/chars/Gon/174.gif
- offset 58 61
- frame data/chars/Gon/175.gif
- offset 51 59
- frame data/chars/Gon/176.gif
- offset 25 59
- frame data/chars/Gon/177.gif
- offset 18 86
- frame data/chars/Gon/178.gif
- offset 21 54
- frame data/chars/Gon/179.gif
- offset 18 69
- frame data/chars/Gon/180.gif
- offset 18 69
- frame data/chars/Gon/181.gif
- offset 48 63
- frame data/chars/Gon/182.gif
- offset 33 73
- frame data/chars/Gon/183.gif
- offset 48 110
- frame data/chars/Gon/184.gif
- offset 48 122
- frame data/chars/Gon/185.gif
- offset 48 109
- frame data/chars/Gon/186.gif
- offset 18 42
- frame data/chars/Gon/187.gif
- offset 18 43
- frame data/chars/Gon/188.gif
- offset 21 42
- frame data/chars/Gon/189.gif
- offset 20 39
- frame data/chars/Gon/190.gif
- offset 19 42
- frame data/chars/Gon/191.gif
- offset 19 41
- frame data/chars/Gon/192.gif
- offset 19 42
- frame data/chars/Gon/193.gif
- offset 23 41
- frame data/chars/Gon/194.gif
-
-anim 9007
- delay 7
- offset 75 10
- frame data/chars/Gon/195.gif
- offset 93 12
- frame data/chars/Gon/196.gif
- offset 111 14
- frame data/chars/Gon/197.gif
- offset 124 16
- frame data/chars/Gon/198.gif
- offset 122 16
- frame data/chars/Gon/199.gif
-
-anim 9021
- delay 7
- offset 320 240
- frame data/chars/Gon/200.gif
-
-anim freespecial1050
- delay 7
- offset 55 45
- frame data/chars/Gon/201.gif
- offset 63 42
- frame data/chars/Gon/202.gif
- offset 35 45
- frame data/chars/Gon/203.gif
- offset 35 44
- frame data/chars/Gon/204.gif
-
-anim freespecial1051
- delay 7
- offset 86 73
- frame data/chars/Gon/205.gif
- offset 79 80
- frame data/chars/Gon/206.gif
- offset 74 80
- frame data/chars/Gon/207.gif
- offset 69 80
- frame data/chars/Gon/208.gif
- offset 86 80
- frame data/chars/Gon/209.gif
- offset 67 79
- frame data/chars/Gon/210.gif
- offset 86 79
- frame data/chars/Gon/211.gif
- offset 86 79
- frame data/chars/Gon/212.gif
- offset 86 80
- frame data/chars/Gon/213.gif
-
-anim freespecial1052
- delay 7
- offset 268 148
- frame data/chars/Gon/214.gif
- offset 123 142
- frame data/chars/Gon/215.gif
- offset 64 132
- frame data/chars/Gon/216.gif
- offset 70 70
- frame data/chars/Gon/217.gif
- offset 70 51
- frame data/chars/Gon/218.gif
- offset 49 20
- frame data/chars/Gon/219.gif
- offset 51 32
- frame data/chars/Gon/220.gif
- offset 48 17
- frame data/chars/Gon/221.gif
- offset 46 26
- frame data/chars/Gon/222.gif
- offset 47 1
- frame data/chars/Gon/223.gif
- offset -125 -124
- frame data/chars/Gon/224.gif
- offset -125 -124
- frame data/chars/Gon/225.gif
- offset -40 -125
- frame data/chars/Gon/226.gif
- offset 40 157
- frame data/chars/Gon/227.gif
- offset 74 158
- frame data/chars/Gon/228.gif
- offset 75 158
- frame data/chars/Gon/229.gif
- offset 73 157
- frame data/chars/Gon/230.gif
- offset 264 104
- frame data/chars/Gon/231.gif
- offset 275 58
- frame data/chars/Gon/232.gif
- offset 271 140
- frame data/chars/Gon/233.gif
- offset 270 148
- frame data/chars/Gon/234.gif
-
-anim freespecial1053
- delay 7
- offset -50 14
- frame data/chars/Gon/235.gif
- offset -50 26
- frame data/chars/Gon/236.gif
- offset 263 137
- frame data/chars/Gon/237.gif
- offset 260 145
- frame data/chars/Gon/238.gif
- offset 256 143
- frame data/chars/Gon/239.gif
- offset 261 142
- frame data/chars/Gon/240.gif
- offset 227 119
- frame data/chars/Gon/241.gif
- offset 96 116
- frame data/chars/Gon/242.gif
- offset 40 112
- frame data/chars/Gon/243.gif
-
-anim freespecial1055
- delay 7
- offset 145 67
- frame data/chars/Gon/244.gif
- offset 125 64
- frame data/chars/Gon/245.gif
- offset 110 83
- frame data/chars/Gon/246.gif
- offset 106 86
- frame data/chars/Gon/247.gif
-
-anim freespecial1056
- delay 7
- offset 89 90
- frame data/chars/Gon/248.gif
- offset 88 90
- frame data/chars/Gon/249.gif
- offset 85 87
- frame data/chars/Gon/250.gif
- offset 82 83
- frame data/chars/Gon/251.gif
- offset 84 84
- frame data/chars/Gon/252.gif
- offset 84 84
- frame data/chars/Gon/253.gif
- offset 85 86
- frame data/chars/Gon/254.gif
- offset 84 85
- frame data/chars/Gon/255.gif
- offset 85 85
- frame data/chars/Gon/256.gif
- offset 89 89
- frame data/chars/Gon/257.gif
-
-anim 0196
- delay 7
- offset 27 47
- frame data/chars/Gon/258.gif
- offset 27 47
- frame data/chars/Gon/259.gif
- offset 27 47
- frame data/chars/Gon/260.gif
- offset 27 47
- frame data/chars/Gon/261.gif
-
-anim freespecial1967
- delay 7
- offset 144 113
- frame data/chars/Gon/262.gif
- offset 144 113
- frame data/chars/Gon/263.gif
- offset 144 113
- frame data/chars/Gon/264.gif
- offset 144 113
- frame data/chars/Gon/265.gif
- offset 144 113
- frame data/chars/Gon/266.gif
-
-anim 6001
- delay 7
- offset 161 78
- frame data/chars/Gon/267.gif
- offset 161 78
- frame data/chars/Gon/268.gif
- offset 161 78
- frame data/chars/Gon/269.gif
- offset 161 78
- frame data/chars/Gon/270.gif
- offset 161 78
- frame data/chars/Gon/271.gif
- offset 161 78
- frame data/chars/Gon/272.gif
- offset 161 78
- frame data/chars/Gon/273.gif
- offset 161 78
- frame data/chars/Gon/274.gif
- offset 161 78
- frame data/chars/Gon/275.gif
-
-anim 0010
- delay 7
- offset 134 137
- frame data/chars/Gon/276.gif
- offset 134 137
- frame data/chars/Gon/277.gif
- offset 134 137
- frame data/chars/Gon/278.gif
- offset 134 137
- frame data/chars/Gon/279.gif
- offset 134 137
- frame data/chars/Gon/280.gif
- offset 134 137
- frame data/chars/Gon/281.gif
- offset 134 137
- frame data/chars/Gon/282.gif
- offset 134 137
- frame data/chars/Gon/283.gif
- offset 134 137
- frame data/chars/Gon/284.gif
- offset 134 137
- frame data/chars/Gon/285.gif
- offset 134 137
- frame data/chars/Gon/286.gif
- offset 134 137
- frame data/chars/Gon/287.gif
- offset 134 137
- frame data/chars/Gon/288.gif
- offset 134 137
- frame data/chars/Gon/289.gif
- offset 134 137
- frame data/chars/Gon/290.gif
- offset 134 137
- frame data/chars/Gon/291.gif
- offset 134 137
- frame data/chars/Gon/292.gif
- offset 134 137
- frame data/chars/Gon/293.gif
- offset 134 137
- frame data/chars/Gon/294.gif
- offset 134 137
- frame data/chars/Gon/295.gif
- offset 134 137
- frame data/chars/Gon/296.gif
- offset 134 137
- frame data/chars/Gon/297.gif
- offset 134 137
- frame data/chars/Gon/298.gif
- offset 134 137
- frame data/chars/Gon/299.gif
- offset 134 137
- frame data/chars/Gon/300.gif
- offset 134 137
- frame data/chars/Gon/301.gif
- offset 134 137
- frame data/chars/Gon/302.gif
- offset 134 137
- frame data/chars/Gon/303.gif
- offset 134 137
- frame data/chars/Gon/304.gif
- offset 134 137
- frame data/chars/Gon/305.gif
- offset 134 137
- frame data/chars/Gon/306.gif
- offset 134 137
- frame data/chars/Gon/307.gif
- offset 134 137
- frame data/chars/Gon/308.gif
- offset 134 137
- frame data/chars/Gon/309.gif
- offset 134 137
- frame data/chars/Gon/310.gif
- offset 134 137
- frame data/chars/Gon/311.gif
- offset 134 137
- frame data/chars/Gon/312.gif
-
-anim 24001
- delay 7
- offset 14 19
- frame data/chars/Gon/313.gif
- offset 75 49
- frame data/chars/Gon/314.gif
- offset 126 77
- frame data/chars/Gon/315.gif
- offset 143 93
- frame data/chars/Gon/316.gif
- offset 154 102
- frame data/chars/Gon/317.gif
- offset 109 108
- frame data/chars/Gon/318.gif
- offset 116 109
- frame data/chars/Gon/319.gif
- offset 128 122
- frame data/chars/Gon/320.gif
- offset 138 142
- frame data/chars/Gon/321.gif
- offset 148 160
- frame data/chars/Gon/322.gif
- offset 160 160
- frame data/chars/Gon/323.gif
- offset 166 161
- frame data/chars/Gon/324.gif
- offset 176 166
- frame data/chars/Gon/325.gif
- offset 184 158
- frame data/chars/Gon/326.gif
- offset 188 170
- frame data/chars/Gon/327.gif
- offset 193 168
- frame data/chars/Gon/328.gif
- offset 193 193
- frame data/chars/Gon/329.gif
- offset 197 204
- frame data/chars/Gon/330.gif
- offset 195 190
- frame data/chars/Gon/331.gif
- offset 167 169
- frame data/chars/Gon/332.gif
- offset 167 149
- frame data/chars/Gon/333.gif
- offset 177 143
- frame data/chars/Gon/334.gif
- offset 186 145
- frame data/chars/Gon/335.gif
- offset 192 150
- frame data/chars/Gon/336.gif
- offset 197 156
- frame data/chars/Gon/337.gif
- offset 199 159
- frame data/chars/Gon/338.gif
- offset 188 157
- frame data/chars/Gon/339.gif
- offset 59 137
- frame data/chars/Gon/340.gif
- offset 46 164
- frame data/chars/Gon/341.gif
- offset 31 169
- frame data/chars/Gon/342.gif
- offset 14 170
- frame data/chars/Gon/343.gif
-
-anim 10120
- delay 7
- offset 39 89
- frame data/chars/Gon/344.gif
- offset 39 88
- frame data/chars/Gon/345.gif
- offset 38 87
- frame data/chars/Gon/346.gif
- offset 37 86
- frame data/chars/Gon/347.gif
- offset 37 83
- frame data/chars/Gon/348.gif
- offset 37 84
- frame data/chars/Gon/349.gif
- offset 38 86
- frame data/chars/Gon/350.gif
- offset 39 87
- frame data/chars/Gon/351.gif
- offset 39 88
- frame data/chars/Gon/352.gif
- offset 38 88
- frame data/chars/Gon/353.gif
- offset 29 68
- frame data/chars/Gon/354.gif
- offset 31 72
- frame data/chars/Gon/355.gif
- offset 33 75
- frame data/chars/Gon/356.gif
- offset 34 78
- frame data/chars/Gon/357.gif
- offset 35 81
- frame data/chars/Gon/358.gif
- offset 36 82
- frame data/chars/Gon/359.gif
- offset 37 83
- frame data/chars/Gon/360.gif
-
-anim 6003
- delay 7
- offset 96 33
- frame data/chars/Gon/361.gif
- offset 96 33
- frame data/chars/Gon/362.gif
- offset 96 33
- frame data/chars/Gon/363.gif
- offset 96 33
- frame data/chars/Gon/364.gif
- offset 96 33
- frame data/chars/Gon/365.gif
- offset 96 33
- frame data/chars/Gon/366.gif
- offset 96 33
- frame data/chars/Gon/367.gif
- offset 96 33
- frame data/chars/Gon/368.gif
-
-anim jumpattack670
- delay 7
- offset 175 155
- frame data/chars/Gon/369.gif
- offset 175 155
- frame data/chars/Gon/370.gif
- offset 175 155
- frame data/chars/Gon/371.gif
-
-anim 9007
- delay 7
- offset 122 16
- frame data/chars/Gon/372.gif
- offset 111 14
- frame data/chars/Gon/373.gif
- offset 75 10
- frame data/chars/Gon/374.gif
- offset 124 16
- frame data/chars/Gon/375.gif
- offset 93 12
- frame data/chars/Gon/376.gif
-
-anim 9030
- delay 7
- offset 300 169
- frame data/chars/Gon/377.gif
- offset 300 169
- frame data/chars/Gon/378.gif
- offset 300 169
- frame data/chars/Gon/379.gif
- offset 300 169
- frame data/chars/Gon/380.gif
- offset 300 169
- frame data/chars/Gon/381.gif
- offset 300 169
- frame data/chars/Gon/382.gif
- offset 300 169
- frame data/chars/Gon/383.gif
- offset 300 169
- frame data/chars/Gon/384.gif
- offset 300 169
- frame data/chars/Gon/385.gif
- offset 300 169
- frame data/chars/Gon/386.gif
- offset 300 169
- frame data/chars/Gon/387.gif
- offset 300 169
- frame data/chars/Gon/388.gif
- offset 300 169
- frame data/chars/Gon/389.gif
- offset 300 169
- frame data/chars/Gon/390.gif
- offset 300 169
- frame data/chars/Gon/391.gif
- offset 300 169
- frame data/chars/Gon/392.gif
- offset 300 169
- frame data/chars/Gon/393.gif
- offset 300 169
- frame data/chars/Gon/394.gif
- offset 300 169
- frame data/chars/Gon/395.gif
- offset 300 169
- frame data/chars/Gon/396.gif
-
-anim freespecial1000
- delay 7
- offset 160 120
- frame data/chars/Gon/397.gif
- offset 160 120
- frame data/chars/Gon/398.gif
- offset 160 120
- frame data/chars/Gon/399.gif
- offset 160 120
- frame data/chars/Gon/400.gif
- offset 160 120
- frame data/chars/Gon/401.gif
- offset 160 120
- frame data/chars/Gon/402.gif
- offset 160 120
- frame data/chars/Gon/403.gif
- offset 160 120
- frame data/chars/Gon/404.gif
- offset 160 120
- frame data/chars/Gon/405.gif
- offset 160 120
- frame data/chars/Gon/406.gif
- offset 160 120
- frame data/chars/Gon/407.gif
- offset 160 120
- frame data/chars/Gon/408.gif
- offset 160 120
- frame data/chars/Gon/409.gif
- offset 160 120
- frame data/chars/Gon/410.gif
- offset 160 120
- frame data/chars/Gon/411.gif
- offset 160 120
- frame data/chars/Gon/412.gif
- offset 160 120
- frame data/chars/Gon/413.gif
- offset 160 120
- frame data/chars/Gon/414.gif
- offset 160 120
- frame data/chars/Gon/415.gif
- offset 160 120
- frame data/chars/Gon/416.gif
- offset 160 120
- frame data/chars/Gon/417.gif
-
-anim freespecial1001
- delay 7
- offset 236 106
- frame data/chars/Gon/418.gif
- offset 236 106
- frame data/chars/Gon/419.gif
- offset 236 106
- frame data/chars/Gon/420.gif
- offset 236 106
- frame data/chars/Gon/421.gif
- offset 236 106
- frame data/chars/Gon/422.gif
- offset 236 106
- frame data/chars/Gon/423.gif
- offset 236 106
- frame data/chars/Gon/424.gif
-
-anim jumpattack671
- delay 7
- offset 119 137
- frame data/chars/Gon/425.gif
- offset 119 137
- frame data/chars/Gon/426.gif
- offset 119 137
- frame data/chars/Gon/427.gif
- offset 119 137
- frame data/chars/Gon/428.gif
- offset 119 137
- frame data/chars/Gon/429.gif
- offset 119 137
- frame data/chars/Gon/430.gif
- offset 119 137
- frame data/chars/Gon/431.gif
- offset 119 137
- frame data/chars/Gon/432.gif
- offset 119 137
- frame data/chars/Gon/433.gif
- offset 119 137
- frame data/chars/Gon/434.gif
-
-anim jumpattack672
- delay 7
- offset 115 88
- frame data/chars/Gon/435.gif
- offset 136 88
- frame data/chars/Gon/436.gif
- offset 157 88
- frame data/chars/Gon/437.gif
- offset 115 97
- frame data/chars/Gon/438.gif
- offset 137 96
- frame data/chars/Gon/439.gif
- offset 158 97
- frame data/chars/Gon/440.gif
- offset 117 111
- frame data/chars/Gon/441.gif
- offset 137 106
- frame data/chars/Gon/442.gif
-
-anim jumpattack673
- delay 7
- offset 180 189
- frame data/chars/Gon/443.gif
- offset 180 189
- frame data/chars/Gon/444.gif
- offset 180 189
- frame data/chars/Gon/445.gif
- offset 180 189
- frame data/chars/Gon/446.gif
- offset 180 189
- frame data/chars/Gon/447.gif
-
-anim freespecial1300
- delay 7
- offset 280 240
- frame data/chars/Gon/448.gif
- offset 280 240
- frame data/chars/Gon/449.gif
- offset 280 240
- frame data/chars/Gon/450.gif
- offset 280 240
- frame data/chars/Gon/451.gif
- offset 280 240
- frame data/chars/Gon/452.gif
- offset 280 240
- frame data/chars/Gon/453.gif
- offset 280 240
- frame data/chars/Gon/454.gif
- offset 280 240
- frame data/chars/Gon/455.gif
- offset 280 240
- frame data/chars/Gon/456.gif
- offset 280 240
- frame data/chars/Gon/457.gif
- offset 280 240
- frame data/chars/Gon/458.gif
- offset 280 240
- frame data/chars/Gon/459.gif
- offset 280 240
- frame data/chars/Gon/460.gif
- offset 280 240
- frame data/chars/Gon/461.gif
- offset 280 240
- frame data/chars/Gon/462.gif
- offset 280 240
- frame data/chars/Gon/463.gif
- offset 280 240
- frame data/chars/Gon/464.gif
- offset 280 240
- frame data/chars/Gon/465.gif
- offset 280 240
- frame data/chars/Gon/466.gif
- offset 280 240
- frame data/chars/Gon/467.gif
- offset 280 240
- frame data/chars/Gon/468.gif
- offset 280 240
- frame data/chars/Gon/469.gif
- offset 280 240
- frame data/chars/Gon/470.gif
- offset 280 240
- frame data/chars/Gon/471.gif
- offset 280 240
- frame data/chars/Gon/472.gif
- offset 280 240
- frame data/chars/Gon/473.gif
- offset 280 240
- frame data/chars/Gon/474.gif
- offset 280 240
- frame data/chars/Gon/475.gif
- offset 280 240
- frame data/chars/Gon/476.gif
- offset 280 240
- frame data/chars/Gon/477.gif
- offset 280 240
- frame data/chars/Gon/478.gif
- offset 280 240
- frame data/chars/Gon/479.gif
- offset 280 240
- frame data/chars/Gon/480.gif
- offset 280 240
- frame data/chars/Gon/481.gif
- offset 280 240
- frame data/chars/Gon/482.gif
- offset 280 240
- frame data/chars/Gon/483.gif
- offset 280 240
- frame data/chars/Gon/484.gif
- offset 280 240
- frame data/chars/Gon/485.gif
- offset 280 240
- frame data/chars/Gon/486.gif
- offset 280 240
- frame data/chars/Gon/487.gif
-
-anim 0912
- delay 7
- offset 160 240
- frame data/chars/Gon/488.gif
- offset 160 240
- frame data/chars/Gon/489.gif
- offset 160 240
- frame data/chars/Gon/490.gif
- offset 160 240
- frame data/chars/Gon/491.gif
- offset 160 240
- frame data/chars/Gon/492.gif
- offset 160 240
- frame data/chars/Gon/493.gif
- offset 160 240
- frame data/chars/Gon/494.gif
- offset 160 240
- frame data/chars/Gon/495.gif
- offset 160 240
- frame data/chars/Gon/496.gif
- offset 160 240
- frame data/chars/Gon/497.gif
+anim	attack1
+	delay	7
+	offset	17 44
+	frame	data/chars/Gon/127.gif
+	offset	15 39
+	frame	data/chars/Gon/128.gif
+	attack	33 11 35 16 5 0 1 0 0 0
+	offset	15 39
+	frame	data/chars/Gon/129.gif
+		
+anim	attack2
+	delay	7
+	offset	15 38
+	frame	data/chars/Gon/130.gif
+	offset	14 40
+	frame	data/chars/Gon/131.gif
+	offset	20 40
+	frame	data/chars/Gon/132.gif
+	offset	14 39
+	frame	data/chars/Gon/133.gif
+	attack	22 15 41 25 6 0 1 0 0 0
+	offset	14 40
+	frame	data/chars/Gon/134.gif
+		
+anim	attack3
+	delay	3
+	fastattack	1
+	offset	13 43
+	frame	data/chars/Gon/135.gif
+	offset	17 37
+	frame	data/chars/Gon/136.gif
+	offset	8 36
+	frame	data/chars/Gon/137.gif
+	offset	20 23
+	frame	data/chars/Gon/140.gif
+	offset	14 28
+	frame	data/chars/Gon/141.gif
+	offset	20 40
+	frame	data/chars/Gon/142.gif
+	offset	10 41
+	frame	data/chars/Gon/143.gif
+	offset	18 43
+	frame	data/chars/Gon/144.gif
+	attack	22 43 44 -42 7 0 1 0 0 0
+	offset	21 42
+	frame	data/chars/Gon/145.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	20 54
+	frame	data/chars/Gon/146.gif
+	attack	5 0 73 51 7 1 1 0 0 0
+	offset	19 53
+	frame	data/chars/Gon/147.gif
+	offset	32 52
+	frame	data/chars/Gon/148.gif
+	offset	16 40
+	frame	data/chars/Gon/149.gif
+		
+anim	faint
+	delay	7
+	offset	20 43
+	frame	data/chars/Gon/107.gif
+	offset	20 43
+	frame	data/chars/Gon/108.gif
+		
+anim	fall
+	delay	7
+	offset	23 0
+	frame	data/chars/Gon/69.gif
+	offset	34 0
+	frame	data/chars/Gon/70.gif
+	offset	23 0
+	frame	data/chars/Gon/71.gif
+	offset	23 0
+	frame	data/chars/Gon/72.gif
+	offset	25 0
+	frame	data/chars/Gon/73.gif
+	offset	25 0
+	frame	data/chars/Gon/74.gif
+	offset	23 27
+	frame	data/chars/Gon/75.gif
+	offset	23 27
+	frame	data/chars/Gon/76.gif
+	offset	25 12
+	frame	data/chars/Gon/77.gif
+		
+anim	freespecial1
+	delay	7
+	offset	13 37
+	frame	data/chars/Gon/155.gif
+	offset	13 38
+	frame	data/chars/Gon/156.gif
+	offset	13 37
+	frame	data/chars/Gon/157.gif
+	offset	21 40
+	frame	data/chars/Gon/158.gif
+	offset	18 35
+	frame	data/chars/Gon/159.gif
+	offset	18 38
+	frame	data/chars/Gon/160.gif
+	offset	22 41
+	frame	data/chars/Gon/161.gif
+		
+anim	freespecial2
+	delay	7
+	offset	13 37
+	frame	data/chars/Gon/155.gif
+	offset	13 38
+	frame	data/chars/Gon/156.gif
+	offset	13 37
+	frame	data/chars/Gon/157.gif
+	offset	13 43
+	frame	data/chars/Gon/162.gif
+	offset	16 43
+	frame	data/chars/Gon/163.gif
+	offset	17 45
+	frame	data/chars/Gon/164.gif
+	offset	16 45
+	frame	data/chars/Gon/165.gif
+		
+anim	freespecial3
+	delay	7
+	offset	13 37
+	frame	data/chars/Gon/155.gif
+	offset	13 38
+	frame	data/chars/Gon/156.gif
+	offset	13 37
+	frame	data/chars/Gon/157.gif
+	offset	19 41
+	frame	data/chars/Gon/167.gif
+	offset	18 41
+	frame	data/chars/Gon/168.gif
+	offset	18 41
+	frame	data/chars/Gon/169.gif
+	offset	22 42
+	frame	data/chars/Gon/170.gif
+		
+anim	freespecial4
+	delay	7
+	offset	13 37
+	frame	data/chars/Gon/155.gif
+	offset	13 38
+	frame	data/chars/Gon/156.gif
+	offset	13 37
+	frame	data/chars/Gon/157.gif
+	offset	18 43
+	frame	data/chars/Gon/188.gif
+	offset	21 42
+	frame	data/chars/Gon/189.gif
+	offset	20 39
+	frame	data/chars/Gon/190.gif
+	offset	19 42
+	frame	data/chars/Gon/191.gif
+	offset	19 41
+	frame	data/chars/Gon/192.gif
+	offset	19 42
+	frame	data/chars/Gon/193.gif
+	offset	23 41
+	frame	data/chars/Gon/194.gif
+		
+anim	idle
+	delay	7
+	loop	1
+	offset	14 41
+	frame	data/chars/Gon/2.gif
+	offset	14 42
+	frame	data/chars/Gon/3.gif
+	offset	14 41
+	frame	data/chars/Gon/4.gif
+	offset	14 40
+	frame	data/chars/Gon/5.gif
+		
+anim	jump
+	delay	7
+	offset	16 36
+	frame	data/chars/Gon/7.gif
+	offset	16 32
+	frame	data/chars/Gon/8.gif
+	offset	11 33
+	frame	data/chars/Gon/9.gif
+	offset	15 42
+	frame	data/chars/Gon/18.gif
+	offset	15 42
+	frame	data/chars/Gon/19.gif
+	offset	15 42
+	frame	data/chars/Gon/20.gif
+		
+anim	jumpattack
+	delay	7
+	offset	57 56
+	frame	data/chars/Gon/150.gif
+	offset	58 46
+	frame	data/chars/Gon/151.gif
+	offset	26 57
+	frame	data/chars/Gon/152.gif
+	offset	15 32
+	frame	data/chars/Gon/153.gif
+	offset	13 38
+	frame	data/chars/Gon/154.gif
+		
+anim	pain
+	delay	7
+	offset	13 38
+	frame	data/chars/Gon/32.gif
+	offset	13 38
+	frame	data/chars/Gon/33.gif
+	offset	17 41
+	frame	data/chars/Gon/34.gif
+	offset	17 41
+	frame	data/chars/Gon/35.gif
+	offset	17 41
+	frame	data/chars/Gon/36.gif
+		
+anim	rise
+	delay	7
+	offset	21 27
+	frame	data/chars/Gon/78.gif
+	offset	16 30
+	frame	data/chars/Gon/79.gif
+	offset	17 33
+	frame	data/chars/Gon/80.gif
+	offset	13 42
+	frame	data/chars/Gon/81.gif
+		
+anim	select
+	loop	1 4
+	delay	7
+	offset	14 42
+	frame	data/chars/Gon/109.gif
+	offset	14 44
+	frame	data/chars/Gon/110.gif
+	offset	12 40
+	frame	data/chars/Gon/111.gif
+	offset	12 40
+	frame	data/chars/Gon/112.gif
+	offset	19 46
+	frame	data/chars/Gon/113.gif
+	offset	19 47
+	frame	data/chars/Gon/114.gif
+		
+anim	spawn
+	delay	7
+	offset	13 44
+	frame	data/chars/Gon/122.gif
+	offset	12 47
+	frame	data/chars/Gon/123.gif
+	offset	12 44
+	frame	data/chars/Gon/124.gif
+	offset	18 42
+	frame	data/chars/Gon/125.gif
+	offset	19 42
+	frame	data/chars/Gon/126.gif
+		
+anim	turn
+	delay	7
+	offset	15 41
+	frame	data/chars/Gon/6.gif
+		
+anim	victory
+	loop	1 4
+	delay	7
+	offset	14 42
+	frame	data/chars/Gon/109.gif
+	offset	14 44
+	frame	data/chars/Gon/110.gif
+	offset	12 40
+	frame	data/chars/Gon/111.gif
+	offset	12 40
+	frame	data/chars/Gon/112.gif
+	offset	19 46
+	frame	data/chars/Gon/113.gif
+	offset	19 47
+	frame	data/chars/Gon/114.gif
+		
+anim	walk
+	delay	7
+	loop	1
+	offset	13 37
+	frame	data/chars/Gon/10.gif
+	offset	17 39
+	frame	data/chars/Gon/11.gif
+	offset	14 38
+	frame	data/chars/Gon/12.gif
+	offset	5 37
+	frame	data/chars/Gon/13.gif
+	offset	13 37
+	frame	data/chars/Gon/14.gif
+	offset	16 38
+	frame	data/chars/Gon/15.gif
+	offset	14 38
+	frame	data/chars/Gon/16.gif
+	offset	5 36
+	frame	data/chars/Gon/17.gif
+		
+#|edited by openBor Stats v 0.67
+		

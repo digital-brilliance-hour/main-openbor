@@ -5,1438 +5,213 @@ type	player
 shadow	3
 
 
-anim 9000
- delay 7
- offset -3 0
- frame data/chars/Deku/0.gif
- offset 0 0
- frame data/chars/Deku/1.gif
- offset 0 0
- frame data/chars/Deku/2.gif
 
-anim idle
- delay 7
- offset 15 45
- frame data/chars/Deku/3.gif
- offset 15 44
- frame data/chars/Deku/4.gif
- offset 15 43
- frame data/chars/Deku/5.gif
- offset 15 45
- frame data/chars/Deku/6.gif
- offset 12 51
- frame data/chars/Deku/7.gif
- offset 13 41
- frame data/chars/Deku/8.gif
- offset 18 34
- frame data/chars/Deku/9.gif
- offset 17 40
- frame data/chars/Deku/10.gif
- offset 20 43
- frame data/chars/Deku/11.gif
- offset 9 38
- frame data/chars/Deku/12.gif
- offset 17 41
- frame data/chars/Deku/13.gif
- offset 20 43
- frame data/chars/Deku/14.gif
- offset 10 38
- frame data/chars/Deku/15.gif
- offset 16 51
- frame data/chars/Deku/16.gif
- offset 13 51
- frame data/chars/Deku/17.gif
- offset 20 40
- frame data/chars/Deku/18.gif
- offset 23 41
- frame data/chars/Deku/19.gif
- offset 16 48
- frame data/chars/Deku/20.gif
- offset 16 45
- frame data/chars/Deku/21.gif
- offset 17 46
- frame data/chars/Deku/22.gif
- offset 14 50
- frame data/chars/Deku/23.gif
- offset 10 47
- frame data/chars/Deku/24.gif
- offset 16 47
- frame data/chars/Deku/25.gif
 
-anim pain5000
- delay 7
- offset 15 42
- frame data/chars/Deku/26.gif
- offset 28 38
- frame data/chars/Deku/27.gif
- offset 15 42
- frame data/chars/Deku/28.gif
- offset 16 46
- frame data/chars/Deku/29.gif
- offset 28 38
- frame data/chars/Deku/30.gif
- offset 33 28
- frame data/chars/Deku/31.gif
- offset 11 49
- frame data/chars/Deku/32.gif
- offset 15 42
- frame data/chars/Deku/33.gif
- offset 33 19
- frame data/chars/Deku/34.gif
- offset 30 11
- frame data/chars/Deku/35.gif
- offset 24 26
- frame data/chars/Deku/36.gif
- offset 28 26
- frame data/chars/Deku/37.gif
- offset 23 44
- frame data/chars/Deku/38.gif
- offset 13 32
- frame data/chars/Deku/39.gif
- offset 47 9
- frame data/chars/Deku/40.gif
- offset 21 43
- frame data/chars/Deku/41.gif
- offset 11 49
- frame data/chars/Deku/42.gif
- offset 11 17
- frame data/chars/Deku/43.gif
- offset 19 46
- frame data/chars/Deku/44.gif
-
-anim attack200
- delay 7
- offset 12 51
- frame data/chars/Deku/45.gif
- offset 13 41
- frame data/chars/Deku/46.gif
- offset 19 30
- frame data/chars/Deku/47.gif
- offset 19 30
- frame data/chars/Deku/48.gif
- offset 20 46
- frame data/chars/Deku/49.gif
- offset 19 47
- frame data/chars/Deku/50.gif
- offset 19 46
- frame data/chars/Deku/51.gif
- offset 20 46
- frame data/chars/Deku/52.gif
- offset 20 46
- frame data/chars/Deku/53.gif
- offset 20 47
- frame data/chars/Deku/54.gif
- offset 20 47
- frame data/chars/Deku/55.gif
- offset 20 46
- frame data/chars/Deku/56.gif
- offset 22 49
- frame data/chars/Deku/57.gif
- offset 22 48
- frame data/chars/Deku/58.gif
- offset 22 49
- frame data/chars/Deku/59.gif
- offset 22 48
- frame data/chars/Deku/60.gif
- offset 13 47
- frame data/chars/Deku/61.gif
- offset 16 43
- frame data/chars/Deku/62.gif
- offset 16 43
- frame data/chars/Deku/63.gif
- offset 16 46
- frame data/chars/Deku/64.gif
- offset 17 37
- frame data/chars/Deku/65.gif
- offset 20 43
- frame data/chars/Deku/66.gif
- offset 23 42
- frame data/chars/Deku/67.gif
- offset 17 37
- frame data/chars/Deku/68.gif
- offset 17 37
- frame data/chars/Deku/69.gif
- offset 16 42
- frame data/chars/Deku/70.gif
- offset 18 41
- frame data/chars/Deku/71.gif
- offset 16 49
- frame data/chars/Deku/72.gif
- offset 16 48
- frame data/chars/Deku/73.gif
- offset 21 41
- frame data/chars/Deku/74.gif
- offset 17 46
- frame data/chars/Deku/75.gif
- offset 17 42
- frame data/chars/Deku/76.gif
- offset 17 49
- frame data/chars/Deku/77.gif
- offset 18 46
- frame data/chars/Deku/78.gif
- offset 20 40
- frame data/chars/Deku/79.gif
- offset 15 41
- frame data/chars/Deku/80.gif
- offset 16 42
- frame data/chars/Deku/81.gif
- offset 18 34
- frame data/chars/Deku/82.gif
- offset 18 34
- frame data/chars/Deku/83.gif
- offset 18 46
- frame data/chars/Deku/84.gif
- offset 19 46
- frame data/chars/Deku/85.gif
- offset 18 16
- frame data/chars/Deku/86.gif
- offset 22 34
- frame data/chars/Deku/87.gif
- offset 23 35
- frame data/chars/Deku/88.gif
- offset 22 44
- frame data/chars/Deku/89.gif
- offset 19 44
- frame data/chars/Deku/90.gif
- offset 19 43
- frame data/chars/Deku/91.gif
- offset 18 39
- frame data/chars/Deku/92.gif
- offset 13 41
- frame data/chars/Deku/93.gif
- offset 20 35
- frame data/chars/Deku/94.gif
- offset 24 28
- frame data/chars/Deku/95.gif
- offset 22 27
- frame data/chars/Deku/96.gif
- offset 28 28
- frame data/chars/Deku/97.gif
- offset 19 38
- frame data/chars/Deku/98.gif
- offset 13 41
- frame data/chars/Deku/99.gif
- offset 24 41
- frame data/chars/Deku/100.gif
- offset 22 43
- frame data/chars/Deku/101.gif
- offset 19 46
- frame data/chars/Deku/102.gif
- offset 23 28
- frame data/chars/Deku/103.gif
- offset 14 32
- frame data/chars/Deku/104.gif
- offset 21 27
- frame data/chars/Deku/105.gif
- offset 23 42
- frame data/chars/Deku/106.gif
- offset 31 56
- frame data/chars/Deku/107.gif
- offset 23 39
- frame data/chars/Deku/108.gif
- offset 24 40
- frame data/chars/Deku/109.gif
- offset 15 49
- frame data/chars/Deku/110.gif
- offset 19 52
- frame data/chars/Deku/111.gif
- offset 15 42
- frame data/chars/Deku/112.gif
- offset 24 40
- frame data/chars/Deku/113.gif
- offset 16 42
- frame data/chars/Deku/114.gif
- offset 19 41
- frame data/chars/Deku/115.gif
- offset 28 41
- frame data/chars/Deku/116.gif
- offset 27 40
- frame data/chars/Deku/117.gif
- offset 18 44
- frame data/chars/Deku/118.gif
- offset 21 42
- frame data/chars/Deku/119.gif
- offset 21 49
- frame data/chars/Deku/120.gif
- offset 21 41
- frame data/chars/Deku/121.gif
- offset 17 43
- frame data/chars/Deku/122.gif
- offset 17 43
- frame data/chars/Deku/123.gif
- offset 16 43
- frame data/chars/Deku/124.gif
- offset 16 43
- frame data/chars/Deku/125.gif
- offset 18 42
- frame data/chars/Deku/126.gif
- offset 17 45
- frame data/chars/Deku/127.gif
- offset 17 42
- frame data/chars/Deku/128.gif
- offset 13 42
- frame data/chars/Deku/129.gif
- offset 15 40
- frame data/chars/Deku/130.gif
- offset 15 41
- frame data/chars/Deku/131.gif
- offset 14 41
- frame data/chars/Deku/132.gif
- offset 21 49
- frame data/chars/Deku/133.gif
- offset 18 43
- frame data/chars/Deku/134.gif
- offset 20 41
- frame data/chars/Deku/135.gif
- offset 17 35
- frame data/chars/Deku/136.gif
- offset 18 37
- frame data/chars/Deku/137.gif
- offset 18 36
- frame data/chars/Deku/138.gif
- offset 17 42
- frame data/chars/Deku/139.gif
- offset 22 35
- frame data/chars/Deku/140.gif
- offset 21 39
- frame data/chars/Deku/141.gif
- offset 18 38
- frame data/chars/Deku/142.gif
- offset 13 41
- frame data/chars/Deku/143.gif
- offset 21 49
- frame data/chars/Deku/144.gif
- offset 21 46
- frame data/chars/Deku/145.gif
- offset 18 49
- frame data/chars/Deku/146.gif
- offset 23 42
- frame data/chars/Deku/147.gif
- offset 34 44
- frame data/chars/Deku/148.gif
- offset 23 43
- frame data/chars/Deku/149.gif
- offset 23 43
- frame data/chars/Deku/150.gif
- offset 18 43
- frame data/chars/Deku/151.gif
- offset 14 42
- frame data/chars/Deku/152.gif
- offset 13 41
- frame data/chars/Deku/153.gif
- offset 13 32
- frame data/chars/Deku/154.gif
- offset 20 32
- frame data/chars/Deku/155.gif
- offset 25 43
- frame data/chars/Deku/156.gif
- offset 16 48
- frame data/chars/Deku/157.gif
- offset 18 40
- frame data/chars/Deku/158.gif
- offset 22 46
- frame data/chars/Deku/159.gif
- offset 20 49
- frame data/chars/Deku/160.gif
- offset 18 44
- frame data/chars/Deku/161.gif
- offset 18 42
- frame data/chars/Deku/162.gif
- offset 18 46
- frame data/chars/Deku/163.gif
- offset 18 47
- frame data/chars/Deku/164.gif
- offset 18 47
- frame data/chars/Deku/165.gif
- offset 19 47
- frame data/chars/Deku/166.gif
- offset 19 47
- frame data/chars/Deku/167.gif
- offset 18 47
- frame data/chars/Deku/168.gif
- offset 20 47
- frame data/chars/Deku/169.gif
- offset 17 44
- frame data/chars/Deku/170.gif
- offset 20 45
- frame data/chars/Deku/171.gif
- offset 25 46
- frame data/chars/Deku/172.gif
- offset 21 43
- frame data/chars/Deku/173.gif
- offset 20 42
- frame data/chars/Deku/174.gif
- offset 11 41
- frame data/chars/Deku/175.gif
- offset 17 43
- frame data/chars/Deku/176.gif
- offset 14 39
- frame data/chars/Deku/177.gif
- offset 12 40
- frame data/chars/Deku/178.gif
- offset 12 40
- frame data/chars/Deku/179.gif
- offset 12 40
- frame data/chars/Deku/180.gif
-
-anim 8230
- delay 7
- offset 68 31
- frame data/chars/Deku/181.gif
- offset 83 92
- frame data/chars/Deku/182.gif
- offset 99 149
- frame data/chars/Deku/183.gif
- offset 98 178
- frame data/chars/Deku/184.gif
- offset 100 196
- frame data/chars/Deku/185.gif
- offset 100 203
- frame data/chars/Deku/186.gif
- offset 98 210
- frame data/chars/Deku/187.gif
- offset 98 219
- frame data/chars/Deku/188.gif
- offset 97 226
- frame data/chars/Deku/189.gif
- offset 96 230
- frame data/chars/Deku/190.gif
- offset 97 232
- frame data/chars/Deku/191.gif
- offset 99 234
- frame data/chars/Deku/192.gif
- offset 100 232
- frame data/chars/Deku/193.gif
- offset 101 236
- frame data/chars/Deku/194.gif
- offset 100 222
- frame data/chars/Deku/195.gif
- offset 88 224
- frame data/chars/Deku/196.gif
- offset 88 224
- frame data/chars/Deku/197.gif
- offset 89 224
- frame data/chars/Deku/198.gif
- offset 89 226
- frame data/chars/Deku/199.gif
- offset 90 227
- frame data/chars/Deku/200.gif
- offset 90 231
- frame data/chars/Deku/201.gif
- offset 90 232
- frame data/chars/Deku/202.gif
- offset 93 232
- frame data/chars/Deku/203.gif
- offset 95 232
- frame data/chars/Deku/204.gif
- offset 96 232
- frame data/chars/Deku/205.gif
- offset 96 233
- frame data/chars/Deku/206.gif
- offset 97 232
- frame data/chars/Deku/207.gif
- offset 98 233
- frame data/chars/Deku/208.gif
- offset 99 233
- frame data/chars/Deku/209.gif
- offset 101 234
- frame data/chars/Deku/210.gif
- offset 101 234
- frame data/chars/Deku/211.gif
- offset 103 240
- frame data/chars/Deku/212.gif
- offset 103 235
- frame data/chars/Deku/213.gif
- offset 105 217
- frame data/chars/Deku/214.gif
- offset 105 217
- frame data/chars/Deku/215.gif
- offset 106 219
- frame data/chars/Deku/216.gif
- offset 105 221
- frame data/chars/Deku/217.gif
- offset 106 224
- frame data/chars/Deku/218.gif
- offset 98 226
- frame data/chars/Deku/219.gif
- offset 98 227
- frame data/chars/Deku/220.gif
- offset 98 229
- frame data/chars/Deku/221.gif
- offset 98 229
- frame data/chars/Deku/222.gif
- offset 97 228
- frame data/chars/Deku/223.gif
- offset 97 223
- frame data/chars/Deku/224.gif
- offset 94 222
- frame data/chars/Deku/225.gif
- offset 93 195
- frame data/chars/Deku/226.gif
- offset 91 194
- frame data/chars/Deku/227.gif
- offset 90 194
- frame data/chars/Deku/228.gif
- offset 76 192
- frame data/chars/Deku/229.gif
- offset 76 191
- frame data/chars/Deku/230.gif
- offset 76 191
- frame data/chars/Deku/231.gif
- offset 76 188
- frame data/chars/Deku/232.gif
- offset 76 187
- frame data/chars/Deku/233.gif
- offset 74 186
- frame data/chars/Deku/234.gif
- offset 67 168
- frame data/chars/Deku/235.gif
- offset 55 157
- frame data/chars/Deku/236.gif
- offset 39 128
- frame data/chars/Deku/237.gif
-
-anim 8240
- delay 7
- offset 198 30
- frame data/chars/Deku/238.gif
- offset 198 30
- frame data/chars/Deku/239.gif
- offset 198 30
- frame data/chars/Deku/240.gif
- offset 198 30
- frame data/chars/Deku/241.gif
- offset 198 30
- frame data/chars/Deku/242.gif
- offset 198 30
- frame data/chars/Deku/243.gif
- offset 198 30
- frame data/chars/Deku/244.gif
- offset 198 30
- frame data/chars/Deku/245.gif
- offset 198 30
- frame data/chars/Deku/246.gif
- offset 198 30
- frame data/chars/Deku/247.gif
- offset 198 30
- frame data/chars/Deku/248.gif
- offset 198 30
- frame data/chars/Deku/249.gif
- offset 198 30
- frame data/chars/Deku/250.gif
- offset 197 29
- frame data/chars/Deku/251.gif
- offset 198 29
- frame data/chars/Deku/252.gif
- offset 197 29
- frame data/chars/Deku/253.gif
- offset 198 30
- frame data/chars/Deku/254.gif
- offset 198 30
- frame data/chars/Deku/255.gif
- offset 198 30
- frame data/chars/Deku/256.gif
- offset 198 30
- frame data/chars/Deku/257.gif
-
-anim 8250
- delay 7
- offset 57 10
- frame data/chars/Deku/258.gif
- offset 91 20
- frame data/chars/Deku/259.gif
- offset 122 29
- frame data/chars/Deku/260.gif
- offset 150 38
- frame data/chars/Deku/261.gif
- offset 174 45
- frame data/chars/Deku/262.gif
- offset 195 50
- frame data/chars/Deku/263.gif
- offset 212 53
- frame data/chars/Deku/264.gif
- offset 226 54
- frame data/chars/Deku/265.gif
- offset 237 54
- frame data/chars/Deku/266.gif
- offset 245 54
- frame data/chars/Deku/267.gif
- offset 252 53
- frame data/chars/Deku/268.gif
- offset 266 52
- frame data/chars/Deku/269.gif
- offset 284 50
- frame data/chars/Deku/270.gif
- offset 298 48
- frame data/chars/Deku/271.gif
- offset 313 49
- frame data/chars/Deku/272.gif
- offset 328 50
- frame data/chars/Deku/273.gif
- offset 343 50
- frame data/chars/Deku/274.gif
- offset 359 51
- frame data/chars/Deku/275.gif
- offset 373 51
- frame data/chars/Deku/276.gif
- offset 388 51
- frame data/chars/Deku/277.gif
- offset 404 51
- frame data/chars/Deku/278.gif
- offset 418 51
- frame data/chars/Deku/279.gif
- offset 411 50
- frame data/chars/Deku/280.gif
- offset 421 50
- frame data/chars/Deku/281.gif
- offset 431 49
- frame data/chars/Deku/282.gif
- offset 446 48
- frame data/chars/Deku/283.gif
- offset 462 47
- frame data/chars/Deku/284.gif
- offset 446 45
- frame data/chars/Deku/285.gif
- offset 443 44
- frame data/chars/Deku/286.gif
- offset 456 42
- frame data/chars/Deku/287.gif
- offset 468 40
- frame data/chars/Deku/288.gif
- offset 482 38
- frame data/chars/Deku/289.gif
- offset 392 36
- frame data/chars/Deku/290.gif
- offset 345 34
- frame data/chars/Deku/291.gif
- offset 319 31
- frame data/chars/Deku/292.gif
- offset 322 29
- frame data/chars/Deku/293.gif
- offset 327 27
- frame data/chars/Deku/294.gif
- offset 336 20
- frame data/chars/Deku/295.gif
- offset 339 20
- frame data/chars/Deku/296.gif
- offset 343 13
- frame data/chars/Deku/297.gif
- offset 348 12
- frame data/chars/Deku/298.gif
- offset 346 -14
- frame data/chars/Deku/299.gif
- offset 389 -73
- frame data/chars/Deku/300.gif
- offset 298 -92
- frame data/chars/Deku/301.gif
- offset 399 -85
- frame data/chars/Deku/302.gif
- offset 299 -100
- frame data/chars/Deku/303.gif
- offset 409 -102
- frame data/chars/Deku/304.gif
- offset 414 -116
- frame data/chars/Deku/305.gif
- offset 308 -111
- frame data/chars/Deku/306.gif
- offset 342 -126
- frame data/chars/Deku/307.gif
- offset 370 -116
- frame data/chars/Deku/308.gif
- offset 433 -132
- frame data/chars/Deku/309.gif
- offset 438 -127
- frame data/chars/Deku/310.gif
- offset 443 -135
- frame data/chars/Deku/311.gif
- offset 448 -155
- frame data/chars/Deku/312.gif
- offset 453 -148
- frame data/chars/Deku/313.gif
- offset 458 -148
- frame data/chars/Deku/314.gif
- offset 339 -150
- frame data/chars/Deku/315.gif
- offset 344 -164
- frame data/chars/Deku/316.gif
- offset 345 -169
- frame data/chars/Deku/317.gif
- offset 351 -187
- frame data/chars/Deku/318.gif
- offset 351 -184
- frame data/chars/Deku/319.gif
- offset 365 -182
- frame data/chars/Deku/320.gif
- offset 359 -200
- frame data/chars/Deku/321.gif
- offset 365 -197
- frame data/chars/Deku/322.gif
-
-anim 7000
- delay 7
- offset 24 24
- frame data/chars/Deku/323.gif
- offset 19 19
- frame data/chars/Deku/324.gif
- offset 14 15
- frame data/chars/Deku/325.gif
- offset 9 16
- frame data/chars/Deku/326.gif
- offset 11 19
- frame data/chars/Deku/327.gif
- offset 12 22
- frame data/chars/Deku/328.gif
- offset 7 25
- frame data/chars/Deku/329.gif
- offset 11 23
- frame data/chars/Deku/330.gif
- offset 12 23
- frame data/chars/Deku/331.gif
- offset 12 24
- frame data/chars/Deku/332.gif
- offset 13 31
- frame data/chars/Deku/333.gif
- offset 13 32
- frame data/chars/Deku/334.gif
- offset 13 33
- frame data/chars/Deku/335.gif
- offset 13 35
- frame data/chars/Deku/336.gif
- offset 13 36
- frame data/chars/Deku/337.gif
- offset 13 36
- frame data/chars/Deku/338.gif
- offset 11 37
- frame data/chars/Deku/339.gif
- offset 10 38
- frame data/chars/Deku/340.gif
- offset 7 40
- frame data/chars/Deku/341.gif
- offset 8 41
- frame data/chars/Deku/342.gif
- offset 2 43
- frame data/chars/Deku/343.gif
-
-anim 8200
- delay 7
- offset 108 237
- frame data/chars/Deku/344.gif
- offset 114 256
- frame data/chars/Deku/345.gif
- offset 121 276
- frame data/chars/Deku/346.gif
- offset 128 193
- frame data/chars/Deku/347.gif
- offset 135 198
- frame data/chars/Deku/348.gif
- offset 126 199
- frame data/chars/Deku/349.gif
- offset 125 186
- frame data/chars/Deku/350.gif
- offset 127 180
- frame data/chars/Deku/351.gif
- offset 124 124
- frame data/chars/Deku/352.gif
- offset 115 109
- frame data/chars/Deku/353.gif
-
-anim 9007
- delay 7
- offset 75 10
- frame data/chars/Deku/354.gif
- offset 93 12
- frame data/chars/Deku/355.gif
- offset 111 14
- frame data/chars/Deku/356.gif
- offset 124 16
- frame data/chars/Deku/357.gif
- offset 122 16
- frame data/chars/Deku/358.gif
-
-anim 9008
- delay 7
- offset 110 8
- frame data/chars/Deku/359.gif
-
-anim 7052
- delay 7
- offset 179 41
- frame data/chars/Deku/360.gif
- offset 178 43
- frame data/chars/Deku/361.gif
- offset 219 45
- frame data/chars/Deku/362.gif
- offset 225 59
- frame data/chars/Deku/363.gif
- offset 222 62
- frame data/chars/Deku/364.gif
- offset 223 59
- frame data/chars/Deku/365.gif
- offset 226 60
- frame data/chars/Deku/366.gif
- offset 219 63
- frame data/chars/Deku/367.gif
- offset 209 63
- frame data/chars/Deku/368.gif
-
-anim 7053
- delay 7
- offset 0 -102
- frame data/chars/Deku/369.gif
- offset 0 -92
- frame data/chars/Deku/370.gif
- offset 0 -70
- frame data/chars/Deku/371.gif
- offset 0 -3
- frame data/chars/Deku/372.gif
- offset 0 -3
- frame data/chars/Deku/373.gif
- offset 0 -3
- frame data/chars/Deku/374.gif
- offset 0 -3
- frame data/chars/Deku/375.gif
- offset 0 0
- frame data/chars/Deku/376.gif
- offset 0 0
- frame data/chars/Deku/377.gif
- offset 0 0
- frame data/chars/Deku/378.gif
- offset 0 0
- frame data/chars/Deku/379.gif
- offset 0 -1
- frame data/chars/Deku/380.gif
- offset 0 -8
- frame data/chars/Deku/381.gif
- offset 0 -6
- frame data/chars/Deku/382.gif
-
-anim 9000
- delay 7
- offset 320 100
- frame data/chars/Deku/383.gif
- offset 244 82
- frame data/chars/Deku/384.gif
- offset 240 75
- frame data/chars/Deku/385.gif
-
-anim 0161
- delay 7
- offset 24 20
- frame data/chars/Deku/386.gif
- offset 24 57
- frame data/chars/Deku/387.gif
- offset 23 96
- frame data/chars/Deku/388.gif
- offset 23 96
- frame data/chars/Deku/389.gif
- offset 2 92
- frame data/chars/Deku/390.gif
- offset 3 88
- frame data/chars/Deku/391.gif
- offset -11 87
- frame data/chars/Deku/392.gif
-
-anim 0950
- delay 7
- offset 105 294
- frame data/chars/Deku/393.gif
- offset 300 290
- frame data/chars/Deku/394.gif
- offset 300 288
- frame data/chars/Deku/395.gif
- offset 300 296
- frame data/chars/Deku/396.gif
- offset 300 325
- frame data/chars/Deku/397.gif
- offset 300 354
- frame data/chars/Deku/398.gif
- offset 300 382
- frame data/chars/Deku/399.gif
- offset 300 400
- frame data/chars/Deku/400.gif
- offset 300 384
- frame data/chars/Deku/401.gif
- offset 300 400
- frame data/chars/Deku/402.gif
- offset 300 400
- frame data/chars/Deku/403.gif
- offset 293 384
- frame data/chars/Deku/404.gif
- offset 233 391
- frame data/chars/Deku/405.gif
- offset 214 399
- frame data/chars/Deku/406.gif
- offset 208 391
- frame data/chars/Deku/407.gif
- offset 183 365
- frame data/chars/Deku/408.gif
- offset 158 341
- frame data/chars/Deku/409.gif
- offset 151 338
- frame data/chars/Deku/410.gif
- offset 148 337
- frame data/chars/Deku/411.gif
- offset 147 338
- frame data/chars/Deku/412.gif
- offset 146 336
- frame data/chars/Deku/413.gif
- offset 142 333
- frame data/chars/Deku/414.gif
- offset 137 332
- frame data/chars/Deku/415.gif
- offset 136 332
- frame data/chars/Deku/416.gif
- offset 134 332
- frame data/chars/Deku/417.gif
- offset 132 331
- frame data/chars/Deku/418.gif
- offset 125 330
- frame data/chars/Deku/419.gif
- offset 110 328
- frame data/chars/Deku/420.gif
- offset 67 323
- frame data/chars/Deku/421.gif
- offset 62 314
- frame data/chars/Deku/422.gif
- offset 100 292
- frame data/chars/Deku/423.gif
- offset 273 289
- frame data/chars/Deku/424.gif
- offset 273 287
- frame data/chars/Deku/425.gif
- offset 273 295
- frame data/chars/Deku/426.gif
- offset 273 324
- frame data/chars/Deku/427.gif
- offset 273 353
- frame data/chars/Deku/428.gif
- offset 273 382
- frame data/chars/Deku/429.gif
- offset 273 396
- frame data/chars/Deku/430.gif
- offset 273 384
- frame data/chars/Deku/431.gif
- offset 273 396
- frame data/chars/Deku/432.gif
- offset 273 396
- frame data/chars/Deku/433.gif
- offset 273 383
- frame data/chars/Deku/434.gif
- offset 236 390
- frame data/chars/Deku/435.gif
- offset 214 396
- frame data/chars/Deku/436.gif
- offset 208 390
- frame data/chars/Deku/437.gif
- offset 182 365
- frame data/chars/Deku/438.gif
- offset 157 340
- frame data/chars/Deku/439.gif
- offset 145 332
- frame data/chars/Deku/440.gif
- offset 141 331
- frame data/chars/Deku/441.gif
- offset 137 330
- frame data/chars/Deku/442.gif
- offset 133 329
- frame data/chars/Deku/443.gif
- offset 133 327
- frame data/chars/Deku/444.gif
- offset 129 327
- frame data/chars/Deku/445.gif
- offset 128 324
- frame data/chars/Deku/446.gif
- offset 122 323
- frame data/chars/Deku/447.gif
- offset 118 320
- frame data/chars/Deku/448.gif
- offset 106 319
- frame data/chars/Deku/449.gif
- offset 71 314
- frame data/chars/Deku/450.gif
- offset 59 305
- frame data/chars/Deku/451.gif
- offset 55 287
- frame data/chars/Deku/452.gif
-
-anim freespecial3051
- delay 7
- offset 86 90
- frame data/chars/Deku/453.gif
- offset 86 90
- frame data/chars/Deku/454.gif
- offset 88 96
- frame data/chars/Deku/455.gif
- offset 92 100
- frame data/chars/Deku/456.gif
- offset 100 101
- frame data/chars/Deku/457.gif
- offset 100 104
- frame data/chars/Deku/458.gif
- offset 104 118
- frame data/chars/Deku/459.gif
- offset 114 121
- frame data/chars/Deku/460.gif
- offset 126 122
- frame data/chars/Deku/461.gif
- offset 138 113
- frame data/chars/Deku/462.gif
- offset 137 122
- frame data/chars/Deku/463.gif
- offset 125 147
- frame data/chars/Deku/464.gif
- offset 130 217
- frame data/chars/Deku/465.gif
- offset 154 230
- frame data/chars/Deku/466.gif
- offset 170 254
- frame data/chars/Deku/467.gif
- offset 182 268
- frame data/chars/Deku/468.gif
- offset 188 270
- frame data/chars/Deku/469.gif
- offset 193 254
- frame data/chars/Deku/470.gif
- offset 162 265
- frame data/chars/Deku/471.gif
- offset 176 273
- frame data/chars/Deku/472.gif
- offset 186 260
- frame data/chars/Deku/473.gif
- offset 190 266
- frame data/chars/Deku/474.gif
- offset 198 270
- frame data/chars/Deku/475.gif
- offset 202 274
- frame data/chars/Deku/476.gif
- offset 208 254
- frame data/chars/Deku/477.gif
- offset 212 264
- frame data/chars/Deku/478.gif
- offset 214 272
- frame data/chars/Deku/479.gif
- offset 215 274
- frame data/chars/Deku/480.gif
- offset 224 259
- frame data/chars/Deku/481.gif
- offset 224 263
- frame data/chars/Deku/482.gif
- offset 224 255
- frame data/chars/Deku/483.gif
- offset 224 261
- frame data/chars/Deku/484.gif
- offset 227 267
- frame data/chars/Deku/485.gif
- offset 230 271
- frame data/chars/Deku/486.gif
- offset 231 264
- frame data/chars/Deku/487.gif
- offset 232 270
- frame data/chars/Deku/488.gif
- offset 232 274
- frame data/chars/Deku/489.gif
- offset 233 264
- frame data/chars/Deku/490.gif
- offset 233 270
- frame data/chars/Deku/491.gif
- offset 233 276
- frame data/chars/Deku/492.gif
- offset 232 281
- frame data/chars/Deku/493.gif
- offset 226 269
- frame data/chars/Deku/494.gif
- offset 226 267
- frame data/chars/Deku/495.gif
- offset 228 268
- frame data/chars/Deku/496.gif
- offset 228 266
- frame data/chars/Deku/497.gif
- offset 228 266
- frame data/chars/Deku/498.gif
- offset 221 268
- frame data/chars/Deku/499.gif
- offset 198 263
- frame data/chars/Deku/500.gif
- offset 199 265
- frame data/chars/Deku/501.gif
- offset 199 265
- frame data/chars/Deku/502.gif
- offset 199 265
- frame data/chars/Deku/503.gif
- offset 196 264
- frame data/chars/Deku/504.gif
- offset 185 262
- frame data/chars/Deku/505.gif
- offset 166 260
- frame data/chars/Deku/506.gif
-
-anim 9022
- delay 7
- offset 88 130
- frame data/chars/Deku/507.gif
- offset 93 218
- frame data/chars/Deku/508.gif
- offset 80 250
- frame data/chars/Deku/509.gif
- offset 63 249
- frame data/chars/Deku/510.gif
- offset 55 248
- frame data/chars/Deku/511.gif
- offset 58 242
- frame data/chars/Deku/512.gif
- offset 53 250
- frame data/chars/Deku/513.gif
- offset 62 259
- frame data/chars/Deku/514.gif
- offset 64 258
- frame data/chars/Deku/515.gif
- offset 66 258
- frame data/chars/Deku/516.gif
- offset 34 257
- frame data/chars/Deku/517.gif
- offset 21 258
- frame data/chars/Deku/518.gif
- offset 36 255
- frame data/chars/Deku/519.gif
- offset 36 250
- frame data/chars/Deku/520.gif
- offset 34 246
- frame data/chars/Deku/521.gif
- offset -92 226
- frame data/chars/Deku/522.gif
-
-anim 7005
- delay 7
- offset 72 81
- frame data/chars/Deku/523.gif
- offset 88 98
- frame data/chars/Deku/524.gif
- offset 104 107
- frame data/chars/Deku/525.gif
- offset 108 114
- frame data/chars/Deku/526.gif
- offset 95 118
- frame data/chars/Deku/527.gif
-
-anim freespecial1049
- delay 7
- offset 106 106
- frame data/chars/Deku/528.gif
-
-anim 7006
- delay 7
- offset 85 116
- frame data/chars/Deku/529.gif
- offset 88 40
- frame data/chars/Deku/530.gif
- offset 82 -10
- frame data/chars/Deku/531.gif
- offset 73 -28
- frame data/chars/Deku/532.gif
- offset 65 -52
- frame data/chars/Deku/533.gif
-
-anim 7007
- delay 7
- offset 80 57
- frame data/chars/Deku/534.gif
- offset 86 64
- frame data/chars/Deku/535.gif
- offset 76 56
- frame data/chars/Deku/536.gif
- offset 57 5
- frame data/chars/Deku/537.gif
-
-anim 7009
- delay 7
- offset 128 98
- frame data/chars/Deku/538.gif
- offset 125 107
- frame data/chars/Deku/539.gif
- offset 114 116
- frame data/chars/Deku/540.gif
- offset 104 112
- frame data/chars/Deku/541.gif
-
-anim jumpattack666
- delay 7
- offset 60 59
- frame data/chars/Deku/542.gif
- offset 70 51
- frame data/chars/Deku/543.gif
- offset 77 51
- frame data/chars/Deku/544.gif
- offset 83 45
- frame data/chars/Deku/545.gif
- offset 88 35
- frame data/chars/Deku/546.gif
- offset 91 29
- frame data/chars/Deku/547.gif
- offset 91 22
- frame data/chars/Deku/548.gif
-
-anim 7008
- delay 7
- offset 39 37
- frame data/chars/Deku/549.gif
- offset 47 43
- frame data/chars/Deku/550.gif
- offset 51 46
- frame data/chars/Deku/551.gif
- offset 57 49
- frame data/chars/Deku/552.gif
- offset 58 50
- frame data/chars/Deku/553.gif
- offset 63 56
- frame data/chars/Deku/554.gif
- offset 65 55
- frame data/chars/Deku/555.gif
- offset 67 58
- frame data/chars/Deku/556.gif
-
-anim 7020
- delay 7
- offset 82 20
- frame data/chars/Deku/557.gif
- offset 86 20
- frame data/chars/Deku/558.gif
- offset 79 15
- frame data/chars/Deku/559.gif
- offset 79 15
- frame data/chars/Deku/560.gif
- offset 78 15
- frame data/chars/Deku/561.gif
- offset 79 15
- frame data/chars/Deku/562.gif
- offset 78 15
- frame data/chars/Deku/563.gif
- offset 79 15
- frame data/chars/Deku/564.gif
- offset 77 15
- frame data/chars/Deku/565.gif
- offset 77 14
- frame data/chars/Deku/566.gif
-
-anim freespecial1059
- delay 7
- offset 195 63
- frame data/chars/Deku/567.gif
- offset 200 135
- frame data/chars/Deku/568.gif
- offset 218 149
- frame data/chars/Deku/569.gif
- offset 231 138
- frame data/chars/Deku/570.gif
- offset 223 140
- frame data/chars/Deku/571.gif
- offset 223 138
- frame data/chars/Deku/572.gif
- offset 215 133
- frame data/chars/Deku/573.gif
- offset 204 129
- frame data/chars/Deku/574.gif
-
-anim 9024
- delay 7
- offset 18 24
- frame data/chars/Deku/575.gif
- offset 26 36
- frame data/chars/Deku/576.gif
- offset 13 20
- frame data/chars/Deku/577.gif
- offset 14 16
- frame data/chars/Deku/578.gif
-
-anim freespecial1050
- delay 7
- offset 21 34
- frame data/chars/Deku/579.gif
- offset 21 36
- frame data/chars/Deku/580.gif
- offset 21 36
- frame data/chars/Deku/581.gif
- offset 25 51
- frame data/chars/Deku/582.gif
- offset 25 51
- frame data/chars/Deku/583.gif
- offset 25 51
- frame data/chars/Deku/584.gif
- offset 25 51
- frame data/chars/Deku/585.gif
- offset 9 22
- frame data/chars/Deku/586.gif
- offset -10 30
- frame data/chars/Deku/587.gif
- offset -7 31
- frame data/chars/Deku/588.gif
- offset -7 30
- frame data/chars/Deku/589.gif
- offset 14 23
- frame data/chars/Deku/590.gif
- offset 23 27
- frame data/chars/Deku/591.gif
- offset 1 24
- frame data/chars/Deku/592.gif
- offset 7 28
- frame data/chars/Deku/593.gif
- offset -15 24
- frame data/chars/Deku/594.gif
- offset 13 31
- frame data/chars/Deku/595.gif
- offset 5 30
- frame data/chars/Deku/596.gif
- offset -17 26
- frame data/chars/Deku/597.gif
- offset 18 27
- frame data/chars/Deku/598.gif
- offset 14 32
- frame data/chars/Deku/599.gif
- offset 0 36
- frame data/chars/Deku/600.gif
- offset 0 38
- frame data/chars/Deku/601.gif
- offset 6 37
- frame data/chars/Deku/602.gif
- offset -1 40
- frame data/chars/Deku/603.gif
- offset -1 37
- frame data/chars/Deku/604.gif
- offset 5 37
- frame data/chars/Deku/605.gif
- offset 22 36
- frame data/chars/Deku/606.gif
- offset 20 34
- frame data/chars/Deku/607.gif
- offset 8 38
- frame data/chars/Deku/608.gif
- offset -6 36
- frame data/chars/Deku/609.gif
- offset -11 32
- frame data/chars/Deku/610.gif
- offset -13 30
- frame data/chars/Deku/611.gif
-
-anim freespecial1051
- delay 7
- offset 104 127
- frame data/chars/Deku/612.gif
- offset 118 119
- frame data/chars/Deku/613.gif
- offset 121 132
- frame data/chars/Deku/614.gif
- offset 124 139
- frame data/chars/Deku/615.gif
- offset 100 142
- frame data/chars/Deku/616.gif
- offset 102 102
- frame data/chars/Deku/617.gif
- offset 104 104
- frame data/chars/Deku/618.gif
- offset 102 102
- frame data/chars/Deku/619.gif
-
-anim freespecial1052
- delay 7
- offset 51 13
- frame data/chars/Deku/620.gif
- offset 32 24
- frame data/chars/Deku/621.gif
- offset 32 35
- frame data/chars/Deku/622.gif
- offset 73 46
- frame data/chars/Deku/623.gif
- offset 112 52
- frame data/chars/Deku/624.gif
- offset 111 52
- frame data/chars/Deku/625.gif
- offset 114 52
- frame data/chars/Deku/626.gif
- offset 110 53
- frame data/chars/Deku/627.gif
- offset 106 52
- frame data/chars/Deku/628.gif
- offset 110 53
- frame data/chars/Deku/629.gif
- offset 110 52
- frame data/chars/Deku/630.gif
- offset 110 52
- frame data/chars/Deku/631.gif
- offset 114 53
- frame data/chars/Deku/632.gif
- offset 112 53
- frame data/chars/Deku/633.gif
- offset 110 53
- frame data/chars/Deku/634.gif
- offset 111 53
- frame data/chars/Deku/635.gif
- offset 108 52
- frame data/chars/Deku/636.gif
- offset 107 42
- frame data/chars/Deku/637.gif
- offset 104 15
- frame data/chars/Deku/638.gif
- offset 0 15
- frame data/chars/Deku/639.gif
-
-anim freespecial1053
- delay 7
- offset -29 32
- frame data/chars/Deku/640.gif
- offset 5 50
- frame data/chars/Deku/641.gif
- offset 28 58
- frame data/chars/Deku/642.gif
- offset 40 81
- frame data/chars/Deku/643.gif
- offset 79 74
- frame data/chars/Deku/644.gif
- offset 85 83
- frame data/chars/Deku/645.gif
- offset 74 95
- frame data/chars/Deku/646.gif
- offset 64 85
- frame data/chars/Deku/647.gif
- offset 68 64
- frame data/chars/Deku/648.gif
- offset 74 43
- frame data/chars/Deku/649.gif
-
-anim freespecial1067
- delay 7
- offset 113 80
- frame data/chars/Deku/650.gif
- offset 116 84
- frame data/chars/Deku/651.gif
- offset 160 147
- frame data/chars/Deku/652.gif
- offset 162 148
- frame data/chars/Deku/653.gif
- offset 161 156
- frame data/chars/Deku/654.gif
- offset 162 158
- frame data/chars/Deku/655.gif
- offset 153 159
- frame data/chars/Deku/656.gif
- offset 151 159
- frame data/chars/Deku/657.gif
-
-anim freespecial1056
- delay 7
- offset 142 28
- frame data/chars/Deku/658.gif
- offset 125 97
- frame data/chars/Deku/659.gif
- offset 104 154
- frame data/chars/Deku/660.gif
- offset 84 169
- frame data/chars/Deku/661.gif
- offset 75 169
- frame data/chars/Deku/662.gif
- offset 78 169
- frame data/chars/Deku/663.gif
- offset 79 169
- frame data/chars/Deku/664.gif
- offset 80 169
- frame data/chars/Deku/665.gif
- offset 79 169
- frame data/chars/Deku/666.gif
+anim	attack1
+	bbox	2 6 20 42
+	delay	7
+	offset	13 47
+	frame	data/chars/Deku/61.gif
+	bbox	7 7 23 39
+	offset	16 43
+	frame	data/chars/Deku/62.gif
+	attack	26 12 27 12 5 0 1 0 0 0
+	offset	16 43
+	frame	data/chars/Deku/63.gif
+		
+anim	attack2
+	bbox	6 7 24 42
+	delay	7
+	offset	16 46
+	frame	data/chars/Deku/64.gif
+	bbox	6 7 24 32
+	offset	17 37
+	frame	data/chars/Deku/65.gif
+	offset	20 43
+	frame	data/chars/Deku/66.gif
+	offset	23 42
+	frame	data/chars/Deku/67.gif
+	attack	22 4 52 17 6 0 1 0 0 0
+	offset	17 37
+	frame	data/chars/Deku/68.gif
+	offset	17 37
+	frame	data/chars/Deku/69.gif
+		
+anim	attack3
+	bbox	16 4 15 40
+	delay	7
+	offset	16 42
+	frame	data/chars/Deku/70.gif
+	offset	18 41
+	frame	data/chars/Deku/71.gif
+	offset	16 49
+	frame	data/chars/Deku/72.gif
+	attack	20 35 21 -53 8 1 1 0 0 0
+	offset	16 48
+	frame	data/chars/Deku/73.gif
+	offset	21 41
+	frame	data/chars/Deku/74.gif
+		
+anim	chargeattack
+	delay	7
+	offset	22 34
+	frame	data/chars/Deku/87.gif
+	offset	23 35
+	frame	data/chars/Deku/88.gif
+	offset	22 44
+	frame	data/chars/Deku/89.gif
+	offset	19 44
+	frame	data/chars/Deku/90.gif
+	offset	19 43
+	frame	data/chars/Deku/91.gif
+	offset	18 39
+	frame	data/chars/Deku/92.gif
+	offset	13 41
+	frame	data/chars/Deku/93.gif
+		
+anim	freespecial
+	delay	7
+	offset	13 41
+	frame	data/chars/Deku/93.gif
+	offset	20 35
+	frame	data/chars/Deku/94.gif
+	offset	24 28
+	frame	data/chars/Deku/95.gif
+	offset	22 27
+	frame	data/chars/Deku/96.gif
+	offset	28 28
+	frame	data/chars/Deku/97.gif
+	offset	19 38
+	frame	data/chars/Deku/98.gif
+		
+anim	freespecial2
+	delay	7
+	offset	13 41
+	frame	data/chars/Deku/99.gif
+	offset	24 41
+	frame	data/chars/Deku/100.gif
+	offset	22 43
+	frame	data/chars/Deku/101.gif
+	offset	19 46
+	frame	data/chars/Deku/102.gif
+	offset	23 28
+	frame	data/chars/Deku/103.gif
+	offset	14 32
+	frame	data/chars/Deku/104.gif
+	offset	21 27
+	frame	data/chars/Deku/105.gif
+	offset	23 42
+	frame	data/chars/Deku/106.gif
+	offset	31 56
+	frame	data/chars/Deku/107.gif
+	offset	23 39
+	frame	data/chars/Deku/108.gif
+		
+anim	freespecial3
+	delay	7
+	offset	21 41
+	frame	data/chars/Deku/121.gif
+	offset	17 43
+	frame	data/chars/Deku/122.gif
+	offset	17 43
+	frame	data/chars/Deku/123.gif
+	offset	16 43
+	frame	data/chars/Deku/124.gif
+	offset	16 43
+	frame	data/chars/Deku/125.gif
+		
+anim	get
+	delay	7
+	offset	12 51
+	frame	data/chars/Deku/7.gif
+	offset	13 41
+	frame	data/chars/Deku/8.gif
+	offset	18 34
+	frame	data/chars/Deku/9.gif
+		
+anim	idle
+	delay	7
+	loop	1
+	offset	15 45
+	frame	data/chars/Deku/3.gif
+	offset	15 44
+	frame	data/chars/Deku/4.gif
+	offset	15 43
+	frame	data/chars/Deku/5.gif
+	offset	15 45
+	frame	data/chars/Deku/6.gif
+		
+anim	jump
+	offset	16 51
+	frame	data/chars/Deku/16.gif
+	offset	22 46
+	frame	data/chars/Deku/159.gif
+	offset	13 51
+	frame	data/chars/Deku/17.gif
+		
+anim	jumpattack
+	delay	7
+	offset	16 42
+	frame	data/chars/Deku/114.gif
+	offset	19 41
+	frame	data/chars/Deku/115.gif
+	offset	28 41
+	frame	data/chars/Deku/116.gif
+	offset	27 40
+	frame	data/chars/Deku/117.gif
+	offset	18 44
+	frame	data/chars/Deku/118.gif
+	offset	21 42
+	frame	data/chars/Deku/119.gif
+		
+anim	jumpattack2
+	delay	7
+	offset	24 40
+	frame	data/chars/Deku/109.gif
+	offset	15 49
+	frame	data/chars/Deku/110.gif
+	offset	19 52
+	frame	data/chars/Deku/111.gif
+	offset	15 42
+	frame	data/chars/Deku/112.gif
+		
+anim	pain
+	delay	7
+	offset	16 46
+	frame	data/chars/Deku/29.gif
+	offset	15 42
+	frame	data/chars/Deku/26.gif
+	offset	28 38
+	frame	data/chars/Deku/27.gif
+		
+anim	special
+	delay	7
+	offset	13 32
+	frame	data/chars/Deku/154.gif
+	offset	20 32
+	frame	data/chars/Deku/155.gif
+	offset	25 43
+	frame	data/chars/Deku/156.gif
+	offset	16 48
+	frame	data/chars/Deku/157.gif
+	offset	18 40
+	frame	data/chars/Deku/158.gif
+		
+anim	walk
+	delay	7
+	loop	1
+	offset	17 40
+	frame	data/chars/Deku/10.gif
+	offset	20 43
+	frame	data/chars/Deku/11.gif
+	offset	9 38
+	frame	data/chars/Deku/12.gif
+	offset	17 41
+	frame	data/chars/Deku/13.gif
+	offset	20 43
+	frame	data/chars/Deku/14.gif
+	offset	10 38
+	frame	data/chars/Deku/15.gif
+		
+#|edited by openBor Stats v 0.67
+		
