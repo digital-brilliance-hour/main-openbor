@@ -5,6 +5,7 @@ type	player
 shadow	3
 
 
+
 anim	0002
 	delay	7
 	offset	320 480
@@ -77,11 +78,6 @@ anim	0004
 	offset	17 24
 	frame	data/chars/Lee/9.gif
 		
-anim	rise
-	delay	7
-	offset	13 34
-	frame	data/chars/Lee/10.gif
-		
 anim	0043
 	delay	7
 	offset	15 38
@@ -115,23 +111,12 @@ anim	10023
 	offset	34 32
 	frame	data/chars/Lee/513.gif
 		
-anim	charge
-	delay	7
-	offset	13 52
-	frame	data/chars/Lee/150.gif
-	offset	13 51
-	frame	data/chars/Lee/151.gif
-	offset	13 51
-	frame	data/chars/Lee/152.gif
-	offset	13 52
-	frame	data/chars/Lee/153.gif
-		
 anim	15006
 	delay	7
 	offset	12 29
 	frame	data/chars/Lee/154.gif
 		
-anim	15020
+anim	run
 	delay	7
 	offset	17 39
 	frame	data/chars/Lee/155.gif
@@ -187,22 +172,22 @@ anim	15122
 	offset	9 44
 	frame	data/chars/Lee/173.gif
 		
-anim	15200
+anim	special
 	delay	7
+	offset	12 41
+	frame	data/chars/Lee/177.gif
 	offset	12 42
 	frame	data/chars/Lee/174.gif
 	offset	12 42
 	frame	data/chars/Lee/175.gif
 	offset	13 39
 	frame	data/chars/Lee/176.gif
-	offset	12 41
-	frame	data/chars/Lee/177.gif
-	offset	25 42
-	frame	data/chars/Lee/178.gif
 	offset	21 50
 	frame	data/chars/Lee/179.gif
 	offset	24 41
 	frame	data/chars/Lee/180.gif
+	offset	25 42
+	frame	data/chars/Lee/178.gif
 	offset	11 32
 	frame	data/chars/Lee/181.gif
 	offset	11 29
@@ -249,7 +234,7 @@ anim	15230
 	offset	9 22
 	frame	data/chars/Lee/198.gif
 		
-anim	15300
+anim	chargeattack
 	delay	7
 	offset	28 36
 	frame	data/chars/Lee/199.gif
@@ -261,12 +246,6 @@ anim	15300
 	frame	data/chars/Lee/202.gif
 	offset	25 42
 	frame	data/chars/Lee/203.gif
-	offset	23 40
-	frame	data/chars/Lee/204.gif
-	offset	25 42
-	frame	data/chars/Lee/205.gif
-	offset	26 45
-	frame	data/chars/Lee/206.gif
 		
 anim	15400
 	delay	7
@@ -920,18 +899,6 @@ anim	attack1
 	frame	data/chars/Lee/36.gif
 	offset	13 40
 	frame	data/chars/Lee/37.gif
-	offset	13 43
-	frame	data/chars/Lee/38.gif
-	offset	16 39
-	frame	data/chars/Lee/39.gif
-	offset	19 40
-	frame	data/chars/Lee/40.gif
-	offset	17 38
-	frame	data/chars/Lee/41.gif
-	offset	18 31
-	frame	data/chars/Lee/42.gif
-	offset	18 29
-	frame	data/chars/Lee/43.gif
 		
 anim	attack2
 	delay	7
@@ -943,18 +910,33 @@ anim	attack2
 	frame	data/chars/Lee/46.gif
 	offset	11 55
 	frame	data/chars/Lee/47.gif
+	offset	13 44
+	frame	data/chars/Lee/50.gif
 	offset	8 45
 	frame	data/chars/Lee/48.gif
 	offset	5 45
 	frame	data/chars/Lee/49.gif
-	offset	13 44
-	frame	data/chars/Lee/50.gif
-	offset	24 32
-	frame	data/chars/Lee/51.gif
-	offset	30 37
-	frame	data/chars/Lee/52.gif
-	offset	30 37
-	frame	data/chars/Lee/53.gif
+		
+anim	attack3
+	delay	7
+	offset	9 35
+	frame	data/chars/Lee/73.gif
+	offset	-2 35
+	frame	data/chars/Lee/74.gif
+	offset	-5 38
+	frame	data/chars/Lee/75.gif
+	offset	-2 41
+	frame	data/chars/Lee/76.gif
+	offset	-7 43
+	frame	data/chars/Lee/77.gif
+	offset	15 39
+	frame	data/chars/Lee/78.gif
+	offset	16 37
+	frame	data/chars/Lee/79.gif
+	offset	15 40
+	frame	data/chars/Lee/80.gif
+	offset	9 36
+	frame	data/chars/Lee/81.gif
 		
 anim	attack322
 	delay	7
@@ -1036,68 +1018,6 @@ anim	attack365
 	offset	431 49
 	frame	data/chars/Lee/274.gif
 		
-anim	chargeattack
-	delay	7
-	offset	15 35
-	frame	data/chars/Lee/54.gif
-	offset	17 44
-	frame	data/chars/Lee/55.gif
-	offset	17 44
-	frame	data/chars/Lee/56.gif
-	offset	12 45
-	frame	data/chars/Lee/57.gif
-	offset	9 45
-	frame	data/chars/Lee/58.gif
-	offset	17 35
-	frame	data/chars/Lee/59.gif
-	offset	12 48
-	frame	data/chars/Lee/60.gif
-	offset	12 48
-	frame	data/chars/Lee/61.gif
-	offset	24 32
-	frame	data/chars/Lee/62.gif
-	offset	14 38
-	frame	data/chars/Lee/63.gif
-	offset	12 42
-	frame	data/chars/Lee/64.gif
-	offset	15 59
-	frame	data/chars/Lee/65.gif
-	offset	17 54
-	frame	data/chars/Lee/66.gif
-	offset	29 48
-	frame	data/chars/Lee/67.gif
-	offset	15 42
-	frame	data/chars/Lee/68.gif
-	offset	8 45
-	frame	data/chars/Lee/69.gif
-	offset	30 54
-	frame	data/chars/Lee/70.gif
-	offset	31 54
-	frame	data/chars/Lee/71.gif
-	offset	31 52
-	frame	data/chars/Lee/72.gif
-		
-anim	attack3
-	delay	7
-	offset	9 35
-	frame	data/chars/Lee/73.gif
-	offset	-2 35
-	frame	data/chars/Lee/74.gif
-	offset	-5 38
-	frame	data/chars/Lee/75.gif
-	offset	-2 41
-	frame	data/chars/Lee/76.gif
-	offset	-7 43
-	frame	data/chars/Lee/77.gif
-	offset	15 39
-	frame	data/chars/Lee/78.gif
-	offset	16 37
-	frame	data/chars/Lee/79.gif
-	offset	15 40
-	frame	data/chars/Lee/80.gif
-	offset	9 36
-	frame	data/chars/Lee/81.gif
-		
 anim	attack433
 	delay	7
 	offset	89 166
@@ -1110,7 +1030,7 @@ anim	attack485
 	offset	10 62
 	frame	data/chars/Lee/780.gif
 		
-anim	attack500
+anim	select
 	delay	7
 	offset	12 44
 	frame	data/chars/Lee/82.gif
@@ -1178,132 +1098,71 @@ anim	block122
 	offset	9 45
 	frame	data/chars/Lee/32.gif
 		
+anim	charge
+	delay	7
+	offset	13 52
+	frame	data/chars/Lee/150.gif
+	offset	13 51
+	frame	data/chars/Lee/151.gif
+	offset	13 51
+	frame	data/chars/Lee/152.gif
+	offset	13 52
+	frame	data/chars/Lee/153.gif
+		
+anim	chargeattack
+	delay	7
+	offset	15 35
+	frame	data/chars/Lee/54.gif
+	offset	17 44
+	frame	data/chars/Lee/55.gif
+	offset	17 44
+	frame	data/chars/Lee/56.gif
+	offset	12 45
+	frame	data/chars/Lee/57.gif
+	offset	9 45
+	frame	data/chars/Lee/58.gif
+	offset	17 35
+	frame	data/chars/Lee/59.gif
+	offset	12 48
+	frame	data/chars/Lee/60.gif
+	offset	12 48
+	frame	data/chars/Lee/61.gif
+	offset	24 32
+	frame	data/chars/Lee/62.gif
+	offset	14 38
+	frame	data/chars/Lee/63.gif
+	offset	12 42
+	frame	data/chars/Lee/64.gif
+	offset	15 59
+	frame	data/chars/Lee/65.gif
+	offset	17 54
+	frame	data/chars/Lee/66.gif
+	offset	29 48
+	frame	data/chars/Lee/67.gif
+	offset	15 42
+	frame	data/chars/Lee/68.gif
+	offset	8 45
+	frame	data/chars/Lee/69.gif
+	offset	30 54
+	frame	data/chars/Lee/70.gif
+	offset	31 54
+	frame	data/chars/Lee/71.gif
+	offset	31 52
+	frame	data/chars/Lee/72.gif
+		
 anim	faint
 	delay	7
 	offset	13 32
 	frame	data/chars/Lee/149.gif
 		
-anim	fall5030
+anim	fall
 	delay	7
-	offset	12 37
-	frame	data/chars/Lee/133.gif
 	offset	30 35
 	frame	data/chars/Lee/134.gif
-	offset	19 24
-	frame	data/chars/Lee/135.gif
-	offset	19 24
-	frame	data/chars/Lee/136.gif
-	offset	19 24
-	frame	data/chars/Lee/137.gif
-	offset	12 37
-	frame	data/chars/Lee/138.gif
-		
-anim	fall5031
-	delay	7
-	offset	30 35
-	frame	data/chars/Lee/139.gif
-		
-anim	fall5032
-	delay	7
-	offset	22 7
-	frame	data/chars/Lee/452.gif
-	offset	39 12
-	frame	data/chars/Lee/453.gif
-	offset	26 7
-	frame	data/chars/Lee/454.gif
-	offset	26 7
-	frame	data/chars/Lee/455.gif
-	offset	34 14
-	frame	data/chars/Lee/456.gif
-	offset	34 14
-	frame	data/chars/Lee/457.gif
-		
-anim	fallthenrise
-	delay	7
-	offset	19 24
-	frame	data/chars/Lee/140.gif
 	offset	19 24
 	frame	data/chars/Lee/141.gif
 	offset	30 13
 	frame	data/chars/Lee/142.gif
-	offset	13 34
-	frame	data/chars/Lee/143.gif
-	offset	26 53
-	frame	data/chars/Lee/144.gif
-	offset	19 24
-	frame	data/chars/Lee/145.gif
-		
-anim	fall5041
-	delay	7
-	offset	25 34
-	frame	data/chars/Lee/459.gif
-	offset	43 19
-	frame	data/chars/Lee/460.gif
-	offset	32 40
-	frame	data/chars/Lee/461.gif
-		
-anim	fall5042
-	delay	7
-	offset	29 8
-	frame	data/chars/Lee/462.gif
-	offset	43 9
-	frame	data/chars/Lee/463.gif
-	offset	35 10
-	frame	data/chars/Lee/464.gif
-		
-anim	fall5060
-	delay	7
-	offset	13 45
-	frame	data/chars/Lee/146.gif
-	offset	13 45
-	frame	data/chars/Lee/147.gif
-	offset	17 46
-	frame	data/chars/Lee/148.gif
-		
-anim	fall5061
-	delay	7
-	offset	25 34
-	frame	data/chars/Lee/467.gif
-	offset	25 36
-	frame	data/chars/Lee/468.gif
-		
-anim	fall5062
-	delay	7
-	offset	15 5
-	frame	data/chars/Lee/469.gif
-	offset	22 3
-	frame	data/chars/Lee/470.gif
-		
-anim	fall5070
-	delay	7
-	offset	19 69
-	frame	data/chars/Lee/471.gif
-	offset	21 26
-	frame	data/chars/Lee/472.gif
-	offset	20 27
-	frame	data/chars/Lee/473.gif
-	offset	59 27
-	frame	data/chars/Lee/474.gif
-		
-anim	fall5071
-	delay	7
-	offset	27 36
-	frame	data/chars/Lee/475.gif
-	offset	18 22
-	frame	data/chars/Lee/476.gif
-	offset	55 16
-	frame	data/chars/Lee/477.gif
-	offset	55 16
-	frame	data/chars/Lee/478.gif
-		
-anim	fall5072
-	delay	7
-	offset	16 6
-	frame	data/chars/Lee/479.gif
-	offset	19 9
-	frame	data/chars/Lee/480.gif
-	offset	55 6
-	frame	data/chars/Lee/481.gif
 		
 anim	freespecial1026
 	delay	7
@@ -1526,19 +1385,32 @@ anim	jumpattack
 	bbox	48 1 -48 33
 	offset	10 39
 	frame	data/chars/Lee/87.gif
+		
+anim	jumpforward
+	delay	7
+	offset	118 14
+	frame	data/chars/Lee/790.gif
+		
+anim	attack2
+	delay	7
+	offset	13 43
+	frame	data/chars/Lee/38.gif
+	offset	16 39
+	frame	data/chars/Lee/39.gif
+	offset	19 40
+	frame	data/chars/Lee/40.gif
+	offset	17 38
+	frame	data/chars/Lee/41.gif
+	offset	18 31
+	frame	data/chars/Lee/42.gif
+	offset	18 29
+	frame	data/chars/Lee/43.gif
+		
+anim	jumpattack2
+	delay	7
 	bbox	19 1 -19 46
 	offset	3 45
 	frame	data/chars/Lee/88.gif
-	bbox	21 1 -20 44
-	offset	18 41
-	frame	data/chars/Lee/89.gif
-	bbox	25 1 -25 43
-	offset	16 41
-	frame	data/chars/Lee/90.gif
-	attack	18 2 38 47 0 0 1 0 0 0
-	bbox	44 1 -44 53
-	offset	20 50
-	frame	data/chars/Lee/91.gif
 	bbox	0 31 34 -29
 	offset	22 25
 	frame	data/chars/Lee/92.gif
@@ -1550,86 +1422,17 @@ anim	jumpattack
 	offset	19 38
 	frame	data/chars/Lee/94.gif
 		
-anim	jumpforward
-	delay	7
-	offset	118 14
-	frame	data/chars/Lee/790.gif
-		
 anim	pain
 	delay	7
 	offset	12 43
 	frame	data/chars/Lee/121.gif
-	offset	12 43
-	frame	data/chars/Lee/122.gif
 	offset	18 37
 	frame	data/chars/Lee/123.gif
-	offset	18 37
-	frame	data/chars/Lee/124.gif
-	offset	18 37
-	frame	data/chars/Lee/125.gif
 		
-anim	pain5001
+anim	rise
 	delay	7
-	offset	21 28
-	frame	data/chars/Lee/434.gif
-	offset	28 31
-	frame	data/chars/Lee/435.gif
-	offset	21 28
-	frame	data/chars/Lee/436.gif
-		
-anim	pain5002
-	delay	7
-	offset	27 4
-	frame	data/chars/Lee/437.gif
-	offset	24 4
-	frame	data/chars/Lee/438.gif
-	offset	27 4
-	frame	data/chars/Lee/439.gif
-		
-anim	pain5010
-	delay	7
-	offset	18 37
-	frame	data/chars/Lee/126.gif
-	offset	18 37
-	frame	data/chars/Lee/127.gif
-	offset	18 37
-	frame	data/chars/Lee/128.gif
-	offset	13 45
-	frame	data/chars/Lee/129.gif
-		
-anim	pain5011
-	delay	7
-	offset	26 30
-	frame	data/chars/Lee/440.gif
-	offset	26 30
-	frame	data/chars/Lee/441.gif
-	offset	26 30
-	frame	data/chars/Lee/442.gif
-		
-anim	pain5012
-	delay	7
-	offset	23 4
-	frame	data/chars/Lee/443.gif
-	offset	23 4
-	frame	data/chars/Lee/444.gif
-	offset	23 4
-	frame	data/chars/Lee/445.gif
-		
-anim	pain5020
-	delay	7
-	offset	13 45
-	frame	data/chars/Lee/130.gif
-	offset	12 37
-	frame	data/chars/Lee/131.gif
-	offset	12 37
-	frame	data/chars/Lee/132.gif
-		
-anim	respawn
-	delay	7
-	offset	16 21
-	frame	data/chars/Lee/33.gif
-	offset	28 31
-	frame	data/chars/Lee/34.gif
+	offset	13 34
+	frame	data/chars/Lee/10.gif
 		
 anim	walk
 	bbox	44 1 -43 41
