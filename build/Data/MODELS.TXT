@@ -8,6 +8,11 @@ maxattacks 8
 
 # Required objects. These must always be loaded.
 load	Flash		data/chars/misc/flash.txt
+load	Flash2		data/chars/misc/flash2.txt
+load	Flash3		data/chars/misc/flash3.txt
+load	Flash4		data/chars/misc/flash4.txt
+load	Flash5		data/chars/misc/flash5.txt
+load	Flash8		data/chars/misc/flash8.txt
 
 # Players must also be loaded.
 load	Kula		data/chars/kula/kula.txt
@@ -17,6 +22,32 @@ load	Mighty		data/chars/mighty/mighty.txt
 load	zoomin		data/chars/misc/zoomin.txt
 load	zoomout		data/chars/misc/zoomout.txt
 
+# Players must also be loaded.
+load	Naruto		data/chars/Naruto/Naruto.txt
+load	Sasuke		data/chars/Sasuke/Sasuke.txt
+load    Yusuke          data/chars/yusuke/yusuke.txt
+load    Leigan          data/chars/yusuke/leigan.txt
+load    Superl          data/chars/yusuke/superl.txt
+load    Hiei            data/chars/hiei/hiei.txt
+load    Cnegras         data/chars/hiei/cnegras.txt
+load	Ichigo		data/chars/Ichigo/Ichigo.txt
+load	Renji		data/chars/Renji/Renji.txt
+load	Toshiro		data/chars/Toshiro/Toshiro.txt
+load	Kenpachi	data/chars/Kenpachi/Kenpachi.txt
+load	Ikkaku		data/chars/Ikkaku/Ikkaku.txt
+load	Luffy	        data/chars/Luffy/Luffy.txt
+load	Zoro	        data/chars/Zoro/Zoro.txt
+load	Gear2	        data/chars/Gear/Gear2.txt
+load	Zoro2	        data/chars/Zoro2/Zoro2.txt
+know	Franky	        data/chars/Franky/Franky.txt
+know	Dugong	        data/chars/Dugong/Dugong.txt
+know	Ace	        data/chars/Ace/Ace.txt
+load 	Sanji		data/chars/Sanji/Sanji.txt
+load 	Goku_Normal	data/chars/Goku-normal/gokup.txt
+load	Goku	        data/chars/Goku/Goku.txt
+load	Gohan	        data/chars/Gohan/Gohan.txt
+load	Krillin	        data/chars/Krillin/Krillin.txt
+
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
 know	Meat		data/chars/misc/meat.txt
@@ -24,6 +55,7 @@ know	1up		data/chars/misc/1up.txt
 know	Money		data/chars/misc/money.txt
 know	Gold		data/chars/misc/gold.txt
 know	Time		data/chars/misc/time.txt
+know	Juice		data/chars/misc/juice.txt
 
 # Obstacles (item containers)
 know	Box		data/chars/misc/box.txt
@@ -53,6 +85,47 @@ know	Heavy		data/chars/heavy/heavy.txt
 know	K9999		data/chars/K9999/K9999.txt
 know	Rugal		data/chars/Rugal/Rugal.txt
 
+know	Ninja	       data/chars/Ninja/Ninja.txt
+know	Ninja_         data/chars/Ninja_/Ninja_.txt
+know	Ninja__        data/chars/Ninja__/Ninja__.txt
+know	Claw           data/chars/Claw/Claw.txt
+know	Quincy		data/chars/Quincy/Quincy.txt
+know	ERenji		data/chars/Renji/ERenji.txt
+know	EKenpachi	data/chars/Kenpachi/EKen.txt
+know	Ulquiorra	data/chars/Ulq/Ulq.txt
+know 	Facce		data/chars/facce/facce.txt
+know	Dog	        data/chars/Dog/Dog.txt
+know	Marine	        data/chars/Marine/Marine.txt
+know	Gunner	        data/chars/Gunner/Gunner.txt
+know	Buggy	        data/chars/Buggy/Buggy.txt
+know	Moria	        data/chars/Moria/Moria.txt
+know	Absalom	        data/chars/Absalom/Absalom.txt
+know    Sogeking        data/chars/Soge/Soge.txt
+know    Mihawk          data/chars/Mihawk/Mihawk.txt
+know    throw           data/chars/throw/throw.txt
+know    cabaji          data/chars/cabaji/cabaji.txt
+know    koma            data/chars/koma/koma.txt
+know    pirate          data/chars/pirate/pirate.txt
+know	Aceb	        data/chars/Ace/Aceb.txt
+know	Luffyb	        data/chars/Luffy/Luffyb.txt
+know    Shanks          data/chars/Shanks/Shanks.txt
+know    goku            data/chars/goku/goku.txt
+know    kizaru          data/chars/kizaru/kizaru.txt
+load	Franky2	        data/chars/Franky/Franky2.txt        
+know    Dugongs         data/chars/Dugongs/Dugongs.txt
+know    Shanks2          data/chars/Shanks/Shanks2.txt
+know	Wolf	        data/chars/Wolf/Wolf.txt
+know	Boar	        data/chars/Boar/Boar.txt
+know	Dino	        data/chars/Dino/Dino.txt
+know	Boar2	        data/chars/Boar2/Boar2.txt
+know	Ball	        data/chars/Ball/Ball.txt
+know	Theif	        data/chars/Theif/Theif.txt
+know	Chaos			data/chars/chaos/chaos.txt
+know	Blood_H			data/chars/hand/hand.txt
+know    BEE        data/chars/bee/bee.txt
+know      kagome      data/chars/kagome/kagome.txt
+load	Jack		data/chars/samjack/samjack.txt
+
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
 
@@ -65,6 +138,30 @@ know	Steamer		data/chars/misc/steamer.txt
 know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
+
+know    hou           data/chars/misc/Hou.txt
+know    break           data/chars/misc/break.txt
+know    shock           data/chars/misc/shock.txt
+know    tatsu           data/chars/misc/tatsu.txt
+know    kuu             data/chars/misc/kuu.txt
+know    Bird            data/chars/misc/bird.txt
+know    slash           data/chars/misc/slash.txt
+know    slash2           data/chars/misc/slash2.txt
+know    tei             data/chars/misc/tei.txt
+know    bom             data/chars/misc/bom.txt
+know    bomb            data/chars/Ace/bomb.txt
+know    hiken           data/chars/misc/hiken.txt
+know    hikenb          data/chars/ace/hikenb.txt
+know    nife            data/chars/misc/nife.txt
+know    toln            data/chars/misc/toln.txt
+know    stars           data/chars/misc/stars.txt
+know    Gun             data/chars/misc/Gun.txt
+know    lay             data/chars/misc/lay.txt
+know      arrow       data/chars/kagome/arrow.txt
+know	Field		data/chars/misc/Field.txt
+know	Pillar		data/chars/misc/Pillar.txt
+know	Kunai		data/chars/misc/Kunai.txt
+know	Kunai_		data/chars/misc/Kunai_.txt
 Load Levelup data/chars/Misc/levelup/levelup.txt
 Load Gon data/chars/Gon/Gon.txt
 Load Deku data/chars/Deku/Deku.txt
@@ -74,4 +171,7 @@ Load Hisoka data/chars/Hisoka/Hisoka.txt
 Load Shrek data/chars/Shrek/Shrek.txt
 #Load Pain data/chars/Pain/Pain.txt
 #Load Lee data/chars/Lee/Lee.txt
-#Load Broly data/chars/Broly_SSB/Broly_SSB.txt
+Load Broly data/chars/Broly_SSB/Broly_SSB.txt
+#Load Broly_old data/chars/Broly_SSB/Broly_SSB_old.txt
+#Load 	Madara		data/chars/Madara/Madara.txt
+#Load 	Itachi		data/chars/Itachi/Itachi.txt

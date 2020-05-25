@@ -1,0 +1,46 @@
+name	fir
+health	0
+type	trap
+alpha   1
+nolife  1
+flash   flash
+noatflash 1
+
+
+
+
+
+anim	idle
+	burn	0 21 200 38 20 1 1 0 0 0
+	loop	1
+	delay	6
+	offset	97 55
+	frame	data/chars/misc/fir1.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir2.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir3.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir4.gif
+		
+anim	pain
+	burn	0 21 200 38 20 1 1 0 0 0
+	loop	1
+	delay	6
+	offset	97 55
+	frame	data/chars/misc/fir1.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir2.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir3.gif
+	attack	0 21 200 38 20 1 0 0 0 0
+	offset	97 55
+	frame	data/chars/misc/fir4.gif
+		
+#|edited by openBor Stats v 0.67
+		

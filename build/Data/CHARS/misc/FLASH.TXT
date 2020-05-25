@@ -1,23 +1,32 @@
-# Hit flash
+
 
 name	Flash
 type	none
 shadow	0
 
+onspawnscript @script
+void main()
+{
+void self = getlocalvar("self");
+setdrawmethod(self, 1, 128, 128, 1, 1, 0, 1);
+}
+@end_script
 
 
-anim idle
+
+anim	idle
 	loop	0
 	delay	6
-	offset	36 51
-	frame	data/chars/misc/flash000.gif
-	frame	data/chars/misc/flash001.gif
-	frame	data/chars/misc/flash002.gif
-	frame	data/chars/misc/flash003.gif
-	frame	data/chars/misc/flash004.gif
-	frame	data/chars/misc/flash005.gif
-	frame	data/chars/misc/flash006.gif
-	frame	data/chars/misc/flash007.gif
-	frame	data/chars/misc/flash008.gif
-	frame	data/chars/misc/flash009.gif
-	frame	data/chars/misc/flash010.gif
+	offset	72 81
+	frame	data/chars/misc/flash1/flash1.gif
+	offset	88 98
+	frame	data/chars/misc/flash1/flash2.gif
+	offset	104 107
+	frame	data/chars/misc/flash1/flash3.gif
+	offset	108 114
+	frame	data/chars/misc/flash1/flash4.gif
+	offset	95 118
+	frame	data/chars/misc/flash1/flash5.gif
+		
+#|edited by openBor Stats v 0.67
+		

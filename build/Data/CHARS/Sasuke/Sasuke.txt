@@ -1,2112 +1,360 @@
-name	Sasuke 
+name	Sasuke
 health	100
-speed	9
+speed	7
+running	15	3	2	1
+com  d  f  a  freespecial
 type	player
-shadow	3
+shadow	2
+grabdistance 23
+diesound data/chars/Sasuke/die.wav
+icon	data/chars/Sasuke/icon.gif
+bflash  bflash
+dust	 dust
+jumpheight 3
 
 
-anim 9000
- delay 7
- offset -2 0
- frame data/chars/Sasuke/0.gif
- offset 0 0
- frame data/chars/Sasuke/1.gif
- offset -3 24
- frame data/chars/Sasuke/2.gif
- offset 320 100
- frame data/chars/Sasuke/3.gif
 
 anim idle
- delay 7
- offset 12 55
- frame data/chars/Sasuke/4.gif
- offset 12 54
- frame data/chars/Sasuke/5.gif
- offset 12 55
- frame data/chars/Sasuke/6.gif
- offset 12 55
- frame data/chars/Sasuke/7.gif
+	loop	1
+	delay	15
+	offset	60 116
+        bbox    41 64 34 52	
+	frame	data/chars/Sasuke/idle00.gif
+  	frame	data/chars/Sasuke/idle01.gif
+	frame	data/chars/Sasuke/idle02.gif
+        frame	data/chars/Sasuke/idle03.gif
+  	frame	data/chars/Sasuke/idle04.gif
+        frame	data/chars/Sasuke/idle03.gif
+	frame	data/chars/Sasuke/idle02.gif
+	frame	data/chars/Sasuke/idle01.gif
 
-anim turn
- delay 7
- offset 12 55
- frame data/chars/Sasuke/8.gif
-
-anim 0006
- delay 7
- offset 20 42
- frame data/chars/Sasuke/9.gif
- offset 23 37
- frame data/chars/Sasuke/10.gif
- offset 20 42
- frame data/chars/Sasuke/11.gif
 
 anim walk
- delay 7
- offset 13 44
- frame data/chars/Sasuke/12.gif
- offset 19 44
- frame data/chars/Sasuke/13.gif
- offset 22 43
- frame data/chars/Sasuke/14.gif
- offset 18 44
- frame data/chars/Sasuke/15.gif
- offset 13 43
- frame data/chars/Sasuke/16.gif
- offset 18 43
- frame data/chars/Sasuke/17.gif
- offset 22 44
- frame data/chars/Sasuke/18.gif
- offset 16 45
- frame data/chars/Sasuke/19.gif
+	loop	1
+	delay	15
+        offset  60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/walk00.gif
+	frame	data/chars/Sasuke/walk01.gif
+	frame	data/chars/Sasuke/walk02.gif
+	frame	data/chars/Sasuke/walk03.gif
+	frame	data/chars/Sasuke/walk04.gif
+	frame	data/chars/Sasuke/walk05.gif
 
-anim 0040
- delay 7
- offset 20 52
- frame data/chars/Sasuke/20.gif
- offset 20 52
- frame data/chars/Sasuke/21.gif
- offset 20 53
- frame data/chars/Sasuke/22.gif
- offset 20 53
- frame data/chars/Sasuke/23.gif
- offset 15 24
- frame data/chars/Sasuke/24.gif
 
 anim run
- delay 7
- offset 20 42
- frame data/chars/Sasuke/25.gif
- offset 19 42
- frame data/chars/Sasuke/26.gif
-
-anim block120
- delay 7
- offset 16 50
- frame data/chars/Sasuke/27.gif
-
-anim block122
- delay 7
- offset 16 50
- frame data/chars/Sasuke/28.gif
-
-anim attack200
- delay 7
- offset 13 51
- frame data/chars/Sasuke/29.gif
- offset 14 46
- frame data/chars/Sasuke/30.gif
- offset 14 46
- frame data/chars/Sasuke/31.gif
- offset 14 45
- frame data/chars/Sasuke/32.gif
- offset 13 51
- frame data/chars/Sasuke/33.gif
- offset 21 46
- frame data/chars/Sasuke/34.gif
- offset 11 55
- frame data/chars/Sasuke/35.gif
- offset 11 55
- frame data/chars/Sasuke/36.gif
- offset 11 54
- frame data/chars/Sasuke/37.gif
- offset 11 53
- frame data/chars/Sasuke/38.gif
- offset 11 52
- frame data/chars/Sasuke/39.gif
- offset 8 54
- frame data/chars/Sasuke/40.gif
- offset 9 53
- frame data/chars/Sasuke/41.gif
- offset 14 54
- frame data/chars/Sasuke/42.gif
- offset 14 53
- frame data/chars/Sasuke/43.gif
- offset 14 53
- frame data/chars/Sasuke/44.gif
- offset 14 51
- frame data/chars/Sasuke/45.gif
- offset 17 52
- frame data/chars/Sasuke/46.gif
- offset 21 50
- frame data/chars/Sasuke/47.gif
- offset 17 49
- frame data/chars/Sasuke/48.gif
- offset 19 43
- frame data/chars/Sasuke/49.gif
- offset 19 44
- frame data/chars/Sasuke/50.gif
- offset 14 52
- frame data/chars/Sasuke/51.gif
- offset 21 47
- frame data/chars/Sasuke/52.gif
- offset 14 57
- frame data/chars/Sasuke/53.gif
- offset 14 54
- frame data/chars/Sasuke/54.gif
- offset 19 50
- frame data/chars/Sasuke/55.gif
- offset 12 52
- frame data/chars/Sasuke/56.gif
- offset 16 51
- frame data/chars/Sasuke/57.gif
- offset 24 47
- frame data/chars/Sasuke/58.gif
- offset 8 46
- frame data/chars/Sasuke/59.gif
- offset 17 50
- frame data/chars/Sasuke/60.gif
- offset 21 48
- frame data/chars/Sasuke/61.gif
- offset 18 49
- frame data/chars/Sasuke/62.gif
- offset 17 45
- frame data/chars/Sasuke/63.gif
- offset 16 45
- frame data/chars/Sasuke/64.gif
- offset 15 51
- frame data/chars/Sasuke/65.gif
- offset 19 47
- frame data/chars/Sasuke/66.gif
- offset 22 37
- frame data/chars/Sasuke/67.gif
- offset 19 44
- frame data/chars/Sasuke/68.gif
- offset 20 44
- frame data/chars/Sasuke/69.gif
- offset 24 43
- frame data/chars/Sasuke/70.gif
- offset 28 43
- frame data/chars/Sasuke/71.gif
- offset 30 48
- frame data/chars/Sasuke/72.gif
- offset 21 50
- frame data/chars/Sasuke/73.gif
- offset 23 54
- frame data/chars/Sasuke/74.gif
- offset 18 48
- frame data/chars/Sasuke/75.gif
- offset 26 46
- frame data/chars/Sasuke/76.gif
- offset 10 51
- frame data/chars/Sasuke/77.gif
- offset 27 49
- frame data/chars/Sasuke/78.gif
- offset 20 45
- frame data/chars/Sasuke/79.gif
- offset 23 43
- frame data/chars/Sasuke/80.gif
- offset 23 43
- frame data/chars/Sasuke/81.gif
- offset 20 49
- frame data/chars/Sasuke/82.gif
- offset 19 50
- frame data/chars/Sasuke/83.gif
- offset 18 44
- frame data/chars/Sasuke/84.gif
- offset 21 42
- frame data/chars/Sasuke/85.gif
- offset 16 43
- frame data/chars/Sasuke/86.gif
- offset 19 61
- frame data/chars/Sasuke/87.gif
- offset 19 48
- frame data/chars/Sasuke/88.gif
- offset 24 48
- frame data/chars/Sasuke/89.gif
- offset 17 50
- frame data/chars/Sasuke/90.gif
- offset 18 50
- frame data/chars/Sasuke/91.gif
- offset 19 54
- frame data/chars/Sasuke/92.gif
- offset 10 50
- frame data/chars/Sasuke/93.gif
- offset 14 49
- frame data/chars/Sasuke/94.gif
- offset 18 45
- frame data/chars/Sasuke/95.gif
- offset 18 45
- frame data/chars/Sasuke/96.gif
- offset 18 45
- frame data/chars/Sasuke/97.gif
- offset 18 45
- frame data/chars/Sasuke/98.gif
- offset 16 47
- frame data/chars/Sasuke/99.gif
- offset 16 50
- frame data/chars/Sasuke/100.gif
- offset 13 48
- frame data/chars/Sasuke/101.gif
- offset 13 51
- frame data/chars/Sasuke/102.gif
- offset 13 51
- frame data/chars/Sasuke/103.gif
- offset 15 39
- frame data/chars/Sasuke/104.gif
- offset 15 39
- frame data/chars/Sasuke/105.gif
- offset 14 47
- frame data/chars/Sasuke/106.gif
- offset 11 54
- frame data/chars/Sasuke/107.gif
- offset 12 54
- frame data/chars/Sasuke/108.gif
- offset 12 53
- frame data/chars/Sasuke/109.gif
- offset 12 54
- frame data/chars/Sasuke/110.gif
- offset 12 54
- frame data/chars/Sasuke/111.gif
- offset 11 54
- frame data/chars/Sasuke/112.gif
- offset 13 51
- frame data/chars/Sasuke/113.gif
- offset 19 37
- frame data/chars/Sasuke/114.gif
- offset 19 36
- frame data/chars/Sasuke/115.gif
- offset 25 41
- frame data/chars/Sasuke/116.gif
- offset 24 41
- frame data/chars/Sasuke/117.gif
- offset 21 46
- frame data/chars/Sasuke/118.gif
- offset 20 43
- frame data/chars/Sasuke/119.gif
- offset 20 42
- frame data/chars/Sasuke/120.gif
- offset 15 52
- frame data/chars/Sasuke/121.gif
- offset 12 52
- frame data/chars/Sasuke/122.gif
- offset 16 47
- frame data/chars/Sasuke/123.gif
- offset 16 44
- frame data/chars/Sasuke/124.gif
- offset 23 43
- frame data/chars/Sasuke/125.gif
- offset 31 40
- frame data/chars/Sasuke/126.gif
- offset 31 41
- frame data/chars/Sasuke/127.gif
- offset 16 47
- frame data/chars/Sasuke/128.gif
- offset 20 44
- frame data/chars/Sasuke/129.gif
- offset 12 54
- frame data/chars/Sasuke/130.gif
- offset 12 53
- frame data/chars/Sasuke/131.gif
- offset 12 57
- frame data/chars/Sasuke/132.gif
- offset 12 58
- frame data/chars/Sasuke/133.gif
- offset 12 58
- frame data/chars/Sasuke/134.gif
- offset 16 49
- frame data/chars/Sasuke/135.gif
- offset 21 43
- frame data/chars/Sasuke/136.gif
- offset 21 44
- frame data/chars/Sasuke/137.gif
-
-anim pain5000
- delay 7
- offset 15 49
- frame data/chars/Sasuke/138.gif
- offset 18 52
- frame data/chars/Sasuke/139.gif
- offset 20 51
- frame data/chars/Sasuke/140.gif
- offset 26 45
- frame data/chars/Sasuke/141.gif
- offset 34 30
- frame data/chars/Sasuke/142.gif
- offset 23 26
- frame data/chars/Sasuke/143.gif
- offset 13 53
- frame data/chars/Sasuke/144.gif
- offset 19 45
- frame data/chars/Sasuke/145.gif
- offset 23 26
- frame data/chars/Sasuke/146.gif
- offset 35 11
- frame data/chars/Sasuke/147.gif
- offset 23 29
- frame data/chars/Sasuke/148.gif
- offset 19 38
- frame data/chars/Sasuke/149.gif
- offset 20 44
- frame data/chars/Sasuke/150.gif
- offset 12 51
- frame data/chars/Sasuke/151.gif
- offset 47 14
- frame data/chars/Sasuke/152.gif
- offset 17 50
- frame data/chars/Sasuke/153.gif
- offset 13 53
- frame data/chars/Sasuke/154.gif
- offset 4 23
- frame data/chars/Sasuke/155.gif
- offset 18 52
- frame data/chars/Sasuke/156.gif
-
-anim 0950
- delay 7
- offset 67 323
- frame data/chars/Sasuke/157.gif
-
-anim freespecial1060
- delay 7
- offset 45 76
- frame data/chars/Sasuke/158.gif
- offset 48 117
- frame data/chars/Sasuke/159.gif
- offset 38 100
- frame data/chars/Sasuke/160.gif
- offset 37 80
- frame data/chars/Sasuke/161.gif
- offset 34 45
- frame data/chars/Sasuke/162.gif
- offset -41 38
- frame data/chars/Sasuke/163.gif
- offset 34 82
- frame data/chars/Sasuke/164.gif
- offset 30 93
- frame data/chars/Sasuke/165.gif
- offset 2 81
- frame data/chars/Sasuke/166.gif
- offset -49 59
- frame data/chars/Sasuke/167.gif
- offset -40 33
- frame data/chars/Sasuke/168.gif
-
-anim freespecial3051
- delay 7
- offset 233 270
- frame data/chars/Sasuke/169.gif
-
-anim 0950
- delay 7
- offset 125 330
- frame data/chars/Sasuke/170.gif
- offset 273 289
- frame data/chars/Sasuke/171.gif
- offset 128 324
- frame data/chars/Sasuke/172.gif
-
-anim freespecial1053
- delay 7
- offset 71 63
- frame data/chars/Sasuke/173.gif
- offset 71 65
- frame data/chars/Sasuke/174.gif
- offset 73 65
- frame data/chars/Sasuke/175.gif
- offset 77 62
- frame data/chars/Sasuke/176.gif
- offset 68 59
- frame data/chars/Sasuke/177.gif
- offset 71 59
- frame data/chars/Sasuke/178.gif
- offset 109 62
- frame data/chars/Sasuke/179.gif
- offset 135 66
- frame data/chars/Sasuke/180.gif
- offset 148 72
- frame data/chars/Sasuke/181.gif
- offset 153 81
- frame data/chars/Sasuke/182.gif
- offset 163 105
- frame data/chars/Sasuke/183.gif
- offset 195 90
- frame data/chars/Sasuke/184.gif
- offset 188 95
- frame data/chars/Sasuke/185.gif
- offset 173 104
- frame data/chars/Sasuke/186.gif
- offset 173 104
- frame data/chars/Sasuke/187.gif
- offset 176 114
- frame data/chars/Sasuke/188.gif
- offset 175 140
- frame data/chars/Sasuke/189.gif
- offset 176 137
- frame data/chars/Sasuke/190.gif
- offset 163 149
- frame data/chars/Sasuke/191.gif
- offset 166 155
- frame data/chars/Sasuke/192.gif
- offset 175 163
- frame data/chars/Sasuke/193.gif
- offset 184 167
- frame data/chars/Sasuke/194.gif
- offset 186 166
- frame data/chars/Sasuke/195.gif
- offset 188 169
- frame data/chars/Sasuke/196.gif
- offset 195 170
- frame data/chars/Sasuke/197.gif
- offset 201 174
- frame data/chars/Sasuke/198.gif
- offset 190 179
- frame data/chars/Sasuke/199.gif
- offset 190 156
- frame data/chars/Sasuke/200.gif
- offset 186 138
- frame data/chars/Sasuke/201.gif
- offset 185 174
- frame data/chars/Sasuke/202.gif
- offset 189 181
- frame data/chars/Sasuke/203.gif
- offset 189 184
- frame data/chars/Sasuke/204.gif
- offset 190 199
- frame data/chars/Sasuke/205.gif
- offset 191 196
- frame data/chars/Sasuke/206.gif
- offset 189 187
- frame data/chars/Sasuke/207.gif
- offset 189 187
- frame data/chars/Sasuke/208.gif
- offset 188 187
- frame data/chars/Sasuke/209.gif
- offset 182 183
- frame data/chars/Sasuke/210.gif
- offset 175 178
- frame data/chars/Sasuke/211.gif
- offset 167 165
- frame data/chars/Sasuke/212.gif
- offset 165 159
- frame data/chars/Sasuke/213.gif
- offset 165 152
- frame data/chars/Sasuke/214.gif
- offset 165 154
- frame data/chars/Sasuke/215.gif
- offset 169 167
- frame data/chars/Sasuke/216.gif
- offset 179 156
- frame data/chars/Sasuke/217.gif
- offset 177 160
- frame data/chars/Sasuke/218.gif
- offset 179 156
- frame data/chars/Sasuke/219.gif
- offset 187 158
- frame data/chars/Sasuke/220.gif
- offset 187 159
- frame data/chars/Sasuke/221.gif
- offset 185 162
- frame data/chars/Sasuke/222.gif
-
-anim 0950
- delay 7
- offset 273 382
- frame data/chars/Sasuke/223.gif
- offset 273 396
- frame data/chars/Sasuke/224.gif
- offset 273 383
- frame data/chars/Sasuke/225.gif
- offset 273 353
- frame data/chars/Sasuke/226.gif
- offset 273 396
- frame data/chars/Sasuke/227.gif
- offset 273 324
- frame data/chars/Sasuke/228.gif
- offset 100 292
- frame data/chars/Sasuke/229.gif
- offset 273 295
- frame data/chars/Sasuke/230.gif
- offset 62 314
- frame data/chars/Sasuke/231.gif
- offset 134 332
- frame data/chars/Sasuke/232.gif
- offset 132 331
- frame data/chars/Sasuke/233.gif
-
-anim freespecial1056
- delay 7
- offset 30 31
- frame data/chars/Sasuke/234.gif
- offset 57 58
- frame data/chars/Sasuke/235.gif
- offset 78 80
- frame data/chars/Sasuke/236.gif
- offset 95 88
- frame data/chars/Sasuke/237.gif
- offset 96 100
- frame data/chars/Sasuke/238.gif
- offset 108 100
- frame data/chars/Sasuke/239.gif
- offset 112 108
- frame data/chars/Sasuke/240.gif
- offset 107 109
- frame data/chars/Sasuke/241.gif
- offset 117 113
- frame data/chars/Sasuke/242.gif
-
-anim 0950
- delay 7
- offset 157 340
- frame data/chars/Sasuke/243.gif
-
-anim 8230
- delay 7
- offset 97 223
- frame data/chars/Sasuke/244.gif
-
-anim freespecial1057
- delay 7
- offset 131 130
- frame data/chars/Sasuke/245.gif
- offset 138 126
- frame data/chars/Sasuke/246.gif
- offset 134 129
- frame data/chars/Sasuke/247.gif
- offset 131 132
- frame data/chars/Sasuke/248.gif
- offset 128 131
- frame data/chars/Sasuke/249.gif
- offset 129 133
- frame data/chars/Sasuke/250.gif
- offset 132 130
- frame data/chars/Sasuke/251.gif
- offset 134 127
- frame data/chars/Sasuke/252.gif
- offset 138 128
- frame data/chars/Sasuke/253.gif
- offset 127 132
- frame data/chars/Sasuke/254.gif
- offset 138 131
- frame data/chars/Sasuke/255.gif
- offset 134 133
- frame data/chars/Sasuke/256.gif
-
-anim freespecial1059
- delay 7
- offset 131 62
- frame data/chars/Sasuke/257.gif
-
-anim 8200
- delay 7
- offset 108 237
- frame data/chars/Sasuke/258.gif
- offset 114 256
- frame data/chars/Sasuke/259.gif
- offset 121 276
- frame data/chars/Sasuke/260.gif
- offset 128 193
- frame data/chars/Sasuke/261.gif
- offset 135 198
- frame data/chars/Sasuke/262.gif
- offset 126 199
- frame data/chars/Sasuke/263.gif
- offset 125 186
- frame data/chars/Sasuke/264.gif
- offset 127 180
- frame data/chars/Sasuke/265.gif
- offset 124 124
- frame data/chars/Sasuke/266.gif
- offset 115 109
- frame data/chars/Sasuke/267.gif
-
-anim freespecial1058
- delay 7
- offset 65 67
- frame data/chars/Sasuke/268.gif
- offset 137 135
- frame data/chars/Sasuke/269.gif
- offset 173 174
- frame data/chars/Sasuke/270.gif
- offset 237 242
- frame data/chars/Sasuke/271.gif
- offset 277 250
- frame data/chars/Sasuke/272.gif
- offset 297 250
- frame data/chars/Sasuke/273.gif
- offset 305 250
- frame data/chars/Sasuke/274.gif
- offset 337 250
- frame data/chars/Sasuke/275.gif
- offset 337 250
- frame data/chars/Sasuke/276.gif
- offset 341 250
- frame data/chars/Sasuke/277.gif
- offset 255 250
- frame data/chars/Sasuke/278.gif
- offset 281 250
- frame data/chars/Sasuke/279.gif
- offset 310 250
- frame data/chars/Sasuke/280.gif
- offset 341 250
- frame data/chars/Sasuke/281.gif
- offset 373 250
- frame data/chars/Sasuke/282.gif
- offset 407 250
- frame data/chars/Sasuke/283.gif
- offset 442 250
- frame data/chars/Sasuke/284.gif
- offset 439 250
- frame data/chars/Sasuke/285.gif
- offset 444 250
- frame data/chars/Sasuke/286.gif
- offset 444 250
- frame data/chars/Sasuke/287.gif
-
-anim 8230
- delay 7
- offset 98 219
- frame data/chars/Sasuke/288.gif
-
-anim freespecial1051
- delay 7
- offset 103 411
- frame data/chars/Sasuke/289.gif
- offset 103 424
- frame data/chars/Sasuke/290.gif
- offset 111 437
- frame data/chars/Sasuke/291.gif
- offset 112 450
- frame data/chars/Sasuke/292.gif
- offset 113 463
- frame data/chars/Sasuke/293.gif
- offset 125 474
- frame data/chars/Sasuke/294.gif
- offset 126 474
- frame data/chars/Sasuke/295.gif
- offset 126 474
- frame data/chars/Sasuke/296.gif
- offset 126 474
- frame data/chars/Sasuke/297.gif
- offset 125 474
- frame data/chars/Sasuke/298.gif
- offset 126 474
- frame data/chars/Sasuke/299.gif
- offset 126 474
- frame data/chars/Sasuke/300.gif
- offset 127 474
- frame data/chars/Sasuke/301.gif
- offset 128 474
- frame data/chars/Sasuke/302.gif
- offset 129 474
- frame data/chars/Sasuke/303.gif
- offset 130 474
- frame data/chars/Sasuke/304.gif
- offset 130 474
- frame data/chars/Sasuke/305.gif
- offset 126 474
- frame data/chars/Sasuke/306.gif
- offset 125 474
- frame data/chars/Sasuke/307.gif
- offset 120 474
- frame data/chars/Sasuke/308.gif
- offset 118 474
- frame data/chars/Sasuke/309.gif
- offset 120 474
- frame data/chars/Sasuke/310.gif
- offset 121 474
- frame data/chars/Sasuke/311.gif
- offset 123 474
- frame data/chars/Sasuke/312.gif
- offset 124 474
- frame data/chars/Sasuke/313.gif
- offset 126 474
- frame data/chars/Sasuke/314.gif
- offset 125 474
- frame data/chars/Sasuke/315.gif
- offset 127 474
- frame data/chars/Sasuke/316.gif
- offset 128 474
- frame data/chars/Sasuke/317.gif
- offset 129 474
- frame data/chars/Sasuke/318.gif
- offset 130 474
- frame data/chars/Sasuke/319.gif
- offset 116 474
- frame data/chars/Sasuke/320.gif
- offset 115 464
- frame data/chars/Sasuke/321.gif
- offset 96 435
- frame data/chars/Sasuke/322.gif
- offset 93 408
- frame data/chars/Sasuke/323.gif
- offset 92 382
- frame data/chars/Sasuke/324.gif
- offset 81 371
- frame data/chars/Sasuke/325.gif
- offset 80 359
- frame data/chars/Sasuke/326.gif
-
-anim freespecial1064
- delay 7
- offset 12 18
- frame data/chars/Sasuke/327.gif
-
-anim 7200
- delay 7
- offset 75 68
- frame data/chars/Sasuke/328.gif
- offset 72 68
- frame data/chars/Sasuke/329.gif
- offset 78 67
- frame data/chars/Sasuke/330.gif
- offset 51 12
- frame data/chars/Sasuke/331.gif
- offset 51 12
- frame data/chars/Sasuke/332.gif
- offset 50 14
- frame data/chars/Sasuke/333.gif
- offset 88 16
- frame data/chars/Sasuke/334.gif
- offset 87 16
- frame data/chars/Sasuke/335.gif
- offset 87 17
- frame data/chars/Sasuke/336.gif
- offset 64 43
- frame data/chars/Sasuke/337.gif
- offset 65 46
- frame data/chars/Sasuke/338.gif
- offset 70 43
- frame data/chars/Sasuke/339.gif
- offset 73 88
- frame data/chars/Sasuke/340.gif
- offset 70 87
- frame data/chars/Sasuke/341.gif
- offset 76 88
- frame data/chars/Sasuke/342.gif
- offset 47 36
- frame data/chars/Sasuke/343.gif
- offset 51 39
- frame data/chars/Sasuke/344.gif
- offset 56 35
- frame data/chars/Sasuke/345.gif
- offset 97 91
- frame data/chars/Sasuke/346.gif
- offset 97 87
- frame data/chars/Sasuke/347.gif
- offset 88 85
- frame data/chars/Sasuke/348.gif
- offset 51 48
- frame data/chars/Sasuke/349.gif
- offset 52 48
- frame data/chars/Sasuke/350.gif
- offset 55 50
- frame data/chars/Sasuke/351.gif
- offset 65 33
- frame data/chars/Sasuke/352.gif
- offset 64 31
- frame data/chars/Sasuke/353.gif
- offset 64 36
- frame data/chars/Sasuke/354.gif
-
-anim 8230
- delay 7
- offset 100 203
- frame data/chars/Sasuke/355.gif
-
-anim 7052
- delay 7
- offset 222 62
- frame data/chars/Sasuke/356.gif
-
-anim 8230
- delay 7
- offset 76 191
- frame data/chars/Sasuke/357.gif
-
-anim 7052
- delay 7
- offset 225 59
- frame data/chars/Sasuke/358.gif
-
-anim freespecial1052
- delay 7
- offset 49 255
- frame data/chars/Sasuke/359.gif
- offset 70 268
- frame data/chars/Sasuke/360.gif
- offset 90 294
- frame data/chars/Sasuke/361.gif
- offset 235 426
- frame data/chars/Sasuke/362.gif
- offset 202 385
- frame data/chars/Sasuke/363.gif
- offset 218 404
- frame data/chars/Sasuke/364.gif
- offset 222 413
- frame data/chars/Sasuke/365.gif
- offset 227 416
- frame data/chars/Sasuke/366.gif
- offset 239 427
- frame data/chars/Sasuke/367.gif
- offset 252 434
- frame data/chars/Sasuke/368.gif
- offset 257 431
- frame data/chars/Sasuke/369.gif
- offset 263 434
- frame data/chars/Sasuke/370.gif
- offset 266 437
- frame data/chars/Sasuke/371.gif
- offset 250 423
- frame data/chars/Sasuke/372.gif
- offset 250 421
- frame data/chars/Sasuke/373.gif
- offset 252 421
- frame data/chars/Sasuke/374.gif
- offset 185 380
- frame data/chars/Sasuke/375.gif
- offset 257 428
- frame data/chars/Sasuke/376.gif
- offset 178 368
- frame data/chars/Sasuke/377.gif
- offset 168 366
- frame data/chars/Sasuke/378.gif
- offset 160 369
- frame data/chars/Sasuke/379.gif
- offset 167 372
- frame data/chars/Sasuke/380.gif
- offset 168 375
- frame data/chars/Sasuke/381.gif
- offset 166 377
- frame data/chars/Sasuke/382.gif
- offset 165 380
- frame data/chars/Sasuke/383.gif
- offset 163 382
- frame data/chars/Sasuke/384.gif
- offset 161 385
- frame data/chars/Sasuke/385.gif
- offset 158 387
- frame data/chars/Sasuke/386.gif
- offset 156 389
- frame data/chars/Sasuke/387.gif
- offset 156 391
- frame data/chars/Sasuke/388.gif
- offset 154 393
- frame data/chars/Sasuke/389.gif
- offset 152 394
- frame data/chars/Sasuke/390.gif
- offset 150 396
- frame data/chars/Sasuke/391.gif
- offset 148 398
- frame data/chars/Sasuke/392.gif
- offset 144 399
- frame data/chars/Sasuke/393.gif
- offset 142 399
- frame data/chars/Sasuke/394.gif
- offset 140 400
- frame data/chars/Sasuke/395.gif
- offset 138 392
- frame data/chars/Sasuke/396.gif
- offset 136 389
- frame data/chars/Sasuke/397.gif
- offset 135 271
- frame data/chars/Sasuke/398.gif
- offset 135 267
- frame data/chars/Sasuke/399.gif
- offset 135 262
- frame data/chars/Sasuke/400.gif
- offset 135 257
- frame data/chars/Sasuke/401.gif
- offset 135 251
- frame data/chars/Sasuke/402.gif
- offset 135 246
- frame data/chars/Sasuke/403.gif
- offset 135 241
- frame data/chars/Sasuke/404.gif
- offset 134 237
- frame data/chars/Sasuke/405.gif
- offset 134 232
- frame data/chars/Sasuke/406.gif
- offset 134 227
- frame data/chars/Sasuke/407.gif
- offset 134 222
- frame data/chars/Sasuke/408.gif
- offset 134 218
- frame data/chars/Sasuke/409.gif
- offset 132 213
- frame data/chars/Sasuke/410.gif
- offset 132 208
- frame data/chars/Sasuke/411.gif
- offset 130 203
- frame data/chars/Sasuke/412.gif
- offset 130 198
- frame data/chars/Sasuke/413.gif
- offset 112 194
- frame data/chars/Sasuke/414.gif
-
-anim 7052
- delay 7
- offset 179 41
- frame data/chars/Sasuke/415.gif
-
-anim 8230
- delay 7
- offset 98 229
- frame data/chars/Sasuke/416.gif
-
-anim 7052
- delay 7
- offset 219 45
- frame data/chars/Sasuke/417.gif
-
-anim 9007
- delay 7
- offset 111 14
- frame data/chars/Sasuke/418.gif
-
-anim 9008
- delay 7
- offset 110 8
- frame data/chars/Sasuke/419.gif
-
-anim 9021
- delay 7
- offset 320 240
- frame data/chars/Sasuke/420.gif
-
-anim 7052
- delay 7
- offset 178 43
- frame data/chars/Sasuke/421.gif
-
-anim freespecial3051
- delay 7
- offset 193 254
- frame data/chars/Sasuke/422.gif
-
-anim 9007
- delay 7
- offset 93 12
- frame data/chars/Sasuke/423.gif
- offset 124 16
- frame data/chars/Sasuke/424.gif
-
-anim 8250
- delay 7
- offset 365 -197
- frame data/chars/Sasuke/425.gif
-
-anim 7000
- delay 7
- offset 24 24
- frame data/chars/Sasuke/426.gif
- offset 19 19
- frame data/chars/Sasuke/427.gif
- offset 14 15
- frame data/chars/Sasuke/428.gif
- offset 9 16
- frame data/chars/Sasuke/429.gif
- offset 11 19
- frame data/chars/Sasuke/430.gif
- offset 12 22
- frame data/chars/Sasuke/431.gif
- offset 7 25
- frame data/chars/Sasuke/432.gif
- offset 11 23
- frame data/chars/Sasuke/433.gif
- offset 12 23
- frame data/chars/Sasuke/434.gif
- offset 12 24
- frame data/chars/Sasuke/435.gif
- offset 13 31
- frame data/chars/Sasuke/436.gif
- offset 13 32
- frame data/chars/Sasuke/437.gif
- offset 13 33
- frame data/chars/Sasuke/438.gif
- offset 13 35
- frame data/chars/Sasuke/439.gif
- offset 13 36
- frame data/chars/Sasuke/440.gif
- offset 13 36
- frame data/chars/Sasuke/441.gif
- offset 11 37
- frame data/chars/Sasuke/442.gif
- offset 10 38
- frame data/chars/Sasuke/443.gif
- offset 7 40
- frame data/chars/Sasuke/444.gif
- offset 8 41
- frame data/chars/Sasuke/445.gif
- offset 2 43
- frame data/chars/Sasuke/446.gif
-
-anim 8230
- delay 7
- offset 98 210
- frame data/chars/Sasuke/447.gif
-
-anim 9007
- delay 7
- offset 75 10
- frame data/chars/Sasuke/448.gif
-
-anim 8250
- delay 7
- offset 365 -182
- frame data/chars/Sasuke/449.gif
-
-anim 8230
- delay 7
- offset 93 195
- frame data/chars/Sasuke/450.gif
-
-anim 8250
- delay 7
- offset 453 -148
- frame data/chars/Sasuke/451.gif
-
-anim 8230
- delay 7
- offset 97 232
- frame data/chars/Sasuke/452.gif
-
-anim 8250
- delay 7
- offset 351 -184
- frame data/chars/Sasuke/453.gif
- offset 150 38
- frame data/chars/Sasuke/454.gif
- offset 359 -200
- frame data/chars/Sasuke/455.gif
-
-anim 8230
- delay 7
- offset 88 224
- frame data/chars/Sasuke/456.gif
-
-anim 0161
- delay 7
- offset 2 92
- frame data/chars/Sasuke/457.gif
-
-anim 8250
- delay 7
- offset 344 -164
- frame data/chars/Sasuke/458.gif
-
-anim 0161
- delay 7
- offset 3 88
- frame data/chars/Sasuke/459.gif
-
-anim 8230
- delay 7
- offset 67 168
- frame data/chars/Sasuke/460.gif
-
-anim 0161
- delay 7
- offset 23 96
- frame data/chars/Sasuke/461.gif
-
-anim 8250
- delay 7
- offset 458 -148
- frame data/chars/Sasuke/462.gif
-
-anim 0161
- delay 7
- offset 24 57
- frame data/chars/Sasuke/463.gif
-
-anim 7053
- delay 7
- offset 0 0
- frame data/chars/Sasuke/464.gif
-
-anim freespecial3051
- delay 7
- offset 188 270
- frame data/chars/Sasuke/465.gif
-
-anim 7053
- delay 7
- offset 0 -6
- frame data/chars/Sasuke/466.gif
- offset 0 0
- frame data/chars/Sasuke/467.gif
-
-anim 0161
- delay 7
- offset 24 20
- frame data/chars/Sasuke/468.gif
-
-anim freespecial3051
- delay 7
- offset 182 268
- frame data/chars/Sasuke/469.gif
-
-anim 7053
- delay 7
- offset 0 -8
- frame data/chars/Sasuke/470.gif
-
-anim 0161
- delay 7
- offset 23 96
- frame data/chars/Sasuke/471.gif
-
-anim 7053
- delay 7
- offset 0 -70
- frame data/chars/Sasuke/472.gif
- offset 0 0
- frame data/chars/Sasuke/473.gif
-
-anim 8230
- delay 7
- offset 76 188
- frame data/chars/Sasuke/474.gif
-
-anim 7053
- delay 7
- offset 0 -3
- frame data/chars/Sasuke/475.gif
- offset 0 -3
- frame data/chars/Sasuke/476.gif
-
-anim 7052
- delay 7
- offset 226 60
- frame data/chars/Sasuke/477.gif
-
-anim 7053
- delay 7
- offset 0 0
- frame data/chars/Sasuke/478.gif
-
-anim 8230
- delay 7
- offset 76 187
- frame data/chars/Sasuke/479.gif
- offset 100 232
- frame data/chars/Sasuke/480.gif
-
-anim 8240
- delay 7
- offset 198 30
- frame data/chars/Sasuke/481.gif
- offset 198 30
- frame data/chars/Sasuke/482.gif
- offset 198 30
- frame data/chars/Sasuke/483.gif
- offset 198 30
- frame data/chars/Sasuke/484.gif
- offset 198 30
- frame data/chars/Sasuke/485.gif
- offset 198 30
- frame data/chars/Sasuke/486.gif
- offset 198 30
- frame data/chars/Sasuke/487.gif
- offset 198 30
- frame data/chars/Sasuke/488.gif
- offset 198 30
- frame data/chars/Sasuke/489.gif
- offset 198 30
- frame data/chars/Sasuke/490.gif
- offset 198 30
- frame data/chars/Sasuke/491.gif
- offset 198 30
- frame data/chars/Sasuke/492.gif
- offset 198 30
- frame data/chars/Sasuke/493.gif
- offset 197 29
- frame data/chars/Sasuke/494.gif
- offset 198 29
- frame data/chars/Sasuke/495.gif
- offset 197 29
- frame data/chars/Sasuke/496.gif
- offset 198 30
- frame data/chars/Sasuke/497.gif
- offset 198 30
- frame data/chars/Sasuke/498.gif
- offset 198 30
- frame data/chars/Sasuke/499.gif
- offset 198 30
- frame data/chars/Sasuke/500.gif
-
-anim freespecial3051
- delay 7
- offset 224 261
- frame data/chars/Sasuke/501.gif
- offset 190 266
- frame data/chars/Sasuke/502.gif
-
-anim 8230
- delay 7
- offset 90 194
- frame data/chars/Sasuke/503.gif
- offset 98 229
- frame data/chars/Sasuke/504.gif
-
-anim 0950
- delay 7
- offset 145 332
- frame data/chars/Sasuke/505.gif
-
-anim 8230
- delay 7
- offset 91 194
- frame data/chars/Sasuke/506.gif
- offset 96 233
- frame data/chars/Sasuke/507.gif
-
-anim 0950
- delay 7
- offset 110 328
- frame data/chars/Sasuke/508.gif
- offset 118 320
- frame data/chars/Sasuke/509.gif
-
-anim 8230
- delay 7
- offset 98 178
- frame data/chars/Sasuke/510.gif
-
-anim 0950
- delay 7
- offset 122 323
- frame data/chars/Sasuke/511.gif
-
-anim freespecial3051
- delay 7
- offset 100 104
- frame data/chars/Sasuke/512.gif
-
-anim 0950
- delay 7
- offset 129 327
- frame data/chars/Sasuke/513.gif
- offset 236 390
- frame data/chars/Sasuke/514.gif
- offset 133 329
- frame data/chars/Sasuke/515.gif
- offset 133 327
- frame data/chars/Sasuke/516.gif
- offset 214 396
- frame data/chars/Sasuke/517.gif
- offset 182 365
- frame data/chars/Sasuke/518.gif
- offset 137 330
- frame data/chars/Sasuke/519.gif
- offset 208 390
- frame data/chars/Sasuke/520.gif
- offset 273 396
- frame data/chars/Sasuke/521.gif
- offset 273 384
- frame data/chars/Sasuke/522.gif
- offset 141 331
- frame data/chars/Sasuke/523.gif
-
-anim freespecial3051
- delay 7
- offset 230 271
- frame data/chars/Sasuke/524.gif
-
-anim 9007
- delay 7
- offset 122 16
- frame data/chars/Sasuke/525.gif
-
-anim 7053
- delay 7
- offset 0 -1
- frame data/chars/Sasuke/526.gif
-
-anim 8250
- delay 7
- offset 351 -187
- frame data/chars/Sasuke/527.gif
- offset 345 -169
- frame data/chars/Sasuke/528.gif
- offset 339 -150
- frame data/chars/Sasuke/529.gif
-
-anim 8230
- delay 7
- offset 76 192
- frame data/chars/Sasuke/530.gif
-
-anim 8250
- delay 7
- offset 342 -126
- frame data/chars/Sasuke/531.gif
-
-anim 7053
- delay 7
- offset 0 -3
- frame data/chars/Sasuke/532.gif
-
-anim freespecial3051
- delay 7
- offset 226 267
- frame data/chars/Sasuke/533.gif
-
-anim 8230
- delay 7
- offset 99 149
- frame data/chars/Sasuke/534.gif
-
-anim 7052
- delay 7
- offset 219 63
- frame data/chars/Sasuke/535.gif
-
-anim 7053
- delay 7
- offset 0 -3
- frame data/chars/Sasuke/536.gif
-
-anim 8250
- delay 7
- offset 389 -73
- frame data/chars/Sasuke/537.gif
-
-anim 7052
- delay 7
- offset 209 63
- frame data/chars/Sasuke/538.gif
-
-anim 8250
- delay 7
- offset 443 -135
- frame data/chars/Sasuke/539.gif
- offset 438 -127
- frame data/chars/Sasuke/540.gif
- offset 456 42
- frame data/chars/Sasuke/541.gif
- offset 448 -155
- frame data/chars/Sasuke/542.gif
-
-anim freespecial3051
- delay 7
- offset 176 273
- frame data/chars/Sasuke/543.gif
- offset 233 264
- frame data/chars/Sasuke/544.gif
-
-anim 8250
- delay 7
- offset 370 -116
- frame data/chars/Sasuke/545.gif
-
-anim freespecial3051
- delay 7
- offset 232 270
- frame data/chars/Sasuke/546.gif
-
-anim 7052
- delay 7
- offset 223 59
- frame data/chars/Sasuke/547.gif
-
-anim 8250
- delay 7
- offset 414 -116
- frame data/chars/Sasuke/548.gif
- offset 298 -92
- frame data/chars/Sasuke/549.gif
- offset 409 -102
- frame data/chars/Sasuke/550.gif
-
-anim 8230
- delay 7
- offset 93 232
- frame data/chars/Sasuke/551.gif
-
-anim freespecial1055
- delay 7
- offset 36 7
- frame data/chars/Sasuke/552.gif
- offset 38 25
- frame data/chars/Sasuke/553.gif
- offset 42 49
- frame data/chars/Sasuke/554.gif
- offset 48 59
- frame data/chars/Sasuke/555.gif
- offset 49 62
- frame data/chars/Sasuke/556.gif
- offset 48 61
- frame data/chars/Sasuke/557.gif
- offset 45 61
- frame data/chars/Sasuke/558.gif
- offset 42 62
- frame data/chars/Sasuke/559.gif
- offset 40 60
- frame data/chars/Sasuke/560.gif
- offset 39 59
- frame data/chars/Sasuke/561.gif
-
-anim 8250
- delay 7
- offset 308 -111
- frame data/chars/Sasuke/562.gif
- offset 399 -85
- frame data/chars/Sasuke/563.gif
- offset 299 -100
- frame data/chars/Sasuke/564.gif
- offset 346 -14
- frame data/chars/Sasuke/565.gif
- offset 343 13
- frame data/chars/Sasuke/566.gif
-
-anim freespecial3051
- delay 7
- offset 232 281
- frame data/chars/Sasuke/567.gif
-
-anim 8250
- delay 7
- offset 322 29
- frame data/chars/Sasuke/568.gif
- offset 339 20
- frame data/chars/Sasuke/569.gif
- offset 336 20
- frame data/chars/Sasuke/570.gif
- offset 348 12
- frame data/chars/Sasuke/571.gif
-
-anim 8230
- delay 7
- offset 89 224
- frame data/chars/Sasuke/572.gif
-
-anim 8250
- delay 7
- offset 418 51
- frame data/chars/Sasuke/573.gif
- offset 319 31
- frame data/chars/Sasuke/574.gif
- offset 392 36
- frame data/chars/Sasuke/575.gif
-
-anim freespecial3051
- delay 7
- offset 224 263
- frame data/chars/Sasuke/576.gif
-
-anim 8250
- delay 7
- offset 482 38
- frame data/chars/Sasuke/577.gif
- offset 468 40
- frame data/chars/Sasuke/578.gif
- offset 327 27
- frame data/chars/Sasuke/579.gif
-
-anim freespecial3051
- delay 7
- offset 208 254
- frame data/chars/Sasuke/580.gif
-
-anim 8250
- delay 7
- offset 345 34
- frame data/chars/Sasuke/581.gif
-
-anim freespecial3051
- delay 7
- offset 224 255
- frame data/chars/Sasuke/582.gif
-
-anim 8250
- delay 7
- offset 411 50
- frame data/chars/Sasuke/583.gif
-
-anim freespecial3051
- delay 7
- offset 212 264
- frame data/chars/Sasuke/584.gif
-
-anim 8250
- delay 7
- offset 462 47
- frame data/chars/Sasuke/585.gif
-
-anim freespecial3051
- delay 7
- offset 215 274
- frame data/chars/Sasuke/586.gif
-
-anim 8250
- delay 7
- offset 443 44
- frame data/chars/Sasuke/587.gif
- offset 446 45
- frame data/chars/Sasuke/588.gif
- offset 298 48
- frame data/chars/Sasuke/589.gif
-
-anim freespecial3051
- delay 7
- offset 228 266
- frame data/chars/Sasuke/590.gif
-
-anim 8250
- delay 7
- offset 431 49
- frame data/chars/Sasuke/591.gif
- offset 421 50
- frame data/chars/Sasuke/592.gif
- offset 446 48
- frame data/chars/Sasuke/593.gif
- offset 433 -132
- frame data/chars/Sasuke/594.gif
-
-anim 8230
- delay 7
- offset 100 222
- frame data/chars/Sasuke/595.gif
-
-anim freespecial1050
- delay 7
- offset 79 86
- frame data/chars/Sasuke/596.gif
- offset 81 111
- frame data/chars/Sasuke/597.gif
- offset 87 84
- frame data/chars/Sasuke/598.gif
- offset 76 87
- frame data/chars/Sasuke/599.gif
- offset 87 88
- frame data/chars/Sasuke/600.gif
- offset 79 86
- frame data/chars/Sasuke/601.gif
- offset 81 111
- frame data/chars/Sasuke/602.gif
- offset 87 84
- frame data/chars/Sasuke/603.gif
- offset 76 87
- frame data/chars/Sasuke/604.gif
- offset 87 88
- frame data/chars/Sasuke/605.gif
-
-anim 8250
- delay 7
- offset 404 51
- frame data/chars/Sasuke/606.gif
- offset 313 49
- frame data/chars/Sasuke/607.gif
- offset 373 51
- frame data/chars/Sasuke/608.gif
- offset 343 50
- frame data/chars/Sasuke/609.gif
- offset 359 51
- frame data/chars/Sasuke/610.gif
- offset 328 50
- frame data/chars/Sasuke/611.gif
- offset 284 50
- frame data/chars/Sasuke/612.gif
-
-anim 0950
- delay 7
- offset 136 332
- frame data/chars/Sasuke/613.gif
-
-anim 8230
- delay 7
- offset 101 236
- frame data/chars/Sasuke/614.gif
-
-anim 8250
- delay 7
- offset 266 52
- frame data/chars/Sasuke/615.gif
- offset 245 54
- frame data/chars/Sasuke/616.gif
-
-anim freespecial3051
- delay 7
- offset 214 272
- frame data/chars/Sasuke/617.gif
- offset 170 254
- frame data/chars/Sasuke/618.gif
-
-anim 8250
- delay 7
- offset 212 53
- frame data/chars/Sasuke/619.gif
- offset 237 54
- frame data/chars/Sasuke/620.gif
- offset 252 53
- frame data/chars/Sasuke/621.gif
- offset 195 50
- frame data/chars/Sasuke/622.gif
-
-anim attack322
- delay 7
- offset 54 115
- frame data/chars/Sasuke/623.gif
-
-anim 8250
- delay 7
- offset 226 54
- frame data/chars/Sasuke/624.gif
-
-anim 8230
- delay 7
- offset 96 232
- frame data/chars/Sasuke/625.gif
-
-anim 0950
- delay 7
- offset 146 336
- frame data/chars/Sasuke/626.gif
- offset 142 333
- frame data/chars/Sasuke/627.gif
- offset 183 365
- frame data/chars/Sasuke/628.gif
- offset 148 337
- frame data/chars/Sasuke/629.gif
- offset 158 341
- frame data/chars/Sasuke/630.gif
- offset 214 399
- frame data/chars/Sasuke/631.gif
- offset 233 391
- frame data/chars/Sasuke/632.gif
- offset 208 391
- frame data/chars/Sasuke/633.gif
-
-anim 8250
- delay 7
- offset 388 51
- frame data/chars/Sasuke/634.gif
-
-anim 0950
- delay 7
- offset 300 384
- frame data/chars/Sasuke/635.gif
- offset 300 400
- frame data/chars/Sasuke/636.gif
- offset 300 400
- frame data/chars/Sasuke/637.gif
- offset 300 290
- frame data/chars/Sasuke/638.gif
- offset 300 400
- frame data/chars/Sasuke/639.gif
- offset 300 382
- frame data/chars/Sasuke/640.gif
- offset 300 325
- frame data/chars/Sasuke/641.gif
- offset 105 294
- frame data/chars/Sasuke/642.gif
- offset 273 287
- frame data/chars/Sasuke/643.gif
- offset 293 384
- frame data/chars/Sasuke/644.gif
-
-anim 8230
- delay 7
- offset 105 217
- frame data/chars/Sasuke/645.gif
-
-anim 0950
- delay 7
- offset 300 354
- frame data/chars/Sasuke/646.gif
-
-anim 0161
- delay 7
- offset -11 87
- frame data/chars/Sasuke/647.gif
-
-anim 8230
- delay 7
- offset 106 224
- frame data/chars/Sasuke/648.gif
-
-anim 0950
- delay 7
- offset 300 288
- frame data/chars/Sasuke/649.gif
-
-anim 7053
- delay 7
- offset 0 -102
- frame data/chars/Sasuke/650.gif
-
-anim 8230
- delay 7
- offset 105 221
- frame data/chars/Sasuke/651.gif
- offset 106 219
- frame data/chars/Sasuke/652.gif
-
-anim attack322
- delay 7
- offset 48 96
- frame data/chars/Sasuke/653.gif
-
-anim 8230
- delay 7
- offset 100 196
- frame data/chars/Sasuke/654.gif
- offset 74 186
- frame data/chars/Sasuke/655.gif
-
-anim freespecial3051
- delay 7
- offset 226 269
- frame data/chars/Sasuke/656.gif
-
-anim 7053
- delay 7
- offset 0 -92
- frame data/chars/Sasuke/657.gif
-
-anim 0950
- delay 7
- offset 300 296
- frame data/chars/Sasuke/658.gif
- offset 147 338
- frame data/chars/Sasuke/659.gif
- offset 151 338
- frame data/chars/Sasuke/660.gif
-
-anim 8230
- delay 7
- offset 97 232
- frame data/chars/Sasuke/661.gif
- offset 101 234
- frame data/chars/Sasuke/662.gif
-
-anim 0950
- delay 7
- offset 137 332
- frame data/chars/Sasuke/663.gif
-
-anim 8230
- delay 7
- offset 98 233
- frame data/chars/Sasuke/664.gif
- offset 99 233
- frame data/chars/Sasuke/665.gif
-
-anim 8250
- delay 7
- offset 174 45
- frame data/chars/Sasuke/666.gif
-
-anim 8230
- delay 7
- offset 98 226
- frame data/chars/Sasuke/667.gif
-
-anim attack322
- delay 7
- offset 61 138
- frame data/chars/Sasuke/668.gif
-
-anim 8250
- delay 7
- offset 57 10
- frame data/chars/Sasuke/669.gif
-
-anim attack322
- delay 7
- offset 46 82
- frame data/chars/Sasuke/670.gif
-
-anim 8230
- delay 7
- offset 96 230
- frame data/chars/Sasuke/671.gif
-
-anim freespecial3051
- delay 7
- offset 199 265
- frame data/chars/Sasuke/672.gif
-
-anim 8230
- delay 7
- offset 101 234
- frame data/chars/Sasuke/673.gif
-
-anim freespecial3051
- delay 7
- offset 224 259
- frame data/chars/Sasuke/674.gif
-
-anim attack322
- delay 7
- offset 53 115
- frame data/chars/Sasuke/675.gif
-
-anim freespecial3051
- delay 7
- offset 221 268
- frame data/chars/Sasuke/676.gif
-
-anim 8230
- delay 7
- offset 105 217
- frame data/chars/Sasuke/677.gif
- offset 95 232
- frame data/chars/Sasuke/678.gif
-
-anim freespecial3051
- delay 7
- offset 228 268
- frame data/chars/Sasuke/679.gif
-
-anim 8230
- delay 7
- offset 90 231
- frame data/chars/Sasuke/680.gif
- offset 103 240
- frame data/chars/Sasuke/681.gif
-
-anim freespecial3051
- delay 7
- offset 227 267
- frame data/chars/Sasuke/682.gif
- offset 231 264
- frame data/chars/Sasuke/683.gif
-
-anim 8230
- delay 7
- offset 55 157
- frame data/chars/Sasuke/684.gif
- offset 94 222
- frame data/chars/Sasuke/685.gif
-
-anim freespecial3051
- delay 7
- offset 202 274
- frame data/chars/Sasuke/686.gif
-
-anim 7005
- delay 7
- offset 72 81
- frame data/chars/Sasuke/687.gif
- offset 88 98
- frame data/chars/Sasuke/688.gif
- offset 104 107
- frame data/chars/Sasuke/689.gif
- offset 108 114
- frame data/chars/Sasuke/690.gif
- offset 95 118
- frame data/chars/Sasuke/691.gif
-
-anim 8230
- delay 7
- offset 99 234
- frame data/chars/Sasuke/692.gif
- offset 76 191
- frame data/chars/Sasuke/693.gif
- offset 83 92
- frame data/chars/Sasuke/694.gif
- offset 97 228
- frame data/chars/Sasuke/695.gif
- offset 98 227
- frame data/chars/Sasuke/696.gif
-
-anim freespecial3051
- delay 7
- offset 228 266
- frame data/chars/Sasuke/697.gif
-
-anim 8250
- delay 7
- offset 91 20
- frame data/chars/Sasuke/698.gif
-
-anim 8230
- delay 7
- offset 39 128
- frame data/chars/Sasuke/699.gif
-
-anim freespecial3051
- delay 7
- offset 162 265
- frame data/chars/Sasuke/700.gif
- offset 198 270
- frame data/chars/Sasuke/701.gif
-
-anim 8230
- delay 7
- offset 97 226
- frame data/chars/Sasuke/702.gif
- offset 68 31
- frame data/chars/Sasuke/703.gif
-
-anim freespecial3051
- delay 7
- offset 232 274
- frame data/chars/Sasuke/704.gif
-
-anim 8250
- delay 7
- offset 122 29
- frame data/chars/Sasuke/705.gif
-
-anim freespecial3051
- delay 7
- offset 199 265
- frame data/chars/Sasuke/706.gif
- offset 196 264
- frame data/chars/Sasuke/707.gif
- offset 198 263
- frame data/chars/Sasuke/708.gif
-
-anim 9022
- delay 7
- offset 88 130
- frame data/chars/Sasuke/709.gif
- offset 93 218
- frame data/chars/Sasuke/710.gif
- offset 80 250
- frame data/chars/Sasuke/711.gif
- offset 63 249
- frame data/chars/Sasuke/712.gif
- offset 55 248
- frame data/chars/Sasuke/713.gif
- offset 58 242
- frame data/chars/Sasuke/714.gif
- offset 53 250
- frame data/chars/Sasuke/715.gif
- offset 62 259
- frame data/chars/Sasuke/716.gif
- offset 64 258
- frame data/chars/Sasuke/717.gif
- offset 66 258
- frame data/chars/Sasuke/718.gif
- offset 34 257
- frame data/chars/Sasuke/719.gif
- offset 21 258
- frame data/chars/Sasuke/720.gif
- offset 36 255
- frame data/chars/Sasuke/721.gif
- offset 36 250
- frame data/chars/Sasuke/722.gif
- offset 34 246
- frame data/chars/Sasuke/723.gif
- offset -92 226
- frame data/chars/Sasuke/724.gif
-
-anim 8230
- delay 7
- offset 89 226
- frame data/chars/Sasuke/725.gif
-
-anim attack322
- delay 7
- offset 41 52
- frame data/chars/Sasuke/726.gif
-
-anim freespecial3051
- delay 7
- offset 185 262
- frame data/chars/Sasuke/727.gif
- offset 199 265
- frame data/chars/Sasuke/728.gif
- offset 233 276
- frame data/chars/Sasuke/729.gif
-
-anim freespecial1063
- delay 7
- offset 10 6
- frame data/chars/Sasuke/730.gif
- offset 15 15
- frame data/chars/Sasuke/731.gif
- offset 22 17
- frame data/chars/Sasuke/732.gif
- offset 22 16
- frame data/chars/Sasuke/733.gif
- offset 22 16
- frame data/chars/Sasuke/734.gif
-
-anim 8230
- delay 7
- offset 88 224
- frame data/chars/Sasuke/735.gif
-
-anim freespecial3051
- delay 7
- offset 166 260
- frame data/chars/Sasuke/736.gif
- offset 130 217
- frame data/chars/Sasuke/737.gif
-
-anim 8230
- delay 7
- offset 90 232
- frame data/chars/Sasuke/738.gif
-
-anim freespecial3051
- delay 7
- offset 137 122
- frame data/chars/Sasuke/739.gif
- offset 154 230
- frame data/chars/Sasuke/740.gif
- offset 125 147
- frame data/chars/Sasuke/741.gif
-
-anim 0950
- delay 7
- offset 71 314
- frame data/chars/Sasuke/742.gif
-
-anim freespecial3051
- delay 7
- offset 138 113
- frame data/chars/Sasuke/743.gif
- offset 126 122
- frame data/chars/Sasuke/744.gif
- offset 88 96
- frame data/chars/Sasuke/745.gif
- offset 104 118
- frame data/chars/Sasuke/746.gif
- offset 114 121
- frame data/chars/Sasuke/747.gif
- offset 92 100
- frame data/chars/Sasuke/748.gif
-
-anim 8230
- delay 7
- offset 90 227
- frame data/chars/Sasuke/749.gif
-
-anim freespecial3051
- delay 7
- offset 186 260
- frame data/chars/Sasuke/750.gif
-
-anim 8230
- delay 7
- offset 103 235
- frame data/chars/Sasuke/751.gif
-
-anim 0950
- delay 7
- offset 55 287
- frame data/chars/Sasuke/752.gif
-
-anim freespecial3051
- delay 7
- offset 86 90
- frame data/chars/Sasuke/753.gif
- offset 86 90
- frame data/chars/Sasuke/754.gif
- offset 100 101
- frame data/chars/Sasuke/755.gif
-
-anim 0950
- delay 7
- offset 59 305
- frame data/chars/Sasuke/756.gif
- offset 106 319
- frame data/chars/Sasuke/757.gif
-
-anim 7007
- delay 7
- offset 80 57
- frame data/chars/Sasuke/758.gif
- offset 86 64
- frame data/chars/Sasuke/759.gif
- offset 76 56
- frame data/chars/Sasuke/760.gif
- offset 57 5
- frame data/chars/Sasuke/761.gif
+        loop    1
+        delay   7
+        offset  60 116
+        bbox    41 64 34 52
+        frame   data/chars/Sasuke/run00.gif
+        frame   data/chars/Sasuke/run01.gif
+        frame   data/chars/Sasuke/run02.gif
+        frame   data/chars/Sasuke/run03.gif
+        frame   data/chars/Sasuke/run04.gif
+        frame   data/chars/Sasuke/run05.gif
+
+
+anim get
+	loop	0
+	delay	10
+	offset	60 116
+	frame	data/chars/Sasuke/get00.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get02.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get00.gif
+
+
+anim duck
+	loop	0
+	delay	10
+	offset	60 116
+        bbox    41 99 31 17
+	frame	data/chars/Sasuke/get00.gif
+	frame	data/chars/Sasuke/get01.gif
+	frame	data/chars/Sasuke/get02.gif
+
+
+
+anim runattack
+	loop	0
+        delay   2  
+	offset	60 116
+        bbox    41 64 34 52
+        move    3
+        frame	data/chars/Sasuke/rush00.gif	
+        frame	data/chars/Sasuke/rush00.gif
+        frame	data/chars/Sasuke/rush00.gif
+        frame	data/chars/Sasuke/rush01.gif
+        frame	data/chars/Sasuke/rush01.gif
+        frame	data/chars/Sasuke/rush01.gif
+        blast   55 89 33 7 14 1             
+        frame	data/chars/Sasuke/rush02.gif
+        frame	data/chars/Sasuke/rush02.gif
+        frame	data/chars/Sasuke/rush02.gif
+        blast   0
+        move    0
+        delay   30
+        frame	data/chars/Sasuke/rush02.gif
+        delay   7
+        frame	data/chars/Sasuke/rush03.gif
+
+
+anim attack1
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+        sound   data/chars/Sasuke/ha.wav
+        frame	data/chars/Sasuke/jab00.gif
+        attack  52 79 42 11 8
+        frame	data/chars/Sasuke/jab01.gif
+        frame	data/chars/Sasuke/jab02.gif
+        frame	data/chars/Sasuke/upper00.gif
+
+
+anim attack2
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/kick00.gif
+        attack	32 79 52 31 14
+	frame	data/chars/Sasuke/kick01.gif
+        frame	data/chars/Sasuke/kick02.gif
+	frame	data/chars/Sasuke/kick03.gif
+
+
+
+anim attack3
+	loop	0
+        delay   7  
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/punch00.gif
+	frame	data/chars/Sasuke/punch01.gif
+        attack	57 82 42 9 18 1
+	frame	data/chars/Sasuke/punch02.gif
+	frame	data/chars/Sasuke/punch03.gif
+	frame	data/chars/Sasuke/punch04.gif
+
+        
+anim freespecial
+	loop	0
+	delay	7
+	offset	60 116
+        sound   data/chars/Sasuke/katon.wav
+        frame   data/chars/Sasuke/katon00.gif
+        burn    86 77 84 23 20 1 
+        frame   data/chars/Sasuke/katon01.gif
+        burn    86 71 150 35 20 1
+        frame   data/chars/Sasuke/katon02.gif
+        burn    86 53 187 58 20 1
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon03.gif
+        frame   data/chars/Sasuke/katon04.gif
+        frame   data/chars/Sasuke/katon05.gif
+        frame   data/chars/Sasuke/katon06.gif
+        burn    0
+        frame   data/chars/Sasuke/katon07.gif
+        delay   30
+        frame   data/chars/Sasuke/katon00.gif
+
+
+anim special
+	loop	0
+	delay	10
+	offset	60 116
+        frame   data/chars/Sasuke/chdri00.gif
+        frame   data/chars/Sasuke/chdri01.gif
+        frame   data/chars/Sasuke/chdri02.gif
+        frame   data/chars/Sasuke/chdri03.gif
+	delay	7
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri03.gif
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri03.gif
+        frame	data/chars/Sasuke/chdri04.gif
+        frame	data/chars/Sasuke/chdri05.gif
+        frame	data/chars/Sasuke/chdri06.gif
+        frame	data/chars/Sasuke/chdri07.gif
+        frame	data/chars/Sasuke/chdri08.gif
+        blast   37 82 52 41 30 1
+        frame	data/chars/Sasuke/chdri09.gif
+        frame	data/chars/Sasuke/chdri10.gif
+        frame	data/chars/Sasuke/chdri11.gif
+        frame	data/chars/Sasuke/chdri12.gif
+        frame	data/chars/Sasuke/chdri13.gif
+        frame	data/chars/Sasuke/chdri14.gif
+        blast   0
+        frame	data/chars/Sasuke/chdri15.gif
+        move    3
+        blast   9 82 66 35 30 1
+        frame	data/chars/Sasuke/chdri16.gif
+        frame	data/chars/Sasuke/chdri17.gif
+        delay   3
+        move    20
+        blast   31 69 79 37 30 1
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri18.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        move    3
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        frame	data/chars/Sasuke/chdri19.gif
+        delay   7
+        move    0
+        frame	data/chars/Sasuke/chdri20.gif
+        frame	data/chars/Sasuke/chdri21.gif
+        frame	data/chars/Sasuke/chdri22.gif
+        blast   0
+        delay   30
+        frame	data/chars/Sasuke/chdri23.gif
+
+
+
+
+anim jump
+	loop	0
+	offset	60 116
+	delay	20
+        bbox    49 68 26 29
+	frame	data/chars/Sasuke/jump00.gif
+	frame	data/chars/Sasuke/jump01.gif
+
+
+anim jumpattack
+	loop	0
+	offset	60 116
+	delay	10
+        bbox    49 68 26 29
+        sound   data/chars/Sasuke/ha2.wav
+	frame	data/chars/Sasuke/jatk00.gif
+        attack  40 80 48 26 14 1
+	frame	data/chars/Sasuke/jatk01.gif
+	frame	data/chars/Sasuke/jatk02.gif
+
+
+anim jumpattack2
+	loop	0
+	offset	60 116
+	delay	10
+        bbox    49 68 26 29
+        sound   data/chars/Sasuke/ha2.wav
+	frame	data/chars/Sasuke/jatk00.gif
+        attack  52 63 29 53 14 1
+	frame	data/chars/Sasuke/jatk01.gif
+	frame	data/chars/Sasuke/jatk02.gif
+
+
+
+anim grab
+	loop	0
+        offset  56 116
+	delay	1000
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/jab02.gif
+
+
+
+anim grabattack
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/kick00.gif
+        attack	32 79 52 31 14
+	frame	data/chars/Sasuke/kick01.gif
+        frame	data/chars/Sasuke/kick02.gif
+	frame	data/chars/Sasuke/kick03.gif
+
+
+anim grabattack2
+	loop	0
+        offset  56 116
+	delay	7
+        bbox    41 64 34 52
+	frame	data/chars/Sasuke/upper00.gif
+        frame	data/chars/Sasuke/upper01.gif
+        attack  55 65 38 35 14 1
+	frame	data/chars/Sasuke/upper02.gif
+	delay	30
+        frame	data/chars/Sasuke/upper03.gif
+	delay	7
+	frame	data/chars/Sasuke/upper00.gif
+
+
+anim throw
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Sasuke/throw00.gif
+        frame   data/chars/Sasuke/throw01.gif
+        delay   30
+        frame   data/chars/Sasuke/throw02.gif
+
+
+anim pain
+	loop	0
+        offset  60 116
+	delay	30
+        bbox    41 64 34 52
+        sound   data/chars/Sasuke/ugh.wav
+	frame   data/chars/Sasuke/pain.gif
+
+
+anim fall
+	loop	0
+        offset  60 110
+	delay	30
+        attack	47 69 18 34 4 1
+        sound   data/chars/Sasuke/ugh.wav
+	frame   data/chars/Sasuke/fall00.gif
+	delay	20        
+	frame   data/chars/Sasuke/fall01.gif
+
+
+
+anim rise
+	loop	0
+	offset	60 116
+	delay	10
+        frame   data/chars/Sasuke/get01.gif
+        frame   data/chars/Sasuke/rise.gif
+
+
+anim land
+	loop	0
+	delay	10
+	offset	60 116
+	frame	data/chars/Sasuke/get02.gif
+
+
+
+anim block
+        loop	0
+	delay	30
+	offset	60 116
+        bbox    48 54 19 63
+	frame	data/chars/Sasuke/block.gif
+
+
+anim burn
+	loop	1
+	offset	60 116	
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+
+

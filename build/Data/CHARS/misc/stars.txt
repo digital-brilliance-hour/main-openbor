@@ -1,0 +1,15 @@
+name	stars
+speed   300
+type 	none
+shadow	0
+load bom
+flash bom
+
+anim idle
+	loop	1
+	delay	5
+	offset	36 0
+        attack  0 0 34 61 60 1
+        movez   5
+	frame	data/chars/misc/star05.gif
+

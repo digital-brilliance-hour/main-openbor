@@ -1,0 +1,887 @@
+name	Seiya
+health	210
+mp	60
+mprate	0
+speed	12
+#running{speed}{height}{length}{move}{land}
+running	30 4 2 1 1
+type	player
+com	d f a freespecial
+com	b b a freespecial2
+#com	u d s freespecial3
+shadow	5
+icon	data/chars/seiya/iconnew.gif
+#iconpain	data/chars/seiya/iconp.gif
+#diesound data/voices/pegdie.wav
+parrow	data/chars/misc/parrow/p1.gif -48 -150
+parrow2	data/chars/misc/parrow/p2.gif -48 -150
+parrow3	data/chars/misc/parrow/p3.gif -48 -150
+parrow4	data/chars/misc/parrow/p4.gif -48 -150
+makeinv	4
+palette	data/chars/seiya/idle0.gif
+dust	dust
+noatflash	1
+flash	circflas
+bflash	block
+death	1
+nodieblink	2
+holdblock 1
+#grabturn	0
+#grabwalk	0 4
+
+weaploss	3
+atchain 1 1 2 3
+weapons	SeiyaII Seiya Seiya Seiya SeiyaII Seiya
+
+#fmap	1
+
+#remap	data/chars/seiya/walk0.gif data/chars/seiya/fmap.gif  
+
+
+knife	cometa
+
+
+
+
+
+anim spawn
+	loop	0
+	delay	6
+	offset	7 277
+	frame	data/chars/misc/spawn/spawn0.gif
+	offset	6 219
+	frame	data/chars/misc/spawn/spawn1.gif
+	offset	5 213
+	frame	data/chars/misc/spawn/spawn2.gif
+	offset	5 206
+	frame	data/chars/misc/spawn/spawn3.gif
+	offset	4 173
+	frame	data/chars/misc/spawn/spawn4.gif
+	offset	3 155
+	frame	data/chars/misc/spawn/spawn5.gif
+	offset	15 297
+	frame	data/chars/misc/spawn/spawn6.gif
+	offset	29 293
+	frame	data/chars/misc/spawn/spawn7.gif
+	offset	33 278
+	frame	data/chars/misc/spawn/spawn8.gif
+	offset	55 272
+	frame	data/chars/misc/spawn/spawn9.gif
+	offset	70 228
+	frame	data/chars/misc/spawn/spawn10.gif
+	offset	78 211
+	frame	data/chars/misc/spawn/spawn11.gif
+	offset	88 145
+	frame	data/chars/misc/spawn/spawn12.gif
+
+anim idle
+	loop	1
+	unsummonframe	0
+	delay	12
+	offset	62 141
+	bbox	53 52 30 88
+	frame	data/chars/seiya/idle0.gif
+	frame	data/chars/seiya/idle1.gif
+	frame	data/chars/seiya/idle2.gif
+	frame	data/chars/seiya/idle3.gif
+	frame	data/chars/seiya/idle4.gif
+	frame	data/chars/seiya/idle3.gif
+	frame	data/chars/seiya/idle2.gif
+	frame	data/chars/seiya/idle1.gif
+
+anim walk
+	loop	1
+	unsummonframe	0
+	delay	15
+	offset	68 126
+	bbox	53 27 26 98
+	frame	data/chars/seiya/walk0.gif
+	frame	data/chars/seiya/walk1.gif
+	frame	data/chars/seiya/walk2.gif
+	frame	data/chars/seiya/walk3.gif
+	frame	data/chars/seiya/walk4.gif
+	frame	data/chars/seiya/walk5.gif
+
+#anim grabwalk
+#	loop	1
+#	delay	8
+#	offset	68 126
+#	bbox	53 27 26 98
+#	frame	data/chars/seiya/walk0.gif
+#	frame	data/chars/seiya/walk1.gif
+#	frame	data/chars/seiya/walk2.gif
+#	frame	data/chars/seiya/walk3.gif
+#	frame	data/chars/seiya/walk4.gif
+#	frame	data/chars/seiya/walk5.gif
+
+anim run	
+	loop	1
+	delay	12
+	bbox	24 18 30 79
+	offset	36 104
+	frame	data/chars/seiya/run0.gif
+	offset	41 101
+	frame	data/chars/seiya/run1.gif
+	offset	64 89
+	frame	data/chars/seiya/run2.gif
+	offset	36 104
+	frame	data/chars/seiya/run0.gif
+	offset	41 98
+	frame	data/chars/seiya/run3.gif
+	offset	55 86
+	frame	data/chars/seiya/run4.gif
+
+anim runattack
+	loop	0
+	jumpframe	1 0 4 0
+	delay	5
+	bbox	18 68 116 38
+	attack	18 68 116 38 7 1 1
+	offset	66 97
+	frame	data/chars/seiya/runatt0.gif
+	delay	10
+	offset	81 100
+	frame	data/chars/seiya/runatt1.gif
+	offset	63 103	
+	frame	data/chars/seiya/runatt2.gif
+	attack	0 0 0 0 0 0 
+	offset	61 96
+	frame	data/chars/seiya/runatt3.gif
+
+anim get
+	loop	0
+	delay	18
+	offset	70 132
+	frame	data/chars/seiya/sel0.gif
+	offset	77 121
+	frame	data/chars/seiya/sel1.gif
+	frame	data/chars/seiya/sel2.gif
+
+#	loop	0
+#	delay	8
+#	bbox	54 28 29 70
+#	offset	43 103
+#	frame	data/chars/seiya/get0.gif
+#	offset	65 97
+#	frame	data/chars/seiya/get1.gif
+#	offset	43 103
+#	frame	data/chars/seiya/get0.gif
+
+anim jump
+	loop	0
+	delay	10
+	offset	43 149
+	bbox	33 51 21 42
+	frame	data/chars/seiya/ju0.gif
+	offset	29 128
+	frame	data/chars/seiya/ju1.gif
+	offset	34 111
+	frame	data/chars/seiya/ju2.gif
+	offset	36 103
+	frame	data/chars/seiya/ju3.gif
+	offset	43 100
+	frame	data/chars/seiya/ju4.gif
+	offset	40 128
+	frame	data/chars/seiya/ju5.gif
+	offset	43 128
+	frame	data/chars/seiya/ju7.gif
+	offset	67 128
+	frame	data/chars/seiya/ju14.gif
+	offset	28 140
+	frame	data/chars/seiya/ju8.gif
+
+anim jumpattack
+	loop	0
+	delay	1
+	offset	58 111
+	bbox	46 47 21 50
+	attack	68 69 18 27 20 1
+	frame	data/chars/seiya/cav00.gif
+	attack	52 46 63 29 20 1
+	bbox	14 43 14 64
+	frame	data/chars/seiya/cav01.gif
+
+anim jumpattack2
+	loop	0
+	delay	10
+	offset	84 115
+	bbox	64 80 21 20
+	frame	data/chars/seiya/cv0.gif
+	offset	77 108
+	attack	79 63 37 46 25 1
+	bbox	57 83 20 13
+	frame	data/chars/seiya/cv1.gif
+	offset	70 109
+	attack	58 42 70 66 25 1
+	frame	data/chars/seiya/cv2.gif
+	offset	77 108
+	attack	79 63 37 46 10 1
+	bbox	57 83 20 13
+	frame	data/chars/seiya/cv1.gif
+	offset	84 115
+	bbox	64 80 21 20
+	attack	0 0 0 0 0 0
+	frame	data/chars/seiya/cv0.gif
+
+anim attack1
+	loop	0
+	delay	3
+	offset	50 135
+	bbox	28 28 28 100
+	frame	data/chars/seiya/destro1.gif
+	attack	84 45 46 16 8 0 0
+	offset	50 134
+	frame	data/chars/seiya/destro2.gif
+	attack	0 0 0 0 0 0 0
+	frame	data/chars/seiya/destro3.gif
+	delay	2
+	frame	data/chars/seiya/destro3.gif
+
+anim attack2
+	loop	0
+	delay	4
+	offset	49 118
+	bbox	39 26 18 40
+	frame	data/chars/seiya/sx0.gif
+	offset	53 117
+	frame	data/chars/seiya/sx1.gif
+	offset	49 118
+	frame	data/chars/seiya/sx2.gif
+	offset	48 118
+	frame	data/chars/seiya/sx3.gif
+	offset	45 117
+	frame	data/chars/seiya/sx4.gif
+	attack	73 10 43 20 15 0
+	offset	22 96
+	frame	data/chars/seiya/sx5.gif
+	attack	0 0 0 0 0 0
+	offset	45 117
+	frame	data/chars/seiya/sx4.gif
+	offset	48 118
+	frame	data/chars/seiya/sx3.gif
+	offset	49 118
+	frame	data/chars/seiya/sx2.gif	
+
+anim attack3
+	loop	0
+	delay	8
+	offset	62 144
+	bbox	34 34 26 110
+	frame	data/chars/seiya/gra0.gif
+	frame	data/chars/seiya/gra1.gif
+	frame	data/chars/seiya/gra2.gif
+	attack	70 37 57 101 20 1 1
+	frame	data/chars/seiya/gra3.gif
+	attack	0 0 0 0 0 0
+	delay	5
+	frame	data/chars/seiya/gra4.gif
+	frame	data/chars/seiya/gra2.gif
+	frame	data/chars/seiya/gra1.gif
+	frame	data/chars/seiya/gra0.gif
+
+anim dodge
+	loop 	0
+	delay	8
+	sound	data/sounds/dodge.wav
+	offset	18 115
+	frame	data/chars/seiya/dodge.gif	
+	delay	10
+	frame	data/chars/seiya/empty.gif
+	delay	8
+	frame	data/chars/seiya/dodge.gif	
+
+anim pain
+	loop	0
+	unsummonframe	0
+	bbox	24 34 27 35
+	delay	15
+	offset	33 108
+	frame	data/chars/seiya/p0.gif
+	offset	37 106
+	frame	data/chars/seiya/p1.gif
+
+anim pain2
+	loop	0
+	unsummonframe	0
+	delay	8
+	move	-2
+	offset	54 144
+	frame	data/chars/seiya/urlo0.gif
+	offset	55 140
+	frame	data/chars/seiya/urlo1.gif
+	offset	56 140
+	frame	data/chars/seiya/urlo2.gif
+	offset	54 128
+	frame	data/chars/seiya/urlo3.gif
+	move	0
+	offset	56 140
+	frame	data/chars/seiya/urlo2.gif
+	offset	55 140
+	frame	data/chars/seiya/urlo1.gif
+
+anim pain3
+	loop	0
+	unsummonframe	0
+	sound	data/voices/pegcollo1.wav
+	delay	15
+	bbox	0 0 56 132
+	offset	27 25
+	seta	100
+	frame	data/chars/seiya/piler.gif
+	offset	27 25
+	seta	130
+	delay	240
+	frame	data/chars/seiya/piler.gif
+
+anim pain4
+	loop	0
+	unsummonframe	0
+	delay	100
+	bbox	6 70 133 25
+	offset	71 93
+	frame	data/chars/seiya/fa6.gif
+
+anim pain5
+	loop	0
+	spawnframe	6 0 0 0 0
+	subentity	groundup
+	jumpframe 6 2
+	sound	data/voices/pegcollo1.wav
+	delay	19
+	offset	44 89
+	frame	data/chars/seiya/sprof0.gif
+	offset	44 56
+	frame	data/chars/seiya/sprof1.gif
+	offset	44 33
+	frame	data/chars/seiya/sprof2.gif
+	offset	44 33
+	delay	100
+	frame	data/chars/seiya/empty.gif
+	delay	10
+	offset	25 17
+	frame	data/chars/Dannato/at0.gif
+	offset	27 17
+	frame	data/chars/Dannato/at1.gif
+	offset	40 128
+	frame	data/chars/seiya/ju5.gif
+	offset	43 128
+	frame	data/chars/seiya/ju7.gif
+	offset	67 128
+	frame	data/chars/seiya/ju14.gif
+	offset	28 140
+	frame	data/chars/seiya/ju8.gif
+#	offset	44 33
+#	frame	data/chars/seiya/sprof2.gif
+#	offset	44 56
+#	frame	data/chars/seiya/sprof1.gif
+#	offset	44 89
+#	frame	data/chars/seiya/sprof0.gif
+
+anim pain8
+	loop	0
+	unsummonframe	0
+	delay	250
+	offset	68 126
+	bbox	53 27 26 98
+	frame	data/chars/seiya/fmap.gif
+	
+anim fall
+	loop	0
+	unsummonframe	0
+	sound	data/voices/peghurt.wav
+	offset	56 104
+	delay	15
+	attack	11 12 38 96 6 1
+	frame	data/chars/seiya/fa3.gif
+	offset	69 85
+	attack	11 29 47 60 4 1
+	frame	data/chars/seiya/fa1.gif
+	attack	11 29 47 60 4 1
+	offset	67 75
+	frame	data/chars/seiya/fa8.gif
+	offset	69 85
+	frame	data/chars/seiya/fa1.gif
+	offset	71 93
+	frame	data/chars/seiya/fa6.gif
+
+anim fall6
+	loop	0
+	unsummonframe	0
+	seta	2
+	jumpframe 1 0 -15 0
+	delay	2
+	bbox	66 40 22 39
+	attack	51 27 44 95 20 1 1
+	offset	59 56
+	frame	data/chars/seiya/fa1r.gif
+	offset	47 56
+	frame	data/chars/seiya/fa8r.gif
+	delay	40
+	frame	data/chars/seiya/fa8r.gif
+	delay	10
+	offset	59 56
+	frame	data/chars/seiya/fa1r.gif
+	offset	21 52
+	frame	data/chars/seiya/fa1rr.gif
+	offset	59 103
+	delay	30
+	frame	data/chars/seiya/fa1rrr.gif
+	attack	 0 0 0 0 0 0
+	offset	71 93
+	frame	data/chars/seiya/fa6.gif
+	
+
+anim rise
+	loop	0
+	offset	61 116
+	delay	15
+	frame	data/chars/seiya/rise0.gif
+	frame	data/chars/seiya/rise1.gif
+	frame	data/chars/seiya/rise2.gif
+	frame	data/chars/seiya/rise3.gif
+	frame	data/chars/seiya/rise4.gif
+
+anim grab
+	loop	0
+	delay	30
+	offset	49 119
+	bbox	27 9 36 113
+	frame	data/chars/seiya/grab.gif
+
+#anim grabturn
+#	loop	0
+#	bbox	33 44 81 180
+#	offset	98 220
+#	delay	10
+#	frame	data/chars/seiya/2.gif
+#	offset	93 220
+#	frame	data/chars/seiya/3.gif
+#	offset	41 220
+#	frame	data/chars/seiya/2r.gif
+#	offset	41 200
+#	frame	data/chars/seiya/1r.gif
+
+anim vault
+	loop	0
+	bbox	78 75 32 64
+	offset	97 143
+	delay	9
+	frame	data/chars/seiya/2.gif
+	bbox	92 62 16 61
+	offset	97 144
+	frame	data/chars/seiya/3.gif
+	bbox	47 82 26 40
+	offset	52 143
+	frame	data/chars/seiya/2r.gif
+	bbox	55 77 28 30
+	offset	51 144
+	frame	data/chars/seiya/1r.gif
+
+anim grabattack
+	loop	0
+	delay	6
+	offset	72 147
+#	bbox	64 74 39 73
+	frame	data/chars/seiya/1.gif
+	offset	88 145
+	frame	data/chars/seiya/2.gif
+	offset	99 145
+	frame	data/chars/seiya/3.gif
+	offset	77 145
+	blast	60 11 79 106 20 1
+	frame	data/chars/seiya/4.gif
+	offset	76 145
+	delay	30
+	frame	data/chars/seiya/5.gif
+	delay	6
+	offset	71 147
+	frame	data/chars/seiya/6.gif
+	offset	66 146
+	blast	0 0 0 0 0 0
+	frame	data/chars/seiya/7.gif
+
+anim grabdown
+	loop	0
+	delay	20
+	followanim	1
+	followcond	2
+	hitflash	dust
+	jumpframe 2 8 0 0
+	sound	data/voices/pegspir.wav
+	offset	45 103
+	frame	data/chars/seiya/get0.gif
+	delay	10
+	offset	42 143
+	frame	data/chars/seiya/gra0.gif
+	attack4	41 35 50 109 0 0 1
+	frame	data/chars/seiya/gra0.gif
+
+anim follow1
+	loop	0
+	hitflash	dust
+	delay	120
+	offset	62 143
+	frame	data/chars/seiya/gra0.gif
+	delay	50
+	offset	27 140
+	frame	data/chars/seiya/pile.gif
+	delay	10
+	attack	-20 106 76 27 50 1 1
+	offset	27 130
+	frame	data/chars/seiya/pile.gif
+	offset	92 143
+	frame	data/chars/seiya/land1.gif
+	offset	81 144
+	frame	data/chars/seiya/land2.gif
+	offset	78 144
+	frame	data/chars/seiya/land3.gif	
+
+# Escape move
+anim special
+	fastattack 1
+	loop	0
+	delay	15
+	energycost	20
+	offset	64 136
+	blast	12 28 136 118 2 1 1
+	sound	data/voices/pegforz.wav
+	frame	data/chars/seiya/armor11.gif
+	offset	64 119
+	frame	data/chars/seiya/armor10.gif
+	offset	64 138
+	frame	data/chars/seiya/armor11.gif
+	blast	0 0 0 0 0 0
+	offset	66 126
+	frame	data/chars/seiya/armor12.gif
+	offset	67 130
+	delay	13
+	blast	0 0 150 151 4 1 1
+	frame	data/chars/Seiya/armorT.gif
+	offset	67 130
+	frame	data/chars/Seiya/armorS.gif
+	offset	67 130
+	frame	data/chars/Seiya/armorR.gif
+	frame	data/chars/Seiya/armorQ.gif
+	offset	67 130
+	frame	data/chars/Seiya/armorP.gif
+	frame	data/chars/Seiya/armorO.gif
+	frame	data/chars/Seiya/armorN.gif
+	offset	76 126
+	frame	data/chars/Seiya/armorM.gif
+	delay	8
+	frame	data/chars/Seiya/armor3.gif
+	offset	72 122
+	frame	data/chars/Seiya/armorM.gif
+	frame	data/chars/Seiya/armor2.gif
+#	offset	72 122
+#	frame	data/chars/Seiya/armorM.gif
+#	frame	data/chars/Seiya/armor3.gif
+#	offset	72 122
+#	frame	data/chars/Seiya/armorM.gif
+#	frame	data/chars/Seiya/armor2.gif
+#	offset	72 122
+#	frame	data/chars/Seiya/armorM.gif
+#	frame	data/chars/Seiya/armor2.gif
+#	offset	72 122
+	frame	data/chars/Seiya/armorM.gif
+	blast	0 0 0 0 0 0
+	frame	data/chars/Seiya/armor3.gif
+	offset	59 142
+	blast	10 31 121 24 20 1 1
+	delay	30
+	frame	data/chars/Seiya/armor20.gif
+	offset	58 139
+	delay	9
+	frame	data/chars/Seiya/armor21.gif
+	offset	53 137
+	frame	data/chars/Seiya/armor22.gif
+	offset	53 137
+	frame	data/chars/Seiya/armor23.gif
+	offset	53 137
+	blast	0 0 0 0 0 0
+	delay	25
+	frame	data/chars/Seiya/armor24.gif
+	delay	4
+	offset	39 140
+	blast	0 0 640 148 90 1 1
+	frame	data/chars/Seiya/armor25M.gif
+	blast	0 0 0 0 0 0
+	offset	39 140
+	frame	data/chars/Seiya/armor26M.gif
+	blast	0 0 640 148 90 1 1
+	frame	data/chars/Seiya/armor27.gif
+	blast	0 0 0 0 0 0
+	offset	39 140
+	frame	data/chars/Seiya/armor28M.gif
+	blast	0 0 0 0 0 0
+	offset	39 140
+	frame	data/chars/Seiya/armor29M.gif
+	blast	0 0 640 148 90 1 1
+	offset	39 140
+	frame	data/chars/Seiya/armor30M.gif
+	offset	39 140
+	frame	data/chars/Seiya/armor31M.gif
+	offset	40 140
+	blast	0 0 0 0 0 0 0
+	frame	data/chars/Seiya/armor32.gif
+	
+# FFP special.
+anim freespecial
+#	fastattack 1
+	summonframe	2 3 0 0 0
+	subentity	fulmine
+ 	loop	0
+ 	delay	8
+	energycost	10
+	bbox	41 49 27 40
+	offset	42 128
+	attack	26 23 73 69 22 0 
+	sound	data/voices/pegfulm.wav
+#	sound 	data/voices/peggiap.wav
+	frame	data/chars/seiya/f7.gif
+	offset	55 126
+	frame	data/chars/seiya/f6.gif
+	offset	52 112
+	frame	data/chars/seiya/f11.gif
+	offset	32 117
+	frame	data/chars/seiya/f10.gif
+	offset	41 112
+	frame	data/chars/seiya/f9.gif
+	offset	45 123
+	frame	data/chars/seiya/f8.gif
+	attack	26 23 73 69 22 0 
+	offset	55 129
+	frame	data/chars/seiya/f18.gif
+	offset	55 121
+	frame	data/chars/seiya/f13.gif
+	offset	61 129
+	frame	data/chars/seiya/f14.gif
+	offset	60 123
+	frame	data/chars/seiya/f15.gif
+	offset	48 119
+	frame	data/chars/seiya/f16.gif
+	attack2	26 23 73 69 70 0 
+	offset	51 129
+	frame	data/chars/seiya/f17.gif
+	offset	65 134
+	attack2	0 0 0 0 0 0 
+	frame	data/chars/seiya/f3.gif
+	delay	5
+	bbox	45 81 21 26
+	attack2	80 46 69 41 70 1 1
+	move	20
+	offset	56 130
+ 	frame	data/chars/seiya/f20.gif
+	attack2	80 46 69 41 70 1 1
+	frame	data/chars/seiya/f21.gif
+	attack2	0 0 0 0 0 0 
+	frame	data/chars/seiya/f22.gif
+	attack2	80 46 69 41 70 1 1
+	frame	data/chars/seiya/f23.gif
+	attack2	0 0 0 0 0 0 
+	frame	data/chars/seiya/f20.gif
+	attack2	80 46 69 41 70 1 1
+	frame	data/chars/seiya/f21.gif
+	attack2	0 0 0 0 0 0 
+	frame	data/chars/seiya/f22.gif
+	frame	data/chars/seiya/f23.gif
+
+anim freespecial2
+	loop	0
+	sound	data/voices/pegcomet.wav
+	delay	7
+	energycost	5
+	bbox	46 36 34 93
+	throwframe	1 90
+	offset	70 138
+	frame	data/chars/seiya/2spec5.gif
+	frame	data/chars/seiya/2spec6.gif
+	frame	data/chars/seiya/2spec7.gif
+	frame	data/chars/seiya/2spec8.gif
+	frame	data/chars/seiya/2spec9.gif
+	frame	data/chars/seiya/2spec10.gif
+
+#non buono: consentirebbe di attaccare anche enemies
+#non grabbabili, richiedendo il pain#
+#anim freespecial3
+#	loop	0
+#	delay	30
+#	followanim	1
+#	followcond	3
+#	hitflash	dust
+#	offset	45 103
+#	attack4	41 35 50 109 1 0 1
+#	frame	data/chars/seiya/get0.gif
+
+
+#anim follow1
+#	loop	0
+#	jumpframe 0 8
+#	hitflash	dust
+#	sound	data/voices/pegspir.wav
+#	delay	120
+#	offset	62 144
+#	frame	data/chars/seiya/gra0.gif
+#	delay	50
+#	offset	27 140
+#	frame	data/chars/seiya/pile.gif
+#	delay	10
+#	attack	-20 106 76 27 20 1 1
+#	offset	27 130
+#	frame	data/chars/seiya/pile.gif
+#	offset	92 143
+#	frame	data/chars/seiya/land1.gif
+#	offset	81 144
+#	frame	data/chars/seiya/land2.gif
+#	offset	78 144
+#	frame	data/chars/seiya/land3.gif
+
+anim attackbackward
+	loop	0
+	delay	3
+	energycost	0
+	offset	30 108
+	move	-20
+	attack	5 2 49 109 10 0 
+	frame	data/chars/seiya/bb0.gif
+	frame	data/chars/seiya/bb1.gif
+	frame	data/chars/seiya/bb0.gif
+	frame	data/chars/seiya/bb1.gif
+
+anim throw
+	loop	0
+	delay	17
+	offset	49 119
+	frame	data/chars/seiya/throw1.gif
+	offset	91 140
+	frame	data/chars/seiya/throw2.gif
+	offset	49 119
+	frame	data/chars/seiya/throw1.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	98 145
+	bbox	90 72 19 29
+	frame	data/chars/seiya/land0.gif
+	offset	92 143
+	frame	data/chars/seiya/land1.gif
+	offset	81 144
+	frame	data/chars/seiya/land2.gif
+	offset	78 144
+	frame	data/chars/seiya/land3.gif
+	offset	69 144
+	frame	data/chars/seiya/land4.gif
+
+anim riseattack
+	loop	0 
+	delay	8
+	offset	66 146
+	frame	data/chars/seiya/7.gif
+	offset	64 119
+	frame	data/chars/seiya/armor10.gif
+	offset	64 136
+	frame	data/chars/seiya/armor11.gif
+	delay	30
+	attack	12 28 136 118 2 1 1
+	offset	66 126
+	frame	data/chars/seiya/armor12.gif
+	delay	8
+	attack	0 0 0 0 0 0 
+	offset	64 136
+	frame	data/chars/seiya/armor11.gif
+
+anim block
+	loop	0
+	bbox	 48 32 25 44
+	offset	60 134
+	delay	8
+	frame	data/chars/seiya/pain11.gif
+	delay	36
+	frame	data/chars/seiya/pain09.gif
+	frame	data/chars/seiya/pain10.gif
+
+
+anim runjumpattack
+	dive 2 2
+	loop	0
+	delay	7
+	sound	data/voices/pegyai.wav
+#	bbox	61 54 13 29
+	offset	66 142
+	frame	data/chars/seiya/rj0.gif
+	offset	72 132
+	blast	24 56 61 43 5 1
+	frame	data/chars/seiya/rj1.gif
+	offset	84 141
+	frame	data/chars/seiya/rj2.gif
+	offset	224 259
+#	bbox	183 157 31 43
+	blast	221 179 54 61 10 1
+	frame	data/chars/seiya/r0.gif
+	offset	215 259
+	blast	216 174 53 68 10 1
+	frame	data/chars/seiya/r1.gif
+	offset	188 242
+#	bbox	163 145 17 32
+	blast	188 144 51 77 10 1
+	frame	data/chars/seiya/r2.gif
+	offset	193 257
+#	bbox	168 168 21 26
+	blast	198 174 47 66 10 1
+	frame	data/chars/seiya/r3.gif
+	offset	182 210
+#	bbox	156 118 19 34
+	blast	184 121 48 70 10 1
+	frame	data/chars/seiya/r4.gif
+
+anim burn
+	loop	1
+	delay	4
+	offset	41 60
+	burn	16 22 101 68 20 1 1
+	frame	data/chars/misc/burn/burn0.gif
+	offset	41 68
+	frame	data/chars/misc/burn/burn1.gif
+
+#anim duck
+#	loop	0
+#	delay	8
+#	bbox	54 28 29 70
+#	offset	43 103
+#	frame	data/chars/Pegasus/get1.gif
+#	offset	65 97
+#	frame	data/chars/Pegasus/get0.gif
+
+anim death
+	loop	0
+	unsummonframe	0
+	sound data/voices/pegdie.wav
+	seta	180
+	movez	100
+	delay	5
+	offset	200 200
+	frame	data/chars/misc/bd/7.gif
+	frame	data/chars/misc/bd/6.gif
+	frame	data/chars/misc/bd/5.gif
+	frame	data/chars/misc/bd/4.gif
+	frame	data/chars/misc/bd/3.gif
+	frame	data/chars/misc/bd/2.gif
+	frame	data/chars/misc/bd/1.gif
+	delay	100
+	frame	data/chars/misc/bd/0.gif
+
+anim death5
+	loop	0
+	unsummonframe	0
+	sound data/voices/pegdie.wav
+	delay	19
+	offset	44 89
+	frame	data/chars/seiya/sprof0.gif
+	offset	44 56
+	frame	data/chars/seiya/sprof1.gif
+	offset	44 33
+	frame	data/chars/seiya/sprof2.gif
+	frame	data/chars/seiya/empty.gif
+
+

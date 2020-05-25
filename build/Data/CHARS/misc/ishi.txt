@@ -1,0 +1,28 @@
+name	Ishi
+health	50
+type	obstacle
+shadow	0
+icon	data/chars/misc/ishicon.gif
+diesound data/sounds/break.wav
+remove 1
+
+anim idle
+	delay	100
+	offset	21 47
+	bbox	0 0 42 48
+	platform 21 47 -20 -20 20 20 42 15
+	frame	data/chars/misc/ishi.gif
+
+anim pain
+	delay	10
+	offset	21 47
+        sound data/sounds/break.wav
+	frame	data/chars/misc/ishi02.gif
+	frame	data/chars/misc/ishi03.gif
+
+anim fall
+	delay	10
+	offset	21 47
+	frame	data/chars/misc/ishi4.gif
+	frame	data/chars/misc/ishi5.gif
+	frame	data/chars/misc/ishi6.gif

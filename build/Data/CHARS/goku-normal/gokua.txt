@@ -5,7 +5,7 @@ speed	10
 type	npc
 shadow	2
 aironly 1
-icon	data/chars/Goku/icon.gif
+icon	data/chars/Goku-normal/icon.gif
 subtype follow
 holdblock 1
 riseinv 2 0
@@ -19,36 +19,36 @@ anim spawn
 	delay	7
 	offset	46 86
 	bbox	36 46 17 21
-        sound   data/chars/goku/ki.wav	
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
+        sound   data/chars/Goku-normal/ki.wav	
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
 
 anim idle
 	loop	1
 	delay	15
 	offset	43 78
 	bbox	36 46 17 21
-	frame	data/chars/Goku/stand01.GIF
-	frame	data/chars/Goku/stand02.GIF
-	frame	data/chars/Goku/stand03.GIF
-	frame	data/chars/Goku/stand04.GIF
+	frame	data/chars/Goku-normal/stand01.GIF
+	frame	data/chars/Goku-normal/stand02.GIF
+	frame	data/chars/Goku-normal/stand03.GIF
+	frame	data/chars/Goku-normal/stand04.GIF
 
 anim charge
 	loop	1
 	delay	7
 	offset	60 86
 	bbox	36 46 17 21
-        sound   data/chars/goku/ki.wav	
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
+        sound   data/chars/Goku-normal/ki.wav	
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
 
 
 anim chargeattack
@@ -56,11 +56,11 @@ anim chargeattack
 	delay	7
 	offset	46 86
 	bbox	36 46 17 21
-        sound   data/chars/goku/ki.wav	
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
+        sound   data/chars/Goku-normal/ki.wav	
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
 
 anim jump
 	loop	0
@@ -68,10 +68,10 @@ anim jump
 	offset	43 78
 	bbox	36 46 17 21
 
-	frame	data/chars/Goku/jump01.GIF
-	frame	data/chars/Goku/jump02.GIF
-	frame	data/chars/Goku/jump02.GIF
-	frame	data/chars/Goku/jump01.GIF
+	frame	data/chars/Goku-normal/jump01.GIF
+	frame	data/chars/Goku-normal/jump02.GIF
+	frame	data/chars/Goku-normal/jump02.GIF
+	frame	data/chars/Goku-normal/jump01.GIF
 
 anim jumpattack
 	loop	0
@@ -79,22 +79,22 @@ anim jumpattack
 	offset	43 78
 	bbox	36 46 17 21
         movea   -10
-        sound   data/chars/goku/kame.wav
-	frame	data/chars/Goku/jatk01.GIF
+        sound   data/chars/Goku-normal/kame.wav
+	frame	data/chars/Goku-normal/jatk01.GIF
         blast	40 46 35 32 50
-        sound   data/chars/goku/ha.wav
-	frame	data/chars/Goku/jatk02.GIF
+        sound   data/chars/Goku-normal/ha.wav
+	frame	data/chars/Goku-normal/jatk02.GIF
         blast	40 46 35 32 50
-	frame	data/chars/Goku/jatk03.GIF
+	frame	data/chars/Goku-normal/jatk03.GIF
         blast	40 46 35 32 50
-	frame	data/chars/Goku/jatk04.GIF
+	frame	data/chars/Goku-normal/jatk04.GIF
         blast	40 46 35 32 50
-	frame	data/chars/Goku/jatk02.GIF
+	frame	data/chars/Goku-normal/jatk02.GIF
         blast	40 46 35 32 50
-	frame	data/chars/Goku/jatk03.GIF
+	frame	data/chars/Goku-normal/jatk03.GIF
         blast	40 46 35 32 50
         movea   0
-	frame	data/chars/Goku/jatk04.GIF
+	frame	data/chars/Goku-normal/jatk04.GIF
 
 anim walk
 
@@ -103,12 +103,12 @@ anim walk
 	offset	43 78
 	bbox	43 39 15 24
 	
-	frame	data/chars/Goku/walk01.gif
-	frame	data/chars/Goku/walk02.gif
-	frame	data/chars/Goku/walk03.gif
-	frame	data/chars/Goku/walk04.gif
-	frame	data/chars/Goku/walk05.gif
-	frame	data/chars/Goku/walk06.gif
+	frame	data/chars/Goku-normal/walk01.gif
+	frame	data/chars/Goku-normal/walk02.gif
+	frame	data/chars/Goku-normal/walk03.gif
+	frame	data/chars/Goku-normal/walk04.gif
+	frame	data/chars/Goku-normal/walk05.gif
+	frame	data/chars/Goku-normal/walk06.gif
 
 anim run
 	loop	1
@@ -116,73 +116,73 @@ anim run
 	offset	43 78
 	bbox	36 46 13 20
         running 30 4 3 1 1	
-	frame	data/chars/Goku/run01.gif
-	frame	data/chars/Goku/run02.gif
-	frame	data/chars/Goku/run03.gif
-	frame	data/chars/Goku/run04.gif
+	frame	data/chars/Goku-normal/run01.gif
+	frame	data/chars/Goku-normal/run02.gif
+	frame	data/chars/Goku-normal/run03.gif
+	frame	data/chars/Goku-normal/run04.gif
 
 anim attack1
 	loop	0
 	delay	5
 	bbox	36 46 17 21
 	offset	43 78
-        sound   data/chars/Goku/punch.wav
-	frame	data/chars/Goku/punch01.gif
-        frame	data/chars/Goku/punch02.gif
-	frame	data/chars/Goku/punch03.gif
+        sound   data/chars/Goku-normal/punch.wav
+	frame	data/chars/Goku-normal/punch01.gif
+        frame	data/chars/Goku-normal/punch02.gif
+	frame	data/chars/Goku-normal/punch03.gif
         attack	64 48 24 9 10
-	frame	data/chars/Goku/punch04.gif
+	frame	data/chars/Goku-normal/punch04.gif
         attack	64 48 24 9 10
-        frame	data/chars/Goku/punch05.gif
+        frame	data/chars/Goku-normal/punch05.gif
 
 anim attack2
 	loop	0
 	offset	43 78
 	bbox	36 46 17 21
 	delay	7
-        sound   data/chars/Goku/kick.wav
-	frame	data/chars/Goku/kick01.gif
-        frame	data/chars/Goku/kick02.gif
-	frame	data/chars/Goku/kick03.gif
+        sound   data/chars/Goku-normal/kick.wav
+	frame	data/chars/Goku-normal/kick01.gif
+        frame	data/chars/Goku-normal/kick02.gif
+	frame	data/chars/Goku-normal/kick03.gif
         attack	64 48 24 9 30
-	frame	data/chars/Goku/kick04.gif
+	frame	data/chars/Goku-normal/kick04.gif
         attack	64 48 24 9 30
-        frame	data/chars/Goku/kick05.gif
+        frame	data/chars/Goku-normal/kick05.gif
         attack	64 48 24 9 30
-	frame	data/chars/Goku/kick06.gif
+	frame	data/chars/Goku-normal/kick06.gif
         attack	64 48 24 9 30
-        frame	data/chars/Goku/kick07.gif
+        frame	data/chars/Goku-normal/kick07.gif
         attack	64 48 24 9 30
-	frame	data/chars/Goku/kick08.gif
-	frame	data/chars/Goku/kick02.gif
-        frame	data/chars/Goku/kick01.gif
+	frame	data/chars/Goku-normal/kick08.gif
+	frame	data/chars/Goku-normal/kick02.gif
+        frame	data/chars/Goku-normal/kick01.gif
 
 anim attack3
 	loop	0
 	offset	43 78
 	bbox	36 46 17 21
 	delay	7
-        sound   data/chars/Goku/kick.wav
-	frame	data/chars/Goku/keri01.gif
-        frame	data/chars/Goku/keri02.gif
-	frame	data/chars/Goku/keri03.gif
+        sound   data/chars/Goku-normal/kick.wav
+	frame	data/chars/Goku-normal/keri01.gif
+        frame	data/chars/Goku-normal/keri02.gif
+	frame	data/chars/Goku-normal/keri03.gif
         blast	45 7 37 73 50
-	frame	data/chars/Goku/keri04.gif
+	frame	data/chars/Goku-normal/keri04.gif
         blast	45 7 37 73 50
-        frame	data/chars/Goku/keri05.gif
+        frame	data/chars/Goku-normal/keri05.gif
         blast	45 7 37 73 50
-	frame	data/chars/Goku/jump01.gif
+	frame	data/chars/Goku-normal/jump01.gif
 
 anim runattack
 	loop	0
 	delay	7
 	offset	43 78
         move    20
-        sound   data/chars/Goku/dash.wav
+        sound   data/chars/Goku-normal/dash.wav
         blast	51 35 28 40 30
-	frame	data/chars/Goku/dash01.gif
+	frame	data/chars/Goku-normal/dash01.gif
         blast	51 35 28 40 30
-        frame	data/chars/Goku/dash02.gif
+        frame	data/chars/Goku-normal/dash02.gif
 
 anim freespecial
         mponly  1
@@ -192,45 +192,45 @@ anim freespecial
 	delay	7
         range   0 200
 	quakeframe 3 1 10
-        sound   data/chars/goku/kame.wav
-        frame	data/chars/Goku/kame01.gif
-        frame	data/chars/Goku/kame02.gif
-        frame	data/chars/Goku/kame03.gif
-        frame	data/chars/Goku/kame04.gif
-        sound   data/chars/goku/hame.wav
-        frame	data/chars/Goku/kame05.gif
-        frame	data/chars/Goku/kame05_1.gif
-        frame	data/chars/Goku/kame05_2.gif
-        frame	data/chars/Goku/kame06.gif
-        sound   data/chars/goku/ha.wav
-        frame	data/chars/Goku/kame07.gif
+        sound   data/chars/Goku-normal/kame.wav
+        frame	data/chars/Goku-normal/kame01.gif
+        frame	data/chars/Goku-normal/kame02.gif
+        frame	data/chars/Goku-normal/kame03.gif
+        frame	data/chars/Goku-normal/kame04.gif
+        sound   data/chars/Goku-normal/hame.wav
+        frame	data/chars/Goku-normal/kame05.gif
+        frame	data/chars/Goku-normal/kame05_1.gif
+        frame	data/chars/Goku-normal/kame05_2.gif
+        frame	data/chars/Goku-normal/kame06.gif
+        sound   data/chars/Goku-normal/ha.wav
+        frame	data/chars/Goku-normal/kame07.gif
 	blast	74 28 174 39 60
-        frame	data/chars/Goku/kame08.gif
+        frame	data/chars/Goku-normal/kame08.gif
 	blast	74 28 203 39 60
-        frame	data/chars/Goku/kame09.gif
+        frame	data/chars/Goku-normal/kame09.gif
 	blast	74 28 238 39 60
-        frame	data/chars/Goku/kame10.gif
+        frame	data/chars/Goku-normal/kame10.gif
 	blast	74 28 266 39 60
-        frame	data/chars/Goku/kame11.gif
+        frame	data/chars/Goku-normal/kame11.gif
 	blast	74 28 336 39 60
-        frame	data/chars/Goku/kame12.gif
+        frame	data/chars/Goku-normal/kame12.gif
 	blast	74 28 394 39 60
-        frame	data/chars/Goku/kame13.gif
+        frame	data/chars/Goku-normal/kame13.gif
 	blast	74 28 532 39 60
-        frame	data/chars/Goku/kame14.gif
+        frame	data/chars/Goku-normal/kame14.gif
 	blast	74 28 647 39 60
-        frame	data/chars/Goku/kame15.gif
+        frame	data/chars/Goku-normal/kame15.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame16.gif
+        frame	data/chars/Goku-normal/kame16.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame17.gif
+        frame	data/chars/Goku-normal/kame17.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame18.gif
+        frame	data/chars/Goku-normal/kame18.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame19.gif
+        frame	data/chars/Goku-normal/kame19.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame20.gif
-        frame	data/chars/Goku/kame21.gif
+        frame	data/chars/Goku-normal/kame20.gif
+        frame	data/chars/Goku-normal/kame21.gif
 
 
 anim freespecial2
@@ -239,15 +239,15 @@ anim freespecial2
 	loop	0
 	offset	43 78
 	delay	7
-        sound   data/chars/goku/ki.wav	
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
-	frame	data/chars/Goku/ki01.GIF
-	frame	data/chars/Goku/ki02.GIF
-	frame	data/chars/Goku/ki03.GIF
-	frame	data/chars/Goku/ki04.GIF
+        sound   data/chars/Goku-normal/ki.wav	
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
 
 anim special2
         mponly  1
@@ -257,87 +257,87 @@ anim special2
 	delay	7
         range   0 200
 	quakeframe 3 1 10
-        sound   data/chars/goku/kame.wav
-        frame	data/chars/Goku/kame01.gif
-        frame	data/chars/Goku/kame02.gif
-        frame	data/chars/Goku/kame03.gif
-        frame	data/chars/Goku/kame04.gif
-        sound   data/chars/goku/hame.wav
-        frame	data/chars/Goku/kame05.gif
-        frame	data/chars/Goku/kame05_1.gif
-        frame	data/chars/Goku/kame05_2.gif
-        frame	data/chars/Goku/kame06.gif
-        sound   data/chars/goku/ha.wav
-        frame	data/chars/Goku/kame07.gif
+        sound   data/chars/Goku-normal/kame.wav
+        frame	data/chars/Goku-normal/kame01.gif
+        frame	data/chars/Goku-normal/kame02.gif
+        frame	data/chars/Goku-normal/kame03.gif
+        frame	data/chars/Goku-normal/kame04.gif
+        sound   data/chars/Goku-normal/hame.wav
+        frame	data/chars/Goku-normal/kame05.gif
+        frame	data/chars/Goku-normal/kame05_1.gif
+        frame	data/chars/Goku-normal/kame05_2.gif
+        frame	data/chars/Goku-normal/kame06.gif
+        sound   data/chars/Goku-normal/ha.wav
+        frame	data/chars/Goku-normal/kame07.gif
 	blast	74 28 174 39 60
-        frame	data/chars/Goku/kame08.gif
+        frame	data/chars/Goku-normal/kame08.gif
 	blast	74 28 203 39 60
-        frame	data/chars/Goku/kame09.gif
+        frame	data/chars/Goku-normal/kame09.gif
 	blast	74 28 238 39 60
-        frame	data/chars/Goku/kame10.gif
+        frame	data/chars/Goku-normal/kame10.gif
 	blast	74 28 266 39 60
-        frame	data/chars/Goku/kame11.gif
+        frame	data/chars/Goku-normal/kame11.gif
 	blast	74 28 336 39 60
-        frame	data/chars/Goku/kame12.gif
+        frame	data/chars/Goku-normal/kame12.gif
 	blast	74 28 394 39 60
-        frame	data/chars/Goku/kame13.gif
+        frame	data/chars/Goku-normal/kame13.gif
 	blast	74 28 532 39 60
-        frame	data/chars/Goku/kame14.gif
+        frame	data/chars/Goku-normal/kame14.gif
 	blast	74 28 647 39 60
-        frame	data/chars/Goku/kame15.gif
+        frame	data/chars/Goku-normal/kame15.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame16.gif
+        frame	data/chars/Goku-normal/kame16.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame17.gif
+        frame	data/chars/Goku-normal/kame17.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame18.gif
+        frame	data/chars/Goku-normal/kame18.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame19.gif
+        frame	data/chars/Goku-normal/kame19.gif
 	blast	74 28 743 39 60
-        frame	data/chars/Goku/kame20.gif
-        frame	data/chars/Goku/kame21.gif
+        frame	data/chars/Goku-normal/kame20.gif
+        frame	data/chars/Goku-normal/kame21.gif
 
 anim block
 	loop	0
 	offset	43 78
 	delay	7
-	frame	data/chars/goku/block01.gif
-	frame	data/chars/goku/block02.gif
+	frame	data/chars/Goku-normal/block01.gif
+	frame	data/chars/Goku-normal/block02.gif
 
 anim pain
 	loop	0
 	offset	43 78
 	bbox	36 46 17 21
 	delay	10
-        sound   data/chars/goku/pain.wav
-	frame	data/chars/goku/pain01.gif
-	frame	data/chars/goku/pain02.gif
-	frame	data/chars/goku/pain03.gif
+        sound   data/chars/Goku-normal/pain.wav
+	frame	data/chars/Goku-normal/pain01.gif
+	frame	data/chars/Goku-normal/pain02.gif
+	frame	data/chars/Goku-normal/pain03.gif
 
 anim fall
 	loop	0
 	offset	43 78
 	delay	20
-        sound   data/chars/goku/down.wav	
-        frame	data/chars/goku/fall01.gif
+        sound   data/chars/Goku-normal/down.wav	
+        frame	data/chars/Goku-normal/fall01.gif
         move    -4	
-        frame	data/chars/goku/fall02.gif
-        frame	data/chars/goku/fall03.gif
-        frame	data/chars/goku/fall04.gif
+        frame	data/chars/Goku-normal/fall02.gif
+        frame	data/chars/Goku-normal/fall03.gif
+        frame	data/chars/Goku-normal/fall04.gif
 
 anim rise
 	loop	0
 	offset	43 78
 	delay	10
-        frame	data/chars/goku/rise01.gif
-        frame	data/chars/goku/rise02.gif
-        frame	data/chars/goku/rise03.gif
-        frame	data/chars/goku/rise04.gif
+        frame	data/chars/Goku-normal/rise01.gif
+        frame	data/chars/Goku-normal/rise02.gif
+        frame	data/chars/Goku-normal/rise03.gif
+        frame	data/chars/Goku-normal/rise04.gif
 
 anim land
 	loop	0
 	offset	43 78
 	delay	15
-        frame	data/chars/goku/land01.gif
-        frame	data/chars/goku/land02.gif
-        frame	data/chars/goku/land01.gif
+        frame	data/chars/Goku-normal/land01.gif
+        frame	data/chars/Goku-normal/land02.gif
+        frame	data/chars/Goku-normal/land01.gif

@@ -1,0 +1,12 @@
+name	Gun
+speed   20
+type 	none
+shadow	0
+candamage player npc
+
+anim idle
+	loop	0
+	delay	1000
+	offset	3 6
+        attack  0 0 7 7 10 1
+	frame	data/chars/misc/gun.gif

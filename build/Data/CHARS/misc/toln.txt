@@ -1,0 +1,23 @@
+name	toln
+type 	none
+speed   10
+shadow	0
+candamage player npc
+load shock
+flash shock
+setlayer  0
+
+anim idle
+	loop	1
+	delay	5
+	offset	1 131
+        freeze  0 76 89 124 50 2
+	frame	data/chars/misc/toln01.gif
+        freeze  0 76 89 124 50 2
+	frame	data/chars/misc/toln02.gif
+        freeze  0 76 89 124 50 2
+	frame	data/chars/misc/toln03.gif
+        freeze  0 76 89 124 50 2
+	frame	data/chars/misc/toln04.gif
+        freeze  0 76 89 124 50 2
+	frame	data/chars/misc/toln05.gif
