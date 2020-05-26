@@ -3,6 +3,8 @@ health	100
 speed	9
 type	player
 shadow	3
+running 18 4 2 1 0
+
 
 
 
@@ -16,6 +18,7 @@ anim	attack1
 	delay	7
 	offset	30 47
 	frame	data/chars/King_Piccolo/133.gif
+	attack	25 2 69 34 10 0 1 0 0 0
 	offset	30 50
 	frame	data/chars/King_Piccolo/134.gif
 	offset	29 50
@@ -25,6 +28,7 @@ anim	attack2
 	delay	7
 	offset	23 48
 	frame	data/chars/King_Piccolo/138.gif
+	attack	31 1 66 28 11 0 1 0 0 0
 	offset	23 49
 	frame	data/chars/King_Piccolo/139.gif
 	offset	22 49
@@ -36,6 +40,7 @@ anim	attack3
 	frame	data/chars/King_Piccolo/143.gif
 	offset	26 51
 	frame	data/chars/King_Piccolo/144.gif
+	attack	28 1 68 65 12 0 1 0 0 0
 	offset	28 67
 	frame	data/chars/King_Piccolo/145.gif
 	offset	26 64
@@ -47,6 +52,7 @@ anim	attack4
 	delay	7
 	offset	24 107
 	frame	data/chars/King_Piccolo/221.gif
+	attack	57 105 251 -150 15 1 1 0 0 0
 	offset	21 102
 	frame	data/chars/King_Piccolo/222.gif
 	offset	21 103
@@ -60,6 +66,7 @@ anim	attack5
 	frame	data/chars/King_Piccolo/225.gif
 	offset	32 104
 	frame	data/chars/King_Piccolo/226.gif
+	attack	57 137 202 -146 17 1 1 0 0 0
 	offset	36 136
 	frame	data/chars/King_Piccolo/227.gif
 	offset	37 130
@@ -71,6 +78,7 @@ anim	attack6
 	delay	7
 	offset	23 52
 	frame	data/chars/King_Piccolo/197.gif
+	attack	26 43 94 -54 18 1 1 0 0 0
 	offset	21 50
 	frame	data/chars/King_Piccolo/198.gif
 	offset	21 50
@@ -82,14 +90,18 @@ anim	attack6
 		
 anim	chargeattack
 	delay	7
+	fastattack	1
 	offset	23 43
 	frame	data/chars/King_Piccolo/202.gif
 	offset	29 51
 	frame	data/chars/King_Piccolo/203.gif
+	attack	25 59 63 -69 18 0 1 0 0 0
 	offset	12 61
 	frame	data/chars/King_Piccolo/204.gif
-	offset	8 60
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	9 60
 	frame	data/chars/King_Piccolo/205.gif
+	attack	24 55 54 -62 18 1 1 0 0 0
 	offset	11 61
 	frame	data/chars/King_Piccolo/206.gif
 	offset	5 60
@@ -191,6 +203,7 @@ anim	get
 	frame	data/chars/King_Piccolo/34.gif
 		
 anim	idle
+	bbox	2 2 48 46
 	delay	7
 	loop	1
 	offset	23 47
@@ -203,11 +216,13 @@ anim	idle
 	frame	data/chars/King_Piccolo/12.gif
 		
 anim	jump
+	bbox	1 1 39 47
 	delay	7
 	offset	19 56
 	frame	data/chars/King_Piccolo/20.gif
 	offset	19 56
 	frame	data/chars/King_Piccolo/21.gif
+	bbox	1 1 28 47
 	offset	12 63
 	frame	data/chars/King_Piccolo/22.gif
 		
@@ -217,6 +232,7 @@ anim	jumpattack
 	frame	data/chars/King_Piccolo/183.gif
 	offset	21 62
 	frame	data/chars/King_Piccolo/184.gif
+	attack	5 2 97 90 20 1 1 0 0 0
 	offset	21 72
 	frame	data/chars/King_Piccolo/185.gif
 	offset	27 50
@@ -236,6 +252,7 @@ anim	pain
 	frame	data/chars/King_Piccolo/131.gif
 		
 anim	run
+	bbox	1 0 85 49
 	delay	7
 	offset	26 47
 	frame	data/chars/King_Piccolo/24.gif
@@ -291,6 +308,7 @@ anim	special
 	frame	data/chars/King_Piccolo/180.gif
 		
 anim	walk
+	bbox	1 1 66 37
 	delay	7
 	offset	28 38
 	frame	data/chars/King_Piccolo/16.gif

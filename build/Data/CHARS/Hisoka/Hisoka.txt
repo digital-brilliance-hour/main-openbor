@@ -3,6 +3,7 @@ health	100
 speed	9
 type	player
 shadow	3 
+running 18 4 2 1 0
 
 
 
@@ -50,12 +51,27 @@ anim	attack4
 	frame	data/chars/Hisoka/56.gif
 	offset	20 55
 	frame	data/chars/Hisoka/57.gif
+	attack	19 1 41 58 10 0 1 0 0 0
 	offset	21 55
 	frame	data/chars/Hisoka/58.gif
 		
 anim	attack5
-		
-anim	attack6
+	delay	7
+	fastattack	1
+	offset	29 40
+	frame	data/chars/Hisoka/207.gif
+	offset	34 61
+	frame	data/chars/Hisoka/208.gif
+	attack	11 2 82 60 13 0 1 0 0 0
+	offset	31 70
+	frame	data/chars/Hisoka/209.gif
+	offset	22 64
+	frame	data/chars/Hisoka/210.gif
+	attack	14 3 71 63 13 1 1 0 0 0
+	offset	21 57
+	frame	data/chars/Hisoka/211.gif
+	offset	20 54
+	frame	data/chars/Hisoka/212.gif
 		
 anim	chargeattack
 	delay	7
@@ -67,6 +83,7 @@ anim	chargeattack
 	frame	data/chars/Hisoka/88.gif
 	offset	27 49
 	frame	data/chars/Hisoka/89.gif
+	attack	18 53 55 -70 15 1 1 0 0 0
 	offset	27 52
 	frame	data/chars/Hisoka/90.gif
 	offset	28 54
@@ -88,16 +105,20 @@ anim	fall
 	frame	data/chars/Hisoka/180.gif
 		
 anim	idle
+	bbox	8 8 19 45
 	delay	7
-	loop	1 3
+	loop	0
 	offset	20 52
 	frame	data/chars/Hisoka/14.gif
+	bbox	6 9 20 47
 	offset	18 53
 	frame	data/chars/Hisoka/15.gif
+	bbox	8 4 22 48
 	offset	20 49
 	frame	data/chars/Hisoka/16.gif
 	offset	23 58
 	frame	data/chars/Hisoka/17.gif
+	bbox	8 10 22 54
 	offset	21 60
 	frame	data/chars/Hisoka/18.gif
 	offset	21 57
@@ -106,15 +127,17 @@ anim	idle
 	frame	data/chars/Hisoka/20.gif
 		
 anim	jump
+	bbox	14 2 19 54
 	delay	7
-	offset	27 56
-	frame	data/chars/Hisoka/26.gif
 	offset	25 56
 	frame	data/chars/Hisoka/35.gif
+	bbox	4 6 22 50
 	offset	18 59
 	frame	data/chars/Hisoka/36.gif
+	bbox	5 3 21 50
 	offset	18 52
 	frame	data/chars/Hisoka/37.gif
+	bbox	4 7 24 54
 	offset	18 56
 	frame	data/chars/Hisoka/38.gif
 		
@@ -126,10 +149,12 @@ anim	jumpattack
 	frame	data/chars/Hisoka/74.gif
 	offset	20 60
 	frame	data/chars/Hisoka/75.gif
+	attack	13 1 60 61 8 0 1 0 0 0
 	offset	21 59
 	frame	data/chars/Hisoka/77.gif
 	offset	19 53
 	frame	data/chars/Hisoka/79.gif
+	attack	13 1 60 61 10 0 0 1 0 0
 	offset	25 52
 	frame	data/chars/Hisoka/80.gif
 		
@@ -141,6 +166,7 @@ anim	jumpattack2
 	frame	data/chars/Hisoka/95.gif
 	offset	20 62
 	frame	data/chars/Hisoka/96.gif
+	attack	8 10 65 86 10 1 1 0 0 0
 	offset	11 69
 	frame	data/chars/Hisoka/97.gif
 	offset	11 51
@@ -161,6 +187,7 @@ anim	rise
 	frame	data/chars/Hisoka/184.gif
 		
 anim	run
+	bbox	10 5 50 39
 	delay	7
 	offset	37 41
 	frame	data/chars/Hisoka/33.gif
@@ -182,14 +209,17 @@ anim	spawn
 		
 anim	special
 	delay	7
+	fastattack	1
 	offset	15 51
 	frame	data/chars/Hisoka/60.gif
 	offset	17 50
 	frame	data/chars/Hisoka/61.gif
+	attack	16 7 65 35 10 0 1 0 0 0
 	offset	16 55
 	frame	data/chars/Hisoka/62.gif
 	offset	15 53
 	frame	data/chars/Hisoka/63.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	16 56
 	frame	data/chars/Hisoka/64.gif
 	offset	31 53
@@ -198,32 +228,43 @@ anim	special
 	frame	data/chars/Hisoka/66.gif
 	offset	25 61
 	frame	data/chars/Hisoka/67.gif
+	attack	17 3 60 68 15 0 1 0 0 0
 	offset	25 66
 	frame	data/chars/Hisoka/68.gif
 	offset	24 60
 	frame	data/chars/Hisoka/69.gif
+	movea	10
+	delay	4
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	16 42
 	frame	data/chars/Hisoka/70.gif
 	offset	15 49
 	frame	data/chars/Hisoka/71.gif
 	offset	21 49
 	frame	data/chars/Hisoka/72.gif
+	attack	11 1 60 81 20 1 1 0 0 0
 	offset	16 53
 	frame	data/chars/Hisoka/73.gif
 		
 anim	walk
+	bbox	6 14 47 41
 	delay	7
 	loop	1
 	offset	30 51
 	frame	data/chars/Hisoka/27.gif
+	bbox	7 11 47 34
 	offset	32 42
 	frame	data/chars/Hisoka/28.gif
+	bbox	7 6 34 37
 	offset	26 42
 	frame	data/chars/Hisoka/29.gif
+	bbox	7 8 51 34
 	offset	32 43
 	frame	data/chars/Hisoka/30.gif
+	bbox	7 8 49 34
 	offset	32 39
 	frame	data/chars/Hisoka/31.gif
+	bbox	6 6 31 41
 	offset	25 45
 	frame	data/chars/Hisoka/32.gif
 		

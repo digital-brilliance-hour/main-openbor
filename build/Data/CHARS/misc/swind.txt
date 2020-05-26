@@ -1,0 +1,39 @@
+name	Screen_Wind
+type none
+shadow	0
+setlayer 1000
+
+
+
+anim	idle
+	delay	10
+	offset	0 -70
+	frame	data/chars/Deku/371.gif
+	offset	0 -3
+	frame	data/chars/Deku/372.gif
+	offset	0 -3
+	frame	data/chars/Deku/373.gif
+	offset	0 -3
+	frame	data/chars/Deku/374.gif
+	offset	0 -3
+	frame	data/chars/Deku/375.gif
+	offset	0 0
+	frame	data/chars/Deku/376.gif
+	offset	0 0
+	frame	data/chars/Deku/377.gif
+	offset	0 0
+	frame	data/chars/Deku/378.gif
+	offset	0 0
+	frame	data/chars/Deku/379.gif
+	offset	0 -1
+	frame	data/chars/Deku/380.gif
+	offset	0 -8
+	frame	data/chars/Deku/381.gif
+	offset	0 -6
+	frame	data/chars/Deku/382.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,18 +1,28 @@
 name	Deku 
 health	100
-speed	9
+speed 12
 type	player
 shadow	3
+running 24 4 2 1 0
+
+animationscript data/scripts/spawns.c
+
+
+
+
+
+
+
+
+
 
 
 
 
 anim	attack1
-	bbox	2 6 20 42
 	delay	7
 	offset	13 47
 	frame	data/chars/Deku/61.gif
-	bbox	7 7 23 39
 	offset	16 43
 	frame	data/chars/Deku/62.gif
 	attack	26 12 27 12 5 0 1 0 0 0
@@ -20,11 +30,9 @@ anim	attack1
 	frame	data/chars/Deku/63.gif
 		
 anim	attack2
-	bbox	6 7 24 42
 	delay	7
 	offset	16 46
 	frame	data/chars/Deku/64.gif
-	bbox	6 7 24 32
 	offset	17 37
 	frame	data/chars/Deku/65.gif
 	offset	20 43
@@ -38,7 +46,6 @@ anim	attack2
 	frame	data/chars/Deku/69.gif
 		
 anim	attack3
-	bbox	16 4 15 40
 	delay	7
 	offset	16 42
 	frame	data/chars/Deku/70.gif
@@ -54,14 +61,19 @@ anim	attack3
 		
 anim	chargeattack
 	delay	7
+	fastattack	1
+	chargetime	1
 	offset	22 34
 	frame	data/chars/Deku/87.gif
 	offset	23 35
 	frame	data/chars/Deku/88.gif
+	attack	30 44 47 -62 10 0 1 0 0 0
 	offset	22 44
 	frame	data/chars/Deku/89.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	19 44
 	frame	data/chars/Deku/90.gif
+	attack	23 44 47 -62 10 70 0 1 0 0
 	offset	19 43
 	frame	data/chars/Deku/91.gif
 	offset	18 39
@@ -69,16 +81,31 @@ anim	chargeattack
 	offset	13 41
 	frame	data/chars/Deku/93.gif
 		
+anim	fall
+	delay	7
+	offset	15 42
+	frame	data/chars/Deku/33.gif
+	offset	28 38
+	frame	data/chars/Deku/30.gif
+	offset	28 26
+	frame	data/chars/Deku/37.gif
+	offset	30 11
+	frame	data/chars/Deku/35.gif
+		
 anim	freespecial
 	delay	7
+	fastattack	1
 	offset	13 41
 	frame	data/chars/Deku/93.gif
 	offset	20 35
 	frame	data/chars/Deku/94.gif
+	attack	26 1 48 31 10 0 1 0 0 0
 	offset	24 28
 	frame	data/chars/Deku/95.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	22 27
 	frame	data/chars/Deku/96.gif
+	attack	26 1 65 31 15 3 0 1 0 0
 	offset	28 28
 	frame	data/chars/Deku/97.gif
 	offset	19 38
@@ -86,10 +113,12 @@ anim	freespecial
 		
 anim	freespecial2
 	delay	7
+	fastattack	1
 	offset	13 41
 	frame	data/chars/Deku/99.gif
 	offset	24 41
 	frame	data/chars/Deku/100.gif
+	attack	18 39 72 -63 15 0 1 0 0 0
 	offset	22 43
 	frame	data/chars/Deku/101.gif
 	offset	19 46
@@ -98,10 +127,12 @@ anim	freespecial2
 	frame	data/chars/Deku/103.gif
 	offset	14 32
 	frame	data/chars/Deku/104.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	21 27
 	frame	data/chars/Deku/105.gif
 	offset	23 42
 	frame	data/chars/Deku/106.gif
+	attack	10 57 85 -73 20 1 1 0 0 0
 	offset	31 56
 	frame	data/chars/Deku/107.gif
 	offset	23 39
@@ -130,6 +161,7 @@ anim	get
 	frame	data/chars/Deku/9.gif
 		
 anim	idle
+	bbox	2 1 27 44
 	delay	7
 	loop	1
 	offset	15 45
@@ -142,23 +174,30 @@ anim	idle
 	frame	data/chars/Deku/6.gif
 		
 anim	jump
+	bbox	9 2 20 41
 	offset	16 51
 	frame	data/chars/Deku/16.gif
+	bbox	13 2 17 41
 	offset	22 46
 	frame	data/chars/Deku/159.gif
+	bbox	8 2 15 41
 	offset	13 51
 	frame	data/chars/Deku/17.gif
 		
 anim	jumpattack
 	delay	7
+	fastattack	1
 	offset	16 42
 	frame	data/chars/Deku/114.gif
 	offset	19 41
 	frame	data/chars/Deku/115.gif
+	attack	14 1 63 42 10 0 1 0 0 0
 	offset	28 41
 	frame	data/chars/Deku/116.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	27 40
 	frame	data/chars/Deku/117.gif
+	attack	14 1 63 42 10 0 0 1 0 0
 	offset	18 44
 	frame	data/chars/Deku/118.gif
 	offset	21 42
@@ -170,6 +209,7 @@ anim	jumpattack2
 	frame	data/chars/Deku/109.gif
 	offset	15 49
 	frame	data/chars/Deku/110.gif
+	attack	1 1 80 84 10 1 1 0 0 0
 	offset	19 52
 	frame	data/chars/Deku/111.gif
 	offset	15 42
@@ -184,32 +224,66 @@ anim	pain
 	offset	28 38
 	frame	data/chars/Deku/27.gif
 		
-anim	special
+anim	rise
 	delay	7
+	offset	24 26
+	frame	data/chars/Deku/36.gif
+	offset	28 26
+	frame	data/chars/Deku/37.gif
+	offset	23 44
+	frame	data/chars/Deku/38.gif
+	offset	13 32
+	frame	data/chars/Deku/39.gif
+		
+anim	run
+	delay	7
+	offset	20 40
+	frame	data/chars/Deku/18.gif
+	offset	23 41
+	frame	data/chars/Deku/19.gif
+		
+anim	special
+	delay	10
+	fastattack	1
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	offset	13 32
 	frame	data/chars/Deku/154.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	move	10
+	delay	7
 	offset	20 32
 	frame	data/chars/Deku/155.gif
+	attack	15 1 51 35 15 0 1 0 0 0
 	offset	25 43
 	frame	data/chars/Deku/156.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	16 48
 	frame	data/chars/Deku/157.gif
+	attack	9 1 51 38 15 1 0 1 0 0
 	offset	18 40
 	frame	data/chars/Deku/158.gif
 		
 anim	walk
+	bbox	1 1 36 40
 	delay	7
 	loop	1
 	offset	17 40
 	frame	data/chars/Deku/10.gif
 	offset	20 43
 	frame	data/chars/Deku/11.gif
+	bbox	1 1 28 40
 	offset	9 38
 	frame	data/chars/Deku/12.gif
+	bbox	1 1 36 40
 	offset	17 41
 	frame	data/chars/Deku/13.gif
 	offset	20 43
 	frame	data/chars/Deku/14.gif
+	bbox	1 1 29 40
 	offset	10 38
 	frame	data/chars/Deku/15.gif
 		

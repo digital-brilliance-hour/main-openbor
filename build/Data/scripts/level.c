@@ -19,8 +19,13 @@ void main()
 	 		}
 			if("Travel"!=getentityproperty(p, "model")) {
 				if(getglobalvar("maxmp_"+num+"P") == NULL()){
-					changeentityproperty(p, "maxmp",100);
-					setglobalvar("maxmp_"+num+"P", 100);
+					if(getentityproperty(p, "maxmp") < 1) {
+						changeentityproperty(p, "maxmp",100);
+						setglobalvar("maxmp_"+num+"P", 100);
+					}
+					else {
+						setglobalvar("maxmp_"+num+"P", getentityproperty(p, "maxmp"));
+					}
 				}
 				else {
 					mp = getentityproperty(p, "maxmp");

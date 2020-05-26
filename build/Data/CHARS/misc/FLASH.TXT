@@ -8,7 +8,7 @@ onspawnscript @script
 void main()
 {
 void self = getlocalvar("self");
-setdrawmethod(self, 1, 128, 128, 1, 1, 0, 1);
+setdrawmethod(self, 1, 64, 64, 1, 1, 0, 1);
 }
 @end_script
 

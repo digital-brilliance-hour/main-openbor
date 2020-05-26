@@ -3,6 +3,8 @@ health	100
 speed	9
 type	player
 shadow	3
+running 18 4 2 1 0
+
 
 
 
@@ -51,6 +53,7 @@ anim	attack2
 	delay	7
 	offset	22 78
 	frame	data/chars/Broly_SSB/65.gif
+	attack	28 85 71 -82 10 0 1 0 0 0
 	offset	31 84
 	frame	data/chars/Broly_SSB/66.gif
 		
@@ -62,25 +65,30 @@ anim	attack3
 	frame	data/chars/Broly_SSB/68.gif
 	offset	26 56
 	frame	data/chars/Broly_SSB/69.gif
+	attack	51 5 71 44 8 0 1 0 0 0
 	offset	22 68
 	frame	data/chars/Broly_SSB/70.gif
 		
 anim	attack4
 	delay	7
+	fastattack	1
 	offset	33 80
 	frame	data/chars/Broly_SSB/114.gif
 	offset	32 68
 	frame	data/chars/Broly_SSB/115.gif
+	attack	46 4 57 65 10 0 1 0 0 0
 	offset	29 68
 	frame	data/chars/Broly_SSB/116.gif
 	offset	29 73
 	frame	data/chars/Broly_SSB/117.gif
 	offset	37 58
 	frame	data/chars/Broly_SSB/118.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	47 58
 	frame	data/chars/Broly_SSB/119.gif
 	offset	55 83
 	frame	data/chars/Broly_SSB/120.gif
+	attack	33 1 110 79 10 0 1 0 0 0
 	offset	37 78
 	frame	data/chars/Broly_SSB/121.gif
 	offset	40 78
@@ -91,6 +99,7 @@ anim	attack5
 	frame	data/chars/Broly_SSB/123.gif
 	offset	35 84
 	frame	data/chars/Broly_SSB/124.gif
+	attack	36 9 85 56 12 1 1 0 0 0
 	offset	35 84
 	frame	data/chars/Broly_SSB/125.gif
 		
@@ -121,18 +130,23 @@ anim	charge
 		
 anim	chargeattack
 	delay	7
+	fastattack	1
 	offset	37 58
 	frame	data/chars/Broly_SSB/99.gif
+	attack	32 1 67 63 15 0 1 0 0 0
 	offset	33 59
 	frame	data/chars/Broly_SSB/100.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	28 73
 	frame	data/chars/Broly_SSB/101.gif
+	attack	16 0 73 106 18 1 1 0 0 0
 	offset	21 101
 	frame	data/chars/Broly_SSB/102.gif
 	offset	31 89
 	frame	data/chars/Broly_SSB/103.gif
 		
 anim	faint
+	bbox	2 3 62 80
 	delay	7
 	offset	27 77
 	frame	data/chars/Broly_SSB/281.gif
@@ -221,6 +235,7 @@ anim	idle
 	frame	data/chars/Broly_SSB/9.gif
 		
 anim	jump
+	bbox	1 1 53 68
 	delay	7
 	offset	26 65
 	frame	data/chars/Broly_SSB/20.gif
@@ -235,6 +250,7 @@ anim	jumpattack
 	frame	data/chars/Broly_SSB/71.gif
 	offset	22 72
 	frame	data/chars/Broly_SSB/72.gif
+	attack	39 1 96 77 10 1 1 0 0 0
 	offset	23 67
 	frame	data/chars/Broly_SSB/73.gif
 	offset	3 64
@@ -246,14 +262,25 @@ anim	jumpattack2
 	frame	data/chars/Broly_SSB/280.gif
 	offset	34 51
 	frame	data/chars/Broly_SSB/279.gif
+	attack	3 22 102 98 15 1 1 0 0 0
 	offset	44 97
 	frame	data/chars/Broly_SSB/110.gif
 		
 anim	land
+	bbox	2 3 56 81
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	30 83
 	frame	data/chars/Broly_SSB/23.gif
+	bbox	2 3 56 63
 	offset	28 71
 	frame	data/chars/Broly_SSB/24.gif
+		
+anim	pain
+	delay	7
+	offset	27 77
+	frame	data/chars/Broly_SSB/216.gif
+	offset	26 84
+	frame	data/chars/Broly_SSB/217.gif
 		
 anim	rise
 	delay	7
@@ -263,13 +290,6 @@ anim	rise
 	frame	data/chars/Broly_SSB/280.gif
 	offset	26 64
 	frame	data/chars/Broly_SSB/13.gif
-		
-anim	pain
-	delay	7
-	offset	27 77
-	frame	data/chars/Broly_SSB/216.gif
-	offset	26 84
-	frame	data/chars/Broly_SSB/217.gif
 		
 anim	run
 	bbox	1 85 58 -83
@@ -327,7 +347,7 @@ anim	turn
 anim	walk
 	loop	1
 	bbox	1 95 37 -93
-	delay	7
+	delay	20
 	offset	22 90
 	frame	data/chars/Broly_SSB/14.gif
 	bbox	1 95 31 -94

@@ -1,18 +1,163 @@
 
 
 name	Gohan
-health	200
-speed	25
+health	100
+speed 12
 type	player
-shadow	2
+shadow 3
 diesound data/chars/Gohan/die.wav
 icon	data/chars/Gohan/icon.gif
 
 
 remap	data/chars/Gohan/stand00.gif data/chars/Gohan/map1.gif
+animationscript data/scripts/spawns.c
 
 
-anim idle
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	35 55 17 20
+	offset	38 77
+	frame	data/chars/Gohan/punch00.gif
+	attack	51 58 15 6 8
+	frame	data/chars/Gohan/punch01.gif
+	frame	data/chars/Gohan/punch02.gif
+		
+anim	attack2
+	loop	0
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	7
+	frame	data/chars/Gohan/punch03.gif
+	frame	data/chars/Gohan/punch04.gif
+	frame	data/chars/Gohan/punch05.gif
+	attack	54 56 20 9 8
+	frame	data/chars/Gohan/punch06.gif
+	attack	0
+	frame	data/chars/Gohan/punch07.gif
+	delay	5
+	frame	data/chars/Gohan/jab00.gif
+	frame	data/chars/Gohan/jab01.gif
+	frame	data/chars/Gohan/jab02.gif
+	attack	54 56 20 9 8
+	frame	data/chars/Gohan/jab03.gif
+	attack	0
+	frame	data/chars/Gohan/jab04.gif
+	frame	data/chars/Gohan/jab05.gif
+		
+anim	attack3
+	loop	0
+	delay	7
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Gohan/kick00.gif
+	frame	data/chars/Gohan/kick01.gif
+	attack	60 52 20 13 10 1
+	frame	data/chars/Gohan/kick02.gif
+	frame	data/chars/Gohan/kick03.gif
+	frame	data/chars/Gohan/kick04.gif
+	frame	data/chars/Gohan/kick05.gif
+	frame	data/chars/Gohan/kick06.gif
+	frame	data/chars/Gohan/punch07.gif
+		
+anim	fall
+		
+anim	freespecial
+	loop	0	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	38 77
+	bbox	0 0 0 0
+	frame	data/chars/Gohan/kame00.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
+	frame	data/chars/Gohan/kame01.gif
+	frame	data/chars/Gohan/kame02.gif
+	frame	data/chars/Gohan/kame03.gif
+	frame	data/chars/Gohan/kame04.gif
+	frame	data/chars/Gohan/kame03.gif
+	frame	data/chars/Gohan/kame05.gif
+	frame	data/chars/Gohan/kame03.gif
+	frame	data/chars/Gohan/kame04.gif
+	frame	data/chars/Gohan/kame03.gif
+	frame	data/chars/Gohan/kame05.gif
+	sound	data/chars/Gohan/wave.wav
+	attack	60 42 47 40 15 1
+	frame	data/chars/Gohan/kame06.gif
+	attack	0 0 0 0 0 0
+	delay	5
+	attack	60 42 112 40 15 1
+	frame	data/chars/Gohan/kame07.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 192 40 15 1
+	frame	data/chars/Gohan/kame08.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 286 40 15 1
+	frame	data/chars/Gohan/kame09.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 383 40 15 1
+	frame	data/chars/Gohan/kame10.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 480 40 15 1
+	frame	data/chars/Gohan/kame11.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Gohan/kame12.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Gohan/kame13.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Gohan/kame14.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Gohan/kame15.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Gohan/kame16.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Gohan/kame00.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	38 77
+	frame	data/chars/Gohan/rise05.gif
+	frame	data/chars/Gohan/rise06.gif
+		
+anim	grabattack
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	5
+	frame	data/chars/Gohan/jab00.gif
+	frame	data/chars/Gohan/jab01.gif
+	frame	data/chars/Gohan/jab02.gif
+	attack	54 56 20 9 8
+	frame	data/chars/Gohan/jab03.gif
+	attack	0
+	frame	data/chars/Gohan/jab04.gif
+	frame	data/chars/Gohan/jab05.gif
+		
+anim	grabattack2
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	7
+	frame	data/chars/Gohan/jatk00.gif
+	frame	data/chars/Gohan/jatk01.gif
+	blast	48 48 20 10 8 1
+	frame	data/chars/Gohan/jatk02.gif
+	frame	data/chars/Gohan/jatk03.gif
+	frame	data/chars/Gohan/jatk04.gif
+	frame	data/chars/Gohan/jatk05.gif
+		
+anim	idle
 	loop	1
 	delay	15
 	offset	38 77
@@ -23,11 +168,138 @@ anim idle
 	frame	data/chars/Gohan/stand03.GIF
 	frame	data/chars/Gohan/stand04.GIF
 	frame	data/chars/Gohan/stand05.GIF
-        frame	data/chars/Gohan/stand06.GIF
+	frame	data/chars/Gohan/stand06.GIF
 	frame	data/chars/Gohan/stand07.GIF
-
-anim walk
-
+		
+anim	jump
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Gohan/jump00.gif
+	frame	data/chars/Gohan/jump01.gif
+	frame	data/chars/Gohan/jump02.gif
+	frame	data/chars/Gohan/jump03.gif
+	frame	data/chars/Gohan/jump04.gif
+	frame	data/chars/Gohan/jump05.gif
+		
+anim	jumpattack
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Gohan/jatk00.gif
+	frame	data/chars/Gohan/jatk01.gif
+	attack	48 48 20 10 8 1
+	frame	data/chars/Gohan/jatk02.gif
+	frame	data/chars/Gohan/jatk03.gif
+	frame	data/chars/Gohan/jatk04.gif
+	frame	data/chars/Gohan/jatk05.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Gohan/jatk00.gif
+	frame	data/chars/Gohan/jatk01.gif
+	attack	48 48 20 10 8 1
+	frame	data/chars/Gohan/jatk02.gif
+	frame	data/chars/Gohan/jatk03.gif
+	frame	data/chars/Gohan/jatk04.gif
+	frame	data/chars/Gohan/jatk05.gif
+		
+anim	land
+	loop	0
+	offset	38 77
+	delay	25
+	frame	data/chars/Gohan/rise05.gif
+	frame	data/chars/Gohan/rise06.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	20
+	frame	data/chars/Gohan/pain.gif
+		
+anim	rise
+	loop	0
+	offset	38 77
+	delay	10
+	frame	data/chars/Gohan/rise00.gif
+	frame	data/chars/Gohan/rise01.gif
+	frame	data/chars/Gohan/rise02.gif
+	frame	data/chars/Gohan/rise03.gif
+	frame	data/chars/Gohan/rise04.gif
+	frame	data/chars/Gohan/rise05.gif
+	frame	data/chars/Gohan/rise06.gif
+		
+anim	special
+	loop	0
+	fastattack	1
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	38 77
+	bbox	0 0 0 0
+	frame	data/chars/Gohan/solar00.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
+	frame	data/chars/Gohan/solar01.gif
+	attack	32 50 29 29 20 0 0 0 0 0
+	frame	data/chars/Gohan/solar02.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Gohan/solar03.gif
+	attack	32 50 29 29 20 0 0 0 0 0
+	frame	data/chars/Gohan/solar04.gif
+	blast	31 47 32 33 20 0 0 0 0 0
+	frame	data/chars/Gohan/solar05.gif
+	blast	0
+	frame	data/chars/Gohan/solar06.gif
+	frame	data/chars/Gohan/solar07.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Gohan/solar08.gif
+	attack	23 42 45 45 20 0 0 0 0 0
+	frame	data/chars/Gohan/solar04.gif
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Gohan/solar08.gif
+	attack	24 39 45 45 20 0 0 0 0 0
+	frame	data/chars/Gohan/solar04.gif
+	blast	0
+	frame	data/chars/Gohan/solar08.gif
+	blast	24 39 45 45 20 0
+	frame	data/chars/Gohan/solar04.gif
+	blast	0
+	frame	data/chars/Gohan/solar08.gif
+	blast	0
+	frame	data/chars/Gohan/solar07.gif
+	frame	data/chars/Gohan/solar06.gif
+	blast	24 39 45 45 20 0
+	frame	data/chars/Gohan/solar05.gif
+	frame	data/chars/Gohan/solar04.gif
+	frame	data/chars/Gohan/solar03.gif
+	blast	24 39 45 45 20 1
+	frame	data/chars/Gohan/solar02.gif
+	blast	0
+	frame	data/chars/Gohan/solar01.gif
+	frame	data/chars/Gohan/solar00.gif
+		
+anim	throw
+	loop	0
+	offset	38 77
+	delay	6
+	frame	data/chars/Gohan/throw00.gif
+	frame	data/chars/Gohan/throw01.gif
+	frame	data/chars/Gohan/throw02.gif
+	frame	data/chars/Gohan/throw03.gif
+	frame	data/chars/Gohan/throw04.gif
+	frame	data/chars/Gohan/throw05.gif
+		
+anim	walk
 	loop	1
 	delay	7
 	offset	38 77
@@ -40,294 +312,6 @@ anim walk
 	frame	data/chars/Gohan/walk05.gif
 	frame	data/chars/Gohan/walk06.gif
 	frame	data/chars/Gohan/walk07.gif
-
-anim get
-	loop	0
-	delay	7
-	offset	38 77
-	frame	data/chars/Gohan/rise05.gif
-        frame	data/chars/Gohan/rise06.gif
-
-
-
-anim attack1
-	loop	0
-	delay	7
-	bbox	35 55 17 20
-	offset	38 77
-	frame	data/chars/Gohan/punch00.gif
-        attack	51 58 15 6 8
-        frame	data/chars/Gohan/punch01.gif
-        frame	data/chars/Gohan/punch02.gif 
-
-
-
-anim attack2
-	loop	0
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	7
-	frame	data/chars/Gohan/punch03.gif
-	frame	data/chars/Gohan/punch04.gif
-	frame	data/chars/Gohan/punch05.gif
-        attack	54 56 20 9 8
-	frame	data/chars/Gohan/punch06.gif
-        attack	0
-	frame	data/chars/Gohan/punch07.gif
-	delay	5
-	frame	data/chars/Gohan/jab00.gif
-	frame	data/chars/Gohan/jab01.gif
-	frame	data/chars/Gohan/jab02.gif
-        attack	54 56 20 9 8
-	frame	data/chars/Gohan/jab03.gif
-        attack	0
-	frame	data/chars/Gohan/jab04.gif
-	frame	data/chars/Gohan/jab05.gif
-
-anim attack3
-	loop	0
-	delay	7
-	offset	38 77
-	bbox	35 55 17 20
-	frame	data/chars/Gohan/kick00.gif
-	frame	data/chars/Gohan/kick01.gif
-        attack	60 52 20 13 10 1
-	frame	data/chars/Gohan/kick02.gif
-	frame	data/chars/Gohan/kick03.gif
-	frame	data/chars/Gohan/kick04.gif
-	frame	data/chars/Gohan/kick05.gif
-	frame	data/chars/Gohan/kick06.gif
-	frame	data/chars/Gohan/punch07.gif
-
-
-anim special
-	loop	0
-	delay	4
-	offset	38 77
-	bbox	0 0 0 0
-	frame	data/chars/Gohan/solar00.gif
-	frame	data/chars/Gohan/solar01.gif
-	frame	data/chars/Gohan/solar02.gif
-	frame	data/chars/Gohan/solar03.gif
-        blast	32 50 29 29 20 1
-	frame	data/chars/Gohan/solar04.gif
-        blast	0
-        blast	31 47 32 33 20 1
-        frame	data/chars/Gohan/solar05.gif
-        blast	0
-        blast	26 45 39 39 20 1
-	frame	data/chars/Gohan/solar06.gif
-        blast	0
-        blast	23 42 45 45 20 1
-	frame	data/chars/Gohan/solar07.gif
-        blast	0
-        blast	24 39 45 45 20 1
-	frame	data/chars/Gohan/solar08.gif
-        blast	0
- 	frame	data/chars/Gohan/solar04.gif
-        blast	24 39 45 45 20 1
-	frame	data/chars/Gohan/solar08.gif
-        blast	0
-	frame	data/chars/Gohan/solar04.gif
-        blast	24 39 45 45 20 1
-	frame	data/chars/Gohan/solar08.gif
-        blast	0
-	frame	data/chars/Gohan/solar04.gif
-        blast	24 39 45 45 20 1
-	frame	data/chars/Gohan/solar08.gif
-        blast	0
-	frame	data/chars/Gohan/solar07.gif
-	frame	data/chars/Gohan/solar06.gif
-	frame	data/chars/Gohan/solar05.gif
-	frame	data/chars/Gohan/solar04.gif
-	frame	data/chars/Gohan/solar03.gif
-	frame	data/chars/Gohan/solar02.gif
-	frame	data/chars/Gohan/solar01.gif
-	frame	data/chars/Gohan/solar00.gif
-
-	
-anim freespecial
-	loop	0
-	delay	10
-	offset	38 77
-	bbox	0 0 0 0
-        frame	data/chars/Gohan/kame00.gif
-	frame	data/chars/Gohan/kame01.gif
-	frame	data/chars/Gohan/kame02.gif
-	frame	data/chars/Gohan/kame03.gif
-	frame	data/chars/Gohan/kame04.gif
-	frame	data/chars/Gohan/kame03.gif
-	frame	data/chars/Gohan/kame05.gif
-	frame	data/chars/Gohan/kame03.gif
-	frame	data/chars/Gohan/kame04.gif
-	frame	data/chars/Gohan/kame03.gif
-	frame	data/chars/Gohan/kame05.gif
-        sound   data/chars/Gohan/wave.wav
-        attack	60 42 47 40 15 1
-	frame	data/chars/Gohan/kame06.gif
-        attack	0 0 0 0 0 0
-	delay	5
-        attack	60 42 112 40 15 1
-	frame	data/chars/Gohan/kame07.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 192 40 15 1
-	frame	data/chars/Gohan/kame08.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 286 40 15 1
-	frame	data/chars/Gohan/kame09.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 383 40 15 1
-	frame	data/chars/Gohan/kame10.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 480 40 15 1
-	frame	data/chars/Gohan/kame11.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Gohan/kame12.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Gohan/kame13.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Gohan/kame14.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-        frame	data/chars/Gohan/kame15.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Gohan/kame16.gif
-        attack	0 0 0 0 0 0
-       	frame	data/chars/Gohan/kame00.gif
-
-
-anim jump
-	loop	0
-	offset	38 77
-	delay	10
-	bbox	37 46 16 17
-	frame	data/chars/Gohan/jump00.gif
-	frame	data/chars/Gohan/jump01.gif
-	frame	data/chars/Gohan/jump02.gif
-	frame	data/chars/Gohan/jump03.gif
-	frame	data/chars/Gohan/jump04.gif
-	frame	data/chars/Gohan/jump05.gif
-
-
-anim jumpattack
-	loop	0
-	delay	10
-	bbox	37 46 16 17
-	offset	38 77
-	frame	data/chars/Gohan/jatk00.gif
-	frame	data/chars/Gohan/jatk01.gif
-        attack	48 48 20 10 8 1
-	frame	data/chars/Gohan/jatk02.gif
-	frame	data/chars/Gohan/jatk03.gif
-	frame	data/chars/Gohan/jatk04.gif
-	frame	data/chars/Gohan/jatk05.gif
-	
-	
-
-anim jumpattack2
-	loop	0
-	delay	10
-	bbox	37 46 16 17
-	offset	38 77
-	frame	data/chars/Gohan/jatk00.gif
-	frame	data/chars/Gohan/jatk01.gif
-        attack	48 48 20 10 8 1
-	frame	data/chars/Gohan/jatk02.gif
-	frame	data/chars/Gohan/jatk03.gif
-	frame	data/chars/Gohan/jatk04.gif
-	frame	data/chars/Gohan/jatk05.gif
-
-
-	
-
-
-
-anim grabattack
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20	
-	delay	5
-	frame	data/chars/Gohan/jab00.gif
-	frame	data/chars/Gohan/jab01.gif
-	frame	data/chars/Gohan/jab02.gif
-        attack	54 56 20 9 8
-	frame	data/chars/Gohan/jab03.gif
-        attack	0
-	frame	data/chars/Gohan/jab04.gif
-	frame	data/chars/Gohan/jab05.gif
-
-anim grabattack2
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	7
-	frame	data/chars/Gohan/jatk00.gif
-	frame	data/chars/Gohan/jatk01.gif
-        blast	48 48 20 10 8 1
-	frame	data/chars/Gohan/jatk02.gif
-	frame	data/chars/Gohan/jatk03.gif
-	frame	data/chars/Gohan/jatk04.gif
-	frame	data/chars/Gohan/jatk05.gif
-
-
-
-
-anim throw
-	loop	0
-	offset	38 77
-	delay	6
-	frame	data/chars/Gohan/throw00.gif
-	frame	data/chars/Gohan/throw01.gif
-	frame	data/chars/Gohan/throw02.gif
-	frame	data/chars/Gohan/throw03.gif
-	frame	data/chars/Gohan/throw04.gif
-	frame	data/chars/Gohan/throw05.gif
-
-
-anim pain
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	20
-	frame	data/chars/Gohan/pain.gif
-
-
-anim fall
-	anim fall
-	loop	0
-	offset	38 77
-	delay	20
-	attack	36 50 21 16 4 1
-	frame	data/chars/Gohan/fall00.gif
-        move    -4	
-	frame	data/chars/Gohan/fall01.gif
-        frame	data/chars/Gohan/fall02.gif
-        frame	data/chars/Gohan/fall03.gif
-        frame	data/chars/Gohan/fall04.gif
-
-
-
-anim rise
-	loop	0
-	offset	38 77
-	delay	10
-        frame	data/chars/Gohan/rise00.gif
-        frame	data/chars/Gohan/rise01.gif
-        frame	data/chars/Gohan/rise02.gif
-        frame	data/chars/Gohan/rise03.gif
-        frame	data/chars/Gohan/rise04.gif
-        frame	data/chars/Gohan/rise05.gif
-        frame	data/chars/Gohan/rise06.gif
-
-
-anim land
-	loop	0
-	offset	38 77
-	delay	25
-        frame	data/chars/Gohan/rise05.gif
-        frame	data/chars/Gohan/rise06.gif
+		
+#|edited by openBor Stats v 0.67
+		
