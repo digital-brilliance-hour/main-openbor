@@ -10,9 +10,204 @@ icon	data/chars/Goku/icon.gif
 
 
 remap	data/chars/Goku/stand00.gif data/chars/Goku/map1.gif
+animationscript data/scripts/spawns.c
 
 
-anim idle
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	35 55 17 20
+	offset	38 77
+	sound	data/chars/Goku/ha.wav
+	frame	data/chars/Goku/punch00.gif
+	attack	51 58 15 6 8
+	frame	data/chars/Goku/punch01.gif
+	frame	data/chars/Goku/punch02.gif
+		
+anim	attack2
+	loop	0
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	7
+	frame	data/chars/Goku/punch00.gif
+	attack	51 55 13 9 8
+	frame	data/chars/Goku/punch02.gif
+	attack	0
+	frame	data/chars/Goku/punch03.gif
+	frame	data/chars/Goku/punch04.gif
+	frame	data/chars/Goku/punch05.gif
+	attack	54 56 20 9 8
+	frame	data/chars/Goku/punch06.gif
+	attack	0
+	frame	data/chars/Goku/punch07.gif
+	frame	data/chars/Goku/punch08.gif
+	frame	data/chars/Goku/punch09.gif
+	frame	data/chars/Goku/punch10.gif
+	frame	data/chars/Goku/punch11.gif
+		
+anim	attack3
+	loop	0
+	delay	3
+	offset	38 77
+	bbox	35 55 17 20
+	frame	data/chars/Goku/ppole00.gif
+	frame	data/chars/Goku/ppole01.gif
+	frame	data/chars/Goku/ppole02.gif
+	frame	data/chars/Goku/ppole03.gif
+	frame	data/chars/Goku/ppole04.gif
+	frame	data/chars/Goku/ppole05.gif
+	attack	54 38 42 32 8
+	frame	data/chars/Goku/ppole06.gif
+	attack	0
+	frame	data/chars/Goku/ppole07.gif
+	frame	data/chars/Goku/ppole08.gif
+	frame	data/chars/Goku/ppole09.gif
+	delay	7
+	frame	data/chars/Goku/ppole10.gif
+	frame	data/chars/Goku/ppole11.gif
+	frame	data/chars/Goku/ppole12.gif
+	frame	data/chars/Goku/ppole13.gif
+	frame	data/chars/Goku/ppole14.gif
+	attack	61 51 44 14 10 1
+	frame	data/chars/Goku/ppole15.gif
+	attack	0
+	frame	data/chars/Goku/ppole16.gif
+	frame	data/chars/Goku/ppole17.gif
+		
+anim	fall
+		
+anim	freespecial
+	loop	0
+	offset	38 77
+	bbox	0 0 0 0
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/Goku/kame00.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
+	frame	data/chars/Goku/kame01.gif
+	frame	data/chars/Goku/kame02.gif
+	frame	data/chars/Goku/kame03.gif
+	frame	data/chars/Goku/kame04.gif
+	frame	data/chars/Goku/kame03.gif
+	frame	data/chars/Goku/kame05.gif
+	frame	data/chars/Goku/kame03.gif
+	frame	data/chars/Goku/kame04.gif
+	frame	data/chars/Goku/kame03.gif
+	frame	data/chars/Goku/kame05.gif
+	sound	data/chars/Goku/wave.wav
+	attack	60 42 47 40 15 1
+	frame	data/chars/Goku/kame06.gif
+	attack	0 0 0 0 0 0
+	delay	5
+	attack	60 42 112 40 15 1
+	frame	data/chars/Goku/kame07.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 192 40 15 1
+	frame	data/chars/Goku/kame08.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 286 40 15 1
+	frame	data/chars/Goku/kame09.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 383 40 15 1
+	frame	data/chars/Goku/kame10.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 480 40 15 1
+	frame	data/chars/Goku/kame11.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame12.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame13.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame14.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame15.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame16.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame17.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame18.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame19.gif
+	attack	0 0 0 0 0 0
+	attack	60 42 522 41 15 1
+	frame	data/chars/Goku/kame20.gif
+	attack	0 0 0 0 0 0
+	attack	60 46 520 32 15 1
+	frame	data/chars/Goku/kame21.gif
+	attack	0 0 0 0 0 0
+	attack	60 52 522 20 15 1
+	frame	data/chars/Goku/kame22.gif
+	attack	0 0 0 0 0 0
+	attack	60 58 522 6 15 1
+	frame	data/chars/Goku/kame23.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Goku/kame24.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	38 77
+	frame	data/chars/Goku/rise05.gif
+	frame	data/chars/Goku/rise06.gif
+		
+anim	grabattack
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	4
+	frame	data/chars/Goku/spin00.gif
+	frame	data/chars/Goku/spin01.gif
+	frame	data/chars/Goku/spin02.gif
+	attack	40 57 28 19 8
+	frame	data/chars/Goku/spin03.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Goku/spin04.gif
+	frame	data/chars/Goku/spin01.gif
+	frame	data/chars/Goku/spin02.gif
+	attack	40 57 28 19 8
+	frame	data/chars/Goku/spin03.gif
+	frame	data/chars/Goku/spin03.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Goku/spin04.gif
+	frame	data/chars/Goku/spin05.gif
+	frame	data/chars/Goku/spin06.gif
+		
+anim	grabattack2
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	5
+	frame	data/chars/Goku/ppole00.gif
+	frame	data/chars/Goku/ppole01.gif
+	frame	data/chars/Goku/ppole02.gif
+	frame	data/chars/Goku/ppole03.gif
+	frame	data/chars/Goku/ppole04.gif
+	frame	data/chars/Goku/ppole05.gif
+	attack	54 38 42 32 8
+	frame	data/chars/Goku/ppole06.gif
+	attack	0
+	frame	data/chars/Goku/ppole07.gif
+	frame	data/chars/Goku/ppole08.gif
+	frame	data/chars/Goku/ppole09.gif
+	frame	data/chars/Goku/ppole10.gif
+		
+anim	idle
 	loop	1
 	delay	15
 	offset	38 77
@@ -23,11 +218,146 @@ anim idle
 	frame	data/chars/Goku/stand03.GIF
 	frame	data/chars/Goku/stand04.GIF
 	frame	data/chars/Goku/stand05.GIF
-        frame	data/chars/Goku/stand06.GIF
+	frame	data/chars/Goku/stand06.GIF
 	frame	data/chars/Goku/stand07.GIF
-
-anim walk
-
+		
+anim	jump
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Goku/jump00.gif
+	frame	data/chars/Goku/jump01.gif
+	frame	data/chars/Goku/jump02.gif
+	frame	data/chars/Goku/jump03.gif
+	frame	data/chars/Goku/jump04.gif
+	frame	data/chars/Goku/jump05.gif
+		
+anim	jumpattack
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Goku/jatk00.gif
+	frame	data/chars/Goku/jatk01.gif
+	frame	data/chars/Goku/jatk02.gif
+	frame	data/chars/Goku/jatk03.gif
+	attack	48 46 38 21 8 1
+	frame	data/chars/Goku/jatk04.gif
+	frame	data/chars/Goku/jatk05.gif
+	frame	data/chars/Goku/jatk06.gif
+	frame	data/chars/Goku/jatk07.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	10
+	bbox	37 46 16 17
+	offset	38 77
+	frame	data/chars/Goku/jatk00.gif
+	frame	data/chars/Goku/jatk01.gif
+	frame	data/chars/Goku/jatk02.gif
+	frame	data/chars/Goku/jatk03.gif
+	attack	48 46 38 21 8 1
+	frame	data/chars/Goku/jatk04.gif
+	frame	data/chars/Goku/jatk05.gif
+	frame	data/chars/Goku/jatk06.gif
+	frame	data/chars/Goku/jatk07.gif
+		
+anim	land
+	loop	0
+	offset	38 77
+	delay	25
+	frame	data/chars/Goku/rise05.gif
+	frame	data/chars/Goku/rise06.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	35 55 17 20
+	delay	20
+	sound	data/chars/Goku/ugh.wav
+	frame	data/chars/Goku/pain.gif
+		
+anim	rise
+	loop	0
+	offset	38 77
+	delay	10
+	frame	data/chars/Goku/rise00.gif
+	frame	data/chars/Goku/rise01.gif
+	frame	data/chars/Goku/rise02.gif
+	frame	data/chars/Goku/rise03.gif
+	frame	data/chars/Goku/rise04.gif
+	frame	data/chars/Goku/rise05.gif
+	frame	data/chars/Goku/rise06.gif
+		
+anim	special
+	loop	0
+	offset	38 77
+	bbox	0 0 0 0
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/Goku/spec01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
+	blast	49 39 71 45 20 1
+	frame	data/chars/Goku/spec02.gif
+	blast	0 0 0 0 0 0
+	blast	26 47 108 38 20 1
+	frame	data/chars/Goku/spec03.gif
+	blast	0 0 0 0 0 0
+	blast	26 49 129 30 20 1
+	frame	data/chars/Goku/spec04.gif
+	blast	0 0 0 0 0 0
+	frame	data/chars/Goku/spec05.gif
+	sound	data/chars/Goku/wave.wav
+	blast	49 39 71 45 20 1
+	frame	data/chars/Goku/spec06.gif
+	blast	0 0 0 0 0 0
+	blast	26 47 108 38 20 1
+	frame	data/chars/Goku/spec07.gif
+	blast	0 0 0 0 0 0
+	frame	data/chars/Goku/spec08.gif
+	blast	49 39 71 45 20 1
+	frame	data/chars/Goku/spec09.gif
+	blast	0 0 0 0 0 0
+	blast	26 47 108 38 20 1
+	frame	data/chars/Goku/spec10.gif
+	blast	0 0 0 0 0 0
+	delay	5
+	frame	data/chars/Goku/spec11.gif
+	frame	data/chars/Goku/spec12.gif
+	frame	data/chars/Goku/spec13.gif
+	frame	data/chars/Goku/spec14.gif
+	frame	data/chars/Goku/spec15.gif
+	blast	92 60 73 29 20 1
+	frame	data/chars/Goku/spec16.gif
+	blast	0 0 0 0 0 0
+	frame	data/chars/Goku/spec17.gif
+	frame	data/chars/Goku/spec18.gif
+	frame	data/chars/Goku/spec19.gif
+	blast	46 72 34 12 20 1
+	frame	data/chars/Goku/spec20.gif
+	blast	0 0 0 0 0 0
+	blast	46 72 34 12 20 1
+	frame	data/chars/Goku/spec21.gif
+	blast	0 0 0 0 0 0
+		
+anim	throw
+	loop	0
+	offset	38 77
+	delay	7
+	frame	data/chars/Goku/throw00.gif
+	frame	data/chars/Goku/throw01.gif
+	frame	data/chars/Goku/throw02.gif
+	frame	data/chars/Goku/throw03.gif
+	frame	data/chars/Goku/throw04.gif
+	frame	data/chars/Goku/throw05.gif
+		
+anim	walk
 	loop	1
 	delay	7
 	offset	38 77
@@ -40,353 +370,6 @@ anim walk
 	frame	data/chars/Goku/walk05.gif
 	frame	data/chars/Goku/walk06.gif
 	frame	data/chars/Goku/walk07.gif
-
-anim get
-	loop	0
-	delay	7
-	offset	38 77
-	frame	data/chars/Goku/rise05.gif
-        frame	data/chars/Goku/rise06.gif
-
-
-
-anim attack1
-	loop	0
-	delay	7
-	bbox	35 55 17 20
-	offset	38 77
-        sound   data/chars/Goku/ha.wav
-	frame	data/chars/Goku/punch00.gif
-        attack	51 58 15 6 8
-        frame	data/chars/Goku/punch01.gif
-        frame	data/chars/Goku/punch02.gif
- 
-
-
-
-anim attack2
-	loop	0
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	7
-	frame	data/chars/Goku/punch00.gif
-        attack	51 55 13 9 8
-	frame	data/chars/Goku/punch02.gif
-        attack	0
-	frame	data/chars/Goku/punch03.gif
-	frame	data/chars/Goku/punch04.gif
-	frame	data/chars/Goku/punch05.gif
-        attack	54 56 20 9 8
-	frame	data/chars/Goku/punch06.gif
-        attack	0
-	frame	data/chars/Goku/punch07.gif
-	frame	data/chars/Goku/punch08.gif
-	frame	data/chars/Goku/punch09.gif
-	frame	data/chars/Goku/punch10.gif
-	frame	data/chars/Goku/punch11.gif
-
-
-
-anim attack3
-	loop	0
-	delay	3
-	offset	38 77
-	bbox	35 55 17 20
-	frame	data/chars/Goku/ppole00.gif
-	frame	data/chars/Goku/ppole01.gif
-	frame	data/chars/Goku/ppole02.gif
-	frame	data/chars/Goku/ppole03.gif
-	frame	data/chars/Goku/ppole04.gif
-	frame	data/chars/Goku/ppole05.gif
-        attack	54 38 42 32 8
-	frame	data/chars/Goku/ppole06.gif
-	attack	0
-	frame	data/chars/Goku/ppole07.gif
-	frame	data/chars/Goku/ppole08.gif
-	frame	data/chars/Goku/ppole09.gif
-	delay	7
-	frame	data/chars/Goku/ppole10.gif
-	frame	data/chars/Goku/ppole11.gif
-	frame	data/chars/Goku/ppole12.gif
-	frame	data/chars/Goku/ppole13.gif
-	frame	data/chars/Goku/ppole14.gif
-        attack	61 51 44 14 10 1
-	frame	data/chars/Goku/ppole15.gif
-	attack	0
-	frame	data/chars/Goku/ppole16.gif
-	frame	data/chars/Goku/ppole17.gif
-
-anim special
-loop	0
-	delay	10
-	offset	38 77
-	bbox	0 0 0 0
-	frame	data/chars/Goku/spec00.gif
-	frame	data/chars/Goku/spec01.gif
-        blast	49 39 71 45 20 1
-	frame	data/chars/Goku/spec02.gif
-        blast	0 0 0 0 0 0
-        blast	26 47 108 38 20 1
-	frame	data/chars/Goku/spec03.gif
-        blast	0 0 0 0 0 0
-        blast	26 49 129 30 20 1
-	frame	data/chars/Goku/spec04.gif
-        blast	0 0 0 0 0 0
-	frame	data/chars/Goku/spec05.gif
-        sound   data/chars/Goku/wave.wav
-        blast	49 39 71 45 20 1
-	frame	data/chars/Goku/spec06.gif
-        blast	0 0 0 0 0 0
-        blast	26 47 108 38 20 1
-	frame	data/chars/Goku/spec07.gif
-        blast	0 0 0 0 0 0
-	frame	data/chars/Goku/spec08.gif
-        blast	49 39 71 45 20 1
-	frame	data/chars/Goku/spec09.gif
-        blast	0 0 0 0 0 0
-        blast	26 47 108 38 20 1
-	frame	data/chars/Goku/spec10.gif
-        blast	0 0 0 0 0 0
-	delay	5
-	frame	data/chars/Goku/spec11.gif
-	frame	data/chars/Goku/spec12.gif
-	frame	data/chars/Goku/spec13.gif
-	frame	data/chars/Goku/spec14.gif
-	frame	data/chars/Goku/spec15.gif
-        blast	92 60 73 29 20 1
-	frame	data/chars/Goku/spec16.gif
-        blast	0 0 0 0 0 0
-	frame	data/chars/Goku/spec17.gif
-	frame	data/chars/Goku/spec18.gif
-	frame	data/chars/Goku/spec19.gif
-        blast	46 72 34 12 20 1
-	frame	data/chars/Goku/spec20.gif
-        blast	0 0 0 0 0 0
-        blast	46 72 34 12 20 1
-	frame	data/chars/Goku/spec21.gif
-        blast	0 0 0 0 0 0
-
-anim freespecial
-	loop	0
-	delay	10
-	offset	38 77
-	bbox	0 0 0 0
-        frame	data/chars/Goku/kame00.gif
-	frame	data/chars/Goku/kame01.gif
-	frame	data/chars/Goku/kame02.gif
-	frame	data/chars/Goku/kame03.gif
-	frame	data/chars/Goku/kame04.gif
-	frame	data/chars/Goku/kame03.gif
-	frame	data/chars/Goku/kame05.gif
-	frame	data/chars/Goku/kame03.gif
-	frame	data/chars/Goku/kame04.gif
-	frame	data/chars/Goku/kame03.gif
-	frame	data/chars/Goku/kame05.gif
-        sound   data/chars/Goku/wave.wav
-        attack	60 42 47 40 15 1
-	frame	data/chars/Goku/kame06.gif
-        attack	0 0 0 0 0 0
-	delay	5
-        attack	60 42 112 40 15 1
-	frame	data/chars/Goku/kame07.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 192 40 15 1
-	frame	data/chars/Goku/kame08.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 286 40 15 1
-	frame	data/chars/Goku/kame09.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 383 40 15 1
-	frame	data/chars/Goku/kame10.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 480 40 15 1
-	frame	data/chars/Goku/kame11.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame12.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame13.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame14.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-        frame	data/chars/Goku/kame15.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame16.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame17.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame18.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame19.gif
-        attack	0 0 0 0 0 0
-        attack	60 42 522 41 15 1
-	frame	data/chars/Goku/kame20.gif
-        attack	0 0 0 0 0 0
-        attack	60 46 520 32 15 1
-	frame	data/chars/Goku/kame21.gif
-        attack	0 0 0 0 0 0
-        attack	60 52 522 20 15 1
-	frame	data/chars/Goku/kame22.gif
-        attack	0 0 0 0 0 0
-        attack	60 58 522 6 15 1
-	frame	data/chars/Goku/kame23.gif
-        attack	0 0 0 0 0 0
-	frame	data/chars/Goku/kame24.gif
-
-
-anim jump
-	loop	0
-	offset	38 77
-	delay	10
-	bbox	37 46 16 17
-	frame	data/chars/Goku/jump00.gif
-	frame	data/chars/Goku/jump01.gif
-	frame	data/chars/Goku/jump02.gif
-	frame	data/chars/Goku/jump03.gif
-	frame	data/chars/Goku/jump04.gif
-	frame	data/chars/Goku/jump05.gif
-
-
-anim jumpattack
-	loop	0
-	delay	10
-	bbox	37 46 16 17
-	offset	38 77
-	frame	data/chars/Goku/jatk00.gif
-	frame	data/chars/Goku/jatk01.gif
-	frame	data/chars/Goku/jatk02.gif
-	frame	data/chars/Goku/jatk03.gif
-        attack	48 46 38 21 8 1
-	frame	data/chars/Goku/jatk04.gif
-	frame	data/chars/Goku/jatk05.gif
-	frame	data/chars/Goku/jatk06.gif
-	frame	data/chars/Goku/jatk07.gif
-	
-
-anim jumpattack2
-	loop	0
-	delay	10
-	bbox	37 46 16 17
-	offset	38 77
-	frame	data/chars/Goku/jatk00.gif
-	frame	data/chars/Goku/jatk01.gif
-	frame	data/chars/Goku/jatk02.gif
-	frame	data/chars/Goku/jatk03.gif
-        attack	48 46 38 21 8 1
-	frame	data/chars/Goku/jatk04.gif
-	frame	data/chars/Goku/jatk05.gif
-	frame	data/chars/Goku/jatk06.gif
-	frame	data/chars/Goku/jatk07.gif
-
-
-
-	
-
-
-
-anim grabattack
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20	
-	delay	4
-	frame	data/chars/Goku/spin00.gif
-	frame	data/chars/Goku/spin01.gif
-	frame	data/chars/Goku/spin02.gif
-        attack	40 57 28 19 8 
-	frame	data/chars/Goku/spin03.gif
-        attack	0 0 0 0 0 
-	frame	data/chars/Goku/spin04.gif
-	frame	data/chars/Goku/spin01.gif
-	frame	data/chars/Goku/spin02.gif
-        attack	40 57 28 19 8 
-	frame	data/chars/Goku/spin03.gif
-	frame	data/chars/Goku/spin03.gif
-        attack	0 0 0 0 0 
-	frame	data/chars/Goku/spin04.gif
-	frame	data/chars/Goku/spin05.gif
-	frame	data/chars/Goku/spin06.gif
-
-anim grabattack2
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	5
-	frame	data/chars/Goku/ppole00.gif
-	frame	data/chars/Goku/ppole01.gif
-	frame	data/chars/Goku/ppole02.gif
-	frame	data/chars/Goku/ppole03.gif
-	frame	data/chars/Goku/ppole04.gif
-        frame	data/chars/Goku/ppole05.gif
-	attack	54 38 42 32 8
-        frame	data/chars/Goku/ppole06.gif
-        attack	0
-	frame	data/chars/Goku/ppole07.gif
-	frame	data/chars/Goku/ppole08.gif
-	frame	data/chars/Goku/ppole09.gif
-	frame	data/chars/Goku/ppole10.gif
-
-
-
-
-anim throw
-	loop	0
-	offset	38 77
-	delay	7
-	frame	data/chars/Goku/throw00.gif
-	frame	data/chars/Goku/throw01.gif
-	frame	data/chars/Goku/throw02.gif
-	frame	data/chars/Goku/throw03.gif
-	frame	data/chars/Goku/throw04.gif
-	frame	data/chars/Goku/throw05.gif
-
-anim pain
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	20
-        sound   data/chars/Goku/ugh.wav
-	frame	data/chars/Goku/pain.gif
-
-
-anim fall
-	anim fall
-	loop	0
-	offset	38 77
-	delay	20
-	attack	36 50 21 16 4 1
-	frame	data/chars/Goku/fall00.gif
-        move    -4	
-	frame	data/chars/Goku/fall01.gif
-        frame	data/chars/Goku/fall02.gif
-        frame	data/chars/Goku/fall03.gif
-        frame	data/chars/Goku/fall04.gif
-
-
-
-anim rise
-	loop	0
-	offset	38 77
-	delay	10
-        frame	data/chars/Goku/rise00.gif
-        frame	data/chars/Goku/rise01.gif
-        frame	data/chars/Goku/rise02.gif
-        frame	data/chars/Goku/rise03.gif
-        frame	data/chars/Goku/rise04.gif
-        frame	data/chars/Goku/rise05.gif
-        frame	data/chars/Goku/rise06.gif
-
-
-anim land
-	loop	0
-	offset	38 77
-	delay	25
-        frame	data/chars/Goku/rise05.gif
-        frame	data/chars/Goku/rise06.gif
+		
+#|edited by openBor Stats v 0.67
+		
