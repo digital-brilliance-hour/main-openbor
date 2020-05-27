@@ -26,6 +26,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	delay	7
 	offset	15 35
@@ -205,6 +206,7 @@ anim	freespecial3
 	frame	data/chars/Shrek/180.gif
 		
 anim	idle
+	drawmethod	scale 2
 	bbox	3 2 32 40
 	delay	7
 	loop	1
@@ -307,6 +309,7 @@ anim	runattack
 	frame	data/chars/Shrek/50.gif
 		
 anim	select
+	drawmethod	scale 2
 	delay	7
 	offset	19 40
 	frame	data/chars/Shrek/213.gif

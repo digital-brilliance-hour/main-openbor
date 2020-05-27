@@ -4,6 +4,16 @@ speed	9
 type	player
 shadow	3
 running 18 4 2 1 0
+load b_shot2
+load b_blast
+load b_shot
+
+animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
+
+
 
 
 
@@ -131,6 +141,7 @@ anim	charge
 anim	chargeattack
 	delay	7
 	fastattack	1
+	jumpframe	3 3 1 0 1
 	offset	37 58
 	frame	data/chars/Broly_SSB/99.gif
 	attack	32 1 67 63 15 0 1 0 0 0
@@ -174,19 +185,39 @@ anim	freespecial
 	frame	data/chars/Broly_SSB/143.gif
 	offset	30 86
 	frame	data/chars/Broly_SSB/144.gif
+	@cmd	spawnbind "b_blast" 51 60 0
+	@cmd	projectile 1 "b_shot2" 25 1 64 1 0
+	offset	31 86
+	frame	data/chars/Broly_SSB/145.gif
+	offset	31 86
+	frame	data/chars/Broly_SSB/145.gif
+	offset	31 86
+	frame	data/chars/Broly_SSB/145.gif
+	offset	31 86
+	frame	data/chars/Broly_SSB/145.gif
 	offset	31 86
 	frame	data/chars/Broly_SSB/145.gif
 		
 anim	freespecial2
-	delay	7
+	delay	20
 	offset	28 76
 	frame	data/chars/Broly_SSB/146.gif
+	delay	10
 	offset	32 72
 	frame	data/chars/Broly_SSB/147.gif
+	delay	6
 	offset	35 61
 	frame	data/chars/Broly_SSB/148.gif
+	@cmd	projectile 1 "b_shot" 55 1 36 1 0
 	offset	23 78
 	frame	data/chars/Broly_SSB/149.gif
+	delay	10
+	offset	24 74
+	frame	data/chars/Broly_SSB/150.gif
+	offset	24 74
+	frame	data/chars/Broly_SSB/150.gif
+	offset	24 74
+	frame	data/chars/Broly_SSB/150.gif
 	offset	24 74
 	frame	data/chars/Broly_SSB/150.gif
 		
