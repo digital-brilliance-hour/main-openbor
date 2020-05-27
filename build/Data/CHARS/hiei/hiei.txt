@@ -27,6 +27,7 @@ com 		D  F  D F A freespecial2
 com 		D  F  A     freespecial
 com 		D  U  A     freespecial3
 com 		D  F  K     freespecial4
+animationscript data/scripts/spawns.c
 
 
 
@@ -981,10 +982,17 @@ anim	special
 	loop	0
 	sound	data/chars/hiei/sankoda.wav
 	hitflash	flash3
-	delay	12
 	offset	34 119
 	blast	1 12 124 122 20 1 0 0 0 0
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/hiei/aura1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	12
 	offset	34 119
 	burn	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/hiei/aura2.gif
