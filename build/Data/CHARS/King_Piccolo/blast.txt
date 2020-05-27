@@ -1,0 +1,27 @@
+name	k_blast
+speed   15
+type 	none
+shadow	0
+candamage enemy obstacle shot
+setlayer 999
+alpha 1
+
+
+
+
+anim	idle
+	delay	3
+	offset	77 69
+	frame	data/chars/King_Piccolo/480.gif
+	offset	72 67
+	frame	data/chars/King_Piccolo/481.gif
+	offset	70 60
+	frame	data/chars/King_Piccolo/482.gif
+	offset	56 37
+	frame	data/chars/King_Piccolo/483.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

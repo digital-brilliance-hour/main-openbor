@@ -2,11 +2,14 @@ name	k_shot
 speed   15
 type 	none
 shadow	0
-load hittt
-flash hittt
-candamage enemy obstacle shot
+remove 0
+
 
 anim	idle
+	attack	10 1 55 35 20 1 1 0 0 0
 	delay	7
 	offset	22 48
 	frame	data/chars/King_Piccolo/167.gif
+		
+#|edited by openBor Stats v 0.67
+		

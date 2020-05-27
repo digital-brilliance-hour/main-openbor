@@ -2,23 +2,52 @@ name	k_electric
 speed   15
 type 	none
 shadow	0
-load hittt
-flash hittt
-candamage enemy obstacle shot
+setlayer 999
 
 offscreenkill 100
 
+onspawnscript @script
+void main()
+{
+void self = getlocalvar("self");
+setdrawmethod(self, 1, 192, 192, 0, 0, 0, 1);
+}
+@end_script
+
+
+
 anim	idle
-	delay	7
+	attack	10 7 158 83 0 0 1 0 0 0
+	delay	10
 	offset	133 53
 	frame	data/chars/King_Piccolo/552.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	132 47
 	frame	data/chars/King_Piccolo/553.gif
+	attack	9 5 272 95 30 0 1 0 0 0
 	offset	133 52
 	frame	data/chars/King_Piccolo/554.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	131 54
 	frame	data/chars/King_Piccolo/555.gif
+	attack	10 2 323 98 30 1 1 0 0 0
 	offset	135 53
 	frame	data/chars/King_Piccolo/556.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	129 55
 	frame	data/chars/King_Piccolo/557.gif
+	attack	10 2 323 98 30 1 1 0 0 0
+	offset	131 54
+	frame	data/chars/King_Piccolo/555.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	135 53
+	frame	data/chars/King_Piccolo/556.gif
+	attack	10 2 323 98 30 1 1 0 0 0
+	offset	129 55
+	frame	data/chars/King_Piccolo/557.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		
