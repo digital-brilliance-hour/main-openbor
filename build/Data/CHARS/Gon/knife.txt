@@ -1,0 +1,42 @@
+name	g_knife
+speed   35
+type 	none
+shadow	0
+remove 0
+alpha 1
+load g_hit2
+
+
+
+anim	idle
+	delay	3
+	hitflash	g_hit2
+	drawmethod	flipx 1
+	drawmethod	scale 0.50
+	offset	-50 14
+	frame	data/chars/Gon/235.gif
+	offset	-50 26
+	frame	data/chars/Gon/236.gif
+	attack	6 6 512 274 25 1 1 0 0 0
+	offset	263 137
+	frame	data/chars/Gon/237.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	260 145
+	frame	data/chars/Gon/238.gif
+	attack	6 6 512 274 25 1 0 1 0 0
+	offset	256 143
+	frame	data/chars/Gon/239.gif
+	offset	261 142
+	frame	data/chars/Gon/240.gif
+	offset	227 119
+	frame	data/chars/Gon/241.gif
+	offset	96 116
+	frame	data/chars/Gon/242.gif
+	offset	40 112
+	frame	data/chars/Gon/243.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

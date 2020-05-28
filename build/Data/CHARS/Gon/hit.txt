@@ -1,0 +1,29 @@
+name	g_hit
+speed   35
+type 	none
+shadow	0
+remove 0
+alpha 1
+
+
+
+anim	idle
+	delay	7
+ offset 180 189
+ frame data/chars/Gon/443.gif
+ offset 180 189
+ frame data/chars/Gon/444.gif
+ offset 180 189
+ frame data/chars/Gon/445.gif
+ offset 180 189
+ frame data/chars/Gon/446.gif
+ offset 180 189
+ frame data/chars/Gon/447.gif
+
+
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

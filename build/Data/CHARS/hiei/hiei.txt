@@ -91,6 +91,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	bbox	45 53 42 76
 	sound	data/chars/hiei/sword.wav
@@ -389,7 +390,6 @@ anim	freespecial
 	sound	data/chars/hiei/harashiranai.wav
 	bbox	92 47 -43 70
 	loop	0
-	energycost	20
 	delay	4
 	offset	63 120
 	frame	data/chars/hiei/socosfire.gif
@@ -436,7 +436,6 @@ anim	freespecial2
 	sound	data/chars/hiei/kokuryuha.wav
 	custknife	cnegras
 	throwframe	22
-	energycost	40
 	loop	0
 	delay	8
 	frame	data/chars/hiei/ara1.gif
@@ -507,8 +506,6 @@ anim	freespecial2
 		
 anim	freespecial3
 	hitflash	flash3
-	bbox	38 66 55 61
-	energycost	20
 	sound	data/chars/hiei/ensatsuken.wav
 	loop	0
 	delay	8
@@ -550,8 +547,6 @@ anim	freespecial4
 	followcond	1
 	delay	9
 	offset	63 206
-	energycost	40
-	mponly	1
 	delay	9
 	frame	data/chars/hiei/ar1.gif
 	attack	36 105 64 110 0 0 1 0 0 0

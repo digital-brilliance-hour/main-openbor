@@ -7,8 +7,10 @@ shadow	2
 aironly 1
 icon	data/chars/Luffy/icon.gif
 atchain  1 2 3 3
-com d d a freespecial
-com d f a freespecial2
+animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
 holdblock 1
 riseinv 2 0
 makeinv 2 0
@@ -18,7 +20,345 @@ jumpmove 3 3
 weapons gear2 Luffy    
 weaploss 3
 
-anim waiting
+anim	attack1
+	loop	0
+	delay	7
+	bbox	36 46 13 20
+	offset	38 77
+	sound	data/chars/Luffy/punch.wav
+	frame	data/chars/Luffy/punch01.gif
+	frame	data/chars/Luffy/punch02.gif
+	attack	64 48 24 9 10
+	frame	data/chars/Luffy/punch03.gif
+		
+anim	attack2
+	loop	0
+	offset	38 77
+	bbox	78 48 12 17
+	delay	10
+	sound	data/chars/Luffy/gatl.wav
+	frame	data/chars/Luffy/gatl01.gif
+	frame	data/chars/Luffy/gatl02.gif
+	blast	70 39 34 42 30
+	frame	data/chars/Luffy/gatl03.gif
+	blast	70 32 39 48 30
+	frame	data/chars/Luffy/gatl04.gif
+	blast	70 30 35 50 30
+	frame	data/chars/Luffy/gatl05.gif
+	blast	70 32 35 48 30
+	frame	data/chars/Luffy/gatl06.gif
+	blast	70 37 37 43 30
+	frame	data/chars/Luffy/gatl07.gif
+		
+anim	block
+	loop	0
+	offset	38 77
+	delay	7
+	frame	data/chars/Luffy/block01.gif
+	frame	data/chars/Luffy/block02.gif
+	frame	data/chars/Luffy/block03.gif
+	frame	data/chars/Luffy/block04.gif
+	frame	data/chars/Luffy/block05.gif
+		
+anim	chargeattack
+	loop	0
+	offset	82 78
+	bbox	78 48 12 17
+	delay	3
+	sound	data/chars/Luffy/raiful.wav
+	frame	data/chars/Luffy/raiful01.gif
+	frame	data/chars/Luffy/raiful02.gif
+	attack	112 37 27 31 50
+	blast	112 37 27 31 50
+	frame	data/chars/Luffy/raiful03.gif
+	attack	112 37 28 30 50
+	blast	112 37 28 30 50
+	frame	data/chars/Luffy/raiful04.gif
+	frame	data/chars/Luffy/raiful05.gif
+		
+anim	fall
+		
+anim	freespecial
+	loop	0
+	offset	44 77
+	delay	10
+	weaponframe	20 1
+	frame	data/chars/Luffy/trans01.gif
+	sound	data/chars/Luffy/intro.wav
+	frame	data/chars/Luffy/trans02.gif
+	frame	data/chars/Luffy/trans03.gif
+	frame	data/chars/Luffy/trans04.gif
+	frame	data/chars/Luffy/trans05.gif
+	frame	data/chars/Luffy/trans06.gif
+	frame	data/chars/Luffy/trans07.gif
+	frame	data/chars/Luffy/trans08.gif
+	frame	data/chars/Luffy/trans09.gif
+	frame	data/chars/Luffy/trans10.gif
+	frame	data/chars/Luffy/trans11.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
+	sound	data/chars/Luffy/gear.wav
+	offset	64 77
+	delay	6
+	frame	data/chars/Luffy/trans12.gif
+	frame	data/chars/Luffy/trans13.gif
+	frame	data/chars/Luffy/trans14.gif
+	frame	data/chars/Luffy/trans15.gif
+	offset	38 77
+	frame	data/chars/Luffy/trans16.gif
+	frame	data/chars/Luffy/trans16.gif
+		
+anim	freespecial2
+	mponly	1
+	mpcost	20
+	loop	0
+	offset	82 78
+	bbox	78 48 12 17
+	delay	5
+	sound	data/chars/Luffy/bazka.wav
+	frame	data/chars/Luffy/bazka01.gif
+	frame	data/chars/Luffy/bazka02.gif
+	frame	data/chars/Luffy/bazka03.gif
+	frame	data/chars/Luffy/bazka04.gif
+	frame	data/chars/Luffy/bazka05.gif
+	frame	data/chars/Luffy/bazka06.gif
+	frame	data/chars/Luffy/bazka07.gif
+	attack	95 43 49 18 70
+	frame	data/chars/Luffy/bazka08.gif
+	attack	98 40 85 24 70
+	frame	data/chars/Luffy/bazka09.gif
+	attack	97 40 85 24 70
+	blast	97 40 85 24 70
+	frame	data/chars/Luffy/bazka10.gif
+	frame	data/chars/Luffy/bazka11.gif
+	frame	data/chars/Luffy/bazka12.gif
+	frame	data/chars/Luffy/bazka13.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	38 77
+	sound	data/chars/Luffy/get.wav
+	frame	data/chars/Luffy/get01.gif
+	frame	data/chars/Luffy/get02.gif
+	frame	data/chars/Luffy/get03.gif
+		
+anim	grab
+	loop	0
+	offset	38 77
+	delay	8
+	bbox	36 46 13 20
+	delay	8
+	sound	data/chars/Luffy/grab.wav
+	frame	data/chars/Luffy/grab.gif
+		
+anim	grabattack
+	loop	0
+	offset	38 77
+	bbox	36 46 13 20
+	delay	4
+	frame	data/chars/Luffy/gatta1.gif
+	attack	49 39 19 26 6
+	frame	data/chars/Luffy/gatta2.gif
+	frame	data/chars/Luffy/gatta3.gif
+	frame	data/chars/Luffy/gatta4.gif
+		
+anim	grabattack2
+	loop	0
+	offset	38 77
+	bbox	0 0 0 0 0
+	delay	5
+	frame	data/chars/Luffy/gatta2-1.gif
+	frame	data/chars/Luffy/gatta2-2.gif
+	frame	data/chars/Luffy/gatta2-3.gif
+	frame	data/chars/Luffy/gatta2-4.gif
+	frame	data/chars/Luffy/gatta2-5.gif
+	frame	data/chars/Luffy/gatta2-6.gif
+	frame	data/chars/Luffy/gatta2-7.gif
+	sound	data/chars/Luffy/finish.wav
+	blast	47 38 41 24 11
+	frame	data/chars/Luffy/gatta2-8.gif
+	frame	data/chars/Luffy/gatta2-9.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	36 46 13 20
+	frame	data/chars/Luffy/stand01.GIF
+	frame	data/chars/Luffy/stand02.GIF
+	frame	data/chars/Luffy/stand03.GIF
+	frame	data/chars/Luffy/stand04.GIF
+	frame	data/chars/Luffy/stand05.GIF
+	frame	data/chars/Luffy/stand06.GIF
+		
+anim	jump
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Luffy/jump01.gif
+	frame	data/chars/Luffy/jump02.gif
+	frame	data/chars/Luffy/jump03.gif
+	frame	data/chars/Luffy/jump04.gif
+	frame	data/chars/Luffy/jump05.gif
+	frame	data/chars/Luffy/jump06.gif
+	frame	data/chars/Luffy/jump07.gif
+		
+anim	jumpattack
+	mponly	1
+	mpcost	5
+	loop	0
+	delay	5
+	bbox	37 46 16 17
+	offset	38 77
+	sound	data/chars/Luffy/hanabi.wav
+	frame	data/chars/Luffy/jatk01.gif
+	frame	data/chars/Luffy/jatk02.gif
+	frame	data/chars/Luffy/jatk03.gif
+	frame	data/chars/Luffy/jatk02.gif
+	frame	data/chars/Luffy/jatk03.gif
+	blast	47 38 41 24 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk04.gif
+	blast	77 48 35 28 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk05.gif
+	blast	47 38 41 24 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk04.gif
+	blast	77 48 35 28 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk05.gif
+	blast	47 38 41 24 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk06.gif
+	blast	47 38 41 24 11
+	attack	0 0 98 96 30
+	frame	data/chars/Luffy/jatk07.gif
+		
+anim	land
+	loop	0
+	offset	38 77
+	delay	25
+	frame	data/chars/Luffy/rise07.gif
+	frame	data/chars/Luffy/rise08.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	36 46 13 20
+	delay	20
+	sound	data/chars/Luffy/pain.wav
+	frame	data/chars/Luffy/pain.gif
+		
+anim	rise
+	loop	0
+	offset	38 77
+	delay	10
+	frame	data/chars/Luffy/rise01.gif
+	frame	data/chars/Luffy/rise02.gif
+	frame	data/chars/Luffy/rise03.gif
+	frame	data/chars/Luffy/rise04.gif
+	frame	data/chars/Luffy/rise05.gif
+	frame	data/chars/Luffy/rise06.gif
+	frame	data/chars/Luffy/rise07.gif
+	frame	data/chars/Luffy/rise08.gif
+		
+anim	run
+	loop	1
+	delay	7
+	offset	38 77
+	bbox	36 46 13 20
+	running	25 4 3 1 1
+	frame	data/chars/Luffy/dash01.gif
+	frame	data/chars/Luffy/dash02.gif
+	frame	data/chars/Luffy/dash03.gif
+	frame	data/chars/Luffy/dash04.gif
+	frame	data/chars/Luffy/dash05.gif
+	frame	data/chars/Luffy/dash06.gif
+	frame	data/chars/Luffy/dash07.gif
+	frame	data/chars/Luffy/dash08.gif
+		
+anim	select
+	loop	0
+	delay	7
+	offset	38 77
+	sound	data/chars/Luffy/get.wav
+	frame	data/chars/Luffy/slt01.GIF
+	frame	data/chars/Luffy/slt02.GIF
+	frame	data/chars/Luffy/slt03.GIF
+	frame	data/chars/Luffy/slt04.GIF
+	frame	data/chars/Luffy/slt05.GIF
+	frame	data/chars/Luffy/slt06.GIF
+	frame	data/chars/Luffy/slt07.GIF
+	frame	data/chars/Luffy/slt08.GIF
+	frame	data/chars/Luffy/slt09.GIF
+	frame	data/chars/Luffy/slt10.GIF
+		
+anim	special2
+	mponly	1
+	mpcost	30
+	loop	0
+	offset	43 78
+	bbox	78 48 12 17
+	delay	7
+	sound	data/chars/Luffy/storm.wav
+	frame	data/chars/Luffy/storm01.gif
+	frame	data/chars/Luffy/storm02.gif
+	frame	data/chars/Luffy/storm03.gif
+	frame	data/chars/Luffy/storm04.gif
+	sound	data/chars/Luffy/wave.wav
+	frame	data/chars/Luffy/storm05.gif
+	offset	51 78
+	bbox	34 13 26 24
+	frame	data/chars/Luffy/storm06.gif
+	offset	51 78
+	bbox	34 13 20 18
+	frame	data/chars/Luffy/storm07.gif
+	attack	59 9 41 88 60
+	blast	59 9 41 88 60
+	move	30
+	frame	data/chars/Luffy/storm08.gif
+	attack	59 8 42 97 60
+	blast	59 8 42 97 60
+	move	30
+	frame	data/chars/Luffy/storm09.gif
+	attack	59 2 42 97 60
+	blast	59 2 42 97 60
+	move	30
+	frame	data/chars/Luffy/storm10.gif
+	attack	61 5 40 96 60
+	blast	61 5 40 96 60
+	move	30
+	frame	data/chars/Luffy/storm11.gif
+	attack	59 9 41 88 60
+	blast	59 9 41 88 60
+	move	30
+	frame	data/chars/Luffy/storm08.gif
+	attack	59 8 42 97 60
+	blast	59 8 42 97 60
+	move	30
+	frame	data/chars/Luffy/storm09.gif
+	attack	59 2 42 97 60
+	blast	59 2 42 97 60
+	move	30
+	frame	data/chars/Luffy/storm10.gif
+	attack	61 5 40 96 60
+	blast	61 5 40 96 60
+	move	30
+	frame	data/chars/Luffy/storm11.gif
+		
+anim	throw
+	loop	0
+	offset	38 77
+	delay	7
+	frame	data/chars/Luffy/throw01.gif
+	frame	data/chars/Luffy/throw02.gif
+		
+anim	waiting
 	loop	1
 	delay	9
 	offset	38 77
@@ -50,44 +390,12 @@ anim waiting
 	frame	data/chars/Luffy/wait27.GIF
 	frame	data/chars/Luffy/wait28.GIF
 	frame	data/chars/Luffy/wait29.GIF
-
-anim select
-	loop	0
-	delay	7
-	offset	38 77
-        sound   data/chars/Luffy/get.wav
-	frame	data/chars/Luffy/slt01.GIF
-	frame	data/chars/Luffy/slt02.GIF
-	frame	data/chars/Luffy/slt03.GIF
-	frame	data/chars/Luffy/slt04.GIF
-	frame	data/chars/Luffy/slt05.GIF
-	frame	data/chars/Luffy/slt06.GIF
-	frame	data/chars/Luffy/slt07.GIF
-	frame	data/chars/Luffy/slt08.GIF
-	frame	data/chars/Luffy/slt09.GIF
-	frame	data/chars/Luffy/slt10.GIF
-
-anim idle
-	loop	1
-	delay	15
-	offset	38 77
-	bbox	36 46 13 20
-	
-	frame	data/chars/Luffy/stand01.GIF
-	frame	data/chars/Luffy/stand02.GIF
-	frame	data/chars/Luffy/stand03.GIF
-	frame	data/chars/Luffy/stand04.GIF
-	frame	data/chars/Luffy/stand05.GIF
-	frame	data/chars/Luffy/stand06.GIF
 		
-
-anim walk
-
+anim	walk
 	loop	1
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
-	
 	frame	data/chars/Luffy/walk01.gif
 	frame	data/chars/Luffy/walk02.gif
 	frame	data/chars/Luffy/walk03.gif
@@ -96,363 +404,6 @@ anim walk
 	frame	data/chars/Luffy/walk06.gif
 	frame	data/chars/Luffy/walk07.gif
 	frame	data/chars/Luffy/walk08.gif
-
-anim run
-	loop	1
-	delay	7
-	offset	38 77
-	bbox	36 46 13 20
-        running 25 4 3 1 1	
-	frame	data/chars/Luffy/dash01.gif
-	frame	data/chars/Luffy/dash02.gif
-	frame	data/chars/Luffy/dash03.gif
-	frame	data/chars/Luffy/dash04.gif
-	frame	data/chars/Luffy/dash05.gif
-	frame	data/chars/Luffy/dash06.gif
-	frame	data/chars/Luffy/dash07.gif
-	frame	data/chars/Luffy/dash08.gif
-
-anim get
-	loop	0
-	delay	7
-	offset	38 77
-        sound   data/chars/Luffy/get.wav
-	frame	data/chars/Luffy/get01.gif
-        frame	data/chars/Luffy/get02.gif
-	frame	data/chars/Luffy/get03.gif
-
-
-
-anim attack1
-	loop	0
-	delay	7
-	bbox	36 46 13 20
-	offset	38 77
-        sound   data/chars/Luffy/punch.wav
-	frame	data/chars/Luffy/punch01.gif
-        frame	data/chars/Luffy/punch02.gif
-        attack	64 48 24 9 10
-	frame	data/chars/Luffy/punch03.gif
-
-
-anim attack2
-	loop	0
-	offset	38 77
-	bbox	78 48 12 17
-	delay	10
-        sound   data/chars/Luffy/gatl.wav
-	frame	data/chars/Luffy/gatl01.gif
-	frame	data/chars/Luffy/gatl02.gif
-	blast	70 39 34 42 30
-	frame	data/chars/Luffy/gatl03.gif
-        blast	70 32 39 48 30
-	frame	data/chars/Luffy/gatl04.gif
-	blast	70 30 35 50 30
-	frame	data/chars/Luffy/gatl05.gif
-        blast	70 32 35 48 30
-	frame	data/chars/Luffy/gatl06.gif
-        blast	70 37 37 43 30
-	frame	data/chars/Luffy/gatl07.gif  
-
-anim chargeattack
-	loop	0
-	offset	82 78
-	bbox	78 48 12 17
-	delay	3
-        sound   data/chars/Luffy/raiful.wav
-	frame	data/chars/Luffy/raiful01.gif
-	frame	data/chars/Luffy/raiful02.gif
-	attack	112 37 27 31 50
-        blast  112 37 27 31 50
-        frame	data/chars/Luffy/raiful03.gif
-	attack	112 37 28 30 50
-        blast  112 37 28 30 50
-        frame	data/chars/Luffy/raiful04.gif
-	frame	data/chars/Luffy/raiful05.gif
-
-anim special2
-        mponly  1
-        mpcost  30
-	loop	0
-	offset	43 78
-	bbox	78 48 12 17
-	delay	7
-        sound   data/chars/Luffy/storm.wav
-	frame	data/chars/Luffy/storm01.gif
-	frame	data/chars/Luffy/storm02.gif
-	frame	data/chars/Luffy/storm03.gif
-	frame	data/chars/Luffy/storm04.gif
-        sound   data/chars/Luffy/wave.wav
-	frame	data/chars/Luffy/storm05.gif
-        offset	51 78
-        bbox	34 13 26 24
-	frame	data/chars/Luffy/storm06.gif
-	offset	51 78
-        bbox	34 13 20 18
-        frame	data/chars/Luffy/storm07.gif
-	attack	59 9 41 88 60
-        blast   59 9 41 88 60
-        move  30
-	frame	data/chars/Luffy/storm08.gif
-	attack	59 8 42 97 60
-        blast   59 8 42 97 60
-        move  30
-	frame	data/chars/Luffy/storm09.gif
-	attack	59 2 42 97 60
-        blast   59 2 42 97 60
-        move  30
-	frame	data/chars/Luffy/storm10.gif
-	attack	61 5 40 96 60
-        blast   61 5 40 96 60
-        move  30
-	frame	data/chars/Luffy/storm11.gif
-	attack	59 9 41 88 60
-        blast   59 9 41 88 60
-        move  30
-	frame	data/chars/Luffy/storm08.gif
-	attack	59 8 42 97 60
-        blast   59 8 42 97 60
-        move  30
-	frame	data/chars/Luffy/storm09.gif
-	attack	59 2 42 97 60
-        blast   59 2 42 97 60
-        move  30
-	frame	data/chars/Luffy/storm10.gif
-	attack	61 5 40 96 60
-        blast   61 5 40 96 60
-        move  30
-	frame	data/chars/Luffy/storm11.gif
-
-anim freespecial
-	loop	0
-	offset	44 77
-	delay	10
-        weaponframe 20 1
-	frame	data/chars/Luffy/trans01.gif
-        sound   data/chars/Luffy/intro.wav
-	frame	data/chars/Luffy/trans02.gif
-	frame	data/chars/Luffy/trans03.gif
-	frame	data/chars/Luffy/trans04.gif
-	frame	data/chars/Luffy/trans05.gif
-	frame	data/chars/Luffy/trans06.gif
-	frame	data/chars/Luffy/trans07.gif        
-	frame	data/chars/Luffy/trans08.gif 
-	frame	data/chars/Luffy/trans09.gif 
-	frame	data/chars/Luffy/trans10.gif
-	frame	data/chars/Luffy/trans11.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-        sound   data/chars/Luffy/gear.wav
-	offset	64 77
-	delay	6
-	frame	data/chars/Luffy/trans12.gif
-	frame	data/chars/Luffy/trans13.gif
-	frame	data/chars/Luffy/trans14.gif
-	frame	data/chars/Luffy/trans15.gif        
-	offset	38 77
-	frame	data/chars/Luffy/trans16.gif 
-	frame	data/chars/Luffy/trans16.gif 	
-
-anim freespecial2 
-	mponly  1
-        mpcost  20
-        loop	0
-	offset	82 78
-	bbox	78 48 12 17
-	delay	5
-        sound   data/chars/Luffy/bazka.wav
-	frame	data/chars/Luffy/bazka01.gif
-	frame	data/chars/Luffy/bazka02.gif
-	frame	data/chars/Luffy/bazka03.gif
-	frame	data/chars/Luffy/bazka04.gif
-	frame	data/chars/Luffy/bazka05.gif
-	frame	data/chars/Luffy/bazka06.gif
-	frame	data/chars/Luffy/bazka07.gif
-	attack	95 43 49 18 70
-	frame	data/chars/Luffy/bazka08.gif
-	attack	98 40 85 24 70
-	frame	data/chars/Luffy/bazka09.gif
-	attack	97 40 85 24 70
-        blast   97 40 85 24 70
-	frame	data/chars/Luffy/bazka10.gif
-	frame	data/chars/Luffy/bazka11.gif
-	frame	data/chars/Luffy/bazka12.gif
-	frame	data/chars/Luffy/bazka13.gif
-
-anim jump
-	loop	0
-	offset	38 77
-	delay	10
-	bbox	37 46 16 17
-	
-	frame	data/chars/Luffy/jump01.gif
-	frame	data/chars/Luffy/jump02.gif
-	frame	data/chars/Luffy/jump03.gif
-	frame	data/chars/Luffy/jump04.gif
-	frame	data/chars/Luffy/jump05.gif
-	frame	data/chars/Luffy/jump06.gif
-	frame	data/chars/Luffy/jump07.gif
-
-anim jumpattack
-	mponly  1
-        mpcost  5
-	loop	0
-	delay	5
-	bbox	37 46 16 17
-	offset	38 77
-        sound   data/chars/Luffy/hanabi.wav	
-	frame	data/chars/Luffy/jatk01.gif
-	frame	data/chars/Luffy/jatk02.gif
-        frame	data/chars/Luffy/jatk03.gif
-	frame	data/chars/Luffy/jatk02.gif
-        frame	data/chars/Luffy/jatk03.gif
-        blast  47 38 41 24 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk04.gif
-	blast  77 48 35 28 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk05.gif
-        blast  47 38 41 24 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk04.gif
-	blast  77 48 35 28 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk05.gif
-        blast  47 38 41 24 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk06.gif
-        blast  47 38 41 24 11
-        attack	0 0 98 96 30
-	frame	data/chars/Luffy/jatk07.gif
-
-
-
-anim grab
-	loop	0
-	offset	38 77
-	delay	8
-	bbox	36 46 13 20
-	delay	8
-        sound   data/chars/Luffy/grab.wav
-	frame	data/chars/Luffy/grab.gif
-	
-
-
-
-anim grabattack
-	loop	0
-	offset	38 77
-	bbox	36 46 13 20	
-	delay	4
-	frame	data/chars/Luffy/gatta1.gif
-	attack	49 39 19 26 6
-	frame	data/chars/Luffy/gatta2.gif
-	frame	data/chars/Luffy/gatta3.gif
-	frame	data/chars/Luffy/gatta4.gif
-           
-        
-
-anim grabattack2
-	loop	0
-	offset	38 77
-	bbox	0 0 0 0 0
-	delay	5
-	
-	frame	data/chars/Luffy/gatta2-1.gif
-	frame	data/chars/Luffy/gatta2-2.gif
-	frame	data/chars/Luffy/gatta2-3.gif
-        frame	data/chars/Luffy/gatta2-4.gif
-	frame	data/chars/Luffy/gatta2-5.gif
-	frame	data/chars/Luffy/gatta2-6.gif
-	frame	data/chars/Luffy/gatta2-7.gif
-        sound   data/chars/Luffy/finish.wav
-	blast   47 38 41 24 11
-	frame	data/chars/Luffy/gatta2-8.gif
-	frame	data/chars/Luffy/gatta2-9.gif
-
-
-
-anim throw
-	loop	0
-	offset	38 77
-	delay	7
-	
-	frame	data/chars/Luffy/throw01.gif
-	frame	data/chars/Luffy/throw02.gif
-
-anim block
-	loop	0
-	offset	38 77
-	delay	7
-	
-	frame	data/chars/Luffy/block01.gif
-	frame	data/chars/Luffy/block02.gif
-	frame	data/chars/Luffy/block03.gif
-	frame	data/chars/Luffy/block04.gif
-	frame	data/chars/Luffy/block05.gif
-
-anim pain
-	loop	0
-	offset	38 77
-	bbox	36 46 13 20
-	delay	20
-        sound   data/chars/Luffy/pain.wav
-	frame	data/chars/Luffy/pain.gif
-
-
-anim fall
-	anim fall
-	loop	0
-	offset	38 77
-	delay	20
-        sound   data/chars/Luffy/down.wav	
-        frame	data/chars/Luffy/fall01.gif
-        move    -4	
-        frame	data/chars/Luffy/fall02.gif
-        frame	data/chars/Luffy/fall03.gif
-        frame	data/chars/Luffy/fall04.gif
-	frame	data/chars/Luffy/fall05.gif
-	frame	data/chars/Luffy/fall06.gif	
-	frame	data/chars/Luffy/fall07.gif
-
-
-anim rise
-	loop	0
-	offset	38 77
-	delay	10
-        
-        frame	data/chars/Luffy/rise01.gif
-        frame	data/chars/Luffy/rise02.gif
-        frame	data/chars/Luffy/rise03.gif
-        frame	data/chars/Luffy/rise04.gif
-        frame	data/chars/Luffy/rise05.gif
-        frame	data/chars/Luffy/rise06.gif
-	frame	data/chars/Luffy/rise07.gif
-	frame	data/chars/Luffy/rise08.gif
-
-
-
-anim land
-	loop	0
-	offset	38 77
-	delay	25
-        frame	data/chars/Luffy/rise07.gif
-        frame	data/chars/Luffy/rise08.gif
-
-anim chargeattack
-	loop	0
-	offset	82 78
-	bbox	78 48 12 17
-	delay	3
-        sound   data/chars/luffy/raiful.wav
-	frame	data/chars/luffy/raiful01.gif
-	frame	data/chars/luffy/raiful02.gif
-	attack	112 37 27 31 50
-        blast  112 37 27 31 50
-        frame	data/chars/luffy/raiful03.gif
-	attack	112 37 28 30 50
-        blast  112 37 28 30 50
-        frame	data/chars/luffy/raiful04.gif
-	frame	data/chars/luffy/raiful05.gif
+		
+#|edited by openBor Stats v 0.67
+		

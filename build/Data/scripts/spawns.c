@@ -1,3 +1,5 @@
+#include "data/scripts/animation/animation.c"
+
 void spawn01(void vName, float fX, float fY, float fZ)
 {
 	//spawn01 (Generic spawner)
@@ -78,70 +80,6 @@ void spawnbind02(void Name, float dx, float dy, float dz)
    Spawn = spawn(Name, dx, dy, 0);
    bindentity(Spawn, self, dx, dz, dy, 0, 0);
    updateframe(Spawn, frame);
-}
-
-void spawnscreen(void vName, float fX, float fZ, void Alias, int iDirection)
-{
-   //spawnscreen (Generic spawner with alias and relative to screen)
-   //Spawns entity next to caller.
-   //vName: Model name of entity to be spawned in.
-   //fX: X location adjustment.
-   //fZ: Y location adjustment.
-        //fY: Z location adjustment.
-   void self = getlocalvar("self"); //Get calling entity.
-   void vSpawn; //Spawn object.
-
-
-   clearspawnentry(); //Clear current spawn entry.
-   setspawnentry("name",vName); //Acquire spawn entity by name.
-   setspawnentry("coords", 1,0,-1);
-   
-   vSpawn = spawn(); //Spawn in entity.
-
-
-   changeentityproperty(vSpawn, "position",openborvariant("xpos")+fX, openborvariant("ypos")+fZ, 10); //Set spawn location.
-   if(iDirection){changeentityproperty(vSpawn, "direction", iDirection);} //Set direction.
-   if(Alias){changeentityproperty(vSpawn, "name", Alias);} //Set Alias to spawned entity
-   changeentityproperty(vSpawn, "parent", self);
-   return vSpawn; //Return spawn.
-}
-
-void spawnscreenbind(void Name, float dx, float dy, float dz)
-{ // Spawn and bind other entity
-   void self = getlocalvar("self");
-   void Spawn;
-
-   Spawn = spawnscreen(Name, dx, dy);
-   bindentity(Spawn, self, dx, dz, dy, 0, 0);
-}
-
-void spawn06(void vName, float fX, float fY, float fZ)
-{
-    //Spawns entity based on left screen edge and z axis
-    //Auto adjust with camera's position
-    //vName: Model name of entity to be spawned in.
-    //fX: X distance relative to left edge
-    //fY: Y height from ground
-      //fZ: Z coordinate
-
-    void self = getlocalvar("self"); //Get calling entity.
-    void vSpawn; //Spawn object.
-    int Direction = getentityproperty(self, "direction");
-        int XPos = openborvariant("xpos"); //Get screen edge's position
-        int YPos = openborvariant("ypos"); // Get camera position
-        int Screen = openborvariant("hResolution"); // Get screen width
-
-    clearspawnentry(); //Clear current spawn entry.
-      setspawnentry("name", vName); //Acquire spawn entity by name.
-
-   if (Direction == 0){ //Is entity facing left?
-      fX = Screen-fX; //Reverse X direction to match facing and screen length
-   }
-
-    vSpawn = spawn(); //Spawn in entity.
-
-    changeentityproperty(vSpawn, "position", fX + XPos, fZ + YPos, fY); //Set spawn location.
-    return vSpawn; //Return spawn
 }
 
 void damage_all_enemies(int damage, int drop, int stay, void atk_type)

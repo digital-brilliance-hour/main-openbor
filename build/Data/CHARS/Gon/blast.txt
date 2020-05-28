@@ -1,0 +1,30 @@
+name	g_blast
+speed   10
+type 	none
+shadow	0
+remove 0
+alpha 1
+
+
+
+
+anim	idle
+	delay	3
+	loop	0
+	drawmethod	scale 0.35
+	offset	145 67
+	frame	data/chars/Gon/244.gif
+	attack	30 4 226 112 20 1 1 0 0 0
+	dropv	1 -25 0
+	offset	125 64
+	frame	data/chars/Gon/245.gif
+	offset	110 83
+	frame	data/chars/Gon/246.gif
+	offset	106 86
+	frame	data/chars/Gon/247.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

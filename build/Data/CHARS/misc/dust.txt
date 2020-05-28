@@ -1,0 +1,37 @@
+name	pdust
+speed   35
+type 	none
+shadow	0
+remove 0
+alpha 1
+
+
+
+
+anim	idle
+	drawmethod	scale 0.50
+	delay	10
+	offset	161 78
+	frame	data/chars/Gon/267.gif
+	offset	161 78
+	frame	data/chars/Gon/268.gif
+	offset	161 78
+	frame	data/chars/Gon/269.gif
+	offset	161 78
+	frame	data/chars/Gon/270.gif
+	offset	161 78
+	frame	data/chars/Gon/271.gif
+	offset	161 78
+	frame	data/chars/Gon/272.gif
+	offset	161 78
+	frame	data/chars/Gon/273.gif
+	offset	161 78
+	frame	data/chars/Gon/274.gif
+	offset	161 78
+	frame	data/chars/Gon/275.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,49 @@
+name	g_blast2
+speed   10
+type 	none
+shadow	0
+remove 0
+alpha 1
+
+
+
+
+
+anim	idle
+	drawmethod	scale 0.45
+	attack	11 6 221 102 5 0 1 0 0 0
+	delay	4
+	loop	0
+	offset	86 73
+	frame	data/chars/Gon/205.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	79 80
+	frame	data/chars/Gon/206.gif
+	attack	11 6 221 147 8 0 0 1 0 0
+	offset	74 80
+	frame	data/chars/Gon/207.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 80
+	frame	data/chars/Gon/208.gif
+	attack	11 6 221 147 10 0 1 0 0 0
+	offset	86 80
+	frame	data/chars/Gon/209.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	67 79
+	frame	data/chars/Gon/210.gif
+	attack	11 6 221 147 10 0 0 1 0 0
+	offset	86 79
+	frame	data/chars/Gon/211.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	86 79
+	frame	data/chars/Gon/212.gif
+	attack	11 6 221 147 10 1 1 0 0 0
+	dropv	1 20 0
+	offset	86 80
+	frame	data/chars/Gon/213.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

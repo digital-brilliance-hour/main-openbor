@@ -1,0 +1,34 @@
+name	g_shot
+speed   40
+type 	none
+shadow	0
+remove 0
+alpha 1
+
+
+anim	idle
+	drawmethod	scale 0.30
+	attack	172 15 293 188 20 1 1 0 0 0
+	delay	4
+	offset	236 106
+	frame	data/chars/Gon/418.gif
+	offset	236 106
+	frame	data/chars/Gon/419.gif
+	attack	172 15 293 188 20 1 0 1 0 0
+	offset	236 106
+	frame	data/chars/Gon/420.gif
+	offset	236 106
+	frame	data/chars/Gon/421.gif
+	attack	172 15 293 188 20 1 1 0 0 0
+	offset	236 106
+	frame	data/chars/Gon/422.gif
+	offset	236 106
+	frame	data/chars/Gon/423.gif
+	offset	236 106
+	frame	data/chars/Gon/424.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

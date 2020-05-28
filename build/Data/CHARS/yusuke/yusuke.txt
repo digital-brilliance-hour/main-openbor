@@ -1,5 +1,5 @@
 name	Yusuke
-health	90
+health	100
 speed	10
 running 18 2 4 2 10
 mp  100
@@ -20,9 +20,9 @@ palette  data/chars/yusuke/yusuke2.gif  # cor 1 #
 remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt2.gif
 remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt3.gif
 
-com 		D F D F K freespecial4
-com 		D F D F A freespecial3
-com 		D F A freespecial2
+com 		a4 freespecial4
+com 		a3 freespecial3
+com 		a2 freespecial2
 com             D U A freespecial5
 
 
@@ -30,6 +30,7 @@ com             D U A freespecial5
 
 alternatepal data/chars/yusuke/alt2.gif
 alternatepal data/chars/yusuke/alt3.gif
+animationscript data/scripts/spawns.c
 
 
 
@@ -390,15 +391,20 @@ anim	follow1
 	frame	data/chars/yusuke/36.gif
 		
 anim	freespecial2
-	energycost	20
 	custknife	leigan
 	throwframe	3
 	loop	0
-	delay	7
 	sound	data/chars/yusuke/leigan2.wav
-	bbox	76 42 -31 87
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	offset	63 120
 	frame	data/chars/yusuke/39.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
 	frame	data/chars/yusuke/38.gif
 	frame	data/chars/yusuke/42.gif
 	frame	data/chars/yusuke/38.gif
@@ -409,13 +415,13 @@ anim	freespecial2
 anim	freespecial3
 	followanim	1
 	followcond	1
-	delay	10
-	offset	121 302
-	energycost	40
-	mponly	1
 	delay	4
+	offset	121 302
 	sound	data/chars/yusuke/ave.wav
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	frame	data/chars/yusuke/l.gif
+	delay	4
 	frame	data/chars/yusuke/j.gif
 	frame	data/chars/yusuke/i.gif
 	frame	data/chars/yusuke/h.gif
@@ -437,6 +443,8 @@ anim	freespecial3
 	frame	data/chars/yusuke/i.gif
 	frame	data/chars/yusuke/j.gif
 	frame	data/chars/yusuke/l.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	delay	4
 	offset	63 120
 	frame	data/chars/yusuke/jump9.gif
@@ -466,14 +474,16 @@ anim	freespecial3
 	frame	data/chars/yusuke/punch2.gif
 		
 anim	freespecial4
-	energycost	20
 	custknife	superl
 	throwframe	19
 	loop	0
 	delay	7
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	sound	data/chars/yusuke/ae.wav
 	offset	63 120
 	frame	data/chars/yusuke/39.gif
+	delay	7
 	attack	24 99 83 118 0 0 1 0 0 0
 	offset	63 209
 	sound	data/chars/yusuke/energia.wav
@@ -509,6 +519,8 @@ anim	freespecial4
 	offset	63 209
 	attack	24 99 83 118 0 0 1 0 0 0
 	frame	data/chars/yusuke/eflei3.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	offset	63 209
 	attack	24 99 83 118 0 0 1 0 0 0
 	frame	data/chars/yusuke/eflei4.gif
@@ -539,9 +551,9 @@ anim	freespecial5
 	loop	0
 	delay	6
 	sound	data/chars/yusuke/ae.wav
-	energycost	40
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	offset	68 270
-	frame	data/chars/yusuke/efra1.gif
 	offset	68 270
 	attack	31 142 77 136 0 0 1 0 0 0
 	frame	data/chars/yusuke/efra2.gif
@@ -576,7 +588,9 @@ anim	freespecial5
 	offset	68 270
 	attack	31 142 77 136 0 0 1 0 0 0
 	frame	data/chars/yusuke/efra2.gif
-	bbox	57 53 37 79
+	frame	data/chars/yusuke/efra1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	delay	8
 	attack	95 4 314 128 12 0 1 0 0 130
 	offset	74 120
@@ -997,27 +1011,29 @@ anim	spain
 		
 anim	special
 	blast	6 1 120 130 20 1 1 0 0 0
-	energycost	15
 	loop	0
-	delay	4
 	sound	data/chars/yusuke/reikodan.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	offset	63 120
-	bbox	95 73 -39 57
 	frame	data/chars/yusuke/sp1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	4
 	offset	63 120
 	attack	6 1 120 130 0 0 1 0 0 0
-	bbox	62 53 27 71
 	frame	data/chars/yusuke/sp2.gif
 	move	0
 	offset	63 121
-	bbox	96 47 -39 81
 	delay	16
 	attack	85 36 45 33 24 1 0 0 0 0
 	frame	data/chars/yusuke/sp3.gif
 	attack	87 39 42 55 20 1 1 0 0 0
 	move	0
 	offset	64 120
-	bbox	60 43 34 86
 	delay	16
 	frame	data/chars/yusuke/sp7.gif
 	offset	64 120
@@ -1029,20 +1045,16 @@ anim	special
 	delay	16
 	move	0
 	offset	64 120
-	bbox	57 45 31 84
 	frame	data/chars/yusuke/sp6.gif
 	delay	12
 	move	0
 	offset	63 120
-	bbox	57 47 28 87
 	frame	data/chars/yusuke/punch0.gif
 	move	0
 	offset	63 120
-	bbox	48 54 33 76
 	frame	data/chars/yusuke/jump6.gif
 	move	0
 	offset	63 120
-	bbox	47 43 38 86
 	frame	data/chars/yusuke/idle1.gif
 		
 anim	throw
