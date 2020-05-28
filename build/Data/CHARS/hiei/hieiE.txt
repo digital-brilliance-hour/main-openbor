@@ -1,0 +1,1026 @@
+name	Hiei
+health	90
+running 20 2 4 2 10
+mp 100
+gfxshadow 1
+fmap 2
+speed	12
+type	enemy
+shadow	5
+aimove chase
+escapehits 1
+candamage player npc obsacle
+hostile npc player
+icon	data/chars/hiei/icone3.gif
+diesound data/chars/hiei/die.wav
+dust dust
+load  cnegras
+load  flash3
+atchain 1 2 3
+
+remap	data/chars/hiei/stand1.gif data/chars/hiei/cor2.gif
+remap	data/chars/hiei/stand1.gif data/chars/hiei/cor3.gif
+
+palette  data/chars/hiei/hiei3.gif  # cor 1 #
+
+alternatepal data/chars/hiei/cor2.gif
+alternatepal data/chars/hiei/cor3.gif
+
+
+com 		D  F  D F A freespecial2
+com 		D  F  A     freespecial
+com 		D  U  A     freespecial3
+com 		D  F  K     freespecial4
+animationscript data/scripts/spawns.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	bbox	45 53 42 76
+	sound	data/chars/hiei/sword.wav
+	hitflash	flash2
+	loop	0
+	delay	5
+	offset	60 119
+	frame	data/chars/hiei/12.gif
+	offset	60 120
+	frame	data/chars/hiei/14.gif
+	attack	93 61 38 72 10 0 1 0 0 0
+	offset	52 120
+	frame	data/chars/hiei/13.gif
+	offset	60 120
+	delay	7
+	frame	data/chars/hiei/14.gif
+	offset	60 119
+	delay	5
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/12.gif
+		
+anim	attack2
+	bbox	34 51 64 80
+	loop	0
+	sound	data/chars/hiei/sword.wav
+	hitflash	flash2
+	delay	4
+	offset	58 120
+	frame	data/chars/hiei/17.gif
+	bbox	57 58 32 64
+	offset	72 120
+	frame	data/chars/hiei/18.gif
+	bbox	28 68 63 59
+	offset	59 120
+	frame	data/chars/hiei/25.gif
+	attack	59 65 73 50 14 0 0 0 0 0
+	offset	59 120
+	delay	9
+	frame	data/chars/hiei/24.gif
+	offset	53 120
+	frame	data/chars/hiei/26.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	72 120
+	frame	data/chars/hiei/18.gif
+	offset	58 120
+	move	0
+	frame	data/chars/hiei/17.gif
+		
+anim	attack3
+	loop	0
+	sound	data/chars/hiei/sword.wav
+	hitflash	flash2
+	delay	2
+	offset	60 119
+	bbox	37 35 49 96
+	frame	data/chars/hiei/12.gif
+	offset	60 120
+	frame	data/chars/hiei/14.gif
+	offset	60 120
+	delay	5
+	frame	data/chars/hiei/14.gif
+	offset	52 120
+	delay	2
+	frame	data/chars/hiei/13.gif
+	offset	52 120
+	attack	90 60 44 74 12 20 1
+	frame	data/chars/hiei/13.gif
+	offset	52 120
+	frame	data/chars/hiei/13.gif
+	offset	59 120
+	delay	6
+	frame	data/chars/hiei/25.gif
+	offset	59 120
+	attack	0
+	frame	data/chars/hiei/24.gif
+	offset	53 120
+	frame	data/chars/hiei/26.gif
+		
+anim	bpain
+	loop	0
+	offset	66 120
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/hiei/fire1.gif
+	offset	66 120
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	delay	6
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 120
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/hiei/fire1.gif
+	offset	66 120
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	delay	6
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/hiei/fire2.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire1.gif
+	bbox	0 0 0 0
+	offset	66 120
+	frame	data/chars/hiei/fire2.gif
+		
+anim	fall
+	attack	93 82 -54 29 0 0 0 1 0 0
+	loop	0
+	offset	59 120
+	delay	20
+	frame	data/chars/hiei/caindo3.gif
+	offset	61 114
+	attack	98 95 -66 25 17 1 0 0 0 0
+	frame	data/chars/hiei/caindo4.gif
+		
+anim	follow1
+	hitflash	flash3
+	sound	data/chars/hiei/harashiranai.wav
+	bbox	92 47 -43 70
+	loop	0
+	energycost	20
+	delay	4
+	offset	63 120
+	frame	data/chars/hiei/socosfire.gif
+	burn	65 40 63 68 6 0 1 0 0 0
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	76 57 64 55 6 0 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	burn	75 39 58 62 6 0 1 0 0 0
+	delay	9
+	move	0
+	offset	63 120
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	83 47 59 72 6 0 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	offset	63 120
+	attack	0 0 0 0 15 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	offset	63 120
+	frame	data/chars/hiei/socosfire.gif
+	hitflash	flash3
+	bbox	38 66 55 61
+	energycost	20
+	sound	data/chars/hiei/ensatsuken.wav
+	loop	0
+	delay	8
+	offset	63 120
+	burn	18 38 98 94 30 1 0 0 0 0
+	frame	data/chars/hiei/10.gif
+	offset	63 120
+	burn	0
+	frame	data/chars/hiei/11.gif
+	offset	63 120
+	burn	18 38 98 94 20 1 0 0 0 0
+	frame	data/chars/hiei/19.gif
+	burn	0
+	offset	63 120
+	frame	data/chars/hiei/20.gif
+	burn	41 54 84 77 0 0 1 0 0 0
+	offset	39 119
+	frame	data/chars/hiei/21.gif
+	offset	33 119
+	delay	8
+	burn	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/29.gif
+	offset	39 120
+	burn	18 38 98 94 20 1 0 0 0 0
+	frame	data/chars/hiei/30.gif
+	burn	0 0 0 0 0 0 0 0 0 0
+	offset	39 120
+	frame	data/chars/hiei/31.gif
+	offset	63 120
+	frame	data/chars/hiei/11.gif
+	offset	63 120
+	frame	data/chars/hiei/10.gif
+	offset	66 120
+	frame	data/chars/hiei/stand1.gif
+		
+anim	freespecial
+	hitflash	flash3
+	sound	data/chars/hiei/harashiranai.wav
+	bbox	92 47 -43 70
+	loop	0
+	delay	4
+	offset	63 120
+	frame	data/chars/hiei/socosfire.gif
+	burn	65 40 63 68 6 0 1 0 0 0
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 0 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	76 57 64 55 6 0 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	burn	75 39 58 62 7 1 1 0 0 0
+	delay	9
+	move	0
+	offset	63 120
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	83 47 59 72 7 1 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	frame	data/chars/hiei/socosfire.gif
+		
+anim	freespecial2
+	attack	37 104 63 113 0 0 1 0 0 0
+	offset	63 208
+	sound	data/chars/hiei/kokuryuha.wav
+	custknife	cnegras
+	throwframe	22
+	loop	0
+	delay	8
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	attack	37 104 63 113 0 0 1 0 0 0
+	offset	63 208
+	frame	data/chars/hiei/ara2.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	delay	7
+	bbox	27 5 44 72
+	offset	45 70
+	frame	data/chars/hiei/ensatsu9.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu10.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu11.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu12.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu13.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu1.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu2.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu3.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu4.gif
+	offset	45 70
+	frame	data/chars/hiei/ensatsu5.gif
+	offset	45 70
+	delay	25
+	frame	data/chars/hiei/k.gif
+	offset	45 70
+	frame	data/chars/hiei/k.gif
+	offset	63 120
+	frame	data/chars/hiei/dragaonegra3.gif
+	offset	63 120
+	frame	data/chars/hiei/dragaonegra4.gif
+		
+anim	freespecial3
+	hitflash	flash3
+	sound	data/chars/hiei/ensatsuken.wav
+	loop	0
+	delay	8
+	offset	63 120
+	burn	18 38 98 94 20 1 0 0 0 0
+	frame	data/chars/hiei/10.gif
+	offset	63 120
+	burn	0
+	frame	data/chars/hiei/11.gif
+	offset	63 120
+	burn	18 38 98 94 20 1 0 0 0 0
+	frame	data/chars/hiei/19.gif
+	burn	0
+	offset	63 120
+	frame	data/chars/hiei/20.gif
+	burn	41 54 84 77 0 0 1 0 0 0
+	offset	39 119
+	frame	data/chars/hiei/21.gif
+	offset	33 119
+	delay	8
+	burn	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/29.gif
+	offset	39 120
+	burn	18 38 98 94 20 1 0 0 0 0
+	frame	data/chars/hiei/30.gif
+	burn	0 0 0 0 0 0 0 0 0 0
+	offset	39 120
+	frame	data/chars/hiei/31.gif
+	offset	63 120
+	frame	data/chars/hiei/11.gif
+	offset	63 120
+	frame	data/chars/hiei/10.gif
+	offset	66 120
+	frame	data/chars/hiei/stand1.gif
+		
+anim	freespecial4
+	attack	33 100 71 114 0 0 1 0 0 0
+	followanim	1
+	followcond	1
+	delay	9
+	offset	63 206
+	delay	9
+	frame	data/chars/hiei/ar1.gif
+	attack	36 105 64 110 0 0 1 0 0 0
+	offset	63 206
+	frame	data/chars/hiei/ar2.gif
+	offset	63 206
+	frame	data/chars/hiei/ar1.gif
+	attack	36 105 64 110 0 0 1 0 0 0
+	offset	63 206
+	frame	data/chars/hiei/ar2.gif
+	sound	data/chars/hiei/dragon.wav
+	frame	data/chars/hiei/a1.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/b1.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/c1.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/d.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/e.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/f.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/g.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/h.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/i.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/j.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/l.gif
+	offset	28 391
+	attack	5 293 57 103 0 0 1 0 0 0
+	frame	data/chars/hiei/m.gif
+	move	25
+	attack	62 73 66 57 1 0 1 0 0 0
+	offset	72 120
+	frame	data/chars/hiei/runas1.gif
+	offset	72 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/runas2.gif
+	offset	72 120
+	attack	72 67 56 63 1 0 1 0 0 0
+	frame	data/chars/hiei/runas1.gif
+	offset	72 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/runas2.gif
+	offset	69 119
+	attack	71 50 59 79 1 0 1 0 0 0
+	frame	data/chars/hiei/dragaonegra2.gif
+	offset	69 119
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/dragaonegra2.gif
+	offset	69 119
+	attack	70 50 59 79 1 0 1 0 0 0
+	frame	data/chars/hiei/dragaonegra2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	69 119
+	frame	data/chars/hiei/dragaonegra2.gif
+	attack	73 48 56 81 1 0 1 0 0 0
+	offset	69 119
+	frame	data/chars/hiei/dragaonegra2.gif
+		
+anim	get
+	loop	0
+	delay	5
+	offset	72 120
+	frame	data/chars/hiei/stand1.gif
+	offset	72 120
+	frame	data/chars/hiei/39.gif
+	offset	72 120
+	delay	40
+	delay	40
+	frame	data/chars/hiei/46.gif
+	offset	72 120
+	frame	data/chars/hiei/stand2.gif
+		
+anim	grab
+	bbox	49 63 38 63
+	loop	0
+	delay	100
+	offset	72 120
+	frame	data/chars/hiei/28.gif
+		
+anim	grabattack
+	bbox	57 64 30 60
+	hitflash	flash2
+	loop	0
+	offset	72 120
+	delay	15
+	frame	data/chars/hiei/49.gif
+	offset	72 120
+	frame	data/chars/hiei/50.gif
+	offset	72 120
+	attack	75 66 55 58 6 0 1 0 0 0
+	frame	data/chars/hiei/c.gif
+		
+anim	grabbed
+	loop	0
+	offset	42 175
+	bbox	36 48 38 76
+	delay	45
+	frame	data/chars/hiei/caindo1.gif
+	bbox	30 45 54 84
+	offset	52 180
+	frame	data/chars/hiei/61.gif
+	offset	42 175
+	frame	data/chars/hiei/caindo1.gif
+		
+anim	idle
+	bbox	48 52 44 72
+	loop	1
+	delay	20
+	offset	66 120
+	frame	data/chars/hiei/stand1.gif
+	frame	data/chars/hiei/stand2.gif
+	frame	data/chars/hiei/stand3.gif
+	frame	data/chars/hiei/stand2.gif
+		
+anim	jump
+	bbox	50 21 32 81
+	loop	0
+	delay	11
+	offset	72 120
+	frame	data/chars/hiei/40.gif
+	frame	data/chars/hiei/44.gif
+	frame	data/chars/hiei/43.gif
+	frame	data/chars/hiei/42.gif
+	frame	data/chars/hiei/41.gif
+	frame	data/chars/hiei/b.gif
+	frame	data/chars/hiei/39.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	72 120
+	bbox	40 6 43 92
+	frame	data/chars/hiei/40.gif
+	offset	72 120
+	frame	data/chars/hiei/57.gif
+	offset	72 120
+	attack	70 70 72 37 7 1 0 0 0 0
+	bbox	40 6 53 81
+	delay	15
+	frame	data/chars/hiei/58.gif
+		
+anim	jumpattack2
+	hitflash	flash2
+	loop	0
+	delay	12
+	offset	72 120
+	bbox	40 6 40 87
+	frame	data/chars/hiei/52.gif
+	bbox	40 6 40 87
+	delay	8
+	frame	data/chars/hiei/54.gif
+	frame	data/chars/hiei/55.gif
+	attack	77 23 61 72 5 0 1 0 0 0
+	frame	data/chars/hiei/56.gif
+		
+anim	jumpattack3
+	loop	0
+	delay	15
+	offset	72 120
+	bbox	40 6 40 87
+	frame	data/chars/hiei/41.gif
+	attack	102 54 -46 64 0 0 1 0 0 0
+	bbox	40 6 40 87
+	delay	8
+	frame	data/chars/hiei/pisaonacab.gif
+		
+anim	land
+	loop	0
+	delay	25
+	offset	70 118
+	bbox	40 48 52 82
+	frame	data/chars/hiei/39.gif
+		
+anim	pain
+	bbox	38 55 55 68
+	loop	0
+	offset	64 120
+	delay	12
+	frame	data/chars/hiei/caindo1.gif
+	bbox	27 64 60 65
+	offset	64 120
+	delay	12
+	frame	data/chars/hiei/caindo2.gif
+	offset	64 120
+	delay	12
+	frame	data/chars/hiei/caindo1.gif
+		
+anim	pain2
+	loop	0
+	offset	42 175
+	delay	45
+	bbox	30 45 54 84
+	offset	42 175
+	frame	data/chars/hiei/caindo1.gif
+	offset	52 180
+	frame	data/chars/hiei/61.gif
+	offset	42 175
+	frame	data/chars/hiei/caindo1.gif
+	offset	52 180
+	frame	data/chars/hiei/61.gif
+	offset	42 175
+	frame	data/chars/hiei/caindo1.gif
+		
+anim	rise
+	loop	0
+	offset	78 120
+	delay	20
+	frame	data/chars/hiei/47.gif
+	offset	73 120
+	frame	data/chars/hiei/46.gif
+	offset	66 120
+	frame	data/chars/hiei/stand3.gif
+		
+anim	run
+	delay	10
+	bbox	55 51 34 71
+	offset	72 120
+	loop	1
+	frame	data/chars/hiei/run1.gif
+	offset	72 120
+	frame	data/chars/hiei/run2.gif
+	offset	72 120
+	frame	data/chars/hiei/run1.gif
+	offset	72 120
+	frame	data/chars/hiei/run2.gif
+		
+anim	runattack
+	bbox	55 49 37 78
+	move	7
+	delay	7
+	offset	66 120
+	frame	data/chars/hiei/stand1.gif
+	offset	70 120
+	frame	data/chars/hiei/rat1.gif
+	attack	76 44 48 58 8 1 0 0 0 0
+	offset	70 120
+	delay	9
+	frame	data/chars/hiei/rat2.gif
+	attack	76 44 48 58 0 0 0 0 0 0
+	offset	70 120
+	frame	data/chars/hiei/rat2.gif
+	attack	73 16 39 69 8 1 0 0 0 0
+	offset	70 120
+	frame	data/chars/hiei/rat3.gif
+	attack	71 31 48 58 8 1 0 0 0 0
+	offset	70 150
+	frame	data/chars/hiei/rat3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 170
+	frame	data/chars/hiei/rat3.gif
+	offset	70 190
+	frame	data/chars/hiei/rat3.gif
+	offset	70 140
+	delay	7
+	frame	data/chars/hiei/42.gif
+	frame	data/chars/hiei/44.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	70 120
+	frame	data/chars/hiei/41.gif
+	frame	data/chars/hiei/41.gif
+	offset	70 120
+	frame	data/chars/hiei/40.gif
+	offset	70 120
+	frame	data/chars/hiei/39.gif
+		
+anim	runjumpattack
+	loop	0
+	delay	17
+	offset	71 107
+	bbox	48 6 40 87
+	frame	data/chars/hiei/57.gif
+	attack	80 58 40 68 7 1 0 0 0 0
+	offset	71 107
+	bbox	56 10 35 108
+	delay	17
+	frame	data/chars/hiei/58.gif
+		
+anim	select
+	loop	0
+	delay	20
+	offset	72 120
+	frame	data/chars/hiei/win1.gif
+	offset	72 120
+	frame	data/chars/hiei/win1.gif
+	offset	72 220
+	sound	data/chars/hiei/sigh.wav
+	frame	data/chars/hiei/winv.gif
+	offset	72 220
+	frame	data/chars/hiei/winv.gif
+		
+anim	shock
+	loop	0
+	offset	78 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/hiei/shock1.gif
+	offset	78 120
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	delay	4
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 1210
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	78 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/hiei/shock1.gif
+	offset	78 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	delay	4
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock1.gif
+	bbox	0 0 0 0
+	offset	78 120
+	frame	data/chars/hiei/shock2.gif
+		
+anim	special
+	loop	0
+	sound	data/chars/hiei/sankoda.wav
+	hitflash	flash3
+	offset	34 119
+	blast	1 12 124 122 20 1 0 0 0 0
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/hiei/aura1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	12
+	offset	34 119
+	burn	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hiei/aura2.gif
+	offset	187 187
+	frame	data/chars/hiei/aura3.gif
+	burn	0 0 0 0 0 0 0 0 0 0
+	offset	187 187
+	frame	data/chars/hiei/aura4.gif
+	offset	187 187
+	frame	data/chars/hiei/aura5.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	63 120
+	frame	data/chars/hiei/socosfire.gif
+	frame	data/chars/hiei/caindo1.gif
+	frame	data/chars/hiei/caindo2.gif
+	frame	data/chars/hiei/39.gif
+	frame	data/chars/hiei/stand1.gif
+		
+anim	walk
+	bbox	50 41 39 81
+	loop	1
+	delay	15
+	offset	66 120
+	frame	data/chars/hiei/andar1.gif
+	frame	data/chars/hiei/andar2.gif
+	frame	data/chars/hiei/andar1.gif
+		
+#|edited by openBor Stats v 0.67
+		
