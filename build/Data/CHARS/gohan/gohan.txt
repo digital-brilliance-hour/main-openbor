@@ -14,6 +14,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -40,6 +41,7 @@ anim	attack2
 	delay	5
 	frame	data/chars/Gohan/jab00.gif
 	frame	data/chars/Gohan/jab01.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gohan/jab02.gif
 	attack	54 56 20 9 8
 	frame	data/chars/Gohan/jab03.gif
@@ -88,6 +90,7 @@ anim	freespecial
 	frame	data/chars/Gohan/kame05.gif
 	sound	data/chars/Gohan/wave.wav
 	attack	60 42 47 40 15 1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gohan/kame06.gif
 	attack	0 0 0 0 0 0
 	delay	5
@@ -176,6 +179,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gohan/jump00.gif
 	frame	data/chars/Gohan/jump01.gif
 	frame	data/chars/Gohan/jump02.gif
@@ -249,6 +253,7 @@ anim	special
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	7
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gohan/solar01.gif
 	attack	32 50 29 29 20 0 0 0 0 0
 	frame	data/chars/Gohan/solar02.gif
@@ -292,6 +297,7 @@ anim	throw
 	loop	0
 	offset	38 77
 	delay	6
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gohan/throw00.gif
 	frame	data/chars/Gohan/throw01.gif
 	frame	data/chars/Gohan/throw02.gif

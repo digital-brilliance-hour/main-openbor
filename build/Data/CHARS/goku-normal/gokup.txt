@@ -18,6 +18,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
@@ -30,6 +31,7 @@ anim	attack1
 	attack	64 48 24 9 10
 	frame	data/chars/Goku-normal/punch04.gif
 	attack	64 48 24 9 10
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/punch05.gif
 		
 anim	attack2
@@ -40,6 +42,7 @@ anim	attack2
 	sound	data/chars/Goku-normal/kick.wav
 	frame	data/chars/Goku-normal/kick01.gif
 	frame	data/chars/Goku-normal/kick02.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/kick03.gif
 	attack	64 48 24 9 30
 	frame	data/chars/Goku-normal/kick04.gif
@@ -60,6 +63,7 @@ anim	attack3
 	bbox	36 46 17 21
 	delay	7
 	sound	data/chars/Goku-normal/kick.wav
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/keri01.gif
 	frame	data/chars/Goku-normal/keri02.gif
 	frame	data/chars/Goku-normal/keri03.gif
@@ -138,6 +142,7 @@ anim	freespecial
 	sound	data/chars/Goku-normal/ha.wav
 	frame	data/chars/Goku-normal/kame07.gif
 	blast	74 28 174 39 60
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/kame08.gif
 	blast	74 28 203 39 60
 	frame	data/chars/Goku-normal/kame09.gif
@@ -196,6 +201,7 @@ anim	jump
 	delay	15
 	offset	43 78
 	bbox	36 46 17 21
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/jump01.GIF
 	frame	data/chars/Goku-normal/jump02.GIF
 	frame	data/chars/Goku-normal/jump02.GIF
@@ -257,6 +263,7 @@ anim	run
 	offset	43 78
 	bbox	36 46 13 20
 	running	30 4 3 1 1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/run01.gif
 	frame	data/chars/Goku-normal/run02.gif
 	frame	data/chars/Goku-normal/run03.gif
@@ -269,6 +276,7 @@ anim	runattack
 	move	20
 	sound	data/chars/Goku-normal/dash.wav
 	blast	51 35 28 40 30
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/dash01.gif
 	blast	51 35 28 40 30
 	frame	data/chars/Goku-normal/dash02.gif
@@ -298,7 +306,6 @@ anim	special2
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
-		
 	quakeframe	3 1 10
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0

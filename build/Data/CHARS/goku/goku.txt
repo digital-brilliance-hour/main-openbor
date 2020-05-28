@@ -14,6 +14,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -69,6 +70,7 @@ anim	attack3
 	frame	data/chars/Goku/ppole11.gif
 	frame	data/chars/Goku/ppole12.gif
 	frame	data/chars/Goku/ppole13.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku/ppole14.gif
 	attack	61 51 44 14 10 1
 	frame	data/chars/Goku/ppole15.gif
@@ -107,6 +109,7 @@ anim	freespecial
 	attack	0 0 0 0 0 0
 	delay	5
 	attack	60 42 112 40 15 1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku/kame07.gif
 	attack	0 0 0 0 0 0
 	attack	60 42 192 40 15 1
@@ -226,6 +229,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku/jump00.gif
 	frame	data/chars/Goku/jump01.gif
 	frame	data/chars/Goku/jump02.gif
@@ -318,6 +322,7 @@ anim	special
 	frame	data/chars/Goku/spec06.gif
 	blast	0 0 0 0 0 0
 	blast	26 47 108 38 20 1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku/spec07.gif
 	blast	0 0 0 0 0 0
 	frame	data/chars/Goku/spec08.gif
@@ -352,6 +357,7 @@ anim	throw
 	delay	7
 	frame	data/chars/Goku/throw00.gif
 	frame	data/chars/Goku/throw01.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku/throw02.gif
 	frame	data/chars/Goku/throw03.gif
 	frame	data/chars/Goku/throw04.gif
