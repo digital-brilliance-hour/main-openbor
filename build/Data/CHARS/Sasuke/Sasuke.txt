@@ -18,6 +18,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -82,10 +83,17 @@ anim	fall
 		
 anim	freespecial
 	loop	0
-	delay	7
 	offset	60 116
 	sound	data/chars/Sasuke/katon.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Sasuke/katon00.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
 	burn	86 77 84 23 20 1
 	frame	data/chars/Sasuke/katon01.gif
 	burn	86 71 150 35 20 1
@@ -250,9 +258,15 @@ anim	runattack
 		
 anim	special
 	loop	0
-	delay	10
 	offset	60 116
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Sasuke/chdri00.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	frame	data/chars/Sasuke/chdri01.gif
 	frame	data/chars/Sasuke/chdri02.gif
 	frame	data/chars/Sasuke/chdri03.gif

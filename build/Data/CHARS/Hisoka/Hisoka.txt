@@ -12,6 +12,8 @@ com      a4 freespecial3
 
 
 
+
+
 anim	attack1
 	delay	7
 	offset	25 59
@@ -212,10 +214,17 @@ anim	spawn
 	frame	data/chars/Hisoka/4.gif
 		
 anim	special
-	delay	7
 	fastattack	1
 	offset	15 51
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Hisoka/60.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0l
+	delay	7
 	offset	17 50
 	frame	data/chars/Hisoka/61.gif
 	attack	16 7 65 35 10 0 1 0 0 0
