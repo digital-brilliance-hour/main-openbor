@@ -1,0 +1,229 @@
+name Jack
+type enemy
+health 220
+speed 25
+shadow 2
+aimove chase
+escapehits 1
+candamage player npc obsacle
+hostile npc player
+icon data/chars/samjack/icon.gif
+
+
+anim idle
+
+       loop 1
+       delay 50
+       offset 13 45
+       bbox 2 7 19 43
+       frame data/chars/samjack/stance1.gif
+
+anim walk
+
+       loop 1
+       delay 10
+       offset 25 34
+       bbox 20 4 19 31
+       frame data/chars/samjack/walk1.gif
+       offset 27 35
+       bbox 16 3 23 36
+       frame data/chars/samjack/walk2.gif
+       offset 26 33
+       bbox 13 2 28 30
+       frame data/chars/samjack/walk3.gif
+       offset 27 31
+       bbox 21 5 21 29
+       frame data/chars/samjack/walk4.gif
+       offset 26 33
+       bbox 23 6 14 30
+       frame data/chars/samjack/walk3.gif
+
+anim get
+
+       delay 16
+       offset 25 22
+       frame data/chars/samjack/get.gif
+
+anim jump
+
+       delay 40
+       offset 30 33
+       bbox 18 6 24 30
+       frame data/chars/samjack/jump.gif
+       delay 260
+       bbox 18 5 20 34
+       frame data/chars/samjack/jump2.gif
+
+anim jumpattack2
+
+       delay 12
+       offset 18 36
+       sound data/chars/samjack/hee.wav
+       attack 7 1 35 36 12 1 0 0 0
+       frame data/chars/samjack/jump2.gif
+
+anim jumpattack
+
+       delay 12
+       offset 11 27
+       sound data/chars/samjack/hut.wav
+       attack 1 3 31 42 25 1 0 0 0
+       frame data/chars/samjack/jd.gif
+
+anim attack1
+
+       delay 5
+       offset 33 43
+       sound data/chars/samjack/strider.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/a1.gif
+       offset 20 45
+       attack 24 1 36 48 55 0 0 0 0
+       frame data/chars/samjack/a2.gif
+       attack 25 1 32 47 30 0 0 0 0
+       frame data/chars/samjack/a3.gif
+       offset 13 35
+       attack 15 1 44 39 30 0 0 0 0
+       frame data/chars/samjack/a4.gif
+       attack 16 1 40 38 30 0 0 0 0
+       frame data/chars/samjack/a5.gif
+       offset 30 35
+       attack 5 2 36 37 30 0 0 0 0
+       frame data/chars/samjack/a6.gif
+       attack 13 0 31 39 60 0 0 0 0
+       frame data/chars/samjack/a7.gif
+
+anim attack2
+
+       delay 5
+       offset 33 43
+       sound data/chars/samjack/strider.wav
+       offset 25 22
+       frame data/chars/samjack/get.gif
+	offset 35 73 
+       attack 50 41 38 37 15 1 0 0 0
+       frame data/chars/samjack/u1.gif
+	offset 62 72
+       attack 68 24 36 51 15 1 0 0 0
+       frame data/chars/samjack/u2.gif
+	offset 33 43
+       frame data/chars/samjack/a1.gif
+
+anim attack3
+
+       delay 5
+       offset 33 43
+       sound data/chars/samjack/strider.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/a1.gif
+       offset 20 45
+       attack 24 1 36 48 55 1 0 0 0
+       frame data/chars/samjack/a2.gif
+       attack 25 1 32 47 30 1 0 0 0
+       frame data/chars/samjack/a3.gif
+       offset 13 35
+       attack 15 1 44 39 30 1 0 0 0
+       frame data/chars/samjack/a4.gif
+       attack 16 1 40 38 30 1 0 0 0
+       frame data/chars/samjack/a5.gif
+       offset 30 35
+       attack 5 2 36 37 30 1 0 0 0
+       frame data/chars/samjack/a6.gif
+       attack 13 0 31 39 60 1 0 0 0
+       frame data/chars/samjack/a7.gif
+
+anim grab
+
+       delay 100
+       offset 30 35
+       bbox 30 35 14 30
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/a7.gif
+
+anim throw
+
+       delay 32
+       offset 33 43
+       frame data/chars/samjack/a1.gif
+
+anim pain
+
+       delay 8
+       offset 27 41
+       bbox 7 7 37 37
+       frame data/chars/samjack/hit.gif
+
+anim fall
+
+       delay 60
+       offset 18 29
+       attack 18 29 37 31 17 1 0 0 0
+       frame data/chars/samjack/fall.gif
+       offset 25 7
+       frame data/chars/samjack/lie.gif
+
+anim rise
+
+       delay 20
+       offset 25 22
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/get.gif
+
+anim special
+
+       delay 4
+       offset 26 33
+       sound data/chars/crono/woosh.wav
+       move 40
+       attack 12 0 30 36 35 0 0 0 0
+       frame data/chars/samjack/jump.gif
+       attack 18 1 22 34 35 0 0 0 0
+       frame data/chars/samjack/jump.gif
+       attack 17 0 24 35 35 0 0 0 0
+       frame data/chars/samjack/jump.gif
+       attack 17 4 24 33 35 0 0 0 0
+       frame data/chars/samjack/jump.gif
+       attack 16 4 27 36 35 0 0 0 0
+       frame data/chars/samjack/jump.gif
+       delay 10
+       offset 25 22
+       attack 2 2 39 24 35 0 0 0 0
+       frame data/chars/samjack/get.gif
+
+anim freespecial
+
+       delay 4
+       offset 26 33
+       sound data/chars/crono/woosh.wav
+       move 50
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/walk4.gif
+       attack 12 1 31 37 33 0 0 0 0
+       frame data/chars/samjack/walk4.gif
+       attack 7 3 37 34 33 0 0 0 0
+       frame data/chars/samjack/walk4.gif
+       attack 13 2 29 35 33 0 0 0 0
+       frame data/chars/samjack/walk4.gif
+       attack 9 1 35 36 33 0 0 0 0
+       frame data/chars/samjack/walk4.gif
+       delay 10
+       offset 25 22
+       attack 12 4 30 21 33 0 0 0 0
+       frame data/chars/samjack/get.gif
+
+anim grabattack
+
+       delay 10
+	move 2
+       offset 50 72
+       attack 58 39 22 35 30 1 0 0 0
+       frame data/chars/samjack/punch.gif
+       offset 13 45
+       frame data/chars/samjack/stance1.gif
+anim land
+
+       delay 25
+       offset 25 22
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/samjack/get.gif
+       frame data/chars/samjack/get.gif

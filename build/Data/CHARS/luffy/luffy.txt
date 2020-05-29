@@ -16,6 +16,8 @@ jumpmove 3 3
 weapons gear2 Luffy    
 weaploss 3
 
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -77,8 +79,15 @@ anim	fall
 anim	freespecial
 	loop	0
 	offset	44 77
-	delay	10
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	weaponframe	20 1
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	frame	data/chars/Luffy/trans01.gif
 	sound	data/chars/Luffy/intro.wav
 	frame	data/chars/Luffy/trans02.gif
@@ -112,9 +121,16 @@ anim	freespecial2
 	loop	0
 	offset	82 78
 	bbox	78 48 12 17
-	delay	5
 	sound	data/chars/Luffy/bazka.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Luffy/bazka01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	5
 	frame	data/chars/Luffy/bazka02.gif
 	frame	data/chars/Luffy/bazka03.gif
 	frame	data/chars/Luffy/bazka04.gif
@@ -300,9 +316,16 @@ anim	special2
 	loop	0
 	offset	43 78
 	bbox	78 48 12 17
-	delay	7
 	sound	data/chars/Luffy/storm.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Luffy/storm01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
 	frame	data/chars/Luffy/storm02.gif
 	frame	data/chars/Luffy/storm03.gif
 	frame	data/chars/Luffy/storm04.gif

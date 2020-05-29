@@ -1,0 +1,390 @@
+name	Shrek
+health	100
+speed	9
+type	enemy
+shadow	3
+aimove chase
+escapehits 1
+candamage player npc obsacle
+hostile npc player
+
+com      a2 freespecial
+
+onspawnscript @script
+void main()
+{
+void self = getlocalvar("self");
+setdrawmethod(self, 1, 512, 512);
+}
+@end_script
+
+
+animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	delay	7
+	offset	15 35
+	frame	data/chars/Shrek/39.gif
+	attack	24 8 33 23 5 0 1 0 0 0
+	offset	15 36
+	frame	data/chars/Shrek/40.gif
+		
+anim	attack2
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	7
+	fastattack	1
+	offset	19 40
+	frame	data/chars/Shrek/54.gif
+	attack	31 8 36 23 5 0 1 0 0 0
+	offset	18 41
+	frame	data/chars/Shrek/55.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	15 42
+	frame	data/chars/Shrek/56.gif
+	attack	27 10 36 21 5 0 1 0 0 0
+	offset	15 42
+	frame	data/chars/Shrek/57.gif
+		
+anim	attack3
+	delay	7
+	offset	25 45
+	frame	data/chars/Shrek/67.gif
+	attack	26 7 42 41 7 1 1 0 0 0
+	offset	22 46
+	frame	data/chars/Shrek/68.gif
+		
+anim	faint
+	delay	7
+	offset	21 37
+	frame	data/chars/Shrek/202.gif
+	offset	21 38
+	frame	data/chars/Shrek/203.gif
+	offset	20 38
+	frame	data/chars/Shrek/204.gif
+		
+anim	fall
+	delay	7
+	offset	20 42
+	frame	data/chars/Shrek/144.gif
+	offset	27 43
+	frame	data/chars/Shrek/121.gif
+	offset	32 29
+	frame	data/chars/Shrek/142.gif
+	offset	25 42
+	frame	data/chars/Shrek/122.gif
+	offset	25 45
+	frame	data/chars/Shrek/124.gif
+	offset	27 51
+	frame	data/chars/Shrek/127.gif
+	offset	22 28
+	frame	data/chars/Shrek/150.gif
+	offset	23 27
+	frame	data/chars/Shrek/149.gif
+	offset	21 18
+	frame	data/chars/Shrek/148.gif
+		
+anim	freespecial
+	delay	7
+	move	20
+	offset	21 36
+	frame	data/chars/Shrek/26.gif
+	attack	20 2 36 34 15 0 1 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/27.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/28.gif
+	attack	20 2 36 34 20 1 0 1 0 0
+	offset	21 36
+	frame	data/chars/Shrek/29.gif
+	offset	21 36
+	frame	data/chars/Shrek/26.gif
+	attack	20 2 36 34 15 0 1 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/27.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/28.gif
+	attack	20 2 36 34 20 1 0 1 0 0
+	offset	21 36
+	frame	data/chars/Shrek/29.gif
+	offset	21 36
+	frame	data/chars/Shrek/26.gif
+	attack	20 2 36 34 15 0 1 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/27.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/28.gif
+	attack	20 2 36 34 20 1 0 1 0 0
+	offset	21 36
+	frame	data/chars/Shrek/29.gif
+	offset	21 36
+	frame	data/chars/Shrek/26.gif
+	attack	20 2 36 34 15 0 1 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/27.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	21 36
+	frame	data/chars/Shrek/28.gif
+	attack	20 2 36 34 20 1 0 1 0 0
+	offset	21 36
+	frame	data/chars/Shrek/29.gif
+		
+anim	freespecial2
+	fastattack	1
+	attack	13 1 37 44 20 0 1 0 0 0
+	delay	7
+	offset	13 44
+	frame	data/chars/Shrek/58.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	13 45
+	frame	data/chars/Shrek/59.gif
+	move	20
+	attack	13 1 37 44 20 0 0 1 0 0
+	offset	12 43
+	frame	data/chars/Shrek/60.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	15 42
+	frame	data/chars/Shrek/61.gif
+	attack	13 1 37 44 20 0 1 0 0 0
+	offset	13 41
+	frame	data/chars/Shrek/62.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	12 39
+	frame	data/chars/Shrek/63.gif
+	attack	13 1 37 44 20 0 0 1 0 0
+	offset	13 42
+	frame	data/chars/Shrek/64.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	13 44
+	frame	data/chars/Shrek/65.gif
+	attack	13 1 37 44 20 1 1 0 0 0
+	offset	13 44
+	frame	data/chars/Shrek/66.gif
+	move	0
+		
+anim	freespecial3
+	delay	7
+	offset	21 43
+	frame	data/chars/Shrek/165.gif
+	offset	22 42
+	frame	data/chars/Shrek/166.gif
+	offset	22 41
+	frame	data/chars/Shrek/167.gif
+	offset	20 42
+	frame	data/chars/Shrek/168.gif
+	offset	19 41
+	frame	data/chars/Shrek/169.gif
+	offset	21 41
+	frame	data/chars/Shrek/170.gif
+	offset	20 41
+	frame	data/chars/Shrek/171.gif
+	offset	20 42
+	frame	data/chars/Shrek/172.gif
+	offset	20 42
+	frame	data/chars/Shrek/173.gif
+	offset	20 42
+	frame	data/chars/Shrek/174.gif
+	offset	20 42
+	frame	data/chars/Shrek/175.gif
+	offset	21 42
+	frame	data/chars/Shrek/176.gif
+	offset	20 41
+	frame	data/chars/Shrek/177.gif
+	offset	20 42
+	frame	data/chars/Shrek/178.gif
+	offset	20 42
+	frame	data/chars/Shrek/179.gif
+	offset	20 43
+	frame	data/chars/Shrek/180.gif
+		
+anim	idle
+	drawmethod	scale 2
+	bbox	3 2 32 40
+	delay	7
+	loop	1
+	offset	19 43
+	frame	data/chars/Shrek/2.gif
+	offset	20 43
+	frame	data/chars/Shrek/3.gif
+	offset	20 43
+	frame	data/chars/Shrek/4.gif
+	offset	19 43
+	frame	data/chars/Shrek/5.gif
+	offset	19 43
+	frame	data/chars/Shrek/6.gif
+		
+anim	jump
+	bbox	0 0 0 0
+	delay	7
+	offset	17 35
+	frame	data/chars/Shrek/18.gif
+	bbox	3 3 29 34
+	offset	19 45
+	frame	data/chars/Shrek/19.gif
+		
+anim	jumpattack
+	delay	7
+	offset	21 32
+	frame	data/chars/Shrek/70.gif
+	attack	26 14 31 23 18 1 1 0 0 0
+	offset	24 33
+	frame	data/chars/Shrek/69.gif
+		
+anim	jumpattack2
+	fastattack	1
+	attack	24 9 44 27 14 0 1 0 0 0
+	delay	7
+	offset	21 32
+	frame	data/chars/Shrek/45.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	21 32
+	frame	data/chars/Shrek/46.gif
+	attack	24 9 44 27 14 0 0 1 0 0
+	offset	21 34
+	frame	data/chars/Shrek/47.gif
+		
+anim	pain
+	delay	7
+	offset	19 44
+	frame	data/chars/Shrek/81.gif
+	offset	24 51
+	frame	data/chars/Shrek/82.gif
+	offset	29 51
+	frame	data/chars/Shrek/83.gif
+	offset	29 51
+	frame	data/chars/Shrek/84.gif
+		
+anim	pain2
+	delay	7
+	offset	19 30
+	frame	data/chars/Shrek/112.gif
+	offset	24 26
+	frame	data/chars/Shrek/113.gif
+	offset	15 27
+	frame	data/chars/Shrek/114.gif
+		
+anim	respawn
+	delay	7
+	offset	64 89
+	frame	data/chars/Shrek/205.gif
+	offset	64 89
+	frame	data/chars/Shrek/206.gif
+	offset	64 89
+	frame	data/chars/Shrek/207.gif
+	offset	33 44
+	frame	data/chars/Shrek/208.gif
+	offset	33 44
+	frame	data/chars/Shrek/209.gif
+	offset	18 46
+	frame	data/chars/Shrek/210.gif
+	offset	18 45
+	frame	data/chars/Shrek/211.gif
+	offset	18 45
+	frame	data/chars/Shrek/212.gif
+		
+anim	rise
+	delay	7
+	offset	17 35
+	frame	data/chars/Shrek/18.gif
+		
+anim	runattack
+	fastattack	1
+	attack	15 9 55 30 20 0 1 0 0 0
+	delay	7
+	offset	25 35
+	frame	data/chars/Shrek/48.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	25 33
+	frame	data/chars/Shrek/49.gif
+	attack	15 9 55 30 20 1 0 1 0 0
+	offset	26 34
+	frame	data/chars/Shrek/50.gif
+		
+anim	select
+	drawmethod	scale 2
+	delay	7
+	offset	19 40
+	frame	data/chars/Shrek/213.gif
+	offset	16 40
+	frame	data/chars/Shrek/214.gif
+	offset	14 40
+	frame	data/chars/Shrek/215.gif
+		
+anim	special
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	20 41
+	frame	data/chars/Shrek/186.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
+	offset	23 38
+	frame	data/chars/Shrek/187.gif
+	offset	22 39
+	frame	data/chars/Shrek/188.gif
+	offset	22 46
+	frame	data/chars/Shrek/189.gif
+	offset	26 46
+	frame	data/chars/Shrek/190.gif
+	offset	27 52
+	frame	data/chars/Shrek/191.gif
+	offset	29 52
+	frame	data/chars/Shrek/192.gif
+	@cmd	damage_all_enemies 30 1 0 "ATK_NORMAL"
+	offset	27 57
+	frame	data/chars/Shrek/193.gif
+	offset	23 69
+	frame	data/chars/Shrek/194.gif
+	offset	27 72
+	frame	data/chars/Shrek/195.gif
+	offset	27 85
+	frame	data/chars/Shrek/196.gif
+	offset	31 85
+	frame	data/chars/Shrek/197.gif
+	offset	31 52
+	frame	data/chars/Shrek/198.gif
+		
+anim	turn
+	delay	7
+	offset	20 42
+	frame	data/chars/Shrek/7.gif
+		
+anim	walk
+	delay	7
+	loop	1
+	offset	20 42
+	frame	data/chars/Shrek/10.gif
+	offset	24 44
+	frame	data/chars/Shrek/11.gif
+	offset	24 44
+	frame	data/chars/Shrek/12.gif
+	offset	22 45
+	frame	data/chars/Shrek/13.gif
+	offset	18 46
+	frame	data/chars/Shrek/14.gif
+	offset	19 43
+	frame	data/chars/Shrek/15.gif
+	offset	22 41
+	frame	data/chars/Shrek/16.gif
+		
+#|edited by openBor Stats v 0.67
+		

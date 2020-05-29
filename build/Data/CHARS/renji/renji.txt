@@ -12,6 +12,8 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -67,13 +69,19 @@ anim	fall
 	frame	data/chars/Renji/Fall1.gif
 		
 anim	freespecial
-	energycost	50
-	mponly	1
+		
 	loop	0
-	delay	10
 	offset	58 116
 	sound	data/sounds/Att.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Renji/Free1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	frame	data/chars/Renji/Free2.gif
 	frame	data/chars/Renji/Free3.gif
 	attack	80 70 144 45 25 1
@@ -189,14 +197,20 @@ anim	select
 	frame	data/chars/Renji/Select6.gif
 		
 anim	special
-	energycost	100
-	mponly	1
+		
 	loop	0
-	delay	10
 	offset	58 116
 	sound	data/sounds/Att.wav
 	attack	3 47 92 116 5
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Renji/Spec1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	attack	0 0 0 0 0
 	frame	data/chars/Renji/Spec1.gif
 	sound	data/sounds/Att.wav

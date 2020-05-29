@@ -5,8 +5,12 @@ mp 100
 gfxshadow 1
 fmap 2
 speed	12
-type	player
+type	enemy
 shadow	5
+aimove chase
+escapehits 1
+candamage player npc obsacle
+hostile npc player
 icon	data/chars/hiei/icone3.gif
 diesound data/chars/hiei/die.wav
 dust dust
@@ -28,7 +32,6 @@ com 		D  F  A     freespecial
 com 		D  U  A     freespecial3
 com 		D  F  K     freespecial4
 animationscript data/scripts/spawns.c
-
 
 
 
@@ -393,7 +396,6 @@ anim	freespecial
 	loop	0
 	delay	4
 	offset	63 120
-	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/socosfire.gif
 	burn	65 40 63 68 6 0 1 0 0 0
 	frame	data/chars/hiei/socosfire3.gif
@@ -470,7 +472,6 @@ anim	freespecial2
 	frame	data/chars/hiei/ara2.gif
 	offset	63 208
 	attack	37 104 63 113 0 0 1 0 0 0
-	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/ara1.gif
 	offset	63 208
 	attack	37 104 63 113 0 0 1 0 0 0
@@ -594,7 +595,6 @@ anim	freespecial4
 	frame	data/chars/hiei/l.gif
 	offset	28 391
 	attack	5 293 57 103 0 0 1 0 0 0
-	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/m.gif
 	move	25
 	attack	62 73 66 57 1 0 1 0 0 0
@@ -686,7 +686,6 @@ anim	jump
 	loop	0
 	delay	11
 	offset	72 120
-	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/40.gif
 	frame	data/chars/hiei/44.gif
 	frame	data/chars/hiei/43.gif
@@ -799,7 +798,6 @@ anim	runattack
 	move	7
 	delay	7
 	offset	66 120
-	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/stand1.gif
 	offset	70 120
 	frame	data/chars/hiei/rat1.gif
