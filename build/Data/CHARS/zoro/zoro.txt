@@ -3,7 +3,7 @@ health	250
 mp 200
 speed	10
 shadow	2
-aironly 1
+
 type	player
 icon	data/chars/Zoro/icon.gif
 atchain  1 2 3
@@ -13,11 +13,10 @@ com      a3 freespecial2
 com      a4 freespecial3
 load hou
 knife hou
-holdblock 1
-riseinv 2 0
-makeinv 2 0
-subject_to_screen 1
+
 jumpmove 3 3
+
+
 
 
 
@@ -145,9 +144,16 @@ anim	freespecial2
 	mpcost	50
 	mponly	1
 	offset	44 150
-	delay	5
 	sound	data/chars/Zoro/son1.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Zoro/son01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	5
 	frame	data/chars/Zoro/son02.gif
 	frame	data/chars/Zoro/son03.gif
 	frame	data/chars/Zoro/son04.gif
@@ -325,9 +331,16 @@ anim	special
 	mpcost	20
 	mponly	1
 	offset	44 77
-	delay	10
 	sound	data/chars/Zoro/pond.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Zoro/pond01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	frame	data/chars/Zoro/pond02.gif
 	sound	data/chars/Zoro/shot.wav
 	throwframe	1 28

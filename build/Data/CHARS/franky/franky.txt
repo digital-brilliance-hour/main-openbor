@@ -18,6 +18,8 @@ com d f a freespecial2
 load break
 animationscript data/scripts/spawns.c
 
+
+
 anim	attack1
 	loop	0
 	delay	4
@@ -73,6 +75,7 @@ anim	chargeattack
 	frame	data/chars/franky/sp06.gif
 	frame	data/chars/franky/sp07.gif
 	frame	data/chars/franky/sp08.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/sp09.gif
 	sound	data/chars/franky/wave.wav
 	frame	data/chars/franky/spp10.gif
@@ -177,6 +180,7 @@ anim	jump
 	offset	38 78
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/jump01.gif
 	frame	data/chars/franky/jump02.gif
 	frame	data/chars/franky/jump03.gif
@@ -259,6 +263,7 @@ anim	select
 	frame	data/chars/franky/slt05.GIF
 	frame	data/chars/franky/slt06.GIF
 	frame	data/chars/franky/slt07.GIF
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/slt08.GIF
 	frame	data/chars/franky/slt09.GIF
 		
@@ -284,6 +289,7 @@ anim	special2
 	sound	data/chars/franky/box.wav
 	frame	data/chars/franky/box04.gif
 	blast	48 17 60 63 50 0 0 0 80
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/box05.gif
 	blast	48 17 60 63 50 0 0 0 80
 	frame	data/chars/franky/box06.gif

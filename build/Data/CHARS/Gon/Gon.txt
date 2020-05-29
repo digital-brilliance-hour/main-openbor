@@ -36,6 +36,8 @@ com      a4 freespecial3
 
 
 
+
+
 anim	attack1
 	delay	7
 	offset	17 44
@@ -53,6 +55,7 @@ anim	attack2
 	offset	14 40
 	frame	data/chars/Gon/131.gif
 	offset	20 40
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/132.gif
 	offset	14 39
 	frame	data/chars/Gon/133.gif
@@ -81,6 +84,7 @@ anim	attack3
 	frame	data/chars/Gon/144.gif
 	attack	22 43 44 -42 7 0 1 0 0 0
 	offset	21 42
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/145.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	20 54
@@ -202,6 +206,7 @@ anim	freespecial3
 	frame	data/chars/Gon/190.gif
 	@cmd	spawnbind "g_blast" 60 20 0
 	offset	19 42
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/191.gif
 	offset	19 41
 	frame	data/chars/Gon/192.gif
@@ -231,10 +236,12 @@ anim	idle
 anim	jump
 	delay	7
 	offset	16 36
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/7.gif
 	offset	16 32
 	frame	data/chars/Gon/8.gif
 	offset	11 33
+		
 	frame	data/chars/Gon/9.gif
 	offset	15 42
 	frame	data/chars/Gon/18.gif
@@ -252,6 +259,7 @@ anim	jumpattack
 	offset	26 57
 	frame	data/chars/Gon/152.gif
 	offset	15 32
+		
 	frame	data/chars/Gon/153.gif
 	offset	13 38
 	frame	data/chars/Gon/154.gif
