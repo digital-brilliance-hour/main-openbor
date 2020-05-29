@@ -27,6 +27,8 @@ com      a4 freespecial3
 
 
 
+
+
 anim	attack1
 	fastattack	1
 	delay	7
@@ -144,6 +146,7 @@ anim	chargeattack
 	jumpframe	3 3 1 0 1
 	offset	37 58
 	frame	data/chars/Broly_SSB/99.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	32 1 67 63 15 0 1 0 0 0
 	offset	33 59
 	frame	data/chars/Broly_SSB/100.gif
@@ -185,6 +188,7 @@ anim	freespecial
 	frame	data/chars/Broly_SSB/143.gif
 	offset	30 86
 	frame	data/chars/Broly_SSB/144.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	spawnbind "b_blast" 51 60 0
 	@cmd	projectile 1 "b_shot2" 25 1 64 1 0
 	offset	31 86
@@ -208,6 +212,7 @@ anim	freespecial2
 	delay	6
 	offset	35 61
 	frame	data/chars/Broly_SSB/148.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	projectile 1 "b_shot" 55 1 36 1 0
 	offset	23 78
 	frame	data/chars/Broly_SSB/149.gif
@@ -268,6 +273,7 @@ anim	idle
 anim	jump
 	bbox	1 1 53 68
 	delay	7
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	26 65
 	frame	data/chars/Broly_SSB/20.gif
 	offset	24 85
@@ -327,6 +333,7 @@ anim	run
 	delay	7
 	offset	23 79
 	frame	data/chars/Broly_SSB/25.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	bbox	93 2 -93 67
 	offset	44 69
 	frame	data/chars/Broly_SSB/26.gif

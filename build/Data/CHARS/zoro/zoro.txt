@@ -138,6 +138,16 @@ anim	chargeattack
 	frame	data/chars/Zoro2/oni18.gif
 		
 anim	fall
+loop	0
+	offset	38 77
+	delay	20
+        sound   data/chars/Zoro/down.wav	
+        frame	data/chars/Zoro/fall01.gif
+        move    -4	
+        frame	data/chars/Zoro/fall02.gif
+        frame	data/chars/Zoro/fall03.gif
+        frame	data/chars/Zoro/fall04.gif
+
 		
 anim	freespecial2
 	loop	0

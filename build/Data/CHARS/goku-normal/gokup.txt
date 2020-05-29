@@ -3,17 +3,11 @@ health	1000
 mp 100
 speed	10
 type	player
-shadow	2
-aironly 1
+shadow 3
 icon	data/chars/Goku-normal/icon.gif
-subtype chase
-holdblock 1
-riseinv 2 0
-makeinv 2 0
 jumpmove 3 3
 cantgrab  1
 chargerate 5
-candamage player npc obstacle
 animationscript data/scripts/spawns.c
 
 
@@ -28,7 +22,7 @@ anim	attack1
 	frame	data/chars/Goku-normal/punch01.gif
 	frame	data/chars/Goku-normal/punch02.gif
 	frame	data/chars/Goku-normal/punch03.gif
-	attack	64 48 24 9 10
+	attack	67 43 39 17 10 0 0 0 0 0
 	frame	data/chars/Goku-normal/punch04.gif
 	attack	64 48 24 9 10
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -44,34 +38,36 @@ anim	attack2
 	frame	data/chars/Goku-normal/kick02.gif
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/kick03.gif
-	attack	64 48 24 9 30
+	attack	64 51 44 9 30 0 0 0 0 0
 	frame	data/chars/Goku-normal/kick04.gif
-	attack	64 48 24 9 30
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Goku-normal/kick05.gif
-	attack	64 48 24 9 30
+	attack	64 59 46 9 30 0 0 0 0 0
 	frame	data/chars/Goku-normal/kick06.gif
-	attack	64 48 24 9 30
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Goku-normal/kick07.gif
-	attack	64 48 24 9 30
+	attack	62 67 45 9 30 0 0 0 0 0
 	frame	data/chars/Goku-normal/kick08.gif
 	frame	data/chars/Goku-normal/kick02.gif
 	frame	data/chars/Goku-normal/kick01.gif
 		
 anim	attack3
 	loop	0
+	@cmd	leaper 1 3
 	offset	43 78
-	bbox	36 46 17 21
-	delay	7
+	delay	15
 	sound	data/chars/Goku-normal/kick.wav
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Goku-normal/keri01.gif
+	delay	7
+	attack	45 7 64 68 35 1 1 0 0 0
 	frame	data/chars/Goku-normal/keri02.gif
 	frame	data/chars/Goku-normal/keri03.gif
-	blast	45 7 37 73 50
+	blast	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Goku-normal/keri04.gif
-	blast	45 7 37 73 50
+	blast	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Goku-normal/keri05.gif
-	blast	45 7 37 73 50
+	blast	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Goku-normal/jump01.gif
 		
 anim	block
@@ -115,8 +111,6 @@ anim	fall
 	frame	data/chars/Goku-normal/fall04.gif
 		
 anim	freespecial
-	mponly	1
-	mpcost	30
 	loop	0
 	offset	43 78
 	range	0 200
@@ -125,12 +119,12 @@ anim	freespecial
 	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
 	quakeframe	3 1 10
+	sound	data/chars/Goku-normal/kame.wav
+	frame	data/chars/Goku-normal/kame01.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	7
-	sound	data/chars/Goku-normal/kame.wav
-	frame	data/chars/Goku-normal/kame01.gif
 	frame	data/chars/Goku-normal/kame02.gif
 	frame	data/chars/Goku-normal/kame03.gif
 	frame	data/chars/Goku-normal/kame04.gif
@@ -171,8 +165,6 @@ anim	freespecial
 	frame	data/chars/Goku-normal/kame21.gif
 		
 anim	freespecial2
-	mponly	1
-	mpcost	50
 	loop	0
 	offset	43 78
 	delay	7
@@ -296,9 +288,7 @@ anim	spawn
 	frame	data/chars/Goku-normal/ki03.GIF
 	frame	data/chars/Goku-normal/ki04.GIF
 		
-anim	special2
-	mponly	1
-	mpcost	30
+anim	special
 	loop	0
 	offset	43 78
 	range	0 200
@@ -307,12 +297,12 @@ anim	special2
 	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
 	quakeframe	3 1 10
+	sound	data/chars/Goku-normal/kame.wav
+	frame	data/chars/Goku-normal/kame01.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	7
-	sound	data/chars/Goku-normal/kame.wav
-	frame	data/chars/Goku-normal/kame01.gif
 	frame	data/chars/Goku-normal/kame02.gif
 	frame	data/chars/Goku-normal/kame03.gif
 	frame	data/chars/Goku-normal/kame04.gif

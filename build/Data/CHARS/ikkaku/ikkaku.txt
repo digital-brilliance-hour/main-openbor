@@ -8,11 +8,11 @@ cantgrab 1
 animationscript data/scripts/spawns.c
 
 
+
 anim	attack1
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ikkaku/Att1.gif
 	frame	data/chars/Ikkaku/Att2.gif
@@ -25,7 +25,6 @@ anim	attack2
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ikkaku/2Att1.gif
 	frame	data/chars/Ikkaku/2Att2.gif
@@ -38,7 +37,6 @@ anim	attack3
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ikkaku/3Att1.gif
 	frame	data/chars/Ikkaku/3Att2.gif
@@ -61,8 +59,6 @@ anim	fall
 	frame	data/chars/Ikkaku/Fall1.gif
 		
 anim	freespecial
-	energycost	50
-	mponly	1
 	loop	0
 	offset	58 116
 	delay	30
@@ -75,6 +71,7 @@ anim	freespecial
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	10
 	sound	data/sounds/Att.wav
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Ikkaku/Free2.gif
 	attack	80 40 85 75 25 1
 	frame	data/chars/Ikkaku/Free3.gif
@@ -133,10 +130,10 @@ anim	idle
 	frame	data/chars/Ikkaku/Idle2.gif
 		
 anim	jump
-	loop	1
 	offset	58 116
 	delay	20
 	bbox	50 65 20 40
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Ikkaku/jump1.gif
 	frame	data/chars/Ikkaku/jump2.gif
 		
@@ -198,6 +195,7 @@ anim	special
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	5
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Ikkaku/Special2.gif
 	frame	data/chars/Ikkaku/Special3.gif
 	frame	data/chars/Ikkaku/Special4.gif
