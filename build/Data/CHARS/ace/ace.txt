@@ -7,7 +7,7 @@ shadow	2
 aironly 1
 icon	data/chars/Ace/icon.gif
 atchain  1 2 3 3
-com d f a freespecial
+com a2 freespecial
 holdblock 1
 makeinv 2 0
 riseinv 2 0
@@ -17,6 +17,7 @@ load tei
 knife tei
 jumpmove 3 3
 animationscript data/scripts/spawns.c
+
 
 anim	attack1
 	loop	0
@@ -153,13 +154,14 @@ anim	freespecial
 	frame	data/chars/Ace/punch05.gif
 	frame	data/chars/Ace/punch06.gif
 	sound	data/chars/Ace/punch.wav
-	attack	67 33 49 29 30
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Ace/punch07.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	67 33 49 29 30
 	frame	data/chars/Ace/punch08.gif
-	attack	67 33 49 29 30
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Ace/punch09.gif
-	attack	67 33 49 29 30
+	attack	67 33 49 29 30 1 0 0 0 0
 	frame	data/chars/Ace/punch10.gif
 	frame	data/chars/Ace/punch11.gif
 	frame	data/chars/Ace/punch12.gif
@@ -198,6 +200,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Ace/jump01.gif
 	frame	data/chars/Ace/jump02.gif
 	frame	data/chars/Ace/jump03.gif
@@ -311,9 +314,7 @@ anim	select
 	frame	data/chars/Ace/slt09.GIF
 	frame	data/chars/Ace/slt10.GIF
 		
-anim	special2
-	mponly	1
-	mpcost	30
+anim	special
 	loop	0
 	offset	43 78
 	bbox	78 48 12 17

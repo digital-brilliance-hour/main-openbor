@@ -6,6 +6,8 @@ type	player
 shadow	0
 cantgrab 1
 animationscript data/scripts/spawns.c
+com a2 freespecial
+
 
 
 
@@ -60,8 +62,6 @@ anim	fall
 	frame	data/chars/Ichigo/Fall1.gif
 		
 anim	freespecial
-	energycost	50
-	mponly	1
 	loop	0
 	offset	58 116
 	delay	30
@@ -76,6 +76,7 @@ anim	freespecial
 	frame	data/chars/Ichigo/Free2.gif
 	frame	data/chars/Ichigo/Free3.gif
 	frame	data/chars/Ichigo/Free4.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	70 60 230 56 25 1
 	frame	data/chars/Ichigo/Free5.gif
 	frame	data/chars/Ichigo/Free6.gif
@@ -134,10 +135,10 @@ anim	idle
 	frame	data/chars/Ichigo/Idle2.gif
 		
 anim	jump
-	loop	1
 	offset	58 116
 	delay	20
 	bbox	45 70 30 46
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Ichigo/jump1.gif
 		
 anim	jumpattack

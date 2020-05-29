@@ -12,6 +12,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	delay	7
 	offset	25 59
@@ -133,6 +134,7 @@ anim	idle
 anim	jump
 	bbox	14 2 19 54
 	delay	7
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	25 56
 	frame	data/chars/Hisoka/35.gif
 	bbox	4 6 22 50
@@ -237,6 +239,7 @@ anim	special
 	frame	data/chars/Hisoka/68.gif
 	offset	24 60
 	frame	data/chars/Hisoka/69.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	dasher 5 2 0
 	delay	4
 	attack	0 0 0 0 0 0 0 0 0 0
