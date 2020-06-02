@@ -6,25 +6,71 @@ type	enemy
 shadow	3
 icon	data/chars/Boar2/icon.gif
 
-#Important addition
+
 load	knife
 
 
 remap	data/chars/Boar2/idle00.gif data/chars/Boar2/map1.gif
 
+takedamagescript data/scripts/enemyhit.c
 
-anim idle
+
+anim	attack1
+	range	180 300
+	loop	0
+	delay	10
+	throwframe	2
+	bbox	50 56 22 24
+	offset	38 77
+	frame	data/chars/Boar2/shoot00.gif
+	sound	data/chars/Boar2/shot.wav
+	frame	data/chars/Boar2/shoot01.gif
+	frame	data/chars/Boar2/shoot02.gif
+		
+anim	attack2
+	loop	0
+	delay	10
+	throwframe	2
+	bbox	50 56 22 24
+	offset	38 77
+	frame	data/chars/Boar2/shoot00.gif
+	sound	data/chars/Boar2/shot.wav
+	frame	data/chars/Boar2/shoot01.gif
+	frame	data/chars/Boar2/shoot02.gif
+		
+anim	fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	41 36 24 22 4 1
+	frame	data/chars/Boar2/fall00.gif
+	frame	data/chars/Boar2/fall00.gif
+	frame	data/chars/Boar2/fall01.gif
+		
+anim	idle
 	loop	1
 	delay	15
 	offset	38 77
-	bbox	50 56 22 24	
+	bbox	50 56 22 24
 	frame	data/chars/Boar2/idle00.gif
-  	frame	data/chars/Boar2/idle01.gif
+	frame	data/chars/Boar2/idle01.gif
 	frame	data/chars/Boar2/idle02.gif
-  	frame	data/chars/Boar2/idle01.gif
-
-
-anim walk
+	frame	data/chars/Boar2/idle01.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	50 56 22 24
+	delay	20
+	frame	data/chars/Boar2/pain.gif
+		
+anim	rise
+	loop	0
+	offset	38 77
+	delay	5
+	frame	data/chars/Boar2/rise.gif
+		
+anim	walk
 	loop	1
 	delay	10
 	offset	38 77
@@ -35,57 +81,6 @@ anim walk
 	frame	data/chars/Boar2/walk03.gif
 	frame	data/chars/Boar2/walk04.gif
 	frame	data/chars/Boar2/walk05.gif
-
-
-anim attack1
-        range	180 300
-	loop	0
-	delay	10
-	throwframe	2
-	bbox	50 56 22 24   
-	offset	38 77
-	frame	data/chars/Boar2/shoot00.gif
-        sound   data/chars/Boar2/shot.wav
-	frame	data/chars/Boar2/shoot01.gif
-	frame	data/chars/Boar2/shoot02.gif
-
-
-anim attack2
-	loop	0
-	delay	10
-	throwframe	2
-	bbox	50 56 22 24   
-	offset	38 77
-	frame	data/chars/Boar2/shoot00.gif
-        sound   data/chars/Boar2/shot.wav
-	frame	data/chars/Boar2/shoot01.gif
-	frame	data/chars/Boar2/shoot02.gif
-
-
-
-anim pain
-	loop	0
-	offset	38 77
-	bbox	50 56 22 24	
-	delay	20
-	frame   data/chars/Boar2/pain.gif
-
-
-anim fall
-	loop	0
-	offset	38 77
-	delay	20
-	attack	41 36 24 22 4 1
-	frame   data/chars/Boar2/fall00.gif
-	frame   data/chars/Boar2/fall00.gif
-	frame   data/chars/Boar2/fall01.gif
-
-
-
-anim rise
-	loop	0
-	offset	38 77
-	delay	5
-        frame   data/chars/Boar2/rise.gif
-
-
+		
+#|edited by openBor Stats v 0.67
+		

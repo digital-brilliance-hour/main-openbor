@@ -3,7 +3,7 @@ health	1500
 speed	20
 type	enemy
 shadow	2
-aironly 1
+
 icon	data/chars/Ace/icon.gif
 holdblock 1
 riseinv 2 0
@@ -19,12 +19,191 @@ blockodds 1
 cantgrab  1
 candamage player npc obstacle
 
-anim idle
+
+anim	attack1
+	loop	0
+	delay	3
+	bbox	36 46 13 20
+	offset	38 77
+	frame	data/chars/Ace/punch01.gif
+	frame	data/chars/Ace/punch02.gif
+	frame	data/chars/Ace/punch03.gif
+	frame	data/chars/Ace/punch04.gif
+	frame	data/chars/Ace/punch05.gif
+	frame	data/chars/Ace/punch06.gif
+	sound	data/chars/Ace/punch.wav
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch07.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch08.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch09.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch10.gif
+	frame	data/chars/Ace/punch11.gif
+	frame	data/chars/Ace/punch12.gif
+	frame	data/chars/Ace/punch13.gif
+	frame	data/chars/Ace/punch14.gif
+	frame	data/chars/Ace/punch15.gif
+	frame	data/chars/Ace/punch16.gif
+	frame	data/chars/Ace/punch17.gif
+		
+anim	attack2
+	loop	0
+	delay	5
+	bbox	36 46 13 20
+	offset	38 77
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl01.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl02.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl03.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl04.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl05.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl06.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl07.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl08.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl09.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl01.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl02.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl03.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl04.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl05.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl06.gif
+	sound	data/chars/Ace/gtl.wav
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl07.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl08.gif
+	freeze	62 33 35 27 30 2
+	frame	data/chars/Ace/gtl09.gif
+		
+anim	attack3
+	loop	0
+	delay	3
+	bbox	36 46 13 20
+	offset	38 77
+	range	0 100
+	throwframe	1 10
+	custknife	hiken
+	sound	data/chars/Ace/hik.wav
+	frame	data/chars/Ace/punch01.gif
+	frame	data/chars/Ace/punch02.gif
+	frame	data/chars/Ace/punch03.gif
+	frame	data/chars/Ace/punch04.gif
+	frame	data/chars/Ace/punch05.gif
+	frame	data/chars/Ace/punch06.gif
+	sound	data/chars/Ace/punch.wav
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch07.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch08.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch09.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch10.gif
+	frame	data/chars/Ace/punch11.gif
+	frame	data/chars/Ace/punch12.gif
+	frame	data/chars/Ace/punch13.gif
+	frame	data/chars/Ace/punch14.gif
+	frame	data/chars/Ace/punch15.gif
+	frame	data/chars/Ace/punch16.gif
+	frame	data/chars/Ace/punch17.gif
+		
+anim	block
+	loop	0
+	offset	43 78
+	delay	7
+	frame	data/chars/Ace/block01.gif
+	frame	data/chars/Ace/block02.gif
+	frame	data/chars/Ace/block03.gif
+	frame	data/chars/Ace/block04.gif
+		
+anim	chargeattack
+	loop	0
+	delay	3
+	bbox	36 46 13 20
+	offset	38 77
+	throwframe	1 10
+	custknife	hiken
+	sound	data/chars/Ace/hik.wav
+	frame	data/chars/Ace/punch01.gif
+	frame	data/chars/Ace/punch02.gif
+	frame	data/chars/Ace/punch03.gif
+	frame	data/chars/Ace/punch04.gif
+	frame	data/chars/Ace/punch05.gif
+	frame	data/chars/Ace/punch06.gif
+	sound	data/chars/Ace/punch.wav
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch07.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch08.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch09.gif
+	attack	67 33 49 29 30
+	frame	data/chars/Ace/punch10.gif
+	frame	data/chars/Ace/punch11.gif
+	frame	data/chars/Ace/punch12.gif
+	frame	data/chars/Ace/punch13.gif
+	frame	data/chars/Ace/punch14.gif
+	frame	data/chars/Ace/punch15.gif
+	frame	data/chars/Ace/punch16.gif
+	frame	data/chars/Ace/punch17.gif
+		
+anim	fall
+
+anim	fall
+	loop	0
+	offset	38 77
+	delay	10
+	sound	data/chars/Ace/down.wav
+	frame	data/chars/Ace/fall01.gif
+	move	-4
+	frame	data/chars/Ace/fall02.gif
+	frame	data/chars/Ace/fall03.gif
+	frame	data/chars/Ace/fall04.gif
+	frame	data/chars/Ace/fall05.gif
+	frame	data/chars/Ace/fall06.gif
+	frame	data/chars/Ace/fall07.gif
+	frame	data/chars/Ace/fall08.gif
+		
+anim	get
+	loop	0
+	delay	7
+	offset	38 77
+	sound	data/chars/Ace/get.wav
+	frame	data/chars/Ace/get01.gif
+	frame	data/chars/Ace/get02.gif
+	frame	data/chars/Ace/get03.gif
+	frame	data/chars/Ace/get04.gif
+	frame	data/chars/Ace/get05.gif
+	frame	data/chars/Ace/get06.gif
+		
+anim	idle
 	loop	1
 	delay	15
 	offset	38 77
 	bbox	36 46 13 20
-	
 	frame	data/chars/Ace/stand01.GIF
 	frame	data/chars/Ace/stand02.GIF
 	frame	data/chars/Ace/stand03.GIF
@@ -32,29 +211,99 @@ anim idle
 	frame	data/chars/Ace/stand05.GIF
 	frame	data/chars/Ace/stand06.GIF
 		
-
-anim walk
-
+anim	jump
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Ace/jump01.gif
+	frame	data/chars/Ace/jump02.gif
+	frame	data/chars/Ace/jump03.gif
+	frame	data/chars/Ace/jump04.gif
+	frame	data/chars/Ace/jump05.gif
+	frame	data/chars/Ace/jump06.gif
+	frame	data/chars/Ace/jump07.gif
+		
+anim	jumpattack
+	loop	0
+	delay	5
+	bbox	37 46 16 17
+	offset	38 77
+	throwframe	4 20
+	custknife	hiken
+	sound	data/chars/Ace/kick.wav
+	frame	data/chars/Ace/jatk01.gif
+	frame	data/chars/Ace/jatk02.gif
+	frame	data/chars/Ace/jatk03.gif
+	frame	data/chars/Ace/jatk04.gif
+	frame	data/chars/Ace/jatk05.gif
+	frame	data/chars/Ace/jatk06.gif
+	frame	data/chars/Ace/jatk07.gif
+	frame	data/chars/Ace/jatk08.gif
+	frame	data/chars/Ace/jatk09.gif
+	frame	data/chars/Ace/jatk10.gif
+	frame	data/chars/Ace/jatk11.gif
+	frame	data/chars/Ace/jatk12.gif
+		
+anim	jumpdelay
+	loop	0
+	offset	38 77
+	delay	5
+	bbox	37 46 16 17
+	frame	data/chars/Ace/dlay01.gif
+	frame	data/chars/Ace/dlay02.gif
+		
+anim	jumpland
+	loop	0
+	offset	38 77
+	delay	5
+	bbox	37 46 16 17
+	frame	data/chars/Ace/land01.gif
+	frame	data/chars/Ace/land02.gif
+	frame	data/chars/Ace/land03.gif
+		
+anim	land
+	loop	0
+	offset	38 77
+	delay	10
+	bbox	37 46 16 17
+	frame	data/chars/Ace/land01.gif
+	frame	data/chars/Ace/land02.gif
+	frame	data/chars/Ace/land03.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	36 46 13 20
+	delay	7
+	sound	data/chars/Ace/pain.wav
+	frame	data/chars/Ace/pain01.gif
+	frame	data/chars/Ace/pain02.gif
+	frame	data/chars/Ace/pain03.gif
+	frame	data/chars/Ace/pain04.gif
+	frame	data/chars/Ace/pain05.gif
+	frame	data/chars/Ace/pain06.gif
+	frame	data/chars/Ace/pain07.gif
+		
+anim	rise
+	loop	0
+	offset	38 77
+	delay	7
+	frame	data/chars/Ace/rise01.gif
+	frame	data/chars/Ace/rise02.gif
+	frame	data/chars/Ace/rise03.gif
+	frame	data/chars/Ace/rise04.gif
+	frame	data/chars/Ace/rise05.gif
+	frame	data/chars/Ace/rise06.gif
+	frame	data/chars/Ace/rise07.gif
+	frame	data/chars/Ace/rise08.gif
+		
+anim	run
 	loop	1
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
-	
-	frame	data/chars/Ace/walk01.gif
-	frame	data/chars/Ace/walk02.gif
-	frame	data/chars/Ace/walk03.gif
-	frame	data/chars/Ace/walk04.gif
-	frame	data/chars/Ace/walk05.gif
-	frame	data/chars/Ace/walk06.gif
-	frame	data/chars/Ace/walk07.gif
-	frame	data/chars/Ace/walk08.gif
-
-anim run
-	loop	1
-	delay	7
-	offset	38 77
-	bbox	36 46 13 20
-        running 40 4 3 1 1	
+	running	40 4 3 1 1
 	frame	data/chars/Ace/run01.gif
 	frame	data/chars/Ace/run02.gif
 	frame	data/chars/Ace/run03.gif
@@ -63,173 +312,20 @@ anim run
 	frame	data/chars/Ace/run06.gif
 	frame	data/chars/Ace/run07.gif
 	frame	data/chars/Ace/run08.gif
-
-anim get
-	loop	0
-	delay	7
-	offset	38 77
-        sound   data/chars/Ace/get.wav
-	frame	data/chars/Ace/get01.gif
-        frame	data/chars/Ace/get02.gif
-	frame	data/chars/Ace/get03.gif
-	frame	data/chars/Ace/get04.gif
-        frame	data/chars/Ace/get05.gif
-	frame	data/chars/Ace/get06.gif
-
-anim attack1
-	loop	0
-	delay	3
-	bbox	36 46 13 20
-	offset	38 77
-	frame	data/chars/Ace/punch01.gif
-        frame	data/chars/Ace/punch02.gif
-	frame	data/chars/Ace/punch03.gif
-        frame	data/chars/Ace/punch04.gif
-	frame	data/chars/Ace/punch05.gif
-	frame	data/chars/Ace/punch06.gif
-        sound   data/chars/Ace/punch.wav
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch07.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch08.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch09.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch10.gif
-	frame	data/chars/Ace/punch11.gif
-        frame	data/chars/Ace/punch12.gif
-	frame	data/chars/Ace/punch13.gif
-        frame	data/chars/Ace/punch14.gif
-	frame	data/chars/Ace/punch15.gif
-	frame	data/chars/Ace/punch16.gif
-	frame	data/chars/Ace/punch17.gif
-
-anim attack2
-	loop	0
-	delay	5
-	bbox	36 46 13 20
-	offset	38 77
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl01.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl02.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl03.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl04.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl05.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl06.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl07.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl08.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl09.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl01.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl02.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl03.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl04.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl05.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl06.gif
-        sound   data/chars/Ace/gtl.wav
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl07.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl08.gif
-        freeze  62 33 35 27 30 2
-	frame	data/chars/Ace/gtl09.gif
-
-anim attack3
-	loop	0
-	delay	3
-	bbox	36 46 13 20
-	offset	38 77
-        range   0 100
-        throwframe 1 10
-        custknife hiken
-        sound   data/chars/Ace/hik.wav
-	frame	data/chars/Ace/punch01.gif
-        frame	data/chars/Ace/punch02.gif
-	frame	data/chars/Ace/punch03.gif
-        frame	data/chars/Ace/punch04.gif
-	frame	data/chars/Ace/punch05.gif
-	frame	data/chars/Ace/punch06.gif
-        sound   data/chars/Ace/punch.wav
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch07.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch08.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch09.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch10.gif
-	frame	data/chars/Ace/punch11.gif
-        frame	data/chars/Ace/punch12.gif
-	frame	data/chars/Ace/punch13.gif
-        frame	data/chars/Ace/punch14.gif
-	frame	data/chars/Ace/punch15.gif
-	frame	data/chars/Ace/punch16.gif
-	frame	data/chars/Ace/punch17.gif
-
-anim chargeattack
-	loop	0
-	delay	3
-	bbox	36 46 13 20
-	offset	38 77
-        throwframe 1 10
-        custknife hiken
-        sound   data/chars/Ace/hik.wav
-	frame	data/chars/Ace/punch01.gif
-        frame	data/chars/Ace/punch02.gif
-	frame	data/chars/Ace/punch03.gif
-        frame	data/chars/Ace/punch04.gif
-	frame	data/chars/Ace/punch05.gif
-	frame	data/chars/Ace/punch06.gif
-        sound   data/chars/Ace/punch.wav
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch07.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch08.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch09.gif
-        attack	67 33 49 29 30
-	frame	data/chars/Ace/punch10.gif
-	frame	data/chars/Ace/punch11.gif
-        frame	data/chars/Ace/punch12.gif
-	frame	data/chars/Ace/punch13.gif
-        frame	data/chars/Ace/punch14.gif
-	frame	data/chars/Ace/punch15.gif
-	frame	data/chars/Ace/punch16.gif
-	frame	data/chars/Ace/punch17.gif
-
-anim special2
+		
+anim	special2
 	loop	0
 	offset	43 78
 	delay	7
-        range   0 300
-        throwframe 20 28
-        custknife tei
+	range	0 300
+	throwframe	20 28
+	custknife	tei
 	frame	data/chars/Ace/ent01.gif
 	frame	data/chars/Ace/ent02.gif
 	frame	data/chars/Ace/ent03.gif
 	delay	3
 	offset	68 177
-        sound   data/chars/misc/ent.wav
+	sound	data/chars/misc/ent.wav
 	frame	data/chars/Ace/ente01.gif
 	frame	data/chars/Ace/ente02.gif
 	frame	data/chars/Ace/ente03.gif
@@ -247,128 +343,25 @@ anim special2
 	frame	data/chars/Ace/ente03.gif
 	frame	data/chars/Ace/ente04.gif
 	offset	43 78
-        sound   data/chars/Ace/entei.wav
+	sound	data/chars/Ace/entei.wav
 	frame	data/chars/Ace/ent04.gif
 	frame	data/chars/Ace/ent05.gif
 	frame	data/chars/Ace/ent06.gif
 	frame	data/chars/Ace/ent06.gif
-
-
-anim jumpdelay
-	loop	0
-	offset	38 77
-	delay	5
-	bbox	37 46 16 17
-	
-	frame	data/chars/Ace/dlay01.gif
-	frame	data/chars/Ace/dlay02.gif
-
-anim jump
-	loop	0
-	offset	38 77
-	delay	10
-	bbox	37 46 16 17
-	
-	frame	data/chars/Ace/jump01.gif
-	frame	data/chars/Ace/jump02.gif
-	frame	data/chars/Ace/jump03.gif
-	frame	data/chars/Ace/jump04.gif
-	frame	data/chars/Ace/jump05.gif
-	frame	data/chars/Ace/jump06.gif
-	frame	data/chars/Ace/jump07.gif
-
-anim jumpland
-	loop	0
-	offset	38 77
-	delay	5
-	bbox	37 46 16 17
-	
-	frame	data/chars/Ace/land01.gif
-	frame	data/chars/Ace/land02.gif
-	frame	data/chars/Ace/land03.gif
-
-anim jumpattack
-	loop	0
-	delay	5
-	bbox	37 46 16 17
-	offset	38 77
-        throwframe 4 20
-        custknife hiken
-        sound   data/chars/Ace/kick.wav	
-	frame	data/chars/Ace/jatk01.gif
-	frame	data/chars/Ace/jatk02.gif
-        frame	data/chars/Ace/jatk03.gif
-	frame	data/chars/Ace/jatk04.gif
-	frame	data/chars/Ace/jatk05.gif
-        frame	data/chars/Ace/jatk06.gif
-	frame	data/chars/Ace/jatk07.gif
-	frame	data/chars/Ace/jatk08.gif
-        frame	data/chars/Ace/jatk09.gif
-	frame	data/chars/Ace/jatk10.gif
-	frame	data/chars/Ace/jatk11.gif
-	frame	data/chars/Ace/jatk12.gif
-
-anim block
-	loop	0
-	offset	43 78
+		
+anim	walk
+	loop	1
 	delay	7
-	frame	data/chars/Ace/block01.gif
-	frame	data/chars/Ace/block02.gif
-	frame	data/chars/Ace/block03.gif
-	frame	data/chars/Ace/block04.gif
-
-anim pain
-	loop	0
 	offset	38 77
 	bbox	36 46 13 20
-	delay	7
-        sound   data/chars/Ace/pain.wav
-	frame	data/chars/Ace/pain01.gif
-	frame	data/chars/Ace/pain02.gif
-	frame	data/chars/Ace/pain03.gif
-	frame	data/chars/Ace/pain04.gif
-	frame	data/chars/Ace/pain05.gif
-	frame	data/chars/Ace/pain06.gif
-	frame	data/chars/Ace/pain07.gif
-
-anim fall
-	anim fall
-	loop	0
-	offset	38 77
-	delay	10
-        sound   data/chars/Ace/down.wav	
-        frame	data/chars/Ace/fall01.gif
-        move    -4	
-        frame	data/chars/Ace/fall02.gif
-        frame	data/chars/Ace/fall03.gif
-        frame	data/chars/Ace/fall04.gif
-	frame	data/chars/Ace/fall05.gif
-	frame	data/chars/Ace/fall06.gif	
-	frame	data/chars/Ace/fall07.gif
-	frame	data/chars/Ace/fall08.gif
-
-anim rise
-	loop	0
-	offset	38 77
-	delay	7
-        
-        frame	data/chars/Ace/rise01.gif
-        frame	data/chars/Ace/rise02.gif
-        frame	data/chars/Ace/rise03.gif
-        frame	data/chars/Ace/rise04.gif
-        frame	data/chars/Ace/rise05.gif
-        frame	data/chars/Ace/rise06.gif
-	frame	data/chars/Ace/rise07.gif
-	frame	data/chars/Ace/rise08.gif
-
-
-
-anim land
-	loop	0
-	offset	38 77
-	delay	10
-	bbox	37 46 16 17
-	
-	frame	data/chars/Ace/land01.gif
-	frame	data/chars/Ace/land02.gif
-	frame	data/chars/Ace/land03.gif
+	frame	data/chars/Ace/walk01.gif
+	frame	data/chars/Ace/walk02.gif
+	frame	data/chars/Ace/walk03.gif
+	frame	data/chars/Ace/walk04.gif
+	frame	data/chars/Ace/walk05.gif
+	frame	data/chars/Ace/walk06.gif
+	frame	data/chars/Ace/walk07.gif
+	frame	data/chars/Ace/walk08.gif
+		
+#|edited by openBor Stats v 0.67
+		

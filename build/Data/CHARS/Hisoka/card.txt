@@ -1,29 +1,22 @@
 name	h_card
-speed   15
+speed   50
 type 	none
 shadow	0
-load hittt
-flash hittt
-candamage enemy obstacle shot
+remove 0
 
-anim idle
-	offset	9 14
-	frame	data/chars/Hisoka/194.gif
-	offset	7 12
-	frame	data/chars/Hisoka/195.gif
-	offset	6 12
-	frame	data/chars/Hisoka/196.gif
-	offset	6 11
-	frame	data/chars/Hisoka/197.gif
-	offset	8 13
-	frame	data/chars/Hisoka/198.gif
-	offset	12 14
-	frame	data/chars/Hisoka/199.gif
+anim	idle
+	attack	2 2 9 7 20 1 1 0 0 0
+	loop	0
 	offset	6 5
 	frame	data/chars/Hisoka/200.gif
 	offset	1 9
 	frame	data/chars/Hisoka/201.gif
+	attack	2 2 9 7 20 1 0 1 0 0
 	offset	2 9
 	frame	data/chars/Hisoka/202.gif
+	attack	2 2 9 7 20 1 1 0 0 0
 	offset	2 9
 	frame	data/chars/Hisoka/203.gif
+		
+#|edited by openBor Stats v 0.67
+		

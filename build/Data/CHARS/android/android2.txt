@@ -2,98 +2,32 @@ name	Android
 health	60
 speed	10
 type	enemy
-shadow	0
+shadow	3
 nolife   1
 falldie 1
-#nodieblink 2
+
 icon	data/chars/android/icon.gif
 diesound data/sounds/cure.wav
 
-anim idle
-	loop	1
-	delay	15
-	offset	52	100
-	bbox	32	44	35	57
-	frame	data/chars/android/at1.gif
 
+takedamagescript data/scripts/enemyhit.c
 
-
-anim walk
-
-	loop	1
-	delay	15
-	offset	51	101
-	bbox	40	42	24	58
-	frame	data/chars/android/walk1.gif
-	frame	data/chars/android/walk2.gif
-	frame	data/chars/android/walk3.gif
-	frame	data/chars/android/walk4.gif
-	frame	data/chars/android/walk5.gif
-	frame	data/chars/android/walk6.gif
-	frame	data/chars/android/walk7.gif
-	frame	data/chars/android/walk8.gif	
-
-anim pain
+anim	attack1
 	loop	0
-	offset	45	100
-	bbox	24	49	36	51
-	delay	15
-	frame	data/chars/android/pain4.gif
-	frame	data/chars/android/pain3.gif
-	frame	data/chars/android/pain2.gif
-	frame	data/chars/android/pain1.gif
-
-
-anim fall
-	loop	0
-	offset	70 85
-	bbox	24	49	36	51	
-	delay	20
-	move	2
-	frame	data/chars/android/flip1.gif	
-	frame	data/chars/android/flip2.gif
-	frame	data/chars/android/flip3.gif
-	frame	data/chars/android/flip4.gif
-        frame	data/chars/android/flip5.gif
-        frame	data/chars/android/flip6.gif
-	delay	10
-        frame	data/chars/android/flip7.gif
-
-anim death
-	loop	0
-	offset 	139	177
-	delay	8
-	frame	data/chars/android/smoke1.gif
-	frame	data/chars/android/smoke2.gif
-	frame	data/chars/android/smoke3.gif
-	frame	data/chars/android/smoke4.gif
-	frame	data/chars/android/smoke5.gif
-	frame	data/chars/android/smoke6.gif
-	frame	data\chars\misc/flash5.gif
-
-anim rise
-	loop	0
-	offset	70 85
-	delay	12
-	frame	data/chars/android/pain1.gif
-
-
-anim attack1
-	loop	0
-        range   0	100
+	range	0	100
 	offset	52	100
 	bbox	32	44	35	57
 	delay	10
 	frame	data/chars/android/at1.gif
 	frame	data/chars/android/at2.gif
 	delay	20
-        attack	61	67	48	7	5
+	attack	61	67	48	7	5
 	frame	data/chars/android/at3.gif
-        attack	0
+	attack	0
 	frame	data/chars/android/at1.gif
-
-anim attack2
-        range   100	200
+		
+anim	attack2
+	range	100	200
 	loop	0
 	offset	52	93
 	delay	7
@@ -110,7 +44,70 @@ anim attack2
 	frame	data/chars/android/run2.gif
 	frame	data/chars/android/run3.gif
 	frame	data/chars/android/run4.gif
-#	frame	data/chars/android/run5.gif
-#	frame	data/chars/android/run6.gif
-#	frame	data/chars/android/run7.gif
-#	frame	data/chars/android/run8.gif
+		
+anim	death
+	loop	0
+	offset	139	177
+	delay	8
+	frame	data/chars/android/smoke1.gif
+	frame	data/chars/android/smoke2.gif
+	frame	data/chars/android/smoke3.gif
+	frame	data/chars/android/smoke4.gif
+	frame	data/chars/android/smoke5.gif
+	frame	data/chars/android/smoke6.gif
+	frame	data\chars\misc/flash5.gif
+		
+anim	fall
+	loop	0
+	offset	70 85
+	bbox	24	49	36	51
+	delay	20
+	move	2
+	frame	data/chars/android/flip1.gif
+	frame	data/chars/android/flip2.gif
+	frame	data/chars/android/flip3.gif
+	frame	data/chars/android/flip4.gif
+	frame	data/chars/android/flip5.gif
+	frame	data/chars/android/flip6.gif
+	delay	10
+	frame	data/chars/android/flip7.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	52	100
+	bbox	32	44	35	57
+	frame	data/chars/android/at1.gif
+		
+anim	pain
+	loop	0
+	offset	45	100
+	bbox	24	49	36	51
+	delay	15
+	frame	data/chars/android/pain4.gif
+	frame	data/chars/android/pain3.gif
+	frame	data/chars/android/pain2.gif
+	frame	data/chars/android/pain1.gif
+		
+anim	rise
+	loop	0
+	offset	70 85
+	delay	12
+	frame	data/chars/android/pain1.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	51	101
+	bbox	40	42	24	58
+	frame	data/chars/android/walk1.gif
+	frame	data/chars/android/walk2.gif
+	frame	data/chars/android/walk3.gif
+	frame	data/chars/android/walk4.gif
+	frame	data/chars/android/walk5.gif
+	frame	data/chars/android/walk6.gif
+	frame	data/chars/android/walk7.gif
+	frame	data/chars/android/walk8.gif
+		
+#|edited by openBor Stats v 0.67
+		

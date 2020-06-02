@@ -1461,6 +1461,18 @@ void cancel(int RxMin, int RxMax, int RyMin, int RyMax, int RzMin, int RzMax, vo
 	}
 }
 
+void enoughmp() {
+	void self 	= getlocalvar("self");
+	int mp		= getentityproperty(self, "mp"); //Get entity's MP
+	int maxmp	= getentityproperty(self, "maxmp"); //Get entity's Max MP
+	changeentityproperty(self,"energycost",0, 1, 0);
+	if(mp < maxmp) {
+		anichange(openborconstant("ANI_ATTACK1"));
+		setidle(self, openborconstant("ANI_ATTACK1"));
+		mpcost(0);
+	}
+}
+
 void cancelmp(int RxMin, int RxMax, int RyMin, int RyMax, int Limit, void Ani)
 {// Enemy attack interruption with range and MP check
 	void self 	= getlocalvar("self");

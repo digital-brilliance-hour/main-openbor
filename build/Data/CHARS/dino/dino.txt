@@ -12,67 +12,65 @@ remap	data/chars/Dino/idle00.gif data/chars/Dino/map2.gif
 remap	data/chars/Dino/idle00.gif data/chars/Dino/map3.gif
 remap	data/chars/Dino/idle00.gif data/chars/Dino/map4.gif
 
-
-anim idle
-	loop	1
-	delay	10
-	offset	38 77
-	bbox	39 40 44 33	
-	frame	data/chars/Dino/idle00.gif
-  	frame	data/chars/Dino/idle01.gif
-	frame	data/chars/Dino/idle02.gif
-  	frame	data/chars/Dino/idle03.gif
-	frame	data/chars/Dino/idle04.gif
+takedamagescript data/scripts/enemyhit.c
 
 
-
-anim walk
-	loop	1
-	delay	10
-	offset	38 77
-	bbox	39 40 44 33	
-	frame	data/chars/Dino/idle00.gif
-  	frame	data/chars/Dino/idle01.gif
-	frame	data/chars/Dino/idle02.gif
-  	frame	data/chars/Dino/idle03.gif
-	frame	data/chars/Dino/idle04.gif
-
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	10
 	offset	38 77
-        move    20
+	move	20
 	attack	49 43 33 25 9 1
-  	frame	data/chars/Dino/dive.gif
-  	frame	data/chars/Dino/dive.gif
-  	frame	data/chars/Dino/dive.gif
-  	frame	data/chars/Dino/dive.gif
-
-
-anim pain
-	loop	0
-	offset	38 77
-	bbox	39 40 44 33		
-	delay	20
-	frame   data/chars/Dino/pain.gif
-
-
-anim fall
+	frame	data/chars/Dino/dive.gif
+	frame	data/chars/Dino/dive.gif
+	frame	data/chars/Dino/dive.gif
+	frame	data/chars/Dino/dive.gif
+		
+anim	fall
 	loop	0
 	offset	38 77
 	delay	20
 	attack	39 32 20 38 4 1
-	frame   data/chars/Dino/fall00.gif
-	frame   data/chars/Dino/fall00.gif
-	frame   data/chars/Dino/fall01.gif
-
-
-
-anim rise
+	frame	data/chars/Dino/fall00.gif
+	frame	data/chars/Dino/fall00.gif
+	frame	data/chars/Dino/fall01.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	39 40 44 33
+	frame	data/chars/Dino/idle00.gif
+	frame	data/chars/Dino/idle01.gif
+	frame	data/chars/Dino/idle02.gif
+	frame	data/chars/Dino/idle03.gif
+	frame	data/chars/Dino/idle04.gif
+		
+anim	pain
+	loop	0
+	offset	38 77
+	bbox	39 40 44 33
+	delay	20
+	frame	data/chars/Dino/pain.gif
+		
+anim	rise
 	loop	0
 	offset	38 77
 	delay	7
-	frame   data/chars/Dino/fall01.gif
-	frame   data/chars/Dino/fall00.gif
-	frame   data/chars/Dino/pain.gif
+	frame	data/chars/Dino/fall01.gif
+	frame	data/chars/Dino/fall00.gif
+	frame	data/chars/Dino/pain.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	39 40 44 33
+	frame	data/chars/Dino/idle00.gif
+	frame	data/chars/Dino/idle01.gif
+	frame	data/chars/Dino/idle02.gif
+	frame	data/chars/Dino/idle03.gif
+	frame	data/chars/Dino/idle04.gif
+		
+#|edited by openBor Stats v 0.67
+		

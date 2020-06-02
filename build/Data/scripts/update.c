@@ -1,3 +1,5 @@
+#include "data/scripts/traileru.c"
+
 int getScoreLevel(int lvl){
  if (lvl%2 == 1){
  return lvl * (lvl/2) * 1000;
@@ -85,7 +87,9 @@ void main()
        }
        }
       }
+      show_enemy_health();
     }
+  afterImg();
 }
 
 void oncreate()

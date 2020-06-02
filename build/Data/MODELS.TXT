@@ -30,6 +30,9 @@ load 	k_charge 	data/chars/king_piccolo/charge.txt
 load 	b_bshot		data/chars/broly_ssb/shot.txt
 load 	b_blast 	data/chars/broly_ssb/blast.txt
 load 	b_shot 		data/chars/broly_ssb/shot2.txt
+load 	b_explosion data/chars/broly_ssb/explosion.txt
+load 	b_explosion2 data/chars/broly_ssb/explosion2.txt
+load 	b_shockwave data/chars/broly_ssb/shockwave.txt
 load 	g_blast		data/chars/gon/blast.txt
 load 	g_blast2 	data/chars/gon/blast2.txt
 load 	g_shot 		data/chars/gon/shot.txt
@@ -39,6 +42,8 @@ load 	g_knife		data/chars/gon/knife.txt
 load 	g_hit		data/chars/gon/hit.txt
 load 	g_hit2		data/chars/gon/hit2.txt
 load 	pdust		data/chars/misc/dust.txt
+load 	h_card		data/chars/hisoka/card.txt
+load 	e_spawn 	data/chars/misc/espawn/espawn.txt
 
 # Players must also be loaded.
 load	Naruto		data/chars/Naruto/Naruto.txt
@@ -67,13 +72,23 @@ load	Gohan	        data/chars/Gohan/Gohan.txt
 load	Krillin	        data/chars/Krillin/Krillin.txt
 
 # Items and other objects can be loaded when needed.
-know	Apple		data/chars/misc/apple.txt
-know	Meat		data/chars/misc/meat.txt
+know 	hp_twentyfive		data/chars/misc/candy.txt
+know 	hp_fifty		data/chars/misc/drink.txt
+know	hp_seventyfive		data/chars/misc/apple.txt
+know	hp_hundred		data/chars/misc/meat.txt
+know	xp_twentyfive		data/chars/misc/gold.txt
+know 	xp_fifty 		data/chars/misc/misc18.txt
+know 	xp_seventyfive 		data/chars/misc/misc17.txt
+know	xp_hundred		data/chars/misc/money.txt
+know 	xp_twohundred	 	data/chars/misc/game.txt
 know	1up		data/chars/misc/1up.txt
-know	Money		data/chars/misc/money.txt
-know	Gold		data/chars/misc/gold.txt
 know	Time		data/chars/misc/time.txt
-know	Juice		data/chars/misc/juice.txt
+know 	mp_twentyfive 		data/chars/misc/life03.txt
+know 	mp_fifty 		data/chars/misc/life01.txt
+know 	mp_seventyfive 		data/chars/misc/life02.txt
+know	mp_hundred		data/chars/misc/juice.txt
+load    fight      data/sprites/fight.txt
+
 
 # Obstacles (item containers)
 know	Box		data/chars/misc/box.txt
@@ -144,6 +159,7 @@ know	Blood_H			data/chars/hand/hand.txt
 know    BEE        data/chars/bee/bee.txt
 know      kagome      data/chars/kagome/kagome.txt
 load	Jack		data/chars/samjack/samjack.txt
+know 	Android		data/chars/android/android2.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt
@@ -157,6 +173,9 @@ know	Steamer		data/chars/misc/steamer.txt
 know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
+know	warning		data/enems/stg/warning.txt
+know	ready		data/chars/misc/ready.txt
+know    delay      data/sprites/delay.txt
 
 know    hou           data/chars/misc/Hou.txt
 know    break           data/chars/misc/break.txt
@@ -185,17 +204,13 @@ Load Levelup data/chars/Misc/levelup/levelup.txt
 Load Gon data/chars/Gon/Gon.txt
 Load Deku data/chars/Deku/Deku.txt
 Load King_Piccolo data/chars/King_Piccolo/King_Piccolo.txt
-#Load King_Piccolo_big data/chars/King_Piccolo/King_Piccolo_big.txt
 Load Hisoka data/chars/Hisoka/Hisoka.txt
 Load Shrek data/chars/Shrek/Shrek.txt
-#Load Pain data/chars/Pain/Pain.txt
 Load Lee data/chars/Lee/Lee.txt
 Load Broly data/chars/Broly_SSB/Broly_SSB.txt
-#Load Broly_old data/chars/Broly_SSB/Broly_SSB_old.txt
-#Load 	Madara		data/chars/Madara/Madara.txt
-#Load 	Itachi		data/chars/Itachi/Itachi.txt
 Know Hisoka_E data/chars/Hisoka/HisokaE.txt
 Know hiei_E data/chars/hiei/hieiE.txt
 Know Sasuke_E data/chars/Sasuke/SasukeE.txt
 Know Shrek_E data/chars/Shrek/ShrekE.txt
 Know samjack_E data/chars/samjack/samjackE.txt
+know Broly_E data/chars/Broly_SSB/Broly_SSBE.txt

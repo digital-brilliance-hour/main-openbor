@@ -1,12 +1,11 @@
-name	Gold
-health	0
-score	5000
+name	xp_twentyfive
 type	item
-shadow	0
-icon	data/chars/misc/goldicon.gif
+subtype touch
+nolife 1
+didhitscript data/scripts/item.c
 
 
-anim idle
+anim	idle
 	loop	1
 	offset	9 13
 	bbox	0 0 17 13
@@ -18,3 +17,6 @@ anim idle
 	frame	data/chars/misc/gold03.gif
 	frame	data/chars/misc/gold02.gif
 	frame	data/chars/misc/gold01.gif
+		
+#|edited by openBor Stats v 0.67
+		

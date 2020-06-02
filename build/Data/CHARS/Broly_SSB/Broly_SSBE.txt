@@ -1,7 +1,7 @@
 name	BrolyE
 health	100
 speed	9
-type	player
+type	enemy
 shadow	3
 running 18 4 2 1 0
 aimove chase
@@ -11,6 +11,8 @@ hostile npc player
 load b_shot2
 load b_blast
 load b_shot
+load b_explosion
+load b_explosion2
 
 animationscript data/scripts/spawns.c
 com      a2 freespecial
@@ -226,27 +228,35 @@ anim	freespecial2
 	frame	data/chars/Broly_SSB/150.gif
 		
 anim	freespecial3
-	delay	7
+	delay	10
+	offset	36 87
+	frame	data/chars/Broly_SSB/177.gif
 	offset	38 86
 	frame	data/chars/Broly_SSB/172.gif
+	delay	8
 	offset	22 87
 	frame	data/chars/Broly_SSB/173.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	spawnparent "b_explosion" -20 0 95
 	offset	26 88
 	frame	data/chars/Broly_SSB/174.gif
 	offset	35 85
 	frame	data/chars/Broly_SSB/175.gif
+	@cmd	spawnparent "b_explosion2" -5 0 -120
 	offset	39 86
 	frame	data/chars/Broly_SSB/176.gif
-	offset	35 87
-	frame	data/chars/Broly_SSB/177.gif
 	offset	47 83
 	frame	data/chars/Broly_SSB/178.gif
+	@cmd	damage_all_enemies 80 1 0 "ATK_NORMAL"
+	delay	20
+	offset	45 75
+	frame	data/chars/Broly_SSB/179.gif
 	offset	45 75
 	frame	data/chars/Broly_SSB/179.gif
 		
 anim	idle
 	bbox	0 92 47 -91
-	delay	7
+	delay	8
 	loop	1 3
 	offset	24 88
 	frame	data/chars/Broly_SSB/3.gif
@@ -256,6 +266,7 @@ anim	idle
 	bbox	1 93 52 -92
 	offset	27 89
 	frame	data/chars/Broly_SSB/5.gif
+	delay	25
 	bbox	1 92 57 -90
 	offset	29 88
 	frame	data/chars/Broly_SSB/6.gif

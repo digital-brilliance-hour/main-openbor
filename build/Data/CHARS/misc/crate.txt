@@ -5,17 +5,20 @@ name	Crate
 health	1
 type	obstacle
 shadow	0
-icon	data/chars/misc/boxicon.gif
+nolife 1
+#icon	data/chars/misc/cratei.gif
 diesound data/sounds/wood.wav
 
 
 anim idle
 	delay	1000
-	offset	30 67
-	bbox	0 -20 57 80
+	offset	25 40
+	bbox	-1 -29 58 89
 	frame	data/chars/misc/crate.gif
 
 anim fall
 	delay	1000
 	offset	30 67
-	frame	data/chars/misc/crate.gif
+	frame	data/chars/misc/cratered.gif
+
+

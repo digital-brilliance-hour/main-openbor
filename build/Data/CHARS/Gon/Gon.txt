@@ -1,6 +1,6 @@
 name	Gon
 health	100
-speed	9
+speed 12
 type	player
 shadow	3
 load g_blast
@@ -38,13 +38,15 @@ com      a4 freespecial3
 
 
 
+
+
 anim	attack1
 	delay	7
 	offset	17 44
 	frame	data/chars/Gon/127.gif
 	offset	15 39
 	frame	data/chars/Gon/128.gif
-	attack	33 11 35 16 5 0 1 0 0 0
+	attack	33 11 35 16 7 0 1 0 0 0
 	offset	15 39
 	frame	data/chars/Gon/129.gif
 		
@@ -59,7 +61,7 @@ anim	attack2
 	frame	data/chars/Gon/132.gif
 	offset	14 39
 	frame	data/chars/Gon/133.gif
-	attack	22 15 41 25 6 0 1 0 0 0
+	attack	22 15 41 25 8 0 1 0 0 0
 	offset	14 40
 	frame	data/chars/Gon/134.gif
 		
@@ -82,14 +84,14 @@ anim	attack3
 	frame	data/chars/Gon/143.gif
 	offset	18 43
 	frame	data/chars/Gon/144.gif
-	attack	22 43 44 -42 7 0 1 0 0 0
+	attack	22 43 44 -42 8 0 1 0 0 0
 	offset	21 42
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/145.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	20 54
 	frame	data/chars/Gon/146.gif
-	attack	5 0 73 51 7 1 1 0 0 0
+	attack	5 0 73 51 8 1 1 0 0 0
 	offset	19 53
 	frame	data/chars/Gon/147.gif
 	offset	32 52
@@ -222,7 +224,7 @@ anim	freespecial3
 	frame	data/chars/Gon/194.gif
 		
 anim	idle
-	delay	7
+	delay	15
 	loop	1
 	offset	14 41
 	frame	data/chars/Gon/2.gif
@@ -241,7 +243,6 @@ anim	jump
 	offset	16 32
 	frame	data/chars/Gon/8.gif
 	offset	11 33
-		
 	frame	data/chars/Gon/9.gif
 	offset	15 42
 	frame	data/chars/Gon/18.gif
@@ -259,7 +260,6 @@ anim	jumpattack
 	offset	26 57
 	frame	data/chars/Gon/152.gif
 	offset	15 32
-		
 	frame	data/chars/Gon/153.gif
 	offset	13 38
 	frame	data/chars/Gon/154.gif

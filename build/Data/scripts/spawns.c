@@ -1,5 +1,4 @@
 #include "data/scripts/animation/animation.c"
-
 void spawn01(void vName, float fX, float fY, float fZ)
 {
 	//spawn01 (Generic spawner)

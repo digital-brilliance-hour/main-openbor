@@ -1,0 +1,24 @@
+name	b_shockwave
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+anim	idle
+ offset 126 126
+ frame data/chars/Broly_SSB/861.gif
+
+
+
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

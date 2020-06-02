@@ -2,11 +2,10 @@ name	Hiei
 health	90
 running 20 2 4 2 10
 mp 100
-gfxshadow 1
 fmap 2
 speed	12
 type	player
-shadow	5
+shadow 3
 icon	data/chars/hiei/icone3.gif
 diesound data/chars/hiei/die.wav
 dust dust
@@ -23,11 +22,14 @@ alternatepal data/chars/hiei/cor2.gif
 alternatepal data/chars/hiei/cor3.gif
 
 
-com 		D  F  D F A freespecial2
-com 		D  F  A     freespecial
-com 		D  U  A     freespecial3
-com 		D  F  K     freespecial4
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
 animationscript data/scripts/spawns.c
+
+
+
+
 
 
 
@@ -304,9 +306,9 @@ anim	fall
 anim	follow1
 	hitflash	flash3
 	sound	data/chars/hiei/harashiranai.wav
+	@cmd	stop
 	bbox	92 47 -43 70
 	loop	0
-	energycost	20
 	delay	4
 	offset	63 120
 	frame	data/chars/hiei/socosfire.gif
@@ -360,6 +362,8 @@ anim	follow1
 	offset	63 120
 	burn	0
 	frame	data/chars/hiei/11.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	dasher 5 0 0
 	offset	63 120
 	burn	18 38 98 94 20 1 0 0 0 0
 	frame	data/chars/hiei/19.gif
@@ -379,6 +383,7 @@ anim	follow1
 	burn	0 0 0 0 0 0 0 0 0 0
 	offset	39 120
 	frame	data/chars/hiei/31.gif
+	@cmd	stop
 	offset	63 120
 	frame	data/chars/hiei/11.gif
 	offset	63 120
@@ -386,14 +391,14 @@ anim	follow1
 	offset	66 120
 	frame	data/chars/hiei/stand1.gif
 		
-anim	freespecial
-	hitflash	flash3
+anim	chargeattack
 	sound	data/chars/hiei/harashiranai.wav
 	bbox	92 47 -43 70
 	loop	0
 	delay	4
 	offset	63 120
 	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	leaper 1 3
 	frame	data/chars/hiei/socosfire.gif
 	burn	65 40 63 68 6 0 1 0 0 0
 	frame	data/chars/hiei/socosfire3.gif
@@ -432,7 +437,7 @@ anim	freespecial
 	frame	data/chars/hiei/socosfire6.gif
 	frame	data/chars/hiei/socosfire.gif
 		
-anim	freespecial2
+anim	freespecial1
 	attack	37 104 63 113 0 0 1 0 0 0
 	offset	63 208
 	sound	data/chars/hiei/kokuryuha.wav
@@ -440,6 +445,8 @@ anim	freespecial2
 	throwframe	22
 	loop	0
 	delay	8
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	frame	data/chars/hiei/ara1.gif
 	offset	63 208
 	attack	37 104 63 113 0 0 1 0 0 0
@@ -470,11 +477,13 @@ anim	freespecial2
 	frame	data/chars/hiei/ara2.gif
 	offset	63 208
 	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara1.gif
+	offset	63 208
+	attack	37 104 63 113 0 0 1 0 0 0
+	frame	data/chars/hiei/ara2.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	spawnparent "pdust" -10 0 -20
-	frame	data/chars/hiei/ara1.gif
-	offset	63 208
-	attack	37 104 63 113 0 0 1 0 0 0
-	frame	data/chars/hiei/ara2.gif
 	delay	7
 	bbox	27 5 44 72
 	offset	45 70
@@ -507,17 +516,28 @@ anim	freespecial2
 	offset	63 120
 	frame	data/chars/hiei/dragaonegra4.gif
 		
-anim	freespecial3
+anim	freespecial2
 	hitflash	flash3
 	sound	data/chars/hiei/ensatsuken.wav
 	loop	0
 	delay	8
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	offset	63 120
 	burn	18 38 98 94 20 1 0 0 0 0
 	frame	data/chars/hiei/10.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	8
 	offset	63 120
 	burn	0
 	frame	data/chars/hiei/11.gif
+	delay	3
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	dasher 5 0 0
 	offset	63 120
 	burn	18 38 98 94 20 1 0 0 0 0
 	frame	data/chars/hiei/19.gif
@@ -537,6 +557,7 @@ anim	freespecial3
 	burn	0 0 0 0 0 0 0 0 0 0
 	offset	39 120
 	frame	data/chars/hiei/31.gif
+	@cmd	stop
 	offset	63 120
 	frame	data/chars/hiei/11.gif
 	offset	63 120
@@ -544,13 +565,15 @@ anim	freespecial3
 	offset	66 120
 	frame	data/chars/hiei/stand1.gif
 		
-anim	freespecial4
+anim	freespecial3
 	attack	33 100 71 114 0 0 1 0 0 0
 	followanim	1
 	followcond	1
 	delay	9
 	offset	63 206
 	delay	9
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	frame	data/chars/hiei/ar1.gif
 	attack	36 105 64 110 0 0 1 0 0 0
 	offset	63 206
@@ -560,6 +583,8 @@ anim	freespecial4
 	attack	36 105 64 110 0 0 1 0 0 0
 	offset	63 206
 	frame	data/chars/hiei/ar2.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	sound	data/chars/hiei/dragon.wav
 	frame	data/chars/hiei/a1.gif
 	offset	28 391
@@ -596,7 +621,8 @@ anim	freespecial4
 	attack	5 293 57 103 0 0 1 0 0 0
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/hiei/m.gif
-	move	25
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	dasher 7 0 0
 	attack	62 73 66 57 1 0 1 0 0 0
 	offset	72 120
 	frame	data/chars/hiei/runas1.gif
@@ -609,6 +635,7 @@ anim	freespecial4
 	offset	72 120
 	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/hiei/runas2.gif
+	@cmd	stop
 	offset	69 119
 	attack	71 50 59 79 1 0 1 0 0 0
 	frame	data/chars/hiei/dragaonegra2.gif

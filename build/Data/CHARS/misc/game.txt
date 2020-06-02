@@ -1,0 +1,18 @@
+name	xp_twohundred
+type	item
+subtype touch
+shadow	0
+nolife 1
+
+didhitscript data/scripts/item.c
+
+
+anim	idle
+	loop	1
+	offset	9 15
+	bbox	1 3 18 15
+	delay	200
+	frame	data/chars/misc/game.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -4,7 +4,7 @@ mp 200
 speed	10
 type	Player
 shadow	2
-aironly 1
+
 icon	data/chars/Luffy/icon.gif
 atchain  1 2 3 3
 animationscript data/scripts/spawns.c
@@ -15,6 +15,8 @@ jumpmove 3 3
 
 weapons gear2 Luffy    
 weaploss 3
+
+
 
 
 
@@ -48,16 +50,6 @@ anim	attack2
 	blast	70 37 37 43 30
 	frame	data/chars/Luffy/gatl07.gif
 		
-anim	block
-	loop	0
-	offset	38 77
-	delay	7
-	frame	data/chars/Luffy/block01.gif
-	frame	data/chars/Luffy/block02.gif
-	frame	data/chars/Luffy/block03.gif
-	frame	data/chars/Luffy/block04.gif
-	frame	data/chars/Luffy/block05.gif
-		
 anim	chargeattack
 	loop	0
 	offset	82 78
@@ -66,6 +58,7 @@ anim	chargeattack
 	sound	data/chars/Luffy/raiful.wav
 	frame	data/chars/Luffy/raiful01.gif
 	frame	data/chars/Luffy/raiful02.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	112 37 27 31 50
 	blast	112 37 27 31 50
 	frame	data/chars/Luffy/raiful03.gif
@@ -75,19 +68,26 @@ anim	chargeattack
 	frame	data/chars/Luffy/raiful05.gif
 		
 anim	fall
+	loop	0
+	offset	38 77
+	delay	20
+	sound	data/chars/Luffy/down.wav
+	frame	data/chars/Luffy/fall01.gif
+	move	-4
+	frame	data/chars/Luffy/fall02.gif
+	frame	data/chars/Luffy/fall03.gif
+	frame	data/chars/Luffy/fall04.gif
+	frame	data/chars/Luffy/fall05.gif
+	frame	data/chars/Luffy/fall06.gif
+	frame	data/chars/Luffy/fall07.gif
 		
 anim	freespecial
 	loop	0
 	offset	44 77
-	delay	30
+	weaponframe	20 1
+	delay	10
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
-	weaponframe	20 1
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
-	delay	10
 	frame	data/chars/Luffy/trans01.gif
 	sound	data/chars/Luffy/intro.wav
 	frame	data/chars/Luffy/trans02.gif
@@ -104,6 +104,8 @@ anim	freespecial
 	frame	data/chars/Luffy/trans1b.gif
 	frame	data/chars/Luffy/trans1b.gif
 	frame	data/chars/Luffy/trans1b.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
 	sound	data/chars/Luffy/gear.wav
 	offset	64 77
 	delay	6
@@ -116,11 +118,8 @@ anim	freespecial
 	frame	data/chars/Luffy/trans16.gif
 		
 anim	freespecial2
-	mponly	1
-	mpcost	20
 	loop	0
 	offset	82 78
-	bbox	78 48 12 17
 	sound	data/chars/Luffy/bazka.wav
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -137,6 +136,7 @@ anim	freespecial2
 	frame	data/chars/Luffy/bazka05.gif
 	frame	data/chars/Luffy/bazka06.gif
 	frame	data/chars/Luffy/bazka07.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	95 43 49 18 70
 	frame	data/chars/Luffy/bazka08.gif
 	attack	98 40 85 24 70
@@ -211,6 +211,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Luffy/jump01.gif
 	frame	data/chars/Luffy/jump02.gif
 	frame	data/chars/Luffy/jump03.gif
@@ -310,12 +311,9 @@ anim	select
 	frame	data/chars/Luffy/slt09.GIF
 	frame	data/chars/Luffy/slt10.GIF
 		
-anim	special2
-	mponly	1
-	mpcost	30
+anim	special
 	loop	0
 	offset	43 78
-	bbox	78 48 12 17
 	sound	data/chars/Luffy/storm.wav
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -332,42 +330,35 @@ anim	special2
 	sound	data/chars/Luffy/wave.wav
 	frame	data/chars/Luffy/storm05.gif
 	offset	51 78
-	bbox	34 13 26 24
 	frame	data/chars/Luffy/storm06.gif
 	offset	51 78
-	bbox	34 13 20 18
 	frame	data/chars/Luffy/storm07.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	attack	59 9 41 88 60
 	blast	59 9 41 88 60
-	move	30
+	@cmd	dasher 5 0 0
 	frame	data/chars/Luffy/storm08.gif
 	attack	59 8 42 97 60
 	blast	59 8 42 97 60
-	move	30
 	frame	data/chars/Luffy/storm09.gif
 	attack	59 2 42 97 60
 	blast	59 2 42 97 60
-	move	30
 	frame	data/chars/Luffy/storm10.gif
 	attack	61 5 40 96 60
 	blast	61 5 40 96 60
-	move	30
 	frame	data/chars/Luffy/storm11.gif
 	attack	59 9 41 88 60
 	blast	59 9 41 88 60
-	move	30
 	frame	data/chars/Luffy/storm08.gif
 	attack	59 8 42 97 60
 	blast	59 8 42 97 60
-	move	30
 	frame	data/chars/Luffy/storm09.gif
 	attack	59 2 42 97 60
 	blast	59 2 42 97 60
-	move	30
 	frame	data/chars/Luffy/storm10.gif
+	@cmd	stop
 	attack	61 5 40 96 60
 	blast	61 5 40 96 60
-	move	30
 	frame	data/chars/Luffy/storm11.gif
 		
 anim	throw

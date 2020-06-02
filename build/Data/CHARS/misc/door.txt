@@ -1,0 +1,28 @@
+name	door
+health	45
+type	obstacle
+shadow	0
+icon	data/chars/misc/misc19.gif
+diesound data/sounds/klunk.wav
+nomove  1 0
+
+
+anim idle
+	delay	100
+	offset  48 159
+	bbox	7 28 82 136
+	frame	data/chars/misc/door01.gif
+
+
+anim fall
+	delay	16
+	offset  48 159
+	frame	data/chars/misc/door02.gif
+	frame	data/chars/misc/door03.gif
+	frame	data/chars/misc/door04.gif
+	frame	data/chars/misc/door05.gif
+	
+
+
+
+

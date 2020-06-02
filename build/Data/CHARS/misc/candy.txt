@@ -1,0 +1,18 @@
+name	hp_twentyfive
+type	item
+subtype touch
+shadow	0
+nolife 1
+
+didhitscript data/scripts/item.c
+
+
+anim	idle
+	loop	1
+	offset	12 16
+	bbox	3 7 18 12
+	delay	200
+	frame	data/chars/misc/candy.gif
+		
+#|edited by openBor Stats v 0.67
+		

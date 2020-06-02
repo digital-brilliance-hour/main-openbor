@@ -12,6 +12,11 @@ running	24 4.1 2 1
 remap	data/chars/Krillin/stand00.gif data/chars/Krillin/map1.gif
 
 animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
+
+
 
 
 anim	attack1
@@ -63,12 +68,24 @@ anim	attack3
 	frame	data/chars/Krillin/punch07.gif
 		
 anim	fall
+	loop	0
+	offset	38 77
+	delay	20
+	attack	36 50 21 16 4 1
+	frame	data/chars/Krillin/fall00.gif
+	move	-4
+	frame	data/chars/Krillin/fall01.gif
+	frame	data/chars/Krillin/fall02.gif
+	frame	data/chars/Krillin/fall03.gif
+	frame	data/chars/Krillin/fall04.gif
 		
 anim	freespecial
 	loop	0
 	delay	10
 	offset	38 77
 	bbox	0 0 0 0
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	frame	data/chars/Krillin/kame00.gif
 	frame	data/chars/Krillin/kame01.gif
 	frame	data/chars/Krillin/kame02.gif
@@ -76,10 +93,16 @@ anim	freespecial
 	frame	data/chars/Krillin/kame04.gif
 	frame	data/chars/Krillin/kame03.gif
 	frame	data/chars/Krillin/kame05.gif
+	@cmd	changeopenborvariant "slowmotion" 1
+	delay	3
 	frame	data/chars/Krillin/kame03.gif
 	frame	data/chars/Krillin/kame04.gif
 	frame	data/chars/Krillin/kame03.gif
 	frame	data/chars/Krillin/kame05.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	@cmd	spawnparent "pdust" -10 0 -20
 	sound	data/chars/Krillin/wave.wav
 	attack	60 42 47 40 15 1
 	frame	data/chars/Krillin/kame06.gif
@@ -178,6 +201,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Krillin/jump00.gif
 	frame	data/chars/Krillin/jump01.gif
 	frame	data/chars/Krillin/jump02.gif

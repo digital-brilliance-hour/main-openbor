@@ -16,8 +16,13 @@ com a2 freespecial
 
 
 
+
+
+
+
 anim	attack1
 	loop	0
+	shadowcoords	18 77
 	delay	7
 	bbox	35 55 17 20
 	offset	38 77
@@ -29,7 +34,7 @@ anim	attack1
 		
 anim	attack2
 	loop	0
-	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	7
@@ -51,6 +56,7 @@ anim	attack2
 		
 anim	attack3
 	loop	0
+	shadowcoords	18 77
 	delay	3
 	offset	38 77
 	bbox	35 55 17 20
@@ -80,30 +86,42 @@ anim	attack3
 	frame	data/chars/Goku/ppole17.gif
 		
 anim	fall
+	loop	0
+	shadowcoords	18 77
+	offset	38 77
+	delay	20
+	attack	36 50 21 16 4 1
+	frame	data/chars/Goku/fall00.gif
+	move	-4
+	frame	data/chars/Goku/fall01.gif
+	frame	data/chars/Goku/fall02.gif
+	frame	data/chars/Goku/fall03.gif
+	frame	data/chars/Goku/fall04.gif
 		
 anim	freespecial
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	0 0 0 0
-	delay	30
+	delay	10
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Goku/kame00.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
-	delay	10
 	frame	data/chars/Goku/kame01.gif
 	frame	data/chars/Goku/kame02.gif
 	frame	data/chars/Goku/kame03.gif
 	frame	data/chars/Goku/kame04.gif
 	frame	data/chars/Goku/kame03.gif
 	frame	data/chars/Goku/kame05.gif
+	delay	7
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Goku/kame03.gif
 	frame	data/chars/Goku/kame04.gif
 	frame	data/chars/Goku/kame03.gif
 	frame	data/chars/Goku/kame05.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
 	sound	data/chars/Goku/wave.wav
 	attack	60 42 47 40 15 1
 	frame	data/chars/Goku/kame06.gif
@@ -165,6 +183,7 @@ anim	freespecial
 		
 anim	get
 	loop	0
+	shadowcoords	18 77
 	delay	7
 	offset	38 77
 	frame	data/chars/Goku/rise05.gif
@@ -172,6 +191,7 @@ anim	get
 		
 anim	grabattack
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	4
@@ -195,6 +215,7 @@ anim	grabattack
 anim	grabattack2
 	loop	0
 	offset	38 77
+	shadowcoords	18 77
 	bbox	35 55 17 20
 	delay	5
 	frame	data/chars/Goku/ppole00.gif
@@ -213,6 +234,7 @@ anim	grabattack2
 		
 anim	idle
 	loop	1
+	shadowcoords	18 77
 	delay	15
 	offset	38 77
 	bbox	35 55 17 20
@@ -228,6 +250,7 @@ anim	idle
 anim	jump
 	loop	0
 	offset	38 77
+	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -240,6 +263,7 @@ anim	jump
 		
 anim	jumpattack
 	loop	0
+	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
 	offset	38 77
@@ -255,6 +279,7 @@ anim	jumpattack
 		
 anim	jumpattack2
 	loop	0
+	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
 	offset	38 77
@@ -270,6 +295,7 @@ anim	jumpattack2
 		
 anim	land
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	delay	25
 	frame	data/chars/Goku/rise05.gif
@@ -277,6 +303,7 @@ anim	land
 		
 anim	pain
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	20
@@ -285,6 +312,7 @@ anim	pain
 		
 anim	rise
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	delay	10
 	frame	data/chars/Goku/rise00.gif
@@ -297,6 +325,7 @@ anim	rise
 		
 anim	special
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	0 0 0 0
 	delay	30
@@ -354,6 +383,7 @@ anim	special
 		
 anim	throw
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	delay	7
 	frame	data/chars/Goku/throw00.gif
@@ -366,6 +396,7 @@ anim	throw
 		
 anim	walk
 	loop	1
+	shadowcoords	18 77
 	delay	7
 	offset	38 77
 	bbox	35 55 17 20

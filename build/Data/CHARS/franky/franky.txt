@@ -2,19 +2,17 @@ name	Franky
 health	300
 mp 100
 speed	15
-shadow	2
-aironly 1
+shadow 3
 type	player
 icon	data/chars/franky/icon.gif
 load kuu
 knife kuu
-holdblock 1
 riseinv 2 0
 makeinv 2 0
-subject_to_screen 1
 jumpmove 3 3
-com d d a freespecial
-com d f a freespecial2
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
 load break
 animationscript data/scripts/spawns.c
 
@@ -51,17 +49,8 @@ anim	attack2
 	frame	data/chars/franky/punc07.gif
 	frame	data/chars/franky/punc08.gif
 		
-anim	block
-	loop	0
-	offset	38 78
-	delay	7
-	frame	data/chars/franky/blo01.gif
-	frame	data/chars/franky/blo02.gif
-		
 anim	chargeattack
 	loop	0
-	mpcost	20
-	mponly	1
 	offset	38 78
 	delay	10
 	throwframe	10 28
@@ -96,23 +85,32 @@ anim	fall
 		
 anim	freespecial
 	loop	0
-	mpcost	50
-	mponly	1
 	offset	38 78
 	delay	10
 	throwframe	10 28
 	custknife	kuu
 	sound	data/chars/franky/kuu.wav
+	delay	10
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
 	frame	data/chars/franky/sp01.gif
 	frame	data/chars/franky/sp02.gif
 	frame	data/chars/franky/sp03.gif
 	frame	data/chars/franky/sp04.gif
 	frame	data/chars/franky/sp05.gif
+	@cmd	changeopenborvariant "slowmotion" 1
+	delay	2
 	frame	data/chars/franky/sp06.gif
 	frame	data/chars/franky/sp07.gif
+	delay	30
 	frame	data/chars/franky/sp08.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	frame	data/chars/franky/sp09.gif
 	sound	data/chars/franky/wave.wav
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/spp10.gif
 	frame	data/chars/franky/spp11.gif
 	frame	data/chars/franky/spp12.gif
@@ -121,18 +119,24 @@ anim	freespecial
 		
 anim	freespecial2
 	loop	0
-	delay	7
 	offset	38 78
-	bbox	36 46 13 20
-	hitflash	break
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
 	sound	data/chars/franky/right.wav
 	frame	data/chars/franky/righ01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
 	frame	data/chars/franky/righ02.gif
 	frame	data/chars/franky/righ03.gif
 	frame	data/chars/franky/righ04.gif
 	frame	data/chars/franky/righ05.gif
 	blast	66 31 35 17 100 0 0 0 80
 	delay	1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/franky/righ06.gif
 	blast	66 31 54 49 100 0 0 0 80
 	frame	data/chars/franky/righ07.gif
@@ -267,10 +271,9 @@ anim	select
 	frame	data/chars/franky/slt08.GIF
 	frame	data/chars/franky/slt09.GIF
 		
-anim	special2
+anim	special
 	loop	0
 	offset	38 78
-	hitflash	break
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
@@ -285,17 +288,9 @@ anim	special2
 	frame	data/chars/franky/box08.gif
 	frame	data/chars/franky/box09.gif
 	delay	7
-	move	20
+	@cmd	dasher 3 0 0
 	sound	data/chars/franky/box.wav
-	frame	data/chars/franky/box04.gif
-	blast	48 17 60 63 50 0 0 0 80
 	@cmd	spawnparent "pdust" -10 0 -20
-	frame	data/chars/franky/box05.gif
-	blast	48 17 60 63 50 0 0 0 80
-	frame	data/chars/franky/box06.gif
-	blast	48 17 60 63 50 0 0 0 80
-	frame	data/chars/franky/box07.gif
-	blast	48 17 60 63 50 0 0 0 80
 	frame	data/chars/franky/box04.gif
 	blast	48 17 60 63 50 0 0 0 80
 	frame	data/chars/franky/box05.gif
@@ -309,6 +304,15 @@ anim	special2
 	frame	data/chars/franky/box05.gif
 	blast	48 17 60 63 50 0 0 0 80
 	frame	data/chars/franky/box06.gif
+	blast	48 17 60 63 50 0 0 0 80
+	frame	data/chars/franky/box07.gif
+	blast	48 17 60 63 50 0 0 0 80
+	frame	data/chars/franky/box04.gif
+	blast	48 17 60 63 50 0 0 0 80
+	frame	data/chars/franky/box05.gif
+	blast	48 17 60 63 50 0 0 0 80
+	frame	data/chars/franky/box06.gif
+	@cmd	stop
 	blast	48 17 60 63 50 0 0 0 80
 	frame	data/chars/franky/box07.gif
 		

@@ -1,13 +1,18 @@
-name	Juice
-health	400
+name mp_hundred
 type	item
 shadow	0
+subtype touch
+nolife 1
+didhitscript data/scripts/item.c
 
 
 
-anim idle
+anim	idle
 	loop	0
 	delay	1000
 	offset	8 14
 	bbox	0 0 16 16
 	frame	data/chars/misc/juice.gif
+		
+#|edited by openBor Stats v 0.67
+		

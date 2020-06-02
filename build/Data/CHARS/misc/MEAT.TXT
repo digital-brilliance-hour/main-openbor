@@ -1,13 +1,17 @@
-name	Meat
-health	100
+name hp_hundred
 type	item
+subtype touch
 shadow	0
-icon	data/chars/misc/meat.gif
 nolife 1
 
-anim idle
+didhitscript data/scripts/item.c
+
+anim	idle
 	loop	0
 	delay	1000
 	offset	8 16
 	bbox	0 0 16 16
 	frame	data/chars/misc/meat.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -7,11 +7,16 @@ running 18 4 2 1 0
 load b_shot2
 load b_blast
 load b_shot
-
+load b_explosion
+load b_explosion2
+script data/scripts/playerscript.c
 animationscript data/scripts/spawns.c
 com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
+
+
+
 
 
 
@@ -34,30 +39,24 @@ anim	attack1
 	delay	7
 	offset	25 85
 	frame	data/chars/Broly_SSB/57.gif
-	bbox	1 82 55 -80
 	offset	31 77
 	frame	data/chars/Broly_SSB/58.gif
-	attack	53 20 61 29 8 0 0 0 0 0
-	bbox	0 71 84 -69
+	attack	53 20 61 46 8 0 0 0 0 0
 	offset	41 67
 	frame	data/chars/Broly_SSB/59.gif
-	bbox	60 1 -58 82
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	28 77
 	frame	data/chars/Broly_SSB/60.gif
 	attack	0 0 0 0 0 0 0 0 0 0
-	bbox	52 1 -52 81
 	offset	29 78
 	frame	data/chars/Broly_SSB/61.gif
-	attack	49 21 48 38 8 0 1 0 0 0
-	bbox	0 73 68 -71
+	attack	49 21 48 47 8 0 1 0 0 0
 	offset	34 68
 	frame	data/chars/Broly_SSB/62.gif
 	attack	0 0 0 0 0 0 0 0 0 0
-	bbox	0 1 64 89
 	offset	33 85
 	frame	data/chars/Broly_SSB/63.gif
-	attack	61 20 49 25 8 0 1 0 0 0
-	bbox	1 75 80 -74
+	attack	61 20 49 51 8 0 1 0 0 0
 	offset	44 72
 	frame	data/chars/Broly_SSB/64.gif
 		
@@ -65,7 +64,7 @@ anim	attack2
 	delay	7
 	offset	22 78
 	frame	data/chars/Broly_SSB/65.gif
-	attack	28 85 71 -82 10 0 1 0 0 0
+	attack	28 85 71 -82 10 0 1 0 1 0
 	offset	31 84
 	frame	data/chars/Broly_SSB/66.gif
 		
@@ -77,7 +76,7 @@ anim	attack3
 	frame	data/chars/Broly_SSB/68.gif
 	offset	26 56
 	frame	data/chars/Broly_SSB/69.gif
-	attack	51 5 71 44 8 0 1 0 0 0
+	attack	51 5 71 65 8 0 1 0 20 0
 	offset	22 68
 	frame	data/chars/Broly_SSB/70.gif
 		
@@ -227,27 +226,35 @@ anim	freespecial2
 	frame	data/chars/Broly_SSB/150.gif
 		
 anim	freespecial3
-	delay	7
+	delay	10
+	offset	36 87
+	frame	data/chars/Broly_SSB/177.gif
 	offset	38 86
 	frame	data/chars/Broly_SSB/172.gif
+	delay	8
 	offset	22 87
 	frame	data/chars/Broly_SSB/173.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	spawnparent "b_explosion" -20 0 95
 	offset	26 88
 	frame	data/chars/Broly_SSB/174.gif
 	offset	35 85
 	frame	data/chars/Broly_SSB/175.gif
+	@cmd	spawnparent "b_explosion2" -5 0 -120
 	offset	39 86
 	frame	data/chars/Broly_SSB/176.gif
-	offset	35 87
-	frame	data/chars/Broly_SSB/177.gif
 	offset	47 83
 	frame	data/chars/Broly_SSB/178.gif
+	@cmd	damage_all_enemies 80 1 0 "ATK_NORMAL"
+	delay	20
+	offset	45 75
+	frame	data/chars/Broly_SSB/179.gif
 	offset	45 75
 	frame	data/chars/Broly_SSB/179.gif
 		
 anim	idle
 	bbox	0 92 47 -91
-	delay	7
+	delay	8
 	loop	1 3
 	offset	24 88
 	frame	data/chars/Broly_SSB/3.gif
@@ -257,6 +264,7 @@ anim	idle
 	bbox	1 93 52 -92
 	offset	27 89
 	frame	data/chars/Broly_SSB/5.gif
+	delay	25
 	bbox	1 92 57 -90
 	offset	29 88
 	frame	data/chars/Broly_SSB/6.gif

@@ -1,0 +1,70 @@
+name	mot
+type    obstacle
+#shadow	2
+health  5
+nolife  1
+flash   flash
+noatflash 1
+remap  data/chars/misc/mmotom.gif data/chars/misc/momap1.gif
+remap  data/chars/misc/mmotom.gif data/chars/misc/momap2.gif
+remap  data/chars/misc/mmotom.gif data/chars/misc/momap3.gif
+
+anim idle
+	loop	0
+	delay	5
+	offset	59 80
+	bbox    20 15 90 60
+        platform  -5 -5 115 115 20 90
+	frame	data/chars/misc/mmotom.gif
+
+anim pain
+	loop	0
+	delay	5
+	offset	59 80
+	bbox    20 5 100 65
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+
+	
+anim death
+	loop	0
+	delay	8
+	offset	59 80
+        nodieblink    2 
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+	offset	59 80
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+	offset	59 80
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+	offset	59 80
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+	offset	59 80
+	frame	data/chars/misc/mmotom.gif
+	offset	56 80
+	frame	data/chars/misc/mmotom.gif
+        offset	74 77
+	sound	data/sounds/boom.wav
+        blast   40 20 70 60 20  
+	frame	data/chars/misc/b2.gif
+	frame	data/chars/misc/b3.gif
+        blast   0 0 0 0 0 0 0 0
+	frame	data/chars/misc/b4.gif
+	frame	data/chars/misc/b5.gif
+	frame	data/chars/misc/b6.gif
+	frame	data/chars/misc/b7.gif
+	frame	data/chars/misc/b8.gif
+	frame	data/chars/misc/b9.gif
+	frame	data/chars/misc/b91.gif
+	frame	data/chars/misc/b92.gif
+
+
+

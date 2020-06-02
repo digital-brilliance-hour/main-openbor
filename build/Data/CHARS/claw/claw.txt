@@ -9,174 +9,163 @@ bflash  bflash
 dust	 dust
 jumpheight 3
 
-
-#remap	data/chars/Claw/idle00.gif data/chars/Claw/map1.gif
-
+takedamagescript data/scripts/enemyhit.c
 
 
 
-anim idle
-	loop	1
-	delay	20
-	offset	60 116
-	bbox	46 57 29 59
-	frame	data/chars/Claw/idle00.gif
-  	frame	data/chars/Claw/idle01.gif
-	frame	data/chars/Claw/idle02.gif
-  	frame	data/chars/Claw/idle01.gif
 
 
-anim walk
-	loop	1
-	delay	15
-	offset	60 116
-	bbox	46 57 29 59
-	frame	data/chars/Claw/idle00.gif
-  	frame	data/chars/Claw/idle01.gif
-	frame	data/chars/Claw/idle02.gif
-  	frame	data/chars/Claw/idle01.gif
 
 
-anim attack1
+anim	attack1
 	loop	0
-	delay	10   
+	delay	10
 	offset	60 116
-        range   15 100
+	range	15 100
 	bbox	46 57 29 59
-        frame	data/chars/Claw/atk00.gif
-        frame	data/chars/Claw/atk01.gif
-        frame	data/chars/Claw/atk02.gif
+	frame	data/chars/Claw/atk00.gif
+	frame	data/chars/Claw/atk01.gif
+	frame	data/chars/Claw/atk02.gif
 	delay	5
-        frame	data/chars/Claw/atk03.gif
-        attack  85 65 32 17 18 1
-        frame	data/chars/Claw/atk04.gif
-        attack  89 65 32 17 18 1
-        frame	data/chars/Claw/atk05.gif
-        attack  94 65 32 17 18 1
-        frame	data/chars/Claw/atk06.gif
-        attack  104 65 32 17 18 1
-        frame	data/chars/Claw/atk07.gif
-        attack  119 65 32 17 18 1
-        frame	data/chars/Claw/atk08.gif
-        attack  131 65 32 17 18 1
-        frame	data/chars/Claw/atk09.gif
-        attack  143 65 32 17 18 1
-        frame	data/chars/Claw/atk10.gif
-        attack  160 65 32 17 18 1
-        frame	data/chars/Claw/atk11.gif
+	frame	data/chars/Claw/atk03.gif
+	attack	85 65 32 17 18 1
+	frame	data/chars/Claw/atk04.gif
+	attack	89 65 32 17 18 1
+	frame	data/chars/Claw/atk05.gif
+	attack	94 65 32 17 18 1
+	frame	data/chars/Claw/atk06.gif
+	attack	104 65 32 17 18 1
+	frame	data/chars/Claw/atk07.gif
+	attack	119 65 32 17 18 1
+	frame	data/chars/Claw/atk08.gif
+	attack	131 65 32 17 18 1
+	frame	data/chars/Claw/atk09.gif
+	attack	143 65 32 17 18 1
+	frame	data/chars/Claw/atk10.gif
+	attack	160 65 32 17 18 1
+	frame	data/chars/Claw/atk11.gif
 	delay	10
-        attack  150 54 39 36 14 1
-        frame	data/chars/Claw/atk12.gif
-        attack  137 51 36 39 14 1
-        frame	data/chars/Claw/atk13.gif
-        attack  121 54 39 36 14 1
-        frame	data/chars/Claw/atk14.gif
-        attack  98 51 36 39 14 1
-        frame	data/chars/Claw/atk15.gif
-        attack  75 54 39 36 14 1
-        frame	data/chars/Claw/atk16.gif
-        attack  0
-        delay   30
-        frame	data/chars/Claw/rush01.gif
-
-
-anim attack2
-	loop	0
-	delay	10   
-	offset	60 116
-	bbox	46 57 29 59  
-        frame	data/chars/Claw/atk02.gif
+	attack	150 54 39 36 14 1
+	frame	data/chars/Claw/atk12.gif
+	attack	137 51 36 39 14 1
+	frame	data/chars/Claw/atk13.gif
+	attack	121 54 39 36 14 1
+	frame	data/chars/Claw/atk14.gif
+	attack	98 51 36 39 14 1
+	frame	data/chars/Claw/atk15.gif
+	attack	75 54 39 36 14 1
+	frame	data/chars/Claw/atk16.gif
+	attack	0
 	delay	30
-        frame	data/chars/Claw/rush00.gif
-        move    5
-        delay   3
-        blast   80 66 32 17 14 1
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        move    0
-        attack  0
-        delay   30
-        frame	data/chars/Claw/rush01.gif
-
-
-anim attack3
-	loop	0
-	delay	10
-        range   0 100  
-	offset	60 116
-	bbox	46 57 29 59  
-        frame	data/chars/Claw/atk02.gif
-	delay	30
-        frame	data/chars/Claw/rush00.gif
-        move    5
-        delay   3
-        blast   80 66 32 17 14 1
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        frame	data/chars/Claw/rush01.gif
-        frame	data/chars/Claw/rush02.gif
-        frame	data/chars/Claw/rush03.gif
-        move    0
-        attack  0
-        delay   30
-        frame	data/chars/Claw/rush01.gif
-
-
-anim pain
-	loop	0
-	delay	30
-	offset	60 116
-	bbox	46 57 29 59	
-	frame   data/chars/Claw/pain00.gif
-	frame   data/chars/Claw/pain01.gif
-
-
-anim fall
-	loop	0
-	delay	30
-	offset	60 110
-	attack	45 61 17 34 4 1
-	frame   data/chars/Claw/fall00.gif
-	delay	20
-	frame   data/chars/Claw/fall01.gif
-
-
-anim rise
+	frame	data/chars/Claw/rush01.gif
+		
+anim	attack2
 	loop	0
 	delay	10
 	offset	60 116
-        frame   data/chars/Claw/rise.gif
-
-
-
-anim burn
+	bbox	46 57 29 59
+	frame	data/chars/Claw/atk02.gif
+	delay	30
+	frame	data/chars/Claw/rush00.gif
+	move	5
+	delay	3
+	blast	80 66 32 17 14 1
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	move	0
+	attack	0
+	delay	30
+	frame	data/chars/Claw/rush01.gif
+		
+anim	attack3
+	loop	0
+	delay	10
+	range	0 100
+	offset	60 116
+	bbox	46 57 29 59
+	frame	data/chars/Claw/atk02.gif
+	delay	30
+	frame	data/chars/Claw/rush00.gif
+	move	5
+	delay	3
+	blast	80 66 32 17 14 1
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	frame	data/chars/Claw/rush01.gif
+	frame	data/chars/Claw/rush02.gif
+	frame	data/chars/Claw/rush03.gif
+	move	0
+	attack	0
+	delay	30
+	frame	data/chars/Claw/rush01.gif
+		
+anim	burn
 	loop	1
 	delay	3
 	offset	60 116
 	frame	data/chars/misc/burn1.gif
 	frame	data/chars/misc/burn2.gif
 	frame	data/chars/misc/burn3.gif
-
-
-
-
-
-
-
+		
+anim	fall
+	loop	0
+	delay	30
+	offset	60 110
+	attack	45 61 17 34 4 1
+	frame	data/chars/Claw/fall00.gif
+	delay	20
+	frame	data/chars/Claw/fall01.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	60 116
+	bbox	46 57 29 59
+	frame	data/chars/Claw/idle00.gif
+	frame	data/chars/Claw/idle01.gif
+	frame	data/chars/Claw/idle02.gif
+	frame	data/chars/Claw/idle01.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	60 116
+	bbox	46 57 29 59
+	frame	data/chars/Claw/pain00.gif
+	frame	data/chars/Claw/pain01.gif
+		
+anim	rise
+	loop	0
+	delay	10
+	offset	60 116
+	frame	data/chars/Claw/rise.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	60 116
+	bbox	46 57 29 59
+	frame	data/chars/Claw/idle00.gif
+	frame	data/chars/Claw/idle01.gif
+	frame	data/chars/Claw/idle02.gif
+	frame	data/chars/Claw/idle01.gif
+		
+#|edited by openBor Stats v 0.67
+		

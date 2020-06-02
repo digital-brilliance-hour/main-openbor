@@ -31,6 +31,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	delay	7
 	offset	15 35
@@ -212,7 +213,7 @@ anim	freespecial3
 anim	idle
 	drawmethod	scale 2
 	bbox	3 2 32 40
-	delay	7
+	delay	18
 	loop	1
 	offset	19 43
 	frame	data/chars/Shrek/2.gif
@@ -345,7 +346,7 @@ anim	special
 	frame	data/chars/Shrek/191.gif
 	offset	29 52
 	frame	data/chars/Shrek/192.gif
-	@cmd	damage_all_enemies 30 1 0 "ATK_NORMAL"
+	@cmd	damage_all_enemies 50 1 0 "ATK_NORMAL"
 	offset	27 57
 	frame	data/chars/Shrek/193.gif
 	offset	23 69

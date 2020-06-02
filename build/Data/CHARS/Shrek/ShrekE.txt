@@ -216,7 +216,7 @@ anim	freespecial3
 anim	idle
 	drawmethod	scale 2
 	bbox	3 2 32 40
-	delay	7
+	delay	18
 	loop	1
 	offset	19 43
 	frame	data/chars/Shrek/2.gif
@@ -327,15 +327,8 @@ anim	select
 	frame	data/chars/Shrek/215.gif
 		
 anim	special
-	delay	30
-	@cmd	spawnbind "zoomin" 0 0 0
-	@cmd	spawnscreen "Screen_wind" 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
 	offset	20 41
 	frame	data/chars/Shrek/186.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
 	delay	7
 	offset	23 38
 	frame	data/chars/Shrek/187.gif
@@ -349,7 +342,7 @@ anim	special
 	frame	data/chars/Shrek/191.gif
 	offset	29 52
 	frame	data/chars/Shrek/192.gif
-	@cmd	damage_all_enemies 30 1 0 "ATK_NORMAL"
+	@cmd	damage_all_enemies 80 1 0 "ATK_NORMAL"
 	offset	27 57
 	frame	data/chars/Shrek/193.gif
 	offset	23 69

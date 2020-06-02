@@ -16,43 +16,14 @@ load throw
 load cabaji
 subject_to_screen 1
 
-anim spawn
-	loop	0
-	offset	38 77
-	delay	50
-	frame	data/chars/Buggy/idle01.gif
-  	frame	data/chars/Buggy/idle02.gif
-	frame	data/chars/Buggy/idle03.gif
-  	frame	data/chars/Buggy/idle02.gif
+takedamagescript data/scripts/enemyhit.c
 
-anim idle
-	loop	1
-	delay	15
-	offset	38 77
-	bbox	38 27 19 40
-	frame	data/chars/Buggy/idle01.gif
-  	frame	data/chars/Buggy/idle02.gif
-	frame	data/chars/Buggy/idle03.gif
-  	frame	data/chars/Buggy/idle02.gif
-
-anim walk
-	loop	1
-	delay	10
-	offset	38 77
-	bbox	38 27 19 40
-	sound   data/chars/Buggy/walk.wav
-	frame	data/chars/Buggy/walk01.gif
-	frame	data/chars/Buggy/walk02.gif
-	frame	data/chars/Buggy/walk03.gif
-	frame	data/chars/Buggy/walk04.gif
-
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	7
 	offset	38 77
 	bbox	38 27 19 40
-	sound   data/chars/Buggy/cut.wav
+	sound	data/chars/Buggy/cut.wav
 	frame	data/chars/Buggy/cut01.gif
 	frame	data/chars/Buggy/cut02.gif
 	attack	80 35 19 17 30
@@ -60,18 +31,17 @@ anim attack1
 	frame	data/chars/Buggy/cut04.gif
 	attack	89 34 20 17 30
 	frame	data/chars/Buggy/cut05.gif
-	attack 	111 34 20 17
+	attack	111 34 20 17
 	frame	data/chars/Buggy/cut06.gif
 	frame	data/chars/Buggy/cut05.gif
 	frame	data/chars/Buggy/cut04.gif
-
-
-anim attack2
+		
+anim	attack2
 	loop	0
 	delay	7
 	offset	49 78
 	bbox	38 27 19 40
-        sound   data/chars/Buggy/senbei.wav
+	sound	data/chars/Buggy/senbei.wav
 	frame	data/chars/Buggy/senbei01.gif
 	frame	data/chars/Buggy/senbei02.gif
 	frame	data/chars/Buggy/senbei03.gif
@@ -79,169 +49,196 @@ anim attack2
 	frame	data/chars/Buggy/senbei04.gif
 	blast	73 32 59 49 40
 	frame	data/chars/Buggy/senbei05.gif
-	blast 	108 33 61 48 40
+	blast	108 33 61 48 40
 	frame	data/chars/Buggy/senbei06.gif
-	blast 	77 32 60 49 40
+	blast	77 32 60 49 40
 	frame	data/chars/Buggy/senbei07.gif
-	blast 	44 34 63 48 40
+	blast	44 34 63 48 40
 	frame	data/chars/Buggy/senbei08.gif
-	blast 	19 32 59 49 40
+	blast	19 32 59 49 40
 	frame	data/chars/Buggy/senbei09.gif
-        frame   data/chars/Buggy/rise01.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise03.gif
-
-anim freespecial
-	loop	0
-	delay	7
-	offset	93 121
-	sound   data/chars/Buggy/fes.wav
-        frame   data/chars/Buggy/fes01.gif
-	frame   data/chars/Buggy/fes02.gif
-	frame   data/chars/Buggy/fes03.gif
-	frame   data/chars/Buggy/fes04.gif
-	frame   data/chars/Buggy/fes05.gif
-	loop	0
-	delay	5
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes03.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes04.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes05.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes03.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes04.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes05.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes03.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes04.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes05.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes03.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes04.gif
-	attack 	23 23 133 100 50
-	frame   data/chars/Buggy/fes05.gif
-
-anim freespecial2
-	loop	0
-	delay	7
-	offset	38 77
-        summonframe 3 20 0 0 0
-        custentity Cabaji
-        sound   data/chars/Buggy/cabaji.wav
-        frame   data/chars/Buggy/rise01.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise03.gif
-
-anim freespecial3
+	frame	data/chars/Buggy/rise01.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise03.gif
+		
+anim	block
 	loop	0
 	delay	10
 	offset	38 77
-        spawnframe 3 25 0 0 0
-        custentity Throw
-        spawnframe 6 25 0 0 0
-        subentity Pirate
-        sound   data/chars/Buggy/escape.wav
+	spawnframe	3 25 0 0 0
+	subentity	Pirate
+	subentity	Throw
+	sound	data/chars/Buggy/escape.wav
 	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape04.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape04.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape04.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape02.gif
 	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape04.gif
 	frame	data/chars/Buggy/escape05.gif
-        delay   7
-        frame   data/chars/Buggy/rise01.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise03.gif
-
-
-anim block
-	loop	0
-	delay	10
-	offset	38 77
-        spawnframe 3 25 0 0 0
-        subentity Pirate
-        subentity Throw
-        sound   data/chars/Buggy/escape.wav
-	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-  	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-  	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape05.gif
-        delay   7
-        frame   data/chars/Buggy/rise01.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise03.gif
-
-anim pain
-        sound   data/chars/Buggy/pain.wav
-        loop	0
-	offset	38 77
-	bbox	38 27 19 40
-	delay	10
-	frame   data/chars/Buggy/pain01.gif
-        frame   data/chars/Buggy/pain02.gif
-
-anim fall
+	delay	7
+	frame	data/chars/Buggy/rise01.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise03.gif
+		
+anim	fall
 	loop	0
 	offset	38 77
 	delay	20
-        sound   data/chars/Buggy/down.wav
-	frame   data/chars/Buggy/fall01.gif
-	frame   data/chars/Buggy/fall02.gif
-
-anim rise
+	sound	data/chars/Buggy/down.wav
+	frame	data/chars/Buggy/fall01.gif
+	frame	data/chars/Buggy/fall02.gif
+		
+anim	freespecial
+	loop	0
+	delay	7
+	offset	93 121
+	sound	data/chars/Buggy/fes.wav
+	frame	data/chars/Buggy/fes01.gif
+	frame	data/chars/Buggy/fes02.gif
+	frame	data/chars/Buggy/fes03.gif
+	frame	data/chars/Buggy/fes04.gif
+	frame	data/chars/Buggy/fes05.gif
+	loop	0
+	delay	5
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes03.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes04.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes05.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes03.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes04.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes05.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes03.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes04.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes05.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes03.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes04.gif
+	attack	23 23 133 100 50
+	frame	data/chars/Buggy/fes05.gif
+		
+anim	freespecial2
+	loop	0
+	delay	7
+	offset	38 77
+	summonframe	3 20 0 0 0
+	custentity	Cabaji
+	sound	data/chars/Buggy/cabaji.wav
+	frame	data/chars/Buggy/rise01.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise03.gif
+		
+anim	freespecial3
+	loop	0
+	delay	10
+	offset	38 77
+	spawnframe	3 25 0 0 0
+	custentity	Throw
+	spawnframe	6 25 0 0 0
+	subentity	Pirate
+	sound	data/chars/Buggy/escape.wav
+	frame	data/chars/Buggy/escape01.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape01.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape01.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape01.gif
+	frame	data/chars/Buggy/escape02.gif
+	frame	data/chars/Buggy/escape03.gif
+	frame	data/chars/Buggy/escape04.gif
+	frame	data/chars/Buggy/escape05.gif
+	delay	7
+	frame	data/chars/Buggy/rise01.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise03.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	38 77
+	bbox	38 27 19 40
+	frame	data/chars/Buggy/idle01.gif
+	frame	data/chars/Buggy/idle02.gif
+	frame	data/chars/Buggy/idle03.gif
+	frame	data/chars/Buggy/idle02.gif
+		
+anim	pain
+	sound	data/chars/Buggy/pain.wav
+	loop	0
+	offset	38 77
+	bbox	38 27 19 40
+	delay	10
+	frame	data/chars/Buggy/pain01.gif
+	frame	data/chars/Buggy/pain02.gif
+		
+anim	rise
 	loop	0
 	offset	38 77
 	delay	7
-        frame   data/chars/Buggy/rise01.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise02.gif
-	frame   data/chars/Buggy/rise03.gif
-
-
-
-
-
+	frame	data/chars/Buggy/rise01.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise02.gif
+	frame	data/chars/Buggy/rise03.gif
+		
+anim	spawn
+	loop	0
+	offset	38 77
+	delay	50
+	frame	data/chars/Buggy/idle01.gif
+	frame	data/chars/Buggy/idle02.gif
+	frame	data/chars/Buggy/idle03.gif
+	frame	data/chars/Buggy/idle02.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	38 27 19 40
+	sound	data/chars/Buggy/walk.wav
+	frame	data/chars/Buggy/walk01.gif
+	frame	data/chars/Buggy/walk02.gif
+	frame	data/chars/Buggy/walk03.gif
+	frame	data/chars/Buggy/walk04.gif
+		
+#|edited by openBor Stats v 0.67
+		

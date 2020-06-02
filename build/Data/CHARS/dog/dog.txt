@@ -8,34 +8,63 @@ icon	data/chars/Dog/icon.gif
 subtype chase
 candamage player npc
 
-anim spawn
+takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
+
+
+
+
+anim	attack1
 	loop	0
-	delay	15
+	delay	7
 	offset	45 72
 	bbox	33 51 34 17
-	frame	data/chars/Dog/idle01.gif
-	frame	data/chars/Dog/idle02.gif
-  	frame	data/chars/Dog/idle03.gif
-	frame	data/chars/Dog/idle01.gif
-	frame	data/chars/Dog/idle02.gif
-  	frame	data/chars/Dog/idle03.gif
-	
-
-anim idle
+	frame	data/chars/Dog/atk01.gif
+	frame	data/chars/Dog/atk02.gif
+	frame	data/chars/Dog/atk03.gif
+	move	15
+	blast	55 42 22 28 11
+	frame	data/chars/Dog/atk04.gif
+	frame	data/chars/Dog/atk05.gif
+		
+anim	fall
+	loop	0
+	offset	45 72
+	delay	20
+	frame	data/chars/Dog/fall01.gif
+	frame	data/chars/Dog/fall02.gif
+		
+anim	idle
 	loop	1
 	delay	15
 	offset	45 72
 	bbox	33 51 34 17
 	frame	data/chars/Dog/idle01.gif
 	frame	data/chars/Dog/idle02.gif
-  	frame	data/chars/Dog/idle03.gif
+	frame	data/chars/Dog/idle03.gif
 	frame	data/chars/Dog/idle01.gif
 	frame	data/chars/Dog/idle02.gif
-  	frame	data/chars/Dog/idle03.gif
-	
-
-
-anim walk
+	frame	data/chars/Dog/idle03.gif
+		
+anim	pain
+	loop	0
+	offset	45 72
+	bbox	33 51 34 17
+	delay	20
+	frame	data/chars/Dog/pain.gif
+		
+anim	rise
+	loop	0
+	offset	45 72
+	delay	5
+	frame	data/chars/Dog/pain.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	walk
 	loop	1
 	delay	15
 	offset	45 72
@@ -45,45 +74,6 @@ anim walk
 	frame	data/chars/Dog/walk03.gif
 	frame	data/chars/Dog/walk04.gif
 	frame	data/chars/Dog/walk05.gif
-
-
-anim attack1
-	loop	0
-	delay	7   
-	offset	45 72
-	bbox	33 51 34 17
-	frame	data/chars/Dog/atk01.gif     
-        frame	data/chars/Dog/atk02.gif
-        frame	data/chars/Dog/atk03.gif
-	move    15
-	blast   55 42 22 28 11
-	frame	data/chars/Dog/atk04.gif
-        frame	data/chars/Dog/atk05.gif
-       
-	
-
-
-anim pain
-	loop	0
-	offset	45 72
-	bbox	33 51 34 17	
-	delay	20
-	frame   data/chars/Dog/pain.gif
-
-
-anim fall
-	loop	0
-	offset	45 72
-	delay	20
-	frame   data/chars/Dog/fall01.gif
-	frame   data/chars/Dog/fall02.gif
-
-
-
-anim rise
-	loop	0
-	offset	45 72
-	delay	5
-        frame   data/chars/Dog/pain.gif
-
-
+		
+#|edited by openBor Stats v 0.67
+		

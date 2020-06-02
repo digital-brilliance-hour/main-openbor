@@ -1,5 +1,3 @@
-
-
 name	Gohan
 health	100
 speed 12
@@ -11,12 +9,17 @@ icon	data/chars/Gohan/icon.gif
 
 remap	data/chars/Gohan/stand00.gif data/chars/Gohan/map1.gif
 animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
+
 
 
 
 
 anim	attack1
 	loop	0
+	shadowcoords	18 77
 	delay	7
 	bbox	35 55 17 20
 	offset	38 77
@@ -27,7 +30,7 @@ anim	attack1
 		
 anim	attack2
 	loop	0
-	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	7
@@ -51,6 +54,7 @@ anim	attack2
 		
 anim	attack3
 	loop	0
+	shadowcoords	18 77
 	delay	7
 	offset	38 77
 	bbox	35 55 17 20
@@ -65,29 +69,43 @@ anim	attack3
 	frame	data/chars/Gohan/punch07.gif
 		
 anim	fall
+	loop	0
+	shadowcoords	18 77
+	offset	38 77
+	delay	20
+	attack	36 50 21 16 4 1
+	frame	data/chars/Gohan/fall00.gif
+	move	-4
+	frame	data/chars/Gohan/fall01.gif
+	frame	data/chars/Gohan/fall02.gif
+	frame	data/chars/Gohan/fall03.gif
+	frame	data/chars/Gohan/fall04.gif
 		
 anim	freespecial
-	loop	0	delay	30
+	loop	0
+	shadowcoords	18 77
+	delay	10
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
 	offset	38 77
 	bbox	0 0 0 0
 	frame	data/chars/Gohan/kame00.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
-	delay	10
 	frame	data/chars/Gohan/kame01.gif
 	frame	data/chars/Gohan/kame02.gif
 	frame	data/chars/Gohan/kame03.gif
 	frame	data/chars/Gohan/kame04.gif
 	frame	data/chars/Gohan/kame03.gif
+	delay	7
+	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Gohan/kame05.gif
 	frame	data/chars/Gohan/kame03.gif
 	frame	data/chars/Gohan/kame04.gif
 	frame	data/chars/Gohan/kame03.gif
 	frame	data/chars/Gohan/kame05.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
 	sound	data/chars/Gohan/wave.wav
 	attack	60 42 47 40 15 1
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -128,6 +146,7 @@ anim	freespecial
 		
 anim	get
 	loop	0
+	shadowcoords	18 77
 	delay	7
 	offset	38 77
 	frame	data/chars/Gohan/rise05.gif
@@ -135,6 +154,7 @@ anim	get
 		
 anim	grabattack
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	5
@@ -149,6 +169,7 @@ anim	grabattack
 		
 anim	grabattack2
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	7
@@ -162,6 +183,7 @@ anim	grabattack2
 		
 anim	idle
 	loop	1
+	shadowcoords	18 77
 	delay	15
 	offset	38 77
 	bbox	35 55 17 20
@@ -177,6 +199,7 @@ anim	idle
 anim	jump
 	loop	0
 	offset	38 77
+	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -189,6 +212,7 @@ anim	jump
 		
 anim	jumpattack
 	loop	0
+	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
 	offset	38 77
@@ -203,6 +227,7 @@ anim	jumpattack
 anim	jumpattack2
 	loop	0
 	delay	10
+	shadowcoords	18 77
 	bbox	37 46 16 17
 	offset	38 77
 	frame	data/chars/Gohan/jatk00.gif
@@ -216,12 +241,14 @@ anim	jumpattack2
 anim	land
 	loop	0
 	offset	38 77
+	shadowcoords	18 77
 	delay	25
 	frame	data/chars/Gohan/rise05.gif
 	frame	data/chars/Gohan/rise06.gif
 		
 anim	pain
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	delay	20
@@ -229,6 +256,7 @@ anim	pain
 		
 anim	rise
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	delay	10
 	frame	data/chars/Gohan/rise00.gif
@@ -241,6 +269,7 @@ anim	rise
 		
 anim	special
 	loop	0
+	shadowcoords	18 77
 	fastattack	1
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -295,6 +324,7 @@ anim	special
 		
 anim	throw
 	loop	0
+	shadowcoords	18 77
 	offset	38 77
 	delay	6
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -308,6 +338,7 @@ anim	throw
 anim	walk
 	loop	1
 	delay	7
+	shadowcoords	18 77
 	offset	38 77
 	bbox	35 55 17 20
 	frame	data/chars/Gohan/walk00.gif

@@ -36,6 +36,9 @@ com      a4 freespecial3
 
 
 
+
+
+
 anim	attack1
 	delay	7
 	offset	30 47
@@ -174,6 +177,7 @@ anim	freespecial
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	6
 	@cmd	projectile 1 "k_charge" 55 1 36 1 0
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	22 48
 	frame	data/chars/King_Piccolo/192.gif
 	offset	22 48
@@ -195,6 +199,7 @@ anim	freespecial2
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	@cmd	spawnbind "k_blast" 81 28 0
+	@cmd	spawnparent "pdust" -10 0 -20
 	delay	3
 	offset	23 55
 	frame	data/chars/King_Piccolo/156.gif
@@ -225,9 +230,11 @@ anim	freespecial3
 	frame	data/chars/King_Piccolo/163.gif
 	offset	22 60
 	frame	data/chars/King_Piccolo/164.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	projectile 1 "k_shot" 55 1 6 1 0
 	offset	22 51
 	frame	data/chars/King_Piccolo/166.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	projectile 1 "k_shot" 55 1 6 1 0
 	offset	22 50
 	frame	data/chars/King_Piccolo/168.gif
@@ -245,7 +252,7 @@ anim	get
 		
 anim	idle
 	bbox	2 2 48 46
-	delay	7
+	delay	20
 	loop	1
 	offset	23 47
 	frame	data/chars/King_Piccolo/9.gif
@@ -259,6 +266,7 @@ anim	idle
 anim	jump
 	bbox	1 1 39 47
 	delay	7
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	19 56
 	frame	data/chars/King_Piccolo/20.gif
 	offset	19 56
@@ -306,6 +314,7 @@ anim	rise
 anim	run
 	bbox	1 0 85 49
 	delay	7
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	26 47
 	frame	data/chars/King_Piccolo/24.gif
 	offset	25 47
@@ -354,6 +363,7 @@ anim	special
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	10
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	spawnbind "k_electric" 120 50 0
 	offset	22 55
 	frame	data/chars/King_Piccolo/175.gif

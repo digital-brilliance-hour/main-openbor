@@ -1,14 +1,25 @@
-name	Money
-health	0
-score	1000
+name	xp_hundred
 type	item
 shadow	0
-icon	data/chars/misc/monicon.gif
+subtype touch
+nolife 1
+didhitscript data/scripts/item.c
 
-
-anim idle
-	loop	0
-	delay	1000
-	offset	7 14
+anim	idle
+	loop	1
+	delay	30
+	offset	56 88
 	bbox	0 0 16 16
-	frame	data/chars/misc/money.gif
+	frame	data/chars/misc/money1.gif
+	delay	3
+	frame	data/chars/misc/money2.gif
+		
+anim	spawn
+	loop	0
+	delay	50
+	offset	56 88
+	bbox	0 0 16 16
+	frame	data/chars/misc/money1.gif
+		
+#|edited by openBor Stats v 0.67
+		
