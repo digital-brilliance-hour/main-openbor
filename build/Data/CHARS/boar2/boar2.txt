@@ -13,6 +13,7 @@ load	knife
 remap	data/chars/Boar2/idle00.gif data/chars/Boar2/map1.gif
 
 takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
 
 
 anim	attack1
@@ -56,6 +57,11 @@ anim	idle
 	frame	data/chars/Boar2/idle01.gif
 	frame	data/chars/Boar2/idle02.gif
 	frame	data/chars/Boar2/idle01.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0

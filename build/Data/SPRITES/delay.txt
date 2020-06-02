@@ -24,5 +24,10 @@ anim	idle
 	delay	1
 	frame	data/sprites/0.png
 		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
 #|edited by openBor Stats v 0.67
 		

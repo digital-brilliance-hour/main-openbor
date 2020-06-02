@@ -10,72 +10,10 @@ diesound data/sounds/die1.wav
 remap	data/chars/ralf/idle1.gif data/chars/ralf/map1.gif
 remap	data/chars/ralf/idle1.gif data/chars/ralf/map2.gif
 remap	data/chars/ralf/idle1.gif data/chars/ralf/map3.gif
+animationscript data/scripts/spawns.c
 
 
-anim idle
-	loop	1
-	offset	39 121
-	bbox	22 23 34 99
-	delay	10
-	frame	data/chars/ralf/idle1.gif
-	frame	data/chars/ralf/idle2.gif
-	frame	data/chars/ralf/idle3.gif
-	frame	data/chars/ralf/idle4.gif
-	frame	data/chars/ralf/idle5.gif
-	frame	data/chars/ralf/idle6.gif
-
-anim walk
-	loop	1
-	offset	36 121
-	bbox	23 14 25 109
-	delay	8
-	frame	data/chars/ralf/walk01.gif
-	frame	data/chars/ralf/walk02.gif
-	frame	data/chars/ralf/walk03.gif
-	frame	data/chars/ralf/walk04.gif
-	frame	data/chars/ralf/walk05.gif
-	frame	data/chars/ralf/walk06.gif
-	frame	data/chars/ralf/walk07.gif
-	frame	data/chars/ralf/walk08.gif
-
-anim pain
-	loop	0
-	offset	36 109
-	bbox	15 15 33 96
-	delay	12
-	frame	data/chars/ralf/pain1.gif
-	delay	50
-	frame	data/chars/ralf/pain2.gif
-	delay	12
-	frame	data/chars/ralf/pain1.gif
-
-anim fall
-	loop	0
-	delay	20
-	offset	64 88
-	attack	48 14 25 62 15 1
-	frame	data/chars/ralf/fall1.gif
-	attack	47 21 30 51 15 1
-	frame	data/chars/ralf/fall2.gif
-	attack	25 58 77 20 15 1
-	frame	data/chars/ralf/fall3.gif
-	attack	18 70 105 21 15 1
-	frame	data/chars/ralf/fall4.gif
-
-anim rise
-	loop	0
-	delay	15
-	offset	65 80
-	frame	data/chars/ralf/rise1.gif
-	move	10
-	offset	75 80
-	frame	data/chars/ralf/rise2.gif
-	move	10
-	offset	85 80
-	frame	data/chars/ralf/rise3.gif
-
-
-anim attack1
+anim	attack1
 	range	0 70
 	loop	0
 	delay	7
@@ -90,9 +28,61 @@ anim attack1
 	attack	0 0 0 0 0 0
 	frame	data/chars/ralf/punch1.gif
 	frame	data/chars/ralf/punch4.gif
-
-
-anim upper
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	64 88
+	attack	48 14 25 62 15 1
+	frame	data/chars/ralf/fall1.gif
+	attack	47 21 30 51 15 1
+	frame	data/chars/ralf/fall2.gif
+	attack	25 58 77 20 15 1
+	frame	data/chars/ralf/fall3.gif
+	attack	18 70 105 21 15 1
+	frame	data/chars/ralf/fall4.gif
+		
+anim	idle
+	loop	1
+	offset	39 121
+	bbox	22 23 34 99
+	delay	10
+	frame	data/chars/ralf/idle1.gif
+	frame	data/chars/ralf/idle2.gif
+	frame	data/chars/ralf/idle3.gif
+	frame	data/chars/ralf/idle4.gif
+	frame	data/chars/ralf/idle5.gif
+	frame	data/chars/ralf/idle6.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	pain
+	loop	0
+	offset	36 109
+	bbox	15 15 33 96
+	delay	12
+	frame	data/chars/ralf/pain1.gif
+	delay	50
+	frame	data/chars/ralf/pain2.gif
+	delay	12
+	frame	data/chars/ralf/pain1.gif
+		
+anim	rise
+	loop	0
+	delay	15
+	offset	65 80
+	frame	data/chars/ralf/rise1.gif
+	move	10
+	offset	75 80
+	frame	data/chars/ralf/rise2.gif
+	move	10
+	offset	85 80
+	frame	data/chars/ralf/rise3.gif
+		
+anim	upper
 	loop	0
 	delay	10
 	offset	58 125
@@ -110,5 +100,20 @@ anim upper
 	attack	0 0 0 0 0
 	delay	50
 	frame	data/chars/ralf/upper4.gif
-
-
+		
+anim	walk
+	loop	1
+	offset	36 121
+	bbox	23 14 25 109
+	delay	8
+	frame	data/chars/ralf/walk01.gif
+	frame	data/chars/ralf/walk02.gif
+	frame	data/chars/ralf/walk03.gif
+	frame	data/chars/ralf/walk04.gif
+	frame	data/chars/ralf/walk05.gif
+	frame	data/chars/ralf/walk06.gif
+	frame	data/chars/ralf/walk07.gif
+	frame	data/chars/ralf/walk08.gif
+		
+#|edited by openBor Stats v 0.67
+		
