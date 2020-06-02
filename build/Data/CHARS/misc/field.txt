@@ -3,22 +3,24 @@ health	1
 speed   4
 type	enemy
 shadow	0
+animationscript data/scripts/spawns.c
 
-anim idle
+
+anim	idle
 	loop	1
 	delay	6
 	offset	-21 -9
-        attack  22 14 12 40 14 1
-        hitflash break
+	attack	22 14 12 40 14 1
+	hitflash	break
 	frame	data/chars/misc/field00.gif
 	frame	data/chars/misc/field01.gif
 	frame	data/chars/misc/field02.gif
 	frame	data/chars/misc/field03.gif
-
-
-
-
-
-
-
-
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

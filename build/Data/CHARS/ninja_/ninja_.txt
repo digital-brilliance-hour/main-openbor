@@ -8,23 +8,85 @@ icon	data/chars/Ninja_/icon.gif
 bflash  bflash
 dust	 dust
 jumpheight 3
+animationscript data/scripts/spawns.c
 
 
-#remap	data/chars/Ninja/idle00.gif data/chars/Ninja/map1.gif
 
 
-anim idle
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	32 55 44 61
+	offset	60 116
+	frame	data/chars/Ninja_/punch00.gif
+	frame	data/chars/Ninja_/punch01.gif
+	frame	data/chars/Ninja_/punch02.gif
+	attack	84 57 33 33 8
+	frame	data/chars/Ninja_/punch03.gif
+	frame	data/chars/Ninja_/punch04.gif
+	attack	0
+	frame	data/chars/Ninja_/punch00.gif
+	frame	data/chars/Ninja_/punch01.gif
+	frame	data/chars/Ninja_/punch02.gif
+	attack	84 57 33 33 14
+	frame	data/chars/Ninja_/punch03.gif
+	frame	data/chars/Ninja_/punch04.gif
+	attack	0
+	frame	data/chars/Ninja_/punch00.gif
+	frame	data/chars/Ninja_/punch01.gif
+	frame	data/chars/Ninja_/punch02.gif
+	attack	84 57 33 33 18 1
+	frame	data/chars/Ninja_/punch03.gif
+	frame	data/chars/Ninja_/punch04.gif
+		
+anim	burn
+	loop	1
+	offset	60 116
+	delay	3
+	frame	data/chars/misc/burn4.gif
+	frame	data/chars/misc/burn5.gif
+	frame	data/chars/misc/burn6.gif
+		
+anim	fall
+	loop	0
+	offset	63 110
+	delay	30
+	attack	25 61 35 44 4 1
+	frame	data/chars/Ninja_/fall00.gif
+	delay	20
+	frame	data/chars/Ninja_/fall01.gif
+		
+anim	idle
 	loop	1
 	delay	20
 	offset	60 116
 	bbox	32 55 44 61
 	frame	data/chars/Ninja_/idle00.gif
-  	frame	data/chars/Ninja_/idle01.gif
+	frame	data/chars/Ninja_/idle01.gif
 	frame	data/chars/Ninja_/idle02.gif
 	frame	data/chars/Ninja_/idle01.gif
-
-
-anim walk
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	pain
+	loop	0
+	offset	60 116
+	bbox	32 55 44 61
+	delay	20
+	frame	data/chars/Ninja_/pain00.gif
+	frame	data/chars/Ninja_/pain01.gif
+		
+anim	rise
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Ninja_/fall00.gif
+		
+anim	walk
 	loop	1
 	delay	10
 	offset	60 116
@@ -34,75 +96,6 @@ anim walk
 	frame	data/chars/Ninja_/walk02.gif
 	frame	data/chars/Ninja_/walk03.gif
 	frame	data/chars/Ninja_/walk04.gif
-
-
-anim attack1
-	loop	0
-	delay	7
-	bbox	32 55 44 61   
-	offset	60 116
-        frame	data/chars/Ninja_/punch00.gif
-        frame	data/chars/Ninja_/punch01.gif
-        frame	data/chars/Ninja_/punch02.gif
-        attack	84 57 33 33 8	
-        frame	data/chars/Ninja_/punch03.gif
-        frame	data/chars/Ninja_/punch04.gif
-        attack  0
-        frame	data/chars/Ninja_/punch00.gif
-        frame	data/chars/Ninja_/punch01.gif
-        frame	data/chars/Ninja_/punch02.gif
-        attack	84 57 33 33 14	
-        frame	data/chars/Ninja_/punch03.gif
-        frame	data/chars/Ninja_/punch04.gif
-        attack  0
-        frame	data/chars/Ninja_/punch00.gif
-        frame	data/chars/Ninja_/punch01.gif
-        frame	data/chars/Ninja_/punch02.gif
-        attack	84 57 33 33 18 1
-        frame	data/chars/Ninja_/punch03.gif
-        frame	data/chars/Ninja_/punch04.gif
-
-
-anim pain
-	loop	0
-	offset	60 116
-	bbox	32 55 44 61	
-	delay	20
-	frame   data/chars/Ninja_/pain00.gif
-	frame   data/chars/Ninja_/pain01.gif
-
-
-anim fall
-	loop	0
-	offset	63 110
-	delay	30
-	attack	25 61 35 44 4 1
-	frame   data/chars/Ninja_/fall00.gif
-	delay	20
-	frame   data/chars/Ninja_/fall01.gif
-
-
-
-anim rise
-	loop	0
-	offset	60 116
-	delay	10
-        frame   data/chars/Ninja_/fall00.gif
-
-
-
-anim burn
-	loop	1
-	offset	60 116	
-	delay	3
-	frame	data/chars/misc/burn4.gif
-	frame	data/chars/misc/burn5.gif
-	frame	data/chars/misc/burn6.gif
-
-
-
-
-
-
-
-
+		
+#|edited by openBor Stats v 0.67
+		

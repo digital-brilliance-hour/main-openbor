@@ -8,77 +8,10 @@ diesound data/sounds/die1.wav
 
 
 remap	data/chars/heavy/stand1.gif data/chars/heavy/map1.gif
+animationscript data/scripts/spawns.c
 
 
-anim idle
-	loop	1
-	offset	40 113
-	bbox	23 10 39 99
-	delay	12
-	frame	data/chars/heavy/stand1.gif
-	frame	data/chars/heavy/stand2.gif
-	frame	data/chars/heavy/stand3.gif
-	frame	data/chars/heavy/stand4.gif
-	frame	data/chars/heavy/stand5.gif
-	frame	data/chars/heavy/stand7.gif
-	frame	data/chars/heavy/stand8.gif
-
-anim walk
-	loop	1
-	offset	42 115
-	bbox	32 7 36 109
-	delay	8
-	frame	data/chars/heavy/walk01.gif
-	frame	data/chars/heavy/walk02.gif
-	frame	data/chars/heavy/walk03.gif
-	frame	data/chars/heavy/walk04.gif
-	frame	data/chars/heavy/walk05.gif
-	frame	data/chars/heavy/walk06.gif
-	frame	data/chars/heavy/walk07.gif
-	frame	data/chars/heavy/walk08.gif
-	frame	data/chars/heavy/walk09.gif
-	frame	data/chars/heavy/walk10.gif
-	frame	data/chars/heavy/walk11.gif
-	frame	data/chars/heavy/walk12.gif
-
-anim pain
-	loop	0
-	offset	42 120
-	bbox	17 6 43 120
-	delay	3
-	frame	data/chars/heavy/pain1.gif
-#	delay	10
-	frame	data/chars/heavy/pain2.gif
-	frame	data/chars/heavy/pain1.gif
-
-
-anim fall
-	loop	0
-	delay	10
-	offset	78 117
-	attack	59 36 25 60 15 1
-	frame	data/chars/heavy/fall1.gif
-	attack	58 43 25 31 15 1
-	frame	data/chars/heavy/fall2.gif
-	attack	46 52 43 24 15 1
-	frame	data/chars/heavy/fall3.gif
-	attack	38 64 67 14 15 1
-	frame	data/chars/heavy/fall4.gif
-
-anim rise
-	loop	0
-	offset	62 104
-	delay	10
-	frame	data/chars/heavy/rise1.gif
-	frame	data/chars/heavy/rise2.gif
-	frame	data/chars/heavy/rise3.gif
-	frame	data/chars/heavy/rise4.gif
-	frame	data/chars/heavy/rise5.gif
-	frame	data/chars/heavy/rise6.gif
-	frame	data/chars/heavy/rise7.gif
-
-
-anim attack1
+anim	attack1
 	range	1 90
 	loop	0
 	delay	4
@@ -99,23 +32,69 @@ anim attack1
 	frame	data/chars/heavy/punch09.gif
 	bbox	30 7 42 107
 	frame	data/chars/heavy/punch10.gif
-
-
-
-anim special
-#	range	10 80
+		
+anim	fall
+	loop	0
+	delay	10
+	offset	78 117
+	attack	59 36 25 60 15 1
+	frame	data/chars/heavy/fall1.gif
+	attack	58 43 25 31 15 1
+	frame	data/chars/heavy/fall2.gif
+	attack	46 52 43 24 15 1
+	frame	data/chars/heavy/fall3.gif
+	attack	38 64 67 14 15 1
+	frame	data/chars/heavy/fall4.gif
+		
+anim	idle
+	loop	1
+	offset	40 113
+	bbox	23 10 39 99
+	delay	12
+	frame	data/chars/heavy/stand1.gif
+	frame	data/chars/heavy/stand2.gif
+	frame	data/chars/heavy/stand3.gif
+	frame	data/chars/heavy/stand4.gif
+	frame	data/chars/heavy/stand5.gif
+	frame	data/chars/heavy/stand7.gif
+	frame	data/chars/heavy/stand8.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
+		
+anim	pain
+	loop	0
+	offset	42 120
+	bbox	17 6 43 120
+	delay	3
+	frame	data/chars/heavy/pain1.gif
+	frame	data/chars/heavy/pain2.gif
+	frame	data/chars/heavy/pain1.gif
+		
+anim	rise
+	loop	0
+	offset	62 104
+	delay	10
+	frame	data/chars/heavy/rise1.gif
+	frame	data/chars/heavy/rise2.gif
+	frame	data/chars/heavy/rise3.gif
+	frame	data/chars/heavy/rise4.gif
+	frame	data/chars/heavy/rise5.gif
+	frame	data/chars/heavy/rise6.gif
+	frame	data/chars/heavy/rise7.gif
+		
+anim	special
 	loop	0
 	delay	4
 	offset	69 166
-#	bbox	51 54 38 111
 	sound	data/sounds/maxboom.wav
 	frame	data/chars/heavy/explo01.gif
-#	bbox	52 34 34 123
 	frame	data/chars/heavy/explo04.gif
 	frame	data/chars/heavy/explo03.gif
 	frame	data/chars/heavy/explo04.gif
 	frame	data/chars/heavy/explo05.gif
-#	bbox	43 77 53 90
 	frame	data/chars/heavy/explo06.gif
 	frame	data/chars/heavy/explo07.gif
 	frame	data/chars/heavy/explo08.gif
@@ -134,10 +113,8 @@ anim special
 	frame	data/chars/heavy/explo17.gif
 	frame	data/chars/heavy/explo18.gif
 	frame	data/chars/heavy/explo19.gif
-
-
-
-anim upper
+		
+anim	upper
 	loop	0
 	delay	6
 	offset	53 143
@@ -158,5 +135,24 @@ anim upper
 	bbox	37 32 33 114
 	attack	0 0 0 0 0 0
 	frame	data/chars/heavy/upper8.gif
-
-
+		
+anim	walk
+	loop	1
+	offset	42 115
+	bbox	32 7 36 109
+	delay	8
+	frame	data/chars/heavy/walk01.gif
+	frame	data/chars/heavy/walk02.gif
+	frame	data/chars/heavy/walk03.gif
+	frame	data/chars/heavy/walk04.gif
+	frame	data/chars/heavy/walk05.gif
+	frame	data/chars/heavy/walk06.gif
+	frame	data/chars/heavy/walk07.gif
+	frame	data/chars/heavy/walk08.gif
+	frame	data/chars/heavy/walk09.gif
+	frame	data/chars/heavy/walk10.gif
+	frame	data/chars/heavy/walk11.gif
+	frame	data/chars/heavy/walk12.gif
+		
+#|edited by openBor Stats v 0.67
+		

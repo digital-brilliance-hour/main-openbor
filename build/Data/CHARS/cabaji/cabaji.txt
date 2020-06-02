@@ -15,6 +15,7 @@ candamage player npc
 load koma
 
 takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
 
 
 anim	attack1
@@ -90,6 +91,11 @@ anim	idle
 	offset	43 77
 	bbox	46 31 12 39
 	frame	data/chars/Cabaji/idle01.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0
