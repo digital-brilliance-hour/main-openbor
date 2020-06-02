@@ -8,24 +8,106 @@ icon	data/chars/Ninja/icon.gif
 bflash  bflash
 dust	 dust
 jumpheight 3
+takedamagescript data/scripts/enemyhit.c
 
 
 
-#remap	data/chars/Ninja/idle00.gif data/chars/Ninja/map1.gif
 
 
-anim idle
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	43 69 32 47
+	offset	60 116
+	frame	data/chars/Ninja/jab00.gif
+	frame	data/chars/Ninja/jab01.gif
+	attack	55 75 28 11 8
+	frame	data/chars/Ninja/jab02.gif
+	attack	0
+	frame	data/chars/Ninja/jab01.gif
+	frame	data/chars/Ninja/jab00.gif
+	frame	data/chars/Ninja/jab01.gif
+	attack	55 75 28 11 8
+	frame	data/chars/Ninja/jab02.gif
+	attack	0
+	frame	data/chars/Ninja/punch00.gif
+	frame	data/chars/Ninja/punch01.gif
+	attack	67 83 29 7 8
+	frame	data/chars/Ninja/punch02.gif
+	attack	0
+	frame	data/chars/Ninja/punch03.gif
+	frame	data/chars/Ninja/strike00.gif
+	attack	77 82 23 10 8 1
+	frame	data/chars/Ninja/strike01.gif
+	attack	0
+	frame	data/chars/Ninja/strike02.gif
+	frame	data/chars/Ninja/strike03.gif
+		
+anim	block
+	loop	0
+	delay	20
+	offset	60 116
+	bbox	47 67 32 49
+	frame	data/chars/Ninja/block.gif
+	delay	2
+	move	-2
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	frame	data/chars/Ninja/block.gif
+	move	0
+	delay	30
+	frame	data/chars/Ninja/block.gif
+		
+anim	burn
+	loop	1
+	offset	60 116
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+		
+anim	fall
+	loop	0
+	offset	63 110
+	delay	30
+	attack	44 68 22 31 4 1
+	frame	data/chars/Ninja/fall00.gif
+	delay	20
+	frame	data/chars/Ninja/fall01.gif
+		
+anim	idle
 	loop	1
 	delay	20
 	offset	60 116
 	bbox	43 69 32 47
 	frame	data/chars/Ninja/idle00.gif
-  	frame	data/chars/Ninja/idle01.gif
+	frame	data/chars/Ninja/idle01.gif
 	frame	data/chars/Ninja/idle02.gif
 	frame	data/chars/Ninja/idle01.gif
-
-
-anim walk
+		
+anim	pain
+	loop	0
+	offset	60 116
+	bbox	43 69 32 47
+	delay	20
+	frame	data/chars/Ninja/pain00.gif
+	frame	data/chars/Ninja/pain01.gif
+		
+anim	rise
+	loop	0
+	offset	60 116
+	delay	5
+	frame	data/chars/Ninja/rise.gif
+	frame	data/chars/Ninja/rise2.gif
+	frame	data/chars/Ninja/rise3.gif
+		
+anim	walk
 	loop	1
 	delay	15
 	offset	60 116
@@ -36,98 +118,6 @@ anim walk
 	frame	data/chars/Ninja/walk03.gif
 	frame	data/chars/Ninja/walk04.gif
 	frame	data/chars/Ninja/walk05.gif
-
-
-anim attack1
-	loop	0
-	delay	7
-	bbox	43 69 32 47   
-	offset	60 116
-        frame	data/chars/Ninja/jab00.gif
-        frame	data/chars/Ninja/jab01.gif
-        attack	55 75 28 11 8	
-        frame	data/chars/Ninja/jab02.gif
-        attack  0
-        frame	data/chars/Ninja/jab01.gif
-        frame	data/chars/Ninja/jab00.gif
-        frame	data/chars/Ninja/jab01.gif
-        attack	55 75 28 11 8	
-        frame	data/chars/Ninja/jab02.gif
-        attack  0
-        frame	data/chars/Ninja/punch00.gif
-        frame	data/chars/Ninja/punch01.gif
-        attack  67 83 29 7 8
-        frame	data/chars/Ninja/punch02.gif
-        attack  0
-        frame	data/chars/Ninja/punch03.gif
-        frame	data/chars/Ninja/strike00.gif
-        attack  77 82 23 10 8 1
-        frame	data/chars/Ninja/strike01.gif
-        attack  0        
-        frame	data/chars/Ninja/strike02.gif
-        frame	data/chars/Ninja/strike03.gif
-
-
-anim pain
-	loop	0
-	offset	60 116
-	bbox	43 69 32 47	
-	delay	20
-	frame   data/chars/Ninja/pain00.gif
-	frame   data/chars/Ninja/pain01.gif
-
-
-anim fall
-	loop	0
-	offset	63 110
-	delay	30
-	attack	44 68 22 31 4 1
-	frame   data/chars/Ninja/fall00.gif
-	delay	20
-	frame   data/chars/Ninja/fall01.gif
-
-
-
-anim rise
-	loop	0
-	offset	60 116
-	delay	5
-        frame   data/chars/Ninja/rise.gif
-        frame   data/chars/Ninja/rise2.gif
-        frame   data/chars/Ninja/rise3.gif
-
-
-
-anim block
-	loop	0
-	delay	20
-	offset	60 116
-	bbox	47 67 32 49
-	frame	data/chars/Ninja/block.gif
-        delay   2
-        move    -2
-	frame	data/chars/Ninja/block.gif        
-	frame	data/chars/Ninja/block.gif
-	frame	data/chars/Ninja/block.gif
-	frame	data/chars/Ninja/block.gif
-	frame	data/chars/Ninja/block.gif        
-	frame	data/chars/Ninja/block.gif
-	frame	data/chars/Ninja/block.gif
-	frame	data/chars/Ninja/block.gif
-        move    0
-	delay	30
-	frame	data/chars/Ninja/block.gif
-
-
-
-
-anim burn
-	loop	1
-	offset	60 116	
-	delay	3
-	frame	data/chars/misc/burn1.gif
-	frame	data/chars/misc/burn2.gif
-	frame	data/chars/misc/burn3.gif
-
-
-
+		
+#|edited by openBor Stats v 0.67
+		

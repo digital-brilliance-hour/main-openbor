@@ -18,6 +18,7 @@ hostile player npc
 blockodds 1
 cantgrab  1
 candamage player npc obstacle
+takedamagescript data/scripts/enemyhit.c
 
 
 anim	attack1
@@ -171,21 +172,6 @@ anim	chargeattack
 	frame	data/chars/Ace/punch17.gif
 		
 anim	fall
-
-anim	fall
-	loop	0
-	offset	38 77
-	delay	10
-	sound	data/chars/Ace/down.wav
-	frame	data/chars/Ace/fall01.gif
-	move	-4
-	frame	data/chars/Ace/fall02.gif
-	frame	data/chars/Ace/fall03.gif
-	frame	data/chars/Ace/fall04.gif
-	frame	data/chars/Ace/fall05.gif
-	frame	data/chars/Ace/fall06.gif
-	frame	data/chars/Ace/fall07.gif
-	frame	data/chars/Ace/fall08.gif
 		
 anim	get
 	loop	0
