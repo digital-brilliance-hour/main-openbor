@@ -110,6 +110,8 @@ animationscript data/scripts/spawns.c
 
 
 
+
+
 anim	attack1
 	loop	0
 	delay	5
@@ -408,6 +410,7 @@ anim	freespecial2
 	frame	data/chars/yusuke/38.gif
 	frame	data/chars/yusuke/42.gif
 	frame	data/chars/yusuke/38.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	delay	22
 	frame	data/chars/yusuke/39.gif
 	frame	data/chars/yusuke/46.gif
@@ -459,6 +462,7 @@ anim	freespecial3
 	attack	72 67 56 63 1 0 1 0 0 0
 	frame	data/chars/yusuke/dash3.gif
 	attack	0
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/yusuke/punch2.gif
 	attack	71 50 59 79 1 0 1 0 0 0
 	frame	data/chars/yusuke/punch2.gif
@@ -536,6 +540,7 @@ anim	freespecial4
 	sound	data/chars/yusuke/reigan.wav
 	offset	63 120
 	frame	data/chars/yusuke/45.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	63 120
 	frame	data/chars/yusuke/47.gif
 	offset	63 120
@@ -724,6 +729,7 @@ anim	jump
 	delay	10
 	offset	63 120
 	bbox	21 2 55 121
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/yusuke/Jump1.gif
 	bbox	20 0 58 105
 	frame	data/chars/yusuke/Jump4.gif
@@ -1027,6 +1033,7 @@ anim	special
 	attack	6 1 120 130 0 0 1 0 0 0
 	frame	data/chars/yusuke/sp2.gif
 	move	0
+	@cmd	spawnparent "pdust" -10 0 -20
 	offset	63 121
 	delay	16
 	attack	85 36 45 33 24 1 0 0 0 0
