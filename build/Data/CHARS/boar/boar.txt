@@ -13,6 +13,7 @@ remap	data/chars/Boar/idle00.gif data/chars/Boar/map3.gif
 remap	data/chars/Boar/idle00.gif data/chars/Boar/map4.gif
 
 takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
 
 anim	attack1
 	loop	0
@@ -48,6 +49,11 @@ anim	idle
 	frame	data/chars/Boar/idle01.gif
 	frame	data/chars/Boar/idle02.gif
 	frame	data/chars/Boar/idle01.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0
