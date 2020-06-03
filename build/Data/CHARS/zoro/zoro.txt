@@ -15,6 +15,8 @@ load hou
 knife hou
 
 jumpmove 3 3
+script data/scripts/playerscript.c
+
 
 
 
@@ -213,6 +215,7 @@ anim	jump
 	offset	38 77
 	delay	10
 	bbox	37 46 16 17
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Zoro/jump01.gif
 	frame	data/chars/Zoro/jump02.gif
 	frame	data/chars/Zoro/jump03.gif
@@ -347,6 +350,7 @@ anim	special
 	frame	data/chars/Zoro/pond02.gif
 	sound	data/chars/Zoro/shot.wav
 	throwframe	1 28
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Zoro/pond03.gif
 	frame	data/chars/Zoro/pond04.gif
 	frame	data/chars/Zoro/pond05.gif
