@@ -11,6 +11,7 @@ com      a2 freespecial
 
 
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -75,6 +76,7 @@ anim	freespecial
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	15
 	sound	data/sounds/Att.wav
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Kenpachi/3Att2.gif
 	attack	69 32 50 86 10
 	frame	data/chars/Kenpachi/3Att3.gif
@@ -145,6 +147,7 @@ anim	jump
 	offset	58 116
 	delay	20
 	bbox	50 65 20 40
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Kenpachi/jump1.gif
 	frame	data/chars/Kenpachi/jump2.gif
 		
@@ -195,6 +198,7 @@ anim	special
 	@cmd	changeopenborvariant "slowmotion" 0
 	offset	117 224
 	attack	61 0 111 223 20 1
+	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Kenpachi/Select.gif
 	attack	0 0 0 0 0 0
 	delay	15
