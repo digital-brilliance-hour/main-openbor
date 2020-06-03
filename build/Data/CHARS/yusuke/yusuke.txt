@@ -110,6 +110,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
@@ -390,7 +391,10 @@ anim	follow1
 	frame	data/chars/yusuke/46.gif
 	frame	data/chars/yusuke/36.gif
 		
-anim	freespecial2
+anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	custknife	leigan
 	throwframe	3
 	loop	0
@@ -412,7 +416,10 @@ anim	freespecial2
 	frame	data/chars/yusuke/39.gif
 	frame	data/chars/yusuke/46.gif
 		
-anim	freespecial3
+anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	followanim	1
 	followcond	1
 	delay	4
@@ -473,7 +480,10 @@ anim	freespecial3
 	offset	70 120
 	frame	data/chars/yusuke/punch2.gif
 		
-anim	freespecial4
+anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	custknife	superl
 	throwframe	19
 	loop	0
@@ -546,7 +556,10 @@ anim	freespecial4
 	offset	63 120
 	frame	data/chars/yusuke/36.gif
 		
-anim	freespecial5
+anim	freespecial4
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	attack	31 142 77 136 0 0 1 0 0 0
 	loop	0
 	delay	6
@@ -1010,6 +1023,9 @@ anim	spain
 	frame	data/chars/yusuke/shock2.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	blast	6 1 120 130 20 1 1 0 0 0
 	loop	0
 	sound	data/chars/yusuke/reikodan.wav

@@ -12,6 +12,7 @@ com a2 freespecial
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -60,6 +61,9 @@ anim	fall
 	frame	data/chars/Ichigo/Fall1.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	58 116
 	delay	30
@@ -191,6 +195,9 @@ anim	select
 	frame	data/chars/Ichigo/Select7.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	58 116
 	delay	30

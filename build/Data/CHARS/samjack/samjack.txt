@@ -8,6 +8,7 @@ animationscript data/scripts/spawns.c
 com a2 freespecial
 
 
+
 anim	attack1
 	delay	5
 	offset	33 43
@@ -76,6 +77,9 @@ anim	fall
 	frame	data/chars/samjack/lie.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	4
 	offset	26 33
 	sound	data/chars/crono/woosh.wav
@@ -168,6 +172,9 @@ anim	rise
 	frame	data/chars/samjack/get.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	4
 	offset	26 33
 	sound	data/chars/crono/woosh.wav

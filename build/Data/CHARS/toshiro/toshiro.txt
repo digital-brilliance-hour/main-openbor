@@ -11,6 +11,7 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -66,6 +67,9 @@ anim	fall
 	frame	data/chars/Toshiro/Fall1.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -177,6 +181,9 @@ anim	select
 	frame	data/chars/Toshiro/Select.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0

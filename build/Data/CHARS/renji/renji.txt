@@ -14,6 +14,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -69,7 +70,9 @@ anim	fall
 	frame	data/chars/Renji/Fall1.gif
 		
 anim	freespecial
-		
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	58 116
 	sound	data/sounds/Att.wav
@@ -197,7 +200,9 @@ anim	select
 	frame	data/chars/Renji/Select6.gif
 		
 anim	special
-		
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	58 116
 	sound	data/sounds/Att.wav

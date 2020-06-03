@@ -95,6 +95,7 @@ animationscript data/scripts/spawns.c
 
 
 
+
 anim	attack1
 	bbox	45 53 42 76
 	sound	data/chars/hiei/sword.wav
@@ -293,6 +294,52 @@ anim	burn
 	offset	66 120
 	frame	data/chars/hiei/fire2.gif
 		
+anim	chargeattack
+	sound	data/chars/hiei/harashiranai.wav
+	bbox	92 47 -43 70
+	loop	0
+	delay	4
+	offset	63 120
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	leaper 1 3
+	frame	data/chars/hiei/socosfire.gif
+	burn	65 40 63 68 6 0 1 0 0 0
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 0 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	76 57 64 55 6 0 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	burn	75 39 58 62 7 1 1 0 0 0
+	delay	9
+	move	0
+	offset	63 120
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	83 47 59 72 7 1 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	frame	data/chars/hiei/socosfire.gif
+		
 anim	fall
 	attack	93 82 -54 29 0 0 0 1 0 0
 	loop	0
@@ -391,53 +438,10 @@ anim	follow1
 	offset	66 120
 	frame	data/chars/hiei/stand1.gif
 		
-anim	chargeattack
-	sound	data/chars/hiei/harashiranai.wav
-	bbox	92 47 -43 70
-	loop	0
-	delay	4
-	offset	63 120
-	@cmd	spawnparent "pdust" -10 0 -20
-	@cmd	leaper 1 3
-	frame	data/chars/hiei/socosfire.gif
-	burn	65 40 63 68 6 0 1 0 0 0
-	frame	data/chars/hiei/socosfire3.gif
-	attack	0 0 0 0 7 0 0 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire2.gif
-	burn	76 57 64 55 6 0 1 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire5.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	delay	9
-	frame	data/chars/hiei/socosfire6.gif
-	burn	75 39 58 62 7 1 1 0 0 0
-	delay	9
-	move	0
-	offset	63 120
-	frame	data/chars/hiei/socosfire3.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire2.gif
-	burn	83 47 59 72 7 1 1 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire5.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	delay	9
-	frame	data/chars/hiei/socosfire6.gif
-	frame	data/chars/hiei/socosfire.gif
-		
 anim	freespecial1
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	attack	37 104 63 113 0 0 1 0 0 0
 	offset	63 208
 	sound	data/chars/hiei/kokuryuha.wav
@@ -517,6 +521,9 @@ anim	freespecial1
 	frame	data/chars/hiei/dragaonegra4.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	hitflash	flash3
 	sound	data/chars/hiei/ensatsuken.wav
 	loop	0
@@ -566,6 +573,9 @@ anim	freespecial2
 	frame	data/chars/hiei/stand1.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	attack	33 100 71 114 0 0 1 0 0 0
 	followanim	1
 	followcond	1
@@ -1007,6 +1017,9 @@ anim	spain
 	frame	data/chars/hiei/shock2.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	sound	data/chars/hiei/sankoda.wav
 	hitflash	flash3

@@ -19,6 +19,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -80,6 +81,9 @@ anim	fall
 	frame	data/chars/Krillin/fall04.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	delay	10
 	offset	38 77
@@ -276,6 +280,9 @@ anim	run
 	frame	data/chars/Krillin/walk07.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	38 77
 	bbox	0 0 0 0

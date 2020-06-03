@@ -20,6 +20,7 @@ weaploss 3
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -82,6 +83,9 @@ anim	fall
 	frame	data/chars/Luffy/fall07.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	44 77
 	weaponframe	20 1
@@ -118,6 +122,9 @@ anim	freespecial
 	frame	data/chars/Luffy/trans16.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	82 78
 	sound	data/chars/Luffy/bazka.wav
@@ -312,6 +319,9 @@ anim	select
 	frame	data/chars/Luffy/slt10.GIF
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	43 78
 	sound	data/chars/Luffy/storm.wav
