@@ -16,6 +16,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
@@ -107,6 +108,9 @@ anim	fall
 	frame	data/chars/Goku-normal/fall04.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	43 78
 	range	0 200
@@ -161,6 +165,9 @@ anim	freespecial
 	frame	data/chars/Goku-normal/kame21.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	43 78
 	delay	7
@@ -285,6 +292,9 @@ anim	spawn
 	frame	data/chars/Goku-normal/ki04.GIF
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	43 78
 	range	0 200

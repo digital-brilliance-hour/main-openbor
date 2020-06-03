@@ -40,6 +40,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	delay	7
 	offset	30 47
@@ -162,6 +163,9 @@ anim	follow1
 	frame	data/chars/King_Piccolo/220.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	10
 	offset	22 47
 	frame	data/chars/King_Piccolo/189.gif
@@ -187,6 +191,9 @@ anim	freespecial
 	frame	data/chars/King_Piccolo/194.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	10
 	offset	23 51
 	frame	data/chars/King_Piccolo/154.gif
@@ -217,6 +224,9 @@ anim	freespecial2
 	frame	data/chars/King_Piccolo/161.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
@@ -351,6 +361,9 @@ anim	spawn
 	frame	data/chars/King_Piccolo/248.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	10
 	offset	23 51
 	frame	data/chars/King_Piccolo/173.gif

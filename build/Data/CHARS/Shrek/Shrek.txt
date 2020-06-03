@@ -35,6 +35,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	delay	7
 	offset	15 35
@@ -98,6 +99,9 @@ anim	fall
 	frame	data/chars/Shrek/148.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	7
 	offset	21 36
 	frame	data/chars/Shrek/26.gif
@@ -148,6 +152,9 @@ anim	freespecial
 	frame	data/chars/Shrek/29.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	fastattack	1
 	attack	13 1 37 44 20 0 1 0 0 0
 	delay	7
@@ -182,6 +189,9 @@ anim	freespecial2
 	frame	data/chars/Shrek/66.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	7
 	@cmd	spawnparent "pdust" -10 0 -20
 	offset	21 43
@@ -332,6 +342,9 @@ anim	select
 	frame	data/chars/Shrek/215.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0

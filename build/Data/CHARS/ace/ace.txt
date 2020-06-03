@@ -24,6 +24,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	3
@@ -149,6 +150,9 @@ anim	fall
 	frame	data/chars/Ace/fall08.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	delay	3
 	bbox	36 46 13 20
@@ -324,6 +328,9 @@ anim	select
 	frame	data/chars/Ace/slt10.GIF
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	43 78
 	bbox	78 48 12 17

@@ -41,6 +41,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	delay	7
 	offset	17 44
@@ -129,6 +130,9 @@ anim	fall
 	frame	data/chars/Gon/77.gif
 		
 anim	freespecial1
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
@@ -159,6 +163,9 @@ anim	freespecial1
 	frame	data/chars/Gon/161.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
@@ -189,6 +196,9 @@ anim	freespecial2
 	frame	data/chars/Gon/165.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
@@ -319,6 +329,9 @@ anim	spawn
 	frame	data/chars/Gon/126.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0

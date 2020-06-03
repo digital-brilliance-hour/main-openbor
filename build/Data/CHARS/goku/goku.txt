@@ -21,6 +21,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	shadowcoords	18 77
@@ -100,6 +101,9 @@ anim	fall
 	frame	data/chars/Goku/fall04.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	shadowcoords	18 77
 	offset	38 77
@@ -325,6 +329,9 @@ anim	rise
 	frame	data/chars/Goku/rise06.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	shadowcoords	18 77
 	offset	38 77

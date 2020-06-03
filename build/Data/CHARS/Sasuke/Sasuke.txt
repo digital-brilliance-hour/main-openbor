@@ -18,6 +18,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -81,6 +82,9 @@ anim	fall
 	frame	data/chars/Sasuke/fall01.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	60 116
 	sound	data/chars/Sasuke/katon.wav
@@ -259,6 +263,9 @@ anim	runattack
 	frame	data/chars/Sasuke/rush03.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	offset	60 116
 	@cmd	spawnbind "zoomin" 0 0 0

@@ -11,96 +11,93 @@ candamage player npc obstacle
 hostile player npc
 remap	data/chars/Throw/idle01.gif data/chars/Throw/map1.gif
 subject_to_screen 1
+takedamagescript data/scripts/enemyhit.c
 
-anim spawn
+
+anim	attack1
+	loop	0
+	delay	10
+	bbox	39 34 23 37
+	offset	43 77
+	frame	data/chars/Throw/punch01.gif
+	frame	data/chars/Throw/punch02.gif
+	sound	data/chars/Marine/sword.wav
+	frame	data/chars/Throw/punch03.gif
+	throwframe	1 28
+	frame	data/chars/Throw/punch04.gif
+	frame	data/chars/Throw/punch05.gif
+		
+anim	fall
+	loop	0
+	offset	43 77
+	delay	10
+	frame	data/chars/Throw/fall01.gif
+	frame	data/chars/Throw/fall01.gif
+	offset	42 77
+	delay	20
+	frame	data/chars/Throw/fall02.gif
+		
+anim	idle
+	loop	1
+	delay	2
+	offset	43 77
+	bbox	39 34 21 37
+	frame	data/chars/Throw/idle01.gif
+	frame	data/chars/Throw/idle02.gif
+	frame	data/chars/Throw/idle03.gif
+	frame	data/chars/Throw/idle04.gif
+	frame	data/chars/Throw/idle05.gif
+	frame	data/chars/Throw/idle06.gif
+	frame	data/chars/Throw/idle07.gif
+	frame	data/chars/Throw/idle08.gif
+	frame	data/chars/Throw/idle09.gif
+	frame	data/chars/Throw/idle10.gif
+	frame	data/chars/Throw/idle11.gif
+	frame	data/chars/Throw/idle12.gif
+	frame	data/chars/Throw/idle13.gif
+	frame	data/chars/Throw/idle14.gif
+	frame	data/chars/Throw/idle15.gif
+	frame	data/chars/Throw/idle16.gif
+	frame	data/chars/Throw/idle17.gif
+	frame	data/chars/Throw/idle18.gif
+	frame	data/chars/Throw/idle19.gif
+	frame	data/chars/Throw/idle20.gif
+	frame	data/chars/Throw/idle21.gif
+		
+anim	pain
+	loop	0
+	offset	43 77
+	bbox	39 34 21 37
+	delay	30
+	frame	data/chars/Throw/pain.gif
+		
+anim	rise
+	loop	0
+	offset	43 77
+	delay	5
+	frame	data/chars/Throw/rise01.gif
+		
+anim	spawn
 	loop	0
 	delay	7
 	offset	43 77
 	bbox	39 34 21 37
-  	frame	data/chars/Throw/come01.gif
-  	frame	data/chars/Throw/come02.gif  	
-  	frame	data/chars/Throw/come03.gif
-        frame	data/chars/Throw/come04.gif
-  	frame	data/chars/Throw/come05.gif 
-
-anim idle
-	loop	1
-	delay	2
-	offset	43 77
-	bbox	39 34 21 37	
-	
-  	frame	data/chars/Throw/idle01.gif
-  	frame	data/chars/Throw/idle02.gif  	
-  	frame	data/chars/Throw/idle03.gif
-        frame	data/chars/Throw/idle04.gif
-  	frame	data/chars/Throw/idle05.gif  	
-  	frame	data/chars/Throw/idle06.gif
-        frame	data/chars/Throw/idle07.gif
-  	frame	data/chars/Throw/idle08.gif  	
-  	frame	data/chars/Throw/idle09.gif
-        frame	data/chars/Throw/idle10.gif
-  	frame	data/chars/Throw/idle11.gif  	
-  	frame	data/chars/Throw/idle12.gif
-  	frame	data/chars/Throw/idle13.gif
-        frame	data/chars/Throw/idle14.gif
-  	frame	data/chars/Throw/idle15.gif  	
-  	frame	data/chars/Throw/idle16.gif
-        frame	data/chars/Throw/idle17.gif
-  	frame	data/chars/Throw/idle18.gif  	
-  	frame	data/chars/Throw/idle19.gif
-        frame	data/chars/Throw/idle20.gif
-        frame	data/chars/Throw/idle21.gif
-
-anim walk
+	frame	data/chars/Throw/come01.gif
+	frame	data/chars/Throw/come02.gif
+	frame	data/chars/Throw/come03.gif
+	frame	data/chars/Throw/come04.gif
+	frame	data/chars/Throw/come05.gif
+		
+anim	walk
 	loop	1
 	delay	10
 	offset	43 77
 	bbox	39 34 21 37
-	
 	frame	data/chars/Throw/walk01.gif
 	frame	data/chars/Throw/walk02.gif
 	frame	data/chars/Throw/walk03.gif
 	frame	data/chars/Throw/walk04.gif
-	frame	data/chars/Throw/walk05.gif	
-
-
-anim attack1
-	loop	0
-	delay	10
-	bbox	39 34 23 37  
-	offset  43 77
-	
-	frame	data/chars/Throw/punch01.gif
-	frame	data/chars/Throw/punch02.gif
-	sound   data/chars/Marine/sword.wav
-	frame	data/chars/Throw/punch03.gif
-        throwframe 1 28
-	frame	data/chars/Throw/punch04.gif
-        frame	data/chars/Throw/punch05.gif
-
-anim pain
-	loop	0
-	offset	43 77
-	bbox	39 34 21 37	
-	delay	30
-	frame   data/chars/Throw/pain.gif
-
-
-anim fall
-	loop	0
-	offset	43 77
-	delay	10	
-	frame   data/chars/Throw/fall01.gif
-	frame   data/chars/Throw/fall01.gif
-	offset	42 77
-	delay	20
-	frame   data/chars/Throw/fall02.gif
-
-
-anim rise
-	loop	0
-	offset	43 77
-	delay	5
-        frame   data/chars/Throw/rise01.gif
-
-
+	frame	data/chars/Throw/walk05.gif
+		
+#|edited by openBor Stats v 0.67
+		

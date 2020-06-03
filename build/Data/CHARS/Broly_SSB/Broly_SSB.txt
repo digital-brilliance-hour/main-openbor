@@ -34,6 +34,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	fastattack	1
 	delay	7
@@ -180,6 +181,9 @@ anim	fall
 	frame	data/chars/Broly_SSB/256.gif
 		
 anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	7
 	offset	24 84
 	frame	data/chars/Broly_SSB/142.gif
@@ -202,6 +206,9 @@ anim	freespecial
 	frame	data/chars/Broly_SSB/145.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	20
 	offset	28 76
 	frame	data/chars/Broly_SSB/146.gif
@@ -226,6 +233,9 @@ anim	freespecial2
 	frame	data/chars/Broly_SSB/150.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	10
 	offset	36 87
 	frame	data/chars/Broly_SSB/177.gif
@@ -347,6 +357,9 @@ anim	run
 	frame	data/chars/Broly_SSB/26.gif
 		
 anim	spawn
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	delay	7
 	offset	17 70
 	frame	data/chars/Broly_SSB/36.gif

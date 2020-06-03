@@ -96,6 +96,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	bbox	45 53 42 76
 	sound	data/chars/hiei/sword.wav
@@ -439,6 +440,9 @@ anim	follow1
 	frame	data/chars/hiei/stand1.gif
 		
 anim	freespecial1
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	attack	37 104 63 113 0 0 1 0 0 0
 	offset	63 208
 	sound	data/chars/hiei/kokuryuha.wav
@@ -518,6 +522,9 @@ anim	freespecial1
 	frame	data/chars/hiei/dragaonegra4.gif
 		
 anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	hitflash	flash3
 	sound	data/chars/hiei/ensatsuken.wav
 	loop	0
@@ -567,6 +574,9 @@ anim	freespecial2
 	frame	data/chars/hiei/stand1.gif
 		
 anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	attack	33 100 71 114 0 0 1 0 0 0
 	followanim	1
 	followcond	1
@@ -1008,6 +1018,9 @@ anim	spain
 	frame	data/chars/hiei/shock2.gif
 		
 anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
 	loop	0
 	sound	data/chars/hiei/sankoda.wav
 	hitflash	flash3
