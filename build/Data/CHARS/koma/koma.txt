@@ -10,65 +10,63 @@ cantgrab 1
 nolife 1
 subject_to_screen 1
 icon data/chars/Koma/icon.gif
+takedamagescript data/scripts/enemyhit.c
 
-anim spawn
+anim	attack1
 	loop	0
 	delay	5
 	offset	5 10
 	bbox	0 1 12 11
+	move	10
+	blast	0 1 12 11 10
 	frame	data/chars/Koma/idle01.gif
+	blast	0 1 12 11 10
 	frame	data/chars/Koma/idle02.gif
-
-anim idle
+		
+anim	fall
+	loop	0
+	delay	5
+	offset	8 11
+	bbox	0 0 19 13
+	frame	data/chars/Koma/fall01.gif
+		
+anim	idle
 	loop	1
 	delay	5
 	offset	5 10
 	bbox	0 1 12 11
 	frame	data/chars/Koma/idle01.gif
 	frame	data/chars/Koma/idle02.gif
-
-anim walk
+		
+anim	pain
+	loop	0
+	delay	5
+	offset	8 11
+	bbox	0 0 19 13
+	frame	data/chars/Koma/fall01.gif
+		
+anim	rise
+	loop	0
+	delay	5
+	offset	5 10
+	bbox	0 1 12 11
+	frame	data/chars/Koma/idle01.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	5 10
+	bbox	0 1 12 11
+	frame	data/chars/Koma/idle01.gif
+	frame	data/chars/Koma/idle02.gif
+		
+anim	walk
 	loop	1
 	delay	5
 	offset	5 10
 	bbox	0 1 12 11
 	frame	data/chars/Koma/idle01.gif
 	frame	data/chars/Koma/idle02.gif
-
-
-anim attack1
-	loop	0
-	delay	5
-	offset	5 10
-	bbox	0 1 12 11
-        move    10
-        blast   0 1 12 11 10
-	frame	data/chars/Koma/idle01.gif
-        blast   0 1 12 11 10
-	frame	data/chars/Koma/idle02.gif
-
-anim pain
-	loop	0
-	delay	5
-	offset	8 11
-	bbox	0 0 19 13
-	frame   data/chars/Koma/fall01.gif
-
-
-anim fall
-	loop	0
-	delay	5
-	offset	8 11
-	bbox	0 0 19 13
-	frame   data/chars/Koma/fall01.gif
-
-
-
-anim rise
-	loop	0
-	delay	5
-	offset	5 10
-	bbox	0 1 12 11
-	frame	data/chars/Koma/idle01.gif
-
-
+		
+#|edited by openBor Stats v 0.67
+		

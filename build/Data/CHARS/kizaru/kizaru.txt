@@ -17,52 +17,29 @@ jumpmove 3 3
 star stars
 knife lay
 hostile npc player
+takedamagescript data/scripts/enemyhit.c
 
-anim idle
-	loop	1
-	delay	15
-	offset	45 83
-	bbox	43 39 25 28 	
-	
-  	frame	data/chars/kizaru/idle01.gif
-  	frame	data/chars/kizaru/idle02.gif
-  	frame	data/chars/kizaru/idle03.gif
-  	frame	data/chars/kizaru/idle02.gif
-
-anim walk
-	loop	1
-	delay	15
-	offset	45 83
-	bbox	43 39 25 28
-	
-	frame	data/chars/kizaru/walk01.gif
-	frame	data/chars/kizaru/walk02.gif
-	frame	data/chars/kizaru/walk03.gif
-	frame	data/chars/kizaru/walk04.gif
-	frame	data/chars/kizaru/walk05.gif
-	frame	data/chars/kizaru/walk06.gif
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	7
-	bbox	43 39 25 28 
-	offset  45 83
-        dropv   50 150 0
+	bbox	43 39 25 28
+	offset	45 83
+	dropv	50 150 0
 	frame	data/chars/kizaru/kick01.gif
-        blast   54 20 36 65 40
+	blast	54 20 36 65 40
 	frame	data/chars/kizaru/kick02.gif
-        blast   54 20 36 65 40
+	blast	54 20 36 65 40
 	frame	data/chars/kizaru/kick03.gif
-        blast   54 20 36 65 40
+	blast	54 20 36 65 40
 	frame	data/chars/kizaru/kick04.gif
 	frame	data/chars/kizaru/kick01.gif
-
-anim attack2
-	loop    0
+		
+anim	attack2
+	loop	0
 	delay	7
 	offset	45 83
-        throwframe 1 28
-        custknife lay	
+	throwframe	1 28
+	custknife	lay
 	sound	data/chars/kizaru/beam.wav
 	frame	data/chars/kizaru/beam01.gif
 	frame	data/chars/kizaru/beam02.gif
@@ -74,102 +51,122 @@ anim attack2
 	frame	data/chars/kizaru/beam08.gif
 	frame	data/chars/kizaru/beam09.gif
 	frame	data/chars/kizaru/beam10.gif
-
-anim attack3
-	loop    0
+		
+anim	attack3
+	loop	0
 	delay	7
 	offset	45 83
-        dropv   50 150 0
-        move    5
-	frame   data/chars/kizaru/ga01.gif
-	frame   data/chars/kizaru/ga02.gif
-	frame   data/chars/kizaru/ga03.gif
-        blast   0 0 95 84 60 0 0 0 0
-        move    0
-	frame   data/chars/kizaru/ga04.gif
-        blast   0 0 95 84 60 0 0 0 0
-	frame   data/chars/kizaru/ga05.gif
-	frame   data/chars/kizaru/ga06.gif
-
-anim block
-	loop    0
-	delay	5
-	offset	45 83	
-	sound	data/chars/kizaru/pika.wav
-	frame   data/chars/kizaru/pika01.gif
-	frame   data/chars/kizaru/pika02.gif
-	frame   data/chars/kizaru/pika03.gif
-	frame   data/chars/kizaru/pika04.gif
-	frame   data/chars/kizaru/pika05.gif
-        move    100
-	frame   data/chars/kizaru/pika06.gif
-
-anim pain
+	dropv	50 150 0
+	move	5
+	frame	data/chars/kizaru/ga01.gif
+	frame	data/chars/kizaru/ga02.gif
+	frame	data/chars/kizaru/ga03.gif
+	blast	0 0 95 84 60 0 0 0 0
+	move	0
+	frame	data/chars/kizaru/ga04.gif
+	blast	0 0 95 84 60 0 0 0 0
+	frame	data/chars/kizaru/ga05.gif
+	frame	data/chars/kizaru/ga06.gif
+		
+anim	block
 	loop	0
+	delay	5
 	offset	45 83
-	bbox	46 31 12 39	
-	delay	10
-	frame   data/chars/kizaru/pain01.gif
-	frame   data/chars/kizaru/pain02.gif
-	frame   data/chars/kizaru/land01.gif
-
-
-anim jump
-	loop	1
-	offset	45 83
-	bbox	46 31 12 39	
-	delay	10
-        range   0 50
-	frame   data/chars/kizaru/jump01.gif
-	frame   data/chars/kizaru/jump02.gif
-	frame   data/chars/kizaru/jump03.gif
-
-anim jumpattack
-	loop	1
-	offset	45 83
-	bbox	46 31 12 39	
-	delay	10
-        throwframe 1 28
-        custstar stars	
-	sound	data/chars/kizaru/star.wav
-	frame   data/chars/kizaru/jumpa01.gif
-	frame   data/chars/kizaru/jumpa02.gif
-	frame   data/chars/kizaru/jumpa03.gif
-
-anim fall
+	sound	data/chars/kizaru/pika.wav
+	frame	data/chars/kizaru/pika01.gif
+	frame	data/chars/kizaru/pika02.gif
+	frame	data/chars/kizaru/pika03.gif
+	frame	data/chars/kizaru/pika04.gif
+	frame	data/chars/kizaru/pika05.gif
+	move	100
+	frame	data/chars/kizaru/pika06.gif
+		
+anim	fall
 	loop	0
 	offset	45 83
 	delay	15
-	frame   data/chars/kizaru/fall01.gif
-	frame   data/chars/kizaru/fall02.gif
-	frame   data/chars/kizaru/fall03.gif
-	frame   data/chars/kizaru/fall04.gif
-
-anim rise
+	frame	data/chars/kizaru/fall01.gif
+	frame	data/chars/kizaru/fall02.gif
+	frame	data/chars/kizaru/fall03.gif
+	frame	data/chars/kizaru/fall04.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	45 83
+	bbox	43 39 25 28
+	frame	data/chars/kizaru/idle01.gif
+	frame	data/chars/kizaru/idle02.gif
+	frame	data/chars/kizaru/idle03.gif
+	frame	data/chars/kizaru/idle02.gif
+		
+anim	jump
+	loop	1
+	offset	45 83
+	bbox	46 31 12 39
+	delay	10
+	range	0 50
+	frame	data/chars/kizaru/jump01.gif
+	frame	data/chars/kizaru/jump02.gif
+	frame	data/chars/kizaru/jump03.gif
+		
+anim	jumpattack
+	loop	1
+	offset	45 83
+	bbox	46 31 12 39
+	delay	10
+	throwframe	1 28
+	custstar	stars
+	sound	data/chars/kizaru/star.wav
+	frame	data/chars/kizaru/jumpa01.gif
+	frame	data/chars/kizaru/jumpa02.gif
+	frame	data/chars/kizaru/jumpa03.gif
+		
+anim	jumpland
+	loop	0
+	offset	45 83
+	delay	7
+	frame	data/chars/kizaru/land01.gif
+	frame	data/chars/kizaru/land02.gif
+		
+anim	land
+	loop	0
+	offset	45 83
+	delay	7
+	frame	data/chars/kizaru/land01.gif
+	frame	data/chars/kizaru/land02.gif
+		
+anim	pain
+	loop	0
+	offset	45 83
+	bbox	46 31 12 39
+	delay	10
+	frame	data/chars/kizaru/pain01.gif
+	frame	data/chars/kizaru/pain02.gif
+	frame	data/chars/kizaru/land01.gif
+		
+anim	rise
 	loop	0
 	offset	45 83
 	delay	10
-	frame   data/chars/kizaru/rise01.gif
-	frame   data/chars/kizaru/rise02.gif
-	frame   data/chars/kizaru/rise03.gif
-	frame   data/chars/kizaru/rise04.gif
-	frame   data/chars/kizaru/rise05.gif
-	frame   data/chars/kizaru/rise06.gif
-
-anim land
-	loop	0
+	frame	data/chars/kizaru/rise01.gif
+	frame	data/chars/kizaru/rise02.gif
+	frame	data/chars/kizaru/rise03.gif
+	frame	data/chars/kizaru/rise04.gif
+	frame	data/chars/kizaru/rise05.gif
+	frame	data/chars/kizaru/rise06.gif
+		
+anim	walk
+	loop	1
+	delay	15
 	offset	45 83
-	delay	7
-	frame   data/chars/kizaru/land01.gif
-	frame   data/chars/kizaru/land02.gif
-
-
-anim jumpland
-	loop	0
-	offset	45 83
-	delay	7
-	frame   data/chars/kizaru/land01.gif
-	frame   data/chars/kizaru/land02.gif
-
-
-
+	bbox	43 39 25 28
+	frame	data/chars/kizaru/walk01.gif
+	frame	data/chars/kizaru/walk02.gif
+	frame	data/chars/kizaru/walk03.gif
+	frame	data/chars/kizaru/walk04.gif
+	frame	data/chars/kizaru/walk05.gif
+	frame	data/chars/kizaru/walk06.gif
+		
+#|edited by openBor Stats v 0.67
+		
