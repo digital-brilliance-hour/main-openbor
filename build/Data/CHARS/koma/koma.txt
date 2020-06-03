@@ -11,6 +11,7 @@ nolife 1
 subject_to_screen 1
 icon data/chars/Koma/icon.gif
 animationscript data/scripts/spawns.c
+takedamagescript data/scripts/enemyhit.c
 
 anim	attack1
 	loop	0
@@ -53,12 +54,6 @@ anim	rise
 	frame	data/chars/Koma/idle01.gif
 		
 anim	spawn
-	loop	0
-	delay	5
-	offset	5 10
-	bbox	0 1 12 11
-	frame	data/chars/Koma/idle01.gif
-	frame	data/chars/Koma/idle02.gif
 	delay	75
 	@cmd	spawnparent "e_spawn" 0 0 0
 	frame	data/chars/misc/empty.gif

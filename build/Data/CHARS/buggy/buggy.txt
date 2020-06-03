@@ -18,7 +18,6 @@ subject_to_screen 1
 
 takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
-animationscript data/scripts/spawns.c
 
 anim	attack1
 	loop	0
@@ -204,11 +203,6 @@ anim	idle
 	frame	data/chars/Buggy/idle03.gif
 	frame	data/chars/Buggy/idle02.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	sound	data/chars/Buggy/pain.wav
 	loop	0
@@ -228,13 +222,9 @@ anim	rise
 	frame	data/chars/Buggy/rise03.gif
 		
 anim	spawn
-	loop	0
-	offset	38 77
-	delay	50
-	frame	data/chars/Buggy/idle01.gif
-	frame	data/chars/Buggy/idle02.gif
-	frame	data/chars/Buggy/idle03.gif
-	frame	data/chars/Buggy/idle02.gif
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

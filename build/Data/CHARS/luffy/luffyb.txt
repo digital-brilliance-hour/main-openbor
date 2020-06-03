@@ -23,6 +23,7 @@ weapons gear2b Luffyb
 weaploss 3
 takedamagescript data/scripts/enemyhit.c
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -256,6 +257,11 @@ anim	land
 	delay	25
 	frame	data/chars/Luffy/rise07.gif
 	frame	data/chars/Luffy/rise08.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0

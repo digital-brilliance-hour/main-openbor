@@ -9,6 +9,7 @@ bflash  bflash
 dust	 dust
 jumpheight 3
 animationscript data/scripts/spawns.c
+takedamagescript data/scripts/enemyhit.c
 
 
 
@@ -67,11 +68,6 @@ anim	idle
 	frame	data/chars/Ninja_/idle02.gif
 	frame	data/chars/Ninja_/idle01.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	60 116
@@ -85,6 +81,11 @@ anim	rise
 	offset	60 116
 	delay	10
 	frame	data/chars/Ninja_/fall00.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

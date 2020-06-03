@@ -19,7 +19,6 @@ remap data/chars/hand/att3.gif data/chars/hand/map1.gif
 animationscript data/scripts/spawns.c
 
 takedamagescript data/scripts/enemyhit.c
-takedamagescript data/scripts/enemyhit.c
 
 
 anim	attack1
@@ -98,11 +97,6 @@ anim	idle
 	offset	27 103
 	frame	data/chars/seiya/empty.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	delay	10
@@ -132,6 +126,11 @@ anim	rise
 	delay	50
 	offset	27 103
 	frame	data/chars/seiya/empty.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

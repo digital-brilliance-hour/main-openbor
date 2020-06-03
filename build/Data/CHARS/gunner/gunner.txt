@@ -14,6 +14,7 @@ candamage player npc obstacle
 takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -57,14 +58,6 @@ anim	rise
 	frame	data/chars/Gunner/idle01.gif
 		
 anim	spawn
-	loop	0
-	delay	15
-	offset	43 77
-	bbox	37 35 19 35
-	frame	data/chars/Gunner/idle01.gif
-	frame	data/chars/Gunner/idle02.gif
-	frame	data/chars/Gunner/idle03.gif
-	frame	data/chars/Gunner/idle04.gif
 	delay	75
 	@cmd	spawnparent "e_spawn" 0 0 0
 	frame	data/chars/misc/empty.gif

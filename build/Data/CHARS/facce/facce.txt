@@ -23,6 +23,7 @@ hostile		npc player
 
 remap data/chars/facce/stand1.gif data/chars/facce/fmap.gif
 animationscript data/scripts/spawns.c
+takedamagescript data/scripts/enemyhit.c
 
 
 anim	attack1
@@ -198,11 +199,6 @@ anim	idle
 	frame	data/chars/facce/stand7.gif
 	frame	data/chars/facce/stand8.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	148 156
@@ -244,6 +240,11 @@ anim	run
 	frame	data/chars/facce/spin5.gif
 	frame	data/chars/facce/spin6.gif
 	frame	data/chars/facce/spin7.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

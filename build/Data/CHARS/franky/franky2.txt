@@ -19,6 +19,7 @@ subject_to_screen 1
 jumpmove 3 3
 load break
 animationscript data/scripts/spawns.c
+takedamagescript data/scripts/enemyhit.c
 
 
 anim	attack1
@@ -290,11 +291,6 @@ anim	land
 	frame	data/chars/franky/land02.gif
 	frame	data/chars/franky/land03.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	38 77
@@ -327,6 +323,11 @@ anim	run
 	frame	data/chars/franky/walk04.gif
 	frame	data/chars/franky/walk05.gif
 	frame	data/chars/franky/walk06.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

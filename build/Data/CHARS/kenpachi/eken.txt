@@ -7,6 +7,7 @@ cantgrab 1
 animationscript data/scripts/spawns.c
 
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -90,11 +91,6 @@ anim	land
 	offset	58 116
 	delay	10
 	frame	data/chars/Kenpachi/Duck1.gif
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0

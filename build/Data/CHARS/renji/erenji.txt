@@ -4,7 +4,8 @@ speed	15
 type	enemy
 shadow	0
 cantgrab 1
-animationscript data/scripts/spawns.canimationscript data/scripts/spawns.c
+animationscript data/scripts/spawns.c
+takedamagescript data/scripts/enemyhit.c
 
 anim	attack1
 	loop	0
@@ -84,11 +85,6 @@ anim	land
 	delay	10
 	frame	data/chars/Renji/Duck1.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	58 116
@@ -100,6 +96,11 @@ anim	rise
 	offset	58 116
 	delay	10
 	frame	data/chars/Renji/Duck1.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1
