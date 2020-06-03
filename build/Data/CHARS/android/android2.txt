@@ -11,8 +11,6 @@ diesound data/sounds/cure.wav
 
 
 takedamagescript data/scripts/enemyhit.c
-animationscript data/scripts/spawns.c
-
 
 
 anim	attack1
@@ -81,11 +79,6 @@ anim	idle
 	offset	52	100
 	bbox	32	44	35	57
 	frame	data/chars/android/at1.gif
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0

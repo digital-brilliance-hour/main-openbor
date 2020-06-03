@@ -13,8 +13,6 @@ remap	data/chars/Dino/idle00.gif data/chars/Dino/map3.gif
 remap	data/chars/Dino/idle00.gif data/chars/Dino/map4.gif
 
 takedamagescript data/scripts/enemyhit.c
-animationscript data/scripts/spawns.c
-
 
 
 anim	attack1
@@ -47,11 +45,6 @@ anim	idle
 	frame	data/chars/Dino/idle02.gif
 	frame	data/chars/Dino/idle03.gif
 	frame	data/chars/Dino/idle04.gif
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0

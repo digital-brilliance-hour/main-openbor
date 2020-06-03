@@ -10,7 +10,6 @@ dust	 dust
 jumpheight 3
 
 takedamagescript data/scripts/enemyhit.c
-animationscript data/scripts/spawns.c
 
 
 
@@ -143,11 +142,6 @@ anim	idle
 	frame	data/chars/Claw/idle01.gif
 	frame	data/chars/Claw/idle02.gif
 	frame	data/chars/Claw/idle01.gif
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0
