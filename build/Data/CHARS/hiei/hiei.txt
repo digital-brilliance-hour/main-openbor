@@ -26,6 +26,7 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 animationscript data/scripts/spawns.c
+script data/scripts/playerscript.c
 
 
 
@@ -293,6 +294,52 @@ anim	burn
 	offset	66 120
 	frame	data/chars/hiei/fire2.gif
 		
+anim	chargeattack
+	sound	data/chars/hiei/harashiranai.wav
+	bbox	92 47 -43 70
+	loop	0
+	delay	4
+	offset	63 120
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	leaper 1 3
+	frame	data/chars/hiei/socosfire.gif
+	burn	65 40 63 68 6 0 1 0 0 0
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 0 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	76 57 64 55 6 0 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	burn	75 39 58 62 7 1 1 0 0 0
+	delay	9
+	move	0
+	offset	63 120
+	frame	data/chars/hiei/socosfire3.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire2.gif
+	burn	83 47 59 72 7 1 1 0 0 0
+	move	0
+	offset	63 120
+	delay	9
+	frame	data/chars/hiei/socosfire5.gif
+	attack	0 0 0 0 7 1 0 0 0 0
+	move	0
+	delay	9
+	frame	data/chars/hiei/socosfire6.gif
+	frame	data/chars/hiei/socosfire.gif
+		
 anim	fall
 	attack	93 82 -54 29 0 0 0 1 0 0
 	loop	0
@@ -390,52 +437,6 @@ anim	follow1
 	frame	data/chars/hiei/10.gif
 	offset	66 120
 	frame	data/chars/hiei/stand1.gif
-		
-anim	chargeattack
-	sound	data/chars/hiei/harashiranai.wav
-	bbox	92 47 -43 70
-	loop	0
-	delay	4
-	offset	63 120
-	@cmd	spawnparent "pdust" -10 0 -20
-	@cmd	leaper 1 3
-	frame	data/chars/hiei/socosfire.gif
-	burn	65 40 63 68 6 0 1 0 0 0
-	frame	data/chars/hiei/socosfire3.gif
-	attack	0 0 0 0 7 0 0 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire2.gif
-	burn	76 57 64 55 6 0 1 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire5.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	delay	9
-	frame	data/chars/hiei/socosfire6.gif
-	burn	75 39 58 62 7 1 1 0 0 0
-	delay	9
-	move	0
-	offset	63 120
-	frame	data/chars/hiei/socosfire3.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire2.gif
-	burn	83 47 59 72 7 1 1 0 0 0
-	move	0
-	offset	63 120
-	delay	9
-	frame	data/chars/hiei/socosfire5.gif
-	attack	0 0 0 0 7 1 0 0 0 0
-	move	0
-	delay	9
-	frame	data/chars/hiei/socosfire6.gif
-	frame	data/chars/hiei/socosfire.gif
 		
 anim	freespecial1
 	attack	37 104 63 113 0 0 1 0 0 0
