@@ -15,136 +15,134 @@ load field
 knife field
 load Kunai_
 star Kunai_
-takedamagescript data/scripts/enemyhit.c
 
 
+#remap	data/chars/Ninja__/idle00.gif data/chars/Ninja__/map1.gif
 
 
-
-anim	attack1
-	range	180 300
-	loop	0
-	delay	7
-	offset	60 116
-	bbox	47 67 32 49
-	throwframe	38
-	frame	data/chars/Ninja__/tech00.gif
-	frame	data/chars/Ninja__/tech01.gif
-	frame	data/chars/Ninja__/tech00.gif
-	frame	data/chars/Ninja__/tech02.gif
-	frame	data/chars/Ninja__/tech00.gif
-	frame	data/chars/Ninja__/tech01.gif
-	frame	data/chars/Ninja__/tech00.gif
-	frame	data/chars/Ninja__/tech02.gif
-	delay	10
-	frame	data/chars/Ninja__/tech03.gif
-	frame	data/chars/Ninja__/tech04.gif
-	frame	data/chars/Ninja__/tech05.gif
-	frame	data/chars/Ninja__/tech06.gif
-	frame	data/chars/Ninja__/tech07.gif
-	frame	data/chars/Ninja__/tech08.gif
-	frame	data/chars/Ninja__/tech09.gif
-	delay	3
-	frame	data/chars/Ninja__/tech10.gif
-	frame	data/chars/Ninja__/tech11.gif
-	attack	89 69 12 40 12 1
-	frame	data/chars/Ninja__/tech12.gif
-	frame	data/chars/Ninja__/tech13.gif
-	frame	data/chars/Ninja__/tech14.gif
-	frame	data/chars/Ninja__/tech15.gif
-	frame	data/chars/Ninja__/tech10.gif
-	frame	data/chars/Ninja__/tech11.gif
-	frame	data/chars/Ninja__/tech12.gif
-	frame	data/chars/Ninja__/tech13.gif
-	frame	data/chars/Ninja__/tech14.gif
-	frame	data/chars/Ninja__/tech15.gif
-	frame	data/chars/Ninja__/tech10.gif
-	frame	data/chars/Ninja__/tech11.gif
-	frame	data/chars/Ninja__/tech12.gif
-	frame	data/chars/Ninja__/tech13.gif
-	frame	data/chars/Ninja__/tech14.gif
-	frame	data/chars/Ninja__/tech15.gif
-	delay	7
-	frame	data/chars/Ninja__/tech16.gif
-	frame	data/chars/Ninja__/tech17.gif
-	frame	data/chars/Ninja__/tech18.gif
-	frame	data/chars/Ninja__/tech19.gif
-	frame	data/chars/Ninja__/tech20.gif
-	attack	0
-	frame	data/chars/Ninja__/tech21.gif
-		
-anim	attack2
-	loop	0
-	delay	7
-	offset	60 116
-	bbox	47 67 32 49
-	frame	data/chars/Ninja__/tech03.gif
-	frame	data/chars/Ninja__/tech04.gif
-	frame	data/chars/Ninja__/tech05.gif
-	frame	data/chars/Ninja__/tech06.gif
-	frame	data/chars/Ninja__/tech07.gif
-	frame	data/chars/Ninja__/tech08.gif
-	blast	98 68 12 40 18 1
-	frame	data/chars/Ninja__/tech18.gif
-	frame	data/chars/Ninja__/tech19.gif
-	frame	data/chars/Ninja__/tech20.gif
-	attack	0
-	frame	data/chars/Ninja__/tech21.gif
-		
-anim	block
-	loop	0
-	delay	20
-	offset	60 116
-	bbox	47 67 32 49
-	frame	data/chars/Ninja__/block.gif
-	delay	2
-	move	-2
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	frame	data/chars/Ninja__/block.gif
-	move	0
-	delay	30
-	frame	data/chars/Ninja__/block.gif
-		
-anim	burn
-	loop	1
-	delay	3
-	offset	60 116
-	frame	data/chars/misc/burn1.gif
-	frame	data/chars/misc/burn2.gif
-	frame	data/chars/misc/burn3.gif
-		
-anim	fall
-	loop	0
-	delay	60
-	offset	63 110
-	attack	35 72 23 29 4 1
-	frame	data/chars/Ninja__/fall00.gif
-	delay	20
-	frame	data/chars/Ninja__/fall01.gif
-		
-anim	idle
+anim idle
 	loop	1
 	delay	20
 	offset	60 116
 	bbox	47 67 32 49
 	frame	data/chars/Ninja__/idle00.gif
-	frame	data/chars/Ninja__/idle01.gif
+  	frame	data/chars/Ninja__/idle01.gif
 	frame	data/chars/Ninja__/idle02.gif
 	frame	data/chars/Ninja__/idle03.gif
 	frame	data/chars/Ninja__/idle02.gif
-	frame	data/chars/Ninja__/idle01.gif
-		
-anim	jumpattack
+  	frame	data/chars/Ninja__/idle01.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	60 116
+	bbox	47 67 32 49
+	frame	data/chars/Ninja__/walk00.gif
+	frame	data/chars/Ninja__/walk01.gif
+	frame	data/chars/Ninja__/walk02.gif
+
+
+
+anim attack1
+        range	180 300
+	loop	0
+	delay	7 
+	offset	60 116
+	bbox	47 67 32 49
+        throwframe  38
+        frame	data/chars/Ninja__/tech00.gif
+        frame	data/chars/Ninja__/tech01.gif
+        frame	data/chars/Ninja__/tech00.gif 
+        frame	data/chars/Ninja__/tech02.gif
+        frame	data/chars/Ninja__/tech00.gif
+        frame	data/chars/Ninja__/tech01.gif
+        frame	data/chars/Ninja__/tech00.gif 
+        frame	data/chars/Ninja__/tech02.gif
+	delay	10
+        frame	data/chars/Ninja__/tech03.gif
+        frame	data/chars/Ninja__/tech04.gif
+        frame	data/chars/Ninja__/tech05.gif
+        frame	data/chars/Ninja__/tech06.gif
+        frame	data/chars/Ninja__/tech07.gif
+        frame	data/chars/Ninja__/tech08.gif
+        frame	data/chars/Ninja__/tech09.gif
+        delay   3
+        frame	data/chars/Ninja__/tech10.gif
+        frame	data/chars/Ninja__/tech11.gif
+        attack  89 69 12 40 12 1
+        frame	data/chars/Ninja__/tech12.gif
+        frame	data/chars/Ninja__/tech13.gif
+        frame	data/chars/Ninja__/tech14.gif
+        frame	data/chars/Ninja__/tech15.gif
+        frame	data/chars/Ninja__/tech10.gif
+        frame	data/chars/Ninja__/tech11.gif
+        frame	data/chars/Ninja__/tech12.gif
+        frame	data/chars/Ninja__/tech13.gif
+        frame	data/chars/Ninja__/tech14.gif
+        frame	data/chars/Ninja__/tech15.gif
+        frame	data/chars/Ninja__/tech10.gif
+        frame	data/chars/Ninja__/tech11.gif
+        frame	data/chars/Ninja__/tech12.gif
+        frame	data/chars/Ninja__/tech13.gif
+        frame	data/chars/Ninja__/tech14.gif
+        frame	data/chars/Ninja__/tech15.gif
+        delay   7
+        frame	data/chars/Ninja__/tech16.gif
+        frame	data/chars/Ninja__/tech17.gif
+        frame	data/chars/Ninja__/tech18.gif
+        frame	data/chars/Ninja__/tech19.gif
+        frame	data/chars/Ninja__/tech20.gif
+        attack  0
+        frame	data/chars/Ninja__/tech21.gif
+
+
+
+anim attack2
+	loop	0
+	delay	7 
+	offset	60 116
+	bbox	47 67 32 49
+        frame	data/chars/Ninja__/tech03.gif
+        frame	data/chars/Ninja__/tech04.gif
+        frame	data/chars/Ninja__/tech05.gif
+        frame	data/chars/Ninja__/tech06.gif
+        frame	data/chars/Ninja__/tech07.gif
+        frame	data/chars/Ninja__/tech08.gif
+        blast   98 68 12 40 18 1
+        frame	data/chars/Ninja__/tech18.gif
+        frame	data/chars/Ninja__/tech19.gif
+        frame	data/chars/Ninja__/tech20.gif
+        attack  0
+        frame	data/chars/Ninja__/tech21.gif
+
+
+
+anim pain
+	loop	0
+	delay	20
+	offset	60 116	
+	bbox	47 67 32 49
+	frame   data/chars/Ninja__/pain00.gif
+	frame   data/chars/Ninja__/pain01.gif
+
+
+
+anim fall
+	loop	0
+	delay	60
+	offset	63 110
+	attack	35 72 23 29 4 1
+	frame   data/chars/Ninja__/fall00.gif
+	delay	20
+	frame   data/chars/Ninja__/fall01.gif
+
+
+anim jumpattack
 	loop	1
 	delay	3
 	offset	60 116
-	throwframe	10
+        throwframe  10
 	bbox	54 62 30 28
 	frame	data/chars/Ninja__/walk00.gif
 	frame	data/chars/Ninja__/walk01.gif
@@ -152,7 +150,7 @@ anim	jumpattack
 	frame	data/chars/Ninja__/walk00.gif
 	frame	data/chars/Ninja__/walk01.gif
 	frame	data/chars/Ninja__/walk02.gif
-	delay	10
+        delay   10
 	frame	data/chars/Ninja__/jump00.gif
 	frame	data/chars/Ninja__/jump01.gif
 	frame	data/chars/Ninja__/jump02.gif
@@ -161,30 +159,44 @@ anim	jumpattack
 	frame	data/chars/Ninja__/jump05.gif
 	frame	data/chars/Ninja__/jump06.gif
 	frame	data/chars/Ninja__/jump07.gif
-		
-anim	pain
+
+
+anim rise
+	loop	0
+	delay	10
+	offset	60 116
+        frame   data/chars/Ninja__/rise.gif
+        frame   data/chars/Ninja__/idle00.gif
+
+
+anim block
 	loop	0
 	delay	20
 	offset	60 116
 	bbox	47 67 32 49
-	frame	data/chars/Ninja__/pain00.gif
-	frame	data/chars/Ninja__/pain01.gif
-		
-anim	rise
-	loop	0
-	delay	10
-	offset	60 116
-	frame	data/chars/Ninja__/rise.gif
-	frame	data/chars/Ninja__/idle00.gif
-		
-anim	walk
+	frame	data/chars/Ninja__/block.gif
+        delay   2
+        move    -2
+	frame	data/chars/Ninja__/block.gif        
+	frame	data/chars/Ninja__/block.gif
+	frame	data/chars/Ninja__/block.gif
+	frame	data/chars/Ninja__/block.gif
+	frame	data/chars/Ninja__/block.gif        
+	frame	data/chars/Ninja__/block.gif
+	frame	data/chars/Ninja__/block.gif
+	frame	data/chars/Ninja__/block.gif
+        move    0
+	delay	30
+	frame	data/chars/Ninja__/block.gif
+
+
+anim burn
 	loop	1
-	delay	15
-	offset	60 116
-	bbox	47 67 32 49
-	frame	data/chars/Ninja__/walk00.gif
-	frame	data/chars/Ninja__/walk01.gif
-	frame	data/chars/Ninja__/walk02.gif
-		
-#|edited by openBor Stats v 0.67
-		
+	delay	3
+	offset	60 116	
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+
+

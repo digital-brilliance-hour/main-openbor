@@ -3,19 +3,18 @@ health	10
 type	enemy
 shadow	1
 speed	9
-takedamagescript data/scripts/enemyhit.c
 
+#icon	data/chars/k/icon.gif
+#diesound data/sounds/die2.wav
+#remap	data/chars/k/idle001.gif data/chars/k/alter.gif
 
-
-
-
-anim	idle
+anim idle
 	loop	1
 	offset	18 20
 	delay	30
 	frame	data/chars/crab/crab1.gif
-		
-anim	walk
+
+anim walk
 	loop	1
 	delay	7
 	offset	18 20
@@ -27,6 +26,6 @@ anim	walk
 	frame	data/chars/crab/crab6.gif
 	frame	data/chars/crab/crab7.gif
 	frame	data/chars/crab/crab8.gif
-		
-#|edited by openBor Stats v 0.67
-		
+
+
+
