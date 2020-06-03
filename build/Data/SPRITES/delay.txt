@@ -3,7 +3,6 @@ health       30
 type       enemy
 shadow     0
 nomove     1
-animationscript data/scripts/spawns.c
 
 
 
@@ -24,11 +23,6 @@ anim	idle
 	frame	data/sprites/0.png
 	delay	1
 	frame	data/sprites/0.png
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67
 		

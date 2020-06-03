@@ -9,7 +9,6 @@ dust   dust
 
 
 takedamagescript data/scripts/enemyhit.c
-animationscript data/scripts/spawns.c
 
 anim	attack1
 	range	10 110
@@ -108,11 +107,6 @@ anim	idle
 	delay	4
 	frame	data/chars/bee/idle.gif
 	frame	data/chars/bee/idle2.gif
-		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0
