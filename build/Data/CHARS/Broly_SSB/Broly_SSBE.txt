@@ -33,6 +33,7 @@ com      a4 freespecial3
 
 
 
+
 anim	attack1
 	fastattack	1
 	delay	7
@@ -347,9 +348,10 @@ anim	run
 	frame	data/chars/Broly_SSB/26.gif
 		
 anim	spawn
-	delay	7
+	delay	30
 	offset	17 70
 	frame	data/chars/Broly_SSB/36.gif
+	delay	10
 	offset	18 71
 	frame	data/chars/Broly_SSB/37.gif
 	offset	25 74
@@ -362,6 +364,7 @@ anim	spawn
 	frame	data/chars/Broly_SSB/41.gif
 	offset	20 73
 	frame	data/chars/Broly_SSB/42.gif
+	delay	3
 	offset	25 68
 	frame	data/chars/Broly_SSB/43.gif
 	offset	24 68
@@ -372,6 +375,7 @@ anim	spawn
 	frame	data/chars/Broly_SSB/52.gif
 	offset	29 84
 	frame	data/chars/Broly_SSB/53.gif
+	delay	15
 	offset	27 86
 	frame	data/chars/Broly_SSB/46.gif
 	offset	26 86
@@ -380,10 +384,9 @@ anim	spawn
 	frame	data/chars/Broly_SSB/48.gif
 	offset	32 89
 	frame	data/chars/Broly_SSB/49.gif
+	delay	50
 	offset	32 89
 	frame	data/chars/Broly_SSB/50.gif
-	offset	37 88
-	frame	data/chars/Broly_SSB/51.gif
 		
 anim	turn
 	delay	7
