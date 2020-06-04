@@ -114,49 +114,43 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
 	offset	63 120
-	bbox	42 46 45 80
 	frame	data/chars/yusuke/punch5.gif
 	offset	63 120
 	frame	data/chars/yusuke/punch0.gif
 	offset	63 120
-	attack	76 61 20 18 10 0 0 0 0 0
-	bbox	43 45 42 80
 	frame	data/chars/yusuke/punch4.gif
 	offset	63 120
-	attack	84 55 57 31 10 0 1 0 0 0
+	attack	84 55 57 69 10 0 1 0 0 0
 	delay	9
 	frame	data/chars/yusuke/punch2.gif
 	offset	63 120
-	attack	61 53 55 34 0 0 0 0 0 0
 	delay	7
-	bbox	43 45 44 84
 	frame	data/chars/yusuke/punch4.gif
 		
 anim	attack2
 	loop	0
 	delay	6
 	offset	63 120
-	bbox	48 56 44 78
 	frame	data/chars/yusuke/n0.gif
-	attack	70 66 63 65 0 0 1 0 0 0
-	bbox	54 54 32 67
+	attack	74 56 55 74 3 0 0 0 0 0
 	move	0
 	offset	63 120
 	frame	data/chars/yusuke/n1.gif
-	attack	74 56 50 74 0 0 0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	63 120
 	frame	data/chars/yusuke/n2.gif
-	attack	68 35 50 97 10 0 0 0 0 0
+	attack	68 35 58 97 10 0 0 0 0 0
 	offset	63 120
 	frame	data/chars/yusuke/n3.gif
-	attack	61 37 56 94 10 0 1 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	63 120
 	frame	data/chars/yusuke/n3.gif
-	attack	62 37 62 94 15 0 0 0 0 0
+	attack	62 37 65 94 10 0 0 0 0 0
 	offset	63 120
 	frame	data/chars/yusuke/n3.gif
 	offset	63 120
@@ -167,32 +161,28 @@ anim	attack3
 	loop	0
 	delay	5
 	offset	63 120
-	bbox	50 35 36 98
+	bbox	0 0 0 0
 	frame	data/chars/yusuke/walk1.gif
 	frame	data/chars/yusuke/04.gif
 	attack	79 50 55 47 3 2 1 0 0 0
-	bbox	59 35 37 97
+	bbox	0 0 0 0
 	delay	9
 	frame	data/chars/yusuke/03.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	delay	2
 	frame	data/chars/yusuke/04.gif
-	attack	51 46 49 41 20 1 0 0 0 0
-	bbox	29 35 38 115
+	attack	51 46 66 41 9 1 0 0 0 0
+	bbox	0 0 0 0
 	frame	data/chars/yusuke/02.gif
-	bbox	37 35 38 115
-	attack	32 69 17 25 20 1 0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/yusuke/01.gif
 	delay	8
-	bbox	52 36 31 91
-	attack	17 41 39 33 20 1 0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/yusuke/cpernas1.gif
-	bbox	49 44 33 81
-	attack	53 13 54 73 20 1 0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/yusuke/cpernas2.gif
 	attack	74 63 73 48 20 1 0 0 0 0
-	bbox	57 43 27 86
 	frame	data/chars/yusuke/cpernas3.gif
-	bbox	85 39 -39 90
 	frame	data/chars/yusuke/jump1.gif
 	frame	data/chars/yusuke/jump6.gif
 		

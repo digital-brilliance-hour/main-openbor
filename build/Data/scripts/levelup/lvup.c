@@ -35,7 +35,7 @@ void setAbi2(void plIndex, void ent, int delta)
 	int num = plIndex + 1;
 	float off = 0.5*delta;
 	changeentityproperty(ent,"maxhealth",getentityproperty(ent,"maxhealth")+10*delta);
-	changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+10*delta);
+	changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+50*delta);
 	changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
 	changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
 	changeentityproperty(ent,"offense",openborconstant("ATK_NORMAL"),1.0+off);

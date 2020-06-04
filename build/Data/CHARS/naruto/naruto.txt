@@ -18,13 +18,14 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
 	offset	60 116
 	sound	data/chars/Naruto/ha.wav
 	frame	data/chars/Naruto/jab00.gif
-	attack	65 83 44 7 8 0 0 0 0 0
+	attack	63 68 60 47 8 0 0 0 0 0
 	frame	data/chars/Naruto/jab01.gif
 	frame	data/chars/Naruto/jab02.gif
 	frame	data/chars/Naruto/jab03.gif
@@ -35,7 +36,7 @@ anim	attack2
 	offset	60 116
 	frame	data/chars/Naruto/head00.gif
 	frame	data/chars/Naruto/head01.gif
-	attack	65 83 51 30 14 0 0 0 0 0
+	attack	65 83 62 32 14 0 0 0 0 0
 	frame	data/chars/Naruto/head02.gif
 	frame	data/chars/Naruto/head03.gif
 		
@@ -45,7 +46,7 @@ anim	attack3
 	offset	60 116
 	frame	data/chars/Naruto/punch00.gif
 	frame	data/chars/Naruto/punch01.gif
-	attack	69 79 47 31 18 1 0 0 0 0
+	attack	69 79 52 35 18 1 0 0 0 0
 	frame	data/chars/Naruto/punch02.gif
 	frame	data/chars/Naruto/punch03.gif
 	frame	data/chars/Naruto/punch04.gif

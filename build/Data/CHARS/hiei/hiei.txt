@@ -97,8 +97,8 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
-	bbox	45 53 42 76
 	sound	data/chars/hiei/sword.wav
 	hitflash	flash2
 	loop	0
@@ -119,17 +119,14 @@ anim	attack1
 	frame	data/chars/hiei/12.gif
 		
 anim	attack2
-	bbox	34 51 64 80
 	loop	0
 	sound	data/chars/hiei/sword.wav
 	hitflash	flash2
 	delay	4
 	offset	58 120
 	frame	data/chars/hiei/17.gif
-	bbox	57 58 32 64
 	offset	72 120
 	frame	data/chars/hiei/18.gif
-	bbox	28 68 63 59
 	offset	59 120
 	frame	data/chars/hiei/25.gif
 	attack	59 65 73 50 14 0 0 0 0 0
@@ -151,7 +148,6 @@ anim	attack3
 	hitflash	flash2
 	delay	2
 	offset	60 119
-	bbox	37 35 49 96
 	frame	data/chars/hiei/12.gif
 	offset	60 120
 	frame	data/chars/hiei/14.gif
@@ -162,15 +158,16 @@ anim	attack3
 	delay	2
 	frame	data/chars/hiei/13.gif
 	offset	52 120
-	attack	90 60 44 74 12 20 1
+	attack	90 60 44 74 12 0 1 0 0 0
 	frame	data/chars/hiei/13.gif
 	offset	52 120
 	frame	data/chars/hiei/13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	59 120
 	delay	6
 	frame	data/chars/hiei/25.gif
 	offset	59 120
-	attack	0
+	attack	74 67 79 59 20 1 0 0 0 0
 	frame	data/chars/hiei/24.gif
 	offset	53 120
 	frame	data/chars/hiei/26.gif

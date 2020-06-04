@@ -1,0 +1,251 @@
+name	EIkkaku
+health	200
+speed	15
+type	enemy
+shadow	0
+cantgrab 1
+aimove chase
+escapehits 1
+candamage player npc obsacle
+hostile npc player
+
+animationscript data/scripts/spawns.c
+com      a2 freespecial
+com      a3 freespecial2
+com      a4 freespecial3
+
+script data/scripts/playerscript.c
+
+
+
+
+anim	attack1
+	loop	0
+	delay	10
+	offset	58 116
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/Att1.gif
+	frame	data/chars/Ikkaku/Att2.gif
+	attack	69 32 50 86 5
+	frame	data/chars/Ikkaku/Att3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Att4.gif
+		
+anim	attack2
+	loop	0
+	delay	10
+	offset	58 116
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/2Att1.gif
+	frame	data/chars/Ikkaku/2Att2.gif
+	attack	69 32 50 86 10
+	frame	data/chars/Ikkaku/2Att3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/2Att4.gif
+		
+anim	attack3
+	loop	0
+	delay	10
+	offset	58 116
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/3Att1.gif
+	frame	data/chars/Ikkaku/3Att2.gif
+	attack	69 32 50 86 20 1
+	frame	data/chars/Ikkaku/3Att3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/3Att4.gif
+	frame	data/chars/Ikkaku/3Att5.gif
+		
+anim	duck
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+		
+anim	fall
+	loop	0
+	offset	58 116
+	delay	30
+	frame	data/chars/Ikkaku/Fall1.gif
+		
+anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	loop	0
+	offset	58 116
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/Ikkaku/Free1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	10
+	sound	data/sounds/Att.wav
+	@cmd	spawnparent "pdust" -10 0 -20
+	frame	data/chars/Ikkaku/Free2.gif
+	attack	80 40 85 75 25 1
+	frame	data/chars/Ikkaku/Free3.gif
+	frame	data/chars/Ikkaku/Free4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Free5.gif
+	frame	data/chars/Ikkaku/Free6.gif
+		
+anim	get
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+		
+anim	grab
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+		
+anim	grabattack
+	loop	0
+	delay	7
+	offset	58 116
+	bbox	50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/Att1.gif
+	frame	data/chars/Ikkaku/Att2.gif
+	attack	69 32 50 86 5
+	frame	data/chars/Ikkaku/Att3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Att4.gif
+		
+anim	grabattack2
+	loop	0
+	delay	7
+	offset	58 116
+	bbox	50 65 20 40
+	sound	data/sounds/Att.wav
+	frame	data/chars/Ikkaku/3Att1.gif
+	frame	data/chars/Ikkaku/3Att2.gif
+	attack	69 32 50 86 20 1
+	frame	data/chars/Ikkaku/3Att3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/3Att4.gif
+	frame	data/chars/Ikkaku/3Att5.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	58 116
+	bbox	50 65 20 40
+	frame	data/chars/Ikkaku/Idle1.gif
+	frame	data/chars/Ikkaku/Idle2.gif
+	frame	data/chars/Ikkaku/Idle3.gif
+	frame	data/chars/Ikkaku/Idle2.gif
+		
+anim	jump
+	offset	58 116
+	delay	20
+	bbox	50 65 20 40
+	@cmd	spawnparent "pdust" -10 0 -20
+	frame	data/chars/Ikkaku/jump1.gif
+	frame	data/chars/Ikkaku/jump2.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	58 116
+	bbox	50 65 20 40
+	sound	data/sounds/Att.wav
+	attack	69 32 50 86 10 1
+	frame	data/chars/Ikkaku/Free3.gif
+	frame	data/chars/Ikkaku/Free4.gif
+		
+anim	land
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+		
+anim	pain
+	loop	0
+	offset	58 116
+	delay	30
+	frame	data/chars/Ikkaku/Free1.gif
+		
+anim	rise
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Duck1.gif
+		
+anim	select
+	loop	0
+	delay	7
+	offset	117 224
+	frame	data/chars/Ikkaku/Select1.gif
+	frame	data/chars/Ikkaku/Select2.gif
+	frame	data/chars/Ikkaku/Select3.gif
+	frame	data/chars/Ikkaku/Select4.gif
+	frame	data/chars/Ikkaku/Select5.gif
+	frame	data/chars/Ikkaku/Select6.gif
+	frame	data/chars/Ikkaku/Select7.gif
+	frame	data/chars/Ikkaku/Select7.gif
+	frame	data/chars/Ikkaku/Select8.gif
+	frame	data/chars/Ikkaku/Select9.gif
+	frame	data/chars/Ikkaku/Select10.gif
+	frame	data/chars/Ikkaku/Select11.gif
+	frame	data/chars/Ikkaku/Select12.gif
+		
+anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	loop	0
+	offset	58 116
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/Ikkaku/Special1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	5
+	@cmd	spawnparent "pdust" -10 0 -20
+	frame	data/chars/Ikkaku/Special2.gif
+	frame	data/chars/Ikkaku/Special3.gif
+	frame	data/chars/Ikkaku/Special4.gif
+	attack	60 70 115 46 50 1
+	frame	data/chars/Ikkaku/Special5.gif
+	frame	data/chars/Ikkaku/Special6.gif
+	frame	data/chars/Ikkaku/Special7.gif
+	frame	data/chars/Ikkaku/Special8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ikkaku/Special9.gif
+	frame	data/chars/Ikkaku/Special9.gif
+	frame	data/chars/Ikkaku/Special9.gif
+		
+anim	throw
+	loop	0
+	offset	58 116
+	delay	10
+	frame	data/chars/Ikkaku/Throw1.gif
+	frame	data/chars/Ikkaku/Throw2.gif
+	frame	data/chars/Ikkaku/Throw3.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	58 116
+	bbox	50 65 20 40
+	frame	data/chars/Ikkaku/walk1.gif
+	frame	data/chars/Ikkaku/walk2.gif
+	frame	data/chars/Ikkaku/walk3.gif
+	frame	data/chars/Ikkaku/walk4.gif
+	frame	data/chars/Ikkaku/walk5.gif
+	frame	data/chars/Ikkaku/walk6.gif
+	frame	data/chars/Ikkaku/walk7.gif
+	frame	data/chars/Ikkaku/walk8.gif
+		
+#|edited by openBor Stats v 0.67
+		

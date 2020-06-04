@@ -16,86 +16,73 @@ hostile npc player
 subject_to_screen 1
 load slash2
 subtype chase
+lifebarstatus 220 5 0 1 0 0 0 0 0
+lifeposition 50 200
+nameposition 60 190
+iconposition 50 360
 
-anim spawn
-	loop	0
-	offset	38 77
-	delay	15
-	frame	data/chars/shanks/idle01.gif
-  	frame	data/chars/shanks/idle02.gif
-	frame	data/chars/shanks/idle03.gif
-  	frame	data/chars/shanks/idle04.gif
-
-anim idle
-	loop	1
-	delay	15
-	offset	38 77
-	bbox	38 27 19 40
-	frame	data/chars/shanks/idle01.gif
-  	frame	data/chars/shanks/idle02.gif
-	frame	data/chars/shanks/idle03.gif
-  	frame	data/chars/shanks/idle04.gif
-
-anim walk
-	loop	1
-	delay	10
-	offset	38 77
-	bbox	38 27 19 40
-	frame	data/chars/shanks/walk01.gif
-  	frame	data/chars/shanks/walk02.gif
-	frame	data/chars/shanks/walk03.gif
-  	frame	data/chars/shanks/walk04.gif
-	frame	data/chars/shanks/walk05.gif
-  	frame	data/chars/shanks/walk06.gif
-	frame	data/chars/shanks/walk07.gif
-  	frame	data/chars/shanks/walk08.gif
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	7
 	offset	38 77
 	bbox	38 27 19 40
-	sound   data/chars/shanks/punch.wav
+	sound	data/chars/shanks/punch.wav
 	frame	data/chars/shanks/punch01.gif
-  	frame	data/chars/shanks/punch02.gif
+	frame	data/chars/shanks/punch02.gif
 	attack	52 39 40 20 30
 	frame	data/chars/shanks/punch03.gif
 	attack	52 39 40 20 30
-  	frame	data/chars/shanks/punch04.gif
-
-anim attack2
+	frame	data/chars/shanks/punch04.gif
+		
+anim	attack2
 	loop	0
 	delay	7
 	offset	49 78
 	bbox	38 27 19 40
 	frame	data/chars/shanks/kick01.gif
 	blast	37 40 38 40 30
-  	frame	data/chars/shanks/kick02.gif
+	frame	data/chars/shanks/kick02.gif
 	blast	37 40 38 40 30
 	frame	data/chars/shanks/kick03.gif
 	blast	37 40 38 40 30
 	frame	data/chars/shanks/kick04.gif
 	blast	37 40 38 40 30
 	frame	data/chars/shanks/kick05.gif
-
-
-anim freespecial
+		
+anim	block
+	loop	0
+	delay	10
+	offset	38 77
+	frame	data/chars/shanks/block1.gif
+	frame	data/chars/shanks/block2.gif
+		
+anim	fall
+	loop	0
+	offset	38 77
+	delay	20
+	sound	data/chars/shanks/down.wav
+	frame	data/chars/shanks/fall01.gif
+	frame	data/chars/shanks/fall02.gif
+	frame	data/chars/shanks/down01.gif
+	frame	data/chars/shanks/down02.gif
+		
+anim	freespecial
 	loop	0
 	delay	8
-        range   0 250
+	range	0 250
 	offset	49 78
-        counterattack 1
+	counterattack	1
 	frame	data/chars/shanks/block1.gif
-        move    50
-        sound   data/chars/shanks/zan.wav
-  	frame	data/chars/shanks/zan01.gif
+	move	50
+	sound	data/chars/shanks/zan.wav
+	frame	data/chars/shanks/zan01.gif
 	blast	10 0 85 80 80 0 0 0 100
 	frame	data/chars/shanks/zan02.gif
 	blast	10 0 85 80 80 0 0 0 100
 	frame	data/chars/shanks/zan03.gif
 	blast	10 0 85 80 80 0 0 0 100
 	frame	data/chars/shanks/zan04.gif
-        move    0
+	move	0
 	frame	data/chars/shanks/zan05.gif
 	frame	data/chars/shanks/zan06.gif
 	frame	data/chars/shanks/zan05.gif
@@ -104,158 +91,170 @@ anim freespecial
 	frame	data/chars/shanks/zan06.gif
 	frame	data/chars/shanks/block2.gif
 	frame	data/chars/shanks/block1.gif
-
-anim freespecial2
+		
+anim	freespecial2
 	loop	0
 	delay	8
 	offset	38 77
-        range   200 400
-        throwframe 14 20
-        custknife slash2
-	quakeframe 3 1 10
-        frame   data/chars/shanks/sp01.gif
-	frame   data/chars/shanks/sp02.gif
-        sound   data/chars/shanks/sword.wav
-	frame   data/chars/shanks/sp03.gif
-	frame   data/chars/shanks/sp04.gif
-        frame   data/chars/shanks/sp05.gif
-	frame   data/chars/shanks/sp03.gif
-	frame   data/chars/shanks/sp04.gif
-        frame   data/chars/shanks/sp05.gif
-	frame   data/chars/shanks/sp03.gif
-	frame   data/chars/shanks/sp04.gif
-        frame   data/chars/shanks/sp05.gif
-	frame   data/chars/shanks/sp03.gif
-	frame   data/chars/shanks/sp04.gif
-        frame   data/chars/shanks/sp05.gif
-        sound   data/chars/shanks/sei.wav
-	frame   data/chars/shanks/sp06.gif
+	range	200 400
+	throwframe	14 20
+	custknife	slash2
+	quakeframe	3 1 10
+	frame	data/chars/shanks/sp01.gif
+	frame	data/chars/shanks/sp02.gif
+	sound	data/chars/shanks/sword.wav
+	frame	data/chars/shanks/sp03.gif
+	frame	data/chars/shanks/sp04.gif
+	frame	data/chars/shanks/sp05.gif
+	frame	data/chars/shanks/sp03.gif
+	frame	data/chars/shanks/sp04.gif
+	frame	data/chars/shanks/sp05.gif
+	frame	data/chars/shanks/sp03.gif
+	frame	data/chars/shanks/sp04.gif
+	frame	data/chars/shanks/sp05.gif
+	frame	data/chars/shanks/sp03.gif
+	frame	data/chars/shanks/sp04.gif
+	frame	data/chars/shanks/sp05.gif
+	sound	data/chars/shanks/sei.wav
+	frame	data/chars/shanks/sp06.gif
 	blast	80 35 19 17 50
-	frame   data/chars/shanks/sp07.gif
+	frame	data/chars/shanks/sp07.gif
 	blast	80 35 19 17 50
-	frame   data/chars/shanks/sp08.gif
+	frame	data/chars/shanks/sp08.gif
 	blast	80 35 19 17 50
-        frame   data/chars/shanks/sp09.gif
+	frame	data/chars/shanks/sp09.gif
 	blast	80 35 19 17 50
-	frame   data/chars/shanks/sp10.gif
-
-anim freespecial3
+	frame	data/chars/shanks/sp10.gif
+		
+anim	freespecial3
 	loop	0
 	delay	8
 	offset	38 77
-        sound   data/chars/shanks/haki.wav
-        frame   data/chars/shanks/sp01.gif
-	frame   data/chars/shanks/sp02.gif
-        frame   data/chars/shanks/haki0.gif
-	frame   data/chars/shanks/haki11.gif
+	sound	data/chars/shanks/haki.wav
+	frame	data/chars/shanks/sp01.gif
+	frame	data/chars/shanks/sp02.gif
+	frame	data/chars/shanks/haki0.gif
+	frame	data/chars/shanks/haki11.gif
 	offset	106 99
-	quakeframe 3 20 -30
-        frame   data/chars/shanks/haki01.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki02.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki03.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki04.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki05.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki3.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki01.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki02.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki03.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki04.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki05.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki3.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki01.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki02.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki03.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki04.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki05.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki3.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki01.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki02.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki03.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki04.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-	frame   data/chars/shanks/haki05.gif
-	blast   0 0 220 126 0 0 0 80
-        seal    50 50
-        frame   data/chars/shanks/haki3.gif
-
-anim block
-	loop	0
-	delay	10
+	quakeframe	3 20 -30
+	frame	data/chars/shanks/haki01.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki02.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki03.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki04.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki05.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki3.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki01.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki02.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki03.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki04.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki05.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki3.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki01.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki02.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki03.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki04.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki05.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki3.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki01.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki02.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki03.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki04.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki05.gif
+	blast	0 0 220 126 0 0 0 80
+	seal	50 50
+	frame	data/chars/shanks/haki3.gif
+		
+anim	idle
+	loop	1
+	delay	15
 	offset	38 77
-	frame	data/chars/shanks/block1.gif
-  	frame	data/chars/shanks/block2.gif
-
-anim pain
-        loop	0
+	bbox	38 27 19 40
+	frame	data/chars/shanks/idle01.gif
+	frame	data/chars/shanks/idle02.gif
+	frame	data/chars/shanks/idle03.gif
+	frame	data/chars/shanks/idle04.gif
+		
+anim	pain
+	loop	0
 	offset	38 77
 	bbox	38 27 19 40
 	delay	10
-        sound   data/chars/shanks/pain.wav
-	frame   data/chars/shanks/pain01.gif
-
-anim fall
-	loop	0
-	offset	38 77
-	delay	20
-        sound   data/chars/shanks/down.wav
-	frame   data/chars/shanks/fall01.gif
-	frame   data/chars/shanks/fall02.gif
-	frame   data/chars/shanks/down01.gif
-	frame   data/chars/shanks/down02.gif
-
-anim rise
+	sound	data/chars/shanks/pain.wav
+	frame	data/chars/shanks/pain01.gif
+		
+anim	rise
 	loop	0
 	offset	38 77
 	delay	7
-        frame   data/chars/shanks/rise01.gif
-	frame   data/chars/shanks/rise02.gif
-
-
-
-
-
-
-
+	frame	data/chars/shanks/rise01.gif
+	frame	data/chars/shanks/rise02.gif
+		
+anim	spawn
+	loop	0
+	offset	38 77
+	delay	15
+	frame	data/chars/shanks/idle01.gif
+	frame	data/chars/shanks/idle02.gif
+	frame	data/chars/shanks/idle03.gif
+	frame	data/chars/shanks/idle04.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	38 77
+	bbox	38 27 19 40
+	frame	data/chars/shanks/walk01.gif
+	frame	data/chars/shanks/walk02.gif
+	frame	data/chars/shanks/walk03.gif
+	frame	data/chars/shanks/walk04.gif
+	frame	data/chars/shanks/walk05.gif
+	frame	data/chars/shanks/walk06.gif
+	frame	data/chars/shanks/walk07.gif
+	frame	data/chars/shanks/walk08.gif
+		
+#|edited by openBor Stats v 0.67
+		

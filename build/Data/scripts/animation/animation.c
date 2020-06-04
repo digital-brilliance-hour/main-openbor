@@ -1463,14 +1463,71 @@ void cancel(int RxMin, int RxMax, int RyMin, int RyMax, int RzMin, int RzMax, vo
 
 void enoughmp() {
 	void self 	= getlocalvar("self");
+	void AniID = getani();
 	int mp		= getentityproperty(self, "mp"); //Get entity's MP
 	int maxmp	= getentityproperty(self, "maxmp"); //Get entity's Max MP
 	changeentityproperty(self,"energycost",0, 1, 0);
+	int specialcount = numspecials(self);
 	if(mp < maxmp) {
 		anichange(openborconstant("ANI_ATTACK1"));
 		setidle(self, openborconstant("ANI_ATTACK1"));
 		mpcost(0);
 	}
+	else {
+		if(AniID == openborconstant("ANI_FREESPECIAL") && maxmp >= 200)
+		{
+			changeentityproperty(self, "mp", 0);
+		}
+		else if(AniID == openborconstant("ANI_FREESPECIAL2") && maxmp >= 400)
+		{
+			changeentityproperty(self, "mp", 0);
+		}
+		else if(AniID == openborconstant("ANI_FREESPECIAL3") && maxmp >= 600)
+		{
+			changeentityproperty(self, "mp", 0);
+		}
+		else if(AniID == openborconstant("ANI_SPECIAL") && maxmp >= 800)
+		{
+			changeentityproperty(self, "mp", 0);
+		}
+		else if(AniID == openborconstant("ANI_FREESPECIAL4") && maxmp >= 1000)
+		{
+			changeentityproperty(self, "mp", 0);
+		}
+		else 
+		{
+			anichange(openborconstant("ANI_ATTACK1"));
+			setidle(self, openborconstant("ANI_ATTACK1"));
+			mpcost(0);
+		}
+	}
+}
+
+int numspecials(void player) {
+	void AniID = getani();
+	int count = 0; 
+	int i;
+	//set your array
+	void items = array(6);
+	set(items,0,openborconstant("ANI_SPECIAL"));
+	set(items,1,openborconstant("ANI_FREESPECIAL"));
+	set(items,2,openborconstant("ANI_FREESPECIAL2"));
+	set(items,3,openborconstant("ANI_FREESPECIAL3"));
+	set(items,4,openborconstant("ANI_FREESPECIAL4"));
+	for(i=0; i<size(items); i++) 
+	{
+		if (getentityproperty(player, "animvalid", get(items, i)))          //Animation valid?
+		{
+			count++;
+		}	
+	}
+   return count-1;
+}
+
+void getani()
+{
+	void ent = getlocalvar("self");
+	return getentityproperty(ent,"animationID");
 }
 
 void cancelmp(int RxMin, int RxMax, int RyMin, int RyMax, int Limit, void Ani)
