@@ -5,12 +5,77 @@ order a
 spawn	ready
 	coords 1 -33
 	at 0
+	
+spawn Android
+coords	480 215
+at 310
+
+spawn Android
+coords	480 230
+at 310
+
+spawn Android
+coords	-30 220
+at 310
+
+spawn Android
+coords	-30 230
+at 310
+
+wait
+at      310
+
+spawn mp_twentyfive
+coords 600 220
+at 320
+
+spawn Ninja
+coords	480 215
+at 1425
+
+spawn Ninja
+coords	480 230
+at 1425
+
+spawn Ninja
+coords	-30 220
+at 1425
+
+spawn Ninja
+coords	-30 230
+at 1425
+
+wait
+at      1425
+
+spawn Marine
+coords	480 215
+at      2058
+
+spawn Marine
+coords	480 230
+at 2058
+
+spawn Marine
+coords	-30 220
+at 2058
+
+spawn Marine
+coords	-30 230
+at 2058
+
+wait
+at      2058
+
+spawn hp_hundred
+coords 600 220
+at 2270
 
 
 spawn sasuke_e
 boss 1
 alias  Sasuke
-coords	450 185
+coords	450 200
 at 2920
 
 wait
