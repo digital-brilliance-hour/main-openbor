@@ -14,6 +14,7 @@ takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
 
 
+
 anim	attack1
 	loop	0
 	range	0	100
@@ -56,8 +57,7 @@ anim	death
 	frame	data/chars/android/smoke3.gif
 	frame	data/chars/android/smoke4.gif
 	frame	data/chars/android/smoke5.gif
-	frame	data/chars/android/smoke6.gif
-	frame	data\chars\misc/flash5.gif
+	frame	data/chars/android/smoke6.gif	frame	data\chars\misc/flash5.gif
 		
 anim	fall
 	loop	0
@@ -81,11 +81,6 @@ anim	idle
 	bbox	32	44	35	57
 	frame	data/chars/android/at1.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	45	100
@@ -101,6 +96,11 @@ anim	rise
 	offset	70 85
 	delay	12
 	frame	data/chars/android/pain1.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1
