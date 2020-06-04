@@ -3,7 +3,13 @@ background data/bgs/stage-2/b.gif
 panel data/bgs/stage-2/n.gif none none
 order a
 
-spawn	Lobster
-alias	This_is_the_Boss
-coords	200 220
+spawn EIkkaku
+alias Ikkaku
+coords	500 190
 at	0
+
+spawn EKenpachi
+alias Kenpachi
+boss 1
+coords	450 220
+at      400
