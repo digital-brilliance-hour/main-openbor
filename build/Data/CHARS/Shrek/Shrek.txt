@@ -5,6 +5,7 @@ type	player
 shadow	3
 mp 200
 com      a2 freespecial
+icon	data/chars/shrek/0.gif
 
 onspawnscript @script
 void main()
@@ -20,6 +21,7 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 script data/scripts/playerscript.c
+
 
 
 
@@ -244,7 +246,7 @@ anim	idle
 	frame	data/chars/Shrek/6.gif
 		
 anim	jump
-	bbox	0 0 0 0
+	bbox	1 1 32 36
 	delay	7
 	offset	17 35
 	@cmd	spawnparent "pdust" -10 0 -20
@@ -388,10 +390,12 @@ anim	turn
 	frame	data/chars/Shrek/7.gif
 		
 anim	walk
+	bbox	2 2 33 40
 	delay	7
 	loop	1
 	offset	20 42
 	frame	data/chars/Shrek/10.gif
+	bbox	3 2 38 42
 	offset	24 44
 	frame	data/chars/Shrek/11.gif
 	offset	24 44

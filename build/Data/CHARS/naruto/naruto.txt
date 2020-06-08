@@ -19,6 +19,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -339,9 +340,11 @@ anim	walk
 	delay	15
 	offset	60 116
 	bbox	43 65 25 51
+	sound	data/sounds/walk.wav
 	frame	data/chars/Naruto/walk00.gif
 	frame	data/chars/Naruto/walk01.gif
 	frame	data/chars/Naruto/walk02.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Naruto/walk03.gif
 	frame	data/chars/Naruto/walk04.gif
 	frame	data/chars/Naruto/walk05.gif

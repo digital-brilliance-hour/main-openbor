@@ -24,6 +24,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	4
@@ -363,9 +364,11 @@ anim	walk
 	bbox	36 46 13 20
 	frame	data/chars/Zoro/walk01.gif
 	frame	data/chars/Zoro/walk02.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Zoro/walk03.gif
 	frame	data/chars/Zoro/walk04.gif
 	frame	data/chars/Zoro/walk05.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Zoro/walk06.gif
 		
 #|edited by openBor Stats v 0.67

@@ -24,14 +24,26 @@ void main()
             changemodelproperty(i,4,0);
         }
       }
+
+      int S = getglobalvar("SelectMusic");
+      if(S != 1) {
+        void bg = "data/music/select.ogg";
+        playmusic(bg, 1);
+        setglobalvar("SelectMusic", 1);
+      }
     } else if(openborvariant("in_menuscreen")==1){
       setindexedvar(0, NULL());
+        setglobalvar("SelectMusic", 0);
+    }
+    else {
+
+        setglobalvar("SelectMusic", 0);
     }
     if (openborvariant("in_titlescreen")) {
       int T = getglobalvar("TitleMusic");
       if(T != 1) {
-        void bg = "data/music/title.bor";
-        playmusic(bg, 1);
+        void bg = "data/music/menu.ogg";
+        playmusic(bg, 1, 1400919);
         setglobalvar("TitleMusic", 1);
       }
     }

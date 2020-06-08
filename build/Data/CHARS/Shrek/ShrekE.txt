@@ -2,6 +2,7 @@ name	Shrek
 health	100
 speed	9
 type	enemy
+icon	data/chars/shrek/0.gif
 shadow	3
 aimove chase
 escapehits 1
@@ -234,7 +235,7 @@ anim	idle
 	frame	data/chars/Shrek/6.gif
 		
 anim	jump
-	bbox	0 0 0 0
+	bbox	1 2 32 35
 	delay	7
 	offset	17 35
 	frame	data/chars/Shrek/18.gif
@@ -366,10 +367,12 @@ anim	turn
 	frame	data/chars/Shrek/7.gif
 		
 anim	walk
+	bbox	2 1 33 43
 	delay	7
 	loop	1
 	offset	20 42
 	frame	data/chars/Shrek/10.gif
+	bbox	3 2 37 44
 	offset	24 44
 	frame	data/chars/Shrek/11.gif
 	offset	24 44
@@ -378,6 +381,7 @@ anim	walk
 	frame	data/chars/Shrek/13.gif
 	offset	18 46
 	frame	data/chars/Shrek/14.gif
+	bbox	3 2 37 40
 	offset	19 43
 	frame	data/chars/Shrek/15.gif
 	offset	22 41

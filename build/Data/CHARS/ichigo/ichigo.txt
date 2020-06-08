@@ -14,6 +14,8 @@ script data/scripts/playerscript.c
 
 
 
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -32,7 +34,7 @@ anim	attack2
 	offset	58 116
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ichigo/2Att1.gif
-	attack	80 46 50 70 10
+	attack	80 46 50 70 8 0 0 0 0 0
 	frame	data/chars/Ichigo/2Att2.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/2Att3.gif
@@ -44,7 +46,7 @@ anim	attack3
 	offset	58 116
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ichigo/3Att1.gif
-	attack	80 46 50 70 20 1
+	attack	80 46 50 70 10 1 0 0 0 0
 	frame	data/chars/Ichigo/3Att2.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/3Att3.gif
@@ -80,7 +82,7 @@ anim	freespecial
 	frame	data/chars/Ichigo/Free3.gif
 	frame	data/chars/Ichigo/Free4.gif
 	@cmd	spawnparent "pdust" -10 0 -20
-	attack	70 60 230 56 25 1
+	attack	70 60 230 56 30 1 0 0 0 0
 	frame	data/chars/Ichigo/Free5.gif
 	frame	data/chars/Ichigo/Free6.gif
 	frame	data/chars/Ichigo/Free7.gif
@@ -106,7 +108,7 @@ anim	grabattack
 	bbox	45 70 30 46
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ichigo/Att1.gif
-	attack	69 86 50 32 18 1
+	attack	69 86 50 32 10 1 0 0 0 0
 	frame	data/chars/Ichigo/Att2.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Att3.gif
@@ -119,7 +121,7 @@ anim	grabattack2
 	bbox	45 70 30 46
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ichigo/3Att1.gif
-	attack	69 86 50 32 18 1
+	attack	69 86 50 32 12 1 0 0 0 0
 	frame	data/chars/Ichigo/3Att2.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/3Att3.gif
@@ -152,7 +154,9 @@ anim	jumpattack
 	sound	data/sounds/Att.wav
 	attack	69 32 50 86 10 1
 	frame	data/chars/Ichigo/Att1.gif
+	attack	69 32 50 86 10 1 0 0 0 0
 	frame	data/chars/Ichigo/Att2.gif
+	attack	69 32 50 86 10 1 0 0 0 0
 	frame	data/chars/Ichigo/Att2J.gif
 		
 anim	land
@@ -218,22 +222,22 @@ anim	special
 	frame	data/chars/Ichigo/Spec3.gif
 	frame	data/chars/Ichigo/Spec4.gif
 	sound	data/sounds/Att.wav
-	attack	6 40 114 75 5
+	attack	6 40 114 75 15 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec5.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec5.gif
 	sound	data/sounds/Att.wav
-	attack	6 40 114 75 5
+	attack	6 40 114 75 15 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec6.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec6.gif
 	sound	data/sounds/Att.wav
-	attack	6 40 114 75 5
+	attack	6 40 114 75 15 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec7.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Spec7.gif
 	sound	data/sounds/Att.wav
-	attack	6 40 114 75 35 1
+	attack	6 40 114 75 50 1 0 0 0 0
 	frame	data/chars/Ichigo/Spec8.gif
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Duck1.gif
@@ -257,10 +261,12 @@ anim	walk
 	bbox	45 70 30 46
 	frame	data/chars/Ichigo/walk1.gif
 	frame	data/chars/Ichigo/walk2.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ichigo/walk3.gif
 	frame	data/chars/Ichigo/walk4.gif
 	frame	data/chars/Ichigo/walk5.gif
 	frame	data/chars/Ichigo/walk6.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ichigo/walk7.gif
 	frame	data/chars/Ichigo/walk8.gif
 		

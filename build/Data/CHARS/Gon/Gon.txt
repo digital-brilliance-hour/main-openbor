@@ -13,6 +13,11 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 script data/scripts/playerscript.c
+icon	data/chars/gon/0.gif
+
+
+
+
 
 
 
@@ -43,6 +48,7 @@ script data/scripts/playerscript.c
 
 
 anim	attack1
+	sound	data/chars/gon/gon_0-23.wav
 	delay	7
 	offset	17 44
 	frame	data/chars/Gon/127.gif
@@ -54,6 +60,7 @@ anim	attack1
 		
 anim	attack2
 	delay	7
+	sound	data/chars/gon/gon_0-23.wav
 	offset	15 38
 	frame	data/chars/Gon/130.gif
 	offset	14 40
@@ -71,6 +78,7 @@ anim	attack3
 	delay	3
 	fastattack	1
 	offset	13 43
+	sound	data/chars/gon/gon_0-25.wav
 	frame	data/chars/Gon/135.gif
 	offset	17 37
 	frame	data/chars/Gon/136.gif
@@ -133,14 +141,16 @@ anim	freespecial1
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
-	delay	30
+	delay	40
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
+	sound	data/chars/gon/gon_0-9.wav
 	offset	13 37
 	frame	data/chars/Gon/155.gif
 	offset	13 38
 	frame	data/chars/Gon/156.gif
 	offset	13 37
+	sound	data/chars/gon/gon_0-10.wav
 	frame	data/chars/Gon/157.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
@@ -152,6 +162,7 @@ anim	freespecial1
 	frame	data/chars/Gon/159.gif
 	delay	10
 	offset	18 38
+	sound	data/chars/gon/gon_0-6.wav
 	frame	data/chars/Gon/160.gif
 	offset	18 38
 	frame	data/chars/Gon/160.gif
@@ -166,13 +177,15 @@ anim	freespecial2
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
-	delay	30
+	delay	40
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
+	sound	data/chars/gon/gon_0-9.wav
 	offset	13 37
 	frame	data/chars/Gon/155.gif
 	offset	13 38
 	frame	data/chars/Gon/156.gif
+	sound	data/chars/gon/gon_0-10.wav
 	offset	13 37
 	frame	data/chars/Gon/157.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
@@ -182,8 +195,10 @@ anim	freespecial2
 	frame	data/chars/Gon/162.gif
 	offset	16 43
 	frame	data/chars/Gon/163.gif
+	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	projectile 1 "g_shot" 55 5 36 1 0
 	offset	17 45
+	sound	data/chars/gon/gon_0-1.wav
 	frame	data/chars/Gon/164.gif
 	delay	10
 	offset	16 45
@@ -199,14 +214,16 @@ anim	freespecial3
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
-	delay	30
+	delay	40
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
+	sound	data/chars/gon/gon_0-9.wav
 	offset	13 37
 	frame	data/chars/Gon/155.gif
 	offset	13 38
 	frame	data/chars/Gon/156.gif
 	offset	13 37
+	sound	data/chars/gon/gon_0-10.wav
 	frame	data/chars/Gon/157.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
@@ -219,6 +236,7 @@ anim	freespecial3
 	frame	data/chars/Gon/190.gif
 	@cmd	spawnbind "g_blast" 60 20 0
 	offset	19 42
+	sound	data/chars/gon/gon_0-7.wav
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/191.gif
 	offset	19 41
@@ -235,6 +253,7 @@ anim	freespecial3
 	frame	data/chars/Gon/194.gif
 		
 anim	idle
+	bbox	8 3 17 38
 	delay	15
 	loop	1
 	offset	14 41
@@ -247,14 +266,17 @@ anim	idle
 	frame	data/chars/Gon/5.gif
 		
 anim	jump
+	bbox	10 3 15 33
 	delay	7
 	offset	16 36
 	@cmd	spawnparent "pdust" -10 0 -20
 	frame	data/chars/Gon/7.gif
 	offset	16 32
 	frame	data/chars/Gon/8.gif
+	bbox	5 3 15 30
 	offset	11 33
 	frame	data/chars/Gon/9.gif
+	bbox	15 3 15 39
 	offset	15 42
 	frame	data/chars/Gon/18.gif
 	offset	15 42
@@ -270,6 +292,7 @@ anim	jumpattack
 	frame	data/chars/Gon/151.gif
 	offset	26 57
 	frame	data/chars/Gon/152.gif
+	attack	22 8 56 28 9 0 1 0 0 0
 	offset	15 32
 	frame	data/chars/Gon/153.gif
 	offset	13 38
@@ -300,6 +323,7 @@ anim	rise
 	frame	data/chars/Gon/81.gif
 		
 anim	select
+	sound	data/chars/gon/gon_0-19.wav
 	loop	1 4
 	delay	7
 	offset	14 42
@@ -332,13 +356,15 @@ anim	special
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
-	delay	30
+	delay	40
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
+	sound	data/chars/gon/gon_0-9.wav
 	offset	13 37
 	frame	data/chars/Gon/155.gif
 	offset	13 38
 	frame	data/chars/Gon/156.gif
+	sound	data/chars/gon/gon_0-10.wav
 	offset	13 37
 	frame	data/chars/Gon/157.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
@@ -346,6 +372,7 @@ anim	special
 	delay	5
 	@cmd	spawnbind "g_knife" -3 16 0
 	offset	19 41
+	sound	data/chars/gon/gon_0-18.wav
 	frame	data/chars/Gon/167.gif
 	@cmd	dasher 25 0 0
 	offset	18 41
@@ -371,6 +398,7 @@ anim	turn
 	frame	data/chars/Gon/6.gif
 		
 anim	walk
+	bbox	8 2 22 37
 	delay	7
 	loop	1
 	offset	13 37
@@ -379,15 +407,22 @@ anim	walk
 	frame	data/chars/Gon/11.gif
 	offset	14 38
 	frame	data/chars/Gon/12.gif
+	bbox	8 2 13 34
 	offset	5 37
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gon/13.gif
+	bbox	8 2 22 37
 	offset	13 37
 	frame	data/chars/Gon/14.gif
+	bbox	8 2 22 31
 	offset	16 38
 	frame	data/chars/Gon/15.gif
+	bbox	8 2 22 37
 	offset	14 38
 	frame	data/chars/Gon/16.gif
+	bbox	8 2 13 33
 	offset	5 36
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gon/17.gif
 		
 #|edited by openBor Stats v 0.67

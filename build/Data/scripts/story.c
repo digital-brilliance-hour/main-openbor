@@ -345,8 +345,43 @@ void storySystem()
 								playSound("data/sounds/blipmale.wav");
 							}
 						}
-						fin = getindexedvar(story_text) + getchar(current_msg,getindexedvar(story_charlength));
-						if (getindexedvar(story_state)==0){
+						if (getchar(current_msg,getindexedvar(story_charlength)) != "_") {}
+						switch(getchar(current_msg,getindexedvar(story_charlength)))
+						{
+							//left
+							case "<":
+								break;
+							//right
+							case ">":
+								break;
+							//up
+							case "{":
+								break;
+							//down
+							case "}":
+								break;
+							//attack
+							case "|":
+								break;
+							//freespecial
+							case "$":
+								break;
+							//jump
+							case "~":
+								break;
+							//special
+							case "@":
+								break;
+							//freespecial2
+							case "&":
+								break;
+							//freespecial3
+							case "^":
+								break;
+							default:
+								fin = getindexedvar(story_text) + getchar(current_msg,getindexedvar(story_charlength));
+								break;
+						}if (getindexedvar(story_state)==0){
 							settextobj(txt_msg1,frame_x+15,frame_y+20,0,1300,getindexedvar(story_text));
 						}
 						else if (getindexedvar(story_state)==1){

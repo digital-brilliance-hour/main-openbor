@@ -22,6 +22,9 @@ script data/scripts/playerscript.c
 
 
 
+
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -30,7 +33,7 @@ anim	attack1
 	sound	data/chars/Luffy/punch.wav
 	frame	data/chars/Luffy/punch01.gif
 	frame	data/chars/Luffy/punch02.gif
-	attack	64 48 24 9 10
+	attack	64 48 24 9 8 0 0 0 0 0
 	frame	data/chars/Luffy/punch03.gif
 		
 anim	attack2
@@ -41,15 +44,15 @@ anim	attack2
 	sound	data/chars/Luffy/gatl.wav
 	frame	data/chars/Luffy/gatl01.gif
 	frame	data/chars/Luffy/gatl02.gif
-	blast	70 39 34 42 30
+	blast	70 39 34 42 10 0 0 0 0 0
 	frame	data/chars/Luffy/gatl03.gif
-	blast	70 32 39 48 30
+	blast	70 32 39 48 10 0 0 0 0 0
 	frame	data/chars/Luffy/gatl04.gif
-	blast	70 30 35 50 30
+	blast	70 30 35 50 10 0 0 0 0 0
 	frame	data/chars/Luffy/gatl05.gif
-	blast	70 32 35 48 30
+	blast	70 32 35 48 10 0 0 0 0 0
 	frame	data/chars/Luffy/gatl06.gif
-	blast	70 37 37 43 30
+	blast	70 37 37 43 10 0 0 0 0 0
 	frame	data/chars/Luffy/gatl07.gif
 		
 anim	chargeattack
@@ -61,11 +64,11 @@ anim	chargeattack
 	frame	data/chars/Luffy/raiful01.gif
 	frame	data/chars/Luffy/raiful02.gif
 	@cmd	spawnparent "pdust" -10 0 -20
-	attack	112 37 27 31 50
-	blast	112 37 27 31 50
+	blast	112 37 27 31 12 0 0 0 0 0
+	blast	112 37 27 31 12 0 0 0 0 0
 	frame	data/chars/Luffy/raiful03.gif
-	attack	112 37 28 30 50
-	blast	112 37 28 30 50
+	blast	112 37 28 30 12 0 0 0 0 0
+	blast	112 37 28 30 12 0 0 0 0 0
 	frame	data/chars/Luffy/raiful04.gif
 	frame	data/chars/Luffy/raiful05.gif
 		
@@ -88,45 +91,6 @@ anim	freespecial
 	mponly	1
 	@cmd	enoughmp
 	loop	0
-	offset	44 77
-	weaponframe	20 1
-	delay	10
-	@cmd	spawnbind "zoomin" 0 0 0
-	@cmd	spawnscreen "Screen_wind" 0 0
-	frame	data/chars/Luffy/trans01.gif
-	sound	data/chars/Luffy/intro.wav
-	frame	data/chars/Luffy/trans02.gif
-	frame	data/chars/Luffy/trans03.gif
-	frame	data/chars/Luffy/trans04.gif
-	frame	data/chars/Luffy/trans05.gif
-	frame	data/chars/Luffy/trans06.gif
-	frame	data/chars/Luffy/trans07.gif
-	frame	data/chars/Luffy/trans08.gif
-	frame	data/chars/Luffy/trans09.gif
-	frame	data/chars/Luffy/trans10.gif
-	frame	data/chars/Luffy/trans11.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-	frame	data/chars/Luffy/trans1b.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	sound	data/chars/Luffy/gear.wav
-	offset	64 77
-	delay	6
-	frame	data/chars/Luffy/trans12.gif
-	frame	data/chars/Luffy/trans13.gif
-	frame	data/chars/Luffy/trans14.gif
-	frame	data/chars/Luffy/trans15.gif
-	offset	38 77
-	frame	data/chars/Luffy/trans16.gif
-	frame	data/chars/Luffy/trans16.gif
-		
-anim	freespecial2
-	energycost	0
-	mponly	1
-	@cmd	enoughmp
-	loop	0
 	offset	82 78
 	sound	data/chars/Luffy/bazka.wav
 	delay	30
@@ -145,16 +109,69 @@ anim	freespecial2
 	frame	data/chars/Luffy/bazka06.gif
 	frame	data/chars/Luffy/bazka07.gif
 	@cmd	spawnparent "pdust" -10 0 -20
-	attack	95 43 49 18 70
+	attack	95 43 49 18 15 1 0 0 0 0
 	frame	data/chars/Luffy/bazka08.gif
-	attack	98 40 85 24 70
+	attack	98 40 85 24 15 1 0 0 0 0
 	frame	data/chars/Luffy/bazka09.gif
-	attack	97 40 85 24 70
-	blast	97 40 85 24 70
+	blast	97 40 85 24 15 1 0 0 0 0
+	blast	97 40 85 24 15 1 0 0 0 0
 	frame	data/chars/Luffy/bazka10.gif
 	frame	data/chars/Luffy/bazka11.gif
 	frame	data/chars/Luffy/bazka12.gif
 	frame	data/chars/Luffy/bazka13.gif
+		
+anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	loop	0
+	offset	43 78
+	sound	data/chars/Luffy/storm.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/Luffy/storm01.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
+	frame	data/chars/Luffy/storm02.gif
+	frame	data/chars/Luffy/storm03.gif
+	frame	data/chars/Luffy/storm04.gif
+	sound	data/chars/Luffy/wave.wav
+	frame	data/chars/Luffy/storm05.gif
+	offset	51 78
+	frame	data/chars/Luffy/storm06.gif
+	offset	51 78
+	frame	data/chars/Luffy/storm07.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	blast	59 9 41 88 15 0 0 0 0 0
+	blast	59 9 41 88 15 0 0 0 0 0
+	@cmd	dasher 5 0 0
+	frame	data/chars/Luffy/storm08.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Luffy/storm09.gif
+	blast	59 2 42 97 15 0 0 0 0 0
+	blast	59 2 42 97 15 0 0 0 0 0
+	frame	data/chars/Luffy/storm10.gif
+	blast	0 0 0 0 0 0 0 0 0 0
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Luffy/storm11.gif
+	blast	59 9 41 88 15 0 0 0 0 0
+	blast	59 9 41 88 15 0 0 0 0 0
+	frame	data/chars/Luffy/storm08.gif
+	blast	0 0 0 0 0 0 0 0 0 0
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Luffy/storm09.gif
+	blast	59 2 42 97 15 1 0 0 0 0
+	blast	59 2 42 97 15 1 0 0 0 0
+	frame	data/chars/Luffy/storm10.gif
+	@cmd	stop
+	blast	0 0 0 0 0 0 0 0 0 0
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Luffy/storm11.gif
 		
 anim	get
 	loop	0
@@ -198,7 +215,7 @@ anim	grabattack2
 	frame	data/chars/Luffy/gatta2-6.gif
 	frame	data/chars/Luffy/gatta2-7.gif
 	sound	data/chars/Luffy/finish.wav
-	blast	47 38 41 24 11
+	blast	47 38 41 24 8 0 0 0 0 0
 	frame	data/chars/Luffy/gatta2-8.gif
 	frame	data/chars/Luffy/gatta2-9.gif
 		
@@ -241,23 +258,23 @@ anim	jumpattack
 	frame	data/chars/Luffy/jatk03.gif
 	frame	data/chars/Luffy/jatk02.gif
 	frame	data/chars/Luffy/jatk03.gif
-	blast	47 38 41 24 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk04.gif
-	blast	77 48 35 28 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk05.gif
-	blast	47 38 41 24 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk04.gif
-	blast	77 48 35 28 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk05.gif
-	blast	47 38 41 24 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk06.gif
-	blast	47 38 41 24 11
-	attack	0 0 98 96 30
+	attack	0 0 98 96 10 0 0 0 0 0
+	attack	0 0 98 96 10 0 0 0 0 0
 	frame	data/chars/Luffy/jatk07.gif
 		
 anim	land
@@ -324,53 +341,39 @@ anim	special
 	mponly	1
 	@cmd	enoughmp
 	loop	0
-	offset	43 78
-	sound	data/chars/Luffy/storm.wav
-	delay	30
+	offset	44 77
+	weaponframe	20 1
+	delay	10
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
-	frame	data/chars/Luffy/storm01.gif
+	frame	data/chars/Luffy/trans01.gif
+	sound	data/chars/Luffy/intro.wav
+	frame	data/chars/Luffy/trans02.gif
+	frame	data/chars/Luffy/trans03.gif
+	frame	data/chars/Luffy/trans04.gif
+	frame	data/chars/Luffy/trans05.gif
+	frame	data/chars/Luffy/trans06.gif
+	frame	data/chars/Luffy/trans07.gif
+	frame	data/chars/Luffy/trans08.gif
+	frame	data/chars/Luffy/trans09.gif
+	frame	data/chars/Luffy/trans10.gif
+	frame	data/chars/Luffy/trans11.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
+	frame	data/chars/Luffy/trans1b.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
-	delay	7
-	frame	data/chars/Luffy/storm02.gif
-	frame	data/chars/Luffy/storm03.gif
-	frame	data/chars/Luffy/storm04.gif
-	sound	data/chars/Luffy/wave.wav
-	frame	data/chars/Luffy/storm05.gif
-	offset	51 78
-	frame	data/chars/Luffy/storm06.gif
-	offset	51 78
-	frame	data/chars/Luffy/storm07.gif
-	@cmd	spawnparent "pdust" -10 0 -20
-	attack	59 9 41 88 60
-	blast	59 9 41 88 60
-	@cmd	dasher 5 0 0
-	frame	data/chars/Luffy/storm08.gif
-	attack	59 8 42 97 60
-	blast	59 8 42 97 60
-	frame	data/chars/Luffy/storm09.gif
-	attack	59 2 42 97 60
-	blast	59 2 42 97 60
-	frame	data/chars/Luffy/storm10.gif
-	attack	61 5 40 96 60
-	blast	61 5 40 96 60
-	frame	data/chars/Luffy/storm11.gif
-	attack	59 9 41 88 60
-	blast	59 9 41 88 60
-	frame	data/chars/Luffy/storm08.gif
-	attack	59 8 42 97 60
-	blast	59 8 42 97 60
-	frame	data/chars/Luffy/storm09.gif
-	attack	59 2 42 97 60
-	blast	59 2 42 97 60
-	frame	data/chars/Luffy/storm10.gif
-	@cmd	stop
-	attack	61 5 40 96 60
-	blast	61 5 40 96 60
-	frame	data/chars/Luffy/storm11.gif
+	sound	data/chars/Luffy/gear.wav
+	offset	64 77
+	delay	6
+	frame	data/chars/Luffy/trans12.gif
+	frame	data/chars/Luffy/trans13.gif
+	frame	data/chars/Luffy/trans14.gif
+	frame	data/chars/Luffy/trans15.gif
+	offset	38 77
+	frame	data/chars/Luffy/trans16.gif
+	frame	data/chars/Luffy/trans16.gif
 		
 anim	throw
 	loop	0
@@ -417,10 +420,12 @@ anim	walk
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
+	sound	data/sounds/walk.wav
 	frame	data/chars/Luffy/walk01.gif
 	frame	data/chars/Luffy/walk02.gif
 	frame	data/chars/Luffy/walk03.gif
 	frame	data/chars/Luffy/walk04.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Luffy/walk05.gif
 	frame	data/chars/Luffy/walk06.gif
 	frame	data/chars/Luffy/walk07.gif

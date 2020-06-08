@@ -10,6 +10,9 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 script data/scripts/playerscript.c
+icon	data/chars/lee/0.gif
+
+
 
 
 
@@ -127,6 +130,7 @@ anim	faint
 		
 anim	fall
 	delay	7
+	sound	data/chars/lee/lee_5000-3.wav
 	offset	30 35
 	frame	data/chars/Lee/134.gif
 	offset	19 24
@@ -152,6 +156,7 @@ anim	freespecial
 	fastattack	1
 	mponly	1
 	delay	30
+	sound	data/chars/lee/lee_0-2.wav
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
@@ -173,50 +178,59 @@ anim	freespecial
 	@cmd	spawnparent "pdust" -10 0 -20
 	attack	14 1 69 30 13 0 1 0 0 0
 	offset	12 42
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/117.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	13 42
 	frame	data/chars/Lee/118.gif
 	attack	14 1 69 30 13 0 0 1 0 0
 	offset	12 41
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/119.gif
 	offset	14 43
 	frame	data/chars/Lee/120.gif
 	attack	14 1 69 30 13 0 1 0 0 0
 	offset	12 42
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/117.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	13 42
 	frame	data/chars/Lee/118.gif
 	attack	14 1 69 30 13 0 0 1 0 0
 	offset	12 41
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/119.gif
 	offset	14 43
 	frame	data/chars/Lee/120.gif
 	attack	14 1 69 30 13 0 1 0 0 0
 	offset	12 42
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/117.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	13 42
 	frame	data/chars/Lee/118.gif
 	attack	14 1 69 30 13 0 0 1 0 0
 	offset	12 41
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/119.gif
 	offset	14 43
 	frame	data/chars/Lee/120.gif
 	attack	14 1 69 30 13 0 1 0 0 0
 	offset	12 42
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/117.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	13 42
 	frame	data/chars/Lee/118.gif
 	attack	14 1 69 30 13 0 0 1 0 0
 	offset	12 41
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/119.gif
 	offset	14 43
 	frame	data/chars/Lee/120.gif
 	attack	14 1 69 30 13 0 1 0 0 0
 	offset	12 42
+	sound	data/chars/lee/lee_5-6.wav
 	frame	data/chars/Lee/117.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	13 42
@@ -244,11 +258,11 @@ anim	idle
 	frame	data/chars/Lee/6.gif
 		
 anim	jump
+	@cmd	spawnparent "pdust" -10 0 -20
 	bbox	1 38 28 -38
 	delay	7
 	offset	14 36
 	frame	data/chars/Lee/17.gif
-	@cmd	spawnparent "pdust" -10 0 -20
 	bbox	1 50 25 -50
 	offset	12 49
 	frame	data/chars/Lee/18.gif
@@ -340,6 +354,7 @@ anim	special
 	attack	0 0 0 0 0 0 0 0 0 0
 	fastattack	1
 	delay	30
+	sound	data/chars/lee/lee_0-4.wav
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
@@ -362,6 +377,7 @@ anim	special
 	frame	data/chars/Lee/177.gif
 	offset	12 42
 	frame	data/chars/Lee/174.gif
+	sound	data/chars/lee/lee_5-6.wav
 	attack	22 3 54 30 14 0 1 0 0 0
 	offset	12 42
 	frame	data/chars/Lee/175.gif
@@ -372,6 +388,7 @@ anim	special
 	attack	24 1 47 42 15 0 1 0 0 0
 	offset	24 41
 	frame	data/chars/Lee/180.gif
+	sound	data/chars/lee/lee_5-4.wav
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	21 50
 	frame	data/chars/Lee/179.gif
@@ -404,6 +421,7 @@ anim	walk
 	frame	data/chars/Lee/11.gif
 	bbox	1 43 41 -42
 	offset	18 40
+	sound	data/sounds/walk.wav
 	frame	data/chars/Lee/12.gif
 	bbox	0 41 36 -40
 	offset	10 40
@@ -413,6 +431,7 @@ anim	walk
 	frame	data/chars/Lee/14.gif
 	bbox	42 1 -43 43
 	offset	15 41
+	sound	data/sounds/walk.wav
 	frame	data/chars/Lee/15.gif
 	bbox	1 41 36 -41
 	offset	8 41

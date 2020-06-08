@@ -1,4 +1,4 @@
-music		data/music/remix.bor
+music		data/music/tutorial.ogg 6189037
 background	data/bgs/tutorial/back3.gif  1  1  0  -45  0  0  5000  5000  0  0
 panel	      data/bgs/tutorial/test1.png
 order           a
@@ -16,12 +16,11 @@ spawn ready
 	at 0
 
 
-
+spawn Story
+alias tutorial1
+at 0
 
 #--group1-----
-spawn hp_hundred
-coords	200 180
-at	0
 
 spawn	dog
 coords	350 180
@@ -74,9 +73,23 @@ spawn xp_twohundred
 coords 490 200
 at 730
 
+spawn hp_hundred
+coords	470 180
+at	730
+
+spawn Story
+alias tutorial2
+at 740
+
 wait 740
 
+spawn Story
+alias tutorial3
+at 1240
+
 spawn Gunner
+health 200
+aggression 15
 boss 1
 alias	This_is_the_Boss
 coords	450 185
