@@ -116,6 +116,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
@@ -787,6 +788,10 @@ anim	land
 	bbox	5 4 43 94
 	offset	29 85
 	frame	data/chars/yusuke/60.gif
+		
+anim	spawn
+	offset	65 120
+	frame	data/chars/yusuke/idle1.gif
 		
 anim	pain
 	loop	0

@@ -16,6 +16,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -164,6 +165,10 @@ anim	land
 	offset	58 116
 	delay	10
 	frame	data/chars/Ichigo/Duck1.gif
+		
+anim	spawn
+	offset	58 116
+	frame	data/chars/Ichigo/Idle1.gif
 		
 anim	pain
 	loop	0

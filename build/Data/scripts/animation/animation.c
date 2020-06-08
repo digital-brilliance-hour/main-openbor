@@ -1469,8 +1469,8 @@ void enoughmp() {
 	changeentityproperty(self,"energycost",0, 1, 0);
 	int specialcount = numspecials(self);
 	if(mp < maxmp) {
-		anichange(openborconstant("ANI_ATTACK1"));
-		setidle(self, openborconstant("ANI_ATTACK1"));
+		anichange(openborconstant("ANI_SPAWN"));
+		setidle(self, openborconstant("ANI_SPAWN"));
 		mpcost(0);
 	}
 	else {
@@ -1496,8 +1496,8 @@ void enoughmp() {
 		}
 		else 
 		{
-			anichange(openborconstant("ANI_ATTACK1"));
-			setidle(self, openborconstant("ANI_ATTACK1"));
+			anichange(openborconstant("ANI_SPAWN"));
+			setidle(self, openborconstant("ANI_SPAWN"));
 			mpcost(0);
 		}
 	}

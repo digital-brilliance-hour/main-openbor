@@ -25,6 +25,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -283,6 +284,10 @@ anim	land
 	delay	25
 	frame	data/chars/Luffy/rise07.gif
 	frame	data/chars/Luffy/rise08.gif
+		
+anim	spawn
+	offset	38 77
+	frame	data/chars/Luffy/stand01.GIF
 		
 anim	pain
 	loop	0
