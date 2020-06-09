@@ -13,6 +13,7 @@ iconposition 50 360
 
 
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -59,6 +60,7 @@ anim	fall
 	frame	data/chars/Kenpachi/Fall1.gif
 		
 anim	freespecial
+	mponly	1
 	loop	0
 	delay	15
 	offset	58 116
@@ -110,6 +112,7 @@ anim	rise
 	frame	data/chars/Kenpachi/Duck1.gif
 		
 anim	special
+	mponly	1
 	loop	0
 	delay	15
 	offset	117 224

@@ -1,0 +1,254 @@
+name Crono
+type Player
+health 820
+speed 15
+icon data/chars/crono/icon.gif
+
+
+anim idle
+
+       loop 1
+       delay 16
+       offset 13 29
+       bbox 1 1 23 26
+       frame data/chars/crono/stance1.gif
+       offset 12 28
+       bbox 0 0 23 28
+       frame data/chars/crono/stance2.gif
+       delay 20
+       offset 14 29
+       bbox 1 1 23 26
+       frame data/chars/crono/stance3.gif
+
+anim walk
+
+       loop 1
+       delay 10
+       offset 7 33
+       bbox 0 0 13 32
+       frame data/chars/crono/run1.gif
+       bbox 1 2 11 30
+       frame data/chars/crono/run2.gif
+       offset 10 30
+       bbox 2 0 21 30
+       frame data/chars/crono/run3.gif
+       offset 7 33
+       bbox 1 0 13 32
+       frame data/chars/crono/run4.gif
+       bbox 1 0 11 32
+       frame data/chars/crono/run5.gif
+       offset 10 30
+       bbox 1 2 21 27
+       frame data/chars/crono/run6.gif
+
+anim get
+
+       delay 16
+       offset 7 26
+       frame data/chars/crono/get1.gif
+       frame data/chars/crono/get2.gif
+
+anim jump
+
+       delay 10
+       offset 30 30
+       bbox 16 0 23 34
+       frame data/chars/crono/jump.gif
+
+anim jumpattack
+
+       delay 12
+       offset 37 37
+       bbox 23 10 27 21
+       sound data/chars/crono/slice.wav
+       attack 32 1 37 47 12 1 0 0 0
+       frame data/chars/crono/ja1.gif
+       bbox 23 7 30 25
+       attack 31 2 33 50 12 1 0 0 0
+       frame data/chars/crono/ja2.gif
+
+anim jumpattack2
+
+       delay 12
+       offset 13 30
+       sound data/chars/crono/tom.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/jd1.gif
+       offset 8 31
+       attack 1 1 18 44 12 1 0 0 0
+       frame data/chars/crono/jd2.gif
+
+anim attack1
+
+       delay 10
+       offset 7 47
+       sound data/chars/crono/fast.wav
+       move 2
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/a1.gif
+       offset 8 29
+       attack 3 2 27 28 10 0 0 0 0
+       frame data/chars/crono/a2.gif
+       bbox 4 3 10 22
+       attack 4 1 25 27 10 0 0 0 0
+       frame data/chars/crono/a3.gif
+
+anim attack2
+
+       delay 10
+       offset 10 35
+       sound data/chars/crono/2nd.wav
+       move 2
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/a4.gif
+       offset 18 36
+       attack 2 0 20 36 10 0 0 0 0
+       frame data/chars/crono/a5.gif
+
+anim attack3
+
+       delay 10
+       offset 8 31
+       sound data/chars/crono/slice.wav
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/a6.gif
+       delay 20
+       offset 60 37
+       bbox 46 6 26 33
+       attack 31 1 66 37 10 1 0 0 0
+       frame data/chars/crono/a7.gif
+
+anim grab
+
+       delay 100
+       offset 0 29
+       bbox 0 29 14 30
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/grab.gif
+
+anim throw
+
+       delay 12
+       offset 13 38
+       frame data/chars/crono/t1.gif
+       frame data/chars/crono/t2.gif
+       frame data/chars/crono/t1.gif
+
+anim pain
+
+       delay 8
+       offset 10 31
+       bbox 1 1 17 29
+       frame data/chars/crono/hit.gif
+       delay 36
+       bbox 1 0 15 29
+       frame data/chars/crono/fall.gif
+       delay 6
+       bbox 2 1 14 29
+       frame data/chars/crono/hit.gif
+
+anim fall
+
+       delay 20
+       offset 10 31
+       attack 1 1 19 28 17 1 0 0 0
+       frame data/chars/crono/fall.gif
+       offset 16 13
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/lie.gif
+
+anim rise
+
+       delay 10
+       offset 7 26
+       frame data/chars/crono/get1.gif
+       frame data/chars/crono/get2.gif
+
+anim special
+
+       delay 12
+       offset 13 38
+       frame data/chars/crono/t1.gif
+       frame data/chars/crono/t2.gif
+       attack 2 0 22 37 33 1 0 0 0
+       frame data/chars/crono/t1.gif
+       offset 53 499
+       sound data/chars/crono/light.wav
+       attack 2 0 103 363 19 1 0 0 0
+       frame data/chars/crono/l1.gif
+       attack 1 0 88 363 19 1 0 0 0
+       frame data/chars/crono/l2.gif
+       attack 53 499 92 500 19 1 0 0 0
+       frame data/chars/crono/l3.gif
+       frame data/chars/crono/l4.gif
+       attack 53 499 109 502 19 1 0 0 0
+       frame data/chars/crono/l5.gif
+       delay 10
+       offset 7 26
+       frame data/chars/crono/get1.gif
+       frame data/chars/crono/get2.gif
+
+anim freespecial
+
+       delay 4
+       offset 13 39
+       bbox 11 27 13 28
+       sound data/chars/crono/woosh.wav
+       move 20
+       attack 13 30 30 31 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 2 1 17 28
+       attack 1 1 29 30 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 6 3 15 25
+       attack 1 1 30 28 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 2 1 19 25
+       attack 2 1 20 28 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 7 3 10 23
+       attack 2 1 25 28 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 6 1 14 28
+       attack 1 0 24 28 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       bbox 2 1 25 25
+       attack 3 0 25 30 15 1 0 0 0
+       frame data/chars/crono/kick.gif
+       delay 10
+       offset 7 26
+       bbox 1 0 14 23
+       attack 17 3 16 22 15 1 0 0 0
+       frame data/chars/crono/get1.gif
+       bbox 5 0 8 24
+       attack 11 0 20 25 15 1 0 0 0
+       frame data/chars/crono/get2.gif
+
+anim grabattack
+
+       delay 6
+       offset 0 47
+       bbox 2 19 10 27
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/ga1.gif
+       bbox 7 45 13 32
+       attack 1 36 32 36 7 1 0 0 0
+       frame data/chars/crono/ga2.gif
+       offset 21 27
+       frame data/chars/crono/ga3.gif
+       sound data/chars/crono/cronocut.wav
+       attack 41 60 31 41 10 1 0 0 0
+       frame data/chars/crono/ga4.gif
+       offset 1 36
+       attack 21 28 40 29 7 1 0 0 0
+       frame data/chars/crono/ga5.gif
+       attack 1 36 32 36 7 1 0 0 0
+       frame data/chars/crono/ga6.gif
+
+anim land
+
+       delay 25
+       offset 6 20
+       bbox 2 2 20 23
+       attack 0 0 0 0 0 0 0 0 0
+       frame data/chars/crono/get1.gif

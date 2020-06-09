@@ -15,6 +15,14 @@ com      a4 freespecial3
 script data/scripts/playerscript.c
 icon	data/chars/gon/0.gif
 
+parrow  data/chars/misc/picon/1picon.gif	-18 -100
+parrow2  data/chars/misc/picon/2picon.gif	-18 -100
+parrow3  data/chars/misc/picon/3picon.gif	-18 -100
+parrow4  data/chars/misc/picon/4picon.gif	-18 -100
+makeinv  4
+
+
+
 
 
 
@@ -110,6 +118,7 @@ anim	attack3
 	frame	data/chars/Gon/149.gif
 		
 anim	faint
+	bbox	9 4 24 42
 	delay	7
 	offset	20 43
 	frame	data/chars/Gon/107.gif

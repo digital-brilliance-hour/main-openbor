@@ -38,6 +38,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	delay	7
 	offset	15 35
@@ -71,6 +72,7 @@ anim	attack3
 	frame	data/chars/Shrek/68.gif
 		
 anim	faint
+	bbox	5 5 30 35
 	delay	7
 	offset	21 37
 	frame	data/chars/Shrek/202.gif

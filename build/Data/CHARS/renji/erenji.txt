@@ -7,6 +7,7 @@ cantgrab 1
 animationscript data/scripts/spawns.c
 takedamagescript data/scripts/enemyhit.c
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -56,6 +57,7 @@ anim	fall
 	frame	data/chars/Renji/Fall1.gif
 		
 anim	freespecial
+	mponly	1
 	loop	0
 	delay	10
 	offset	58 116
