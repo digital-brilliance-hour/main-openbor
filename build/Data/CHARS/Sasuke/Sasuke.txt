@@ -19,6 +19,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -233,9 +234,11 @@ anim	run
 	bbox	41 64 34 52
 	frame	data/chars/Sasuke/run00.gif
 	frame	data/chars/Sasuke/run01.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Sasuke/run02.gif
 	frame	data/chars/Sasuke/run03.gif
 	frame	data/chars/Sasuke/run04.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Sasuke/run05.gif
 		
 anim	runattack
@@ -340,9 +343,11 @@ anim	walk
 	delay	15
 	offset	60 116
 	bbox	41 64 34 52
+	sound	data/sounds/walk.wav
 	frame	data/chars/Sasuke/walk00.gif
 	frame	data/chars/Sasuke/walk01.gif
 	frame	data/chars/Sasuke/walk02.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Sasuke/walk03.gif
 	frame	data/chars/Sasuke/walk04.gif
 	frame	data/chars/Sasuke/walk05.gif

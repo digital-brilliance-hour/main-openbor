@@ -14,6 +14,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -240,10 +241,12 @@ anim	walk
 	bbox	50 65 20 40
 	frame	data/chars/Kenpachi/walk1.gif
 	frame	data/chars/Kenpachi/walk2.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Kenpachi/walk3.gif
 	frame	data/chars/Kenpachi/walk4.gif
 	frame	data/chars/Kenpachi/walk5.gif
 	frame	data/chars/Kenpachi/walk6.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Kenpachi/walk7.gif
 	frame	data/chars/Kenpachi/walk8.gif
 		

@@ -10,6 +10,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	delay	5
 	offset	33 43
@@ -212,12 +213,14 @@ anim	walk
 	frame	data/chars/samjack/walk2.gif
 	offset	26 33
 	bbox	13 2 28 30
+	sound	data/sounds/walk.wav
 	frame	data/chars/samjack/walk3.gif
 	offset	27 31
 	bbox	21 5 21 29
 	frame	data/chars/samjack/walk4.gif
 	offset	26 33
 	bbox	23 6 14 30
+	sound	data/sounds/walk.wav
 	frame	data/chars/samjack/walk3.gif
 		
 #|edited by openBor Stats v 0.67
