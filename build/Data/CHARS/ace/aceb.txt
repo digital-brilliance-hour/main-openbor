@@ -22,6 +22,7 @@ takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
 
 
+
 anim	attack1
 	loop	0
 	delay	3
@@ -258,11 +259,6 @@ anim	land
 	frame	data/chars/Ace/land02.gif
 	frame	data/chars/Ace/land03.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	38 77
@@ -304,6 +300,11 @@ anim	run
 	frame	data/chars/Ace/run06.gif
 	frame	data/chars/Ace/run07.gif
 	frame	data/chars/Ace/run08.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	special2
 	loop	0

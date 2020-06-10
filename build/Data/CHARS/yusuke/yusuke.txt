@@ -20,10 +20,10 @@ palette  data/chars/yusuke/yusuke2.gif  # cor 1 #
 remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt2.gif
 remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt3.gif
 
-com 		a4 freespecial4
-com 		a3 freespecial3
-com 		a2 freespecial2
-com             D U A freespecial5
+com 		a4 freespecial3
+com 		a3 freespecial2
+com 		a2 freespecial
+com             D U A freespecial4
 
 
 
@@ -32,6 +32,12 @@ alternatepal data/chars/yusuke/alt2.gif
 alternatepal data/chars/yusuke/alt3.gif
 animationscript data/scripts/spawns.c
 script data/scripts/playerscript.c
+
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
 
 
 
@@ -789,10 +795,6 @@ anim	land
 	offset	29 85
 	frame	data/chars/yusuke/60.gif
 		
-anim	spawn
-	offset	65 120
-	frame	data/chars/yusuke/idle1.gif
-		
 anim	pain
 	loop	0
 	offset	63 120
@@ -1024,6 +1026,10 @@ anim	spain
 	bbox	0 0 0 0
 	offset	66 128
 	frame	data/chars/yusuke/shock2.gif
+		
+anim	spawn
+	offset	65 120
+	frame	data/chars/yusuke/idle1.gif
 		
 anim	special
 	energycost	0

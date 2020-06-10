@@ -13,6 +13,12 @@ com      a3 freespecial2
 com      a4 freespecial3
 icon	data/chars/deku/0.gif
 
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
 
 
 
@@ -296,10 +302,6 @@ anim	jumpattack2
 	offset	15 42
 	frame	data/chars/Deku/112.gif
 		
-anim	spawn
-	offset	15 45
-	frame	data/chars/Deku/3.gif
-		
 anim	pain
 	delay	7
 	offset	16 46
@@ -326,6 +328,10 @@ anim	run
 	frame	data/chars/Deku/18.gif
 	offset	23 41
 	frame	data/chars/Deku/19.gif
+		
+anim	spawn
+	offset	15 45
+	frame	data/chars/Deku/3.gif
 		
 anim	special
 	energycost	0
