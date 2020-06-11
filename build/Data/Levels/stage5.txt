@@ -11,6 +11,10 @@ spawn4  210 80
 
 wall    -300 272 0 0 450 450 150 250
 
+spawn ready
+	coords 240 136
+	at 0
+
 #--Group 1--#
 
 spawn ninja__
@@ -55,6 +59,11 @@ at 1280
 spawn chaos
 coords 480 272
 at 1880
+
+spawn	warning
+	coords 240 136
+flip    1
+at      1849
 
 spawn HisokaE
 alias Hisoka
