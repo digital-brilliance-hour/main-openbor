@@ -46,6 +46,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	delay	7
 	offset	13 44
@@ -313,6 +314,11 @@ anim	jumpattack2
 	attack	25 13 31 38 10 1 1 0 0 0
 	offset	19 38
 	frame	data/chars/Lee/94.gif
+		
+anim	spawn
+	bbox	0 1 35 48
+	offset	17 45
+	frame	data/chars/Lee/3.gif
 		
 anim	pain
 	delay	7

@@ -1,8 +1,58 @@
 music data/music/remix.bor
-panel data/bgs/stage-6/n.gif none none
+background data/bgs/stage-10/back.gif
+frontpanel data/bgs/stage-10/f01.gif
+panel data/bgs/stage-10/n01.gif none none
 order a
 
-spawn	Lobster
-alias	This_is_the_Boss
-coords	200 220
-at	0
+spawn claw
+coords	480 250
+at 300
+
+spawn kagome
+coords	480 190
+at 300
+
+spawn sogeking
+coords	-30 250
+at 800
+
+spawn ninja__
+coords	-30 190
+at 800
+
+spawn aceb
+alias Ace
+health 600
+coords	480 220
+at	800
+
+wait
+at 800
+
+spawn kagome
+coords	-30 180
+at 1600
+
+spawn sogeking
+coords	-30 250
+at 1600
+
+spawn crate
+item hp_hundred
+coords	480 180
+at 1600
+
+spawn crate
+item mp_hundred
+coords	480 250
+at 1600
+
+spawn shanks
+alias Shanks
+boss 1
+health 800
+coords	480 220
+at	1970
+
+wait
+at 1970

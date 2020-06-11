@@ -26,6 +26,8 @@ makeinv 4
 
 
 
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -296,6 +298,11 @@ anim	runattack
 	frame	data/chars/Naruto/kick03.gif
 	delay	30
 	frame	data/chars/Naruto/kick04.gif
+		
+anim	spawn
+	offset	60 116
+	bbox	43 65 25 51
+	frame	data/chars/Naruto/idle00.gif
 		
 anim	special
 	energycost	0

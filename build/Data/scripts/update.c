@@ -1,5 +1,23 @@
 #include "data/scripts/traileru.c"
 
+#define   MODEL_NAME 2
+#define   SELECTABLE 4
+#define   MAXENTCOUNT openborvariant("models_cached")
+#define obv openborvariant
+void setValid(void name,void isselectable)
+{
+   int i;
+   for(i=0;i<MAXENTCOUNT;i++)
+   {
+      if(getmodelproperty(i,MODEL_NAME)==name)
+      {
+         log(getmodelproperty(i,MODEL_NAME));
+         changemodelproperty(i,SELECTABLE,isselectable);
+         return;
+      }
+   }
+}
+
 int getScoreLevel(int lvl){
  if (lvl%2 == 1){
  return lvl * (lvl/2) * 1000;
@@ -9,21 +27,16 @@ int getScoreLevel(int lvl){
 }
 
 void main()
-{// Update script for locking certain player
+{
+    void scene=openborvariant("current_scene");
+      setValid("Broly",0);
+    if(scene == "data/scenes/ending.txt")
+    {
+      setValid("Broly",1);
+    }
+    // Update script for locking certain player
     if(openborvariant("in_selectscreen")==1){
-      int models_cached = openborvariant("models_cached");
-      void set = openborvariant("current_set");
-      int i = 0;
-      int C = getglobalvar("Load");
-      int D = getglobalvar("Load2");
-
-      for( i = 0; i < models_cached; ++i ) {
-        char model = getmodelproperty(i,2);
-
-        if( model == "Royce" && C != 39 && set == 1) {
-            changemodelproperty(i,4,0);
-        }
-      }
+      //setValid("Broly",1);
 
       int S = getglobalvar("SelectMusic");
       if(S != 1) {
@@ -40,6 +53,10 @@ void main()
         setglobalvar("SelectMusic", 0);
     }
     if (openborvariant("in_titlescreen")) {
+      loadgamefile();
+      log(getsaveinfo(0, "name"));
+      //log(getsaveinfo(1, "health"));
+      log(getsaveinfo(0, "times_completed"));
       int T = getglobalvar("TitleMusic");
       if(T != 1) {
         void bg = "data/music/menu.ogg";
@@ -102,6 +119,20 @@ void main()
       show_enemy_health();
     }
   afterImg();
+}
+
+void player_used(char playername)
+{
+       void p;
+       int i, hp, mp, lv;
+       for(i=0; i<4; i++){
+         p = getplayerproperty(i, "name");
+         if(p){
+            if(p == playername) {
+              return 1;
+            }
+         }
+       }
 }
 
 void oncreate()

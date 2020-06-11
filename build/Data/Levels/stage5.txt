@@ -1,8 +1,64 @@
 music data/music/remix.bor
-panel data/bgs/stage-5/n.gif none none
+background data/bgs/stage-9/back.gif
+#frontpanel data/bgs/stage-9/f01.gif
+panel data/bgs/stage-9/n01.gif none none
 order a
 
-spawn KPiccoloE
-alias	This_is_the_Boss
-coords	200 220
-at	0
+spawn1  180 80
+spawn2  190 90
+spawn3  200 70
+spawn4  210 80
+
+wall    -300 272 0 0 450 450 150 250
+
+#--Group 1--#
+
+spawn ninja__
+health 200
+coords 480 182
+at 180
+
+spawn quincy
+health 200
+coords 480 252
+at 180
+
+wait
+at 180
+
+#--Group 2--#
+
+spawn ninja_
+coords 480 182
+at 760
+
+spawn pirate
+coords 480 252
+at 760
+
+spawn claw
+coords -30 182
+at 760
+
+spawn pirate
+coords -30 272
+at 760
+
+spawn buggy
+health  500
+coords 480 204
+at 1280
+
+wait
+at 1280
+
+spawn chaos
+coords 480 272
+at 1880
+
+spawn HisokaE
+alias Hisoka
+health 700
+boss 1
+coords	480 220
+at	1850

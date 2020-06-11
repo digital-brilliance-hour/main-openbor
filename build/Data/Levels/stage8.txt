@@ -1,5 +1,14 @@
 music data/music/remix.bor
 background data/bgs/stage-8/back.gif
-frontpanel data/bgs/stage-8/f01.gif
-panel data/bgs/stage-8/n01.gif none none
+#frontpanel data/bgs/stage-8/f01.gif
+panel data/bgs/stage-8/back.gif none none
 order a
+
+spawn brolye
+boss 1
+health 1500
+coords 480 200
+at 0
+
+wait
+at 0
