@@ -15,6 +15,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	10
@@ -235,11 +236,13 @@ anim	walk
 	offset	58 116
 	bbox	50 65 20 40
 	frame	data/chars/Ikkaku/walk1.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ikkaku/walk2.gif
 	frame	data/chars/Ikkaku/walk3.gif
 	frame	data/chars/Ikkaku/walk4.gif
 	frame	data/chars/Ikkaku/walk5.gif
 	frame	data/chars/Ikkaku/walk6.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ikkaku/walk7.gif
 	frame	data/chars/Ikkaku/walk8.gif
 		

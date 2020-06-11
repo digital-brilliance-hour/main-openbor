@@ -14,6 +14,7 @@ script data/scripts/playerscript.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -235,10 +236,12 @@ anim	walk
 	offset	58 116
 	bbox	40 70 36 46
 	frame	data/chars/Toshiro/walk1.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Toshiro/walk2.gif
 	frame	data/chars/Toshiro/walk3.gif
 	frame	data/chars/Toshiro/walk4.gif
 	frame	data/chars/Toshiro/walk5.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Toshiro/walk6.gif
 	frame	data/chars/Toshiro/walk7.gif
 	frame	data/chars/Toshiro/walk8.gif
