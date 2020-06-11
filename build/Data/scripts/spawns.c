@@ -101,3 +101,24 @@ void damage_all_enemies(int damage, int drop, int stay, void atk_type)
 	}	
 }
 
+void damage_all_players(int damage, int drop, int stay, void atk_type)
+{
+ 	int  iEntity;
+ 	void p;
+    void vEntity;
+    void self        = getlocalvar("self");
+    int  iMax        = openborvariant("ent_max");
+    int Def;
+               
+    for(iEntity=0; iEntity<4; iEntity++)
+    {       
+        p = getplayerproperty(iEntity, "entity");
+        if(p){
+	        if("Travel"!=getentityproperty(p, "model")) {	
+				damageentity(p,self,damage,drop,openborconstant(atk_type));
+				changeentityproperty(p, "staydown", "riseattack", stay);	
+	        }
+        }
+	}	
+}
+

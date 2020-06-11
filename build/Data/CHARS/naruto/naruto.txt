@@ -14,6 +14,14 @@ com  a2  freespecial
 animationscript data/scripts/spawns.c
 script data/scripts/playerscript.c
 
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
+
+
 
 
 
@@ -290,6 +298,11 @@ anim	runattack
 	frame	data/chars/Naruto/kick03.gif
 	delay	30
 	frame	data/chars/Naruto/kick04.gif
+		
+anim	spawn
+	offset	60 116
+	bbox	43 65 25 51
+	frame	data/chars/Naruto/idle00.gif
 		
 anim	special
 	energycost	0

@@ -17,6 +17,12 @@ weapons gear2 Luffy
 weaploss 3
 script data/scripts/playerscript.c
 
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
 
 
 
@@ -285,10 +291,6 @@ anim	land
 	frame	data/chars/Luffy/rise07.gif
 	frame	data/chars/Luffy/rise08.gif
 		
-anim	spawn
-	offset	38 77
-	frame	data/chars/Luffy/stand01.GIF
-		
 anim	pain
 	loop	0
 	offset	38 77
@@ -340,6 +342,10 @@ anim	select
 	frame	data/chars/Luffy/slt08.GIF
 	frame	data/chars/Luffy/slt09.GIF
 	frame	data/chars/Luffy/slt10.GIF
+		
+anim	spawn
+	offset	38 77
+	frame	data/chars/Luffy/stand01.GIF
 		
 anim	special
 	energycost	0

@@ -12,6 +12,13 @@ com      a4 freespecial3
 script data/scripts/playerscript.c
 icon	data/chars/lee/0.gif
 
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
+
 
 
 
@@ -307,6 +314,11 @@ anim	jumpattack2
 	attack	25 13 31 38 10 1 1 0 0 0
 	offset	19 38
 	frame	data/chars/Lee/94.gif
+		
+anim	spawn
+	bbox	0 1 35 48
+	offset	17 45
+	frame	data/chars/Lee/3.gif
 		
 anim	pain
 	delay	7

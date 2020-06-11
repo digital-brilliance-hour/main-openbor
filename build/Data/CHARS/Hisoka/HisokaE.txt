@@ -6,7 +6,7 @@ icon	data/chars/hisoka/0.gif
 shadow	3 
 aimove chase
 escapehits 1
-candamage player npc obsacle
+candamage player npc obsacle enemy
 hostile npc player
 running 18 4 2 1 0
 animationscript data/scripts/spawns.c
@@ -14,7 +14,7 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 load h_card
-lifebarstatus 220 5 0 1 0 0 0 0 0
+lifebarstatus 380 5 0 1 0 0 0 0 0
 lifeposition 50 200
 nameposition 60 190
 iconposition 50 360

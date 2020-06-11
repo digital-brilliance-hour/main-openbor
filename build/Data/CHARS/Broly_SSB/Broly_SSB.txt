@@ -16,6 +16,15 @@ com      a3 freespecial2
 com      a4 freespecial3
 icon	data/chars/broly_ssb/0.gif
 
+parrow data/chars/misc/picon/1picon.gif -18 -130
+parrow2 data/chars/misc/picon/2picon.gif -18 -130
+parrow3 data/chars/misc/picon/3picon.gif -18 -130
+parrow4 data/chars/misc/picon/4picon.gif -18 -130
+makeinv 4
+
+
+
+
 
 
 
@@ -79,7 +88,7 @@ anim	attack3
 	frame	data/chars/Broly_SSB/68.gif
 	offset	26 56
 	frame	data/chars/Broly_SSB/69.gif
-	attack	51 5 71 65 8 0 1 0 20 0
+	attack	51 5 71 65 15 1 1 0 20 0
 	offset	22 68
 	frame	data/chars/Broly_SSB/70.gif
 		
@@ -265,28 +274,28 @@ anim	freespecial3
 	frame	data/chars/Broly_SSB/179.gif
 		
 anim	idle
-	bbox	0 92 47 -91
+	bbox	4 2 41 87
 	delay	8
-	loop	1 3
+	loop	0
 	offset	24 88
 	frame	data/chars/Broly_SSB/3.gif
-	bbox	0 93 50 -92
+	bbox	4 2 41 87
 	offset	25 89
 	frame	data/chars/Broly_SSB/4.gif
-	bbox	1 93 52 -92
+	bbox	7 2 41 87
 	offset	27 89
 	frame	data/chars/Broly_SSB/5.gif
 	delay	25
-	bbox	1 92 57 -90
+	bbox	7 2 41 87
 	offset	29 88
 	frame	data/chars/Broly_SSB/6.gif
-	bbox	0 93 58 -92
+	bbox	7 2 41 87
 	offset	29 89
 	frame	data/chars/Broly_SSB/7.gif
-	bbox	1 94 56 -92
+	bbox	7 2 41 87
 	offset	29 90
 	frame	data/chars/Broly_SSB/8.gif
-	bbox	1 93 57 -93
+	bbox	7 2 41 87
 	offset	29 89
 	frame	data/chars/Broly_SSB/9.gif
 		

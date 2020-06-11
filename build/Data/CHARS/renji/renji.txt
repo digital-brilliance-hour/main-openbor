@@ -13,6 +13,13 @@ com      a3 freespecial2
 com      a4 freespecial3
 script data/scripts/playerscript.c
 
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
+
 
 
 
@@ -173,6 +180,11 @@ anim	land
 	offset	58 116
 	delay	10
 	frame	data/chars/Renji/Duck1.gif
+		
+anim	spawn
+	offset	58 116
+	bbox	45 70 30 46
+	frame	data/chars/Renji/Idle1.gif
 		
 anim	pain
 	loop	0
