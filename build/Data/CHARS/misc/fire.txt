@@ -1,10 +1,14 @@
 name	fire
-health	0
-type	item
+type	panel
+subject_to_minz 0
+subject_to_maxz 0
+speed -15
+noquake 1 1
 shadow	0
-icon	data/chars/misc/apple.gif
+facing   1
+setlayer 99999
 
-anim idle
+anim	follow1
 	loop	1
 	delay	5
 	offset	2000 70
@@ -14,5 +18,22 @@ anim idle
 	frame	data/chars/misc/4.gif
 	frame	data/chars/misc/5.gif
 	frame	data/chars/misc/6.gif
-
-
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	2000 70
+	frame	data/chars/misc/1.gif
+	frame	data/chars/misc/2.gif
+	frame	data/chars/misc/3.gif
+	frame	data/chars/misc/4.gif
+	frame	data/chars/misc/5.gif
+	frame	data/chars/misc/6.gif
+		
+anim	spawn
+	delay	5
+	offset	2000 70
+	frame	data/chars/misc/1.gif
+		
+#|edited by openBor Stats v 0.67
+		

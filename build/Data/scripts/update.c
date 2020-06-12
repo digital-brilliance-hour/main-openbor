@@ -26,10 +26,32 @@ int getScoreLevel(int lvl){
  }
 }
 
+void lockBehavior(char player) {
+  int count = 0; 
+  int i;
+  //set your array
+  void items = array(6);
+  set(items,0,"Hiei");
+  set(items,1,"Sasuke");
+  set(items,2,"Renji");
+  set(items,3,"Toshiro");
+  set(items,4,"Kenpachi");
+  for(i=0; i<size(items); i++) 
+  {
+    
+  }
+   
+}
+
 void main()
 {
     void scene=openborvariant("current_scene");
-      setValid("Broly",0);
+    
+    loadgamefile();
+    if(getsaveinfo(0, "times_completed") > 1) 
+    {
+      
+    }
     if(scene == "data/scenes/ending.txt")
     {
       setValid("Broly",1);
