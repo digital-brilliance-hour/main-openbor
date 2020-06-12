@@ -1,8 +1,13 @@
-music data/music/remix.bor
+music data/music/stage8.ogg
 background data/bgs/stage-8/back.gif
 #frontpanel data/bgs/stage-8/f01.gif
 panel data/bgs/stage-8/back.gif none none
 order a
+
+spawn	warning
+	coords 240 136
+flip    1
+at      0
 
 spawn brolye
 boss 1

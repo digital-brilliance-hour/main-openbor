@@ -1,4 +1,4 @@
-music data/music/remix.bor
+music data/music/stage5.ogg
 background data/bgs/stage-9/back.gif
 #frontpanel data/bgs/stage-9/f01.gif
 panel data/bgs/stage-9/n01.gif none none
@@ -10,6 +10,10 @@ spawn3  200 70
 spawn4  210 80
 
 wall    -300 272 0 0 450 450 150 250
+
+spawn ready
+	coords 240 136
+	at 0
 
 #--Group 1--#
 
@@ -55,6 +59,11 @@ at 1280
 spawn chaos
 coords 480 272
 at 1880
+
+spawn	warning
+	coords 240 136
+flip    1
+at      1849
 
 spawn HisokaE
 alias Hisoka

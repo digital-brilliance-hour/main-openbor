@@ -1,4 +1,4 @@
-music data/music/remix.bor
+music data/music/stage2.ogg 3351360
 background data/bgs/stage-2/b.gif
 panel data/bgs/stage-2/n.gif none none
 order a
@@ -18,6 +18,11 @@ spawn EIkkaku
 alias Ikkaku
 coords	500 190
 at	0
+
+spawn	warning
+	coords 240 136
+flip    1
+at      399
 
 spawn EKenpachi
 alias Kenpachi

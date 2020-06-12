@@ -1,6 +1,10 @@
-music data/music/remix.bor
+music data/music/stage7.ogg 
 panel data/bgs/stage-5/n.gif none none
 order aaaa
+
+spawn ready
+	coords 240 136
+	at 0
 
 spawn fire
 coords 2000 252
@@ -13,9 +17,15 @@ at 0
 spawn fire
 coords 6138 252
 at 0
+	
+spawn	warning
+	coords 240 136
+flip    1
+at      3799
 
 spawn Ulquiorra
 boss 1
 health 900
 coords 480 190
 at 3800
+

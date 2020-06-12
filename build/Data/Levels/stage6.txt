@@ -1,8 +1,12 @@
-music data/music/remix.bor
+music data/music/stage6.ogg 
 background data/bgs/stage-10/back.gif
 frontpanel data/bgs/stage-10/f01.gif
 panel data/bgs/stage-10/n01.gif none none
 order a
+
+spawn ready
+	coords 240 136
+	at 0
 
 spawn claw
 coords	480 250
@@ -46,6 +50,11 @@ spawn crate
 item mp_hundred
 coords	480 250
 at 1600
+
+spawn	warning
+	coords 240 136
+flip    1
+at      1969
 
 spawn shanks
 alias Shanks

@@ -1,8 +1,16 @@
-music data/music/remix.bor
+music data/music/stage9.ogg
 background data/bgs/stage-4/b.gif
 panel data/bgs/stage-4/n.gif none none
 order aaa
 
+spawn ready
+coords 240 136
+	at 0
+	
+spawn	warning
+	coords 240 136
+flip    1
+at      2668
 
 spawn shreke
 boss 1
