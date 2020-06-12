@@ -2,7 +2,11 @@ music data/music/stage7.ogg
 panel data/bgs/stage-5/n.gif none none
 order aaaa
 
-spawn	Lobster
-alias	This_is_the_Boss
-coords	200 220
-at	0
+spawn ready
+	coords 240 136
+	at 0
+	
+spawn	warning
+	coords 240 136
+flip    1
+at      2919

@@ -2,7 +2,57 @@ music data/music/stage4.ogg 3668549
 panel data/bgs/stage-6/n.gif none none
 order a
 
-spawn	Lobster
+spawn1  20 250
+spawn2  80 250
+spawn3  20 250
+spawn4  80 250
+
+spawn ready
+	coords 240 136
+	at 0
+	
+spawn   blood_h
 alias	This_is_the_Boss
-coords	200 220
+coords	200 250
 at	0
+
+spawn   blood_h
+coords  300 250
+at      0
+
+wait
+at      500
+
+spawn   mihawk
+health  400
+3phealth 800
+4phealth 1200
+coords  300 250
+at      700
+
+spawn   claw
+coords  300 250
+at      600
+
+wait
+at      1250
+
+spawn	warning
+	coords 240 136
+flip    1
+at      1349
+
+spawn   hiei_e
+health  600
+3phealth  1200
+4phealth  1800
+coords  300 250
+at      1350
+
+spawn   ninja_
+coords  250 260
+at      1300
+
+spawn   ninja__
+coords  200 240
+at      1300
