@@ -1,4 +1,4 @@
-music data/music/stage7.ogg 
+music data/music/stage7.ogg 341115
 panel data/bgs/stage-5/n.gif none none
 order aaaa
 
@@ -10,13 +10,141 @@ spawn fire
 coords 2000 252
 at 0
 
-spawn fire
-coords 4069 252
-at 0
+wait
+at 200
+
+group 4 4
+at 200
+
+spawn facce
+coords 480 130
+at 200
+
+spawn facce
+coords 480 250
+at 200
+
+spawn boar
+coords -30 130
+at 200
+
+spawn boar
+coords -30 250
+at 200
+
+spawn facce
+coords 10 130
+at 200
+
+spawn facce
+coords 10 250
+at 200
+
+spawn boar
+coords 470 130
+at 200
+
+spawn boar
+coords 470 250
+at 200
+
+spawn crate
+item hp_hundred
+coords 490 150
+at 210
+
+spawn crate
+item mp_hundred
+coords 490 250
+at 210
+
+2pspawn crate
+item hp_hundred
+coords 500 170
+at 210
+
+2pspawn crate
+item mp_hundred
+coords 500 230
+at 210
+
+3pspawn crate
+item hp_hundred
+coords 520 150
+at 210
+
+3pspawn crate
+item mp_hundred
+coords 520 250
+at 210
+
+4pspawn crate
+item hp_hundred
+coords 540 170
+at 210
+
+4pspawn crate
+item mp_hundred
+coords 540 230
+at 210
+
+wait
+at 1000
+
+group 4 4
+at 1000
+
+spawn facce
+coords 480 130
+at 1000
+
+spawn facce
+coords 480 250
+at 1000
+
+spawn wolf
+coords -30 130
+at 1000
+
+spawn wolf
+coords -30 250
+at 1000
+
+spawn kizaru
+health 1000
+2phealth 1200
+3phealth 1400
+4phealth 1600
+coords 470 177
+at 1000
+
+spawn facce
+coords 10 130
+at 1000
+
+spawn facce
+coords 10 250
+at 1000
+
+spawn wolf
+coords 470 130
+at 1000
+
+spawn wolf
+coords 470 250
+at 1000
+
+spawn quincy
+coords -30 250
+at 1000
 
 spawn fire
-coords 6138 252
-at 0
+coords 2000 252
+at 2069
+
+spawn fire
+coords 2000 252
+at 4138
 	
 spawn	warning
 	coords 240 136

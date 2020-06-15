@@ -1,0 +1,17 @@
+music		data/music/memoryloss-story-stage3.bor
+
+background	data/story/bgs/iceentrance.gif
+panel		data/story/bgs/iceentrance.gif none none
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+updatedscript	data/levels/scenes/intro/stage3.c
+
+spawn	stop
+coords	1 1
+at	0

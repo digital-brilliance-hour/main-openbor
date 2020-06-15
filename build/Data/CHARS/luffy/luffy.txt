@@ -32,6 +32,10 @@ makeinv 4
 
 
 
+
+
+
+
 anim	attack1
 	loop	0
 	delay	7
@@ -45,21 +49,21 @@ anim	attack1
 		
 anim	attack2
 	loop	0
+	fastattack	1
 	offset	38 77
-	bbox	78 48 12 17
 	delay	10
 	sound	data/chars/Luffy/gatl.wav
 	frame	data/chars/Luffy/gatl01.gif
 	frame	data/chars/Luffy/gatl02.gif
-	blast	70 39 34 42 10 0 0 0 0 0
+	attack	70 39 34 42 6 0 0 0 0 0
 	frame	data/chars/Luffy/gatl03.gif
-	blast	70 32 39 48 10 0 0 0 0 0
+	blast	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Luffy/gatl04.gif
-	blast	70 30 35 50 10 0 0 0 0 0
+	attack	70 30 35 50 6 0 0 0 0 0
 	frame	data/chars/Luffy/gatl05.gif
-	blast	70 32 35 48 10 0 0 0 0 0
+	blast	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Luffy/gatl06.gif
-	blast	70 37 37 43 10 0 0 0 0 0
+	attack	70 37 37 43 8 1 0 0 0 0
 	frame	data/chars/Luffy/gatl07.gif
 		
 anim	chargeattack
@@ -317,14 +321,16 @@ anim	run
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
-	running	25 4 3 1 1
+	running	18 4 3 1 1
 	frame	data/chars/Luffy/dash01.gif
 	frame	data/chars/Luffy/dash02.gif
 	frame	data/chars/Luffy/dash03.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Luffy/dash04.gif
 	frame	data/chars/Luffy/dash05.gif
 	frame	data/chars/Luffy/dash06.gif
 	frame	data/chars/Luffy/dash07.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Luffy/dash08.gif
 		
 anim	select

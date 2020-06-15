@@ -91,7 +91,7 @@ void mp_item(void player, int val)
 	int maxmp = getentityproperty(player, "maxmp");
 	int mmp = getentityproperty(player, "mp");
 	int mp = val * maxmp / 100;
-	log(val);
+	//log(val);
 	int total = mp + mmp;
 	changeentityproperty(player,"mp",total);
 	

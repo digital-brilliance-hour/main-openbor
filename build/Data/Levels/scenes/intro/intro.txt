@@ -1,0 +1,17 @@
+music		data/music/memoryloss-story.bor
+
+background	data/bgs/intros/intro-background1.png
+panel		data/bgs/intros/intro-background1.png none none
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+updatedscript	data/levels/scenes/intro/intro.c
+
+spawn	stop
+coords	1 1
+at	0

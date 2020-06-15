@@ -46,6 +46,10 @@ makeinv 4
 
 
 
+
+
+
+
 anim	attack1
 	fastattack	1
 	delay	7
@@ -119,6 +123,7 @@ anim	attack4
 		
 anim	attack5
 	delay	7
+	offset	35 84
 	frame	data/chars/Broly_SSB/123.gif
 	offset	35 84
 	frame	data/chars/Broly_SSB/124.gif
@@ -178,6 +183,7 @@ anim	faint
 		
 anim	fall
 	delay	7
+	sound	data/chars/broly_ssb/broly_5000-3.wav
 	offset	27 77
 	frame	data/chars/Broly_SSB/237.gif
 	offset	43 70
@@ -196,6 +202,7 @@ anim	freespecial
 	mponly	1
 	@cmd	enoughmp
 	delay	7
+	sound	data/chars/broly_ssb/broly_0-15.wav
 	offset	24 84
 	frame	data/chars/Broly_SSB/142.gif
 	offset	31 86
@@ -224,6 +231,7 @@ anim	freespecial2
 	offset	28 76
 	frame	data/chars/Broly_SSB/146.gif
 	delay	10
+	sound	data/chars/broly_ssb/broly_0-16.wav
 	offset	32 72
 	frame	data/chars/Broly_SSB/147.gif
 	delay	6
@@ -258,6 +266,7 @@ anim	freespecial3
 	@cmd	spawnparent "pdust" -10 0 -20
 	@cmd	spawnparent "b_explosion" -20 0 95
 	offset	26 88
+	sound	data/chars/broly_ssb/broly_11-0.wav
 	frame	data/chars/Broly_SSB/174.gif
 	offset	35 85
 	frame	data/chars/Broly_SSB/175.gif
@@ -343,6 +352,7 @@ anim	land
 		
 anim	pain
 	delay	7
+	sound	data/chars/broly_ssb/broly_5000-2.wav
 	offset	27 77
 	frame	data/chars/Broly_SSB/216.gif
 	offset	26 84
@@ -418,6 +428,8 @@ anim	walk
 	bbox	1 95 37 -93
 	delay	20
 	offset	22 90
+	@cmd	spawn01 "quake" 0 0 4
+	sound	data/chars/Broly_SSB/broly_4-3.wav
 	frame	data/chars/Broly_SSB/14.gif
 	bbox	1 95 31 -94
 	offset	17 92
@@ -427,6 +439,8 @@ anim	walk
 	frame	data/chars/Broly_SSB/16.gif
 	bbox	1 94 45 -92
 	offset	25 90
+	@cmd	spawn01 "quake" 0 0 4
+	sound	data/chars/Broly_SSB/broly_4-3.wav
 	frame	data/chars/Broly_SSB/17.gif
 	bbox	1 96 34 -95
 	offset	18 92

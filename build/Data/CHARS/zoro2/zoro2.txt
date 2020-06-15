@@ -20,172 +20,113 @@ jumpmove 3 3
 load break
 weaploss 3
 
-anim idle
-	loop	1
-	delay	15
-	offset	38 78
-	bbox	39 36 12 25
-	
-	frame	data/chars/Zoro2/stand01.GIF
-	frame	data/chars/Zoro2/stand02.GIF
-	frame	data/chars/Zoro2/stand03.GIF
-	frame	data/chars/Zoro2/stand04.GIF
-	frame	data/chars/Zoro2/stand05.GIF
-        frame	data/chars/Zoro2/stand04.GIF
-	frame	data/chars/Zoro2/stand03.GIF
-	frame	data/chars/Zoro2/stand02.GIF	
 
-anim walk
-
-	loop	1
-	delay	7
-	offset	48 78
-	bbox	36 46 13 20	
-	frame	data/chars/Zoro2/walk01.gif
-	frame	data/chars/Zoro2/walk02.gif
-	frame	data/chars/Zoro2/walk03.gif
-	frame	data/chars/Zoro2/walk04.gif
-	frame	data/chars/Zoro2/walk05.gif
-	frame	data/chars/Zoro2/walk06.gif
-	frame	data/chars/Zoro2/walk07.gif
-	frame	data/chars/Zoro2/walk08.gif
-
-anim run
-
-	loop	1
-	delay	7
-	offset	48 78
-	bbox	36 46 13 20
-        running 50 4 3 1 1 	
-	frame	data/chars/Zoro2/run01.gif
-	frame	data/chars/Zoro2/run02.gif
-	frame	data/chars/Zoro2/run03.gif
-	frame	data/chars/Zoro2/run04.gif
-	frame	data/chars/Zoro2/run05.gif
-	frame	data/chars/Zoro2/run06.gif
-	frame	data/chars/Zoro2/run07.gif
-	frame	data/chars/Zoro2/run08.gif
-
-anim get
-	loop	0
-	delay	7
-	offset	38 78
-        sound   data/chars/Zoro2/get.wav
-	frame	data/chars/Zoro2/get01.gif
-        frame	data/chars/Zoro2/get02.gif
-	frame	data/chars/Zoro2/get03.gif
-
-
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	4
 	bbox	36 46 13 20
 	offset	38 78
-        sound   data/chars/Zoro2/punch.wav
+	sound	data/chars/Zoro2/punch.wav
 	frame	data/chars/Zoro2/punch01.gif
-        frame	data/chars/Zoro2/punch02.gif
+	frame	data/chars/Zoro2/punch02.gif
 	frame	data/chars/Zoro2/punch03.gif
-        attack	34 55 71 2 10
+	attack	34 55 71 2 10
 	frame	data/chars/Zoro2/punch04.gif
-        attack	29 46 77 16 10
+	attack	29 46 77 16 10
 	frame	data/chars/Zoro2/punch05.gif
-        attack	27 43 77 27 10
+	attack	27 43 77 27 10
 	frame	data/chars/Zoro2/punch06.gif
 	frame	data/chars/Zoro2/punch07.gif
-
-anim attack2
+		
+anim	attack2
 	loop	0
 	offset	38 78
 	bbox	40 47 12 15
 	delay	5
-        sound   data/chars/Zoro2/oni.wav
+	sound	data/chars/Zoro2/oni.wav
 	frame	data/chars/Zoro2/oni01.gif
 	frame	data/chars/Zoro2/oni02.gif
 	frame	data/chars/Zoro2/oni03.gif
 	frame	data/chars/Zoro2/oni04.gif
 	frame	data/chars/Zoro2/oni05.gif
 	frame	data/chars/Zoro2/oni06.gif
-        blast   29 28 75 52 50
+	blast	29 28 75 52 50
 	frame	data/chars/Zoro2/oni07.gif
-        blast   29 28 75 52 50
+	blast	29 28 75 52 50
 	frame	data/chars/Zoro2/oni08.gif
-        blast   29 28 75 52 50
+	blast	29 28 75 52 50
 	frame	data/chars/Zoro2/oni09.gif
-        delay   5
+	delay	5
 	frame	data/chars/Zoro2/oni10.gif
 	frame	data/chars/Zoro2/oni11.gif
 	frame	data/chars/Zoro2/oni12.gif
 	frame	data/chars/Zoro2/oni13.gif
 	frame	data/chars/Zoro2/oni14.gif
-        offset  40 78
+	offset	40 78
 	frame	data/chars/Zoro2/oni15.gif
 	frame	data/chars/Zoro2/oni16.gif
 	frame	data/chars/Zoro2/oni17.gif
 	frame	data/chars/Zoro2/oni18.gif
-
-anim runattack
+		
+anim	block
 	loop	0
-	delay	4
-	bbox	31 43 19 27
 	offset	38 78
-        sound   data/chars/Zoro2/ushi.wav
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi01.gif
-        move    10
-        blast	56 37 46 38 30
-        frame	data/chars/Zoro2/ushi02.gif
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi03.gif
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi04.gif
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi05.gif
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi06.gif
-        move    10
-        blast	56 37 46 38 30
-	frame	data/chars/Zoro2/ushi07.gif
-
-
-anim special2
+	delay	7
+	frame	data/chars/Zoro2/block01.gif
+	frame	data/chars/Zoro2/block02.gif
+	frame	data/chars/Zoro2/block03.gif
+	frame	data/chars/Zoro2/block04.gif
+	frame	data/chars/Zoro2/block05.gif
+		
+anim	chargeattack
 	loop	0
-        mpcost  20
-	mponly  1
 	offset	38 78
-	delay	10
-        throwframe 4 28
-        sound   data/chars/Zoro2/maki.wav
-	frame	data/chars/Zoro2/maki01.gif
-	frame	data/chars/Zoro2/maki02.gif
-	frame	data/chars/Zoro2/maki03.gif
-	frame	data/chars/Zoro2/maki04.gif
-	frame	data/chars/Zoro2/maki05.gif
-	frame	data/chars/Zoro2/maki06.gif
-
-anim freespecial
-        mponly  1
-        mpcost  80
+	bbox	40 47 12 15
+	delay	5
+	frame	data/chars/Zoro2/oni01.gif
+	frame	data/chars/Zoro2/oni02.gif
+	frame	data/chars/Zoro2/oni03.gif
+	frame	data/chars/Zoro2/oni04.gif
+	frame	data/chars/Zoro2/oni05.gif
+	frame	data/chars/Zoro2/oni06.gif
+	blast	29 28 75 52 50
+	frame	data/chars/Zoro2/oni07.gif
+	blast	29 28 75 52 50
+	frame	data/chars/Zoro2/oni08.gif
+	blast	29 28 75 52 50
+	frame	data/chars/Zoro2/oni09.gif
+	delay	5
+	frame	data/chars/Zoro2/oni10.gif
+	frame	data/chars/Zoro2/oni11.gif
+	frame	data/chars/Zoro2/oni12.gif
+	frame	data/chars/Zoro2/oni13.gif
+	frame	data/chars/Zoro2/oni14.gif
+	offset	40 78
+	frame	data/chars/Zoro2/oni15.gif
+	frame	data/chars/Zoro2/oni16.gif
+	frame	data/chars/Zoro2/oni17.gif
+	frame	data/chars/Zoro2/oni18.gif
+		
+anim	fall
+		
+anim	freespecial
+	mponly	1
+	mpcost	80
 	loop	0
 	delay	4
 	offset	38 78
-        sound   data/chars/Zoro2/kacha.wav
+	sound	data/chars/Zoro2/kacha.wav
 	frame	data/chars/Zoro2/ohgi01.gif
 	frame	data/chars/Zoro2/ohgi02.gif
 	frame	data/chars/Zoro2/ohgi03.gif
-        sound   data/chars/Zoro2/ougi.wav
+	sound	data/chars/Zoro2/ougi.wav
 	frame	data/chars/Zoro2/ohgi04.gif
 	frame	data/chars/Zoro2/ohgi04.gif
 	frame	data/chars/Zoro2/ohgi04.gif
 	frame	data/chars/Zoro2/ohgi04.gif
 	frame	data/chars/Zoro2/ohgi05.gif
-        sound   data/chars/Zoro2/fon.wav
-        delay   5
+	sound	data/chars/Zoro2/fon.wav
+	delay	5
 	offset	38 77
 	attack	49 23 27 48 30
 	frame	data/chars/Zoro2/ohgi06.gif
@@ -211,7 +152,7 @@ anim freespecial
 	frame	data/chars/Zoro2/ohgi10.gif
 	attack	49 23 27 48 30
 	frame	data/chars/Zoro2/ohgi11.gif
-        sound   data/chars/Zoro2/fon.wav
+	sound	data/chars/Zoro2/fon.wav
 	attack	49 23 27 48 30
 	frame	data/chars/Zoro2/ohgi06.gif
 	attack	49 23 27 48 30
@@ -238,44 +179,43 @@ anim freespecial
 	frame	data/chars/Zoro2/ohgi11.gif
 	frame	data/chars/Zoro2/ohgi12.gif
 	frame	data/chars/Zoro2/ohgi13.gif
-        sound   data/chars/Zoro2/sekai.wav
-        offset  62 75
-        move    40 
-        hitflash break
+	sound	data/chars/Zoro2/sekai.wav
+	offset	62 75
+	move	40
+	hitflash	break
 	blast	73 31 29 49 70 0 0 0 80
-       	frame	data/chars/Zoro2/ohgi14.gif
-        move    40 
+	frame	data/chars/Zoro2/ohgi14.gif
+	move	40
 	blast	73 31 29 49 70 0 0 0 80
 	frame	data/chars/Zoro2/ohgi15.gif
-        move    40 
+	move	40
 	blast	73 31 29 49 70 0 0 0 80
 	frame	data/chars/Zoro2/ohgi16.gif
-        move    40 
+	move	40
 	blast	73 31 29 49 70 0 0 0 80
-       	frame	data/chars/Zoro2/ohgi17.gif
-        move    40 
+	frame	data/chars/Zoro2/ohgi17.gif
+	move	40
 	blast	73 31 29 49 70 0 0 0 80
 	frame	data/chars/Zoro2/ohgi18.gif
-        move    40 
+	move	40
 	blast	73 31 29 49 70 0 0 0 80
 	frame	data/chars/Zoro2/ohgi19.gif
-        move    30 
+	move	30
 	blast	73 31 29 49 70 0 0 0 80
-        frame	data/chars/Zoro2/ohgi20.gif
-        frame	data/chars/Zoro2/ohgi21.gif
-        frame	data/chars/Zoro2/ohgi22.gif
-        frame	data/chars/Zoro2/ohgi23.gif
-        frame	data/chars/Zoro2/ohgi24.gif
-        frame	data/chars/Zoro2/ohgi25.gif
-        frame	data/chars/Zoro2/ohgi26.gif
-        frame	data/chars/Zoro2/ohgi27.gif
-        frame	data/chars/Zoro2/ohgi28.gif
-        frame	data/chars/Zoro2/ohgi29.gif
-
-
-anim freespecial2
-        mponly  1
-        mpcost  100
+	frame	data/chars/Zoro2/ohgi20.gif
+	frame	data/chars/Zoro2/ohgi21.gif
+	frame	data/chars/Zoro2/ohgi22.gif
+	frame	data/chars/Zoro2/ohgi23.gif
+	frame	data/chars/Zoro2/ohgi24.gif
+	frame	data/chars/Zoro2/ohgi25.gif
+	frame	data/chars/Zoro2/ohgi26.gif
+	frame	data/chars/Zoro2/ohgi27.gif
+	frame	data/chars/Zoro2/ohgi28.gif
+	frame	data/chars/Zoro2/ohgi29.gif
+		
+anim	freespecial2
+	mponly	1
+	mpcost	100
 	loop	0
 	delay	10
 	offset	38 78
@@ -287,7 +227,7 @@ anim freespecial2
 	frame	data/chars/Zoro2/kyu06.gif
 	delay	4
 	offset	97 100
-        sound   data/chars/Zoro2/asura.wav
+	sound	data/chars/Zoro2/asura.wav
 	frame	data/chars/Zoro2/ash01.gif
 	frame	data/chars/Zoro2/ash02.gif
 	frame	data/chars/Zoro2/ash03.gif
@@ -312,53 +252,75 @@ anim freespecial2
 	frame	data/chars/Zoro2/ash04.gif
 	frame	data/chars/Zoro2/ash05.gif
 	frame	data/chars/Zoro2/ashra2.gif
-        offset  58 78 
-        move    20
-        hitflash break
-        sound   data/chars/Zoro2/uoo.wav
-        blast   1 29 130 51 200 0 0 0 80
- 	frame	data/chars/Zoro2/gin01.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
+	offset	58 78
+	move	20
+	hitflash	break
+	sound	data/chars/Zoro2/uoo.wav
+	blast	1 29 130 51 200 0 0 0 80
+	frame	data/chars/Zoro2/gin01.gif
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
 	frame	data/chars/Zoro2/gin02.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
 	frame	data/chars/Zoro2/gin03.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
-        frame	data/chars/Zoro2/gin04.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
-	frame	data/chars/Zoro2/gin05.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
 	frame	data/chars/Zoro2/gin04.gif
-        move    20
-        blast   1 29 130 51 200 0 0 0 80
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
+	frame	data/chars/Zoro2/gin05.gif
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
+	frame	data/chars/Zoro2/gin04.gif
+	move	20
+	blast	1 29 130 51 200 0 0 0 80
 	frame	data/chars/Zoro2/gin03.gif
-        move    0
-        blast   1 29 130 51 200 0 0 0 80
+	move	0
+	blast	1 29 130 51 200 0 0 0 80
 	frame	data/chars/Zoro2/gin02.gif
 	frame	data/chars/Zoro2/gin01.gif
-        delay   10
-        sound   data/chars/Zoro2/don.wav
+	delay	10
+	sound	data/chars/Zoro2/don.wav
 	frame	data/chars/Zoro2/gin06.gif
 	frame	data/chars/Zoro2/gin08.gif
 	delay	15
 	offset	97 100
-        sound   data/chars/Zoro2/ichi.wav
+	sound	data/chars/Zoro2/ichi.wav
 	frame	data/chars/Zoro2/ashra.gif
 	frame	data/chars/Zoro2/ashra2.gif
 	frame	data/chars/Zoro2/ashra2.gif
 	frame	data/chars/Zoro2/ashra2.gif
 	frame	data/chars/Zoro2/ashra2.gif
-
-anim jump
+		
+anim	get
+	loop	0
+	delay	7
+	offset	38 78
+	sound	data/chars/Zoro2/get.wav
+	frame	data/chars/Zoro2/get01.gif
+	frame	data/chars/Zoro2/get02.gif
+	frame	data/chars/Zoro2/get03.gif
+		
+anim	idle
+	loop	1
+	delay	15
+	offset	38 78
+	bbox	39 36 12 25
+	frame	data/chars/Zoro2/stand01.GIF
+	frame	data/chars/Zoro2/stand02.GIF
+	frame	data/chars/Zoro2/stand03.GIF
+	frame	data/chars/Zoro2/stand04.GIF
+	frame	data/chars/Zoro2/stand05.GIF
+	frame	data/chars/Zoro2/stand04.GIF
+	frame	data/chars/Zoro2/stand03.GIF
+	frame	data/chars/Zoro2/stand02.GIF
+		
+anim	jump
 	loop	0
 	offset	38 78
 	delay	10
 	bbox	37 46 16 17
-	
 	frame	data/chars/Zoro2/jump01.gif
 	frame	data/chars/Zoro2/jump02.gif
 	frame	data/chars/Zoro2/jump03.gif
@@ -367,113 +329,133 @@ anim jump
 	frame	data/chars/Zoro2/jump06.gif
 	frame	data/chars/Zoro2/jump07.gif
 	frame	data/chars/Zoro2/jump08.gif
-
-anim jumpattack
+		
+anim	jumpattack
 	loop	0
 	delay	5
 	bbox	35 39 17 24
 	offset	41 78
-        sound   data/chars/Zoro2/jatk.wav	
+	sound	data/chars/Zoro2/jatk.wav
 	frame	data/chars/Zoro2/jatk01.gif
 	frame	data/chars/Zoro2/jatk02.gif
-        frame	data/chars/Zoro2/jatk03.gif
-        blast  47 38 41 24 11
-        attack	10 10 77 66 50
+	frame	data/chars/Zoro2/jatk03.gif
+	blast	47 38 41 24 11
+	attack	10 10 77 66 50
 	frame	data/chars/Zoro2/jatk04.gif
-	blast  77 48 35 28 11
-        attack	10 10 77 66 50
+	blast	77 48 35 28 11
+	attack	10 10 77 66 50
 	frame	data/chars/Zoro2/jatk05.gif
-        blast  47 38 41 24 11
-        attack	10 10 77 66 50
+	blast	47 38 41 24 11
+	attack	10 10 77 66 50
 	frame	data/chars/Zoro2/jatk06.gif
-        blast  47 38 41 24 11
-        attack	10 10 77 66 50
+	blast	47 38 41 24 11
+	attack	10 10 77 66 50
 	frame	data/chars/Zoro2/jatk07.gif
 	frame	data/chars/Zoro2/jatk08.gif
-
-
-anim pain
+		
+anim	land
+	loop	0
+	offset	38 78
+	delay	25
+	frame	data/chars/Luffy/rise07.gif
+	frame	data/chars/Luffy/rise08.gif
+		
+anim	pain
 	loop	0
 	offset	38 78
 	bbox	36 46 13 20
 	delay	20
-        sound   data/chars/Zoro2/pain.wav
+	sound	data/chars/Zoro2/pain.wav
 	frame	data/chars/Zoro2/pain.gif
-
-
-anim fall
-	anim fall
-	loop	0
-	offset	38 78
-	delay	20
-        sound   data/chars/Zoro2/down.wav	
-        frame	data/chars/Zoro2/fall01.gif
-        move    -4	
-        frame	data/chars/Zoro2/fall02.gif
-        frame	data/chars/Zoro2/fall03.gif
-        frame	data/chars/Zoro2/fall04.gif
-	frame	data/chars/Zoro2/fall05.gif
-	frame	data/chars/Zoro2/fall06.gif
-
-
-anim rise
+		
+anim	rise
 	loop	0
 	offset	38 78
 	delay	5
-        
-        frame	data/chars/Zoro2/rise01.gif
-        frame	data/chars/Zoro2/rise02.gif
-        frame	data/chars/Zoro2/rise03.gif
-        frame	data/chars/Zoro2/rise04.gif
-        frame	data/chars/Zoro2/rise05.gif
-        frame	data/chars/Zoro2/rise06.gif
+	frame	data/chars/Zoro2/rise01.gif
+	frame	data/chars/Zoro2/rise02.gif
+	frame	data/chars/Zoro2/rise03.gif
+	frame	data/chars/Zoro2/rise04.gif
+	frame	data/chars/Zoro2/rise05.gif
+	frame	data/chars/Zoro2/rise06.gif
 	frame	data/chars/Zoro2/rise07.gif
 	frame	data/chars/Zoro2/rise08.gif
-
-
-
-anim land
+		
+anim	run
+	loop	1
+	delay	7
+	offset	48 78
+	bbox	24 46 13 20
+	running	50 4 3 1 1
+	frame	data/chars/Zoro2/run01.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Zoro2/run02.gif
+	frame	data/chars/Zoro2/run03.gif
+	frame	data/chars/Zoro2/run04.gif
+	frame	data/chars/Zoro2/run05.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Zoro2/run06.gif
+	frame	data/chars/Zoro2/run07.gif
+	frame	data/chars/Zoro2/run08.gif
+		
+anim	runattack
 	loop	0
+	delay	4
+	bbox	31 43 19 27
 	offset	38 78
-	delay	25
-        frame	data/chars/Luffy/rise07.gif
-        frame	data/chars/Luffy/rise08.gif
-
-anim block
+	sound	data/chars/Zoro2/ushi.wav
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi01.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi02.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi03.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi04.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi05.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi06.gif
+	move	10
+	blast	56 37 46 38 30
+	frame	data/chars/Zoro2/ushi07.gif
+		
+anim	special2
 	loop	0
+	mpcost	20
+	mponly	1
 	offset	38 78
-	delay	7	
-	frame	data/chars/Zoro2/block01.gif
-	frame	data/chars/Zoro2/block02.gif
-	frame	data/chars/Zoro2/block03.gif
-	frame	data/chars/Zoro2/block04.gif
-	frame	data/chars/Zoro2/block05.gif
-
-anim chargeattack
-	loop	0
-	offset	38 78
-	bbox	40 47 12 15
-	delay	5
-	frame	data/chars/Zoro2/oni01.gif
-	frame	data/chars/Zoro2/oni02.gif
-	frame	data/chars/Zoro2/oni03.gif
-	frame	data/chars/Zoro2/oni04.gif
-	frame	data/chars/Zoro2/oni05.gif
-	frame	data/chars/Zoro2/oni06.gif
-        blast   29 28 75 52 50
-	frame	data/chars/Zoro2/oni07.gif
-        blast   29 28 75 52 50
-	frame	data/chars/Zoro2/oni08.gif
-        blast   29 28 75 52 50
-	frame	data/chars/Zoro2/oni09.gif
-        delay   5
-	frame	data/chars/Zoro2/oni10.gif
-	frame	data/chars/Zoro2/oni11.gif
-	frame	data/chars/Zoro2/oni12.gif
-	frame	data/chars/Zoro2/oni13.gif
-	frame	data/chars/Zoro2/oni14.gif
-        offset  40 78
-	frame	data/chars/Zoro2/oni15.gif
-	frame	data/chars/Zoro2/oni16.gif
-	frame	data/chars/Zoro2/oni17.gif
-	frame	data/chars/Zoro2/oni18.gif
+	delay	10
+	throwframe	4 28
+	sound	data/chars/Zoro2/maki.wav
+	frame	data/chars/Zoro2/maki01.gif
+	frame	data/chars/Zoro2/maki02.gif
+	frame	data/chars/Zoro2/maki03.gif
+	frame	data/chars/Zoro2/maki04.gif
+	frame	data/chars/Zoro2/maki05.gif
+	frame	data/chars/Zoro2/maki06.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	48 78
+	bbox	36 46 13 20
+	frame	data/chars/Zoro2/walk01.gif
+	frame	data/chars/Zoro2/walk02.gif
+	frame	data/chars/Zoro2/walk03.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Zoro2/walk04.gif
+	frame	data/chars/Zoro2/walk05.gif
+	frame	data/chars/Zoro2/walk06.gif
+	frame	data/chars/Zoro2/walk07.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Zoro2/walk08.gif
+		
+#|edited by openBor Stats v 0.67
+		

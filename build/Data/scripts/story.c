@@ -143,13 +143,13 @@ void storySystem()
 			//other aspect ratios.
 			if ((ar_x == 4) && (ar_y == 3)){
 				frame_x = res_x*0.02;
-				frame_y = res_y*0.73;
+				frame_y = res_y*0.45;
 				frame_w = res_x - ((frame_x*2)-1);
 				frame_h = 60;
 			}
 			else{ 
 				frame_x = res_x*0.2;
-				frame_y = res_y*0.73;
+				frame_y = res_y*0.45;
 				frame_w = res_x - ((frame_x*2)-1);
 				frame_h = 60;
 			}

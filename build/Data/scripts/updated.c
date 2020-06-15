@@ -67,6 +67,10 @@ void mainLoop()
 			drawstring(124,212,0,"CRxTRDude 2014");
 		}*/
 	}
+  if (SYS_SCENE != NULL()){
+      //log("intro played");
+      setglobalvar("TitleMusic", 0);
+  }
 
   if(openborvariant("in_halloffamescreen")==1){
     //highScoreMusic();

@@ -1,0 +1,17 @@
+music		data/music/memoryloss-story-stage2.bor
+
+background	data/story/bgs/roycedossier.gif
+panel		data/story/bgs/roycedossier.gif none none
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+updatedscript	data/levels/scenes/intro/stage2.c
+
+spawn	stop
+coords	1 1
+at	0
