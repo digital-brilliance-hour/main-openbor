@@ -8,14 +8,18 @@ void main()
 		 p = getplayerproperty(i, "entity");
 		num = i+1;
 		 if(p){
+		 	changeentityproperty(p, "maxhealth", getglobalvar("maxhealth_"+num+"P"));
 			stage = openborvariant("current_stage");
 			if(stage % 3 != 0) {
-				 hp = getglobalvar("saved_health_"+num+"P");
-				if(hp > 0){
+				hp = getglobalvar("saved_health_"+num+"P");
+				if(hp >= 0){
 					maxhp = getentityproperty(p, "maxhealth");
 					newhp = maxhp/2;
 					changeentityproperty(p, "health", hp+newhp);
-				 }
+				}
+	 		}
+	 		else {
+	 			changeentityproperty(p, "health", getglobalvar("maxhealth_"+num+"P"));
 	 		}
 			if("Travel"!=getentityproperty(p, "model")) {
 				if(getglobalvar("maxmp_"+num+"P") == NULL()){

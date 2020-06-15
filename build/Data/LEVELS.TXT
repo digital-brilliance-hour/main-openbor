@@ -43,6 +43,9 @@ p4lifen     458 10	3
 #p2score     310	3 320	5 325 3	0
 p4namej     383	14	383 3	383	3	0
 
+hiscorebg 1
+completebg 1
+scbonuses 1000 500 50 1
 
 timeloc   145 8 21 20 1
 
@@ -61,9 +64,60 @@ e4name 0 400
 
 set	Demo
 typemp 1
+file 	data/levels/scenes/story/story.txt
 file	data/levels/tutorial.txt
 next
 file	data/levels/stage1.txt
+
+set Easy
+typemp 1
+file 	data/levels/scenes/story/story.txt
+file	data/levels/tutorial.txt
+next
+file	data/levels/stage1.txt
+next
+file	data/levels/stage2.txt
+next
+file	data/levels/stage3.txt
+next
+z 222 272 50
+file	data/levels/stage4.txt
+next
+z 160 270 110
+file	data/levels/stage5.txt
+next
+file	data/levels/stage6.txt
+next
+file	data/levels/stage7.txt
+next
+file	data/levels/stage8.txt
+next
+z 120 226 106
+file	data/levels/stage9.txt
+
+set Arcade
+typemp 1
+file 	data/levels/scenes/story/story.txt
+file	data/levels/stage1.txt
+next
+file	data/levels/stage2.txt
+next
+file	data/levels/stage3.txt
+next
+z 222 272 50
+file	data/levels/stage4.txt
+next
+z 160 270 110
+file	data/levels/stage5.txt
+next
+file	data/levels/stage6.txt
+next
+file	data/levels/stage7.txt
+next
+file	data/levels/stage8.txt
+next
+z 120 226 106
+file	data/levels/stage9.txt
 
 
 set	stage1
@@ -82,12 +136,12 @@ file	data/levels/stage3.txt
 
 set	stage4
 typemp 1
-z 222 50 160
+z 222 272 50
 file	data/levels/stage4.txt
 
 set	stage5
 typemp 1
-z 160 270 160
+z 160 270 110
 file	data/levels/stage5.txt
 
 set	stage6
@@ -104,6 +158,7 @@ file	data/levels/stage8.txt
 
 set	stage9
 typemp 1
+z 120 226 106
 file	data/levels/stage9.txt
 
 set	stage10

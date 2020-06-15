@@ -33,14 +33,36 @@ void setLevel()
 void setAbi2(void plIndex, void ent, int delta)
 {
 	int num = plIndex + 1;
-	float off = 0.5*delta;
-	changeentityproperty(ent,"maxhealth",getentityproperty(ent,"maxhealth")+10*delta);
-	changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+50*delta);
-	changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
-	changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
-	changeentityproperty(ent,"offense",openborconstant("ATK_NORMAL"),1.0+off);
-	changeentityproperty(ent,"defense",openborconstant("ATK_NORMAL"),1.0+off);
-	setglobalvar("maxmp_"+num+"P", getentityproperty(ent,"maxmp"));
+	float off = 0.2*delta;
+	if (openborvariant("in_level")) {
+		changeentityproperty(ent,"maxhealth",getentityproperty(ent,"maxhealth")+10*delta);
+		changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+50*delta);
+		changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
+		changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
+		changeentityproperty(ent,"offense",openborconstant("ATK_NORMAL"),getentityproperty(ent,"offense",openborconstant("ATK_NORMAL"))+off);
+		changeentityproperty(ent,"defense",openborconstant("ATK_NORMAL"),getentityproperty(ent,"defense",openborconstant("ATK_NORMAL"))+off);
+		setglobalvar("maxmp_"+num+"P", getentityproperty(ent,"maxmp"));
+		setglobalvar("maxhealth_"+num+"P", getentityproperty(ent,"maxhealth"));
+		setglobalvar("offense_"+num+"P", getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
+		setglobalvar("defense_"+num+"P", getentityproperty(ent,"defense",openborconstant("ATK_NORMAL")));
+		log(getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
+	}
+
+	if (openborvariant("in_showcomplete")) {
+		changeentityproperty(ent,"maxhealth",getglobalvar("maxhealth_"+num+"P")+10*delta);
+		changeentityproperty(ent,"maxmp",getglobalvar("maxmp_"+num+"P")+50*delta);
+		//changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
+		//changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
+		changeentityproperty(ent,"offense",openborconstant("ATK_NORMAL"),getglobalvar("offense_"+num+"P")+off);
+		changeentityproperty(ent,"defense",openborconstant("ATK_NORMAL"),getglobalvar("defense_"+num+"P")+off);
+		setglobalvar("maxmp_"+num+"P", getentityproperty(ent,"maxmp"));
+		setglobalvar("maxhealth_"+num+"P", getentityproperty(ent,"maxhealth"));
+		setglobalvar("offense_"+num+"P", getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
+		setglobalvar("defense_"+num+"P", getentityproperty(ent,"defense",openborconstant("ATK_NORMAL")));
+		log(getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
+		log(getentityproperty(ent,"maxhealth"));
+		log(getglobalvar("maxhealth_"+num+"P"));
+	}
 //	changeplayerproperty(plIndex, "spawnhealth", getentityproperty(ent,"maxhealth"));
 //	changeplayerproperty(plIndex, "spawnmp", getentityproperty(ent,"maxmp"));
 }

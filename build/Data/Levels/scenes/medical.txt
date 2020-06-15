@@ -1,0 +1,28 @@
+music		data/music/hiscore.bor
+
+background	data/bgs/medical/panel.png
+bglayer		data/bgs/medical/panel.png 0 0 0 0 0 0 -1 1 1 0 0 0 0 0 0
+panel		data/bgs/medical/panel.png none none
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+spawn1 -640 244 300
+spawn2 -640 244 300
+
+
+spawn Story
+alias introdialog
+at 0
+
+spawn	stop
+coords	1 1
+at	0
+
+wait
+at 0
+

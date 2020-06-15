@@ -11,7 +11,7 @@ void setValid(void name,void isselectable)
    {
       if(getmodelproperty(i,MODEL_NAME)==name)
       {
-         log(getmodelproperty(i,MODEL_NAME));
+         //log(getmodelproperty(i,MODEL_NAME));
          changemodelproperty(i,SELECTABLE,isselectable);
          return;
       }
@@ -26,11 +26,38 @@ int getScoreLevel(int lvl){
  }
 }
 
+void lockBehavior(char player) {
+  int count = 0; 
+  int i;
+  //set your array
+  void items = array(6);
+  set(items,0,"Hiei");
+  set(items,1,"Sasuke");
+  set(items,2,"Renji");
+  set(items,3,"Toshiro");
+  set(items,4,"Kenpachi");
+  for(i=0; i<size(items); i++) 
+  {
+    
+  }
+   
+}
+
 void main()
 {
     void scene=openborvariant("current_scene");
-      setValid("Broly",0);
-    if(scene == "data/scenes/ending.txt")
+    loadgamefile();
+    //log(getsaveinfo(0, "playername", 0));
+    if(getsaveinfo(0, "times_completed") > 1) 
+    {
+      
+    }
+    if(scene == "intro.txt")
+    {
+      //log("at intro");
+      setglobalvar("TitleMusic", 0);
+    }
+    if(scene == "ending.txt")
     {
       setValid("Broly",1);
     }
@@ -54,9 +81,9 @@ void main()
     }
     if (openborvariant("in_titlescreen")) {
       loadgamefile();
-      log(getsaveinfo(0, "name"));
-      //log(getsaveinfo(1, "health"));
-      log(getsaveinfo(0, "times_completed"));
+      //log(getsaveinfo(0, "name"));
+      //log(getglobalvar("TitleMusic"));
+      //log(getsaveinfo(0, "times_completed"));
       int T = getglobalvar("TitleMusic");
       if(T != 1) {
         void bg = "data/music/menu.ogg";
@@ -70,13 +97,26 @@ void main()
     if (openborvariant("in_halloffamescreen")) {
       int H = getglobalvar("HOFMusic");
       if(H != 1) {
-        void hbg = "data/music/hiscore.bor";
-        playmusic(hbg, 1);
+        void hbg = "data/music/hiscore.ogg";
+        playmusic(hbg, 1, 644145);
         setglobalvar("HOFMusic", 1);
       }
     }
     else {
         setglobalvar("HOFMusic", 0);
+    }
+
+
+    if (openborvariant("in_showcomplete")) {
+      int CO = getglobalvar("CompMusic");
+      if(CO != 1) {
+        void cbg = "data/music/complete.ogg";
+        playmusic(cbg, 1);
+        setglobalvar("CompMusic", 1);
+      }
+    }
+    else {
+        setglobalvar("CompMusic", 0);
     }
 
     if(getglobalvar("punt_ant_1P") == NULL()){
@@ -100,14 +140,14 @@ void main()
          if("Travel"!=getentityproperty(p, "model")) {
            //HP text script
            hp = getentityproperty(p, "health"); if(hp<0) hp=0;
-           //drawstring(24+120*i, 231, 0, hp+"/"+getentityproperty(p, "maxhealth"));
+           settextobj(10*i, 6+120*i, 221, 0, -10, hp+"/"+getentityproperty(p, "maxhealth"));
            //MP text script
            mp = getentityproperty(p, "mp"); if(mp<0) mp=0;
-           //drawstring(24+120*i, 246, 0, mp+"/"+getentityproperty(p, "maxmp"));
+           settextobj(11*i, 6+120*i, 236, 0, -10,  mp+"/"+getentityproperty(p, "maxmp"));
            //Lv
            lv = getglobalvar("level."+i);
            if(!lv) lv=1;
-           drawstring(6+120*i, 250, 3, "Power LVL:"+lv);
+           settextobj(12*i, 6+120*i, 250, 3, -10,  "Power LVL:"+lv);
            //Muestra la barra de nivel
            //if(getplayerproperty(i, "score")<=190000)
            //drawbox(6+120*i, 258, 50, 10, 9999, rgbcolor(0,255,255), 0);

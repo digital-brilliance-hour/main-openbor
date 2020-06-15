@@ -1,0 +1,30 @@
+music		data/music/endstory.bor
+
+background	data/bgs/stage3-final/background.png
+
+panel		data/bgs/stage3-final/foreground-1.png none none
+
+order	a
+
+order	        a
+settime         0
+notime          1
+nopause		1
+nolife 1
+type 2
+
+spawn1 -640 244 300
+spawn2 -640 244 300
+
+
+spawn Story
+alias geeseoutrodialog
+at 0
+
+spawn	stop
+coords	1 1
+at	0
+
+wait
+at 0
+

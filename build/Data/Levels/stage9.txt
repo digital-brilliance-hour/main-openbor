@@ -1,11 +1,15 @@
-music data/music/stage9.ogg
+music data/music/stage9.ogg 3788047
 background data/bgs/stage-4/b.gif
 panel data/bgs/stage-4/n.gif none none
-order aaa
+order aaaaa
 
 spawn ready
 coords 240 136
 	at 0
+
+#musicfade 2000
+music data/music/stage9-interlude.ogg 441680
+at 600
 	
 spawn	warning
 	coords 240 136
@@ -14,6 +18,6 @@ at      2668
 
 spawn shreke
 boss 1
-health 1500
+health 3000
 coords 480 170
 at 2669

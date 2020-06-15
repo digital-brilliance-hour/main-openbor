@@ -101,7 +101,7 @@ void addLine(int cr)
 				{
 					x=res_x*0.25;
 				}else{
-					x=res_x*0.39;
+					x=res_x*0.10;
 				}
 			}
 			if (font==-1)

@@ -19,7 +19,7 @@ void dialogSkip()
 		void noskip=getindexedvar(story_isDialogSkip);
 		if(ent)
 		{
-			if(playerkeys(0,0,"attack") || playerkeys(0,0,"attack2")){
+			if(playerkeys(0,0,"attack") || playerkeys(0,0,"attack2") || playerkeys(1,0,"attack") || playerkeys(1,0,"attack2") || playerkeys(2,0,"attack") || playerkeys(2,0,"attack2") || playerkeys(3,0,"attack") || playerkeys(3,0,"attack2")){
 				if (!getindexedvar(story_typing)){             
 					setindexedvar(story_isDisplayDialog, 0);
 					updateframe(ent,0);

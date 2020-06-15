@@ -16,6 +16,7 @@ jumpmove 3 3
 weaploss 3
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -342,10 +343,14 @@ anim	run
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
-	running	50 4 3 1 1
+	running	26 4 3 1 1
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run01.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run02.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run03.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run04.gif
 		
 anim	special
@@ -386,9 +391,13 @@ anim	walk
 	delay	7
 	offset	38 77
 	bbox	36 46 13 20
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run01.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run02.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run03.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Gear/run04.gif
 		
 #|edited by openBor Stats v 0.67
