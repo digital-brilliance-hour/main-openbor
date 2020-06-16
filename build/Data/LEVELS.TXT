@@ -71,32 +71,43 @@ file	data/levels/stage1.txt
 
 set Easy
 typemp 1
+stagenumber 13
 file 	data/levels/scenes/story/story.txt
+stagenumber 11
 file	data/levels/tutorial.txt
-next
+stagenumber 1
 file	data/levels/stage1.txt
 next
+stagenumber 2
 file	data/levels/stage2.txt
 next
+stagenumber 3
 file	data/levels/stage3.txt
 next
 z 222 272 50
+stagenumber 4
 file	data/levels/stage4.txt
 next
 z 160 270 110
+stagenumber 5
 file	data/levels/stage5.txt
 next
+stagenumber 6
 file	data/levels/stage6.txt
 next
+stagenumber 7
 file	data/levels/stage7.txt
 next
+stagenumber 8
 file	data/levels/stage8.txt
 next
 z 120 226 106
+stagenumber 9
 file	data/levels/stage9.txt
 
 set Arcade
 typemp 1
+ifcomplete 1
 file 	data/levels/scenes/story/story.txt
 file	data/levels/stage1.txt
 next

@@ -3,7 +3,7 @@
 void storyKeys()
 {
 	//for scrolling
-	if(getglobalvar("scr") && getindexedvar(story_backfile)!=NULL() && (playerkeys(0, 1, "start")))
+	if(getindexedvar(story_back)!=NULL() && (playerkeys(0, 1, "start") || playerkeys(1, 1, "start") || playerkeys(2, 1, "start") || playerkeys(3, 1, "start")))
 	{
 		jumptobranch("",1);
 	}

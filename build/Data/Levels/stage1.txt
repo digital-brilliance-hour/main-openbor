@@ -6,6 +6,8 @@ order a
 spawn1 110 20
 spawn2 120 40
 
+stagenumber 1
+
 spawn ready
 	coords 240 136
 	at 0
@@ -80,12 +82,16 @@ spawn	warning
 flip    1
 at      2919
 
+spawn Story
+alias sasukedialog
+at 2920
+
 
 spawn sasuke_e
 boss 1
 alias  Sasuke
 coords	450 200
-at 2920
+at 2921
 
 wait
-at      2920
+at      2921

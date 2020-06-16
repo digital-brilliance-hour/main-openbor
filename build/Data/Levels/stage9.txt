@@ -1,4 +1,4 @@
-music data/music/stage9.ogg 3788047
+music data/music/stage9.ogg 3788025
 background data/bgs/stage-4/b.gif
 panel data/bgs/stage-4/n.gif none none
 order aaaaa
@@ -7,17 +7,209 @@ spawn ready
 coords 240 136
 	at 0
 
+wait
+at 100
+
+group 2 2
+at 100
+
+spawn facce
+health 100
+coords 450 150
+at 100
+
+spawn facce
+health 100
+coords 50 150
+at 100
+
+3pspawn facce
+health 100
+coords 450 150
+at 100
+
+4pspawn facce
+health 100
+coords 50 150
+at 100
+
+spawn boar
+health 100
+coords 450 150
+at 100
+
+spawn boar
+health 100
+coords 50 150
+at 100
+
+3pspawn boar
+health 100
+coords 450 150
+at 100
+
+4pspawn boar
+health 100
+coords 50 150
+at 100
+
+spawn dino
+health 150
+coords 450 150
+at 100
+
+spawn dino
+health 150
+coords 50 150
+at 100
+
+3pspawn dino
+health 150
+coords 450 150
+at 100
+
+4pspawn dino
+health 150
+coords 50 150
+at 100
+
+spawn blood_h
+health 100
+item hp_hundred
+coords 450 150
+at 100
+
+spawn blood_h
+health 100
+item hp_hundred
+coords 50 150
+at 100
+
+3pspawn blood_h
+health 100
+item hp_hundred
+coords 450 150
+at 100
+
+4pspawn blood_h
+health 100
+item hp_hundred
+coords 50 150
+at 100
+
+spawn claw
+health 200
+coords 450 150
+at 100
+
+spawn claw
+health 200
+coords 50 150
+at 100
+
+3pspawn claw
+health 200
+coords 450 150
+at 100
+
+4pspawn claw
+health 200
+coords 50 150
+at 100
+
+spawn pirate
+health 200
+item mp_hundred
+coords 450 150
+at 100
+
+spawn pirate
+health 200
+item mp_hundred
+coords 50 150
+at 100
+
+3pspawn pirate
+health 200
+item mp_hundred
+coords 450 150
+at 100
+
+4pspawn pirate
+health 200
+item mp_hundred
+coords 50 150
+at 100
+
+spawn marine
+health 400
+coords 450 150
+at 100
+
+spawn marine
+health 400
+coords 50 150
+at 100
+
+3pspawn marine
+health 400
+coords 450 150
+at 100
+
+4pspawn marine
+health 400
+coords 50 150
+at 100
+
+spawn crate
+item xp_twohundred
+coords	495 125
+at	730
+
+2pspawn crate
+item xp_twohundred
+coords	515 145
+at	730
+
+3pspawn crate
+item xp_twohundred
+coords	535 165
+at      730
+
+4pspawn crate
+item xp_twohundred
+coords	555 185
+at      730
+
 #musicfade 2000
 music data/music/stage9-interlude.ogg 441680
-at 600
+at 1000
+
+spawn luffyb
+health 4500
+2phealth 6000
+3phealth 7500
+4phealth 9000
+coords 300 145
+at 2070
+
+3pspawn franky2
+health 4000
+2phealth 5500
+3phealth 7000
+4phealth 8500
+coords 320 195
+at 2070
+
+wait 2400
 	
 spawn	warning
 	coords 240 136
 flip    1
-at      2668
+at      5049
 
 spawn shreke
 boss 1
 health 3000
 coords 480 170
-at 2669
+at 5050

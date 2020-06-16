@@ -12,6 +12,8 @@ hostile npc player
 remap	data/chars/Pirate/idle01.gif data/chars/Pirate/map1.gif
 subject_to_screen 1
 takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
+
 
 anim	attack1
 	loop	0
@@ -88,6 +90,7 @@ anim	rise
 	frame	data/chars/Pirate/punch02.gif
 		
 anim	spawn
+	@cmd	spawnparent "e_spawn" 0 0 0
 	loop	0
 	delay	7
 	offset	46 78
