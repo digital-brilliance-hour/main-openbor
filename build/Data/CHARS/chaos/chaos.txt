@@ -21,11 +21,12 @@ bflash		block
 escapehits	4
 
 lifebarstatus 80 5 1 0 0 -300 -300 -300 -300
-lifeposition 213 224
-nameposition 213 214
-iconposition 194 215
+lifeposition 213 364
+nameposition 213 364
+iconposition 194 365
 
 nodieblink 3
+ondeathscript data/scripts/bossdeath.c
 
 anim	attack1
 	range	0	340

@@ -2,10 +2,11 @@ name	EIkkaku
 health	200
 speed	15
 type	enemy
-shadow	0
+shadow 3
 cantgrab 1
 aimove chase
 escapehits 1
+riseinv 2 0
 candamage player npc obsacle
 hostile npc player
 
@@ -16,6 +17,7 @@ com      a4 freespecial3
 
 script data/scripts/playerscript.c
 takedamagescript data/scripts/enemyhit.c
+ondeathscript data/scripts/bossdeath.c
 
 
 

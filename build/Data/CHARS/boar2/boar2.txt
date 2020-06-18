@@ -7,7 +7,7 @@ shadow	3
 icon	data/chars/Boar2/icon.gif
 
 
-load	knife
+load	knife3
 
 
 remap	data/chars/Boar2/idle00.gif data/chars/Boar2/map1.gif
@@ -16,15 +16,16 @@ takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
 
 
+
 anim	attack1
 	range	180 300
 	loop	0
 	delay	10
-	throwframe	2
 	bbox	50 56 22 24
 	offset	38 77
 	frame	data/chars/Boar2/shoot00.gif
 	sound	data/chars/Boar2/shot.wav
+	@cmd	projectile 1 "knife3" 25 1 64 1 0
 	frame	data/chars/Boar2/shoot01.gif
 	frame	data/chars/Boar2/shoot02.gif
 		
@@ -58,11 +59,6 @@ anim	idle
 	frame	data/chars/Boar2/idle02.gif
 	frame	data/chars/Boar2/idle01.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	38 77
@@ -75,6 +71,11 @@ anim	rise
 	offset	38 77
 	delay	5
 	frame	data/chars/Boar2/rise.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

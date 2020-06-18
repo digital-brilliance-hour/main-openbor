@@ -28,6 +28,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
 	delay	5
@@ -40,7 +41,7 @@ anim	attack1
 	attack	67 43 39 17 8 0 0 0 0 0
 	frame	data/chars/Goku-normal/punch04.gif
 	attack	64 48 24 9 10
-	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	spawnparent "pdust" -10 0 -22
 	frame	data/chars/Goku-normal/punch05.gif
 		
 anim	attack2

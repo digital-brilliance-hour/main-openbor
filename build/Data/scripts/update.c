@@ -81,6 +81,17 @@ void main()
     }
     if (openborvariant("in_titlescreen")) {
       loadgamefile();
+
+      int j, num;
+      for(j=0; j<4; j++){
+        num = j+1;
+        setglobalvar("maxmp_"+num+"P", NULL());
+        setglobalvar("maxhealth_"+num+"P",  NULL());
+        setglobalvar("offense_"+num+"P", NULL());
+        setglobalvar("defense_"+num+"P", NULL());
+        setglobalvar("score"+j,0);
+        setglobalvar("level."+j,1);
+      }
       //log(getsaveinfo(0, "name"));
       //log(getglobalvar("TitleMusic"));
       //log(getsaveinfo(0, "times_completed"));
@@ -133,17 +144,19 @@ void main()
     }
     if (openborvariant("in_level") && openborvariant("current_stage") < 12) {
        void p;
-       int i, hp, mp, lv;
+       int i, hp, mp, lv, num;
        for(i=0; i<4; i++){
          p = getplayerproperty(i, "entity");
+         num = i+1;
          if(p){
            if("Travel"!=getentityproperty(p, "model")) {
              //HP text script
              hp = getentityproperty(p, "health"); if(hp<0) hp=0;
-             settextobj(10*i, 6+120*i, 221, 0, -10, hp+"/"+getentityproperty(p, "maxhealth"));
+             settextobj(10*i, 6+120*i, 221, 0, -10, getentityproperty(p,"offense",openborconstant("ATK_NORMAL"))+"/"+getglobalvar("offense_"+num+"P"));
+             //settextobj(10*i, 6+120*i, 221, 0, -10, hp+"/"+getentityproperty(p, "maxhealth"));
              //MP text script
              mp = getentityproperty(p, "mp"); if(mp<0) mp=0;
-             settextobj(11*i, 6+120*i, 236, 0, -10,  mp+"/"+getentityproperty(p, "maxmp"));
+             //settextobj(11*i, 6+120*i, 236, 0, -10,  mp+"/"+getentityproperty(p, "maxmp"));
              //Lv
              lv = getglobalvar("level."+i);
              if(!lv) lv=1;

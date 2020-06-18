@@ -1,3 +1,4 @@
+#include "data/scripts/levelup/lvup.c"
 void main() 
 {
  	int  iEntity;
@@ -14,12 +15,9 @@ void main()
         if(p){
 	        if("Travel"!=getentityproperty(p, "model")) {	
 				score = getplayerproperty(iEntity, "score");
-                total = score+hp; 
-                log(score);
-                log(hp);
-                log(total);
-                log(score+hp); 
-				changeentityproperty(p, "score", total);	
+                total = hp * 10; 
+				changeplayerproperty(iEntity, "score", total+score);	
+                changeLv(iEntity);
 	        }
         }
 	}	

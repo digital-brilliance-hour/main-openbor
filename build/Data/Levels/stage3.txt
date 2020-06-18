@@ -46,10 +46,27 @@ wait
 at      1700
 
 spawn   buggy
+item hp_hundred
 coords	300 240
 at      1900
 
 spawn   gunner
+item hp_hundred
+coords	350 230
+at      1700
+
+2pspawn   gunner
+item mp_hundred
+coords	450 230
+at      1700
+
+3pspawn   gunner
+item hp_hundred
+coords	350 250
+at      1700
+
+4pspawn   gunner
+item mp_hundred
 coords	350 230
 at      1700
 
@@ -67,6 +84,8 @@ alias kingpiccolodialog
 at 2399
 
 spawn   KPiccoloE
+alias King_Piccolo
+boss 1
 health  500
 3phealth 1000
 4phealth 1500

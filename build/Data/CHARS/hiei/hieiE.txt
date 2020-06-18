@@ -9,6 +9,7 @@ type	enemy
 shadow	5
 aimove chase
 escapehits 1
+riseinv 2 0
 candamage player npc obsacle
 hostile npc player
 icon	data/chars/hiei/icone3.gif
@@ -18,8 +19,8 @@ load  cnegras
 load  flash3
 atchain 1 2 3
 lifebarstatus 380 5 0 1 0 0 0 0 0
-lifeposition 50 200
-nameposition 60 190
+lifeposition 50 235
+nameposition 60 225
 iconposition 50 360
 
 remap	data/chars/hiei/stand1.gif data/chars/hiei/cor2.gif
@@ -36,6 +37,7 @@ com 		D  F  A     freespecial
 com 		D  U  A     freespecial3
 com 		D  F  K     freespecial4
 animationscript data/scripts/spawns.c
+ondeathscript data/scripts/bossdeath.c
 
 
 

@@ -1,13 +1,15 @@
+#include "data/scripts/levelup/lvup.c"
 void main()
 {
    setglobalvar("zoomentity", NULL());
 
 	 void p;
-	 int i, hp, mp, lv, num, stage, maxhp, newhp;
+	 int i, hp, mp, lv, num, stage, maxhp, newhp, score;
 	for(i=0; i<4; i++){
 		 p = getplayerproperty(i, "entity");
 		num = i+1;
 		 if(p){
+		 	score=getplayerproperty(i,"score");
 		 	changeentityproperty(p, "maxhealth", getglobalvar("maxhealth_"+num+"P"));
 			stage = openborvariant("current_stage");
 			if(stage % 3 != 0) {
@@ -37,6 +39,10 @@ void main()
 				}
 				
 				changeentityproperty(p, "mp",0);
+
+				changeentityproperty(p,"offense",openborconstant("ATK_NORMAL"),getglobalvar("offense_"+num+"P"));
+				changeentityproperty(p,"defense",openborconstant("ATK_NORMAL"),getglobalvar("defense_"+num+"P"));
+				log(getglobalvar("offense_"+num+"P"));
 			}
 	 	}
 	} 

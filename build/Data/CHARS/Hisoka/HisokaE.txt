@@ -14,10 +14,12 @@ com      a2 freespecial
 com      a3 freespecial2
 com      a4 freespecial3
 load h_card
+riseinv 2 0
 lifebarstatus 380 5 0 1 0 0 0 0 0
-lifeposition 50 200
-nameposition 60 190
+lifeposition 50 235
+nameposition 60 225
 iconposition 50 360
+ondeathscript data/scripts/bossdeath.c
 
 
 

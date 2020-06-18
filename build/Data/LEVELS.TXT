@@ -66,58 +66,33 @@ e4name 0 400
 
 set	Demo
 typemp 1
+versusdamage 0
+lives 3
+credits 5
+continuescore 2
+cansave 2
+noshare 1
 file 	data/levels/scenes/story/story.txt
 file	data/levels/tutorial.txt
-next
 file	data/levels/stage1.txt
 
 set Easy
 typemp 1
-stagenumber 13
+versusdamage 0
+lives 3
+credits 5
+continuescore 2
+cansave 2
+noshare 1
 file 	data/levels/scenes/story/story.txt
-stagenumber 11
 file	data/levels/tutorial.txt
-stagenumber 1
-file	data/levels/stage1.txt
-next
-stagenumber 2
-file	data/levels/stage2.txt
-next
-stagenumber 3
-file	data/levels/stage3.txt
-next
-z 222 272 50
-stagenumber 4
-file	data/levels/stage4.txt
-next
-z 160 270 110
-stagenumber 5
-file	data/levels/stage5.txt
-next
-stagenumber 6
-file	data/levels/stage6.txt
-next
-stagenumber 7
-file	data/levels/stage7.txt
-next
-stagenumber 8
-file	data/levels/stage8.txt
-next
-z 120 226 106
-stagenumber 9
-file	data/levels/stage9.txt
-
-set Arcade
-typemp 1
-ifcomplete 1
-file 	data/levels/scenes/story/story.txt
 file	data/levels/stage1.txt
 next
 file	data/levels/stage2.txt
 next
 file	data/levels/stage3.txt
 next
-z 222 272 50
+z 229 272 50
 file	data/levels/stage4.txt
 next
 z 160 270 110
@@ -125,6 +100,7 @@ file	data/levels/stage5.txt
 next
 file	data/levels/stage6.txt
 next
+z 110 270 160
 file	data/levels/stage7.txt
 next
 file	data/levels/stage8.txt
@@ -132,81 +108,15 @@ next
 z 120 226 106
 file	data/levels/stage9.txt
 
-
-set	stage1
+set Stage_7
 typemp 1
-file	data/levels/stage1.txt
-next
-scene	data/scenes/ending.txt
-
-set	stage2
-typemp 1
-file	data/levels/stage2.txt
-
-set	stage3
-typemp 1
+versusdamage 0
+lives 3
+credits 5
+continuescore 2
+cansave 2
+noshare 1
+z 229 272 50
 file	data/levels/stage3.txt
-
-set	stage4
-typemp 1
-z 222 272 50
-file	data/levels/stage4.txt
-
-set	stage5
-typemp 1
-z 160 270 110
-file	data/levels/stage5.txt
-
-set	stage6
-typemp 1
-file	data/levels/stage6.txt
-
-set	stage7
-typemp 1
-file	data/levels/stage7.txt
-
-set	stage8
-typemp 1
-file	data/levels/stage8.txt
-
-set	stage9
-typemp 1
-z 120 226 106
-file	data/levels/stage9.txt
-
-set	stage10
-typemp 1
-z 119 103 160
-file	data/levels/stage10.txt
-
-
-set	Grouping
-typemp 1
-
-file	data/levels/water2.txt
-next
-file	data/levels/example1.txt
-next
-file	data/levels/holes.txt
-next
-scene	data/scenes/ending.txt
-
-set	Boss_Test
-typemp 1
-
-file	data/levels/bosstest.txt
-
-
-set	water_(3_levels)
-file	data/levels/water.txt
-file	data/levels/water2.txt
-file	data/levels/water3.txt
-
-set	modes_(2_levels)
-file	data/levels/neon.txt
-file	data/levels/screen.txt
-
-set	mirror_(1_level)
-file	data/levels/mirror.txt
 
 #

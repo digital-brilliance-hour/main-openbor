@@ -1,15 +1,23 @@
 name	EKenpachi
-health	400
+health	500
 speed	15
 type	enemy
 aggression 32
-shadow	0
 cantgrab 1
+riseinv 2 0
+makeinv 2 0
+aimove chase
+escapehits 1
+candamage player npc obstacle
+hostile npc player
+shadow 3
 animationscript data/scripts/spawns.c
 lifebarstatus 380 5 0 1 0 0 0 0 0
 lifeposition 50 235
 nameposition 60 225
 iconposition 50 360
+ondeathscript data/scripts/bossdeath.c
+
 
 
 

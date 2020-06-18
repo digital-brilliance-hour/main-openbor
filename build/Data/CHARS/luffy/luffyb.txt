@@ -8,13 +8,11 @@ icon	data/chars/Luffy/icon.gif
 atchain  1 2 3 3
 com d d a freespecial
 com d f a freespecial2
-holdblock 1
 riseinv 2 0
 makeinv 2 0
 jumpmove 3 3
 aimove chase
 escapehits 1
-blockodds 1
 cantgrab  1
 candamage player npc obstacle
 hostile npc player
@@ -24,6 +22,7 @@ weaploss 3
 takedamagescript data/scripts/enemyhit.c
 
 animationscript data/scripts/spawns.c
+ondeathscript data/scripts/bossdeath.c
 
 anim	attack1
 	loop	0
@@ -54,16 +53,6 @@ anim	attack2
 	frame	data/chars/Luffy/gatl06.gif
 	blast	70 37 37 43 30
 	frame	data/chars/Luffy/gatl07.gif
-		
-anim	block
-	loop	0
-	offset	38 77
-	delay	7
-	frame	data/chars/Luffy/block01.gif
-	frame	data/chars/Luffy/block02.gif
-	frame	data/chars/Luffy/block03.gif
-	frame	data/chars/Luffy/block04.gif
-	frame	data/chars/Luffy/block05.gif
 		
 anim	chargeattack
 	loop	0

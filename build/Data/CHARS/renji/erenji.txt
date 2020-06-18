@@ -2,10 +2,11 @@ name	ERenji
 health	150
 speed	15
 type	enemy
-shadow	0
+shadow 3
 cantgrab 1
 animationscript data/scripts/spawns.c
 takedamagescript data/scripts/enemyhit.c
+ondeathscript data/scripts/bossdeath.c
 
 
 anim	attack1

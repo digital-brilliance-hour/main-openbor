@@ -10,6 +10,10 @@ void lvup(int plIndex)
 		setglobalvar("level."+plIndex,lv);
 		spawnLvup(ent);
 	}
+	else if(score == 0) {
+		//setAbi2(plIndex,ent, 0);
+		setglobalvar("level."+plIndex,lv);
+	}
 	setglobalvar("score"+plIndex,score);
 }
 void spawnLvup(void ent)
@@ -33,9 +37,9 @@ void setLevel()
 void setAbi2(void plIndex, void ent, int delta)
 {
 	int num = plIndex + 1;
-	float off = 0.2*delta;
+	float off = 0.10*delta;
 	if (openborvariant("in_level")) {
-		changeentityproperty(ent,"maxhealth",getentityproperty(ent,"maxhealth")+10*delta);
+		changeentityproperty(ent,"maxhealth",getentityproperty(ent,"maxhealth")+25*delta);
 		changeentityproperty(ent,"maxmp",getentityproperty(ent,"maxmp")+50*delta);
 		changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
 		changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));
@@ -45,11 +49,12 @@ void setAbi2(void plIndex, void ent, int delta)
 		setglobalvar("maxhealth_"+num+"P", getentityproperty(ent,"maxhealth"));
 		setglobalvar("offense_"+num+"P", getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
 		setglobalvar("defense_"+num+"P", getentityproperty(ent,"defense",openborconstant("ATK_NORMAL")));
+		log(getglobalvar("offense_"+num+"P"));
 		log(getentityproperty(ent,"offense",openborconstant("ATK_NORMAL")));
 	}
 
 	if (openborvariant("in_showcomplete")) {
-		changeentityproperty(ent,"maxhealth",getglobalvar("maxhealth_"+num+"P")+10*delta);
+		changeentityproperty(ent,"maxhealth",getglobalvar("maxhealth_"+num+"P")+25*delta);
 		changeentityproperty(ent,"maxmp",getglobalvar("maxmp_"+num+"P")+50*delta);
 		//changeentityproperty(ent,"health",getentityproperty(ent,"maxhealth"));
 		//changeentityproperty(ent,"mp",getentityproperty(ent,"maxmp"));

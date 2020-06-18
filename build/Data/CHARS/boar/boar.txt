@@ -15,10 +15,11 @@ remap	data/chars/Boar/idle00.gif data/chars/Boar/map4.gif
 takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
 
+
 anim	attack1
 	loop	0
-	delay	10
-	bbox	50 56 22 24
+	delay	5
+	bbox	10 37 35 41
 	offset	38 77
 	frame	data/chars/Boar/slash00.gif
 	frame	data/chars/Boar/slash01.gif
@@ -26,7 +27,7 @@ anim	attack1
 	frame	data/chars/Boar/slash03.gif
 	frame	data/chars/Boar/slash04.gif
 	sound	data/chars/Boar/sword.wav
-	attack	65 65 36 29 8 1
+	attack	35 39 58 37 8 1 0 0 0 0
 	frame	data/chars/Boar/slash05.gif
 	frame	data/chars/Boar/slash06.gif
 	frame	data/chars/Boar/slash07.gif
@@ -50,11 +51,6 @@ anim	idle
 	frame	data/chars/Boar/idle02.gif
 	frame	data/chars/Boar/idle01.gif
 		
-anim	spawn
-	delay	75
-	@cmd	spawnparent "e_spawn" 0 0 0
-	frame	data/chars/misc/empty.gif
-		
 anim	pain
 	loop	0
 	offset	38 77
@@ -67,6 +63,11 @@ anim	rise
 	offset	38 77
 	delay	5
 	frame	data/chars/Boar/rise.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	walk
 	loop	1

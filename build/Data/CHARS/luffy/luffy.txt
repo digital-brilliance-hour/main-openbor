@@ -36,6 +36,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -116,7 +117,9 @@ anim	freespecial
 	frame	data/chars/Luffy/bazka02.gif
 	frame	data/chars/Luffy/bazka03.gif
 	frame	data/chars/Luffy/bazka04.gif
+	attack	14 28 57 30 10 1 1 0 0 0
 	frame	data/chars/Luffy/bazka05.gif
+	attack	1 26 72 33 12 1 1 0 0 0
 	frame	data/chars/Luffy/bazka06.gif
 	frame	data/chars/Luffy/bazka07.gif
 	@cmd	spawnparent "pdust" -10 0 -20

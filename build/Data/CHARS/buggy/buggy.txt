@@ -18,6 +18,7 @@ subject_to_screen 1
 
 takedamagescript data/scripts/enemyhit.c
 animationscript data/scripts/spawns.c
+ondeathscript data/scripts/bossdeath.c
 
 anim	attack1
 	loop	0
@@ -60,42 +61,6 @@ anim	attack2
 	frame	data/chars/Buggy/senbei09.gif
 	frame	data/chars/Buggy/rise01.gif
 	frame	data/chars/Buggy/rise02.gif
-	frame	data/chars/Buggy/rise02.gif
-	frame	data/chars/Buggy/rise03.gif
-		
-anim	block
-	loop	0
-	delay	10
-	offset	38 77
-	spawnframe	3 25 0 0 0
-	subentity	Pirate
-	subentity	Throw
-	sound	data/chars/Buggy/escape.wav
-	frame	data/chars/Buggy/escape01.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape01.gif
-	frame	data/chars/Buggy/escape02.gif
-	frame	data/chars/Buggy/escape03.gif
-	frame	data/chars/Buggy/escape04.gif
-	frame	data/chars/Buggy/escape05.gif
-	delay	7
-	frame	data/chars/Buggy/rise01.gif
 	frame	data/chars/Buggy/rise02.gif
 	frame	data/chars/Buggy/rise03.gif
 		
