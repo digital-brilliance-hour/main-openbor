@@ -135,37 +135,6 @@ anim	get
 	frame	data/chars/Sasuke/get01.gif
 	frame	data/chars/Sasuke/get00.gif
 		
-anim	grab
-	loop	0
-	offset	56 116
-	delay	1000
-	bbox	41 64 34 52
-	frame	data/chars/Sasuke/jab02.gif
-		
-anim	grabattack
-	loop	0
-	delay	7
-	offset	60 116
-	bbox	41 64 34 52
-	frame	data/chars/Sasuke/kick00.gif
-	attack	32 79 52 31 14
-	frame	data/chars/Sasuke/kick01.gif
-	frame	data/chars/Sasuke/kick02.gif
-	frame	data/chars/Sasuke/kick03.gif
-		
-anim	grabattack2
-	loop	0
-	offset	56 116
-	delay	7
-	bbox	41 64 34 52
-	frame	data/chars/Sasuke/upper00.gif
-	frame	data/chars/Sasuke/upper01.gif
-	attack	55 65 38 35 14 1
-	frame	data/chars/Sasuke/upper02.gif
-	delay	30
-	frame	data/chars/Sasuke/upper03.gif
-	delay	7
-	frame	data/chars/Sasuke/upper00.gif
 		
 anim	idle
 	loop	1

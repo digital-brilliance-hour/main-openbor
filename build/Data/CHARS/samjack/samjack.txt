@@ -113,21 +113,6 @@ anim	get
 	offset	25 22
 	frame	data/chars/samjack/get.gif
 		
-anim	grab
-	delay	100
-	offset	30 35
-	bbox	30 35 14 30
-	attack	0 0 0 0 0 0 0 0 0
-	frame	data/chars/samjack/a7.gif
-		
-anim	grabattack
-	delay	10
-	move	2
-	offset	50 72
-	attack	58 39 22 35 30 1 0 0 0
-	frame	data/chars/samjack/punch.gif
-	offset	13 45
-	frame	data/chars/samjack/stance1.gif
 		
 anim	idle
 	loop	1

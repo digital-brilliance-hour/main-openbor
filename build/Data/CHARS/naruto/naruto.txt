@@ -170,35 +170,6 @@ anim	get
 	frame	data/chars/Naruto/get01.gif
 	frame	data/chars/Naruto/get00.gif
 		
-anim	grab
-	loop	0
-	offset	56 116
-	delay	1000
-	bbox	43 65 25 51
-	frame	data/chars/Naruto/punch00.gif
-		
-anim	grabattack
-	loop	0
-	delay	7
-	offset	60 116
-	bbox	43 65 25 51
-	frame	data/chars/Naruto/head00.gif
-	frame	data/chars/Naruto/head01.gif
-	attack	65 83 30 7 14
-	frame	data/chars/Naruto/head02.gif
-	frame	data/chars/Naruto/head03.gif
-		
-anim	grabattack2
-	loop	0
-	offset	60 116
-	delay	7
-	bbox	43 65 25 51
-	frame	data/chars/Naruto/upper00.gif
-	frame	data/chars/Naruto/upper01.gif
-	attack	58 57 21 56 18 1
-	frame	data/chars/Naruto/upper02.gif
-	delay	30
-	frame	data/chars/Naruto/upper03.gif
 		
 anim	idle
 	loop	1
