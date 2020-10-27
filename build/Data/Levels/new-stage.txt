@@ -37,9 +37,7 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-
 order	dfdefecdhfecggdabcd
-
 order	fdefecdhfecggdab
 
 
@@ -89,6 +87,14 @@ at	0
 spawn	Shermie
 coords	350 160
 at	10
+
+spawn   Yashiro
+coords  350 200
+at      25
+
+spawn   Shermie
+coords  350 250
+at      25
 
 spawn	Shermie
 alias	Hubcaps
@@ -197,6 +203,11 @@ at	1000
 wait
 at	1200
 
+spawn	biker-k'
+health  250
+cooeds	400 225
+at      1000
+
 #------------------
 
 wait
@@ -248,6 +259,11 @@ alias	This_is_the_Boss
 boss	1
 coords	200 220
 at	1800
+
+spawn   Lobster
+alias   This_is_also_the_boss
+coords  200 225
+at      1885
 
 
 # Only AFTER the boss is spawned do we make the group size smaller
