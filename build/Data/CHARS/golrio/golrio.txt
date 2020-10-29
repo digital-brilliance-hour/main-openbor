@@ -1,0 +1,532 @@
+name	Golrio
+health	100
+speed	9
+type	player
+shadow	3
+diesound data/sounds/eek.wav 
+
+
+
+
+anim	0011
+	delay	7
+	offset	32 96
+	frame	data/chars/golrio/6.gif
+	offset	36 77
+	frame	data/chars/golrio/7.gif
+		
+anim	0018
+	delay	7
+	offset	37 144
+	frame	data/chars/golrio/8.gif
+	offset	47 140
+	frame	data/chars/golrio/9.gif
+		
+anim	0040
+	delay	7
+	offset	32 83
+	frame	data/chars/golrio/14.gif
+	offset	25 130
+	frame	data/chars/golrio/15.gif
+	offset	23 124
+	frame	data/chars/golrio/16.gif
+	offset	44 124
+	frame	data/chars/golrio/17.gif
+	offset	32 125
+	frame	data/chars/golrio/18.gif
+		
+anim	0170
+	delay	7
+	offset	32 98
+	frame	data/chars/golrio/27.gif
+	offset	30 84
+	frame	data/chars/golrio/28.gif
+	offset	34 77
+	frame	data/chars/golrio/29.gif
+	offset	34 78
+	frame	data/chars/golrio/30.gif
+	offset	32 86
+	frame	data/chars/golrio/31.gif
+	offset	32 85
+	frame	data/chars/golrio/32.gif
+	offset	32 84
+	frame	data/chars/golrio/33.gif
+		
+anim	0180
+	delay	7
+	offset	42 106
+	frame	data/chars/golrio/34.gif
+	offset	32 123
+	frame	data/chars/golrio/35.gif
+		
+anim	0800
+	delay	7
+	offset	56 93
+	frame	data/chars/golrio/73.gif
+	offset	24 116
+	frame	data/chars/golrio/74.gif
+	offset	24 119
+	frame	data/chars/golrio/75.gif
+	offset	18 116
+	frame	data/chars/golrio/76.gif
+	offset	17 119
+	frame	data/chars/golrio/77.gif
+		
+anim	0900
+	delay	7
+	offset	38 100
+	frame	data/chars/golrio/78.gif
+	offset	51 96
+	frame	data/chars/golrio/79.gif
+		
+anim	20000
+	delay	7
+	offset	0 500
+	frame	data/chars/golrio/213.gif
+	offset	0 500
+	frame	data/chars/golrio/214.gif
+	offset	0 500
+	frame	data/chars/golrio/215.gif
+		
+anim	20100
+	delay	7
+	offset	280 -1
+	frame	data/chars/golrio/216.gif
+		
+anim	20110
+	delay	7
+	offset	0 0
+	frame	data/chars/golrio/217.gif
+	offset	0 0
+	frame	data/chars/golrio/218.gif
+	offset	0 0
+	frame	data/chars/golrio/219.gif
+	offset	0 0
+	frame	data/chars/golrio/220.gif
+	offset	0 0
+	frame	data/chars/golrio/221.gif
+	offset	0 0
+	frame	data/chars/golrio/222.gif
+	offset	0 0
+	frame	data/chars/golrio/223.gif
+		
+anim	20200
+	delay	7
+	offset	0 0
+	frame	data/chars/golrio/224.gif
+	offset	0 0
+	frame	data/chars/golrio/225.gif
+	offset	0 0
+	frame	data/chars/golrio/226.gif
+	offset	0 0
+	frame	data/chars/golrio/227.gif
+	offset	0 0
+	frame	data/chars/golrio/228.gif
+	offset	0 0
+	frame	data/chars/golrio/229.gif
+	offset	0 0
+	frame	data/chars/golrio/230.gif
+		
+anim	20210
+	delay	7
+	offset	0 0
+	frame	data/chars/golrio/231.gif
+		
+anim	20250
+	delay	7
+	offset	222 105
+	frame	data/chars/golrio/232.gif
+	offset	232 105
+	frame	data/chars/golrio/233.gif
+	offset	199 60
+	frame	data/chars/golrio/234.gif
+	offset	278 147
+	frame	data/chars/golrio/235.gif
+		
+anim	21000
+	delay	7
+	offset	-92 267
+	frame	data/chars/golrio/236.gif
+	offset	325 267
+	frame	data/chars/golrio/237.gif
+	offset	325 267
+	frame	data/chars/golrio/238.gif
+	offset	325 267
+	frame	data/chars/golrio/239.gif
+	offset	325 267
+	frame	data/chars/golrio/240.gif
+	offset	325 267
+	frame	data/chars/golrio/241.gif
+	offset	325 267
+	frame	data/chars/golrio/242.gif
+	offset	325 267
+	frame	data/chars/golrio/243.gif
+	offset	325 267
+	frame	data/chars/golrio/244.gif
+	offset	325 267
+	frame	data/chars/golrio/245.gif
+	offset	119 119
+	frame	data/chars/golrio/246.gif
+	offset	166 166
+	frame	data/chars/golrio/247.gif
+	offset	245 245
+	frame	data/chars/golrio/248.gif
+	offset	275 267
+	frame	data/chars/golrio/249.gif
+	offset	301 267
+	frame	data/chars/golrio/250.gif
+	offset	81 80
+	frame	data/chars/golrio/251.gif
+	offset	86 85
+	frame	data/chars/golrio/252.gif
+	offset	88 88
+	frame	data/chars/golrio/253.gif
+	offset	91 90
+	frame	data/chars/golrio/254.gif
+	offset	93 92
+	frame	data/chars/golrio/255.gif
+	offset	99 99
+	frame	data/chars/golrio/256.gif
+	offset	102 101
+	frame	data/chars/golrio/257.gif
+	offset	105 104
+	frame	data/chars/golrio/258.gif
+		
+anim	21100
+	delay	7
+	offset	0 0
+	frame	data/chars/golrio/259.gif
+	offset	0 0
+	frame	data/chars/golrio/260.gif
+	offset	0 0
+	frame	data/chars/golrio/261.gif
+	offset	0 0
+	frame	data/chars/golrio/262.gif
+		
+anim	9000
+	delay	7
+	offset	0 0
+	frame	data/chars/golrio/0.gif
+	offset	0 -4
+	frame	data/chars/golrio/1.gif
+	offset	0 5
+	frame	data/chars/golrio/2.gif
+		
+anim	9876
+	delay	7
+	offset	320 0
+	frame	data/chars/golrio/211.gif
+	offset	320 0
+	frame	data/chars/golrio/212.gif
+		
+anim	attack200
+	bbox	1 0 77 103
+	delay	7
+	offset	39 101
+	frame	data/chars/golrio/38.gif
+	attack	84 11 81 38 0 0 1 0 0 0
+	bbox	1 0 94 114
+	offset	52 111
+	frame	data/chars/golrio/39.gif
+	bbox	0 0 85 106
+	offset	40 103
+	frame	data/chars/golrio/40.gif
+	attack	65 61 51 36 0 0 1 0 0 0
+	bbox	0 0 85 106
+	offset	23 101
+	frame	data/chars/golrio/41.gif
+	bbox	0 1 66 94
+	offset	33 92
+	frame	data/chars/golrio/42.gif
+	bbox	0 0 69 79
+	offset	37 78
+	frame	data/chars/golrio/43.gif
+	bbox	0 1 91 58
+	offset	46 58
+	frame	data/chars/golrio/44.gif
+	bbox	0 0 88 92
+	attack	67 0 81 93 0 0 1 0 0 0
+	offset	65 89
+	frame	data/chars/golrio/45.gif
+	bbox	0 0 71 106
+	offset	37 104
+	frame	data/chars/golrio/46.gif
+	attack	67 5 39 51 0 0 1 0 0 0
+	bbox	0 0 71 106
+	offset	32 106
+	frame	data/chars/golrio/47.gif
+	bbox	0 1 95 107
+	offset	52 105
+	frame	data/chars/golrio/48.gif
+	bbox	0 0 96 127
+	offset	55 123
+	frame	data/chars/golrio/49.gif
+	attack	104 2 39 66 0 0 1 0 0 0
+	bbox	0 0 96 127
+	offset	60 119
+	frame	data/chars/golrio/50.gif
+	bbox	0 0 85 106
+	offset	50 105
+	frame	data/chars/golrio/51.gif
+	bbox	0 0 85 106
+	offset	52 105
+	frame	data/chars/golrio/52.gif
+	attack	73 1 40 76 0 0 1 0 0 0
+	bbox	1 1 61 103
+	offset	39 102
+	frame	data/chars/golrio/53.gif
+	bbox	0 1 65 113
+	offset	33 111
+	frame	data/chars/golrio/54.gif
+	bbox	0 0 85 83
+	offset	39 80
+	frame	data/chars/golrio/55.gif
+	attack	79 0 49 52 0 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
+		
+anim	attack400
+	bbox	0 1 61 80
+	delay	7
+	offset	28 79
+	frame	data/chars/golrio/57.gif
+	attack	94 42 43 36 0 0 1 0 0 0
+	bbox	0 1 61 80
+	offset	40 74
+	frame	data/chars/golrio/58.gif
+	bbox	1 0 68 89
+	offset	36 86
+	frame	data/chars/golrio/59.gif
+	attack	75 6 37 47 0 0 1 0 0 0
+	bbox	1 0 68 89
+	offset	35 89
+	frame	data/chars/golrio/60.gif
+	bbox	0 1 67 82
+	offset	27 80
+	frame	data/chars/golrio/61.gif
+	bbox	1 1 57 81
+	offset	25 79
+	frame	data/chars/golrio/62.gif
+	attack	71 1 48 56 0 0 1 0 0 0
+	bbox	1 1 57 81
+	offset	35 80
+	frame	data/chars/golrio/63.gif
+	bbox	0 0 96 86
+	offset	29 84
+	frame	data/chars/golrio/64.gif
+		
+anim	block120
+	bbox	1 1 74 103
+	delay	7
+	offset	32 100
+	frame	data/chars/golrio/23.gif
+	bbox	0 1 69 104
+	offset	32 102
+	frame	data/chars/golrio/24.gif
+	bbox	0 1 72 83
+	offset	36 81
+	frame	data/chars/golrio/25.gif
+	offset	34 85
+	frame	data/chars/golrio/26.gif
+		
+anim	fall5030
+	delay	7
+	offset	32 122
+	frame	data/chars/golrio/160.gif
+	offset	33 118
+	frame	data/chars/golrio/161.gif
+	offset	49 105
+	frame	data/chars/golrio/162.gif
+		
+		
+anim	fall5040
+	delay	7
+	offset	66 48
+	frame	data/chars/golrio/178.gif
+	offset	60 33
+	frame	data/chars/golrio/179.gif
+	offset	41 63
+	frame	data/chars/golrio/180.gif
+	offset	27 78
+	frame	data/chars/golrio/181.gif
+	offset	32 83
+	frame	data/chars/golrio/182.gif
+	offset	49 68
+	frame	data/chars/golrio/183.gif
+		
+anim	freespecial1000
+	bbox	0 0 64 102
+	delay	7
+	offset	32 100
+	frame	data/chars/golrio/80.gif
+	bbox	71 1 -70 117
+	offset	38 116
+	frame	data/chars/golrio/81.gif
+	bbox	0 0 0 0
+	offset	35 125
+	frame	data/chars/golrio/82.gif
+	offset	39 121
+	frame	data/chars/golrio/83.gif
+	offset	39 108
+	frame	data/chars/golrio/84.gif
+	offset	43 120
+	frame	data/chars/golrio/85.gif
+	offset	39 106
+	frame	data/chars/golrio/86.gif
+	offset	53 104
+	frame	data/chars/golrio/87.gif
+	offset	53 104
+	frame	data/chars/golrio/88.gif
+	offset	9 23
+	frame	data/chars/golrio/89.gif
+	offset	26 34
+	frame	data/chars/golrio/90.gif
+	offset	38 21
+	frame	data/chars/golrio/91.gif
+	offset	44 23
+	frame	data/chars/golrio/92.gif
+		
+anim	freespecial1100
+	delay	7
+	offset	32 90
+	frame	data/chars/golrio/93.gif
+	attack	1 0 159 144 0 0 1 0 0 0
+	offset	74 134
+	frame	data/chars/golrio/94.gif
+	offset	58 135
+	frame	data/chars/golrio/95.gif
+	attack	0 1 115 87 0 0 1 0 0 0
+	offset	56 119
+	frame	data/chars/golrio/96.gif
+	offset	35 124
+	frame	data/chars/golrio/97.gif
+	attack	0 0 85 56 0 0 1 0 0 0
+	offset	37 106
+	frame	data/chars/golrio/98.gif
+		
+anim	freespecial1200
+	delay	7
+	offset	64 69
+	frame	data/chars/golrio/99.gif
+	offset	74 66
+	frame	data/chars/golrio/100.gif
+	offset	69 62
+	frame	data/chars/golrio/101.gif
+	offset	41 65
+	frame	data/chars/golrio/102.gif
+	offset	61 62
+	frame	data/chars/golrio/103.gif
+	offset	42 62
+	frame	data/chars/golrio/104.gif
+	offset	36 85
+	frame	data/chars/golrio/105.gif
+		
+anim	idle
+	bbox	0 1 83 98
+	delay	7
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+		
+anim	jumpattack600
+	bbox	1 0 77 102
+	delay	20
+	offset	39 122
+	frame	data/chars/golrio/65.gif
+	attack	75 50 35 43 0 0 1 0 0 0
+	bbox	0 1 70 89
+	offset	35 124
+	frame	data/chars/golrio/66.gif
+	bbox	1 0 65 114
+	offset	33 142
+	frame	data/chars/golrio/67.gif
+	attack	75 29 23 49 0 0 1 0 0 0
+	bbox	0 1 70 84
+	offset	32 115
+	frame	data/chars/golrio/68.gif
+	bbox	0 0 71 103
+	offset	33 123
+	frame	data/chars/golrio/69.gif
+	attack	66 41 21 47 0 0 1 0 0 0
+	bbox	0 1 60 93
+	offset	23 120
+	frame	data/chars/golrio/70.gif
+	bbox	0 0 80 87
+	offset	36 117
+	frame	data/chars/golrio/71.gif
+	attack	91 24 40 54 0 0 1 0 0 0
+	bbox	0 0 92 91
+	offset	41 121
+	frame	data/chars/golrio/72.gif
+		
+anim	pain5000
+	delay	7
+	offset	32 101
+	frame	data/chars/golrio/106.gif
+	offset	36 105
+	frame	data/chars/golrio/107.gif
+	offset	36 105
+	frame	data/chars/golrio/108.gif
+	offset	36 105
+	frame	data/chars/golrio/109.gif
+	offset	36 105
+	frame	data/chars/golrio/110.gif
+	offset	36 105
+	frame	data/chars/golrio/111.gif
+		
+anim	pain5010
+	delay	7
+	offset	33 95
+	frame	data/chars/golrio/124.gif
+	offset	38 96
+	frame	data/chars/golrio/125.gif
+	offset	38 96
+	frame	data/chars/golrio/126.gif
+	offset	38 96
+	frame	data/chars/golrio/127.gif
+	offset	38 96
+	frame	data/chars/golrio/128.gif
+	offset	38 96
+	frame	data/chars/golrio/129.gif
+		
+anim	respawn
+	delay	7
+	offset	29 143
+	frame	data/chars/golrio/36.gif
+	offset	34 144
+	frame	data/chars/golrio/37.gif
+		
+anim	run
+	delay	7
+	offset	49 74
+	frame	data/chars/golrio/19.gif
+	offset	43 86
+	frame	data/chars/golrio/20.gif
+	offset	40 68
+	frame	data/chars/golrio/21.gif
+	offset	29 79
+	frame	data/chars/golrio/22.gif
+		
+anim	walk
+	bbox	1 1 60 105
+	delay	20
+	offset	25 104
+	frame	data/chars/golrio/10.gif
+	bbox	0 1 82 105
+	offset	34 102
+	frame	data/chars/golrio/11.gif
+	bbox	1 1 60 108
+	offset	24 106
+	frame	data/chars/golrio/12.gif
+	bbox	0 0 79 106
+	offset	32 104
+	frame	data/chars/golrio/13.gif
+		
+#|edited by openBor Stats v 0.67
+		
