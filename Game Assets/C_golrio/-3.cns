@@ -1,0 +1,683 @@
+
+
+
+
+;===================================================================================
+
+[Statedef -3]
+
+
+
+;===========================================================
+
+;☆各種強化スイッチ (全て基本の数値は0です。var(?) = 0)
+
+;===========================================================
+
+
+
+[state -3,ゲージ技カットイン]
+type = varset
+trigger1 = 1
+var(5) = 1
+
+;↑ゲージ技カットインを独自のカットインに差し替えます
+
+
+[state -3,根性値ON]
+type = varset
+trigger1 = 1
+var(7) = 0
+
+;↑この数値を1にするとそれなり、2にすると強めに根性値が設定されます。またどちらも攻撃を受けるとゲージが微増します
+;3にしたら結構ひどい硬さになる。レベルは1～3まででONにすると削られて死ぬ確率が減ります。0でそのまま
+
+
+[state -3,アクション追加]
+type = varset
+trigger1 = 1
+var(8) = 0
+
+;↑1にするとゲージ溜めが可能になり、2にすると前転とバックステップ、3にするとその両方使えます。また1以上でダッシュ速度が微増します
+;0=何も無し　1=ゲージ溜め　2=前転、バックステップ　3=ゲージ溜め、前転、バックステップ
+
+
+[state -3,移動起き上がり]
+type = varset
+trigger1 = 1
+var(12) = 0
+
+;↑1にすると移動起き上がりができるようになります
+
+[state -3,3ゲージ超必勝技ダメージ平均化]
+type = varset
+trigger1 = roundstate < 2
+var(9) = 0
+
+;↑3ゲージ投げのダメージ平均化。相手キャラの根性値によっては3割も減らせないことがあってｲﾗｯとして作った
+;これを1にするとだいたい520～600くらいキッチリ減らす……っぽい？(本来のダメージは590)
+
+
+[state -3,AI殺し殺し]
+type = varset
+trigger1 = 1
+var(18) = 0
+
+;↑1にするとゴルリオの亀腹脚(腹ばい回転)による背向けAI殺し攻撃が少し緩和されます。勿論ゴルリオ弱体化
+;AI殺しが目立って嫌な場合はどうぞ。ただし無理矢理組み込んだ物ですのであまり影響が出なかったり、何か不具合があるかも
+
+
+[state -3,本気になったゴルリオ]
+type = varset
+trigger1 = 1
+fvar(6) = 0
+
+;↑1にするとゴルリオの投げモーションの後の疲労が無くなり、飛び道具が一方的に打ち消されなくなります
+
+
+[state -3,お手軽コンボスイッチ(お試し版)]
+type = varset
+trigger1 = palno != 12
+trigger1 = 1
+var(49) = 0
+
+;↑1にすると通常技と一部の必勝技がヒットもしくはガードさせた際にキャンセルできるようになります
+;まだ実験段階ですがちょっと面白かったので乗せました(AI未対応。一応それっぽい動きしますけど)
+;ONになった場合はコンボ補正がかかります
+
+
+
+;=====================================================================
+
+;☆各種ネタモードスイッチ (ゴルボロスは使い方で特に凶悪になるので注意)
+
+;=====================================================================
+
+[state -3,ハイスピードゴルリオ]
+type = varset
+triggerall = palno != 9
+trigger1 = roundstate < 2
+trigger2 = stateno = 5900
+var(55) = 1 ;基本の数値は1です。0だと移動できなくなります
+
+;上の数字を弄ると移動速度が設定した数字分倍加します。2と入力すれば2倍。3と入力すれば3倍。10と入力すれば10倍です
+;あくまで移動速度だけなので隙が減るとか攻撃モーションが早くなるとかではありません。たいして強くならないが驚きの挙動を見られるかも
+;9Pカラーに赤い彗星モードを仕込んでおきましたので、手っ取り早くネタが見たい方はそちらを選択してみてください
+
+
+[state -3,ダカダカスイッチ]
+type = varset
+triggerall = palno != 9
+trigger1 = 1
+var(11) = 0
+
+;↑1にすると上のスピードスイッチを2以上にした際、移動モーションがげんじんしんになります
+;かなりウザイ。9Pカラーの赤い彗星モードには標準搭載
+
+
+[state -3,ゴルリオモードチェンジ許可]
+type = varset
+trigger1 = 1
+var(6) = 0
+
+↑1にすると舞空術が可能になり、2にすると勝手にｶｧﾝ、3にするとその両方使えます。ゲージを1本消費します。舞空術中はゲージ回収が微増します
+;0=何も無し　1=舞空術　2=勝手にｶｧﾝ　3=舞空術、勝手にｶｧﾝ(一気に両方得るわけではなく片方ずつモード追加します)
+
+
+[state -3,舞空術]
+type = varset
+trigger1 = roundstate = 1
+trigger2 = stateno = 5900
+var(0) = 0
+
+;↑1にすると最初から常にアフガン航空テコンドーモードになります
+
+
+[state -3,尖兵インストール]
+type = varset
+trigger1 = roundstate = 1
+trigger2 = stateno = 5900
+var(2) = 0
+
+;↑1にすると最初から常にｶｧﾝが勝手にモードになります
+
+
+[state -3,ゴルボロス]
+type = varset
+trigger1 = 1
+var(4) = 0
+
+;↑周囲を旋回するゴルリオビットの最大数。偶数で設定してください。0にすると使わなくなります
+
+
+[state -3,ゴルボロス射出量]
+type = varset
+trigger1 = 1
+var(3) = 3
+
+;↑ゴルボロスから撃ちだされるゴルリオの数量レベルです。1～5まであり、1だと少なく、5だと恐ろしいことになりバグるかも
+
+
+[state -3,ゴルボロス消費ゲージ量]
+type = varset
+trigger1 = 1
+var(17) = 2000
+
+;↑ゴルボロスに必要なゲージの量を決めます
+
+
+[state -3,CPUネタモード使用頻度操作]
+type = varset
+trigger1 = 1
+fvar(7) = 0
+
+;↑各種ネタ技CPU使用頻度操作
+
+;0=どの技も積極的には使いません
+;1=ゲージが溜まればすぐに舞空術を使います
+;2=ゲージが溜まればすぐに尖兵インストールを使います
+;3=ゲージが溜まればすぐにゴルボロスを使います
+;4=ゲージが溜まればすぐに舞空術、尖兵インストールを使います
+;5=ゲージが溜まればすぐに舞空術、ゴルボロスを使います
+;6=ゲージが溜まればすぐに尖兵インストール、ゴルボロスを使います
+;7=ゲージが溜まればすぐに舞空術、尖兵インストール、ゴルボロスを使います
+
+
+
+
+
+;=============================================================
+
+☆スイッチはここまで。いじょ。
+
+;===============================================================
+
+[State -3, Landing Sound]
+type = PlaySnd
+triggerall = Time = 1
+trigger1 = stateno = 50
+value = 4, 0
+ignorehitpause = 1
+
+[State -3, Landing Sound]
+type = PlaySnd
+triggerall = Time = 1
+trigger1 = stateno = 52
+value = 4, 2
+ignorehitpause = 1
+
+[State -3, Landing Sound]
+type = stopSnd
+trigger1 = movetype = H
+channel = 1
+
+[state -3, debug output]
+type = DisplayToClipboard
+trigger1 = 1
+text= "Var(21):%d,Var(22):%d,Var(23):%d,var(25):%d,fvar(10):%d"
+params = var(21), var(22), var(23), var(25), fvar(10)
+ignorehitpause = 1
+
+[State -3]
+type = helper
+;trigger1 = TeamMode = single || TeamMode = turns
+trigger1 = MatchOver
+trigger1 = stateno = [181,184]
+trigger1 = win && !Numhelper(9999)
+name = "CPUwinface"
+id = 9999
+pos = 0,0
+stateno = 9999
+helpertype = normal
+ownpal = 1
+ontop = 1
+keyctrl = 0
+ignorehitpause = 1
+persistent = 0
+
+
+
+
+
+[State -2,AI殺し殺しヘルパー]
+Type = Helper
+TriggerAll = roundstate = 2
+triggerall = var(18) = 1
+Triggerall = NumHelper(30050) = 0
+trigger1 = stateno = 1201
+trigger2 = stateno = 1203
+trigger3 = stateno = 2002
+helpertype = player
+StateNo = 30050
+PosType = p1
+Pos = 0, 0
+Ownpal = 1
+IgnoreHitPause = 1
+SuperMoveTime = 99999
+PauseMoveTime = 99999
+SprPriority = 7
+ID = 30050
+
+
+
+
+
+;チームモードイントロ判定（自分交代時）
+[State -3, Turns Mode Intro]
+type = ChangeState
+trigger1 = Roundsexisted <= 0
+trigger1 = RoundState = 0
+trigger1 = time = 0; && var(16) = 1
+value = 190
+
+
+
+;==========================================================================
+;ゲージ、暗転監視
+
+
+[state -3,ゲージ量]
+type = varset
+var(45) = enemy,power
+trigger1 = numenemy
+ignorehitpause = 1
+
+
+
+[State -3, 暗転感知用]
+type = varadd
+trigger1 = roundstate = 2
+var(19) = 1
+ignorehitpause = 1
+
+[State -3, 暗転感知暴発防止用]
+type = varset
+trigger1 = var(19) >= 90
+trigger2 = stateno = [120,159]
+var(19) = helper(30000),var(0)
+ignorehitpause = 1
+
+[State -3, 暗転感知暴発防止用]
+type = varset
+trigger1 = var(42) = [1,19];超必らしくない暗転を感知したら0に
+trigger2 = var(42) >= 90
+var(42) = 0
+ignorehitpause = 1
+
+
+
+
+
+
+
+;==========================================================================
+;当身学習
+
+
+[State -3, 擬似学習用var]
+type = varset
+trigger1 = !ishelper
+trigger1 = !MoveReversed                     ;当身されていないとき
+var(37) = enemynear(var(56)),stateno            ;敵のステート監視
+
+
+
+[State -3, 擬似学習用var];トリガー用
+type = varset
+triggerall = !ishelper
+triggerall = numenemy
+triggerall = numhelper(30000)
+triggerall = enemynear(var(56)),ID = helper(30000),var(36)
+triggerall = helper(30000),var(30) != 0              ;当身されたことがあるとき
+trigger1 = var(37) = helper(30000),var(30)           ;相手のステートが当身ステートのとき
+trigger2 = var(37) = helper(30000),var(31)           ;相手のステートが当身ステートのとき
+trigger3 = var(37) = helper(30000),var(32)           ;相手のステートが当身ステートのとき
+var(38) = 0
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガー用
+type = varset
+triggerall = !ishelper
+triggerall = numenemy
+triggerall = numhelper(30000)
+triggerall = enemynear(var(56)),ID = helper(30000),var(36)
+trigger1 = helper(30000),var(30) = 0                 ;当身されたことがないとき
+trigger2 = helper(30000),var(30) != 0                ;当身されたことがあるとき
+trigger2 = var(37) != helper(30000),var(30)          ;相手のステートが当身ステートでないとき
+trigger3 = helper(30000),var(31) != 0                ;当身されたことがあるとき
+trigger3 = var(37) != helper(30000),var(31)          ;相手のステートが当身ステートでないとき
+trigger4 = helper(30000),var(32) != 0                ;当身されたことがあるとき
+trigger4 = var(37) != helper(30000),var(32)          ;相手のステートが当身ステートでないとき
+var(38) = 1
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガータッグ用
+type = varset
+triggerall = !ishelper
+triggerall = numenemy = 2
+triggerall = numhelper(30000)
+triggerall = enemynear(var(56)),ID = helper(30000),var(37)
+triggerall = helper(30000),var(30) != 0              ;当身されたことがあるとき
+trigger1 = var(37) = helper(30000),var(33)           ;相手のステートが当身ステートのとき
+trigger2 = var(37) = helper(30000),var(34)           ;相手のステートが当身ステートのとき
+trigger3 = var(37) = helper(30000),var(35)           ;相手のステートが当身ステートのとき
+var(39) = 0
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガータッグ用
+type = varset
+triggerall = !ishelper
+triggerall = numenemy = 2
+triggerall = numhelper(30000)
+triggerall = enemynear(var(56)),ID = helper(30000),var(37)
+trigger1 = helper(30000),var(30) = 0                 ;当身されたことがないとき
+trigger2 = helper(30000),var(30) != 0                ;当身されたことがあるとき
+trigger2 = var(33) != helper(30000),var(33)          ;相手のステートが当身ステートでないとき
+trigger3 = helper(30000),var(31) != 0                ;当身されたことがあるとき
+trigger3 = var(34) != helper(30000),var(34)          ;相手のステートが当身ステートでないとき
+trigger4 = helper(30000),var(32) != 0                ;当身されたことがあるとき
+trigger4 = var(35) != helper(30000),var(35)          ;相手のステートが当身ステートでないとき
+var(39) = 1
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガー
+type = varset
+triggerall = !ishelper
+triggerall = numenemy
+triggerall = numhelper(30000)
+trigger1 = enemynear(var(56)),ID =! helper(30000),var(36)
+var(38) = 1
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガータッグ用
+type = varset
+triggerall = !ishelper
+triggerall = numenemy = 2
+triggerall = numhelper(30000)
+trigger1 = enemynear(var(56)),ID =! helper(30000),var(37)
+var(39) = 1
+ignorehitpause = 1
+
+
+[State -3, 擬似学習用var];トリガータッグ用
+type = varset
+triggerall = !ishelper
+trigger1 = numenemy != 2
+var(39) = 1
+ignorehitpause = 1
+
+
+
+;===========================================================================
+;飛行関連
+;icl氏の記述をお借りしてます
+
+
+
+
+[State -3, 空中時無重力]
+type = StateTypeSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateType = A
+triggerall = StateNo != [700,899]
+trigger1 = MoveType != H
+trigger2 = (StateNo = [120,159])
+physics = N
+
+[State -3, ジャンプが高く]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateType = A
+trigger1 = StateNo = 50
+y = -5*var(55)
+
+
+
+[State -3, 攻撃中敵に接近（水平）]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateType = A
+triggerall = StateNo != [700,899]
+trigger1 = MoveType = A
+trigger1 = !MoveGuarded
+trigger1 = time <= 4
+x = (p2Dist X) / 8*var(55)
+
+[State -3, 攻撃中敵に接近（垂直）]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateType = A
+triggerall = StateNo != [700,899]
+triggerall = numenemy
+trigger1 = MoveType = A
+trigger1 = !MoveGuarded
+y = ((p2Dist Y) / 14) - (EnemyNear(Var(56)),MoveType = H)*0.4 + (EnemyNear(Var(56)),StateNo = [120,159])*4*var(55); + ((EnemyNear(Var(56)),MoveType = H)*0.5) + ((EnemyNear(Var(56)),StateNo = [120,159])*2) + (EnemyNear(Var(56)),GetHitVar(HitCount)>=25)*5
+
+[State -3, 攻撃が接触時斜め下にベクトルがかかる（空対地の永久防止）]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateType = A
+triggerall = StateNo != [700,899]
+trigger1 = MoveType = A
+trigger1 = MoveContact
+x = -2.8*var(55)
+y = 2.8*var(55)
+
+[State -3, 自分で書いたはずだがイマイチ覚えてない]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateNo != [700,899]
+trigger1 = MoveType = I
+trigger1 = StateType = A
+trigger1 = Random%32 = 0
+;trigger1 = time <= 4
+y = 1 -(10 * (Pos Y >= -200))*var(55)
+
+[State -3, 何これ？　よくわかんない多分動いてない]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = numenemy
+triggerall = StateNo != [700,899]
+trigger1 = MoveType = I
+trigger1 = StateType = A
+trigger1 = Random%10 = 0
+trigger1 = abs(pos y) < abs(EnemyNear(Var(56)),Pos Y * 1.5)
+trigger1 = Pos Y > Enemy,Pos Y * 1.5
+y = 7*var(55)
+
+[State -3, 特定の条件下で空中で静止する]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateNo != [700,899]
+triggerall = numenemy
+trigger1 = StateType = A
+trigger1 = MoveType != H
+trigger1 = MoveType != A
+trigger1 = Ctrl
+trigger1 = Pos Y + 100 < EnemyNear(Var(56)),Pos Y
+x = 0
+y = 0
+
+[State -3, 自分と敵の両方が空中にいて、かつ攻撃中でない場合敵に接近]
+type = VelSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = StateNo != [700,899]
+triggerall = numenemy
+trigger1 = StateType = A
+trigger1 = MoveType = I
+trigger1 = EnemyNear(Var(56)),StateType = A
+;trigger1 = EnemyNear(Var(56)),MoveType != H
+trigger1 = time <= 4
+x = (p2Dist X) / 20*var(55)
+y = (p2Dist Y) / 17*var(55)
+
+
+
+[State -3, 空中で静止すると地上判定になる]
+type = StateTypeSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+trigger1 = Vel X = 0
+trigger1 = Vel Y = 0
+trigger1 = Ctrl
+trigger1 = MoveType != A
+value = S
+
+[State -3, 空中で何らかのベクトルがかかると空中判定になる]
+type = StateTypeSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+triggerall = numenemy
+trigger1 = Vel X != 0 || Vel Y != 0
+trigger1 = Ctrl
+trigger1 = pos y < 0
+trigger2 = StateNo != [700,899]
+trigger2 = MoveType != A
+trigger2 = StateType = A
+trigger2 = Ctrl
+trigger2 = MoveType != H
+trigger2 = EnemyNear(Var(56)),StateType = S
+trigger2 = abs(Vel X) < 1
+trigger2 = Vel Y = 0
+value = A
+
+[State -3, 沈んだときにy位置を戻す]
+type = PosSet
+triggerall = Var(0) >= 1
+triggerall = RoundState = 2
+trigger1 = Ctrl
+trigger1 = Pos Y > 0
+y = 0
+
+[State -3, 画面上空へ消失したときに落とす]
+type = VelAdd
+triggerall = Var(0) >= 1
+triggerall = RoundState >= 2
+trigger1 = ScreenPos Y < -190
+y = 20*var(55)
+
+[State -3, 勝利時登り続けるのを阻止する]
+type = StateTypeSet
+triggerall = Var(0) >= 1
+trigger1 = RoundState > 2
+trigger1 = StateType = A
+trigger1 = Alive
+physics = A
+
+[State -3, 勝利時のバグ防止……のはずがよくバグるのでこれか上が悪さしてる]
+type = StateTypeSet
+triggerall = Var(0) >= 1
+trigger1 = RoundState > 2
+trigger1 = StateType = S
+trigger1 = Alive
+physics = S
+
+
+
+;================================================================================
+
+;ハイパーアーマー系
+
+;================================================================================
+
+
+
+[State -3, assertspecial]
+type = assertspecial
+trigger1 = palno = 12
+flag = nostandguard
+flag2 = noairguard
+flag3 = nocrouchguard
+ignorehitpause = 1
+
+
+State -3, nothitby]
+type = nothitby
+trigger1 = palno = 12
+value = SCA,AA,AT,AP
+time = 9999999
+ignorehitpause = 1
+
+[State -3, hitoverride]
+type = hitoverride
+trigger1 = palno = 12
+attr = SCA,AA,AT,AP
+slot = 1
+stateno = 50
+time = -1
+
+[State -3, hitoverride]
+type = hitoverride
+trigger1 = palno = 12
+attr = SCA,AA,AT,AP
+slot = 2
+stateno = 50
+time = -1
+
+[State -3, hitoverride]
+type = hitoverride
+trigger1 = palno = 12
+attr = SCA,AA,AT,AP
+slot = 3
+stateno = 50
+time = -1
+
+
+[State -3,varset]
+type = varset
+trigger1 = 1
+var(22) = gametime
+
+
+
+[State -3,varset]
+type = varset
+trigger1 = life = 0
+trigger2 = stateno = [190,192]
+trigger3 = stateno = 5900
+var(24) = 0
+
+
+
+[State -3, selfstate]
+type = selfstate
+triggerall = roundstate = 2
+triggerall = alive
+triggerall = var(49) = 1
+triggerall = var(22) != gametime
+triggerall = movetype = A
+trigger1 = stateno = [220,1099]
+trigger2 = stateno = [0,214]
+value = 50
+ctrl = 1
+ignorehitpause = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
