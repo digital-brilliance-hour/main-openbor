@@ -10,13 +10,119 @@ diesound data/sounds/eek.wav
 
 
 
-
-
-
-
+anim	0006
+	delay	7
+	offset	35 114
+	frame	data/chars/M_washizuka/64.gif
+		
+anim	0010
+	delay	7
+	offset	35 83
+	frame	data/chars/M_washizuka/52.gif
+		
+anim	0011
+	delay	7
+	offset	35 77
+	frame	data/chars/M_washizuka/53.gif
+		
+anim	0040
+	delay	7
+	offset	36 92
+	frame	data/chars/M_washizuka/54.gif
+		
+anim	0101
+	delay	7
+	offset	46 97
+	frame	data/chars/M_washizuka/35.gif
+	offset	47 93
+	frame	data/chars/M_washizuka/36.gif
+	offset	49 91
+	frame	data/chars/M_washizuka/37.gif
+	offset	50 92
+	frame	data/chars/M_washizuka/38.gif
+	offset	48 91
+	frame	data/chars/M_washizuka/39.gif
+	offset	40 93
+	frame	data/chars/M_washizuka/40.gif
+	offset	39 97
+	frame	data/chars/M_washizuka/41.gif
+		
+anim	0106
+	delay	7
+	offset	30 140
+	frame	data/chars/M_washizuka/43.gif
+	offset	32 143
+	frame	data/chars/M_washizuka/44.gif
+	offset	32 143
+	frame	data/chars/M_washizuka/45.gif
+	offset	32 143
+	frame	data/chars/M_washizuka/46.gif
+	offset	32 143
+	frame	data/chars/M_washizuka/47.gif
+	offset	32 143
+	frame	data/chars/M_washizuka/48.gif
+		
+anim	0107
+	delay	7
+	offset	40 103
+	frame	data/chars/M_washizuka/49.gif
+	offset	39 136
+	frame	data/chars/M_washizuka/50.gif
+	offset	37 139
+	frame	data/chars/M_washizuka/51.gif
+		
+anim	5400
+	delay	7
+	offset	40 136
+	frame	data/chars/M_washizuka/169.gif
+	offset	69 117
+	frame	data/chars/M_washizuka/170.gif
+	offset	97 120
+	frame	data/chars/M_washizuka/171.gif
+	offset	88 116
+	frame	data/chars/M_washizuka/172.gif
+	offset	79 136
+	frame	data/chars/M_washizuka/173.gif
+	offset	39 104
+	frame	data/chars/M_washizuka/174.gif
+		
+anim	5410
+	delay	7
+	offset	33 117
+	frame	data/chars/M_washizuka/175.gif
+	offset	80 100
+	frame	data/chars/M_washizuka/176.gif
+	offset	103 97
+	frame	data/chars/M_washizuka/177.gif
+	offset	108 103
+	frame	data/chars/M_washizuka/178.gif
+	offset	87 119
+	frame	data/chars/M_washizuka/179.gif
+	offset	37 87
+	frame	data/chars/M_washizuka/180.gif
+		
+anim	risetoo
+	delay	7
+	offset	51 51
+	frame	data/chars/M_washizuka/153.gif
+		
+anim	6041
+	delay	7
+	offset	41 65
+	frame	data/chars/M_washizuka/154.gif
+	offset	34 76
+	frame	data/chars/M_washizuka/155.gif
+		
+anim	9000
+	delay	7
+	offset	0 0
+	frame	data/chars/M_washizuka/0.gif
+	offset	0 0
+	frame	data/chars/M_washizuka/1.gif
+		
 anim	attack1
 	bbox	0 19 79 106
-	delay	3
+	delay	30
 	offset	34 121
 	frame	data/chars/M_washizuka/181.gif
 	bbox	46 1 83 99
@@ -36,29 +142,9 @@ anim	attack1
 	offset	39 120
 	frame	data/chars/M_washizuka/186.gif
 		
-anim	attack10
-	delay	7
-	offset	3 144
-	frame	data/chars/M_washizuka/194.gif
-	offset	-65 68
-	frame	data/chars/M_washizuka/195.gif
-	offset	-64 22
-	frame	data/chars/M_washizuka/196.gif
-	offset	-64 11
-	frame	data/chars/M_washizuka/197.gif
-		
-anim	attack11
-	delay	7
-	offset	-57 170
-	frame	data/chars/M_washizuka/204.gif
-	offset	-63 160
-	frame	data/chars/M_washizuka/205.gif
-	offset	-63 160
-	frame	data/chars/M_washizuka/206.gif
-		
 anim	attack2
 	bbox	0 31 78 111
-	delay	3
+	delay	40
 	offset	34 139
 	frame	data/chars/M_washizuka/187.gif
 	bbox	16 39 82 108
@@ -81,9 +167,20 @@ anim	attack2
 	offset	39 93
 	frame	data/chars/M_washizuka/193.gif
 		
+anim	attack10
+	delay	7
+	offset	3 144
+	frame	data/chars/M_washizuka/194.gif
+	offset	-65 68
+	frame	data/chars/M_washizuka/195.gif
+	offset	-64 22
+	frame	data/chars/M_washizuka/196.gif
+	offset	-64 11
+	frame	data/chars/M_washizuka/197.gif
+		
 anim	attack3
 	bbox	1 1 88 93
-	delay	6
+	delay	40
 	offset	53 90
 	frame	data/chars/M_washizuka/198.gif
 	attack	88 1 55 58 0 0 1 0 0 0
@@ -103,6 +200,15 @@ anim	attack3
 	bbox	0 0 84 104
 	offset	39 100
 	frame	data/chars/M_washizuka/203.gif
+		
+anim	attack11
+	delay	7
+	offset	-57 170
+	frame	data/chars/M_washizuka/204.gif
+	offset	-63 160
+	frame	data/chars/M_washizuka/205.gif
+	offset	-63 160
+	frame	data/chars/M_washizuka/206.gif
 		
 anim	attack4
 	bbox	1 1 82 95
@@ -125,7 +231,7 @@ anim	attack4
 		
 anim	attack5
 	bbox	0 1 65 101
-	delay	8
+	delay	20
 	offset	32 99
 	frame	data/chars/M_washizuka/234.gif
 	bbox	1 1 74 102
@@ -146,7 +252,7 @@ anim	attack5
 		
 anim	backwalk
 	bbox	0 30 76 109
-	delay	10
+	delay	20
 	offset	35 134
 	frame	data/chars/M_washizuka/22.gif
 	bbox	1 32 71 109
@@ -173,8 +279,8 @@ anim	dodge
 	offset	36 91
 	frame	data/chars/M_washizuka/42.gif
 		
-anim	fall
-	delay	8
+anim	fall5030
+	delay	30
 	offset	43 153
 	frame	data/chars/M_washizuka/91.gif
 	offset	47 121
@@ -196,9 +302,9 @@ anim	fall
 	offset	88 30
 	frame	data/chars/M_washizuka/152.gif
 		
-anim	freespecial
+anim	freespecial1000
 	bbox	0 1 79 97
-	delay	8
+	delay	20
 	offset	32 96
 	frame	data/chars/M_washizuka/345.gif
 	bbox	47 0 84 95
@@ -236,32 +342,26 @@ anim	freespecial
 	offset	39 93
 	frame	data/chars/M_washizuka/356.gif
 		
-anim	freespecial10
-	bbox	0 1 67 71
-	delay	8
-	offset	37 69
-	frame	data/chars/M_washizuka/162.gif
-	attack	51 1 56 65 0 0 1 0 0 0
-	offset	46 62
-	frame	data/chars/M_washizuka/163.gif
-	attack	67 18 58 69 0 0 1 0 0 0
-	offset	58 82
-	frame	data/chars/M_washizuka/164.gif
-	attack	44 1 58 74 0 0 1 0 0 0
-	offset	54 72
-	frame	data/chars/M_washizuka/165.gif
-	offset	35 86
-	frame	data/chars/M_washizuka/166.gif
-	attack	76 6 34 44 0 0 1 0 0 0
-	offset	44 52
-	frame	data/chars/M_washizuka/167.gif
-	bbox	6 0 90 86
-	offset	45 76
-	frame	data/chars/M_washizuka/168.gif
+anim	freespecial1010
+	delay	7
+	offset	30 113
+	frame	data/chars/M_washizuka/367.gif
+	offset	-23 110
+	frame	data/chars/M_washizuka/368.gif
+	offset	-43 101
+	frame	data/chars/M_washizuka/369.gif
+	offset	-54 87
+	frame	data/chars/M_washizuka/370.gif
+	offset	-53 87
+	frame	data/chars/M_washizuka/371.gif
+	offset	-53 79
+	frame	data/chars/M_washizuka/372.gif
+	offset	-53 71
+	frame	data/chars/M_washizuka/373.gif
 		
-anim	freespecial2
+anim	freespecial1100
 	bbox	1 1 86 92
-	delay	8
+	delay	20
 	offset	51 91
 	frame	data/chars/M_washizuka/357.gif
 	bbox	0 1 84 99
@@ -294,7 +394,24 @@ anim	freespecial2
 	offset	30 96
 	frame	data/chars/M_washizuka/366.gif
 		
-anim	freespecial3
+anim	freespecial1110
+	delay	7
+	offset	16 120
+	frame	data/chars/M_washizuka/374.gif
+	offset	17 111
+	frame	data/chars/M_washizuka/375.gif
+	offset	18 101
+	frame	data/chars/M_washizuka/376.gif
+	offset	18 84
+	frame	data/chars/M_washizuka/377.gif
+	offset	18 63
+	frame	data/chars/M_washizuka/378.gif
+	offset	18 38
+	frame	data/chars/M_washizuka/379.gif
+	offset	17 25
+	frame	data/chars/M_washizuka/380.gif
+		
+anim	freespecial1500
 	bbox	1 1 86 94
 	delay	7
 	offset	45 93
@@ -314,6 +431,7 @@ anim	freespecial3
 	bbox	1 26 100 93
 	offset	41 116
 	frame	data/chars/M_washizuka/386.gif
+	attack	106 1 80 102 0 0 1 0 0 0
 	bbox	8 37 92 131
 	offset	57 163
 	frame	data/chars/M_washizuka/387.gif
@@ -322,18 +440,22 @@ anim	freespecial3
 	offset	55 163
 	frame	data/chars/M_washizuka/388.gif
 	bbox	8 37 92 131
+	attack	99 1 84 81 0 0 1 0 0 0
 	offset	54 163
 	frame	data/chars/M_washizuka/389.gif
-	attack	104 1 94 53 0 0 1 0 0 0
+	attack	99 1 84 81 0 0 0 1 0 0
 	bbox	8 37 92 131
 	offset	54 164
 	frame	data/chars/M_washizuka/390.gif
+	attack	99 1 84 81 0 0 1 0 0 0
 	bbox	8 37 92 131
 	offset	49 163
 	frame	data/chars/M_washizuka/391.gif
+	attack	99 1 84 81 0 0 0 1 0 0
 	bbox	0 37 107 114
 	offset	42 148
 	frame	data/chars/M_washizuka/392.gif
+	attack	85 1 62 44 0 0 1 0 0 0
 	bbox	1 1 92 109
 	offset	43 107
 	frame	data/chars/M_washizuka/393.gif
@@ -344,12 +466,53 @@ anim	freespecial3
 	offset	42 93
 	frame	data/chars/M_washizuka/395.gif
 		
-anim	freespecial4
+anim	freespecial1510
+	delay	7
+	offset	12 10
+	frame	data/chars/M_washizuka/396.gif
+	offset	23 121
+	frame	data/chars/M_washizuka/397.gif
+	offset	24 152
+	frame	data/chars/M_washizuka/398.gif
+	offset	27 243
+	frame	data/chars/M_washizuka/399.gif
+	offset	27 240
+	frame	data/chars/M_washizuka/400.gif
+	offset	31 236
+	frame	data/chars/M_washizuka/401.gif
+	offset	37 236
+	frame	data/chars/M_washizuka/402.gif
+	offset	-24 236
+	frame	data/chars/M_washizuka/403.gif
+		
+anim	freespecial1610
+	delay	7
+	offset	23 14
+	frame	data/chars/M_washizuka/404.gif
+	offset	36 136
+	frame	data/chars/M_washizuka/405.gif
+	offset	46 160
+	frame	data/chars/M_washizuka/406.gif
+	offset	41 223
+	frame	data/chars/M_washizuka/407.gif
+	offset	45 221
+	frame	data/chars/M_washizuka/408.gif
+	offset	46 213
+	frame	data/chars/M_washizuka/409.gif
+	offset	48 206
+	frame	data/chars/M_washizuka/410.gif
+	offset	48 208
+	frame	data/chars/M_washizuka/411.gif
+	offset	-49 208
+	frame	data/chars/M_washizuka/412.gif
+		
+anim	freespecial2001
 	attack	102 16 37 27 0 0 1 0 0 0
 	bbox	0 1 98 92
-	delay	8
+	delay	15
 	offset	61 90
 	frame	data/chars/M_washizuka/413.gif
+	attack	84 20 40 25 0 0 0 1 0 0
 	bbox	1 1 80 92
 	offset	47 89
 	frame	data/chars/M_washizuka/414.gif
@@ -357,6 +520,7 @@ anim	freespecial4
 	bbox	1 1 80 92
 	offset	41 89
 	frame	data/chars/M_washizuka/415.gif
+	attack	98 19 35 26 0 0 1 0 0 0
 	bbox	1 0 95 92
 	offset	56 89
 	frame	data/chars/M_washizuka/416.gif
@@ -364,13 +528,14 @@ anim	freespecial4
 	bbox	1 1 84 92
 	offset	52 89
 	frame	data/chars/M_washizuka/417.gif
+	attack	79 24 39 25 0 0 1 0 0 0
 	bbox	1 1 75 92
 	offset	41 89
 	frame	data/chars/M_washizuka/418.gif
 		
-anim	freespecial5
+anim	freespecial2005
 	bbox	1 2 86 95
-	delay	8
+	delay	15
 	offset	49 94
 	frame	data/chars/M_washizuka/419.gif
 	attack	79 4 26 32 0 0 1 0 0 0
@@ -388,9 +553,9 @@ anim	freespecial5
 	offset	43 93
 	frame	data/chars/M_washizuka/423.gif
 		
-anim	freespecial6
+anim	freespecial2100
 	bbox	1 1 91 95
-	delay	8
+	delay	20
 	offset	53 93
 	frame	data/chars/M_washizuka/424.gif
 	bbox	1 1 91 95
@@ -400,6 +565,7 @@ anim	freespecial6
 	bbox	1 1 91 95
 	offset	48 94
 	frame	data/chars/M_washizuka/426.gif
+	attack	110 5 92 50 0 0 1 0 0 0
 	bbox	1 1 97 100
 	offset	54 98
 	frame	data/chars/M_washizuka/427.gif
@@ -411,7 +577,7 @@ anim	freespecial6
 	bbox	8 0 92 91
 	offset	54 88
 	frame	data/chars/M_washizuka/429.gif
-	attack	112 1 103 34 0 0 1 0 0 0
+	attack	115 3 85 39 0 0 1 0 0 0
 	bbox	1 1 97 89
 	offset	54 87
 	frame	data/chars/M_washizuka/430.gif
@@ -426,10 +592,40 @@ anim	freespecial6
 	offset	38 94
 	frame	data/chars/M_washizuka/433.gif
 		
+anim	freespecial2101
+	delay	7
+	offset	-44 82
+	frame	data/chars/M_washizuka/434.gif
+	offset	-69 78
+	frame	data/chars/M_washizuka/435.gif
+	offset	-86 78
+	frame	data/chars/M_washizuka/436.gif
+		
+anim	freespecial3600
+	bbox	0 1 67 71
+	delay	20	offset	37 69
+	frame	data/chars/M_washizuka/162.gif
+	attack	51 1 56 65 0 0 1 0 0 0
+	offset	46 62
+	frame	data/chars/M_washizuka/163.gif
+	attack	67 18 58 69 0 0 1 0 0 0
+	offset	58 82
+	frame	data/chars/M_washizuka/164.gif
+	attack	44 1 58 74 0 0 1 0 0 0
+	offset	54 72
+	frame	data/chars/M_washizuka/165.gif
+	offset	35 86
+	frame	data/chars/M_washizuka/166.gif
+	attack	76 6 34 44 0 0 1 0 0 0
+	offset	44 52
+	frame	data/chars/M_washizuka/167.gif
+	bbox	6 0 90 86
+	offset	45 76
+	frame	data/chars/M_washizuka/168.gif
+		
 anim	idle
-	loop	1
 	bbox	2 1 79 100
-	delay	15
+	delay	7
 	offset	39 99
 	frame	data/chars/M_washizuka/2.gif
 	bbox	2 1 79 100
@@ -469,7 +665,7 @@ anim	jump
 	offset	31 129
 	frame	data/chars/M_washizuka/62.gif
 		
-anim	jumpattack
+anim	jumpattack600
 	bbox	1 57 62 97
 	delay	20
 	offset	36 170
@@ -495,7 +691,18 @@ anim	jumpattack
 	offset	41 111
 	frame	data/chars/M_washizuka/274.gif
 		
-anim	pain
+anim	jumpattack601
+	delay	7
+	offset	73 93
+	frame	data/chars/M_washizuka/275.gif
+	offset	-18 123
+	frame	data/chars/M_washizuka/276.gif
+	offset	85 132
+	frame	data/chars/M_washizuka/277.gif
+	offset	85 132
+	frame	data/chars/M_washizuka/278.gif
+		
+anim	pain5001
 	delay	7
 	offset	34 80
 	frame	data/chars/M_washizuka/104.gif
@@ -518,7 +725,6 @@ anim	rise
 	frame	data/chars/M_washizuka/161.gif
 		
 anim	run
-	loop	1
 	bbox	2 1 95 93
 	delay	7
 	offset	60 92
@@ -545,7 +751,6 @@ anim	turn
 	frame	data/chars/M_washizuka/63.gif
 		
 anim	walk
-	loop	1
 	bbox	2 1 80 97
 	delay	7
 	offset	40 96
