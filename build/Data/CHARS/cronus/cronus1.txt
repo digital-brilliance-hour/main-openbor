@@ -1,0 +1,161 @@
+name	   cronus1
+type	   none
+shadow	   0
+
+noquake    1
+makeinv    5
+playshotno sp
+atchain    1 1 1 1 1 
+typeshot   1
+icon	   data/chars/cronus/iconw.gif
+diesound   data/sounds/pdie1.wav
+gfxshadow 1
+com f f a  freespecial2
+
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+remap data/chars/Cronus/idle.gif data/chars/Cronus/alter2.gif
+
+
+anim idle
+	loop	1
+	delay	13
+	offset	82 172
+	bbox	80 112 39 64
+	frame	data/chars/cronus2/swwk03.gif
+
+anim walk
+	loop	1
+	delay	13
+	offset	82 172
+	bbox	80 112 39 64
+	frame	data/chars/cronus2/swwk01.gif
+	frame	data/chars/cronus2/swwk02.gif
+	frame	data/chars/cronus2/swwk03.gif
+	frame	data/chars/cronus2/swwk04.gif
+	
+
+anim run
+	loop	1
+	delay	10
+	offset	82 172
+	bbox	80 112 39 64
+	frame	data/chars/cronus2/swwk01.gif
+	frame	data/chars/cronus2/swwk02.gif
+	frame	data/chars/cronus2/swwk03.gif
+	frame	data/chars/cronus2/swwk04.gif
+	
+
+anim attack1
+	loop	0
+	delay	11
+	offset	82 172
+	bbox	80 112 39 64
+	frame	data/chars/cronus2/swa01.gif
+	attack  124 132 47 27 20 1 1 0 18
+	frame	data/chars/cronus2/swa01.gif
+	frame	data/chars/cronus2/swa01.gif
+
+
+anim jump
+	loop	0
+	delay	20
+	offset	82 172
+	bbox	80 112 39 64
+	frame	data/chars/cronus2/swju1.gif
+
+anim RUNATTACK
+	loop	0
+	delay   3
+	offset	88 169
+	bbox	80 112 39 64
+        move   5
+	frame	data/chars/cronus2/swju1.gif
+        move   6
+	offset	88 170
+	attack  92 90 55 37 5 1 1 0 18
+	frame	data/chars/cronus2/swju1.gif
+        move   7
+	offset	88 171
+	frame	data/chars/cronus2/swju1.gif
+        move   8
+	offset	88 172
+	frame	data/chars/cronus2/swju1.gif
+        move   8
+	frame	data/chars/cronus2/swju1.gif
+        move   8
+	frame	data/chars/cronus2/swju1.gif
+        move   7
+	frame	data/chars/cronus2/swju1.gif
+        move   6
+	frame	data/chars/cronus2/swju1.gif
+        move   5
+	frame	data/chars/cronus2/swju1.gif
+        move   4
+	frame	data/chars/cronus2/swju1.gif
+        move   4
+	offset	88 172
+	frame	data/chars/cronus2/swju1.gif
+        move   3
+	offset	88 171
+	frame	data/chars/cronus2/swju1.gif
+        delay  5
+	offset	88 170
+	frame	data/chars/cronus2/swju1.gif
+	offset	88 169
+        delay   6
+	attack  0 0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/cronus2/swju1.gif
+
+
+
+anim jumpattack
+	loop	0
+	delay	8
+	offset	79 163
+
+anim jumpattack2
+	loop	0
+	delay	8
+	offset	79 163
+	
+
+anim freespecial2
+	loop	0
+	delay	2
+	offset	82 172
+	bbox	80 112 39 64
+
+anim special	
+loop	0
+mponly 1
+mpcost 1000
+
+anim get
+                   sound  data/sounds/GAdrago1.wav
+	loop	0
+	offset 82 172
+	delay   20
+	frame	data/chars/cronus2/swget.gif
+
+anim pain
+                   loop	0
+	delay	13
+	offset	82 172
+	bbox	80 112 39 64
+
+	
+
+
