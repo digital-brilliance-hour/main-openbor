@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Cox
+health	100
+type	item
+
+icon	data/chars/misc/coxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	30
+	offset	48 65
+	bbox	35 47 30 30
+	frame	data/chars/misc/cox.gif
+	frame	data/chars/misc/cox1.gif
+	frame	data/chars/misc/cox2.gif
+
+

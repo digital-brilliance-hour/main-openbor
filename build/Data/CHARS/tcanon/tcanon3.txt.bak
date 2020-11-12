@@ -1,0 +1,148 @@
+name	tcanon3
+health	200
+speed	8
+type	enemy
+shadow	6
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/tcanon/icon.gif
+diesound data/sounds/ping3.wav
+#Important addition
+load	Bulet
+
+anim spawn
+	loop	0
+	offset	155 270
+	bbox	130 80 50 100
+	delay	13
+	frame	data/chars/tcanon/spaw1.gif
+	frame	data/chars/tcanon/spaw2.gif
+	frame	data/chars/tcanon/spaw3.gif
+	frame	data/chars/tcanon/spaw4.gif
+	frame	data/chars/tcanon/spaw5.gif
+	frame	data/chars/tcanon/spaw6.gif
+	frame	data/chars/tcanon/spaw7.gif
+	frame	data/chars/tcanon/spaw8.gif
+	frame	data/chars/tcanon/spaw9.gif
+	frame	data/chars/tcanon/spaw10.gif
+	offset	155 188
+	frame	data/chars/tcanon/idle1.gif
+
+anim idle
+	loop	1
+	offset	155 188
+	bbox	130 80 50 100
+	delay	13	
+	frame	data/chars/tcanon/idle1.gif
+	frame	data/chars/tcanon/idle2.gif
+	frame	data/chars/tcanon/idle1.gif
+	frame	data/chars/tcanon/idle2.gif
+	frame	data/chars/tcanon/idle1.gif
+	frame	data/chars/tcanon/idle2.gif
+	frame	data/chars/tcanon/idle1.gif
+	frame	data/chars/tcanon/idle2.gif
+
+
+anim walk
+	loop	1
+	offset	155 188
+	bbox	130 80 50 100
+	delay	8
+	frame	data/chars/tcanon/run1.gif
+	frame	data/chars/tcanon/run2.gif
+	frame	data/chars/tcanon/run1.gif
+	frame	data/chars/tcanon/run2.gif
+	frame	data/chars/tcanon/run1.gif
+	frame	data/chars/tcanon/run2.gif
+	frame	data/chars/tcanon/run1.gif
+	frame	data/chars/tcanon/run2.gif
+
+
+anim attack1	
+	loop	0
+	delay	20
+	offset	155 188
+	bbox	130 80 50 100	
+	frame	data/chars/tcanon/ata1.gif
+	attack	190 80 87 89 15 		
+	frame	data/chars/tcanon/ata2.gif	
+	attack	0 0 0 0 0 0	
+	frame	data/chars/tcanon/ata1.gif
+	frame	data/chars/tcanon/idle1.gif
+
+anim attack2
+	range	200 250	
+	loop	0
+	delay	20
+	offset	155 188
+	bbox	130 80 50 100
+	custknife	bulet
+       	throwframe 3 44
+	sound 	data/sounds/ziuRe1.wav	
+	frame	data/chars/tcanon/atak1.gif	
+	frame	data/chars/tcanon/atak2.gif
+	attack	190 80 87 89 25 1	
+	frame	data/chars/tcanon/atak3.gif
+	attack	0 0 0 0 0 0		
+	frame	data/chars/tcanon/atak4.gif
+	frame	data/chars/tcanon/atak5.gif
+	frame	data/chars/tcanon/atak2.gif	
+	frame	data/chars/tcanon/atak1.gif
+
+
+anim pain
+	loop	0
+	offset	155 188
+	bbox	130 80 50 100
+	delay	10
+	frame	data/chars/tcanon/idle1.gif		
+	frame	data/chars/tcanon/pain1.gif
+	
+
+anim fall
+	loop	0
+	delay	20
+	offset	155 188
+	bbox	130 80 50 100
+	frame	data/chars/tcanon/fall1.gif   
+	bbox	130 80 50 100 	
+	frame	data/chars/tcanon/fall2.gif	
+	frame	data/chars/tcanon/fall3.gif
+
+	
+anim death
+	loop	0
+	delay	12
+	offset	155 188
+	sound 	data/sounds/rob0.wav	
+	frame	data/chars/tcanon/rise1.gif
+	frame	data/chars/tcanon/pain1.gif
+	sound 	data/sounds/boom.wav		
+	frame	data/chars/tcanon/death1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tcanon/death2.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tcanon/death3.gif
+	frame	data/chars/tcanon/death4.gif
+	frame	data/chars/tcanon/death5.gif
+	frame	data/chars/tcanon/death6.gif
+	frame	data/chars/tcanon/death7.gif
+	frame	data/chars/tcanon/death8.gif	
+	frame	data/chars/tcanon/death9.gif
+	frame	data/chars/tcanon/death10.gif
+	frame	data/chars/tcanon/death11.gif
+	
+
+anim rise
+	loop	0
+	offset	155 188
+	delay	7
+	frame	data/chars/tcanon/fall1.gif		
+	frame	data/chars/tcanon/rise1.gif
+
+

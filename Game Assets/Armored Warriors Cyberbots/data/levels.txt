@@ -1,0 +1,98 @@
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+rush 1 1 Hits: 3 3 MEGA! 3 3
+
+#p1rush [x,y] [x,y] [x,y] [x,y]
+#1st pair of x,y is name
+#2nd pair of x,y is current rush value
+#3rd pair of x,y is maxname
+#4th pair of x,y is max rush value
+p1rush 15 100 80 100 15 120 80 120
+lbarsize 100 5 1 1
+#-----------Player 1, Enemy 1.
+p1life	    22   15
+p1mp        31   228 
+p1icon	    3    1
+mp1icon     3    223   126   15
+p1lifex     0    500     
+p1lifen     129  11
+p1score     24   3 
+p1namej     24 3 54 3 54 3 54 3 54 3
+
+e1name      13   34
+e1life	    20   45 
+e1icon      3    34
+
+#-----------Player 2, Enemy 2.
+
+
+p2life	    191	 15
+p2mp        210  228
+p2icon	    172	 1
+mp2icon     182  223   126   15
+p2lifex     0    500   
+p2lifen     298  11
+p2score     193  3 
+p2namej     193 3 223 3 223 3 223 3 223 3   
+
+e2icon      172	34
+e2name      182  34
+e2life      189  45 
+
+#-----------Player 3, Enemy 3.
+
+
+p2life	    191	 115
+p2mp        210  228
+p2icon	    172	 1
+mp2icon     182  223   126   15
+p2lifex     0    500   
+p2lifen     298  11
+p2score     193  3 
+p2namej     193 3 223 3 223 3 223 3 223 3   
+
+e2icon      172	34
+e2name      182  34
+e2life      189  45 
+
+
+set	demo
+scene	data/scenes/intro1.txt
+z 185 225
+file	data/levels/city2.txt
+next
+z 175 235
+file	data/levels/city1.txt
+next
+z 185 235
+file	data/levels/ruins.txt
+z 185 235
+next
+file	data/levels/ruins1.txt
+next
+scene	data/scenes/intro2.txt
+z 185 235
+file	data/levels/elevator.txt
+next
+z 185 235
+file	data/levels/base1.txt
+next
+scene	data/scenes/intro3.txt
+z 200 235
+file	data/levels/tunel.txt
+scene	data/scenes/ending.txt
+
+
+
+
+
+
+
+

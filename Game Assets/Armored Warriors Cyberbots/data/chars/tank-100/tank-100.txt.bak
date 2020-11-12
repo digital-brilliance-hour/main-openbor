@@ -1,0 +1,148 @@
+name	tank-100
+health	200
+speed	5
+type	enemy
+shadow	6
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/tank-100/icon.gif
+diesound data/sounds/ping3.wav
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	140 180
+	bbox	95 120 100 75
+	delay	13
+	frame	data/chars/tank-100/walk1.gif
+
+
+anim walk
+	loop	1
+	offset	140 180
+	bbox	95 120 100 75
+	delay	15
+	frame	data/chars/tank-100/walk1.gif
+	frame	data/chars/tank-100/walk2.gif
+	frame	data/chars/tank-100/walk3.gif
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	140 180
+	bbox	95 120 100 75
+	frame	data/chars/tank-100/ata1.gif
+	frame	data/chars/tank-100/ata3.gif
+	frame	data/chars/tank-100/ata2.gif
+	frame	data/chars/tank-100/ata4.gif
+	attack	223 127 40 40 15 1
+	frame	data/chars/tank-100/ata5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/tank-100/ata6.gif
+	frame	data/chars/tank-100/ata3.gif
+	frame	data/chars/tank-100/ata2.gif
+
+anim attack2
+	loop	0
+	delay	8
+	offset	140 180
+	move	12
+	bbox	95 120 100 75
+	frame	data/chars/tank-100/run1.gif
+	attack	95 120 100 75 25 1
+	frame	data/chars/tank-100/run2.gif
+	frame	data/chars/tank-100/run3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/tank-100/run4.gif
+	frame	data/chars/tank-100/run3.gif
+	frame	data/chars/tank-100/run2.gif
+	frame	data/chars/tank-100/run1.gif
+anim pain
+	loop	0
+	offset	155 180
+	bbox	95 120 100 75
+	delay	5
+	frame	data/chars/tank-100/pain1.gif
+	frame	data/chars/tank-100/pain2.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	140 180
+	frame	data/chars/tank-100/pain1.gif
+	bbox	95 120 100 75
+	frame	data/chars/tank-100/fall1.gif
+	bbox	80 120 100 75
+	frame	data/chars/tank-100/fall2.gif
+
+
+anim death
+	loop	0
+	delay	10
+	offset	140 180
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/tank-100/fall2.gif
+	frame	data/chars/tank-100/fall1.gif
+	frame	data/chars/tank-100/pain1.gif
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/tank-100/ded1.gif
+	frame	data/chars/tank-100/ded2.gif
+	frame	data/chars/tank-100/ded3.gif
+	frame	data/chars/tank-100/ded2.gif
+	frame	data/chars/tank-100/ded1.gif
+	frame	data/chars/tank-100/ded2.gif
+	frame	data/chars/tank-100/ded3.gif
+	frame	data/chars/tank-100/ded2.gif
+	frame	data/chars/tank-100/ded1.gif
+	frame	data/chars/tank-100/death1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death2.gif
+	frame	data/chars/tank-100/death3.gif
+	frame	data/chars/tank-100/death4.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death5.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death6.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death7.gif
+	frame	data/chars/tank-100/death8.gif
+	frame	data/chars/tank-100/death9.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death10.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death11.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death12.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death13.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/tank-100/death14.gif
+	frame	data/chars/tank-100/death15.gif
+	frame	data/chars/tank-100/death16.gif
+	frame	data/chars/tank-100/death17.gif
+	frame	data/chars/tank-100/death18.gif
+
+
+anim rise
+	loop	0
+	offset	140 180
+	delay	7
+	frame	data/chars/tank-100/fall2.gif
+	frame	data/chars/tank-100/fall1.gif
+	frame	data/chars/tank-100/pain2.gif
+	frame	data/chars/tank-100/pain1.gif
+	frame	data/chars/tank-100/walk1.gif
+
