@@ -1,0 +1,22 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Tox
+health	25
+type	obstacle
+
+icon	data/chars/misc/toxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	80 95
+	bbox	20 35 93 70
+	frame	data/chars/misc/tox.gif
+
+anim fall
+	delay	1000
+	offset	80 90
+	frame	data/chars/misc/tox1.gif
+

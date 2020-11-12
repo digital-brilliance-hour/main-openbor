@@ -1,0 +1,119 @@
+name	gcanon
+health	200
+speed	8
+type	enemy
+
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/gcanon/icon.gif
+diesound data/sounds/ping3.wav
+#Important addition
+load	knife
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	155 190
+	bbox	130 80 50 100
+	delay	13	
+	frame	data/chars/gcanon/idle1.gif
+	
+	
+
+anim walk
+	loop	1
+	offset	155 190
+	bbox	130 80 50 100
+	delay	8
+	frame	data/chars/gcanon/walk1.gif
+	frame	data/chars/gcanon/walk2.gif
+	frame	data/chars/gcanon/walk1.gif
+	frame	data/chars/gcanon/walk2.gif
+	frame	data/chars/gcanon/walk1.gif
+	frame	data/chars/gcanon/walk2.gif
+	frame	data/chars/gcanon/walk1.gif
+	frame	data/chars/gcanon/walk2.gif
+
+anim attack1
+	range	200 250
+	loop	0
+	delay	20
+	offset	155 190
+	bbox	130 80 50 100
+	custknife	knife
+       	throwframe 4 44
+	sound 	data/sounds/shot.wav
+	frame	data/chars/gcanon/ata1.gif	
+	frame	data/chars/gcanon/ata2.gif	
+	frame	data/chars/gcanon/ata3.gif			
+	frame	data/chars/gcanon/ata4.gif
+	 attack	190 80 87 89 25 1	
+	frame	data/chars/gcanon/ata5.gif
+	frame	data/chars/gcanon/ata6.gif
+	frame	data/chars/gcanon/ata2.gif
+
+
+anim pain
+	loop	0
+	offset	155 190
+	bbox	130 80 50 100
+	delay	8
+	frame	data/chars/gcanon/pain1.gif		
+	frame	data/chars/gcanon/idle1.gif
+	
+
+anim fall
+	loop	0
+	delay	20
+	offset	155 190
+	bbox	130 80 50 100
+	frame	data/chars/gcanon/fall1.gif   
+	bbox	130 80 50 100 	
+	frame	data/chars/gcanon/fall2.gif	
+	
+
+	
+anim death
+	loop	0
+	delay	12
+	offset	155 190
+	sound 	data/sounds/rob0.wav	
+	frame	data/chars/gcanon/rise1.gif
+	frame	data/chars/gcanon/pain1.gif
+	sound 	data/sounds/boom.wav		
+	frame	data/chars/gcanon/death1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gcanon/death2.gif
+	frame	data/chars/gcanon/death3.gif
+	frame	data/chars/gcanon/death4.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gcanon/death5.gif
+	frame	data/chars/gcanon/death6.gif
+	frame	data/chars/gcanon/death7.gif
+	frame	data/chars/gcanon/death8.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gcanon/death9.gif
+	frame	data/chars/gcanon/death10.gif
+	frame	data/chars/gcanon/death11.gif
+	frame	data/chars/gcanon/death12.gif
+	frame	data/chars/gcanon/death13.gif
+	frame	data/chars/gcanon/death14.gif
+	
+
+anim rise
+	loop	0
+	offset	155 190
+	delay	7
+	frame	data/chars/gcanon/rise1.gif		
+	frame	data/chars/gcanon/idle3.gif
+
+
