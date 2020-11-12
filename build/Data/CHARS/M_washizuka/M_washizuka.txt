@@ -14,6 +14,7 @@ diesound data/sounds/eek.wav
 
 
 
+
 anim	attack1
 	bbox	0 19 79 106
 	delay	3
@@ -22,7 +23,7 @@ anim	attack1
 	bbox	46 1 83 99
 	offset	80 96
 	frame	data/chars/M_washizuka/182.gif
-	attack	90 6 36 34 0 0 1 0 0 0
+	attack	90 6 36 34 5 0 1 0 0 0
 	bbox	8 1 80 98
 	offset	52 95
 	frame	data/chars/M_washizuka/183.gif
@@ -67,7 +68,7 @@ anim	attack2
 	bbox	0 29 93 102
 	offset	51 128
 	frame	data/chars/M_washizuka/189.gif
-	attack	99 52 60 50 0 0 1 0 0 0
+	attack	99 52 60 50 7 0 1 0 0 0
 	bbox	0 0 99 101
 	offset	58 100
 	frame	data/chars/M_washizuka/190.gif
@@ -90,10 +91,10 @@ anim	attack3
 	bbox	0 1 88 101
 	offset	53 99
 	frame	data/chars/M_washizuka/199.gif
+	attack	74 2 83 170 10 1 1 0 0 0
 	bbox	0 37 86 138
 	offset	47 171
 	frame	data/chars/M_washizuka/200.gif
-	attack	67 0 54 48 0 0 1 0 0 0
 	bbox	1 34 83 130
 	offset	49 161
 	frame	data/chars/M_washizuka/201.gif
@@ -477,7 +478,7 @@ anim	jumpattack
 	bbox	32 1 74 99
 	offset	76 116
 	frame	data/chars/M_washizuka/269.gif
-	attack	89 22 58 38 0 0 1 0 0 0
+	attack	89 22 58 38 7 0 1 0 0 0
 	bbox	1 1 84 98
 	offset	43 113
 	frame	data/chars/M_washizuka/270.gif
