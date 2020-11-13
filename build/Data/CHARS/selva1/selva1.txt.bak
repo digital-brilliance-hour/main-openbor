@@ -1,0 +1,212 @@
+name	dug
+health	100
+speed	15
+type	enemy
+nolife   0
+grabback  1
+falldie	 1
+dust   dust
+projectilehit  enemy npc obstacle
+gfxshadow  1
+
+
+icon	data/chars/dug/icon.gif
+
+anim death
+	loop	0
+        quakeframe  0  1  -3
+	offset  89 177
+	delay	12
+        nodieblink   3
+        subentity  pause
+        summonframe 0 240 270 0 1
+        sound   data/chars/joe/ko.wav
+	frame	data/chars/dug/rise3.gif
+	frame	data/chars/dug/rise2.gif
+	frame	data/chars/dug/rise1.gif
+	frame	data/chars/dug/fall3.gif
+
+anim idle
+	loop	1
+	offset	89 177
+	bbox	73 87 41 88
+	delay	10
+	frame	data/chars/dug/idle01.gif
+
+anim walk
+	loop	1
+	offset	89 177
+	bbox	73 87 41 88
+	delay	10
+	frame	data/chars/dug/wk1.gif
+	frame	data/chars/dug/wk2.gif
+	frame	data/chars/dug/wk3.gif
+	frame	data/chars/dug/wk4.gif
+	frame	data/chars/dug/wk5.gif
+	frame	data/chars/dug/wk6.gif
+	frame	data/chars/dug/wk7.gif
+	frame	data/chars/dug/wk8.gif
+	frame	data/chars/dug/wk9.gif
+	frame	data/chars/dug/wk10.gif
+
+anim burn
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/burn1.gif
+	frame	data/chars/misc/burn2.gif
+	frame	data/chars/misc/burn3.gif
+
+anim shock
+	loop	1
+	offset	48 111
+	delay	3
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+	frame	data/chars/misc/ele1.gif
+	frame	data/chars/misc/ele2.gif
+
+
+anim pain
+	loop	0
+	delay	8
+	bbox	73 87 41 88
+	offset	89 177
+	frame	data/chars/dug/pain1.gif
+	delay   40
+	frame	data/chars/dug/pain2.gif
+	delay   11
+	frame	data/chars/dug/pain1.gif
+
+
+anim fall
+        sound   data/chars/dug/fall.wav
+	offset	92 129
+		bbox  64  28  78  101
+		attack  67  31  76  98  5  1
+	frame	data/chars/dug/fall1.gif
+        offset  89 177
+        delay   20
+		bbox  42  63  81  111
+		attack  41  64  82  117  5  1
+	frame	data/chars/dug/fall2.gif
+        attack  0 0 0 0 0 0
+        delay   10
+	frame	data/chars/dug/fall3.gif
+
+anim fall2
+       jumpframe 1 1
+       delay 1
+       movea -10
+       offset 89 142
+       bbox 72 73 58 81
+       attack  0 0 0 0 0 0
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       delay 10
+       offset 89 177
+       bbox 52 105 109 43
+       attack 0 0 0 0
+       frame data/chars/dug/fall2.gif
+       bbox 72 73 58 81
+       delay   1
+       movea   24
+       frame data/chars/dug/fall1.gif
+       movea   20
+       frame data/chars/dug/fall1.gif
+       movea   16
+       frame data/chars/dug/fall1.gif
+       movea   12
+       delay   4
+       frame data/chars/dug/fall1.gif
+       movea   4
+       delay   8
+       frame data/chars/dug/fall1.gif
+       delay    1
+       movea   -1
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall1.gif
+       movea   -10
+       frame data/chars/dug/fall1.gif
+       frame data/chars/dug/fall3.gif
+       movea   0
+       delay   10
+       bbox 52 105 109 43
+       frame data/chars/dug/fall3.gif
+
+
+
+anim pain3
+       delay 2
+       offset 89 142
+       bbox 72 69 45 34
+       jumpframe 1 4
+       frame data/chars/dug/fall1.gif
+       delay 12
+       frame data/chars/dug/fall1.gif
+
+
+
+anim rise
+	loop	0
+	offset	89 177
+	delay	12
+	frame	data/chars/dug/rise1.gif
+	frame	data/chars/dug/rise2.gif
+	frame	data/chars/dug/rise3.gif
+	frame	data/chars/dug/idle01.gif
+
+
+anim attack1
+	range	0 60
+	loop	0
+	delay	9
+        sound   data/chars/dug/hurra.wav
+	offset	89 177
+	bbox	73 87 41 88
+	frame	data/chars/dug/a01.gif
+	frame	data/chars/dug/a02.gif
+	frame	data/chars/dug/a03.gif
+        attack  96 75 63 48 11 1
+        delay   20
+	frame	data/chars/dug/a03.gif
+        attack  0 0 0 0 0
+        delay   10
+	frame	data/chars/dug/a04.gif
+	frame	data/chars/dug/a01.gif
+
+
+
+anim pain3
+	loop	0
+	delay	2
+	offset	83 178
+	bbox	65 102 46 76
+	jumpframe 1
+	frame	data/chars/dug/pain1.gif
+	delay   26
+	offset	83 195
+	bbox	0 0 0 0
+	frame	data/chars/dug/pain1.gif
+	delay   12
+	offset	83 178
+	frame	data/chars/dug/pd01.gif
+	offset  83 178
+	delay   46
+	frame	data/chars/dug/pd02.gif
+	delay   3
+	bbox	63 163 46 19
+	frame	data/chars/dug/pd01.gif
+	delay   20
+	bbox	0 0 0 0
+	frame	data/chars/dug/fall3.gif
+
+
+
+
+
+
