@@ -1,0 +1,150 @@
+name	That
+health	500
+speed	9
+type	enemy
+shadow	5
+icon	data/chars/that/icon.gif
+
+
+anim idle
+	loop	1
+	delay	30
+	offset	35 114
+	bbox	18 0 32 113 
+	frame	data/chars/that/std.gif
+
+anim walk
+	loop	1
+	delay	13
+	offset	42 112
+	bbox	25 2 29 111
+	frame	data/chars/that/wlk01.gif
+	frame	data/chars/that/wlk02.gif
+	frame	data/chars/that/wlk03.gif
+	frame	data/chars/that/wlk04.gif
+	frame	data/chars/that/wlk05.gif
+	frame	data/chars/that/wlk06.gif
+	frame	data/chars/that/wlk07.gif
+	frame	data/chars/that/wlk08.gif
+
+anim attack1 
+	loop	0
+	delay	8
+	offset	42 160
+         bbox	33 52 53 107 
+         range	120 270
+	frame	data/chars/that/atk1.gif
+	frame	data/chars/that/atk2.gif
+	delay	7
+	sound	data/sounds/marvel/surfblas.wav
+        attack	90 42 110 106 20 1
+	frame	data/chars/that/atk3.gif
+        attack	90 42 207 198 20 1
+	frame	data/chars/that/atk4.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk5.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk6.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk7.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk8.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk9.gif
+        attack	90 42 207 421 20 1
+	frame	data/chars/that/atk10.gif
+        attack	0
+	delay	22
+	frame	data/chars/that/atk2.gif
+
+
+anim attack2
+	loop	0
+	delay	8
+	offset	41 158
+         range	0 120
+        bbox	25 46 33 115
+	frame	data/chars/that/atk11.gif
+        attack  107 112 37 46 30 1
+	frame	data/chars/that/atk12.gif
+        attack  52 80 94 79 25 1
+	sound	data/chars/that/sword.wav
+	frame	data/chars/that/atk13.gif
+        attack  52 47 98 113 25 1
+	frame	data/chars/that/atk14.gif
+        attack  52 15 98 147 25 1
+	frame	data/chars/that/atk15.gif
+	delay	32
+	frame	data/chars/that/atk15.gif
+        attack  0
+	delay	5
+	frame	data/chars/that/atk16.gif
+	frame	data/chars/that/atk17.gif
+	frame	data/chars/that/atk18.gif
+
+anim special
+	loop	0
+	delay	5
+	offset	57 113
+	frame	data/chars/that/sp1.gif
+	frame	data/chars/that/sp2.gif
+	blast	35 24 108 96 30
+	frame	data/chars/that/sp3.gif
+	frame	data/chars/that/sp4.gif
+        attack	0
+	delay	25
+	frame	data/chars/that/sp4.gif
+
+
+anim upper
+	loop	0
+	delay	5
+	offset	41 158
+        bbox	25 46 33 115
+	frame	data/chars/that/atk11.gif
+        attack  107 112 37 46 30 1
+	frame	data/chars/that/atk12.gif
+        attack  52 80 94 79 30 1
+	sound	data/chars/that/sword.wav
+	frame	data/chars/that/atk13.gif
+        attack  52 47 98 113 30 1
+	frame	data/chars/that/atk14.gif
+        attack  52 15 98 147 30 1
+	frame	data/chars/that/atk15.gif
+	delay	32
+	frame	data/chars/that/atk15.gif
+        attack  0
+	delay	3
+	frame	data/chars/that/atk16.gif
+	frame	data/chars/that/atk17.gif
+	frame	data/chars/that/atk18.gif
+
+
+anim pain
+	loop	0
+	delay	15
+	offset	50 115
+	bbox	13 2 48 111
+	frame	data/chars/that/dmg1.gif
+	frame	data/chars/that/dmg2.gif
+
+
+anim fall
+	loop	0
+	offset	61 114
+	delay	27
+	attack	25 22 77 100 20 1
+	frame	data/chars/that/dmg3.gif
+	frame	data/chars/that/dmg4.gif
+	frame	data/chars/that/dmg5.gif
+
+
+anim rise
+	loop	0
+	offset  49 22
+	delay	30
+	move    240
+	frame	data/chars/that/dmg8.gif
+
+	
+
