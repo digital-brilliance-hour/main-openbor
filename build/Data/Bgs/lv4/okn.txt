@@ -1,0 +1,25 @@
+name okn
+type panel
+setlayer 1
+anim idle 
+	loop 1
+	delay 10
+	offset 0 240
+	bbox 0 0 0 0
+	drawmethod 256 256 0 0 0 6
+	frame data/bgs/lv4/c3
+	nodrawmethod
+	frame data/chars/misc/empty
+	drawmethod 256 256 0 0 0 1
+	frame data/bgs/lv4/c3
+	nodrawmethod
+	frame data/chars/misc/empty
+	drawmethod 256 256 0 0 0 5
+	frame data/bgs/lv4/c3
+	sound   data/sounds/piorun2.wav
+	frame data/chars/misc/empty
+	delay 50
+	frame data/bgs/lv4/c3
+	delay 500
+	nodrawmethod
+	frame data/chars/misc/empty
