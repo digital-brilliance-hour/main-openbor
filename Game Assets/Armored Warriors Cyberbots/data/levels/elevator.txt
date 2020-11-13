@@ -1,0 +1,60 @@
+# elevator
+
+direction	down	
+music		data/music/ETERN.bor
+background	data/bgs/elevator/back.gif
+
+panel		data/bgs/elevator/platform.gif	
+order		a
+
+
+
+spawn	Aox
+coords	200 175
+at	0
+
+
+spawn	gaits1
+coords	200 235
+at	0
+
+spawn	gaits1
+coords	200 235
+at	0
+
+spawn	a-700
+coords	900 235
+at	0
+
+spawn	gaib1
+coords	900 175
+at	0
+
+spawn	tank-100
+coords	1500 235
+at	0
+
+spawn	tank-200
+coords	1500 175
+at	0
+
+spawn	gaib1
+alias	v-200
+map	3
+coords	2300 235
+at	0
+
+spawn	gcanon
+coords	2300 175
+at	0
+
+spawn	fcanon
+coords	3000 235
+at	0
+
+spawn	gaib1
+alias	v-100
+map 	2
+coords	3000 175
+at	0
+

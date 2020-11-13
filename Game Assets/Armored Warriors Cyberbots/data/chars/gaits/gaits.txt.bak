@@ -1,0 +1,155 @@
+name	gaits
+health	200
+speed	5
+type	enemy
+shadow	6
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/gaits/icon.gif
+diesound data/sounds/ping3.wav
+
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map1.gif
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map2.gif
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map3.gif
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map4.gif
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map5.gif
+remap	data/chars/gaits/idle1.gif  data/chars/gaits/map6.gif
+
+
+
+
+
+anim idle
+	loop	1
+	offset	140 180
+	bbox	110 120 60 70
+	delay	13
+	frame	data/chars/gaits/idle1.gif
+	frame	data/chars/gaits/idle2.gif
+	frame	data/chars/gaits/idle3.gif
+
+anim walk
+	loop	1
+	offset	140 180
+	bbox	110 120 60 70
+	delay	15
+	frame	data/chars/gaits/walk1.gif
+	frame	data/chars/gaits/walk2.gif
+	frame	data/chars/gaits/walk3.gif
+	frame	data/chars/gaits/walk4.gif
+	frame	data/chars/gaits/walk5.gif
+	frame	data/chars/gaits/walk6.gif
+	frame	data/chars/gaits/walk7.gif
+	frame	data/chars/gaits/walk8.gif
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	140 180
+	bbox	110 120 60 70
+	frame	data/chars/gaits/ata1.gif
+	frame	data/chars/gaits/ata2.gif
+	 attack	170 110 50 40 15
+	frame	data/chars/gaits/ata3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gaits/ata2.gif
+	frame	data/chars/gaits/ata1.gif
+
+
+
+anim attack2
+	loop	0
+	delay	8
+	offset	140 180
+	bbox	110 120 60 70
+	frame	data/chars/gaits/atak1.gif
+	frame	data/chars/gaits/atak2.gif
+	frame	data/chars/gaits/atak3.gif
+	attack	170 110 50 40 25
+	frame	data/chars/gaits/atak4.gif
+	attack	0
+	frame	data/chars/gaits/atak5.gif
+	frame	data/chars/gaits/atak3.gif
+	frame	data/chars/gaits/atak2.gif
+	frame	data/chars/gaits/atak1.gif
+
+anim pain
+	loop	0
+	offset	155 190
+	bbox	110 120 60 70
+	delay	5
+	frame	data/chars/gaits/pain1.gif
+	frame	data/chars/gaits/pain2.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	140 188
+	bbox	110 120 60 70
+	frame	data/chars/gaits/fall1.gif
+	bbox	100 120 80 60
+	frame	data/chars/gaits/fall2.gif
+	bbox	90 120 100 60
+	frame	data/chars/gaits/fall3.gif
+		bbox  90  130  100  60
+	frame	data/chars/gaits/fall4.gif
+		bbox  90  135  100  60
+	frame	data/chars/gaits/fall5.gif
+
+anim death
+	loop	0
+	delay	10
+	offset	140 180
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/gaits/fall5.gif
+	frame	data/chars/gaits/rise1.gif
+	frame	data/chars/gaits/fall1.gif
+	frame	data/chars/gaits/pain2.gif
+	frame	data/chars/gaits/pain1.gif
+	frame	data/chars/gaits/death1.gif
+	frame	data/chars/gaits/death2.gif
+	frame	data/chars/gaits/death3.gif
+	frame	data/chars/gaits/death4.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaits/death5.gif
+	frame	data/chars/gaits/death6.gif
+	frame	data/chars/gaits/death7.gif
+	frame	data/chars/gaits/death8.gif
+	frame	data/chars/gaits/death9.gif
+	frame	data/chars/gaits/death10.gif
+	frame	data/chars/gaits/death11.gif
+	frame	data/chars/gaits/death12.gif
+	frame	data/chars/gaits/death13.gif
+	frame	data/chars/gaits/death14.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaits/death15.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaits/death16.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaits/death17.gif
+	frame	data/chars/gaits/death18.gif
+	frame	data/chars/gaits/death19.gif
+	frame	data/chars/gaits/death20.gif
+	frame	data/chars/gaits/death21.gif
+	frame	data/chars/gaits/death22.gif
+	frame	data/chars/gaits/death23.gif
+	frame	data/chars/gaits/death24.gif
+
+anim rise
+	loop	0
+	offset	140 180
+	delay	7
+	frame	data/chars/gaits/rise1.gif
+	frame	data/chars/gaits/fall1.gif
+	frame	data/chars/gaits/pain2.gif
+	frame	data/chars/gaits/pain1.gif
+
+
+

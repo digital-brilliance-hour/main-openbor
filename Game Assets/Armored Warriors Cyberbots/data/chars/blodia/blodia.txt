@@ -1,0 +1,384 @@
+name	blodia
+health	200
+speed	15
+type	player
+shadow	0
+nodieblink 1
+gfxshadow 1
+death 1
+icon	data/chars/blodia/icon.gif
+diesound data/sounds/die1.wav
+
+anim waiting
+	loop	1
+	offset	160 195
+	delay	13
+
+	frame	data/chars/blodia/idle3.gif
+	frame	data/chars/blodia/idle4.gif
+
+
+
+anim select
+	loop	0
+	offset	140 195
+	delay	6
+	frame	data/chars/blodia/select1.gif
+	frame	data/chars/blodia/select2.gif
+	frame	data/chars/blodia/select3.gif
+
+
+
+anim spawn
+	loop	0
+	offset	140 195
+	delay	15
+	frame	data/chars/blodia/select1.gif
+	frame	data/chars/blodia/select2.gif
+	frame	data/chars/blodia/select3.gif
+
+
+
+
+
+anim idle
+	loop	1
+	offset	140 195
+	bbox	110 110 80 90
+	delay	13
+
+	frame	data/chars/blodia/idle3.gif
+	frame	data/chars/blodia/idle4.gif
+
+anim walk
+	loop	1
+	offset	140 195
+	bbox	110 110 70 80
+	delay	15
+	frame	data/chars/blodia/walk1.gif
+	frame	data/chars/blodia/walk2.gif
+	frame	data/chars/blodia/walk3.gif
+	frame	data/chars/blodia/walk4.gif
+	frame	data/chars/blodia/walk5.gif
+	frame	data/chars/blodia/walk6.gif
+
+
+
+
+anim get
+	loop	0
+	delay	7
+	offset	140 195
+	frame	data/chars/blodia/get.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	140 195
+	bbox	110 110 70 90
+	frame	data/chars/blodia/ata1.gif
+	frame	data/chars/blodia/ata2.gif
+	frame	data/chars/blodia/ata3.gif
+	attack	180 115 53 40 10
+	frame	data/chars/blodia/ata4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/ata2.gif
+	frame	data/chars/blodia/ata1.gif
+
+
+anim attack2
+	loop	0
+	delay	6
+	offset	140 195
+	bbox	120 110 70 90
+	frame	data/chars/blodia/atk0.gif
+	frame	data/chars/blodia/atk1.gif
+	frame	data/chars/blodia/atk2.gif
+	attack	210 110 30 40 15
+	frame	data/chars/blodia/atk3.gif
+	attack	0
+	frame	data/chars/blodia/atk4.gif
+
+
+anim attack3
+	loop	0
+	delay	6
+	offset	140 195
+	bbox	120 100 70 90
+	frame	data/chars/blodia/ataka1.gif
+	frame	data/chars/blodia/ataka2.gif
+	frame	data/chars/blodia/ataka3.gif
+	frame	data/chars/blodia/ataka4.gif
+
+	frame	data/chars/blodia/ataka3.gif
+	attack	180 90 55 60 20 1
+	frame	data/chars/blodia/ataka5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/ataka4.gif
+	frame	data/chars/blodia/ataka2.gif
+	frame	data/chars/blodia/ataka1.gif
+
+
+anim freespecial
+	loop	0
+	delay	14
+	offset	140 195
+	bbox	115 110 70 79
+	frame	data/chars/blodia/free1.gif
+	frame	data/chars/blodia/free2.gif
+	frame	data/chars/blodia/free3.gif
+	attack	190 130 90 40 25 1
+	frame	data/chars/blodia/free4.gif
+	attack	200 130 105 40 25 1
+	frame	data/chars/blodia/free5.gif
+	attack	200 130 55 40 25 1
+	frame	data/chars/blodia/free6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/free7.gif
+
+
+anim special
+	loop	0
+	delay	13
+	offset	140 195
+	bbox	120 110 57 85
+	sound 	data/sounds/rush.wav
+	frame	data/chars/blodia/espe1.gif
+	attack	240 110 90 50 40 1
+	frame	data/chars/blodia/espe2.gif
+	attack	240 110 110 50 40 1
+	frame	data/chars/blodia/espe3.gif
+	attack	240 110 125 50 40 1
+	frame	data/chars/blodia/espe4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/espe5.gif
+	frame	data/chars/blodia/espe6.gif
+
+anim run
+	loop	0
+	delay	7
+	offset	140 195
+	move	20
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+	frame	data/chars/blodia/run1.gif
+	frame	data/chars/blodia/run2.gif
+
+
+
+anim runattack
+	loop	0
+	delay	7
+	offset	140 195
+	move	20
+	attack	130 120 70 70 5 1
+	frame	data/chars/blodia/runa1.gif
+	frame	data/chars/blodia/runa2.gif
+	frame	data/chars/blodia/runa1.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/runa2.gif
+
+
+
+anim jump
+	loop	0
+	delay	12
+	offset	140 195
+	bbox	120 120 57 72
+	frame	data/chars/blodia/jump1.gif
+	frame	data/chars/blodia/jump2.gif
+	frame	data/chars/blodia/jump3.gif
+	frame	data/chars/blodia/jump4.gif
+	frame	data/chars/blodia/jump3.gif
+	frame	data/chars/blodia/jump2.gif
+	frame	data/chars/blodia/jump1.gif
+
+
+anim jumpattack
+	loop	0
+	offset	140 195
+	delay	18
+	bbox	110 100 57 72
+	frame	data/chars/blodia/juk1.gif
+	attack	180 100 60 60 10 1
+	frame	data/chars/blodia/juk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/juk3.gif
+
+
+
+
+
+anim jumpattack2
+	loop	0
+	offset	140 195
+	delay	18
+	bbox	110 90 60 80
+	frame	data/chars/blodia/jk1.gif
+	delay	35
+	attack	190 110 40 40 10 1
+	frame	data/chars/blodia/jk2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/jk1.gif
+
+anim grab
+	loop	0
+	offset	165 195
+	bbox	120 110 70 80
+	delay	1000
+	frame	data/chars/blodia/grab.gif
+
+anim grabattack
+	loop	0
+	delay	7
+	offset	165 195
+	bbox	120 110 70 80
+	frame	data/chars/blodia/ataka1.gif
+	frame	data/chars/blodia/ataka2.gif
+	attack	190 130 30 40 10
+	frame	data/chars/blodia/ataka4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/ataka2.gif
+	attack	190 130 30 40 10
+	frame	data/chars/blodia/ataka4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/ataka2.gif
+
+anim grabattack2
+	loop	0
+	delay	7
+	offset	165 195
+	bbox	120 100 70 90
+	frame	data/chars/blodia/ataka1.gif
+	frame	data/chars/blodia/ataka2.gif
+	frame	data/chars/blodia/ataka3.gif
+	attack	190 130 30 40 20 1
+	frame	data/chars/blodia/ataka4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/blodia/ataka2.gif
+
+
+
+anim throw
+	loop	0
+	delay	7
+	offset	140 195
+	frame	data/chars/blodia/grab1.gif
+	frame	data/chars/blodia/grab2.gif
+
+
+
+anim pain
+	loop	0
+	offset	140 195
+	bbox	120 110 70 90
+	delay	5
+	frame	data/chars/blodia/idle2.gif
+	frame	data/chars/blodia/pain1.gif
+	frame	data/chars/blodia/idle3.gif
+
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	140 195
+	frame	data/chars/blodia/fall1.gif
+	frame	data/chars/blodia/fall2.gif
+	frame	data/chars/blodia/fall3.gif
+
+anim death
+	loop	0
+	delay	10
+	offset	140 195
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/blodia/ex1.gif
+	frame	data/chars/blodia/ex2.gif
+	frame	data/chars/blodia/ex3.gif
+	frame	data/chars/blodia/ex4.gif
+	frame	data/chars/blodia/ex5.gif
+	frame	data/chars/blodia/ex6.gif
+	frame	data/chars/blodia/ex7.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex8.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex9.gif
+	frame	data/chars/blodia/ex10.gif
+	frame	data/chars/blodia/ex11.gif
+	frame	data/chars/blodia/ex12.gif
+	frame	data/chars/blodia/ex13.gif
+	frame	data/chars/blodia/ex14.gif
+	frame	data/chars/blodia/ex15.gif
+	frame	data/chars/blodia/ex16.gif
+	frame	data/chars/blodia/ex17.gif
+	frame	data/chars/blodia/ex18.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex19.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex20.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex21.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/blodia/ex22.gif
+	frame	data/chars/blodia/ex23.gif
+	frame	data/chars/blodia/ex24.gif
+	frame	data/chars/blodia/ex25.gif
+	frame	data/chars/blodia/ex26.gif
+	frame	data/chars/blodia/ex27.gif
+
+
+
+anim rise
+	loop	0
+	offset	140 195
+	delay	4
+	frame	data/chars/blodia/rise1.gif
+	frame	data/chars/blodia/rise2.gif
+	frame	data/chars/blodia/rise3.gif
+	frame	data/chars/blodia/rise4.gif
+	frame	data/chars/blodia/rise5.gif
+	frame	data/chars/blodia/rise6.gif
+	frame	data/chars/blodia/rise7.gif
+	frame	data/chars/blodia/rise8.gif
+	frame	data/chars/blodia/rise9.gif
+	frame	data/chars/blodia/rise10.gif
+	frame	data/chars/blodia/rise11.gif
+# safe landing when thrown
+
+anim land
+	loop	0
+	offset	140 195
+	delay	15
+	bbox	110 110 76 80
+	frame	data/chars/blodia/safe.gif
+
+
+
+
+
+
+
+
+
+
