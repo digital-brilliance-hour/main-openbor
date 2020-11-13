@@ -1,0 +1,48 @@
+# List all character models to be loaded.
+# Syntax:
+# load		[name]		[path]		// Load on startup
+# know		[name]		[path]		// Load when needed
+# 
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+# Players must also be loaded.
+load	blodia		data/chars/blodia/blodia.txt
+
+# Items and other objects can be loaded when needed.
+know	Aox		data/chars/misc/aox.txt
+know	Dox		data/chars/misc/dox.txt
+know	Tox		data/chars/misc/tox.txt
+know	Cox		data/chars/misc/cox.txt
+
+# Obstacles (item containers)
+know	Box		data/chars/misc/box.txt
+
+# Enemies
+know	gaits		data/chars/gaits/gaits.txt
+know	gaits1		data/chars/gaits/gaits1.txt
+know	gaib1		data/chars/gaib1/gaib1.txt
+know	gaib2		data/chars/gaib1/gaib2.txt
+know	a-700		data/chars/a-700/a-700.txt
+know	tank-100		data/chars/tank-100/tank-100.txt
+know	tank-200		data/chars/tank-100/tank-200.txt
+know	gcanon		data/chars/gcanon/gcanon.txt
+know	fcanon		data/chars/fcanon/fcanon.txt
+know	fcanon1		data/chars/fcanon/fcanon1.txt
+know	tcanon 		data/chars/tcanon/tcanon.txt
+know	tcanon1 		data/chars/tcanon/tcanon1.txt
+know	tcanon2 		data/chars/tcanon/tcanon2.txt
+know	tcanon3 		data/chars/tcanon/tcanon3.txt
+know	gcanon1 		data/chars/gcanon/gcanon1.txt
+know	ecanon		data/chars/ecanon/ecanon.txt
+# Not a real enemy... ;)
+
+
+# Other stuff
+know	Knife		data/chars/misc/knife.txt
+know	Shot		data/chars/misc/shot.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	Bulet		data/chars/misc/bulet.txt

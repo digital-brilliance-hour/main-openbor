@@ -1,0 +1,20 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Box
+health	25
+type	item
+
+icon	data/chars/misc/boxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	30
+	offset	50 68
+	bbox	25 40 50 30
+	frame	data/chars/misc/box.gif
+	frame	data/chars/misc/box2.gif
+
+

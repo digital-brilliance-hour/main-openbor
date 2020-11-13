@@ -1,0 +1,21 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Aox
+health	300
+type	item
+
+icon	data/chars/misc/aoxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	30
+	offset	48 80
+	bbox	20 33 60 50
+	frame	data/chars/misc/aox.gif
+	frame	data/chars/misc/aox1.gif
+	frame	data/chars/misc/aox2.gif
+
+

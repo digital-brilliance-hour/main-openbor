@@ -1,0 +1,183 @@
+name	gaib2
+health	200
+speed	5
+type	enemy
+gfxshadow 1
+
+nodieblink 1
+
+death 1
+
+
+
+icon	data/chars/gaib1/icon.gif
+diesound data/sounds/ping3.wav
+
+remap	data/chars/gaib1/idle1.gif  data/chars/gaib1/map1.gif
+remap	data/chars/gaib1/idle1.gif  data/chars/gaib1/map2.gif
+
+anim spawn
+	loop	0
+	offset	140 190
+
+	move	8
+	delay	8
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+	frame	data/chars/gaib1/run1.gif
+	frame	data/chars/gaib1/run2.gif
+
+
+
+anim idle
+	loop	1
+	offset	140 190
+	bbox	110 120 60 70
+	delay	13
+	frame	data/chars/gaib1/idle1.gif
+	frame	data/chars/gaib1/idle2.gif
+	frame	data/chars/gaib1/idle3.gif
+	frame	data/chars/gaib1/idle4.gif
+	frame	data/chars/gaib1/idle5.gif
+	frame	data/chars/gaib1/idle6.gif
+	frame	data/chars/gaib1/idle5.gif
+	frame	data/chars/gaib1/idle4.gif
+	frame	data/chars/gaib1/idle5.gif
+	frame	data/chars/gaib1/idle6.gif
+	frame	data/chars/gaib1/idle5.gif
+	frame	data/chars/gaib1/idle4.gif
+	frame	data/chars/gaib1/idle3.gif
+	frame	data/chars/gaib1/idle2.gif
+	frame	data/chars/gaib1/idle1.gif
+
+anim walk
+	loop	1
+	offset	140 190
+	bbox	110 120 60 70
+	delay	15
+	frame	data/chars/gaib1/walk1.gif
+	frame	data/chars/gaib1/walk2.gif
+	frame	data/chars/gaib1/walk3.gif
+	frame	data/chars/gaib1/walk4.gif
+	frame	data/chars/gaib1/walk5.gif
+	frame	data/chars/gaib1/walk6.gif
+	frame	data/chars/gaib1/walk7.gif
+	frame	data/chars/gaib1/walk8.gif
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	140 190
+	bbox	110 120 60 70
+	frame	data/chars/gaib1/ata1.gif
+	frame	data/chars/gaib1/ata2.gif
+	frame	data/chars/gaib1/ata3.gif
+	frame	data/chars/gaib1/ata4.gif
+	attack	210 90 87 89 25 1
+	frame	data/chars/gaib1/ata5.gif
+	frame	data/chars/gaib1/ata6.gif
+	frame	data/chars/gaib1/ata7.gif
+	attack	190 90 87 89 25 1
+	frame	data/chars/gaib1/ata8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/gaib1/ata4.gif
+	frame	data/chars/gaib1/ata3.gif
+	frame	data/chars/gaib1/ata2.gif
+	frame	data/chars/gaib1/ata1.gif
+
+
+anim pain
+	loop	0
+	offset	155 190
+	bbox	110 120 60 70
+	delay	5
+	frame	data/chars/gaib1/pain1.gif
+	frame	data/chars/gaib1/idle1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	140 190
+	bbox	110 120 70 60
+	frame	data/chars/gaib1/fall1.gif
+	frame	data/chars/gaib1/fall2.gif
+	frame	data/chars/gaib1/fall3.gif
+	frame	data/chars/gaib1/fall4.gif
+
+anim death
+	loop	0
+	delay	10
+	offset	140 190
+	frame	data/chars/gaib1/fall4.gif
+	frame	data/chars/gaib1/fall1.gif
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/gaib1/pain1.gif
+	frame	data/chars/gaib1/death1.gif
+	frame	data/chars/gaib1/death2.gif
+	frame	data/chars/gaib1/death3.gif
+	frame	data/chars/gaib1/death4.gif
+	frame	data/chars/gaib1/death5.gif
+	frame	data/chars/gaib1/death6.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death7.gif
+	frame	data/chars/gaib1/death8.gif
+	frame	data/chars/gaib1/death9.gif
+	frame	data/chars/gaib1/death10.gif
+	frame	data/chars/gaib1/death11.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death12.gif
+	frame	data/chars/gaib1/death13.gif
+	frame	data/chars/gaib1/death14.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death15.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death16.gif
+	frame	data/chars/gaib1/death17.gif
+	frame	data/chars/gaib1/death18.gif
+	frame	data/chars/gaib1/death19.gif
+	frame	data/chars/gaib1/death20.gif
+	frame	data/chars/gaib1/death21.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death22.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/gaib1/death23.gif
+	frame	data/chars/gaib1/death24.gif
+	frame	data/chars/gaib1/death25.gif
+	frame	data/chars/gaib1/death26.gif
+	frame	data/chars/gaib1/death27.gif
+	frame	data/chars/gaib1/death28.gif
+
+
+
+anim rise
+	loop	0
+	offset	140 190
+	delay	7
+	frame	data/chars/gaib1/rise1.gif
+	frame	data/chars/gaib1/rise2.gif
+	frame	data/chars/gaib1/rise3.gif
+
+
+
+

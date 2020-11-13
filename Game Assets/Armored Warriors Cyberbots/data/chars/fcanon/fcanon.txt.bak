@@ -1,0 +1,136 @@
+name	fcanon
+health	200
+speed	7
+type	enemy
+
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/fcanon/icon.gif
+diesound data/sounds/ping3.wav
+#Important addition
+load	Bulet
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	155 188
+	bbox	100 120 80 70
+	delay	13
+	frame	data/chars/fcanon/idle1.gif
+
+
+
+anim walk
+	loop	1
+	offset	155 188
+	bbox	110 120 70 70
+	delay	8
+	frame	data/chars/fcanon/walk1.gif
+	frame	data/chars/fcanon/walk2.gif
+	frame	data/chars/fcanon/walk1.gif
+	frame	data/chars/fcanon/walk2.gif
+	frame	data/chars/fcanon/walk1.gif
+	frame	data/chars/fcanon/walk2.gif
+	frame	data/chars/fcanon/walk1.gif
+	frame	data/chars/fcanon/walk2.gif
+
+anim attack1
+	range	200 250
+	loop	0
+	delay	20
+	offset	155 188
+	bbox	100 120 80 70
+	custknife	bulet
+       	throwframe 4 44
+	sound 	data/sounds/ziuRe1.wav
+	frame	data/chars/fcanon/ata1.gif
+	frame	data/chars/fcanon/ata2.gif
+	frame	data/chars/fcanon/ata3.gif
+ 	attack	180 110 30 50 15 1
+	frame	data/chars/fcanon/ata4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/fcanon/ata5.gif
+	frame	data/chars/fcanon/ata2.gif
+	frame	data/chars/fcanon/ata1.gif
+
+anim attack2
+	loop	0
+	delay	12
+	offset	155 188
+	bbox	90 120 80 70
+	frame	data/chars/fcanon/atak1.gif
+	frame	data/chars/fcanon/atak2.gif
+	 attack	175 110 40 40 15 1
+	frame	data/chars/fcanon/atak3.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/fcanon/atak2.gif
+	frame	data/chars/fcanon/atak1.gif
+
+
+
+anim pain
+	loop	0
+	offset	155 190
+	bbox	100 120 65 70
+	delay	8
+	frame	data/chars/fcanon/pain1.gif
+	frame	data/chars/fcanon/idle1.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	155 188
+	bbox	90 120 90 70
+	frame	data/chars/fcanon/fall1.gif
+	frame	data/chars/fcanon/fall2.gif
+	frame	data/chars/fcanon/fall3.gif
+
+
+anim death
+	loop	0
+	delay	12
+	offset	155 188
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/fcanon/rise1.gif
+	frame	data/chars/fcanon/pain1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/fcanon/death1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/fcanon/death2.gif
+	frame	data/chars/fcanon/death3.gif
+	frame	data/chars/fcanon/death4.gif
+	frame	data/chars/fcanon/death5.gif
+	frame	data/chars/fcanon/death6.gif
+	frame	data/chars/fcanon/death7.gif
+	frame	data/chars/fcanon/death8.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/fcanon/death9.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/fcanon/death10.gif
+	frame	data/chars/fcanon/death11.gif
+	frame	data/chars/fcanon/death12.gif
+	frame	data/chars/fcanon/death13.gif
+	frame	data/chars/fcanon/death14.gif
+	frame	data/chars/fcanon/death15.gif
+	frame	data/chars/fcanon/death16.gif
+
+anim rise
+	loop	0
+	offset	155 188
+	delay	7
+	frame	data/chars/fcanon/fall1.gif
+	frame	data/chars/fcanon/rise1.gif
+	frame	data/chars/fcanon/idle1.gif
+
+
+

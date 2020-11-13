@@ -1,0 +1,137 @@
+name	ecanon
+health	200
+speed	7
+type	enemy
+gfxshadow 1
+
+
+
+nodieblink 1
+
+death 1
+
+icon	data/chars/ecanon/icon.gif
+diesound data/sounds/ping3.wav
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	150 195
+	bbox	120 120 70 70
+	delay	13
+	frame	data/chars/ecanon/idle1.gif
+	frame	data/chars/ecanon/idle3.gif
+		offset  140  190
+	frame	data/chars/ecanon/idle4.gif
+
+anim walk
+	loop	1
+	offset	140 195
+	bbox	120 120 70 70
+	delay	8
+	frame	data/chars/ecanon/walk1.gif
+	frame	data/chars/ecanon/walk2.gif
+	frame	data/chars/ecanon/walk1.gif
+	frame	data/chars/ecanon/walk2.gif
+	frame	data/chars/ecanon/walk1.gif
+	frame	data/chars/ecanon/walk2.gif
+	frame	data/chars/ecanon/walk1.gif
+	frame	data/chars/ecanon/walk2.gif
+
+anim attack1
+	range	100 130
+	loop	0
+	delay	15
+	offset	140 195
+	bbox	100 120 80 70
+	sound 	data/sounds/flameee.wav
+	frame	data/chars/ecanon/ata1.gif
+	attack	100 80 87 89 35 
+	frame	data/chars/ecanon/ata2.gif
+	sound 	data/sounds/flameee.wav
+	attack	220 125 50 40 35
+	frame	data/chars/ecanon/ata3.gif
+	attack	220 125 75 40 35
+	frame	data/chars/ecanon/ata4.gif
+	attack	215 125 120 50 35
+	sound 	data/sounds/flameee.wav
+	frame	data/chars/ecanon/ata5.gif
+	attack	215 125 150 50 35
+	frame	data/chars/ecanon/ata6.gif
+	attack	215 125 160 50 35
+	frame	data/chars/ecanon/ata7.gif
+	attack	215 125 150 50 35 1
+	frame	data/chars/ecanon/ata8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/ecanon/ata9.gif
+	frame	data/chars/ecanon/ata10.gif
+	frame	data/chars/ecanon/ata11.gif
+	frame	data/chars/ecanon/ata12.gif
+	frame	data/chars/ecanon/ata13.gif
+
+
+
+
+
+
+
+
+anim pain
+	loop	0
+	offset	140 195
+	bbox	100 120 70 70
+	delay	8
+	frame	data/chars/ecanon/pain1.gif
+	frame	data/chars/ecanon/idle4.gif
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	140 195
+	bbox	100 120 80 70
+	frame	data/chars/ecanon/fall1.gif
+	bbox	130 80 50 100
+	frame	data/chars/ecanon/fall2.gif
+	frame	data/chars/ecanon/fall3.gif
+
+
+anim death
+	loop	0
+	delay	12
+	offset	140 195
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/ecanon/rise1.gif
+	frame	data/chars/ecanon/pain1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/ecanon/death1.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/ecanon/death2.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/ecanon/death3.gif
+	frame	data/chars/ecanon/death4.gif
+	frame	data/chars/ecanon/death5.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/ecanon/death6.gif
+	frame	data/chars/ecanon/death7.gif
+	frame	data/chars/ecanon/death8.gif
+	frame	data/chars/ecanon/death9.gif
+	frame	data/chars/ecanon/death10.gif
+	frame	data/chars/ecanon/death11.gif
+
+
+anim rise
+	loop	0
+	offset	140 195
+	delay	7
+	frame	data/chars/ecanon/rise1.gif
+	frame	data/chars/ecanon/rise2.gif
+
+
+
+

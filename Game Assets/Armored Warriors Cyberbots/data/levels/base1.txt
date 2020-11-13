@@ -1,0 +1,292 @@
+#base1
+music		data/music/GLORI.bor
+bossmusic	data/music/menu.bor
+
+# Load images
+background 	data/bgs/base1/back.gif 	
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/base1/n01.gif
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order	a
+
+
+
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+#--group1-----
+
+spawn	Dox
+coords	500 235
+at	0
+
+spawn	Dox
+coords	500 185
+at	0
+
+spawn	Box
+coords	1000 185
+at	0
+
+spawn	Box
+coords	1000 235
+at	0
+
+spawn	Cox
+coords	1500 185
+at	0
+
+spawn	Tox
+coords	2000 220
+at	0
+
+spawn	Cox
+coords	2500 220
+at	0
+
+spawn	Aox
+coords	3000 200
+at	0
+
+spawn	a-700
+coords	350 235
+at	350
+
+spawn	a-700
+coords	350 185
+at	350
+
+spawn	fcanon
+coords	-80 235
+at	350
+
+spawn	gcanon
+coords	-80 185
+at	350
+
+wait	3 3
+at	350
+
+spawn	gaib1
+coords	350 235
+at	550
+
+spawn	gaib1
+coords	350 185
+at	550
+
+spawn	fcanon
+coords	-100 200
+at	550
+
+wait	3 3
+at	550
+
+spawn	tank-200
+coords	-80 235
+at	750
+
+spawn	gaib1
+coords	350 185
+at	750
+
+spawn	gaits
+alias	v-4
+map	4
+coords	-100 200
+at	750
+
+wait	3 3
+at	750
+
+spawn	ecanon
+coords	350 235
+at	900
+
+spawn	ecanon
+coords	-80 185
+at	900
+
+spawn	gaib1
+coords	350 200
+at	900
+
+wait	3 3
+at	900
+
+spawn	tank-200
+coords	350 235
+at	1300
+
+spawn	tank-200
+coords	400  200
+at	1300
+
+spawn	tank-200
+coords	350 185
+at	1300
+
+wait	3 3
+at	1300
+
+spawn	tcanon2
+coords	250 200
+at	1600
+
+spawn	tcanon3
+coords	200 185
+at	1600
+
+spawn	tcanon1
+coords	330 225
+at	1600
+
+wait	3 3
+at	1600
+
+spawn	ecanon
+coords	350 185
+at	1800
+
+spawn	ecanon
+coords	350 200
+at	1800
+
+spawn	tank-200
+coords	-80 185
+at	1800
+
+spawn	gaib1
+coords	350 235
+at	1800
+
+wait	3 3
+at	1800
+
+spawn	tank-100
+coords	-80 185
+at	2000
+
+spawn	gaib1
+coords	350 200
+at	2000
+
+spawn	tcanon2
+coords	250 185
+at	2000
+
+spawn	gaits1
+alias	v1
+map	1
+coords	200 200
+at	2000
+
+wait	3 3
+at	2000
+
+spawn	gaits
+coords	100 185
+at	2200
+
+spawn	fcanon1
+coords	220 185
+at	2200
+
+spawn	ecanon
+coords	350 185
+at	2200
+
+spawn	tcanon2
+coords	210 235
+at	2200
+
+
+spawn	gcanon
+coords	350 235
+at	2200
+
+wait	3 3
+at	2200
+
+spawn	ecanon
+coords	100 185
+at	2400
+
+spawn	tank-200
+coords	330 200
+at	2400
+
+spawn	gaits1
+alias	v2
+map	2
+coords	200 200
+at	2400
+
+spawn	a-700
+coords	350 235
+at	2400
+
+wait	3 3
+at	2400
+
+spawn	tcanon1
+coords	320 185
+at	2700
+
+spawn	a-700
+coords	-80 200
+at	2700
+
+spawn	tank-100
+coords	350 200
+at	2700
+
+spawn	gaits1
+coords	200 235
+at	2700
+
+wait	3 3
+at	2700

@@ -1,0 +1,131 @@
+name	a-700
+health	200
+speed	5
+type	enemy
+shadow	6
+
+nodieblink 1
+
+death 1
+
+
+
+icon	data/chars/a-700/icon.gif
+diesound data/sounds/ping3.wav
+
+remap	data/chars/a-700/walk5.gif  data/chars/a-700/map1.gif
+remap	data/chars/a-700/walk5.gif  data/chars/a-700/map2.gif
+remap	data/chars/a-700/walk5.gif  data/chars/a-700/map3.gif
+
+
+
+
+anim idle
+	loop	1
+	offset	145 180
+	bbox	100 120 70 70
+	delay	13
+	frame	data/chars/a-700/idle1.gif
+	frame	data/chars/a-700/idle2.gif
+
+
+anim walk
+	loop	1
+	offset	145 180
+	bbox	105 120 75 70
+	delay	15
+	frame	data/chars/a-700/walk1.gif
+	frame	data/chars/a-700/walk2.gif
+	frame	data/chars/a-700/walk3.gif
+	frame	data/chars/a-700/walk4.gif
+	frame	data/chars/a-700/walk5.gif
+	frame	data/chars/a-700/walk6.gif
+
+
+
+
+anim attack1
+	loop	0
+	delay	6
+	offset	145 180
+	bbox	100 120 70 70
+	frame	data/chars/a-700/ata1.gif
+	frame	data/chars/a-700/ata2.gif
+	frame	data/chars/a-700/ata3.gif
+	attack	185 125 80 50 25 1
+	frame	data/chars/a-700/ata4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/a-700/ata3.gif
+	frame	data/chars/a-700/ata2.gif
+	frame	data/chars/a-700/ata1.gif
+
+
+
+
+anim pain
+	loop	0
+	offset	160 190
+	bbox	100 120 70 70
+	delay	5
+	frame	data/chars/a-700/pain1.gif
+
+
+
+anim fall
+	loop	0
+	delay	20
+	offset	160 180
+	bbox	100 120 70 70
+	frame	data/chars/a-700/fall1.gif
+	bbox	100 110 90 70
+	frame	data/chars/a-700/fall2.gif
+	bbox	100 130 90 60
+	frame	data/chars/a-700/fall3.gif
+		bbox  90  130  80  60
+	frame	data/chars/a-700/fall4.gif
+
+anim death
+	loop	0
+	delay	10
+	offset	160 180
+	frame	data/chars/a-700/fall4.gif
+	frame	data/chars/a-700/rise1.gif
+	frame	data/chars/a-700/pain1.gif
+	sound 	data/sounds/rob0.wav
+	frame	data/chars/a-700/death1.gif
+	frame	data/chars/a-700/death2.gif
+	frame	data/chars/a-700/death3.gif
+	frame	data/chars/a-700/death4.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/a-700/death5.gif
+	frame	data/chars/a-700/death6.gif
+	frame	data/chars/a-700/death7.gif
+	frame	data/chars/a-700/death8.gif
+	frame	data/chars/a-700/death9.gif
+	frame	data/chars/a-700/death10.gif
+	frame	data/chars/a-700/death11.gif
+	frame	data/chars/a-700/death12.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/a-700/death13.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/a-700/death14.gif
+	sound 	data/sounds/boom.wav
+	frame	data/chars/a-700/death15.gif
+	frame	data/chars/a-700/death16.gif
+	frame	data/chars/a-700/death17.gif
+	frame	data/chars/a-700/death18.gif
+	frame	data/chars/a-700/death19.gif
+	frame	data/chars/a-700/death20.gif
+
+
+
+
+anim rise
+	loop	0
+	offset	145 180
+	delay	7
+	frame	data/chars/a-700/rise1.gif
+	frame	data/chars/a-700/rise2.gif
+
+
+
