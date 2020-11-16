@@ -3,7 +3,10 @@ health	100
 speed	9
 type	player
 shadow	3
-diesound data/sounds/eek.wav 
+diesound data/sounds/eek.wav
+icon	   data/chars/M_washizuka/0.gif
+
+
 
 
 
@@ -427,6 +430,10 @@ anim	freespecial6
 	offset	38 94
 	frame	data/chars/M_washizuka/433.gif
 		
+anim	get
+	offset	37 69
+	frame	data/chars/M_washizuka/162.gif
+		
 anim	idle
 	loop	1
 	bbox	2 1 79 100
@@ -472,7 +479,7 @@ anim	jump
 		
 anim	jumpattack
 	bbox	1 57 62 97
-	delay	20
+	delay	8
 	offset	36 170
 	frame	data/chars/M_washizuka/268.gif
 	bbox	32 1 74 99
@@ -498,11 +505,11 @@ anim	jumpattack
 		
 anim	pain
 	delay	7
-	offset	34 80
+	offset	34 138
 	frame	data/chars/M_washizuka/104.gif
-	offset	42 52
+	offset	42 110
 	frame	data/chars/M_washizuka/105.gif
-	offset	59 38
+	offset	59 97
 	frame	data/chars/M_washizuka/106.gif
 		
 anim	rise

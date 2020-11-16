@@ -1,0 +1,38 @@
+name	ninja2
+type	enemy
+subtype	biker
+health	3
+shadow	6
+icon	data/chars/ninja2/icon.gif
+palette       data/chars/ninja2/run01.gif
+#Important addition
+
+
+
+# Not really idle, but what the heck
+anim idle
+	loop	1
+	delay	10
+	offset	59 97
+	bbox	30 20 74 60
+	attack	61 20 42 39 10 1
+	frame	data/chars/ninja2/Run00.gif
+	frame	data/chars/ninja2/Run01.gif
+	frame	data/chars/ninja2/Run02.gif
+	frame	data/chars/ninja2/Run03.gif
+
+anim pain
+	loop	0
+	delay	20
+	offset	56 105
+	frame	data/chars/Ninja1/fall00.gif
+	attack	7 15 70 43 15 1
+	frame	data/chars/Ninja1/fall01.gif
+	attack	9 33 70 43 15 1
+	frame	data/chars/Ninja1/fall02.gif
+	attack	19 44 70 43 15 1
+	frame	data/chars/Ninja1/fall03.gif
+	attack	9 63 70 43 15 1	
+	frame	data/chars/Ninja1/fall04.gif
+	frame	data/chars/Ninja1/fall05.gif
+

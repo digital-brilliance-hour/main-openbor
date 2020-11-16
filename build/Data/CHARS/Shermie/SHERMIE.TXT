@@ -1,181 +1,109 @@
 name	Shermie
-health	50
-speed	8
+health	100
+speed	7
 type	enemy
-shadow	4
-icon	data/chars/shermie/icon.gif
-diesound data/sounds/eek.wav
-
-
-remap	data/chars/shermie/idle1.gif data/chars/shermie/map1.gif
-remap	data/chars/shermie/idle1.gif data/chars/shermie/map2.gif
-remap	data/chars/shermie/idle1.gif data/chars/shermie/map3.gif
-
+shadow	5
+diesound data/sounds/die3.wav
+remap data/chars/Shermie/stand05.gif data/chars/Shermie/ALT1.gif
+remap data/chars/Shermie/stand05.gif data/chars/Shermie/ALT2.gif
+remap data/chars/Shermie/stand05.gif data/chars/Shermie/ALT3.gif
+remap data/chars/Shermie/stand01.gif data/chars/Shermie/ALT4.gif
+icon	data/chars/Shermie/icon.gif
 
 anim idle
+	delay	11
 	loop	1
-	offset	38 128
-	bbox	25 21 33 110
-	delay	10
-	frame	data/chars/shermie/idle1.gif
-	frame	data/chars/shermie/idle2.gif
-	frame	data/chars/shermie/idle3.gif
-	frame	data/chars/shermie/idle4.gif
-	frame	data/chars/shermie/idle5.gif
-	frame	data/chars/shermie/idle6.gif
-	frame	data/chars/shermie/idle7.gif
-	frame	data/chars/shermie/idle8.gif
+	offset	90 200
+	bbox	62 102 56 105
+	frame	data/chars/Shermie/stand01.gif
+	#frame	data/chars/Shermie/stand02.gif
+	#frame	data/chars/Shermie/stand03.gif
+	#frame	data/chars/Shermie/stand04.gif
+	#frame	data/chars/Shermie/stand05.gif
+	#frame	data/chars/Shermie/stand06.gif
+	#frame	data/chars/Shermie/stand07.gif
+	#frame	data/chars/Shermie/stand08.gif
 
 anim walk
 	loop	1
-	offset	51 117
-	bbox	38 9 25 110
-	delay	7
-	frame	data/chars/shermie/walk00.gif
-	frame	data/chars/shermie/walk01.gif
-	frame	data/chars/shermie/walk02.gif
-	frame	data/chars/shermie/walk03.gif
-	frame	data/chars/shermie/walk04.gif
-	frame	data/chars/shermie/walk05.gif
-	frame	data/chars/shermie/walk06.gif
-	frame	data/chars/shermie/walk07.gif
-	frame	data/chars/shermie/walk08.gif
-	frame	data/chars/shermie/walk09.gif
-	frame	data/chars/shermie/walk10.gif
-	frame	data/chars/shermie/walk11.gif
+	delay	9
+	offset	245 197
+	bbox	219 93 59 106
+	frame	data/chars/Shermie/walk01.gif
+	frame	data/chars/Shermie/walk02.gif
+	frame	data/chars/Shermie/walk03.gif
+	frame	data/chars/Shermie/walk04.gif
+	frame	data/chars/Shermie/walk05.gif
+	frame	data/chars/Shermie/walk04.gif
+	frame	data/chars/Shermie/walk03.gif
+	frame	data/chars/Shermie/walk02.gif
+	
+anim attack1
+	loop	0
+	delay	4
+	bbox	47 114 49 83
+	offset	90 200
+	frame	data/chars/Shermie/at11.gif
+	frame	data/chars/Shermie/at12.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Shermie/at13.gif
+	attack	101 120 64 23 3 1
+	frame	data/chars/Shermie/at14.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Shermie/at15.gif
+	attack	101 120 64 23 3 1
+	frame	data/chars/Shermie/at16.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Shermie/at17.gif
+	attack	101 120 64 23 3 
+	frame	data/chars/Shermie/at18.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Shermie/at19.gif
+	attack	101 120 64 23 3 1
+	frame	data/chars/Shermie/at20.gif
+	frame	data/chars/Shermie/at21.gif
+	frame	data/chars/Shermie/at22.gif
+	frame	data/chars/Shermie/at23.gif
+	frame	data/chars/Shermie/at24.gif
+	frame	data/chars/Shermie/at25.gif
+	frame	data/chars/Shermie/at26.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Shermie/at27.gif
+	frame	data/chars/Shermie/at28.gif
 
 anim pain
 	loop	0
-	offset	64 116
-	bbox	48 9 34 108
-	delay	12
-	frame	data/chars/shermie/hurt1.gif
-	delay	50
-	frame	data/chars/shermie/hurt2.gif
-	delay	12
-	frame	data/chars/shermie/hurt1.gif
-
-
+	offset	116 197
+	bbox	65 102 74 102
+	delay	5
+	frame	data/chars/Shermie/pain03.gif
+	delay	5
+	bbox	65 102 74 102
+	frame	data/chars/Shermie/pain02.gif
+	delay	5
+	bbox	65 102 74 102
+	frame	data/chars/Shermie/pain01.gif
+	
 anim fall
 	loop	0
+	offset	60 80
 	delay	20
-	offset	80 83
-	frame	data/chars/shermie/fall1.gif
-	attack	54 69 58 15 12 1
-	frame	data/chars/shermie/fall2.gif
-	frame	data/chars/shermie/fall3.gif
-	attack	44 64 65 15 12 1
-	frame	data/chars/shermie/fall5.gif
-	frame	data/chars/shermie/fall6.gif
+	bbox	43 30 48 69
+	attack	32 22 39 41 10 1
+	frame	data/chars/Shermie/fall01.gif
+	attack	10 36 62 28 10 1
+	frame	data/chars/Shermie/fall02.gif
+	attack	11 35 74 23 10 1
+	frame	data/chars/Shermie/fall03.gif
+	attack	19 30 49 32 10 1
+	bbox	0 0 0 0
+	frame	data/chars/Shermie/fall04.gif
 
 anim rise
 	loop	0
-	offset	56 117
-	delay	15
-	frame	data/chars/shermie/rise1.gif
-	frame	data/chars/shermie/rise2.gif
-	frame	data/chars/shermie/rise3.gif
-	frame	data/chars/shermie/rise4.gif
-	frame	data/chars/shermie/rise5.gif
-	frame	data/chars/shermie/rise6.gif
-
-
-# Slap
-anim attack1
-	range	0 60
-	loop	0
-	delay	7
-	offset	46 119
-	bbox	33 11 33 111
-	move	10
-	frame	data/chars/shermie/slap01.gif
-	move	10
-	frame	data/chars/shermie/slap02.gif
-	move	0
-	attack	61 17 37 35 15
-	frame	data/chars/shermie/slap03.gif
-	attack	61 15 28 32 15
-	frame	data/chars/shermie/slap04.gif
-	frame	data/chars/shermie/slap05.gif
-	attack	0 0 0 0 0
-	frame	data/chars/shermie/slap06.gif
-
-
-
-# Flip
-anim attack2
-	range	10 100
-
-	loop	0
-	delay	5
-
-	#offset	37 137
-
-	bbox	40 66 52 73 
-	move	20
-	offset	57 137
-	frame	data/chars/shermie/flip00.gif
-
-	attack	0 78 50 22 10
-	move	10
-	offset	67 137
-	frame	data/chars/shermie/flip01.gif
-
-	attack	6 38 42 30 10
-	bbox	60 64 32 75
-	move	3
-	offset	70 137
-	frame	data/chars/shermie/flip02.gif
-
-	attack	7 67 58 25 10
-	move	3
-	offset	73 137
-	frame	data/chars/shermie/flip03.gif
-
-	attack	28 34 114 38 10
-	bbox	67 64 32 75
-	move	7
-	offset	80 137
-	frame	data/chars/shermie/flip04.gif
-
-	attack	97 17 47 119 10
-	bbox	64 73 36 66
-	move	10
-	offset	90 137
-	frame	data/chars/shermie/flip05.gif
-
-	attack	135 64 61 22 10
-	bbox	94 64 49 75
-	move	20
-	offset	110 137
-	frame	data/chars/shermie/flip06.gif
-
-	attack	135 68 61 22 10
-	bbox	95 53 43 40
-	move	10
-	offset	120 137
-	frame	data/chars/shermie/flip07.gif
-
-	attack	131 74 61 27 10
-	bbox	108 43 35 96
-	move	4
-	offset	124 137
-	frame	data/chars/shermie/flip08.gif
-
-	attack	131 74 61 27 3
-	bbox	115 29 28 110
-	move	4
-	offset	128 137
-	frame	data/chars/shermie/flip09.gif
-
-	bbox	126 29 29 110
-	move	18
-	offset	136 137
-	frame	data/chars/shermie/flip10.gif
-
-	bbox	66 64 32 75
-	frame	data/chars/shermie/flip11.gif
-
-
-
-
+	offset	90 200
+	delay	10
+	frame	data/chars/Shermie/rise01.gif
+	frame	data/chars/Shermie/rise02.gif
+	frame	data/chars/Shermie/rise03.gif
+	frame	data/chars/Shermie/rise04.gif

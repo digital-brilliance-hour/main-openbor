@@ -13,6 +13,10 @@ void mainLoop()
 	if(SYS_INLEVEL)
 	{
 		inLevelLoop();
+    void counter = getlocalvar("counter"); 
+    if (counter!="0"){
+    setlocalvar("counter",0); 
+    }
 	}
 	else if (SYS_SCENE != "intro.txt"){
 		/*if(SYS_INMENU) {
@@ -38,15 +42,20 @@ void mainLoop()
       int models_cached = openborvariant("models_cached");
       int i = 0;
       int C = getglobalvar("Load");
-
-      for( i = 0; i < models_cached; ++i ) {
-        char model = getmodelproperty(i,2);
-
-        if( model == "Royce" && C != 39 ) {
-            changemodelproperty(i,4,0);
-            return;
-        }
+      void counter = getlocalvar("counter"); 
+      while(counter!=1)
+      {
+        void subent;
+        loadmodel("selectanimation"); // name of the entity to be loaded
+        clearspawnentry(); // clean the spawn entry
+        setspawnentry("name", "selectanimation"); // define the entity to be spawn
+        setspawnentry("coords", -1,0,-1); // set the position of the entity
+        subent=spawn();  //  spawn the entity
+        changeentityproperty(subent, "position", -84,0,-1); //for safe, set again the position
+        counter = setlocalvar("counter",1); // turn on the variable, blocking a new spawn to be made
       }
+
+      
     } else if(openborvariant("in_menuscreen")==1){
       setindexedvar(0, NULL());
     }

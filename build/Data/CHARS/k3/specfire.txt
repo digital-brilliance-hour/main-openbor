@@ -1,0 +1,40 @@
+name	specfire
+health	1
+type	pshot
+shadow	0
+nomove	1	1
+alpha	0
+remove	0
+noquake	1
+
+anim idle
+	loop	0
+	delay	15
+	hitflash	sbfib
+	offset	53	49
+	sound	data/chars/hotaru/spfierce.wav
+	frame	data/chars/K/spec00.gif
+	offset	160	129
+	blast	50	0	300	150	26	0	0	0	25
+	frame	data/chars/K/spec01.gif
+	offset	180	152
+	frame	data/chars/K/spec02.gif
+	offset	118	119
+	frame	data/chars/K/spec03.gif
+	offset	116	162
+	frame	data/chars/K/spec04.gif
+	blast	0	0	0	0	0
+	offset	116	173
+	frame	data/chars/K/spec05.gif
+	offset	112	187
+	frame	data/chars/K/spec06.gif
+	offset	119	194
+	frame	data/chars/K/spec07.gif
+	movea	10
+	offset	77	128
+	frame	data/chars/K/spec08.gif
+	offset	78	109
+	frame	data/chars/K/spec09.gif
+	offset	79	94
+	frame	data/chars/K/spec10.gif
+

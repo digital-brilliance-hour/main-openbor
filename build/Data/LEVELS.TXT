@@ -10,32 +10,6 @@
 
 
 
-set	Grouping
-
-file	data/levels/new-stage2.txt
-
-file 	data/levels/new-stage.txt
-
-
-file	data/levels/example1.txt
-next
-file	data/levels/holes.txt
-next
-scene	data/scenes/ending.txt
-
-
-set	water_(3_levels)
-file	data/levels/water.txt
-file	data/levels/water2.txt
-file	data/levels/water3.txt
-
-set	modes_(2_levels)
-file	data/levels/neon.txt
-file	data/levels/screen.txt
-
-set	mirror_(1_level)
-file	data/levels/mirror.txt
-
 set puzzle
 
 file 	data/levels/puzzle-test.txt
@@ -43,7 +17,3 @@ file 	data/levels/puzzle-test.txt
 set boss
 
 file    data/levels/boss-item.txt
-
-set stage1-1
-
-file    data/levels/stage1-1.txt

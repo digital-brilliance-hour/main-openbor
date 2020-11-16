@@ -5,18 +5,22 @@ type	enemy
 shadow	4
 icon	data/chars/eiji/icon.gif
 diesound data/sounds/die2.wav
+palette        data/chars/eiji/alt3.gif
+nodieblink 3
+#-------remap
+#remap       data/chars/2shoto1/stand1.gif   data/chars/2shoto1/alt2.gif  
 
 
 #Important addition
-load	Star
+#load	Knife
 
 
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt1.gif
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt2.gif
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt3.gif
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt4.gif
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt5.gif
-remap	data/chars/eiji/stand1.gif data/chars/eiji/alt6.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt1.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt2.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt3.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt4.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt5.gif
+#remap	data/chars/eiji/stand1.gif data/chars/eiji/alt6.gif
 
 
 anim idle
@@ -98,7 +102,6 @@ anim jumpattack
 	loop	0
 	delay	7
 	offset	34 135
-
 	bbox	24 19 38 92
 	frame	data/chars/eiji/jump00.gif
 	bbox	24 19 38 92
@@ -109,7 +112,6 @@ anim jumpattack
 	frame	data/chars/eiji/jump02.gif
 	bbox	24 27 42 71
 	frame	data/chars/eiji/jump03.gif
-
 	delay	10
 	bbox	20 27 42 71
 	frame	data/chars/eiji/dart00.gif
@@ -118,7 +120,6 @@ anim jumpattack
 	attack	56 46 36 28 10 1
 	frame	data/chars/eiji/dart01.gif
 	delay	7
-
 	bbox	24 27 42 71
 	frame	data/chars/eiji/jump03.gif
 	bbox	24 24 40 74

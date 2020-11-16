@@ -1,0 +1,427 @@
+name	Bknight
+health	100
+speed	10
+type	enemy
+shadow	2
+noquake 1
+dust    dust
+cantgrab 1
+aggression 8
+bflash bflash
+hostile player npc
+candamage player npc
+blockodds 3
+thold     49
+icon	data/chars/Bknight/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/die1.wav
+fmap 4
+
+palette data/chars/Bknight/a101.gif
+remap	data/chars/Bknight/a101.gif   data/chars/Bknight/walk1.gif
+remap	data/chars/Bknight/a101.gif   data/chars/Bknight/walk2.gif
+remap	data/chars/Bknight/a101.gif   data/chars/Bknight/walk3.gif
+remap	data/chars/Bknight/a101.giff   data/chars/Bknight/freeze.gif
+
+
+
+anim	attack1
+	drawmethod	310	310
+	range	0 60
+	loop	0
+	delay	18
+	offset	52 81
+	bbox	35 25 40 70
+	sound	data/sounds/punch1.wav
+	frame	data/chars/Bknight/a101.gif
+	delay	6
+	offset	46 101
+	frame	data/chars/Bknight/a102.gif
+	offset	34 77
+	frame	data/chars/Bknight/a103.gif
+	attack	65 50 78 50 12 1 0 0 12
+	offset	43 94
+	frame	data/chars/Bknight/a104.gif
+	delay	35
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Bknight/a104.gif
+		
+anim	backwalk
+	drawmethod	300	300
+	loop	1
+	offset	24 92
+	bbox	15 35 40 70
+	delay	11
+	frame	data/chars/Bknight/walk1.gif
+	offset	32 94
+	frame	data/chars/Bknight/walk2.gif
+	offset	35 99
+	frame	data/chars/Bknight/walk3.gif
+	offset	31 91
+	frame	data/chars/Bknight/walk4.gif
+	offset	23 91
+	frame	data/chars/Bknight/walk5.gif
+	offset	25 90
+	frame	data/chars/Bknight/walk6.gif
+		
+anim	block
+	drawmethod	300	300
+	loop	0
+	delay	3
+	offset	40 65
+	bbox	55 45 40 70
+	move	-10
+	sound	data/sounds/guard.wav
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	move	-8
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	move	-6
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	move	-4
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	move	-2
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	frame	data/chars/Bknight/block.gif
+	offset	40 65
+	delay	20
+	move	0
+	delay	10
+	frame	data/chars/Bknight/block.gif
+		
+anim	bpain
+	drawmethod	300	300
+	loop	0
+	offset	65 110
+	delay	4
+	bbox	55 45 40 70
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	38 58
+	delay	20
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	burn
+	drawmethod	300	300
+	loop	0
+	offset	65 110
+	delay	4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	53 23
+	delay	20
+	frame	data/chars/Bknight/fall2.gif
+		
+anim	fall
+	drawmethod	300	300
+	loop	0
+	delay	40
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	delay	20
+	offset	60 64
+	frame	data/chars/Bknight/fall1.gif
+	delay	20
+	offset	53 23
+	frame	data/chars/Bknight/fall2.gif
+		
+anim	idle
+	drawmethod	300	300
+	loop	1
+	offset	40 75
+	bbox	25 9 40 70
+	delay	1
+	frame	data/chars/Bknight/idle.gif
+		
+anim	pain
+	drawmethod	300	300
+	loop	0
+	delay	3
+	offset	38 58
+	bbox	15 9 40 60
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	delay	23
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	pain2
+	drawmethod	300	300
+	loop	0
+	delay	3
+	offset	38 58
+	bbox	15 9 40 60
+	move	-10
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	move	-8
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	move	-6
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	move	-4
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	move	-2
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	38 58
+	delay	20
+	move	0
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	pain3
+	drawmethod	300	300
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/fox01.gif
+	frame	data/chars/misc/fox02.gif
+	frame	data/chars/misc/fox03.gif
+	frame	data/chars/misc/fox04.gif
+	frame	data/chars/misc/fox05.gif
+	frame	data/chars/misc/fox06.gif
+	frame	data/chars/misc/fox07.gif
+	delay	200
+	frame	data/chars/misc/fox08.gif
+	delay	4
+	bbox	0 0 0 0
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	65 110
+	frame	data/chars/Bknight/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	38 58
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	pain4
+	drawmethod	300	300
+	loop	0
+	delay	240
+	offset	38 58
+	bbox	15 9 40 60
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	rise
+	drawmethod	300	300
+	loop	0
+	offset	40 89
+	delay	17
+	frame	data/chars/Bknight/rise1.gif
+		
+anim	shock
+	drawmethod	300	300
+	loop	0
+	offset	55 100
+	delay	4
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	offset	53 23
+	delay	20
+	frame	data/chars/Bknight/fall2.gif
+		
+anim	spain
+	drawmethod	300	300
+	loop	0
+	offset	55 100
+	bbox	60 30 35 55
+	delay	4
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	offset	38 58
+	delay	20
+	frame	data/chars/Bknight/pain1.gif
+		
+anim	walk
+	drawmethod	310	310
+	loop	1
+	offset	24 92
+	bbox	15 35 40 70
+	delay	13
+	frame	data/chars/Bknight/walk1.gif
+	offset	32 94
+	frame	data/chars/Bknight/walk2.gif
+	offset	35 99
+	frame	data/chars/Bknight/walk3.gif
+	offset	31 91
+	frame	data/chars/Bknight/walk4.gif
+	offset	23 91
+	frame	data/chars/Bknight/walk5.gif
+		
+#|edited by openBor Stats v 0.41
+		

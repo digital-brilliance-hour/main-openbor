@@ -1,0 +1,490 @@
+name	Frost_Giant
+health	100
+speed	10
+type	enemy
+shadow	2
+noquake 1
+dust    dust
+cantgrab 1
+aggression 8
+bflash bflash
+blockodds 1
+thold     49
+hostile player npc
+candamage player npc
+icon	data/chars/Frost_Giant/icon.gif
+icondie    data/chars/misc/icond.gif
+diesound data/sounds/Frostdie.wav
+fmap 4
+
+
+
+
+
+
+
+
+anim	attack1
+	drawmethod	280	280
+	range	0 60
+	loop	0
+	delay	18
+	offset	198 154
+	bbox	154 79 127 87
+	sound	data/sounds/punch1.wav
+	sound	data/sounds/FAttack.wav
+	frame	data/chars/Frost_Giant/a101.gif
+	delay	6
+	offset	154 152
+	frame	data/chars/Frost_Giant/a102.gif
+	attack	250 85 90 45 25 0 0 0 15
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	delay	35
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	187 158
+	frame	data/chars/Frost_Giant/idle.gif
+	sound	data/sounds/punch1.wav
+	offset	189 203
+	frame	data/chars/Frost_Giant/a201.gif
+	blast	210 105 60 75 25 1 0 0 15
+	offset	135 170
+	frame	data/chars/Frost_Giant/a202.gif
+	blast	0 0 0 0 0 0 0 0 0 0
+	offset	187 158
+	frame	data/chars/Frost_Giant/idle.gif
+		
+anim	attack2
+	drawmethod	280	280
+	range	91 190
+	loop	0
+	offset	159 171
+	bbox	154 79 127 87
+	quakeframe	8 10 3
+	delay	8
+	sound	data/sounds/FCharge.wav
+	move	5
+	delay	2
+	sound	data/sounds/run.wav
+	hitfx	data/sounds/Fjumpland.wav
+	bbox	0 0 0 0
+	blast	175 110 85 70 15 1 0 0 15
+	frame	data/chars/Frost_Giant/a301.gif
+	frame	data/chars/Frost_Giant/a301.gif
+	frame	data/chars/Frost_Giant/a301.gif
+	offset	180 175
+	frame	data/chars/Frost_Giant/a302.gif
+	frame	data/chars/Frost_Giant/a302.gif
+	frame	data/chars/Frost_Giant/a302.gif
+	offset	207 164
+	frame	data/chars/Frost_Giant/a303.gif
+	frame	data/chars/Frost_Giant/a303.gif
+	frame	data/chars/Frost_Giant/a303.gif
+	offset	212 159
+	frame	data/chars/Frost_Giant/a304.gif
+	frame	data/chars/Frost_Giant/a304.gif
+	frame	data/chars/Frost_Giant/a304.gif
+	offset	222 167
+	frame	data/chars/Frost_Giant/a305.gif
+	frame	data/chars/Frost_Giant/a305.gif
+	frame	data/chars/Frost_Giant/a305.gif
+	offset	194 154
+	frame	data/chars/Frost_Giant/a306.gif
+	frame	data/chars/Frost_Giant/a306.gif
+	frame	data/chars/Frost_Giant/a306.gif
+	offset	162 152
+	frame	data/chars/Frost_Giant/a307.gif
+	frame	data/chars/Frost_Giant/a307.gif
+	frame	data/chars/Frost_Giant/a307.gif
+	move	3
+	delay	18
+	bbox	154 79 127 87
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	bbox	154 79 127 87
+	blast	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Frost_Giant/a103.gif
+		
+anim	backwalk
+	drawmethod	280	280
+	loop	1
+	offset	182 157
+	bbox	124 79 127 87
+	delay	11
+	frame	data/chars/Frost_Giant/walk1.gif
+	offset	182 153
+	frame	data/chars/Frost_Giant/walk2.gif
+	offset	190 158
+	frame	data/chars/Frost_Giant/walk3.gif
+	offset	187 158
+	frame	data/chars/Frost_Giant/idle.gif
+		
+anim	block
+	drawmethod	280	280
+	loop	0
+	delay	3
+	offset	183 152
+	bbox	154 79 127 87
+	move	-10
+	sound	data/sounds/guard.wav
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	move	-8
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	move	-6
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	move	-4
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	move	-2
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	frame	data/chars/Frost_Giant/a103.gif
+	offset	183 152
+	delay	20
+	move	0
+	delay	10
+	frame	data/chars/Frost_Giant/a103.gif
+		
+anim	bpain
+	drawmethod	280	280
+	loop	0
+	offset	18 158
+	delay	4
+	bbox	154 79 127 87
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	218 156
+	delay	20
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	burn
+	drawmethod	280	280
+	loop	0
+	offset	18 158
+	delay	4
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	frame	data/chars/misc/bfire04.gif
+	frame	data/chars/misc/bfire01.gif
+	frame	data/chars/misc/bfire02.gif
+	frame	data/chars/misc/bfire03.gif
+	offset	223 126
+	delay	20
+	frame	data/chars/Frost_Giant/fall2.gif
+		
+anim	fall
+	drawmethod	280	280
+	loop	0
+	delay	40
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	208 164
+	frame	data/chars/Frost_Giant/pain2.gif
+	delay	20
+	offset	220 169
+	sound	data/sounds/FHurt.wav
+	frame	data/chars/Frost_Giant/fall1.gif
+	offset	234 135
+	frame	data/chars/Frost_Giant/fall4.gif
+	delay	20
+	offset	223 126
+	frame	data/chars/Frost_Giant/fall2.gif
+		
+anim	idle
+	drawmethod	280	280
+	loop	1
+	offset	187 158
+	bbox	134 79 127 87
+	delay	1
+	frame	data/chars/Frost_Giant/idle.gif
+		
+anim	pain
+	drawmethod	280	280
+	loop	0
+	delay	3
+	offset	218 156
+	bbox	154 79 127 87
+	sound	data/sounds/FHurt.wav
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	208 164
+	frame	data/chars/Frost_Giant/pain2.gif
+	offset	218 156
+	delay	23
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	pain2
+	drawmethod	280	280
+	loop	0
+	delay	3
+	offset	218 156
+	bbox	2154 79 127 87
+	move	-10
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	move	-8
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	move	-6
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	move	-4
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	move	-2
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	218 156
+	delay	20
+	move	0
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	pain3
+	drawmethod	280	280
+	loop	0
+	delay	4
+	bbox	0 0 0 0
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox01.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	delay	8
+	bbox	60 30 35 55
+	frame	data/chars/misc/fox01.gif
+	frame	data/chars/misc/fox02.gif
+	frame	data/chars/misc/fox03.gif
+	frame	data/chars/misc/fox04.gif
+	frame	data/chars/misc/fox05.gif
+	frame	data/chars/misc/fox06.gif
+	frame	data/chars/misc/fox07.gif
+	delay	200
+	frame	data/chars/misc/fox08.gif
+	delay	4
+	bbox	0 0 0 0
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+	offset	50 55
+	frame	data/chars/misc/fox08.gif
+	offset	218 156
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	pain4
+	drawmethod	280	280
+	loop	0
+	delay	240
+	offset	218 156
+	bbox	154 79 127 87
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	rise
+	drawmethod	280	280
+	loop	0
+	offset	201 137
+	delay	17
+	frame	data/chars/Frost_Giant/rise1.gif
+	offset	188 144
+	frame	data/chars/Frost_Giant/rise2.gif
+		
+anim	shock
+	drawmethod	350	350
+	loop	0
+	offset	18 158
+	delay	4
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	offset	223 126
+	delay	20
+	drawmethod	280	280
+	frame	data/chars/Frost_Giant/fall2.gif
+		
+anim	spain
+	drawmethod	350	350
+	loop	0
+	offset	18 158
+	bbox	205 89 33 77
+	delay	4
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	frame	data/chars/misc/shoc02.gif
+	frame	data/chars/misc/shoc01.gif
+	offset	218 156
+	delay	20
+	drawmethod	280	280
+	frame	data/chars/Frost_Giant/pain1.gif
+		
+anim	walk
+	drawmethod	280	280
+	loop	1
+	offset	182 157
+	bbox	124 79 127 87
+	delay	11
+	frame	data/chars/Frost_Giant/walk1.gif
+	offset	182 153
+	frame	data/chars/Frost_Giant/walk2.gif
+	offset	190 158
+	frame	data/chars/Frost_Giant/walk3.gif
+	offset	187 158
+	frame	data/chars/Frost_Giant/idle.gif
+		
+#|edited by openBor Stats v 0.41
+		

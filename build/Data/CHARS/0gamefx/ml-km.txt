@@ -1,0 +1,16 @@
+name     ml-km
+health   1
+type	 text
+facing	 1
+setlayer 500000000
+
+anim idle
+	 loop	0
+	 delay	1
+	 offset	0 0
+	 bbox	0 0 0 0
+	 sound	data/sounds/beep2.wav
+	 frame	data/chars/0gamefx/ml-km.png
+	 delay	-1
+	 frame	data/chars/0gamefx/ml-km.png
+

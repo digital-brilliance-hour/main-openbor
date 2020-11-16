@@ -1,0 +1,19 @@
+name	 darken
+palette  data/chars/0gamefx/darken.png
+type	 panel
+speed    10
+setlayer -1
+alpha 6
+lifespan 1
+
+anim idle
+	 loop      0
+	 offset    0 0
+	 delay     15
+	 frame     data/chars/0gamefx/darken.png
+         frame     data/chars/0gamefx/empty.gif
+
+
+
+
+

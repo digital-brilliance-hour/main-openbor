@@ -1,0 +1,83 @@
+name	 rstorm
+health   0
+type     none
+nolife   1
+alpha    1
+remove   1
+
+load     blink
+
+anim idle
+	loop	0
+	delay	3
+	offset	200 256
+	quakeframe 1 50 -1
+	custentity blink
+	spawnframe 55 0 272 0 1
+	frame	data/chars/0misc1/rast01.gif
+	sound   data/sounds/rstorm.wav	
+	frame	data/chars/0misc1/rast02.gif
+	attack  -600 0 1100 1000 0 1 1 0 13 90
+	dropv   15 2 0
+	frame	data/chars/0misc1/rast03.gif
+	frame	data/chars/0misc1/rast04.gif
+	frame	data/chars/0misc1/rast05.gif
+	frame	data/chars/0misc1/rast06.gif
+	frame	data/chars/0misc1/rast07.gif
+	frame	data/chars/0misc1/rast08.gif
+	frame	data/chars/0misc1/rast09.gif
+	frame	data/chars/0misc1/rast10.gif
+	frame	data/chars/0misc1/rast11.gif
+	frame	data/chars/0misc1/rast12.gif
+	frame	data/chars/0misc1/rast13.gif
+	frame	data/chars/0misc1/rast14.gif
+
+	frame	data/chars/0misc1/rast06.gif
+	frame	data/chars/0misc1/rast07.gif
+	frame	data/chars/0misc1/rast08.gif
+	frame	data/chars/0misc1/rast09.gif
+	frame	data/chars/0misc1/rast10.gif
+	frame	data/chars/0misc1/rast11.gif
+	frame	data/chars/0misc1/rast12.gif
+	frame	data/chars/0misc1/rast13.gif
+	frame	data/chars/0misc1/rast14.gif
+
+	frame	data/chars/0misc1/rast06.gif
+	frame	data/chars/0misc1/rast07.gif
+	frame	data/chars/0misc1/rast08.gif
+	frame	data/chars/0misc1/rast09.gif
+	frame	data/chars/0misc1/rast10.gif
+	frame	data/chars/0misc1/rast11.gif
+	frame	data/chars/0misc1/rast12.gif
+	frame	data/chars/0misc1/rast13.gif
+	frame	data/chars/0misc1/rast14.gif
+
+	frame	data/chars/0misc1/rast06.gif
+	frame	data/chars/0misc1/rast07.gif
+	frame	data/chars/0misc1/rast08.gif
+	frame	data/chars/0misc1/rast09.gif
+	frame	data/chars/0misc1/rast10.gif
+	frame	data/chars/0misc1/rast11.gif
+	frame	data/chars/0misc1/rast12.gif
+	frame	data/chars/0misc1/rast13.gif
+	frame	data/chars/0misc1/rast14.gif
+
+	frame	data/chars/0misc1/rast06.gif
+	frame	data/chars/0misc1/rast07.gif
+	frame	data/chars/0misc1/rast08.gif
+	frame	data/chars/0misc1/rast09.gif
+	frame	data/chars/0misc1/rast10.gif
+	frame	data/chars/0misc1/rast11.gif
+	frame	data/chars/0misc1/rast12.gif
+	frame	data/chars/0misc1/rast13.gif
+	frame	data/chars/0misc1/rast14.gif
+
+	frame	data/chars/0misc1/rast15.gif
+	frame	data/chars/0misc1/rast16.gif
+	attack  0 0 0 0
+	frame	data/chars/0misc1/rast17.gif
+	frame	data/chars/0misc1/rast18.gif
+	frame	data/chars/0misc1/rast19.gif
+	frame	data/chars/0misc1/rast20.gif
+	frame	data/chars/0misc1/empty.gif
+

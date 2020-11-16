@@ -1,0 +1,407 @@
+name	Another_K
+health	400
+speed	8
+type	enemy
+shadow	4
+subtype chase
+nolife   1
+icon	data/chars/k2/icon.gif
+diesound data\chars\k2\nobdie.wav
+
+anim idle
+	loop	1
+	delay	10
+	bbox	23	17	25	115
+	offset	37	144
+	frame	data/chars/k2/idle01.gif
+	bbox	27	17	33	112
+	offset	40	142
+	frame	data/chars/k2/idle02.gif
+	bbox	31	14	32	112
+	offset	43	139
+	frame	data/chars/k2/idle03.gif
+	bbox	32	20	35	111
+	offset	46	142
+	frame	data/chars/k2/idle04.gif
+	bbox	23	17	25	115
+	offset	37	144
+	frame	data/chars/k2/idle01.gif
+	bbox	27	17	33	112
+	offset	40	142
+	frame	data/chars/k2/idle02.gif
+	bbox	31	14	32	112
+	offset	43	149
+	frame	data/chars/k2/idle03.gif
+	bbox	32	20	35	111
+	offset	46	142
+	frame	data/chars/k2/idle04.gif
+	bbox	25	21	37	110
+	offset	41	144
+	frame	data/chars/k2/idle05.gif
+	bbox	24	20	35	110
+	offset	40	143
+	frame	data/chars/k2/idle06.gif
+	bbox	18	16	35	110
+	offset	36	140
+	frame	data/chars/k2/idle07.gif
+	bbox	19	20	35	110
+	offset	35	143
+	frame	data/chars/k2/idle08.gif
+	bbox	16	14	35	110
+	offset	32	139
+	frame	data/chars/k2/idle09.gif
+	bbox	15	16	35	110
+	offset	31	141
+	frame	data/chars/k2/idle10.gif
+	bbox	16	14	35	110
+	offset	32	139
+	frame	data/chars/k2/idle09.gif
+	bbox	18	16	35	110
+	offset	36	140
+	sound	data/chars/k2/noblaf.wav
+	frame	data/chars/k2/idle07.gif
+	bbox	25	21	37	110
+	offset	41	144
+	frame	data/chars/k2/idle05.gif
+
+anim walk
+	loop	1
+	delay	7
+	bbox	23	17	25	115
+	offset	37	134
+	frame	data/chars/k2/idle01.gif
+	bbox	27	17	33	112
+	offset	40	142
+	frame	data/chars/k2/idle02.gif
+	bbox	31	14	32	112
+	offset	43	139
+	frame	data/chars/k2/idle03.gif
+	bbox	32	20	35	111
+	offset	46	142
+	frame	data/chars/k2/idle04.gif
+	bbox	23	17	25	115
+	offset	37	144
+	frame	data/chars/k2/idle01.gif
+	bbox	27	17	33	112
+	offset	40	142
+	frame	data/chars/k2/idle02.gif
+	bbox	31	14	32	112
+	offset	43	149
+	frame	data/chars/k2/idle03.gif
+	bbox	32	20	35	111
+	offset	46	142
+	frame	data/chars/k2/idle04.gif
+	bbox	25	21	37	110
+	offset	41	144
+	frame	data/chars/k2/idle05.gif
+	bbox	24	20	35	110
+	offset	40	143
+	frame	data/chars/k2/idle06.gif
+	bbox	18	16	35	110
+	offset	36	140
+	frame	data/chars/k2/idle07.gif
+	bbox	19	20	35	110
+	offset	35	143
+	frame	data/chars/k2/idle08.gif
+	bbox	16	14	35	110
+	offset	32	139
+	frame	data/chars/k2/idle09.gif
+	bbox	15	16	35	110
+	offset	31	141
+	frame	data/chars/k2/idle10.gif
+	bbox	16	14	35	110
+	offset	32	139
+	frame	data/chars/k2/idle09.gif
+	bbox	18	16	35	110
+	offset	36	140
+	frame	data/chars/k2/idle07.gif
+	bbox	25	21	37	110
+	offset	41	144
+	frame	data/chars/k2/idle05.gif
+
+anim pain
+	loop	0
+	offset	48	98
+	bbox	17	4	43	93
+	delay	10
+	frame	data/chars/k2/pain1.gif
+	offset	42	89
+	frame	data/chars/k2/pain2.gif
+	offset	38	98
+	frame	data/chars/k2/pain1.gif
+
+anim fall
+	loop	0
+	delay	7
+	move	7
+	offset	48	46
+	bbox	12	4	73	76
+	frame	data/chars/k2/fall0.gif
+	offset	49	49
+	frame	data/chars/k2/fall1.gif
+	offset	51	46
+	frame	data/chars/k2/fall2.gif
+	offset	52	55
+	frame	data/chars/k2/fall3.gif
+	offset	53	70
+	frame	data/chars/k2/fall4.gif
+	offset	51 23
+	frame	data/chars/k2/fall5.gif
+	bbox	0 0 0 0
+	offset	58	30
+	frame	data/chars/k2/fall6.gif
+
+anim rise
+	loop	0
+	offset 	139	177
+	delay	6
+	bbox	0	0	0	0
+	frame	data/chars/android/smoke1.gif
+	frame	data/chars/android/smoke2.gif
+	sound	data/sounds/cure.wav
+	frame	data/chars/android/smoke3.gif
+	frame	data/chars/android/smoke4.gif
+	frame	data/chars/android/smoke5.gif
+	frame	data/chars/android/smoke6.gif
+	move	200
+	frame	data/chars/android/smoke1.gif
+	move	0
+	frame	data/chars/android/smoke2.gif
+	frame	data/chars/android/smoke3.gif
+	frame	data/chars/android/smoke4.gif
+	frame	data/chars/android/smoke5.gif
+	frame	data/chars/android/smoke6.gif
+
+
+anim attack1
+	range	50	100
+	loop	0
+	hitFX	data/sounds/clang1.wav
+	bbox	20 10 30 84
+	offset	72	130
+	delay	20
+	move	6
+	frame	data/chars/k2/at01.gif
+	delay	3
+	offset	70	101
+	frame	data/chars/k2/at02.gif
+	offset	49	116
+	attack	2	20	158	21	8	0
+	frame	data/chars/k2/at03.gif
+	attack	6	10	144	15	8	0
+	frame	data/chars/k2/at04.gif
+	frame	data/chars/k2/at05.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/k2/at06.gif
+	frame	data/chars/k2/at07.gif
+	offset	65	123
+	delay	20
+	frame	data/chars/k2/at08.gif
+	delay	3
+	offset	66	127
+	attack	0	0	64	44	8	0
+	frame	data/chars/k2/at09.gif
+	offset	45	157
+	attack	3	1	101	54	8	0
+	frame	data/chars/k2/at10.gif
+	offset	51	151
+	attack	80	0	75	122	8	0
+	frame	data/chars/k2/at11.gif
+	offset	51	134
+	attack	105	0	54	107	8	0
+	frame	data/chars/k2/at12.gif
+	offset	51	105
+	attack	105	10	54	66	8	0
+	frame	data/chars/k2/at13.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/k2/at14.gif
+	frame	data/chars/k2/at15.gif
+	offset	55	105
+	delay	20
+	frame	data/chars/k2/at16.gif
+	delay	3
+	offset	60	105
+	frame	data/chars/k2/at17.gif
+	offset	56	104
+	attack	77	11	56	65	8	0
+	frame	data/chars/k2/at18.gif
+	offset	79	103
+	attack	0	35	154	69	8	0
+	frame	data/chars/k2/at19.gif
+	offset	100	105
+	frame	data/chars/k2/at20.gif
+	frame	data/chars/k2/at21.gif
+	frame	data/chars/k2/at22.gif
+	attack	0	0	0	0	0	0
+	frame	data/chars/k2/at23.gif
+	frame	data/chars/k2/at24.gif
+	offset	46	116
+	frame	data/chars/k2/at25.gif
+
+anim grab
+	loop	0
+	range	-10	49
+	delay	7
+	hitFX	data/chars/hotaru/spfierce.wav
+	bbox	0	0	0	0
+	offset	36	112
+	frame	data/chars/k2/g02.gif
+	offset	36	112
+	frame	data/chars/k2/g03.gif
+	offset	36	110
+	frame	data/chars/k2/g04.gif
+	offset	38	110
+	frame	data/chars/k2/g05.gif
+	offset	45	110
+	frame	data/chars/k2/g06.gif
+	offset	42	107
+	frame	data/chars/k2/g07.gif
+	offset	45	106
+	blast	70	0	45	108	15	0	0	50
+	frame	data/chars/k2/g08.gif
+	offset	42	104
+	frame	data/chars/k2/g09.gif
+	sound	data/chars/k2/noblaf.wav
+	offset	37	103
+	frame	data/chars/k2/g10.gif
+	offset	36	107
+	frame	data/chars/k2/g11.gif
+
+
+anim upper
+	loop	0
+	delay	7
+	hitFX	data/chars/hotaru/spfierce.wav
+	bbox	0	0	0	0
+	offset	36	101
+	frame	data/chars/k2/up01.gif
+	offset	36	96
+	frame	data/chars/k2/up02.gif
+	offset	36	98
+	frame	data/chars/k2/up03.gif
+	offset	35	103
+	attack	76	0	50	100	8	0
+	frame	data/chars/k2/up04.gif
+	offset	36	134
+	frame	data/chars/k2/up05.gif
+	offset	36	140
+	frame	data/chars/k2/up06.gif
+	offset	36	144
+	frame	data/chars/k2/up07.gif
+	offset	36	143
+	frame	data/chars/k2/up08.gif
+	offset	36	145
+	frame	data/chars/k2/up09.gif
+	offset	36	154
+	frame	data/chars/k2/up10.gif
+	offset	36	161
+	frame	data/chars/k2/up11.gif
+	offset	36	162
+	frame	data/chars/k2/up12.gif
+	offset	36	164
+	frame	data/chars/k2/up13.gif
+	offset	36	169
+	frame	data/chars/k2/up14.gif
+	offset	36	170
+	frame	data/chars/k2/up15.gif
+	frame	data/chars/k2/up16.gif
+	offset	36	172
+	frame	data/chars/k2/up17.gif
+	offset	34	172
+	frame	data/chars/k2/up18.gif
+	offset	34	175
+	frame	data/chars/k2/up19.gif
+	offset	34	164
+	frame	data/chars/k2/up20.gif
+	offset	35	138
+	frame	data/chars/k2/up21.gif
+
+anim riseattack
+	loop	0
+	delay	5
+	bbox	0	0	0	0
+	offset	36	116
+	sound	data/chars/k2/noblaf.wav
+	frame	data/chars/k2/sp01.gif
+	offset	36	132
+	frame	data/chars/k2/sp02.gif
+	offset	37	134
+	frame	data/chars/k2/sp03.gif
+	offset	38	141
+	frame	data/chars/k2/sp04.gif
+	offset	40	140
+	frame	data/chars/k2/sp05.gif
+	offset	42	119
+	frame	data/chars/k2/sp06.gif
+	offset	42	99
+	frame	data/chars/k2/sp07.gif
+	frame	data/chars/k2/sp08.gif
+	frame	data/chars/k2/sp09.gif
+	frame	data/chars/k2/sp10.gif
+	offset	43	97
+	blast	8	18	101	87	10	0	0	30
+	frame	data/chars/k2/sp11.gif
+	offset	42	99
+	frame	data/chars/k2/sp12.gif
+	frame	data/chars/k2/sp13.gif
+	offset	50	99
+	frame	data/chars/k2/sp14.gif
+	frame	data/chars/k2/sp15.gif
+	frame	data/chars/k2/sp16.gif
+	frame	data/chars/k2/sp17.gif
+	frame	data/chars/k2/sp18.gif
+	frame	data/chars/k2/sp19.gif
+	sound	data/chars/k2/noblaf.wav
+	frame	data/chars/k2/sp20.gif
+	frame	data/chars/k2/sp21.gif
+	offset	52	107
+	frame	data/chars/k2/sp22.gif
+	offset	57	107
+	frame	data/chars/k2/sp23.gif
+	frame	data/chars/k2/sp24.gif
+	frame	data/chars/k2/sp25.gif
+
+anim special
+	loop	0
+	delay	5
+	bbox	0	0	0	0
+	offset	36	116
+	sound	data/chars/k2/noblaf.wav
+	frame	data/chars/k2/sp01.gif
+	offset	36	132
+	frame	data/chars/k2/sp02.gif
+	offset	37	134
+	frame	data/chars/k2/sp03.gif
+	offset	38	141
+	frame	data/chars/k2/sp04.gif
+	offset	40	140
+	frame	data/chars/k2/sp05.gif
+	offset	42	119
+	frame	data/chars/k2/sp06.gif
+	offset	42	99
+	frame	data/chars/k2/sp07.gif
+	frame	data/chars/k2/sp08.gif
+	frame	data/chars/k2/sp09.gif
+	sound	data/chars/k2/noblaf.wav
+	frame	data/chars/k2/sp10.gif
+	offset	43	97
+	blast	8	18	101	87	10	0	0	30
+	frame	data/chars/k2/sp11.gif
+	offset	42	99
+	frame	data/chars/k2/sp12.gif
+	frame	data/chars/k2/sp13.gif
+	offset	50	99
+	frame	data/chars/k2/sp14.gif
+	frame	data/chars/k2/sp15.gif
+	frame	data/chars/k2/sp16.gif
+	frame	data/chars/k2/sp17.gif
+	frame	data/chars/k2/sp18.gif
+	frame	data/chars/k2/sp19.gif
+	frame	data/chars/k2/sp20.gif
+	frame	data/chars/k2/sp21.gif
+	offset	52	107
+	frame	data/chars/k2/sp22.gif
+	offset	57	107
+	frame	data/chars/k2/sp23.gif
+	frame	data/chars/k2/sp24.gif
+	frame	data/chars/k2/sp25.gif

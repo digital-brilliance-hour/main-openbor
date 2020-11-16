@@ -1,0 +1,325 @@
+name		Ninja
+health		100
+mpset		100 0 100 1
+speed		20
+type		player
+running		30 3.5 3 1 0
+gfxshadow	1
+makeinv		4
+risetime	50
+#riseinv		1
+jumpmove	3
+atchain		1 1 1 2
+icon		data/chars/ninja/icon.png
+diesound	data/sounds/die1.wav
+com		A2 freespecial
+com		D U J freespecial2
+animationscript	data/chars/ninja/ninjas.c
+
+
+anim select
+	delay	20
+	offset	70 105
+        frame	data/chars/ninja/select.png
+
+
+
+anim spawn
+	delay	8
+	offset	70 105
+        frame	data/chars/ninja/tele4.png
+        frame	data/chars/ninja/tele3.png
+        frame	data/chars/ninja/tele2.png
+        frame	data/chars/ninja/tele1.png
+
+anim idle
+	loop	1
+	delay	10
+	offset	70 105
+	bbox	49 25 42 80
+        frame	data/chars/ninja/idle.png
+
+
+anim walk
+	loop	1
+	delay	4
+	offset	70 105
+	bbox	49 25 42 80
+        frame	data/chars/ninja/walk1.png
+        frame	data/chars/ninja/walk2.png
+        frame	data/chars/ninja/walk3.png
+        frame	data/chars/ninja/walk4.png
+        frame	data/chars/ninja/walk5.png
+        frame	data/chars/ninja/walk6.png
+        frame	data/chars/ninja/walk7.png
+        frame	data/chars/ninja/walk8.png
+        frame	data/chars/ninja/walk9.png
+        frame	data/chars/ninja/walk10.png
+
+
+anim run
+	delay	10
+	offset	70 105
+	bbox	61 37 47 68
+	sound	data/chars/ninja/kung2.wav
+        frame	data/chars/ninja/dash.png
+
+anim get
+	delay   20
+	offset	70 105
+        frame	data/chars/ninja/get.png
+
+
+anim special
+	delay	4
+	flipframe 14
+	offset	70 105
+	energycost 0
+	@cmd	spawn01 "NSmoke" 0 0 0
+	@cmd	stealth 10
+        frame	data/chars/ninja/tele1.png
+        frame	data/chars/ninja/tele2.png
+        frame	data/chars/ninja/tele3.png
+        frame	data/chars/ninja/tele4.png
+	delay	10
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	delay	8
+	@cmd	dasher 0 0 0
+        frame	data/chars/ninja/tele4.png
+        frame	data/chars/ninja/tele3.png
+        frame	data/chars/ninja/tele2.png
+	@cmd	stealth 0
+        frame	data/chars/ninja/tele1.png
+
+anim attack1
+	delay	8
+	offset	70 105
+	bbox	61 37 47 68
+	hitflash slash
+	hitfx	data/sounds/slash.wav
+        frame	data/chars/ninja/slash1.png
+	delay	5
+	attack  25 49 125 10 10
+        frame	data/chars/ninja/slash2.png
+	attack  74 37 127 17 10
+        frame	data/chars/ninja/slash3.png
+	delay	8
+	attack  0
+        frame	data/chars/ninja/slash4.png
+
+anim attack2
+	delay	10
+	offset	70 105
+	bbox	53 68 30 61
+	hitflash slash
+	hitfx	data/sounds/slash.wav
+        frame	data/chars/ninja/bslash1.png
+	delay	5
+	attack  63 48 153 46 10 1
+        frame	data/chars/ninja/bslash2.png
+        frame	data/chars/ninja/bslash3.png
+	delay	10
+	attack  0
+        frame	data/chars/ninja/bslash4.png
+
+anim freespecial
+	delay	10
+	offset	70 105
+	bbox	61 37 47 68
+        frame	data/chars/ninja/starth1.png
+hitfx  data/sounds/Starhit.wav
+sound 	data/sounds/star.wav
+	@cmd	shootM "Piau" 55 66 1 10
+        frame	data/chars/ninja/starth2.png
+        frame	data/chars/ninja/starth1.png
+
+anim freespecial2
+	delay	4
+	offset	70 105
+	energycost 20
+	@cmd	spawn01 "NSmoke" 0 0 0
+	@cmd	stealth 10
+        frame	data/chars/ninja/tele1.png
+        frame	data/chars/ninja/tele2.png
+        frame	data/chars/ninja/tele3.png
+        frame	data/chars/ninja/tele4.png
+	delay	10
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	movea	300
+	@cmd	dasher 0 0 0
+        frame	data/chars/ninja/shadow.png
+	delay	65
+	movea	0
+	@cmd	dasher 0 -5 0
+	attack  46 55 92 37 20 1
+	frame	data/chars/ninja/jukick2.png
+	delay	10
+	@cmd	stealth 0
+        frame	data/chars/ninja/get.png
+
+
+anim jump
+	offset	70 105
+	bbox	50 18 41 48
+	delay	40
+	frame	data/chars/ninja/jump1.png
+	frame	data/chars/ninja/jump2.png
+
+anim jumpattack
+	delay	10
+	offset	70 105
+	bbox	50 18 41 48
+	hitflash slash
+	hitfx	data/sounds/slash.wav
+	frame	data/chars/ninja/juslash1.png
+	delay	5
+	attack  55 21 135 25 10 1
+	frame	data/chars/ninja/juslash2.png
+	delay	10
+	attack  0
+	frame	data/chars/ninja/juslash3.png
+
+anim jumpattack2
+	delay	10
+	offset	70 105
+	jumpframe 1 -4 3 0
+	bbox	50 18 41 48
+	frame	data/chars/ninja/jukick1.png
+	attack  86 55 52 37 10 1
+	frame	data/chars/ninja/jukick2.png
+
+anim jumpattack3
+	delay	8
+	offset	70 105
+	bbox	50 18 41 48
+	frame	data/chars/ninja/justar1.png
+	@cmd	shootM "Piau" 50 73 1 10
+	frame	data/chars/ninja/justar2.png
+	frame	data/chars/ninja/justar1.png
+
+
+anim pain
+	offset	70 105
+	bbox	49 25 42 80
+	delay   10
+	frame	data/chars/ninja/pain1.png
+	delay   20
+	frame	data/chars/ninja/pain2.png
+	delay   10
+	frame	data/chars/ninja/pain1.png
+
+anim fall
+	offset	70 105
+	delay   30
+	landframe 2
+	attack  28 43 54 38 5 1
+	frame	data/chars/ninja/fall1.png
+	delay   500
+	attack  10 71 58 26 5 1
+	frame	data/chars/ninja/fall2.png
+	attack  0
+	delay   15
+	frame	data/chars/ninja/fall3.png
+
+anim rise
+	offset	70 105
+	delay   50
+	frame	data/chars/ninja/get.png
+	delay	1
+	@cmd	keyint "ANI_FOLLOW1" 0 "S" 0
+	frame	data/chars/ninja/get.png
+
+anim follow1
+	delay	4
+	flipframe 12
+	offset	70 105
+        frame	data/chars/ninja/shadow.png
+	@cmd	spawn01 "NSmoke" 0 0 0
+	@cmd	stealth 10
+        frame	data/chars/ninja/shadow.png
+	delay	10
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	@cmd	keymove 2 1
+        frame	data/chars/ninja/shadow.png
+	delay	4
+	@cmd	dasher 0 0 0
+        frame	data/chars/ninja/tele4.png
+        frame	data/chars/ninja/tele3.png
+        frame	data/chars/ninja/tele2.png
+	@cmd	stealth 0
+        frame	data/chars/ninja/tele1.png

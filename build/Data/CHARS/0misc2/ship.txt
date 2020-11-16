@@ -1,0 +1,24 @@
+name	 	ship
+health		5
+type		enemy
+speedf          0.1
+noquake         1
+subtype	        arrow
+shadow          0
+setlayer        -10
+
+anim idle
+	loop    1
+	delay	3
+	offset	151 92
+	bbox	0 0 0 0 
+	frame	data/chars/0misc2/ship01.gif
+	frame	data/chars/0misc2/ship02.gif
+
+
+
+
+
+
+
+
