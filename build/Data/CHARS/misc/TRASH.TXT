@@ -2,10 +2,11 @@
 # Health is optional.
 
 name	Trash
-health	1
+health	35
 type	obstacle
 shadow	0
-diesound data/sounds/klunk.wav
+nolife 1
+#diesound data/sounds/klunk.wav
 
 icon	data/chars/misc/trasicon.gif
 
@@ -13,13 +14,15 @@ icon	data/chars/misc/trasicon.gif
 anim idle
 	loop	0
 	delay	100
-	offset	19 47
-	bbox	0 -30 38 90
+	offset	30 57
+	bbox	0 -20 62 95
 	frame	data/chars/misc/trashcan.gif
 
 
 anim fall
 	loop	1
 	delay	1000
-	offset	50 32
+	offset	19 47
 	frame	data/chars/misc/trashed.gif
+
+
