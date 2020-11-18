@@ -1,0 +1,83 @@
+## Load music in this area ##
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
+
+## Load images in this area ##
+
+# Background layer
+background	 data/bgs/02_01_4/n01.gif
+
+# Front layers
+#frontpanel	data/bgs/street/f00.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+# Panel format
+# panel {norm} {neon} {scrn}
+# {norm}, {neon}, and {scrn} are paths which point to the normal, neon, and screen graphics for a panel. {neon} and {scrn} are optional fields. If you aren't using them, put the word 'none' in their place.
+# Normal mode panel layers are just plain images. They have no visual effects.
+# Neon mode panel layers use 'pallete cycling': certain colors slowy change to different colors. To be more specific, colors 128 through 135 in the pallete will be cycled by two steps three times each second.
+# Screen mode panel layers have alpha transparency. That means, they blend with the colors behind them, darker colors are more transparent, and brighter colors will blend less.
+
+panel        data/bgs/02_01_4/n01.gif    none    none
+
+
+# order the reference letters to the panels
+order	a
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+spawn	robert
+health  100
+item	Meat
+coords	200 180
+at	0
+
+spawn 	Shot
+coords 	-200 -200
+at	5000	
+
+
+
+
+
