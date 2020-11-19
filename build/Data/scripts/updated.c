@@ -34,6 +34,14 @@ void mainLoop()
 		}*/
 	}
 
+  if(SYS_INMENU || SYS_INTITLE){
+    void counter = getlocalvar("counter"); 
+    if (counter!="0"){
+    setlocalvar("counter",0); 
+    }
+    
+  }
+
   if(openborvariant("in_halloffamescreen")==1){
     //highScoreMusic();
   }
