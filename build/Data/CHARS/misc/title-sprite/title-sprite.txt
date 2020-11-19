@@ -1,0 +1,27 @@
+name titlesprite
+health	1
+type	panel
+speed 10
+shadow 0
+setlayer 2000
+facing 1
+
+
+
+
+
+anim	idle
+	loop	1 1
+	delay	7
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/title-sprite/title-sprite.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 2000
+	frame	data/chars/misc/title-sprite/title-sprite.png
+	frame	data/chars/misc/title-sprite/title-sprite.png
+	frame	data/chars/misc/title-sprite/title-sprite.png
+	frame	data/chars/misc/title-sprite/title-sprite.png
+	frame	data/chars/misc/title-sprite/title-sprite.png
+		
+#|edited by openBor Stats v 0.67
+		

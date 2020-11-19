@@ -1,0 +1,34 @@
+name	monkanimation
+health	1
+type	panel
+speed 10
+shadow 0
+setlayer -2000
+facing 1
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1 1
+	delay	10
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/monkhall-animation/monkhall-1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" -2000
+	frame	data/chars/misc/monkhall-animation/monkhall-2.png
+	frame	data/chars/misc/monkhall-animation/monkhall-3.png
+	frame	data/chars/misc/monkhall-animation/monkhall-4.png
+	frame	data/chars/misc/monkhall-animation/monkhall-5.png
+	frame	data/chars/misc/monkhall-animation/monkhall-6.png
+	frame	data/chars/misc/monkhall-animation/monkhall-7.png
+		
+#|edited by openBor Stats v 0.67
+		
