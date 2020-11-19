@@ -7,7 +7,57 @@
 #	next			Go to next level (show "stage clear" and stuff)
 #	scene	[filename]	Show a cut-scene
 #
+lbarsize 70 4 1 0 0  -300 -300 -300 -300
+mpbarsize 65 3 1 1 0  -300 -300 -300 -300
+olbarsize 70 5 0 0 0  -300 -300 -300 -300
+showrushbonus 1
+equalairpause 1
 
+
+rush 1 2 Rush_Combo! 1 0 Max_Combo! 1 0
+
+
+p1rush 24 35 24 43 24 51 24 59
+p2rush 364 35 364 43 364 51 364 59
+p3rush 242 1188 242 1196 242 1204 242 1212
+p4rush 362 1188 362 1196 362 1204 362 1212
+
+timeloc 150 233 30 18 1
+bgicon data/sprites/hudbase.gif -80 0
+
+#players
+
+p1icon -51 229
+p1score 60 233 999 999 50 258 0
+p1life 52 242
+p1mp 48 250
+p1lifex 131 242
+p1lifen 138 242 2
+p1namej 60 233 60 258 60 258 0
+
+
+
+p2icon 429 229
+p2score 335 233 999 999 365 258 1
+p2life 356 242
+p2mp 365 249
+p2lifex 343 242
+p2lifen 335 242 2
+p2namej 335 233 335 256 317 258 1
+
+
+#enemies
+e1icon 24 2 
+e1life 42 2
+e1name 42 10 0
+
+e2icon 364 2
+e2life 384 2
+e2name 384 10 0
+
+
+#p1smenu 44 92 22 148
+#p2smenu 284 92 262 148
 
 
 set puzzle
@@ -19,7 +69,7 @@ set boss
 file    data/levels/boss-item.txt
 
 set stage1-1
-
+z 129 198 0
 file    data/levels/stage1-1.txt
 
 set stage1-2

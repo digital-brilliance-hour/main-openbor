@@ -4,34 +4,51 @@ type	enemy
 shadow	3
 icon	data/chars/Ninja1/icon.gif
 diesound data/sounds/die.wav
-nodieblink 3
-#Important addition
+
 load	Star	data/chars/misc/star.txt
 
-anim idle
-	loop	1
-	offset	28 118
-	bbox	11 10 33 106
-	delay	7
-	frame	data/chars/Ninja1/idle00.gif
-	frame	data/chars/Ninja1/idle01.gif
-	frame	data/chars/Ninja1/idle02.gif
-	frame	data/chars/Ninja1/idle03.gif
-	frame	data/chars/Ninja1/idle04.gif
-	frame	data/chars/Ninja1/idle05.gif
-	
-anim pain
+anim	attack1
+	range	10 70
 	loop	0
-	offset	38 104 
-	bbox	15 13 41 88
-	delay	10
+	delay	5
+	offset	42 135
+	bbox	10 38 42 93
+	frame	data/chars/Ninja1/attack00.gif
+	bbox	35 35 42 93
+	frame	data/chars/Ninja1/attack01.gif
+	bbox	50 46 38 85
+	frame	data/chars/Ninja1/attack02.gif
+	delay	20
+	attack	90 58 52 31 10 0
+	frame	data/chars/Ninja1/attack03.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Ninja1/attack04.gif
+	frame	data/chars/Ninja1/attack05.gif
+	bbox	35 46 38 85
+	frame	data/chars/Ninja1/attack06.gif
+		
+anim	attack2
+	range	180 250
+	loop	0
+	delay	6
+	offset	42 100
+	bbox	43 100 57 72
+	throwframe	3
+	frame	data/chars/Ninja1/attack00.gif
 	frame	data/chars/Ninja1/pain00.gif
-	delay	30
-	frame	data/chars/Ninja1/pain01.gif
+	frame	data/chars/Ninja1/rise05.gif
+	hitfx	data/sounds/Starhit.wav
+	sound	data/sounds/star.wav
+	delay	15
+	frame	data/chars/Ninja1/rise05.gif
 	delay	10
-	frame	data/chars/Ninja1/pain00.gif
-
-anim fall
+	frame	data/chars/Ninja1/rise05.gif
+	frame	data/chars/Ninja1/rise05.gif
+	delay	20
+	offset	53 117
+	frame	data/chars/Ninja1/walk00.gif
+		
+anim	fall
 	loop	0
 	delay	10
 	offset	56 105
@@ -42,11 +59,45 @@ anim fall
 	frame	data/chars/Ninja1/fall02.gif
 	attack	19 44 70 43 15 1
 	frame	data/chars/Ninja1/fall03.gif
-	attack	9 63 70 43 15 1	
+	attack	9 63 70 43 15 1
 	frame	data/chars/Ninja1/fall04.gif
 	frame	data/chars/Ninja1/fall05.gif
-
-anim walk
+		
+anim	idle
+	loop	1
+	offset	28 118
+	bbox	11 10 33 106
+	delay	7
+	frame	data/chars/Ninja1/idle00.gif
+	frame	data/chars/Ninja1/idle01.gif
+	frame	data/chars/Ninja1/idle02.gif
+	frame	data/chars/Ninja1/idle03.gif
+	frame	data/chars/Ninja1/idle04.gif
+	frame	data/chars/Ninja1/idle05.gif
+		
+anim	pain
+	loop	0
+	offset	38 104
+	bbox	15 13 41 88
+	delay	10
+	frame	data/chars/Ninja1/pain00.gif
+	delay	30
+	frame	data/chars/Ninja1/pain01.gif
+	delay	10
+	frame	data/chars/Ninja1/pain00.gif
+		
+anim	rise
+	loop	0
+	offset	59 102
+	delay	10
+	frame	data/chars/Ninja1/rise00.gif
+	frame	data/chars/Ninja1/rise01.gif
+	frame	data/chars/Ninja1/rise02.gif
+	frame	data/chars/Ninja1/rise03.gif
+	frame	data/chars/Ninja1/rise04.gif
+	frame	data/chars/Ninja1/rise05.gif
+		
+anim	walk
 	loop	1
 	delay	5
 	offset	53 117
@@ -61,62 +112,6 @@ anim walk
 	frame	data/chars/Ninja1/walk07.gif
 	frame	data/chars/Ninja1/walk08.gif
 	frame	data/chars/Ninja1/walk09.gif
-
-
-anim rise
-	loop	0
-	offset	59 102
-	delay	10
-	frame	data/chars/Ninja1/rise00.gif
-	frame	data/chars/Ninja1/rise01.gif
-	frame	data/chars/Ninja1/rise02.gif
-	frame	data/chars/Ninja1/rise03.gif
-	frame	data/chars/Ninja1/rise04.gif
-	frame	data/chars/Ninja1/rise05.gif
-
-
-anim attack1
-	range	10 70
-	loop	0
-	delay	5
-	offset	42 135
-	bbox	10 38 42 93 
-	frame	data/chars/Ninja1/attack00.gif
-	bbox	35 35 42 93
-	frame	data/chars/Ninja1/attack01.gif
-	bbox	50 46 38 85
-	frame	data/chars/Ninja1/attack02.gif
-	delay	20
-	attack	90 58 52 31 10 0
-	frame	data/chars/Ninja1/attack03.gif
-	attack	0 0 0 0 0
-	frame	data/chars/Ninja1/attack04.gif
-	frame	data/chars/Ninja1/attack05.gif
-	bbox	35 46 38 85
-	frame	data/chars/Ninja1/attack06.gif
-
-
-anim attack2
-	range	180 250
-	loop	0
-	delay	6
-	offset	42 100
-	bbox	43 100 57 72
-	throwframe   3
-	frame	data/chars/Ninja1/attack00.gif
-	frame	data/chars/Ninja1/pain00.gif
-	frame	data/chars/Ninja1/rise05.gif
-hitfx  data/sounds/Starhit.wav
-sound 	data/sounds/star.wav
-        delay   15
-	frame	data/chars/Ninja1/rise05.gif
-        delay   10
-	frame	data/chars/Ninja1/rise05.gif
-	frame	data/chars/Ninja1/rise05.gif
-	delay   20
-	offset	53 117
-	frame	data/chars/Ninja1/walk00.gif
-
-
-
-
+		
+#|edited by openBor Stats v 0.67
+		
