@@ -1,46 +1,34 @@
-# Street
+## Load music in this area ##
 music		data/music/remix.bor
 bossmusic	data/music/menu.bor
 
-# Load images
-background	data/bgs/street/back.gif
+## Bonus Stage Type ##
+type 1
 
-# Front layer
+## Load images in this area ##
+
+# Background layer
+background	data/Bgs/dd/n01.gif
+
+# Front layers
 #frontpanel	data/bgs/street/f00.gif
-#frontpanel	data/bgs/street/f01.gif
-#frontpanel	data/bgs/street/f02.gif
-#frontpanel	data/bgs/street/f03.gif
 
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
-panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
-panel		data/bgs/street/n03.gif	none				none
-panel		data/bgs/street/n04.gif	none				none
-panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
-panel		data/bgs/street/n06.gif	none				none
-panel		data/bgs/street/n07.gif	none				none
-panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+# Panel format
+# panel {norm} {neon} {scrn}
+# {norm}, {neon}, and {scrn} are paths which point to the normal, neon, and screen graphics for a panel. {neon} and {scrn} are optional fields. If you aren't using them, put the word 'none' in their place.
+# Normal mode panel layers are just plain images. They have no visual effects.
+# Neon mode panel layers use 'pallete cycling': certain colors slowy change to different colors. To be more specific, colors 128 through 135 in the pallete will be cycled by two steps three times each second.
+# Screen mode panel layers have alpha transparency. That means, they blend with the colors behind them, darker colors are more transparent, and brighter colors will blend less.
 
-# ab = Pinepot left
-# c = wall, ridge left
-# d = wall, ridge right + 078
-# e = window
-# f = door
-# g = wall
-# h = Club K neon
+panel        data/Bgs/dd/n01.gif    none    none
 
+# order the reference letters to the panels
+order	aaaaaaaaaaaaaaaaaaa
 
-# Set the order (don't make the lines too long)
-# Syntax:
-#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
-#	order	[a...z]
-#
-order	dfdefecdhfecggdabcd
-order	fdefecdhfecggdab
-
-
+## Spawning Area ##
 # Spawn format:
 #
 #	spawn	[id]
@@ -81,15 +69,11 @@ order	fdefecdhfecggdab
 
 
 #--group1-----
-spawn	leo
+spawn	box
 health  100
 item	Meat
 coords	200 180
 at	0
-
-spawn 	Shot
-coords 	-200 -200
-at	5000	
 
 
 

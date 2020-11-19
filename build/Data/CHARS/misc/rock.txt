@@ -1,0 +1,36 @@
+
+
+
+name	rock
+health	50
+type	obstacle
+shadow	0
+
+diesound data/sounds/wood.wav
+
+palette data/chars/misc/rock.png
+
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	delay	1000
+	offset	42 120
+	frame	data/chars/misc/rock.png
+		
+anim	idle
+	delay	1000
+	offset	42 120
+	bbox	0 -10 94 135
+	platform	42 128 -85 -85 85 85 16 132
+	frame	data/chars/misc/rock.png
+		
+#|edited by openBor Stats v 0.67
+		
