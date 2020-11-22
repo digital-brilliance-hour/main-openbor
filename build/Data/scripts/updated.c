@@ -18,7 +18,9 @@ void mainLoop()
     void counter = getlocalvar("counter"); 
     void logocounter = getlocalvar("logocounter");
     void gameovercounter = getlocalvar("gameovercounter");
+    void stagecompletecounter = getlocalvar("stagecompletecounter");
     void titlecounter = getlocalvar("titlecounter");
+    void titlemcounter = getlocalvar("titlemcounter");
     void hofcounter = getlocalvar("hofcounter");
     if (counter!="0"){
     setlocalvar("counter",0); 
@@ -32,8 +34,14 @@ void mainLoop()
     if (titlecounter!="0"){
     setlocalvar("titlecounter",0); 
     }
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
     if (hofcounter!="0"){
     setlocalvar("hofcounter",0); 
+    }
+    if (stagecompletecounter!="0"){
+    setlocalvar("stagecompletecounter",0); 
     }
 	}
 	if (SYS_SCENE == "data/scenes/intro.txt"){
@@ -61,6 +69,10 @@ void mainLoop()
     if (titlecounter!="0"){
     setlocalvar("titlecounter",0); 
     }
+    void titlemcounter = getlocalvar("titlemcounter");
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
       /*void logocounter = getlocalvar("logocounter"); 
       while(logocounter!=1)
       {
@@ -76,6 +88,22 @@ void mainLoop()
         drawspritetoscreen(back,scr,0,0);
         logocounter = setlocalvar("logocounter",1); // turn on the variable, blocking a new spawn to be made
       }*/
+  }
+
+  if(SYS_INTITLE) {
+    void titlemcounter = getlocalvar("titlemcounter"); 
+    while(titlemcounter!=1)
+    {
+      titleMusic();
+      titlemcounter = setlocalvar("titlemcounter",1);
+    }
+  }
+  if(SYS_INMENU) {
+    void titlemcounter = getlocalvar("titlemcounter");
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
+
   }
 
   if(SYS_INMENU || SYS_INTITLE){
@@ -119,13 +147,73 @@ void mainLoop()
 
   }
 
+  if(openborvariant("in_showcomplete") == 1) {
+    void titlecounter = getlocalvar("titlecounter");
+    if (titlecounter!="0"){
+    setlocalvar("titlecounter",0); 
+    }
+    void hofcounter = getlocalvar("hofcounter");
+    if (hofcounter!="0"){
+    setlocalvar("hofcounter",0); 
+    }
+    void titlemcounter = getlocalvar("titlemcounter");
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
+    void stagecompletecounter = getlocalvar("stagecompletecounter"); 
+      while(stagecompletecounter!=1)
+      {
+        void subent;
+        loadmodel("nightskyanimation"); // name of the entity to be loaded
+        clearspawnentry(); // clean the spawn entry
+        setspawnentry("name", "nightskyanimation"); // define the entity to be spawn
+        setspawnentry("coords", -1,0,-1); // set the position of the entity
+        subent=spawn();  //  spawn the entity
+        changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        stagecompletecounter = setlocalvar("stagecompletecounter",1); // turn on the variable, blocking a new spawn to be made
+      }
+  }
+
   if(openborvariant("in_halloffamescreen")==1){
     //highScoreMusic();
+    void titlecounter = getlocalvar("titlecounter");
+    if (titlecounter!="0"){
+    setlocalvar("titlecounter",0); 
+    }
+    void titlemcounter = getlocalvar("titlemcounter");
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
+    void hofcounter = getlocalvar("hofcounter"); 
+    log(hofcounter);
+      while(hofcounter!=1)
+      {
+        void subent;
+        loadmodel("waterfallanimation"); // name of the entity to be loaded
+        clearspawnentry(); // clean the spawn entry
+        setspawnentry("name", "waterfallanimation"); // define the entity to be spawn
+        setspawnentry("coords", -1,0,-1); // set the position of the entity
+        subent=spawn();  //  spawn the entity
+        changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        hofcounter = setlocalvar("hofcounter",1); // turn on the variable, blocking a new spawn to be made
+      }
   }
 
   if(openborvariant("in_gameoverscreen") == 1) {
-    void counter = getlocalvar("counter"); 
-      while(counter!=1)
+    void titlecounter = getlocalvar("titlecounter");
+    if (titlecounter!="0"){
+    setlocalvar("titlecounter",0); 
+    }
+    void hofcounter = getlocalvar("hofcounter");
+    if (hofcounter!="0"){
+    setlocalvar("hofcounter",0); 
+    }
+    void titlemcounter = getlocalvar("titlemcounter");
+    if (titlemcounter!="0"){
+    setlocalvar("titlemcounter",0); 
+    }
+    void gameovercounter = getlocalvar("gameovercounter"); 
+      while(gameovercounter!=1)
       {
         void subent;
         loadmodel("selectanimation"); // name of the entity to be loaded
@@ -134,11 +222,15 @@ void mainLoop()
         setspawnentry("coords", -1,0,-1); // set the position of the entity
         subent=spawn();  //  spawn the entity
         changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
-        counter = setlocalvar("counter",1); // turn on the variable, blocking a new spawn to be made
+        gameovercounter = setlocalvar("gameovercounter",1); // turn on the variable, blocking a new spawn to be made
       }
   }
 
 	if(openborvariant("in_selectscreen")==1){
+      void titlemcounter = getlocalvar("titlemcounter");
+      if (titlemcounter!="0"){
+      setlocalvar("titlemcounter",0); 
+      }
       int models_cached = openborvariant("models_cached");
       int i = 0;
       int C = getglobalvar("Load");
@@ -182,6 +274,13 @@ void highScoreMusic()
 {
   void bg = "data/music/highscore.bor";
   //playmusic(bg, 1);
+
+}
+
+void titleMusic()
+{
+  void bg = "data/music/title.ogg";
+  playmusic(bg, 1);
 
 }
 

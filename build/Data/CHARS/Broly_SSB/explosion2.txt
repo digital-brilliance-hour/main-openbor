@@ -1,0 +1,47 @@
+name	b_explosion2
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+anim	idle
+	delay	10
+	offset	127 33
+	frame	data/chars/Broly_SSB/862.gif
+	offset	152 36
+	frame	data/chars/Broly_SSB/863.gif
+	offset	186 84
+	frame	data/chars/Broly_SSB/864.gif
+	offset	208 105
+	frame	data/chars/Broly_SSB/865.gif
+	offset	207 100
+	frame	data/chars/Broly_SSB/866.gif
+	offset	210 112
+	frame	data/chars/Broly_SSB/867.gif
+	offset	214 113
+	frame	data/chars/Broly_SSB/868.gif
+	offset	217 115
+	frame	data/chars/Broly_SSB/869.gif
+	offset	217 114
+	frame	data/chars/Broly_SSB/870.gif
+	offset	217 115
+	frame	data/chars/Broly_SSB/871.gif
+	offset	204 86
+	frame	data/chars/Broly_SSB/872.gif
+	offset	204 84
+	frame	data/chars/Broly_SSB/873.gif
+	offset	204 81
+	frame	data/chars/Broly_SSB/874.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

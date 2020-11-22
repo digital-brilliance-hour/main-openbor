@@ -1,0 +1,35 @@
+name	nightskyanimation
+health	1
+type	panel
+speed 10
+shadow 0
+setlayer -2000
+facing 1
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1 1
+	delay	10
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/nightsky-animation/nightsky-1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" -2000
+	frame	data/chars/misc/nightsky-animation/nightsky-2.png
+	frame	data/chars/misc/nightsky-animation/nightsky-3.png
+	frame	data/chars/misc/nightsky-animation/nightsky-4.png
+	frame	data/chars/misc/nightsky-animation/nightsky-5.png
+	frame	data/chars/misc/nightsky-animation/nightsky-6.png
+	frame	data/chars/misc/nightsky-animation/nightsky-7.png
+	frame	data/chars/misc/nightsky-animation/nightsky-8.png
+		
+#|edited by openBor Stats v 0.67
+		

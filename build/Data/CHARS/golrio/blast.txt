@@ -1,0 +1,27 @@
+name	g_blast
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+anim	idle
+	delay	8
+	offset	9 23
+	attack	1 1 43 45 35 1 0 1 0 0
+	dropv	1 -25 0
+	frame	data/chars/golrio/89.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

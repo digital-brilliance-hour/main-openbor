@@ -1,0 +1,28 @@
+name	g_shot
+speed   45
+type 	none
+shadow	0
+alpha 1
+remove 0
+candamage enemy obstacle
+
+offscreenkill 100
+
+
+
+
+anim	idle
+	attack	2 1 73 59 35 1 1 0 1 0
+	delay	7
+	loop	0
+	offset	26 34
+	frame	data/chars/golrio/90.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 21
+	frame	data/chars/golrio/91.gif
+	attack	0 1 100 42 35 1 1 0 1 0
+	offset	44 23
+	frame	data/chars/golrio/92.gif
+		
+#|edited by openBor Stats v 0.67
+		

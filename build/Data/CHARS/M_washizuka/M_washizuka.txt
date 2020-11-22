@@ -1,11 +1,25 @@
 name	Washizuka
 health	100
-speed	9
+speed 12
 type	player
 shadow	3
 diesound data/sounds/eek.wav
 icon	   data/chars/M_washizuka/0.gif
+running 28 4 2 1 0
+atchain 1 1 2 3 5
+load b_shot
+load knife
+load bki
+load slash
+flash slash
 
+com a2 freespecial10
+com a3 freespecial
+com a4 freespecial2
+com s freespecial3
+
+
+animationscript data/scripts/spawns.c
 
 
 
@@ -26,7 +40,8 @@ anim	attack1
 	bbox	46 1 83 99
 	offset	80 96
 	frame	data/chars/M_washizuka/182.gif
-	attack	90 6 36 34 5 0 1 0 0 0
+	sound	data/chars/M_washizuka/washizuka_40-0.wav
+	attack	50 6 84 99 5 0 1 0 0 0
 	bbox	8 1 80 98
 	offset	52 95
 	frame	data/chars/M_washizuka/183.gif
@@ -52,6 +67,7 @@ anim	attack10
 	frame	data/chars/M_washizuka/197.gif
 		
 anim	attack11
+	attack	0 0 0 0 0 0 0 0 0 0
 	delay	7
 	offset	-57 170
 	frame	data/chars/M_washizuka/204.gif
@@ -61,6 +77,7 @@ anim	attack11
 	frame	data/chars/M_washizuka/206.gif
 		
 anim	attack2
+	hitfx	data/sounds/knifes.wav
 	bbox	0 31 78 111
 	delay	3
 	offset	34 139
@@ -71,6 +88,7 @@ anim	attack2
 	bbox	0 29 93 102
 	offset	51 128
 	frame	data/chars/M_washizuka/189.gif
+	sound	data/chars/M_washizuka/washizuka_220-0.wav
 	attack	99 52 60 50 7 0 1 0 0 0
 	bbox	0 0 99 101
 	offset	58 100
@@ -86,6 +104,8 @@ anim	attack2
 	frame	data/chars/M_washizuka/193.gif
 		
 anim	attack3
+	hitfx	data/sounds/knifes.wav
+	sound	data/chars/M_washizuka/washizuka_220-3.wav
 	bbox	1 1 88 93
 	delay	6
 	offset	53 90
@@ -94,7 +114,7 @@ anim	attack3
 	bbox	0 1 88 101
 	offset	53 99
 	frame	data/chars/M_washizuka/199.gif
-	attack	74 2 83 170 10 1 1 0 0 0
+	attack	74 2 83 170 10 0 1 0 0 0
 	bbox	0 37 86 138
 	offset	47 171
 	frame	data/chars/M_washizuka/200.gif
@@ -129,16 +149,19 @@ anim	attack4
 		
 anim	attack5
 	bbox	0 1 65 101
-	delay	8
+	delay	3
 	offset	32 99
+	hitfx	data/chars/M_washizuka/washizuka_210-3.wav
 	frame	data/chars/M_washizuka/234.gif
 	bbox	1 1 74 102
 	offset	27 100
 	frame	data/chars/M_washizuka/235.gif
+	delay	12
 	bbox	1 0 77 102
-	attack	71 0 50 51 0 0 1 0 0 0
+	attack	71 0 50 51 10 1 1 0 0 0
 	offset	38 99
 	frame	data/chars/M_washizuka/236.gif
+	delay	7
 	bbox	1 0 77 102
 	offset	37 100
 	frame	data/chars/M_washizuka/237.gif
@@ -201,6 +224,66 @@ anim	fall
 	frame	data/chars/M_washizuka/152.gif
 		
 anim	freespecial
+	hitfx	data/sounds/knifes.wav
+	bbox	1 1 86 92
+	delay	8
+	offset	51 91
+	frame	data/chars/M_washizuka/357.gif
+	bbox	0 1 84 99
+	offset	49 97
+	frame	data/chars/M_washizuka/358.gif
+	delay	3
+	bbox	1 0 80 106
+	offset	45 104
+	frame	data/chars/M_washizuka/359.gif
+	sound	data/chars/M_washizuka/washizuka_1500-0.wav
+	bbox	17 116 80 -115
+	offset	54 114
+	frame	data/chars/M_washizuka/360.gif
+	bbox	0 29 84 110
+	offset	37 137
+	frame	data/chars/M_washizuka/361.gif
+	bbox	0 1 91 101
+	offset	36 99
+	frame	data/chars/M_washizuka/362.gif
+	@cmd	projectile 1 "knife" 55 1 26 1 0
+	attack	63 35 49 34 13 1 1 0 1 0
+	bbox	0 0 79 99
+	offset	28 97
+	frame	data/chars/M_washizuka/363.gif
+	bbox	1 1 85 93
+	offset	34 91
+	frame	data/chars/M_washizuka/364.gif
+	delay	8
+	bbox	1 1 85 93
+	offset	32 87
+	frame	data/chars/M_washizuka/365.gif
+	bbox	0 0 83 96
+	offset	30 96
+	frame	data/chars/M_washizuka/366.gif
+		
+anim	freespecial10
+	delay	5
+	sound	data/chars/M_washizuka/washizuka_300-1.wav
+	@cmd	dasher 5 0 0
+	offset	37 69
+	frame	data/chars/M_washizuka/162.gif
+	offset	46 62
+	frame	data/chars/M_washizuka/163.gif
+	offset	58 82
+	frame	data/chars/M_washizuka/164.gif
+	offset	54 72
+	frame	data/chars/M_washizuka/165.gif
+	offset	35 86
+	frame	data/chars/M_washizuka/166.gif
+	offset	44 52
+	frame	data/chars/M_washizuka/167.gif
+	@cmd	stop
+	offset	45 76
+	frame	data/chars/M_washizuka/168.gif
+		
+anim	freespecial2
+	hitfx	data/sounds/knifes.wav
 	bbox	0 1 79 97
 	delay	8
 	offset	32 96
@@ -220,7 +303,9 @@ anim	freespecial
 	bbox	0 28 101 105
 	offset	57 129
 	frame	data/chars/M_washizuka/350.gif
-	attack	100 60 56 37 0 0 1 0 0 0
+	sound	data/chars/M_washizuka/washizuka_2010-0.wav
+	@cmd	projectile 1 "bki" 55 1 46 1 0
+	attack	100 60 56 37 20 1 1 0 1 0
 	bbox	0 1 100 99
 	offset	64 97
 	frame	data/chars/M_washizuka/351.gif
@@ -240,65 +325,8 @@ anim	freespecial
 	offset	39 93
 	frame	data/chars/M_washizuka/356.gif
 		
-anim	freespecial10
-	bbox	0 1 67 71
-	delay	8
-	offset	37 69
-	frame	data/chars/M_washizuka/162.gif
-	attack	51 1 56 65 0 0 1 0 0 0
-	offset	46 62
-	frame	data/chars/M_washizuka/163.gif
-	attack	67 18 58 69 0 0 1 0 0 0
-	offset	58 82
-	frame	data/chars/M_washizuka/164.gif
-	attack	44 1 58 74 0 0 1 0 0 0
-	offset	54 72
-	frame	data/chars/M_washizuka/165.gif
-	offset	35 86
-	frame	data/chars/M_washizuka/166.gif
-	attack	76 6 34 44 0 0 1 0 0 0
-	offset	44 52
-	frame	data/chars/M_washizuka/167.gif
-	bbox	6 0 90 86
-	offset	45 76
-	frame	data/chars/M_washizuka/168.gif
-		
-anim	freespecial2
-	bbox	1 1 86 92
-	delay	8
-	offset	51 91
-	frame	data/chars/M_washizuka/357.gif
-	bbox	0 1 84 99
-	offset	49 97
-	frame	data/chars/M_washizuka/358.gif
-	bbox	1 0 80 106
-	offset	45 104
-	frame	data/chars/M_washizuka/359.gif
-	bbox	17 116 80 -115
-	offset	54 114
-	frame	data/chars/M_washizuka/360.gif
-	bbox	0 29 84 110
-	offset	37 137
-	frame	data/chars/M_washizuka/361.gif
-	attack	81 0 57 26 0 0 1 0 0 0
-	bbox	0 1 91 101
-	offset	36 99
-	frame	data/chars/M_washizuka/362.gif
-	attack	63 35 49 34 0 0 1 0 0 0
-	bbox	0 0 79 99
-	offset	28 97
-	frame	data/chars/M_washizuka/363.gif
-	bbox	1 1 85 93
-	offset	34 91
-	frame	data/chars/M_washizuka/364.gif
-	bbox	1 1 85 93
-	offset	32 87
-	frame	data/chars/M_washizuka/365.gif
-	bbox	0 0 83 96
-	offset	30 96
-	frame	data/chars/M_washizuka/366.gif
-		
 anim	freespecial3
+	hitfx	data/sounds/knifes.wav
 	bbox	1 1 86 94
 	delay	7
 	offset	45 93
@@ -314,10 +342,13 @@ anim	freespecial3
 	frame	data/chars/M_washizuka/384.gif
 	offset	41 79
 	frame	data/chars/M_washizuka/385.gif
+	sound	data/chars/M_washizuka/washizuka_3000-2.wav
 	attack	96 1 49 71 0 0 1 0 0 0
 	bbox	1 26 100 93
 	offset	41 116
 	frame	data/chars/M_washizuka/386.gif
+	sound	data/chars/broly_ssb/broly_5-52.wav
+	@cmd	projectile 1 "b_shot" 55 1 46 1 0
 	bbox	8 37 92 131
 	offset	57 163
 	frame	data/chars/M_washizuka/387.gif
@@ -392,44 +423,6 @@ anim	freespecial5
 	offset	43 93
 	frame	data/chars/M_washizuka/423.gif
 		
-anim	freespecial6
-	bbox	1 1 91 95
-	delay	8
-	offset	53 93
-	frame	data/chars/M_washizuka/424.gif
-	bbox	1 1 91 95
-	offset	55 93
-	frame	data/chars/M_washizuka/425.gif
-	attack	92 5 95 49 0 0 1 0 0 0
-	bbox	1 1 91 95
-	offset	48 94
-	frame	data/chars/M_washizuka/426.gif
-	bbox	1 1 97 100
-	offset	54 98
-	frame	data/chars/M_washizuka/427.gif
-	attack	112 11 90 49 0 0 1 0 0 0
-	bbox	1 1 97 100
-	offset	54 98
-	frame	data/chars/M_washizuka/428.gif
-	attack	114 3 87 34 0 0 1 0 0 0
-	bbox	8 0 92 91
-	offset	54 88
-	frame	data/chars/M_washizuka/429.gif
-	attack	112 1 103 34 0 0 1 0 0 0
-	bbox	1 1 97 89
-	offset	54 87
-	frame	data/chars/M_washizuka/430.gif
-	attack	0 0 0 0 0 0 0 0 0 0
-	bbox	0 1 87 98
-	offset	44 96
-	frame	data/chars/M_washizuka/431.gif
-	bbox	2 1 86 91
-	offset	51 90
-	frame	data/chars/M_washizuka/432.gif
-	bbox	2 1 80 94
-	offset	38 94
-	frame	data/chars/M_washizuka/433.gif
-		
 anim	get
 	offset	37 69
 	frame	data/chars/M_washizuka/162.gif
@@ -478,12 +471,14 @@ anim	jump
 	frame	data/chars/M_washizuka/62.gif
 		
 anim	jumpattack
+	hitfx	data/sounds/knifes.wav
 	bbox	1 57 62 97
 	delay	8
 	offset	36 170
 	frame	data/chars/M_washizuka/268.gif
 	bbox	32 1 74 99
 	offset	76 116
+	sound	data/chars/M_washizuka/washizuka_210-6.wav
 	frame	data/chars/M_washizuka/269.gif
 	attack	89 22 58 38 7 0 1 0 0 0
 	bbox	1 1 84 98
@@ -505,6 +500,7 @@ anim	jumpattack
 		
 anim	pain
 	delay	7
+	sound	data/chars/M_washizuka/washizuka_170.0.wav
 	offset	34 138
 	frame	data/chars/M_washizuka/104.gif
 	offset	42 110
@@ -546,6 +542,53 @@ anim	run
 	bbox	2 1 71 98
 	offset	40 95
 	frame	data/chars/M_washizuka/34.gif
+		
+anim	runattack
+	hitfx	data/sounds/knifes.wav
+	bbox	1 1 91 95
+	delay	8
+	@cmd	dasher 4 0 0
+	offset	53 93
+	frame	data/chars/M_washizuka/424.gif
+	delay	4
+	@cmd	dasher 3 0 0
+	bbox	1 1 91 95
+	offset	55 93
+	sound	data/chars/M_washizuka/washizuka_220-5.wav
+	frame	data/chars/M_washizuka/425.gif
+	attack	59 5 139 110 10 0 1 0 0 0
+	bbox	1 1 91 95
+	offset	48 94
+	frame	data/chars/M_washizuka/426.gif
+	delay	9
+	@cmd	dasher 2 0 0
+	bbox	1 1 97 100
+	offset	54 98
+	frame	data/chars/M_washizuka/427.gif
+	@cmd	dasher 1 0 0
+	attack	65 11 144 115 0 0 1 0 0 0
+	bbox	1 1 97 100
+	offset	54 98
+	frame	data/chars/M_washizuka/428.gif
+	@cmd	dasher 1 0 0
+	bbox	8 0 92 91
+	offset	54 88
+	frame	data/chars/M_washizuka/429.gif
+	@cmd	stop
+	attack	63 2 150 117 10 1 1 0 0 0
+	bbox	1 1 97 89
+	offset	54 87
+	frame	data/chars/M_washizuka/430.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	0 1 87 98
+	offset	44 96
+	frame	data/chars/M_washizuka/431.gif
+	bbox	2 1 86 91
+	offset	51 90
+	frame	data/chars/M_washizuka/432.gif
+	bbox	2 1 80 94
+	offset	38 94
+	frame	data/chars/M_washizuka/433.gif
 		
 anim	turn
 	delay	7
