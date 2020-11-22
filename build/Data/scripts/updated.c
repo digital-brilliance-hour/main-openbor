@@ -216,12 +216,12 @@ void mainLoop()
       while(gameovercounter!=1)
       {
         void subent;
-        loadmodel("selectanimation"); // name of the entity to be loaded
+        loadmodel("monkanimation"); // name of the entity to be loaded
         clearspawnentry(); // clean the spawn entry
-        setspawnentry("name", "selectanimation"); // define the entity to be spawn
-        setspawnentry("coords", -1,0,-1); // set the position of the entity
+        setspawnentry("name", "monkanimation"); // define the entity to be spawn
+        setspawnentry("coords", -216,1,-1000); // set the position of the entity
         subent=spawn();  //  spawn the entity
-        changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        changeentityproperty(subent, "position", -216,1,-1000); //for safe, set again the position
         gameovercounter = setlocalvar("gameovercounter",1); // turn on the variable, blocking a new spawn to be made
       }
   }
