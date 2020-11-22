@@ -5,6 +5,19 @@ type	player
 shadow	3
 diesound data/sounds/eek.wav
 icon	   data/chars/golrio/0.gif
+atchain 1 1 2 4 3
+load g_shot
+load g_blast
+com a2 freespecial10
+com a3 freespecial
+com a4 freespecial2
+com s freespecial3
+running 25 4 2 1 0
+
+
+animationscript data/scripts/spawns.c
+
+
 
 
 
@@ -22,6 +35,7 @@ anim	attack1
 	delay	7
 	offset	39 101
 	frame	data/chars/golrio/38.gif
+	sound	data/chars/golrio/broly_0-0.wav
 	attack	84 11 81 38 5 0 1 0 0 0
 	bbox	1 0 94 114
 	offset	52 111
@@ -30,6 +44,7 @@ anim	attack1
 anim	attack2
 	offset	23 103
 	frame	data/chars/golrio/40.gif
+	sound	data/chars/golrio/broly_0-1.wav
 	attack	65 61 51 36 7 0 1 0 0 0
 	bbox	0 0 85 106
 	offset	23 101
@@ -41,6 +56,7 @@ anim	attack3
 	bbox	0 0 69 79
 	offset	37 78
 	frame	data/chars/golrio/43.gif
+	sound	data/chars/golrio/broly_0-2.wav
 	bbox	0 1 91 58
 	offset	46 58
 	frame	data/chars/golrio/44.gif
@@ -52,6 +68,7 @@ anim	attack3
 anim	attack4
 	offset	55 105
 	frame	data/chars/golrio/48.gif
+	sound	data/chars/golrio/broly_0-3.wav
 	bbox	0 0 96 127
 	offset	55 123
 	frame	data/chars/golrio/49.gif
@@ -72,14 +89,6 @@ anim	attack5
 	bbox	0 1 65 113
 	offset	33 111
 	frame	data/chars/golrio/54.gif
-		
-anim	attack6
-	offset	45 80
-	frame	data/chars/golrio/55.gif
-	attack	79 0 49 52 7 0 1 0 0 0
-	bbox	0 0 82 97
-	offset	45 94
-	frame	data/chars/golrio/56.gif
 		
 anim	attack7
 	offset	35 86
@@ -130,10 +139,13 @@ anim	fall
 		
 anim	freespecial
 	delay	7
+	@cmd	dasher 1 0 0
 	offset	64 69
 	frame	data/chars/golrio/99.gif
+	@cmd	dasher 5 0 0
 	offset	74 66
 	frame	data/chars/golrio/100.gif
+	sound	data/chars/golrio/broly_0-17.wav
 	attack	1 1 127 63 13 0 1 0 0 0
 	offset	69 62
 	frame	data/chars/golrio/101.gif
@@ -149,50 +161,65 @@ anim	freespecial
 	attack	1 1 127 63 13 0 1 0 0 0
 	offset	69 62
 	frame	data/chars/golrio/101.gif
+	@cmd	dasher 4 0 0
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	41 65
 	frame	data/chars/golrio/102.gif
+	@cmd	dasher 3 0 0
 	attack	1 1 127 63 13 0 0 1 0 0
 	offset	61 62
 	frame	data/chars/golrio/103.gif
+	@cmd	dasher 2 0 0
 	offset	42 62
 	frame	data/chars/golrio/104.gif
+	@cmd	dasher 1 0 0
+	offset	36 85
+	frame	data/chars/golrio/105.gif
+	@cmd	stop
 	offset	36 85
 	frame	data/chars/golrio/105.gif
 		
 anim	freespecial10
 	delay	7
+	@cmd	dasher 5 0 0
 	offset	49 74
 	frame	data/chars/golrio/19.gif
 	offset	43 86
 	frame	data/chars/golrio/20.gif
 	offset	40 68
 	frame	data/chars/golrio/21.gif
+	@cmd	stop
 	offset	29 79
 	frame	data/chars/golrio/22.gif
 		
 anim	freespecial2
-	delay	7
+	delay	15
 	offset	32 90
 	frame	data/chars/golrio/93.gif
-	attack	1 0 159 144 0 0 1 0 0 0
+	delay	7
+	@cmd	leaper 3 2
+	sound	data/chars/golrio/broly_0-18.wav
+	attack	1 0 159 144 40 1 1 0 0 0
 	offset	74 134
 	frame	data/chars/golrio/94.gif
 	offset	58 135
 	frame	data/chars/golrio/95.gif
-	attack	0 1 115 87 0 0 1 0 0 0
+	attack	0 1 115 87 40 1 1 0 0 0
 	offset	56 119
 	frame	data/chars/golrio/96.gif
 	offset	35 124
 	frame	data/chars/golrio/97.gif
-	attack	0 0 85 56 0 0 1 0 0 0
+	attack	0 0 85 56 30 1 1 0 0 0
 	offset	37 106
 	frame	data/chars/golrio/98.gif
+	offset	35 124
+	frame	data/chars/golrio/97.gif
 		
 anim	freespecial3
 	bbox	0 0 64 102
 	delay	7
 	offset	32 100
+	sound	data/chars/golrio/broly_0-9.wav
 	frame	data/chars/golrio/80.gif
 	bbox	71 1 -70 117
 	offset	38 116
@@ -210,16 +237,10 @@ anim	freespecial3
 	frame	data/chars/golrio/86.gif
 	offset	53 104
 	frame	data/chars/golrio/87.gif
+	@cmd	spawnbind "g_blast" 51 75 0
+	@cmd	projectile 1 "g_shot" 25 1 79 1 0
 	offset	53 104
 	frame	data/chars/golrio/88.gif
-	offset	9 23
-	frame	data/chars/golrio/89.gif
-	offset	26 34
-	frame	data/chars/golrio/90.gif
-	offset	38 21
-	frame	data/chars/golrio/91.gif
-	offset	44 23
-	frame	data/chars/golrio/92.gif
 		
 anim	get
 	offset	35 86
@@ -247,6 +268,7 @@ anim	jumpattack
 	delay	8
 	offset	41 121
 	frame	data/chars/golrio/71.gif
+	sound	data/chars/golrio/broly_5-2.wav
 	attack	91 24 40 54 10 0 1 0 0 0
 	bbox	0 0 92 91
 	offset	41 121
@@ -342,6 +364,38 @@ anim	run
 	frame	data/chars/golrio/8.gif
 	offset	47 140
 	frame	data/chars/golrio/9.gif
+		
+anim	runattack
+	delay	4
+	offset	45 80
+	frame	data/chars/golrio/55.gif
+	delay	9
+	sound	data/chars/golrio/broly_0-3.wav
+	@cmd	dasher 4 0 0
+	attack	79 0 49 52 7 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
+	@cmd	dasher 3 0 0
+	attack	79 0 49 52 7 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
+	@cmd	dasher 2 0 0
+	attack	79 0 49 52 7 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
+	@cmd	dasher 1 0 0
+	attack	79 0 49 52 7 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
+	@cmd	stop
+	attack	79 0 49 52 7 0 1 0 0 0
+	bbox	0 0 82 97
+	offset	45 94
+	frame	data/chars/golrio/56.gif
 		
 anim	victory
 	delay	7

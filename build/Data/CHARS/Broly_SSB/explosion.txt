@@ -1,0 +1,66 @@
+name	b_explosion
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	4
+	sound	data/chars/broly_ssb/broly_5-56.wav
+	offset	246 328
+	frame	data/chars/Broly_SSB/574.gif
+	offset	233 382
+	frame	data/chars/Broly_SSB/575.gif
+	offset	221 473
+	frame	data/chars/Broly_SSB/576.gif
+	offset	240 629
+	frame	data/chars/Broly_SSB/577.gif
+	offset	209 652
+	frame	data/chars/Broly_SSB/578.gif
+	offset	219 652
+	frame	data/chars/Broly_SSB/579.gif
+	offset	272 652
+	frame	data/chars/Broly_SSB/580.gif
+	offset	219 652
+	frame	data/chars/Broly_SSB/581.gif
+	offset	219 652
+	frame	data/chars/Broly_SSB/582.gif
+	offset	222 652
+	frame	data/chars/Broly_SSB/583.gif
+	offset	226 652
+	frame	data/chars/Broly_SSB/584.gif
+	offset	227 652
+	frame	data/chars/Broly_SSB/585.gif
+	offset	227 652
+	frame	data/chars/Broly_SSB/586.gif
+	offset	224 652
+	frame	data/chars/Broly_SSB/587.gif
+	offset	223 652
+	frame	data/chars/Broly_SSB/588.gif
+	offset	213 652
+	frame	data/chars/Broly_SSB/589.gif
+	offset	210 596
+	frame	data/chars/Broly_SSB/590.gif
+	offset	206 643
+	frame	data/chars/Broly_SSB/591.gif
+	offset	194 117
+	frame	data/chars/Broly_SSB/592.gif
+	offset	192 119
+	frame	data/chars/Broly_SSB/593.gif
+	offset	189 111
+	frame	data/chars/Broly_SSB/594.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

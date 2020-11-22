@@ -1,19 +1,25 @@
 name	Knife
 health	1
-type	enemy
+type none
 shadow	0
-#icon	data/chars/misc/meaticon.gif
+speed 18
 
-anim idle
-	loop	0
-	delay	1000
-	offset	12 5
-	attack	0 0 27 9 10 1
-	frame	data/chars/misc/knife.gif
-
-#anim attack1
-#	loop	0
-#	delay	1000
-#	offset	12 5
-#	attack	0 0 27 9
-#	frame	data/chars/misc/knife.gif
+anim	idle
+	loop	1
+	delay	1
+	offset	24 97
+	blast	50 60 90 26 5 1
+	sound	data/sounds/arrow.wav
+	frame	data/chars/misc/knife1.gif
+	frame	data/chars/misc/knife2.gif
+	frame	data/chars/misc/knife3.gif
+	frame	data/chars/misc/knife4.gif
+	frame	data/chars/misc/knife5.gif
+	frame	data/chars/misc/knife6.gif
+	frame	data/chars/misc/knife7.gif
+	frame	data/chars/misc/knife8.gif
+	frame	data/chars/misc/knife9.gif
+	frame	data/chars/misc/knife10.gif
+		
+#|edited by openBor Stats v 0.67
+		

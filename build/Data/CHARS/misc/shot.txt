@@ -5,10 +5,20 @@ shadow	0
 
 anim idle
 	loop	1
-	delay	6
-	offset	80 83
-	attack	20 20 63 63 10 1
+                  delay   2
+	offset	38 92
+	attack	0 0 127 103 25 1 
+	frame	data/chars/misc/shot0.gif
+                  attack       0 0 0 0 0 0 
+	offset	29 74
 	frame	data/chars/misc/shot1.gif
+	offset	12 79
 	frame	data/chars/misc/shot2.gif
+	offset	12 67
 	frame	data/chars/misc/shot3.gif
-	frame	data/chars/misc/shot4.gif
+	offset	-18 84
+                  frame	data/chars/misc/shot4.gif
+	offset	4 89
+	frame	data/chars/misc/shot5.gif
+
+
