@@ -59,6 +59,17 @@ e2name 384 10 0
 #p1smenu 44 92 22 148
 #p2smenu 284 92 262 148
 
+set demo_test
+z 131 207 0
+file    data/levels/tutorial-stage.txt
+z 129 198 0
+file    data/levels/stage1-1.txt
+z 117 213 0
+file    data/levels/stage1-2.txt
+z 115 207 0
+file    data/levels/stage1-3.txt
+z 85 209 0
+file    data/levels/stage1-4.txt
 
 set puzzle
 
@@ -88,4 +99,5 @@ file    data/levels/stage1-4.txt
 
 set tutorial-stage
 
+z 44 207 0
 file    data/levels/tutorial-stage.txt
