@@ -1,0 +1,18 @@
+name	kfire
+type	pshot
+speed 15
+remove 0
+candamage player enemy npc obstacle
+subject_to_hole 0
+anim idle
+	loop 1
+	delay	5
+	offset	38 55
+	bbox 0 0 0 0
+	hitflash cflash
+	burn  85 10 48 45 10 1 1 0 0
+	frame	data/chars/knight/65 
+	frame	data/chars/knight/66 
+	frame	data/chars/knight/67 
+	frame	data/chars/knight/68 
+

@@ -1,0 +1,25 @@
+name	knsw1
+type	none
+animationscript data/scripts/flash.c
+gfxshadow 1
+anim idle
+	delay	15
+	offset	49 118
+	bbox 0 0 0 0
+	frame	data/chars/knight/a4 
+	offset	49 123
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	offset	49 113
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	offset	49 123
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	delay 1000
+	@cmd velo001 1.3 0 0
+	frame	data/chars/knight/a5 
+	
