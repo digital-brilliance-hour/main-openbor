@@ -11,6 +11,7 @@ void main() {
 		case "powerupitem1":
 		case "powerupitem2":
 		case "powerupitem3":
+		spawnTextAni("poweruptext",1,1,0,"ANI_IDLE",NULL(),NULL(),NULL());
 			break;
 		default:
 			break;
