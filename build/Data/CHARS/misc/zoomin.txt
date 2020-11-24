@@ -1,0 +1,55 @@
+name	 zoomin
+type	 none
+subtype  noskip
+setlayer 999
+shadow	 0
+
+anim idle
+loop      0
+delay     1
+offset    0 0
+frame     data/chars/misc/empty.gif
+@cmd setglobalvar "zoomentity" getlocalvar("self")
+@cmd setglobalvar "zoomx" 0
+@cmd setglobalvar "zoomy" 0
+
+@cmd setglobalvar "zoomvalue" 260
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 270
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 280
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 290
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 300
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 310
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 320
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 330
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 340
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 350
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 360
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 370
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 380
+   frame   data/chars/misc/empty.gif
+@cmd setglobalvar "zoomvalue" 390
+   frame   data/chars/misc/empty.gif
+delay 16
+@cmd setglobalvar "zoomvalue" 400
+   frame   data/chars/misc/empty.gif
+delay 1
+@cmd setglobalvar "zoomvalue" 260
+   frame   data/chars/misc/empty.gif
+
+
+
+delay 1
+@cmd   killentity getlocalvar("self")
+   frame   data/chars/misc/empty.gif

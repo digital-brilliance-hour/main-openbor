@@ -1,0 +1,81 @@
+name standby
+type	panel
+speed   10
+shadow	0
+facing   1
+subject_to_minz 0
+subject_to_maxz 0
+noquake 0 1
+setlayer 1001001000
+
+palette none
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	60
+	offset	1000 500
+	@script
+	if(frame==1){
+	pausemusic(1);
+	}
+	if(frame==24){
+	pausemusic(0);
+	}
+	@end_script	
+	@cmd	layer 900
+	frame	data/sprites/black.gif
+	delay	3
+	sound	data/sounds/pinknoise.wav
+	offset	240 0
+	@cmd	layer 1001001000
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	sound	data/sounds/standby.wav
+	delay	2
+	@cmd	spawnPosAni "textcontrol" 240 0 0 "ANI_FOLLOW9" 1
+	@cmd	slow 0
+	frame	data/chars/misc/standby/standby.gif
+	delay	3
+	sound	data/sounds/pinknoise.wav
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	frame	data/chars/misc/standby/noise2.gif
+	frame	data/chars/misc/standby/noise1.gif
+	@cmd	suicide
+	frame	data/chars/misc/standby/noise2.gif
+		
+#|edited by openBor Stats v 0.67
+		

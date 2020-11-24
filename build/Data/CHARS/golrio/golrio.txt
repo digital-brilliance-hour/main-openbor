@@ -3,9 +3,11 @@ health	100
 speed	9
 type	player
 shadow	3
-diesound data/sounds/eek.wav
+diesound data/chars/golrio/broly_11-0.wav
 icon	   data/chars/golrio/0.gif
 atchain 1 1 2 4 3
+riseinv 1 0
+makeinv 4
 load g_shot
 load g_blast
 com a2 freespecial10
@@ -16,6 +18,7 @@ running 25 4 2 1 0
 
 
 animationscript data/scripts/spawns.c
+
 
 
 
@@ -42,6 +45,7 @@ anim	attack1
 	frame	data/chars/golrio/39.gif
 		
 anim	attack2
+	delay	7
 	offset	23 103
 	frame	data/chars/golrio/40.gif
 	sound	data/chars/golrio/broly_0-1.wav
@@ -51,6 +55,7 @@ anim	attack2
 	frame	data/chars/golrio/41.gif
 		
 anim	attack3
+	delay	4
 	offset	37 93
 	frame	data/chars/golrio/42.gif
 	bbox	0 0 69 79
@@ -60,22 +65,25 @@ anim	attack3
 	bbox	0 1 91 58
 	offset	46 58
 	frame	data/chars/golrio/44.gif
+	delay	20
 	bbox	0 0 88 92
-	attack	67 0 81 93 11 0 1 0 0 0
+	attack	67 0 81 93 11 1 1 0 0 0
 	offset	65 89
 	frame	data/chars/golrio/45.gif
 		
 anim	attack4
+	delay	8
 	offset	55 105
 	frame	data/chars/golrio/48.gif
+	attack	37 0 75 87 8 0 1 0 0 0
 	sound	data/chars/golrio/broly_0-3.wav
 	bbox	0 0 96 127
 	offset	55 123
 	frame	data/chars/golrio/49.gif
-	attack	104 2 39 66 8 0 1 0 0 0
 	bbox	0 0 96 127
 	offset	60 119
 	frame	data/chars/golrio/50.gif
+	attack	60 1 77 88 0 0 1 0 0 0
 	frame	data/chars/golrio/51.gif
 		
 anim	attack5
@@ -136,6 +144,39 @@ anim	fall
 	frame	data/chars/golrio/178.gif
 	offset	60 33
 	frame	data/chars/golrio/179.gif
+		
+anim	follow10
+	delay	90
+	loop	0
+	offset	60 33
+	frame	data/chars/golrio/179.gif
+	delay	8
+	offset	41 63
+	frame	data/chars/golrio/180.gif
+	offset	27 78
+	frame	data/chars/golrio/181.gif
+	offset	32 83
+	frame	data/chars/golrio/182.gif
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	delay	30
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 0
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 0
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	@cmd	noplayerJoin 0
+	offset	32 96
+	frame	data/chars/golrio/3.gif
 		
 anim	freespecial
 	delay	7
@@ -243,6 +284,7 @@ anim	freespecial3
 	frame	data/chars/golrio/88.gif
 		
 anim	get
+	delay	3
 	offset	35 86
 	frame	data/chars/golrio/59.gif
 		
@@ -261,6 +303,7 @@ anim	idle
 	frame	data/chars/golrio/5.gif
 		
 anim	jump
+	delay	8
 	offset	41 121
 	frame	data/chars/golrio/71.gif
 		
@@ -354,8 +397,6 @@ anim	rise
 	frame	data/chars/golrio/181.gif
 	offset	32 83
 	frame	data/chars/golrio/182.gif
-	offset	49 68
-	frame	data/chars/golrio/183.gif
 		
 anim	run
 	loop	1
@@ -396,6 +437,11 @@ anim	runattack
 	bbox	0 0 82 97
 	offset	45 94
 	frame	data/chars/golrio/56.gif
+		
+anim	spawn
+	delay	8
+	offset	32 96
+	frame	data/chars/golrio/3.gif
 		
 anim	victory
 	delay	7

@@ -3,8 +3,10 @@ health	100
 speed 12
 type	player
 shadow	3
-diesound data/sounds/eek.wav
+diesound data/chars/M_washizuka/washizuka_11-0.wav
 icon	   data/chars/M_washizuka/0.gif
+makeinv   4
+riseinv 1 0
 running 28 4 2 1 0
 atchain 1 1 2 3 5
 load b_shot
@@ -20,6 +22,8 @@ com s freespecial3
 
 
 animationscript data/scripts/spawns.c
+
+
 
 
 
@@ -222,6 +226,43 @@ anim	fall
 	frame	data/chars/M_washizuka/151.gif
 	offset	88 30
 	frame	data/chars/M_washizuka/152.gif
+		
+anim	follow10
+	delay	90
+	loop	0
+	offset	88 30
+	frame	data/chars/M_washizuka/152.gif
+	delay	4
+	offset	44 37
+	frame	data/chars/M_washizuka/157.gif
+	offset	44 58
+	frame	data/chars/M_washizuka/158.gif
+	offset	57 76
+	frame	data/chars/M_washizuka/159.gif
+	offset	42 83
+	frame	data/chars/M_washizuka/160.gif
+	@cmd	noplayerJoin 0
+	offset	57 76
+	frame	data/chars/M_washizuka/161.gif
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	delay	30
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 0
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 0
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
 		
 anim	freespecial
 	hitfx	data/sounds/knifes.wav
@@ -589,6 +630,11 @@ anim	runattack
 	bbox	2 1 80 94
 	offset	38 94
 	frame	data/chars/M_washizuka/433.gif
+		
+anim	spawn
+	delay	15
+	offset	39 99
+	frame	data/chars/M_washizuka/2.gif
 		
 anim	turn
 	delay	7

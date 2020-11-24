@@ -1,0 +1,188 @@
+name       branchArrow
+nomove      1
+type       item
+nolife 1
+facing 1
+score      0 -1
+antigravity     100
+candamage     player
+setlayer      100
+subject_to_wall 0
+
+palette none
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	follow1
+	loop	1
+	delay	10
+	followanim	10
+	followcond	1
+	offset	27 27
+	attack	1 2 54 51 0 0 1 1 0 40
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	frame	data/chars/misc/branch/bu1.gif
+	frame	data/chars/misc/branch/bu2.gif
+	frame	data/chars/misc/branch/bu3.gif
+	frame	data/chars/misc/branch/bu4.gif
+		
+anim	follow10
+@script
+    void self = getlocalvar("self");
+    char Name = getentityproperty(self,"name");
+    if(frame == 1){
+      jumptobranch(Name, 1);
+    }
+	@end_script	
+	delay	10
+	offset	27 27
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	follow2
+	loop	1
+	delay	10
+	followanim	10
+	followcond	1
+	offset	27 27
+	attack	1 2 54 51 0 0 1 1 0 40
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	frame	data/chars/misc/branch/br1.gif
+	frame	data/chars/misc/branch/br2.gif
+	frame	data/chars/misc/branch/br3.gif
+	frame	data/chars/misc/branch/br4.gif
+		
+anim	follow3
+	loop	1
+	delay	10
+	followanim	10
+	followcond	1
+	offset	27 27
+	attack	1 2 54 51 0 0 1 1 0 40
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	frame	data/chars/misc/branch/bd1.gif
+	frame	data/chars/misc/branch/bd2.gif
+	frame	data/chars/misc/branch/bd3.gif
+	frame	data/chars/misc/branch/bd4.gif
+		
+anim	follow4
+	loop	1
+	delay	10
+	followanim	10
+	followcond	1
+	offset	27 27
+	attack	1 2 54 51 0 0 1 1 0 40
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	frame	data/chars/misc/branch/bl1.gif
+	frame	data/chars/misc/branch/bl2.gif
+	frame	data/chars/misc/branch/bl3.gif
+	frame	data/chars/misc/branch/bl4.gif
+		
+anim	follow5
+	loop	1
+	delay	6
+	followanim	10
+	followcond	1
+	offset	21 23
+	attack	-5 -2 54 54 0 0 1 1 0 30
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	@cmd	layer 0
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-crate.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-blink.gif
+		
+anim	follow6
+	loop	1
+	delay	6
+	followanim	10
+	followcond	1
+	offset	21 23
+	attack	-5 -2 54 55 0 0 1 1 0 30
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	@cmd	layer 0
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 24
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 22
+	frame	data/chars/misc/ashoutbox/shout-glass.gif
+	offset	21 23
+	frame	data/chars/misc/ashoutbox/shout-blink.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	followanim	10
+	followcond	1
+	offset	27 27
+	attack	1 2 54 51 0 0 1 1 0 40
+	noreflect	1
+	hitfx	data/sounds/silent.wav
+	frame	data/chars/misc/branch/bu1.gif
+	frame	data/chars/misc/branch/bu2.gif
+	frame	data/chars/misc/branch/bu3.gif
+	frame	data/chars/misc/branch/bu4.gif
+		
+#|edited by openBor Stats v 0.67
+		

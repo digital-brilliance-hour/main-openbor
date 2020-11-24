@@ -7,6 +7,8 @@ bossmusic	data/music/menu.bor
 # Background layer
 background	 data/bgs/02_01_4/n01.gif
 
+wall    -330 220 0 0 500 650 50 250
+
 # Front layers
 #frontpanel	data/bgs/street/f00.gif
 
@@ -124,7 +126,7 @@ at    97
 
 spawn k
 health  60
-coords    -97 223
+coords    -97 145
 at    97
 
 spawn ninja1
@@ -134,7 +136,7 @@ at    97
 
 spawn selva1
 health  0
-coords    -97 223
+coords    -97 145
 at    97
 
 spawn selva2
@@ -144,7 +146,7 @@ at    97
 
 spawn ninja1
 health  60
-coords    -97 223
+coords    -97 145
 at    97
 
 spawn selva2
@@ -154,7 +156,7 @@ at    97
 
 spawn k
 health  60
-coords    -97 223
+coords    -97 145
 at    97
 
 wait

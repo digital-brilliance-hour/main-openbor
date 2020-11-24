@@ -5,6 +5,8 @@ bossmusic	data/music/menu.bor
 ## Bonus Stage Type ##
 type 1
 direction both
+spawn1 64 5 0
+spawn2 64 35 0
 
 ## Load images in this area ##
 
@@ -71,12 +73,57 @@ order	a
 
 
 #--group1-----
+spawn   zoomout
+map	  0
+coords  240 236
+at      0
+
+spawn   focus
+health 110
+coords	1 1 0
+flip 1
+at      0
+
+spawn   empty
+@script
+void main()
+{
+    int P1 = getplayerproperty(0, "entity");
+    int P2 = getplayerproperty(1, "entity");
+
+    if(P1){
+      changeopenborvariant("nojoin", 1);
+      changeentityproperty(P1, "position", 105, 160, 0);
+      changeentityproperty(P1, "direction", 1); //Face right
+      changeentityproperty(P1, "animation", openborconstant("ANI_FOLLOW10"));
+    }
+    if(P2){
+      changeentityproperty(P2, "position", 105,190, 0);
+      changeentityproperty(P2, "direction", 1); //Face right
+      changeentityproperty(P2, "animation", openborconstant("ANI_FOLLOW10"));
+    }
+}
+@end_script
+coords   180 189
+at   0
+
+spawn tutorialtitle
+coords 1 1
+at 0
+
+spawn tutorialtext
+coords 1 1
+at 0
+
 spawn rock
 health  99999999
-coords    243 200
+coords    243 170
 at    0
 
-wait
+spawn trash
+health 100
+item tutorialmeat
+coords 450 140
 at 0
 
 

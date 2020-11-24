@@ -1,0 +1,67 @@
+name	poweruptext
+type text
+subtype	noskip
+lifespan	2
+setlayer	999999999
+
+
+
+
+
+
+anim	follow1
+	offset	1 1
+	loop	0
+	delay	10
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 999999999
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	delay	200
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	delay	400
+	@cmd	jumptobranch "" 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	offset	1 1
+	loop	0
+	delay	10
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 999999999
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext2.png
+	delay	200
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	frame	data/chars/misc/poweruptext/poweruptext1.png
+	delay	400
+	@cmd	jumptobranch "" 1
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

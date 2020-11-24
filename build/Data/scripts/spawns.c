@@ -121,3 +121,13 @@ void damage_all_players(int damage, int drop, int stay, void atk_type)
         }
 	}	
 }
+
+
+void noplayerJoin (int iG)
+{
+// controls if other players can join the game or not
+// 1 - players CAN NOT join, 0 play CAN join
+// remember to set it 0 when you are done, or you will have a 1P only game.
+// Douglas Baldan/O Ilusionista - 20/09/14
+changeopenborvariant("nojoin", iG);
+}

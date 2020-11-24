@@ -1,0 +1,770 @@
+name	textControl
+type	text
+setlayer 1001001000
+facing 1
+palette none
+antigravity 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	follow1
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	160
+	sound	data/chars/misc/text/tshark.wav
+	frame	data/chars/misc/text/tshark1.png
+	delay	200
+	sound	data/chars/bosses/tigershark/voices/INTRO-~1.wav
+	frame	data/chars/misc/text/tshark2.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_shark.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow10
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	300
+	sound	data/chars/hawkeye/bowman/intro.wav
+	frame	data/chars/misc/text/bowman1.gif
+	delay	160
+	sound	data/sounds/announcer/avengers-assemble.wav
+	frame	data/chars/misc/text/tactical_force_2.gif
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_bowman.gif
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow11
+	delay	30
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/sprites/0empty.gif
+	delay	2
+	drawmethod	scaley 0.0
+	sound	data/chars/misc/text/bonus.wav
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.1
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.2
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.3
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.4
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.5
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.6
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.7
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.8
+	frame	data/chars/misc/text/bonus1.gif
+	drawmethod	scaley 0.9
+	frame	data/chars/misc/text/bonus1.gif
+	nodrawmethod	
+	frame	data/chars/misc/text/bonus1.gif
+	frame	data/chars/misc/text/bonus1b.gif
+	frame	data/chars/misc/text/bonus1.gif
+	frame	data/chars/misc/text/bonus1b.gif
+	delay	180
+	frame	data/chars/misc/text/bonus1.gif
+	delay	2
+	sound	data/chars/misc/text/ready.wav
+	frame	data/chars/misc/text/bonus2b.gif
+	frame	data/chars/misc/text/bonus2.gif
+	frame	data/chars/misc/text/bonus2b.gif
+	delay	200
+	frame	data/chars/misc/text/bonus2.gif
+	delay	2
+	drawmethod	scale	3.0
+	sound	data/chars/misc/text/go.wav
+	frame	data/chars/misc/text/bonus3.gif
+	drawmethod	scale	2.5
+	frame	data/chars/misc/text/bonus3.gif
+	drawmethod	scale	2.0
+	frame	data/chars/misc/text/bonus3.gif
+	drawmethod	scale	1.5
+	frame	data/chars/misc/text/bonus3.gif
+	drawmethod	scale	1.0
+	frame	data/chars/misc/text/bonus3.gif
+	nodrawmethod	
+	frame	data/chars/misc/text/bonus3b.gif
+	frame	data/chars/misc/text/bonus3.gif
+	frame	data/chars/misc/text/bonus3b.gif
+	delay	60
+	frame	data/chars/misc/text/bonus3.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow12
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	300
+	sound	data/chars/thor/hammer/intro.wav
+	frame	data/chars/misc/text/dialog_hammer.gif
+	delay	160
+	sound	data/chars/misc/text/av-leave.wav
+	frame	data/chars/misc/text/viper3.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_hammer.gif
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow13
+	delay	30
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/sprites/0empty.gif
+	delay	2
+	drawmethod	scale	3.0
+	@cmd	playmusic "data/music/stage_clear.ogg" 0
+	sound	data/chars/misc/text/stage_clear.wav
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scale	2.5
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scale	2.0
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scale	1.5
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scale	1.0
+	frame	data/chars/misc/text/bonus_clear1.gif
+	nodrawmethod	
+	frame	data/chars/misc/text/bonus_clear2.gif
+	frame	data/chars/misc/text/bonus_clear1.gif
+	frame	data/chars/misc/text/bonus_clear2.gif
+	delay	60
+	frame	data/chars/misc/text/bonus_clear1.gif
+	delay	2
+	drawmethod	scaley 0.8
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scaley 0.6
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scaley 0.4
+	frame	data/chars/misc/text/bonus_clear1.gif
+	drawmethod	scaley 0.2
+	frame	data/chars/misc/text/bonus_clear1.gif
+	delay	60
+	frame	data/sprites/0empty.gif
+	@cmd	finishlevel
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow14
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	300
+	sound	data/chars/misc/text/nefaria-intro1.wav
+	frame	data/chars/misc/text/nefaria1.gif
+	delay	360
+	sound	data/chars/misc/text/nefaria-intro2.wav
+	frame	data/chars/misc/text/nefaria2.gif
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/nefaria2.gif
+	drawmethod	256 128
+	frame	data/chars/misc/text/nefaria2.gif
+	drawmethod	256 64
+	frame	data/chars/misc/text/nefaria2.gif
+	drawmethod	256 32
+	frame	data/chars/misc/text/nefaria2.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow2
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	160
+	sound	data/chars/misc/text/whirl1.wav
+	frame	data/chars/misc/text/whirl1.png
+	sound	data/chars/misc/text/whirl2.wav
+	frame	data/chars/misc/text/whirl2.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_whirlwind.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow3
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	160
+	sound	data/chars/misc/text/viper1.wav
+	frame	data/chars/misc/text/viper1.png
+	delay	300
+	sound	data/chars/misc/text/viper2.wav
+	frame	data/chars/misc/text/viper2.png
+	delay	160
+	sound	data/chars/misc/text/av-leave.wav
+	frame	data/chars/misc/text/viper3.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_viper.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow4
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	200
+	sound	data/chars/misc/text/av-justice.wav
+	frame	data/chars/misc/text/madam1.png
+	delay	160
+	sound	data/chars/bosses/madam/laugh.wav
+	frame	data/chars/misc/text/madam2.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_madam.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow5
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	200
+	sound	data/chars/bosses/hammerhead/intro.wav
+	frame	data/chars/misc/text/hammerhead2.gif
+	delay	160
+	sound	data/sounds/announcer/fight.wav
+	frame	data/chars/misc/text/hammerhead1.gif
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_hammerhead.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow6
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	240
+	sound	data/sounds/announcer/be-hero.wav
+	frame	data/chars/misc/text/militant1.gif
+	delay	320
+	sound	data/chars/captain/militant/intro.wav
+	frame	data/chars/misc/text/militant2.gif
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_militant.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow7
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	260
+	sound	data/chars/bosses/trapster/intro.wav
+	frame	data/chars/misc/text/trapster.png
+	delay	160
+	sound	data/sounds/announcer/fight.wav
+	frame	data/chars/misc/text/hammerhead1.gif
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_trapster.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow8
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	260
+	sound	data/chars/ironman/tactical/intro.wav
+	frame	data/chars/misc/text/tactical_force_1.gif
+	delay	160
+	sound	data/sounds/announcer/avengers-assemble.wav
+	frame	data/chars/misc/text/tactical_force_2.gif
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	-1
+	nodrawmethod	
+	frame	data/chars/misc/text/info_tactical_force.gif
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow9
+	delay	480
+	flipframe	0
+	loop	0
+	offset	240 136
+	skip	0
+	frame	data/sprites/0empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	idle
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/sprites/0empty.gif
+		
+#|edited by openBor Stats v 0.67
+		
