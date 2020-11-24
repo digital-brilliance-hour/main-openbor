@@ -1,0 +1,121 @@
+name	kofx
+type	text
+subtype noskip
+setlayer 10000
+facing 1
+
+palette none
+
+
+
+
+
+
+
+
+
+anim	idle
+	flipframe	0
+	loop	0
+	offset	480 272
+	@cmd	setglobalvar "zoomentity" getlocalvar("self")
+	@cmd	setglobalvar "zoomvalue" 320
+	@cmd	setglobalvar "zoomx" 0
+	@cmd	setglobalvar "zoomy" 0
+	delay	1
+	sound	data/sounds/kofx.wav
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 350
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 380
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 410
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 430
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 460
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 490
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 520
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 550
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 580
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 610
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 640
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 670
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 700
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 730
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	@cmd	setglobalvar "zoomvalue" 760
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	setglobalvar "zoomvalue" 790
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	setglobalvar "zoomvalue" 820
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	setglobalvar "zoomvalue" 850
+	frame	data/chars/misc/ko/kofx1.gif
+	frame	data/chars/misc/ko/kofx2.gif
+	offset	240 136
+	delay	1
+	sound	data/sounds/ko.wav
+	drawmethod	scale	4.0
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	3.5
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	3.0
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	2.5
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	2.0
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	1.5
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scale	1.0
+	frame	data/chars/misc/ko/kon-1.gif
+	nodrawmethod	
+	frame	data/chars/misc/ko/kon-2.gif
+	frame	data/chars/misc/ko/kon-1.gif
+	frame	data/chars/misc/ko/kon-2.gif
+	delay	60
+	frame	data/chars/misc/ko/kon-1.gif
+	delay	2
+	drawmethod	scaley 0.75
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scaley 0.5
+	frame	data/chars/misc/ko/kon-1.gif
+	drawmethod	scaley 0.25
+	frame	data/chars/misc/ko/kon-1.gif
+	@cmd	setglobalvar "zoomentity" NULL()
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

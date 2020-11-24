@@ -1,0 +1,32 @@
+name	tutorialtext
+health	1
+type	panel
+speed 10
+shadow 0
+facing 1
+setlayer 9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1 1
+	delay	10
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/tutorial/tutorialtext.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/tutorial/tutorialtext.png
+		
+#|edited by openBor Stats v 0.67
+		

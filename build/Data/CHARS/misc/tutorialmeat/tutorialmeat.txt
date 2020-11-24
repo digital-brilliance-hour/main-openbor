@@ -1,0 +1,31 @@
+name	tutorialmeat
+health	100
+type	item
+shadow	0
+facing 1
+icon	data/chars/misc/meaticon.gif
+didhitscript data/scripts/didhit/item.c
+
+
+
+anim	idle
+	loop	1
+	delay	10
+	bbox	19 43 27 21
+	offset	31 61
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/tutorialmeat/meat1.png
+	frame	data/chars/misc/tutorialmeat/meat2.png
+	delay	60
+	frame	data/chars/misc/tutorialmeat/meat3.png
+	delay	8
+	frame	data/chars/misc/tutorialmeat/meat4.png
+	frame	data/chars/misc/tutorialmeat/meat3.png
+	frame	data/chars/misc/tutorialmeat/meat4.png
+	delay	60
+	frame	data/chars/misc/tutorialmeat/meat3.png
+	delay	10
+	frame	data/chars/misc/tutorialmeat/meat2.png
+		
+#|edited by openBor Stats v 0.67
+		

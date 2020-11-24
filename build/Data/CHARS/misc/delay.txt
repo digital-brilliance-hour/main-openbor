@@ -1,0 +1,38 @@
+name    	delay
+health	 	10
+type    	enemy
+nomove  	1 1
+stealth		350
+antigravity	100
+subject_to_wall	0
+offscreenkill	3000
+nodrop		2
+
+
+
+
+anim	idle
+	@script
+	void self = getlocalvar("self");
+	int  Health = getentityproperty(self, "health");
+	if(frame==1){
+	changeentityproperty(self, "health", Health-5);
+	if (Health <= 0){
+	killentity(self);
+	}
+	}
+	@end_script	
+	loop	1
+	delay	49
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+	delay	1
+	frame	data/chars/misc/empty.gif
+		
+anim	spawn
+	delay	1
+	offset	1 1
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

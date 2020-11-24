@@ -11,7 +11,8 @@ void main()
 }
 
 void mainLoop()
-{
+{ 
+  void bckground = getglobalvar("bckground");
 	if(SYS_INLEVEL)
 	{
 		inLevelLoop();
@@ -41,7 +42,7 @@ void mainLoop()
     setlocalvar("hofcounter",0); 
     }
     if (stagecompletecounter!="0"){
-    setlocalvar("stagecompletecounter",0); 
+    setlocalvar("stagecompletecounter",0);
     }
 	}
 	if (SYS_SCENE == "data/scenes/intro.txt"){
@@ -111,21 +112,29 @@ void mainLoop()
     if (counter!="0"){
     setlocalvar("counter",0); 
     }
+    void hofcounter = getlocalvar("hofcounter");
+    if (hofcounter!="0"){
+    setlocalvar("hofcounter",0); 
+    }
     void logocounter = getlocalvar("logocounter"); 
     if (logocounter!="0"){
     setlocalvar("logocounter",0); 
     }
-
      void titlecounter = getlocalvar("titlecounter"); 
       while(titlecounter!=1)
       {
-        void subent, subent2;
+        void subent, subent2; 
+        int iValid = getentityproperty(bckground, "exists");
+        if(iValid){
+          killentity(bckground);
+        }
         
         loadmodel("titleanimation"); // name of the entity to be loaded
         clearspawnentry(); // clean the spawn entry
         setspawnentry("name", "titleanimation"); // define the entity to be spawn
         setspawnentry("coords", 1,1,-1000); // set the position of the entity
         subent=spawn();  //  spawn the entity
+        setglobalvar("bckground", subent);
         changeentityproperty(subent, "position", 1,1,-1000); //for safe, set again the position
 
 
@@ -170,12 +179,12 @@ void mainLoop()
         setspawnentry("coords", -1,0,-1); // set the position of the entity
         subent=spawn();  //  spawn the entity
         changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        setglobalvar("bckground", subent);
         stagecompletecounter = setlocalvar("stagecompletecounter",1); // turn on the variable, blocking a new spawn to be made
       }
   }
 
   if(openborvariant("in_halloffamescreen")==1){
-    //highScoreMusic();
     void titlecounter = getlocalvar("titlecounter");
     if (titlecounter!="0"){
     setlocalvar("titlecounter",0); 
@@ -188,6 +197,7 @@ void mainLoop()
     log(hofcounter);
       while(hofcounter!=1)
       {
+        highScoreMusic();
         void subent;
         loadmodel("waterfallanimation"); // name of the entity to be loaded
         clearspawnentry(); // clean the spawn entry
@@ -195,6 +205,7 @@ void mainLoop()
         setspawnentry("coords", -1,0,-1); // set the position of the entity
         subent=spawn();  //  spawn the entity
         changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        setglobalvar("bckground", subent);
         hofcounter = setlocalvar("hofcounter",1); // turn on the variable, blocking a new spawn to be made
       }
   }
@@ -222,6 +233,7 @@ void mainLoop()
         setspawnentry("coords", -216,1,-1000); // set the position of the entity
         subent=spawn();  //  spawn the entity
         changeentityproperty(subent, "position", -216,1,-1000); //for safe, set again the position
+        setglobalvar("bckground", subent);
         gameovercounter = setlocalvar("gameovercounter",1); // turn on the variable, blocking a new spawn to be made
       }
   }
@@ -230,6 +242,10 @@ void mainLoop()
       void titlemcounter = getlocalvar("titlemcounter");
       if (titlemcounter!="0"){
       setlocalvar("titlemcounter",0); 
+      }
+      void titlecounter = getlocalvar("titlecounter");
+      if (titlecounter!="0"){
+      setlocalvar("titlecounter",0); 
       }
       int models_cached = openborvariant("models_cached");
       int i = 0;
@@ -244,6 +260,7 @@ void mainLoop()
         setspawnentry("coords", 1,1,-1); // set the position of the entity
         subent=spawn();  //  spawn the entity
         changeentityproperty(subent, "position", 1,1,-1); //for safe, set again the position
+        setglobalvar("bckground", subent);
 
         loadmodel("selectsprite"); // name of the entity to be loaded
         clearspawnentry(); // clean the spawn entry
@@ -272,8 +289,8 @@ void getSpriteScreen()
 
 void highScoreMusic()
 {
-  void bg = "data/music/highscore.bor";
-  //playmusic(bg, 1);
+  void bg = "data/music/halloffame.ogg";
+  playmusic(bg, 1);
 
 }
 

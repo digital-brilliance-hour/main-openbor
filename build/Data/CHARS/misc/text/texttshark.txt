@@ -1,0 +1,69 @@
+name	textTshark
+type	text
+setlayer 1001001000
+
+palette none
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	2
+	flipframe	0
+	loop	0
+	offset	240 136
+	frame	data/chars/misc/text/tb_20001-0.png
+	frame	data/chars/misc/text/tb_20001-1.png
+	frame	data/chars/misc/text/tb_20001-2.png
+	frame	data/chars/misc/text/tb_20001-3.png
+	frame	data/chars/misc/text/tb_20001-4.png
+	frame	data/chars/misc/text/tb_20001-5.png
+	frame	data/chars/misc/text/tb_20001-6.png
+	frame	data/chars/misc/text/tb_20001-7.png
+	frame	data/chars/misc/text/tb_20001-8.png
+	frame	data/chars/misc/text/tb_20001-9.png
+	frame	data/chars/misc/text/tb_20001-10.png
+	frame	data/chars/misc/text/tb_20001-11.png
+	frame	data/chars/misc/text/tb_20001-12.png
+	frame	data/chars/misc/text/tb_20001-13.png
+	frame	data/chars/misc/text/tb_20001-14.png
+	frame	data/chars/misc/text/tb_20001-15.png
+	frame	data/chars/misc/text/tb_20001-16.png
+	frame	data/chars/misc/text/tb_20001-17.png
+	frame	data/chars/misc/text/tb_20001-18.png
+	delay	160
+	sound	data/chars/misc/text/tshark.wav
+	frame	data/chars/misc/text/tshark1.png
+	delay	200
+	sound	data/chars/bosses/tigershark/voices/INTRO-~1.wav
+	frame	data/chars/misc/text/tshark2.png
+	delay	4
+	drawmethod	256 32
+	offset	240 66
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	delay	600
+	nodrawmethod	
+	frame	data/chars/misc/text/info_shark.png
+	delay	4
+	drawmethod	256 256 256 256 0 0 0 121
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 128
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 64
+	frame	data/chars/misc/text/info.png
+	drawmethod	256 32
+	frame	data/chars/misc/text/info.png
+		
+#|edited by openBor Stats v 0.67
+		

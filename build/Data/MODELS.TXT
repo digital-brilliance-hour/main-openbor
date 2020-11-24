@@ -7,6 +7,11 @@
 maxattacks 15
 maxattacktypes 20
 maxfreespecials 20
+maxfollows     90
+maxwalks 4
+maxidles 4
+nodropen
+equalairpause 1
 
 
 # Required objects. These must always be loaded.
@@ -25,11 +30,15 @@ load	Mighty		data/chars/mighty/mighty.txt
 know	Apple		data/chars/misc/apple.txt
 know	Meat		data/chars/misc/meat.txt
 know	Meatend		data/chars/misc/meat-end.txt
+know 	tutorialmeat 	data/chars/misc/tutorialmeat/tutorialmeat.txt
 
 know	1up		data/chars/misc/1up.txt
 know	Money		data/chars/misc/money.txt
 know	Gold		data/chars/misc/gold.txt
 know	Time		data/chars/misc/time.txt
+know 	powerupitem1 	data/chars/misc/powerupitems/powerupitem1.txt
+know 	powerupitem2 	data/chars/misc/powerupitems/powerupitem2.txt
+know 	powerupitem3 	data/chars/misc/powerupitems/powerupitem3.txt
 
 # Obstacles (item containers)
 know	Box		data/chars/misc/box.txt
@@ -83,7 +92,9 @@ load 	g_blast 	data/chars/golrio/blast.txt
 load 	g_shot 		data/chars/golrio/shot.txt
 load  	bki 		data/chars/misc/bki/bki.txt
 know 	slash 		data/chars/misc/slash/slash.txt
+know  	shuriken 	data/chars/misc/shuriken.txt
 
+# background animations and logo/title overlays
 Know kc-logo Data/Chars/kc-logo/kc-logo.txt
 know 	titleanimation 		data/chars/misc/title-animation/titleanimation.txt
 know 	titlesprite data/chars/misc/title-sprite/title-sprite.txt
@@ -92,3 +103,17 @@ know 	selectsprite 	data/chars/misc/select-sprite/select-sprite.txt
 know 	waterfallanimation 	data/chars/misc/waterfall-animation/waterfallanimation.txt
 know 	outsideanimation 	data/chars/misc/outside-animation/outsideanimation.txt
 know 	nightskyanimation 	data/chars/misc/nightsky-animation/nightskyanimation.txt
+know 	tutorialtitle 	data/chars/misc/tutorial/tutorialtitle.txt
+know 	tutorialtext 	data/chars/misc/tutorial/tutorialtext.txt
+know 	poweruptext 	data/chars/misc/poweruptext/poweruptext.txt
+know 	stageopening 	data/chars/misc/stageopening/stageopening.txt
+
+
+# graphic effects-----------------------------------------------------------------------
+load	zoomout		data/chars/misc/zoomout.txt
+load	zoomin		data/chars/misc/zoomin.txt
+load	zoomblast	data/chars/misc/zoomblast.txt
+load    focus		data/chars/misc/focus/focus.txt
+load    delay           data/chars/misc/delay.txt
+load    empty           data/chars/misc/empty.txt
+load    FakeEn          data/chars/misc/fakeen.txt

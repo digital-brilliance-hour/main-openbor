@@ -1,0 +1,51 @@
+name	stageopening
+type	text
+subtype	noskip
+lifespan	2
+setlayer	999999999
+
+
+
+
+
+
+anim	idle
+	offset	1 1
+	loop	0
+	delay	20
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,24 @@
+name	powerupitem1
+health	100
+type	item
+shadow	0
+facing 1
+didhitscript data/scripts/didhit/item.c
+
+
+
+
+anim	idle
+	bbox	1 1 22 20
+	offset	11 18
+	loop	1
+	delay	120
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/powerupitems/0.png
+	delay	10
+	frame	data/chars/misc/powerupitems/0-glow.png
+	frame	data/chars/misc/powerupitems/0.png
+	frame	data/chars/misc/powerupitems/0-glow.png
+		
+#|edited by openBor Stats v 0.67
+		
