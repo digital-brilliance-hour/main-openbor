@@ -1,0 +1,24 @@
+name	duste
+health	0
+type	none
+shadow	0
+
+anim idle
+	delay	4
+@script
+if(frame == 9){
+void self = getlocalvar("self");
+killentity(self);
+}
+@end_script
+	offset	98 38
+	frame	data/chars/misc/dust1.gif
+	frame	data/chars/misc/dust2.gif
+	frame	data/chars/misc/dust3.gif
+	frame	data/chars/misc/dust4.gif
+	frame	data/chars/misc/dust5.gif
+	frame	data/chars/misc/dust6.gif
+	frame	data/chars/misc/dust7.gif
+	frame	data/chars/misc/dust8.gif
+	frame	data/chars/misc/dust9.gif
+	frame	data/chars/misc/dust9.gif

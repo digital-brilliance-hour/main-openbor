@@ -1,0 +1,54 @@
+name	ball
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/draven/spells/ball1.gif
+
+anim idle
+	loop	0
+	delay	10
+	offset	20 36
+	attack	4 5 74 64 20 1 0 0 20
+	frame	data/chars/draven/spells/ball1.gif
+	offset	21 39
+	frame	data/chars/draven/spells/ball2.gif
+	offset	21 36
+	frame	data/chars/draven/spells/ball3.gif
+	offset	20 36
+	frame	data/chars/draven/spells/ball4.gif
+	offset	19 37
+	frame	data/chars/draven/spells/ball5.gif
+	offset	19 34
+	frame	data/chars/draven/spells/ball6.gif
+	offset	18 37
+	frame	data/chars/draven/spells/ball7.gif
+	offset	19 35
+	frame	data/chars/draven/spells/ball8.gif
+	offset	20 37
+	frame	data/chars/draven/spells/ball9.gif
+	offset	21 39
+	frame	data/chars/draven/spells/ball10.gif
+	offset	21 37
+	frame	data/chars/draven/spells/ball11.gif
+	offset	20 38
+	frame	data/chars/draven/spells/ball12.gif
+	offset	19 36
+	frame	data/chars/draven/spells/ball13.gif
+	offset	19 38
+	frame	data/chars/draven/spells/ball14.gif
+	offset	18 39
+	frame	data/chars/draven/spells/ball15.gif
+	offset	19 36
+	frame	data/chars/draven/spells/ball16.gif
+
+	
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

@@ -1,0 +1,107 @@
+
+name	  seni
+health 	 150
+speed	 10
+type	  none
+shadow	  4
+typeshot  1
+icon	  data/chars/ironman/icon.gif
+diesound    data/chars/burnking/sounds/die.wav
+
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt1.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt2.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt3.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt4.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt5.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt6.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt7.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt8.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt9.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt10.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt11.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt12.gif
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        50 99
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/ironman/sidle1.gif
+	offset	50 97
+	frame	data/chars/ironman/sidle2.gif
+	offset	50 96
+	frame	data/chars/ironman/sidle3.gif
+	offset	50 94
+	frame	data/chars/ironman/sidle4.gif
+	offset	51 94
+	frame	data/chars/ironman/sidle5.gif
+	offset	50 94
+	frame	data/chars/ironman/sidle6.gif
+	offset	50 96
+	frame	data/chars/ironman/sidle7.gif
+	offset	50 97
+	frame	data/chars/ironman/sidle8.gif
+	offset	50 99
+	frame	data/chars/ironman/sidle9.gif
+	offset	50 99
+	frame	data/chars/ironman/sidle10.gif
+	
+
+#done//
+anim walk
+	loop	1
+	offset  41 115
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/ironman/swalk1.gif
+	offset	44 113
+	frame	data/chars/ironman/swalk2.gif
+	offset	42 112
+	frame	data/chars/ironman/swalk3.gif
+	offset	26 112
+	frame	data/chars/ironman/swalk4.gif
+	offset	24 112
+                  frame	data/chars/ironman/swalk5.gif
+	offset	30 111
+                  frame	data/chars/ironman/swalk6.gif
+	offset	34 112
+                  frame	data/chars/ironman/swalk7.gif
+	offset	36 113
+	frame	data/chars/ironman/swalk8.gif
+	offset	36 114
+	frame	data/chars/ironman/swalk9.gif
+	offset	26 115
+	frame	data/chars/ironman/swalk10.gif
+	offset	19 116
+	frame	data/chars/ironman/swalk11.gif
+	offset	39 115
+	frame	data/chars/ironman/swalk12.gif
+
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	41 82
+	bbox	34 18 37 94
+	sound	data/sounds/marvel/doomshot.wav
+	frame	data/chars/ironman/s2spec1.gif
+	offset	50 88
+	frame	data/chars/ironman/spunch5.gif
+	frame	data/chars/ironman/spunch6.gif
+	frame	data/chars/ironman/spunch61.gif
+        attack	65 13 334 60 25 1
+	frame	data/chars/ironman/spunch62.gif
+	frame	data/chars/ironman/spunch63.gif
+	frame	data/chars/ironman/spunch64.gif
+	frame	data/chars/ironman/spunch65.gif
+	frame	data/chars/ironman/spunch66.gif
+	frame	data/chars/ironman/spunch67.gif
+	frame	data/chars/ironman/spunch68.gif
+        attack         0 0 0 0 0 0
+

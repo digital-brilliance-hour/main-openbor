@@ -1,0 +1,236 @@
+
+name	  hele
+health 	 150
+speed	 14
+running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/han/icon.gif
+diesound	sound	Data/sounds/elep.wav
+animal	1
+modelflag 1
+atchain 1 1 2 3
+
+alternatepal	data/chars/han/elephant/testpal.gif
+#alternatepal	data/chars/han/elephant/testpal2.gif
+
+#done//
+
+anim get
+	loop	0
+	offset  162 263
+	delay	15
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/han/elephant/rise1.gif
+	frame	data/chars/han/elephant/rise2.gif
+	frame	data/chars/han/elephant/rise3.gif
+
+
+
+anim idle
+	loop	1
+	offset  162 263
+	bbox 	66 116 224 131
+	delay	15
+	frame	data/chars/han/elephant/idle1.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  104 261
+	bbox 	17 115 224 131
+	delay	7
+	frame	data/chars/han/elephant/walk1.gif
+	frame	data/chars/han/elephant/walk2.gif
+	frame	data/chars/han/elephant/walk3.gif
+	frame	data/chars/han/elephant/walk4.gif
+        frame	data/chars/han/elephant/walk5.gif
+        frame	data/chars/han/elephant/walk6.gif
+        frame	data/chars/han/elephant/walk7.gif
+
+
+anim run
+	loop	1
+	offset  152 258
+	bbox 	42 128 224 131
+	delay	7
+	frame	data/chars/han/elephant/run1.gif
+	frame	data/chars/han/elephant/run2.gif
+	frame	data/chars/han/elephant/run3.gif
+	frame	data/chars/han/elephant/run4.gif
+	frame	data/chars/han/elephant/run5.gif
+	frame	data/chars/han/elephant/run6.gif
+	frame	data/chars/han/elephant/run7.gif
+	frame	data/chars/han/elephant/run8.gif
+	frame	data/chars/han/elephant/run9.gif
+	frame	data/chars/han/elephant/run10.gif
+	frame	data/chars/han/elephant/run11.gif
+	frame	data/chars/han/elephant/run12.gif
+	frame	data/chars/han/elephant/run13.gif
+	frame	data/chars/han/elephant/run14.gif
+
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	5
+	move	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/han/elephant/3atk1.gif
+	frame	data/chars/han/elephant/3atk2.gif
+	frame	data/chars/han/elephant/3atk3.gif
+	frame	data/chars/han/elephant/3atk4.gif
+	frame	data/chars/han/elephant/3atk5.gif
+	frame	data/chars/han/elephant/3atk6.gif
+	frame	data/chars/han/elephant/3atk7.gif
+	frame	data/chars/han/elephant/3atk8.gif
+	frame	data/chars/han/elephant/3atk9.gif
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/han/elephant/3atk10.gif
+	frame	data/chars/han/elephant/3atk11.gif
+	frame	data/chars/han/elephant/3atk12.gif
+	frame	data/chars/han/elephant/3atk13.gif
+	frame	data/chars/han/elephant/3atk14.gif
+	frame	data/chars/han/elephant/3atk15.gif
+	move	0
+	frame	data/chars/han/elephant/3atk16.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/elephant/3atk17.gif
+	frame	data/chars/han/elephant/3atk18.gif
+	frame	data/chars/han/elephant/3atk19.gif
+	frame	data/chars/han/elephant/3atk20.gif
+	frame	data/chars/han/elephant/3atk21.gif
+	frame	data/chars/han/elephant/3atk22.gif
+	frame	data/chars/han/elephant/3atk23.gif
+	frame	data/chars/han/elephant/3atk24.gif
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	109 275
+	bbox	24 141 224 131
+#	sound	data/sounds/marvel/doomshot.wav
+	frame	data/chars/han/elephant/atk1.gif
+	frame	data/chars/han/elephant/atk2.gif
+	attack	160 145 157 130 25 1 0 0 28
+	frame	data/chars/han/elephant/atk3.gif
+	frame	data/chars/han/elephant/atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/elephant/atk5.gif
+	frame	data/chars/han/elephant/atk6.gif
+	frame	data/chars/han/elephant/atk7.gif
+
+
+anim attack2
+	range	5 50
+	loop	0
+	delay	5
+	offset	116 285
+	bbox	30 146 224 131
+#	sound	data/sounds/marvel/doomshot.wav
+	frame	data/chars/han/elephant/2atk1.gif
+	frame	data/chars/han/elephant/2atk2.gif
+	attack	204 97 181 190 25 1 0 0 28
+	frame	data/chars/han/elephant/2atk3.gif
+	frame	data/chars/han/elephant/2atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/elephant/2atk5.gif
+	frame	data/chars/han/elephant/2atk6.gif
+
+anim attack3
+	range	5 50
+	loop	0
+	delay	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/han/elephant/3atk1.gif
+	frame	data/chars/han/elephant/3atk2.gif
+	frame	data/chars/han/elephant/3atk3.gif
+	frame	data/chars/han/elephant/3atk4.gif
+	frame	data/chars/han/elephant/3atk5.gif
+	frame	data/chars/han/elephant/3atk6.gif
+	frame	data/chars/han/elephant/3atk7.gif
+	frame	data/chars/han/elephant/3atk8.gif
+	frame	data/chars/han/elephant/3atk9.gif
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/han/elephant/3atk10.gif
+	frame	data/chars/han/elephant/3atk11.gif
+	frame	data/chars/han/elephant/3atk12.gif
+	frame	data/chars/han/elephant/3atk13.gif
+	frame	data/chars/han/elephant/3atk14.gif
+	frame	data/chars/han/elephant/3atk15.gif
+	frame	data/chars/han/elephant/3atk16.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/elephant/3atk17.gif
+	frame	data/chars/han/elephant/3atk18.gif
+	frame	data/chars/han/elephant/3atk19.gif
+	frame	data/chars/han/elephant/3atk20.gif
+	frame	data/chars/han/elephant/3atk21.gif
+	frame	data/chars/han/elephant/3atk22.gif
+	frame	data/chars/han/elephant/3atk23.gif
+	frame	data/chars/han/elephant/3atk24.gif
+
+
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset	149 309
+	bbox	53 158 224 131
+     	sound	Data/sounds/elep.wav
+	frame	data/chars/han/elephant/3atk1.gif
+	frame	data/chars/han/elephant/3atk2.gif
+	frame	data/chars/han/elephant/3atk3.gif
+	frame	data/chars/han/elephant/3atk4.gif
+	frame	data/chars/han/elephant/3atk5.gif
+	frame	data/chars/han/elephant/3atk6.gif
+	frame	data/chars/han/elephant/3atk7.gif
+	frame	data/chars/han/elephant/3atk8.gif
+	frame	data/chars/han/elephant/3atk9.gif
+	attack	117 151 270 160 30 1 0 0 35
+	frame	data/chars/han/elephant/3atk10.gif
+	frame	data/chars/han/elephant/3atk11.gif
+	frame	data/chars/han/elephant/3atk12.gif
+	frame	data/chars/han/elephant/3atk13.gif
+	frame	data/chars/han/elephant/3atk14.gif
+	frame	data/chars/han/elephant/3atk15.gif
+	frame	data/chars/han/elephant/3atk16.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/elephant/3atk17.gif
+	frame	data/chars/han/elephant/3atk18.gif
+	frame	data/chars/han/elephant/3atk19.gif
+	frame	data/chars/han/elephant/3atk20.gif
+	frame	data/chars/han/elephant/3atk21.gif
+	frame	data/chars/han/elephant/3atk22.gif
+	frame	data/chars/han/elephant/3atk23.gif
+	frame	data/chars/han/elephant/3atk24.gif
+
+
+anim fall
+	loop	0
+	offset  156 261
+	delay	20
+	frame	data/chars/han/elephant/pain1.gif
+
+anim pain
+	loop	0
+	offset  156 261
+	bbox	68 116 220 131
+	delay	15
+	frame	data/chars/han/elephant/pain1.gif
+
+
