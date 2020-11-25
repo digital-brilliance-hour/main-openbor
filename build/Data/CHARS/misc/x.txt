@@ -1,0 +1,33 @@
+name	X
+health	1
+type	pshot
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/valgar/pal.gif
+
+anim idle
+	loop	0
+	delay	10
+	offset	0 70
+	attack	58 7 92 123 30 1
+	frame	data/chars/valgar/x1.gif
+	offset	31 61
+	frame	data/chars/valgar/x2.gif
+	offset	46 58
+	frame	data/chars/valgar/x3.gif
+	offset	64 58
+	frame	data/chars/valgar/x4.gif
+	offset	63 60
+	frame	data/chars/valgar/x5.gif
+	offset	42 59
+	frame	data/chars/valgar/x6.gif
+	
+	
+
+#anim attack1
+#	loop	0
+#	delay	1000
+#	offset	12 5
+#	attack	0 0 27 9
+#	frame	data/chars/misc/knife.gif

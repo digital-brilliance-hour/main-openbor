@@ -1,0 +1,128 @@
+
+name	  hbear
+health 	 150
+speed	 12
+running	23	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/han/icon.gif
+diesound       	sound	Data/sounds/bear.wav
+animal	1
+modelflag 1
+
+alternatepal	data/chars/han/bear/testpal.gif
+#alternatepal	data/chars/han/bear/testpal2.gif
+
+load	gashot
+knife	gashot
+
+#done//
+anim get
+	loop	0
+	offset  83 164
+	delay	20
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/han/bear/fall3.gif
+	frame	data/chars/han/bear/fall2.gif
+
+anim idle
+	loop	1
+	offset        78 164
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/han/bear/idle1.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  90 164
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/han/bear/walk1.gif
+	frame	data/chars/han/bear/walk2.gif
+	frame	data/chars/han/bear/walk3.gif
+	frame	data/chars/han/bear/walk4.gif
+        frame	data/chars/han/bear/walk5.gif
+        frame	data/chars/han/bear/walk6.gif
+        frame	data/chars/han/bear/walk7.gif
+	frame	data/chars/han/bear/walk8.gif
+
+anim run
+	loop	1
+	offset  113 174
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/han/bear/run1.gif
+	frame	data/chars/han/bear/run2.gif
+	frame	data/chars/han/bear/run3.gif
+	frame	data/chars/han/bear/run4.gif
+	frame	data/chars/han/bear/run5.gif
+	frame	data/chars/han/bear/run6.gif
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	9
+	move	15
+	offset	80 186
+              bbox       37 35 35 88
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/han/bear/atk7.gif
+        attack  124 124 130 66 25 1 0 0 22
+	frame	data/chars/han/bear/atk8.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/han/bear/atk9.gif
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	80 186
+	bbox	34 18 37 94
+   	sound	Data/sounds/bear.wav
+	frame	data/chars/han/bear/atk1.gif
+	frame	data/chars/han/bear/atk2.gif
+	frame	data/chars/han/bear/atk3.gif
+        attack  124 124 130 66 20 0 0 0 22
+	frame	data/chars/han/bear/atk4.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/han/bear/atk5.gif
+	frame	data/chars/han/bear/atk6.gif
+	frame	data/chars/han/bear/atk7.gif
+        attack  124 124 130 66 25 1 0 0 22
+	frame	data/chars/han/bear/atk8.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/han/bear/atk9.gif
+
+anim special
+	loop	0
+	delay	10
+	throwframe	4
+	offset	83 164
+	frame	data/chars/han/bear/spec1.gif
+	frame	data/chars/han/bear/spec2.gif
+	frame	data/chars/han/bear/spec3.gif
+	frame	data/chars/han/bear/spec4.gif
+	frame	data/chars/han/bear/spec5.gif
+
+anim fall
+	loop	0
+	offset  83 164
+	delay	20
+	frame	data/chars/han/bear/fall2.gif
+	frame	data/chars/han/bear/fall3.gif
+
+anim pain
+	loop	0
+	offset  90 134
+	delay	24
+	frame	data/chars/han/bear/pain1.gif
+
+

@@ -1,0 +1,159 @@
+name	wolf
+health	1
+type	pshot
+speed	20
+jumpheight	3
+shadow	0
+#icon	data/chars/misc/meaticon.gif
+
+palette	data/chars/draven/spells/idle1.gif
+
+anim idle
+	loop	0
+	offset      84 65
+	bbox 	23 11 141 191
+	delay	18
+	frame	data/chars/draven/spells/idle1.gif
+	offset  105 66
+	frame	data/chars/draven/spells/idle2.gif
+	offset  114 69
+	frame	data/chars/draven/spells/idle3.gif
+	offset   109 77
+	frame	data/chars/draven/spells/idle4.gif
+	offset   96 97
+	frame	data/chars/draven/spells/idle5.gif
+	offset  85 108
+	frame	data/chars/draven/spells/idle6.gif
+	offset  52 93
+	frame	data/chars/draven/spells/idle7.gif
+	
+	
+
+anim attack1
+	loop	0
+	delay	14
+	offset	61 69
+	attack	0 0 227 209 30 1 0 0 25
+	frame	data/chars/draven/spells/2atk1.gif
+	offset	62 77
+	frame	data/chars/draven/spells/2atk2.gif
+	offset	63 78
+	frame	data/chars/draven/spells/2atk3.gif
+	offset	63 82
+	frame	data/chars/draven/spells/2atk4.gif
+	offset	75 88
+	frame	data/chars/draven/spells/2atk5.gif
+	offset	76 92
+	frame	data/chars/draven/spells/2atk6.gif
+	offset	76 97
+	frame	data/chars/draven/spells/2atk7.gif
+	offset	78 129
+	frame	data/chars/draven/spells/2atk8.gif
+	offset	85 142
+	frame	data/chars/draven/spells/2atk9.gif
+	offset	86 153
+	frame	data/chars/draven/spells/2atk10.gif
+	offset	83 162
+	frame	data/chars/draven/spells/2atk11.gif
+	offset	78 171
+	frame	data/chars/draven/spells/2atk12.gif
+	offset	73 178
+	frame	data/chars/draven/spells/2atk13.gif
+	offset	70 186
+	frame	data/chars/draven/spells/2atk14.gif
+	offset	74 188
+	frame	data/chars/draven/spells/2atk15.gif
+	offset	77 193
+	frame	data/chars/draven/spells/2atk16.gif
+	offset	80 199
+	frame	data/chars/draven/spells/2atk17.gif
+	offset	82 200
+	frame	data/chars/draven/spells/2atk18.gif
+	offset	83 202
+	frame	data/chars/draven/spells/2atk19.gif
+	offset	83 191
+	frame	data/chars/draven/spells/2atk20.gif
+	offset	83 194
+	frame	data/chars/draven/spells/2atk21.gif
+	offset	85 196
+	frame	data/chars/draven/spells/2atk22.gif
+	offset	86 198
+	frame	data/chars/draven/spells/2atk23.gif
+	offset	87 196
+	frame	data/chars/draven/spells/2atk24.gif
+	offset	85 202
+	frame	data/chars/draven/spells/2atk25.gif
+	offset	85 206
+	frame	data/chars/draven/spells/2atk26.gif
+	offset	84 207
+	frame	data/chars/draven/spells/2atk27.gif
+	offset	82 199
+	frame	data/chars/draven/spells/2atk28.gif
+	offset	83 199
+	frame	data/chars/draven/spells/2atk29.gif
+	attack	0 0 0 0 0 0
+	delay	12
+	offset	62 87
+	attack	0 0 227 209 30 1 0 0 25
+	frame	data/chars/draven/spells/atk1.gif
+	offset	68 151
+	frame	data/chars/draven/spells/atk2.gif
+	offset	67 185
+	frame	data/chars/draven/spells/atk3.gif
+	offset	68 201
+	frame	data/chars/draven/spells/atk4.gif
+	offset	67 223
+	frame	data/chars/draven/spells/atk5.gif
+	offset	67 227
+	frame	data/chars/draven/spells/atk6.gif
+	offset	64 210
+	frame	data/chars/draven/spells/atk7.gif
+	offset	63 190
+	frame	data/chars/draven/spells/atk8.gif
+	offset	64 202
+	frame	data/chars/draven/spells/atk9.gif
+	offset	63 198
+	frame	data/chars/draven/spells/atk10.gif
+	offset	51 148
+	frame	data/chars/draven/spells/atk11.gif
+	offset	51 107
+	frame	data/chars/draven/spells/atk12.gif
+	offset	47 71
+	frame	data/chars/draven/spells/atk13.gif
+	offset	11 75
+	frame	data/chars/draven/spells/atk14.gif
+	attack	0 0 0 0 0 0
+
+anim attack2
+	loop	0
+	delay	12
+	offset	62 87
+	attack	0 0 227 209 30 1 0 0 25
+	frame	data/chars/draven/spells/atk1.gif
+	offset	68 151
+	frame	data/chars/draven/spells/atk2.gif
+	offset	67 185
+	frame	data/chars/draven/spells/atk3.gif
+	offset	68 201
+	frame	data/chars/draven/spells/atk4.gif
+	offset	67 223
+	frame	data/chars/draven/spells/atk5.gif
+	offset	67 227
+	frame	data/chars/draven/spells/atk6.gif
+	offset	64 210
+	frame	data/chars/draven/spells/atk7.gif
+	offset	63 190
+	frame	data/chars/draven/spells/atk8.gif
+	offset	64 202
+	frame	data/chars/draven/spells/atk9.gif
+	offset	63 198
+	frame	data/chars/draven/spells/atk10.gif
+	offset	51 148
+	frame	data/chars/draven/spells/atk11.gif
+	offset	51 107
+	frame	data/chars/draven/spells/atk12.gif
+	offset	47 71
+	frame	data/chars/draven/spells/atk13.gif
+	offset	11 75
+	frame	data/chars/draven/spells/atk14.gif
+	attack	0 0 0 0 0 0

@@ -1,0 +1,109 @@
+name	knsw2
+type	enemy
+health 1000
+nomove 1 0
+animationscript data/scripts/shoot.c
+gfxshadow 1
+load expl1
+nopain 1
+cantgrab 1
+nodrop 1
+noatflash 1
+flash flashd
+nolife 1
+antigravity 20
+palette data/chars/knight/a1 
+anim spawn
+	delay	10
+	offset  49 118
+	bbox    0 0 0 0
+	jumpframe 9 5 0 0
+	dropframe 10
+	landframe 22
+	@cmd shoot "expl1" 0 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" -50 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" 50 160 1
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" 0 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" -50 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" 50 160 1
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" 0 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" -50 160 0
+	frame	data/chars/misc/empty
+	@cmd shoot "expl1" 50 160 1
+	frame	data/chars/misc/empty
+	delay 1000
+	frame	data/chars/misc/empty
+	delay 10
+	frame	data/chars/knight/a1 
+	frame	data/chars/knight/a2 
+	frame	data/chars/knight/a3 
+	frame	data/chars/knight/a4 
+	frame	data/chars/knight/a5 
+	frame	data/chars/knight/a6 
+	frame	data/chars/knight/a7 
+	frame	data/chars/knight/a8 
+	frame	data/chars/knight/a1
+	frame	data/chars/knight/a2 
+	frame	data/chars/knight/a3
+	delay   1000 
+	bbox    41 0 16 98
+	frame	data/chars/knight/a4   
+	delay   1
+	frame	data/chars/knight/a4  
+	delay	15
+	offset	49 118
+	bbox 0 0 0 0
+	frame	data/chars/knight/a4 
+	offset	49 123
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	offset	49 113
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	offset	49 123
+	frame	data/chars/knight/a4 
+	offset	49 118
+	frame	data/chars/knight/a4 
+	delay 10
+	movea 10
+	frame	data/chars/knight/a5 
+	frame	data/chars/knight/a6 
+	frame	data/chars/knight/a7 
+	frame	data/chars/knight/a8 
+	frame	data/chars/knight/a1
+	frame	data/chars/knight/a2 
+	frame	data/chars/knight/a3 
+	frame	data/chars/knight/a4 
+	frame	data/chars/knight/a5 
+	frame	data/chars/knight/a6 
+	frame	data/chars/knight/a7 
+	frame	data/chars/knight/a8 
+	frame	data/chars/knight/a1
+	frame	data/chars/knight/a2 
+	frame	data/chars/knight/a3 
+	frame	data/chars/knight/a4
+	frame	data/chars/knight/a5 
+	frame	data/chars/knight/a6 
+	frame	data/chars/knight/a7 
+	frame	data/chars/knight/a8 
+	frame	data/chars/knight/a1
+	frame	data/chars/knight/a2 
+	frame	data/chars/knight/a3  
+	@script
+	if(frame == 47){
+	void self = getlocalvar("self");
+	killentity(self);
+	}
+	@end_script
+	frame	data/chars/misc/empty
+	frame	data/chars/misc/empty
+

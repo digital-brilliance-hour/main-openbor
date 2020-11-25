@@ -1,0 +1,144 @@
+
+name	  hjag
+health 	 150
+speed	 14
+running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/han/icon.gif
+diesound         	sound	Data/sounds/jag.wav
+animal	1
+modelflag 1
+
+
+alternatepal	data/chars/han/jaguar/testpal.gif
+#alternatepal	data/chars/han/jaguar/testpal2.gif
+
+load	gashot
+knife	gashot
+
+#done//
+
+anim get
+	loop	0
+	offset  125 251
+	delay	20
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/han/jaguar/rise1.gif
+
+
+anim idle
+	loop	1
+	offset  125 251
+	bbox 	99 156 70 77
+	delay	15
+	frame	data/chars/han/jaguar/idle1.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  126 255
+	bbox 	102 160 70 77
+	delay	7
+	frame	data/chars/han/jaguar/walk1.gif
+	frame	data/chars/han/jaguar/walk2.gif
+	frame	data/chars/han/jaguar/walk3.gif
+	frame	data/chars/han/jaguar/walk4.gif
+        frame	data/chars/han/jaguar/walk5.gif
+        frame	data/chars/han/jaguar/walk6.gif
+        frame	data/chars/han/jaguar/walk7.gif
+
+
+anim run
+	loop	1
+	offset  130 264
+	bbox 	105 171 70 77
+	delay	7
+	frame	data/chars/han/jaguar/run1.gif
+	frame	data/chars/han/jaguar/run2.gif
+	frame	data/chars/han/jaguar/run3.gif
+	frame	data/chars/han/jaguar/run4.gif
+	frame	data/chars/han/jaguar/run5.gif
+
+
+anim runattack
+	range	5 50
+	loop	0
+	delay	4
+	move	9
+	offset	118 327
+	bbox	93 242
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/han/jaguar/2atk1.gif
+	attack	83 198 180 126 25 1 0 0 28
+	frame	data/chars/han/jaguar/2atk2.gif
+	frame	data/chars/han/jaguar/2atk3.gif
+	frame	data/chars/han/jaguar/2atk4.gif
+	frame	data/chars/han/jaguar/2atk5.gif
+	frame	data/chars/han/jaguar/2atk6.gif
+	frame	data/chars/han/jaguar/2atk7.gif
+	frame	data/chars/han/jaguar/2atk8.gif
+	frame	data/chars/han/jaguar/2atk9.gif
+	frame	data/chars/han/jaguar/2atk10.gif
+	frame	data/chars/han/jaguar/2atk11.gif
+	frame	data/chars/han/jaguar/2atk12.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/jaguar/2atk13.gif
+	frame	data/chars/han/jaguar/2atk14.gif
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	7
+	offset	121 330
+	bbox	100 243 70 77
+     	sound	Data/sounds/jag.wav
+	frame	data/chars/han/jaguar/atk1.gif
+	frame	data/chars/han/jaguar/atk2.gif
+	frame	data/chars/han/jaguar/atk3.gif
+	attack	121 217 92 110 10 0 0 0 16
+	frame	data/chars/han/jaguar/atk4.gif
+	frame	data/chars/han/jaguar/atk5.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/jaguar/atk6.gif
+	attack	139 212 98 120 18 1 0 0 28
+	frame	data/chars/han/jaguar/atk7.gif
+	frame	data/chars/han/jaguar/atk8.gif
+	frame	data/chars/han/jaguar/atk9.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/jaguar/atk10.gif
+
+
+anim special
+	loop	0
+	delay	10
+	throwframe	4
+	offset	125 251
+	frame	data/chars/han/jaguar/spec1.gif
+	frame	data/chars/han/jaguar/spec2.gif
+	frame	data/chars/han/jaguar/spec3.gif
+	frame	data/chars/han/jaguar/spec4.gif
+	frame	data/chars/han/jaguar/spec5.gif
+
+
+anim fall
+	loop	0
+	offset  125 251
+	delay	20
+	frame	data/chars/han/jaguar/pain1.gif
+
+anim pain
+	loop	0
+	offset  125 251
+	delay	20
+	frame	data/chars/han/jaguar/pain1.gif
+
+

@@ -1,0 +1,137 @@
+
+name	  hhor
+health 	 150
+speed	 14
+#running	27	4	2	1	1
+type	  none
+shadow	  0
+gfxshadow 1
+typeshot  1
+icon	  data/chars/han/icon.gif
+diesound    data/chars/burnking/sounds/die.wav
+animal	1
+modelflag 1
+atchain 1 1 1 1
+weaploss	2
+facing 1
+nodrop	1
+falldie	2
+load	gashot
+knife	gashot
+
+alternatepal	data/chars/han/horse/testpal.gif
+#alternatepal	data/chars/han/horse/testpal2.gif
+#alternatepal	data/chars/han/horse/testpal3.gif
+
+#done//
+
+anim get
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/walk1.gif
+	frame	data/chars/han/horse/walk2.gif
+	frame	data/chars/han/horse/walk3.gif
+	frame	data/chars/han/horse/walk4.gif
+        frame	data/chars/han/horse/walk5.gif
+        frame	data/chars/han/horse/walk6.gif
+
+
+
+anim idle
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/walk1.gif
+	frame	data/chars/han/horse/walk2.gif
+	frame	data/chars/han/horse/walk3.gif
+	frame	data/chars/han/horse/walk4.gif
+        frame	data/chars/han/horse/walk5.gif
+        frame	data/chars/han/horse/walk6.gif
+
+	
+
+#done//
+anim walk
+	loop	1
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/walk1.gif
+	frame	data/chars/han/horse/walk2.gif
+	frame	data/chars/han/horse/walk3.gif
+	frame	data/chars/han/horse/walk4.gif
+        frame	data/chars/han/horse/walk5.gif
+        frame	data/chars/han/horse/walk6.gif
+
+	
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	5
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/atk1.gif
+	frame	data/chars/han/horse/atk2.gif
+	frame	data/chars/han/horse/atk3.gif
+	frame	data/chars/han/horse/atk4.gif
+	frame	data/chars/han/horse/atk5.gif
+	frame	data/chars/han/horse/atk6.gif
+
+
+anim special
+	range	5 50
+	loop	0
+	delay	5
+	offset  186 207
+	throwframe	5
+	bbox 	147 100 100 100
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/atk1.gif
+	frame	data/chars/han/horse/atk2.gif
+	frame	data/chars/han/horse/atk3.gif
+	frame	data/chars/han/horse/atk4.gif
+	frame	data/chars/han/horse/atk5.gif
+	frame	data/chars/han/horse/atk6.gif
+
+
+anim fall
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+	frame	data/chars/han/horse/pain1.gif
+
+anim death
+	loop	0
+	delay	7
+	offset  49 27
+	frame	data/chars/han/horse/die1.gif
+
+anim pain
+	loop	0
+	offset  186 207
+	bbox 	147 100 100 100
+	delay	7
+     	sound	Data/sounds/gallop.wav
+	frame	data/chars/han/horse/pain1.gif
+	frame	data/chars/han/horse/pain2.gif
+	frame	data/chars/han/horse/pain3.gif
+	frame	data/chars/han/horse/pain4.gif
+	frame	data/chars/han/horse/pain5.gif
+	frame	data/chars/han/horse/pain6.gif
+
+
+
+
+

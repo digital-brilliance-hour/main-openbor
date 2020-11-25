@@ -1,0 +1,602 @@
+
+name	  han
+health 	 150
+speed	 12
+running	22	4	2	1	1
+type	  player
+shadow	  0
+gfxshadow 1
+icon	  data/chars/han/icon.gif
+diesound  Data/sounds/die1.wav
+palette	data/chars/han/pal.gif
+weapons	hbear hbull hjag hele hhor han
+COM A2 freespecial4
+alternatepal	data/chars/han/testpal.gif
+
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        30 90
+	bbox 	16 23 48 64
+	delay	18
+	frame	data/chars/han/idle1.gif
+	offset        30 91
+	frame	data/chars/han/idle2.gif
+	offset        30 94
+	frame	data/chars/han/idle3.gif
+	offset        30 96
+	frame	data/chars/han/idle4.gif
+	offset        30 94
+	frame	data/chars/han/idle3.gif
+	offset        30 91
+	frame	data/chars/han/idle2.gif
+	
+	
+
+#done//
+anim walk
+	loop	1
+	offset  24 93
+	bbox 	13 17 48 64
+	delay	9
+	frame	data/chars/han/walk1.gif
+	offset  28 94
+	frame	data/chars/han/walk2.gif
+	offset  23 94
+	frame	data/chars/han/walk3.gif
+	offset  25 92
+	frame	data/chars/han/walk4.gif
+	offset  26 93
+	frame	data/chars/han/walk5.gif
+	offset  26 94
+	frame	data/chars/han/walk6.gif
+
+
+anim run
+	loop	1
+	delay	12
+	offset	48 93
+	bbox	30 26 48 64
+#	sound	data/sounds/Run2.wav
+	frame	data/chars/han/run1.gif
+	offset	25 88
+	frame	data/chars/han/run2.gif
+	offset	26 88
+	frame	data/chars/han/run3.gif
+	offset	37 89
+	frame	data/chars/han/run4.gif
+	offset	15 88
+	frame	data/chars/han/run5.gif
+	offset	23 82
+	frame	data/chars/han/run6.gif
+
+
+anim runattack
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	63 106
+              bbox       37 35 35 88
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+
+#done
+anim get
+	loop	0
+	delay	10
+	offset	31 70
+	frame	data/chars/han/rise4.gif
+	offset	32 61
+	frame	data/chars/han/rise3.gif
+	offset	31 70
+	frame	data/chars/han/rise4.gif
+
+
+#done//
+#Punch
+anim attack1
+	cancel 4 5 0 a2 freespecial5
+	range	5 50
+	loop	0
+	delay	5
+	offset	30 83
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/han/atk1.gif
+	offset	36 75
+	frame	data/chars/han/atk2.gif
+	offset	30 113
+	frame	data/chars/han/atk3.gif
+	offset	30 120
+                  attack	70 7 70 58 10 0 0 0 10
+	frame	data/chars/han/atk4.gif
+	offset	29 116
+	frame	data/chars/han/atk5.gif
+        attack         0 0 0 0 0
+
+
+
+#done//
+#Kick
+anim attack2
+	cancel 4 5 0 a2 freespecial6
+	range	5 40
+	loop	0
+	delay	7
+	offset	85 97
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/han/2atk1.gif
+	offset	62 111
+	frame	data/chars/han/2atk2.gif
+	offset	30 106
+	frame	data/chars/han/2atk3.gif
+	offset	30 63
+                  attack	71 3 64 67 15 0 0 0 10
+	frame	data/chars/han/2atk4.gif
+	offset	54 77
+                  bbox          57 10 37 95
+	    frame	data/chars/han/2atk5.gif
+                  attack	0 0 0 0 0
+ 
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	cancel 4 5 0 a2 freespecial2
+	range	5 90
+	loop	0
+	delay	8
+	offset	63 106
+              bbox       37 35 35 88
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	10
+	offset	24 104
+	sound	data/chars/han/dora.wav
+	frame	data/chars/han/spec1.gif
+	offset	15 131
+	attack	0 0 95 120 10
+	frame	data/chars/han/spec2.gif
+	offset	0 132
+	attack	0 0 0 0 0 0
+	attack	0 0 95 120 10
+	frame	data/chars/han/spec3.gif
+	offset	0 128
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/spec4.gif
+	offset	0 132
+	attack	0 0 95 120 10
+	frame	data/chars/han/spec5.gif
+	offset	15 131
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/spec2.gif
+	offset	0 132
+	attack	0 0 95 120 20 1
+	frame	data/chars/han/spec3.gif
+	offset	0 128
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/spec4.gif
+	attack	0 0 95 120 20 1
+	offset	0 132
+	frame	data/chars/han/spec5.gif
+	attack	0 0 0 0 0 0
+	attack	0 0 95 120 20 1
+	offset	15 131
+	frame	data/chars/han/spec2.gif
+	offset	0 132
+	frame	data/chars/han/spec3.gif
+	offset	0 128
+	frame	data/chars/han/spec4.gif
+	offset	0 132
+	frame	data/chars/han/spec5.gif
+	attack	0 0 0 0 0 0
+	delay	8
+	offset	63 106
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+     	sound	Data/sounds/swing.wav
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	dropv	2 4 0
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+ 
+
+#done
+anim freespecial
+	range	5 90
+	loop	0
+	delay	8
+	move	10
+	offset	63 106
+              bbox       37 35 35 88
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+
+anim freespecial2
+	loop	0
+	delay	8
+	offset	33 90
+	bbox	57 50 53 104
+	sound	data/chars/han/saya.wav
+	frame	data/chars/han/gatk1.gif
+	offset	33 96
+	frame	data/chars/han/gatk2.gif
+	offset	33 102
+	frame	data/chars/han/gatk3.gif
+	sound	data/sounds/marvel/gfire.wav
+	attack	126 6 115 225 15
+	offset	33 180
+	frame	data/chars/han/2spec1.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/2spec2.gif
+	attack	126 6 115 225 15
+	frame	data/chars/han/2spec3.gif
+	attack	0 0 0 0 0 0
+	attack	91 6 370 75 15
+	frame	data/chars/han/2spec4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/2spec5.gif
+	attack	126 6 115 225 25 1
+	frame	data/chars/han/2spec6.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/2spec7.gif
+	attack	126 6 115 225 25 1
+	frame	data/chars/han/2spec8.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/2spec9.gif
+	attack	126 6 115 225 25 1
+	offset	33 102
+	frame	data/chars/han/gatk3.gif
+	attack	0 0 0 0 0 0
+	offset	33 96
+	frame	data/chars/han/gatk2.gif
+	offset	33 90
+	frame	data/chars/han/gatk1.gif
+	
+
+anim freespecial3
+	range	5 90
+	loop	0
+	delay	7
+	offset	34 291
+              bbox       37 35 35 88
+	sound	data/chars/han/naaa.wav
+	frame	data/chars/han/hspec1.gif
+	frame	data/chars/han/hspec2.gif
+	frame	data/chars/han/hspec3.gif
+	frame	data/chars/han/hspec4.gif
+	frame	data/chars/han/hspec5.gif
+	frame	data/chars/han/hspec6.gif
+	attack	111 133 115 166 15 0 0 0 16
+	move	15
+	sound	data/sounds/marvel/gfire.wav
+	frame	data/chars/han/hspec7.gif
+        attack	0 0 0 0 0
+	frame	data/chars/han/hspec8.gif
+	attack	111 133 115 166 15 0 0 0 16
+	frame	data/chars/han/hspec9.gif
+        attack	0 0 0 0 0
+	frame	data/chars/han/hspec10.gif
+	attack	111 133 115 166 20 1 0 0 16
+	frame	data/chars/han/hspec11.gif
+        attack	0 0 0 0 0
+	attack	111 133 115 166 20 1 0 0 16
+	frame	data/chars/han/hspec12.gif
+        attack	0 0 0 0 0
+	attack	111 133 115 166 20 1 0 0 16
+	frame	data/chars/han/hspec13.gif
+	frame	data/chars/han/hspec14.gif
+        attack	0 0 0 0 0
+	frame	data/chars/han/hspec15.gif
+	attack	111 133 115 166 20 1 0 0 16
+	frame	data/chars/han/hspec16.gif
+	frame	data/chars/han/hspec17.gif
+        attack	0 0 0 0 0
+	attack	111 133 115 166 20 1 0 0 16
+	frame	data/chars/han/hspec18.gif
+	frame	data/chars/han/hspec19.gif
+        attack	0 0 0 0 0
+
+anim freespecial4
+	range	5 90
+	loop	0
+	delay	8
+	offset	63 106
+              bbox       37 35 35 88
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+anim freespecial5
+	cancel 4 5 0 a2 freespecial4
+	range	5 90
+	loop	0
+	offset	80 133
+	frame	data/chars/han/4atk1.gif
+	frame	data/chars/han/4atk2.gif
+	attack	102 64 143 70 20 0 0 0 14
+	frame	data/chars/han/4atk3.gif
+	frame	data/chars/han/4atk4.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/han/4atk5.gif
+
+anim freespecial6
+	range	5 90
+	loop	0
+	offset	80 133
+	move	22
+	sound	data/chars/han/naaa.wav
+	frame	data/chars/han/5atk1.gif
+	frame	data/chars/han/5atk1.gif
+	attack	70 68 70 70 30 1 0 0 24
+	frame	data/chars/han/5atk2.gif
+	frame	data/chars/han/5atk2.gif
+	frame	data/chars/han/5atk2.gif
+	frame	data/chars/han/5atk1.gif
+	attack	0 0 0 0 0 0
+
+
+
+	
+
+#done
+anim jump
+	loop	0
+	offset	24 129
+	delay	15
+	bbox	47 37 33 79
+	sound	data/chars/han/sounds/jump.wav
+	frame	data/chars/han/jump1.gif
+	offset	18 117
+	frame	data/chars/han/jump2.gif
+	offset	39 122
+	frame	data/chars/han/jump3.gif
+	offset	18 117
+	frame	data/chars/han/jump2.gif
+	offset	24 129
+	frame	data/chars/han/jump1.gif
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	45 167
+	delay	6
+	bbox	47 19 34 64
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/han/jatk1.gif
+	attack	41 14 60 71 10 1 0 0 10
+	offset	60 170
+	frame	data/chars/han/jatk2.gif
+	offset	27 149
+	frame	data/chars/han/jatk3.gif
+	offset	34 137
+	frame	data/chars/han/jatk4.gif
+	attack	0 0 0 0 0 0
+
+
+#done
+anim grab
+	loop	0
+	offset	30 101
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/han/grab.gif
+
+
+#done//
+anim grabattack2
+	range	5 90
+	loop	0
+	delay	8
+	offset	63 106
+              bbox       37 35 35 88
+	sound	data/chars/han/oriat.wav
+	frame	data/chars/han/3atk1.gif
+	offset	0 121
+	frame	data/chars/han/3atk2.gif
+	offset	20 132
+	frame	data/chars/han/3atk3.gif
+              attack	51 2 146 122 25 1 0 0 20
+	offset	0 132
+	frame	data/chars/han/3atk4.gif
+	offset	0 40
+	frame	data/chars/han/3atk5.gif
+	offset	0 59
+	frame	data/chars/han/3atk6.gif
+	offset	0 102
+	frame	data/chars/han/3atk7.gif
+              attack	0 0 0 0 0
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	7
+	offset	33 90
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/han/gatk1.gif
+	offset	33 96
+	frame	data/chars/han/gatk2.gif
+        attack	71 3 64 67 15 0 0 0 14
+	offset	33 102
+	frame	data/chars/han/gatk3.gif
+	offset	33 101
+	frame	data/chars/han/gatk4.gif
+        attack	0 0 0 0 0
+ 
+
+
+
+
+
+
+#done final
+anim throw
+	loop	0
+	delay	7
+	offset	30 101
+	sound	data/chars/han/naaa.wav
+	frame	data/chars/han/throw1.gif
+	frame	data/chars/han/throw1.gif
+	offset	30 114
+	frame	data/chars/han/throw2.gif
+	attack	0 5 164 135 20 1
+	frame	data/chars/han/throw2.gif
+	offset	35 126
+        frame	data/chars/han/throw3.gif
+	frame	data/chars/han/throw3.gif
+	offset	30 114
+	frame	data/chars/han/throw4.gif
+	frame	data/chars/han/throw4.gif
+              attack	0 0 0 0 0
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  47 84
+	bbox 	25 15 48 64
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/han/pain1.gif
+	offset  64 89
+	frame	data/chars/han/pain2.gif
+	offset  47 84
+	frame	data/chars/han/pain1.gif
+
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  31 90
+	delay	20
+	frame	data/chars/han/fall1.gif
+	offset  28 105
+	frame	data/chars/han/fall2.gif
+	offset  36 72
+	frame	data/chars/han/fall3.gif
+	offset  49 27
+	frame	data/chars/han/fall4.gif
+
+
+
+
+#done//
+anim rise
+	loop	0
+	delay	8
+	offset	25 64
+	frame	data/chars/han/rise1.gif
+	offset	31 58
+	frame	data/chars/han/rise2.gif
+	offset	32 61
+	frame	data/chars/han/rise3.gif
+	offset	31 70
+	frame	data/chars/han/rise4.gif
+
+
+
+
+#done//
+anim land
+	loop	0
+	delay	10
+	offset	32 61
+	frame	data/chars/han/rise3.gif
+	offset	31 70
+	frame	data/chars/han/rise4.gif
+
+

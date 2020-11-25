@@ -1,0 +1,659 @@
+
+name	  ironman
+health 	 150
+speed	 10
+type	  player
+shadow	  4
+icon	  data/chars/ironman/icon.gif
+diesound    data/sounds/marvel/sysdown.wav
+weapons	seni ironman
+
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt1.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt2.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt3.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt4.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt5.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt6.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt7.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt8.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt9.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt10.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt11.gif
+remap	data/chars/ironman/walk8.gif	data/chars/ironman/alt12.gif
+
+
+
+#done//
+anim idle
+	loop	1
+	offset        50 99
+	bbox 	23 11 41 91
+	delay	15
+	frame	data/chars/ironman/idle1.gif
+	offset	50 97
+	frame	data/chars/ironman/idle2.gif
+	offset	50 96
+	frame	data/chars/ironman/idle3.gif
+	offset	50 94
+	frame	data/chars/ironman/idle4.gif
+	offset	51 94
+	frame	data/chars/ironman/idle5.gif
+	offset	50 94
+	frame	data/chars/ironman/idle6.gif
+	offset	50 96
+	frame	data/chars/ironman/idle7.gif
+	offset	50 97
+	frame	data/chars/ironman/idle8.gif
+	offset	50 99
+	frame	data/chars/ironman/idle9.gif
+	offset	50 99
+	frame	data/chars/ironman/idle10.gif
+	
+
+#done//
+anim walk
+	loop	1
+	offset  41 115
+	bbox 	25 8 38 97
+	delay	7
+	frame	data/chars/ironman/walk1.gif
+	offset	44 113
+	frame	data/chars/ironman/walk2.gif
+	offset	42 112
+	frame	data/chars/ironman/walk3.gif
+	offset	26 112
+	frame	data/chars/ironman/walk4.gif
+	offset	24 112
+                  frame	data/chars/ironman/walk5.gif
+	offset	30 111
+                  frame	data/chars/ironman/walk6.gif
+	offset	34 112
+                  frame	data/chars/ironman/walk7.gif
+	offset	36 113
+	frame	data/chars/ironman/walk8.gif
+	offset	36 114
+	frame	data/chars/ironman/walk9.gif
+	offset	26 115
+	frame	data/chars/ironman/walk10.gif
+	offset	19 116
+	frame	data/chars/ironman/walk11.gif
+	offset	39 115
+	frame	data/chars/ironman/walk12.gif
+
+#done
+anim get
+	loop	0
+	delay	10
+	offset	53 77
+	frame	data/chars/ironman/get.gif
+	frame	data/chars/ironman/get.gif
+	offset	55 73
+	frame	data/chars/ironman/get2.gif
+                  frame	data/chars/ironman/get2.gif
+	offset	53 77
+                  frame	data/chars/ironman/get.gif
+
+#done//
+#Punch
+anim attack1
+	range	5 50
+	loop	0
+	delay	5
+	offset	52 98
+	bbox	34 18 37 94
+	sound	data/chars/ghost/sounds/punch5.wav
+	frame	data/chars/ironman/punch1.gif
+	offset	48 100
+	frame	data/chars/ironman/punch2.gif
+	offset	46 100
+                  attack	70 7 70 58 10 0
+	frame	data/chars/ironman/punch3.gif
+	offset	50 98
+                  frame	data/chars/ironman/punch4.gif
+        attack         0 0 0 0 0
+
+
+#done//
+#Kick
+anim attack2
+	range	5 40
+	loop	0
+	delay	4
+	offset	46 94
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/ironman/2punch1.gif
+	offset	47 97
+	frame	data/chars/ironman/2punch2.gif
+                  delay         3
+                  offset         47 101
+                  bbox          57 10 37 95
+	    frame	data/chars/ironman/2punch3.gif
+	offset 47 101
+                  attack	71 3 64 67 15 0
+                  frame	data/chars/ironman/2punch4.gif
+	offset 48 102
+	    frame	data/chars/ironman/2punch5.gif
+	offset 47 101
+	    frame	data/chars/ironman/2punch6.gif
+	offset	46 101
+            frame	data/chars/ironman/2punch7.gif
+	offset 47 101
+            frame	data/chars/ironman/2punch8.gif
+	offset 46 101
+            frame	data/chars/ironman/2punch9.gif
+	offset 47 101
+                  bbox          48 12 40 92
+                  attack	0 0 0 0 0
+            frame	data/chars/ironman/2punch10.gif
+	offset 48 97
+            frame	data/chars/ironman/2punch11.gif
+ 
+   
+
+
+#Done???
+#Big Kick
+anim attack3
+	range	5 90
+	loop	0
+	delay	4
+	offset	59 107
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/ironman/3punch1.gif
+	offset	59 110
+	frame	data/chars/ironman/3punch2.gif
+	offset	54 108
+	frame	data/chars/ironman/3punch3.gif
+	offset	54 88
+	frame	data/chars/ironman/3punch4.gif
+	offset	50 88
+	frame	data/chars/ironman/3punch5.gif
+	offset	50 106
+	              bbox       53 23 45 100
+	frame	data/chars/ironman/3punch6.gif
+	offset	50 106
+	frame	data/chars/ironman/3punch7.gif
+	offset	50 114
+              attack	51 2 146 122 20 1
+	frame	data/chars/ironman/3punch8.gif
+	offset	51 126
+	frame	data/chars/ironman/3punch9.gif
+	offset	50 127
+	frame	data/chars/ironman/3punch10.gif
+	offset	50 128
+	frame	data/chars/ironman/3punch11.gif
+	offset	50 129
+	frame	data/chars/ironman/3punch12.gif
+	offset	50 129
+	frame	data/chars/ironman/3punch13.gif
+	offset	50 93
+	frame	data/chars/ironman/3punch14.gif
+	offset	50 100
+	frame	data/chars/ironman/3punch15.gif
+	offset	50 106
+	frame	data/chars/ironman/3punch16.gif
+	offset	50 105
+	frame	data/chars/ironman/3punch17.gif
+	offset	50 106
+	frame	data/chars/ironman/3punch18.gif
+	offset	50 88
+	frame	data/chars/ironman/3punch19.gif
+	offset	49 91
+	frame	data/chars/ironman/3punch20.gif
+              attack	0 0 0 0 0
+
+
+	
+
+
+#done//
+anim special
+	loop	0
+	delay	4
+	offset	62 168
+	sound	data/sounds/marvel/protonc.wav
+	frame	data/chars/ironman/spec1.gif
+	offset	62 166
+	frame	data/chars/ironman/spec2.gif
+	offset	62 163
+	frame	data/chars/ironman/spec3.gif
+	offset	62 157
+	frame	data/chars/ironman/spec4.gif
+	offset	64 154
+	frame	data/chars/ironman/spec5.gif
+	offset	64 144
+	frame	data/chars/ironman/spec6.gif
+	offset	64 136
+	frame	data/chars/ironman/spec7.gif
+	offset	64 128
+	attack	0 2 178 156 30 1
+	frame	data/chars/ironman/spec8.gif
+	offset	62 122
+	attack	0 2 178 156 30 1
+	frame	data/chars/ironman/spec9.gif
+	offset	64 122
+	delay	15
+	attack	0 0 0 0 0 
+	attack	0 2 178 156 30 1
+	frame	data/chars/ironman/spec10.gif
+	offset	63 159
+	frame	data/chars/ironman/spec11.gif
+	offset	62 159
+	attack	0 0 0 0 0 
+	attack	0 0 711 161 30
+	frame	data/chars/ironman/spec12.gif
+	attack	0 0 711 161 30
+	offset	62 159
+	frame	data/chars/ironman/spec13.gif
+	attack	0 0 711 161 15
+	offset	64 159
+	attack	0 0 0 0 0 
+	attack	0 0 711 161 15
+	frame	data/chars/ironman/spec14.gif
+	attack	0 0 711 161 15
+	offset	62 122
+	frame	data/chars/ironman/spec15.gif
+	offset	64 122
+	attack	0 0 0 0 0 
+	attack	0 0 711 161 30 1
+	frame	data/chars/ironman/spec16.gif
+	offset	63 121
+	attack	0 0 0 0 0
+	attack	0 0 711 161 30 1
+	frame	data/chars/ironman/spec17.gif
+	delay	5
+	offset	62 121
+	frame	data/chars/ironman/spec18.gif
+	offset	62 122
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/spec19.gif
+	attack	0 0 711 161 30 1
+	offset	49 100
+	frame	data/chars/ironman/spec20.gif
+	attack	0 0 0 0 0 0
+	offset	64 126
+	frame	data/chars/ironman/spec21.gif
+	offset	64 126
+	frame	data/chars/ironman/spec22.gif
+	offset	64 127
+	frame	data/chars/ironman/spec23.gif
+	offset	65 128
+	frame	data/chars/ironman/spec24.gif
+	offset	65 131
+	frame	data/chars/ironman/spec25.gif
+	offset	61 134
+	frame	data/chars/ironman/spec26.gif
+
+
+ 
+
+#done
+anim freespecial
+		loop	0
+	offset	126 84
+	delay	5
+	sound	data/sounds/jump2.wav
+	move	20
+	attack	19 7 123 87 15 	
+	frame	data/chars/ironman/3spec1.gif
+	offset	159 84
+	frame	data/chars/ironman/3spec2.gif
+	offset	113 83
+	frame	data/chars/ironman/3spec3.gif
+	offset	162 83
+	frame	data/chars/ironman/3spec4.gif
+	frame	data/chars/ironman/3spec4.gif
+	offset	55 79
+	delay	10
+	frame	data/chars/ironman/3spec5.gif
+
+
+anim freespecial2
+	loop	0
+	delay	4
+	offset	41 82
+	bbox	57 50 53 104
+	sound	data/sounds/marvel/unibeam.wav
+	frame	data/chars/ironman/2spec1.gif
+	offset	66 94
+	frame	data/chars/ironman/2spec2.gif
+	offset	66 93
+	frame	data/chars/ironman/2spec3.gif
+	offset	66 93
+	attack	91 6 370 75 10
+	frame	data/chars/ironman/2spec4.gif
+	attack	0 0 0 0 0
+	offset	66 93
+	frame	data/chars/ironman/2spec5.gif
+	attack	91 6 370 75 10
+	offset	66 93
+	frame	data/chars/ironman/2spec6.gif
+	attack	0 0 0 0 0
+	delay	5
+	attack	91 6 370 75 10 1
+	frame	data/chars/ironman/2spec7.gif
+	frame	data/chars/ironman/2spec8.gif
+	attack	0 0 0 0 0
+	frame	data/chars/ironman/2spec9.gif
+	frame	data/chars/ironman/2spec10.gif
+	
+
+anim freespecial3
+	loop	0
+	delay	4
+	offset	22 118
+	bbox	57 50 53 104
+	sound	data/sounds/marvel/repulsor.wav
+	frame	data/chars/ironman/fspec1.gif
+	offset	87 136
+	frame	data/chars/ironman/fspec2.gif
+	offset	115 137
+	frame	data/chars/ironman/fspec3.gif
+	offset	115 139
+	frame	data/chars/ironman/fspec4.gif
+	offset	115 140
+	attack	0 5 165 135 10
+	frame	data/chars/ironman/fspec5.gif
+	offset	143 144
+	frame	data/chars/ironman/fspec6.gif
+	offset	143 144
+	attack	0 0 0 0 0
+	frame	data/chars/ironman/fspec7.gif
+	offset	177 111
+	frame	data/chars/ironman/fspec8.gif
+	offset	177 112
+	attack	120 5 235 125 10
+	frame	data/chars/ironman/fspec9.gif
+	offset	177 111
+	frame	data/chars/ironman/fspec10.gif
+	offset	177 119
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec11.gif
+	offset	177 120
+	attack	120 5 260 149 10
+	frame	data/chars/ironman/fspec12.gif
+	offset	177 120
+	frame	data/chars/ironman/fspec13.gif
+	offset	140 119
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec14.gif
+	offset	62 130
+	frame	data/chars/ironman/fspec15.gif
+	offset	62 131
+	frame	data/chars/ironman/fspec16.gif
+	offset	62 131
+	attack	0 0 320 135 15
+	frame	data/chars/ironman/fspec17.gif
+	offset	62 130
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec18.gif
+	offset	69 132
+	attack	0 0 320 135 15
+	frame	data/chars/ironman/fspec19.gif
+	offset	70 134
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec20.gif
+	offset	71 135
+	attack	0 0 320 135 15 1
+	frame	data/chars/ironman/fspec21.gif
+	offset	73 135
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec22.gif
+	offset	76 138
+	attack	0 0 320 135 20 1
+	frame	data/chars/ironman/fspec23.gif
+	offset	76 139
+	attack	0 0 0 0 0 
+	frame	data/chars/ironman/fspec24.gif
+	offset	76 139
+	attack	0 0 320 135 15 1
+	frame	data/chars/ironman/fspec25.gif
+	offset	76 139
+	frame	data/chars/ironman/fspec26.gif
+	attack	0 0 0 0 0 
+
+
+#done
+anim jump
+	loop	0
+	offset	30 141	
+	delay	10
+	bbox	47 37 33 79
+	sound	data/chars/ironman/sounds/jump.wav
+	frame	data/chars/ironman/jump1.gif
+	offset	30 142
+	bbox	37 20 43 82
+	frame	data/chars/ironman/jump2.gif
+	offset	23 138
+                  bbox	45 31 36 62
+	frame	data/chars/ironman/jump3.gif
+	offset	33 125
+	frame	data/chars/ironman/jump4.gif
+	offset	32 111
+	bbox	48 29 37 67
+	frame	data/chars/ironman/jump5.gif
+	offset	36 106
+	frame	data/chars/ironman/jump6.gif
+	offset	37 112
+	bbox	40 20 43 71
+                  delay        1000
+                  bbox         82 21 36 40
+	frame	data/chars/ironman/jump7.gif
+	offset	40 118
+	frame	data/chars/ironman/jump8.gif
+	offset	40 118
+	frame	data/chars/ironman/jump9.gif
+
+
+#done
+anim jumpattack
+	loop	0
+	offset	4 122
+	delay	6
+	bbox	47 19 34 64
+	sound	data/chars/burnking/sounds/throw.wav
+	frame	data/chars/ironman/jatk1.gif
+	offset	46 85
+	attack	41 14 60 71 7 1
+	frame	data/chars/ironman/jatk2.gif
+	offset	47 87
+	frame	data/chars/ironman/jatk3.gif
+	offset	46 85
+	frame	data/chars/ironman/jatk4.gif
+	offset	47 87
+	attack	70 2 175 112 8 1
+	bbox	12 3 27 54
+	frame	data/chars/ironman/jatk5.gif
+	offset	46 85
+	frame	data/chars/ironman/jatk6.gif
+	offset	47 87
+	frame	data/chars/ironman/jatk7.gif
+	offset	46 85
+	frame	data/chars/ironman/jatk8.gif
+	offset	46 90
+	delay	6
+	attack	0 0 0 0 0 0
+	frame	data/chars/ironman/jatk9.gif
+	offset	47 87
+	frame	data/chars/ironman/jatk10.gif
+	offset	46 85
+	frame	data/chars/ironman/jatk11.gif
+	offset	50 87
+	frame	data/chars/ironman/jatk12.gif
+
+
+#done
+anim grab
+	loop	0
+	offset	50 83
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/ironman/grab.gif
+
+
+#done//
+anim grabattack2
+	loop	0
+	delay	7
+	offset	27 128
+              bbox       37 35 35 88
+	sound	data/chars/burnking/sounds/kick1.wav
+	frame	data/chars/ironman/gatk1.gif
+	offset	57 97
+	frame	data/chars/ironman/gatk2.gif
+	offset	57 136
+	frame	data/chars/ironman/gatk3.gif
+	offset	59 112
+	      bbox       53 23 45 100
+	attack	0 5 164 135 20 1
+	frame	data/chars/ironman/gatk4.gif
+	offset	59 112
+        frame	data/chars/ironman/gatk5.gif
+	offset	57 112
+	frame	data/chars/ironman/gatk6.gif
+	offset	57 120
+	frame	data/chars/ironman/gatk7.gif
+	offset	59 131
+	frame	data/chars/ironman/gatk8.gif
+	offset	59 133
+	frame	data/chars/ironman/gatk9.gif
+	offset	57 133
+	frame	data/chars/ironman/gatk10.gif
+	offset	57 134
+	frame	data/chars/ironman/gatk11.gif
+	offset	59 135
+	frame	data/chars/ironman/gatk12.gif
+              attack	0 0 0 0 0
+	offset	59 135
+	frame	data/chars/ironman/gatk13.gif
+
+
+#done//
+anim grabattack
+	range	5 40
+	loop	0
+	delay	4
+	offset	46 94
+	bbox	41 11 31 93
+	sound	data/chars/burnking/sounds/punch.wav
+	frame	data/chars/ironman/2punch1.gif
+	offset	47 97
+	frame	data/chars/ironman/2punch2.gif
+                  delay         3
+                  offset         47 101
+                  bbox          57 10 37 95
+	    frame	data/chars/ironman/2punch3.gif
+	offset 47 101
+                  attack	71 3 64 67 15 0
+                  frame	data/chars/ironman/2punch4.gif
+	offset 48 102
+	    frame	data/chars/ironman/2punch5.gif
+	offset 47 101
+	    frame	data/chars/ironman/2punch6.gif
+	offset	46 101
+            frame	data/chars/ironman/2punch7.gif
+	offset 47 101
+            frame	data/chars/ironman/2punch8.gif
+	offset 46 101
+            frame	data/chars/ironman/2punch9.gif
+	offset 47 101
+                  bbox          48 12 40 92
+                  attack	0 0 0 0 0
+            frame	data/chars/ironman/2punch10.gif
+	offset 48 97
+            frame	data/chars/ironman/2punch11.gif
+
+
+
+
+#done final
+anim throw
+	loop	0
+	offset	52 94
+	sound	data/chars/burnking/sounds/throw2.wav
+	delay	6
+	frame	data/chars/ironman/throw1.gif
+	frame	data/chars/ironman/throw1.gif
+	offset	51 97
+	frame	data/chars/ironman/throw2.gif
+	offset	53 104
+	frame	data/chars/ironman/throw3.gif
+	offset	53 153
+	frame	data/chars/ironman/throw4.gif
+	offset	53 146
+	frame	data/chars/ironman/throw5.gif
+	offset	53 140
+              frame	data/chars/ironman/throw6.gif
+
+
+
+
+#done
+anim pain
+	loop	0
+	offset  	48 96
+	bbox 	31 14 35 83
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/ironman/pain1.gif
+	offset	53 95
+	frame	data/chars/ironman/pain2.gif
+	offset	48 96
+              frame	data/chars/ironman/pain3.gif
+	offset	48 96
+              frame	data/chars/ironman/pain1.gif
+
+
+
+#done//
+anim fall
+	loop	0
+	offset  55 72
+	delay	20
+	frame	data/chars/ironman/fall1.gif
+	frame	data/chars/ironman/fall1.gif
+	offset	69 71
+	frame	data/chars/ironman/fall2.gif
+	offset	69 71
+	frame	data/chars/ironman/fall3.gif
+	offset	65 29
+	frame	data/chars/ironman/fall4.gif
+
+
+
+#done//
+anim rise
+	loop	0
+	offset  65 23
+	delay	5
+	frame	data/chars/ironman/rise1.gif
+	frame	data/chars/ironman/rise1.gif
+	offset	63 32
+	frame	data/chars/ironman/rise2.gif
+	offset	62 32
+	frame	data/chars/ironman/rise3.gif
+	offset	62 32
+	frame	data/chars/ironman/rise4.gif
+	offset	71 74
+	frame	data/chars/ironman/rise5.gif
+	offset	71 74
+	frame	data/chars/ironman/rise6.gif
+	offset	43 124
+	frame	data/chars/ironman/rise7.gif
+	offset	39 81
+	frame	data/chars/ironman/rise8.gif
+	offset	35 92
+	frame	data/chars/ironman/rise9.gif
+
+
+#done//
+anim land
+	loop	0
+	offset	53 77
+	delay	25
+	bbox	29 64 50 51
+	frame	data/chars/ironman/get.gif
+
+
