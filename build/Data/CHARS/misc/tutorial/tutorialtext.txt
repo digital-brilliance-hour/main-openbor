@@ -19,14 +19,25 @@ setlayer 9000
 
 
 
+
 anim	idle
 	loop	1 1
 	delay	10
 	offset	1 1
 	@cmd	changeentityproperty getlocalvar("self") "direction" 1
-	frame	data/chars/misc/tutorial/tutorialtext.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
 	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
-	frame	data/chars/misc/tutorial/tutorialtext.png
+	delay	50
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	delay	10
+	frame	data/chars/misc/tutorial/tutorialtext2.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	frame	data/chars/misc/tutorial/tutorialtext2.png
+	frame	data/chars/misc/tutorial/tutorialtext1.png
+	frame	data/chars/misc/tutorial/tutorialtext2.png
 		
 #|edited by openBor Stats v 0.67
 		
