@@ -3,49 +3,71 @@ type	text
 subtype	noskip
 lifespan	2
 setlayer	999999999
+animationscript data/scripts/spawns.c
 
 
 
 
 
 
-anim	idle
+
+anim	follow1
 	offset	1 1
 	loop	0
-	delay	20
+	delay	10
+	@cmd	velo001 0 0 0
+	drawmethod	alpha 6
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 1
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 6
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 1
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 6
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 1
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 6
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	drawmethod	alpha 1
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	@cmd	velo001 10 0 0
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/stageopening/stageopening.png
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+		
+anim	idle
+	offset	1 1
+	loop	1
+	delay	6
+ @script
+    void self = getlocalvar("self");
+     int x = getentityproperty(self, "x");
+    if(x>=1)
+    {
+      performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW1"));
+    }
+	@end_script	
 	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	@cmd	velo001 5 0 0
 	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/stageopening/stageopening.png
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
-	frame	data/chars/misc/empty.gif
 		
 #|edited by openBor Stats v 0.67
 		

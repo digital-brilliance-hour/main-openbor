@@ -33,6 +33,9 @@ animationscript data/scripts/spawns.c
 
 
 
+
+
+
 anim	attack1
 	bbox	1 0 77 103
 	delay	7
@@ -178,8 +181,120 @@ anim	follow10
 	offset	32 96
 	frame	data/chars/golrio/3.gif
 		
+anim	follow11
+	loop	0
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+	delay	15
+	offset	32 90
+	frame	data/chars/golrio/93.gif
+	delay	7
+	sound	data/chars/golrio/broly_0-18.wav
+	attack	1 0 159 144 40 1 1 0 0 0
+	offset	74 134
+	frame	data/chars/golrio/94.gif
+	offset	58 135
+	frame	data/chars/golrio/95.gif
+	attack	0 1 115 87 40 1 1 0 0 0
+	offset	56 119
+	frame	data/chars/golrio/96.gif
+	offset	35 124
+	frame	data/chars/golrio/97.gif
+	attack	0 0 85 56 30 1 1 0 0 0
+	offset	37 106
+	frame	data/chars/golrio/98.gif
+	offset	35 124
+	frame	data/chars/golrio/97.gif
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+		
+anim	follow12
+	loop	0
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+	bbox	0 0 64 102
+	delay	7
+	offset	32 100
+	sound	data/chars/golrio/broly_0-9.wav
+	frame	data/chars/golrio/80.gif
+	bbox	71 1 -70 117
+	offset	38 116
+	frame	data/chars/golrio/81.gif
+	bbox	0 0 0 0
+	offset	35 125
+	frame	data/chars/golrio/82.gif
+	offset	39 121
+	frame	data/chars/golrio/83.gif
+	offset	39 108
+	frame	data/chars/golrio/84.gif
+	offset	43 120
+	frame	data/chars/golrio/85.gif
+	offset	39 106
+	frame	data/chars/golrio/86.gif
+	offset	53 104
+	frame	data/chars/golrio/87.gif
+	@cmd	spawnbind "g_blast" 51 75 0
+	@cmd	projectile 1 "g_shot" 25 1 79 1 0
+	offset	53 104
+	frame	data/chars/golrio/88.gif
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+		
 anim	freespecial
 	delay	7
+	energycost	5
 	@cmd	dasher 1 0 0
 	offset	64 69
 	frame	data/chars/golrio/99.gif
@@ -235,6 +350,7 @@ anim	freespecial10
 		
 anim	freespecial2
 	delay	15
+	energycost	10
 	offset	32 90
 	frame	data/chars/golrio/93.gif
 	delay	7
@@ -257,6 +373,7 @@ anim	freespecial2
 	frame	data/chars/golrio/97.gif
 		
 anim	freespecial3
+	energycost	20
 	bbox	0 0 64 102
 	delay	7
 	offset	32 100

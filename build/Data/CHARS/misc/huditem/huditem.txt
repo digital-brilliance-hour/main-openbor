@@ -1,0 +1,354 @@
+name      hudItem
+speed      10
+type      panel
+nolife      1
+facing 1
+gfxshadow	0
+setlayer 10000
+noquake 0 1
+
+palette none
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	follow1
+	loop	1
+	delay	10
+	offset	0 26
+	@script
+	int myVar = getglobalvar("HelperControl");
+	checkStageType("truck","ANI_FOLLOW2");
+	checkStageType("bonus","ANI_FOLLOW2");
+	if (myVar>0){
+    	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_IDLE"));
+        }
+	@end_script	
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/sprites/0empty.gif
+		
+anim	follow2
+	loop	1
+	offset	0 26
+	delay	60
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/huditem/avlogo-no.gif
+		
+anim	follow20
+	flipframe	0
+	loop	0
+	offset	240 136
+	delay	240
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 136
+	delay	1000
+	frame	data/chars/misc/text/tips_1.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_1.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow21
+	flipframe	0
+	loop	0
+	offset	240 136
+	delay	240
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 136
+	delay	1200
+	frame	data/chars/misc/text/tips_3.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_3.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow22
+	flipframe	0
+	loop	0
+	offset	240 136
+	delay	240
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 136
+	delay	1000
+	frame	data/chars/misc/text/tips_2.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_2.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow23
+	flipframe	0
+	loop	0
+	offset	240 136
+	delay	240
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 136
+	delay	1000
+	frame	data/chars/misc/text/tips_4.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_4.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow24
+	flipframe	0
+	loop	0
+	offset	240 136
+	delay	100
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 136
+	delay	400
+	frame	data/chars/misc/text/tips_5.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_5.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 136
+	delay	500
+	frame	data/chars/misc/text/tips_6.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_6.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_6.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/sprites/0empty.gif
+		
+anim	follow30
+	flipframe	0
+	loop	1
+	offset	240 136
+	delay	240
+	frame	data/sprites/0empty.gif
+	delay	3
+	@cmd	layer 2400
+	offset	240 120
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 136
+	delay	1000
+	frame	data/chars/misc/text/tips_1.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_1.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_1.gif
+	frame	data/sprites/0empty.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 136
+	delay	1200
+	frame	data/chars/misc/text/tips_3.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_3.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_3.gif
+	frame	data/sprites/0empty.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 136
+	delay	1200
+	frame	data/chars/misc/text/tips_2.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_2.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_2.gif
+	frame	data/sprites/0empty.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 132
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 136
+	delay	1200
+	frame	data/chars/misc/text/tips_4.gif
+	delay	3
+	offset	240 132
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 128
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 124
+	frame	data/chars/misc/text/tips_4.gif
+	offset	240 120
+	frame	data/chars/misc/text/tips_4.gif
+	delay	2000
+	frame	data/sprites/0empty.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	0 26
+	@script
+	int myVar = getglobalvar("HelperControl");
+	checkStageType("truck","ANI_FOLLOW2");
+	checkStageType("bonus","ANI_FOLLOW2");
+	if (myVar<1 || myVar==NULL()){
+    	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_FOLLOW1"));
+        }
+
+	@end_script	
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/huditem/avlogo-w.gif
+	delay	60
+	frame	data/chars/misc/huditem/avlogo.gif
+	delay	6
+	frame	data/chars/misc/huditem/avlogo-w.gif
+	delay	60
+	frame	data/chars/misc/huditem/avlogo-c.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -3,15 +3,33 @@ void main() {
 	void hit = getlocalvar("damagetaker"); // get target entity
 	char Name = getentityproperty(self,"name"); // get target's name
 	void power = getentityproperty(hit,"mp"); // get target's current mp
+	int SFX2 = loadsample("data/sounds/life-up.wav");
+	int SFX3 = loadsample("data/sounds/full-power.wav");
+	int SFX4 = loadsample("data/sounds/full-life.wav");
+	int SFX5 = loadsample("data/sounds/power-life.wav");
 
 	switch(Name) {
+		case "Apple":
+		int SFX2 = loadsample("data/sounds/life-up.wav");
+        playsample(SFX2, 0, 120, 120, 100, 0);
+		spawnAni("aitemFX",0,30,0,"ANI_IDLE",NULL(),NULL(),NULL());		
+			break;
+		case "Meal":
+		int SFX4 = loadsample("data/sounds/full-life.wav");
+        playsample(SFX4, 0, 120, 120, 100, 0);
+		spawnAni("aitemFX",0,30,0,"ANI_FOLLOW3",NULL(),NULL(),NULL());		
+			break;
 		case "tutorialmeat":
 			jumptobranch("",1);
 			break;
 		case "powerupitem1":
 		case "powerupitem2":
 		case "powerupitem3":
+		int SFX1 = loadsample("data/sounds/powerup.wav");
+		void bg = "data/music/powerup.ogg";
 		spawnTextAni("poweruptext",1,1,0,"ANI_IDLE",NULL(),NULL(),NULL());
+		playsample(SFX1, 0, 120, 120, 100, 0);
+ 		playmusic(bg, 0);
 			break;
 		default:
 			break;

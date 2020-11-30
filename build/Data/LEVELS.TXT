@@ -64,27 +64,24 @@ z 131 207 0
 file    data/levels/tutorial-stage.txt
 z 129 198 0
 file    data/levels/stage1-1.txt
-z 117 213 0
+z 139 213 0
 file    data/levels/stage1-2.txt
 z 115 207 0
 file    data/levels/stage1-3.txt
 z 85 209 0
 file    data/levels/stage1-4.txt
-
-set puzzle
-
-file 	data/levels/puzzle.txt
-
-set boss
-
-file    data/levels/boss-item.txt
+z 85 209 0
+file    data/levels/stage1-4.txt
+z 85 209 0
+file 	data/levels/special2tutorial.txt
+next
 
 set stage1-1
 z 129 198 0
 file    data/levels/stage1-1.txt
 
 set stage1-2
-z 117 213 0
+z 139 213 0
 file    data/levels/stage1-2.txt
 
 set stage1-3
@@ -96,8 +93,6 @@ set stage1-4
 
 z 85 209 0
 file    data/levels/stage1-4.txt
-
-set tutorial-stage
-
-z 44 207 0
-file    data/levels/tutorial-stage.txt
+z 85 209 0
+file 	data/levels/special2tutorial.txt
+next

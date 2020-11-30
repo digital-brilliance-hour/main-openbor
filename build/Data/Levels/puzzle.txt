@@ -5,6 +5,14 @@ bossmusic	data/music/menu.bor
 ## Bonus Stage Type ##
 type 1
 
+direction       both
+spawn1  	150 50
+spawn2  	240 50
+spawn3  	280 50
+
+wall 169 261 -450 -450 0 -64 104 250
+wall 583 261 0 55 450 450 104 250
+
 ## Load images in this area ##
 
 # Background layer
@@ -26,7 +34,7 @@ background	data/Bgs/dd/n01.gif
 panel        data/Bgs/dd/n01.gif    none    none
 
 # order the reference letters to the panels
-order	aaaaaaaaaaaaaaaaaaa
+order	a
 
 ## Spawning Area ##
 # Spawn format:

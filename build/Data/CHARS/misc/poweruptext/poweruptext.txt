@@ -9,6 +9,7 @@ setlayer	999999999
 
 
 
+
 anim	follow1
 	offset	1 1
 	loop	0
@@ -60,6 +61,7 @@ anim	idle
 	frame	data/chars/misc/poweruptext/poweruptext1.png
 	delay	400
 	@cmd	jumptobranch "" 1
+	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 	frame	data/chars/misc/empty.gif
 		
