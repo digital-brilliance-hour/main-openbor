@@ -1,17 +1,16 @@
-name	Apple
-health	40
+name	Meal
+health	100
 type	item
 shadow	0
-icon	data/chars/misc/applicon.gif
+icon	data/chars/misc/meaticon.gif
 didhitscript data/scripts/didhit/item.c
-
 
 anim	idle
 	loop	0
 	delay	1000
-	offset	8 14
+	offset	24 19
 	bbox	0 0 16 16
-	frame	data/chars/misc/apple.gif
+	frame	data/chars/misc/meal.gif
 		
 #|edited by openBor Stats v 0.67
 		

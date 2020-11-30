@@ -67,47 +67,53 @@ order	a
 
 
 #--group1-----
+spawn stageopening
+coords -479 1
+at 0
+
 group 1 4
 at  0
 
 spawn selva2
 health  60
+coords  520 136
+at    	0
+
+spawn selva2
+health  60
+coords  520 200
+at    	0
+
+spawn selva2
+health  60
+coords  520 140
+at    0
+
+spawn selva2
+health  60
+coords    520 223
+at    0
+
+spawn selva2
+health  60
 coords  -30 136
 at    	0
 
 spawn selva2
 health  60
-coords  -30 200
+coords  520 200
 at    	0
 
 spawn selva2
 health  60
+item apple
 coords  -30 140
 at    0
 
 spawn selva2
 health  60
-coords    -30 223
-at    0
-
-spawn selva2
-health  60
-coords  -30 136
-at    	0
-
-spawn selva2
-health  60
-coords  -30 200
-at    	0
-
-spawn selva2
-health  60
-coords  -30 140
-at    0
-
-spawn selva2
-health  60
-coords    -30 223
+2pitem apple
+coords    520 223
 at    0
 
 wait
@@ -121,7 +127,7 @@ at    810
 
 spawn ninja1
 health  60
-coords    520 200
+coords    -30 200
 at    810
 
 spawn ninja1
@@ -131,7 +137,7 @@ at    810
 
 spawn ninja1
 health  60
-coords    520 223
+coords    -30 223
 at    810
 
 spawn   ninja1
@@ -141,17 +147,19 @@ at    810
 
 spawn ninja1
 health  60
-coords    520 200
+coords    -30 200
 at    810
 
 spawn ninja1
 health  60
+item apple
 coords    520 140
 at    810
 
 spawn ninja1
 health  60
-coords    520 223
+2pitem apple
+coords    -30 223
 at    810
 
 spawn  tcanon

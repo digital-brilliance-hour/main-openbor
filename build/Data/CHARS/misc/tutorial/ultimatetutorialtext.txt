@@ -1,0 +1,43 @@
+name	utimatetutorialtext
+health	1
+type	panel
+speed 10
+shadow 0
+facing 1
+setlayer 9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1 1
+	delay	10
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	delay	50
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	delay	10
+	frame	data/chars/misc/tutorial/ultimatetutorial2.png
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	frame	data/chars/misc/tutorial/ultimatetutorial2.png
+	frame	data/chars/misc/tutorial/ultimatetutorial1.png
+	frame	data/chars/misc/tutorial/ultimatetutorial2.png
+		
+#|edited by openBor Stats v 0.67
+		

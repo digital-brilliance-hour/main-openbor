@@ -1,13 +1,19 @@
 ## Load music in this area ##
-music        data/music/stage1.ogg 29720
+music		data/music/tutorial.ogg
 bossmusic	data/music/menu.bor
+
+## Bonus Stage Type ##
+type 2
+direction both
+spawn1 64 62 0
+spawn2 64 92 0
+
+updatescript data/scripts/levels/freeenergy.c
 
 ## Load images in this area ##
 
 # Background layer
-background	 data/bgs/02_01_4/n01.gif
-
-wall    -330 220 0 0 500 650 50 250
+background	data/bgs/undeaddungeon/undeaddungeon-practice.png
 
 # Front layers
 #frontpanel	data/bgs/street/f00.gif
@@ -22,7 +28,7 @@ wall    -330 220 0 0 500 650 50 250
 # Neon mode panel layers use 'pallete cycling': certain colors slowy change to different colors. To be more specific, colors 128 through 135 in the pallete will be cycled by two steps three times each second.
 # Screen mode panel layers have alpha transparency. That means, they blend with the colors behind them, darker colors are more transparent, and brighter colors will blend less.
 
-panel        data/bgs/02_01_4/n01.gif    none    none
+panel        data/bgs/undeaddungeon/undeaddungeon-practice.png    none    none
 
 
 # order the reference letters to the panels
@@ -69,110 +75,54 @@ order	a
 
 
 #--group1-----
-group 1 4
+spawn   zoomout
+map	  0
+coords  240 236
+at      0
+
+spawn   focus
+health 110
+coords	1 1 0
+flip 1
+at      0
+
+spawn   empty
+@script
+void main()
+{
+    int P1 = getplayerproperty(0, "entity");
+    int P2 = getplayerproperty(1, "entity");
+
+    if(P1){
+      changeopenborvariant("nojoin", 1);
+      changeentityproperty(P1, "position", 143, 155, 0);
+      changeentityproperty(P1, "direction", 1); //Face right
+      changeentityproperty(P1, "animation", openborconstant("ANI_FOLLOW11"));
+    }
+    if(P2){
+      changeentityproperty(P2, "position", 360,198, 0);
+      changeentityproperty(P2, "direction", 0); //Face left
+      changeentityproperty(P2, "animation", openborconstant("ANI_FOLLOW11"));
+    }
+}
+@end_script
+coords   180 189
+at   0
+
+spawn tutorialtitle
+coords 1 1
 at 0
+
+spawn special2tutorialtext
+coords 1 1
+at 0
+
 
 spawn trash
-health 20
-item meal
-coords 290 124
+health 100
+item tutorialmeat
+coords 420 97
 at 0
-
-2pspawn trash
-health 20
-item meal
-coords 297 170
-at 0
-
-spawn selva1
-health  60
-coords    520 136
-at    0
-
-spawn selva1
-health  60
-coords    520 223
-at    0
-
-spawn selva1
-health  60
-coords    520 136
-at    0
-
-spawn selva1
-health  60
-coords    520 223
-at    0
-
-spawn selva2
-health  60
-coords    520 136
-at    0
-
-spawn selva2
-health  60
-coords    520 223
-at    0
-
-spawn selva2
-health  60
-coords    520 136
-at    0
-
-spawn selva2
-health  60
-coords    520 223
-at    0
-
-wait
-at 0
-
-
-spawn selva1
-health  60
-coords    -97 136
-at    97
-
-
-
-
-spawn k
-health  60
-coords    -97 145
-at    97
-
-spawn ninja1
-health  60
-coords    -97 136
-at    97
-
-spawn selva1
-health  0
-coords    -97 145
-at    97
-
-spawn selva2
-health  60
-coords    -97 136
-at    97
-
-spawn ninja1
-health  60
-coords    -97 145
-at    97
-
-spawn selva2
-health  60
-coords    -97 136
-at    97
-
-spawn k
-health  60
-coords    -97 145
-at    97
-
-wait
-at 97
 
 
 

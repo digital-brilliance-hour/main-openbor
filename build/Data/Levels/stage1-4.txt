@@ -26,6 +26,8 @@ background	 data/bgs/undeaddungeon/undeaddungeon.gif
 # Screen mode panel layers have alpha transparency. That means, they blend with the colors behind them, darker colors are more transparent, and brighter colors will blend less.
 
 panel        data/bgs/undeaddungeon/undeaddungeon.gif    none    none
+fglayer 	data/bgs/undeaddungeon/web 1 -0.5 0 0 0 99999999 0 2 1 1 
+fglayer 	data/bgs/undeaddungeon/web2 1 -0.5 0 2100 80 99999999 0 2 1 1 
 
 
 # order the reference letters to the panels
@@ -80,8 +82,6 @@ item powerupitem1
 coords	480 130
 at 350
 
-wait
-at 570
 
 
 
