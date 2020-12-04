@@ -20,10 +20,9 @@ load	Flash		data/chars/misc/flash.txt
 # Players must also be loaded.
 load Golrio data/chars/golrio/golrio.txt
 load Washizuka data/chars/M_washizuka/M_washizuka.txt
-load	Kula		data/chars/kula/kula.txt
-load	Max		data/chars/maxima/maxima.txt
-load	Mandy		data/chars/mary/mary.txt
-load	Mighty		data/chars/mighty/mighty.txt
+
+# NPC's
+know dravennpc  data/chars/draven/draven-npc.txt
 
 
 # Items and other objects can be loaded when needed.
@@ -114,8 +113,11 @@ know 	tutorialtitle 	data/chars/misc/tutorial/tutorialtitle.txt
 know 	tutorialtext 	data/chars/misc/tutorial/tutorialtext.txt
 know 	special2tutorialtext 	data/chars/misc/tutorial/special2tutorialtext.txt
 know 	ultimatetutorialtext 	data/chars/misc/tutorial/ultimatetutorialtext.txt
+know 	puzzletutorialtext 	data/chars/misc/tutorial/puzzletutorialtext.txt
 know 	poweruptext 	data/chars/misc/poweruptext/poweruptext.txt
+know 	simontext	data/chars/misc/puzzles/simon/simontext.txt
 know 	stageopening 	data/chars/misc/stageopening/stageopening.txt
+know 	wizardtitle 	data/chars/misc/puzzles/simon/wizardtitle.txt
 
 
 # graphic effects-----------------------------------------------------------------------

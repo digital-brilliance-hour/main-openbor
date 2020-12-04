@@ -36,6 +36,17 @@ animationscript data/scripts/spawns.c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 anim	attack1
 	bbox	1 0 77 103
 	delay	7
@@ -292,6 +303,80 @@ anim	follow12
 	offset	32 100
 	frame	data/chars/golrio/5.gif
 		
+anim	follow20
+	loop	1 2
+	bbox	1 1 60 105
+	delay	20
+ @script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    if(x>=239)
+    {
+      performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW22"));
+    }
+	@end_script	
+	@cmd	subjectScreen 0
+	frame	data/sprites/0empty.gif
+	@cmd	velo001 1.75 0 0
+	offset	25 104
+	frame	data/chars/golrio/10.gif
+	bbox	0 1 82 105
+	offset	34 102
+	frame	data/chars/golrio/11.gif
+	bbox	1 1 60 108
+	offset	24 106
+	frame	data/chars/golrio/12.gif
+	bbox	0 0 79 106
+	offset	32 104
+	frame	data/chars/golrio/13.gif
+		
+anim	follow21
+	attack	0 0 0 0 0 0 0 0 0 0
+	loop	1
+	bbox	0 1 83 98
+	delay	18
+	offset	32 96
+	@cmd	stop
+	frame	data/chars/golrio/3.gif
+	bbox	1 1 79 107
+	offset	32 104
+	frame	data/chars/golrio/4.gif
+	bbox	1 1 90 102
+	offset	32 100
+	frame	data/chars/golrio/5.gif
+		
+anim	follow22
+	loop	1
+	bbox	1 1 60 105
+	delay	20
+ @script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int playernum = getentityproperty(self, "playerindex");
+    if(x>=409)
+    {
+      scrollcam(350, 0, 2);
+      if(playernum == 0) {
+      spawnTextAni("puzzletutorialtext",1,1,200,"ANI_IDLE",NULL(),NULL(),NULL());
+      spawnTextAni("wizardtitle",1,1,0,"ANI_IDLE",NULL(),NULL(),NULL());
+      }
+      performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW21"));
+    }
+	@end_script	
+	@cmd	subjectScreen 0
+	@cmd	velo001 1.75 -0.40 0
+	offset	25 104
+	frame	data/chars/golrio/10.gif
+	bbox	0 1 82 105
+	offset	34 102
+	frame	data/chars/golrio/11.gif
+	bbox	1 1 60 108
+	offset	24 106
+	frame	data/chars/golrio/12.gif
+	bbox	0 0 79 106
+	offset	32 104
+	frame	data/chars/golrio/13.gif
+		
 anim	freespecial
 	delay	7
 	energycost	5
@@ -352,6 +437,7 @@ anim	freespecial2
 	delay	15
 	energycost	10
 	offset	32 90
+	@cmd	enoughmp
 	frame	data/chars/golrio/93.gif
 	delay	7
 	@cmd	leaper 3 2
@@ -377,6 +463,7 @@ anim	freespecial3
 	bbox	0 0 64 102
 	delay	7
 	offset	32 100
+	@cmd	enoughmp
 	sound	data/chars/golrio/broly_0-9.wav
 	frame	data/chars/golrio/80.gif
 	bbox	71 1 -70 117

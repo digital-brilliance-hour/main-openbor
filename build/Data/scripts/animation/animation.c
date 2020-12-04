@@ -1,3 +1,5 @@
+#include "data/scripts/levelup/lvup.c"
+
 // SLAM - THROW //////////////////////////////////////////////////////////////////////////////
 
 void slamstart()
@@ -1906,4 +1908,36 @@ changedrawmethod(self, "channelr", 0);
 changedrawmethod(self, "channelg", 64);
 changedrawmethod(self, "channelb", 0);
 //changedrawmethod(self, "gfxshadow", 0);
+}
+
+void enoughmp() {
+	int self 	= getlocalvar("self");
+	void AniID = getani();
+	int level = getLevel(self);
+	if(AniID == openborconstant("ANI_FREESPECIAL")) {
+		return;
+	}
+	if(AniID == openborconstant("ANI_FREESPECIAL2") && level > 1) {
+		return;
+	}
+	else 
+	{
+		anichange(openborconstant("ANI_SPAWN"));
+		setidle(self, openborconstant("ANI_SPAWN"));
+	}
+	if(AniID == openborconstant("ANI_FREESPECIAL3") && level > 2) {
+		return;
+	}
+	else 
+	{
+		anichange(openborconstant("ANI_SPAWN"));
+		setidle(self, openborconstant("ANI_SPAWN"));
+	}
+}
+
+
+void getani()
+{
+	void ent = getlocalvar("self");
+	return getentityproperty(ent,"animationID");
 }

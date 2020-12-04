@@ -40,6 +40,13 @@ animationscript data/scripts/spawns.c
 
 
 
+
+
+
+
+
+
+
 anim	attack1
 	bbox	0 19 79 106
 	delay	3
@@ -419,6 +426,112 @@ anim	follow12
 	offset	39 102
 	frame	data/chars/M_washizuka/5.gif
 		
+anim	follow20
+	loop	1 2
+	bbox	2 1 80 97
+	delay	20
+	offset	40 96
+ @script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    if(x>=239)
+    {
+      performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW22"));
+    }
+	@end_script	
+	@cmd	subjectScreen 0
+	frame	data/sprites/0empty.gif
+	@cmd	velo001 1.75 0 0
+	offset	40 96
+	delay	7
+	offset	40 96
+	frame	data/chars/M_washizuka/14.gif
+	bbox	1 2 79 96
+	offset	38 97
+	frame	data/chars/M_washizuka/15.gif
+	bbox	1 1 74 101
+	offset	36 99
+	frame	data/chars/M_washizuka/16.gif
+	bbox	1 1 74 101
+	offset	33 101
+	frame	data/chars/M_washizuka/17.gif
+	bbox	1 1 62 106
+	offset	32 104
+	frame	data/chars/M_washizuka/18.gif
+	bbox	1 1 62 106
+	offset	33 103
+	frame	data/chars/M_washizuka/19.gif
+	bbox	0 1 73 100
+	offset	36 100
+	frame	data/chars/M_washizuka/20.gif
+	bbox	0 1 73 100
+	offset	39 97
+	frame	data/chars/M_washizuka/21.gif
+		
+anim	follow21
+	loop	1
+	bbox	2 1 79 100
+	delay	15
+	offset	39 99
+	@cmd	stop
+	frame	data/chars/M_washizuka/2.gif
+	bbox	2 1 79 100
+	offset	39 100
+	frame	data/chars/M_washizuka/3.gif
+	bbox	2 1 79 100
+	offset	39 101
+	frame	data/chars/M_washizuka/4.gif
+	bbox	2 1 79 100
+	offset	39 102
+	frame	data/chars/M_washizuka/5.gif
+		
+anim	follow22
+	loop	1 2
+	bbox	2 1 80 97
+	delay	20
+	offset	40 96
+ @script
+    void self = getlocalvar("self");
+    int x = getentityproperty(self, "x");
+    int playernum = getentityproperty(self, "playerindex");
+    if(x>=409)
+    {
+      scrollcam(350, 0, 2);
+      if(playernum == 0) {
+      spawnTextAni("puzzletutorialtext",1,1,200,"ANI_IDLE",NULL(),NULL(),NULL());
+      spawnTextAni("wizardtitle",1,1,0,"ANI_IDLE",NULL(),NULL(),NULL());
+      }
+      performattack(getlocalvar("self"), openborconstant("ANI_FOLLOW21"));
+    }
+	@end_script	
+	@cmd	subjectScreen 0
+	@cmd	velo001 1.75 -0.40 0
+	offset	40 96
+	delay	7
+	offset	40 96
+	frame	data/chars/M_washizuka/14.gif
+	bbox	1 2 79 96
+	offset	38 97
+	frame	data/chars/M_washizuka/15.gif
+	bbox	1 1 74 101
+	offset	36 99
+	frame	data/chars/M_washizuka/16.gif
+	bbox	1 1 74 101
+	offset	33 101
+	frame	data/chars/M_washizuka/17.gif
+	bbox	1 1 62 106
+	offset	32 104
+	frame	data/chars/M_washizuka/18.gif
+	bbox	1 1 62 106
+	offset	33 103
+	frame	data/chars/M_washizuka/19.gif
+	bbox	0 1 73 100
+	offset	36 100
+	frame	data/chars/M_washizuka/20.gif
+	bbox	0 1 73 100
+	offset	39 97
+	frame	data/chars/M_washizuka/21.gif
+		
 anim	freespecial
 	hitfx	data/sounds/knifes.wav
 	bbox	1 1 86 92
@@ -481,6 +594,7 @@ anim	freespecial10
 		
 anim	freespecial2
 	hitfx	data/sounds/knifes.wav
+	@cmd	enoughmp
 	bbox	0 1 79 97
 	delay	8
 	offset	32 96
@@ -525,6 +639,7 @@ anim	freespecial2
 		
 anim	freespecial3
 	hitfx	data/sounds/knifes.wav
+	@cmd	enoughmp
 	bbox	1 1 86 94
 	delay	7
 	energycost	20

@@ -1,8 +1,12 @@
+#include "data/scripts/levelup/lvup.c"
+
 void main() {
 	void self = getlocalvar("self"); //get the self var
 	void hit = getlocalvar("damagetaker"); // get target entity
 	char Name = getentityproperty(self,"name"); // get target's name
 	void power = getentityproperty(hit,"mp"); // get target's current mp
+    int P1 = getplayerproperty(0, "entity");
+    int P2 = getplayerproperty(1, "entity");
 	int SFX2 = loadsample("data/sounds/life-up.wav");
 	int SFX3 = loadsample("data/sounds/full-power.wav");
 	int SFX4 = loadsample("data/sounds/full-life.wav");
@@ -30,6 +34,13 @@ void main() {
 		spawnTextAni("poweruptext",1,1,0,"ANI_IDLE",NULL(),NULL(),NULL());
 		playsample(SFX1, 0, 120, 120, 100, 0);
  		playmusic(bg, 0);
+ 		if(P1) {
+	    	lvup(P1);
+	    }
+	    if(P2) {
+	    	lvup(P2);
+
+	    }
 			break;
 		default:
 			break;

@@ -1,0 +1,160 @@
+name	simontext
+health	1
+type	panel
+speed 10
+shadow 0
+facing 1
+setlayer 9000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	follow10
+	offset	9 8
+	loop	0
+	delay	20
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow11
+	loop	0
+	delay	20
+	offset	9 8
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	frame	data/chars/misc/puzzles/simon/arrows/down.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow12
+	offset	8 6
+	loop	0
+	delay	20
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	frame	data/chars/misc/puzzles/simon/arrows/left.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow13
+	loop	0
+	delay	20
+	offset	8 6
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	frame	data/chars/misc/puzzles/simon/arrows/right.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow14
+	offset	15 4
+	loop	0
+	delay	20
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk1.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow15
+	loop	0
+	delay	20
+	offset	15 4
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk2.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow16
+	loop	0
+	delay	20
+	offset	15 4
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	frame	data/chars/misc/puzzles/simon/buttons/atk3.png
+	frame	data/sprites/0empty.gif
+		
+anim	follow17
+	loop	0
+	delay	20
+	offset	13 4
+	drawmethod	scale 2.5
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	frame	data/chars/misc/puzzles/simon/buttons/jmp.png
+	frame	data/sprites/0empty.gif
+		
+anim	idle
+	loop	1 1
+	delay	10
+	offset	1 1
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" 9000
+	delay	50
+	delay	10
+	frame	data/chars/misc/puzzles/simon/arrows/up.png
+		
+#|edited by openBor Stats v 0.67
+		

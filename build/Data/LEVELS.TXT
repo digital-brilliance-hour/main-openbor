@@ -60,6 +60,12 @@ e2name 384 10 0
 #p2smenu 284 92 262 148
 
 set demo_test
+versusdamage 0
+lives 3
+credits 5
+continuescore 2
+cansave 2
+noshare 1
 z 131 207 0
 file    data/levels/tutorial-stage.txt
 z 129 198 0
@@ -68,13 +74,17 @@ z 139 213 0
 file    data/levels/stage1-2.txt
 z 115 207 0
 file    data/levels/stage1-3.txt
-z 85 209 0
-file    data/levels/stage1-4.txt
+z 97 225 0
+file data/levels/stage1-puzzle.txt
 z 85 209 0
 file    data/levels/stage1-4.txt
 z 85 209 0
 file 	data/levels/special2tutorial.txt
 next
+
+set stage1_puzzle
+z 97 225 0
+file data/levels/stage1-puzzle.txt
 
 set stage1-1
 z 129 198 0
@@ -88,6 +98,8 @@ set stage1-3
 
 z 115 207 0
 file    data/levels/stage1-3.txt
+z 97 225 0
+file data/levels/stage1-puzzle.txt
 
 set stage1-4
 
