@@ -7,6 +7,7 @@ diesound data/sounds/die.wav
 
 load	Star	data/chars/misc/star.txt
 
+
 anim	attack1
 	range	10 70
 	loop	0
@@ -53,7 +54,8 @@ anim	fall
 	delay	10
 	offset	56 105
 	frame	data/chars/Ninja1/fall00.gif
-	attack	7 15 70 43 15 1
+	bbox	11 1 110 107
+	attack	7 15 70 43 15 1 0 0 0 0
 	frame	data/chars/Ninja1/fall01.gif
 	attack	9 33 70 43 15 1
 	frame	data/chars/Ninja1/fall02.gif
@@ -61,6 +63,7 @@ anim	fall
 	frame	data/chars/Ninja1/fall03.gif
 	attack	9 63 70 43 15 1
 	frame	data/chars/Ninja1/fall04.gif
+	bbox	0 0 0 0
 	frame	data/chars/Ninja1/fall05.gif
 		
 anim	idle

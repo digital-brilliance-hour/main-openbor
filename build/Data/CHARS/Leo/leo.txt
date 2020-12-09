@@ -14,166 +14,16 @@ diesound    data/sounds/new/whimper.wav # data/sounds/marvel/sysdown.wav
 weapons	none none none none none none
 palette	data/chars/leo/idle1.gif
 
-#remap	data/chars/gillius/idle1.gif	data/chars/gillius/alt1.gif
-#remap	data/chars/gillius/idle1.gif	data/chars/gillius/alt2.gif
+
+
 
 COM A2 freespecial2
 
-#done//
-anim idle
-drawmethod  170 200
-	loop	1
-	offset        91 123
-	bbox 	23 11 41 91
-	delay	18
-	frame	data/chars/leo/idle1.gif
-	offset        92 123
-	frame	data/chars/leo/idle2.gif
-	offset        93 124
-	frame	data/chars/leo/idle3.gif
-	offset        93 125
-	frame	data/chars/leo/idle4.gif
-	offset        94 126
-	frame	data/chars/leo/idle5.gif
-	offset        95 126
-	frame	data/chars/leo/idle6.gif
-	offset        94 126
-	frame	data/chars/leo/idle7.gif
-	offset        95 126
-	frame	data/chars/leo/idle6.gif
-	offset        94 126
-	frame	data/chars/leo/idle5.gif
-	offset        93 125
-	frame	data/chars/leo/idle4.gif
-	offset        93 124
-	frame	data/chars/leo/idle3.gif
-	offset        92 123
-	frame	data/chars/leo/idle2.gif
-
-
-	
-
-#done//
-anim walk
-drawmethod  170 200
-	loop	1
-	offset  61 116
-	bbox 	25 8 38 97
-	delay	9
-	frame	data/chars/leo/walk1.gif
-	offset  60 114
-	frame	data/chars/leo/walk2.gif
-	offset  55 109
-	frame	data/chars/leo/walk3.gif
-	offset  42 114
-	frame	data/chars/leo/walk4.gif
-	offset  33 114
-	frame	data/chars/leo/walk5.gif
-	offset  41 114
-	frame	data/chars/leo/walk6.gif
-	offset  51 105
-	frame	data/chars/leo/walk7.gif
-	offset  63 106
-	frame	data/chars/leo/walk8.gif
-	offset  89 107
-	frame	data/chars/leo/walk9.gif
-	offset  60 106
-	frame	data/chars/leo/walk10.gif
-	offset  46 113
-	frame	data/chars/leo/walk11.gif
-	offset  32 113
-	frame	data/chars/leo/walk12.gif
-	offset  41 113
-	frame	data/chars/leo/walk13.gif
-	offset  51 109
-	frame	data/chars/leo/walk14.gif
-
-
-anim run
-drawmethod  170 200
-	loop	1
-	offset  61 116
-	bbox 	25 8 38 97
-	delay	8
-	frame	data/chars/leo/walk1.gif
-	offset  60 114
-	frame	data/chars/leo/walk2.gif
-	offset  55 109
-	frame	data/chars/leo/walk3.gif
-	offset  42 114
-	frame	data/chars/leo/walk4.gif
-	offset  33 114
-	frame	data/chars/leo/walk5.gif
-	offset  41 114
-	frame	data/chars/leo/walk6.gif
-	offset  51 105
-	frame	data/chars/leo/walk7.gif
-	offset  63 106
-	frame	data/chars/leo/walk8.gif
-	offset  89 107
-	frame	data/chars/leo/walk9.gif
-	offset  60 106
-	frame	data/chars/leo/walk10.gif
-	offset  46 113
-	frame	data/chars/leo/walk11.gif
-	offset  32 113
-	frame	data/chars/leo/walk12.gif
-	offset  41 113
-	frame	data/chars/leo/walk13.gif
-	offset  51 109
-	frame	data/chars/leo/walk14.gif
-
-
-anim runattack
-drawmethod  170 200
-	range	5 90
-	loop	0
-	delay	6
-	move	10
-	offset	110 154
-              bbox       37 35 35 88
-	sound	data/sounds/swish.wav
-	frame	data/chars/leo/3atk1.gif
-	offset	92 138
-	frame	data/chars/leo/3atk2.gif
-	offset	84 118
-	frame	data/chars/leo/3atk3.gif
-	offset	98 127
-	frame	data/chars/leo/3atk4.gif
-	offset	100 124
-	frame	data/chars/leo/3atk5.gif
-	offset	113 123
-	frame	data/chars/leo/3atk6.gif
-	offset	37 94
-              attack	51 2 146 122 25 1 0 0 25
-	frame	data/chars/leo/3atk7.gif
-	offset	30 85
-	frame	data/chars/leo/3atk8.gif
-              attack	0 0 0 0 0
-	offset	28 84
-	frame	data/chars/leo/3atk9.gif
-	offset	31 89
-	frame	data/chars/leo/3atk10.gif
 
 
 
-#done
-anim get
-drawmethod  170 200
-	loop	0
-	delay	10
-	offset	50 90
-	frame	data/chars/leo/rise5.gif
-	offset	77 69
-	frame	data/chars/leo/rise4.gif
-	offset	50 90
-	frame	data/chars/leo/rise5.gif
-
-
-#done//
-#Punch
-anim attack1
-drawmethod  170 200
+anim	attack1
+	drawmethod	170 200
 	range	5 40
 	loop	0
 	delay	5
@@ -184,20 +34,19 @@ drawmethod  170 200
 	offset	136 104
 	frame	data/chars/leo/2atk2.gif
 	offset	37 100
-        attack	71 3 84 67 15 0 0 0 10
+	attack	71 3 84 67 15 0 0 0 10
 	frame	data/chars/leo/2atk3.gif
 	offset	93 101
 	frame	data/chars/leo/2atk4.gif
 	offset	82 100
-                  bbox          57 10 37 95
-	    frame	data/chars/leo/2atk5.gif
-              attack	0 0 0 0 0
+	bbox	57 10 37 95
+	frame	data/chars/leo/2atk5.gif
+	attack	0 0 0 0 0
 	offset	49 141
-                  frame	data/chars/leo/2atk6.gif
-
-
-anim attack2
-drawmethod  170 200
+	frame	data/chars/leo/2atk6.gif
+		
+anim	attack2
+	drawmethod	170 200
 	range	5 50
 	loop	0
 	delay	3
@@ -212,31 +61,23 @@ drawmethod  170 200
 	offset	57 132
 	frame	data/chars/leo/atk4.gif
 	offset	69 110
-                  attack	70 7 120 58 10 0 0 0 10
+	attack	70 7 120 58 10 0 0 0 10
 	frame	data/chars/leo/atk5.gif
 	offset	82 91
 	frame	data/chars/leo/atk6.gif
 	offset	79 97
 	frame	data/chars/leo/atk7.gif
-              attack	0 0 0 0 0
+	attack	0 0 0 0 0
 	offset	73 94
 	frame	data/chars/leo/atk8.gif
-
-
- 
- 
-   
-
-
-#Done???
-#Big Kick
-anim attack3
-drawmethod  170 200
+		
+anim	attack3
+	drawmethod	170 200
 	range	5 90
 	loop	0
 	delay	4
 	offset	110 154
-              bbox       37 35 35 88
+	bbox	37 35 35 88
 	sound	data/sounds/swish.wav
 	frame	data/chars/leo/3atk1.gif
 	offset	92 138
@@ -250,95 +91,41 @@ drawmethod  170 200
 	offset	113 123
 	frame	data/chars/leo/3atk6.gif
 	offset	37 94
-              attack	51 2 146 122 25 1 0 0 25
+	attack	51 2 146 122 25 1 0 0 25
 	frame	data/chars/leo/3atk7.gif
 	offset	30 85
 	frame	data/chars/leo/3atk8.gif
 	offset	28 84
 	frame	data/chars/leo/3atk9.gif
-              attack	0 0 0 0 0
+	attack	0 0 0 0 0
 	offset	31 89
 	frame	data/chars/leo/3atk10.gif
- 
-
-
-	
-
-
-#done//
-anim special
-drawmethod  170 200
-energycost	25
-	mponly	1
+		
+anim	fall
+	bbox	1 1 146 110
+	drawmethod	170 200
 	loop	0
-	delay	10
-	offset	129 91
-	sound	data/sounds/marvel/thorligh.wav
-	frame	data/chars/leo/spec1.gif
-	offset	128 88
-	attack	67 76 360 200 10
-	frame	data/chars/leo/spec2.gif
-	offset	123 94
-	attack	0 0 0 0 0 0
-	attack	67 76 360 200 10
-	frame	data/chars/leo/spec3.gif
-	offset	116+ 102
-	attack	0 0 0 0 0 0
-	frame	data/chars/leo/spec4.gif
-	offset	118 141
-	attack	67 76 360 200 10
-	frame	data/chars/leo/spec5.gif
-	offset	117 134
-	attack	0 0 0 0 0 0
-	frame	data/chars/leo/spec6.gif
-	offset	105 147
-	attack	67 76 360 200 20 1
-	frame	data/chars/leo/spec7.gif
-	offset	108 143
-	attack	0 0 0 0 0 0
-	frame	data/chars/leo/spec8.gif
-	attack	67 76 360 200 20 1
-	frame	data/chars/leo/spec9.gif
-	attack	0 0 0 0 0 0
-	attack	67 76 360 200 20 1
-	offset	234 286
-drawmethod  200 200
-sound	data/sounds/creatureyell.wav
-	frame	data/chars/leo/spec10.gif
-	frame	data/chars/leo/spec11.gif
-	frame	data/chars/leo/spec12.gif
-	frame	data/chars/leo/spec13.gif
-	frame	data/chars/leo/spec14.gif
-	frame	data/chars/leo/spec15.gif
-	frame	data/chars/leo/spec16.gif
-	frame	data/chars/leo/spec17.gif
-	frame	data/chars/leo/spec18.gif
-	frame	data/chars/leo/spec19.gif
-	offset	287 286
-	frame	data/chars/leo/spec20.gif
-	offset	234 286
-	frame	data/chars/leo/spec19.gif
-	frame	data/chars/leo/spec18.gif
-	frame	data/chars/leo/spec17.gif
-	frame	data/chars/leo/spec16.gif
-	frame	data/chars/leo/spec15.gif
-	frame	data/chars/leo/spec14.gif
-	frame	data/chars/leo/spec13.gif
-	frame	data/chars/leo/spec12.gif
-	frame	data/chars/leo/spec11.gif
-	attack	0 0 0 0 0 0
-
- 
-
-#done
-anim freespecial
-drawmethod  170 200
+	offset	76 132
+	delay	20
+	frame	data/chars/leo/fall1.gif
+	bbox	1 1 146 144
+	offset	94 182
+	frame	data/chars/leo/fall2.gif
+	bbox	1 1 161 81
+	offset	91 55
+	frame	data/chars/leo/fall3.gif
+	bbox	0 0 0 0
+	offset	92 26
+	frame	data/chars/leo/fall4.gif
+		
+anim	freespecial
+	drawmethod	170 200
 	range	5 90
 	loop	0
 	delay	6
 	move	10
 	offset	110 154
-              bbox       37 35 35 88
+	bbox	37 35 35 88
 	sound	data/sounds/swing.wav
 	frame	data/chars/leo/3atk1.gif
 	offset	92 138
@@ -352,20 +139,19 @@ drawmethod  170 200
 	offset	113 123
 	frame	data/chars/leo/3atk6.gif
 	offset	37 94
-              attack	51 2 146 122 25 1 0 0 25
+	attack	51 2 146 122 25 1 0 0 25
 	frame	data/chars/leo/3atk7.gif
 	offset	30 85
 	frame	data/chars/leo/3atk8.gif
-              attack	0 0 0 0 0
+	attack	0 0 0 0 0
 	offset	28 84
 	frame	data/chars/leo/3atk9.gif
 	offset	31 89
 	frame	data/chars/leo/3atk10.gif
-
-
-anim freespecial2
-drawmethod  170 200
-energycost	25
+		
+anim	freespecial2
+	drawmethod	170 200
+	energycost	25
 	mponly	1
 	loop	0
 	delay	8
@@ -416,17 +202,16 @@ energycost	25
 	attack	126 6 115 225 20 1
 	frame	data/chars/leo/2spec4.gif
 	attack	0 0 0 0 0 0
-	
-
-anim freespecial3
-drawmethod  170 200
-energycost	25
+		
+anim	freespecial3
+	drawmethod	170 200
+	energycost	25
 	mponly	1
 	range	5 90
 	loop	0
 	delay	7
 	offset	65 154
-              bbox       37 35 35 88
+	bbox	37 35 35 88
 	sound	data/sounds/marvel/gfire.wav
 	frame	data/chars/leo/fspec1.gif
 	offset	49 154
@@ -443,11 +228,11 @@ energycost	25
 	frame	data/chars/leo/fspec8.gif
 	attack	98 23 387 102 15
 	frame	data/chars/leo/fspec9.gif
-        attack	0 0 0 0 0
+	attack	0 0 0 0 0
 	frame	data/chars/leo/fspec10.gif
 	attack	98 23 387 102 15
 	frame	data/chars/leo/fspec11.gif
-        attack	0 0 0 0 0
+	attack	0 0 0 0 0
 	frame	data/chars/leo/fspec12.gif
 	attack	98 23 387 102 15 1
 	frame	data/chars/leo/fspec13.gif
@@ -456,12 +241,106 @@ energycost	25
 	attack	98 23 387 102 15 1
 	offset	60 132
 	frame	data/chars/leo/fspec4.gif
-        attack	0 0 0 0 0
-	
-
-#done
-anim jump
-drawmethod  170 200
+	attack	0 0 0 0 0
+		
+anim	get
+	drawmethod	170 200
+	loop	0
+	delay	10
+	offset	50 90
+	frame	data/chars/leo/rise5.gif
+	offset	77 69
+	frame	data/chars/leo/rise4.gif
+	offset	50 90
+	frame	data/chars/leo/rise5.gif
+		
+anim	grab
+	drawmethod	170 200
+	loop	0
+	offset	74 114
+	bbox	70 80 25 25
+	delay	1000
+	frame	data/chars/leo/grab.gif
+		
+anim	grabattack
+	drawmethod	170 200
+	range	5 40
+	loop	0
+	delay	5
+	offset	85 145
+	bbox	41 11 31 93
+	sound	data/sounds/swish.wav
+	frame	data/chars/leo/2atk1.gif
+	offset	136 104
+	frame	data/chars/leo/2atk2.gif
+	offset	37 100
+	frame	data/chars/leo/2atk3.gif
+	offset	93 101
+	attack	71 3 64 67 15 0 0 0 10
+	frame	data/chars/leo/2atk4.gif
+	offset	82 100
+	bbox	57 10 37 95
+	frame	data/chars/leo/2atk5.gif
+	offset	49 141
+	frame	data/chars/leo/2atk6.gif
+	attack	0 0 0 0 0
+		
+anim	grabattack2
+	drawmethod	170 200
+	loop	0
+	delay	7
+	offset	144 90
+	sound	data/sounds/swish.wav
+	frame	data/chars/leo/throw1.gif
+	offset	62 104
+	frame	data/chars/leo/throw2.gif
+	offset	63 114
+	frame	data/chars/leo/throw3.gif
+	offset	62 151
+	attack	0 5 164 135 20 1 0 0 10
+	frame	data/chars/leo/throw4.gif
+	offset	69 197
+	frame	data/chars/leo/throw5.gif
+	offset	98 190
+	frame	data/chars/leo/throw6.gif
+	offset	110 176
+	frame	data/chars/leo/throw7.gif
+	offset	98 190
+	frame	data/chars/leo/throw6.gif
+	attack	0 0 0 0 0
+		
+anim	idle
+	drawmethod	170 200
+	loop	1
+	offset	91 123
+	bbox	30 14 118 120
+	delay	18
+	frame	data/chars/leo/idle1.gif
+	offset	92 123
+	frame	data/chars/leo/idle2.gif
+	offset	93 124
+	frame	data/chars/leo/idle3.gif
+	offset	93 125
+	frame	data/chars/leo/idle4.gif
+	offset	94 126
+	frame	data/chars/leo/idle5.gif
+	offset	95 126
+	frame	data/chars/leo/idle6.gif
+	offset	94 126
+	frame	data/chars/leo/idle7.gif
+	offset	95 126
+	frame	data/chars/leo/idle6.gif
+	offset	94 126
+	frame	data/chars/leo/idle5.gif
+	offset	93 125
+	frame	data/chars/leo/idle4.gif
+	offset	93 124
+	frame	data/chars/leo/idle3.gif
+	offset	92 123
+	frame	data/chars/leo/idle2.gif
+		
+anim	jump
+	drawmethod	170 200
 	loop	0
 	offset	80 165
 	delay	15
@@ -476,11 +355,9 @@ drawmethod  170 200
 	frame	data/chars/leo/jump2.gif
 	offset	80 165
 	frame	data/chars/leo/jump1.gif
-
-
-#done
-anim jumpattack
-drawmethod  170 200
+		
+anim	jumpattack
+	drawmethod	170 200
 	loop	0
 	offset	39 159
 	delay	6
@@ -501,76 +378,173 @@ drawmethod  170 200
 	offset	72 134
 	frame	data/chars/leo/jatk7.gif
 	attack	0 0 0 0 0 0
-
-
-#done
-anim grab
-drawmethod  170 200
+		
+anim	land
+	drawmethod	170 200
 	loop	0
-	offset	74 114
-	bbox	70 80 25 25
-	delay	1000
-	frame	data/chars/leo/grab.gif
-
-
-#done//
-anim grabattack2
-drawmethod  170 200
+	delay	10
+	offset	77 69
+	frame	data/chars/leo/rise4.gif
+	offset	50 90
+	frame	data/chars/leo/rise5.gif
+		
+anim	pain
+	drawmethod	170 200
 	loop	0
-	delay	7
-	offset	144 90
+	offset	64 96
+	bbox	31 14 35 83
+	sound	data/chars/burnking/sounds/hurt1.wav
+	delay	10
+	frame	data/chars/leo/pain1.gif
+	offset	72 99
+	frame	data/chars/leo/pain2.gif
+	offset	75 100
+	frame	data/chars/leo/pain3.gif
+		
+anim	rise
+	drawmethod	170 200
+	loop	0
+	delay	8
+	offset	89 52
+	frame	data/chars/leo/rise1.gif
+	offset	85 64
+	frame	data/chars/leo/rise2.gif
+	offset	80 68
+	frame	data/chars/leo/rise3.gif
+	offset	77 69
+	frame	data/chars/leo/rise4.gif
+	offset	50 90
+	frame	data/chars/leo/rise5.gif
+		
+anim	run
+	drawmethod	170 200
+	loop	1
+	offset	61 116
+	bbox	25 8 38 97
+	delay	8
+	frame	data/chars/leo/walk1.gif
+	offset	60 114
+	frame	data/chars/leo/walk2.gif
+	offset	55 109
+	frame	data/chars/leo/walk3.gif
+	offset	42 114
+	frame	data/chars/leo/walk4.gif
+	offset	33 114
+	frame	data/chars/leo/walk5.gif
+	offset	41 114
+	frame	data/chars/leo/walk6.gif
+	offset	51 105
+	frame	data/chars/leo/walk7.gif
+	offset	63 106
+	frame	data/chars/leo/walk8.gif
+	offset	89 107
+	frame	data/chars/leo/walk9.gif
+	offset	60 106
+	frame	data/chars/leo/walk10.gif
+	offset	46 113
+	frame	data/chars/leo/walk11.gif
+	offset	32 113
+	frame	data/chars/leo/walk12.gif
+	offset	41 113
+	frame	data/chars/leo/walk13.gif
+	offset	51 109
+	frame	data/chars/leo/walk14.gif
+		
+anim	runattack
+	drawmethod	170 200
+	range	5 90
+	loop	0
+	delay	6
+	move	10
+	offset	110 154
+	bbox	37 35 35 88
 	sound	data/sounds/swish.wav
-	frame	data/chars/leo/throw1.gif
-	offset	62 104
-	frame	data/chars/leo/throw2.gif
-	offset	63 114
-	frame	data/chars/leo/throw3.gif
-	offset	62 151
-	attack	0 5 164 135 20 1 0 0 10
-	frame	data/chars/leo/throw4.gif
-	offset	69 197
-        frame	data/chars/leo/throw5.gif
-	offset	98 190
-	frame	data/chars/leo/throw6.gif
-	offset	110 176
-	frame	data/chars/leo/throw7.gif
-	offset	98 190
-	frame	data/chars/leo/throw6.gif
-              attack	0 0 0 0 0
-
-#done//
-anim grabattack
-drawmethod  170 200
-	range	5 40
+	frame	data/chars/leo/3atk1.gif
+	offset	92 138
+	frame	data/chars/leo/3atk2.gif
+	offset	84 118
+	frame	data/chars/leo/3atk3.gif
+	offset	98 127
+	frame	data/chars/leo/3atk4.gif
+	offset	100 124
+	frame	data/chars/leo/3atk5.gif
+	offset	113 123
+	frame	data/chars/leo/3atk6.gif
+	offset	37 94
+	attack	51 2 146 122 25 1 0 0 25
+	frame	data/chars/leo/3atk7.gif
+	offset	30 85
+	frame	data/chars/leo/3atk8.gif
+	attack	0 0 0 0 0
+	offset	28 84
+	frame	data/chars/leo/3atk9.gif
+	offset	31 89
+	frame	data/chars/leo/3atk10.gif
+		
+anim	special
+	drawmethod	170 200
+	energycost	25
+	mponly	1
 	loop	0
-	delay	5
-	offset	85 145
-	bbox	41 11 31 93
-	sound	data/sounds/swish.wav
-	frame	data/chars/leo/2atk1.gif
-	offset	136 104
-	frame	data/chars/leo/2atk2.gif
-	offset	37 100
-	frame	data/chars/leo/2atk3.gif
-	offset	93 101
-                  attack	71 3 64 67 15 0 0 0 10
-	frame	data/chars/leo/2atk4.gif
-	offset	82 100
-                  bbox          57 10 37 95
-	    frame	data/chars/leo/2atk5.gif
-	offset	49 141
-                  frame	data/chars/leo/2atk6.gif
-                  attack	0 0 0 0 0
- 
-
-
-
-
-
-
-#done final
-anim throw
-drawmethod  170 200
+	delay	10
+	offset	129 91
+	sound	data/sounds/marvel/thorligh.wav
+	frame	data/chars/leo/spec1.gif
+	offset	128 88
+	attack	67 76 360 200 10
+	frame	data/chars/leo/spec2.gif
+	offset	123 94
+	attack	0 0 0 0 0 0
+	attack	67 76 360 200 10
+	frame	data/chars/leo/spec3.gif
+	offset	116+ 102
+	attack	0 0 0 0 0 0
+	frame	data/chars/leo/spec4.gif
+	offset	118 141
+	attack	67 76 360 200 10
+	frame	data/chars/leo/spec5.gif
+	offset	117 134
+	attack	0 0 0 0 0 0
+	frame	data/chars/leo/spec6.gif
+	offset	105 147
+	attack	67 76 360 200 20 1
+	frame	data/chars/leo/spec7.gif
+	offset	108 143
+	attack	0 0 0 0 0 0
+	frame	data/chars/leo/spec8.gif
+	attack	67 76 360 200 20 1
+	frame	data/chars/leo/spec9.gif
+	attack	0 0 0 0 0 0
+	attack	67 76 360 200 20 1
+	offset	234 286
+	drawmethod	200 200
+	sound	data/sounds/creatureyell.wav
+	frame	data/chars/leo/spec10.gif
+	frame	data/chars/leo/spec11.gif
+	frame	data/chars/leo/spec12.gif
+	frame	data/chars/leo/spec13.gif
+	frame	data/chars/leo/spec14.gif
+	frame	data/chars/leo/spec15.gif
+	frame	data/chars/leo/spec16.gif
+	frame	data/chars/leo/spec17.gif
+	frame	data/chars/leo/spec18.gif
+	frame	data/chars/leo/spec19.gif
+	offset	287 286
+	frame	data/chars/leo/spec20.gif
+	offset	234 286
+	frame	data/chars/leo/spec19.gif
+	frame	data/chars/leo/spec18.gif
+	frame	data/chars/leo/spec17.gif
+	frame	data/chars/leo/spec16.gif
+	frame	data/chars/leo/spec15.gif
+	frame	data/chars/leo/spec14.gif
+	frame	data/chars/leo/spec13.gif
+	frame	data/chars/leo/spec12.gif
+	frame	data/chars/leo/spec11.gif
+	attack	0 0 0 0 0 0
+		
+anim	throw
+	drawmethod	170 200
 	loop	0
 	delay	7
 	offset	144 90
@@ -584,78 +558,48 @@ drawmethod  170 200
 	attack	0 5 164 135 20 1
 	frame	data/chars/leo/throw4.gif
 	offset	69 197
-        frame	data/chars/leo/throw5.gif
+	frame	data/chars/leo/throw5.gif
 	offset	98 190
 	frame	data/chars/leo/throw6.gif
 	offset	110 176
 	frame	data/chars/leo/throw7.gif
 	offset	98 190
 	frame	data/chars/leo/throw6.gif
-              attack	0 0 0 0 0
-
-
-
-
-#done
-anim pain
-drawmethod  170 200
-	loop	0
-	offset  64 96
-	bbox 	31 14 35 83
-	sound	data/chars/burnking/sounds/hurt1.wav
-	delay	10
-	frame	data/chars/leo/pain1.gif
-	offset  72 99
-	frame	data/chars/leo/pain2.gif
-	offset  75 100
-	frame	data/chars/leo/pain3.gif
-
-
-
-
-#done//
-anim fall
-drawmethod  170 200
-	loop	0
-	offset  76 132
-	delay	20
-	frame	data/chars/leo/fall1.gif
-	offset  94 182
-	frame	data/chars/leo/fall2.gif
-	offset  91 55
-	frame	data/chars/leo/fall3.gif
-	offset  92 26
-	frame	data/chars/leo/fall4.gif
-
-
-
-
-#done//
-anim rise
-drawmethod  170 200
-	loop	0
-	delay	8
-	offset	89 52
-	frame	data/chars/leo/rise1.gif
-	offset	85 64
-	frame	data/chars/leo/rise2.gif
-	offset	80 68
-	frame	data/chars/leo/rise3.gif
-	offset	77 69
-	frame	data/chars/leo/rise4.gif
-	offset	50 90
-	frame	data/chars/leo/rise5.gif
-
-
-
-#done//
-anim land
-drawmethod  170 200
-	loop	0
-	delay	10
-	offset	77 69
-	frame	data/chars/leo/rise4.gif
-	offset	50 90
-	frame	data/chars/leo/rise5.gif
-
-
+	attack	0 0 0 0 0
+		
+anim	walk
+	drawmethod	170 200
+	loop	1
+	offset	61 116
+	bbox	25 8 38 97
+	delay	9
+	frame	data/chars/leo/walk1.gif
+	offset	60 114
+	frame	data/chars/leo/walk2.gif
+	offset	55 109
+	frame	data/chars/leo/walk3.gif
+	offset	42 114
+	frame	data/chars/leo/walk4.gif
+	offset	33 114
+	frame	data/chars/leo/walk5.gif
+	offset	41 114
+	frame	data/chars/leo/walk6.gif
+	offset	51 105
+	frame	data/chars/leo/walk7.gif
+	offset	63 106
+	frame	data/chars/leo/walk8.gif
+	offset	89 107
+	frame	data/chars/leo/walk9.gif
+	offset	60 106
+	frame	data/chars/leo/walk10.gif
+	offset	46 113
+	frame	data/chars/leo/walk11.gif
+	offset	32 113
+	frame	data/chars/leo/walk12.gif
+	offset	41 113
+	frame	data/chars/leo/walk13.gif
+	offset	51 109
+	frame	data/chars/leo/walk14.gif
+		
+#|edited by openBor Stats v 0.67
+		
