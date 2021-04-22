@@ -37,6 +37,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -236,43 +237,6 @@ anim	get
 	frame	data/chars/Luffy/get02.gif
 	frame	data/chars/Luffy/get03.gif
 		
-anim	grab
-	loop	0
-	offset	38 77
-	delay	8
-	bbox	36 46 13 20
-	delay	8
-	sound	data/chars/Luffy/grab.wav
-	frame	data/chars/Luffy/grab.gif
-		
-anim	grabattack
-	loop	0
-	offset	38 77
-	bbox	36 46 13 20
-	delay	4
-	frame	data/chars/Luffy/gatta1.gif
-	attack	49 39 19 26 6
-	frame	data/chars/Luffy/gatta2.gif
-	frame	data/chars/Luffy/gatta3.gif
-	frame	data/chars/Luffy/gatta4.gif
-		
-anim	grabattack2
-	loop	0
-	offset	38 77
-	bbox	0 0 0 0 0
-	delay	5
-	frame	data/chars/Luffy/gatta2-1.gif
-	frame	data/chars/Luffy/gatta2-2.gif
-	frame	data/chars/Luffy/gatta2-3.gif
-	frame	data/chars/Luffy/gatta2-4.gif
-	frame	data/chars/Luffy/gatta2-5.gif
-	frame	data/chars/Luffy/gatta2-6.gif
-	frame	data/chars/Luffy/gatta2-7.gif
-	sound	data/chars/Luffy/finish.wav
-	blast	47 38 41 24 8 0 0 0 0 0
-	frame	data/chars/Luffy/gatta2-8.gif
-	frame	data/chars/Luffy/gatta2-9.gif
-		
 anim	idle
 	loop	1
 	delay	15
@@ -434,13 +398,6 @@ anim	special
 	offset	38 77
 	frame	data/chars/Luffy/trans16.gif
 	frame	data/chars/Luffy/trans16.gif
-		
-anim	throw
-	loop	0
-	offset	38 77
-	delay	7
-	frame	data/chars/Luffy/throw01.gif
-	frame	data/chars/Luffy/throw02.gif
 		
 anim	waiting
 	loop	1

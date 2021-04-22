@@ -159,41 +159,6 @@ anim	get
 	frame	data/chars/Krillin/rise05.gif
 	frame	data/chars/Krillin/rise06.gif
 		
-anim	grab
-	loop	0
-	offset	38 77
-	delay	8
-	bbox	35 55 17 20
-	delay	8
-	frame	data/chars/Krillin/grab.gif
-		
-anim	grabattack
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	5
-	frame	data/chars/Krillin/jab00.gif
-	frame	data/chars/Krillin/jab01.gif
-	frame	data/chars/Krillin/jab02.gif
-	attack	54 56 20 9 8
-	frame	data/chars/Krillin/jab03.gif
-	attack	0
-	frame	data/chars/Krillin/jab04.gif
-	frame	data/chars/Krillin/jab05.gif
-		
-anim	grabattack2
-	loop	0
-	offset	38 77
-	bbox	35 55 17 20
-	delay	7
-	frame	data/chars/Krillin/jatk00.gif
-	frame	data/chars/Krillin/jatk01.gif
-	blast	48 48 20 10 8 1
-	frame	data/chars/Krillin/jatk02.gif
-	frame	data/chars/Krillin/jatk03.gif
-	frame	data/chars/Krillin/jatk04.gif
-	frame	data/chars/Krillin/jatk05.gif
-		
 anim	idle
 	loop	1
 	delay	15
@@ -337,17 +302,6 @@ anim	special
 	frame	data/chars/Krillin/solar02.gif
 	frame	data/chars/Krillin/solar01.gif
 	frame	data/chars/Krillin/solar00.gif
-		
-anim	throw
-	loop	0
-	offset	38 77
-	delay	6
-	frame	data/chars/Krillin/throw00.gif
-	frame	data/chars/Krillin/throw01.gif
-	frame	data/chars/Krillin/throw02.gif
-	frame	data/chars/Krillin/throw03.gif
-	frame	data/chars/Krillin/throw04.gif
-	frame	data/chars/Krillin/throw05.gif
 		
 anim	walk
 	loop	1

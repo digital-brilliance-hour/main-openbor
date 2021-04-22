@@ -110,40 +110,6 @@ anim	get
 	delay	10
 	frame	data/chars/Renji/Duck1.gif
 		
-anim	grab
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Renji/Duck1.gif
-		
-anim	grabattack
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	45 70 30 46
-	sound	data/sounds/Att.wav
-	frame	data/chars/Renji/Att1.gif
-	frame	data/chars/Renji/Att2.gif
-	attack	70 55 40 61 5
-	frame	data/chars/Renji/Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Renji/Att4.gif
-	frame	data/chars/Renji/Att5.gif
-		
-anim	grabattack2
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	45 70 30 46
-	sound	data/sounds/Att.wav
-	frame	data/chars/Renji/3Att1.gif
-	frame	data/chars/Renji/3Att2.gif
-	attack	70 55 40 61 10
-	frame	data/chars/Renji/3Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Renji/3Att4.gif
-	frame	data/chars/Renji/3Att5.gif
-		
 anim	idle
 	loop	1
 	delay	15
@@ -259,13 +225,6 @@ anim	special
 	frame	data/chars/Renji/Duck1.gif
 	frame	data/chars/Renji/Duck1.gif
 	frame	data/chars/Renji/Duck1.gif
-		
-anim	throw
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Renji/Throw1.gif
-	frame	data/chars/Renji/Throw2.gif
 		
 anim	walk
 	loop	1

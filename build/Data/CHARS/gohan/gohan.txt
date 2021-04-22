@@ -25,6 +25,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
 	shadowcoords	18 77
@@ -306,19 +307,6 @@ anim	special
 	blast	0
 	frame	data/chars/Gohan/solar01.gif
 	frame	data/chars/Gohan/solar00.gif
-		
-anim	throw
-	loop	0
-	shadowcoords	18 77
-	offset	38 77
-	delay	6
-	@cmd	spawnparent "pdust" -10 0 -20
-	frame	data/chars/Gohan/throw00.gif
-	frame	data/chars/Gohan/throw01.gif
-	frame	data/chars/Gohan/throw02.gif
-	frame	data/chars/Gohan/throw03.gif
-	frame	data/chars/Gohan/throw04.gif
-	frame	data/chars/Gohan/throw05.gif
 		
 anim	walk
 	loop	1

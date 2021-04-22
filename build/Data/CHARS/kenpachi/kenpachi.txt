@@ -115,38 +115,6 @@ anim	get
 	delay	10
 	frame	data/chars/Kenpachi/Duck1.gif
 		
-anim	grab
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Kenpachi/Duck1.gif
-		
-anim	grabattack
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	50 65 20 40
-	sound	data/sounds/Att.wav
-	frame	data/chars/Kenpachi/Att1.gif
-	frame	data/chars/Kenpachi/Att2.gif
-	attack	69 32 50 86 5
-	frame	data/chars/Kenpachi/Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Kenpachi/Att4.gif
-		
-anim	grabattack2
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	50 65 20 40
-	sound	data/sounds/Att.wav
-	frame	data/chars/Kenpachi/3Att1.gif
-	frame	data/chars/Kenpachi/3Att2.gif
-	attack	69 32 50 86 20 1
-	frame	data/chars/Kenpachi/3Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Kenpachi/3Att4.gif
-		
 anim	idle
 	loop	1
 	delay	15
@@ -231,14 +199,6 @@ anim	special
 	delay	15
 	attack	61 0 111 223 20 1
 	frame	data/chars/Kenpachi/Select.gif
-		
-anim	throw
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Kenpachi/Throw1.gif
-	frame	data/chars/Kenpachi/Throw2.gif
-	frame	data/chars/Kenpachi/Throw3.gif
 		
 anim	walk
 	loop	1

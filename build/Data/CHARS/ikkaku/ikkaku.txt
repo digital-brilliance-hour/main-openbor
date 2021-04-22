@@ -102,39 +102,6 @@ anim	get
 	delay	10
 	frame	data/chars/Ikkaku/Duck1.gif
 		
-anim	grab
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Ikkaku/Duck1.gif
-		
-anim	grabattack
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	50 65 20 40
-	sound	data/sounds/Att.wav
-	frame	data/chars/Ikkaku/Att1.gif
-	frame	data/chars/Ikkaku/Att2.gif
-	attack	69 32 50 86 5
-	frame	data/chars/Ikkaku/Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Ikkaku/Att4.gif
-		
-anim	grabattack2
-	loop	0
-	delay	7
-	offset	58 116
-	bbox	50 65 20 40
-	sound	data/sounds/Att.wav
-	frame	data/chars/Ikkaku/3Att1.gif
-	frame	data/chars/Ikkaku/3Att2.gif
-	attack	69 32 50 86 20 1
-	frame	data/chars/Ikkaku/3Att3.gif
-	attack	0 0 0 0 0 0
-	frame	data/chars/Ikkaku/3Att4.gif
-	frame	data/chars/Ikkaku/3Att5.gif
-		
 anim	idle
 	loop	1
 	delay	15
@@ -227,14 +194,6 @@ anim	special
 	frame	data/chars/Ikkaku/Special9.gif
 	frame	data/chars/Ikkaku/Special9.gif
 	frame	data/chars/Ikkaku/Special9.gif
-		
-anim	throw
-	loop	0
-	offset	58 116
-	delay	10
-	frame	data/chars/Ikkaku/Throw1.gif
-	frame	data/chars/Ikkaku/Throw2.gif
-	frame	data/chars/Ikkaku/Throw3.gif
 		
 anim	walk
 	loop	1

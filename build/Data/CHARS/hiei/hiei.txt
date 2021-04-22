@@ -680,38 +680,6 @@ anim	get
 	offset	72 120
 	frame	data/chars/hiei/stand2.gif
 		
-anim	grab
-	bbox	49 63 38 63
-	loop	0
-	delay	100
-	offset	72 120
-	frame	data/chars/hiei/28.gif
-		
-anim	grabattack
-	bbox	57 64 30 60
-	hitflash	flash2
-	loop	0
-	offset	72 120
-	delay	15
-	frame	data/chars/hiei/49.gif
-	offset	72 120
-	frame	data/chars/hiei/50.gif
-	offset	72 120
-	attack	75 66 55 58 6 0 1 0 0 0
-	frame	data/chars/hiei/c.gif
-		
-anim	grabbed
-	loop	0
-	offset	42 175
-	bbox	36 48 38 76
-	delay	45
-	frame	data/chars/hiei/caindo1.gif
-	bbox	30 45 54 84
-	offset	52 180
-	frame	data/chars/hiei/61.gif
-	offset	42 175
-	frame	data/chars/hiei/caindo1.gif
-		
 anim	idle
 	bbox	48 52 44 72
 	loop	1
@@ -1048,16 +1016,6 @@ anim	special
 	frame	data/chars/hiei/aura4.gif
 	offset	187 187
 	frame	data/chars/hiei/aura5.gif
-		
-anim	throw
-	loop	0
-	delay	7
-	offset	63 120
-	frame	data/chars/hiei/socosfire.gif
-	frame	data/chars/hiei/caindo1.gif
-	frame	data/chars/hiei/caindo2.gif
-	frame	data/chars/hiei/39.gif
-	frame	data/chars/hiei/stand1.gif
 		
 anim	walk
 	bbox	50 41 39 81
