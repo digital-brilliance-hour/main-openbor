@@ -11,7 +11,8 @@ com      a3 freespecial
 com      a2 freespecial11
 com      a4 freespecial3
 script data/scripts/playerscript.c
-
+weapons goku_ssj goku_normal
+weaploss 3
 parrow data/chars/misc/picon/1picon.gif -18 -100
 parrow2 data/chars/misc/picon/2picon.gif -18 -100
 parrow3 data/chars/misc/picon/3picon.gif -18 -100
@@ -239,10 +240,11 @@ anim	freespecial2
 	frame	data/chars/Goku-normal/ki04.GIF
 		
 anim	freespecial3
-	energycost	0
-	mponly	1
-	@cmd	enoughmp
+#	energycost	0
+#	mponly	1
+#	@cmd	enoughmp
 	loop	0
+	weaponframe	7 1
 	offset	43 86
 	delay	7
 	sound	data/chars/Goku-normal/ki.wav
