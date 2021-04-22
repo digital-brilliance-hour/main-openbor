@@ -42,7 +42,7 @@ void main()
 
 				changeentityproperty(p,"offense",openborconstant("ATK_NORMAL"),getglobalvar("offense_"+num+"P"));
 				changeentityproperty(p,"defense",openborconstant("ATK_NORMAL"),getglobalvar("defense_"+num+"P"));
-				log(getglobalvar("offense_"+num+"P"));
+				//log(getglobalvar("offense_"+num+"P"));
 			}
 	 	}
 	} 

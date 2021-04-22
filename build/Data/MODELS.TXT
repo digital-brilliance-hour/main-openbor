@@ -5,6 +5,8 @@
 # 
 
 maxattacks 8
+maxfreespecials 25
+maxattacktypes 99
 
 # Required objects. These must always be loaded.
 load	Flash		data/chars/misc/flash.txt
@@ -55,8 +57,8 @@ load    Yusuke          data/chars/yusuke/yusuke.txt
 load 	Goku_Normal	data/chars/Goku-normal/gokup.txt
 load	Ichigo		data/chars/Ichigo/Ichigo.txt
 know	Sasuke		data/chars/Sasuke/Sasuke.txt
-load    Leigan          data/chars/yusuke/leigan.txt
-load    Superl          data/chars/yusuke/superl.txt
+#load    Leigan          data/chars/yusuke/leigan.txt
+#load    Superl          data/chars/yusuke/superl.txt
 know    Hiei            data/chars/hiei/hiei.txt
 load    Cnegras         data/chars/hiei/cnegras.txt
 know	Renji		data/chars/Renji/Renji.txt
@@ -70,13 +72,13 @@ load	Zoro2	        data/chars/Zoro2/Zoro2.txt
 know	Franky	        data/chars/Franky/Franky.txt
 know	Dugong	        data/chars/Dugong/Dugong.txt
 know	Ace_Player	        data/chars/Ace/Ace.txt
-know	Goku	        data/chars/Goku/Goku.txt
+load	Goku_SSJ	        data/chars/Goku/Goku.txt
 know	Gohan	        data/chars/Gohan/Gohan.txt
 know	Krillin	        data/chars/Krillin/Krillin.txt
 know King_Piccolo data/chars/King_Piccolo/King_Piccolo.txt
 know Hisoka data/chars/Hisoka/Hisoka.txt
 know Shrek data/chars/Shrek/Shrek.txt
-know Lee data/chars/Lee/Lee.txt
+load Lee data/chars/Lee/Lee.txt
 know Broly data/chars/Broly_SSB/Broly_SSB.txt
 
 # Items and other objects can be loaded when needed.
@@ -153,7 +155,7 @@ know    cabaji          data/chars/cabaji/cabaji.txt
 know    koma            data/chars/koma/koma.txt
 know    pirate          data/chars/pirate/pirate.txt
 know	Luffyb	        data/chars/Luffy/Luffyb.txt
-know    goku            data/chars/goku/goku.txt
+#know    goku_ssj            data/chars/goku/goku.txt
 know    kizaru          data/chars/kizaru/kizaru.txt
 load	Franky2	        data/chars/Franky/Franky2.txt  
 know    Dugongs         data/chars/Dugongs/Dugongs.txt
@@ -213,3 +215,4 @@ know	Pillar		data/chars/misc/Pillar.txt
 know	Kunai		data/chars/misc/Kunai.txt
 know	Kunai_		data/chars/misc/Kunai_.txt
 Load Levelup data/chars/Misc/levelup/levelup.txt
+#know 	Yusuke-original data/chars/yusuke/yusuke-original.txt

@@ -1,0 +1,1107 @@
+name	Yusuke
+health	100
+speed	10
+running 18 2 4 2 10
+mp  100
+gfxshadow 1
+fmap 2
+type	player
+shadow	5
+icon	data/chars/yusuke/icone3.gif
+diesound data/chars/yusuke/yusuke5.wav
+dust dust
+
+load			leigan
+load                    superl
+
+
+palette  data/chars/yusuke/yusuke2.gif  # cor 1 #
+
+remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt2.gif
+remap	data/chars/yusuke/idle1.gif data/chars/yusuke/alt3.gif
+
+com 		a4 freespecial3
+com 		a3 freespecial2
+com 		a2 freespecial
+com             D U A freespecial4
+
+
+
+
+alternatepal data/chars/yusuke/alt2.gif
+alternatepal data/chars/yusuke/alt3.gif
+animationscript data/scripts/spawns.c
+script data/scripts/playerscript.c
+
+parrow data/chars/misc/picon/1picon.gif -18 -100
+parrow2 data/chars/misc/picon/2picon.gif -18 -100
+parrow3 data/chars/misc/picon/3picon.gif -18 -100
+parrow4 data/chars/misc/picon/4picon.gif -18 -100
+makeinv 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	63 120
+	frame	data/chars/yusuke/punch5.gif
+	offset	63 120
+	frame	data/chars/yusuke/punch0.gif
+	offset	63 120
+	frame	data/chars/yusuke/punch4.gif
+	offset	63 120
+	attack	84 55 57 69 8 0 1 0 0 0
+	delay	9
+	frame	data/chars/yusuke/punch2.gif
+	offset	63 120
+	delay	7
+	frame	data/chars/yusuke/punch4.gif
+		
+anim	attack2
+	loop	0
+	delay	6
+	offset	63 120
+	frame	data/chars/yusuke/n0.gif
+	attack	74 56 55 74 3 0 0 0 0 0
+	move	0
+	offset	63 120
+	frame	data/chars/yusuke/n1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/n2.gif
+	attack	68 35 58 97 10 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/n3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/n3.gif
+	attack	62 37 65 94 10 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/n3.gif
+	offset	63 120
+	move	0
+	frame	data/chars/yusuke/n2.gif
+		
+anim	attack3
+	loop	0
+	delay	5
+	offset	63 120
+	bbox	0 0 0 0
+	frame	data/chars/yusuke/walk1.gif
+	frame	data/chars/yusuke/04.gif
+	attack	79 50 55 47 3 2 1 0 0 0
+	bbox	0 0 0 0
+	delay	9
+	frame	data/chars/yusuke/03.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	frame	data/chars/yusuke/04.gif
+	attack	51 46 66 41 9 1 0 0 0 0
+	bbox	0 0 0 0
+	frame	data/chars/yusuke/02.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/01.gif
+	delay	8
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/cpernas1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/cpernas2.gif
+	attack	74 63 73 48 20 1 0 0 0 0
+	frame	data/chars/yusuke/cpernas3.gif
+	frame	data/chars/yusuke/jump1.gif
+	frame	data/chars/yusuke/jump6.gif
+		
+anim	bpain
+	loop	0
+	offset	66 128
+	bbox	39 31 54 102
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+		
+anim	burn
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	6
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	6
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/fire2.gif
+		
+anim	fall
+	loop	0
+	sound	data/chars/yusuke/lose2.wav
+	offset	63 120
+	delay	20
+	attack	35 93 52 26 17 1 0 0 0 0
+	frame	data/chars/yusuke/fall0.gif
+	attack	28 106 70 15 17 1 0 0 0 0
+	frame	data/chars/yusuke/fall1.gif
+	;reikodan;	
+		
+anim	follow1
+	custknife	superl
+	throwframe	28
+	sound	data/chars/yusuke/ora.wav
+	delay	6
+	offset	63 120
+	frame	data/chars/yusuke/punch0.gif
+	frame	data/chars/yusuke/esp1.gif
+	offset	63 120
+	frame	data/chars/yusuke/esp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/esp9.gif
+	attack	88 40 40 60 5 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/esp10.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/esp12.gif
+	attack	129 62 -34 14 5 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/esp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/esp5.gif
+	attack	128 57 -30 33 5 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/esp6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/esp9.gif
+	attack	128 57 -30 33 5 0 0 0 0 0
+	frame	data/chars/yusuke/esp12.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/esp10.gif
+	attack	128 57 -30 33 5 0 0 0 0 0
+	frame	data/chars/yusuke/esp12.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	63 120
+	frame	data/chars/yusuke/esp7.gif
+	delay	30
+	attack	119 19 -48 75 80 1 0 0 22 0
+	offset	63 120
+	frame	data/chars/yusuke/esp8.gif
+	delay	4
+	frame	data/chars/yusuke/n3.gif
+	offset	63 120
+	frame	data/chars/yusuke/n2.gif
+	offset	63 120
+	frame	data/chars/yusuke/n1.gif
+	frame	data/chars/yusuke/idle1.gif
+	frame	data/chars/yusuke/39.gif
+	frame	data/chars/yusuke/38.gif
+	frame	data/chars/yusuke/42.gif
+	frame	data/chars/yusuke/43.gif
+	frame	data/chars/yusuke/44.gif
+	frame	data/chars/yusuke/45.gif
+	frame	data/chars/yusuke/47.gif
+	frame	data/chars/yusuke/68.gif
+	sound	data/chars/yusuke/leigan2.wav
+	frame	data/chars/yusuke/46.gif
+	frame	data/chars/yusuke/36.gif
+		
+anim	freespecial
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	custknife	leigan
+	throwframe	3
+	loop	0
+	sound	data/chars/yusuke/leigan2.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	63 120
+	frame	data/chars/yusuke/39.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	7
+	frame	data/chars/yusuke/38.gif
+	frame	data/chars/yusuke/42.gif
+	frame	data/chars/yusuke/38.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	delay	22
+	frame	data/chars/yusuke/39.gif
+	frame	data/chars/yusuke/46.gif
+		
+anim	freespecial2
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	followanim	1
+	followcond	1
+	delay	4
+	offset	121 302
+	sound	data/chars/yusuke/ave.wav
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	frame	data/chars/yusuke/l.gif
+	delay	4
+	frame	data/chars/yusuke/j.gif
+	frame	data/chars/yusuke/i.gif
+	frame	data/chars/yusuke/h.gif
+	frame	data/chars/yusuke/g.gif
+	frame	data/chars/yusuke/f.gif
+	frame	data/chars/yusuke/e.gif
+	frame	data/chars/yusuke/d.gif
+	frame	data/chars/yusuke/c.gif
+	frame	data/chars/yusuke/b.gif
+	sound	data/chars/yusuke/ave.wav
+	frame	data/chars/yusuke/a.gif
+	frame	data/chars/yusuke/b.gif
+	frame	data/chars/yusuke/c.gif
+	frame	data/chars/yusuke/d.gif
+	frame	data/chars/yusuke/e.gif
+	frame	data/chars/yusuke/f.gif
+	frame	data/chars/yusuke/g.gif
+	frame	data/chars/yusuke/h.gif
+	frame	data/chars/yusuke/i.gif
+	frame	data/chars/yusuke/j.gif
+	frame	data/chars/yusuke/l.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	delay	4
+	offset	63 120
+	frame	data/chars/yusuke/jump9.gif
+	offset	63 120
+	frame	data/chars/yusuke/dash3.gif
+	move	25
+	attack	62 73 66 57 1 0 1 0 0 0
+	offset	70 120
+	frame	data/chars/yusuke/dash3.gif
+	attack	0
+	frame	data/chars/yusuke/dash3.gif
+	attack	72 67 56 63 1 0 1 0 0 0
+	frame	data/chars/yusuke/dash3.gif
+	attack	0
+	@cmd	spawnparent "pdust" -10 0 -20
+	frame	data/chars/yusuke/punch2.gif
+	attack	71 50 59 79 1 0 1 0 0 0
+	frame	data/chars/yusuke/punch2.gif
+	attack	0
+	frame	data/chars/yusuke/punch2.gif
+	attack	70 50 59 79 1 0 1 0 0 0
+	frame	data/chars/yusuke/punch2.gif
+	attack	0
+	offset	70 120
+	frame	data/chars/yusuke/punch2.gif
+	attack	73 48 56 81 1 0 1 0 0 0
+	offset	70 120
+	frame	data/chars/yusuke/punch2.gif
+		
+anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	custknife	superl
+	throwframe	19
+	loop	0
+	delay	7
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	sound	data/chars/yusuke/ae.wav
+	offset	63 120
+	frame	data/chars/yusuke/39.gif
+	delay	7
+	attack	24 99 83 118 0 0 1 0 0 0
+	offset	63 209
+	sound	data/chars/yusuke/energia.wav
+	frame	data/chars/yusuke/eflei1.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei2.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei3.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei4.gif
+	attack	24 99 83 118 0 0 1 0 0 0
+	sound	data/chars/yusuke/energia.wav
+	offset	63 209
+	frame	data/chars/yusuke/eflei1.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei2.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei3.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei4.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei1.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei2.gif
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei3.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	offset	63 209
+	attack	24 99 83 118 0 0 1 0 0 0
+	frame	data/chars/yusuke/eflei4.gif
+	bbox	44 35 47 93
+	offset	63 120
+	frame	data/chars/yusuke/38.gif
+	offset	63 120
+	frame	data/chars/yusuke/42.gif
+	offset	63 120
+	frame	data/chars/yusuke/43.gif
+	offset	63 120
+	frame	data/chars/yusuke/44.gif
+	sound	data/chars/yusuke/reigan.wav
+	offset	63 120
+	frame	data/chars/yusuke/45.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	offset	63 120
+	frame	data/chars/yusuke/47.gif
+	offset	63 120
+	frame	data/chars/yusuke/68.gif
+	offset	63 120
+	delay	25
+	frame	data/chars/yusuke/46.gif
+	offset	63 120
+	frame	data/chars/yusuke/36.gif
+		
+anim	freespecial4
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	attack	31 142 77 136 0 0 1 0 0 0
+	loop	0
+	delay	6
+	sound	data/chars/yusuke/ae.wav
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	offset	68 270
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra3.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra1.gif
+	sound	data/chars/yusuke/energia.wav
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra3.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra1.gif
+	offset	568 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra3.gif
+	offset	68 270
+	attack	31 142 77 136 0 0 1 0 0 0
+	frame	data/chars/yusuke/efra2.gif
+	frame	data/chars/yusuke/efra1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	delay	8
+	attack	95 4 314 128 12 0 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	sound	data/chars/yusuke/shotgun.wav
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx2.gif
+	attack	245 4 153 127 12 0 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx4.gif
+	attack	364 11 36 115 12 0 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	14
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx1.gif
+	attack	95 0 314 128 12 0 0 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx3.gif
+	attack	289 0 114 129 12 1 0 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx5.gif
+	delay	14
+	attack	98 4 314 128 12 1 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx2.gif
+	attack	245 4 152 127 12 1 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx4.gif
+	attack	364 11 36 115 12 1 1 0 0 130
+	offset	74 120
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/yusuke/zx5.gif
+	offset	66 120
+	frame	data/chars/yusuke/punch0.gif
+	bbox	43 80 39 81
+	sound	data/chars/yusuke/energia.wav
+	offset	59 153
+	frame	data/chars/yusuke/ar3.gif
+	offset	59 153
+	frame	data/chars/yusuke/ar2.gif
+	offset	59 153
+	frame	data/chars/yusuke/ar.gif
+	bbox	43 45 44 77
+	offset	61 118
+	frame	data/chars/yusuke/punch5.gif
+		
+anim	get
+	loop	0
+	delay	5
+	offset	63 120
+	frame	data/chars/yusuke/idle3.gif
+	frame	data/chars/yusuke/jump6.gif
+	delay	5
+	frame	data/chars/yusuke/jump6.gif
+	frame	data/chars/yusuke/idle3.gif
+		
+anim	grab
+	loop	0
+	delay	100
+	offset	63 120
+	bbox	71 43 34 88
+	frame	data/chars/yusuke/35.gif
+		
+anim	grabattack
+	attack	83 59 34 31 6 0 0 0 0 0
+	loop	0
+	offset	63 120
+	bbox	57 59 35 71
+	delay	35
+	frame	data/chars/yusuke/knee2.gif
+		
+anim	grabbed
+	loop	0
+	offset	42 166
+	bbox	36 48 38 76
+	delay	90
+	frame	data/chars/yusuke/pain3.gif
+	bbox	30 45 54 84
+	offset	42 166
+	frame	data/chars/yusuke/pain2.gif
+	offset	42 166
+	frame	data/chars/yusuke/pain3.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	65 120
+	bbox	38 36 51 90
+	frame	data/chars/yusuke/idle1.gif
+	bbox	38 36 51 90
+	frame	data/chars/yusuke/idle2.gif
+	bbox	38 36 51 90
+	frame	data/chars/yusuke/idle3.gif
+	bbox	38 36 51 90
+	frame	data/chars/yusuke/idle2.gif
+		
+anim	jump
+	loop	0
+	delay	10
+	offset	63 120
+	bbox	21 2 55 121
+	@cmd	spawnparent "pdust" -10 0 -20
+	frame	data/chars/yusuke/Jump1.gif
+	bbox	20 0 58 105
+	frame	data/chars/yusuke/Jump4.gif
+	bbox	24 2 54 91
+	frame	data/chars/yusuke/Jump3.gif
+	bbox	18 5 67 74
+	frame	data/chars/yusuke/Jump10.gif
+	bbox	24 2 54 91
+	frame	data/chars/yusuke/Jump8.gif
+	bbox	20 0 58 105
+	frame	data/chars/yusuke/Jump9.gif
+		
+anim	jumpattack
+	loop	0
+	delay	7
+	offset	40 107
+	bbox	40 6 43 92
+	frame	data/chars/yusuke/jk5.gif
+	frame	data/chars/yusuke/jk2.gif
+	attack	60 55 72 29 9 1 0 0 0 0
+	bbox	40 6 53 81
+	delay	15
+	frame	data/chars/yusuke/jk1.gif
+		
+anim	jumpattack2
+	loop	0
+	delay	7
+	offset	40 107
+	bbox	25 6 40 87
+	frame	data/chars/yusuke/jk5.gif
+	attack	53 15 40 68 7 1 0 0 0 0
+	offset	40 107
+	bbox	26 10 35 108
+	delay	15
+	frame	data/chars/yusuke/jk3.gif
+		
+anim	land
+	loop	0
+	delay	25
+	offset	64 122
+	bbox	49 51 37 73
+	frame	data/chars/yusuke/jump6.gif
+	bbox	5 4 43 94
+	blockpain	0
+	loop	0
+	move	0
+	delay	12
+	offset	29 85
+	frame	data/chars/yusuke/60.gif
+	bbox	5 4 43 94
+	offset	29 85
+	frame	data/chars/yusuke/60.gif
+		
+anim	pain
+	loop	0
+	offset	63 120
+	bbox	36 48 38 76
+	delay	8
+	frame	data/chars/yusuke/pain4.gif
+	delay	36
+	frame	data/chars/yusuke/pain3.gif
+	delay	6
+	frame	data/chars/yusuke/pain1.gif
+	frame	data/chars/yusuke/pain2.gif
+	frame	data/chars/yusuke/pain4.gif
+		
+anim	pain2
+	loop	0
+	offset	42 160
+	delay	45
+	bbox	30 45 54 84
+	offset	42 160
+	frame	data/chars/yusuke/pain3.gif
+	offset	42 160
+	frame	data/chars/yusuke/pain2.gif
+	offset	42 160
+	frame	data/chars/yusuke/pain3.gif
+	offset	42 160
+	frame	data/chars/yusuke/pain2.gif
+	offset	42 160
+	frame	data/chars/yusuke/pain3.gif
+		
+anim	rise
+	loop	0
+	offset	63 120
+	delay	20
+	frame	data/chars/yusuke/59.gif
+	frame	data/chars/yusuke/jump7.gif
+	frame	data/chars/yusuke/idle3.gif
+		
+anim	run
+	delay	11
+	bbox	55 77 34 46
+	offset	42 101
+	loop	1
+	frame	data/chars/yusuke/cor1.gif
+	offset	57 109
+	frame	data/chars/yusuke/cor2.gif
+		
+anim	runattack
+	bbox	61 51 19 71
+	sound	data/chars/yusuke/ora.wav
+	move	7
+	delay	3
+	offset	70 120
+	frame	data/chars/yusuke/dash1.gif
+	frame	data/chars/yusuke/dash1.gif
+	bbox	57 48 25 77
+	offset	70 120
+	frame	data/chars/yusuke/esp1.gif
+	offset	70 120
+	frame	data/chars/yusuke/esp1.gif
+	attack	63 50 48 76 6 0 0 0 55 0
+	bbox	0 0 0 0
+	offset	70 120
+	frame	data/chars/yusuke/esp2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/esp5.gif
+	attack	63 50 48 76 6 0 0 0 55 0
+	frame	data/chars/yusuke/esp6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/esp2.gif
+	attack	63 50 48 76 6 1 0 0 55 0
+	frame	data/chars/yusuke/esp5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/yusuke/esp6.gif
+	attack	63 50 48 76 6 1 0 0 55 0
+	bbox	54 46 28 80
+	offset	70 120
+	frame	data/chars/yusuke/esp1.gif
+	offset	70 115
+	frame	data/chars/yusuke/dash2.gif
+	delay	7
+	bbox	58 56 26 71
+	offset	70 120
+	frame	data/chars/yusuke/dash1.gif
+		
+anim	runjumpattack
+	loop	0
+	delay	17
+	offset	40 107
+	bbox	25 6 40 87
+	frame	data/chars/yusuke/jumpa1.gif
+	attack	53 15 40 68 7 1 0 0 0 0
+	offset	40 107
+	bbox	26 10 35 108
+	delay	17
+	frame	data/chars/yusuke/jumpa2.gif
+		
+anim	select
+	loop	0
+	delay	20
+	offset	63 120
+	bbox	42 46 45 80
+	sound	data/chars/yusuke/win.wav
+	frame	data/chars/yusuke/select1.gif
+	frame	data/chars/yusuke/select1.gif
+	frame	data/chars/yusuke/select3.gif
+	frame	data/chars/yusuke/select3.gif
+	frame	data/chars/yusuke/select3.gif
+	offset	63 220
+	frame	data/chars/yusuke/winv2.gif
+	offset	63 220
+	frame	data/chars/yusuke/winv2.gif
+		
+anim	shock
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+		
+anim	spain
+	loop	0
+	offset	66 128
+	bbox	32 31 54 102
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	offset	66 128
+	bbox	0 0 0 0
+	delay	4
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	delay	4
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 1218
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock1.gif
+	bbox	0 0 0 0
+	offset	66 128
+	frame	data/chars/yusuke/shock2.gif
+		
+anim	spawn
+	offset	65 120
+	frame	data/chars/yusuke/idle1.gif
+		
+anim	special
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	blast	6 1 120 130 20 1 1 0 0 0
+	loop	0
+	sound	data/chars/yusuke/reikodan.wav
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	spawnscreen "Screen_wind" 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	63 120
+	frame	data/chars/yusuke/sp1.gif
+	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	4
+	offset	63 120
+	attack	6 1 120 130 0 0 1 0 0 0
+	frame	data/chars/yusuke/sp2.gif
+	move	0
+	@cmd	spawnparent "pdust" -10 0 -20
+	offset	63 121
+	delay	16
+	attack	85 36 45 33 24 1 0 0 0 0
+	frame	data/chars/yusuke/sp3.gif
+	attack	87 39 42 55 20 1 1 0 0 0
+	move	0
+	offset	64 120
+	delay	16
+	frame	data/chars/yusuke/sp7.gif
+	offset	64 120
+	attack	42 28 78 103 20 1 1 0 0 0
+	move	0
+	delay	16
+	frame	data/chars/yusuke/sp5.gif
+	blast	42 28 78 103 20 1 0 0 0 0
+	delay	16
+	move	0
+	offset	64 120
+	frame	data/chars/yusuke/sp6.gif
+	delay	12
+	move	0
+	offset	63 120
+	frame	data/chars/yusuke/punch0.gif
+	move	0
+	offset	63 120
+	frame	data/chars/yusuke/jump6.gif
+	move	0
+	offset	63 120
+	frame	data/chars/yusuke/idle1.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	63 120
+	sound	data/chars/yusuke.wav
+	frame	data/chars/yusuke/35.gif
+	frame	data/chars/yusuke/36.gif
+	frame	data/chars/yusuke/jump2.gif
+	frame	data/chars/yusuke/59.gif
+	frame	data/chars/yusuke/jump6.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	63 120
+	bbox	48 44 38 82
+	frame	data/chars/yusuke/walk1.gif
+	frame	data/chars/yusuke/walk2.gif
+	frame	data/chars/yusuke/walk1.gif
+		
+#|edited by openBor Stats v 0.67
+		

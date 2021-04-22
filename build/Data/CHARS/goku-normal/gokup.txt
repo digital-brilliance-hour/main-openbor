@@ -1,4 +1,4 @@
-name	Goku
+name	Goku_Normal
 health 100
 mp 100
 speed	10
@@ -17,6 +17,9 @@ parrow2 data/chars/misc/picon/2picon.gif -18 -100
 parrow3 data/chars/misc/picon/3picon.gif -18 -100
 parrow4 data/chars/misc/picon/4picon.gif -18 -100
 makeinv 4
+
+
+
 
 
 
@@ -185,6 +188,23 @@ anim	freespecial2
 	delay	7
 	sound	data/chars/Goku-normal/ki.wav
 	@cmd	damage_all_enemies 30 1 0 "ATK_NORMAL"
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
+	frame	data/chars/Goku-normal/ki01.GIF
+	frame	data/chars/Goku-normal/ki02.GIF
+	frame	data/chars/Goku-normal/ki03.GIF
+	frame	data/chars/Goku-normal/ki04.GIF
+		
+anim	freespecial3
+	energycost	0
+	mponly	1
+	@cmd	enoughmp
+	loop	0
+	offset	43 86
+	delay	7
+	sound	data/chars/Goku-normal/ki.wav
 	frame	data/chars/Goku-normal/ki01.GIF
 	frame	data/chars/Goku-normal/ki02.GIF
 	frame	data/chars/Goku-normal/ki03.GIF
