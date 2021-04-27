@@ -5,6 +5,9 @@ speed	9
 shadow	0
 cantgrab 1
 
+takedamagescript data/scripts/enemyhit.c
+animationscript data/scripts/spawns.c
+
 anim	attack1
 	loop	0
 	delay	10
@@ -31,6 +34,11 @@ anim	idle
 	offset	37 75
 	bbox	4 20 68 58
 	frame	data/chars/Fish/Idle1.gif
+		
+anim	spawn
+	delay	75
+	@cmd	spawnparent "e_spawn" 0 0 0
+	frame	data/chars/misc/empty.gif
 		
 anim	pain
 	loop	0
