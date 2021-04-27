@@ -87,7 +87,7 @@ void gen_tail_d(void ent,char ani,int color,int startframe,int endframe,int inte
 void gen_tail(char ani)
 {
 	void ent=getlocalvar("self");
-	gen_tail_d(ent,ani,0,0,999,10,30,6,0);
+	gen_tail_d(ent,ani,0,0,999,2,1,6,0);
 }
 
 void tail(int color,int lifespan,int alpha,int colourmap)

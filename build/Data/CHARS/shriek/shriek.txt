@@ -1,0 +1,61 @@
+name	Shrieker
+health	60
+speed	17
+type	enemy
+shadow	0
+cantgrab 1
+
+anim idle
+	loop	1
+	delay	15
+	offset	60 116
+        bbox    40 66 20 50
+	frame	data/chars/Shriek/Idle1.gif
+	frame	data/chars/Shriek/Idle2.gif
+	frame	data/chars/Shriek/Idle3.gif
+	frame	data/chars/Shriek/Idle2.gif
+
+anim walk
+        loop    1
+        delay   7
+        offset  60 116
+        bbox    40 66 20 50
+	frame	data/chars/Shriek/walk1.gif
+	frame	data/chars/Shriek/walk2.gif
+	frame	data/chars/Shriek/walk3.gif
+	frame	data/chars/Shriek/walk4.gif
+
+anim jumpattack
+	loop	0
+        delay   15
+	offset	60 90
+        bbox    40 66 20 50
+	frame	data/chars/Shriek/Jump1.gif
+        attack  19 35 78 55 15 1
+	frame	data/chars/Shriek/Att1.gif
+
+anim pain
+	loop	0
+        offset  60 116
+	delay	30
+        bbox    40 66 20 50
+	frame	data/chars/Shriek/Hurt1.gif
+
+anim fall
+	loop	0
+        offset  60 116
+        attack	43 65 26 33 4 1
+	frame	data/chars/Shriek/Fall1.gif
+
+anim rise
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Shriek/Idle1.gif
+
+anim land
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Shriek/Idle1.gif
+

@@ -1,0 +1,58 @@
+name	Grand_Fisher
+type	enemy
+health	100
+speed	9
+shadow	0
+cantgrab 1
+
+anim	attack1
+	loop	0
+	delay	10
+	offset	37 75
+	bbox	4 20 68 58
+	sound	data/sounds/Att.wav
+	frame	data/chars/Fish/Att1.gif
+	frame	data/chars/Fish/Att2.gif
+	attack	75 30 70 30 10 1
+	frame	data/chars/Fish/Att3.gif
+	attack	0 0 0 0 0
+	frame	data/chars/Fish/Att4.gif
+	frame	data/chars/Fish/Att5.gif
+		
+anim	fall
+	loop	0
+	offset	37 73
+	delay	15
+	frame	data/chars/Fish/fall1.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	37 75
+	bbox	4 20 68 58
+	frame	data/chars/Fish/Idle1.gif
+		
+anim	pain
+	loop	0
+	delay	8
+	offset	37 75
+	frame	data/chars/Fish/Hurt1.gif
+		
+anim	rise
+	loop	0
+	delay	7
+	offset	37 73
+	frame	data/chars/Fish/Idle1.gif
+		
+anim	walk
+	loop	1
+	delay	15
+	offset	37 75
+	bbox	4 20 68 58
+	frame	data/chars/Fish/Walk1.gif
+	frame	data/chars/Fish/Walk2.gif
+	frame	data/chars/Fish/Walk3.gif
+	frame	data/chars/Fish/Walk4.gif
+		
+#|edited by openBor Stats v 0.67
+		

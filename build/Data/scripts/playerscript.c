@@ -1,4 +1,5 @@
 #include "data/scripts/afterimg.c"
+#import "data/scripts/animation/animation.c"
 void main()
 {
    void AniID = getani();
@@ -15,10 +16,24 @@ void main()
    ){
       if(AniID != openborconstant("ANI_IDLE")) {
          if(!openborvariant("slowmotion")){
-            afterimg();
+            //afterimg();
          }
 
       }
    }
+   /*if(AniID == openborconstant("ANI_IDLE")) {
+      void icharge = getlocalvar("idle_charge");
+      if(icharge == NULL()) {
+         void gcharge = spawnparent("deku_greencharge", 0, 0, 0);
+         setlocalvar("idle_charge", gcharge);
+      }
+   }
+   else {
+      void icharge = getlocalvar("idle_charge");
+      if(icharge != NULL()) {
+         killentity(icharge);
+         setlocalvar("idle_charge", NULL());
+      }
+   }*/
 
 }

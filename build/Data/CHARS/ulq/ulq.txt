@@ -18,6 +18,7 @@ iconposition 50 360
 ondeathscript data/scripts/bossdeath.c
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -51,6 +52,7 @@ anim	attack2
 	frame	data/chars/Ulq/Idle1.gif
 		
 anim	fall
+	bbox	31 96 58 21
 	loop	0
 	offset	60 116
 	delay	30

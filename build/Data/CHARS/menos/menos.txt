@@ -1,0 +1,52 @@
+name	Menos
+health	400
+speed	5
+type	enemy
+shadow	0
+cantgrab 1
+
+anim idle
+	loop	1
+	offset	93 127
+	bbox	59 18 92 109
+	frame	data/chars/Menos/Idle1.gif
+
+anim walk
+	loop	1
+	offset	93 127
+	bbox	70 18 55 110
+	delay	50
+	frame	data/chars/Menos/walk1.gif
+	frame	data/chars/Menos/walk2.gif
+	frame	data/chars/Menos/walk3.gif
+	frame	data/chars/Menos/walk4.gif
+
+anim attack1
+	loop	0
+	offset	93 127
+	bbox	59 18 92 109
+	sound	data/sounds/att.wav
+	attack	130 60 40 67 25 1
+	frame	data/chars/Menos/att3.gif
+	frame	data/chars/Menos/att4.gif
+	frame	data/chars/Menos/att5.gif
+
+anim pain
+	loop	0
+	offset	93 127
+	bbox	59 18 92 109
+	frame	data/chars/Menos/Hurt1.gif
+
+anim fall
+	loop	0
+	offset	93 127
+	delay	8
+	frame	data/chars/Menos/fall1.gif
+
+anim rise
+	loop	0
+	offset	93 127
+	bbox	59 18 92 109
+	delay	15
+	frame	data/chars/Menos/Idle1.gif
+

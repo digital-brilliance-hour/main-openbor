@@ -29,6 +29,7 @@ ondeathscript data/scripts/bossdeath.c
 
 
 
+
 anim	attack1
 	loop	0
 	delay	7
@@ -82,12 +83,14 @@ anim	duck
 	frame	data/chars/Sasuke/get02.gif
 		
 anim	fall
+	bbox	46 67 43 40
 	loop	0
 	offset	60 110
 	delay	30
-	attack	47 69 18 34 4 1
+	attack	0 0 0 0 0 0 0 0 0 0
 	sound	data/chars/Sasuke/ugh.wav
 	frame	data/chars/Sasuke/fall00.gif
+	bbox	33 97 56 20
 	delay	20
 	frame	data/chars/Sasuke/fall01.gif
 		
@@ -133,7 +136,6 @@ anim	grab
 	delay	1000
 	bbox	41 64 34 52
 	frame	data/chars/Sasuke/jab02.gif
-		
 		
 anim	idle
 	loop	1

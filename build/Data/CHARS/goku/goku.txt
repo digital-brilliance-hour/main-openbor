@@ -12,6 +12,8 @@ remap	data/chars/Goku/stand00.gif data/chars/Goku/map1.gif
 animationscript data/scripts/spawns.c
 com a2 freespecial
 script data/scripts/playerscript.c
+weaploss 3
+modelflag 3
 
 parrow data/chars/misc/picon/1picon.gif -18 -100
 parrow2 data/chars/misc/picon/2picon.gif -18 -100
@@ -28,12 +30,14 @@ weaploss 3
 
 
 
+
+
 anim	attack1
 	loop	0
 	shadowcoords	18 77
 	delay	7
 	bbox	35 55 17 20
-	offset	38 77
+	offset	25 77
 	sound	data/chars/Goku/ha.wav
 	frame	data/chars/Goku/punch00.gif
 	attack	51 58 15 6 8
@@ -43,7 +47,7 @@ anim	attack1
 anim	attack2
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	bbox	35 55 17 20
 	delay	7
 	frame	data/chars/Goku/punch00.gif
@@ -66,7 +70,7 @@ anim	attack3
 	loop	0
 	shadowcoords	18 77
 	delay	3
-	offset	38 77
+	offset	25 77
 	bbox	35 55 17 20
 	frame	data/chars/Goku/ppole00.gif
 	frame	data/chars/Goku/ppole01.gif
@@ -96,9 +100,9 @@ anim	attack3
 anim	fall
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	delay	20
-	attack	36 50 21 16 4 1
+	attack	36 50 21 16 4 1 0 0 0 0
 	frame	data/chars/Goku/fall00.gif
 	move	-4
 	frame	data/chars/Goku/fall01.gif
@@ -112,7 +116,7 @@ anim	freespecial
 	@cmd	enoughmp
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	bbox	0 0 0 0
 	delay	10
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -196,7 +200,7 @@ anim	get
 	loop	0
 	shadowcoords	18 77
 	delay	7
-	offset	38 77
+	offset	25 77
 	frame	data/chars/Goku/rise05.gif
 	frame	data/chars/Goku/rise06.gif
 		
@@ -204,7 +208,7 @@ anim	idle
 	loop	1
 	shadowcoords	18 77
 	delay	15
-	offset	38 77
+	offset	25 77
 	bbox	35 55 17 20
 	frame	data/chars/Goku/stand00.GIF
 	frame	data/chars/Goku/stand01.GIF
@@ -217,7 +221,7 @@ anim	idle
 		
 anim	jump
 	loop	0
-	offset	38 77
+	offset	25 77
 	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
@@ -234,7 +238,7 @@ anim	jumpattack
 	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
-	offset	38 77
+	offset	25 77
 	frame	data/chars/Goku/jatk00.gif
 	frame	data/chars/Goku/jatk01.gif
 	frame	data/chars/Goku/jatk02.gif
@@ -250,7 +254,7 @@ anim	jumpattack2
 	shadowcoords	18 77
 	delay	10
 	bbox	37 46 16 17
-	offset	38 77
+	offset	25 77
 	frame	data/chars/Goku/jatk00.gif
 	frame	data/chars/Goku/jatk01.gif
 	frame	data/chars/Goku/jatk02.gif
@@ -264,7 +268,7 @@ anim	jumpattack2
 anim	land
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	delay	25
 	frame	data/chars/Goku/rise05.gif
 	frame	data/chars/Goku/rise06.gif
@@ -272,7 +276,7 @@ anim	land
 anim	pain
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	bbox	35 55 17 20
 	delay	20
 	sound	data/chars/Goku/ugh.wav
@@ -281,7 +285,7 @@ anim	pain
 anim	rise
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	delay	10
 	frame	data/chars/Goku/rise00.gif
 	frame	data/chars/Goku/rise01.gif
@@ -297,7 +301,7 @@ anim	special
 	@cmd	enoughmp
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	bbox	0 0 0 0
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
@@ -350,12 +354,11 @@ anim	special
 	blast	0 0 0 0 0 0
 	blast	46 72 34 12 20 1
 	frame	data/chars/Goku/spec21.gif
-	blast	0 0 0 0 0 0
 		
 anim	throw
 	loop	0
 	shadowcoords	18 77
-	offset	38 77
+	offset	25 77
 	delay	7
 	frame	data/chars/Goku/throw00.gif
 	frame	data/chars/Goku/throw01.gif
@@ -369,7 +372,7 @@ anim	walk
 	loop	1
 	shadowcoords	18 77
 	delay	7
-	offset	38 77
+	offset	25 77
 	bbox	35 55 17 20
 	frame	data/chars/Goku/walk00.gif
 	frame	data/chars/Goku/walk01.gif
