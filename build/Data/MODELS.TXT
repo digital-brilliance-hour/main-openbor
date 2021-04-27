@@ -46,9 +46,15 @@ load 	pdust		data/chars/misc/dust.txt
 load 	h_card		data/chars/hisoka/card.txt
 load 	e_spawn 	data/chars/misc/espawn/espawn.txt
 load 	quake 		data/chars/misc/quake.txt
+load deku_redcharge data/chars/deku/red_charge.txt
+load deku_greencharg data/chars/deku/green_charge.txt
+load deku_bluebolts data/chars/deku/blue_bolts.txt
+load deku_greenarm 	data/chars/deku/green_arm.txt
 
 # Players must also be loaded.
 Load Deku data/chars/Deku/Deku.txt
+know Deku_original data/chars/Deku/Deku-original.txt
+load Deku_transfrom data/chars/Deku/Deku-transform.txt
 Load Gon data/chars/Gon/Gon.txt
 load	Luffy	        data/chars/Luffy/Luffy.txt
 load	Naruto		data/chars/Naruto/Naruto.txt
@@ -171,6 +177,10 @@ know    BEE        data/chars/bee/bee.txt
 know      kagome      data/chars/kagome/kagome.txt
 load	Jack		data/chars/samjack/samjack.txt
 know 	Android		data/chars/android/android2.txt
+know Grand_Fisher 	data/chars/fish/fish.txt
+know Menos 			data/chars/menos/menos.txt
+know Shrieker 		data/chars/shriek/shriek.txt
+know Tsukaima 		data/chars/tsu/tsu.txt
 
 # Not a real enemy... ;)
 know	Ramon		data/chars/ramon/ramon.txt

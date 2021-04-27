@@ -1,0 +1,68 @@
+name	deku_greenarm
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	3
+	drawmethod	scale 0.4
+	offset	51 13
+	frame	data/chars/Deku/620.gif
+	offset	32 24
+	frame	data/chars/Deku/621.gif
+	offset	32 35
+	frame	data/chars/Deku/622.gif
+	offset	73 46
+	frame	data/chars/Deku/623.gif
+	offset	112 52
+	frame	data/chars/Deku/624.gif
+	offset	111 52
+	frame	data/chars/Deku/625.gif
+	offset	114 52
+	frame	data/chars/Deku/626.gif
+	offset	110 53
+	frame	data/chars/Deku/627.gif
+	offset	106 52
+	frame	data/chars/Deku/628.gif
+	offset	110 53
+	frame	data/chars/Deku/629.gif
+	offset	110 52
+	frame	data/chars/Deku/630.gif
+	offset	110 52
+	frame	data/chars/Deku/631.gif
+	offset	114 53
+	frame	data/chars/Deku/632.gif
+	offset	112 53
+	frame	data/chars/Deku/633.gif
+	offset	110 53
+	frame	data/chars/Deku/634.gif
+	offset	111 53
+	frame	data/chars/Deku/635.gif
+	offset	108 52
+	frame	data/chars/Deku/636.gif
+	offset	107 42
+	frame	data/chars/Deku/637.gif
+	offset	104 15
+	frame	data/chars/Deku/638.gif
+	offset	0 15
+	frame	data/chars/Deku/639.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

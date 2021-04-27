@@ -1,15 +1,18 @@
 name Yusuke
 health 100
-speed 9
-running	16	3	2	1
+speed 12
+running	20	4	2	1    1
 type player
 shadow	2
 diesound data/chars/Naruto/die.wav
 icon	data/chars/yusuke/0.gif
 bflash  bflash
 dust	 dust
-jumpheight 3
+jumpheight 4
 com  a2  freespecial
+com a3 freespecial11
+com f a2 freespecial2
+com d s freespecial3
 animationscript data/scripts/spawns.c
 script data/scripts/playerscript.c
 
@@ -30,8 +33,17 @@ makeinv 4
 
 
 
+
+
+
+
+
+
+
+
 anim	attack1
-	delay	7
+	drawmethod	scale 1.3
+	delay	3
 	offset	14 45
 	frame	data/chars/yusuke/77.gif
 	attack	25 2 36 24 8 0 1 0 0 0
@@ -43,20 +55,27 @@ anim	attack1
 	frame	data/chars/yusuke/80.gif
 		
 anim	attack2
-	delay	7
+	drawmethod	scale 1.3
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	5
 	offset	13 37
 	frame	data/chars/yusuke/81.gif
+	attack	26 1 35 37 9 0 1 0 0 0
 	offset	13 47
 	frame	data/chars/yusuke/82.gif
 	offset	13 48
 	frame	data/chars/yusuke/83.gif
 		
 anim	attack3
+	drawmethod	scale 1.3
 	delay	7
+	@cmd	leaper 0 1 0
 	offset	12 48
 	frame	data/chars/yusuke/84.gif
 	offset	12 49
 	frame	data/chars/yusuke/85.gif
+	attack	30 0 53 34 12 1 1 0 0 0
+	dropv	2 3 0
 	offset	19 36
 	frame	data/chars/yusuke/86.gif
 	offset	4 38
@@ -64,18 +83,8 @@ anim	attack3
 	offset	7 46
 	frame	data/chars/yusuke/88.gif
 		
-anim	attack4
-	delay	7
-	offset	13 48
-	frame	data/chars/yusuke/89.gif
-	offset	7 61
-	frame	data/chars/yusuke/90.gif
-	offset	7 62
-	frame	data/chars/yusuke/91.gif
-	offset	13 53
-	frame	data/chars/yusuke/92.gif
-		
 anim	charge
+	drawmethod	scale 1.3
 	loop	1 3
 	delay	7
 	offset	15 44
@@ -88,22 +97,26 @@ anim	charge
 	frame	data/chars/yusuke/32.gif
 		
 anim	chargeattack
+	drawmethod	scale 1.3
 	delay	7
 	offset	15 44
 	frame	data/chars/yusuke/61.gif
 	offset	11 43
 	frame	data/chars/yusuke/62.gif
+	attack	14 5 42 39 15 0 1 0 0 0
 	offset	13 42
 	frame	data/chars/yusuke/63.gif
 	offset	9 44
 	frame	data/chars/yusuke/64.gif
 		
 anim	faint
+	drawmethod	scale 1.3
 	delay	7
 	offset	16 45
 	frame	data/chars/yusuke/135.gif
 		
 anim	fall
+	drawmethod	scale 1.3
 	delay	7
 	offset	19 35
 	frame	data/chars/yusuke/128.gif
@@ -113,6 +126,7 @@ anim	fall
 	frame	data/chars/yusuke/129.gif
 		
 anim	follow1
+	drawmethod	scale 1.3
 	delay	7
 	offset	15 44
 	frame	data/chars/yusuke/29.gif
@@ -124,21 +138,89 @@ anim	follow1
 	frame	data/chars/yusuke/32.gif
 		
 anim	freespecial
+	drawmethod	scale 1.3
 	delay	7
+	fastattack	1
 	offset	18 40
 	frame	data/chars/yusuke/33.gif
 	offset	17 37
 	frame	data/chars/yusuke/34.gif
+	attack	34 2 60 43 10 0 1 0 0 0
 	offset	12 44
 	frame	data/chars/yusuke/93.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	12 44
 	frame	data/chars/yusuke/94.gif
+	attack	34 2 60 42 10 0 1 0 0 0
 	offset	12 44
 	frame	data/chars/yusuke/95.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/96.gif
+	attack	34 2 60 43 10 0 1 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/93.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/94.gif
+	attack	34 2 60 42 10 0 1 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/95.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/96.gif
+	attack	34 2 60 43 10 0 1 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/93.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/94.gif
+	attack	34 2 60 42 10 0 1 0 0 0
+	offset	12 44
+	frame	data/chars/yusuke/95.gif
+	attack	0 0 0 0 0 0 0 0 0 0
 	offset	12 44
 	frame	data/chars/yusuke/96.gif
 		
+anim	freespecial11
+	drawmethod	scale 1.3
+	sound	data/chars/yusuke/broly_5-22.wav
+	delay	7
+	offset	22 37
+	frame	data/chars/yusuke/8.gif
+	delay	2
+	@cmd	dasher 5 0 0
+	drawmethod	scale 0.5 0.4
+	drawmethod	alpha 1
+	fshadow	0
+	offset	179 61
+	frame	data/chars/yusuke/840.gif
+	offset	178 63
+	frame	data/chars/yusuke/841.gif
+	offset	219 65
+	frame	data/chars/yusuke/842.gif
+	offset	225 79
+	frame	data/chars/yusuke/843.gif
+	offset	222 82
+	frame	data/chars/yusuke/844.gif
+	offset	223 79
+	frame	data/chars/yusuke/845.gif
+	offset	226 80
+	frame	data/chars/yusuke/846.gif
+	offset	219 83
+	frame	data/chars/yusuke/847.gif
+	offset	209 83
+	frame	data/chars/yusuke/848.gif
+	@cmd	stop
+	drawmethod	scale 1.3
+	drawmethod	alpha 0
+	fshadow	3
+	delay	7
+	offset	22 37
+	frame	data/chars/yusuke/8.gif
+		
 anim	freespecial2
+	drawmethod	scale 1.3
 	delay	7
 	offset	17 46
 	frame	data/chars/yusuke/71.gif
@@ -148,12 +230,14 @@ anim	freespecial2
 	frame	data/chars/yusuke/73.gif
 	offset	21 41
 	frame	data/chars/yusuke/74.gif
+	attack	12 1 37 40 18 1 1 0 0 4
 	offset	14 38
 	frame	data/chars/yusuke/75.gif
 	offset	12 36
 	frame	data/chars/yusuke/76.gif
 		
 anim	freespecial3
+	drawmethod	scale 1.3
 	delay	7
 	offset	14 47
 	frame	data/chars/yusuke/35.gif
@@ -173,6 +257,7 @@ anim	freespecial3
 	frame	data/chars/yusuke/42.gif
 		
 anim	freespecial4
+	drawmethod	scale 1.3
 	delay	7
 	offset	8 55
 	frame	data/chars/yusuke/43.gif
@@ -186,6 +271,7 @@ anim	freespecial4
 	frame	data/chars/yusuke/47.gif
 		
 anim	freespecial5
+	drawmethod	scale 1.3
 	delay	7
 	offset	14 45
 	frame	data/chars/yusuke/48.gif
@@ -201,6 +287,7 @@ anim	freespecial5
 	frame	data/chars/yusuke/53.gif
 		
 anim	freespecial6
+	drawmethod	scale 1.3
 	delay	7
 	offset	14 45
 	frame	data/chars/yusuke/54.gif
@@ -210,6 +297,7 @@ anim	freespecial6
 	frame	data/chars/yusuke/56.gif
 		
 anim	get
+	drawmethod	scale 1.3
 	delay	7
 	offset	13 42
 	frame	data/chars/yusuke/6.gif
@@ -217,6 +305,7 @@ anim	get
 	frame	data/chars/yusuke/7.gif
 		
 anim	idle
+	drawmethod	scale 1.3
 	bbox	7 3 19 44
 	loop	1
 	delay	7
@@ -230,6 +319,7 @@ anim	idle
 	frame	data/chars/yusuke/5.gif
 		
 anim	jump
+	drawmethod	scale 1.3
 	delay	7
 	offset	11 52
 	frame	data/chars/yusuke/16.gif
@@ -241,11 +331,13 @@ anim	jump
 	frame	data/chars/yusuke/19.gif
 		
 anim	jumpattack
-	delay	7
+	drawmethod	scale 1.3
+	delay	5
 	offset	7 50
 	frame	data/chars/yusuke/65.gif
 	offset	8 43
 	frame	data/chars/yusuke/66.gif
+	attack	16 2 43 45 12 1 1 0 0 0
 	offset	10 45
 	frame	data/chars/yusuke/67.gif
 	offset	9 43
@@ -256,6 +348,7 @@ anim	jumpattack
 	frame	data/chars/yusuke/70.gif
 		
 anim	pain
+	drawmethod	scale 1.3
 	delay	7
 	offset	14 45
 	frame	data/chars/yusuke/109.gif
@@ -263,6 +356,7 @@ anim	pain
 	frame	data/chars/yusuke/110.gif
 		
 anim	rise
+	drawmethod	scale 1.3
 	delay	7
 	offset	23 25
 	frame	data/chars/yusuke/130.gif
@@ -270,35 +364,52 @@ anim	rise
 	frame	data/chars/yusuke/131.gif
 		
 anim	run
+	drawmethod	scale 1.3
+	loop	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	6 1 36 37
+	delay	5
+	offset	22 37
+	frame	data/chars/yusuke/8.gif
+	offset	21 36
+	frame	data/chars/yusuke/9.gif
+	sound	data/sounds/walk.wav
+	offset	12 40
+	frame	data/chars/yusuke/10.gif
+	offset	9 36
+	frame	data/chars/yusuke/11.gif
+	offset	22 37
+	frame	data/chars/yusuke/12.gif
+	offset	20 35
+	frame	data/chars/yusuke/13.gif
+	sound	data/sounds/walk.wav
+	offset	11 40
+	frame	data/chars/yusuke/14.gif
+	offset	8 36
+	frame	data/chars/yusuke/15.gif
+		
+anim	runattack
+	drawmethod	scale 1.3
 	delay	7
-	offset	22 37
-	frame	data/chars/yusuke/8.gif
-	offset	179 41
-	frame	data/chars/yusuke/840.gif
-	offset	178 43
-	frame	data/chars/yusuke/841.gif
-	offset	219 45
-	frame	data/chars/yusuke/842.gif
-	offset	225 59
-	frame	data/chars/yusuke/843.gif
-	offset	222 62
-	frame	data/chars/yusuke/844.gif
-	offset	223 59
-	frame	data/chars/yusuke/845.gif
-	offset	226 60
-	frame	data/chars/yusuke/846.gif
-	offset	219 63
-	frame	data/chars/yusuke/847.gif
-	offset	209 63
-	frame	data/chars/yusuke/848.gif
-	offset	22 37
-	frame	data/chars/yusuke/8.gif
+	offset	13 48
+	frame	data/chars/yusuke/89.gif
+	@cmd	leaper 1 2 0
+	attack	7 0 44 53 15 1 1 0 0 0
+	dropv	3 3 0
+	offset	7 61
+	frame	data/chars/yusuke/90.gif
+	offset	7 62
+	frame	data/chars/yusuke/91.gif
+	offset	13 53
+	frame	data/chars/yusuke/92.gif
 		
 anim	spawn
+	drawmethod	scale 1.3
 	offset	14 45
 	frame	data/chars/yusuke/2.gif
 		
 anim	special
+	drawmethod	scale 1.3
 	delay	7
 	offset	12 46
 	frame	data/chars/yusuke/97.gif
@@ -324,12 +435,15 @@ anim	special
 	frame	data/chars/yusuke/107.gif
 		
 anim	walk
+	drawmethod	scale 1.3
+	loop	1
 	bbox	6 1 36 37
-	delay	10
+	delay	7
 	offset	22 37
 	frame	data/chars/yusuke/8.gif
 	offset	21 36
 	frame	data/chars/yusuke/9.gif
+	sound	data/sounds/walk.wav
 	offset	12 40
 	frame	data/chars/yusuke/10.gif
 	offset	9 36
@@ -338,6 +452,7 @@ anim	walk
 	frame	data/chars/yusuke/12.gif
 	offset	20 35
 	frame	data/chars/yusuke/13.gif
+	sound	data/sounds/walk.wav
 	offset	11 40
 	frame	data/chars/yusuke/14.gif
 	offset	8 36

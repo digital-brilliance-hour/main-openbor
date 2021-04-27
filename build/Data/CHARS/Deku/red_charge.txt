@@ -1,0 +1,33 @@
+name	deku_redcharge
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+
+
+anim	idle
+	delay	10
+	offset	21 34
+	frame	data/chars/Deku/579.gif
+	offset	21 36
+	frame	data/chars/Deku/580.gif
+	offset	21 36
+	frame	data/chars/Deku/581.gif
+	offset	21 36
+	frame	data/chars/Deku/581.gif
+	offset	21 36
+	frame	data/chars/Deku/581.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

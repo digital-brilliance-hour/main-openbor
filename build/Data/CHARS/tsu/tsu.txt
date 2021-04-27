@@ -1,0 +1,60 @@
+name	Tsukaima
+health	30
+speed	10
+type	enemy
+shadow	0
+cantgrab 1
+
+anim idle
+	loop	1
+	delay	15
+	offset	60 116
+        bbox    42 80 40 36
+	frame	data/chars/Tsu/Idle1.gif
+
+anim walk
+        loop    1
+        delay   10
+        offset  60 116
+        bbox    42 80 40 36
+	frame	data/chars/Tsu/walk1.gif
+	frame	data/chars/Tsu/walk2.gif
+	frame	data/chars/Tsu/walk3.gif
+	frame	data/chars/Tsu/walk4.gif
+
+anim attack1
+	loop	0
+        delay   7   
+	offset	60 116
+        bbox    42 80 40 36
+	sound	data/sounds/Att.wav
+	frame	data/chars/Tsu/Att1.gif
+	frame	data/chars/Tsu/Att2.gif
+        attack  80 65 30 51 10 1
+	frame	data/chars/Tsu/Att3.gif
+        attack  0 0 0 0 0
+	frame	data/chars/Tsu/Att4.gif
+
+anim pain
+	loop	0
+        offset  60 116
+	delay	15
+	frame	data/chars/Tsu/Hurt1.gif
+
+anim rise
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Tsu/Idle1.gif
+
+anim land
+	loop	0
+	offset	60 116
+	delay	10
+	frame	data/chars/Tsu/Idle1.gif
+
+anim fall
+	loop	0
+        offset  60 116
+	delay	30
+	frame	data/chars/Tsu/Fall1.gif

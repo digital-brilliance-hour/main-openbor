@@ -2,11 +2,13 @@ name	Ichigo
 health	100
 mp	100
 speed	15
+running	27	3	2	1    1
 type	player
 shadow 3
 cantgrab 1
 animationscript data/scripts/spawns.c
 com a2 freespecial
+com a3 freespecial11
 script data/scripts/playerscript.c
 
 parrow data/chars/misc/picon/1picon.gif -18 -100
@@ -24,9 +26,12 @@ makeinv 4
 
 
 
+
+
+
 anim	attack1
 	loop	0
-	delay	7
+	delay	4
 	offset	58 116
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ichigo/Att1.gif
@@ -91,6 +96,46 @@ anim	freespecial
 	attack	0 0 0 0 0 0
 	frame	data/chars/Ichigo/Duck1.gif
 		
+anim	freespecial11
+	sound	data/chars/yusuke/broly_5-22.wav
+	delay	7
+	offset	58 116
+	frame	data/chars/Ichigo/walk1.gif
+	delay	2
+	@cmd	dasher 3 0 0
+	fshadow	0
+	drawmethod	scale 0.3 0.2
+	drawmethod	alpha 1
+	offset	179 61
+	frame	data/chars/yusuke/840.gif
+	offset	178 63
+	frame	data/chars/yusuke/841.gif
+	offset	219 65
+	frame	data/chars/yusuke/842.gif
+	offset	225 79
+	frame	data/chars/yusuke/843.gif
+	offset	222 82
+	frame	data/chars/yusuke/844.gif
+	offset	223 79
+	frame	data/chars/yusuke/845.gif
+	offset	226 80
+	frame	data/chars/yusuke/846.gif
+	offset	219 83
+	frame	data/chars/yusuke/847.gif
+	offset	209 83
+	frame	data/chars/yusuke/848.gif
+	@cmd	stop
+	@cmd	dasher 7 0 0
+	delay	7
+	frame	data/chars/misc/empty.gif
+	frame	data/chars/misc/empty.gif
+	drawmethod	scale 1
+	drawmethod	alpha 0
+	@cmd	stop
+	delay	7
+	offset	58 116
+	frame	data/chars/Ichigo/walk1.gif
+		
 anim	get
 	loop	0
 	offset	58 116
@@ -146,6 +191,40 @@ anim	rise
 	offset	58 116
 	delay	10
 	frame	data/chars/Ichigo/Duck1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	offset	58 116
+	bbox	45 70 30 46
+	frame	data/chars/Ichigo/walk1.gif
+	frame	data/chars/Ichigo/walk2.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Ichigo/walk3.gif
+	frame	data/chars/Ichigo/walk4.gif
+	frame	data/chars/Ichigo/walk5.gif
+	frame	data/chars/Ichigo/walk6.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Ichigo/walk7.gif
+	frame	data/chars/Ichigo/walk8.gif
+		
+anim	runattack
+	delay	7
+	offset	58 116
+	sound	data/sounds/Att.wav
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	dasher 3 0 0
+	frame	data/chars/Ichigo/2Att1.gif
+	frame	data/chars/Ichigo/2Att1.gif
+	delay	4
+	attack	80 46 50 70 8 1 0 0 0 0
+	frame	data/chars/Ichigo/2Att2.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Ichigo/2Att3.gif
+	@cmd	stop
+	delay	7
+	frame	data/chars/Ichigo/2Att4.gif
+	frame	data/chars/Ichigo/2Att4.gif
 		
 anim	select
 	loop	0

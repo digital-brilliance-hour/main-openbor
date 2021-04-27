@@ -1,7 +1,7 @@
 name	Naruto
 health	100
 speed 10
-running	16	3	2	1
+running	16	3	2	1    1
 type	player
 shadow	2
 grabdistance 23
@@ -11,6 +11,7 @@ bflash  bflash
 dust	 dust
 jumpheight 3
 com  a2  freespecial
+com a3 freespecial11
 animationscript data/scripts/spawns.c
 script data/scripts/playerscript.c
 
@@ -28,9 +29,10 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
-	delay	7
+	delay	3
 	offset	60 116
 	sound	data/chars/Naruto/ha.wav
 	frame	data/chars/Naruto/jab00.gif
@@ -160,6 +162,46 @@ anim	freespecial
 	delay	30
 	frame	data/chars/Naruto/upper03.gif
 		
+anim	freespecial11
+	sound	data/chars/yusuke/broly_5-22.wav
+	delay	7
+	offset	60 116
+	frame	data/chars/Naruto/run05.gif
+	delay	2
+	@cmd	dasher 3 0 0
+	fshadow	0
+	drawmethod	scale 0.3 0.2
+	drawmethod	alpha 1
+	offset	179 61
+	frame	data/chars/yusuke/840.gif
+	offset	178 63
+	frame	data/chars/yusuke/841.gif
+	offset	219 65
+	frame	data/chars/yusuke/842.gif
+	offset	225 79
+	frame	data/chars/yusuke/843.gif
+	offset	222 82
+	frame	data/chars/yusuke/844.gif
+	offset	223 79
+	frame	data/chars/yusuke/845.gif
+	offset	226 80
+	frame	data/chars/yusuke/846.gif
+	offset	219 83
+	frame	data/chars/yusuke/847.gif
+	offset	209 83
+	frame	data/chars/yusuke/848.gif
+	@cmd	stop
+	@cmd	dasher 7 0 0
+	delay	7
+	frame	data/chars/misc/empty.gif
+	drawmethod	scale 1
+	drawmethod	alpha 0
+	@cmd	stop
+	fshadow	3
+	delay	7
+	offset	60 116
+	frame	data/chars/Naruto/run05.gif
+		
 anim	get
 	loop	0
 	delay	10
@@ -169,7 +211,6 @@ anim	get
 	frame	data/chars/Naruto/get02.gif
 	frame	data/chars/Naruto/get01.gif
 	frame	data/chars/Naruto/get00.gif
-		
 		
 anim	idle
 	loop	1
