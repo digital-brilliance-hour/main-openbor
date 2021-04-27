@@ -314,4 +314,9 @@ delay 10
 	frame	data/chars/Deku/141.gif
 	offset	18 38
 	frame	data/chars/Deku/142.gif
-	
+
+
+    @script
+    void self = getlocalvar("self");
+      performattack(getlocalvar("self"), openborconstant("ANI_FREESPECIAL"));
+	@end_script

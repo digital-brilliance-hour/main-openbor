@@ -8,7 +8,7 @@ load pdust
 load g_shot
 script data/scripts/dekutransformplayerscript.c
 animationscript data/scripts/spawns.c
-com      a2 freespecial
+com      a2 freespecial6
 com      a3 freespecial11
 com      a4 freespecial3
 com d a2 freespecial4
@@ -417,6 +417,38 @@ anim	jumpattack2
 	frame	data/chars/Deku/111.gif
 	offset	15 42
 	frame	data/chars/Deku/112.gif
+		
+anim	freespecial6
+	delay	10
+	offset	20 46
+	frame	data/chars/Deku/49.gif
+	offset	19 47
+	frame	data/chars/Deku/50.gif
+	offset	19 46
+	frame	data/chars/Deku/51.gif
+	delay	10
+	offset	22 49
+	frame	data/chars/Deku/57.gif
+	offset	22 48
+	frame	data/chars/Deku/58.gif
+	offset	22 49
+	frame	data/chars/Deku/59.gif
+	offset	22 48
+	frame	data/chars/Deku/60.gif
+	offset	22 49
+	frame	data/chars/Deku/57.gif
+	offset	22 48
+	frame	data/chars/Deku/58.gif
+	offset	22 49
+	frame	data/chars/Deku/59.gif
+    @script
+    void self = getlocalvar("self");
+    if(frame > 9) {
+      performattack(getlocalvar("self"), openborconstant("ANI_FREESPECIAL"));
+      }
+	@end_script	
+	offset	22 48
+	frame	data/chars/Deku/60.gif
 		
 anim	pain
 	delay	7
