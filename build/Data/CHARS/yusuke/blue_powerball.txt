@@ -1,0 +1,144 @@
+name	blue_powerball
+speed   15
+type 	none
+shadow	0
+setlayer 1000
+alpha 1
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	drawmethod	scale 0.8
+	delay	3
+	fastattack	1
+	offset	175 175
+	frame	data/chars/yusuke/1431.gif
+	attack	96 98 155 156 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1432.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1433.gif
+	attack	61 58 232 238 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1434.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1435.gif
+	attack	55 51 246 251 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1436.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1437.gif
+	attack	50 56 251 242 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1438.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1439.gif
+	attack	54 52 239 249 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1440.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1441.gif
+	attack	44 48 258 266 30 1 1 0 0 100
+	dropv	1 3 0
+	offset	175 175
+	frame	data/chars/yusuke/1442.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1443.gif
+	attack	59 50 237 253 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1444.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1445.gif
+	attack	53 59 247 246 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1446.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1447.gif
+	attack	48 59 251 249 30 1 1 0 0 100
+	dropv	1 3 0
+	offset	175 175
+	frame	data/chars/yusuke/1448.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1449.gif
+	attack	39 56 263 254 0 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1450.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1451.gif
+	attack	50 53 251 251 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1452.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1453.gif
+	attack	51 57 247 244 30 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1454.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1455.gif
+	attack	44 56 263 243 30 1 1 0 0 100
+	dropv	2 6 0
+	offset	175 175
+	frame	data/chars/yusuke/1456.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	175 175
+	frame	data/chars/yusuke/1457.gif
+	attack	43 52 263 258 20 0 1 0 0 100
+	offset	175 175
+	frame	data/chars/yusuke/1458.gif
+	offset	175 175
+	frame	data/chars/yusuke/1459.gif
+	offset	175 175
+	frame	data/chars/yusuke/1460.gif
+	offset	175 175
+	frame	data/chars/yusuke/1461.gif
+	offset	175 175
+	frame	data/chars/yusuke/1462.gif
+	offset	175 175
+	frame	data/chars/yusuke/1463.gif
+	offset	175 175
+	frame	data/chars/yusuke/1464.gif
+	offset	175 175
+	frame	data/chars/yusuke/1465.gif
+	offset	175 175
+	frame	data/chars/yusuke/1466.gif
+	offset	175 175
+	frame	data/chars/yusuke/1467.gif
+	offset	175 175
+	frame	data/chars/yusuke/1468.gif
+	offset	175 175
+	frame	data/chars/yusuke/1469.gif
+	offset	175 175
+	frame	data/chars/yusuke/1470.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

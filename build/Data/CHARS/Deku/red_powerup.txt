@@ -1,0 +1,94 @@
+name	red_powerup
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	drawmethod	scale 0.7
+	delay	4
+	offset	280 195
+	frame	data/chars/misc/powerup/red/472.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/473.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/474.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/475.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/476.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/477.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/478.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/479.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/480.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/481.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/482.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/483.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/484.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/485.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/486.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/487.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/488.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/489.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/490.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/491.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/492.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/493.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/494.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/495.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/496.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/497.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/498.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/499.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/500.png
+	offset	280 195
+	frame	data/chars/misc/powerup/red/501.png
+		
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

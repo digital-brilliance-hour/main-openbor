@@ -6,7 +6,7 @@ type	Player
 shadow 3
 
 icon	data/chars/Luffy/icon.gif
-atchain  1 2 3 3
+atchain  1 1 2 3
 animationscript data/scripts/spawns.c
 com      a3 freespecial
 com      a2 freespecial11
@@ -118,18 +118,18 @@ anim	freespecial
 	frame	data/chars/Luffy/bazka02.gif
 	frame	data/chars/Luffy/bazka03.gif
 	frame	data/chars/Luffy/bazka04.gif
-	attack	14 28 57 30 10 1 1 0 0 0
+	attack	14 28 57 30 20 1 1 0 0 0
 	frame	data/chars/Luffy/bazka05.gif
-	attack	1 26 72 33 12 1 1 0 0 0
+	attack	1 26 72 33 22 1 1 0 0 0
 	frame	data/chars/Luffy/bazka06.gif
 	frame	data/chars/Luffy/bazka07.gif
 	@cmd	spawnparent "pdust" -10 0 -20
-	attack	95 43 49 18 15 1 0 0 0 0
+	attack	95 43 49 18 25 1 0 0 0 0
 	frame	data/chars/Luffy/bazka08.gif
-	attack	98 40 85 24 15 1 0 0 0 0
+	attack	98 40 85 24 25 1 0 0 0 0
 	frame	data/chars/Luffy/bazka09.gif
-	blast	97 40 85 24 15 1 0 0 0 0
-	blast	97 40 85 24 15 1 0 0 0 0
+	blast	97 40 85 24 30 1 0 0 0 0
+	blast	97 40 85 24 30 1 0 0 0 0
 	frame	data/chars/Luffy/bazka10.gif
 	frame	data/chars/Luffy/bazka11.gif
 	frame	data/chars/Luffy/bazka12.gif
@@ -302,6 +302,37 @@ anim	land
 	frame	data/chars/Luffy/rise07.gif
 	frame	data/chars/Luffy/rise08.gif
 		
+anim	runattack
+	delay	3
+	fastattack	1
+	offset	38 77
+	frame	data/chars/Luffy/punch3-1.gif
+	frame	data/chars/Luffy/punch3-2.gif
+	frame	data/chars/Luffy/punch3-3.gif
+	frame	data/chars/Luffy/punch3-4.gif
+	frame	data/chars/Luffy/punch3-5.gif
+	delay	5
+	sound	data/chars/Luffy/punch.wav
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	dasher 3 0 0
+	frame	data/chars/Luffy/punch3-6.gif
+	frame	data/chars/Luffy/punch3-7.gif
+	frame	data/chars/Luffy/punch3-8.gif
+	attack	64 36 96 32 15 0 1 0 0 0
+	frame	data/chars/Luffy/punch3-9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	@cmd	dasher 1 0 0
+	frame	data/chars/Luffy/punch310.gif
+	attack	65 30 108 43 15 0 1 0 0 0
+	frame	data/chars/Luffy/punch310.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	stop
+	frame	data/chars/Luffy/punch310.gif
+	attack	64 28 98 43 15 1 1 0 0 0
+	dropv	1 5 0
+	frame	data/chars/Luffy/punch310.gif
+		
 anim	pain
 	loop	0
 	offset	38 77
@@ -360,7 +391,7 @@ anim	spawn
 	offset	38 77
 	frame	data/chars/Luffy/stand01.GIF
 		
-anim	special
+anim	freespecial3
 	energycost	0
 	mponly	1
 	@cmd	enoughmp

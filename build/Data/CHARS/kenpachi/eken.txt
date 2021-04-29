@@ -23,11 +23,14 @@ ondeathscript data/scripts/bossdeath.c
 
 
 
+
+
+
 anim	attack1
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
+	bbox	44 70 31 47
 	sound	data/sounds/Att.wav
 	frame	data/chars/Kenpachi/Att1.gif
 	frame	data/chars/Kenpachi/Att2.gif
@@ -40,20 +43,22 @@ anim	attack2
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
+	bbox	44 66 37 50
 	sound	data/sounds/Att.wav
 	frame	data/chars/Kenpachi/2Att1.gif
 	frame	data/chars/Kenpachi/2Att2.gif
-	attack	69 32 50 86 10
+	bbox	46 68 47 48
+	attack	69 32 50 86 10 0 0 0 0 0
 	frame	data/chars/Kenpachi/2Att3.gif
-	attack	0 0 0 0 0 0
+	bbox	40 70 43 47
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Kenpachi/2Att4.gif
 		
 anim	attack3
 	loop	0
 	delay	10
 	offset	58 116
-	bbox	50 65 20 40
+	bbox	45 69 33 48
 	sound	data/sounds/Att.wav
 	frame	data/chars/Kenpachi/3Att1.gif
 	frame	data/chars/Kenpachi/3Att2.gif
@@ -63,6 +68,7 @@ anim	attack3
 	frame	data/chars/Kenpachi/3Att4.gif
 		
 anim	fall
+	bbox	29 82 58 36
 	loop	0
 	offset	58 116
 	delay	30
@@ -99,7 +105,7 @@ anim	idle
 	loop	1
 	delay	15
 	offset	58 116
-	bbox	50 65 20 40
+	bbox	48 52 26 64
 	frame	data/chars/Kenpachi/Idle1.gif
 		
 anim	land
@@ -119,6 +125,22 @@ anim	rise
 	offset	58 116
 	delay	10
 	frame	data/chars/Kenpachi/Duck1.gif
+		
+anim	run
+	loop	1
+	delay	3
+	offset	58 116
+	bbox	51 71 36 45
+	frame	data/chars/Kenpachi/walk1.gif
+	frame	data/chars/Kenpachi/walk2.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Kenpachi/walk3.gif
+	frame	data/chars/Kenpachi/walk4.gif
+	frame	data/chars/Kenpachi/walk5.gif
+	sound	data/sounds/walk.wav
+	frame	data/chars/Kenpachi/walk6.gif
+	frame	data/chars/Kenpachi/walk7.gif
+	frame	data/chars/Kenpachi/walk8.gif
 		
 anim	special
 	mponly	1
@@ -149,12 +171,14 @@ anim	walk
 	loop	1
 	delay	7
 	offset	58 116
-	bbox	50 65 20 40
+	bbox	51 71 36 45
 	frame	data/chars/Kenpachi/walk1.gif
 	frame	data/chars/Kenpachi/walk2.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Kenpachi/walk3.gif
 	frame	data/chars/Kenpachi/walk4.gif
 	frame	data/chars/Kenpachi/walk5.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Kenpachi/walk6.gif
 	frame	data/chars/Kenpachi/walk7.gif
 	frame	data/chars/Kenpachi/walk8.gif
