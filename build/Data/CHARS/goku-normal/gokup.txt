@@ -9,7 +9,8 @@ jumpmove 3 3
 animationscript data/scripts/spawns.c
 com      a3 freespecial
 com      a2 freespecial11
-com      a4 freespecial3
+com      d s freespecial3
+com s freespecial4
 script data/scripts/playerscript.c
 weapons goku_ssj goku_normal
 weaploss 3
@@ -18,7 +19,6 @@ parrow2 data/chars/misc/picon/2picon.gif -18 -100
 parrow3 data/chars/misc/picon/3picon.gif -18 -100
 parrow4 data/chars/misc/picon/4picon.gif -18 -100
 makeinv 4
-
 
 
 
@@ -240,9 +240,6 @@ anim	freespecial2
 	frame	data/chars/Goku-normal/ki04.GIF
 		
 anim	freespecial3
-#	energycost	0
-#	mponly	1
-#	@cmd	enoughmp
 	loop	0
 	weaponframe	7 1
 	offset	43 86
@@ -367,10 +364,10 @@ anim	spawn
 	frame	data/chars/Goku-normal/ki03.GIF
 	frame	data/chars/Goku-normal/ki04.GIF
 		
-anim	special
+anim	freespecial4
 	energycost	0
 	mponly	1
-	@cmd	enoughmp
+		
 	loop	0
 	offset	43 78
 	range	0 200
