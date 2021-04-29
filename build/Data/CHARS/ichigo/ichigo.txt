@@ -29,6 +29,7 @@ makeinv 4
 
 
 
+
 anim	attack1
 	loop	0
 	delay	4
@@ -78,7 +79,6 @@ anim	freespecial
 	offset	58 116
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
-	@cmd	spawnscreen "Screen_wind" 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
 	frame	data/chars/Ichigo/Free1.gif
 	@cmd	changeentityproperty getlocalvar("self") "mp" 0
@@ -267,10 +267,6 @@ anim	special
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	10
-	frame	data/chars/Ichigo/Spec2.gif
-	frame	data/chars/Ichigo/Spec3.gif
-	frame	data/chars/Ichigo/Spec2.gif
-	frame	data/chars/Ichigo/Spec3.gif
 	frame	data/chars/Ichigo/Spec2.gif
 	frame	data/chars/Ichigo/Spec3.gif
 	frame	data/chars/Ichigo/Spec4.gif

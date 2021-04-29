@@ -9,9 +9,11 @@ load g_shot
 script data/scripts/playerscript.c
 animationscript data/scripts/spawns.c
 com      a3 freespecial
+com d a3 freespecial2
+com u a3 freespecial5
 com      a2 freespecial11
-com      a4 freespecial3
-com d a3 freespecial4
+com      s freespecial3
+com d s freespecial4
 icon	data/chars/deku/0.gif
 weapons deku_transform deku
 weaploss 3
@@ -21,7 +23,6 @@ parrow2 data/chars/misc/picon/2picon.gif -18 -100
 parrow3 data/chars/misc/picon/3picon.gif -18 -100
 parrow4 data/chars/misc/picon/4picon.gif -18 -100
 makeinv 4
-
 
 
 
@@ -132,9 +133,8 @@ anim	fall
 	frame	data/chars/Deku/35.gif
 		
 anim	freespecial
-	energycost	0
+	energycost	10
 	mponly	1
-	@cmd	enoughmp
 	delay	7
 	fastattack	1
 	delay	30
@@ -143,7 +143,6 @@ anim	freespecial
 	offset	13 41
 	frame	data/chars/Deku/93.gif
 	sound	data/chars/deku/deku_0-14.wav
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
 	delay	10
@@ -153,14 +152,14 @@ anim	freespecial
 	@cmd	spawnparent "pdust" -10 0 -20
 	delay	4
 	@cmd	dasher 20 0 0
-	attack	26 1 48 31 15 1 1 0 0 0
+	attack	26 1 48 31 18 1 1 0 0 0
 	dropv	1 10 2
 	offset	24 28
 	frame	data/chars/Deku/95.gif
 	attack	0 0 0 0 0 0 0 0 0 0
 	offset	22 27
 	frame	data/chars/Deku/96.gif
-	attack	26 1 65 31 15 1 0 1 0 0
+	attack	26 1 65 31 18 1 0 1 0 0
 	dropv	1 10 5
 	offset	28 28
 	frame	data/chars/Deku/97.gif
@@ -213,53 +212,45 @@ anim	freespecial11
 	frame	data/chars/Deku/18.gif
 		
 anim	freespecial2
-	energycost	0
+	energycost	30
 	mponly	1
-	@cmd	enoughmp
+	delay	10
 	fastattack	1
 	delay	30
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 1
-	offset	13 41
-	frame	data/chars/Deku/99.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
+	offset	13 32
+	frame	data/chars/Deku/154.gif
 	@cmd	spawnbind "zoomout" 0 0 0
 	@cmd	changeopenborvariant "slowmotion" 0
-	delay	3
-	offset	24 41
-	frame	data/chars/Deku/100.gif
-	attack	14 1 73 43 26 0 1 0 50 0
-	offset	22 43
-	sound	data/chars/deku/deku_5-2.wav
-	frame	data/chars/Deku/101.gif
-	offset	19 46
-	frame	data/chars/Deku/102.gif
-	delay	10
-	offset	23 28
-	frame	data/chars/Deku/103.gif
-	offset	14 32
-	frame	data/chars/Deku/104.gif
 	@cmd	spawnparent "pdust" -10 0 -20
-	@cmd	leaper 1 3
+	@cmd	dasher 5 0 0
+	delay	10
+	offset	20 32
+	frame	data/chars/Deku/155.gif
+	attack	15 1 51 35 20 1 1 0 0 0
+	dropv	1 12 0
+	offset	25 43
+	frame	data/chars/Deku/156.gif
 	attack	0 0 0 0 0 0 0 0 0 0
-	delay	22
-	offset	21 27
-	frame	data/chars/Deku/105.gif
-	delay	3
-	offset	23 42
-	sound	data/chars/deku/deku_0-3.wav
-	sound	data/chars/deku/deku_10-15.wav
-	frame	data/chars/Deku/106.gif
-	attack	7 1 91 56 25 1 1 0 50 0
-	offset	31 56
-	frame	data/chars/Deku/107.gif
-	offset	23 39
-	frame	data/chars/Deku/108.gif
+	offset	16 48
+	frame	data/chars/Deku/157.gif
+	@cmd	stop
+	attack	9 1 51 38 20 1 0 1 0 0
+	dropv	1 18 0
+	offset	18 40
+	frame	data/chars/Deku/158.gif
+	delay	20
+	offset	18 40
+	frame	data/chars/Deku/158.gif
+	offset	18 40
+	frame	data/chars/Deku/158.gif
 		
 anim	freespecial3
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
+	@cmd	pause_all 1 100
 	delay	7
 	@cmd	spawnbind "zoomin" 0 0 0
 	offset	21 41
@@ -313,6 +304,48 @@ anim	freespecial4
 	frame	data/chars/Deku/55.gif
 	offset	20 46
 	frame	data/chars/Deku/56.gif
+		
+anim	freespecial5
+	energycost	20
+	mponly	1
+	fastattack	1
+	delay	30
+	@cmd	spawnbind "zoomin" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 1
+	offset	13 41
+	frame	data/chars/Deku/99.gif
+	@cmd	spawnbind "zoomout" 0 0 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	3
+	offset	24 41
+	frame	data/chars/Deku/100.gif
+	attack	14 1 73 43 26 0 1 0 50 0
+	offset	22 43
+	sound	data/chars/deku/deku_5-2.wav
+	frame	data/chars/Deku/101.gif
+	offset	19 46
+	frame	data/chars/Deku/102.gif
+	delay	10
+	offset	23 28
+	frame	data/chars/Deku/103.gif
+	offset	14 32
+	frame	data/chars/Deku/104.gif
+	@cmd	spawnparent "pdust" -10 0 -20
+	@cmd	leaper 1 3
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	22
+	offset	21 27
+	frame	data/chars/Deku/105.gif
+	delay	3
+	offset	23 42
+	sound	data/chars/deku/deku_0-3.wav
+	sound	data/chars/deku/deku_10-15.wav
+	frame	data/chars/Deku/106.gif
+	attack	7 1 91 56 25 1 1 0 50 0
+	offset	31 56
+	frame	data/chars/Deku/107.gif
+	offset	23 39
+	frame	data/chars/Deku/108.gif
 		
 anim	get
 	delay	7
@@ -454,43 +487,6 @@ anim	runattack
 anim	spawn
 	offset	15 45
 	frame	data/chars/Deku/3.gif
-		
-anim	special
-	energycost	0
-	mponly	1
-	@cmd	enoughmp
-	delay	10
-	fastattack	1
-	delay	30
-	@cmd	spawnbind "zoomin" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 1
-	offset	13 32
-	frame	data/chars/Deku/154.gif
-	@cmd	changeentityproperty getlocalvar("self") "mp" 0
-	@cmd	spawnbind "zoomout" 0 0 0
-	@cmd	changeopenborvariant "slowmotion" 0
-	@cmd	spawnparent "pdust" -10 0 -20
-	@cmd	dasher 5 0 0
-	delay	10
-	offset	20 32
-	frame	data/chars/Deku/155.gif
-	attack	15 1 51 35 20 1 1 0 0 0
-	dropv	1 12 0
-	offset	25 43
-	frame	data/chars/Deku/156.gif
-	attack	0 0 0 0 0 0 0 0 0 0
-	offset	16 48
-	frame	data/chars/Deku/157.gif
-	@cmd	stop
-	attack	9 1 51 38 20 1 0 1 0 0
-	dropv	1 18 0
-	offset	18 40
-	frame	data/chars/Deku/158.gif
-	delay	20
-	offset	18 40
-	frame	data/chars/Deku/158.gif
-	offset	18 40
-	frame	data/chars/Deku/158.gif
 		
 anim	walk
 	bbox	1 1 36 40

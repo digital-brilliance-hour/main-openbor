@@ -1,0 +1,49 @@
+name	deku_blueswirl
+speed   15
+type 	none
+shadow	0
+setlayer 999
+alpha 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	drawmethod	scale 0.7
+	delay	4
+	offset	-29 32
+	frame	data/chars/Deku/640.gif
+	offset	5 50
+	frame	data/chars/Deku/641.gif
+	offset	28 58
+	frame	data/chars/Deku/642.gif
+	offset	40 81
+	frame	data/chars/Deku/643.gif
+	offset	79 74
+	frame	data/chars/Deku/644.gif
+	offset	85 83
+	frame	data/chars/Deku/645.gif
+	offset	74 95
+	frame	data/chars/Deku/646.gif
+	offset	64 85
+	frame	data/chars/Deku/647.gif
+	offset	68 64
+	frame	data/chars/Deku/648.gif
+	offset	74 43
+	frame	data/chars/Deku/649.gif
+	frame	data/chars/misc/empty.gif
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/misc/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

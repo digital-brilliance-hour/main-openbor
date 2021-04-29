@@ -7,6 +7,7 @@ alpha 1
 setlayer 999
 
 
+
 anim	idle
 	delay	10
 	loop	0
@@ -31,6 +32,12 @@ anim	idle
 	frame	data/chars/Gon/256.gif
 	offset	89 89
 	frame	data/chars/Gon/257.gif
+	offset	89 90
+	frame	data/chars/Gon/248.gif
+	offset	88 90
+	frame	data/chars/Gon/249.gif
+	offset	85 87
+	frame	data/chars/Gon/250.gif
 	frame	data/chars/misc/empty.gif
 	@cmd	killentity getlocalvar("self")
 	frame	data/chars/misc/empty.gif

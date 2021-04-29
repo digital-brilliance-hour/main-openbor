@@ -10,9 +10,11 @@ load g_shot
 load g_charge
 
 animationscript data/scripts/spawns.c
-com      a3 freespecial
+com      a3 freespecial1
 com      a2 freespecial11
-com      a4 freespecial3
+com      d a3 freespecial3
+com s freespecial2
+com u s freespecial4
 script data/scripts/playerscript.c
 icon	data/chars/gon/0.gif
 
@@ -21,6 +23,9 @@ parrow2  data/chars/misc/picon/2picon.gif	-18 -100
 parrow3  data/chars/misc/picon/3picon.gif	-18 -100
 parrow4  data/chars/misc/picon/4picon.gif	-18 -100
 makeinv  4
+
+
+
 
 
 
@@ -149,17 +154,19 @@ anim	fall
 	frame	data/chars/Gon/77.gif
 		
 anim	freespecial1
-	energycost	0
-	mponly	1
-	@cmd	enoughmp
-	delay	40
+	delay	10
+	@cmd	pause_all 1 250
 	@cmd	spawnbind "zoomin" 0 0 0
-	@cmd	spawnbind "g_charge" -3 16 0
+	@cmd	spawnparent "g_charge" -3 0 -16
 	sound	data/chars/gon/gon_0-9.wav
+	delay	40
+	@cmd	spawn01 "quake" 0 0 4
 	offset	13 37
 	frame	data/chars/Gon/155.gif
+	@cmd	spawn01 "quake" 0 0 4
 	offset	13 38
 	frame	data/chars/Gon/156.gif
+	@cmd	spawn01 "quake" 0 0 4
 	offset	13 37
 	sound	data/chars/gon/gon_0-10.wav
 	frame	data/chars/Gon/157.gif
@@ -228,7 +235,8 @@ anim	freespecial2
 	energycost	0
 	mponly	1
 	@cmd	enoughmp
-	delay	40
+	delay	10
+	@cmd	pause_all 1 250
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
 	sound	data/chars/gon/gon_0-9.wav
@@ -264,8 +272,8 @@ anim	freespecial2
 anim	freespecial3
 	energycost	0
 	mponly	1
-	@cmd	enoughmp
-	delay	40
+	delay	10
+	@cmd	pause_all 1 250
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
 	sound	data/chars/gon/gon_0-9.wav
@@ -457,11 +465,11 @@ anim	spawn
 	offset	19 42
 	frame	data/chars/Gon/126.gif
 		
-anim	special
+anim	freespecial4
 	energycost	0
 	mponly	1
-	@cmd	enoughmp
-	delay	40
+	delay	10
+	@cmd	pause_all 1 250
 	@cmd	spawnbind "zoomin" 0 0 0
 	@cmd	spawnbind "g_charge" -3 16 0
 	sound	data/chars/gon/gon_0-9.wav

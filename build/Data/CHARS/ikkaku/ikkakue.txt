@@ -23,31 +23,40 @@ ondeathscript data/scripts/bossdeath.c
 
 
 
+
+
 anim	attack1
+	bbox	46 74 41 42
 	loop	0
 	delay	10
 	offset	58 116
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ikkaku/Att1.gif
 	frame	data/chars/Ikkaku/Att2.gif
-	attack	69 32 50 86 5
+	bbox	62 73 47 43
+	attack	69 32 50 86 5 0 0 0 0 0
 	frame	data/chars/Ikkaku/Att3.gif
-	attack	0 0 0 0 0 0
+	bbox	46 74 41 42
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Ikkaku/Att4.gif
 		
 anim	attack2
+	bbox	36 74 47 44
 	loop	0
 	delay	10
 	offset	58 116
 	sound	data/sounds/Att.wav
 	frame	data/chars/Ikkaku/2Att1.gif
 	frame	data/chars/Ikkaku/2Att2.gif
-	attack	69 32 50 86 10
+	bbox	50 71 51 46
+	attack	69 32 50 86 10 0 0 0 0 0
 	frame	data/chars/Ikkaku/2Att3.gif
-	attack	0 0 0 0 0 0
+	bbox	36 74 47 44
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Ikkaku/2Att4.gif
 		
 anim	attack3
+	bbox	34 71 46 46
 	loop	0
 	delay	10
 	offset	58 116
@@ -67,6 +76,7 @@ anim	duck
 	frame	data/chars/Ikkaku/Duck1.gif
 		
 anim	fall
+	bbox	27 76 67 40
 	loop	0
 	offset	58 116
 	delay	30
@@ -227,11 +237,13 @@ anim	walk
 	bbox	50 65 20 40
 	frame	data/chars/Ikkaku/walk1.gif
 	frame	data/chars/Ikkaku/walk2.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ikkaku/walk3.gif
 	frame	data/chars/Ikkaku/walk4.gif
 	frame	data/chars/Ikkaku/walk5.gif
 	frame	data/chars/Ikkaku/walk6.gif
 	frame	data/chars/Ikkaku/walk7.gif
+	sound	data/sounds/walk.wav
 	frame	data/chars/Ikkaku/walk8.gif
 		
 #|edited by openBor Stats v 0.67
