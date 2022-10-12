@@ -731,6 +731,7 @@ void spawn01(void vName, float fX, float fY, float fZ)
 
 	changeentityproperty(vSpawn, "position", fX, fZ, fY); //Set spawn location.
 	changeentityproperty(vSpawn, "direction", iDirection); //Set direction.
+	setlocalvar("currentSpawn", vSpawn);
     return vSpawn; //Return spawn.
 }
 
