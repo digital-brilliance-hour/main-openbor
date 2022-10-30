@@ -1,0 +1,66 @@
+_noskip 1
+Max 0 Hey_once_again_guys!
+Mandy 0 Missed_us?
+Max 0 I_don't_think_they_do_though.
+Mandy 0 Right.
+_player 0 You_guys_forgot_about_me. You_put_me_off_unnoticed_there!
+Max 0 Sorry_about_that.
+Mandy 0 %gp's_late_as_usual_folks. Anyway,_thanks_for_playing_the_demo_so_far.
+_player 0 HEY!
+Mandy 0 Just_kidding.
+Mandy 0 Okay,_just_to_start_off,_the_scripting_system_is capable_of_doing_dialog,_scrolling_pictures_and_scrolling_text.
+Max 0 The_main_feature_of_the_system_is_the_dialog. We_are_actually_doing_it_right_now!
+Max 0 But_did_you_know_that_there_are_various_features_aside from_just_displaying_text?
+_playmusic 0 data/music/menu.bor
+_player 0 Like_this_one?
+Max 0 Well,_yes._That's_one_of_them. What_%gp's_demostrated_is_the_playmusic_command.
+Max 0 It_allows_you_to_play_and_switch_music_tracks.
+Max 0 Next_is...
+_white
+_playsound 0 data/sounds/eek.wav
+_player 0 Yaah!_A_bug! _ Kula:Max:
+_normal
+Max 0 That's_peachy_%pl._The__playsound_entity_allows for_playing_of_sound_effects. Kula:Max:
+Max 0 There's_also_white_and_normal_as well_for_white_screen_effects.
+_playsound 0 data/sounds/kula_blow.wav
+_player 0 There._Now_that_bug_will_not_be_a_bother.
+Mandy 0 Moving_along_..._There_are_other_functions_as_well. Like_the_fadepausemusic_command_for_fading_music_out
+_fadepausemusic 1
+Mandy 0 And_in.
+_fadepausemusic 0
+Mandy 0 There's_also_quickpausemusic_which_is_like fadepausemusic_only_abrupt.
+_quickpausemusic 1
+Mandy 0 Useful_for_putting_emphasis_through_silence.
+_quickpausemusic 0
+_player 0 You're_talking_to_me_right?!
+Mandy 0 Nope._Just_the_dude_in_front.
+_player 0 Okay_then. Apparently,_player_uses_the_player_one_name. happy
+_player 0 Which_is_cool,_because_it's_me! _ happy
+_player 0 Oh_yeah,_you_can_have_expressions_for_player, that_way_it_won't_be_hard_for_you
+_player 0 To_type_the_name_of_the_player_directly.
+Max 0 One_more_new_feature_in_2.0_is_the_fact_that typewritten_text_is_possible!
+_speed 0
+Max 0 Of_course,_static_text_is_still_possible. But_with_the__speed_command_we_can...
+_speed 50
+Max 0 Make_text_slower...
+_speed 1
+Max 0 Or_make_text_super_fast!
+_speed 20
+Max 0 By_default_though,_speed_is_set_by_20.
+Mandy 0 That's_good_news,_Max!
+Max 0 Beeping_is_also_supported_as_well. Like_a_certain_game_that_uses_such_feature.
+Max 0 By_default_if_speed_is_set_to_1_or_0, the_system_will_automatically_disable_beeping.
+Max 0 This_way,_we_do_not_induce_headaches.
+Angel 1 Which_then_brings_us_to_the_final_exposition!
+_player 0 You?! _ Kula:Max:Mandy:
+Max 0 Why_are_you_still_alive? _ Kula:Max:Mandy:
+Mandy 0 You're_still_not_giving_up_are_you? _ Kula:Max:Mandy:
+Angel 1 Not_really,_I'm_just_calling_over_a_truce. I'm_here_to_explain_the_fact_that
+_noskip 0
+Angel 1 this_dialog_is_so_long,_that_you_couldn't_skip_it. Now_you_can,_since_I_disabled_noskip!
+Angel 1 Now_you_can_use_attack2_to_skip_this_dialog! My_revenge_is_almost_complete!
+Max 0 That's_the_lamest_thing_I_ever_heard.
+_player 0 That's_all_you_got?
+Angel 1 Well,_there's_the_'end'_function. I_want_to_try_it_myself!
+The_Heroes 0 DON'T_YOU_DARE_DO_THAT! _ Kula:Max:Mandy:
+end
