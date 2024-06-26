@@ -15,7 +15,7 @@ frontpanel	data/bgs/street/f03.gif
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
 panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
-panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
+panel		data/bgs/street/n03.gif	data/bgs/street/neon03.gif	data/bgs/street/s03.gif
 panel		data/bgs/street/n03.gif	none				none
 panel		data/bgs/street/n04.gif	none				none
 panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
@@ -24,11 +24,11 @@ panel		data/bgs/street/n07.gif	none				none
 panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 
 # ab = Pinepot left
-# c = wall, ridge left
+# c = wall, ridge right
 # d = wall, ridge right + 078
 # e = window
 # f = door
-# g = wall
+# g = wall order abcdgghdfdfdfdggcd
 # h = Club K neon
 
 
@@ -48,8 +48,8 @@ order	fdefecdhfecggdab
 #	map	[num]		(colourmap, range 0-3, optional)
 #	health	[num]		(optional)
 #	item	[id]		(obstacles only: contained item, optional)
-#	boss	[0/1]		(see below, optional)
-#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	boss	[1/1]		(see below, optional)
+#	flip	[1/1]		(0 = face left, 1 = face right, optional)
 #	coords	[num] [num]	(coords relative to scrollpos)
 #	at	[scrollpos]
 #
@@ -84,24 +84,23 @@ spawn	1up
 coords	200 180
 at	0
 
-spawn	Shermie
+spawn mighty
 coords	350 160
 at	10
 
-spawn	Steamer
+spawn mighty
 coords	380 241
-at	20
+at      0
 
 
-spawn	Yashiro
-alias	Oxnard
-map	2
-health	5
+spawn mighty
+map     3
+health  9
 coords	350 190
 at	200
 
-spawn	Shermie
-alias	Elayne
+spawn mighty
+alias knuckles
 map	1
 health	25
 coords	-30 160
@@ -112,30 +111,30 @@ at	320
 
 #--group3-----------
 
-spawn	Trash
+spawn   apple
 item	money
 coords	370 165
 at	400
 
-spawn	Trash
+spawn   mighty
 2pitem	gold
 coords	370 180
 at	400
 
-spawn	Shermie
+spawn   mighty
 alias	Madchen
 health	30
 coords	-30 200
 at	450
 
-spawn	Shermie
+spawn   mighty
 alias	Hubchen
 health	40
 map	2
 coords	340 210
 at	470
 
-spawn	ralf
+spawn   mighy
 alias	Jimmy
 health	55
 coords	350 165
@@ -147,19 +146,19 @@ at	500
 group	3 3
 at	500
 
-spawn	Ralf
+spawn   mighty
 coords	200 220
 at	500
 
-spawn	Ralf
+spawn   mighty
 coords	80 160
 at	500
 
-spawn	Shermie
+spawn   mighty
 coords	-30 230
 at	500
 
-spawn	Ralf
+spawn mighty
 coords	380 160
 at	500
 
@@ -168,19 +167,19 @@ at	500
 group	100 100
 at	510
 
-spawn	Shermie
+spawn   mighty
 coords	380 220
 at	800
 
-spawn	Ralf
+spawn   mighty
 coords	-30 180
 at	800
 
-spawn	biker-k'
+spawn  mighty
 coords	400 220
 at	1000
 
-spawn	biker-k'
+spawn  mighty
 health	100
 coords	-80 220
 at	1000
@@ -196,24 +195,24 @@ at	1500
 group	1 3
 at	1500
 
-spawn	Ralf
+spawn   mighty
 coords	-30 180
 at	1500
 
-spawn	Ralf
+spawn   mighty
 coords	-30 220
 at	1500
 
-spawn	Ralf
+spawn   mighty
 map	2
 coords	380 160
 at	1500
 
-spawn	Shermie
+spawn  mighty
 coords	380 230
 at	1500
 
-spawn	Ralf
+spawn   mighty
 coords	-30 180
 at	1500
 
@@ -272,7 +271,7 @@ coords	-30 230
 at	1800
 
 spawn	Ralf
-coords	-30 230
+coords	-30 30
 at	1800
 
 
