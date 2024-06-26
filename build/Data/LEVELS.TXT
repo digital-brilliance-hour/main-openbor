@@ -1,17 +1,18 @@
-# List level filenames here.
-#
+# List level filenames here#
 # Syntax:
 #	set	[difficulty]	Start a new set of levels (e.g. "normal")
 #
 #	file	[filename]	A level or part of a level
 #	next			Go to next level (show "stage clear" and stuff)
 #	scene	[filename]	Show a cut-scene
+
+
+
 #
 
+set	DBH_Course_Test
 
-
-set	Grouping
-
+file	data/levels/new-stage-1.txt
 file	data/levels/example1.txt
 next
 file	data/levels/holes.txt
