@@ -1,6 +1,6 @@
 ## Load music in this area ##
-music         data/music/stage1.ogg 441680
-bossmusic	data/music/boss.ogg
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
 
 ## Load images in this area ##
 
@@ -12,7 +12,7 @@ frontpanel	data/bgs/street/f00.gif
 frontpanel	data/bgs/street/f01.gif
 frontpanel	data/bgs/street/f02.gif
 frontpanel	data/bgs/street/f03.gif
-																 [
+
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
@@ -39,8 +39,8 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-order abcdgghdfdfefdggcdcdaadecadecagh
-order adfdefecdhfecggdabaaacghdedghaea
+order abcdgghdfdfefdggcd
+order	fdefecdhfecggdab
 
 ## Spawning Area ##
 # Spawn format:
@@ -83,18 +83,28 @@ order adfdefecdhfecggdabaaacghdedghaea
 
 
 #--group1-----
-
-
-spawn yashiro
+spawn angel
 coords 360 166
 at 486
+
+spawn billy
+coords 420 166
+at 500
+
+spawn jhun
+coords 500 166
+at 2033
 
 spawn Joe
 coords 360 210
 at 486
 
-spawn yashiro
+spawn box
 coords 360 166
+at 969
+
+spawn box
+coords 380 220
 at 969
 
 spawn Joe
@@ -115,35 +125,29 @@ spawn yashiro
 coords -40 210
 at 1880
 
-spawn Ralf
+spawn robert
 coords 360 166
 at 1880
 
-spawn Eiji
+spawn shermie
 coords 360 210
 at 1880
 
-spawn Joe
+spawen shermie
 coords -40 166
 at 2403
 
-spawn yashiro
+spawn yamazaki
 coords -40 210
 at 2403
 
-spawn Ralf
-coords 360 166
-at 2403
-
-spawn Eiji
-coords 360 210
-at 2403
-
-spawn Ralf
+spawn k9999
+health 100
 coords -40 166
 at 3003
 
-spawn Ralf
+spawn k9999
+health 100
 coords -40 210
 at 3003
 
@@ -151,22 +155,23 @@ spawn Eiji
 coords 360 166
 at 3003
 
-spawn Eiji
+spawn chair
 coords 360 210
 at 3003
+
+spawn k'
+coords 100 166
+at 3150
 
 spawn box
-item meat
+item 1up
 coords 360 174
 at 3396
 
-spawn Heavy
+spawn mrbig
 health 200
 boss 1
 coords 244 194
-at 3760
-
-wait
 at 3760
 
 
