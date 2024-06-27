@@ -10,12 +10,14 @@ icon	data/chars/mighty/icon.gif
 remap	data/chars/mighty/idle00.gif data/chars/mighty/alt.gif
 
 
+
+
 anim	fall
 	loop	0
 	offset	23 28
 	attack	7 4 31 24 15 1
 	delay	1
-	frame	data/chars/mighty/pain.gif
+	frame	data/chars/mighty/king.gif
 		
 anim	get
 	loop	0
@@ -28,7 +30,7 @@ anim	grab
 	offset	4 35
 	bbox	2 2 26 30
 	delay	1000
-	frame	data/chars/mighty/grab.gif
+	frame	data/chars/mighty/king.gif
 		
 anim	idle
 	loop	1
@@ -73,19 +75,19 @@ anim	pain
 	offset	23 28
 	bbox	7 4 31 24
 	delay	1
-	frame	data/chars/mighty/pain.gif
+	frame	data/chars/mighty/king.gif
 		
 anim	rise
 	loop	0
 	offset	23 28
 	delay	1
-	frame	data/chars/mighty/pain.gif
+	frame	data/chars/mighty/king.gif
 		
 anim	throw
 	loop	0
 	offset	16 28
 	delay	40
-	frame	data/chars/mighty/throw.gif
+	frame	data/chars/mighty/king.gif
 		
 anim	walk
 	loop	1
