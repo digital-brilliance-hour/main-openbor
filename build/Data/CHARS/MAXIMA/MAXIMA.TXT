@@ -1,5 +1,5 @@
 name	Max
-health	10000
+health	100000000
 speed   20
 type	player
 shadow	5
@@ -270,7 +270,7 @@ anim	special
 	loop	0
 	delay	8
 	offset	81 212
-	blast	10 116 140 98 20 1
+	blast	10 116 140 98 1000000 1 0 0 0 0
 	sound	data/sounds/maxboom.wav
 	frame	data/chars/maxima/super1.gif
 	frame	data/chars/maxima/super2.gif
