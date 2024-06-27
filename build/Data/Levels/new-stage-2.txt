@@ -1,6 +1,6 @@
 ## Load music in this area ##
-music		data/music/stage1.ogg
-bossmusic	data/music/boss.ogg
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
 
 ## Load images in this area ##
 
@@ -39,7 +39,7 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-order abcdgghdfdfefdggcdaa
+order abcdgghdfdfefdggcd
 order	fdefecdhfecggdab
 
 ## Spawning Area ##
@@ -83,115 +83,40 @@ order	fdefecdhfecggdab
 
 
 #--group1-----
+spawn	robert
+health  100
+coords	200 180
+at      3350
 
-
-spawn yashiro
-coords 360 166
-at 486
-
-spawn eiji
-coords 360 210
-at 486
-
-spawn yashiro
-coords 360 166
-at 969
-
-spawn eiji
-coords -40 210
-at 969
-
-wait
-at 1880
-
-group 1 4
-at 1880
+spawn Shot
+coords 	-200 -200
+at 5000
 
 spawn k9999
-coords -40 210
-at 1880
-
-spawn mrbig
-health 250
-coords -40 210
-at 1880
-
-spawn eiji
-coords 360 166
-at 1880
-
-spawn yashiro
-coords 360 210
-at 1880
-
-spawn k9999
-coords -40 210
-at 2403
-
-spawn mrbig
-health 250
-coords -40 210
-at 2403
-
-spawn eiji
-coords 360 166
-at 2403
-
-spawn yashiro
-coords 360 210
-at 2403
-
-spawn k9999
-coords -40 210
-at 3003
-
-spawn mrbig
-health 50
-coords -40 210
-at 3003
-
-spawn eiji
-coords 360 166
-at 3003
-
-spawn yashiro
-coords 360 210
-at 3003
-
-
-spawn box
-item meat
-coords 360 174
-at 3396
-
-spawn yamazaki
-health 10000
-boss 2
-coords 224 194
-at 3760
-
-wait
-at 3760              f
-
-spawn k9999
-health 9999
-coords 235 230
-at 500
+coords 180 180
+at 800
 
 spawn Lobster
-health 15963
-coords 160 200
-at 500
+health 500
+coords 170 180
+at 550
+
+wait
+at 675
+
+spawn Lobster
+coords 155 160
+at 450
 
 spawn mighty
-health 10000
-coords 235 200
-at 2675
-boss 1
+coords 160 165
+at 350
 
+spawn k'
+coords 175 175
+at 1300
 
-
-
-
-
+spawn k'
+coords 150 150
+at 1000
 
