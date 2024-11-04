@@ -8,10 +8,15 @@
 #	scene	[filename]	Show a cut-scene
 #
 
+set Simone's_Demo
+scene   data/scenes/howto.txt
+file    data/levels/new-stage-1.txt
+next
+scene   data/scenes/ending.txt
 
+set	DBH_Course_Test
 
-set	Grouping
-
+file    data/levels/new-stage-1.txt
 file	data/levels/example1.txt
 next
 file	data/levels/holes.txt
