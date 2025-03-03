@@ -1,0 +1,162 @@
+## Load music in this area ##
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/street/back.gif
+
+# Front layer
+frontpanel	data/bgs/street/f00.gif
+frontpanel	data/bgs/street/f01.gif
+frontpanel	data/bgs/street/f02.gif
+frontpanel	data/bgs/street/f03.gif
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
+panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
+panel		data/bgs/street/n03.gif	none				none
+panel		data/bgs/street/n04.gif	none				none
+panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
+panel		data/bgs/street/n06.gif	none				none
+panel		data/bgs/street/n07.gif	none				none
+panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order abcdgghdfdfefdggcd
+order	fdefecdhfecggdab
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+spawn jhun
+coords 360 166
+at 486
+
+spawn angel
+coords 360 210
+at 486
+
+spawn jhun
+coords 360 166
+at 969
+
+spawn angel
+coords -40 210
+at 969
+
+wait
+at 1880
+
+group 1 4
+at 0
+
+spawn jhun
+coords -40 166
+at 1880
+
+spawn eiji
+coords -40 210
+at 1880
+
+spawn angel
+coords 360 166
+at 1880
+
+spawn billy
+coords 360 210
+at 1880
+
+spawn jhun
+coords -40 166
+at 2403
+
+spawn eiji
+coords -40 210
+at 2403
+
+spawn angel
+coords 360 166
+at 2403
+
+spawn billy
+coords 360 210
+at 2403
+
+spawn billy
+coords -40 166
+at 3003
+
+spawn angel
+coords -40 210
+at 3003
+
+spawn eiji
+coords 360 166
+at 3003
+
+spawn jhun
+coords 360 210
+at 3003
+
+spawn rugal
+boss 1
+coords 244 194
+at 3760
+
+wait
+at 3760
