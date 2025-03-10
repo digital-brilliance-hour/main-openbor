@@ -1,8 +1,10 @@
-# Street
+## Load music in this area ##
 music		data/music/remix.bor
 bossmusic	data/music/menu.bor
 
-# Load images
+## Load images in this area ##
+
+# Background layer
 background	data/bgs/street/back.gif
 
 # Front layer
@@ -40,7 +42,7 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 order abcdgghdfdfefdggcd
 order	fdefecdhfecggdab
 
-
+## Spawning Area ##
 # Spawn format:
 #
 #	spawn	[id]
@@ -79,201 +81,15 @@ order	fdefecdhfecggdab
 # group 4 4
 
 
+
 #--group1-----
-spawn	1up
-coords	200 180
-at	0
-
-spawn	Shermie
-coords	350 160
-at	10
-
-spawn	Steamer
-coords	380 241
-at	20
+spawn rugal
+coords 360 195
+boss 1
+at 800
+wait 1000
 
 
-spawn	Yashiro
-alias	Oxnard
-map	2
-health	5
-coords	350 190
-at	200
-
-spawn	Shermie
-alias	Elayne
-map	1
-health	25
-coords	-30 160
-at	220
-
-wait
-at	320
-
-#--group3-----------
-
-spawn	Trash
-item	money
-coords	370 165
-at	400
-
-spawn	Trash
-2pitem	gold
-coords	370 180
-at	400
-
-spawn	Shermie
-alias	Madchen
-health	30
-coords	-30 200
-at	450
-
-spawn	Shermie
-alias	Hubchen
-health	40
-map	2
-coords	340 210
-at	470
-
-spawn	ralf
-alias	Jimmy
-health	55
-coords	350 165
-at	470
-
-wait
-at	500
-
-group	3 3
-at	500
-
-spawn	Ralf
-coords	200 220
-at	500
-
-spawn	Ralf
-coords	80 160
-at	500
-
-spawn	Shermie
-coords	-30 230
-at	500
-
-spawn	Ralf
-coords	380 160
-at	500
-
-#------------
-
-group	100 100
-at	510
-
-spawn	Shermie
-coords	380 220
-at	800
-
-spawn	Ralf
-coords	-30 180
-at	800
-
-spawn	biker-k'
-coords	400 220
-at	1000
-
-spawn	biker-k'
-health	100
-coords	-80 220
-at	1000
-
-wait
-at	1200
-
-#------------------
-
-wait
-at	1500
-
-group	1 3
-at	1500
-
-spawn	Ralf
-coords	-30 180
-at	1500
-
-spawn	Ralf
-coords	-30 220
-at	1500
-
-spawn	Ralf
-map	2
-coords	380 160
-at	1500
-
-spawn	Shermie
-coords	380 230
-at	1500
-
-spawn	Ralf
-coords	-30 180
-at	1500
-
-
-#-------------------
-group	100 100
-at	1800
-
-wait
-at	1800
-
-spawn	Shermie
-coords	380 230
-at	1800
-
-spawn	Shermie
-coords	-30 160
-at	1800
-
-
-spawn	Lobster
-alias	This_is_the_Boss
-boss	1
-coords	200 220
-at	1800
-
-
-# Only AFTER the boss is spawned do we make the group size smaller
-
-group	2 2
-at	1800
-
-
-# Re-enforcements
-
-spawn	ralf
-coords	-30 230
-at	1800
-
-spawn	Ralf
-map	1
-coords	-30 230
-at	1800
-
-spawn	Shermie
-coords	-30 230
-at	1800
-
-spawn	Ralf
-coords	-30 230
-at	1800
-
-spawn	Shermie
-map	1
-coords	-30 230
-at	1800
-
-spawn	Ralf
-coords	-30 230
-at	1800
 
 
 
