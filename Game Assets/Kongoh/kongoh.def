@@ -1,0 +1,32 @@
+; Definición de personajes creados con EasyChar
+
+; Player information
+[Info]
+name = "Sengoku 3 Kongoh"
+displayname = "Kongoh"
+mugenversion = 01,04,2000
+author = "Actarus from MUGENATION"
+pal.defaults = 1,2,3,4,5,6,7
+
+
+
+
+; Files for the player
+[Files]
+cmd     = Kongoh.cmd   ;Command set
+cns     = Kongoh.cns   ;Constants
+st      = Kongoh.cns   ;States
+stcommon = common1.cns     ;Common states
+sprite  = Kongoh.sff   ;Sprite
+anim    = Kongoh.air   ;Animation
+sound   = Kongoh.snd   ;Sound
+pal1    = Kongoh.act   ;Palettes (can have up to 12)
+pal2    = Grey.act
+pal3    = Red.act
+pal4    = Yellow.act
+pal5    = Green.act
+pal6    = Cyan.act
+pal7    = Blue.act
+
+
+
