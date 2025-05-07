@@ -10,13 +10,12 @@
 
 
 
-set	Grouping
-
-file	data/levels/example1.txt
+set Katie's_demo
+scene data/scenes/howto.txt
+file 	data/levels/stage-3.txt
 next
-file	data/levels/holes.txt
-next
-scene	data/scenes/ending.txt
+file	data/levels/new-stage-1.txt
+scenes	data/scenes/ending.txt
 
 
 set	water_(3_levels)

@@ -1,0 +1,47 @@
+
+;***********************************************************************************
+;KAGETSURA SENGOKU 140 POR CIENTO DISFRUTALO ERES LIBRE DE COGER LO QUE DESEES.
+; Made in Spain by Juan Carlos http://eternalmugen.cjb.net
+;************************************************************************************
+; Player information
+[Info]
+name = "Kagetsura"        ;Name of character
+displayname = "Kagetsura" ;Name of character to display
+versiondate = 04,14,2001    ;Version date of character
+mugenversion = 04,14,2001   ;Version of M.U.G.E.N character works on
+author = "Juan Carlos"         ;Character author name
+pal.defaults = 6,3,4,2      ;Default palettes in order of preference
+; Paletas hechas por Clarens y Micromor
+
+; Files for the player
+[Files]
+cmd     = kagetsura.cmd   ;Command set
+cns     = kagetsura.cns   ;Constants
+st      = kagetsura.cns   ;States
+st2     = ayudantes.cns
+st3     = bomba.cns
+st4     = combo.cns
+st5     = coger.cns
+st6     = nube.cns
+stcommon = common1.cns ;Common states
+sprite  = kagetsura.sff   ;Sprite
+anim    = kagetsura.air   ;Animation
+sound   = kagetsura.snd   ;Sound
+pal1    = kagetsura.act  ;Palettes (can have up to 12)
+pal2    = ckaget02.act
+pal3    = cantoso.act
+pal4    = ckaget04.act
+pal5    = rojo.act
+pal6    = ckaget07.act
+pal7    = xmen.act
+pal8    = ckaget03.act
+pal9    = ckaget10.act
+pal10   = ckaget01.act
+pal11   = ckaget13.act
+pal12   = ckaget05.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard = intro.def
+;ending.storyboard= ending.def
+; Made in Spain 

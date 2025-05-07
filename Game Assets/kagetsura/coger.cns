@@ -1,0 +1,347 @@
+
+
+[Statedef 4213]
+type = S
+movetype = I
+physics = N
+anim = 107
+velset = 6.5,0 ; 
+ctrl = 0
+
+
+[State 3570, 0]
+type = Explod
+trigger1 = time = 0
+trigger1 = parent, Var(0) = 3
+id = 4478
+anim = 3573
+pos = 26,238
+postype = Left
+supermove = 1
+sprpriority = 4
+removetime = -1
+bindtime = -1
+
+[State 3570, 0]
+type = Explod
+trigger1 = time = 7
+trigger1 = parent, Var(0) = 3
+id = 4478
+anim = 3574
+pos = 42,222
+postype = Left
+supermove = 1
+sprpriority = 4
+removetime = -1
+bindtime = -1
+
+[State 3570, 0]
+type = Explod
+trigger1 = time = 0
+trigger1 = parent, Var(0) = 4
+id = 4478
+anim = 3573
+pos = -27,238
+postype = Right
+supermove = 1
+sprpriority = 4
+removetime = -1
+bindtime = -1
+facing = -1
+
+[State 3570, 0]
+type = Explod
+trigger1 = time = 7
+trigger1 = parent, Var(0) = 4
+id = 4478
+anim = 3574
+pos = -26,222
+postype = Right
+supermove = 1
+sprpriority = 4
+removetime = -1
+bindtime = -1
+
+[State 3410, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 4240
+
+[State 3410, 2]
+type = sprpriority
+trigger1 = Time = 0
+value = 10
+
+[State 1601, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 1601
+
+[State 3320, 4]
+type = ChangeState
+trigger1 = (P2Statetype = C || P2statetype = S)
+trigger1 = P2BodyDist X <= 14
+value = 700
+ctrl = 1
+
+[State 4010, 4]
+type = ChangeState
+trigger1 = P2bodydist Y < 0
+trigger1 = P2Statetype = A
+trigger1 = P2BodyDist X < 200
+trigger1 = P2BodyDist X > 50
+trigger2 = p2stateno = 5120
+trigger3 = p2stateno = 5110
+value = 4430
+ctrl= 1
+
+[State 4010, 4]
+type = Destroyself
+triggerall = stateno !=700
+triggerall = stateno !=710
+triggerall = p2stateno != 820
+triggerall = p2stateno != 821
+trigger1 = time >= 50
+
+
+[State 3411, 0]
+type = TargetFacing
+trigger1 = 1
+
+[State 3411, 0]
+type = turn
+trigger1 = P2Dist X < -10
+
+
+[Statedef 700]
+type    = S
+movetype= A
+physics = S
+juggle  = 0
+velset = 0,0
+ctrl = 0
+anim = 700
+sprpriority = -1
+
+
+[State 700, 1]
+type = HitDef
+Trigger1 = Time = 0
+attr = S, NT          ;Attributes: Standing, Normal Throw
+hitflag = M-          ;Affect only ground people who are not being hit
+priority = 1, Miss    ;Throw has low priority, must be miss or dodge type.
+sparkno = -1          ;No spark
+sprpriority = 1       ;Draw in front of p2
+p1facing = 1
+p2facing = 1          ;Force p2 to face KFM
+p1stateno = 710       ;On success, KFM changes to state 810
+p2stateno = 720       ;If hit, p2 changes to state 820 in KFM's cns
+guard.dist = 0        ;This prevents p2 from going into a guard state if close
+fall = 1              ;Force p2 into falling down
+
+[State 700, 2]
+type = ChangeState
+Trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+
+[Statedef 710]
+type    = S
+movetype= A
+physics = N
+anim = 710
+poweradd = 60
+sprpriority = 2
+
+[State 810, Grab Sound]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 0, 0
+
+
+[State 710, Bind 1]
+type = TargetBind
+trigger1 = AnimElem = 1
+pos = 51, 0                  ; Primer Frame
+
+
+[State 710, Bind 2-4]
+type = TargetBind
+trigger1 = AnimElem = 2
+pos = 31, -40 ; 2 frame 
+
+[State 710, Bind 5]
+type = TargetBind
+trigger1 = AnimElem = 3
+pos = 7,-135
+
+[State 710, Bind 6]
+type = TargetBind
+trigger1 = AnimElem = 4
+pos = 7, -135
+
+[State 710, Bind 7]
+type = TargetBind
+trigger1 = AnimElem = 5
+pos = -3, -75
+
+[State 710, Bind 7]
+type = TargetBind
+trigger1 = AnimElem = 6
+pos = 11, -130
+
+[State 710, Bind 7]
+type = TargetBind
+trigger1 = AnimElem = 7
+pos = 21, -115
+
+
+[State 710, Hurt 11]
+type = TargetLifeAdd
+trigger1 = AnimElem = 6
+value = -78
+
+[State 710, Throw 11]
+type = TargetState
+trigger1 = AnimElem = 8
+value = 721
+
+
+[State 710, State End]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4430
+ctrl = 1
+
+
+[Statedef 720]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+sprpriority = 1
+
+[State 820, 1]
+type = ChangeAnim2
+Trigger1 = Time = 0
+value = 720
+
+
+[Statedef 721]
+type    = A
+movetype= H
+physics = N
+velset = 0,0
+poweradd = 40
+
+
+
+[State 9005, Vel]
+type = Velset
+trigger1 = 1
+X = -10.0
+Y = (const(movement.yaccel) * time)+2
+
+
+[State 821, 2] ; Recover near ground (use ChangeState)
+type = ChangeState
+triggerall = Vel Y > 0
+triggerall = Pos Y >= -20
+triggerall = alive
+triggerall = CanRecover
+trigger1 = Command = "recovery"
+value = 5200 ;HITFALL_RECOVER
+
+[State 821, 3] ; Recover in mid air (use SelfState)
+type = SelfState
+triggerall = Vel Y > 0
+triggerall = alive
+triggerall = CanRecover
+trigger1 = Command = "recovery"
+value = 5210 ;HITFALL_AIRRECOVER
+
+[State 821, 4] ;Hit ground
+type = SelfState
+trigger1 = Vel Y > 0
+trigger1 = Pos Y >= 0
+value = 5100 ;Hit ground
+
+[Statedef 1601]
+type = S
+movetype = I
+physics = N
+anim = 1601
+velset = 0,0
+
+[State 1601, 2]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 4430
+
+[Statedef 4430]
+type    = S
+movetype= I
+physics = S
+ctrl = 0
+anim = 107
+
+[State 3544, 5]
+type = sprpriority
+trigger1 = time >= 0
+value = 3
+
+[State 3544, 1]
+type = turn
+trigger1 = Time = 0
+Value = 1
+
+[State 3544, 2]
+type = VelSet
+trigger1 = Time >= 0
+x = 6
+
+[State 3544, 1]
+type = NotHitBy
+trigger1 = Time >= 0
+Value = SCA
+
+
+[State 3572, 0]
+type = RemoveExplod
+trigger1 = Animtime = 0
+id = 4478
+
+[State 3572, 0]
+type = Explod
+trigger1 = time = 7
+trigger1 = parent, Var(0) = 3
+anim = 3505
+pos = 26,238
+postype = Left
+sprpriority = 4
+bindtime = -1
+
+[State 3572, 0]
+type = Explod
+trigger1 = time = 7
+trigger1 = parent, Var(0) = 4
+anim = 3505
+pos = -27,238
+postype = Right
+sprpriority = 4
+bindtime = -1
+facing = -1
+
+
+[State 3544, 3]
+type = DestroySelf
+trigger1 = time = 40
+
+
