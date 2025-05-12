@@ -1,0 +1,122 @@
+## Load music in this area ##
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/street/back.gif
+
+
+
+panel data/bgs/stage3/n.gif
+
+order aa
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+spawn lobster
+health 10
+coords 800 175
+at 0
+
+spawn lobster
+health 10
+coords 650 175
+at 0
+
+spawn lobster
+health 10
+coords 800 194
+at 0
+
+spawn lobster
+health 10
+coords 800 217
+at 0
+
+spawn lobster
+health 10
+coords 600 175
+at 0
+
+spawn lobster
+health 10
+coords 650 200
+at 0
+
+group 1 5
+at 15
+
+spawn billy
+health 10
+coords 1100 161
+at 0
+
+spawn angel
+health 10
+coords 1100 250
+at 0
+
+spawn k'
+health 10
+coords 1100 150
+at 0
+
+spawn heavy
+health 10
+coords 1100 200
+at 0
+
+spawn kagetsurae
+health  100
+Boss 1
+coords	1509 176
+at      0
+
+wait
+at 0
+
+
+
+
+
