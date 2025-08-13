@@ -9,6 +9,16 @@
 #
 
 
+set	DBH_Course_Test
+
+file	data/levels/New-stage-1.txt
+file	data/levels/New-stage-2.txt
+file	data/levels/example1.txt
+next
+file	data/levels/holes.txt
+next
+scene	data/scenes/ending.txt
+
 
 set	Grouping
 
@@ -30,3 +40,11 @@ file	data/levels/screen.txt
 
 set	mirror_(1_level)
 file	data/levels/mirror.txt
+
+set	exiquiel
+
+file	data/levels/example1.txt
+next
+file	data/levels/holes.txt
+next
+scene	data/scenes/ending.txt
