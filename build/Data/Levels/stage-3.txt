@@ -1,0 +1,155 @@
+## Load music in this area ##
+music		data/music/stage3.ogg
+bossmusic	data/music/boss.ogg
+
+## Load images in this area ##
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+
+panel		data/bgs/stage3/n.gif	none				none
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order aaa
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+group 1 3
+at 100
+
+spawn   joe
+coords	250 180
+at	0
+
+spawn eiji
+coords 635 150
+at 100
+
+spawn eiji
+coords 550 200
+at 100
+
+wait
+
+spawn jhun
+item    apple
+coords 700 170
+at 200
+
+spawn shermie
+coords 850 170
+at 200
+
+spawn jhun
+coords 1050 190
+at 230
+
+wait
+
+ spawn k'
+ coords -50 170
+ at 1650
+ 
+ spawn shermie
+ coords 250 200
+ at 1550
+ 
+ spawn shermie
+ item 1up
+ coords 300 180
+ at 1550
+ 
+ wait
+
+spawn kagetsurae
+health 150
+item meat
+coords -30 170
+at 2100
+
+spawn mrbig
+coords 200 150
+at 2100
+
+spawn ralf
+coords 300 195
+at 2100
+
+wait
+
+spawn eiji
+coords 200 155
+at 2400
+
+spawn k'
+coords 250 200
+at 2500
+
+spawn joe
+coords -100 180
+at 3070
+
+spawn shermie
+coords 200 200
+at 3070
+
+wait
+
+spawn kagetsurae
+health 170
+boss 1
+coords 240 170
+at 3600
+
+spawn angel
+coords 100 160
+at 3600
+
+spawn angel
+coords 350 200
+at 3600

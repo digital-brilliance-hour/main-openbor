@@ -1,0 +1,446 @@
+name Kagetsura
+health 100
+speed 6
+type player
+shadow 3
+
+icon data/chars/kagetsura/1.gif
+diesound data/chars/kagetsura/kagetsura_11-0.wav
+
+anim	attack1
+	bbox	9 2 45 89
+	delay	4
+	sound	data/chars/kagetsura/kagetsura_4-3.wav
+	offset	26 93
+	frame	data/chars/kagetsura/124.gif
+	offset	26 93
+	frame	data/chars/kagetsura/125.gif
+	attack	46 16 42 14 5 0 1 0 0 0
+	offset	26 93
+	frame	data/chars/kagetsura/126.gif
+	offset	26 93
+	frame	data/chars/kagetsura/127.gif
+		
+anim	attack2
+	delay	3
+	fastattack	
+	offset	34 90
+	hitfx	data/chars/kagetsura/kagetsura_4-5.wav
+	frame	data/chars/kagetsura/128.gif
+	offset	47 89
+	frame	data/chars/kagetsura/129.gif
+	offset	32 100
+	frame	data/chars/kagetsura/130.gif
+	bbox	15 10 51 92
+	offset	27 102
+	sound	data/chars/kagetsura/kagetsura_12-14.wav
+	frame	data/chars/kagetsura/131.gif
+	attack	62 1 60 88 0 0 0 0 0 0
+	offset	28 112
+	frame	data/chars/kagetsura/132.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	28 96
+	frame	data/chars/kagetsura/133.gif
+	attack	55 17 72 71 4 0 1 0 0 0
+	offset	27 97
+	frame	data/chars/kagetsura/134.gif
+	offset	27 97
+	frame	data/chars/kagetsura/135.gif
+	offset	27 93
+	frame	data/chars/kagetsura/136.gif
+	offset	27 75
+	frame	data/chars/kagetsura/137.gif
+	offset	27 71
+	frame	data/chars/kagetsura/138.gif
+	offset	27 72
+	frame	data/chars/kagetsura/139.gif
+	offset	28 80
+	frame	data/chars/kagetsura/140.gif
+	offset	27 102
+	frame	data/chars/kagetsura/141.gif
+	offset	26 100
+	frame	data/chars/kagetsura/142.gif
+	offset	26 97
+	frame	data/chars/kagetsura/143.gif
+		
+anim	attack3
+		
+	delay	7
+	offset	47 84
+	hitfx	data/chars/kagetsura/kagetsura_4-5.wav
+	frame	data/chars/kagetsura/144.gif
+	offset	43 76
+	frame	data/chars/kagetsura/145.gif
+	offset	40 80
+	frame	data/chars/kagetsura/146.gif
+	bbox	19 1 67 79
+	offset	40 80
+	frame	data/chars/kagetsura/147.gif
+	attack	80 1 78 39 7 1 1 0 0 0
+	dropv	2 4 0
+	offset	38 79
+	sound	data/chars/kagetsura/kagetsura_0-1.wav
+	frame	data/chars/kagetsura/148.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 77
+	frame	data/chars/kagetsura/149.gif
+	attack	55 1 101 60 50 1 1 0 0 0
+	dropv	2 4 0
+	offset	37 76
+	frame	data/chars/kagetsura/150.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	37 76
+	frame	data/chars/kagetsura/151.gif
+	attack	1 1 127 56 5 1 1 0 0 0
+	dropv	2 4 0
+	bbox	54 1 73 78
+	offset	68 75
+	frame	data/chars/kagetsura/152.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	68 75
+	frame	data/chars/kagetsura/153.gif
+	attack	0 5 125 48 5 1 1 0 0 0
+	offset	68 75
+	frame	data/chars/kagetsura/154.gif
+	offset	70 67
+	frame	data/chars/kagetsura/155.gif
+	offset	70 67
+	frame	data/chars/kagetsura/156.gif
+	offset	70 67
+	frame	data/chars/kagetsura/157.gif
+	bbox	46 31 65 81
+	offset	58 112
+	sound	data/chars/kagetsura/kagetsura_240-0.wav
+	delay	2
+	frame	data/chars/kagetsura/158.gif
+	bbox	28 55 70 79
+	offset	38 132
+	frame	data/chars/kagetsura/159.gif
+	bbox	28 39 63 76
+	offset	38 117
+	frame	data/chars/kagetsura/160.gif
+	bbox	28 8 60 76
+	offset	40 87
+	frame	data/chars/kagetsura/161.gif
+	offset	40 88
+	frame	data/chars/kagetsura/162.gif
+	offset	40 89
+	sound	data/chars/kagetsura/kagetsura_240-0.wav
+	frame	data/chars/kagetsura/163.gif
+	bbox	49 9 57 72
+	offset	64 89
+	frame	data/chars/kagetsura/164.gif
+	bbox	68 7 60 76
+	offset	84 89
+	frame	data/chars/kagetsura/165.gif
+	bbox	19 58 60 87
+	offset	29 145
+	frame	data/chars/kagetsura/166.gif
+	offset	29 131
+	frame	data/chars/kagetsura/167.gif
+	bbox	19 8 61 90
+	offset	31 97
+	frame	data/chars/kagetsura/168.gif
+	offset	28 105
+	frame	data/chars/kagetsura/169.gif
+	bbox	17 9 37 85
+	offset	28 101
+	frame	data/chars/kagetsura/170.gif
+	offset	28 97
+	frame	data/chars/kagetsura/171.gif
+	bbox	67 8 61 75
+	offset	84 89
+	frame	data/chars/kagetsura/172.gif
+	bbox	51 34 64 78
+	offset	69 119
+	frame	data/chars/kagetsura/173.gif
+		
+anim	special
+	delay	5
+	fastattack	
+	hitfx	data/chars/kagetsura/kagetsura_4-5.wav
+	offset	37 102
+	frame	data/chars/kagetsura/174.gif
+	offset	71 102
+	frame	data/chars/kagetsura/175.gif
+	offset	72 104
+	frame	data/chars/kagetsura/176.gif
+	offset	58 103
+	frame	data/chars/kagetsura/177.gif
+	offset	52 103
+	frame	data/chars/kagetsura/178.gif
+	bbox	19 15 69 79
+	offset	25 97
+	frame	data/chars/kagetsura/179.gif
+	offset	22 74
+	sound	data/chars/kagetsura/kagetsura_0-1.wav
+	frame	data/chars/kagetsura/180.gif
+	attack	92 2 53 88 10 0 1 0 0 0
+	offset	22 95
+	frame	data/chars/kagetsura/181.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	22 95
+	frame	data/chars/kagetsura/182.gif
+	bbox	28 1 63 57
+	offset	22 54
+	frame	data/chars/kagetsura/183.gif
+	offset	22 60
+	frame	data/chars/kagetsura/184.gif
+	attack	52 20 74 38 3 0 1 0 0 0
+	bbox	21 2 61 78
+	offset	23 81
+	frame	data/chars/kagetsura/185.gif
+	sound	data/chars/kagetsura/kagetsura_0-1.wav
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	23 81
+	frame	data/chars/kagetsura/186.gif
+	attack	48 1 80 87 10 0 1 0 0 0
+	bbox	18 26 44 90
+	offset	25 120
+	frame	data/chars/kagetsura/187.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	25 120
+	frame	data/chars/kagetsura/188.gif
+	offset	25 120
+	frame	data/chars/kagetsura/189.gif
+	bbox	64 8 50 75
+	offset	85 98
+	frame	data/chars/kagetsura/190.gif
+	attack	64 2 59 63 7 0 1 0 0 0
+	bbox	17 31 70 78
+	offset	25 111
+	frame	data/chars/kagetsura/191.gif
+	sound	data/chars/kagetsura/kagetsura_0-1.wav
+	bbox	14 6 54 98
+	offset	36 103
+	frame	data/chars/kagetsura/192.gif
+	offset	31 101
+	frame	data/chars/kagetsura/193.gif
+	offset	26 101
+	frame	data/chars/kagetsura/194.gif
+	offset	26 102
+	frame	data/chars/kagetsura/195.gif
+		
+anim	block
+	delay	7
+	offset	30 70
+	frame	data/chars/kagetsura/7.gif
+		
+anim	fall
+	delay	7
+	offset	34 36
+	frame	data/chars/kagetsura/63.gif
+	delay	7
+	offset	53 40
+	frame	data/chars/kagetsura/34.gif
+	delay	7
+	offset	47 38
+	frame	data/chars/kagetsura/52.gif
+		
+anim	forwardjump
+	delay	7
+	offset	27 99
+	frame	data/chars/kagetsura/107.gif
+	offset	40 102
+	frame	data/chars/kagetsura/108.gif
+	offset	36 112
+	frame	data/chars/kagetsura/109.gif
+	offset	34 104
+	frame	data/chars/kagetsura/110.gif
+	offset	18 116
+	frame	data/chars/kagetsura/111.gif
+	offset	18 112
+	frame	data/chars/kagetsura/112.gif
+	offset	25 96
+	frame	data/chars/kagetsura/113.gif
+	offset	44 107
+	frame	data/chars/kagetsura/114.gif
+	offset	34 129
+	frame	data/chars/kagetsura/115.gif
+	offset	34 123
+	frame	data/chars/kagetsura/116.gif
+		
+anim	get
+	delay	7
+	offset	27 97
+	frame	data/chars/kagetsura/86.gif
+	offset	30 74
+	frame	data/chars/kagetsura/87.gif
+	offset	30 73
+	frame	data/chars/kagetsura/88.gif
+	offset	30 73
+	frame	data/chars/kagetsura/89.gif
+	offset	30 74
+	frame	data/chars/kagetsura/90.gif
+	delay	7
+	offset	30 79
+	frame	data/chars/kagetsura/1168.gif
+	offset	30 73
+	frame	data/chars/kagetsura/1169.gif
+	offset	30 72
+	frame	data/chars/kagetsura/1170.gif
+		
+anim	grab
+	delay	7
+	offset	26 94
+	frame	data/chars/kagetsura/312.gif	
+		
+anim	idle
+	bbox	8 1 47 92
+	delay	7
+	loop	1
+	offset	27 91
+	frame	data/chars/kagetsura/78.gif
+	offset	27 90
+	frame	data/chars/kagetsura/79.gif
+	offset	27 91
+	frame	data/chars/kagetsura/80.gif
+	offset	28 93
+	frame	data/chars/kagetsura/81.gif
+	offset	28 94
+	frame	data/chars/kagetsura/82.gif
+	offset	28 95
+	frame	data/chars/kagetsura/83.gif
+	offset	28 94
+	frame	data/chars/kagetsura/84.gif
+	offset	28 93
+	frame	data/chars/kagetsura/85.gif
+		
+anim	jump
+	delay	7
+	offset	27 89
+	frame	data/chars/kagetsura/91.gif
+	offset	29 114
+	frame	data/chars/kagetsura/92.gif
+	offset	28 116
+	frame	data/chars/kagetsura/93.gif
+	offset	28 117
+	frame	data/chars/kagetsura/94.gif
+	offset	28 117
+	frame	data/chars/kagetsura/95.gif
+	offset	28 120
+	frame	data/chars/kagetsura/96.gif
+	offset	29 137
+	frame	data/chars/kagetsura/97.gif
+	offset	29 137
+	frame	data/chars/kagetsura/98.gif
+		
+anim	jumpattack
+	delay	7
+	offset	29 98
+	sound	data/chars/kagetsura/kagetsura_4-3.wav
+	frame	data/chars/kagetsura/231.gif
+	attack	38 22 68 47 3 0 1 0 0 0
+	offset	35 100
+	frame	data/chars/kagetsura/232.gif
+	offset	35 103
+	frame	data/chars/kagetsura/233.gif
+		
+anim	jumpattack2
+	delay	7
+	offset	66 125
+	sound	data/chars/kagetsura/kagetsura_4-3.wav
+	frame	data/chars/kagetsura/220.gif
+	bbox	23 4 44 102
+	offset	45 126
+	frame	data/chars/kagetsura/221.gif
+	bbox	20 5 46 94
+	offset	44 125
+	frame	data/chars/kagetsura/222.gif
+	bbox	8 18 43 79
+	offset	26 122
+	frame	data/chars/kagetsura/223.gif
+	attack	37 3 58 58 5 0 1 0 0 0
+	bbox	9 31 40 77
+	offset	26 135
+	frame	data/chars/kagetsura/224.gif
+	bbox	9 16 36 64
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	19 108
+	frame	data/chars/kagetsura/225.gif
+	bbox	11 37 31 64
+	attack	48 3 58 85 5 0 1 0 0 0
+	offset	19 129
+	frame	data/chars/kagetsura/226.gif
+	bbox	16 18 33 65
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	22 111
+	frame	data/chars/kagetsura/227.gif
+	bbox	12 18 38 65
+	attack	40 30 66 42 5 0 1 0 0 0
+	offset	22 111
+	frame	data/chars/kagetsura/228.gif
+	offset	19 108
+	frame	data/chars/kagetsura/229.gif
+	offset	22 111
+	frame	data/chars/kagetsura/230.gif
+		
+anim	pain
+	delay	7
+	offset	49 95
+	sound	data/chars/kagetsura/kagetsura_12-13.wav
+	frame	data/chars/kagetsura/30.gif
+	offset	71 94
+	frame	data/chars/kagetsura/31.gif
+	offset	71 94
+	frame	data/chars/kagetsura/32.gif
+		
+anim	rise
+	delay	7
+	offset	39 43
+	frame	data/chars/kagetsura/234.gif
+	offset	30 70
+	frame	data/chars/kagetsura/235.gif
+	offset	27 89
+	frame	data/chars/kagetsura/236.gif
+		
+anim	throw
+	delay	7
+	drawmethod	flipx 1
+	sound	data/chars/kagetsura/kagetsura_4-3.wav
+	offset	26 94
+	frame	data/chars/kagetsura/312.gif
+	offset	27 90
+	frame	data/chars/kagetsura/314.gif
+	offset	32 85
+	frame	data/chars/kagetsura/315.gif
+	offset	36 86
+	frame	data/chars/kagetsura/316.gif
+	offset	27 79
+	frame	data/chars/kagetsura/317.gif
+	offset	26 79
+	frame	data/chars/kagetsura/318.gif
+	offset	26 79
+	frame	data/chars/kagetsura/319.gif
+	offset	30 80
+	frame	data/chars/kagetsura/320.gif
+	offset	36 72
+	frame	data/chars/kagetsura/321.gif
+	offset	32 84
+	frame	data/chars/kagetsura/322.gif
+	offset	27 90
+	frame	data/chars/kagetsura/323.gif
+		
+anim	walk
+	bbox	14 2 30 94
+	delay	7
+	loop	1
+	offset	29 92
+	frame	data/chars/kagetsura/99.gif
+	offset	35 92
+	frame	data/chars/kagetsura/100.gif
+	offset	31 89
+	frame	data/chars/kagetsura/101.gif
+	offset	30 90
+	frame	data/chars/kagetsura/102.gif
+	offset	23 92
+	frame	data/chars/kagetsura/103.gif
+	offset	16 92
+	frame	data/chars/kagetsura/104.gif
+	offset	24 89
+	frame	data/chars/kagetsura/105.gif
+	offset	30 90
+	frame	data/chars/kagetsura/106.gif
+		
+#|edited by openBor Stats v 0.67
+		
