@@ -8,9 +8,13 @@
 #	scene	[filename]	Show a cut-scene
 #
 
-set Kevin's_Demo
+set David's_Demo
 scene 	data/scenes/howto.txt
 file 	data/levels/new-stage-1.txt
+next
+file    data/levels/new-stage-2.txt
+next
+file    data/levels/new-stage-3.txt
 next
 scene 	data/scenes/ending.txt
 

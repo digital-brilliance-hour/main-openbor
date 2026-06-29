@@ -1,0 +1,148 @@
+## Load music in this area ##
+music data/music/stage1.ogg 441680
+bossmusic	data/music/boss.ogg
+
+## Load images in this area ##
+
+# Background layer
+#background	data/bgs/street/back.gif
+
+
+
+panel      data/bgs/stage3/n.gif none   none
+
+order aa
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+
+spawn Biker-K'
+health 20
+coords 100 166
+at 40
+
+spawn Shermie
+health 20
+coords 360 166
+at 40
+
+spawn Joe 
+health 20
+coords 130 165
+at 40
+
+spawn Biker-K'
+health 20
+coords 266 210
+at 40
+
+spawn Biker-K'
+health 20
+coords 345 166
+at 40
+
+spawn Shermie
+health 20
+coords 366 210
+at 40
+
+spawn Joe
+health 20
+coords 127 166
+at 40
+
+spawn Joe 
+health 20
+coords 34 210
+at 40
+
+wait
+at 40
+
+group 2 4
+at 40
+
+
+#--group2-----
+
+spawn KagetsuraE
+health 100
+coords  166
+at 740
+
+spawn Jhun
+health 20
+coords -50 210
+at 740
+
+spawn K'
+health 20
+coords 160 166
+at 740
+
+spawn Ralf
+health 20
+coords 200 210
+at 740
+
+wait
+at 740
+
+group 2 4
+at 740
+
+spawn box
+item meat
+coords 360 196
+at 840
+
+spawn Heavy
+health 100
+boss 1
+coords 210 194
+at 1110
+
+wait
+at 1110
+
+
+
