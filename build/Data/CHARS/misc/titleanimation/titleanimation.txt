@@ -1,0 +1,73 @@
+name  titleanimation
+health	 1
+type  panel
+speed 10
+shadow  0
+setlayer -2000
+facing 1
+
+anim	idle
+	loop	11
+	delay	10
+	offset	313 192
+	@cmd	changeentityproperty getlocalvar("self") "direction" 1
+	frame	data/chars/misc/titleanimation/frame_00_delay-0.1s.png
+	@cmd	changeentityproperty getlocalvar("self") "setlayer" -2000
+	frame	data/chars/misc/titleanimation/frame_01_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_02_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_03_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_04_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_05_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_06_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_07_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_08_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_09_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_10_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_11_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_12_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_13_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_14_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_15_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_16_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_17_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_18_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_19_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_20_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_21_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_22_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_23_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_24_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_25_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_26_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_27_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_28_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_29_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_30_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_31_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_32_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_33_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_34_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_35_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_36_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_37_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_38_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_39_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_40_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_41_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_42_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_43_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_44_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_45_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_46_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_47_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_48_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_49_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_50_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_51_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_52_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_53_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_54_delay-0.1s.png
+	frame	data/chars/misc/titleanimation/frame_55_delay-0.1s.png
+		
+#|edited by openBor Stats v 0.67
+		
