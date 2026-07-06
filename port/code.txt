@@ -1,0 +1,23 @@
+# Background layer
+background	data/bgs/street/back.gif
+
+# Front layer
+frontpanel data/bgs/port/2.png
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/port/0.png	none      			none
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order a
+
+
+
+Place this before the file command for the stage in levels.txt
+z 165 235 70
