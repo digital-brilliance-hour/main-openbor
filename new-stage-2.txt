@@ -1,0 +1,159 @@
+## Load music in this area ##
+music data/music/stage2.ogg
+bossmusic	data/music/boss.ogg
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/street/back.gif
+
+# Front layer
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/street1/0.png	none      			none
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order a
+
+wall 0 480 0 0 333 333 360 700
+wall 2366 480 0 0 333 333 720 1100
+spawn1 755 50
+
+
+
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+spawn biker-K'
+coords 360 166
+at 500
+
+spawn k9999
+health 50
+coords 360 210
+at 500
+
+
+wait
+at 943
+
+group 1 4
+at 943
+
+spawn eiji
+coords 360 166
+at 600
+
+spawn billy
+coords -40 210
+at 600
+
+spawn biker-K'
+coords -40 166
+at 600
+
+spawn k9999
+health 50
+coords -40 210
+at 600
+
+spawn eiji
+coords 360 166
+at 600
+
+spawn billy
+coords 360 210
+at 600
+
+spawn biker-K'
+coords -40 166
+at 800
+
+spawn k9999
+health 50
+coords -40 210
+at 800
+
+spawn eiji
+coords 360 166
+at 800
+
+spawn billy
+coords 360 210
+at 800
+
+spawn jhun
+coords -40 166
+at 1550
+
+spawn k9999
+health 50
+coords -40 210
+at 1650
+
+spawn eiji
+coords 360 166
+at 1650
+
+spawn billy
+coords 360 210
+at 1650
+
+
+spawn box
+item meat
+coords 330 400
+at 1700
+
+
+spawn mrbig
+boss 1
+coords 330 420
+at 1700
+
+
+
+
