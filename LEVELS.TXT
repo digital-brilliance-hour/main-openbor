@@ -1,0 +1,42 @@
+# List level filenames here.
+#
+# Syntax:
+#	set	[difficulty]	Start a new set of levels (e.g. "normal")
+#
+#	file	[filename]	A level or part of a level
+#	next			Go to next level (show "stage clear" and stuff)
+#	scene	[filename]	Show a cut-scene
+#
+
+
+
+set kai's_demo
+scene	data/scenes/howto.txt
+file    data/levels/new-stage-1.txt
+next
+z 309 362 53
+file	data/levels/new-stage-2.txt
+next
+scene	data/scenes/ending.txt
+
+set DBH__COURSE_TEST
+
+file    data/levels/new-stage-1.txt
+file	data/levels/example1.txt
+next
+file	data/levels/holes.txt
+next
+scene	data/scenes/ending.txt
+
+
+set	water_(3_levels)
+file	data/levels/water.txt
+file	data/levels/water2.txt
+file	data/levels/water3.txt
+
+set	modes_(2_levels)
+file	data/levels/neon.txt
+file	data/levels/screen.txt
+
+set	mirror_(1_level)
+file	data/levels/mirror.txt

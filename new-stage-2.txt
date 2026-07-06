@@ -1,0 +1,164 @@
+## Load music in this area ##
+music data/music/stage2.ogg 911148
+bossmusic	data/music/boss.ogg
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/street/back.gif
+
+# Front layer
+fglayer data/bgs/warehouse2/front.png 100 0.5 1.0 0 6 0 0 1 1 1
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/warehouse2/0.png	none      			none
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order a
+
+wall 0 366 0 0 143 143 580 700
+wall 915 366 -76 0 67 143 80 700
+spawn1 178 19
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+wait
+at 300
+
+group 1 4
+at 300
+
+spawn joe
+coords 360 166
+at 300
+
+spawn lobster
+coords 360 210
+at 300
+
+spawn yamazaki
+coords 360 166
+at 300
+
+spawn joe
+coords -40 210
+at 300
+
+spawn yamazaki
+coords -40 166
+at 300
+spawn lobster
+coords -40 210
+at 300
+
+spawn joe
+coords 360 166
+at 300
+
+spawn billy
+coords 360 210
+at 300
+
+wait
+at 350
+
+group 1 4
+at 350
+
+spawn yamazaki
+coords -40 166
+at 350
+
+spawn lobster
+coords -40 210
+at 350
+
+spawn joe
+coords 360 166
+at 350
+
+spawn billy
+coords 360 210
+at 350
+
+spawn billy
+coords -40 166
+at 350
+
+spawn lobster
+coords -40 210
+at 350
+
+spawn lobster
+coords 360 166
+at 350
+
+spawn billy
+coords 360 210
+at 350
+
+spawn box
+item meat
+coords 360 174
+at 400
+
+wait
+at 656
+
+group 1 4
+at 656
+
+spawn mrbig
+health 300
+boss 1
+coords 150 328
+at 656
+
+
+
+
+
+
+
