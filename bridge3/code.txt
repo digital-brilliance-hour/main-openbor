@@ -1,0 +1,35 @@
+# Background layer
+background	data/bgs/bridge3/0.png
+
+# Front layer
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/bridge3/1.gif	none      			none
+panel		data/bgs/bridge3/2.gif	none      			none
+panel		data/bgs/bridge3/3.gif	none      			none
+panel		data/bgs/bridge3/4.gif	none      			none
+panel		data/bgs/bridge3/5.gif	none      			none
+panel		data/bgs/bridge3/6.gif	none      			none
+panel		data/bgs/bridge3/7.gif	none      			none
+panel		data/bgs/bridge3/8.gif	none      			none
+panel		data/bgs/bridge3/9.gif	none      			none
+panel		data/bgs/bridge3/10.gif	none      			none
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order abcdef
+order ghijab
